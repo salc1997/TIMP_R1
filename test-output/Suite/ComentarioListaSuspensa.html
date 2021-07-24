@@ -55,19 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>ComentarioListaSuspensa</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<<<<<<< HEAD
-<td>Started on:</td><td>Mon Jul 12 16:44:36 CST 2021</td>
-=======
-<td>Started on:</td><td>Mon Jul 05 08:51:54 CST 2021</td>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+<td>Started on:</td><td>Tue Jul 20 11:45:25 CST 2021</td>
 </tr>
-<<<<<<< HEAD
-<tr><td>Total time:</td><td>419 seconds (419437 ms)</td>
-=======
-<tr><td>Total time:</td><td>160 seconds (160081 ms)</td>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+<tr><td>Total time:</td><td>118 seconds (118521 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -84,20 +76,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.timp.test.BRB.ComentarioListaSuspensa.listaSuspensa()'><b>listaSuspensa</b><br>Test class: com.timp.test.BRB.ComentarioListaSuspensa</td>
-<<<<<<< HEAD
-<td></td>
-<td>301</td>
-<td>com.timp.test.BRB.ComentarioListaSuspensa@27eedb64</td></tr>
-=======
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@data-column,&quot;n&quot;) and contains(@aria-label, &quot;Linha: 1-&quot;)]/div/div/div/div[2]&quot;}
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;right&quot;]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div&quot;}
   (Session info: chrome=83.0.4103.106)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-C57COV6&apos;, ip: &apos;192.168.0.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 026317aa8fd08ae84c997288144bf090
-*** Element info: {Using=xpath, value=//div[contains(@data-column,&quot;n&quot;) and contains(@aria-label, &quot;Linha: 1-&quot;)]/div/div/div/div[2]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63066}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b05937d77b520fe5ea8ba0406c711937
+*** Element info: {Using=xpath, value=//*[@id=&quot;right&quot;]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -111,18 +98,18 @@ Session ID: 026317aa8fd08ae84c997288144bf090
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.BRB.ListaSuspensaPO.comentarioLista(ListaSuspensaPO.java:212)
+	at com.sap.timp.pageObjectModel.BRB.ListaSuspensaPO.comentarioLista(ListaSuspensaPO.java:125)
 	at com.timp.test.BRB.ComentarioListaSuspensa.listaSuspensa(ComentarioListaSuspensa.java:47)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace269428372", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace269428372'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@data-column,&quot;n&quot;) and contains(@aria-label, &quot;Linha: 1-&quot;)]/div/div/div/div[2]&quot;}
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1815621869", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1815621869'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;right&quot;]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div&quot;}
   (Session info: chrome=83.0.4103.106)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-C57COV6&apos;, ip: &apos;192.168.0.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57369}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 026317aa8fd08ae84c997288144bf090
-*** Element info: {Using=xpath, value=//div[contains(@data-column,&quot;n&quot;) and contains(@aria-label, &quot;Linha: 1-&quot;)]/div/div/div/div[2]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63066}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b05937d77b520fe5ea8ba0406c711937
+*** Element info: {Using=xpath, value=//*[@id=&quot;right&quot;]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div}
 	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
@@ -140,7 +127,7 @@ Session ID: 026317aa8fd08ae84c997288144bf090
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.BRB.ListaSuspensaPO.comentarioLista(ListaSuspensaPO.java:212)
+	at com.sap.timp.pageObjectModel.BRB.ListaSuspensaPO.comentarioLista(ListaSuspensaPO.java:125)
 	at com.timp.test.BRB.ComentarioListaSuspensa.listaSuspensa(ComentarioListaSuspensa.java:47)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
@@ -168,9 +155,8 @@ Session ID: 026317aa8fd08ae84c997288144bf090
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>142</td>
+<td>69</td>
 <td>com.timp.test.BRB.ComentarioListaSuspensa@31c7528f</td></tr>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </table><p>
 </body>
 </html>

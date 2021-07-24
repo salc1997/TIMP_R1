@@ -3,6 +3,7 @@ package com.sap.timp.pageObjectModel.TBD.ArmazenagemDeArquivos.ArmazenarArquivo;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -108,6 +109,9 @@ public class ArmazenarArquivoVisualizarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Tipo de Relacionamento \"]")
 	public WebElement tipoderelacionamento;
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
+	public WebElement pesquisar;
+	
 	
 	public ArmazenarArquivoVisualizarPO() {
 		PageFactory.initElements(driver, this);
@@ -137,6 +141,10 @@ public class ArmazenarArquivoVisualizarPO extends TestBaseSteven{
 		
 		if(URL.contains("tc2")) {
 			// opcao para TC2
+			pesquisar.sendKeys("49");
+			pesquisar.sendKeys(Keys.ENTER);
+			sleep(4000);
+			
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"49\"]/div[1]/div"));
 			WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\"49\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 			
@@ -154,6 +162,10 @@ public class ArmazenarArquivoVisualizarPO extends TestBaseSteven{
 		
 		// Opcao para TQ1
 		if(URL.contains("tq1")) {
+			pesquisar.sendKeys("241");
+			pesquisar.sendKeys(Keys.ENTER);
+			sleep(4000);
+			
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"241\"]/div[1]/div"));
 			WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\"241\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 			
@@ -171,6 +183,10 @@ public class ArmazenarArquivoVisualizarPO extends TestBaseSteven{
 		
 		// Opcao para TP1
 		if(URL.contains("tp1")) {
+			pesquisar.sendKeys("39");
+			pesquisar.sendKeys(Keys.ENTER);
+			sleep(4000);
+			
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"39\"]/div[1]/div"));
 			WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\"39\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 			
@@ -238,6 +254,10 @@ public class ArmazenarArquivoVisualizarPO extends TestBaseSteven{
 		*/
 		if(URL.contains("tc2")) {
 			// opcao para TC2
+			pesquisar.sendKeys("49");
+			pesquisar.sendKeys(Keys.ENTER);
+			sleep(4000);
+			
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"49\"]/div[1]/div"));
 			WebElement editar = driver.findElement(By.xpath("//div[@data-id=\"49\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 			
@@ -250,11 +270,15 @@ public class ArmazenarArquivoVisualizarPO extends TestBaseSteven{
 			sleep(2000);
 			waitExpectElement(tipodedocumento);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(8000);
+			sleep(15000);
 		}
 		
 		// Opcao para TQ1
 		if(URL.contains("tq1")) {
+			pesquisar.sendKeys("241");
+			pesquisar.sendKeys(Keys.ENTER);
+			sleep(4000);
+			
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"241\"]/div[1]/div"));
 			WebElement editar = driver.findElement(By.xpath("//div[@data-id=\"241\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 			
@@ -272,6 +296,10 @@ public class ArmazenarArquivoVisualizarPO extends TestBaseSteven{
 		
 		// Opcao para TP1
 		if(URL.contains("tp1")) {
+			pesquisar.sendKeys("39");
+			pesquisar.sendKeys(Keys.ENTER);
+			sleep(4000);
+			
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"39\"]/div[1]/div"));
 			WebElement editar = driver.findElement(By.xpath("//div[@data-id=\"39\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 			

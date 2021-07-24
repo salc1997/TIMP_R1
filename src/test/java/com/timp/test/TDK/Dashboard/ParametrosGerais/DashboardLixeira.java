@@ -29,11 +29,13 @@ public class DashboardLixeira extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		 driver.close();
+		// driver.close();
 	}
-
+	
 	@Test()
 	public void lixeira() {
+		loginTC.login();
+		acessarTDKPO.acessarTDK();
 		boolean sucesso = dashboardLixeiraPO.lixeira();
 		assertTrue(sucesso, Eliminado);
 	}

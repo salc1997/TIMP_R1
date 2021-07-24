@@ -37,13 +37,21 @@ public class TipoDeTributoContaContabilEditarPO extends TestBaseFernando{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement btnBiblioteca;
 	
+	@FindBy(xpath = "//span[text()=\"Cadastros PIS/COFINS\"]")
+	public WebElement cadastroPisConfins;
+	
 	public TipoDeTributoContaContabilEditarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
 	public ArrayList<Boolean> editar() {
 		sleep(2000);
+		
+		cadastroPisConfins.click();
+		sleep(2000);
+		
 		tipodetributocontacontabil.click();
+		sleep(2000);
 		
 		sleep(2000);		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

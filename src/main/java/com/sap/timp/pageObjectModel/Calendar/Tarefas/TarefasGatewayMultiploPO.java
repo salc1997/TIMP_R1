@@ -649,8 +649,8 @@ public class TarefasGatewayMultiploPO extends TestBaseMassiel{
 		ativar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(ativadorProcesos);
-		sleep(6000);
+	//	waitExpectElement(ativadorProcesos);
+		sleep(10000);
 
 		ativadorProcesos.click();
 		sleep(2000);

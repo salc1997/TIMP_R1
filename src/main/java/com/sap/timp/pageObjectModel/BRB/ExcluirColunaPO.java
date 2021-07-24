@@ -105,7 +105,7 @@ public class ExcluirColunaPO extends TestBaseSteven{
 			sucesso.add(true);
 		}
 	
-		sleep(1000);
+		sleep(4000);
 
 		coluna.sendKeys("ICMS");
 		

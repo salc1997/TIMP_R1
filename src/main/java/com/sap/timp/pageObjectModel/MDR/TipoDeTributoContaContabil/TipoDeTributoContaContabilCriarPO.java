@@ -9,6 +9,8 @@ import com.sap.timp.base.TestBaseSteven;
 
 public class TipoDeTributoContaContabilCriarPO extends TestBaseSteven{
 	
+	@FindBy(xpath = "//span[text()=\"Cadastros PIS/COFINS\"]")
+	public WebElement cadastroPisConfins;
 	
 	@FindBy(xpath = "//span[text()=\"Tipo de Tributo x Conta Contábil\"]")
 	public WebElement tipodetributocontacontabil;
@@ -58,6 +60,10 @@ public class TipoDeTributoContaContabilCriarPO extends TestBaseSteven{
 	
 	public boolean criar() {
 		sleep(2000);
+		
+		cadastroPisConfins.click();
+		sleep(2000);
+		
 		tipodetributocontacontabil.click();
 		sleep(2000);
 

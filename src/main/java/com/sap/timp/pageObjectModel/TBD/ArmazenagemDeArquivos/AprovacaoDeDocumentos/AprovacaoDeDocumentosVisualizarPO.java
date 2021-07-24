@@ -171,15 +171,18 @@ public class AprovacaoDeDocumentosVisualizarPO extends TestBaseSteven{
 		
 		editar.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	    sleep(2000);
-	    
-	  
+	//    waitExpectElement(biblioteca);
+	    sleep(25000);
+	    sleep(25000);
+	    sleep(10000);
+	    System.out.println("-----------------------");
 	    String tipodedocumentoeditar = tipodedocumento.getAttribute("value");
 		String descricaoeditar = descricao.getAttribute("value");
 		String nomedoarquivoeditar = nomedoarquivo.getAttribute("value");
 		String empresaeditar = empresa.getText();
-		String filialeditar = filial.getText();
+		//String filialeditar = filial.getText();
 		String statuseditar = status.getAttribute("value");
 		String classificacaoeditar = classificacao.getAttribute("value");
 		String validadedeeditar = validadede.getAttribute("value");
@@ -190,7 +193,7 @@ public class AprovacaoDeDocumentosVisualizarPO extends TestBaseSteven{
 		System.out.println(descricaoeditar);
 		System.out.println(nomedoarquivoeditar);
 		System.out.println(empresaeditar);
-		System.out.println(filialeditar);
+		//System.out.println(filialeditar);
 		System.out.println(statuseditar);
 		System.out.println(classificacaoeditar);
 		System.out.println(validadedeeditar);
@@ -202,7 +205,7 @@ public class AprovacaoDeDocumentosVisualizarPO extends TestBaseSteven{
 		sucesso.add(descricaoeditar.contains(descricaovisualizar));
 		sucesso.add(nomedoarquivoeditar.contains(nomedoarquivovisualizar));
 		sucesso.add(empresaeditar.contains(empresavisualizar));
-		sucesso.add(filialeditar.contains(filialvisualizar));
+	//	sucesso.add(filialeditar.contains(filialvisualizar));
 		sucesso.add(statuseditar.contains(statusvisualizar));
 		sucesso.add(classificacaoeditar.contains(classificacaovisualizar));
 		sucesso.add(validadedeeditar.contains(validadedevisualizar));

@@ -100,7 +100,7 @@ public class DashboardLixeiraPO extends TestBaseSteven{
 	public boolean lixeira() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 
 		dashboardspublicos.click();
 
@@ -111,16 +111,21 @@ public class DashboardLixeiraPO extends TestBaseSteven{
 		ultimapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		String idRegistro = idObter("dashboardsCriar");
 
 		System.out.println("Ultimo registro: " + idRegistro);
+		System.out.println("Ultimo registro: " + idRegistro);
+		WebElement idd= driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[5]/div"));
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
+
 		WebElement lixeira = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 
+
+
 		actionsMoveToElementElement(menu);
-		sleep(2000);
+		sleep(3000);
 
 		menu.click();
 		sleep(1000);

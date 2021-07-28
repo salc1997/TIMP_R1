@@ -5,7 +5,7 @@
 		<classes>
 			<!--  Parametros Gerais -->	
 			<class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar"></class>
-			<class name="com.timp.test.BRE.Lixeira.ParametrosGerai.LixeiraRestaurar"></class>
+			<class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraRestaurar"></class>
 			<class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir"></class>
 		</classes>
 	</test>

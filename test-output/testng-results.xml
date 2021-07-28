@@ -1,50 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
-=======
-<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+<testng-results ignored="0" total="3" passed="0" failed="1" skipped="2">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2021-07-23T23:42:24Z" name="Default suite" finished-at="2021-07-23T23:44:26Z" duration-ms="122133">
-=======
-  <suite started-at="2021-07-20T18:03:35Z" name="Default suite" finished-at="2021-07-20T18:05:23Z" duration-ms="108020">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  <suite started-at="2021-07-27T19:21:16Z" name="Default suite" finished-at="2021-07-27T19:25:04Z" duration-ms="227968">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2021-07-23T23:42:24Z" name="Default test" finished-at="2021-07-23T23:44:26Z" duration-ms="122133">
-      <class name="com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardLixeira">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardLixeira@13b13b5d]" started-at="2021-07-23T23:42:24Z" name="beforeClass" finished-at="2021-07-23T23:42:55Z" duration-ms="31787" status="PASS">
-=======
-    <test started-at="2021-07-20T18:03:35Z" name="Default test" finished-at="2021-07-20T18:05:23Z" duration-ms="108020">
-      <class name="com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento@6c2ed0cd]" started-at="2021-07-20T18:03:35Z" name="beforeClass" finished-at="2021-07-20T18:04:18Z" duration-ms="42702" status="PASS">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+    <test started-at="2021-07-27T19:21:16Z" name="Default test" finished-at="2021-07-27T19:25:04Z" duration-ms="227968">
+      <class name="com.timp.test.BRB.FiltrosRelatorio">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.FiltrosRelatorio@355ce81c]" started-at="2021-07-27T19:21:16Z" name="beforeClass" finished-at="2021-07-27T19:22:07Z" duration-ms="51002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method signature="lixeira()[pri:0, instance:com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardLixeira@13b13b5d]" started-at="2021-07-23T23:42:55Z" name="lixeira" finished-at="2021-07-23T23:44:26Z" duration-ms="90315" status="FAIL">
+        <test-method signature="AfiltrosEditor()[pri:0, instance:com.timp.test.BRB.FiltrosRelatorio@355ce81c]" started-at="2021-07-27T19:22:07Z" name="AfiltrosEditor" finished-at="2021-07-27T19:25:00Z" duration-ms="172646" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <div class="actions" tabindex="0">...</div> is not clickable at point (394, 573). Other element would receive the click: <div class="table-pagination">...</div>
+              <![CDATA[element click intercepted: Element <button tabindex="-100" class="btn icon icon-font-Sign-and-Symbols icon-persign"></button> is not clickable at point (1521, 57). Other element would receive the click: <div class="overlay" style="display: block;"></div>
   (Session info: chrome=83.0.4103.106)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-C57COV6', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64981}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4354b7aa60e572d67b134f4e1073bf93]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58414}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 84a6f6c1de57ef1adba9df8486ad9ae7]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="actions" tabindex="0">...</div> is not clickable at point (394, 573). Other element would receive the click: <div class="table-pagination">...</div>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button tabindex="-100" class="btn icon icon-font-Sign-and-Symbols icon-persign"></button> is not clickable at point (1521, 57). Other element would receive the click: <div class="overlay" style="display: block;"></div>
   (Session info: chrome=83.0.4103.106)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-C57COV6', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64981}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4354b7aa60e572d67b134f4e1073bf93
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58414}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 84a6f6c1de57ef1adba9df8486ad9ae7
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -58,8 +43,13 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at com.sap.timp.pageObjectModel.TDK.Dashboard.ParametrosGerais.DashboardLixeiraPO.lixeira(DashboardLixeiraPO.java:132)
-at com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardLixeira.lixeira(DashboardLixeira.java:39)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy12.click(Unknown Source)
+at com.sap.timp.pageObjectModel.BRB.FiltrosPO.aplicarEditor(FiltrosPO.java:378)
+at com.timp.test.BRB.FiltrosRelatorio.AfiltrosEditor(FiltrosRelatorio.java:75)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -88,67 +78,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-=======
-        <test-method signature="login()[pri:0, instance:com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento@6c2ed0cd]" started-at="2021-07-20T18:04:18Z" name="login" finished-at="2021-07-20T18:04:25Z" duration-ms="7037" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="AccesarBPMA2()[pri:9, instance:com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento@6c2ed0cd]" started-at="2021-07-20T18:04:25Z" name="AccesarBPMA2" finished-at="2021-07-20T18:04:53Z" duration-ms="28324" status="PASS">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- lixeira -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardLixeira@13b13b5d]" started-at="2021-07-23T23:44:26Z" name="afterClass" finished-at="2021-07-23T23:44:26Z" duration-ms="0" status="PASS">
-=======
-        </test-method> <!-- AccesarBPMA2 -->
-        <test-method signature="Lexeira1()[pri:10, instance:com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento@6c2ed0cd]" started-at="2021-07-20T18:04:53Z" name="Lexeira1" finished-at="2021-07-20T18:05:11Z" duration-ms="17609" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- AfiltrosEditor -->
+        <test-method signature="BfiltrosBiblioteca()[pri:0, instance:com.timp.test.BRB.FiltrosRelatorio@355ce81c]" started-at="2021-07-27T19:25:00Z" name="BfiltrosBiblioteca" finished-at="2021-07-27T19:25:00Z" depends-on-methods="com.timp.test.BRB.FiltrosRelatorio.AfiltrosEditor" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="1769"]/div[1]/div"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-JP1A9E6', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49633}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 03e4421b27c2a5873d75fa713b7a71f5
-*** Element info: {Using=xpath, value=//div[@data-id="1769"]/div[1]/div}]]>
+              <![CDATA[Method FiltrosRelatorio.BfiltrosBiblioteca()[pri:0, instance:com.timp.test.BRB.FiltrosRelatorio@355ce81c] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="1769"]/div[1]/div"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-JP1A9E6', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49633}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 03e4421b27c2a5873d75fa713b7a71f5
-*** Element info: {Using=xpath, value=//div[@data-id="1769"]/div[1]/div}
-at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.sap.timp.pageObjectModel.Calendar.Tarefas.TarefasNASolicitarEsclarecimentoPO.lexeiraProcesos(TarefasNASolicitarEsclarecimentoPO.java:1330)
-at com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento.Lexeira1(TarefasNASolicitarEsclarecimento.java:117)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+              <![CDATA[java.lang.Throwable: Method FiltrosRelatorio.BfiltrosBiblioteca()[pri:0, instance:com.timp.test.BRB.FiltrosRelatorio@355ce81c] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -168,57 +108,18 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Lexeira1 -->
-        <test-method signature="Lexeira2()[pri:11, instance:com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento@6c2ed0cd]" started-at="2021-07-20T18:05:11Z" name="Lexeira2" finished-at="2021-07-20T18:05:23Z" duration-ms="12329" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- BfiltrosBiblioteca -->
+        <test-method signature="CasignarValores()[pri:0, instance:com.timp.test.BRB.FiltrosRelatorio@355ce81c]" started-at="2021-07-27T19:25:00Z" name="CasignarValores" finished-at="2021-07-27T19:25:00Z" depends-on-methods="com.timp.test.BRB.FiltrosRelatorio.BfiltrosBiblioteca" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="3367"]/div[1]/div"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-JP1A9E6', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49633}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 03e4421b27c2a5873d75fa713b7a71f5
-*** Element info: {Using=xpath, value=//div[@data-id="3367"]/div[1]/div}]]>
+              <![CDATA[Method FiltrosRelatorio.CasignarValores()[pri:0, instance:com.timp.test.BRB.FiltrosRelatorio@355ce81c] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="3367"]/div[1]/div"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-JP1A9E6', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49633}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 03e4421b27c2a5873d75fa713b7a71f5
-*** Element info: {Using=xpath, value=//div[@data-id="3367"]/div[1]/div}
-at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.sap.timp.pageObjectModel.Calendar.Tarefas.TarefasNASolicitarEsclarecimentoPO.lexeiraAtivador(TarefasNASolicitarEsclarecimentoPO.java:1393)
-at com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento.Lexeira2(TarefasNASolicitarEsclarecimento.java:128)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+              <![CDATA[java.lang.Throwable: Method FiltrosRelatorio.CasignarValores()[pri:0, instance:com.timp.test.BRB.FiltrosRelatorio@355ce81c] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -238,20 +139,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Lexeira2 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento@6c2ed0cd]" started-at="2021-07-20T18:05:23Z" name="afterClass" finished-at="2021-07-20T18:05:23Z" duration-ms="0" status="PASS">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+        </test-method> <!-- CasignarValores -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRB.FiltrosRelatorio@355ce81c]" started-at="2021-07-27T19:25:00Z" name="afterClass" finished-at="2021-07-27T19:25:04Z" duration-ms="4258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardLixeira -->
-=======
-      </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

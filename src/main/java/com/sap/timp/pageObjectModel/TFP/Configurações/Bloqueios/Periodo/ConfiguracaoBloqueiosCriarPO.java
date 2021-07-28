@@ -33,7 +33,7 @@ public class ConfiguracaoBloqueiosCriarPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@id=\"companyInput\"]/div/div/div[2]")
 	public WebElement cboEmpresa;
 	
-	@FindBy(xpath = "//div[@class=\"list-item-text\" and text()=\"3000\"]")
+	@FindBy(xpath = "//div[@class=\"list-item-text\" and text()=\"1000\"]")
 	public WebElement opcionEmpresa;
 	
 	@FindBy(xpath = "//div[@id=\"ufInput\"]/div/div/div[2]")
@@ -45,7 +45,7 @@ public class ConfiguracaoBloqueiosCriarPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@id=\"branchInput\"]/div/div/div[2]")
 	public WebElement cbofilial;
 	
-	@FindBy(xpath = "//div[@class=\"list-item-text\" and text()=\"3000 / 0031\"]")
+	@FindBy(xpath = "//div[@class=\"list-item-text\" and text()=\"1000 / 0143\"]")
 	public WebElement opcionFilial;
 	
 	@FindBy(xpath = "//div[@id=\"validFrom\"]/div/div/input")
@@ -110,7 +110,7 @@ public class ConfiguracaoBloqueiosCriarPO extends TestBaseFernando{
 		sleep(1000);
 		
 		cboEmpresa.click();
-		sleep(1000);
+		sleep(2000);
 		opcionEmpresa.click();
 		closeSelectTypeCheckbox(cboEmpresa);
 		sleep(1000);
@@ -120,9 +120,9 @@ public class ConfiguracaoBloqueiosCriarPO extends TestBaseFernando{
 		sleep(1000);
 		opcionUf.click();
 		closeSelectTypeCheckbox(cboUf);
-		sleep(1000);
+		sleep(4000);
 		
-		attributeToBeXpath("//div[@id=\"branchInput\"]/div", "class", "base-MultipleSelect3 required");
+	//	attributeToBeXpath("//div[@id=\"branchInput\"]/div", "class", "base-MultipleSelect3 required");
 		cbofilial.click();
 		sleep(1000);
 		opcionFilial.click();
@@ -146,7 +146,7 @@ public class ConfiguracaoBloqueiosCriarPO extends TestBaseFernando{
 		btnGravar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(9000);
 		
 		btnUltimaPagina.click();
 		sleep(2000);

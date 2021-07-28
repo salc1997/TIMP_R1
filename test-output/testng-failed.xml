@@ -3,30 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardLixeira">
-=======
-      <class name="com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.BRB.FiltrosRelatorio">
         <methods>
-<<<<<<< HEAD
-=======
-          <include name="Lexeira2"/>
+          <include name="CasignarValores"/>
+          <include name="BfiltrosBiblioteca"/>
           <include name="beforeClass"/>
-          <include name="Lexeira1"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="AfiltrosEditor"/>
           <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="lixeira"/>
-          <include name="beforeClass"/>
-=======
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TDK.Dashboard.ParametrosGerais.DashboardLixeira -->
-=======
-      </class> <!-- com.timp.test.CALENDAR.Tarefas.TarefasNASolicitarEsclarecimento -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

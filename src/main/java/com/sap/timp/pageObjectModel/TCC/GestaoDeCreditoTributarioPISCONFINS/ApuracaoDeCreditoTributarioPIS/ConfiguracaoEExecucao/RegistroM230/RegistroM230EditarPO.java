@@ -133,9 +133,9 @@ public class RegistroM230EditarPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		sleep(8000);
-		waitExpectElement(filialInput);
-		sleep(8000);
+		sleep(12000);
+		//waitExpectElement(filialInput);
+		sleep(10000);
 		
 		String nuevoTexto = filialInput.getText();
 		/*System.out.println(valor);*/

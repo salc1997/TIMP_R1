@@ -283,8 +283,8 @@ public class RegistroM600CriarPO extends TestBaseSteven{
 		}
 		
 		
-		sleep(3000);
-		waitExpectElement(siguiente);
+		sleep(6000);
+		//waitExpectElement(siguiente);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();

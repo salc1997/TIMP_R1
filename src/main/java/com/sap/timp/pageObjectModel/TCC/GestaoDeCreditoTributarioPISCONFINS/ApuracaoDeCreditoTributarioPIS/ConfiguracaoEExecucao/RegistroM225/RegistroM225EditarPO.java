@@ -96,7 +96,7 @@ public class RegistroM225EditarPO extends TestBaseFernando{
 		
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(12000);
 		
 		String valorDataOperacao = dataDaOperacao.getAttribute("value").trim();
 		System.out.println("");

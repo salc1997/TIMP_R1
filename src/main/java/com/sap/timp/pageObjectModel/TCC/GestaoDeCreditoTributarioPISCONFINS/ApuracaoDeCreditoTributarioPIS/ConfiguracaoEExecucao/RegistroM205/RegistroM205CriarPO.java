@@ -184,8 +184,8 @@ public class RegistroM205CriarPO extends TestBaseSteven{
 		sleep(1000);
 		
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
-		sleep(3000);
+		//attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		sleep(8000);
 		
 		uf.click();
 		sleep(1000);

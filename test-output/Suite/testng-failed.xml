@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="Configuracao De Tipo Tributo(failed)">
+=======
+  <test thread-count="5" name="GruposAvancados(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponentesFiltrosAvançados">
         <methods>
           <include name="afterClass"/>
@@ -12,4 +17,38 @@
       </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponentesFiltrosAvançados -->
     </classes>
   </test> <!-- Configuracao De Tipo Tributo(failed) -->
+=======
+      <class name="com.timp.test.BRB.GruposAvancados">
+        <methods>
+          <include name="gruposAvanzados"/>
+          <include name="afterClass"/>
+          <include name="eliminarGrupos"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.GruposAvancados -->
+    </classes>
+  </test> <!-- GruposAvancados(failed) -->
+  <test thread-count="5" name="ComentarioListaSuspensa(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
+        <methods>
+          <include name="listaSuspensa"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
+    </classes>
+  </test> <!-- ComentarioListaSuspensa(failed) -->
+  <test thread-count="5" name="ComentarioLibre(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.ComentarioLibre">
+        <methods>
+          <include name="comentarioLibre"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.ComentarioLibre -->
+    </classes>
+  </test> <!-- ComentarioLibre(failed) -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </suite> <!-- Failed suite [Suite] -->

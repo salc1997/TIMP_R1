@@ -130,7 +130,7 @@ public class ListaSuspensaPO extends TestBaseSteven{
 		
 		
 		agregar.click();
-		
+		sleep(1000);
 
 		actionsMoveToElementElement(agregar);
 		sleep(5000);
@@ -139,11 +139,11 @@ public class ListaSuspensaPO extends TestBaseSteven{
 		cambiarNombre.click();
 		sleep(3000);
 		listaSuspensa.sendKeys("ListaSuspensa");
-		
+		sleep(1000);
 		nombre.click();
 		
 		adicionarCom.click();
-		
+		sleep(1000);
 		sleep(3000);
 		valor1.sendKeys("Teste 1");
 		adicionar.click();

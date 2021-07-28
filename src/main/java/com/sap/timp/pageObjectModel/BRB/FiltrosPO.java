@@ -101,10 +101,22 @@ public class FiltrosPO  extends TestBaseSteven{
 	public WebElement uf;
 	@FindBy(xpath = "/html/body/div[1]/div/div[2]/div[2]/div/div/div/div[1]/div/div[2]/div/div[2]/div/div[1]/div/div[4]/div[2]/div[4]/div/div/input")
 	public WebElement fi;
-	@FindBy(xpath = "/html/body/div[1]/div/div[2]/div[2]/div/div/div/div[1]/div/div[2]/div/div[2]/div/div[1]/div/div[5]/div[2]/div[4]/div/div[1]/input")
+	@FindBy(xpath = "/html/body/div[1]/div/div[2]/div[2]/div/div/div/div[1]/div/div[2]/div/div[2]/div/div[1]/div/div[5]/div[2]/div[4]/div/div/span[contains(@class,\"icon-calendar\")]")
 	public WebElement d1;
-	@FindBy(xpath = "/html/body/div[1]/div/div[2]/div[2]/div/div/div/div[1]/div/div[2]/div/div[2]/div/div[1]/div/div[5]/div[3]/div[4]/div/div[1]/input")
+	@FindBy(xpath = "//div[@tabindex=\"0\"][contains(@class,\"title\")][1]")
+	public WebElement d1t;
+	@FindBy(xpath = "//div[@tabindex=\"0\"][contains(@class,\"icon-leftmenu\")]")
+	public WebElement paginaAnterior;
+	@FindBy(xpath = "//div[@tabindex=\"0\"][contains(@class,\"year\")][text()=\"2016\"]")
+	public WebElement ano2016;
+	@FindBy(xpath = "//div[@tabindex=\"0\"][contains(@class,\"month\")][text()=\"Jan\"]")
+	public WebElement jan;
+	@FindBy(xpath = "//div[@tabindex=\"0\"][contains(@class,\"date\")][text()=\"1\"][1]")
+	public WebElement fec1;
+	@FindBy(xpath = "/html/body/div[1]/div/div[2]/div[2]/div/div/div/div[1]/div/div[2]/div/div[2]/div/div[1]/div/div[5]/div[3]/div[4]/div/div/span[contains(@class,\"icon-calendar\")]")
 	public WebElement d2;
+	@FindBy(xpath = "//div[@tabindex=\"0\"][contains(@class,\"date weekend\")][text()=\"31\"]")
+	public WebElement fec2;
 	@FindBy(xpath = "//*[@id=\"settings-execute\"]/button")
 	public WebElement exec;
 	@FindBy(xpath = "//*[@id=\"table-data-wrapper\"]")
@@ -362,8 +374,49 @@ public class FiltrosPO  extends TestBaseSteven{
 			uf.sendKeys("BA");
 			sleep(1000);
 			fi.sendKeys("0143");
-			d1.sendKeys("01/01/2016");
-			d2.sendKeys("31/01/2016");
+		
+			d1.click();
+			sleep(2000);
+			
+			d1t.click();
+			sleep(2000);
+			
+			d1t.click();
+			sleep(2000);
+			
+			paginaAnterior.click();
+			sleep(2000);
+			
+			ano2016.click();
+			sleep(2000);
+			
+			jan.click();
+			sleep(2000);
+			
+			fec1.click();
+			sleep(2000);
+			
+			
+			d2.click();
+			sleep(2000);
+			
+			d1t.click();
+			sleep(2000);
+			
+			d1t.click();
+			sleep(3000);
+			
+			paginaAnterior.click();
+			sleep(3000);
+			
+			ano2016.click();
+			sleep(2000);
+			
+			jan.click();
+			sleep(2000);
+			
+			fec2.click();
+			sleep(2000);
 		}
 		
 		
@@ -377,8 +430,6 @@ public class FiltrosPO  extends TestBaseSteven{
 		if (fecharR > 0) {
 			fechar.click();
 		}
-
-
 
 	}
 	
@@ -432,8 +483,48 @@ public class FiltrosPO  extends TestBaseSteven{
 			uf.sendKeys("BA");
 			sleep(1000);
 			fi.sendKeys("0143");
-			d1.sendKeys("01/01/2016");
-			d2.sendKeys("31/01/2016");
+			d1.click();
+			sleep(2000);
+			
+			d1t.click();
+			sleep(2000);
+			
+			d1t.click();
+			sleep(2000);
+			
+			paginaAnterior.click();
+			sleep(2000);
+			
+			ano2016.click();
+			sleep(2000);
+			
+			jan.click();
+			sleep(2000);
+			
+			fec1.click();
+			sleep(2000);
+			
+			
+			d2.click();
+			sleep(2000);
+			
+			d1t.click();
+			sleep(2000);
+			
+			d1t.click();
+			sleep(3000);
+			
+			paginaAnterior.click();
+			sleep(3000);
+			
+			ano2016.click();
+			sleep(2000);
+			
+			jan.click();
+			sleep(2000);
+			
+			fec2.click();
+			sleep(2000);
 		}
 		
 		exec.click();

@@ -22,6 +22,8 @@ public class TestBaseCristhian extends TestBaseSteven{
 		
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 		
+		
+		
 		//Evita que el mensaje de "Chorme siendo controlado por un software de automatizacion" aprezca
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("disable-infobars");

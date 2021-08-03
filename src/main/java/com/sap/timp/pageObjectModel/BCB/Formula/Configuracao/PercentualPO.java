@@ -526,7 +526,7 @@ public class PercentualPO extends TestBaseKenssy {
 		sleep(2000);
 		
 		ano2016.click();
-		sleep(3000);
+		sleep(5000);
 		
 		jan.click();
 		sleep(4000);

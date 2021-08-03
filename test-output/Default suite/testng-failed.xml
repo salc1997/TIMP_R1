@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRB.FiltrosRelatorio">
+      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
         <methods>
-          <include name="CasignarValores"/>
-          <include name="BfiltrosBiblioteca"/>
-          <include name="beforeClass"/>
-          <include name="AfiltrosEditor"/>
+          <include name="listaSuspensa"/>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
+      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

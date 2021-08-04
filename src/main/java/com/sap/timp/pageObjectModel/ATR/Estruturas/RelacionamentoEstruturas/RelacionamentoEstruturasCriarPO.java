@@ -125,7 +125,7 @@ public class RelacionamentoEstruturasCriarPO extends TestBaseSteven{
 		novo.click();
 		
 	
-		sleep(15000);
+		sleep(25000);
 		waitExpectElement(grupo1);
 		sleep(5000);
 		

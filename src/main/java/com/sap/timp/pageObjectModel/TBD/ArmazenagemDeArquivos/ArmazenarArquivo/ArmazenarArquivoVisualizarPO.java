@@ -312,7 +312,7 @@ public class ArmazenarArquivoVisualizarPO extends TestBaseSteven{
 			sleep(2000);
 			waitExpectElement(tipodedocumento);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+			sleep(6000);
 		}
 		
 		String empresaeditar = empresa.getText();

@@ -753,7 +753,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		System.out.println("Id Configurações antes da criação: "+ id);
 		
 		nova.click();
-		sleep(3000);
+		sleep(8000);
 
 		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
 		sleep(2000);

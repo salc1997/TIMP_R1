@@ -21,7 +21,7 @@ public class MapeamentoDeParametrosDeEntradaEditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@id][text()=\"4.2.2 - CFOP\"]")
 	public WebElement opcaoestrutura2;
 	
-	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	@FindBy(xpath = "//div[contains(@class,\"icon-left\")][2]")
 	public WebElement ultimapagina;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Campo \"]")

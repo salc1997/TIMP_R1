@@ -51,7 +51,7 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 	@FindBy(xpath = "//*[@id=\"DT_LANC\"]/div[1]/label/span")
 	public WebElement opcData;
 	
-	@FindBy(xpath = "//*[@id=\"createMapping\"]/div/div[2]/div[12]/div[2]/div/div[1]/div[1]/div[2]/input")
+	@FindBy(xpath = "//div[@class=\"input taxMap\"]/div/div/div[2]")
 	public WebElement tributo;
 	
 	@FindBy(xpath = "//*[@id=\"00\"]/div[1]/label/span")
@@ -63,13 +63,13 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 	@FindBy(xpath = "//*[@id=\"05\"]/div[1]/label/span")
 	public WebElement opctributodosTC2;
 	
-	@FindBy(xpath = "//*[@id=\"createMapping\"]/div/div[2]/div[13]/div[2]/div/div[1]/input")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]")
 	public WebElement dataInicio;
 	
 	@FindBy(xpath = "//div[@id=\"add-icon\"]")
 	public WebElement adicionar;
 
-	@FindBy(xpath = "//input[contains(@placeholder,\"Fim\")]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Fim de Vigência\"]")
 	public WebElement dataFim;
 	
 	@FindBy(xpath = "//button[text()=\"Gravar\"]")
@@ -139,16 +139,13 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 		opcData.click();
 		sleep(1000);
 		data.sendKeys(Keys. ESCAPE);
-		sleep(1000);
+		sleep(5000);
 		
 		tributo.click();
 		sleep(1000);
 		opctributo.click();
+		closeSelectTypeCheckbox(tributo);
 		sleep(1000);
-		tributo.sendKeys(Keys. ESCAPE);
-		sleep(1000);
-		
-	
 		
 		dataInicio.sendKeys("02/01/1978");
 		sleep(1000);
@@ -209,15 +206,16 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 		
 		if (tc2==true) {
 			opctributodosTC2.click();
+			closeSelectTypeCheckbox(tributo);
+			sleep(1000);
 			
 		}else {
 			opctributodos.click();
+			closeSelectTypeCheckbox(tributo);
+			sleep(1000);
 		}
 		
-		sleep(1000);
-		tributo.sendKeys(Keys. ESCAPE);
-		sleep(1000);
-		
+	
 	
 		
 		dataInicio.sendKeys("02/01/1978");

@@ -188,6 +188,8 @@ public class RegistroRPDetalhesPO extends TestBaseSteven {
 		sucesso.add(numerododeclaracaovisualizar.equals(numerododeclaracaodetalhes));
 		sucesso.add(ativovisualizar.equals(ativodetalhes));
 		
+		System.out.println(sucesso);
+		
 		return sucesso;
 	}
 

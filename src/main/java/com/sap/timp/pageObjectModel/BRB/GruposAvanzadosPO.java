@@ -134,7 +134,7 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 		executar.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 	
 	
@@ -194,7 +194,7 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 		nao1.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		execucao.click();
 		sleep(5000);

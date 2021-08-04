@@ -748,7 +748,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		gravarC.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		sleep(7000);
 		
 		biblioteca.click();
 		sleep(5000);
@@ -2022,7 +2022,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(1000);
 		
 		subnivel6.click();
-		sleep(2000);
+		sleep(5000);
 		
 		String valorCampoSaidaSubNivel6 = verCampoSaidaSubNivel6.getText();
 		System.out.println("Campo Saida Subnivel5: "+ valorCampoSaidaSubNivel6);
@@ -2163,7 +2163,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);*/
 		
-		sleep(3000);
+		sleep(6000);
 		
 		ultimo.click();
 		sleep(3000);

@@ -152,7 +152,7 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseSteven {
 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 
 		String data  = datainicio.getAttribute("value");
 		String data1 = datafim.getAttribute("value");
@@ -163,6 +163,8 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseSteven {
 
 		sucesso.add(data.equals(enviar));
 		sucesso.add(data1.contains(enviar1));
+		
+		sleep(5000);
 		
 		int cofins = driver.findElements(By.xpath("//div[@id=\"multipleControlerId-05\"]")).size();
 

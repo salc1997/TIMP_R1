@@ -46,7 +46,7 @@ public class MapeamentoDeParametrosDeEntradaExcluirEmMassaPO extends TestBaseSte
 	@FindBy(xpath = "//div[@class=\"tr\" and @data-id]/div[4]/div")
 	public WebElement motivo;
 	
-	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	@FindBy(xpath = "//div[contains(@class,\"icon-left\")][2]")
 	public WebElement siguiente;
 	
 	@FindBy(xpath = "//button/span[contains(@class,\"icon-persign\")]")
@@ -77,7 +77,7 @@ public class MapeamentoDeParametrosDeEntradaExcluirEmMassaPO extends TestBaseSte
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
-		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]")).size();
 		
 		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		sleep(2000);
@@ -143,11 +143,11 @@ public class MapeamentoDeParametrosDeEntradaExcluirEmMassaPO extends TestBaseSte
 		sleep(2000);
 		
 		
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]")).size();
 		
 		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		rows = rows-1;
+		rows = rows+1;
 		
 		String idRegistro2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
@@ -182,7 +182,7 @@ public class MapeamentoDeParametrosDeEntradaExcluirEmMassaPO extends TestBaseSte
 	public boolean excluir() {
 		
 		
-		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]")).size();
 		
 		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 
@@ -190,7 +190,7 @@ public class MapeamentoDeParametrosDeEntradaExcluirEmMassaPO extends TestBaseSte
 		WebElement check1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/label/span"));
 		check1.click();
 		sleep(1000);
-		rows = rows-1;
+		rows = rows+1;
 		
 		String idRegistro2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		

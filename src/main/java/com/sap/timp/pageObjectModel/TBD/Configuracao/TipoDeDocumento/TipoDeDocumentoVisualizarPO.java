@@ -89,7 +89,7 @@ public class TipoDeDocumentoVisualizarPO extends TestBaseSteven {
 		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		//pega o ultimo id que foi gerado no criar
 		String idRegistro = idObter1();

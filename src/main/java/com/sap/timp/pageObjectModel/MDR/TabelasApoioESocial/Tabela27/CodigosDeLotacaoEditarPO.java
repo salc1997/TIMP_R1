@@ -79,7 +79,7 @@ public class CodigosDeLotacaoEditarPO extends TestBaseSteven {
 		sleep(2000);
 		
 		campo.sendKeys(enviar);
-		sleep(2000);
+		sleep(5000);
 		
 		gravar.click();
 		sleep(2000);

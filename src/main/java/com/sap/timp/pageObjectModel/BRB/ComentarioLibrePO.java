@@ -71,7 +71,7 @@ public class ComentarioLibrePO extends TestBaseSteven{
 	
 	
 	
-	@FindBy(xpath = "//div[@id=\"table-data-wrapper\"]/div[2]/div[16]/div[2]/button")
+	@FindBy(xpath = "//div[@id=\"table-data-wrapper\"]/div[2]/div[15]/div[2]/button")
 					//*[@id="table-data-wrapper"]/div[2]/div[16]/div[2]/button
 	public WebElement boton;
 	

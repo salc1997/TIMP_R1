@@ -33,7 +33,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados extends Te
 
 	@AfterClass
 	public void afterClass() {
-		 driver.close();
+		 //driver.close();
 	}
 
 	@Test()

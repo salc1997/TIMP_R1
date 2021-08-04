@@ -146,8 +146,8 @@ public class DeParaLivroApuracaoXSpedFiscalExcluirEmMassaPO extends TestBaseStev
 		
 		opcaotributo.click();
 		
-		sleep(2000);
-		attributeToBeXpath("//div[@class=\"element\" and @id=\"tipoTributo\"]/div", "class", "base-select required");
+		sleep(6000);
+		//attributeToBeXpath("//div[@class=\"element\" and @id=\"tipoTributo\"]/div", "class", "base-select required");
 		sleep(2000);
 		tipotributo.click();
 		sleep(2000);

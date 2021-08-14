@@ -235,7 +235,7 @@ public class ProcessodeNegócioCriarCopiaPO extends TestBaseMassiel{
 		menu.click();
 		sleep(1000);
 		Copiar.click();
-		sleep(12000);
+		sleep(16000);
 		
 		dobleClickElement(NovoOperacao);
 		sleep(3000);
@@ -254,7 +254,7 @@ public class ProcessodeNegócioCriarCopiaPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		no.click();
-		sleep(6000);
+		sleep(8000);
 		
 		biblioteca.click();
 		sleep(3000);

@@ -278,7 +278,7 @@ public class ProcessodeNegócioCriarProcessocomTarefadeUsuárioPO extends TestBase
 		aplicar.click();
 
 		
-		sleep(4000);
+		sleep(9000);
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

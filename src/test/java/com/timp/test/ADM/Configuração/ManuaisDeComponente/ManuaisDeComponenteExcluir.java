@@ -30,6 +30,7 @@ public class ManuaisDeComponenteExcluir extends TestBaseSteven {
   @AfterClass
   public void afterClass() {
 	  driver.close();
+	  
   }
   
 

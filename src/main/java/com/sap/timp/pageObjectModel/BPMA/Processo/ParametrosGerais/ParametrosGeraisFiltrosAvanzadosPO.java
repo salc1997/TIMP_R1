@@ -58,7 +58,7 @@ public class ParametrosGeraisFiltrosAvanzadosPO extends TestBaseKenssy {
 		filtros.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		usuarioCriacao.click();
 		sleep(1000);
@@ -124,7 +124,7 @@ public class ParametrosGeraisFiltrosAvanzadosPO extends TestBaseKenssy {
 							+ rows + "]/div[11]/div"))
 					.getText();
 			System.out.println(textFiltroUsuarioModificao + " Usuario Modificado Filtro");
-			sucesso.add(textFiltroUsuarioModificao.contains(usuarioModificaoText));
+			sucesso.add(usuarioModificaoText.contains(textFiltroUsuarioModificao));
 
 			f = f + 1;
 		}
@@ -226,7 +226,7 @@ public class ParametrosGeraisFiltrosAvanzadosPO extends TestBaseKenssy {
 							+ rows + "]/div[12]/div"))
 					.getText();
 			System.out.println(textFiltroData + " data Filtro");
-			sucesso.add(dataText.equals(textFiltroData));
+			sucesso.add(dataText.contains(textFiltroData));
 
 			f = f + 1;
 		}

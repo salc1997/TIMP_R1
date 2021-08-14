@@ -117,7 +117,7 @@ public class CriarProcessocomTarefaAutomatizadaPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Selecionar Entrada\"]")
 	public WebElement inputEntrada;
 	
-	@FindBy(xpath = "/html/body/div[4]/div/div[2]/div/div[2]/div/div[1]/div/div[2]/div[6]/div[1]/label/span")
+	@FindBy(xpath = "/html/body/div[4]/div/div[2]/div/div[2]/div/div[1]/div/div[2]/div[1]/div[1]/label/span")
 	public WebElement flag;
 	
 	@FindBy(xpath = "//button[text()=\"Confirmar\"]")
@@ -296,7 +296,7 @@ public class CriarProcessocomTarefaAutomatizadaPO extends TestBaseSteven{
 		inputEntrada.click();
 		sleep(3000);
 		invisibilityOfElement("div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(9000);
 		
 		flag.click();
 		sleep(3000);
@@ -315,8 +315,8 @@ public class CriarProcessocomTarefaAutomatizadaPO extends TestBaseSteven{
 		
 		inputEntrada.click();
 		sleep(3000);
-		invisibilityOfElement("div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+	//	invisibilityOfElement("div[@class=\"overlay loader dark\"]");
+		sleep(10000);
 		
 		flag.click();
 		sleep(3000);
@@ -327,7 +327,7 @@ public class CriarProcessocomTarefaAutomatizadaPO extends TestBaseSteven{
 		aplicar.click();
 
 		
-		sleep(4000);
+		sleep(7000);
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

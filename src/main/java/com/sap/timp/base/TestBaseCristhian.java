@@ -24,6 +24,7 @@ public class TestBaseCristhian extends TestBaseSteven{
 		
 		
 		
+		
 		//Evita que el mensaje de "Chorme siendo controlado por un software de automatizacion" aprezca
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("disable-infobars");

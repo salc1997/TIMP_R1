@@ -181,8 +181,6 @@ public String dataanterior() {
 			contar = 0;
 		}
 		
-
-		
 		return contar;
 		
 	}

@@ -34,6 +34,7 @@ public class TestBaseCristhian extends TestBaseSteven{
 		prefs.put("profile.password_manager_enabled", false);
 		options.setExperimentalOption("prefs", prefs);
         
+		
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get(tc2);

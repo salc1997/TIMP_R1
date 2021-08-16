@@ -3,25 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoDetalhes">
-=======
-      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.ExecuçõesSalvasFiltros">
         <methods>
-<<<<<<< HEAD
-          <include name="detalhes"/>
-=======
-          <include name="listaSuspensa"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <include name="afterClass"/>
+          <include name="FiltroID"/>
+          <include name="FiltroFilial"/>
           <include name="beforeClass"/>
+          <include name="FiltroSub"/>
+          <include name="brbEntrar"/>
+          <include name="FiltroTributo"/>
+          <include name="afterClass"/>
+          <include name="FiltroUF"/>
+          <include name="FiltroEmpresa"/>
+          <include name="NombreHierarquia"/>
+          <include name="login"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoDetalhes -->
-=======
-      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.ExecuçõesSalvasFiltros -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

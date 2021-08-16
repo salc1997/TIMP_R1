@@ -68,7 +68,7 @@ public class ParametrosParaLivrosCMSSTExcluirPO extends TestBaseMassiel{
 		
 		driver.navigate().refresh();
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		//waitExpectXpath("//div[@class=\"overlay loader dark\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

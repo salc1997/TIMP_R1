@@ -48,7 +48,7 @@ public class EmpresasEditarPO extends TestBaseSteven{
 		editar.click();
 		
 		waitExpectElement(campo);
-		sleep(2000);
+		sleep(10000);
 		
 		String valor = "";
 	

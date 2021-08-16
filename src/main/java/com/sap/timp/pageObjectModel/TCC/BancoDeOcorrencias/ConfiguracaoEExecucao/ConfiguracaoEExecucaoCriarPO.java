@@ -82,7 +82,7 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[text()=\"110 - Auto de infração\"]")
 	public WebElement idTipoObjetoTQ1;
 	
-	@FindBy(xpath = "//div[text()=\"10 - Cobrança em fronteira\"]")
+	@FindBy(xpath = "//div[text()=\"2 - Controle Interno\"]")
 	public WebElement idTipoObjetoTC2;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Observação\"]")
@@ -210,7 +210,7 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBaseSteven {
 			tipoObjetoTQ1.click();
 			sleep(1000);
 			closeSelectTypeCheckbox(tipoObjeto);
-			sleep(1000);
+			sleep(3000);
 		}
 		
 		

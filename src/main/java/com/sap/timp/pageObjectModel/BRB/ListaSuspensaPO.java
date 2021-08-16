@@ -79,7 +79,7 @@ public class ListaSuspensaPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[1]/div[1]")
 	public WebElement comentario2;
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[3]/div[1]")
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div[1]")
 	public WebElement comentario1;
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[1]/div[2]/div[1]")
 	public WebElement usuario1;
@@ -223,7 +223,7 @@ public class ListaSuspensaPO extends TestBaseSteven{
 		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(10000);
+		sleep(50000);
 		//sleep(5000);
 		if (amb== false) {
 			menulistaTd1.click();

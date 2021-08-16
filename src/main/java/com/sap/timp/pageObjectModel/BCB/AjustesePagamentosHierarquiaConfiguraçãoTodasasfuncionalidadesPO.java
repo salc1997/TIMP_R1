@@ -810,7 +810,7 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO ex
 		campoLinha.sendKeys("Relatório");
 		sleep(2000);
 		campoLinhaOpc.click();
-		sleep(2000);
+		sleep(12000);
 		
 		relatorio.click();
 		sleep(2000);

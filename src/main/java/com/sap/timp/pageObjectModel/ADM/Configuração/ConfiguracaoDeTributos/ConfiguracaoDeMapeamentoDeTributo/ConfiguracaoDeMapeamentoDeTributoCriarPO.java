@@ -66,6 +66,9 @@ public class ConfiguracaoDeMapeamentoDeTributoCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
+	@FindBy(xpath = "//button[text()=\"Sair\"]")
+	public WebElement salir;
+	
 	public ConfiguracaoDeMapeamentoDeTributoCriarPO() {
 
 		PageFactory.initElements(driver, this);
@@ -136,9 +139,12 @@ public class ConfiguracaoDeMapeamentoDeTributoCriarPO extends TestBaseSteven{
 		sleep(2000);
 		biblioteca.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		salir.click();
 		sleep(2000);
 		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 				
 		waitExpectElement(primeira);
 		sleep(2000);

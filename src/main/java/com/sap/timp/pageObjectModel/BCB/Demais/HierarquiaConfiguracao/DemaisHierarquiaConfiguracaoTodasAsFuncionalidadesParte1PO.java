@@ -763,8 +763,8 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		nova.click();
 		sleep(2000);
 
-		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
-		sleep(2000);
+		//attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
+		sleep(5000);
 
 		nomeHirarquia.sendKeys("Prueba Automatizada de Hierarq");
 		sleep(1000);
@@ -1228,7 +1228,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 //		executar.click();
 //		sleep(3000);
 //		waitExpectElement(executarM);
-		sleep(2000);
+		sleep(12000);
 		executarM.click();
 		
 		sleep(2000);

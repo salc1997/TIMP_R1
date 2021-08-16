@@ -505,9 +505,9 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		
 		WebElement opcionLeiaute = driver.findElement(By.xpath("//li[@tabindex=\"0\" and @class=\"list-item\" and @id and contains(text(), \""+this.idRegistroNuevo+"\")]"));
 		opcionLeiaute.click();
-		sleep(1000);
+		sleep(4000);
 		
-		attributeToBeXpath("//div[@id=\"inputTimpVersion\"]/div", "class", "base-select required");
+	//	attributeToBeXpath("//div[@id=\"inputTimpVersion\"]/div", "class", "base-select required");
 		cboLVersaoLeiaute.click();
 		sleep(3000);
 		opcionVersaoLeiaute.click();
@@ -935,8 +935,8 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		btnUltimaPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
+		sleep(8000);
+		//String idRegistro1 = idObter4();	
 		WebElement status = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[6]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\" and @tabindex=\"0\"]"));
 		
 		boolean sucesso = false;

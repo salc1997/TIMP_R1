@@ -1772,3 +1772,6 @@
 [0423/185618.930:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff867274978 of 48 bytes failed: Solo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
 [0423/185618.930:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ff86727a4c0 of 64 bytes failed: Solo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
 [0423/185618.932:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Se intentó obtener acceso a un proceso que está cerrándose. (0xc000010a)
+[0805/122352.593:ERROR:process_info.cc(329)] VirtualQueryEx: Acceso denegado. (0x5)
+[0805/122352.594:ERROR:process_info.cc(556)] ReadMemoryInfo failed
+[0805/122352.595:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Se intentó obtener acceso a un proceso que está cerrándose. (0xc000010a)

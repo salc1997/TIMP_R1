@@ -28,6 +28,7 @@ public class ConfiguracaoDeTipoTributoEditar extends TestBaseSteven {
 	public void afterClass() {
 		driver.close();
 	}
+	
 
 	@Test()
 	public void editar() {

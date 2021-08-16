@@ -30,6 +30,7 @@ public class ConfiguraçãoTributoTributoXEstruturaCriar extends TestBaseKenssy{
   @AfterClass
   public void afterClass() {
 	  driver.close();
+	  
   }
 
 	@Test()

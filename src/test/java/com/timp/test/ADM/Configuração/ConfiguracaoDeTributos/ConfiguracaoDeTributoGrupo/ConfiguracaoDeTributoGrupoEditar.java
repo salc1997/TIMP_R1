@@ -27,6 +27,7 @@ public class ConfiguracaoDeTributoGrupoEditar extends TestBaseSteven{
 	@AfterClass
 	public void afterClass() {
 		driver.close();
+		
 	}
 
 	@Test()

@@ -32,6 +32,7 @@ public class ConfiguraçãodeTributoXTributoGrupoVisualizar extends TestBaseSteven
   @AfterClass
   public void afterClass() {
 	  driver.close();
+	  
   }
   
 

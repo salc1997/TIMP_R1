@@ -3,11 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.ExecuçõesSalvasFiltros">
+=======
+      <class name="com.timp.test.DFG.SPED.REINF.SPEDREINFfuncionalidades">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="FiltroID"/>
           <include name="FiltroFilial"/>
+=======
+          <include name="criar"/>
+          <include name="informacao"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="FiltroSub"/>
           <include name="brbEntrar"/>
           <include name="FiltroTributo"/>
@@ -16,8 +26,18 @@
           <include name="FiltroEmpresa"/>
           <include name="NombreHierarquia"/>
           <include name="login"/>
+=======
+          <include name="editar"/>
+          <include name="executar"/>
+          <include name="visualizar"/>
+          <include name="afterClass"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.ExecuçõesSalvasFiltros -->
+=======
+      </class> <!-- com.timp.test.DFG.SPED.REINF.SPEDREINFfuncionalidades -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

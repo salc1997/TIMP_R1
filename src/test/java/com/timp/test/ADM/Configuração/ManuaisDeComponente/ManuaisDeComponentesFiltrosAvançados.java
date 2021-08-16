@@ -33,6 +33,7 @@ public class ManuaisDeComponentesFiltrosAvançados extends TestBaseSteven {
 	@AfterClass
 	public void afterClass() {
 		driver.close();
+		
 	}
 
 

@@ -153,7 +153,7 @@ public class EstruturasVisualizarPO extends TestBaseSteven {
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	    sleep(2000);
+	    sleep(8000);
 	    
 	    String capavisualizarE = capaE.getText();
 		String itemvisualizarE = itemE.getText();

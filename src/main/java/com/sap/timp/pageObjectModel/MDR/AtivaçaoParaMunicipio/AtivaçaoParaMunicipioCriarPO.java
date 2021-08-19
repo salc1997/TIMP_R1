@@ -134,7 +134,7 @@ public class AtivaçaoParaMunicipioCriarPO extends TestBaseSteven {
 		sim.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		biblioteca.click();
 		

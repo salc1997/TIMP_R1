@@ -1228,7 +1228,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 //		executar.click();
 //		sleep(3000);
 //		waitExpectElement(executarM);
-		sleep(12000);
+		sleep(18000);
 		executarM.click();
 		
 		sleep(2000);

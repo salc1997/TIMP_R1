@@ -34,22 +34,14 @@ public class UsuáriosDetalhes extends TestBaseSteven {
 	  driver.close();
 	  
   }
-  
-  @Test(priority = 0)
-	public void login() {
+
+	
+	@Test
+	public void ver() {
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void AcessarADM() {
-
+		
 		acessarADMPO.acessarADM();
 		
-	}
-	
-	@Test(priority = 2)
-	public void ver() {
 		ArrayList<Boolean> sucesso = usuáriosDetalhesPO.Visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

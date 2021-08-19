@@ -1,219 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name="ATR - Arquivos(failed)">
-=======
-  <test thread-count="5" name="Centralização &gt; Saldos(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  <test thread-count="5" name="BSC Automacoes(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID">
+      <class name="com.timp.test.BSC.CorreçãodeNFVisualizarHistorico">
         <methods>
-          <include name="filtro"/>
+          <include name="Aprovar"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID -->
-    </classes>
-  </test> <!-- ATR - Arquivos(failed) -->
-=======
-      <class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosVisualizar">
+      </class> <!-- com.timp.test.BSC.CorreçãodeNFVisualizarHistorico -->
+      <class name="com.timp.test.BSC.CorreçãodeNFEditar">
         <methods>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="executar"/>
+        </methods>
+      </class> <!-- com.timp.test.BSC.CorreçãodeNFEditar -->
+      <class name="com.timp.test.BSC.CorrecaoDeNFDetalhes">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="Aprovar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BSC.CorrecaoDeNFDetalhes -->
+      <class name="com.timp.test.BSC.CorrecaoDeNFAprovarEmMassaCJOB">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="Aprovar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BSC.CorrecaoDeNFAprovarEmMassaCJOB -->
+      <class name="com.timp.test.BSC.CorreçãodeNFAprovarS_JOB">
+        <methods>
+          <include name="afterClass"/>
+          <include name="Aprovar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BSC.CorreçãodeNFAprovarS_JOB -->
+      <class name="com.timp.test.BSC.CorreçãodeNFRejeitar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="rejeitar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BSC.CorreçãodeNFRejeitar -->
+      <class name="com.timp.test.BSC.CorreçãodeNFVisualizar">
+        <methods>
           <include name="beforeClass"/>
           <include name="visualizar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.Centralizacao.Saldos.SaldosVisualizar -->
-      <class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosDetalhes">
-        <methods>
-          <include name="afterClass"/>
-          <include name="detalhes"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.Centralizacao.Saldos.SaldosDetalhes -->
-      <class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="CriarSaldo"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar -->
-      <class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosEditar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="editar"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.Centralizacao.Saldos.SaldosEditar -->
-    </classes>
-  </test> <!-- Centralização > Saldos(failed) -->
-  <test thread-count="5" name="Centralizacao &gt; Movimento(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.Centralizacao.Movimento.MovimentoDetalhes">
+      </class> <!-- com.timp.test.BSC.CorreçãodeNFVisualizar -->
+      <class name="com.timp.test.BSC.CorreçãodeNFAprovarC_JOB">
         <methods>
-          <include name="beforeClass"/>
-          <include name="detalheMovimento"/>
           <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.Centralizacao.Movimento.MovimentoDetalhes -->
-    </classes>
-  </test> <!-- Centralizacao > Movimento(failed) -->
-  <test thread-count="5" name="DeXParaM010 Plano de Contas Societario(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.DeXParaM010PlanodeContasSocietario.DeXParaM010PlanodeContasSocietarioExcluirEmMassa">
-        <methods>
-          <include name="excluirEmMassa"/>
-          <include name="criar"/>
-          <include name="afterClass"/>
+          <include name="Aprovar"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.DeXParaM010PlanodeContasSocietario.DeXParaM010PlanodeContasSocietarioExcluirEmMassa -->
-    </classes>
-  </test> <!-- DeXParaM010 Plano de Contas Societario(failed) -->
-  <test thread-count="5" name="Incentivos Fiscais &gt; Incentivos Fiscais(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisVisualizar">
-        <methods>
-          <include name="visualizar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisVisualizar -->
-    </classes>
-  </test> <!-- Incentivos Fiscais > Incentivos Fiscais(failed) -->
-  <test thread-count="5" name="Saldo Inicial(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.SaldoInicial.SaldoInicialFiltroAvan">
-        <methods>
-          <include name="FiltrarAvanSaldoIncial"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.SaldoInicial.SaldoInicialFiltroAvan -->
-    </classes>
-  </test> <!-- Saldo Inicial(failed) -->
-  <test thread-count="5" name="Thin Capitalization &gt; Empréstimos(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosEditar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="editarEmprestimos"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosEditar -->
-      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluirEmMassa">
-        <methods>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluirEmMassa -->
-      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluir">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="excluirEmprestimos"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluir -->
-      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosCriar">
-        <methods>
-          <include name="criarEmprestimos"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosCriar -->
-    </classes>
-  </test> <!-- Thin Capitalization > Empréstimos(failed) -->
-  <test thread-count="5" name="ICMS-ST Transporte(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteCriar">
+      </class> <!-- com.timp.test.BSC.CorreçãodeNFAprovarC_JOB -->
+      <class name="com.timp.test.BSC.FiltroPorIDRegistroCriar">
         <methods>
           <include name="beforeClass"/>
           <include name="criar"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteCriar -->
+      </class> <!-- com.timp.test.BSC.FiltroPorIDRegistroCriar -->
     </classes>
-  </test> <!-- ICMS-ST Transporte(failed) -->
-  <test thread-count="5" name="SCANC &gt; Ajuste de Transferencia(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.SCANC.AjusteDeTransferencia.AjusteDeTransferenciaExcluirEmMasa">
-        <methods>
-          <include name="afterClass"/>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.SCANC.AjusteDeTransferencia.AjusteDeTransferenciaExcluirEmMasa -->
-    </classes>
-  </test> <!-- SCANC > Ajuste de Transferencia(failed) -->
-  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 22 - Compatibilidade entre FPAS(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASEditar">
-        <methods>
-          <include name="editarCompatibilidadeEntreFPAS"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASEditar -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASDetalhes">
-        <methods>
-          <include name="afterClass"/>
-          <include name="detalhes"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASDetalhes -->
-    </classes>
-  </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 22 - Compatibilidade entre FPAS(failed) -->
-  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 27 - Códigos de Lotação(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoEditar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="editar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoEditar -->
-    </classes>
-  </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 27 - Códigos de Lotação(failed) -->
-  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 28 - Dados de RAT(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela28.DadosDeRATExcluirEmMassa">
-        <methods>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela28.DadosDeRATExcluirEmMassa -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela28.DadosDeRATCriar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela28.DadosDeRATCriar -->
-    </classes>
-  </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 28 - Dados de RAT(failed) -->
-  <test thread-count="5" name="Taxas de Atualização &gt; Alíquotas de Taxa de Atualização(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoDetalhes">
-        <methods>
-          <include name="detalhes"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoDetalhes -->
-      <class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoEditar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="editar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoEditar -->
-    </classes>
-  </test> <!-- Taxas de Atualização > Alíquotas de Taxa de Atualização(failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  </test> <!-- BSC Automacoes(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -90,7 +90,7 @@ public class AtividadeEditarPO extends TestBaseSteven{
 		menu.click();
 		sleep(1000);
 		editar.click();
-		sleep(3000);
+		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		
@@ -118,7 +118,15 @@ public class AtividadeEditarPO extends TestBaseSteven{
 		
 		//driver.findElement(By.xpath("//*[@id=\"description-activities\"]/div/textarea")).click();
 		//attributeToBeXpath("//div[@id=\"name-activities\"]/div/div", "class", "base-input  required type1");
-		waitExpectElement(campo);
+	//	waitExpectElement(campo);
+		
+		
+		menu.click();
+		sleep(1000);
+		editar.click();
+		sleep(6000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		

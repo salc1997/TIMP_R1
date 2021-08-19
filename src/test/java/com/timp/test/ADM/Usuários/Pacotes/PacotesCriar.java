@@ -35,24 +35,12 @@ public class PacotesCriar extends TestBaseMassiel{
 	  
   }
 
-  @Test(priority = 0)
- 	public void login() {
- 		loginTC.login();
-
- 		
- 	}
-
- 	@Test(priority = 1)
- 	public void AcessarADM() {
-
- 		acessarADMPO.acessarADM();
- 		
- 	}
  	
- 	@Test(priority = 2)
+ 	@Test
  	public void Crear() {
 
- 		
+ 		loginTC.login();
+ 		acessarADMPO.acessarADM();
  		boolean sucesso =  pacotesCriarPO.Criar();
 
 		assertTrue(sucesso, Criar);

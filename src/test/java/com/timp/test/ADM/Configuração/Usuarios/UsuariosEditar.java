@@ -32,23 +32,13 @@ public class UsuariosEditar extends TestBaseSteven {
 	  driver.close();
   }
   
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void AcessarADM() {
-
-		acessarADMPO.acessarADM();
-		
-	}
 	
-	@Test(priority = 2)
+	@Test
 	public void Editar() {
 
-		
+		loginTC.login();
+		acessarADMPO.acessarADM();
 		boolean sucesso = usuariosEditarPO.editar();
 		assertTrue(sucesso, Editar);
 

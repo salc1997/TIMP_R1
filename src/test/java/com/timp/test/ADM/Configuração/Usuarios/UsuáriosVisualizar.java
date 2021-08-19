@@ -35,21 +35,14 @@ public class UsuáriosVisualizar extends TestBaseSteven {
 	  
   }
   
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void AcessarADM() {
-
-		acessarADMPO.acessarADM();
-		
-	}
-	
-	@Test(priority = 2)
+	@Test
 	public void ver() {
+		
+		loginTC.login();
+		
+		acessarADMPO.acessarADM();
+
 		ArrayList<Boolean> sucesso = usuáriosVisualizarPO.Visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

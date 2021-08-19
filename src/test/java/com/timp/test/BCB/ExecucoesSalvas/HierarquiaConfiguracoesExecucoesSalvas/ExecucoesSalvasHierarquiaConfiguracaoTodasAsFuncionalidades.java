@@ -59,7 +59,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades extends
 		}
 	}
 	
-	@Test(priority = 3)
+/*	@Test(priority = 3)
 	public void criarConfiguracao() {
 		sleep(2000);
 		boolean sucesso = hierarquiaExecucoesTodasAsFuncionalidadesPO.criarConfiguracao();
@@ -128,6 +128,6 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades extends
 		}
 	}
 	
-	
+	*/
 	
 }

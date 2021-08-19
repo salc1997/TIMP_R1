@@ -30,7 +30,7 @@ public class ExecuçõesSalvasRecalcular extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -51,7 +51,11 @@ public class ExecuçõesSalvasRecalcular extends TestBaseSteven {
 	@Test(priority = 2)
 	public void Filtro() {
 
-		execuçõesSalvasRecalcularPO.Filtros();
+		
+		
+		boolean sucesso = execuçõesSalvasRecalcularPO.Filtros();
+		assertTrue(sucesso, Criar);
+		
 
 	}
 

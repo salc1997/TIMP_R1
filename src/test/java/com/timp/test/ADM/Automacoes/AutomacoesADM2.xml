@@ -15,6 +15,29 @@
 			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãodeTributoXTributoGrupo.ConfiguraçãodeTributoXTributoGrupoExcluir">
 			</class>
 		</classes>
+	</test> 
+	
+	<test name="Configuracao De Tipo Tributo > Configuração Tributo Agrupamento Criar" >
+		<classes>
+			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAgrupamento.ConfiguraçãoTributoAgrupamentoCriar">
+			</class>
+			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAgrupamento.ConfiguraçãoTributoAgrupamentoEditar">
+			</class>
+			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAgrupamento.ConfiguraçãoTributoAgrupamentoVisualizar">
+			</class>
+			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAgrupamento.ConfiguraçãoTributoAgrupamentofiltrar">
+			</class>
+	
+		</classes>
+	</test>
+	
+	<test name="Configuracao De Tipo Tributo > Configuração Tributo Tributo X Estrutura " >
+		<classes>
+			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoTributoXEstrutura.ConfiguraçãoTributoTributoXEstruturaCriar">
+			</class>
+			
+	
+		</classes>
 	</test> <!-- PruebaTest -->
 
 </suite> <!-- Suite -->

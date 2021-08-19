@@ -275,7 +275,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 		
 		sleep(1000);
 		btnExpansaoPastaElement.click();
-		sleep(2000);
+		sleep(5000);
 		
 		btnExpandirPasta1.click();
 		sleep(2000);
@@ -311,7 +311,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 		
 		sleep(1000);
 		btnExpansaoPastaElement.click();
-		sleep(2000);
+		sleep(3000);
 		
 		WebElement pasta3 = driver.findElement(By.xpath("//span[text()=\"Pasta 3\"]"));
 //		waitExpectElement(pasta3);

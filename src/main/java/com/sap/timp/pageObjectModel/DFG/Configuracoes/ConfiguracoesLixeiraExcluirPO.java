@@ -85,6 +85,8 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		
 		String idRegistro =  idObter2();
 		
+		//String idRegistro =  "3899";
+		
 		System.out.println(" Id Registro Busqueda :" + idRegistro  );
 		
 		idFiltro.sendKeys(idRegistro);
@@ -200,7 +202,7 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 			sleep(2000);
 			
 		}else if (tc2 == true) {
-			WebElement raiz1 = driver.findElement(By.xpath("//div[@class=\"baseTabs-view -view-wrapper selected\"]/div/div/div/div[1]/div/div[2]/div[1]"));
+			WebElement raiz1 = driver.findElement(By.xpath("//div[@class=\"baseTabs-view -view-wrapper selected\"]/div/div/div/div[1]/div/div"));
 			raiz1.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -223,7 +225,7 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		filtrosAbansados.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 
 		idFiltro.click();
 		sleep(3000);

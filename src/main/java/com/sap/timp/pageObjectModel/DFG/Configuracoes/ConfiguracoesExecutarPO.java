@@ -215,8 +215,9 @@ public class ConfiguracoesExecutarPO  extends TestBaseMassiel{
 		executar1.click();
 		sleep(25000);
 		sleep(9000);
-		sleep(10000);
-	
+		sleep(12000);
+		sleep(12000);
+		sleep(12000);
 		String valorTC = "1000";
 
 		String nuevoTexto = dato.getText();

@@ -1,219 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name="ATR - Arquivos(failed)">
-=======
-  <test thread-count="5" name="Centralização &gt; Saldos(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  <test thread-count="5" name="Gestao De Credito Tributario ICMS &gt; Configuracao E Execucao Painel Credito ICMS(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSFiltrosAvansados">
         <methods>
-          <include name="filtro"/>
-          <include name="afterClass"/>
           <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="filtros"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID -->
-    </classes>
-  </test> <!-- ATR - Arquivos(failed) -->
-=======
-      <class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosVisualizar">
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSFiltrosAvansados -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSVisualizar">
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
           <include name="visualizar"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.Centralizacao.Saldos.SaldosVisualizar -->
-      <class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosDetalhes">
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSVisualizar -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSExecutar">
         <methods>
-          <include name="afterClass"/>
-          <include name="detalhes"/>
+          <include name="Executar"/>
           <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.Centralizacao.Saldos.SaldosDetalhes -->
-      <class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="CriarSaldo"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar -->
-      <class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosEditar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="editar"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.Centralizacao.Saldos.SaldosEditar -->
-    </classes>
-  </test> <!-- Centralização > Saldos(failed) -->
-  <test thread-count="5" name="Centralizacao &gt; Movimento(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.Centralizacao.Movimento.MovimentoDetalhes">
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSExecutar -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar">
         <methods>
           <include name="beforeClass"/>
-          <include name="detalheMovimento"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.Centralizacao.Movimento.MovimentoDetalhes -->
-    </classes>
-  </test> <!-- Centralizacao > Movimento(failed) -->
-  <test thread-count="5" name="DeXParaM010 Plano de Contas Societario(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.DeXParaM010PlanodeContasSocietario.DeXParaM010PlanodeContasSocietarioExcluirEmMassa">
-        <methods>
-          <include name="excluirEmMassa"/>
           <include name="criar"/>
           <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="editar"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.DeXParaM010PlanodeContasSocietario.DeXParaM010PlanodeContasSocietarioExcluirEmMassa -->
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSEditar -->
     </classes>
-  </test> <!-- DeXParaM010 Plano de Contas Societario(failed) -->
-  <test thread-count="5" name="Incentivos Fiscais &gt; Incentivos Fiscais(failed)">
+  </test> <!-- Gestao De Credito Tributario ICMS > Configuracao E Execucao Painel Credito ICMS(failed) -->
+  <test thread-count="5" name="Gestao De Credito Tributario ICMS &gt; Executados &gt; PainelICMS(failed)">
     <classes>
-      <class name="com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisVisualizar">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir">
         <methods>
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSVisualizar">
+        <methods>
+          <include name="beforeClass"/>
           <include name="visualizar"/>
-          <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.IncentivosFiscais.IncentivosFiscaisVisualizar -->
-    </classes>
-  </test> <!-- Incentivos Fiscais > Incentivos Fiscais(failed) -->
-  <test thread-count="5" name="Saldo Inicial(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.SaldoInicial.SaldoInicialFiltroAvan">
-        <methods>
-          <include name="FiltrarAvanSaldoIncial"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.SaldoInicial.SaldoInicialFiltroAvan -->
-    </classes>
-  </test> <!-- Saldo Inicial(failed) -->
-  <test thread-count="5" name="Thin Capitalization &gt; Empréstimos(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosEditar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="editarEmprestimos"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosEditar -->
-      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluirEmMassa">
-        <methods>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluirEmMassa -->
-      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluir">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="excluirEmprestimos"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluir -->
-      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosCriar">
-        <methods>
-          <include name="criarEmprestimos"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosCriar -->
-    </classes>
-  </test> <!-- Thin Capitalization > Empréstimos(failed) -->
-  <test thread-count="5" name="ICMS-ST Transporte(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteCriar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ICMSSTTransporte.ICMSSTTransporteCriar -->
-    </classes>
-  </test> <!-- ICMS-ST Transporte(failed) -->
-  <test thread-count="5" name="SCANC &gt; Ajuste de Transferencia(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.SCANC.AjusteDeTransferencia.AjusteDeTransferenciaExcluirEmMasa">
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSVisualizar -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSExcluir">
         <methods>
           <include name="afterClass"/>
-          <include name="criar"/>
           <include name="beforeClass"/>
           <include name="excluir"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.SCANC.AjusteDeTransferencia.AjusteDeTransferenciaExcluirEmMasa -->
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSExcluir -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="Editar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSEditar -->
     </classes>
-  </test> <!-- SCANC > Ajuste de Transferencia(failed) -->
-  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 22 - Compatibilidade entre FPAS(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASEditar">
-        <methods>
-          <include name="editarCompatibilidadeEntreFPAS"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASEditar -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASDetalhes">
-        <methods>
-          <include name="afterClass"/>
-          <include name="detalhes"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASDetalhes -->
-    </classes>
-  </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 22 - Compatibilidade entre FPAS(failed) -->
-  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 27 - Códigos de Lotação(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoEditar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="editar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoEditar -->
-    </classes>
-  </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 27 - Códigos de Lotação(failed) -->
-  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 28 - Dados de RAT(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela28.DadosDeRATExcluirEmMassa">
-        <methods>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela28.DadosDeRATExcluirEmMassa -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela28.DadosDeRATCriar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela28.DadosDeRATCriar -->
-    </classes>
-  </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 28 - Dados de RAT(failed) -->
-  <test thread-count="5" name="Taxas de Atualização &gt; Alíquotas de Taxa de Atualização(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoDetalhes">
-        <methods>
-          <include name="detalhes"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoDetalhes -->
-      <class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoEditar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="editar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoEditar -->
-    </classes>
-  </test> <!-- Taxas de Atualização > Alíquotas de Taxa de Atualização(failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  </test> <!-- Gestao De Credito Tributario ICMS > Executados > PainelICMS(failed) -->
 </suite> <!-- Failed suite [Suite] -->

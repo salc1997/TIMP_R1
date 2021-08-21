@@ -3,27 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BCB.ExecucoesSalvas.HierarquiaConfiguracoesExecucoesSalvas.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades">
-=======
-      <class name="com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTEditar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
         <methods>
-<<<<<<< HEAD
+          <include name="listaSuspensa"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="criarConfiguracaoExecucoes"/>
-=======
-          <include name="editar"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BCB.ExecucoesSalvas.HierarquiaConfiguracoesExecucoesSalvas.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades -->
-=======
-      </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTEditar -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

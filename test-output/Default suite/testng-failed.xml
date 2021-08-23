@@ -3,13 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
+      <class name="com.timp.test.BCB.Formula.HierarquiaConfiguracao.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1">
         <methods>
-          <include name="listaSuspensa"/>
-          <include name="afterClass"/>
+          <include name="subNivel4"/>
           <include name="beforeClass"/>
+          <include name="subNivel3"/>
+          <include name="subNivel2"/>
+          <include name="afterClass"/>
+          <include name="outputBCB"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
+      </class> <!-- com.timp.test.BCB.Formula.HierarquiaConfiguracao.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

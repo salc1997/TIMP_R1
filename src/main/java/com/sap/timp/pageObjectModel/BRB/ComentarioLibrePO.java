@@ -194,7 +194,7 @@ public class ComentarioLibrePO extends TestBaseSteven{
 		sleep(2000);
 
 		//waitExpectXpath("/html/body/div[3]/div/div[3]/button");
-		sleep(3000);
+		sleep(4000);
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();

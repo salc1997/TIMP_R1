@@ -79,7 +79,7 @@ public class ListaSuspensaPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[1]/div[1]")
 	public WebElement comentario2;
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[3]/div[1]")
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div[1]")
 	public WebElement comentario1;
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[1]/div[2]/div[1]")
 	public WebElement usuario1;
@@ -178,7 +178,7 @@ public class ListaSuspensaPO extends TestBaseSteven{
 		
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		//waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 		
 		
@@ -223,7 +223,7 @@ public class ListaSuspensaPO extends TestBaseSteven{
 		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(50000);
+		sleep(70000);
 		//sleep(5000);
 		if (amb== false) {
 			menulistaTd1.click();
@@ -249,7 +249,7 @@ public class ListaSuspensaPO extends TestBaseSteven{
 			sleep(3000);
 			
 		}
-		sleep(7000);
+		sleep(9000);
 		teste2.click();
 		sleep(5000);
 		info.click();

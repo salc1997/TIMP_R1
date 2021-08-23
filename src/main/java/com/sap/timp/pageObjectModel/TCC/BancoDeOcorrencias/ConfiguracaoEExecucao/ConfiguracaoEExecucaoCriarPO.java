@@ -97,6 +97,21 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
+	@FindBy(xpath = "//button[@id=\"credit-adjustment-code-button\"]")
+	public WebElement associaçãoCódigoAjusteCrédito;
+	
+	@FindBy(xpath = "//button[@id=\"debit-adjustment-code-button\"]")
+	public WebElement associaçãoCódigoAjusteDébito;
+	
+	@FindBy(xpath = "//button[@id=\"pagamento-adjustment-code-button\"]")
+	public WebElement associaçãoCódigoAjustePagamento;
+	
+	@FindBy(xpath = "//div[@class=\"tr\" and @data-id][\"1\"]/div")
+	public WebElement idS;
+	
+	@FindBy(xpath = "//button[text()=\"Selecionar\"]")
+	public WebElement seleccionar;
+	
 	public ConfiguracaoEExecucaoCriarPO() {
 
 		PageFactory.initElements(driver, this);
@@ -225,6 +240,44 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBaseSteven {
 		}
 		
 		invisibilityOfElementOverlay();
+		
+		
+		associaçãoCódigoAjusteCrédito.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		idS.click();
+		sleep(2000);
+		
+		seleccionar.click();
+		sleep(2000);
+		
+		associaçãoCódigoAjusteDébito.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		idS.click();
+		sleep(2000);
+		
+		seleccionar.click();
+		sleep(2000);
+		
+		
+		
+		associaçãoCódigoAjustePagamento.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		idS.click();
+		sleep(2000);
+		
+		seleccionar.click();
+		sleep(2000);
+		
+		
 		
 		observacao.sendKeys("Teste Automatizado");
 		sleep(2000);

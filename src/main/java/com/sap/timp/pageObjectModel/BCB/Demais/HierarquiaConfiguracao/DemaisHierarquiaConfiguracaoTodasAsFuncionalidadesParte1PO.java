@@ -569,6 +569,9 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		public WebElement pastaLexeiraC;
 		@FindBy(xpath = "//li[@identifier=\"accordion-item-inactiveHierarchies\"]")
 		public WebElement pastaLexeiraH;
+		@FindBy(xpath = "//button[text()=\"Aceitar\"]")
+		public WebElement aceitar;
+	
 				
 	public DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO() {
 		PageFactory.initElements(driver, this);
@@ -1224,10 +1227,12 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 			tp1 = true;
 		}
 		
-//		sleep(1000);
-//		executar.click();
-//		sleep(3000);
+		sleep(1000);
+		aceitar.click();
+		sleep(3000);
 //		waitExpectElement(executarM);
+		
+		
 		sleep(18000);
 		executarM.click();
 		

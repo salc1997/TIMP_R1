@@ -95,8 +95,8 @@ public class PainelCreditoICMSEditarPO extends TestBaseMassiel{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(inputSubperiodo);
-		sleep(3000);
+		//waitExpectElement(inputSubperiodo);
+		sleep(7000);
 
 //		sleep(3000);
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

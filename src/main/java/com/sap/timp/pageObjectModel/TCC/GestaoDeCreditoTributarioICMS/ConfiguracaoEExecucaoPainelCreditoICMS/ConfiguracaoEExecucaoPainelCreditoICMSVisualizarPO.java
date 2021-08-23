@@ -94,7 +94,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSVisualizarPO extends TestBase
 		sleep(2000);
 		waitExpectElement(componenteInput);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		sleep(7000);
 		
 		
 		String empresaV = empresaInput.getText();
@@ -122,7 +122,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSVisualizarPO extends TestBase
 		sleep(2000);
 		waitExpectElement(componenteInput);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		sleep(7000);
 		
 		String empresaE = empresaInput.getText();
 		String filialE = filialInput.getText();

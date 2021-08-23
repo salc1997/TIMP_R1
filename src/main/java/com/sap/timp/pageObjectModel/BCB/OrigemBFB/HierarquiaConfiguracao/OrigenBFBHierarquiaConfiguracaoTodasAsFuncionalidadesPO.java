@@ -1650,11 +1650,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		}else {
 			sucesso.add(false);
 		}
-		
+		sleep(6000);
 		pastaLexeiraC.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		pesquisar.clear();
 		pesquisar.sendKeys(idConfiguracao);

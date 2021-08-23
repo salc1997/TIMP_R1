@@ -45,7 +45,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 	
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar ID Origem\"]")
+	@FindBy(xpath = "//div[@id=\"originID\"]/div/div[1]/div[2]")
 	public WebElement cboIDOrigen;
 	
 	@FindBy(xpath = "//li[text()=\"204 - Teste IRPJ\"]")
@@ -60,7 +60,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 	
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Saida\"]")
+	@FindBy(xpath = "//div[@id=\"outputField\"]/div/div[1]/div[2]")
 	public WebElement cboSaida;
 	
 	@FindBy(xpath = "//li[text()=\"subn 1\"]")
@@ -81,7 +81,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 	public WebElement opcionTipoCredito;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Ajuste de Crédito\"]")
+	@FindBy(xpath = "//div[@id=\"adjustmentOrigin\"]/div/div[1]/div[2]")
 	public WebElement cboACredito;
 	@FindBy(xpath = "//li[text()=\"427 - A0205\"]")
 	public WebElement opcionACreditoTC2;
@@ -154,6 +154,9 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 	@FindBy(xpath = "//button[text()=\"Gravar\"]")
 	public WebElement btnGravar;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement btnNo;
+	
 	@FindBy(xpath = "//*[@id=\"addRowButton\"]/span")
 	public WebElement btnAgregar;
 	
@@ -209,7 +212,8 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 		String id = "0"; // Primer ID antes de crear un registro
 		
 		if(rows > 0) {
-			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[2]/div")).getText();
+
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
 			System.out.println("ID Primer Registro: " + id);
 		}
 		
@@ -231,7 +235,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 		cboComponenteOrigen.click();
 		sleep(1000);
 		opcionComponenteOrigen.click();
-		sleep(7000);
+		sleep(8000);
 		
 		
 		if ( tq1 == true) {
@@ -285,7 +289,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 			cboAjuste.click();
 			sleep(1000);
 			opcionAjusteTQ1.click();
-			sleep(7000);
+			sleep(15000);
 
 
 		}else if(tc2 == true ) {
@@ -294,7 +298,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 			cboIDOrigen.click();
 			sleep(1000);
 			opcionIDOrigenTC2.click();
-			sleep(7000);
+			sleep(16000);
 			
 			cboSaida.click();
 			sleep(1000);
@@ -313,7 +317,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 			cboTipoCredito.click();
 			sleep(2000);
 			opcionTipoCreditoTC2.click();
-			sleep(3000);
+			sleep(19000);
 			
 			cboACredito.click();
 			sleep(1000);
@@ -403,6 +407,9 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 		sleep(2000);
 	
 		btnGravar.click();
+		sleep(2000);
+		
+		btnNo.click();
 		sleep(2000);
 
 		sleep(2000);

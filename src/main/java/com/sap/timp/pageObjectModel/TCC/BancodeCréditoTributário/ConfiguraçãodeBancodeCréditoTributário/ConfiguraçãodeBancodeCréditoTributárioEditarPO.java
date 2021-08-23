@@ -38,6 +38,9 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditarPO extends TestBaseMass
 	@FindBy(xpath = "//li[text()=\"433 - P0039\"]")
 	public WebElement opcionAjusteTQ1;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement btnNo;
+	
 	public ConfiguraçãodeBancodeCréditoTributárioEditarPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -128,6 +131,10 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditarPO extends TestBaseMass
 		
 		btnGravar.click();
 		sleep(2000);
+		
+		btnNo.click();
+		sleep(2000);
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

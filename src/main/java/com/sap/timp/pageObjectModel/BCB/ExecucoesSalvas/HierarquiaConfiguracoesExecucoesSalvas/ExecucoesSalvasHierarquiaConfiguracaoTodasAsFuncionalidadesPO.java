@@ -332,7 +332,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 
 		sleep(2000);
 		execucoes.click();
-		sleep(4000);
+		sleep(7000);
 		execucacoConsolidacao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -1,141 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name="Gestao De Credito Tributario ICMS &gt; Configuracao E Execucao &gt; Registro 1200(failed)">
-=======
-  <test thread-count="5" name="PublicoEPrivado(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  <test thread-count="5" name="Tabelas de Apoio do Sped &gt; Classificação De Contribuentes Do IPI(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200FiltrosAvansados">
-=======
-      <class name="com.timp.test.BRB.PublicoEPrivado">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-        <methods>
-<<<<<<< HEAD
-          <include name="filtrosAvancados"/>
-=======
-          <include name="beforeClass"/>
-          <include name="publicoYPRivado"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.PublicoEPrivado -->
-    </classes>
-  </test> <!-- PublicoEPrivado(failed) -->
-  <test thread-count="5" name="CriarComCopia(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.CriarComCopia">
-        <methods>
-          <include name="criarCopia"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200FiltrosAvansados -->
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Criar">
-=======
-      </class> <!-- com.timp.test.BRB.CriarComCopia -->
-    </classes>
-  </test> <!-- CriarComCopia(failed) -->
-  <test thread-count="5" name="AgrupadoPeloCampo(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.AgrupadoPeloCampo">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="agrupadoPeloCampo"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.AgrupadoPeloCampo -->
-    </classes>
-  </test> <!-- AgrupadoPeloCampo(failed) -->
-  <test thread-count="5" name="CrescenteEDecrescente(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.CrescenteEDecrescente">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar">
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="criar"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Criar -->
-=======
-          <include name="crescenteEDecrescente"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.CrescenteEDecrescente -->
-    </classes>
-  </test> <!-- CrescenteEDecrescente(failed) -->
-  <test thread-count="5" name="ComentarioListaSuspensa(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
-        <methods>
-          <include name="listaSuspensa"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
-    </classes>
-  </test> <!-- ComentarioListaSuspensa(failed) -->
-  <test thread-count="5" name="ComentarioLibre(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.ComentarioLibre">
-        <methods>
-          <include name="comentarioLibre"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.ComentarioLibre -->
-    </classes>
-  </test> <!-- ComentarioLibre(failed) -->
-  <test thread-count="5" name="Output Automatico(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.OutputAutomático">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="outputAutomatico"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.OutputAutomático -->
-    </classes>
-  </test> <!-- Output Automatico(failed) -->
-  <test thread-count="5" name="Output Referencia(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.OutputdeReferência">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="outputReferencia"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.OutputdeReferência -->
-    </classes>
-  </test> <!-- Output Referencia(failed) -->
-  <test thread-count="5" name="Atribucao De Regra (Regra)(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.AtribuiçãodeRegra">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
           <include name="editar"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.AtribuiçãodeRegra -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-    </classes>
-<<<<<<< HEAD
-  </test> <!-- Gestao De Credito Tributario ICMS > Configuracao E Execucao > Registro 1200(failed) -->
-  <test thread-count="5" name="Gestao De Credito Tributario ICMS &gt; Executados &gt; Registro 1200(failed)">
-    <classes>
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.Registro1200.Executados1200Editar">
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar -->
+      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIFiltrosAvançados">
         <methods>
           <include name="afterClass"/>
-          <include name="Editar"/>
+          <include name="beforeClass"/>
+          <include name="filtros"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIFiltrosAvançados -->
+      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIExcluirMassa">
+        <methods>
+          <include name="excluirMassa"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIExcluirMassa -->
+      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIVisualizar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="visualizar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIVisualizar -->
+      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPICriar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criar"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.Registro1200.Executados1200Editar -->
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPICriar -->
+      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIDetalhes">
+        <methods>
+          <include name="afterClass"/>
+          <include name="detalhes"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIDetalhes -->
     </classes>
-  </test> <!-- Gestao De Credito Tributario ICMS > Executados > Registro 1200(failed) -->
-=======
-  </test> <!-- Atribucao De Regra (Regra)(failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  </test> <!-- Tabelas de Apoio do Sped > Classificação De Contribuentes Do IPI(failed) -->
+  <test thread-count="5" name="Tabelas de Apoio do Sped &gt; Código de Codigo de Contribuição Social Apurada(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada.CodigoContribuiçaoSocialApuradaVisualizar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="visualizar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada.CodigoContribuiçaoSocialApuradaVisualizar -->
+    </classes>
+  </test> <!-- Tabelas de Apoio do Sped > Código de Codigo de Contribuição Social Apurada(failed) -->
+  <test thread-count="5" name="4.5.4 Tabelas de Apoio do Sped &gt; Código de Ajuste da Apuração do IPI(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioSped.CodigoDeAjusteDaApuraçaoDoIPI.CodigoDeAjusteDaApuraçaoDoIPIExcluirEmMassa">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.CodigoDeAjusteDaApuraçaoDoIPI.CodigoDeAjusteDaApuraçaoDoIPIExcluirEmMassa -->
+    </classes>
+  </test> <!-- 4.5.4 Tabelas de Apoio do Sped > Código de Ajuste da Apuração do IPI(failed) -->
+  <test thread-count="5" name="Tabelas de Apoio do Sped &gt; De Para Livro Apuração X Sped Fiscal (DE X Para)(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioSped.DeParaLivroApuraçaoXSpedFiscal.DeParaLivroApuraçaoXSpedFiscalEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.DeParaLivroApuraçaoXSpedFiscal.DeParaLivroApuraçaoXSpedFiscalEditar -->
+      <class name="com.timp.test.MDR.TabelasApoioSped.DeParaLivroApuraçaoXSpedFiscal.DeParaLivroApuraçaoXSpedFiscalCriar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.DeParaLivroApuraçaoXSpedFiscal.DeParaLivroApuraçaoXSpedFiscalCriar -->
+    </classes>
+  </test> <!-- Tabelas de Apoio do Sped > De Para Livro Apuração X Sped Fiscal (DE X Para)(failed) -->
+  <test thread-count="5" name="5.2 Tabelas de Apoio do Sped &gt; Informações Adicionais(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioSped.InformaçoesAdicionais.InformaçoesAdicionaisEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.InformaçoesAdicionais.InformaçoesAdicionaisEditar -->
+    </classes>
+  </test> <!-- 5.2 Tabelas de Apoio do Sped > Informações Adicionais(failed) -->
+  <test thread-count="5" name="Tabelas Complementares para Obrigações Acessórias &gt; Tabela Complementar para DIRF(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFFiltrosAvan">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="filtrosAvanTabelaComplementarParaDIRF"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaComplementarParaDIRF.TabelaComplementarParaDIRFFiltrosAvan -->
+    </classes>
+  </test> <!-- Tabelas Complementares para Obrigações Acessórias > Tabela Complementar para DIRF(failed) -->
+  <test thread-count="5" name="Tabelas Complementares para Obrigações Acessórias &gt; Tabela de Código e Classe para Quadro(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoEClasseParaQuadro.TabelaDeCodigoEClasseParaQuadroVisualizar">
+        <methods>
+          <include name="Visualizar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeCodigoEClasseParaQuadro.TabelaDeCodigoEClasseParaQuadroVisualizar -->
+    </classes>
+  </test> <!-- Tabelas Complementares para Obrigações Acessórias > Tabela de Código e Classe para Quadro(failed) -->
 </suite> <!-- Failed suite [Suite] -->

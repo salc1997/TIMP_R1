@@ -145,7 +145,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriarPO extends TestBaseMassi
 			sleep(2000);
 			
 			leiaute.click();
-			sleep(2000);
+			sleep(4000);
 			
 			leiauteOPC2.click();
 			sleep(2000);

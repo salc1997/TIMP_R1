@@ -151,7 +151,7 @@ public class ConfiguraçãoeExecuçãoFiltrosAvaPO extends TestBaseSteven {
 		sleep(7000);
 		
 		uf.click();
-		sleep(2000);
+		sleep(6000);
 		
 		
 		if (tc2==true) {
@@ -170,7 +170,7 @@ public class ConfiguraçãoeExecuçãoFiltrosAvaPO extends TestBaseSteven {
 		
 		if (tc2==true) {
 			opcFilialTC2.click();
-			sleep(7000);
+			sleep(9000);
 
 		}else {
 			opcFilialTP1.click();

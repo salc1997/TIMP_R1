@@ -68,7 +68,7 @@ public class ConfiguraçãoeExecuçãoExcluirPO extends TestBaseKenssy{
 		actionsMoveToElementElement(menu);
 		sleep(2000);
 		menu.click();
-		sleep(2000);
+		sleep(4000);
 		excluir.click();
 		sleep(2000);
 		waitExpectElement(sim);

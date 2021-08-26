@@ -131,7 +131,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 		sleep(1000);
 		btnCriar.click();
 		
-		sleep(2000);
+		sleep(4000);
 		btnCriarPasta.click();
 		sleep(2000);
 		

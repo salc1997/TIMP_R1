@@ -35,6 +35,9 @@ public class ConfiguracoesEditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//button[text()=\"Salvar\"]")
 	public WebElement salvar;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement no;
+	
 	
 	@FindBy(xpath = "//div[@id=\"accordion\"]/div/div/div/div/div/input")
 	public WebElement pesquisar;
@@ -105,6 +108,10 @@ public class ConfiguracoesEditarPO extends TestBaseSteven{
 		sleep(1000);
 		
 		salvar.click();
+		
+		sleep(3000);
+		
+		no.click();
 		
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

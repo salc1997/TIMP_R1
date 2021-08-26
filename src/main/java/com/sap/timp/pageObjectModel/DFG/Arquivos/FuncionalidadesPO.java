@@ -77,6 +77,9 @@ public class FuncionalidadesPO extends TestBaseFernando{
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement btnSim;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement btnNO;
+	
 	@FindBy(xpath = "//span[text()=\"Justificativa\"]")
 	public WebElement btnJustificativa;
 	
@@ -643,7 +646,7 @@ public class FuncionalidadesPO extends TestBaseFernando{
 
 		WebElement monthCalendar = driver.findElement(By.xpath("//div[@tabindex=\"0\" and contains(@class, \"month\") and text()=\"Jan\"]"));
 		monthCalendar.click();
-		sleep(3000);
+		sleep(5000);
 
 		WebElement subperiodoCalendar = driver.findElement(By.xpath("//span[@class=\"subperiod-text\" and text()=\"1M\"]"));
 		subperiodoCalendar.click();
@@ -663,9 +666,13 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		btnGravar.click();
 		sleep(1000);
 		
+		
+		 btnNO.click();
+		sleep(15000);
+		
 		// Verificar si es guardado con exito, si no se va quedar esperando por el
 		// waitExpectXpath
-		waitExpectXpath("//li[@class=\"base-toast  toast-success   \"]");
+		//waitExpectXpath("//li[@class=\"base-toast  toast-success   \"]");
 		String mensajeSucesso = driver.findElement(By.xpath("//li[@class=\"base-toast  toast-success   \"]/div/span[2]/span")).getText();
 		invisibilityOfElement("//li[@class=\"base-toast  toast-success   \"]");
 		sleep(2000);

@@ -36,6 +36,8 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Limpar Filtros\"]")
 	public WebElement limpiar;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement no;
 	
 	public ConfiguracoesLixeiraExcluirPO() {
 
@@ -111,6 +113,9 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		sleep(3000);
 		sleep(9000);
 		
+		no.click();
+		sleep(3000);
+		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String idUltimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
 		
@@ -129,7 +134,9 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		System.out.println(sucesso);
 		
 		lixeria.click();
-		sleep(3000);
+		sleep(5000);
+		
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -159,7 +166,10 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		
 		excluir.click();
 		sleep(3000);
-		sleep(9000);
+		sleep(12000);
+		
+		no.click();
+		sleep(3000);
 		
 		limpiar.click();
 		sleep(3000);

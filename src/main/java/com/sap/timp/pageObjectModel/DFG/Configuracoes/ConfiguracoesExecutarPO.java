@@ -134,7 +134,7 @@ public class ConfiguracoesExecutarPO  extends TestBaseMassiel{
 		filtrosAbansados.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 
 		idFiltro.click();
 		sleep(3000);

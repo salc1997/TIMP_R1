@@ -195,7 +195,7 @@ public class RegistroM600CriarPO extends TestBaseSteven{
 		filialO.click();
 		sleep(1000);
 		closeSelectTypeCheckbox(filial);
-		sleep(1000);
+		sleep(6000);
 		
 	
 		valorTotalContribuicao.click();

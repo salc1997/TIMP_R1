@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia">
+      <class name="com.timp.test.MDR.TabelasApoioSped.InformaçoesAdicionais.InformaçoesAdicionaisEditar">
         <methods>
           <include name="afterClass"/>
-          <include name="excluirCopia"/>
-          <include name="editarCopia"/>
           <include name="beforeClass"/>
-          <include name="criarCopia"/>
+          <include name="editar"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia -->
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.InformaçoesAdicionais.InformaçoesAdicionaisEditar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

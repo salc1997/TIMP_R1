@@ -28,7 +28,7 @@ public class Registro1700Criar extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test()

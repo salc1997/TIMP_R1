@@ -121,6 +121,9 @@
 
 			<class
 				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeVisualizar"></class>
+				
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar"></class>
 
 
 			<class

@@ -192,13 +192,11 @@ public class AtividadeExcluirMassaPO extends TestBaseFernando{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);	
+		sleep(7000);	
 		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+	
 		
-		biblioteca.click();
+		/*biblioteca.click();
 		sleep(2000);
 		waitExpectElement(sim);
 		sim.click();
@@ -209,7 +207,7 @@ public class AtividadeExcluirMassaPO extends TestBaseFernando{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		*/
 		btnUltimaPagina.click();
 		
 		sleep(2000);
@@ -250,23 +248,9 @@ public class AtividadeExcluirMassaPO extends TestBaseFernando{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);	
+		sleep(7000);		
 		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);	
 		
-		biblioteca.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sim.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 
 		btnUltimaPagina.click();
 		

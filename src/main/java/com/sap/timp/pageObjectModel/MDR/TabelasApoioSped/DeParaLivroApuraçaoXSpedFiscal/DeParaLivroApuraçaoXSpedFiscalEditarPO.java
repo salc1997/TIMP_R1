@@ -149,7 +149,7 @@ public class DeParaLivroApuraçaoXSpedFiscalEditarPO extends TestBaseSteven {
 		sleep(2000);
 		waitExpectElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		
 		boolean sucesso = data.contains(datavigencia.getAttribute("value"));

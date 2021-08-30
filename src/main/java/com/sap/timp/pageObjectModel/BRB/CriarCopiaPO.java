@@ -206,7 +206,7 @@ public class CriarCopiaPO extends TestBaseSteven{
 		
 		fecharMensagens("//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]", "//*[@id=\"toast-wrapper\"]/ul/li[2]/div/span[3]");	
 	
-		sleep(2000);
+		sleep(5000);
 	
 		lixeira.click();
 		

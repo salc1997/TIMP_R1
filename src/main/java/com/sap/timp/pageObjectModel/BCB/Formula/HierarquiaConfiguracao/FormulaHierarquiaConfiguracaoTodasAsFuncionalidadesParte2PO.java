@@ -116,7 +116,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 	public WebElement executarB;
 	
 	//VERIFICAR INFORMACION DE SUBNIVELES
-	@FindBy(xpath = "//div[contains(@class,\"lvl-0\")]/div/div/div/div")
+	@FindBy(xpath = "//div[contains(@class,\"lvl-0\")]/div[1]/div[1]/div[1]/div[1]")
 	public WebElement aba1;
 	
 	@FindBy(xpath = "//div[contains(@class,\"lvl-1\")]/div[1]/div[1]/div[1]/div[1]")
@@ -587,7 +587,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		waitExpectElement(aba1);
-		sleep(3000);
+		sleep(13000);
 		
 		aba1.click();
 		sleep(2000);
@@ -891,7 +891,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		
 		menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div"));
 		WebElement excluirC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
@@ -962,7 +962,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		sleep(2000);
+		sleep(5000);
 		
 		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();
 		System.out.println(exclucao);
@@ -990,7 +990,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		sleep(2000);
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div"));
 		WebElement excluirH = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));

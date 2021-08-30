@@ -369,7 +369,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	public WebElement executarB;
 	
 	//VERIFICAR INFORMACION DE SUBNIVELES
-	@FindBy(xpath = "//div[contains(@class,\"lvl-0\")]/div/div/div/div")
+	@FindBy(xpath = "//div[contains(@class,\"lvl-0\")]/div[1]/div[1]/div[1]/div[1]")
 	public WebElement aba1;
 	
 	@FindBy(xpath = "//div[contains(@class,\"lvl-1\")]/div[1]/div[1]/div[1]/div[1]")
@@ -1786,8 +1786,8 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 //		sleep(3000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(aba1);
-		sleep(2000);
+	//	waitExpectElement(aba1);
+		sleep(12000);
 		
 		aba1.click();
 		sleep(2000);

@@ -312,7 +312,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		public WebElement executarB;
 		
 	//VERIFICAR INFORMACION DE SUBNIVELES
-		@FindBy(xpath = "//div[contains(@class,\"lvl-0\")]/div/div/div/div")
+		@FindBy(xpath = "//div[contains(@class,\"lvl-0\")]/div[1]/div[1]/div[1]/div[1]")
 		public WebElement aba1;
 		
 		@FindBy(xpath = "//div[contains(@class,\"lvl-1\")]/div[1]/div[1]/div[1]/div[1]")
@@ -829,9 +829,9 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		campolinha1.click();
 		sleep(2000);
 		campoLinhaO1.click();
-		sleep(2000);
+		sleep(8000);
 		
-		attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
+		//attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
 		sleep(3000);
 		
 		selectBFB.click();

@@ -3,13 +3,26 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.TabelasApoioSped.InformaçoesAdicionais.InformaçoesAdicionaisEditar">
+=======
+      <class name="com.timp.test.BPMA.ProcessodeNegocio.ProcessodeNegocioCriarCopia">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="editar"/>
+=======
+          <include name="CriarCopia"/>
+          <include name="beforeClass"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioSped.InformaçoesAdicionais.InformaçoesAdicionaisEditar -->
+=======
+      </class> <!-- com.timp.test.BPMA.ProcessodeNegocio.ProcessodeNegocioCriarCopia -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -369,7 +369,7 @@ public class PercentualPO extends TestBaseKenssy {
 	public WebElement executarB;
 	
 	//VERIFICAR INFORMACION DE SUBNIVELES
-	@FindBy(xpath = "//div[contains(@class,\"lvl-0\")]/div/div/div/div")
+	@FindBy(xpath = "//div[contains(@class,\"lvl-0\")]/div[1]/div[1]/div[1]/div[1]")
 	public WebElement aba1;
 	
 	@FindBy(xpath = "//div[contains(@class,\"lvl-1\")]/div[1]/div[1]/div[1]/div[1]")
@@ -542,12 +542,12 @@ public class PercentualPO extends TestBaseKenssy {
 		
 		executarN.click();
 		
-		sleep(10000);
+		sleep(15000);
 		
 		
 	
 		//waitExpectElement(aba1);
-		sleep(2000);
+		sleep(15000);
 		
 		aba1.click();
 		sleep(2000);

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRB.CriarComCopia">
+      <class name="com.timp.test.BPMA.ProcessodeNegocio.ProcessodeNegocioCriarCopia">
         <methods>
-          <include name="criarCopia"/>
-          <include name="beforeClass"/>
           <include name="afterClass"/>
+          <include name="CriarCopia"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.CriarComCopia -->
+      </class> <!-- com.timp.test.BPMA.ProcessodeNegocio.ProcessodeNegocioCriarCopia -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

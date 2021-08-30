@@ -188,7 +188,7 @@ public class ProcessodeNegócioCriarCopiaPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		no.click();
-		sleep(8000);
+		sleep(10000);
 		
 		biblioteca.click();
 		sleep(3000);

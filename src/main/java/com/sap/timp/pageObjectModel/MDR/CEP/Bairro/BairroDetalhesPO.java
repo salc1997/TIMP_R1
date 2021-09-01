@@ -13,7 +13,7 @@ import com.sap.timp.base.TestBaseSteven;
 public class BairroDetalhesPO extends TestBaseSteven{
 	
 
-	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
+	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
 	public WebElement cep;
 	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
 	public WebElement cep2;

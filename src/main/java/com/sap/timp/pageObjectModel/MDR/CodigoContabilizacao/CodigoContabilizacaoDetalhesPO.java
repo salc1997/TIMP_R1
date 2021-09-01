@@ -50,9 +50,9 @@ public class CodigoContabilizacaoDetalhesPO extends TestBaseSteven {
 	public WebElement documentoContabilD;
 	@FindBy(xpath = "//div[@id=\"detail-description\"][9]/div[2]/div")
 	public WebElement tributoD;
-	@FindBy(xpath = "//div[@id=\"detail-description\"][10]/div[2]/div")
+	@FindBy(xpath = "//div[@id=\"detail-description\"][11]/div[2]/div")
 	public WebElement tipoTributoD;
-	@FindBy(xpath = "//div[@id=\"detail-description\"][13]/div[2]/div")
+	@FindBy(xpath = "//div[@id=\"detail-description\"][14]/div[2]/div")
 	public WebElement dataVigenciaD;
 	@FindBy(xpath = "//div[@id=\"detail-description\"][15]/div[2]/div")
 	public WebElement ativoD;

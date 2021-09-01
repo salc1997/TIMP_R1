@@ -33,7 +33,7 @@ public class LogradouroFiltrosPO extends TestBaseSteven{
 			cep2.click();
 			sleep(1000);
 		} else {
-			cep.click();
+			cep2.click();
 			sleep(1000);
 		}
 		logradouro.click();

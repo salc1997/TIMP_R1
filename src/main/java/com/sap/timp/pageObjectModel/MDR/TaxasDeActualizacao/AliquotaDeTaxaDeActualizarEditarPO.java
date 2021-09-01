@@ -70,7 +70,7 @@ public class AliquotaDeTaxaDeActualizarEditarPO extends TestBaseSteven{
 		editar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributoNotToBeEmptyElement(taxa, "value");
+		//attributoNotToBeEmptyElement(taxa, "value");
 		
 		
 		sleep(2000);

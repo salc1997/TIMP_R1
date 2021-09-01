@@ -33,6 +33,9 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement no;
+	
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement aceitar;
 	
@@ -114,7 +117,7 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 		
 		if(rows > 0) {
 			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-			System.out.println(id);
+			//System.out.println(id);
 		}
 		//String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
@@ -142,7 +145,7 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 		tributo.click();
 		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 		
 		attributeToBeXpath("//div[@id=\"tax-type-transfers\"]/div", "class", "base-select required");
 		sleep(2000);
@@ -295,20 +298,26 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 		biblioteca.click();
 		
 		sleep(2000);
+
+		
+		no.click();
+		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
+		
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		int rows1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows1+"]/div[3]/div")).getText();
 		
-		rows = rows -1;
-		String id3 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		rows1 = rows1 -1;
+		String id3 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows1+"]/div[3]/div")).getText();
 		
 		
 

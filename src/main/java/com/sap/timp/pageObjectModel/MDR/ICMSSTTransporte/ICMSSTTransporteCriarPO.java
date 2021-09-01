@@ -28,7 +28,7 @@ public class ICMSSTTransporteCriarPO extends TestBaseSteven{
 	
 	
 	
-	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
+	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-left\"]")
 	public WebElement siguiente;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -65,7 +65,7 @@ public class ICMSSTTransporteCriarPO extends TestBaseSteven{
 		sleep(2000);
 	
 		//conta o numero de linhas
-		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		int rows = 1;
 		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
 		System.out.println(id);
@@ -106,7 +106,7 @@ public class ICMSSTTransporteCriarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		rows = 1;
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
 		

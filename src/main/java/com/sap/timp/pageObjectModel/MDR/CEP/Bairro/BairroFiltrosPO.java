@@ -54,7 +54,7 @@ public class BairroFiltrosPO extends TestBaseSteven{
 			cep2.click();
 			sleep(1000);
 		} else {
-			cep.click();
+			cep2.click();
 			sleep(1000);
 		}
 		bairro.click();

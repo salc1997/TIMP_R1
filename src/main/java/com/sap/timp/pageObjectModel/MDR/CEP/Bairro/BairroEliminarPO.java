@@ -56,8 +56,11 @@ public class BairroEliminarPO extends TestBaseSteven{
 	    
 		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
+		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		menu.click();
 		sleep(2000);
 		excluir.click();

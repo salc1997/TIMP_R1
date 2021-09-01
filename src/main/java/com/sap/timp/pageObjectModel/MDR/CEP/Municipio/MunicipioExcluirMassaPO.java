@@ -111,7 +111,7 @@ public class MunicipioExcluirMassaPO extends TestBaseFernando{
 			cep2.click();
 			sleep(1000);
 		} else {
-			cep.click();
+			cep2.click();
 			sleep(1000);
 		}
 		

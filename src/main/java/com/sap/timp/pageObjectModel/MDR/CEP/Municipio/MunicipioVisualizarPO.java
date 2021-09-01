@@ -58,7 +58,7 @@ public class MunicipioVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[contains(@placeholder,\"UF\")]")
 	public WebElement uf;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"cep\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Selecionar CEP\")]")
 	public WebElement cepN;
 	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Loc in sit\")]")
@@ -99,7 +99,7 @@ String url = driver.getCurrentUrl();
 			cep2.click();
 			sleep(1000);
 		} else {
-			cep.click();
+			cep2.click();
 			sleep(1000);
 		}
 		

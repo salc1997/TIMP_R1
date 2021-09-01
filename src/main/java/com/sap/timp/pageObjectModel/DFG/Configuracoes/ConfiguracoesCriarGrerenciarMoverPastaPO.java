@@ -290,7 +290,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 		btnGerenciarPasta.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		//waitExpectElement(nomePasta2);
 		nomePasta2.clear();
 		nomePasta2.click();

@@ -22,7 +22,7 @@
 			<class name="com.timp.test.MDR.RegistroECAC.RegistroECACExcluirMassa"></class>
 		</classes>
 	</test>
-	<test name="TiposDeServicos">
+	<test name="Atividades Para Tributacao >  TiposDeServicos">
 		<classes>
 			<!-- Atividades Para Tributacao > Tipos De Servicos -->	
 			<class name="com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosCriar"></class>

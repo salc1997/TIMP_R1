@@ -133,7 +133,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 	@FindBy(xpath = "//table[@class=\"create-rule-form\"]/tbody/tr[4]/td[2]/div/div/div[2] ")
 	public WebElement tipoRegra;
 	
-	@FindBy(xpath = "//table[@class=\"create-rule-form\"]/tbody/tr[5]/td[2]/div/div/div[2] ")
+	@FindBy(xpath = "//table[@class=\"create-rule-form\"]/tbody/tr[5]/td[2]/div/div[2] ")
 	public WebElement componente;
 	
 	@FindBy(xpath = "//div[@class=\"base-MultipleSelect3 required\"]/div/div[2]")
@@ -1070,7 +1070,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		WebElement Opc = driver.findElement(By.xpath("//li[@id=\"option-4\"]"));
 
 		Opc .click();
-		sleep(2000);
+		sleep(6000);
 
 		
 		if (tq1 == true) {
@@ -1210,7 +1210,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		versaoLeiauteReferencia.click();
 		sleep(2000);
 		versaoLeiauteOPC.click();
-		sleep(2000);
+		sleep(8000);
 
 		String idRegistro2 = idObter3();
 		System.out.println(idRegistro2);
@@ -1225,12 +1225,12 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		WebElement Opc1 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro2+"\")]"));
 
 		Opc1 .click();
-		sleep(4000);
+		sleep(6000);
 
 		versaoLeiauteComparacao.click();
 		sleep(2000);
 		versaoLeiauteOPC.click();
-		sleep(2000);
+		sleep(8000);
 		
 		caracteristicaEspacialReferencia.click();
 		sleep(2000);
@@ -1455,7 +1455,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		WebElement Opc6 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro+"\")]"));
 
 		Opc6 .click();
-		sleep(4000);
+		sleep(6000);
 
 		versaoConfiguracoe.click();
 		sleep(2000);
@@ -1568,9 +1568,10 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		fechaConfiguracoe.sendKeys(Keys.ENTER);
 		
 		closeSelectTypeCheckbox(fechaConfiguracoeSpan);
+		sleep(4000);
 		
 		salvar.click();
-		sleep(8000);
+		sleep(16000);
 		
 		waitExpectElement(siguiente);
 		sleep(3000);
@@ -1646,7 +1647,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		sleep(4000);
 
 		versaoConfiguracoe.click();
-		sleep(2000);
+		sleep(6000);
 
 		versaoLeiauteOPC.click();
 		sleep(2000);
@@ -1757,9 +1758,10 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		fechaConfiguracoe.sendKeys(Keys.ENTER);
 		
 		closeSelectTypeCheckbox(fechaConfiguracoeSpan);
+		sleep(4000);
 		
 		salvar.click();
-		sleep(8000);
+		sleep(16000);
 		
 		waitExpectElement(siguiente);
 		sleep(3000);
@@ -1905,7 +1907,10 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		sleep(10000);
 		
 		gravarExecutado.click();
-		sleep(2000);
+		sleep(4000);
+		
+		no.click();
+		sleep(8000);
 	
 		biblioteca.click();
 		sleep(2000);
@@ -2005,6 +2010,10 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		gravarExecutado.click();
 		sleep(2000);
 	
+		no.click();
+		sleep(8000);
+	
+		
 		
 		biblioteca.click();
 		sleep(2000);
@@ -2210,7 +2219,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		
 		AN4OPC.click();
-		sleep(3000);
+		sleep(6000);
 	
 		
 		leiauteReferenciaAN4.click();
@@ -2233,7 +2242,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		
 		AN4OPC.click();
-		sleep(3000);
+		sleep(6000);
 		
 		
 		configuracionReferenciaAN4.click();
@@ -2252,10 +2261,10 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		sleep(4000);
 		
 		actionsMoveToElementElement(adicionarFiltroReferenciaAN4);
-		sleep(4000);
+		sleep(6000);
 		
 		adicionarFiltroReferenciaAN4.click();
-		sleep(5000);
+		sleep(6000);
 		
 		
 		if (tq1 == true) {

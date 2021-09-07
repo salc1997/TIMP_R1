@@ -139,7 +139,7 @@ public class ConfiguracoesExecutarPO  extends TestBaseMassiel{
 		idFiltro.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		String idRegistro =  idObter2();
 		
@@ -215,6 +215,7 @@ public class ConfiguracoesExecutarPO  extends TestBaseMassiel{
 		executar1.click();
 		sleep(25000);
 		sleep(9000);
+		sleep(12000);
 		sleep(12000);
 		sleep(12000);
 		sleep(12000);

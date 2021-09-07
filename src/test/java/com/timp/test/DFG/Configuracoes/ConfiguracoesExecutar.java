@@ -34,21 +34,13 @@ public class ConfiguracoesExecutar extends TestBaseMassiel{
 	 // driver.close();
   }
 
-  @Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
+ 
 
-	@Test(priority = 1)
-	public void dfgEntrar() {
-		acessarDFGPO.acessarDFG();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void executar() {
 		
-		
+		loginTC.login();
+		acessarDFGPO.acessarDFG();
 		ArrayList<Boolean> sucesso =configuracoesExecutarPO.Executar();
 		
 		for (int i = 0; i < sucesso.size(); i++) {

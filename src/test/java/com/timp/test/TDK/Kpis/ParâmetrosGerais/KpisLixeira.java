@@ -1,4 +1,4 @@
-package com.timp.test.TDK.Kpis;
+package com.timp.test.TDK.Kpis.ParâmetrosGerais;
 
 import static org.testng.Assert.assertTrue;
 

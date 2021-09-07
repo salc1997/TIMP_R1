@@ -1,4 +1,4 @@
-package com.timp.test.TDK.Kpis;
+package com.timp.test.TDK.Kpis.ParâmetrosGerais;
 
 import org.testng.annotations.Test;
 

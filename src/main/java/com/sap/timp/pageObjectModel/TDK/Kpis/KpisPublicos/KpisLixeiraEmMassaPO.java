@@ -107,7 +107,7 @@ public class KpisLixeiraEmMassaPO extends TestBaseMassiel{
 		sleep(4000);
 		
 		clasificacion.click();
-		sleep(4000);
+		sleep(6000);
 		
 		clasificacionOPC.click();
 		sleep(2000);
@@ -135,7 +135,7 @@ public class KpisLixeiraEmMassaPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		waitExpectElement(biblioteca);
-		sleep(4000);
+		sleep(8000);
 		
 		biblioteca.click();
 		sleep(2000);
@@ -168,7 +168,7 @@ public class KpisLixeiraEmMassaPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		clasificacion.click();
-		sleep(2000);
+		sleep(6000);
 		
 		clasificacionOPC.click();
 		sleep(2000);
@@ -292,7 +292,7 @@ public class KpisLixeiraEmMassaPO extends TestBaseMassiel{
 		kpis.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		
 		kpispublicos.click();
 		sleep(2000);

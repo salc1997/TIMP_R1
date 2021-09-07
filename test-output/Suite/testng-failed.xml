@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Unidade de Medida(failed)">
+=======
+  <test thread-count="5" name="DFG - Leiautes(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaVisualizar">
+=======
+      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="favoritos"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos -->
+      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="afterClass"/>
+<<<<<<< HEAD
+=======
+          <include name="filtrosFiltroTipo"/>
+          <include name="filtroNombre"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="visualizar"/>
+=======
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaVisualizar -->
       <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaExcluirEmMasa">
         <methods>
@@ -66,4 +90,9 @@
       </class> <!-- com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasCriar -->
     </classes>
   </test> <!-- Determinacao Automatica De Guias(failed) -->
+=======
+      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
+    </classes>
+  </test> <!-- DFG - Leiautes(failed) -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </suite> <!-- Failed suite [Suite] -->

@@ -62,7 +62,7 @@ public class KpisRaizFiltroPorIdPO extends TestBaseSteven{
 		if (tq1==true) {
 			raiztq1.click();
 		}else {
-			raiz.click();
+			raiztq1.click();
 		}
 		
 		sleep(2000);

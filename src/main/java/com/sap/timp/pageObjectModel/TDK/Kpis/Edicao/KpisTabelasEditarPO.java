@@ -103,7 +103,7 @@ public class KpisTabelasEditarPO extends TestBaseSteven{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		ultimapagina.click();
 		sleep(2000);
@@ -147,10 +147,10 @@ public class KpisTabelasEditarPO extends TestBaseSteven{
 		nomeCabelhaco.clear();
 		sleep(2000);
 		nomeCabelhaco.sendKeys("Cabecalho Editado");
-		sleep(3000);
+		sleep(4000);
 		
 		conteudo.click();
-		sleep(9000);
+		sleep(16000);
 		
 		//waitExpectElement(nomeFlagPersonalizado);
 		nomeFlagPersonalizado.click();

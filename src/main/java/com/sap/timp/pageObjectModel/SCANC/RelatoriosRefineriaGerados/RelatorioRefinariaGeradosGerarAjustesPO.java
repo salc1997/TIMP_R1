@@ -110,7 +110,7 @@ public class RelatorioRefinariaGeradosGerarAjustesPO extends TestBaseFernando{
 		
 		WebElement marcarCheckBox = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[2]/label/span"));
 		marcarCheckBox.click();
-		sleep(1000);
+		sleep(5000);
 		
 		btnExecutarAjustes.click();
 		sleep(3000);

@@ -131,7 +131,7 @@ public class ValoresParaMetodoPICEditarPO extends TestBaseSteven {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(datainicial);
-		sleep(2000);
+		sleep(9000);
 		
 		String valor = datainicial.getAttribute("value");
 
@@ -154,7 +154,7 @@ public class ValoresParaMetodoPICEditarPO extends TestBaseSteven {
 		sleep(2000);
 		waitExpectElement(datainicial);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		
 		String novoTexto=datainicial.getAttribute("value");

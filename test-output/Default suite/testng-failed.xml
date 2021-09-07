@@ -3,18 +3,38 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.DFG.Arquivos.Funcionalidades">
+=======
+      <class name="com.timp.test.DFG.AN4.AN4Funcionalidades">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="idPublicoPrivado"/>
+=======
+          <include name="executarAN4"/>
+          <include name="beforeClass"/>
+          <include name="lixeriarAN4"/>
+          <include name="executarDFG"/>
+          <include name="criarAN4"/>
+          <include name="editarAN4"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="oficializarArquivo"/>
           <include name="informacao"/>
           <include name="favorito"/>
           <include name="executar"/>
           <include name="lixeira"/>
           <include name="beforeClass"/>
+=======
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.Arquivos.Funcionalidades -->
+=======
+      </class> <!-- com.timp.test.DFG.AN4.AN4Funcionalidades -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="DFG - Leiautes(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.DFG.Arquivos.Funcionalidades">
+=======
+      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="favoritos"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos -->
+      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="idPublicoPrivado"/>
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="oficializarArquivo"/>
           <include name="informacao"/>
           <include name="favorito"/>
           <include name="executar"/>
           <include name="lixeira"/>
+=======
+          <include name="filtrosFiltroTipo"/>
+          <include name="filtroNombre"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.Arquivos.Funcionalidades -->
+=======
+      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- DFG - Leiautes(failed) -->
+</suite> <!-- Failed suite [Suite] -->

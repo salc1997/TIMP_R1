@@ -1,59 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="11" passed="5" failed="6" skipped="0">
+=======
+<testng-results ignored="0" total="14" passed="11" failed="3" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-09-07T09:04:45Z" name="Default suite" finished-at="2021-09-07T09:13:51Z" duration-ms="545666">
+=======
+  <suite started-at="2021-09-07T08:12:14Z" name="Suite" finished-at="2021-09-07T08:33:53Z" duration-ms="1298489">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-09-07T09:04:45Z" name="Default test" finished-at="2021-09-07T09:13:51Z" duration-ms="545666">
       <class name="com.timp.test.DFG.Arquivos.Funcionalidades">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@1e44b638]" started-at="2021-09-07T09:04:45Z" name="beforeClass" finished-at="2021-09-07T09:04:58Z" duration-ms="12763" status="PASS">
+=======
+    <test started-at="2021-09-07T08:12:14Z" name="DFG - Leiautes" finished-at="2021-09-07T08:33:53Z" duration-ms="1298489">
+      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPasta">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPasta@5ddcc487]" started-at="2021-09-07T08:16:01Z" name="beforeClass" finished-at="2021-09-07T08:16:14Z" duration-ms="13258" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@1e44b638]" started-at="2021-09-07T09:04:58Z" name="ingresar" finished-at="2021-09-07T09:05:07Z" duration-ms="8986" status="PASS">
+=======
+        <test-method signature="criarGerenciarMoverPasta()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPasta@5ddcc487]" started-at="2021-09-07T08:16:14Z" name="criarGerenciarMoverPasta" finished-at="2021-09-07T08:20:51Z" duration-ms="276996" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ingresar -->
-        <test-method signature="dfgEntrar()[pri:1, instance:com.timp.test.DFG.Arquivos.Funcionalidades@1e44b638]" started-at="2021-09-07T09:05:07Z" name="dfgEntrar" finished-at="2021-09-07T09:05:29Z" duration-ms="21829" status="PASS">
+        </test-method> <!-- criarGerenciarMoverPasta -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPasta@5ddcc487]" started-at="2021-09-07T08:20:51Z" name="afterClass" finished-at="2021-09-07T08:20:51Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dfgEntrar -->
-        <test-method signature="criarNovoLeiaute()[pri:2, instance:com.timp.test.DFG.Arquivos.Funcionalidades@1e44b638]" started-at="2021-09-07T09:05:29Z" name="criarNovoLeiaute" finished-at="2021-09-07T09:07:22Z" duration-ms="113473" status="PASS">
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPasta -->
+      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoEditar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoEditar@16eccb2e]" started-at="2021-09-07T08:20:51Z" name="beforeClass" finished-at="2021-09-07T08:21:05Z" duration-ms="13442" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criarNovoLeiaute -->
-        <test-method signature="registros()[pri:3, instance:com.timp.test.DFG.Arquivos.Funcionalidades@1e44b638]" started-at="2021-09-07T09:07:22Z" name="registros" finished-at="2021-09-07T09:08:22Z" duration-ms="59219" status="PASS">
+        </test-method> <!-- beforeClass -->
+        <test-method signature="editar()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoEditar@16eccb2e]" started-at="2021-09-07T08:21:05Z" name="editar" finished-at="2021-09-07T08:23:34Z" duration-ms="149246" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registros -->
-        <test-method signature="criarConfiguracao()[pri:4, instance:com.timp.test.DFG.Arquivos.Funcionalidades@1e44b638]" started-at="2021-09-07T09:08:22Z" name="criarConfiguracao" finished-at="2021-09-07T09:10:36Z" duration-ms="134838" status="PASS">
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoEditar@16eccb2e]" started-at="2021-09-07T08:23:34Z" name="afterClass" finished-at="2021-09-07T08:23:38Z" duration-ms="4303" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criarConfiguracao -->
-        <test-method signature="executar()[pri:5, instance:com.timp.test.DFG.Arquivos.Funcionalidades@1e44b638]" started-at="2021-09-07T09:10:36Z" name="executar" finished-at="2021-09-07T09:13:44Z" duration-ms="187167" status="FAIL">
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoEditar -->
+      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos@5ef5c734]" started-at="2021-09-07T08:23:38Z" name="beforeClass" finished-at="2021-09-07T08:23:51Z" duration-ms="12340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="favoritos()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos@5ef5c734]" started-at="2021-09-07T08:23:51Z" name="favoritos" finished-at="2021-09-07T08:24:54Z" duration-ms="63106" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class="base-toast  toast-success   "]/div/span[2]/span"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2020"]/div[3]/span"}
   (Session info: chrome=83.0.4103.106)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-JP1A9E6', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'DESKTOP-C57COV6', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53454}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d4338d7b787f98bce28daff2227f23ef
-*** Element info: {Using=xpath, value=//li[@class="base-toast  toast-success   "]/div/span[2]/span}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58088}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4a856fb75d2902d71a34919fe1908660
+*** Element info: {Using=xpath, value=//div[@data-id="2020"]/div[3]/span}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class="base-toast  toast-success   "]/div/span[2]/span"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2020"]/div[3]/span"}
   (Session info: chrome=83.0.4103.106)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-JP1A9E6', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'DESKTOP-C57COV6', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53454}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: d4338d7b787f98bce28daff2227f23ef
-*** Element info: {Using=xpath, value=//li[@class="base-toast  toast-success   "]/div/span[2]/span}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58088}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4a856fb75d2902d71a34919fe1908660
+*** Element info: {Using=xpath, value=//div[@data-id="2020"]/div[3]/span}
 at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
@@ -68,8 +93,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.sap.timp.pageObjectModel.DFG.Arquivos.FuncionalidadesPO.executar(FuncionalidadesPO.java:678)
-at com.timp.test.DFG.Arquivos.Funcionalidades.executar(Funcionalidades.java:64)
+at com.sap.timp.pageObjectModel.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritosPO.favoritos(ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritosPO.java:61)
+at com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos.favoritos(ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos.java:38)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -100,6 +125,206 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- favoritos -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos@5ef5c734]" started-at="2021-09-07T08:24:54Z" name="afterClass" finished-at="2021-09-07T08:24:54Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos -->
+      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoVisualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoVisualizar@36b4091c]" started-at="2021-09-07T08:26:24Z" name="beforeClass" finished-at="2021-09-07T08:26:36Z" duration-ms="12833" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="editar()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoVisualizar@36b4091c]" started-at="2021-09-07T08:26:36Z" name="editar" finished-at="2021-09-07T08:28:54Z" duration-ms="137243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoVisualizar@36b4091c]" started-at="2021-09-07T08:28:54Z" name="afterClass" finished-at="2021-09-07T08:28:58Z" duration-ms="4721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoVisualizar -->
+      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriar@17d88132]" started-at="2021-09-07T08:12:14Z" name="beforeClass" finished-at="2021-09-07T08:12:31Z" duration-ms="17373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriar@17d88132]" started-at="2021-09-07T08:12:31Z" name="criar" finished-at="2021-09-07T08:15:56Z" duration-ms="205047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriar@17d88132]" started-at="2021-09-07T08:15:56Z" name="afterClass" finished-at="2021-09-07T08:16:01Z" duration-ms="4461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriar -->
+      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@4671115f]" started-at="2021-09-07T08:28:58Z" name="beforeClass" finished-at="2021-09-07T08:29:11Z" duration-ms="12503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="filtroNombre()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@4671115f]" started-at="2021-09-07T08:29:11Z" name="filtroNombre" finished-at="2021-09-07T08:30:16Z" duration-ms="64805" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Os resultados não são acorde aos filtros expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Os resultados não são acorde aos filtros expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados.filtroNombre(ParametrosGeraisFiltroAvancados.java:50)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- ingresar -->
+        <test-method signature="dfgEntrar()[pri:1, instance:com.timp.test.DFG.Arquivos.Funcionalidades@1e44b638]" started-at="2021-09-07T09:05:07Z" name="dfgEntrar" finished-at="2021-09-07T09:05:29Z" duration-ms="21829" status="PASS">
+=======
+        </test-method> <!-- filtroNombre -->
+        <test-method signature="filtrosId()[pri:1, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@4671115f]" started-at="2021-09-07T08:30:16Z" name="filtrosId" finished-at="2021-09-07T08:30:44Z" duration-ms="28746" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- dfgEntrar -->
+        <test-method signature="criarNovoLeiaute()[pri:2, instance:com.timp.test.DFG.Arquivos.Funcionalidades@1e44b638]" started-at="2021-09-07T09:05:29Z" name="criarNovoLeiaute" finished-at="2021-09-07T09:07:22Z" duration-ms="113473" status="PASS">
+=======
+        </test-method> <!-- filtrosId -->
+        <test-method signature="filtrosVersao()[pri:2, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@4671115f]" started-at="2021-09-07T08:30:44Z" name="filtrosVersao" finished-at="2021-09-07T08:31:15Z" duration-ms="30864" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- criarNovoLeiaute -->
+        <test-method signature="registros()[pri:3, instance:com.timp.test.DFG.Arquivos.Funcionalidades@1e44b638]" started-at="2021-09-07T09:07:22Z" name="registros" finished-at="2021-09-07T09:08:22Z" duration-ms="59219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registros -->
+        <test-method signature="criarConfiguracao()[pri:4, instance:com.timp.test.DFG.Arquivos.Funcionalidades@1e44b638]" started-at="2021-09-07T09:08:22Z" name="criarConfiguracao" finished-at="2021-09-07T09:10:36Z" duration-ms="134838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracao -->
+        <test-method signature="executar()[pri:5, instance:com.timp.test.DFG.Arquivos.Funcionalidades@1e44b638]" started-at="2021-09-07T09:10:36Z" name="executar" finished-at="2021-09-07T09:13:44Z" duration-ms="187167" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+=======
+        </test-method> <!-- filtrosVersao -->
+        <test-method signature="filtrosFiltroTipo()[pri:3, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@4671115f]" started-at="2021-09-07T08:31:15Z" name="filtrosFiltroTipo" finished-at="2021-09-07T08:31:44Z" duration-ms="29005" status="FAIL">
+          <exception class="java.lang.AssertionError">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+            <message>
+<<<<<<< HEAD
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class="base-toast  toast-success   "]/div/span[2]/span"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JP1A9E6', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53454}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d4338d7b787f98bce28daff2227f23ef
+*** Element info: {Using=xpath, value=//li[@class="base-toast  toast-success   "]/div/span[2]/span}]]>
+=======
+              <![CDATA[Os resultados não são acorde aos filtros expected [true] but found [false]]]>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+            </message>
+            <full-stacktrace>
+<<<<<<< HEAD
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@class="base-toast  toast-success   "]/div/span[2]/span"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JP1A9E6', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53454}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d4338d7b787f98bce28daff2227f23ef
+*** Element info: {Using=xpath, value=//li[@class="base-toast  toast-success   "]/div/span[2]/span}
+at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sap.timp.pageObjectModel.DFG.Arquivos.FuncionalidadesPO.executar(FuncionalidadesPO.java:678)
+at com.timp.test.DFG.Arquivos.Funcionalidades.executar(Funcionalidades.java:64)
+=======
+              <![CDATA[java.lang.AssertionError: Os resultados não são acorde aos filtros expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados.filtrosFiltroTipo(ParametrosGeraisFiltroAvancados.java:90)
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+<<<<<<< HEAD
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+          </exception> <!-- java.lang.AssertionError -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- executar -->
         <test-method signature="idPublicoPrivado()[pri:6, instance:com.timp.test.DFG.Arquivos.Funcionalidades@1e44b638]" started-at="2021-09-07T09:13:44Z" name="idPublicoPrivado" finished-at="2021-09-07T09:13:44Z" duration-ms="49" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
@@ -171,8 +396,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        </test-method> <!-- filtrosFiltroTipo -->
+        <test-method signature="filtrosUsuarioCriado()[pri:4, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@4671115f]" started-at="2021-09-07T08:31:44Z" name="filtrosUsuarioCriado" finished-at="2021-09-07T08:32:14Z" duration-ms="29714" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- idPublicoPrivado -->
         <test-method signature="favorito()[pri:7, instance:com.timp.test.DFG.Arquivos.Funcionalidades@1e44b638]" started-at="2021-09-07T09:13:44Z" name="favorito" finished-at="2021-09-07T09:13:47Z" duration-ms="3072" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
@@ -244,8 +474,21 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        </test-method> <!-- filtrosUsuarioCriado -->
+        <test-method signature="filtrosUsuarioModificado()[pri:7, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@4671115f]" started-at="2021-09-07T08:32:14Z" name="filtrosUsuarioModificado" finished-at="2021-09-07T08:32:43Z" duration-ms="28594" status="PASS">
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- filtrosUsuarioModificado -->
+        <test-method signature="filtrosFechaUsuarioModificado()[pri:8, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@4671115f]" started-at="2021-09-07T08:32:43Z" name="filtrosFechaUsuarioModificado" finished-at="2021-09-07T08:33:16Z" duration-ms="33420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtrosFechaUsuarioModificado -->
+        <test-method signature="filtrosFechaUsuarioCriado()[pri:9, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@4671115f]" started-at="2021-09-07T08:33:16Z" name="filtrosFechaUsuarioCriado" finished-at="2021-09-07T08:33:48Z" duration-ms="32073" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- favorito -->
         <test-method signature="informacao()[pri:8, instance:com.timp.test.DFG.Arquivos.Funcionalidades@1e44b638]" started-at="2021-09-07T09:13:47Z" name="informacao" finished-at="2021-09-07T09:13:47Z" duration-ms="58" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
@@ -461,10 +704,34 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- lixeira -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@1e44b638]" started-at="2021-09-07T09:13:51Z" name="afterClass" finished-at="2021-09-07T09:13:51Z" duration-ms="1" status="PASS">
+=======
+        </test-method> <!-- filtrosFechaUsuarioCriado -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados@4671115f]" started-at="2021-09-07T08:33:48Z" name="afterClass" finished-at="2021-09-07T08:33:53Z" duration-ms="4431" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.Arquivos.Funcionalidades -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+=======
+      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
+      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoInformacao">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoInformacao@d771cc9]" started-at="2021-09-07T08:24:54Z" name="beforeClass" finished-at="2021-09-07T08:25:06Z" duration-ms="12763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoInformacao@d771cc9]" started-at="2021-09-07T08:25:06Z" name="criar" finished-at="2021-09-07T08:26:19Z" duration-ms="72704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoInformacao@d771cc9]" started-at="2021-09-07T08:26:19Z" name="afterClass" finished-at="2021-09-07T08:26:24Z" duration-ms="4428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoInformacao -->
+    </test> <!-- DFG - Leiautes -->
+  </suite> <!-- Suite -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </testng-results>

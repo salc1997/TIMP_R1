@@ -471,7 +471,7 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 	}
 	
 	public ArrayList<Boolean> llenarDatosTC2() {
-		idRegistro = 9;
+		idRegistro = 26;
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement acoe = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Manutenção \"]"));
 		String periodo = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[7]/div")).getText();

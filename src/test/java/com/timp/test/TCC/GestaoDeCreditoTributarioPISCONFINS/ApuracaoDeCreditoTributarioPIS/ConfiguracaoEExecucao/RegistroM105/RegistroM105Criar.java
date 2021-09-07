@@ -1,3 +1,5 @@
+
+
 package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM105;
 
 import org.testng.annotations.Test;
@@ -28,7 +30,7 @@ public class RegistroM105Criar extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+	//	driver.close();
 	}
 
 	@Test()

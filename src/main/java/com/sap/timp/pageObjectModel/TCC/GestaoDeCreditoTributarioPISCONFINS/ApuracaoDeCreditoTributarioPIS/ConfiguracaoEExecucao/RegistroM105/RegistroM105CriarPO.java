@@ -151,7 +151,7 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 		sleep(2000);
 		
 		empresaoPC.click();
-		sleep(6000);
+		sleep(8000);
 		
 		uf.click();
 		sleep(3000);
@@ -175,7 +175,7 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 		}
 		
 		
-		sleep(6000);
+		sleep(9000);
 		filial.click();
 		sleep(2000);
 		

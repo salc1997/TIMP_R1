@@ -3,34 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoFiltrosAvan">
-=======
-      <class name="com.timp.test.DFG.SPED.EFDICMSIPI.ContribuiçõesFuncionalidades">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.DFG.Arquivos.Funcionalidades">
         <methods>
+          <include name="idPublicoPrivado"/>
           <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="filtrarAvanCodigoContabilizacao"/>
+          <include name="oficializarArquivo"/>
+          <include name="informacao"/>
+          <include name="favorito"/>
+          <include name="executar"/>
+          <include name="lixeira"/>
           <include name="beforeClass"/>
-=======
-          <include name="blocoApuracao"/>
-          <include name="excluirBRE"/>
-          <include name="excluirDFG"/>
-          <include name="editar"/>
-          <include name="beforeClass"/>
-          <include name="blocoApuracaoExecutar"/>
-          <include name="criarBRE"/>
-          <include name="arquivos"/>
-          <include name="criarDFGSPED"/>
-          <include name="informacoes"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoFiltrosAvan -->
-=======
-      </class> <!-- com.timp.test.DFG.SPED.EFDICMSIPI.ContribuiçõesFuncionalidades -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.DFG.Arquivos.Funcionalidades -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

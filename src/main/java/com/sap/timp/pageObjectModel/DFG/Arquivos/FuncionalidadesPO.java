@@ -660,15 +660,17 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+			
 		invisibilityOfElement("//div[@class=\"dialog-indicator\"]");
-		sleep(2000);
+		sleep(12000);
 		
 		btnGravar.click();
 		sleep(1000);
 		
 		
 		 btnNO.click();
-		sleep(15000);
+		sleep(8000);
 		
 		// Verificar si es guardado con exito, si no se va quedar esperando por el
 		// waitExpectXpath

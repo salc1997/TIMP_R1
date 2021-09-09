@@ -131,7 +131,7 @@ public class RegistroM230CriarPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		empresaoPC.click();
-		sleep(6000);
+		sleep(8000);
 		
 		uf.click();
 		sleep(4000);

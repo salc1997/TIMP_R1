@@ -91,7 +91,7 @@ public class RegistroM200EditarPO extends TestBaseMassiel{
 		sleep(6000);
 		//waitExpectElement(filialInput);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(14000);
+		sleep(18000);
 		
 		String valor = filialInput.getText();
 		System.out.println(valor);

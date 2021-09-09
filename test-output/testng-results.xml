@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="3" passed="0" failed="1" skipped="2">
+=======
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-09-09T19:00:01Z" name="Default suite" finished-at="2021-09-09T19:03:19Z" duration-ms="198178">
+=======
+  <suite started-at="2021-09-08T09:05:27Z" name="Suite" finished-at="2021-09-08T09:30:12Z" duration-ms="1484931">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-09-09T19:00:01Z" name="Default test" finished-at="2021-09-09T19:03:19Z" duration-ms="198178">
       <class name="com.timp.test.TDK.Kpis.KpisPublicos.KpisLixeiraEmMassa">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TDK.Kpis.KpisPublicos.KpisLixeiraEmMassa@4cc8eb05]" started-at="2021-09-09T19:00:01Z" name="beforeClass" finished-at="2021-09-09T19:00:23Z" duration-ms="22291" status="PASS">
+=======
+    <test started-at="2021-09-08T09:05:27Z" name=" ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS " finished-at="2021-09-08T09:20:59Z" duration-ms="932238">
+      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentodeEstruturasExcluirMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentodeEstruturasExcluirMassa@69f1a286]" started-at="2021-09-08T09:16:34Z" name="beforeClass" finished-at="2021-09-08T09:16:47Z" duration-ms="13082" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="criar()[pri:0, instance:com.timp.test.TDK.Kpis.KpisPublicos.KpisLixeiraEmMassa@4cc8eb05]" started-at="2021-09-09T19:00:24Z" name="criar" finished-at="2021-09-09T19:03:19Z" duration-ms="175837" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -81,8 +96,58 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        <test-method signature="Criar()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentodeEstruturasExcluirMassa@69f1a286]" started-at="2021-09-08T09:16:47Z" name="Criar" finished-at="2021-09-08T09:20:29Z" duration-ms="222140" status="PASS">
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- Criar -->
+        <test-method signature="excluirMasa()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentodeEstruturasExcluirMassa@69f1a286]" started-at="2021-09-08T09:20:29Z" name="excluirMasa" finished-at="2021-09-08T09:20:59Z" depends-on-methods="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentodeEstruturasExcluirMassa.Criar" duration-ms="29820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirMasa -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentodeEstruturasExcluirMassa@69f1a286]" started-at="2021-09-08T09:20:59Z" name="afterClass" finished-at="2021-09-08T09:20:59Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentodeEstruturasExcluirMassa -->
+      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasFiltroPorID">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasFiltroPorID@600b9d27]" started-at="2021-09-08T09:14:13Z" name="beforeClass" finished-at="2021-09-08T09:14:28Z" duration-ms="14274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="filtro()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasFiltroPorID@600b9d27]" started-at="2021-09-08T09:14:28Z" name="filtro" finished-at="2021-09-08T09:15:13Z" duration-ms="44991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasFiltroPorID@600b9d27]" started-at="2021-09-08T09:15:13Z" name="afterClass" finished-at="2021-09-08T09:15:17Z" duration-ms="4420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasFiltroPorID -->
+      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasEditar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasEditar@babafc2]" started-at="2021-09-08T09:08:27Z" name="beforeClass" finished-at="2021-09-08T09:08:41Z" duration-ms="13822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="editar()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasEditar@babafc2]" started-at="2021-09-08T09:08:41Z" name="editar" finished-at="2021-09-08T09:10:12Z" duration-ms="90616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasEditar@babafc2]" started-at="2021-09-08T09:10:12Z" name="afterClass" finished-at="2021-09-08T09:10:16Z" duration-ms="4437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasEditar -->
+      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasCriarComCopia">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasCriarComCopia@ae3540e]" started-at="2021-09-08T09:12:07Z" name="beforeClass" finished-at="2021-09-08T09:12:19Z" duration-ms="11626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="criarcopia()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasCriarComCopia@ae3540e]" started-at="2021-09-08T09:12:19Z" name="criarcopia" finished-at="2021-09-08T09:14:13Z" duration-ms="114320" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criar -->
         <test-method signature="excluirEmMassa()[pri:0, instance:com.timp.test.TDK.Kpis.KpisPublicos.KpisLixeiraEmMassa@4cc8eb05]" started-at="2021-09-09T19:03:19Z" name="excluirEmMassa" finished-at="2021-09-09T19:03:19Z" depends-on-methods="com.timp.test.TDK.Kpis.KpisPublicos.KpisLixeiraEmMassa.criar" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
@@ -153,4 +218,146 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- com.timp.test.TDK.Kpis.KpisPublicos.KpisLixeiraEmMassa -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+=======
+        </test-method> <!-- criarcopia -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasCriarComCopia@ae3540e]" started-at="2021-09-08T09:14:13Z" name="afterClass" finished-at="2021-09-08T09:14:13Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasCriarComCopia -->
+      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasVisualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasVisualizar@31add175]" started-at="2021-09-08T09:10:16Z" name="beforeClass" finished-at="2021-09-08T09:10:39Z" duration-ms="23174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="visualizar()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasVisualizar@31add175]" started-at="2021-09-08T09:10:39Z" name="visualizar" finished-at="2021-09-08T09:12:03Z" duration-ms="83693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visualizar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasVisualizar@31add175]" started-at="2021-09-08T09:12:03Z" name="afterClass" finished-at="2021-09-08T09:12:07Z" duration-ms="4407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasVisualizar -->
+      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasExcluir@3688eb5b]" started-at="2021-09-08T09:15:17Z" name="beforeClass" finished-at="2021-09-08T09:15:28Z" duration-ms="10571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasExcluir@3688eb5b]" started-at="2021-09-08T09:15:28Z" name="excluir" finished-at="2021-09-08T09:16:29Z" duration-ms="61734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasExcluir@3688eb5b]" started-at="2021-09-08T09:16:29Z" name="afterClass" finished-at="2021-09-08T09:16:34Z" duration-ms="4416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasExcluir -->
+      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasCriar@7393222f]" started-at="2021-09-08T09:05:27Z" name="beforeClass" finished-at="2021-09-08T09:05:47Z" duration-ms="20080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasCriar@7393222f]" started-at="2021-09-08T09:05:47Z" name="criar" finished-at="2021-09-08T09:08:27Z" duration-ms="160586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasCriar@7393222f]" started-at="2021-09-08T09:08:27Z" name="afterClass" finished-at="2021-09-08T09:08:27Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasCriar -->
+    </test> <!--  ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS  -->
+    <test started-at="2021-09-08T09:20:59Z" name=" ATR - ESTRUCTURAS - MAPAMENTO DE PARAMETROS DE ENTRADA " finished-at="2021-09-08T09:30:12Z" duration-ms="552660">
+      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaExcluirEmMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaExcluirEmMassa@2421cc4]" started-at="2021-09-08T09:27:57Z" name="beforeClass" finished-at="2021-09-08T09:28:11Z" duration-ms="13665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaExcluirEmMassa@2421cc4]" started-at="2021-09-08T09:28:11Z" name="criar" finished-at="2021-09-08T09:29:44Z" duration-ms="93350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaExcluirEmMassa@2421cc4]" started-at="2021-09-08T09:29:44Z" name="excluir" finished-at="2021-09-08T09:30:07Z" depends-on-methods="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaExcluirEmMassa.criar" duration-ms="23198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaExcluirEmMassa@2421cc4]" started-at="2021-09-08T09:30:07Z" name="afterClass" finished-at="2021-09-08T09:30:12Z" duration-ms="4442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaExcluirEmMassa -->
+      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentodeParâmetrosdeEntradaFiltroporIDLimpar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentodeParâmetrosdeEntradaFiltroporIDLimpar@68702e03]" started-at="2021-09-08T09:25:51Z" name="beforeClass" finished-at="2021-09-08T09:26:03Z" duration-ms="11624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="filtro()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentodeParâmetrosdeEntradaFiltroporIDLimpar@68702e03]" started-at="2021-09-08T09:26:03Z" name="filtro" finished-at="2021-09-08T09:26:45Z" duration-ms="41707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentodeParâmetrosdeEntradaFiltroporIDLimpar@68702e03]" started-at="2021-09-08T09:26:45Z" name="afterClass" finished-at="2021-09-08T09:26:45Z" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentodeParâmetrosdeEntradaFiltroporIDLimpar -->
+      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaCriar@4f3bbf68]" started-at="2021-09-08T09:20:59Z" name="beforeClass" finished-at="2021-09-08T09:21:16Z" duration-ms="17437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaCriar@4f3bbf68]" started-at="2021-09-08T09:21:16Z" name="criar" finished-at="2021-09-08T09:22:45Z" duration-ms="89082" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaCriar@4f3bbf68]" started-at="2021-09-08T09:22:45Z" name="afterClass" finished-at="2021-09-08T09:22:45Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaCriar -->
+      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaExcluir@7a220c9a]" started-at="2021-09-08T09:26:45Z" name="beforeClass" finished-at="2021-09-08T09:26:55Z" duration-ms="10520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="Excluir()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaExcluir@7a220c9a]" started-at="2021-09-08T09:26:55Z" name="Excluir" finished-at="2021-09-08T09:27:52Z" duration-ms="57245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaExcluir@7a220c9a]" started-at="2021-09-08T09:27:52Z" name="afterClass" finished-at="2021-09-08T09:27:57Z" duration-ms="4432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaExcluir -->
+      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaEditar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaEditar@5be46f9d]" started-at="2021-09-08T09:22:45Z" name="beforeClass" finished-at="2021-09-08T09:22:56Z" duration-ms="10931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="editar()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaEditar@5be46f9d]" started-at="2021-09-08T09:22:56Z" name="editar" finished-at="2021-09-08T09:24:18Z" duration-ms="82045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaEditar@5be46f9d]" started-at="2021-09-08T09:24:18Z" name="afterClass" finished-at="2021-09-08T09:24:18Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaEditar -->
+      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaVisualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaVisualizar@3f91b517]" started-at="2021-09-08T09:24:18Z" name="beforeClass" finished-at="2021-09-08T09:24:40Z" duration-ms="21421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="visualizar()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaVisualizar@3f91b517]" started-at="2021-09-08T09:24:40Z" name="visualizar" finished-at="2021-09-08T09:25:51Z" duration-ms="71359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visualizar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaVisualizar@3f91b517]" started-at="2021-09-08T09:25:51Z" name="afterClass" finished-at="2021-09-08T09:25:51Z" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaVisualizar -->
+    </test> <!--  ATR - ESTRUCTURAS - MAPAMENTO DE PARAMETROS DE ENTRADA  -->
+  </suite> <!-- Suite -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </testng-results>

@@ -93,7 +93,7 @@ public class RegistroM105EditarPO extends TestBaseMassiel{
 		driver.navigate().refresh();
 		sleep(8000);
 		waitExpectElement(CódigoSituaçãoTributáriaReferenteAOPIS);
-		sleep(8000);
+		sleep(12000);
 		
 		String nuevoTexto = CódigoSituaçãoTributáriaReferenteAOPIS.getAttribute("value");
 		/*System.out.println(valor);*/

@@ -88,7 +88,7 @@ public class RegistroM230EditarPO extends TestBaseMassiel{
 		sleep(5000);
 		waitExpectElement(filialInputClear);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(12000);
 		
 		String valor = filialInput.getText();
 		System.out.println(valor);
@@ -135,7 +135,7 @@ public class RegistroM230EditarPO extends TestBaseMassiel{
 		driver.navigate().refresh();
 		sleep(12000);
 		//waitExpectElement(filialInput);
-		sleep(10000);
+		sleep(18000);
 		
 		String nuevoTexto = filialInput.getText();
 		/*System.out.println(valor);*/

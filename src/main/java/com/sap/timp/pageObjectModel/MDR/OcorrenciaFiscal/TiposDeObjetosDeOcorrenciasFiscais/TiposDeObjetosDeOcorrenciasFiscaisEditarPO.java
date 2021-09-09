@@ -106,9 +106,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisEditarPO extends TestBaseSteven {
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(20000);
 		
 		String valor = datainicio.getAttribute("value");
 
@@ -130,7 +128,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisEditarPO extends TestBaseSteven {
 		driver.navigate().refresh();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(20000);
 			
 		waitExpectElement(datainicio);
 		

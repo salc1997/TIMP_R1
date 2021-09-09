@@ -133,7 +133,7 @@ public class RegistroM110CriarPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		empresaoPC.click();
-		sleep(6000);
+		sleep(9000);
 		
 		uf.click();
 		sleep(2000);

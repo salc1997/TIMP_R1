@@ -57,7 +57,7 @@ public class CódigoContabilizaçãoExcluirMassaPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[@class=\"icon main-icon icon-font-Sign-and-Symbols icon-downmenu\"]")
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//li[text()=\"ICMS\"]")
+	@FindBy(xpath = "//li[text()=\"00 - ICMS\"]")
 	public WebElement opcaotributo;
 	
 	@FindBy(xpath = "//*[@id=\"start-date\"]/div/div[1]/input")

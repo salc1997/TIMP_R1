@@ -3,17 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.DFG.AN4.AN4Funcionalidades">
+      <class name="com.timp.test.TDK.Kpis.KpisPublicos.KpisLixeiraEmMassa">
         <methods>
-          <include name="executarAN4"/>
-          <include name="beforeClass"/>
-          <include name="lixeriarAN4"/>
-          <include name="executarDFG"/>
-          <include name="criarAN4"/>
-          <include name="editarAN4"/>
+          <include name="excluirEmMassa"/>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="comparar"/>
+          <include name="criar"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.AN4.AN4Funcionalidades -->
+      </class> <!-- com.timp.test.TDK.Kpis.KpisPublicos.KpisLixeiraEmMassa -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

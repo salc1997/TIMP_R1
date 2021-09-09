@@ -1,23 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="DFG - Leiautes(failed)">
+  <test thread-count="5" name="KPI&#039;s  Publicos -- Raiz (failed)">
     <classes>
-      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos">
+      <class name="com.timp.test.TDK.Kpis.KpisPublicos.KpisLixeiraEmMassa">
         <methods>
-          <include name="beforeClass"/>
-          <include name="favoritos"/>
+          <include name="excluirEmMassa"/>
           <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos -->
-      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
-        <methods>
-          <include name="afterClass"/>
-          <include name="filtrosFiltroTipo"/>
-          <include name="filtroNombre"/>
           <include name="beforeClass"/>
+          <include name="comparar"/>
+          <include name="criar"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
+      </class> <!-- com.timp.test.TDK.Kpis.KpisPublicos.KpisLixeiraEmMassa -->
     </classes>
-  </test> <!-- DFG - Leiautes(failed) -->
+  </test> <!-- KPI's  Publicos - Raiz (failed) -->
+  <test thread-count="5" name="KPI&#039;s Primera Parte(failed)">
+    <classes>
+      <class name="com.timp.test.TDK.Kpis.ParâmetrosGerais.KpisExecutarAtualizarJutisficativaGravar">
+        <methods>
+          <include name="executar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Kpis.ParâmetrosGerais.KpisExecutarAtualizarJutisficativaGravar -->
+      <class name="com.timp.test.TDK.Kpis.Edicao.KipisLinksRapidosMiasExecutar">
+        <methods>
+          <include name="linksrapidos"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KipisLinksRapidosMiasExecutar -->
+      <class name="com.timp.test.TDK.Kpis.ParâmetrosGerais.KpisCriarCopia">
+        <methods>
+          <include name="afterClass"/>
+          <include name="comparar"/>
+          <include name="beforeClass"/>
+          <include name="criarCopia"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Kpis.ParâmetrosGerais.KpisCriarCopia -->
+      <class name="com.timp.test.TDK.Kpis.Edicao.KpisLinksRapidosExcluir">
+        <methods>
+          <include name="afterClass"/>
+          <include name="linkrapidoexcluir"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisLinksRapidosExcluir -->
+      <class name="com.timp.test.TDK.Kpis.Edicao.KpisGraficoEditar">
+        <methods>
+          <include name="Grafico"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisGraficoEditar -->
+      <class name="com.timp.test.TDK.Kpis.Lixeira.KpisLixeiraExcluirEmMassa">
+        <methods>
+          <include name="afterClass"/>
+          <include name="comparar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Kpis.Lixeira.KpisLixeiraExcluirEmMassa -->
+      <class name="com.timp.test.TDK.Kpis.MeusRelatoriosKpis.MeusFavoritos.KpisMeusFavoritosFiltroPorID">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="filtro"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Kpis.MeusRelatoriosKpis.MeusFavoritos.KpisMeusFavoritosFiltroPorID -->
+      <class name="com.timp.test.TDK.Kpis.Edicao.KpisEdicaoGrafico">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="Grafico"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisEdicaoGrafico -->
+      <class name="com.timp.test.TDK.Kpis.Edicao.KpisGraficoExcluir">
+        <methods>
+          <include name="grafico"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisGraficoExcluir -->
+      <class name="com.timp.test.TDK.Kpis.ParâmetrosGerais.KpisLixeira">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="lixeira"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Kpis.ParâmetrosGerais.KpisLixeira -->
+      <class name="com.timp.test.TDK.Kpis.Edicao.KpisLinksRapidosEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="linksrapidos"/>
+        </methods>
+      </class> <!-- com.timp.test.TDK.Kpis.Edicao.KpisLinksRapidosEditar -->
+    </classes>
+  </test> <!-- KPI's Primera Parte(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -25,10 +25,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisExcluir extends TestBaseSteven {
 		acessarMDRPO = new AcessarMDRPO();
 		tiposDeObjetosDeOcorrenciasFiscaisExcluirPO = new TiposDeObjetosDeOcorrenciasFiscaisExcluirPO();
 	}
-	/*
-	 * @AfterClass public void afterClass(){ driver.close(); }
-	 */
-
+	
 	@AfterClass
 	public void afterClass() {
 		driver.close();

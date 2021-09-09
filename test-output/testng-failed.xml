@@ -1,40 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="DFG - Leiautes(failed)">
+  <test thread-count="5" name="ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.DFG.Arquivos.Funcionalidades">
-=======
-      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos">
+      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturaVer">
         <methods>
           <include name="beforeClass"/>
-          <include name="favoritos"/>
+          <include name="visualizar"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos -->
-      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturaVer -->
+      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar">
         <methods>
-          <include name="idPublicoPrivado"/>
+          <include name="beforeClass"/>
           <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="oficializarArquivo"/>
-          <include name="informacao"/>
-          <include name="favorito"/>
-          <include name="executar"/>
-          <include name="lixeira"/>
-=======
-          <include name="filtrosFiltroTipo"/>
-          <include name="filtroNombre"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar -->
+      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes">
+        <methods>
+          <include name="afterClass"/>
+          <include name="detalhes"/>
           <include name="beforeClass"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.DFG.Arquivos.Funcionalidades -->
-=======
-      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes -->
     </classes>
-  </test> <!-- DFG - Leiautes(failed) -->
+  </test> <!-- ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed) -->
 </suite> <!-- Failed suite [Suite] -->

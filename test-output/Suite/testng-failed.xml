@@ -1,98 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Unidade de Medida(failed)">
-=======
-  <test thread-count="5" name="DFG - Leiautes(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  <test thread-count="5" name="ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaVisualizar">
-=======
-      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos">
+      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturaVer">
         <methods>
           <include name="beforeClass"/>
-          <include name="favoritos"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos -->
-      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-        <methods>
-          <include name="afterClass"/>
-<<<<<<< HEAD
-=======
-          <include name="filtrosFiltroTipo"/>
-          <include name="filtroNombre"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <include name="beforeClass"/>
-<<<<<<< HEAD
           <include name="visualizar"/>
-=======
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="afterClass"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaVisualizar -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaExcluirEmMasa">
+      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturaVer -->
+      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar">
         <methods>
+          <include name="beforeClass"/>
           <include name="afterClass"/>
           <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaExcluirEmMasa -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaDetalhes">
+      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar -->
+      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes">
         <methods>
+          <include name="afterClass"/>
           <include name="detalhes"/>
-          <include name="afterClass"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaDetalhes -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaEditar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="editar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaEditar -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaCriar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaCriar -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaExcluir">
-        <methods>
-          <include name="excluir"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaExcluir -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="filtroCodigo"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo -->
+      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes -->
     </classes>
-  </test> <!-- Tabelas de Apoio E-SOCIAL > Unidade de Medida(failed) -->
-  <test thread-count="5" name="Determinacao Automatica De Guias(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasCriar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasCriar -->
-    </classes>
-  </test> <!-- Determinacao Automatica De Guias(failed) -->
-=======
-      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
-    </classes>
-  </test> <!-- DFG - Leiautes(failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  </test> <!-- ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed) -->
 </suite> <!-- Failed suite [Suite] -->

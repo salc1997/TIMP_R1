@@ -1,56 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
-=======
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  <test thread-count="5" name="Atividades Fiscais &gt; Atividade Fiscal(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.TDK.Kpis.KpisPublicos.KpisLixeiraEmMassa">
-=======
-      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturaVer">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeFiltro">
         <methods>
-<<<<<<< HEAD
-          <include name="excluirEmMassa"/>
-=======
-          <include name="beforeClass"/>
-          <include name="visualizar"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="filtro"/>
           <include name="afterClass"/>
-<<<<<<< HEAD
-=======
-        </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturaVer -->
-      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar">
-        <methods>
           <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="criar"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar -->
-      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes">
-        <methods>
-          <include name="afterClass"/>
-          <include name="detalhes"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <include name="beforeClass"/>
-          <include name="comparar"/>
-          <include name="criar"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TDK.Kpis.KpisPublicos.KpisLixeiraEmMassa -->
-=======
-      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeFiltro -->
     </classes>
-<<<<<<< HEAD
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
-=======
-  </test> <!-- ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed) -->
+  </test> <!-- Atividades Fiscais > Atividade Fiscal(failed) -->
+  <test thread-count="5" name="Atividades Fiscais &gt; Associação de Atividade Fiscal(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoExcluirEmMassa">
+        <methods>
+          <include name="criar"/>
+          <include name="excluir"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoExcluirEmMassa -->
+      <class name="com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoCriar">
+        <methods>
+          <include name="criarAssociação"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoCriar -->
+      <class name="com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoDetalhes">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="detalheAssociação"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoDetalhes -->
+      <class name="com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoExcluir">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoExcluir -->
+      <class name="com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoVisualizar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="visualizarAssociação"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoVisualizar -->
+      <class name="com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="editarAssociação"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoEditar -->
+    </classes>
+  </test> <!-- Atividades Fiscais > Associação de Atividade Fiscal(failed) -->
+  <test thread-count="5" name="Cadastro Derex &gt; Instituição Financeira(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoFiltroId">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="filtroId"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoFiltroId -->
+      <class name="com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoExcluirMasas">
+        <methods>
+          <include name="criar"/>
+          <include name="excluir"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoExcluirMasas -->
+    </classes>
+  </test> <!-- Cadastro Derex > Instituição Financeira(failed) -->
+  <test thread-count="5" name="Cadastro Derex &gt; Cadastro Responsável Pelo Movimento(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoEditar -->
+      <class name="com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoExcluir">
+        <methods>
+          <include name="excluir"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CadastroDerex.CadastroResponsavel.ResponsavelMovimentoExcluir -->
+    </classes>
+  </test> <!-- Cadastro Derex > Cadastro Responsável Pelo Movimento(failed) -->
 </suite> <!-- Failed suite [Suite] -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git

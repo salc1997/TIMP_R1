@@ -1,29 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-09-13T23:41:47Z" name="Default suite" finished-at="2021-09-13T23:57:28Z" duration-ms="941238">
+=======
+  <suite started-at="2021-09-13T23:44:15Z" name="Default suite" finished-at="2021-09-13T23:49:27Z" duration-ms="311663">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-09-13T23:41:47Z" name="Default test" finished-at="2021-09-13T23:57:28Z" duration-ms="941238">
       <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@29647f75]" started-at="2021-09-13T23:41:47Z" name="beforeClass" finished-at="2021-09-13T23:42:15Z" duration-ms="28239" status="PASS">
+=======
+    <test started-at="2021-09-13T23:44:15Z" name="Default test" finished-at="2021-09-13T23:49:27Z" duration-ms="311663">
+      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.ComentarioListaSuspensa@2d778add]" started-at="2021-09-13T23:44:15Z" name="beforeClass" finished-at="2021-09-13T23:44:35Z" duration-ms="20357" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="criarRelacionamento()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@29647f75]" started-at="2021-09-13T23:42:15Z" name="criarRelacionamento" finished-at="2021-09-13T23:56:49Z" duration-ms="873317" status="PASS">
+=======
+        <test-method signature="listaSuspensa()[pri:0, instance:com.timp.test.BRB.ComentarioListaSuspensa@2d778add]" started-at="2021-09-13T23:44:35Z" name="listaSuspensa" finished-at="2021-09-13T23:49:27Z" duration-ms="291291" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criarRelacionamento -->
         <test-method signature="excluirMassa()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@29647f75]" started-at="2021-09-13T23:56:49Z" name="excluirMassa" finished-at="2021-09-13T23:57:28Z" depends-on-methods="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa.criarRelacionamento" duration-ms="39652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- excluirMassa -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@29647f75]" started-at="2021-09-13T23:57:28Z" name="afterClass" finished-at="2021-09-13T23:57:28Z" duration-ms="0" status="PASS">
+=======
+        </test-method> <!-- listaSuspensa -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRB.ComentarioListaSuspensa@2d778add]" started-at="2021-09-13T23:49:27Z" name="afterClass" finished-at="2021-09-13T23:49:27Z" duration-ms="0" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa -->
+=======
+      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

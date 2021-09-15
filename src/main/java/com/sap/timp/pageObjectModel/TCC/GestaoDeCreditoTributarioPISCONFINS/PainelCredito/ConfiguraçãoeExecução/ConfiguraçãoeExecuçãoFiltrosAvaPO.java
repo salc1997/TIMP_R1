@@ -148,7 +148,7 @@ public class ConfiguraçãoeExecuçãoFiltrosAvaPO extends TestBaseSteven {
 		sleep(2000);
 		
 		opcEmpresa.click();
-		sleep(7000);
+		sleep(9000);
 		
 		uf.click();
 		sleep(6000);
@@ -156,7 +156,7 @@ public class ConfiguraçãoeExecuçãoFiltrosAvaPO extends TestBaseSteven {
 		
 		if (tc2==true) {
 			opcUfTC2.click();
-			sleep(7000);
+			sleep(9000);
 
 		}else {
 			opcUfTP1.click();

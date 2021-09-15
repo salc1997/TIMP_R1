@@ -294,8 +294,8 @@ public class TestBaseSteven {
 	}
 
 	public void invisibilityOfElement(String xpath) {
-		WebDriverWait wait = new WebDriverWait(driver, 3600);
-
+		WebDriverWait wait = new WebDriverWait(driver, 360);
+				 
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpath)));
 
 	}

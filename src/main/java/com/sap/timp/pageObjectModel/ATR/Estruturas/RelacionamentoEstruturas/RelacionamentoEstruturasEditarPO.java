@@ -136,7 +136,8 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		//invisibilityOfElementOverlay();
 		sleep(371400);
 		sleep(1000);
-		sleep(1000);
+		sleep(11000);
+		sleep(11000);
 		adicionar.click();
 		sleep(2000);
 		

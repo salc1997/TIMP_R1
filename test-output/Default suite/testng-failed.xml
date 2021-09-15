@@ -3,30 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.TDK.Kpis.KpisPublicos.KpisLixeiraEmMassa">
-=======
-      <class name="com.timp.test.MDR.RegistroECAC.RegistroECACCVisualizar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia">
         <methods>
-<<<<<<< HEAD
-          <include name="excluirEmMassa"/>
-=======
-          <include name="Visualizar"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="afterClass"/>
+          <include name="excluirCopia"/>
+          <include name="editarCopia"/>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="comparar"/>
-          <include name="criar"/>
-=======
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="criarCopia"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TDK.Kpis.KpisPublicos.KpisLixeiraEmMassa -->
-=======
-      </class> <!-- com.timp.test.MDR.RegistroECAC.RegistroECACCVisualizar -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

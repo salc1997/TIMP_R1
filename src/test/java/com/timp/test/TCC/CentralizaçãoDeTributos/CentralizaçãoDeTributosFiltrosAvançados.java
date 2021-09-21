@@ -28,12 +28,12 @@ public class CentralizaçãoDeTributosFiltrosAvançados extends TestBaseSteven{
 		driver.close();
 	}
 
+	@Test()
 
-
-	@Test
 	public void Filtro() {
 		loginTC.login();
 		acessarTCCPO.acessarTCC();
+
 		centralizaçãoDeTributosFiltrosAvançadosPO.Filtros();
 	}
 }

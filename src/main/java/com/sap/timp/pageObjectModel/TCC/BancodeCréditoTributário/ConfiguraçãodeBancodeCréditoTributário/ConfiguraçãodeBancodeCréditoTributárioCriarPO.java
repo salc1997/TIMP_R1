@@ -56,11 +56,9 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 	
 	@FindBy(xpath = "//li[text()=\"306 - teste 02 /08/2019\"]")
 	public WebElement opcionIDOrigenTP1;
-	
-	
-	
-	
+
 	@FindBy(xpath = "//div[@id=\"outputField\"]/div/div[1]/div[2]")
+
 	public WebElement cboSaida;
 	
 	@FindBy(xpath = "//li[text()=\"subn 1\"]")
@@ -167,6 +165,9 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement btnBiblioteca;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
+	
 	public ConfiguraçãodeBancodeCréditoTributárioCriarPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -230,7 +231,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 		cboTributo.click();
 		sleep(1000);
 		opcionTributo.click();
-		sleep(7000);
+		sleep(10000);
 		
 		cboComponenteOrigen.click();
 		sleep(1000);
@@ -243,12 +244,12 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 			cboIDOrigen.click();
 			sleep(1000);
 			opcionIDOrigenTQ1.click();
-			sleep(7000);
+			sleep(10000);
 			
 			cboSaida.click();
 			sleep(1000);
 			opcionSaidaTQ1.click();
-			sleep(7000);
+			sleep(10000);
 			
 			tipoCredito.click();
 			sleep(2000);
@@ -262,7 +263,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 			cboACredito.click();
 			sleep(1000);
 			opcionACreditoTQ1.click();
-			sleep(7000);
+			sleep(10000);
 			
 			cboTaxaAtualização.click();
 			sleep(1000);
@@ -272,7 +273,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 			cboClassificaçãoAcesso.click();
 			sleep(1000);
 			opcionClassificaçãoAcessoTQ1.click();
-			sleep(7000);
+			sleep(10000);
 			
 			validaDe.sendKeys("11/01/2021");
 			sleep(4000);
@@ -298,12 +299,16 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 			cboIDOrigen.click();
 			sleep(1000);
 			opcionIDOrigenTC2.click();
+
 			sleep(16000);
+
 			
 			cboSaida.click();
 			sleep(1000);
 			opcionSaidaTC2.click();
-			sleep(7000);
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(10000);
 			
 			tipoCredito.click();
 			sleep(2000);
@@ -322,17 +327,17 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 			cboACredito.click();
 			sleep(1000);
 			opcionACreditoTC2.click();
-			sleep(7000);
+			sleep(10000);
 			
 			cboTaxaAtualização.click();
 			sleep(1000);
 			opcionTaxaAtualizaçãoTC2.click();
-			sleep(7000);
+			sleep(10000);
 			
 			cboClassificaçãoAcesso.click();
 			sleep(1000);
 			opcionClassificaçãoAcessoTC2.click();
-			sleep(7000);
+			sleep(10000);
 			
 			validaDe.sendKeys("11/01/2021");
 			sleep(4000);
@@ -399,7 +404,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 			cboAjuste.click();
 			sleep(1000);
 			opcionAjusteTQ1.click();
-			sleep(7000);
+			sleep(10000);
 		}
 		
 		
@@ -412,7 +417,8 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 		btnNo.click();
 		sleep(2000);
 
-		sleep(2000);
+		nao.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

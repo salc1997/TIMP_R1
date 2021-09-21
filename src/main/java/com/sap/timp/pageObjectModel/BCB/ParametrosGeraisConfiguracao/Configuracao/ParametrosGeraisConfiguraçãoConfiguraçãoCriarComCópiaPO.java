@@ -94,8 +94,13 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO extends Tes
 
 
 		biblioteca.click();
-		sleep(3000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
 		
 		int rows = driver

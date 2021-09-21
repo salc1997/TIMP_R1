@@ -71,8 +71,7 @@ public class ExcluirColunaPO extends TestBaseSteven{
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
 		
 		sleep(3000);
-
-		
+System.out.println("paso 1");	
 		Actions actions = new Actions(driver);
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
@@ -98,18 +97,24 @@ public class ExcluirColunaPO extends TestBaseSteven{
 		
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
-		sleep(1000);
+		sleep(3000);
 		List<WebElement> removido = driver.findElements(By.xpath("//*[@id=\"draggable-117\"]"));
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		if(removido.size()==0){
 			sucesso.add(true);
 		}
 	
+
+		sleep(1000);
+		System.out.println("paso 2");	
+		coluna.sendKeys("CST ICMS");
+
 		sleep(4000);
 
 		coluna.sendKeys("ICMS");
+
 		
-		actions.doubleClick(cst).perform();
+		//actions.doubleClick(cst).perform();
 	
 		gravar.click();
 		
@@ -122,9 +127,12 @@ public class ExcluirColunaPO extends TestBaseSteven{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
-		sleep(1000);
+		sleep(2000);
+		
+		System.out.println("paso3");
 		List<WebElement> agregado = driver.findElements(By.xpath("//*[@id=\"draggable-117\"]"));
 		
 		if (agregado.size()>0) {

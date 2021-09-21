@@ -47,7 +47,9 @@ public class MapeamentoDeParametrosDeEntradaExcluirEmMassaPO extends TestBaseSte
 	public WebElement motivo;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-left\")][2]")
-	public WebElement siguiente;
+
+	public WebElement primerapagina;
+
 	
 	@FindBy(xpath = "//button/span[contains(@class,\"icon-persign\")]")
 	public WebElement excluirMassa;
@@ -72,14 +74,13 @@ public class MapeamentoDeParametrosDeEntradaExcluirEmMassaPO extends TestBaseSte
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		siguiente.click();
-		
+		primerapagina.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]")).size();
 		
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
 		sleep(2000);
 		System.out.println(id);
 		
@@ -131,10 +132,10 @@ public class MapeamentoDeParametrosDeEntradaExcluirEmMassaPO extends TestBaseSte
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectElement(primerapagina);
 		sleep(2000);
 		
-		siguiente.click();
+		primerapagina.click();
 		
 		sleep(3000);
 		
@@ -145,11 +146,11 @@ public class MapeamentoDeParametrosDeEntradaExcluirEmMassaPO extends TestBaseSte
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]")).size();
 		
-		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
 		
 		rows = rows+1;
 		
-		String idRegistro2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String idRegistro2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][2]/div[3]/div")).getText();
 		
 		
 		
@@ -184,17 +185,17 @@ public class MapeamentoDeParametrosDeEntradaExcluirEmMassaPO extends TestBaseSte
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]")).size();
 		
-		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
 
 		
-		WebElement check1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/label/span"));
+		WebElement check1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[2]/label/span"));
 		check1.click();
 		sleep(1000);
 		rows = rows+1;
 		
-		String idRegistro2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String idRegistro2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][2]/div[3]/div")).getText();
 		
-		WebElement check2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/label/span"));
+		WebElement check2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][2]/div[2]/label/span"));
 		check2.click();
 		
 		sleep(1000);
@@ -212,9 +213,9 @@ public class MapeamentoDeParametrosDeEntradaExcluirEmMassaPO extends TestBaseSte
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectElement(primerapagina);
 		sleep(2000);
-		siguiente.click();
+		primerapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

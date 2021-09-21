@@ -95,7 +95,9 @@ public class SubItensValidosVisualizarPO extends TestBaseFernando{
 		detalhes.click();
 		sleep(2000);	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+
 		sleep(4000);
+
 		
 		// Datos de Editar
 		String obrigacao = driver.findElement(By.xpath("//div[@id=\"obligation\"]/div/div/input")).getAttribute("value").trim();

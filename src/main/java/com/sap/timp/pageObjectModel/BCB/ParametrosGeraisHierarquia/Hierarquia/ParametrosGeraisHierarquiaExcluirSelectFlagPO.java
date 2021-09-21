@@ -24,6 +24,8 @@ public class ParametrosGeraisHierarquiaExcluirSelectFlagPO extends TestBaseKenss
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement simLexeira;
 	
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement ultimo;
 	
 	public ParametrosGeraisHierarquiaExcluirSelectFlagPO() {
 		PageFactory.initElements(driver, this);
@@ -41,11 +43,16 @@ public class ParametrosGeraisHierarquiaExcluirSelectFlagPO extends TestBaseKenss
 		
 		String idRegistro = idObter1();
 		
-		pesquisar.sendKeys(idRegistro);
-		pesquisar.sendKeys(Keys.ENTER);
-		sleep(3000);
+		ultimo.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+//		pesquisar.sendKeys(idRegistro);
+//		pesquisar.sendKeys(Keys.ENTER);
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		System.out.println("Registro que cree: "+idRegistro);
 
@@ -69,18 +76,28 @@ public class ParametrosGeraisHierarquiaExcluirSelectFlagPO extends TestBaseKenss
 		waitExpectElement(hierarquiaConfiguracao);
 		sleep(2000);
 		
-		pesquisar.sendKeys(idRegistro);
-		pesquisar.sendKeys(Keys.ENTER);
-		sleep(3000);
+		ultimo.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String id2 = driver.findElement(By.xpath("//div[@class=\"tr-no-data\"]/div[@class=\"td\"]")).getText();
+		
+		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and@data-id]")).size();
+		
+		
+		String id2 = driver.findElement(By.xpath("//div[@class=\"tr\" and@data-id]["+rows+"]/div[4]/div")).getText();
+//		pesquisar.sendKeys(idRegistro);
+//		pesquisar.sendKeys(Keys.ENTER);
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
+		
+//		String id2 = driver.findElement(By.xpath("//div[@class=\"tr-no-data\"]/div[@class=\"td\"]")).getText();
 		System.out.println(id2);
 		
 		boolean sucesso = false;
 		//cadena1.equals(cadena2)
-		if (id2.contains("Nenhum resultado") ) {
+		if (id2 != idRegistro ) {
 			sucesso= true;
 		}else {
 			sucesso= false;

@@ -73,7 +73,7 @@ public class CodigosDeLotacaoEditarPO extends TestBaseSteven {
 		String valor = campo.getAttribute("value");
 		System.out.println(valor);
 		
-		String enviar = "00000";
+		String enviar = "5555";
 
 		campo.clear();
 		sleep(2000);

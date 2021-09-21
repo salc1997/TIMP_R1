@@ -117,7 +117,7 @@ public class AliquotasDeTaxaDeActualizacaoVisualizarPO  extends TestBaseSteven{
 		String dataDivulgacaoV1 = dataDivulgacaoV.getText();
 		String dataAtualizacaoV1 = dataAtualizacaoV.getText();
 
-
+		System.out.println("----------VISUALIZAR----------");
 		System.out.println(codigoIndiceV1);
 		System.out.println(valorV1);
 		System.out.println(fatorAcumuladoV1);
@@ -148,16 +148,27 @@ public class AliquotasDeTaxaDeActualizacaoVisualizarPO  extends TestBaseSteven{
 		sleep(2000);
 		
 		String codigoIndiceE1 = codigoIndiceE.getAttribute("value");
+		codigoIndiceE1 = codigoIndiceE1.replace(" - Tester", "");
+		
 		String valorE1 = valorE.getAttribute("value");
+		valorE1= valorE1.replace(",", ".");
+		
 		String fatorAcumuladoE1 = fatorAcumuladoE.getAttribute("value");
+		fatorAcumuladoE1= fatorAcumuladoE1.replace(",", ".");
+		
 		String taxaE1 = taxaE.getAttribute("value");
+		taxaE1= taxaE1.replace(",", ".");
+		
 		String valorPeriodoE1 = valorPeriodoE.getAttribute("value");
+		valorPeriodoE1= valorPeriodoE1.replace(",", ".");
+		
 		String inicioTaxaE1 = inicioTaxaE.getAttribute("value");
 		String fimTaxaE1 = fimTaxaE.getAttribute("value");
 		String dataDivulgacaoE1 = dataDivulgacionE.getAttribute("value");
 		String dataAtualizacaoE1 = dataActualizacionE.getAttribute("value");
 
-
+		System.out.println("");
+		System.out.println("----------EDITAR-------------");
 		System.out.println(codigoIndiceE1);
 		System.out.println(valorE1);
 		System.out.println(fatorAcumuladoE1);

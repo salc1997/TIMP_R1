@@ -172,7 +172,7 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		
 		String URL = driver.getCurrentUrl();
 		
-		if(URL.contains("tq1")) {
+		if(URL.contains("tq1") || URL.contains("tq2")) {
 			componenteTq1.click();
 		}else {
 			componente.click();
@@ -225,6 +225,12 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		
 		// Opcion para TQ1
 		if(URL.contains("tq1")) {
+			WebElement opcionLeiaute = driver.findElement(By.xpath("//li[contains(@class,\"list-item\") and @id and text()=\"ID7403-TA-TESTE (Complemento BRE)\"][1]"));
+			opcionLeiaute.click();
+			sleep(1000);
+		}
+		
+		if(URL.contains("tq2")) {
 			WebElement opcionLeiaute = driver.findElement(By.xpath("//li[contains(@class,\"list-item\") and @id and text()=\"ID7403-TA-TESTE (Complemento BRE)\"][1]"));
 			opcionLeiaute.click();
 			sleep(1000);
@@ -283,6 +289,14 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		sleep(1000);
 		
 		if(URL.contains("tq1")) {
+			acoes.click();
+			sleep(1000);
+			acoes.sendKeys("Teste Auditoria N3");
+			acoes.sendKeys(Keys.ENTER);
+			sleep(1000);
+		}
+		
+		if(URL.contains("tq2")) {
 			acoes.click();
 			sleep(1000);
 			acoes.sendKeys("Teste Auditoria N3");

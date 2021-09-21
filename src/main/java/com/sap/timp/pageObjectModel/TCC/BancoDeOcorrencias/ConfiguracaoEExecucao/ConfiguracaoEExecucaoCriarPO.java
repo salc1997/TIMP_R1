@@ -82,6 +82,7 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[text()=\"110 - Auto de infração\"]")
 	public WebElement idTipoObjetoTQ1;
 	
+
 	@FindBy(xpath = "//div[text()=\"2 - Controle Interno\"]")
 	public WebElement idTipoObjetoTC2;
 	

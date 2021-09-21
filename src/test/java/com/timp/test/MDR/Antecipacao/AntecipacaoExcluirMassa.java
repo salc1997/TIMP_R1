@@ -35,23 +35,15 @@ public class AntecipacaoExcluirMassa extends TestBaseMassiel{
 	public void criar() {
 		
 		loginTC.login();
-		
 		acessarMDRPO.acessarMDR();
-
 		
 		boolean sucesso = antecipacaoExcluirMassaPO.criarAntecipacao();
-
 		assertTrue(sucesso, Criar);
-
 	}
   
   @Test(dependsOnMethods = "criar")
 	public void excluir() {
-		
-	
 		boolean sucesso = antecipacaoExcluirMassaPO.ExcluirMasas();
-
-		assertTrue(sucesso, Criar);
-
+		assertTrue(sucesso, Eliminado);
 	}
 }

@@ -30,6 +30,10 @@ public class KpisCriarPO extends TestBaseMassiel {
 	@FindBy(xpath = "//li[@id=\"option-1\"]")
 	public WebElement clasificacionOPC;
 	
+	@FindBy(xpath = "//li[@id=\"1\"]")
+	public WebElement clasificacionOPCTQ2;
+	
+	
 	@FindBy(xpath = "//div[@id=\"accessClassification\"]/div/div[2]")
 	public WebElement clasificacionAcceso;
 	
@@ -57,13 +61,16 @@ public class KpisCriarPO extends TestBaseMassiel {
 		boolean tp1  = false;
 		boolean tc2  = false;
 		boolean tq1  = false;
-
+		boolean tq2  = false;
+		
 		if (url.contains("tq1")) {
 			tq1 = true;
 		}else if(url.contains("tc2")){
 			tc2 = true;
 		}else if(url.contains("tp1")){
 			tp1 = true;
+		}else if(url.contains("tq2")){
+			tq2 = true;
 		}
 		
 		sleep(2000);
@@ -87,8 +94,14 @@ public class KpisCriarPO extends TestBaseMassiel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();	
+		
+		String id ="0";
+		
+		if(rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
+		}
+		
 		
 		System.out.println("Ultimo registro: " + id);
 		
@@ -105,6 +118,8 @@ public class KpisCriarPO extends TestBaseMassiel {
 		clasificacion.click();
 		sleep(2000);
 		
+		
+		
 		clasificacionOPC.click();
 		sleep(2000);
 		
@@ -120,6 +135,10 @@ public class KpisCriarPO extends TestBaseMassiel {
 			
 		}else if (tp1==true ) {
 			clasificacionOPC.click();
+			sleep(2000);
+			
+		}else if (tq2==true ) {
+			clasificacionOPCTQ2.click();
 			sleep(2000);
 			
 		}else {

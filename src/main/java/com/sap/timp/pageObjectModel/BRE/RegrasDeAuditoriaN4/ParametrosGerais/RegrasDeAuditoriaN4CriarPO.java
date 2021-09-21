@@ -199,9 +199,9 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseSteven{
 	}
 	
 	public boolean criar() {
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+//		sleep(2000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 	
 		regraAuditoriaN4.click();
 		
@@ -305,6 +305,12 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseSteven{
 			sleep(1000);
 		}
 		
+		// Opcao para TQ2
+		if(URL.contains("tq2")) {
+			opcaoleiautereferenciatq1.click();
+			sleep(1000);
+		}
+		
 		// Opcao para TP1
 		if(URL.contains("tp1")) {
 			opcaoleiautereferenciatp1.click();
@@ -336,6 +342,11 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseSteven{
 		// Opcao para TP1
 		if(URL.contains("tp1")) {
 			opcaoleiautecomparacaotp1.click();
+			sleep(1000);
+		}
+		
+		if(URL.contains("tq2")) {
+			opcaoleiautecomparacaotq1.click();
 			sleep(1000);
 		}
 		

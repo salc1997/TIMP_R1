@@ -36,7 +36,9 @@ public class ConfiguracoesVisualizar extends TestBaseMassiel{
 
 	@AfterClass
 	public void afterClass() {
+
 	//	driver.close();
+
 	}
 
 

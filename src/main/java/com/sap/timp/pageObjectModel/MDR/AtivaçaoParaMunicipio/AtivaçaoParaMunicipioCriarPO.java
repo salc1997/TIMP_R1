@@ -77,6 +77,7 @@ public class AtivaçaoParaMunicipioCriarPO extends TestBaseSteven {
 	public boolean criar() {
 		sleep(2000);
 		ativaçaoparamunicipio.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();
@@ -132,16 +133,20 @@ public class AtivaçaoParaMunicipioCriarPO extends TestBaseSteven {
 		gravar.click();
 		sleep(2000);
 		sim.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+
+		waitExpectElement(biblioteca);
+		sleep(2000);
+
 		sleep(6000);
+
 		
 		biblioteca.click();
-		
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

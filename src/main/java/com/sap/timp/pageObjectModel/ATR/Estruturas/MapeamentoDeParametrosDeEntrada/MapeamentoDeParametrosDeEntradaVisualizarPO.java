@@ -16,6 +16,7 @@ public class MapeamentoDeParametrosDeEntradaVisualizarPO extends TestBaseSteven 
 	
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-left\"]")
+
 	public WebElement siguiente;
 	
 	

@@ -3,13 +3,38 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <class name="com.timp.test.BRB.FiltrosAvancados">
+=======
+      <class name="com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoTributoXEstrutura.ConfiguraçãoTributoTributoXEstruturaCriar">
+>>>>>>> refs/remotes/origin/Kenssy
+=======
       <class name="com.timp.test.TCC.BancoDeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar">
+>>>>>>> refs/remotes/origin/Yessy
         <methods>
+<<<<<<< HEAD
+          <include name="afterClass"/>
+<<<<<<< HEAD
+          <include name="filtrosAvanzados"/>
+=======
+          <include name="criar"/>
+>>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/remotes/origin/Yessy
           <include name="beforeClass"/>
           <include name="criar"/>
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRB.FiltrosAvancados -->
+=======
+      </class> <!-- com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoTributoXEstrutura.ConfiguraçãoTributoTributoXEstruturaCriar -->
+>>>>>>> refs/remotes/origin/Kenssy
+=======
       </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

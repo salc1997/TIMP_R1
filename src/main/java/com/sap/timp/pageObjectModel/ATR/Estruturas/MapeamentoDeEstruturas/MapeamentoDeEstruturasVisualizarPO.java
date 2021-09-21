@@ -51,7 +51,9 @@ public class MapeamentoDeEstruturasVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@id=\"multipleControlerId-00\"]")
 	public WebElement tributoicmsvi;
 	
-	@FindBy(xpath = "//div/div[@id=\"componentToSearchId-00\"]")
+
+	@FindBy(xpath = "//div[contains(@class,\"taxMap\")]/div/div/div/div/div/div[@class=\"componentName\"]")
+
 	public WebElement tributocofinsvi;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]")
@@ -80,7 +82,7 @@ public class MapeamentoDeEstruturasVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@id=\"multipleControlerId-00\"]")
 	public WebElement tributoicms;
 	
-	@FindBy(xpath = "//div[@id=\"multipleControlerId-05\"]")
+	@FindBy(xpath = "//div[contains(@class,\"taxMap\")]/div/div/div/div/div/div[@class=\"componentName\"]")
 	public WebElement tributocofins;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]")
@@ -168,7 +170,9 @@ public class MapeamentoDeEstruturasVisualizarPO extends TestBaseSteven{
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+
 	    sleep(12000);
+
 	    
 	    String estruturadadoseditar = estruturadedados.getAttribute("value");
 		String empresaeditar = empresa.getAttribute("value");

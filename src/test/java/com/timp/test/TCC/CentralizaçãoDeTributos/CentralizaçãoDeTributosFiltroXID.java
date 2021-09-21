@@ -30,8 +30,8 @@ public class CentralizaçãoDeTributosFiltroXID extends TestBaseSteven {
 	}
 
 
+	@Test()
 
-	@Test
 	public void Filtro() {
 		loginTC.login();
 		acessarTCCPO.acessarTCC();

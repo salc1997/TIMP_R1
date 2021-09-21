@@ -66,13 +66,16 @@ public class ExecuçõesSalvasRecalcularPO extends TestBaseSteven {
 		boolean tp1  = false;
 		boolean tc2  = false;
 		boolean tq1  = false;
-
+		boolean tq2  = false;
+		
 		if (url.contains("tq1")) {
 			tq1 = true;
 		}else if(url.contains("tc2")){
 			tc2 = true;
 		}else if(url.contains("tp1")){
 			tp1 = true;
+		}else if(url.contains("tq2")){
+			tq2 = true;
 		}
 		
 		execucoes.click();
@@ -101,7 +104,7 @@ public class ExecuçõesSalvasRecalcularPO extends TestBaseSteven {
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
-		}else {
+		}else if (tc2==true) {
 			pesquisarID.sendKeys("925");
 			sleep(1000);
 			
@@ -109,7 +112,16 @@ public class ExecuçõesSalvasRecalcularPO extends TestBaseSteven {
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
+		}else {
+			pesquisarID.sendKeys("2986");
+			sleep(1000);
+			
+			pesquisarID.sendKeys(Keys.ENTER);
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
 		}
+		
 		String rows =  driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[4]")).getText();
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+rows+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+rows+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));

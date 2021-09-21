@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AtividadeFiscal;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -63,18 +64,33 @@ public class AtividadeFiltroPO extends TestBaseSteven {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
+
+		sleep(2000);
+		
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		String actividadeFiscal = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
+		System.out.println(actividadeFiscal);
+
 		sleep(6000);
 
-		String idRegistro = id.getText();
+		//String idRegistro = actividadeFiscal.getText();
 
-		pesquisar.sendKeys(idRegistro);
+		pesquisar.sendKeys(actividadeFiscal);
 		pesquisar.sendKeys(Keys.ENTER);
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idBusqueda = id.getText();
+		
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		
+		String idBusqueda = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
+		System.out.println(idBusqueda);
 
-		boolean sucesso = idRegistro.equals(idBusqueda);
+		
+		//String idBusqueda = actividadeFiscal.getText();
+
+		boolean sucesso = actividadeFiscal.equals(idBusqueda);
 
 		return sucesso;
 

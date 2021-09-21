@@ -49,8 +49,10 @@ public class BairroEditarPO extends TestBaseSteven{
 		if (url.contains("tq1")) {
 			cep2.click();
 			sleep(1000);
+
 		} else {
 			cep2.click();
+
 			sleep(1000);
 		}
 		bairro.click();

@@ -765,10 +765,10 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 			tp1 = true;
 		}
 		
-		home.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+//		home.click();
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		AcessarBREPO acessarBREPO;
 		acessarBREPO = new AcessarBREPO();
@@ -806,7 +806,7 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		
 		
 		if (tc2 == true) {
-			componente.click();
+			componenteTQ1.click();
 		}else if (tp1==true ) {
 			componente.click();
 		}else {
@@ -868,13 +868,11 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		dataVigenciaR.sendKeys("01/01/2013");
 		sleep(6000);
 		aplicar.click();
-		sleep(3000);
+		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		waitExpectElement(adicionarCaminho);
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		//waitExpectElement(adicionarCaminho);
+		sleep(5000);
+		
 		
 		adicionarCaminho.click();
 		sleep(3000);

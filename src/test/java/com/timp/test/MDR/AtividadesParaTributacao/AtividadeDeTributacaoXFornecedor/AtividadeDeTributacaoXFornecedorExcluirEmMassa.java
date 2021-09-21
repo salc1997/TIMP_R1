@@ -41,9 +41,14 @@ public class AtividadeDeTributacaoXFornecedorExcluirEmMassa extends TestBaseStev
 		boolean sucesso = atividadeDeTributacaoXFornecedorExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+		
 		boolean sucesso2 = atividadeDeTributacaoXFornecedorExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
-
 	}
+
 }
 

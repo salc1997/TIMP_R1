@@ -194,6 +194,7 @@ public class AtividadeExcluirMassaPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(7000);	
 		
+
 	
 		
 		/*biblioteca.click();
@@ -208,6 +209,7 @@ public class AtividadeExcluirMassaPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		*/
+
 		btnUltimaPagina.click();
 		
 		sleep(2000);
@@ -250,7 +252,8 @@ public class AtividadeExcluirMassaPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(7000);		
 		
-		
+
+
 
 		btnUltimaPagina.click();
 		

@@ -31,7 +31,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa extends TestBaseSte
   
   @AfterClass
   public void afterClass() {
-	  driver.close();
+	  //driver.close();
   }
 
 	@Test()

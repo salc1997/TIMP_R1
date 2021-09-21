@@ -213,6 +213,7 @@ public class ConfiguracoesExecutarPO  extends TestBaseMassiel{
 		sleep(3000);
 		
 		executar1.click();
+		waitExpectElement(dato);
 		sleep(25000);
 		sleep(9000);
 		sleep(12000);
@@ -220,7 +221,6 @@ public class ConfiguracoesExecutarPO  extends TestBaseMassiel{
 		sleep(12000);
 		sleep(12000);
 		String valorTC = "1000";
-
 		String nuevoTexto = dato.getText();
 		
 		boolean sucesso = nuevoTexto.equals(valorTC);

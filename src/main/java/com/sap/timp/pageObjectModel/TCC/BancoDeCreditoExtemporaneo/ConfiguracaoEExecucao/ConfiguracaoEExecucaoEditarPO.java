@@ -55,7 +55,9 @@ public class ConfiguracaoEExecucaoEditarPO extends TestBaseFernando{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(inputInicioDeVigencia);
+
 		sleep(12000);
+
 		
 		
 		attributoNotToBeEmptyElement(inputInicioDeVigencia, "value");
@@ -84,6 +86,7 @@ public class ConfiguracaoEExecucaoEditarPO extends TestBaseFernando{
 		sleep(2000);
 		
 		driver.navigate().refresh();
+		sleep(2000);
 		invisibilityOfElementOverlay();
 		waitExpectElement(inputInicioDeVigencia);
 		sleep(2000);

@@ -90,13 +90,17 @@ public ArrayList<Boolean> Filtros() {
 		System.out.println(empresaText);
 
 		System.out.println("-------------------------");
-		sleep(1000);
+		sleep(3000);
 		equis.click();
-		sleep(2000);
+		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
 		filtrosA.click();
+
+		sleep(17000);
+
 		sleep(26000);
+
 		
 
 		nomeHerarquiaImput.sendKeys(nomeHerarquiaText);

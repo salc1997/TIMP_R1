@@ -31,20 +31,17 @@ public class BREGerenciarRegulamentosCriarEditarExcluir extends TestBaseSteven{
   
   @AfterClass
   public void afterClass() {
-	  
+	  driver.close();
   }
 
-
-	
 	@Test()
 	public void criar() {
 
 		loginTC.login();
 		acessarBREPO.acessarBRE();
+
 		boolean sucesso = bREGerenciarRegulamentosCriarEditarExcluirPO.criar();
-
 		assertTrue(sucesso, Criar);
-
 	}
 
 }

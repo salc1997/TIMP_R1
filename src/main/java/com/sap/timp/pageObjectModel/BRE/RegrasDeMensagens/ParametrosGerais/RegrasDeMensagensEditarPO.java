@@ -329,7 +329,7 @@ public class RegrasDeMensagensEditarPO extends TestBaseSteven {
 		configuracoes.click();
 		sleep(2000);;
 		
-		String nome1 = "TESTE AUTOMATIZADO - NAO MEXER";
+		String nome1 = "TESTE AUTOMATIZADO E - NAO MEXER";
 		
 		nome.clear();
 		sleep(2000);

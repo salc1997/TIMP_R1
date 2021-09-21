@@ -29,7 +29,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoEditar extends TestBaseStev
 
   @AfterClass
   public void afterClass() {
-	  driver.close();
+	 // driver.close();
   }
 
 

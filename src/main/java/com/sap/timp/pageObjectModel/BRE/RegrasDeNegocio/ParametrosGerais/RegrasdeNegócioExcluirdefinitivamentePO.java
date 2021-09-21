@@ -138,7 +138,8 @@ public class RegrasdeNegócioExcluirdefinitivamentePO extends TestBaseSteven{
 	@FindBy(xpath = "//input[@placeholder=\"Descrição\"]")
 	public WebElement body;
 	
-
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
+	public WebElement componenteTQ2;
 	
 	public RegrasdeNegócioExcluirdefinitivamentePO() {
 
@@ -153,13 +154,15 @@ public boolean criar() {
 	boolean tp1  = false;
 	boolean tc2  = false;
 	boolean tq1  = false;
-
+	boolean tq2  = false;
 	if (url.contains("tq1")) {
 		tq1 = true;
 	}else if(url.contains("tc2")){
 		tc2 = true;
 	}else if(url.contains("tp1")){
 		tp1 = true;
+	}else if(url.contains("tq2")){
+		tq2 = true;
 	}
 	
 		sleep(2000);
@@ -213,6 +216,12 @@ public boolean criar() {
 			sleep(1000);
 			
 			
+		}else if (tq2 == true) {
+			componenteTQ2.click();
+			sleep(1000);
+			opcComponente.click();
+			sleep(1000);
+		
 		}else {
 			
 			componente2.click();
@@ -268,6 +277,15 @@ public boolean criar() {
 
 			
 			
+		}else if (tq2 == true) {
+			abas.click();
+			sleep(3000);
+			opcAbas1.click();
+			
+			sleep(1000);
+			opcAbas1.sendKeys(Keys.ESCAPE);
+			sleep(3000);
+		
 		}else {
 			
 			abas.click();
@@ -326,6 +344,12 @@ public boolean criar() {
 			closeSelectTypeCheckbox(acoes);
 			
 			
+		}else if (tq2 == true) {
+			acoes.click();
+			sleep(2000);
+			opcAcoes1.click();
+			sleep(2000);
+			closeSelectTypeCheckbox(acoes);
 		}else {
 			
 			acoes.click();

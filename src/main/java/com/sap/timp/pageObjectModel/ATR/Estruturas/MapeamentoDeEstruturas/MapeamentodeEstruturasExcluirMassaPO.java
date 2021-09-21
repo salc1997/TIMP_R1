@@ -51,7 +51,9 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 	@FindBy(xpath = "//*[@id=\"DT_LANC\"]/div[1]/label/span")
 	public WebElement opcData;
 	
+
 	@FindBy(xpath = "//div[@class=\"input taxMap\"]/div/div/div[2]")
+
 	public WebElement tributo;
 	
 	@FindBy(xpath = "//*[@id=\"00\"]/div[1]/label/span")
@@ -63,7 +65,9 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 	@FindBy(xpath = "//*[@id=\"05\"]/div[1]/label/span")
 	public WebElement opctributodosTC2;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]")
+
+	@FindBy(xpath = "//*[@id=\"createMapping\"]/div/div[2]/div[14]/div[2]/div/div[1]/input")
+
 	public WebElement dataInicio;
 	
 	@FindBy(xpath = "//div[@id=\"add-icon\"]")
@@ -142,16 +146,20 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 		sleep(5000);
 		
 		tributo.click();
-		sleep(1000);
+		sleep(2000);
 		opctributo.click();
+
+		sleep(2000);
 		closeSelectTypeCheckbox(tributo);
-		sleep(1000);
+		sleep(2000);
+	
+
 		
 		dataInicio.sendKeys("02/01/1978");
-		sleep(1000);
+		sleep(2000);
 		
 		dataFim.sendKeys("31/12/1979");
-		sleep(1000);
+		sleep(2000);
 		
 		gravar.click();
 		sleep(4000);
@@ -215,7 +223,11 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 			sleep(1000);
 		}
 		
-	
+		sleep(2000);
+		closeSelectTypeCheckbox(tributo);
+		sleep(2000);
+		
+
 	
 		
 		dataInicio.sendKeys("02/01/1978");
@@ -298,15 +310,18 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 	  aceitar.click();
 	  sleep(3000);
 	  invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	  
-	  sleep(2000);
+	  sleep(3000);
 	  
 	  driver.navigate().refresh(); 
+	  sleep(3000);
+	  invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	  waitExpectElement(finalPagina); 
 	  sleep(2000);
+	  
 	  mapamentoEstruturas.click();
 	  sleep(2000);
 	  invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+	  sleep(2000);
 	  
 	  finalPagina.click(); 
 	  sleep(2000);

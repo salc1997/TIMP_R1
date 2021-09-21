@@ -57,9 +57,17 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>3/5/0</td>
 </tr><tr>
+<<<<<<< HEAD
+<td>Started on:</td><td>Fri Jun 25 10:39:24 CST 2021</td>
+=======
 <td>Started on:</td><td>Wed Sep 15 19:40:28 CST 2021</td>
+>>>>>>> refs/remotes/origin/Yessy
 </tr>
+<<<<<<< HEAD
+<tr><td>Total time:</td><td>4322 seconds (4322620 ms)</td>
+=======
 <tr><td>Total time:</td><td>4838 seconds (4838419 ms)</td>
+>>>>>>> refs/remotes/origin/Yessy
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,6 +84,50 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar.Visualizar()'><b>Visualizar</b><br>Test class: com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar</td>
+<<<<<<< HEAD
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@id=&quot;company&quot;]/div/div/div/input&apos; (tried for 3600 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.sap.timp.base.TestBaseSteven.waitExpectElement(TestBaseSteven.java:278)
+	at com.sap.timp.pageObjectModel.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizarPO.visualizar(RegistroRVSVisualizarPO.java:161)
+	at com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar.Visualizar(RegistroRVSVisualizar.java:41)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&quot;company&quot;]/div/div/div/input&quot;}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IN7IV9K5&apos;, ip: &apos;192.168.88.234&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Agile\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64633}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f6e32021d9459e6e38c52dee20410b86
+*** Element info: {Using=xpath, value=//div[@id=&quot;company&quot;]/div/div/div/input}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 28 more
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2016319956", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2016319956'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@id=&quot;company&quot;]/div/div/div/input&apos; (tried for 3600 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.sap.timp.base.TestBaseSteven.waitExpectElement(TestBaseSteven.java:278)
+	at com.sap.timp.pageObjectModel.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizarPO.visualizar(RegistroRVSVisualizarPO.java:161)
+=======
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@data-id=&quot;142&quot;]/div[1]/div&quot;}
   (Session info: chrome=83.0.4103.106)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
@@ -122,6 +174,7 @@ Session ID: 4e8a8a9be44bb1df079095b1b1b8eb1e
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at com.sap.timp.pageObjectModel.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizarPO.visualizar(RegistroRVSVisualizarPO.java:102)
+>>>>>>> refs/remotes/origin/Yessy
 	at com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar.Visualizar(RegistroRVSVisualizar.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
@@ -148,7 +201,45 @@ Session ID: 4e8a8a9be44bb1df079095b1b1b8eb1e
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&quot;company&quot;]/div/div/div/input&quot;}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-IN7IV9K5&apos;, ip: &apos;192.168.88.234&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Agile\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64633}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f6e32021d9459e6e38c52dee20410b86
+*** Element info: {Using=xpath, value=//div[@id=&quot;company&quot;]/div/div/div/input}
+	at jdk.internal.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 28 more
 </pre></div></td>
+<<<<<<< HEAD
+<td>3692</td>
+<td>com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar@2f62ea70</td></tr>
+=======
 <td>122</td>
 <td>com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSVisualizar@2b76ff4e</td></tr>
 <tr>
@@ -480,6 +571,7 @@ Session ID: 649d42c745abd0bb4e7ba0644da2d6a7
 </pre></div></td>
 <td>189</td>
 <td>com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluir@7a1234bf</td></tr>
+>>>>>>> refs/remotes/origin/Yessy
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -489,20 +581,58 @@ Session ID: 649d42c745abd0bb4e7ba0644da2d6a7
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<<<<<<< HEAD
+<td title='com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSCriar.criar()'><b>criar</b><br>Test class: com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSCriar</td>
+<td></td>
+<td>89</td>
+<td>com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSCriar@31c7528f</td></tr>
+<tr>
+=======
+>>>>>>> refs/remotes/origin/Yessy
 <td title='com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluirEmMassa.criar()'><b>criar</b><br>Test class: com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluirEmMassa</td>
 <td></td>
+<<<<<<< HEAD
+<td>123</td>
+<td>com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluirEmMassa@53f6fd09</td></tr>
+<tr>
+<td title='com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSDetalhes.detalhes()'><b>detalhes</b><br>Test class: com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSDetalhes</td>
+<td></td>
+<td>66</td>
+<td>com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSDetalhes@7a1234bf</td></tr>
+<tr>
+<td title='com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSEditar.editar()'><b>editar</b><br>Test class: com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSEditar</td>
+<td></td>
+<td>105</td>
+<td>com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSEditar@2b76ff4e</td></tr>
+<tr>
+<td title='com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluir.excluir()'><b>excluir</b><br>Test class: com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluir</td>
+<td></td>
+<td>71</td>
+<td>com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluir@24ba9639</td></tr>
+=======
 <td>254</td>
 <td>com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluirEmMassa@24ba9639</td></tr>
+>>>>>>> refs/remotes/origin/Yessy
 <tr>
 <td title='com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluirEmMassa.excluirEmMassa()'><b>excluirEmMassa</b><br>Test class: com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluirEmMassa</td>
 <td></td>
+<<<<<<< HEAD
+<td>28</td>
+<td>com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluirEmMassa@53f6fd09</td></tr>
+=======
 <td>46</td>
 <td>com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSExcluirEmMassa@24ba9639</td></tr>
+>>>>>>> refs/remotes/origin/Yessy
 <tr>
 <td title='com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSFiltroID.filtroId()'><b>filtroId</b><br>Test class: com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSFiltroID</td>
 <td></td>
+<<<<<<< HEAD
+<td>45</td>
+<td>com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSFiltroID@38aa816f</td></tr>
+=======
 <td>203</td>
 <td>com.timp.test.MDR.Siscoserv.RegistroRVS.RegistroRVSFiltroID@2f62ea70</td></tr>
+>>>>>>> refs/remotes/origin/Yessy
 </table><p>
 </body>
 </html>

@@ -88,8 +88,8 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		actionsMoveToElementXpath("//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]");
-		excluircofins.click();
-		sleep(2000);
+//		excluircofins.click();
+//		sleep(2000);
 
 		datainicio.clear();
 		sleep(2000);
@@ -149,10 +149,11 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseSteven {
 		menu.click();
 		sleep(1000);
 		editar.click();
-
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+
 		sleep(6000);
+
 
 		String data  = datainicio.getAttribute("value");
 		String data1 = datafim.getAttribute("value");
@@ -164,6 +165,7 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseSteven {
 		sucesso.add(data.equals(enviar));
 		sucesso.add(data1.contains(enviar1));
 		
+
 		sleep(5000);
 		
 		int cofins = driver.findElements(By.xpath("//div[@id=\"multipleControlerId-05\"]")).size();
@@ -175,6 +177,7 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseSteven {
 			System.out.println("Cofins  consta na edição");
 			sucesso.add(false);
 		}
+
 
 		cancelar.click();
 		sleep(2000);

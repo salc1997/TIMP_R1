@@ -63,6 +63,9 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 		@FindBy(xpath = "//button[text()=\"Sim\"]")
 		public WebElement sim;
 		
+		@FindBy(xpath = "//button[text()=\"Não\"]")
+		public WebElement nao;
+		
 		@FindBy(xpath = "//textarea[@placeholder=\"Preencher Justificativa\"]")
 		public WebElement justificativa;
 		
@@ -521,16 +524,16 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestB
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(3000);
-			sim.click();
+			nao.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			justificativa.sendKeys("Justificativa TESTE AUTOMATIZADO");
-			aplicarJustificativa.click();
-			sleep(3000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+//			justificativa.sendKeys("Justificativa TESTE AUTOMATIZADO");
+//			aplicarJustificativa.click();
+//			sleep(3000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			sleep(2000);
 			
 			biblioteca.click();
 			sleep(3000);

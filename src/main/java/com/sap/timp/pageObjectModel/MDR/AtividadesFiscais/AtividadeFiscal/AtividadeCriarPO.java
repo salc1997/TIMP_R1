@@ -170,6 +170,7 @@ public class AtividadeCriarPO extends TestBaseSteven{
 		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(8000);
 	
+
 		/*biblioteca.click();
 		waitExpectElement(sim);
 		sleep(2000);
@@ -177,7 +178,7 @@ public class AtividadeCriarPO extends TestBaseSteven{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+
 		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

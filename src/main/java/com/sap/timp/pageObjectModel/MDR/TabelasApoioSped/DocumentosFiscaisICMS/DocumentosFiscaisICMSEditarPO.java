@@ -82,7 +82,7 @@ public class DocumentosFiscaisICMSEditarPO extends TestBaseSteven {
 		menu.click();
 		sleep(2000);
 		editar.click();
-		
+		sleep(2000);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
@@ -109,8 +109,10 @@ public class DocumentosFiscaisICMSEditarPO extends TestBaseSteven {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
+
 		attributeToBeXpath("//div[@class=\"element\" and @id=\"taxDocCode\"]/div/div", "class", "base-input  required type2 success");
 		//waitExpectElement(codigodedocumentofiscal);
+
 		
 		sleep(12000);
 

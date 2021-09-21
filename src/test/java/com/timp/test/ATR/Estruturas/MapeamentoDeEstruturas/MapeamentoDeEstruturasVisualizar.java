@@ -30,7 +30,9 @@ public class MapeamentoDeEstruturasVisualizar extends TestBaseSteven{
 
 	  @AfterClass
 	  public void afterClass() {
+
 		 driver.close();
+
 	  }
 	  
  	

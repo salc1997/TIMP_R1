@@ -34,10 +34,13 @@ public class RegrasdeAuditoriaN1EdiçãoEstruturas extends TestBaseSteven{
   }
 
 
-	@Test
+	@Test()
 	public void editar() {
+
 		loginTC.login();
 		acessarBREPO.acessarBRE();
+
+
 		boolean sucesso = regrasdeAuditoriaN1EdiçãoEstruturasPO.editar();
 		assertTrue(sucesso, Editar);
 

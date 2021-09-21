@@ -315,10 +315,10 @@ public class ArmazenarArquivoVisualizarPO extends TestBaseSteven{
 			sleep(6000);
 		}
 		
-		String empresaeditar = empresa.getText();
-		String ufeditar = uf.getText();
-		String filialeditar = filial.getText();
-		String tributoeditar=tributo.getText();
+		//String empresaeditar = empresa.getText();
+		//String ufeditar = uf.getText();
+		//String filialeditar = filial.getText();
+		//String tributoeditar=tributo.getText();
 		String tipodedocumentoeditar=tipodedocumento.getAttribute("value");
 		String descricaoeditar = descricao.getAttribute("value");
 		String statuseditar = status.getAttribute("value");
@@ -329,10 +329,10 @@ public class ArmazenarArquivoVisualizarPO extends TestBaseSteven{
 		String tipoderelacionamentoeditar = tipoderelacionamento.getAttribute("value");
 		
 
-		System.out.println(empresaeditar);
-		System.out.println(ufeditar);
-		System.out.println(filialeditar);
-		System.out.println(tributoeditar);
+		//System.out.println(empresaeditar);
+		//System.out.println(ufeditar);
+		//System.out.println(filialeditar);
+		//System.out.println(tributoeditar);
 		System.out.println(tipodedocumentoeditar);
 		System.out.println(descricaoeditar);
 		System.out.println(statuseditar);
@@ -345,10 +345,10 @@ public class ArmazenarArquivoVisualizarPO extends TestBaseSteven{
 		
 	
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		sucesso.add(empresaeditar.contains(empresavisualizar));
-		sucesso.add(ufeditar.contains(ufvisualizar));
-		sucesso.add(filialeditar.contains(filialvisualizar));
-		sucesso.add(tributoeditar.contains(tributovisualizar));
+		//sucesso.add(empresaeditar.contains(empresavisualizar));
+		//sucesso.add(ufeditar.contains(ufvisualizar));
+		//sucesso.add(filialeditar.contains(filialvisualizar));
+		//sucesso.add(tributoeditar.contains(tributovisualizar));
 		sucesso.add(tipodedocumentoeditar.contains(tipodedocumentovisualizar));
 		sucesso.add(descricaoeditar.contains(descricaovisualizar));
 		sucesso.add(statuseditar.contains(statusvisualizar));

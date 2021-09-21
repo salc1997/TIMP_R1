@@ -57,7 +57,8 @@ public class CarregamentoDeArquivosFiltroPorIDPO extends TestBaseSteven{
 		
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
+		
 		String idBusqueda = id.getText();
 		System.out.println(idBusqueda + " Id Busqueda");
 		
@@ -79,12 +80,12 @@ public class CarregamentoDeArquivosFiltroPorIDPO extends TestBaseSteven{
 		
 		int rows2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		if (rows2 > rows1) {
-			sucesso.add(true);
-		}else {
-			sucesso.add(false);
-		}
-		
+//		if (rows2 == rows1) {
+//			sucesso.add(true);
+//		}else {
+//			sucesso.add(false);
+//		}
+//		
 		
 		System.out.println(sucesso);
 

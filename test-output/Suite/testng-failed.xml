@@ -1,59 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name="DFG - Leiautes(failed)">
-=======
-  <test thread-count="5" name="Formula(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  <test thread-count="5" name="Regra De Campos(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos">
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposVer">
         <methods>
+          <include name="ver"/>
           <include name="beforeClass"/>
-          <include name="favoritos"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos -->
-      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
-=======
-      <class name="com.timp.test.BRB.Formula">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-        <methods>
-          <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="filtrosFiltroTipo"/>
-          <include name="filtroNombre"/>
-=======
-          <include name="aplicar"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
-          <include name="formulaColuna"/>
-          <include name="formulaBoton"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
-=======
-      </class> <!-- com.timp.test.BRB.Formula -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposVer -->
     </classes>
-<<<<<<< HEAD
-  </test> <!-- DFG - Leiautes(failed) -->
-=======
-  </test> <!-- Formula(failed) -->
-  <test thread-count="5" name="ComentarioListaSuspensa(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
-        <methods>
-          <include name="listaSuspensa"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
-    </classes>
-  </test> <!-- ComentarioListaSuspensa(failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  </test> <!-- Regra De Campos(failed) -->
 </suite> <!-- Failed suite [Suite] -->

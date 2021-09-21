@@ -68,9 +68,9 @@ public class RegrasDeAuditoriaN2EdicaoRelacionamentoPO extends TestBaseFernando{
 		sleep(6000);
 		
 		btnSeleccionarRelacionamento.click();
-		sleep(2000);
+		sleep(8000);
 		
-		waitExpectElement(cboRelacionamentoElementoDeEstrutura);
+	//	waitExpectElement(cboRelacionamentoElementoDeEstrutura);
 		cboRelacionamentoElementoDeEstrutura.click();
 		sleep(1000);
 		

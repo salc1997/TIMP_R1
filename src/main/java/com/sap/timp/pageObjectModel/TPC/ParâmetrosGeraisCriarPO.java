@@ -69,7 +69,7 @@ public class ParâmetrosGeraisCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/div[1]/div/div[1]")
 	public WebElement M1;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Código da Receita\"]")
+	@FindBy(xpath = "//div[@class=\"row\"][13]/div[2]/div/div/div[2]")
 	public WebElement codReceita;
 	
 	@FindBy(xpath = "//li[text()=\"1145\"]")
@@ -209,13 +209,17 @@ public class ParâmetrosGeraisCriarPO extends TestBaseSteven {
 		}
 		
 		enero.click();
-		sleep(3000);
+		sleep(7000);
 		
 		M1.click();
-		sleep(17000);
 		
+		System.out.println("----------");
+		sleep(55000);
+		System.out.println("----------");
 		
 		actionsMoveToElementElement(formulario);
+		
+		System.out.println("");
 		
 		if (tq1==true) {
 			codReceita.click();

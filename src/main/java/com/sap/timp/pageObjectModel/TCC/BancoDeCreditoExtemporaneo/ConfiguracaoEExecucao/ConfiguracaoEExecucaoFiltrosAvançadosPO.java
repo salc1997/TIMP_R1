@@ -95,7 +95,7 @@ public class ConfiguracaoEExecucaoFiltrosAvançadosPO extends TestBaseMassiel{
 		
 		this.UF = ufInput.getAttribute("value");
 		System.out.println(this.UF );
-		
+		sleep(6000);
 		filial.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -148,9 +148,16 @@ public class TiposDeObjetosDeOcorrenciasFiscaisCriarPO extends TestBaseSteven{
 		
 		sleep(30000);
 		
+		actionsMoveToElementElement(codigocredito);
+		sleep(5000);
+		
 		codigocredito.click();
 		
-		sleep(2000);
+		sleep(3000);
+		
+	//	codigocredito.click();
+		
+		sleep(3000);
 		
 		opcao.click();
 		

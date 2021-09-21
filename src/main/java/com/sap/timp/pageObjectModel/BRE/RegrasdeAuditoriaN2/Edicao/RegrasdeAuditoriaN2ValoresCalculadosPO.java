@@ -218,7 +218,7 @@ public boolean editar() {
 	vCalculados.click();
 	sleep(4000);
 	criarvCalculados.click();
-	sleep(3000);
+	sleep(7000);
 	
 	nomeVCalculado.sendKeys("TA-TESTE 2");
 	sleep(4000);

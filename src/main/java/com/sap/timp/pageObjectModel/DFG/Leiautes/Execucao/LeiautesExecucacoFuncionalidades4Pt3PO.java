@@ -84,9 +84,10 @@ public class LeiautesExecucacoFuncionalidades4Pt3PO extends TestBaseFernando{
 		btnUltimaPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 
 		String idRegistro = idObter1();
+		//String idRegistro = "1879";
 		System.out.println("");
 		System.out.println("ID Registro: " + idRegistro);
 		System.out.println("");

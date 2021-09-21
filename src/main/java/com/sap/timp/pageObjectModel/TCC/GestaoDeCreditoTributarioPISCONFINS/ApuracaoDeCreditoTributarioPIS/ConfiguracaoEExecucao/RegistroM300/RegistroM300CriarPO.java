@@ -130,7 +130,7 @@ public class RegistroM300CriarPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		empresaoPC.click();
-		sleep(8000);
+		sleep(12000);
 		
 		uf.click();
 		sleep(4000);
@@ -256,7 +256,9 @@ public class RegistroM300CriarPO extends TestBaseMassiel{
 		sleep(5000);
 		sleep(5000);
 		sleep(5000);
-		
+		sleep(5000);
+		sleep(5000);
+		sleep(5000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

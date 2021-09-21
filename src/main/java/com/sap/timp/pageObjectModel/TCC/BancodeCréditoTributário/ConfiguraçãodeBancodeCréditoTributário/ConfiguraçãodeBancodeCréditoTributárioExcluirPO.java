@@ -40,6 +40,10 @@ public class ConfiguraçãodeBancodeCréditoTributárioExcluirPO extends TestBaseSte
 	@FindBy(xpath = "//*[@id=\"1018\"]")
 	public WebElement opcionLeiaute;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement btnNo;
+	
+	
 	public ConfiguraçãodeBancodeCréditoTributárioExcluirPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -85,13 +89,14 @@ public class ConfiguraçãodeBancodeCréditoTributárioExcluirPO extends TestBaseSte
 		
 		waitExpectElement(btnSim);
 		btnSim.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(16000);
 		
+		btnNo.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+	
+		
+		sleep(35000);
+		
 		
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();

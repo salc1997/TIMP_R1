@@ -132,11 +132,12 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		acao.click();
 		
 		sleep(2000);
-		waitExpectElement(grupo1);
-		invisibilityOfElementOverlay();
-		sleep(30000);
-		
-	
+		//waitExpectElement(grupo1);
+		//invisibilityOfElementOverlay();
+		sleep(371400);
+		sleep(1000);
+		sleep(11000);
+		sleep(11000);
 		adicionar.click();
 		sleep(2000);
 		
@@ -160,11 +161,11 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		
 		gravar.click();
 		
-		invisibilityOfElementOverlay();
+		sleep(7000);
 		
 		relacionamentoEstruturas.click();
 		
-		invisibilityOfElementOverlay();
+		sleep(7000);
 		
 		siguiente.click();
 		
@@ -179,10 +180,11 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		acao.click();
 		
 		sleep(2000);
-		waitExpectElement(grupo1);
-		invisibilityOfElementOverlay();
-		sleep(30000);
-		
+	//	waitExpectElement(grupo1);
+	//	invisibilityOfElementOverlay();
+		sleep(371400);
+		sleep(1000);
+		sleep(1000);
 		System.out.println("---------------------------Verificação das Informações-------------------------------------------");
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();

@@ -29,6 +29,7 @@ public class ConfiguracaoDeTributoFiltrosAvançados extends TestBaseSteven{
 	public void afterClass() {
 		driver.close();
 	}
+	
 
 	@Test()
 	public void filtro() {

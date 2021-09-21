@@ -31,7 +31,7 @@ public class ConfiguracaoEExecucaoRegistro1200FiltrosAvansados extends TestBaseM
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 

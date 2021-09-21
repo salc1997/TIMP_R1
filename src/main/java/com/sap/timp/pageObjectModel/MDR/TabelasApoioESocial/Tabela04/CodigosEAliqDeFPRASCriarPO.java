@@ -22,7 +22,8 @@ public class CodigosEAliqDeFPRASCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Codigo FPAS\"]")
 	public WebElement codigo;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Base de cálculo \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Base de Cálculo\"]")
+										
 	public WebElement base;
 	
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher Descrição das Atividades\"]")
@@ -128,21 +129,19 @@ public class CodigosEAliqDeFPRASCriarPO extends TestBaseSteven {
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
+	//	waitExpectElement(sim);
+		
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();
 		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-
+		sleep(7000);
+	
 		siguiente.click();
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();

@@ -77,7 +77,7 @@ public class AprovacaoDeDocumentosEditarPO extends TestBaseSteven {
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		String enviar = "Teste automatizado";
 		comentario.clear();

@@ -335,16 +335,16 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 
 		sleep(2000);
 		execucoes.click();
-		sleep(3000);
+		sleep(7000);
 		execucacoConsolidacao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
 		ultimo.click();
-		sleep(2000);
+		sleep(12000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(16000);
 		
 		//GUARDO EL ULTIMO ID DE LA ULTIMA PAGINA DE EXECUCOES
 		int rows = driver
@@ -372,9 +372,9 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		sleep(2000);
 		
 		ultimo.click();
-		sleep(2000);
+		sleep(12000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(12000);
 		
 		int rowsH = driver
 				.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]"))

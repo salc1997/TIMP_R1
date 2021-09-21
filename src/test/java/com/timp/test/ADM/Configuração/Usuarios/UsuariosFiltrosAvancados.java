@@ -31,25 +31,16 @@ public class UsuariosFiltrosAvancados extends TestBaseSteven {
   @AfterClass
   public void afterClass() {
 	  driver.close();
+	  
   }
   
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void AcessarADM() {
-
-		acessarADMPO.acessarADM();
-		
-	}
-	@Test(priority = 2)
+	@Test
 	public void filtros() {
 
 		// codigoTipoCreditoFiltrosAvançadosPO.filtros();
-
+		loginTC.login();
+		acessarADMPO.acessarADM();
 		ArrayList<Boolean> sucesso = usuariosFiltrosAvacadosPO.filtros();
 		sleep(2000);
 		for (int i = 0; i < sucesso.size(); i++) {

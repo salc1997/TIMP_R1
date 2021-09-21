@@ -61,10 +61,10 @@ public class RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO extends 
 		}
 		
 		if(url.contains("tc2")) {
-			idRegistro = "8";
+			idRegistro = "30";
 		}
 		
-		WebElement checkBox = driver.findElement(By.xpath("//div[@class=\"dialog-content big\"]/div/div[2]/div/div/div/div[contains(@class, \"tbody\")]/div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/label/span"));
+		WebElement checkBox = driver.findElement(By.xpath("//div[@class=\"dialog-content big\"]/div/div[3]/div/div/div/div[contains(@class, \"tbody\")]/div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/label/span"));
 		
 		sleep(1000);
 		checkBox.click();

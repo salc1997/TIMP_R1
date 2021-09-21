@@ -114,14 +114,11 @@ public class InformaçoesAdicionaisEditarPO extends TestBaseSteven {
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		waitExpectElement(descricao);
+	
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(16000);
 		
 		String novoTexto=descricao.getAttribute("value");
 		

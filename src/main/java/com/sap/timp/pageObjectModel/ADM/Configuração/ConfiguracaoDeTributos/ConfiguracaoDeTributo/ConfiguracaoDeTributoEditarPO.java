@@ -204,7 +204,7 @@ public class ConfiguracaoDeTributoEditarPO extends TestBaseSteven {
 		sucesso.add(classificacaoString.contains(classificacaoeditar));
 		
 		
-		System.out.println(sucesso);
+		//System.out.println(sucesso);
 
 		return sucesso;
 

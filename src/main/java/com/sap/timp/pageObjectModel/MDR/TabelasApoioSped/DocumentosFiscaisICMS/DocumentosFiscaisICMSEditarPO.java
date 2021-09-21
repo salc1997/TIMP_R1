@@ -109,10 +109,12 @@ public class DocumentosFiscaisICMSEditarPO extends TestBaseSteven {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		//attributeToBeXpath("//div[@class=\"element\" and @id=\"taxDocCode\"]/div/div", "class", "base-input  required type2 success");
-		waitExpectElement(codigodedocumentofiscal);
+
+		attributeToBeXpath("//div[@class=\"element\" and @id=\"taxDocCode\"]/div/div", "class", "base-input  required type2 success");
+		//waitExpectElement(codigodedocumentofiscal);
+
 		
-		sleep(2000);
+		sleep(12000);
 
 		String novoTexto = codigodedocumentofiscal.getAttribute("value");
 		System.out.println(valor);

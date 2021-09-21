@@ -26,22 +26,15 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos extends TestBase
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
 
-	@Test(priority = 1)
-	public void dfgEntrar() {
-		acessarDFGPO.acessarDFG();
 
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void favoritos() {
+		loginTC.login();
+		acessarDFGPO.acessarDFG();
 		boolean sucesso = parametrosGeraisCriarRaizIDPúblicoPrivadoFavoritosPO.favoritos();
 		assertTrue(sucesso, Criar);
 	}

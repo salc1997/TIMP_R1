@@ -569,6 +569,9 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		public WebElement pastaLexeiraC;
 		@FindBy(xpath = "//li[@identifier=\"accordion-item-inactiveHierarchies\"]")
 		public WebElement pastaLexeiraH;
+		@FindBy(xpath = "//button[text()=\"Aceitar\"]")
+		public WebElement aceitar;
+	
 				
 	public DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO() {
 		PageFactory.initElements(driver, this);
@@ -763,8 +766,8 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		nova.click();
 		sleep(2000);
 
-		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
-		sleep(2000);
+		//attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
+		sleep(5000);
 
 		nomeHirarquia.sendKeys("Prueba Automatizada de Hierarq");
 		sleep(1000);
@@ -1229,11 +1232,13 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 			tp1 = true;
 		}
 		
-//		sleep(1000);
-//		executar.click();
-//		sleep(3000);
+		sleep(1000);
+		aceitar.click();
+		sleep(3000);
 //		waitExpectElement(executarM);
-		sleep(2000);
+		
+		
+		sleep(18000);
 		executarM.click();
 		
 		sleep(2000);

@@ -65,7 +65,7 @@ public class DeXParaM010PlanodeContasSocietarioExcluirEmMassaPO extends TestBase
 	
 	public boolean criar() {
 	
-		
+	
 		deXParaM010.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

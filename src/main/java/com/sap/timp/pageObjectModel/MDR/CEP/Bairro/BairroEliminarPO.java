@@ -44,11 +44,10 @@ public class BairroEliminarPO extends TestBaseSteven{
 		if (url.contains("tq1")) {
 			cep2.click();
 			sleep(1000);
-		} else if (url.contains("tc2")) {
+
+		} else {
 			cep2.click();
-			sleep(1000);
-		}else {
-			cep.click();
+
 			sleep(1000);
 		}
 		bairro.click();
@@ -59,8 +58,11 @@ public class BairroEliminarPO extends TestBaseSteven{
 	    
 		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
+		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		menu.click();
 		sleep(2000);
 		excluir.click();

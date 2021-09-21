@@ -82,7 +82,7 @@ public class RegistroM230VisualizaPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//waitExpectElement(filial);
-		sleep(6000);
+		sleep(10000);
 		
 		String empresavisualizar = empresa.getAttribute("value");
 		String ufvisualizar = uf.getText();
@@ -120,8 +120,8 @@ public class RegistroM230VisualizaPO extends TestBaseMassiel{
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(filial);
-		sleep(2000);
+		//waitExpectElement(filial);
+		sleep(12000);
 		
 		String empresaEditar = empresa.getAttribute("value");
 		String ufEditar = uf.getText();

@@ -96,9 +96,11 @@ public ArrayList<Boolean> Filtros() {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		filtrosA.click();
+
 		sleep(17000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+
+		sleep(26000);
+
 		
 
 		nomeHerarquiaImput.sendKeys(nomeHerarquiaText);

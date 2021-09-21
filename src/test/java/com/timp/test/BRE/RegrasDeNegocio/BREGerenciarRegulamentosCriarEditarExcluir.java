@@ -36,9 +36,10 @@ public class BREGerenciarRegulamentosCriarEditarExcluir extends TestBaseSteven{
 
 	@Test()
 	public void criar() {
+
 		loginTC.login();
 		acessarBREPO.acessarBRE();
-		
+
 		boolean sucesso = bREGerenciarRegulamentosCriarEditarExcluirPO.criar();
 		assertTrue(sucesso, Criar);
 	}

@@ -32,7 +32,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"Auditoria Nvl 3\"][1]")
 	public WebElement opcTipoDeRegra;
 	
-	@FindBy(xpath = "//td[contains(@class, \"component-field\")]/div/div/div[2]")
+	@FindBy(xpath = "//td[contains(@class, \"component-field\")]/div/div[2]")
 	public WebElement componente;
 	
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"DFG\"][1]")
@@ -193,7 +193,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		estruturaDeDatos.click();
 		sleep(1000);
 		opcaoEstruturaDeDatos.click();
-		sleep(1000);
+		sleep(8000);
 		
 		caracteristicaEspecial.click();
 		sleep(1000);
@@ -229,7 +229,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		versaoDoLeiaute.click();
 		sleep(1000);
 		opcaoversaoDoLeiaute.click();
-		sleep(1000);
+		sleep(10000);
 		
 		actionsMoveToElementXpath("//td[contains(@class, \"EffectiveDateTo\")]/div/div/input");
 		regulamento.click();
@@ -306,7 +306,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		estruturaDeDatos.click();
 		sleep(1000);
 		opcaoEstruturaDeDatos.click();
-		sleep(1000);
+		sleep(10000);
 		
 		caracteristicaEspecial.click();
 		sleep(1000);
@@ -342,7 +342,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		versaoDoLeiaute.click();
 		sleep(1000);
 		opcaoversaoDoLeiaute.click();
-		sleep(1000);
+		sleep(9000);
 		
 		actionsMoveToElementXpath("//td[contains(@class, \"EffectiveDateTo\")]/div/div/input");
 		regulamento.click();

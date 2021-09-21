@@ -145,7 +145,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriarPO extends TestBaseMassi
 			sleep(2000);
 			
 			leiaute.click();
-			sleep(2000);
+			sleep(4000);
 			
 			leiauteOPC2.click();
 			sleep(2000);
@@ -178,11 +178,11 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriarPO extends TestBaseMassi
 		sleep(8000);
 		
 		waitExpectElement(siguiente);
-		sleep(8000);
+		sleep(12000);
 		siguiente.click();
-		sleep(2000);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();

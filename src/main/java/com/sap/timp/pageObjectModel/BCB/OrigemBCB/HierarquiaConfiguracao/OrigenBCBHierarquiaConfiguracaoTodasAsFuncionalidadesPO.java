@@ -373,7 +373,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	public WebElement executarB;
 	
 	//VERIFICAR INFORMACION DE SUBNIVELES
-	@FindBy(xpath = "//div[contains(@class,\"lvl-0\")]/div/div/div/div")
+	@FindBy(xpath = "//div[contains(@class,\"lvl-0\")]/div[1]/div[1]/div[1]/div[1]")
 	public WebElement aba1;
 	
 	@FindBy(xpath = "//div[contains(@class,\"lvl-1\")]/div[1]/div[1]/div[1]/div[1]")
@@ -752,7 +752,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		gravarC.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		sleep(7000);
 		
 		biblioteca.click();
 		sleep(5000);
@@ -973,7 +973,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		if (tc2==true) {
 			selectBCB3.click();
 			selectBCB3.sendKeys(Keys.ESCAPE);
-			sleep(1000);
+			sleep(3000);
 		}else if(tq1==true) {
 			selectBCB1.click();
 			selectBCB1.sendKeys(Keys.ESCAPE);
@@ -990,7 +990,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		
 		campoSaida11.click();
-		sleep(7000);
+		sleep(8000);
 		opcCampoSaida11.click();
 		sleep(3000);
 		
@@ -1856,8 +1856,8 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 //		sleep(3000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(aba1);
-		sleep(2000);
+	//	waitExpectElement(aba1);
+		sleep(12000);
 		
 		aba1.click();
 		sleep(2000);
@@ -2092,7 +2092,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(1000);
 		
 		subnivel6.click();
-		sleep(2000);
+		sleep(5000);
 		
 		String valorCampoSaidaSubNivel6 = verCampoSaidaSubNivel6.getText();
 		System.out.println("Campo Saida Subnivel5: "+ valorCampoSaidaSubNivel6);
@@ -2233,7 +2233,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);*/
 		
-		sleep(3000);
+		sleep(6000);
 		
 		ultimo.click();
 		sleep(3000);

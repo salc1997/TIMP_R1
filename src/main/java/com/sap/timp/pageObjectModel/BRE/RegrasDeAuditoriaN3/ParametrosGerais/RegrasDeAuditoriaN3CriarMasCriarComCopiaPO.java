@@ -61,7 +61,7 @@ public class RegrasDeAuditoriaN3CriarMasCriarComCopiaPO extends TestBaseFernando
 		sleep(2000);
 		
 		waitExpectElement(aplicar);
-		sleep(3000);
+		sleep(9000);
 		aplicar.click();
 		
 		sleep(2000);

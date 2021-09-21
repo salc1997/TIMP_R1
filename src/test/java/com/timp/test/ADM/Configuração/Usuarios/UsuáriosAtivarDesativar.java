@@ -17,8 +17,8 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class UsuáriosAtivarDesativar extends TestBaseSteven {
-	LoginTC loginTC;
-	AcessarADMPO acessarADMPO;
+	LoginTC  loginTC;
+	AcessarADMPO  acessarADMPO;
 	UsuáriosAtivarDesativarPO usuáriosAtivarDesativarPO;
 	
   @BeforeClass
@@ -32,26 +32,15 @@ public class UsuáriosAtivarDesativar extends TestBaseSteven {
   @AfterClass
   public void afterClass() {
 	  driver.close();
+	  
   }
   
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void AcessarADM() {
-
-		acessarADMPO.acessarADM();
-		
-	}
-	
-	@Test(priority = 2)
+	@Test
 	public void ver() {
-		
+		loginTC.login();
+		acessarADMPO.acessarADM();
 		Boolean sucesso = usuáriosAtivarDesativarPO.ativar();
-
+		assertTrue(sucesso, Criar);
 	}
 
 }

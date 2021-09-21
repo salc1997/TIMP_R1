@@ -22,7 +22,9 @@ public class MapeamentoDeParametrosDeEntradaEditarPO extends TestBaseSteven{
 	public WebElement opcaoestrutura2;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-left\")][2]")
+
 	public WebElement primerapagina;
+
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Campo \"]")
 	public WebElement direcaomovimento;

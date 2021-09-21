@@ -86,8 +86,13 @@ public class PainelCreditoICMSExcluirPO extends TestBaseMassiel{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(12000);
 		
+		executadosPainelCréditoICMS.click();
+		invisibilityOfElementOverlay();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();

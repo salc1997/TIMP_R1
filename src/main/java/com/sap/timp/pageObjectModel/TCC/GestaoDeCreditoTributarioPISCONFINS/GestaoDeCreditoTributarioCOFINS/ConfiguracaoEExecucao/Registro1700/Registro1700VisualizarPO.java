@@ -118,7 +118,7 @@ public class Registro1700VisualizarPO extends TestBaseMassiel{
 		biblioteca.click();
 		sleep(4000);
 		
-		no.click();
+		//no.click();
 		sleep(2000);
 		
 		waitExpectElement(siguiente);

@@ -87,7 +87,7 @@ public class Registro1501EditarPO extends TestBaseSteven {
 		sleep(12000);
 		
 		waitExpectElement(filial);
-		sleep(13000);
+		sleep(17000);
 		String valor = filialE.getText();
 		//String valor = filialE.getAttribute("value");
 		System.out.println(valor);
@@ -101,7 +101,7 @@ public class Registro1501EditarPO extends TestBaseSteven {
 		filialO.click();
 		sleep(1000);
 		closeSelectTypeCheckbox(filial);
-		sleep(1000);
+		sleep(9000);
 		
 		btnGravar.click();
 		sleep(2000);

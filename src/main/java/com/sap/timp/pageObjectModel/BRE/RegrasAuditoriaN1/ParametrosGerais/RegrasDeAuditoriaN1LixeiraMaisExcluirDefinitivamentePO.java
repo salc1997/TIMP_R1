@@ -71,7 +71,7 @@ public class RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamentePO extends Test
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(mensagem);
+		//waitExpectElement(mensagem);
 		sleep(2000);
 		
 		regrasdeauditorian1.click();
@@ -137,7 +137,7 @@ public class RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamentePO extends Test
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(mensagem);
+		//waitExpectElement(mensagem);
 		sleep(2000);
 		
 		sleep(2000);

@@ -135,13 +135,13 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 		sleep(8000);
 		
 		empresa.click();
-		sleep(2000);
+		sleep(4000);
 		
 		empresaoPC.click();
-		sleep(6000);
+		sleep(7000);
 		
 		uf.click();
-		sleep(2000);
+		sleep(4000);
 		
 		if (tc2 == true) {
 

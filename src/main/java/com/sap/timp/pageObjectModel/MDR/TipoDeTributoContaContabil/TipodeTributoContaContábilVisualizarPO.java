@@ -14,6 +14,9 @@ public class TipodeTributoContaContábilVisualizarPO extends TestBaseSteven {
 	@FindBy(xpath = "//span[text()=\"Tipo de Tributo x Conta Contábil\"]")
 	public WebElement tipodetributocontacontabil;
 	
+	@FindBy(xpath = "//span[text()=\"Cadastros PIS/COFINS\"]")
+	public WebElement cadastroPisConfins;
+	
 	
 	@FindBy(xpath = "//span[text()=\"Novo Tipo de Tributo x Conta Contábil\"]")
 	public WebElement novotipodetributocontacontabil;
@@ -50,7 +53,12 @@ public class TipodeTributoContaContábilVisualizarPO extends TestBaseSteven {
 	
 	public ArrayList<Boolean> visualizarCompatibilidadeEntreFPAS() {
 		sleep(2000);
+		
+		cadastroPisConfins.click();
+		sleep(2000);
+		
 		tipodetributocontacontabil.click();
+		sleep(2000);
 		sleep(2000);
 		finalPagina.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

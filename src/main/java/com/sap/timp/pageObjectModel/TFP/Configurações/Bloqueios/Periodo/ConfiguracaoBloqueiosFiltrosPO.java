@@ -26,7 +26,7 @@ public class ConfiguracaoBloqueiosFiltrosPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@id=\"idCompany\"]/div/div/div[2]")
 	public WebElement cboEmpresa;
 	
-	@FindBy(xpath = "//li[@tabindex=\"0\" and @class=\"list-item\" and @id and text()=\"3000\"]")
+	@FindBy(xpath = "//li[@tabindex=\"0\" and @class=\"list-item\" and @id and text()=\"1000\"]")
 	public WebElement opcionEmpresa;
 	
 	@FindBy(xpath = "//div[@id=\"uf\"]/div/div/div[2]")
@@ -38,13 +38,13 @@ public class ConfiguracaoBloqueiosFiltrosPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@id=\"idBranch\"]/div/div[2]")
 	public WebElement cboFilial;
 	
-	@FindBy(xpath = "//li[@tabindex=\"0\" and contains(@class, \"list-item\") and @id and text()=\"3000 / 0031\"]")
+	@FindBy(xpath = "//li[@tabindex=\"0\" and contains(@class, \"list-item\") and @id and text()=\"1000 / 0143\"]")
 	public WebElement opcionFilial;
 	
 	@FindBy(xpath = "//div[@id=\"creationUser\"]/div/div/div[2]")
 	public WebElement cboUsuarioCriacao;
 	
-	@FindBy(xpath = "//li[@tabindex=\"0\" and contains(@class, \"list-item\") and @id and text()=\"TESTE AUTOMATIZADO\"]")
+	@FindBy(xpath = "//li[@tabindex=\"0\" and contains(@class, \"list-item\") and @id and text()=\"TESTEAUTOMATIZADO TESTEAUTOMATIZADO\"]")
 	public WebElement opcionUsuarioCriacao;
 	
 	@FindBy(xpath = "//div[@id=\"creationDate\"]/div/div/input")
@@ -53,7 +53,7 @@ public class ConfiguracaoBloqueiosFiltrosPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@id=\"modificationUser\"]/div/div/div[2]")
 	public WebElement cboUsuarioModificacao;
 	
-	@FindBy(xpath = "//li[@tabindex=\"0\" and contains(@class, \"list-item\") and @id and text()=\"TESTE AUTOMATIZADO\"]")
+	@FindBy(xpath = "//li[@tabindex=\"0\" and contains(@class, \"list-item\") and @id and text()=\"TESTEAUTOMATIZADO TESTEAUTOMATIZADO\"]")
 	public WebElement opcionUsuarioModificacao;
 	
 	@FindBy(xpath = "//div[@id=\"modificationDate\"]/div/div/input")

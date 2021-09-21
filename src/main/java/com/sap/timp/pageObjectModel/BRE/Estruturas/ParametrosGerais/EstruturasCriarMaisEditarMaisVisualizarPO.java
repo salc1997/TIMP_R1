@@ -34,7 +34,7 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@id=\"structure-validation\"]/div/div/div[2]")
 	public WebElement estruturadevalidacao;
 	
-	@FindBy(xpath = "//li[@id][text()=\"Empresa/Filial\"]")
+	@FindBy(xpath = "//li[@id][text()=\"Empresa / Filial\"]")
 	public WebElement opcaoestruturadevalidacao;
 	
 	@FindBy(xpath = "//li[@id][text()=\"Empresa / Filial\"]")
@@ -171,7 +171,7 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseSteven{
 		}
 		
 		estruturadevalidacao.click();
-		sleep(2000);
+		sleep(6000);
 		if(tp1 == true) {
 			opcaoestruturadevalidacaotp1.click();
 			sleep(2000);
@@ -268,7 +268,7 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseSteven{
 		visualizar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		String grupovisualizar = grupovi.getAttribute("value");
 		String estruturavisualizar = estruturavi.getAttribute("value");

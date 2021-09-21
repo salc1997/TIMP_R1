@@ -151,7 +151,7 @@ public class KpisCriarCopiaPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		//waitExpectElement(biblioteca);
-		sleep(12000);
+		sleep(18000);
 		
 		biblioteca.click();
 		sleep(2000);

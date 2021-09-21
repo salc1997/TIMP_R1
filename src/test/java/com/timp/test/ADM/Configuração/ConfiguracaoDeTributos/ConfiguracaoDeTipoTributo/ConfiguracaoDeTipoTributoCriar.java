@@ -30,6 +30,7 @@ public class ConfiguracaoDeTipoTributoCriar extends TestBaseSteven {
 	  driver.close();
   }
 
+  
 	
 	@Test()
 	public void criar() {

@@ -83,7 +83,7 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseSteven {
 		menu.click();
 		sleep(1000);
 		copia.click();
-		sleep(2000);
+		sleep(5000);
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -151,8 +151,9 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseSteven {
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(datainicio);
-		sleep(3000);
+
+		sleep(6000);
+
 
 		String data  = datainicio.getAttribute("value");
 		String data1 = datafim.getAttribute("value");
@@ -164,15 +165,19 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseSteven {
 		sucesso.add(data.equals(enviar));
 		sucesso.add(data1.contains(enviar1));
 		
-//		int cofins = driver.findElements(By.xpath("//div[@id=\"multipleControlerId-00\"]")).size();
-//
-//		if (cofins == 0) {
-//			System.out.println("Cofins não consta na edição");
-//			sucesso.add(true);
-//		} else {
-//			System.out.println("Cofins  consta na edição");
-//			sucesso.add(false);
-//		}
+
+		sleep(5000);
+		
+		int cofins = driver.findElements(By.xpath("//div[@id=\"multipleControlerId-05\"]")).size();
+
+		if (cofins == 0) {
+			System.out.println("Cofins não consta na edição");
+			sucesso.add(true);
+		} else {
+			System.out.println("Cofins  consta na edição");
+			sucesso.add(false);
+		}
+
 
 		cancelar.click();
 		sleep(2000);

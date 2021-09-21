@@ -231,7 +231,7 @@ public class KpisExecutarAtualizarJutisficativaGravarPO extends TestBaseSteven{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		fechar.click();
 		sleep(2000);
 		//String valorcartãoindicadorposexecutar= driver.findElement(By.xpath("//div[@id=\"indicator-card-container\"]/div/p")).getText();

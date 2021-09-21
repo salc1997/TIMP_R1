@@ -34,7 +34,7 @@ public class ParametrosGeraisCriarProcesoRecorrente extends TestBaseKenssy {
 
   @AfterClass
   public void afterClass() {
-	  driver.close();
+	  //driver.close();
   }
   
   

@@ -34,7 +34,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa extends TestBaseSte
 	  //driver.close();
   }
 
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
 		loginTC.login();
 		acessarBREPO.acessarBRE();

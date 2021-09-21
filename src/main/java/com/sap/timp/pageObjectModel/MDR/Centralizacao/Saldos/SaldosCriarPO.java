@@ -313,8 +313,11 @@ public class SaldosCriarPO extends TestBaseKenssy{
 		
 		
 		tributo.click();
+		actionsMoveToElementElement(opcTributo);
+		sleep(2000);
 		opcTributo.click();
 		opcTributo.sendKeys(Keys.ESCAPE);
+		sleep(2000);
 		
 		servicioWeb.click();
 		opcServicioWeb.click();

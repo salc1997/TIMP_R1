@@ -62,7 +62,7 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidades exte
 	@Test(priority = 4)
 	public void criarHerarquia() {
 		ArrayList<Boolean> sucesso = ajustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO.criarHerarquia();
-		System.out.println(sucesso);
+		//System.out.println(sucesso);
 		
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), subniveis);

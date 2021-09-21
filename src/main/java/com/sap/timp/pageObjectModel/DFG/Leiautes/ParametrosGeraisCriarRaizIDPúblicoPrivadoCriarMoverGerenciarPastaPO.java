@@ -153,7 +153,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		
 		sleep(1000);
 		btnExpansaoPastaElement.click();
-		sleep(4000);
+		sleep(7000);
 		
 		WebElement pasta1 = driver.findElement(By.xpath("//span[text()=\"Pasta 1\"]"));
 		sleep(8000);
@@ -219,7 +219,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		
 		sleep(1000);
 		btnExpansaoPastaElement.click();
-		sleep(2000);
+		sleep(4000);
 		
 		WebElement pasta2 = driver.findElement(By.xpath("//span[text()=\"Pasta 2\"]"));
 		waitExpectElement(pasta2);
@@ -249,7 +249,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		
 		sleep(1000);
 		btnExpansaoPastaElement.click();
-		sleep(2000);
+		sleep(4000);
 		
 		btnExpandirPasta1.click();
 		sleep(3000);
@@ -359,7 +359,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		
 		sleep(1000);
 		btnExpansaoPastaElement.click();
-		sleep(2000);
+		sleep(4000);
 		
 		pasta1 = driver.findElement(By.xpath("//span[text()=\"Pasta 1 - edit\"]"));
 		

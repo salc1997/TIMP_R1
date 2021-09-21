@@ -80,7 +80,7 @@ public class AprovacaoDeDocumentosExecutarPO extends TestBaseSteven{
 		sleep(2000);
 		String enviar = "Aprovado";
 		status.click();
-		sleep(2000);
+		sleep(000);
 		opcaostatus.click();
 		sleep(1000);
 	

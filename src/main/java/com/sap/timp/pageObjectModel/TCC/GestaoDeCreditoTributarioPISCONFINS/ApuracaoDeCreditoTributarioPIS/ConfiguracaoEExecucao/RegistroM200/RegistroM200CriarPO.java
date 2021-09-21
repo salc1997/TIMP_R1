@@ -161,7 +161,7 @@ public class RegistroM200CriarPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		empresaoPC.click();
-		sleep(6000);
+		sleep(10000);
 		
 		uf.click();
 		sleep(2000);
@@ -430,7 +430,7 @@ public class RegistroM200CriarPO extends TestBaseMassiel{
 		sleep(6000);
 		
 	//	waitExpectElement(biblioteca);
-		sleep(8000);
+		sleep(16000);
 		
 		biblioteca.click();
 		sleep(4000);

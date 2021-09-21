@@ -108,11 +108,11 @@ public class RegistroM105VisualizarPO extends TestBaseMassiel{
 		menu.click();
 		sleep(1000);
 		visualizar.click();
-		sleep(6000);
+		sleep(19000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(filial);
+		//waitExpectElement(filial);
 		sleep(2000);
 		
 		String empresavisualizar = empresa.getAttribute("value");
@@ -158,7 +158,7 @@ public class RegistroM105VisualizarPO extends TestBaseMassiel{
 		menu1.click();
 		sleep(1000);
 		editar.click();
-		sleep(6000);
+		sleep(19000);
 		
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -64,12 +64,15 @@ public class AtividadeFiltroPO extends TestBaseSteven {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
+
 		sleep(2000);
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String actividadeFiscal = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println(actividadeFiscal);
+
+		sleep(6000);
 
 		//String idRegistro = actividadeFiscal.getText();
 

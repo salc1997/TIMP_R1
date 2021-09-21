@@ -262,7 +262,7 @@ public class TarefasGatewayAutomaticoPO  extends TestBaseMassiel{
 		criar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		sleep(2000);
+		sleep(6000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -545,13 +545,13 @@ public class TarefasGatewayAutomaticoPO  extends TestBaseMassiel{
 			moveToElement(usuarioActividade, driver.findElement(By.xpath("//div[@id=\"user-activity-droppable\"]/div/div/div/div/div")));
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+			sleep(7000);
 			
 			ativar.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			waitExpectElement(ativadorProcesos);
-			sleep(6000);
+			//waitExpectElement(ativadorProcesos);
+			sleep(9000);
 			
 			ativadorProcesos.click();
 			sleep(2000);

@@ -128,7 +128,7 @@ public class ValoresParaMetodoCPLEditarPO extends TestBaseSteven{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(datainicial);
-		sleep(3000);
+		sleep(6000);
 		
 		String valor = datainicial.getAttribute("value");
 		System.out.println(valor);
@@ -152,7 +152,7 @@ public class ValoresParaMetodoCPLEditarPO extends TestBaseSteven{
 		waitExpectElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(datainicial);
-		sleep(2000);		
+		sleep(8000);		
 		
 		String novoTexto=datainicial.getAttribute("value");
 		

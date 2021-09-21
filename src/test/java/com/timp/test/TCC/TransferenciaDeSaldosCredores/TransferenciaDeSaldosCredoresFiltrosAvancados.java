@@ -35,19 +35,13 @@ public class TransferenciaDeSaldosCredoresFiltrosAvancados extends TestBaseKenss
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+	
+	@Test
+	public void filtrarAvanzados() {
+		
 		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
 		acessarTCCPO.acessarTCC();
-	}
-	
-	@Test(priority = 2)
-	public void filtrarAvanzados() {
 		ArrayList<Boolean> empresa = transferenciaDeSaldosCredoresFiltrosAvancadosPO.filtroEmpresa();
 		for (int i = 0; i < empresa.size(); i++) {
 			assertTrue(empresa.get(i), Filtros);

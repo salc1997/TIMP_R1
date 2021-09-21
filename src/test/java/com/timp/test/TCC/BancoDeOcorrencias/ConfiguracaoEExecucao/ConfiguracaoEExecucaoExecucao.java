@@ -29,7 +29,9 @@ public class ConfiguracaoEExecucaoExecucao extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
+
 		//driver.close();
+
 	}
 
 

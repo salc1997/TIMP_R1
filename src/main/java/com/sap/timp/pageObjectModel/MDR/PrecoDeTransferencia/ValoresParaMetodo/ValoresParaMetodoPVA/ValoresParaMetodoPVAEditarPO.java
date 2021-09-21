@@ -120,17 +120,18 @@ public class ValoresParaMetodoPVAEditarPO extends TestBaseSteven {
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(datainicial);
-		sleep(2000);
+
+		sleep(6000);
+
 		
 		String valor = datainicial.getAttribute("value");
 
 		String enviar = fechaAyer();
 
 		datainicial.clear();
-		sleep(2000);
+		sleep(4000);
 		datainicial.sendKeys(enviar);
-		sleep(2000);
+		sleep(4000);
 		gravar.click();
 		sleep(2000);
 		waitExpectElement(sim);

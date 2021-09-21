@@ -67,13 +67,15 @@ public class CarregamentoDeArquivosFiltroPorIDPO extends TestBaseSteven{
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
 		sucesso.add(idRegistro.equals(idBusqueda));
-		waitExpectElement(limpar);
-		sleep(2000);
+		//waitExpectElement(limpar);
+		sleep(12000);
+		
 		limpar.click();
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		sleep(15000);
 		
+		limpar.click();
 		sleep(4000);
 		
 		int rows2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();

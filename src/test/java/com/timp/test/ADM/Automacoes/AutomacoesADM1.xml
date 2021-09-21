@@ -27,4 +27,13 @@
 			<class name="com.timp.test.ADM.Configuração.ConfiguracaoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoExcluir"></class>
 		</classes>
 	</test>
+	
+	<test name="ADM - Configuracao - Configuracao de Tributos - Configuracao de Tributo Grupo">
+		<classes>
+			<!-- Configuracao - Configuracao de Tributos - Configuracao de Tributo Grupo -->			
+			<class name="com.timp.test.ADM.Configuração.ConfiguracaoDeTributos.ConfiguracaoDeTributoGrupo.ConfiguracaoDeTributoGrupoCriar"></class>
+			<class name="com.timp.test.ADM.Configuração.ConfiguracaoDeTributos.ConfiguracaoDeTributoGrupo.ConfiguracaoDeTributoGrupoEditar"></class>
+			
+		</classes>
+	</test>
 </suite>

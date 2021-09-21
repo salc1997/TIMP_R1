@@ -100,7 +100,7 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesEditarPO extends
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(12000);
 		waitExpectElement(campo);
-		sleep(3000);
+		sleep(7000);
 		actionsMoveToElementElement(campo);
 		
 		//attributoNotToBeEmptyElement(campo, "value");

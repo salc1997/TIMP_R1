@@ -317,6 +317,11 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
+	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
+	public WebElement aceitar;
+	
+	
+	
 	
 	public HierarquiaExecucoesTodasAsFuncionalidadesPO() {
 		PageFactory.initElements(driver, this);
@@ -364,7 +369,7 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		//IR A HIERARQUIA CONFIGURACAO
 		sleep(2000);
 		hierarquias.click();
-		sleep(1000);
+		sleep(2000);
 		hierarquiaConfiguracao.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -872,6 +877,10 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
+		aceitar.click();
+		sleep(3000);
+		fechar.click();
+		sleep(3000);
 		
 		finalizarExecucoes.click();
 		sleep(3000);
@@ -1017,7 +1026,7 @@ public class HierarquiaExecucoesTodasAsFuncionalidadesPO extends TestBaseKenssy{
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(12000);
 		
 		menu1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter5()+"\"]/div[1]/div"));
 		editar1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter5()+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Restaurar\"]"));

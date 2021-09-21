@@ -77,6 +77,9 @@ public class FuncionalidadesPO extends TestBaseFernando{
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement btnSim;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement btnNO;
+	
 	@FindBy(xpath = "//span[text()=\"Justificativa\"]")
 	public WebElement btnJustificativa;
 	
@@ -505,9 +508,9 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		
 		WebElement opcionLeiaute = driver.findElement(By.xpath("//li[@tabindex=\"0\" and @class=\"list-item\" and @id and contains(text(), \""+this.idRegistroNuevo+"\")]"));
 		opcionLeiaute.click();
-		sleep(1000);
+		sleep(4000);
 		
-		attributeToBeXpath("//div[@id=\"inputTimpVersion\"]/div", "class", "base-select required");
+	//	attributeToBeXpath("//div[@id=\"inputTimpVersion\"]/div", "class", "base-select required");
 		cboLVersaoLeiaute.click();
 		sleep(3000);
 		opcionVersaoLeiaute.click();
@@ -643,7 +646,7 @@ public class FuncionalidadesPO extends TestBaseFernando{
 
 		WebElement monthCalendar = driver.findElement(By.xpath("//div[@tabindex=\"0\" and contains(@class, \"month\") and text()=\"Jan\"]"));
 		monthCalendar.click();
-		sleep(3000);
+		sleep(5000);
 
 		WebElement subperiodoCalendar = driver.findElement(By.xpath("//span[@class=\"subperiod-text\" and text()=\"1M\"]"));
 		subperiodoCalendar.click();
@@ -657,15 +660,21 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+			
 		invisibilityOfElement("//div[@class=\"dialog-indicator\"]");
-		sleep(2000);
+		sleep(12000);
 		
 		btnGravar.click();
 		sleep(1000);
 		
+		
+		 btnNO.click();
+		sleep(8000);
+		
 		// Verificar si es guardado con exito, si no se va quedar esperando por el
 		// waitExpectXpath
-		waitExpectXpath("//li[@class=\"base-toast  toast-success   \"]");
+		//waitExpectXpath("//li[@class=\"base-toast  toast-success   \"]");
 		String mensajeSucesso = driver.findElement(By.xpath("//li[@class=\"base-toast  toast-success   \"]/div/span[2]/span")).getText();
 		invisibilityOfElement("//li[@class=\"base-toast  toast-success   \"]");
 		sleep(2000);
@@ -935,8 +944,8 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		btnUltimaPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
+		sleep(8000);
+		//String idRegistro1 = idObter4();	
 		WebElement status = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[6]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\" and @tabindex=\"0\"]"));
 		
 		boolean sucesso = false;

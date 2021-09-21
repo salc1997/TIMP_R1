@@ -124,7 +124,9 @@ public class SaldoInicialFiltroAvanPO extends TestBaseKenssy {
 //		aplicar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(20000);
+
+		sleep(12000);
+
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -167,7 +169,9 @@ public class SaldoInicialFiltroAvanPO extends TestBaseKenssy {
 //		aplicar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(20000);
+
+		sleep(7000);
+
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -210,7 +214,9 @@ public class SaldoInicialFiltroAvanPO extends TestBaseKenssy {
 		//aplicar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(20000);
+
+		sleep(7000);
+
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();

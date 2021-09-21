@@ -36,6 +36,8 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Limpar Filtros\"]")
 	public WebElement limpiar;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement no;
 	
 	public ConfiguracoesLixeiraExcluirPO() {
 
@@ -85,6 +87,8 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		
 		String idRegistro =  idObter2();
 		
+		//String idRegistro =  "3899";
+		
 		System.out.println(" Id Registro Busqueda :" + idRegistro  );
 		
 		idFiltro.sendKeys(idRegistro);
@@ -109,6 +113,9 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		sleep(3000);
 		sleep(9000);
 		
+		no.click();
+		sleep(3000);
+		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String idUltimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
 		
@@ -127,7 +134,9 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		System.out.println(sucesso);
 		
 		lixeria.click();
-		sleep(3000);
+		sleep(5000);
+		
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -157,7 +166,10 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		
 		excluir.click();
 		sleep(3000);
-		sleep(9000);
+		sleep(12000);
+		
+		no.click();
+		sleep(3000);
 		
 		limpiar.click();
 		sleep(3000);
@@ -200,7 +212,11 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 			sleep(2000);
 			
 		}else if (tc2 == true) {
+
 			WebElement raiz1 = driver.findElement(By.xpath("//div[@id=\"baseTabs-wrapper\"]/div[2]/div/div[1]/div/div[1]/div/div[1]"));
+
+
+
 			raiz1.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -223,7 +239,7 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		filtrosAbansados.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 
 		idFiltro.click();
 		sleep(3000);

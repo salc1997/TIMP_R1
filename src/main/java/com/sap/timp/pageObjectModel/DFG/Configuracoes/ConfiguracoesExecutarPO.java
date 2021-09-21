@@ -134,12 +134,12 @@ public class ConfiguracoesExecutarPO  extends TestBaseMassiel{
 		filtrosAbansados.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 
 		idFiltro.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		String idRegistro =  idObter2();
 		
@@ -216,8 +216,10 @@ public class ConfiguracoesExecutarPO  extends TestBaseMassiel{
 		waitExpectElement(dato);
 		sleep(25000);
 		sleep(9000);
-		sleep(10000);
-	
+		sleep(12000);
+		sleep(12000);
+		sleep(12000);
+		sleep(12000);
 		String valorTC = "1000";
 		String nuevoTexto = dato.getText();
 		

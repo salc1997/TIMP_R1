@@ -394,7 +394,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		sleep(2000);
 		
 		salvar.click();
-		sleep(9000);
+		sleep(11000);
 		
 		
 		if (tq1 == true && tc2 == true||tq2 == true) {
@@ -422,7 +422,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		sleep(2000);
 		sleep(2000);
 		waitExpectXpath("//*[@id=\"home-icon\"]");
-		sleep(18000);
+		sleep(20000);
 		
 		while (!separadores.isDisplayed()) {
 			flecha.click();

@@ -93,11 +93,11 @@ public class GrupoDeEstruturasVerPO extends TestBaseSteven{
 		sleep(2000);
 		String nomedogrupovisualizar = nomedogrupovi.getAttribute("value");
 		String ajustefiscaisvisualizar = ajustefiscaisvi.getText();
-		String cfopvisualizar = cfopvi.getText();
+		//String cfopvisualizar = cfopvi.getText();
 		
 		System.out.println(nomedogrupovisualizar);
 		System.out.println(ajustefiscaisvisualizar);
-		System.out.println(cfopvisualizar);
+		//System.out.println(cfopvisualizar);
 		
 		aceitar.click();
 		sleep(2000);
@@ -127,17 +127,17 @@ public class GrupoDeEstruturasVerPO extends TestBaseSteven{
 	  
 	    String nomedogrupoeditar = nomedogrupo.getAttribute("value");
 		String ajustefiscaiseditar = ajustefiscais.getText();
-		String cfopeditar = cfop.getText();
+		//String cfopeditar = cfop.getText();
 		
 		System.out.println(nomedogrupoeditar);
 		System.out.println(ajustefiscaiseditar);
-		System.out.println(cfopeditar);
+		//System.out.println(cfopeditar);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
 		sucesso.add(nomedogrupoeditar.contains(nomedogrupovisualizar));
 		sucesso.add(ajustefiscaiseditar.contains(ajustefiscaisvisualizar));
-		sucesso.add(cfopeditar.contains(cfopvisualizar));
+		//sucesso.add(cfopeditar.contains(cfopvisualizar));
 		
 		
 

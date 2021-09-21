@@ -26,7 +26,7 @@ public class CodigoContabilizacaoFiltrosAvanPO extends TestBaseKenssy {
 	
 	@FindBy(xpath = "//div[@id=\"codEmpresa\"]/div/div/div[2]")
 	public WebElement empresa;
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][1]")
+	@FindBy(xpath = "//li[text()=\"6911\"]")
 	public WebElement opcEmpresa;
 	
 	@FindBy(xpath = "//*[@id=\"dataIniVigencia\"]/div/div[1]/input")

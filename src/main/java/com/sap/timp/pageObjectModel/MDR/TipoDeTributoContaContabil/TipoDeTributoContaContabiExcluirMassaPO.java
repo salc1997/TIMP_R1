@@ -11,6 +11,9 @@ public class TipoDeTributoContaContabiExcluirMassaPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Tipo de Tributo x Conta Contábil\"]")
 	public WebElement tipodetributocontacontabil;
 	
+	@FindBy(xpath = "//span[text()=\"Cadastros PIS/COFINS\"]")
+	public WebElement cadastroPisConfins;
+	
 	
 	@FindBy(xpath = "//span[text()=\"Novo Tipo de Tributo x Conta Contábil\"]")
 	public WebElement novotipodetributocontacontabil;
@@ -64,6 +67,10 @@ public class TipoDeTributoContaContabiExcluirMassaPO extends TestBaseMassiel{
 	
 	public boolean criar() {
 		sleep(2000);
+		
+		cadastroPisConfins.click();
+		sleep(2000);
+		
 		tipodetributocontacontabil.click();
 		sleep(2000);
 

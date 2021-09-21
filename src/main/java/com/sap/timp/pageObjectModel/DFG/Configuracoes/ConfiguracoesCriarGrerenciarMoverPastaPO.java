@@ -131,7 +131,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 		sleep(1000);
 		btnCriar.click();
 		
-		sleep(2000);
+		sleep(4000);
 		btnCriarPasta.click();
 		sleep(2000);
 		
@@ -275,7 +275,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 		
 		sleep(1000);
 		btnExpansaoPastaElement.click();
-		sleep(2000);
+		sleep(5000);
 		
 		btnExpandirPasta1.click();
 		sleep(2000);
@@ -290,7 +290,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 		btnGerenciarPasta.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		//waitExpectElement(nomePasta2);
 		nomePasta2.clear();
 		nomePasta2.click();
@@ -311,7 +311,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 		
 		sleep(1000);
 		btnExpansaoPastaElement.click();
-		sleep(2000);
+		sleep(3000);
 		
 		WebElement pasta3 = driver.findElement(By.xpath("//span[text()=\"Pasta 3\"]"));
 //		waitExpectElement(pasta3);

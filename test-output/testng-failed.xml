@@ -4,11 +4,16 @@
   <test thread-count="5" name="Banco De Credito Tributarop &gt; Configuração de Banco de Crédito Tributário(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.FiltrosAvancados">
 =======
       <class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltroPorId">
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      <class name="com.timp.test.TCC.BancoDeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar">
+>>>>>>> refs/remotes/origin/Yessy
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
           <include name="afterClass"/>
@@ -32,13 +37,21 @@
 =======
           <include name="detalhes"/>
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+>>>>>>> refs/remotes/origin/Yessy
           <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.FiltrosAvancados -->
 =======
       </class> <!-- com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoDetalhes -->
 >>>>>>> refs/remotes/origin/Kenssy
+=======
+      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar -->
+>>>>>>> refs/remotes/origin/Yessy
     </classes>
   </test> <!-- Banco De Credito Tributarop > Configuração de Banco de Crédito Tributário(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -123,7 +123,7 @@ public class CriarProcessocomTarefaManualPO extends TestBaseSteven{
 	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
-	@FindBy(xpath = "//*[@id=\"createProcess\"]/div/div/div[4]/div[2]/div[2]/label/span")
+	@FindBy(xpath = "//*[@id=\"createProcess\"]/div/div/div[5]/div[2]/div[2]/label/span")
 	public WebElement periodoFiscalTP1;
 	
 	@FindBy(xpath = "//*[@id=\"createProcess\"]/div/div/div[5]/div[2]/div[2]/label/span")
@@ -204,7 +204,7 @@ public class CriarProcessocomTarefaManualPO extends TestBaseSteven{
 		criar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		
 		
@@ -214,11 +214,11 @@ public class CriarProcessocomTarefaManualPO extends TestBaseSteven{
 		sleep(2000);
 		
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		/*invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		moveToElement(inicio, driver.findElement(By.xpath("//div[@id=\"canvas\"]/div[1]/div[1]")));
 		sleep(2000);
-		
+		*/
 		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -310,7 +310,7 @@ public class CriarProcessocomTarefaManualPO extends TestBaseSteven{
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		
 		
@@ -329,8 +329,8 @@ public class CriarProcessocomTarefaManualPO extends TestBaseSteven{
 		driver.navigate().refresh();
 		
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(27000);
 		
 		
 		dobleClickElement(NovoOperacao);

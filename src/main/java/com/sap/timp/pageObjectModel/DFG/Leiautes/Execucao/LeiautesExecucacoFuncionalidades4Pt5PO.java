@@ -1741,7 +1741,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 		//li[@id="7754"]
 		waitExpectElement(opcLeiauteObter);
 		opcLeiauteObter.click();
-		sleep(2000);
+		sleep(4000);
 		
 		versaoConfiguracao.click();
 		sleep(3000);
@@ -2032,12 +2032,12 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 		String saltoLinhaValor1 =  verSaltoLinha1.getText();
 		saltoLinhaValor1 = saltoLinhaValor1.replace("?", "");		
 		
-		String saltoLinhaValor2 =  verSaltoLinha2.getText();
-		saltoLinhaValor2 = saltoLinhaValor2.replace("?", "");
+		/*String saltoLinhaValor2 =  verSaltoLinha2.getText();
+		saltoLinhaValor2 = saltoLinhaValor2.replace("?", "");*/
 		
 		System.out.println("-----Visualizar Salto Linha----------");
 		System.out.println("Salto de Linha 1: "+ saltoLinhaValor1);
-		System.out.println("Salto de Linha 2: "+ saltoLinhaValor2);
+	//	System.out.println("Salto de Linha 2: "+ saltoLinhaValor2);
 		System.out.println("");
 		
 		visualizarDados2.click();

@@ -104,9 +104,15 @@ System.out.println("paso 1");
 			sucesso.add(true);
 		}
 	
+
 		sleep(1000);
 		System.out.println("paso 2");	
 		coluna.sendKeys("CST ICMS");
+
+		sleep(4000);
+
+		coluna.sendKeys("ICMS");
+
 		
 		//actions.doubleClick(cst).perform();
 	

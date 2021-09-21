@@ -31,7 +31,7 @@ public class RegrasDeAuditoriaN1RelacionamentoPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"list-item-text\" and contains(text(), \"Ajustes Fiscais\")]")
 	public WebElement opcaorelacionamentotp1;
 	
-	@FindBy(xpath = "//div[@class=\"list-item-text\" and contains(text(), \"Ajustes Fiscais\")]")
+	@FindBy(xpath = "//div[@class=\"list-item-text\" and contains(text(), \"ID 39-Empresa / Filial\")]")
 	public WebElement opcaorelacionamentotc2;
 
 		

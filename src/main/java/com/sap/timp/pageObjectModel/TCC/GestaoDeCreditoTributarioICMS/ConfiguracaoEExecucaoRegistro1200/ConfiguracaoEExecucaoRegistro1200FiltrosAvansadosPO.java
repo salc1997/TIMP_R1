@@ -156,7 +156,7 @@ public class ConfiguracaoEExecucaoRegistro1200FiltrosAvansadosPO extends TestBas
 		filial.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		
 		WebElement opcfilial = driver
 				.findElement(By.xpath("//li[text()=\""+ this.textFilial + "\"]"));
@@ -164,7 +164,7 @@ public class ConfiguracaoEExecucaoRegistro1200FiltrosAvansadosPO extends TestBas
 		opcfilial.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		pesquisar.click();
 		sleep(2000);

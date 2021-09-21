@@ -80,17 +80,17 @@ public class AtividadeEditarPO extends TestBaseSteven{
 		sleep(2000);
 
 		String idRegistro = idObter("AtividadeFiscal");
-		
+		System.out.println(idRegistro);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		actionsMoveToElementElement(menu);
-		sleep(4000);
+		sleep(2000);
 		
 		menu.click();
 		sleep(1000);
 		editar.click();
-		sleep(3000);
+		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
@@ -105,19 +105,26 @@ public class AtividadeEditarPO extends TestBaseSteven{
 		
 		gravar.click();
 		sleep(1000);
-		waitExpectElement(sim);
+		//waitExpectElement(sim);
 		sleep(2000);
 	
 		sim.click();
-		sleep(3000);		 
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 
+	 
+	
+		sleep(16000);
+
+
+		 menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		 
+		 editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		
-		
-		siguiente.click();
-		sleep(2000);
+
+		menu.click();
+		sleep(1000);
+		editar.click();
+		sleep(6000);
+
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -148,6 +155,7 @@ public class AtividadeEditarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(campo);
 		sleep(3000);
+		
 		
 		
 		String nuevoTexto = campo.getAttribute("value");

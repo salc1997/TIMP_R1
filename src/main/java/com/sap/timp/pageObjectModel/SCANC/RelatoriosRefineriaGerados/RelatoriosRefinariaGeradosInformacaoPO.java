@@ -47,7 +47,7 @@ public class RelatoriosRefinariaGeradosInformacaoPO extends TestBaseFernando{
 		}
 		
 		if(url.contains("tc2")) {
-			idRegistro = "9";
+			idRegistro = "26";
 		}
 		
 		WebElement menu = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id=\""+idRegistro+"\"]/div[1]/div"));

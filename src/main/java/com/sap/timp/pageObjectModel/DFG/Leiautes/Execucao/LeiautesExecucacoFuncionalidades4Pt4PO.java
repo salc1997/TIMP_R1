@@ -90,6 +90,7 @@ public class LeiautesExecucacoFuncionalidades4Pt4PO extends TestBaseFernando{
 		sleep(2000);
 
 		String idRegistro = idObter1();
+	//	String idRegistro = "1879";
 		System.out.println("");
 		System.out.println("ID Registro: " + idRegistro);
 		System.out.println("");

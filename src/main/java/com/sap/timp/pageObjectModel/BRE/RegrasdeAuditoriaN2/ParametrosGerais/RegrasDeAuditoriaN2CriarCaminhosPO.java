@@ -154,7 +154,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseSteven {
 		novo.click();
 		
 	
-		sleep(6000);
+		sleep(9000);
 		
 		nome.sendKeys("TESTE AUTOMATIZADO RODADA ");
 		sleep(2000);
@@ -305,12 +305,12 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseSteven {
 		sleep(2000);
 		sleep(2000);
 		waitExpectElement(AN2);
-		sleep(4000);
+		sleep(7000);
 		AN2.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);

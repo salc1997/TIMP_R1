@@ -122,7 +122,7 @@ public class RegrasDeAuditoriaN3DetalhesPO extends TestBaseSteven{
 		visualizar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		sleep(8000);
 		//visualizar
 		
 		String nomevisualizar = nomevi.getText();

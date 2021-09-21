@@ -131,9 +131,9 @@ public class ConfiguracaoEExecucacoCriarPO extends TestBaseMassiel{
 		sleep(1000);
 		opcionCheckbox.click();
 		closeSelectTypeCheckbox(cboUf);
-		sleep(1000);
+		sleep(7000);
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		//attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		cboFilial.click();
 		sleep(1000);
@@ -144,7 +144,7 @@ public class ConfiguracaoEExecucacoCriarPO extends TestBaseMassiel{
 		cboTributo.click();
 		sleep(1000);
 		opcionTributo.click();
-		sleep(1000);
+		sleep(5000);
 		
 		attributeToBeXpath("//div[@id=\"taxType\"]/div", "class", "base-select required");
 		sleep(2000);

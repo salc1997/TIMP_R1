@@ -842,7 +842,7 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		estruturaR.click();
 		sleep(1000);
 		estruturaRO.click();
-		sleep(1000);
+		sleep(8000);
 		
 		caracteristica.click();
 		sleep(1000);
@@ -863,10 +863,10 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		versaoLeiauteR.click();
 		sleep(1000);
 		versaoLeiauteRO.click();
-		sleep(1000);
+		sleep(9000);
 		
 		dataVigenciaR.sendKeys("01/01/2013");
-		sleep(1000);
+		sleep(6000);
 		aplicar.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

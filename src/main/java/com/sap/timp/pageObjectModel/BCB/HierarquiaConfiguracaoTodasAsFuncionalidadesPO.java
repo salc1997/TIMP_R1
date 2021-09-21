@@ -753,7 +753,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		System.out.println("Id Configurações antes da criação: "+ id);
 		
 		nova.click();
-		sleep(3000);
+		sleep(8000);
 
 		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
@@ -1329,10 +1329,11 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		//waitExpectElement(executar);
 		sleep(12000);
 		System.out.println("cheguei aqui");
+		sleep(6000);
 		executar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//input[@placeholder=\"Selecionar Subperíodo\"]");
+		//waitExpectXpath("//input[@placeholder=\"Selecionar Subperíodo\"]");
 		sleep(3000);
 		
 		

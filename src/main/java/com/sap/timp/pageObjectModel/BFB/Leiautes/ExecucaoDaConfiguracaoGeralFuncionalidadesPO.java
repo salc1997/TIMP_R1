@@ -185,15 +185,15 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBaseFernan
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		
 		btnGravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		sleep(3000);
+		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		
 		btnConfiguraciones.click();
 		sleep(3000);
@@ -249,7 +249,7 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBaseFernan
 		btnVoltar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		
 		raiz.click();
 		sleep(2000);
@@ -285,7 +285,7 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBaseFernan
 		// Publico Privado
 		WebElement btnPublicoPrivado = driver.findElement(By.xpath("//div[contains(@aria-label, \"ID: " + idRegistroCopiado + "\")]/div[4]/span"));
 		btnPublicoPrivado.click();
-		sleep(1000);
+		sleep(5000);
 		
 		WebElement btnAplicarPubliicoPrivado = driver.findElement(By.xpath("//div[@id=\"base-shareBuilder-wrapper\"]/div[3]/button[text()=\"Aplicar\"]"));
 		btnAplicarPubliicoPrivado.click();

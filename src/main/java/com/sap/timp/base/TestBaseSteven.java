@@ -64,10 +64,11 @@ public class TestBaseSteven {
 
 		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
 	
-		//ChromeOptions options = new ChromeOptions();
+		ChromeOptions options = new ChromeOptions();
 		//options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
 		//driver = new ChromeDriver(options);
        // options.addArguments("--headless");
+        // para que las pestañas no se habiliten
         //options.addArguments("start-maximized"); // open Browser in maximized mode
         //options.addArguments("disable-infobars"); // disabling infobars
         //options.addArguments("--disable-extensions"); // disabling extensions
@@ -87,7 +88,7 @@ public class TestBaseSteven {
         options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
         driver = new ChromeDriver(options);
 		*/
-		ChromeOptions options = new ChromeOptions();
+		//ChromeOptions options = new ChromeOptions();
 		options.addArguments("disable-infobars");
 		options.setExperimentalOption("useAutomationExtension", false);
 		
@@ -102,6 +103,7 @@ public class TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
+		
 
 		driver.get(tc2);
 
@@ -294,8 +296,8 @@ public class TestBaseSteven {
 	}
 
 	public void invisibilityOfElement(String xpath) {
-		WebDriverWait wait = new WebDriverWait(driver, 3600);
-
+		WebDriverWait wait = new WebDriverWait(driver, 360);
+				 
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpath)));
 
 	}

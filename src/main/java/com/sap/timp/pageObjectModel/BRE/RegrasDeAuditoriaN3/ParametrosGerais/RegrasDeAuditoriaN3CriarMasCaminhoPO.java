@@ -30,7 +30,7 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 	@FindBy(xpath = "//td[contains(@class, \"component-field\")]/div/div[2]")
 	public WebElement componenteTq1;
 	
-	@FindBy(xpath = "//td[contains(@class, \"component-field\")]/div/div/div[2]")
+	@FindBy(xpath = "//td[contains(@class, \"component-field\")]/div/div[2]")
 	public WebElement componente;
 	
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"DFG\"][1]")
@@ -205,7 +205,7 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		estruturaDeDatos.click();
 		sleep(1000);
 		opcionEstruturaDeDatos.click();
-		sleep(1000);
+		sleep(9000);
 		
 		caracteristicaEspecial.click();
 		sleep(1000);
@@ -247,7 +247,7 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		versaoDoLeiaute.click();
 		sleep(1000);
 		opcionversaoDoLeiaute.click();
-		sleep(1000);
+		sleep(8000);
 		
 		actionsMoveToElementXpath("//td[contains(@class, \"EffectiveDateTo\")]/div/div/input");
 		regulamento.click();

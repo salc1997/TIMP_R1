@@ -88,10 +88,10 @@ public class RegistroM200EditarPO extends TestBaseMassiel{
 		menu.click();
 		sleep(1000);
 		editar.click();
-		sleep(3000);
-		waitExpectElement(filialInput);
+		sleep(6000);
+		//waitExpectElement(filialInput);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(18000);
 		
 		String valor = filialInput.getText();
 		System.out.println(valor);

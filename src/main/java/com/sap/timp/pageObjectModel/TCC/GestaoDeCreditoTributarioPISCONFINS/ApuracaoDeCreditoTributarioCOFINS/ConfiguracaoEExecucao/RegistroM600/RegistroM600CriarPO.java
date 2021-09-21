@@ -188,14 +188,14 @@ public class RegistroM600CriarPO extends TestBaseSteven{
 	
 		
 	//	attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
-		sleep(3000);
+		sleep(9000);
 		
 		filial.click();
 		sleep(1000);
 		filialO.click();
 		sleep(1000);
 		closeSelectTypeCheckbox(filial);
-		sleep(1000);
+		sleep(6000);
 		
 	
 		valorTotalContribuicao.click();
@@ -283,8 +283,8 @@ public class RegistroM600CriarPO extends TestBaseSteven{
 		}
 		
 		
-		sleep(3000);
-		waitExpectElement(siguiente);
+		sleep(6000);
+		//waitExpectElement(siguiente);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();

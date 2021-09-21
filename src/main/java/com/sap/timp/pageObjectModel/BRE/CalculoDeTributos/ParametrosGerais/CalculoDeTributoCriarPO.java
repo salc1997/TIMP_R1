@@ -264,7 +264,8 @@ public class CalculoDeTributoCriarPO extends TestBaseSteven{
 		//sleep(2000);
 		//waitExpectXpath("//div[@class=\"overlay loader transp\"]");
 		//invisibilityOfElement("//div[@class=\"overlay loader transp\"]");
-	   //sleep(2000);		
+	   //sleep(2000);	
+	   
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		
 		WebElement caminhocriado = driver.findElement(By.xpath("//div[@id=\"graph\"]//*[name()=\"svg\"]/*[name()=\"g\"]"));

@@ -44,11 +44,10 @@ public class LogradouroExcluirPO extends TestBaseSteven{
 		if (url.contains("tq1")) {
 			cep2.click();
 			sleep(1000);
-		} else if (url.contains("tc2")) {
+
+		} else {
 			cep2.click();
-			sleep(1000);
-		}else {
-			cep.click();
+
 			sleep(1000);
 		}
 		logradouro.click();

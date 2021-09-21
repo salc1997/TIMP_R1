@@ -28,7 +28,7 @@ public class CodigoAjustesContribuiçoesCreditosExcluirEmMassa extends TestBaseSt
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test()

@@ -57,7 +57,7 @@ public class LicençasDetalhesPO extends TestBaseMassiel{
 		menu.click();
 		sleep(1000);
 		açao.click();
-		sleep(3000);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

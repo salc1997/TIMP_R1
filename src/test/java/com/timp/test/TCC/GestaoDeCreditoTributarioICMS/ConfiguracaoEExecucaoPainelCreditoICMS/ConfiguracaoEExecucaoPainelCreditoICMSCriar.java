@@ -29,7 +29,6 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriar extends TestBaseMassiel
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
 	}
 
 

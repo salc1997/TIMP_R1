@@ -90,7 +90,7 @@ public class ConfiguraçãoeExecuçãoFiltrosavançadosPO extends TestBaseSteven {
 	@FindBy(xpath = "//li[text()=\"SP\"]")
 	public WebElement opcUfTP1;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione uma Filial\"]")
+	@FindBy(xpath = "//div[@class=\"branch-filter\"]/div/div[1]/div[2]")
 	public WebElement filial;
 	
 	@FindBy(xpath = "//li[text()=\"0143\"]")
@@ -128,7 +128,7 @@ public class ConfiguraçãoeExecuçãoFiltrosavançadosPO extends TestBaseSteven {
 		sleep(2000);
 		
 		filtrosavancados.click();
-		
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -136,7 +136,7 @@ public class ConfiguraçãoeExecuçãoFiltrosavançadosPO extends TestBaseSteven {
 		sleep(2000);
 		
 		opcEmpresa.click();
-		sleep(7000);
+		sleep(9000);
 		
 		uf.click();
 		sleep(2000);
@@ -148,7 +148,7 @@ public class ConfiguraçãoeExecuçãoFiltrosavançadosPO extends TestBaseSteven {
 
 		}else {
 			opcUfTP1.click();
-			sleep(7000);
+			sleep(10000);
 
 		}
 		

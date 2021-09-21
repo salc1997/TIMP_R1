@@ -21,7 +21,8 @@ public class TipoDeTributoContaContabilExcluirPO extends TestBaseSteven {
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
-	
+	@FindBy(xpath = "//span[text()=\"Cadastros PIS/COFINS\"]")
+	public WebElement cadastroPisConfins;
 	
 	public TipoDeTributoContaContabilExcluirPO() {
 
@@ -31,6 +32,10 @@ public class TipoDeTributoContaContabilExcluirPO extends TestBaseSteven {
 	
 	public boolean excluir() {
 		sleep(2000);
+		
+		cadastroPisConfins.click();
+		sleep(2000);
+		
 		tipodetributocontacontabil.click();
 		sleep(2000);
 		

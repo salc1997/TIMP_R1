@@ -145,7 +145,7 @@ public class RegistroM625CriarPO extends TestBaseSteven{
 		sleep(1000);
 		opcao2.click();
 		closeSelectTypeCheckbox(uf);
-		sleep(1000);
+		sleep(9000);
 	
 		
 		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");

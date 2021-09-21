@@ -234,7 +234,7 @@ public class Registro1501CriarPO extends TestBaseSteven{
 		filialV.click();
 		sleep(2000);
 		filialOV.click();
-		sleep(2000);
+		sleep(5000);
 		
 		calendario.click();
 		sleep(2000);

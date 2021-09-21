@@ -53,7 +53,7 @@ public class AssociaçãoCriarPO extends TestBaseFernando {
 	@FindBy(xpath = "//div[contains(@class, \"atividadeFiscal\")]/div/div[2]/div/div[2]")
 	public WebElement inputAtividadeFiscal;
 	
-	@FindBy(xpath = "//div[@class=\"list-option\"]/div/div[contains(text(),\"Atividade Fiscal Teste\")]")
+	@FindBy(xpath = "//div[@class=\"list-option\"]/div/div[contains(text(),\"Guia de pagamento\")]")
 	public WebElement opcionComboAtividadeFiscal;
 	
 	@FindBy(xpath = "//div[contains(@class, \"grupoAtividade\")]/div/div[2]/div/div[2]")

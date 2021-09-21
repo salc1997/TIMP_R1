@@ -70,7 +70,7 @@ public class SubItensValidosCriarPO extends TestBaseSteven{
 	public boolean criar() {
 		sleep(2000);
 		tabelacomplementares.click();
-		sleep(2000);
+		sleep(8000);
 		
 		subitensvalidos.click();
 		

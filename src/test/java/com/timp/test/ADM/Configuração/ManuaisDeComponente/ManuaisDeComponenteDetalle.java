@@ -31,6 +31,7 @@ public class ManuaisDeComponenteDetalle extends TestBaseMassiel{
   @AfterClass
   public void afterClass() {
 	  driver.close();
+	  
   }
 
 

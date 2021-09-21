@@ -148,7 +148,7 @@ public class DocumentosFiscaisICMSVisualizarPO extends TestBaseSteven{
 		String codigoeditar=codigodedocumentofiscal.getAttribute("value");
 		String especieeditar= especieed.getAttribute("value");
 		String dataeditar= datavigencia.getAttribute("value");
-
+		System.out.println("----------Editar-----------");
 		System.out.println(codigoeditar);
 		System.out.println(especieeditar);
 		System.out.println(dataeditar);

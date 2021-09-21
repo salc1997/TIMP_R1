@@ -41,7 +41,7 @@ public class RegrasdeNegócioExcluirdefinitivamentePO extends TestBaseSteven{
 	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componente;
 	
-	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componente2;
 	
 	@FindBy(xpath = "//li[text()=\"TAA\"]")

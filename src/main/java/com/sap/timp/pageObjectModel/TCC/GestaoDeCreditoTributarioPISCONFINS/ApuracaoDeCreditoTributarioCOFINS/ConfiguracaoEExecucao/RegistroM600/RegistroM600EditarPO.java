@@ -143,7 +143,7 @@ public class RegistroM600EditarPO extends TestBaseSteven{
 	
 		
 		//attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
-		sleep(6000);
+		sleep(12000);
 		
 		filial.click();
 		sleep(1000);

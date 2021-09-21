@@ -337,7 +337,7 @@ public class RegrasDeMensagensEditarPO extends TestBaseSteven {
 		sleep(2000);
 		
 		aplicar.click();
-		sleep(2000);
+		sleep(9000);
 		gravar.click();
 
 		sleep(2000);

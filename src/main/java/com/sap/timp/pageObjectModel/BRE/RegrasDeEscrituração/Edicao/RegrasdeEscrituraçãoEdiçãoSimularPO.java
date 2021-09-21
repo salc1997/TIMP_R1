@@ -157,7 +157,7 @@ public boolean editar() {
 	waitExpectElement(CFOP);
 	sleep(8000);
 	CFOP.click();
-	sleep(5000);
+	sleep(7000);
 	CFOP2.click();
 	sleep(5000);
 	

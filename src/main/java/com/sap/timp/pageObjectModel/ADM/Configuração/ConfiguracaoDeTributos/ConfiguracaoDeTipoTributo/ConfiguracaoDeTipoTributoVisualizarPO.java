@@ -128,7 +128,7 @@ public class ConfiguracaoDeTipoTributoVisualizarPO extends TestBaseSteven{
 		sucesso.add(codigotributogrupoeditar.equals(codigotributogrupovisualizar));
 		
 		
-		System.out.println(sucesso);
+	//	System.out.println(sucesso);
 		return sucesso;
 
 	}

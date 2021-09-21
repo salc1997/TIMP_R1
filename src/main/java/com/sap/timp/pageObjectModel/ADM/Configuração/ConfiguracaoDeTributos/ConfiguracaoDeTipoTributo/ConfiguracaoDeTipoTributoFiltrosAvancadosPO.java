@@ -145,7 +145,7 @@ public class ConfiguracaoDeTipoTributoFiltrosAvancadosPO extends TestBaseSteven{
 		}else {
 			sucesso.add(false);
 		}
-		System.out.println(sucesso);
+	//	System.out.println(sucesso);
 		
 		
 

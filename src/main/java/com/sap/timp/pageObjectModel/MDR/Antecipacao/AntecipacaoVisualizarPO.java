@@ -51,7 +51,7 @@ public class AntecipacaoVisualizarPO extends TestBaseSteven{
 	public WebElement filialE;
 	@FindBy(xpath = "//input[contains(@placeholder,\"um  Tributo\")]")
 	public WebElement tributoE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione um  Tipo de Tributo\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione um  Tipo de tributo\")]")
 	public WebElement tipoTributoE;
 	@FindBy(xpath = "//input[contains(@placeholder,\"% Antecipação\")]")
 	public WebElement antecipacaoE;

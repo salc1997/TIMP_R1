@@ -31,7 +31,7 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//td[contains(@class, \"component-field\")]/div/div[2]")
 	public WebElement componente;
 	
-	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componentetp1;
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"DFG\"][1]")
 	public WebElement opcaocomponente;
@@ -293,6 +293,8 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseSteven{
 		
 		if(URL.contains("tc2")) {
 			// opcao para TC2
+			
+			actionsMoveToElementElement(opcaoleiautereferenciatc2);
 			opcaoleiautereferenciatc2.click();
 			sleep(1000);
 		}
@@ -313,13 +315,14 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseSteven{
 		versaodoleiautereferencia.click();
 		sleep(1000);
 		opcaoversaodoleiautereferencia.click();
-		sleep(1000);
+		sleep(5000);
 		
 		leiautecomparacao.click();
 		sleep(1000);
 		
 		if(URL.contains("tc2")) {
 			// opcao para TC2
+			
 			opcaoleiautecomparacaotc2.click();
 			sleep(1000);
 		}

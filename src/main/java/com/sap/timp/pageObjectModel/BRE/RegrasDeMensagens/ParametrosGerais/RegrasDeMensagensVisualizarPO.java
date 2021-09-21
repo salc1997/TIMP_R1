@@ -76,7 +76,7 @@ public class RegrasDeMensagensVisualizarPO extends TestBaseSteven{
 		visualizar.click();
 		sleep(2000);	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(9000);
 		
 		//detalhes
 		String nomevisualizar =nomevi.getText();

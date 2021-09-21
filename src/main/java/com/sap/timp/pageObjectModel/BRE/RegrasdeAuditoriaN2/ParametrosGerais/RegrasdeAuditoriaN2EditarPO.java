@@ -124,7 +124,7 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBaseFernando{
 		invisibilityOfElementOverlay();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		
 		CFOP2.click();
 		invisibilityOfElementOverlay();
@@ -220,10 +220,10 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBaseFernando{
 		System.out.println("Nome valor a enviar: " + nomeValorEnviar);
 		inputNome.clear();
 		inputNome.sendKeys(nomeValorEnviar);
-		sleep(1000);
+		sleep(5000);
 		
 		btnAplicar.click();
-		sleep(2000);
+		sleep(7000);
 		
 		btnGravar.click();
 		sleep(2000);

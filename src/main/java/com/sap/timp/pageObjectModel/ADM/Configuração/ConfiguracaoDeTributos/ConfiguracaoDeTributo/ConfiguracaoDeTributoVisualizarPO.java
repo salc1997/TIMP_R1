@@ -157,7 +157,7 @@ public class ConfiguracaoDeTributoVisualizarPO extends TestBaseSteven{
 		sucesso.add(descricaoeditar.equals(descricaovisualizar));
 		sucesso.add(classificacaoeditar.equals(classificacaovisualizar));
 		
-		System.out.println(sucesso);
+		//System.out.println(sucesso);
 		return sucesso;
 
 	}

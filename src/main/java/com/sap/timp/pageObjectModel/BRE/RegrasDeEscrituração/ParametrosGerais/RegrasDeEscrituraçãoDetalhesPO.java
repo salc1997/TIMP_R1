@@ -92,7 +92,7 @@ public class RegrasDeEscrituraçãoDetalhesPO extends TestBaseFernando {
 		sleep(3000);
 		waitExpectElement(configuracoes);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		sleep(9000);
 
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		

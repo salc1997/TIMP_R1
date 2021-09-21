@@ -174,7 +174,7 @@ public class Registro1102CriarPO extends TestBaseSteven {
 		sleep(1000);
 		opcao.click();
 		sleep(1000);
-		sleep(6000);
+		sleep(9000);
 		
 		uf.click();
 		sleep(4000);

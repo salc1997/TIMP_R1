@@ -43,10 +43,10 @@ public class ParametrosOficializacaoLivrosCriarPO extends TestBaseSteven{
 
 
 	
-	@FindBy(xpath = "//button/span[text()=\"Save\"]")
+	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
-	@FindBy(xpath = "//button[text()=\"Yes\"]")
+	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")

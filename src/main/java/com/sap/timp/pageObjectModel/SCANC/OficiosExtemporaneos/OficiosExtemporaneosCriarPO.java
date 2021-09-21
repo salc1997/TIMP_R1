@@ -26,6 +26,12 @@ public class OficiosExtemporaneosCriarPO extends TestBaseFernando{
 	@FindBy(xpath = "//li[@tabindex=\"0\" and contains(@class, \"list-item\") and text()=\"Anexo 6\"]")
 	public WebElement opcionAnexo;
 	
+	@FindBy(xpath = "//div[@id=\"company\"]/div/div[2]")
+	public WebElement cboEmpre;
+	
+	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	public WebElement opcionEmpre;
+	
 	@FindBy(xpath = "//div[@id=\"frame\"]/div/div[2]")
 	public WebElement cboQuadro;
 
@@ -100,6 +106,11 @@ public class OficiosExtemporaneosCriarPO extends TestBaseFernando{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
+		
+		cboEmpre.click();
+		sleep(1000);
+		opcionEmpre.click();
+		sleep(1000);
 		
 		cboAnexo.click();
 		sleep(1000);

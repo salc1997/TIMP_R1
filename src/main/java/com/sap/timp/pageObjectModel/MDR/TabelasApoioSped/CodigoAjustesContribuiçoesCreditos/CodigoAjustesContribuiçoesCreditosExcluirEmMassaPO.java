@@ -163,8 +163,7 @@ public class CodigoAjustesContribuiçoesCreditosExcluirEmMassaPO extends TestBase
 		sleep(2000);
 		biblioteca.click();
 		
-	//	sleep(2000);
-		//nao.click();
+	
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

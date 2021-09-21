@@ -2331,7 +2331,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		sleep(3000);
 		
 		arquivoReferênciaAN4.click();
-		sleep(3000);
+		sleep(6000);
 		
 		
 		String idRegistro2 = idObter9();

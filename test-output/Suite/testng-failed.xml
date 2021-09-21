@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="Regras de Auditoria N3(failed)">
+=======
+  <test thread-count="5" name="Regra De Campos(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3CriarMasCriarComCopia">
+=======
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposVer">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+          <include name="ver"/>
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="criarComCopia"/>
+=======
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3CriarMasCriarComCopia -->
       <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Detalhes">
         <methods>
@@ -38,6 +51,13 @@
           <include name="relacionamento"/>
         </methods>
       </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.Edicao.RegrasDeAuditoriaN3Relacionamento -->
+=======
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposVer -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
+<<<<<<< HEAD
   </test> <!-- Regras de Auditoria N3(failed) -->
+=======
+  </test> <!-- Regra De Campos(failed) -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </suite> <!-- Failed suite [Suite] -->

@@ -41,7 +41,7 @@ public class MapeamentoDeParametrosDeEntradaExcluir extends TestBaseSteven {
 	 		
 	 		boolean sucesso = mapeamentoDeParametrosDeEntradaExcluirPO.excluir();
 			assertTrue(sucesso, Eliminado);
-		
+			sleep(2000);
 	 		
 	 	}
 	

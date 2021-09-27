@@ -40,7 +40,7 @@ public class ArmazenarArquivoFiltroPorID extends TestBaseSteven {
 		acessarTBDPO.acessarTBD();
 		boolean sucesso = armazenarArquivoFiltroPorIDPO.filtro();
 		assertTrue(sucesso, Filtros);
-
+		sleep(3000);
 	}
 
 }

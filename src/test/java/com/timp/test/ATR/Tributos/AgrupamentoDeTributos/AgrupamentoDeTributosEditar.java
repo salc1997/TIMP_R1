@@ -47,6 +47,6 @@ public class AgrupamentoDeTributosEditar extends TestBaseSteven {
 	 			assertTrue(sucesso.get(i), Editar);
 				
 			}
-			
+	 		sleep(2000);
 	 }
 }

@@ -49,7 +49,7 @@ public class RelacionamentoEstruturasEditar extends TestBaseSteven{
  		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), editado);
 		}
- 		
+ 		sleep(2000);
 
  	}
 }

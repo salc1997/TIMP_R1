@@ -30,7 +30,7 @@ public class AgrupamentoDeTributosCriarComCopia extends TestBaseSteven {
 
 	  @AfterClass
 	  public void afterClass() {
-		 // driver.close();
+		  driver.close();
 	  }
 	  
 
@@ -47,7 +47,7 @@ public class AgrupamentoDeTributosCriarComCopia extends TestBaseSteven {
 				
 			}
 			
-		
+	 		sleep(2000);
 	 		
 	 	}
     

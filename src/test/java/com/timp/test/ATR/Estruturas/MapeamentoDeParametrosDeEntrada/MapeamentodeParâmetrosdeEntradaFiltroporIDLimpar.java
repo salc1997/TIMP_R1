@@ -43,7 +43,7 @@ public class MapeamentodeParâmetrosdeEntradaFiltroporIDLimpar extends TestBaseSt
 
 		boolean sucesso = mapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO.filtro();
 		assertTrue(sucesso, Filtros);
-
+		sleep(2000);
 	}
 
 }

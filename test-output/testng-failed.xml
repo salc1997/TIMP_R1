@@ -1,57 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Banco De Credito Tributarop &gt; Configuração de Banco de Crédito Tributário(failed)">
+  <test thread-count="5" name=" ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS (failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.FiltrosAvancados">
-=======
-      <class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltroPorId">
->>>>>>> refs/remotes/origin/Kenssy
-=======
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar">
->>>>>>> refs/remotes/origin/Yessy
+      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentodeEstruturasExcluirMassa">
         <methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="filtroPorId"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltroPorId -->
-      <class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados">
-        <methods>
-          <include name="Filtro"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
+          <include name="excluirMasa"/>
+          <include name="Criar"/>
         </methods>
-      </class> <!-- com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados -->
-      <class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoDetalhes">
-        <methods>
->>>>>>> refs/remotes/origin/Kenssy
-          <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="filtrosAvanzados"/>
-=======
-          <include name="detalhes"/>
->>>>>>> refs/remotes/origin/Kenssy
-=======
->>>>>>> refs/remotes/origin/Yessy
-          <include name="beforeClass"/>
-          <include name="criar"/>
-          <include name="afterClass"/>
-        </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.FiltrosAvancados -->
-=======
-      </class> <!-- com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoDetalhes -->
->>>>>>> refs/remotes/origin/Kenssy
-=======
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar -->
->>>>>>> refs/remotes/origin/Yessy
+      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentodeEstruturasExcluirMassa -->
     </classes>
-  </test> <!-- Banco De Credito Tributarop > Configuração de Banco de Crédito Tributário(failed) -->
+  </test> <!--  ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS (failed) -->
 </suite> <!-- Failed suite [Suite] -->

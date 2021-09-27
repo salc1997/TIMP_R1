@@ -34,7 +34,7 @@ public class RelacionamentoEstruturasCriarComCopia extends TestBaseSteven{
 
   @AfterClass
   public void afterClass() {
-	 // driver.close();
+	  driver.close();
   }
   
 
@@ -49,7 +49,7 @@ public class RelacionamentoEstruturasCriarComCopia extends TestBaseSteven{
  		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
 		}
-
+ 		sleep(2000);
  	}
  	
  	
@@ -61,7 +61,7 @@ public class RelacionamentoEstruturasCriarComCopia extends TestBaseSteven{
 			assertTrue(sucesso.get(i), editado);
 		}
  		
-
+ 		sleep(2000);
  	}
  	
  	@Test(dependsOnMethods = "editarCopia")
@@ -71,7 +71,7 @@ public class RelacionamentoEstruturasCriarComCopia extends TestBaseSteven{
 
  		assertTrue(sucesso, Eliminado);
 	
- 		
+ 		sleep(2000);
 
  	}
  	

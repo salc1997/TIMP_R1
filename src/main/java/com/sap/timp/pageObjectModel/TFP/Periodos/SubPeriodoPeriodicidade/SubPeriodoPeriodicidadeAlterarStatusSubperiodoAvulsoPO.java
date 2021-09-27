@@ -66,7 +66,7 @@ public class SubPeriodoPeriodicidadeAlterarStatusSubperiodoAvulsoPO extends Test
 			pesquisar.sendKeys("14416");
 			sleep(2000);
 			pesquisar.sendKeys(Keys.ENTER);
-			sleep(3000);
+			sleep(9000);
 		}
 		
 		WebElement menuFiltradoTpf2 = driver.findElement(By.xpath("//div[contains(@data-id,"+idFiltro+")]/div[1]/div"));

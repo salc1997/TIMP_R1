@@ -31,24 +31,15 @@ public class CamposChavesExcluir extends TestBaseSteven {
 		//driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
+	
 
-	}
-
-	@Test(priority = 1)
-	public void TBDEntrar() {
-		acessarTBDPO.acessarTBD();
-
-	}
-
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {
-
+		loginTC.login();
+		acessarTBDPO.acessarTBD();
 		boolean sucesso = camposChavesExcluitPO.excluir();
 		assertTrue(sucesso, Eliminado);
-
+		sleep(3000);
 	}
 
 }

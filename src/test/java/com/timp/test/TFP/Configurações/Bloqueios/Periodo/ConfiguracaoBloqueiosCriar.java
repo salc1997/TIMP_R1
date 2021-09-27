@@ -26,7 +26,7 @@ public class ConfiguracaoBloqueiosCriar extends TestBaseFernando {
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -44,5 +44,6 @@ public class ConfiguracaoBloqueiosCriar extends TestBaseFernando {
 	public void criar() {
 		boolean sucesso = configuracaoBloqueiosCriarPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(3000);
 	}
 }

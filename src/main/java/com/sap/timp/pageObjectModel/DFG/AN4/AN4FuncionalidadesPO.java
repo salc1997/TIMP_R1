@@ -2332,7 +2332,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		sleep(3000);
 		aplicar.click();
-		sleep(3000);
+		sleep(6000);
 		
 
 		arquivoReferênciaAN4.click();

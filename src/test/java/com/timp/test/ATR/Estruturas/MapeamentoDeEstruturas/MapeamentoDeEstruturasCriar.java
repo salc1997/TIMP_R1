@@ -29,7 +29,7 @@ public class MapeamentoDeEstruturasCriar extends TestBaseSteven {
 
 	  @AfterClass
 	  public void afterClass() {
-		  //driver.close();
+		  driver.close();
 	  }
 	  
 	 
@@ -42,7 +42,7 @@ public class MapeamentoDeEstruturasCriar extends TestBaseSteven {
 	 		boolean sucesso = mapeamentoDeEstruturasCriarPO.criar();
 			assertTrue(sucesso, Criar);
 		
-	 		
+			sleep(2000);
 	 	}
 	
 }

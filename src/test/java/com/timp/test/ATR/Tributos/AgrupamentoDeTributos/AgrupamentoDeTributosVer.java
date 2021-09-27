@@ -47,7 +47,7 @@ public class AgrupamentoDeTributosVer extends TestBaseSteven {
 				
 			}
 			
-		
+	 		sleep(2000);
 	 		
 	 	}
 

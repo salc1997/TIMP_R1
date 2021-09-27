@@ -28,7 +28,7 @@ public class MapeamentoDeParametrosDeEntradaCriar extends TestBaseSteven{
 
 	  @AfterClass
 	  public void afterClass() {
-		 // driver.close();
+		  driver.close();
 	  }
 	  
 
@@ -40,7 +40,7 @@ public class MapeamentoDeParametrosDeEntradaCriar extends TestBaseSteven{
 	 		
 	 		boolean sucesso = mapeamentoDeParametrosDeEntradaCriarPO.criar();
 			assertTrue(sucesso, Criar);
-		
+			sleep(2000);
 	 		
 	 	}
 	

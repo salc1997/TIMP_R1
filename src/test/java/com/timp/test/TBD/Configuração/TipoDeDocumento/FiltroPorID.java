@@ -33,28 +33,20 @@ public class FiltroPorID extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-//		driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
 
-	@Test(priority = 1)
-	public void acessarTCC() {
-
-		acessarTBDPO.acessarTBD();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void filtro() {
+		loginTC.login();
+		acessarTBDPO.acessarTBD();
 
 		boolean sucesso = filtroPorIdPO.filtro();
 
 		assertTrue(sucesso, Filtros);
+		sleep(3000);
 	}
 
 }

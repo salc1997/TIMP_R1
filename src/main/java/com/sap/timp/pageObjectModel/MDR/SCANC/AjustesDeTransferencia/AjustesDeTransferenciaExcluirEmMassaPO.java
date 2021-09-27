@@ -216,9 +216,9 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");	
 		waitExpectElement(empresa);
-		sleep(5000);
+		sleep(60000);
 		System.out.println("llege antes del segundo registro");
-		
+		sleep(12000);
 		empresa.click();
 		sleep(2000);
 		opcao.click();
@@ -302,19 +302,7 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-
-		biblioteca.click();
-		
-		sleep(2000);
-
-		
-		no.click();
-		
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(12000);
 		
 
 		siguiente.click();

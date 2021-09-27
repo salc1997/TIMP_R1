@@ -739,6 +739,12 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 			sucesso.add(tipoS.equals("ALTER E-SOCIAL S1200"));
 		}		
 		
+		home.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+	
+		
 		System.out.println(sucesso);
 		
 		return sucesso;
@@ -765,15 +771,7 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 			tp1 = true;
 		}
 		
-//		home.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
 		
-		AcessarBREPO acessarBREPO;
-		acessarBREPO = new AcessarBREPO();
-		
-		acessarBREPO.acessarBRE();
 		
 		regraAuditoriaN3.click();
 		sleep(3000);
@@ -871,7 +869,7 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//waitExpectElement(adicionarCaminho);
-		sleep(5000);
+		sleep(13000);
 		
 		
 		adicionarCaminho.click();

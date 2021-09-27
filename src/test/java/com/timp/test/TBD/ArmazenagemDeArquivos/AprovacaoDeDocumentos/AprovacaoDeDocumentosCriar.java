@@ -42,7 +42,7 @@ public class AprovacaoDeDocumentosCriar extends TestBaseSteven {
 
 		boolean sucesso = aprovacaoDeDocumentosCriarPO.criar();
 		assertTrue(sucesso, Criar);
-
+		sleep(3000);
 	}
 
 }

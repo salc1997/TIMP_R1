@@ -46,7 +46,7 @@ public class MapeamentoDeEstruturasEditar extends TestBaseSteven{
 				
 			}
 			
-		
+	 		sleep(2000);
 	 		
 	 	}
  

@@ -1,225 +1,974 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="0" failed="12" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-09-27T14:02:16Z" name="Suite" finished-at="2021-09-27T15:30:35Z" duration-ms="5298873">
+  <suite started-at="2021-10-01T06:17:18Z" name="Suite" finished-at="2021-10-01T06:34:27Z" duration-ms="1028926">
     <groups>
     </groups>
-    <test started-at="2021-09-27T14:02:16Z" name=" ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS " finished-at="2021-09-27T15:16:32Z" duration-ms="4455731">
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@7922d892]" started-at="2021-09-27T14:58:00Z" name="beforeClass" finished-at="2021-09-27T14:58:27Z" duration-ms="27465" status="PASS">
+    <test started-at="2021-10-01T06:17:18Z" name="Regra de Mensagens" finished-at="2021-10-01T06:34:27Z" duration-ms="1028926">
+      <class name="com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensVisualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensVisualizar@3246fb96]" started-at="2021-10-01T06:21:41Z" name="beforeClass" finished-at="2021-10-01T06:21:58Z" duration-ms="17085" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="filtrarPorIdMasLimpiarFiltros()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@7922d892]" started-at="2021-09-27T14:58:27Z" name="filtrarPorIdMasLimpiarFiltros" finished-at="2021-09-27T14:59:23Z" duration-ms="55363" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filtrarPorIdMasLimpiarFiltros -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@7922d892]" started-at="2021-09-27T14:59:23Z" name="afterClass" finished-at="2021-09-27T14:59:27Z" duration-ms="4412" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar@600b9d27]" started-at="2021-09-27T14:22:34Z" name="beforeClass" finished-at="2021-09-27T14:22:51Z" duration-ms="16537" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="EditarRelacionamento()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar@600b9d27]" started-at="2021-09-27T14:22:51Z" name="EditarRelacionamento" finished-at="2021-09-27T14:36:51Z" duration-ms="839710" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EditarRelacionamento -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar@600b9d27]" started-at="2021-09-27T14:36:51Z" name="afterClass" finished-at="2021-09-27T14:36:55Z" duration-ms="4499" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@345f69f3]" started-at="2021-09-27T15:00:53Z" name="beforeClass" finished-at="2021-09-27T15:01:17Z" duration-ms="24224" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="criarRelacionamento()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@345f69f3]" started-at="2021-09-27T15:01:17Z" name="criarRelacionamento" finished-at="2021-09-27T15:15:52Z" duration-ms="874826" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criarRelacionamento -->
-        <test-method signature="excluirMassa()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@345f69f3]" started-at="2021-09-27T15:15:52Z" name="excluirMassa" finished-at="2021-09-27T15:16:32Z" depends-on-methods="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa.criarRelacionamento" duration-ms="39879" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluirMassa -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@345f69f3]" started-at="2021-09-27T15:16:32Z" name="afterClass" finished-at="2021-09-27T15:16:32Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir@457c9034]" started-at="2021-09-27T14:59:27Z" name="beforeClass" finished-at="2021-09-27T14:59:43Z" duration-ms="15648" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir@457c9034]" started-at="2021-09-27T14:59:43Z" name="excluir" finished-at="2021-09-27T15:00:49Z" duration-ms="65926" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir@457c9034]" started-at="2021-09-27T15:00:49Z" name="afterClass" finished-at="2021-09-27T15:00:53Z" duration-ms="4176" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar@3688eb5b]" started-at="2021-09-27T14:36:55Z" name="beforeClass" finished-at="2021-09-27T14:37:22Z" duration-ms="27392" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="VisualizarRelacionamento()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar@3688eb5b]" started-at="2021-09-27T14:37:22Z" name="VisualizarRelacionamento" finished-at="2021-09-27T14:43:51Z" duration-ms="388346" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VisualizarRelacionamento -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar@3688eb5b]" started-at="2021-09-27T14:43:51Z" name="afterClass" finished-at="2021-09-27T14:43:51Z" duration-ms="366" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@69f1a286]" started-at="2021-09-27T14:43:51Z" name="beforeClass" finished-at="2021-09-27T14:44:06Z" duration-ms="14970" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="criarCopia()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@69f1a286]" started-at="2021-09-27T14:44:06Z" name="criarCopia" finished-at="2021-09-27T14:51:24Z" duration-ms="437616" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criarCopia -->
-        <test-method signature="editarCopia()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@69f1a286]" started-at="2021-09-27T14:51:24Z" name="editarCopia" finished-at="2021-09-27T14:57:39Z" depends-on-methods="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia.criarCopia" duration-ms="374807" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editarCopia -->
-        <test-method signature="excluirCopia()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@69f1a286]" started-at="2021-09-27T14:57:39Z" name="excluirCopia" finished-at="2021-09-27T14:58:00Z" depends-on-methods="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia.editarCopia" duration-ms="21178" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluirCopia -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@69f1a286]" started-at="2021-09-27T14:58:00Z" name="afterClass" finished-at="2021-09-27T14:58:00Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar@ae3540e]" started-at="2021-09-27T14:02:16Z" name="beforeClass" finished-at="2021-09-27T14:02:30Z" duration-ms="14195" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="criarRelacionamento()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar@ae3540e]" started-at="2021-09-27T14:02:30Z" name="criarRelacionamento" finished-at="2021-09-27T14:22:34Z" duration-ms="1204145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criarRelacionamento -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar@ae3540e]" started-at="2021-09-27T14:22:34Z" name="afterClass" finished-at="2021-09-27T14:22:34Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar -->
-    </test> <!--  ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS  -->
-    <test started-at="2021-09-27T15:16:32Z" name=" ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS " finished-at="2021-09-27T15:30:35Z" duration-ms="843103">
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar@172b013]" started-at="2021-09-27T15:16:32Z" name="beforeClass" finished-at="2021-09-27T15:16:49Z" duration-ms="17632" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar@172b013]" started-at="2021-09-27T15:16:49Z" name="criar" finished-at="2021-09-27T15:18:18Z" duration-ms="89177" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar@172b013]" started-at="2021-09-27T15:18:18Z" name="afterClass" finished-at="2021-09-27T15:18:23Z" duration-ms="4209" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar -->
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa@62010f5c]" started-at="2021-09-27T15:27:46Z" name="beforeClass" finished-at="2021-09-27T15:28:14Z" duration-ms="28116" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa@62010f5c]" started-at="2021-09-27T15:28:14Z" name="criar" finished-at="2021-09-27T15:30:05Z" duration-ms="111476" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criar -->
-        <test-method signature="Excluir()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa@62010f5c]" started-at="2021-09-27T15:30:05Z" name="Excluir" finished-at="2021-09-27T15:30:30Z" depends-on-methods="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa.criar" duration-ms="25080" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa@62010f5c]" started-at="2021-09-27T15:30:30Z" name="afterClass" finished-at="2021-09-27T15:30:35Z" duration-ms="4445" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa -->
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes@2796aeae]" started-at="2021-09-27T15:20:35Z" name="beforeClass" finished-at="2021-09-27T15:20:54Z" duration-ms="18644" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="detalhes()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes@2796aeae]" started-at="2021-09-27T15:20:54Z" name="detalhes" finished-at="2021-09-27T15:22:01Z" duration-ms="67269" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- detalhes -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes@2796aeae]" started-at="2021-09-27T15:22:01Z" name="afterClass" finished-at="2021-09-27T15:22:01Z" duration-ms="51" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes -->
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir@70f02c32]" started-at="2021-09-27T15:26:12Z" name="beforeClass" finished-at="2021-09-27T15:26:35Z" duration-ms="22269" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir@70f02c32]" started-at="2021-09-27T15:26:35Z" name="excluir" finished-at="2021-09-27T15:27:41Z" duration-ms="66584" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir@70f02c32]" started-at="2021-09-27T15:27:41Z" name="afterClass" finished-at="2021-09-27T15:27:46Z" duration-ms="4443" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir -->
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar@56673b2c]" started-at="2021-09-27T15:18:23Z" name="beforeClass" finished-at="2021-09-27T15:18:39Z" duration-ms="16728" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="editar()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar@56673b2c]" started-at="2021-09-27T15:18:39Z" name="editar" finished-at="2021-09-27T15:20:31Z" duration-ms="111455" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar@56673b2c]" started-at="2021-09-27T15:20:31Z" name="afterClass" finished-at="2021-09-27T15:20:35Z" duration-ms="4437" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar -->
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia@1fa1cab1]" started-at="2021-09-27T15:23:33Z" name="beforeClass" finished-at="2021-09-27T15:23:48Z" duration-ms="14697" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="criarcopia()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia@1fa1cab1]" started-at="2021-09-27T15:23:48Z" name="criarcopia" finished-at="2021-09-27T15:26:12Z" duration-ms="144364" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criarcopia -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia@1fa1cab1]" started-at="2021-09-27T15:26:12Z" name="afterClass" finished-at="2021-09-27T15:26:12Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia -->
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer@b4711e2]" started-at="2021-09-27T15:22:01Z" name="beforeClass" finished-at="2021-09-27T15:22:20Z" duration-ms="18982" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="visualizar()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer@b4711e2]" started-at="2021-09-27T15:22:20Z" name="visualizar" finished-at="2021-09-27T15:23:29Z" duration-ms="68588" status="PASS">
+        <test-method signature="visualizar()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensVisualizar@3246fb96]" started-at="2021-10-01T06:21:58Z" name="visualizar" finished-at="2021-10-01T06:22:42Z" duration-ms="43538" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50546}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 896c5eaefdbfc7c83f0a59cfca07783b
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50546}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 896c5eaefdbfc7c83f0a59cfca07783b
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensVisualizarPO.visualizar(RegrasDeMensagensVisualizarPO.java:68)
+at com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensVisualizar.visualizar(RegraDeMensagensVisualizar.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- visualizar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer@b4711e2]" started-at="2021-09-27T15:23:29Z" name="afterClass" finished-at="2021-09-27T15:23:33Z" duration-ms="4448" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensVisualizar@3246fb96]" started-at="2021-10-01T06:22:42Z" name="afterClass" finished-at="2021-10-01T06:22:46Z" duration-ms="4406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer -->
-    </test> <!--  ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS  -->
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensVisualizar -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensEstruturas">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensEstruturas@73ee04c8]" started-at="2021-10-01T06:24:54Z" name="beforeClass" finished-at="2021-10-01T06:25:06Z" duration-ms="12150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="estruturas()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensEstruturas@73ee04c8]" started-at="2021-10-01T06:25:06Z" name="estruturas" finished-at="2021-10-01T06:25:49Z" duration-ms="43064" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63870}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fd0402ab2fa59448ca660f2109a248ff
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63870}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: fd0402ab2fa59448ca660f2109a248ff
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensEstruturasPO.estrutura(RegrasDeMensagensEstruturasPO.java:122)
+at com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensEstruturas.estruturas(RegrasDeMensagensEstruturas.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- estruturas -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensEstruturas@73ee04c8]" started-at="2021-10-01T06:25:49Z" name="afterClass" finished-at="2021-10-01T06:25:54Z" duration-ms="4388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensEstruturas -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraMaisExcluirDefinitivamente">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraMaisExcluirDefinitivamente@68c72235]" started-at="2021-10-01T06:29:10Z" name="beforeClass" finished-at="2021-10-01T06:29:27Z" duration-ms="16813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="lixeiraMaisExcluirDefinitivamente()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraMaisExcluirDefinitivamente@68c72235]" started-at="2021-10-01T06:29:27Z" name="lixeiraMaisExcluirDefinitivamente" finished-at="2021-10-01T06:30:12Z" duration-ms="45084" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64066}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d7870e3819916882202457d2fc2d305e
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64066}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d7870e3819916882202457d2fc2d305e
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraMaisExcluirDefinitivamentePO.excluir(RegrasDeMensagensLixeiraMaisExcluirDefinitivamentePO.java:58)
+at com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraMaisExcluirDefinitivamente.lixeiraMaisExcluirDefinitivamente(RegrasDeMensagensLixeiraMaisExcluirDefinitivamente.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lixeiraMaisExcluirDefinitivamente -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraMaisExcluirDefinitivamente@68c72235]" started-at="2021-10-01T06:30:12Z" name="afterClass" finished-at="2021-10-01T06:30:16Z" duration-ms="4431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraMaisExcluirDefinitivamente -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassa@10959ece]" started-at="2021-10-01T06:30:16Z" name="beforeClass" finished-at="2021-10-01T06:30:32Z" duration-ms="15876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="lixeiraEmMassaNMaisExcluirEmMassa()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassa@10959ece]" started-at="2021-10-01T06:30:32Z" name="lixeiraEmMassaNMaisExcluirEmMassa" finished-at="2021-10-01T06:34:22Z" duration-ms="230410" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"tbody")]/div[contains(@class,"tr") and @data-id][0]/div[3]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64111}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 622936212669ba2f5c7c059b96068ea6
+*** Element info: {Using=xpath, value=//div[contains(@class,"tbody")]/div[contains(@class,"tr") and @data-id][0]/div[3]/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"tbody")]/div[contains(@class,"tr") and @data-id][0]/div[3]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64111}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 622936212669ba2f5c7c059b96068ea6
+*** Element info: {Using=xpath, value=//div[contains(@class,"tbody")]/div[contains(@class,"tr") and @data-id][0]/div[3]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassaPO.criar(RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassaPO.java:385)
+at com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassa.lixeiraEmMassaNMaisExcluirEmMassa(RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassa.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lixeiraEmMassaNMaisExcluirEmMassa -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassa@10959ece]" started-at="2021-10-01T06:34:22Z" name="afterClass" finished-at="2021-10-01T06:34:27Z" duration-ms="4454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassa -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensCriarComCopia">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensCriarComCopia@7690781]" started-at="2021-10-01T06:19:43Z" name="beforeClass" finished-at="2021-10-01T06:19:58Z" duration-ms="14862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="criarComCopia()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensCriarComCopia@7690781]" started-at="2021-10-01T06:19:58Z" name="criarComCopia" finished-at="2021-10-01T06:20:47Z" duration-ms="48757" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50494}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bc23b9681072bac9469930691216879f
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50494}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bc23b9681072bac9469930691216879f
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensCriaComCopiaPO.criarComCopia(RegraDeMensagensCriaComCopiaPO.java:82)
+at com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensCriarComCopia.criarComCopia(RegrasDeMensagensCriarComCopia.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarComCopia -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensCriarComCopia@7690781]" started-at="2021-10-01T06:20:47Z" name="afterClass" finished-at="2021-10-01T06:20:47Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensCriarComCopia -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados@6b8ca3c8]" started-at="2021-10-01T06:28:01Z" name="beforeClass" finished-at="2021-10-01T06:28:18Z" duration-ms="17080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="valoresCalculados()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados@6b8ca3c8]" started-at="2021-10-01T06:28:18Z" name="valoresCalculados" finished-at="2021-10-01T06:29:05Z" duration-ms="47626" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64013}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f8851ad6dcc93f488187ccb144a06d83
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64013}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: f8851ad6dcc93f488187ccb144a06d83
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculadosPO.valoresCalculados(RegrasDeMensagensValoresCalculadosPO.java:162)
+at com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados.valoresCalculados(RegrasDeMensagensValoresCalculados.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- valoresCalculados -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados@6b8ca3c8]" started-at="2021-10-01T06:29:05Z" name="afterClass" finished-at="2021-10-01T06:29:10Z" duration-ms="4417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensCriar@26275bef]" started-at="2021-10-01T06:17:18Z" name="beforeClass" finished-at="2021-10-01T06:17:31Z" duration-ms="12657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensCriar@26275bef]" started-at="2021-10-01T06:17:31Z" name="criar" finished-at="2021-10-01T06:19:43Z" duration-ms="132284" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()="Regras de Mensagens"]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7ff8e6677847b8e6906ad608c1f095db
+*** Element info: {Using=xpath, value=//span[text()="Regras de Mensagens"]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()="Regras de Mensagens"]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50450}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7ff8e6677847b8e6906ad608c1f095db
+*** Element info: {Using=xpath, value=//span[text()="Regras de Mensagens"]}
+at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy12.click(Unknown Source)
+at com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensCriaPO.criar(RegrasDeMensagensCriaPO.java:304)
+at com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensCriar.criar(RegraDeMensagensCriar.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensCriar@26275bef]" started-at="2021-10-01T06:19:43Z" name="afterClass" finished-at="2021-10-01T06:19:43Z" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensCriar -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.Edicao.RegraDeMensagensRelacionamento">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegraDeMensagensRelacionamento@61386958]" started-at="2021-10-01T06:23:51Z" name="beforeClass" finished-at="2021-10-01T06:24:09Z" duration-ms="17993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="relacionamento()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegraDeMensagensRelacionamento@61386958]" started-at="2021-10-01T06:24:09Z" name="relacionamento" finished-at="2021-10-01T06:24:54Z" duration-ms="45032" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7860825e2653bdfdb64c7b13bacd4cd8
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7860825e2653bdfdb64c7b13bacd4cd8
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.Edicao.RegraDeMensagensRelacionamentoPO.relacionamento(RegraDeMensagensRelacionamentoPO.java:55)
+at com.timp.test.BRE.RegrasDeMensagens.Edicao.RegraDeMensagensRelacionamento.relacionamento(RegraDeMensagensRelacionamento.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- relacionamento -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegraDeMensagensRelacionamento@61386958]" started-at="2021-10-01T06:24:54Z" name="afterClass" finished-at="2021-10-01T06:24:54Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.Edicao.RegraDeMensagensRelacionamento -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensSimular">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensSimular@7671cb68]" started-at="2021-10-01T06:25:54Z" name="beforeClass" finished-at="2021-10-01T06:26:09Z" duration-ms="14695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="simular()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensSimular@7671cb68]" started-at="2021-10-01T06:26:09Z" name="simular" finished-at="2021-10-01T06:26:55Z" duration-ms="46627" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e9e29a2f2ee0835273a6b469fd04ce2e
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e9e29a2f2ee0835273a6b469fd04ce2e
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensSimularPO.simular(RegrasDeMensagensSimularPO.java:95)
+at com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensSimular.simular(RegrasDeMensagensSimular.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simular -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensSimular@7671cb68]" started-at="2021-10-01T06:26:55Z" name="afterClass" finished-at="2021-10-01T06:26:55Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensSimular -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensDetalhes">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensDetalhes@2e222612]" started-at="2021-10-01T06:22:46Z" name="beforeClass" finished-at="2021-10-01T06:23:06Z" duration-ms="20080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="detalhes()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensDetalhes@2e222612]" started-at="2021-10-01T06:23:06Z" name="detalhes" finished-at="2021-10-01T06:23:51Z" duration-ms="44929" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50626}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: cf5ab45a6b8c64440d82e2c3f82c1e3e
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50626}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: cf5ab45a6b8c64440d82e2c3f82c1e3e
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensDetalhesPO.detalhes(RegrasDeMensagensDetalhesPO.java:65)
+at com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensDetalhes.detalhes(RegrasDeMensagensDetalhes.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- detalhes -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensDetalhes@2e222612]" started-at="2021-10-01T06:23:51Z" name="afterClass" finished-at="2021-10-01T06:23:51Z" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensDetalhes -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensTabelas">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensTabelas@49dc7102]" started-at="2021-10-01T06:26:55Z" name="beforeClass" finished-at="2021-10-01T06:27:07Z" duration-ms="11679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="tabelas()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensTabelas@49dc7102]" started-at="2021-10-01T06:27:07Z" name="tabelas" finished-at="2021-10-01T06:28:01Z" duration-ms="53846" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63976}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9ebe1e1cfd30dd954df6d9cebb062c88
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63976}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9ebe1e1cfd30dd954df6d9cebb062c88
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensTabelasPO.tabela(RegrasDeMensagensTabelasPO.java:142)
+at com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensTabelas.tabelas(RegrasDeMensagensTabelas.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tabelas -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensTabelas@49dc7102]" started-at="2021-10-01T06:28:01Z" name="afterClass" finished-at="2021-10-01T06:28:01Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensTabelas -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditar@77eca502]" started-at="2021-10-01T06:20:47Z" name="beforeClass" finished-at="2021-10-01T06:20:59Z" duration-ms="12448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditar@77eca502]" started-at="2021-10-01T06:20:59Z" name="editar" finished-at="2021-10-01T06:21:41Z" duration-ms="42070" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50520}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e21653c9d4e68edaf8654a8c8d4d9e70
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2882"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50520}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e21653c9d4e68edaf8654a8c8d4d9e70
+*** Element info: {Using=xpath, value=//div[@data-id="2882"]/div[1]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditarPO.editar(RegrasDeMensagensEditarPO.java:211)
+at com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditar.editar(RegrasDeMensagensEditar.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditar@77eca502]" started-at="2021-10-01T06:21:41Z" name="afterClass" finished-at="2021-10-01T06:21:41Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditar -->
+    </test> <!-- Regra de Mensagens -->
   </suite> <!-- Suite -->
 </testng-results>

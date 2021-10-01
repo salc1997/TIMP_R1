@@ -25,7 +25,7 @@ public class RegrasdeAuditoriaN2EdiçãoTabelasPO extends TestBaseSteven {
 	@FindBy(xpath = "//input[@placeholder=\"Selecione uma tabela\"]")
 	public WebElement inputSeleccionTabela;
 	
-	@FindBy(xpath = "//li[text()=\"Apresent. Treinamento 4\"]")
+	@FindBy(xpath = "//li[text()=\"10jul_moc\"]")
 	public WebElement seleccionTabela;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecione um campo \"]")

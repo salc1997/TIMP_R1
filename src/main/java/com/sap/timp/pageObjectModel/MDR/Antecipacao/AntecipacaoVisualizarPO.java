@@ -146,7 +146,7 @@ public class AntecipacaoVisualizarPO extends TestBaseSteven{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(8000);
+		sleep(10000);
 		
 		String empresaE1 = empresaE.getText();
 		String ufE1 = ufE.getText();

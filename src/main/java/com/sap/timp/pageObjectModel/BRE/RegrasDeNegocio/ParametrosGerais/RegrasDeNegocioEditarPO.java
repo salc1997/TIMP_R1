@@ -285,7 +285,7 @@ public class RegrasDeNegocioEditarPO extends TestBaseSteven{
 		sucesso.add(sucesso2);
 		*/
 		waitExpectElement(primeiracaixar5);
-		sleep(16000);
+		sleep(28000);
 		
 		primeiracaixar5.click();
 		sleep(1000);
@@ -298,7 +298,7 @@ public class RegrasDeNegocioEditarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		waitExpectElement(configuracoes);
-		sleep(2000);
+		sleep(26000);
 		configuracoes.click();
 		sleep(2000);
 		String nome1 = "TESTE AUTOMATIZADO 007 - NAO MEXER";

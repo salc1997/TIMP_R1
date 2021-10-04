@@ -69,7 +69,7 @@ public class ConfiguraçãodeLayoutdePainelVisualizarPO extends TestBaseSteven {
 		açao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(13000);
+		sleep(30000);
 		
 		// Datos de visualizar
 		String empresaString = driver.findElement(By.xpath("//div[@id=\"company\"]/div/div/div/div/div/div[@class=\"componentName\"]")).getText();
@@ -109,7 +109,7 @@ public class ConfiguraçãodeLayoutdePainelVisualizarPO extends TestBaseSteven {
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(14000);
+		sleep(30000);
 		
 		// Datos de Editar
 		String empresaString1 = driver.findElement(By.xpath("//div[@id=\"company\"]/div/div/div/div/div/div[@class=\"componentName\"]")).getText();

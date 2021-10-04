@@ -174,9 +174,9 @@ public class FiltrosPO  extends TestBaseSteven{
 		
 		sleep(2000);
 		editor.click();
-		waitExpectElement(nao1);
+		//waitExpectElement(nao1);
 		sleep(1000);
-		nao1.click();
+		//nao1.click();
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
 		
@@ -449,9 +449,9 @@ public class FiltrosPO  extends TestBaseSteven{
 		
 		
 		biblioteca.click();
-		waitExpectElement(nao1);
+		//waitExpectElement(nao1);
 		sleep(1000);
-		nao1.click();
+		//nao1.click();
 		
 		
 		

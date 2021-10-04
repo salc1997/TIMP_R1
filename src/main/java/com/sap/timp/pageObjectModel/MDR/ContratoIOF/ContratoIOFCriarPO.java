@@ -146,9 +146,9 @@ public class ContratoIOFCriarPO extends TestBaseMassiel {
 		
 		preenchercontrato.sendKeys("123");
 		sleep(1000);
-		codigoreceita.click();
+		//codigoreceita.click();
 		sleep(1000);
-		opcaocodigoreceita.click();
+		//opcaocodigoreceita.click();
 		sleep(1000);
 		
 		tipopessoa.click();

@@ -110,7 +110,7 @@ public class OficiosExtemporaneosCriarPO extends TestBaseFernando{
 		cboEmpre.click();
 		sleep(1000);
 		opcionEmpre.click();
-		sleep(1000);
+		sleep(5000);
 		
 		cboAnexo.click();
 		sleep(1000);

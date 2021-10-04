@@ -105,6 +105,7 @@ public class LimiteCompetenciaEditarPO extends TestBaseSteven {
 		*/
 		sleep(10000);
 		sleep(10000);
+		sleep(10000);
 		
 		String nuevoTexto = campo.getAttribute("value");
 

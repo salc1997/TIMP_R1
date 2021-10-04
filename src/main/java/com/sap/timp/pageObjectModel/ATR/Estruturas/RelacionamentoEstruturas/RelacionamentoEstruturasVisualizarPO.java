@@ -131,9 +131,9 @@ public class RelacionamentoEstruturasVisualizarPO extends TestBaseSteven{
 		sleep(1000);
 		acao.click();
 		
-		sleep(20000);
+		sleep(36000);
 		waitExpectElement(grupo1);
-		invisibilityOfElementOverlay();
+//		invisibilityOfElementOverlay();
 		
 		String grupo1V = grupo1.getAttribute("value");
 		String estrutura1V = estrutura1.getAttribute("value");
@@ -172,9 +172,9 @@ public class RelacionamentoEstruturasVisualizarPO extends TestBaseSteven{
 		sleep(1000);
 		acao.click();
 		
-		sleep(20000);
+		sleep(29000);
 		waitExpectElement(grupo1);
-		invisibilityOfElementOverlay();
+	//	invisibilityOfElementOverlay();
 
 		
 		System.out.println("---------------------------Datos Editar-------------------------------------------");

@@ -40,10 +40,10 @@ public class Registro1100CriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[2]")
 	public WebElement filial;
 	
-	@FindBy(xpath = "//div[@id=\"1000_SP_0001\"]")
+	@FindBy(xpath = "//div[@id=\"1000_SP_0002\"]")
 	public WebElement filialOPC;
 	
-	@FindBy(xpath = "//div[@id=\"1000_SP_0014\"]")
+	@FindBy(xpath = "//div[@id=\"1000_SP_0001\"]")
 	public WebElement filialOPCTC2;
 	
 	@FindBy(xpath = "//div[@id=\"origCred\"]/div/div/div[2]")
@@ -130,9 +130,9 @@ public class Registro1100CriarPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		closeSelectTypeCheckbox(uf);
-		sleep(4000);
+		sleep(6000);
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+	//	attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(3000);
 		
 		filial.click();

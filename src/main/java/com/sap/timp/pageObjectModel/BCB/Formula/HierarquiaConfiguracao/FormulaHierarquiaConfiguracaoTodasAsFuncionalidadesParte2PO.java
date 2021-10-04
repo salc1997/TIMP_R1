@@ -587,8 +587,8 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 			m1.click();
 		}		
 		
-		sleep(2000);
-		execucaoAnalitica.click();
+		sleep(6000);
+	//	execucaoAnalitica.click();
 		sleep(1000);
 		
 		executarB.click();

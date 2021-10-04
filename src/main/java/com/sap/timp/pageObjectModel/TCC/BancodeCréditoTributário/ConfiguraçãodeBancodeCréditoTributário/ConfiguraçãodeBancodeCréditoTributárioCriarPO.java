@@ -236,7 +236,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 		cboComponenteOrigen.click();
 		sleep(1000);
 		opcionComponenteOrigen.click();
-		sleep(8000);
+		sleep(12000);
 		
 		
 		if ( tq1 == true) {
@@ -290,7 +290,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 			cboAjuste.click();
 			sleep(1000);
 			opcionAjusteTQ1.click();
-			sleep(70000);
+			sleep(8000);
 
 
 		}else if(tc2 == true ) {
@@ -415,12 +415,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 		sleep(2000);
 		
 		btnNo.click();
-		sleep(2000);
-
-		nao.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(26000);
 		
 		ultimapagina.click();
 		

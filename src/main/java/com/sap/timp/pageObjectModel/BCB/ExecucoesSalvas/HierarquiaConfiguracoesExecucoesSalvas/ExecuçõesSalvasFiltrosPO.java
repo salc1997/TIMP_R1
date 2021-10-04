@@ -17,6 +17,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseKenssy{
 	@FindBy(xpath = "//span[text()=\"Execuções\"]")
 	public WebElement execucoes;
 	
+	
 	@FindBy(xpath = "//span[text()=\"Execução da Consolidação\"]")
 	public WebElement cosolidacaoExecucoes;
 
@@ -33,7 +34,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseKenssy{
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
 	public WebElement opcHierarquia;
 	
-	@FindBy(xpath = "//div[@id=\"company-filter\"]/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"company-filter\"]/div/div[1]/div[2]")
 	public WebElement empresaS;
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
 	public WebElement opc;
@@ -144,7 +145,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseKenssy{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(9000);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 
@@ -154,10 +155,10 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseKenssy{
 
 			String textFiltroData = driver
 					.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["
-							+ rows + "]/div[5]/div"))
+							+ rows + "]/div[6]/div"))
 					.getText();
 			System.out.println(textFiltroData + " data Filtro");
-			sucesso.add(text.equals(textFiltroData));
+			sucesso.add(textFiltroData.contains(text));
 
 			f = f + 1;
 		}
@@ -166,7 +167,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseKenssy{
 		limpiarfiltros.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(9000);
 		
 		return sucesso;
 	}
@@ -185,7 +186,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseKenssy{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 
@@ -195,10 +196,10 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseKenssy{
 
 			String textFiltroData = driver
 					.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["
-							+ rows + "]/div[6]/div"))
+							+ rows + "]/div[5]/div"))
 					.getText();
 			System.out.println(textFiltroData + " data Filtro");
-			sucesso.add(text.equals(textFiltroData));
+			sucesso.add(textFiltroData.contains(text));
 
 			f = f + 1;
 		}

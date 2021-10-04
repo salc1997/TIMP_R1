@@ -107,7 +107,7 @@ public class Registro1501CriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"fieldSize1 branch\"]/div/div[@id=\"main-icon\"]")
 	public WebElement filialV;
 	
-	@FindBy(xpath = "//li[text()=\"0001\"]")
+	@FindBy(xpath = "//li[text()=\"0002\"]")
 	public WebElement filialOV;
 	
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[3]/div/div[2]/div/div[2]/div[1]/div[2]/div/div[1]/span")
@@ -195,8 +195,8 @@ public class Registro1501CriarPO extends TestBaseSteven{
 		sleep(1000);
 		System.out.println("1111");
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
-		sleep(3000);
+		//attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		sleep(8000);
 		
 		uf.click();
 		sleep(1000);

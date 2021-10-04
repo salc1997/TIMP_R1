@@ -1121,7 +1121,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			if (url.contains("tc2")) {
 				tc2 = true;
 			}
-			
+			sleep(9000);
 			execucoes.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

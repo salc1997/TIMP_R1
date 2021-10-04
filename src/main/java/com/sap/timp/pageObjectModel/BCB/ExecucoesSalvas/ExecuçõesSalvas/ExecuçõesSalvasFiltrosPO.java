@@ -64,7 +64,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 		
 		sleep(2000);
 		execucoes.click();
-		sleep(5000);
+		sleep(8000);
 		execucacoConsolidacao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -103,12 +103,14 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 		
 		sleep(2000);
 		nombreHierarquia.click();
-		sleep(2000);
+		sleep(3000);
 		
 		String HierarquiaText = opcNombreHierarquia.getText();
 		opcNombreHierarquia.click();
 		sleep(3000);
 		
+		closeSelectTypeCheckbox(nombreHierarquia);
+		sleep(3000);
 		
 		System.out.println("VIENE EN EL SELECT HIERARQUIA: "+ HierarquiaText);
 		sleep(2000);

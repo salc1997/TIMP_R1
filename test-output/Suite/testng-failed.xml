@@ -1,103 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <test thread-count="5" name="FiltrosAvancados(failed)">
-=======
-  <test thread-count="5" name="Banco De Credito Tributarop &gt; Configuração de Banco de Crédito Tributário(failed)">
->>>>>>> refs/remotes/origin/Kenssy
-=======
-  <test thread-count="5" name="Regras de Auditoria N3(failed)">
-=======
-  <test thread-count="5" name="Regra De Campos(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/remotes/origin/Yessy
+  <test thread-count="5" name="Parametros Gerais Configuracao Configuracao(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.FiltrosAvancados">
-=======
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3CriarMasCriarComCopia">
-=======
-      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposVer">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/remotes/origin/Yessy
+      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente">
         <methods>
-          <include name="ver"/>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="criarComCopia"/>
-=======
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="criarConfiguracao"/>
           <include name="afterClass"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3CriarMasCriarComCopia -->
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Detalhes">
+      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente -->
+      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes">
         <methods>
           <include name="afterClass"/>
           <include name="detalhes"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Detalhes -->
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="editar"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Editar -->
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassa">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="excluirEmMassa"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassa -->
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.Edicao.RegrasDeAuditoriaN3Relacionamento">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="relacionamento"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.Edicao.RegrasDeAuditoriaN3Relacionamento -->
-=======
-      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposVer -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes -->
     </classes>
-<<<<<<< HEAD
-  </test> <!-- ComentarioLibre(failed) -->
-=======
-      <class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltroPorId">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="filtroPorId"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltroPorId -->
-      <class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados">
-        <methods>
-          <include name="Filtro"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados -->
-      <class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoDetalhes">
-        <methods>
-          <include name="afterClass"/>
-          <include name="detalhes"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoDetalhes -->
-    </classes>
-  </test> <!-- Banco De Credito Tributarop > Configuração de Banco de Crédito Tributário(failed) -->
->>>>>>> refs/remotes/origin/Kenssy
-=======
-<<<<<<< HEAD
-  </test> <!-- Regras de Auditoria N3(failed) -->
-=======
-  </test> <!-- Regra De Campos(failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> refs/remotes/origin/Yessy
+  </test> <!-- Parametros Gerais Configuracao Configuracao(failed) -->
 </suite> <!-- Failed suite [Suite] -->

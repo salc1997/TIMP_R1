@@ -34,6 +34,9 @@ public class RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO extends 
 	@FindBy(xpath = "//span[text()=\"Log de Geração\"]")
 	public WebElement logDeGeracao;
 	
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement ultimapagina;
+	
 	public RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -98,6 +101,10 @@ public class RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO extends 
 		if(url.contains("tc2")) {
 			idRegistro = "9";
 		}
+		ultimapagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));

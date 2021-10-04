@@ -149,7 +149,7 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 		sleep(2000);
 		opctributo.click();
 
-		sleep(2000);
+		sleep(5000);
 		closeSelectTypeCheckbox(tributo);
 		sleep(2000);
 	
@@ -159,7 +159,7 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 		sleep(2000);
 		
 		dataFim.sendKeys("31/12/1979");
-		sleep(2000);
+		sleep(5000);
 		
 		gravar.click();
 		sleep(4000);
@@ -223,10 +223,6 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 			sleep(1000);
 		}
 		
-		sleep(2000);
-		closeSelectTypeCheckbox(tributo);
-		sleep(2000);
-		
 
 	
 		
@@ -234,7 +230,7 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 		sleep(1000);
 		
 		dataFim.sendKeys("31/12/1979");
-		sleep(1000);
+		sleep(5000);
 		
 		gravar.click();
 		sleep(3000);

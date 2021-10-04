@@ -155,7 +155,7 @@ public class DetalheCriarPO extends TestBaseSteven{
 		biblioteca.click();
 		sleep(2000);
 		invisibilityOfElement("//*[@id=\"tabs\"]/div[2]/div/div/div/img");
-		sleep(2000);
+		sleep(6000);
 
 
 		siguiente.click();

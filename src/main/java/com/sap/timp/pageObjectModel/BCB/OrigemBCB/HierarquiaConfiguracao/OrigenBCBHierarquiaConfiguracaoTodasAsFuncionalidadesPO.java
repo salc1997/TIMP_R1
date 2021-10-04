@@ -1709,13 +1709,13 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		*/
 		opcCampoSaida6.click();
 		sleep(9000);
-		waitExpectXpath("//button[text()=\"Sim\"]");
-		WebElement btnSeguirBloqueo = driver.findElement(By.xpath("//button[text()=\"Sim\"]"));
+	//	waitExpectXpath("//button[text()=\"Sim\"]");
+	//	WebElement btnSeguirBloqueo = driver.findElement(By.xpath("//button[text()=\"Sim\"]"));
 		sleep(1000);
-		btnSeguirBloqueo.click();
+	//	btnSeguirBloqueo.click();
 		sleep(2000);
 		
-		negativo6.click();
+	//	negativo6.click();
 		sleep(3000);
 		
 		
@@ -1847,7 +1847,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		}		
 		
 		sleep(2000);
-		execucaoAnalitica.click();
+		//execucaoAnalitica.click();
 		sleep(1000);
 		
 		executarB.click();

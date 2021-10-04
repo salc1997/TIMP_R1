@@ -135,7 +135,7 @@ public class AntecipacaoExcluirMassaPO extends TestBaseMassiel{
 
 		novaAntecipacao.click();
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"tributo\"]/div", "class", "base-select required");
+		//attributeToBeXpath("//div[@id=\"tributo\"]/div", "class", "base-select required");
 		sleep(5000);
 		
 		empresa.click();

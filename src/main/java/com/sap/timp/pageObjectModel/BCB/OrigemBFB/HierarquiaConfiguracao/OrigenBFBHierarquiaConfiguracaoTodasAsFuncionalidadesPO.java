@@ -1382,7 +1382,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		}		
 		
 		sleep(2000);
-		execucaoAnalitica.click();
+	//	execucaoAnalitica.click();
 		sleep(1000);
 		
 		executarB.click();

@@ -33,26 +33,17 @@ public class ConsultaDeDocumentosFiltroPorID extends TestBaseSteven {
 	//	driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
+	
 
-	}
-
-	@Test(priority = 1)
-	public void TBDEntrar() {
-		acessarTBDPO.acessarTBD();
-
-	}
-
-	@Test(priority = 1)
+	@Test()
 	public void filtro() {
-
+		loginTC.login();
+		acessarTBDPO.acessarTBD();
 		ArrayList<Boolean> sucesso = consultaDeDocumentosFiltroPorIDPO.filtro();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Filtros);
 		}
-
+		sleep(3000);
 	}
 
 }

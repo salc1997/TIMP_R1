@@ -49,7 +49,7 @@ public class GrupoDeEstruturasFiltroPorID extends TestBaseSteven {
 			assertTrue(sucesso.get(i), Filtros);
 		}
 
-
+		sleep(2000);
 
 	}
 

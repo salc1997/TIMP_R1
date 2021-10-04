@@ -45,6 +45,7 @@ public class MapeamentoDeParametrosDeEntradaVisualizar extends TestBaseSteven {
 	 			assertTrue(sucesso.get(i), visualizaçar);
 				
 			}
+	 		sleep(2000);
 	 	}
 	
 	

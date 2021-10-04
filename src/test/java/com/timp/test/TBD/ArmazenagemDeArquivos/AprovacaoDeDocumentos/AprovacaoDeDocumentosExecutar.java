@@ -41,6 +41,7 @@ public class AprovacaoDeDocumentosExecutar extends TestBaseSteven {
 		boolean sucesso = aprovacaoDeDocumentosExecutarPO.executar();
 		assertTrue(sucesso, "Não executado");
 
+		sleep(3000);
 	}
 
 }

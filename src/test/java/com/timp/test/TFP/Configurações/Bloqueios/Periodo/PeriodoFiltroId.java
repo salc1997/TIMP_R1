@@ -43,6 +43,7 @@ public class PeriodoFiltroId extends TestBaseMassiel {
 			assertTrue(sucesso.get(i), Criar);
 		}
 
+		sleep(3000);
 	}
 
 }

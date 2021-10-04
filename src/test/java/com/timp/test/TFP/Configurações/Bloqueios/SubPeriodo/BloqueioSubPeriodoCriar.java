@@ -53,7 +53,7 @@ public class BloqueioSubPeriodoCriar extends TestBaseCristhian {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
 		}
-
+		sleep(3000);
 	}
 
 }

@@ -30,7 +30,7 @@ public class MapeamentoDeEstruturasCriarComCopia extends TestBaseSteven {
 
 	  @AfterClass
 	  public void afterClass() {
-		  //driver.close();
+		  driver.close();
 	  }
 	  
 
@@ -46,7 +46,7 @@ public class MapeamentoDeEstruturasCriarComCopia extends TestBaseSteven {
 				
 			}
 			
-		
+	 		sleep(2000);
 	 		
 	 }
     

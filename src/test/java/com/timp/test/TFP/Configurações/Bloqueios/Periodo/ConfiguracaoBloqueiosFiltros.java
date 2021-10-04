@@ -44,5 +44,6 @@ public class ConfiguracaoBloqueiosFiltros extends TestBaseFernando {
 	public void filtros() {
 		boolean sucesso = configuracaoBloqueiosFiltrosPO.filtros();
 		assertTrue(sucesso, Criar);
+		sleep(3000);
 	}
 }

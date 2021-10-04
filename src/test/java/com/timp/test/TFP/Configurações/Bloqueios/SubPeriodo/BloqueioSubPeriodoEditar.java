@@ -50,5 +50,6 @@ public class BloqueioSubPeriodoEditar extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Editar);
 		}
+		sleep(3000);
 	}
 }

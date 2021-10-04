@@ -29,7 +29,7 @@ public class GrupoDeEstruturasExcluirEmMassa extends TestBaseSteven{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	
@@ -43,6 +43,8 @@ public class GrupoDeEstruturasExcluirEmMassa extends TestBaseSteven{
 
 		boolean sucesso = grupoDeEstruturasExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
+		
 	}
 	
 	@Test(dependsOnMethods = "criar" )
@@ -52,6 +54,7 @@ public class GrupoDeEstruturasExcluirEmMassa extends TestBaseSteven{
 		sleep(1000);
 		boolean sucesso2 = grupoDeEstruturasExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
+		sleep(2000);
 
 	}
  

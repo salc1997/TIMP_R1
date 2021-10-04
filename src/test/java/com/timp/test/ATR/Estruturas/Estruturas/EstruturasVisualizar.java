@@ -42,7 +42,7 @@ public class EstruturasVisualizar extends TestBaseSteven {
 
 	  @AfterClass
 	  public void afterClass() {
-		  //driver.close();
+		  driver.close();
 	  }
 	  
 	 	
@@ -58,6 +58,6 @@ public class EstruturasVisualizar extends TestBaseSteven {
 	 			assertTrue(sucesso.get(i), visualizaçar);
 				
 			}	
-	 		sleep(2000);
+	 		sleep(3000);
 	 }
 }

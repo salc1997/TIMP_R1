@@ -35,25 +35,16 @@ public class TipoDeDocumentoVisualizar extends TestBaseSteven {
 	//	driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
 
-	@Test(priority = 1)
-	public void TBDEntrar() {
-		acessarTBDPO.acessarTBD();
-
-	}
-
-	@Test(priority = 1)
+	@Test()
 	public void visualizar() {
-
+		loginTC.login();
+		acessarTBDPO.acessarTBD();
 		ArrayList<Boolean> sucesso = tipoDeDocumentoVisualizarPO.visualizar();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-
+		sleep(3000);
 	}
 }

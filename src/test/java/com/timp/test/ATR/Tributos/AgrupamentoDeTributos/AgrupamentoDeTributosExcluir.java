@@ -41,7 +41,7 @@ public class AgrupamentoDeTributosExcluir extends TestBaseSteven{
 	 		
 	 		boolean sucesso = agrupamentoDeTributosExcluirPO.excluir();
 			assertTrue(sucesso, Eliminado);
-		
+			sleep(2000);
 	 		
 	 	}
 	

@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="Parametros Gerais Configuracao Configuracao(failed)">
+=======
+  <test thread-count="5" name="Regra de Mensagens(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente">
+=======
+      <class name="com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensCriarComCopia">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="criarConfiguracao"/>
           <include name="afterClass"/>
@@ -14,9 +23,98 @@
         <methods>
           <include name="afterClass"/>
           <include name="detalhes"/>
+=======
+          <include name="afterClass"/>
+          <include name="criarComCopia"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes -->
+=======
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensCriarComCopia -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensDetalhes">
+        <methods>
+          <include name="detalhes"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensDetalhes -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraMaisExcluirDefinitivamente">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="lixeiraMaisExcluirDefinitivamente"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraMaisExcluirDefinitivamente -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="valoresCalculados"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensValoresCalculados -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.Edicao.RegraDeMensagensRelacionamento">
+        <methods>
+          <include name="afterClass"/>
+          <include name="relacionamento"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.Edicao.RegraDeMensagensRelacionamento -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensVisualizar">
+        <methods>
+          <include name="visualizar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensVisualizar -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensCriar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegraDeMensagensCriar -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensEditar -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensEstruturas">
+        <methods>
+          <include name="estruturas"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensEstruturas -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensSimular">
+        <methods>
+          <include name="simular"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensSimular -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassa">
+        <methods>
+          <include name="afterClass"/>
+          <include name="lixeiraEmMassaNMaisExcluirEmMassa"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.ParametrosGerais.RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassa -->
+      <class name="com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensTabelas">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="tabelas"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensTabelas -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
+<<<<<<< HEAD
   </test> <!-- Parametros Gerais Configuracao Configuracao(failed) -->
+=======
+  </test> <!-- Regra de Mensagens(failed) -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </suite> <!-- Failed suite [Suite] -->

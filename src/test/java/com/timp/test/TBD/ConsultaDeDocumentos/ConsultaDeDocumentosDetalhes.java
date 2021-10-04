@@ -34,26 +34,16 @@ public class ConsultaDeDocumentosDetalhes extends TestBaseMassiel {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void TBDEntrar() {
-		acessarTBDPO.acessarTBD();
-
-	}
-
-	@Test(priority = 1)
+	@Test()
 	public void detalle() {
-
+		loginTC.login();
+		acessarTBDPO.acessarTBD();
 		ArrayList<Boolean> sucesso = consultaDeDocumentosDetalhesPO.detalles();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-
+		sleep(3000);
 	}
 }

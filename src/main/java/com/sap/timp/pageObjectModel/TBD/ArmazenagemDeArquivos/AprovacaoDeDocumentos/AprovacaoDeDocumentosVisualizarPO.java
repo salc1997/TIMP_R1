@@ -176,7 +176,7 @@ public class AprovacaoDeDocumentosVisualizarPO extends TestBaseSteven{
 	//    waitExpectElement(biblioteca);
 	    sleep(25000);
 	    sleep(25000);
-	    sleep(10000);
+	    sleep(16000);
 	    System.out.println("-----------------------");
 	    String tipodedocumentoeditar = tipodedocumento.getAttribute("value");
 		String descricaoeditar = descricao.getAttribute("value");

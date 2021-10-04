@@ -146,7 +146,11 @@ public class AntecipacaoVisualizarPO extends TestBaseSteven{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+<<<<<<< HEAD
 		sleep(12000);
+=======
+		sleep(10000);
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 		
 		String empresaE1 = empresaE.getText();
 		String ufE1 = ufE.getText();

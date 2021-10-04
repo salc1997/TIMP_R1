@@ -41,7 +41,7 @@ public class MapeamentoDeEstruturasExcluir extends TestBaseSteven {
 	 		
 	 		boolean sucesso = mapeamentoDeEstruturasExcluirPO.excluir();
 			assertTrue(sucesso, Eliminado);
-		
+			sleep(2000);
 	 		
 	 	}
 }

@@ -1799,3 +1799,5 @@
 [0902/050602.943:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\Massiel\AppData\Local\Temp\scoped_dir30220_596257892\Crashpad\reports\ea1fa145-df89-4d22-afb9-f542369067ae.dmp: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso. (0x20)
 [0902/050637.639:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\Massiel\AppData\Local\Temp\scoped_dir44712_2075258900\Crashpad\reports\986cbc06-3847-4cd0-9693-039c39df8622.dmp: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso. (0x20)
 >>>>>>> refs/remotes/origin/Yessy
+[1006/081215.062:ERROR:process_info.cc(359)] UncheckedAllocate
+[1006/081215.999:ERROR:process_info.cc(359)] UncheckedAllocate

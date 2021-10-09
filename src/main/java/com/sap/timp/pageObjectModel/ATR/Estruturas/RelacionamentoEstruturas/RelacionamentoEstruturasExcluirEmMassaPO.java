@@ -101,6 +101,9 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBaseFernando{
 		sleep(40400);
 		sleep(40400);
 		sleep(40400);
+		sleep(40400);
+		sleep(40400);
+		sleep(40400);
 		waitExpectElement(cboGrupo1);
 		cboGrupo1.click();
 		sleep(1000);

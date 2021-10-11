@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar">
+      <class name="com.timp.test.BRB.FiltrosRelatorio">
         <methods>
-          <include name="afterClass"/>
-          <include name="criar"/>
+          <include name="CasignarValores"/>
+          <include name="BfiltrosBiblioteca"/>
           <include name="beforeClass"/>
+          <include name="AfiltrosEditor"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar -->
+      </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

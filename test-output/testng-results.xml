@@ -1,37 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-06T21:43:43Z" name="Default suite" finished-at="2021-10-06T21:45:27Z" duration-ms="103400">
+  <suite started-at="2021-10-11T14:17:35Z" name="Default suite" finished-at="2021-10-11T14:21:13Z" duration-ms="218333">
     <groups>
     </groups>
-    <test started-at="2021-10-06T21:43:43Z" name="Default test" finished-at="2021-10-06T21:45:27Z" duration-ms="103400">
-      <class name="com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar@4b213651]" started-at="2021-10-06T21:43:43Z" name="beforeClass" finished-at="2021-10-06T21:44:07Z" duration-ms="23543" status="PASS">
+    <test started-at="2021-10-11T14:17:35Z" name="Default test" finished-at="2021-10-11T14:21:13Z" duration-ms="218333">
+      <class name="com.timp.test.BRB.FiltrosRelatorio">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.FiltrosRelatorio@1838ccb8]" started-at="2021-10-11T14:17:35Z" name="beforeClass" finished-at="2021-10-11T14:17:50Z" duration-ms="15484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="criar()[pri:1, instance:com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar@4b213651]" started-at="2021-10-06T21:44:07Z" name="criar" finished-at="2021-10-06T21:45:27Z" duration-ms="79839" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="AfiltrosEditor()[pri:0, instance:com.timp.test.BRB.FiltrosRelatorio@1838ccb8]" started-at="2021-10-11T14:17:50Z" name="AfiltrosEditor" finished-at="2021-10-11T14:21:05Z" duration-ms="194433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfiltrosEditor -->
+        <test-method signature="BfiltrosBiblioteca()[pri:0, instance:com.timp.test.BRB.FiltrosRelatorio@1838ccb8]" started-at="2021-10-11T14:21:05Z" name="BfiltrosBiblioteca" finished-at="2021-10-11T14:21:13Z" depends-on-methods="com.timp.test.BRB.FiltrosRelatorio.AfiltrosEditor" duration-ms="8397" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element <div class="btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right" tabindex="0"></div> is not clickable at point (917, 588). Other element would receive the click: <button class="" tabindex="0" style="width: 300px;" aria-label="Clique/Aperte Enter para salvar">...</button>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()="Relatórios"]"}
   (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49649}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: fedfcc10657dec310a6ae6af39c22463]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65096}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: ef480626a2c0ca3c6aea1555b962a1ff
+*** Element info: {Using=xpath, value=//span[text()="Relatórios"]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right" tabindex="0"></div> is not clickable at point (917, 588). Other element would receive the click: <button class="" tabindex="0" style="width: 300px;" aria-label="Clique/Aperte Enter para salvar">...</button>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()="Relatórios"]"}
   (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49649}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: fedfcc10657dec310a6ae6af39c22463
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65096}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: ef480626a2c0ca3c6aea1555b962a1ff
+*** Element info: {Using=xpath, value=//span[text()="Relatórios"]}
+at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
@@ -41,15 +48,15 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy12.click(Unknown Source)
-at com.sap.timp.pageObjectModel.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriarPO.criar(ConfiguracaoModeloDeDadosCriarPO.java:164)
-at com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar.criar(ConfiguracaoModeloDeDadosCriar.java:41)
+at com.sap.timp.pageObjectModel.BRB.FiltrosPO.aplicarBiblioteca(FiltrosPO.java:461)
+at com.timp.test.BRB.FiltrosRelatorio.BfiltrosBiblioteca(FiltrosRelatorio.java:125)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -77,15 +84,46 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar@4b213651]" started-at="2021-10-06T21:45:27Z" name="afterClass" finished-at="2021-10-06T21:45:27Z" duration-ms="1" status="PASS">
+        </test-method> <!-- BfiltrosBiblioteca -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRB.FiltrosRelatorio@1838ccb8]" started-at="2021-10-11T14:21:13Z" name="afterClass" finished-at="2021-10-11T14:21:13Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar -->
+        <test-method signature="CasignarValores()[pri:0, instance:com.timp.test.BRB.FiltrosRelatorio@1838ccb8]" started-at="2021-10-11T14:21:13Z" name="CasignarValores" finished-at="2021-10-11T14:21:13Z" depends-on-methods="com.timp.test.BRB.FiltrosRelatorio.BfiltrosBiblioteca" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method FiltrosRelatorio.CasignarValores()[pri:0, instance:com.timp.test.BRB.FiltrosRelatorio@1838ccb8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method FiltrosRelatorio.CasignarValores()[pri:0, instance:com.timp.test.BRB.FiltrosRelatorio@1838ccb8] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CasignarValores -->
+      </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

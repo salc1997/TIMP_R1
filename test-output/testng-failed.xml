@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Cenarios de Correção(failed)">
+=======
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar">
         <methods>
           <include name="visualizar"/>
@@ -22,14 +28,22 @@
   <test thread-count="5" name="Centralização &gt; Estorno de Crédito(failed)">
     <classes>
       <class name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluirMassa">
+=======
+      <class name="com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="afterClass"/>
           <include name="criar"/>
           <include name="excluir"/>
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluirMassa -->
+=======
+      </class> <!-- com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
+<<<<<<< HEAD
   </test> <!-- Centralização > Estorno de Crédito(failed) -->
   <test thread-count="5" name="CEP &gt; Bairro(failed)">
     <classes>
@@ -101,3 +115,7 @@
     </classes>
   </test> <!-- Código de Contabiliazação(failed) -->
 </suite> <!-- Failed suite [Suite] -->
+=======
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git

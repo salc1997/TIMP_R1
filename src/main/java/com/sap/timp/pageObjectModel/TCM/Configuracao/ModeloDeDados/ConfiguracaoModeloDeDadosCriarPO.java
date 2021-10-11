@@ -156,7 +156,7 @@ public class ConfiguracaoModeloDeDadosCriarPO extends TestBaseKenssy{
 		temCache.click();
 		sleep(1000);
 		
-		btnGravar.click();
+	//	btnGravar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);

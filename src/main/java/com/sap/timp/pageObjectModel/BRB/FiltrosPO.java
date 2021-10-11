@@ -363,7 +363,7 @@ public class FiltrosPO  extends TestBaseSteven{
 		
 		
 		configuracion.click();
-		sleep(1000);
+		sleep(3000);
 		
 		if (amb==false) {
 			uf.sendKeys("SP");
@@ -449,9 +449,9 @@ public class FiltrosPO  extends TestBaseSteven{
 		
 		
 		biblioteca.click();
-		//waitExpectElement(nao1);
+		waitExpectElement(nao1);
 		sleep(1000);
-		//nao1.click();
+		nao1.click();
 		
 		
 		

@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
+  <test thread-count="5" name="Cenarios de Correção(failed)">
+=======
   <test thread-count="5" name="ParametrosParaTP(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar">
+=======
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluir">
         <methods>
           <include name="beforeClass"/>
@@ -33,11 +40,27 @@
         </methods>
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPCriar -->
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPEditar">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="editar"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar -->
+      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoFiltrosAvanzados">
+        <methods>
+          <include name="filtros"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoFiltrosAvanzados -->
+    </classes>
+  </test> <!-- Cenarios de Correção(failed) -->
+  <test thread-count="5" name="Centralização &gt; Estorno de Crédito(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluirMassa">
+=======
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPEditar -->
     </classes>
   </test> <!-- ParametrosParaTP(failed) -->
@@ -55,11 +78,16 @@
   <test thread-count="5" name="Atividades Para Tributacao &gt;  TiposDeServicos(failed)">
     <classes>
       <class name="com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosCriar">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="afterClass"/>
           <include name="criar"/>
+          <include name="excluir"/>
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluirMassa -->
+=======
       </class> <!-- com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosCriar -->
       <class name="com.timp.test.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosDetalhes">
         <methods>
@@ -135,7 +163,80 @@
           <include name="criar"/>
         </methods>
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVEX.ValoresParaMetodoPVEXCriar -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
+<<<<<<< HEAD
+  </test> <!-- Centralização > Estorno de Crédito(failed) -->
+  <test thread-count="5" name="CEP &gt; Bairro(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.CEP.Bairro.BairroEliminar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="eliminar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CEP.Bairro.BairroEliminar -->
+    </classes>
+  </test> <!-- CEP > Bairro(failed) -->
+  <test thread-count="5" name="CEP &gt; Município(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.CEP.Municipio.MunicipioEliminar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="excluir"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioEliminar -->
+      <class name="com.timp.test.MDR.CEP.Municipio.MunicipioEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioEditar -->
+    </classes>
+  </test> <!-- CEP > Município(failed) -->
+  <test thread-count="5" name="Código de Contabiliazação(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoFiltrosAvan">
+        <methods>
+          <include name="afterClass"/>
+          <include name="filtrarAvanCodigoContabilizacao"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoFiltrosAvan -->
+      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar">
+        <methods>
+          <include name="criar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar -->
+      <class name="com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa">
+        <methods>
+          <include name="afterClass"/>
+          <include name="exlcuir"/>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa -->
+      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoDetalhes">
+        <methods>
+          <include name="detalhes"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoDetalhes -->
+      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar">
+        <methods>
+          <include name="visualizar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar -->
+    </classes>
+  </test> <!-- Código de Contabiliazação(failed) -->
+=======
   </test> <!-- ValoresParaMetodoPVEX(failed) -->
   <test thread-count="5" name="ValoresParaMetodoPECEX(failed)">
     <classes>
@@ -281,4 +382,5 @@
       </class> <!-- com.timp.test.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoEditar -->
     </classes>
   </test> <!-- R 1070 Dados Suspenso(failed) -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </suite> <!-- Failed suite [Suite] -->

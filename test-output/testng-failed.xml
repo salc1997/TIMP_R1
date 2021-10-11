@@ -1,17 +1,136 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Cenarios de Correção(failed)">
+=======
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.FiltrosRelatorio">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar">
         <methods>
+          <include name="visualizar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar -->
+      <class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoFiltrosAvanzados">
+        <methods>
+          <include name="filtros"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoFiltrosAvanzados -->
+    </classes>
+  </test> <!-- Cenarios de Correção(failed) -->
+  <test thread-count="5" name="Centralização &gt; Estorno de Crédito(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluirMassa">
+=======
+      <class name="com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+        <methods>
+<<<<<<< HEAD
           <include name="CasignarValores"/>
           <include name="BfiltrosBiblioteca"/>
+=======
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="excluir"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
           <include name="AfiltrosEditor"/>
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluirMassa -->
+=======
+      </class> <!-- com.timp.test.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriar -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
+<<<<<<< HEAD
+  </test> <!-- Centralização > Estorno de Crédito(failed) -->
+  <test thread-count="5" name="CEP &gt; Bairro(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.CEP.Bairro.BairroEliminar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="eliminar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CEP.Bairro.BairroEliminar -->
+    </classes>
+  </test> <!-- CEP > Bairro(failed) -->
+  <test thread-count="5" name="CEP &gt; Município(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.CEP.Municipio.MunicipioEliminar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="excluir"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioEliminar -->
+      <class name="com.timp.test.MDR.CEP.Municipio.MunicipioEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CEP.Municipio.MunicipioEditar -->
+    </classes>
+  </test> <!-- CEP > Município(failed) -->
+  <test thread-count="5" name="Código de Contabiliazação(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoFiltrosAvan">
+        <methods>
+          <include name="afterClass"/>
+          <include name="filtrarAvanCodigoContabilizacao"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoFiltrosAvan -->
+      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar">
+        <methods>
+          <include name="criar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar -->
+      <class name="com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa">
+        <methods>
+          <include name="afterClass"/>
+          <include name="exlcuir"/>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa -->
+      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoDetalhes">
+        <methods>
+          <include name="detalhes"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoDetalhes -->
+      <class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar">
+        <methods>
+          <include name="visualizar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar -->
+    </classes>
+  </test> <!-- Código de Contabiliazação(failed) -->
+</suite> <!-- Failed suite [Suite] -->
+=======
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git

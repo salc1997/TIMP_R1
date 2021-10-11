@@ -76,7 +76,7 @@ public class FiltroColunasPO  extends TestBaseSteven{
 	public boolean filtroFerramenta() {
 		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
 
-		ferramenta.sendKeys("Prueba Automatizada");
+		ferramenta.sendKeys("3298");
 		ferramenta.sendKeys(Keys.ENTER);
 		
 		sleep(3000);
@@ -99,7 +99,7 @@ public class FiltroColunasPO  extends TestBaseSteven{
 		sleep(2000);
 		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		
-		actionsMoveToElementXpath("//div[@data-column=\"5\" and not(@data-path)]");
+		//actionsMoveToElementXpath("//div[@data-column=\"5\" and not(@data-path)]");
 		colunaOpcao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

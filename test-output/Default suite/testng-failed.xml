@@ -3,31 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.FiltrosRelatorio">
-=======
-      <class name="com.timp.test.BCB.ExecucoesSalvas.HierarquiaConfiguracoesExecucoesSalvas.ExecuçõesSalvasRecalcular">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.BRB.CrescenteEDecrescente">
         <methods>
-<<<<<<< HEAD
-          <include name="CasignarValores"/>
-          <include name="BfiltrosBiblioteca"/>
-=======
           <include name="afterClass"/>
-          <include name="Filtro"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="AfiltrosEditor"/>
-          <include name="afterClass"/>
-=======
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="crescenteEDecrescente"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
-=======
-      </class> <!-- com.timp.test.BCB.ExecucoesSalvas.HierarquiaConfiguracoesExecucoesSalvas.ExecuçõesSalvasRecalcular -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.BRB.CrescenteEDecrescente -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

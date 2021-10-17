@@ -104,7 +104,7 @@ public class DeParaLivroApuraçaoXSpedFiscalEditarPO extends TestBaseSteven {
 		sleep(2000);
 		
 		//ediçao
-		attributeToBeXpath("//div[@class=\"element\" and @id=\"tipoTributo\"]/div", "class", "base-select required");
+		//attributeToBeXpath("//div[@class=\"element\" and @id=\"tipoTributo\"]/div", "class", "base-select required");
 		sleep(2000);
 		tipotributo.click();
 		sleep(2000);

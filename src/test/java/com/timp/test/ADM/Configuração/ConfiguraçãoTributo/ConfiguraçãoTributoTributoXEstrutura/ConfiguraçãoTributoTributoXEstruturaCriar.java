@@ -42,6 +42,8 @@ public class ConfiguraçãoTributoTributoXEstruturaCriar extends TestBaseKenssy{
 		
 		boolean sucesso = configuraçãoTributoTributoXEstruturaCriarPO.criar();
 		assertTrue(sucesso, Criar);
+		
+		sleep(2000);
 	}
 
 

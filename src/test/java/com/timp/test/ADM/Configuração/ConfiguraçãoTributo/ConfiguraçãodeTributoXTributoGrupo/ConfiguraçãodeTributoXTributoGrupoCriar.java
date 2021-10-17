@@ -39,6 +39,7 @@ public class ConfiguraçãodeTributoXTributoGrupoCriar extends TestBaseSteven {
 		acessarADMPO.acessarADM();
 		boolean sucesso = configuraçãodeTributoXTributoGrupoCriarPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 
 		
 	}

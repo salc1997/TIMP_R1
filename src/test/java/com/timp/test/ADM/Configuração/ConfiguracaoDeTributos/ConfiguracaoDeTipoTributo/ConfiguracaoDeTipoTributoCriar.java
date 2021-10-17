@@ -38,6 +38,8 @@ public class ConfiguracaoDeTipoTributoCriar extends TestBaseSteven {
 		acessarADMPO.acessarADM();
 		boolean sucesso = configuracaoDeTipoTributoCriarPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
+
 	}
  
 }

@@ -42,6 +42,6 @@ public class UsuariosEditar extends TestBaseSteven {
 		boolean sucesso = usuariosEditarPO.editar();
 		assertTrue(sucesso, Editar);
 
-		
+		sleep(2000);
 	}
 }

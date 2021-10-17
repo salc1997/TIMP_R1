@@ -64,7 +64,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 		
 		sleep(2000);
 		execucoes.click();
-		sleep(8000);
+		sleep(10000);
 		execucacoConsolidacao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

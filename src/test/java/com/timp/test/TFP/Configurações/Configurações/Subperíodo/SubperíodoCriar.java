@@ -31,7 +31,7 @@ public class SubperíodoCriar extends TestBaseMassiel {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void criar() {
 
 		loginTC.login();

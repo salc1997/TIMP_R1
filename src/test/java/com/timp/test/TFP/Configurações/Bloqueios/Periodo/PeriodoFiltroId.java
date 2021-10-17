@@ -33,7 +33,7 @@ public class PeriodoFiltroId extends TestBaseMassiel {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void Filtro() {
 		loginTC.login();
 		acessarTFPPO.acessarTFP();

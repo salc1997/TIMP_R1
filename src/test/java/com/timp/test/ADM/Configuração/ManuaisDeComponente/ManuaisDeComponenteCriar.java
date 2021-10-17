@@ -42,7 +42,7 @@ public class ManuaisDeComponenteCriar extends TestBaseSteven {
 		acessarADMPO.acessarADM();
 		boolean sucesso = manuaisDeComponenteCriarPO.criar();
 		assertTrue(sucesso, Criar);
-
+		sleep(2000);
 		
 	}
 }

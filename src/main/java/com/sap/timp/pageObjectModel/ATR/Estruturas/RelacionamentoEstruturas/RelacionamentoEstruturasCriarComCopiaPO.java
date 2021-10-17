@@ -157,7 +157,7 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
 		
 		relacionamentoEstruturas.click();
 		
-		sleep(4000);
+		sleep(8000);
 		
 		siguiente.click();
 		

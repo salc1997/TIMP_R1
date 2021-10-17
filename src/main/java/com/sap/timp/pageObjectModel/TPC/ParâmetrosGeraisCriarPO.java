@@ -220,7 +220,7 @@ public class ParâmetrosGeraisCriarPO extends TestBaseSteven {
 		actionsMoveToElementElement(formulario);
 		
 		System.out.println("");
-		
+		sleep(7000);
 		if (tq1==true) {
 			codReceita.click();
 			sleep(1000);

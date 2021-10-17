@@ -45,6 +45,6 @@ public class PacotesCriar extends TestBaseMassiel{
 
 		assertTrue(sucesso, Criar);
  		
- 		
+		sleep(2000);
  	}
 }

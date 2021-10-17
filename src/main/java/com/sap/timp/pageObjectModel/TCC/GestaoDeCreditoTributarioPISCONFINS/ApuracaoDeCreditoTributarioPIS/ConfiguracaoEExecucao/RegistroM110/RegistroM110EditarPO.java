@@ -91,7 +91,7 @@ public class RegistroM110EditarPO extends TestBaseMassiel{
 		driver.navigate().refresh();
 		sleep(8000);
 		waitExpectElement(numeroDocumento);
-		sleep(8000);
+		sleep(12000);
 		
 		String nuevoTexto = numeroDocumento.getAttribute("value");
 		/*System.out.println(valor);*/

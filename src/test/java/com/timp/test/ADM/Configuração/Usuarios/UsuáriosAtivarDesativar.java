@@ -41,6 +41,8 @@ public class UsuáriosAtivarDesativar extends TestBaseSteven {
 		acessarADMPO.acessarADM();
 		Boolean sucesso = usuáriosAtivarDesativarPO.ativar();
 		assertTrue(sucesso, Criar);
+		
+		sleep(2000);
 	}
 
 }

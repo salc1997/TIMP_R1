@@ -44,7 +44,7 @@ public class ConfiguraçãoTributoAgrupamentoCriar extends TestBaseSteven{
 		acessarADMPO.acessarADM();
 		boolean sucesso = configuraçãoTributoAgrupamentoCriarPO.criar();
 		assertTrue(sucesso, Criar);
-
+		sleep(2000);
 		
 	}
 

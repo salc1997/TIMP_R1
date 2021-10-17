@@ -42,7 +42,7 @@ public class ManuaisDeComponenteExcluir extends TestBaseSteven {
 		
 		boolean sucesso = manuaisDeComponenteExcluirPO.exluir();
 		assertTrue(sucesso, eliminar);
-
+		sleep(2000);
 		
 	}
 }

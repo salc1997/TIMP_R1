@@ -118,7 +118,7 @@ public class AjusteEInformaçoesDeValoresEditarPO extends TestBaseSteven {
 		sleep(2000);
 		
 		refresh();
-		sleep(18000);
+		sleep(26000);
 
 	
 		

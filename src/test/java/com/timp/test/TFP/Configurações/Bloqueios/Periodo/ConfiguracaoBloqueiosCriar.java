@@ -29,19 +29,10 @@ public class ConfiguracaoBloqueiosCriar extends TestBaseFernando {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void TFPEntrar() {
-		acessarTFPPO.acessarTFP();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
+		loginTC.login();
+		acessarTFPPO.acessarTFP();
 		boolean sucesso = configuracaoBloqueiosCriarPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(3000);

@@ -42,7 +42,7 @@ public class ManuaisDeComponenteEditar extends TestBaseSteven {
 		boolean sucesso = manuaisDeComponenteEditarPO.editar();
 
 		assertTrue(sucesso, Editar);
-		
+		sleep(2000);
 		
 	}
  

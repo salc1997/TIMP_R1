@@ -37,5 +37,8 @@ public class ConfiguracaoDeTributoGrupoCriar extends TestBaseSteven{
 
 		boolean sucesso = configuracaoDeTributoGrupoCriarPO.criar();
 		assertTrue(sucesso, Criar);		
+		
+		sleep(2000);
+
 	}
 }

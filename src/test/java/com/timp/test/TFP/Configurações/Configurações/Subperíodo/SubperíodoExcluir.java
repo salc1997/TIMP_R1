@@ -31,7 +31,7 @@ public class SubperíodoExcluir extends TestBaseMassiel {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void excluir() {
 		loginTC.login();
 		acessarTFPPO.acessarTFP();

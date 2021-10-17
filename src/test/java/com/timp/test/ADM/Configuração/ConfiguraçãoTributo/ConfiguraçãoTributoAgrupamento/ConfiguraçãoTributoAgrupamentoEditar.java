@@ -43,7 +43,7 @@ public class ConfiguraçãoTributoAgrupamentoEditar extends TestBaseSteven {
 		boolean sucesso = configuraçãoTributoAgrupamentoEditarPO.editar();
 		assertTrue(sucesso, Editar);
 
-		
+		sleep(2000);
 	}
 
 }

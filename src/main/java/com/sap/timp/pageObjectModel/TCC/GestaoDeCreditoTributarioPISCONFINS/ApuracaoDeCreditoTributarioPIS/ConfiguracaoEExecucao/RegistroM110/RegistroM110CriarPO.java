@@ -157,7 +157,7 @@ public class RegistroM110CriarPO extends TestBaseMassiel{
 		}
 		
 		
-		sleep(6000);
+		sleep(9000);
 		filial.click();
 		sleep(2000);
 		

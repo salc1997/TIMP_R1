@@ -32,18 +32,13 @@ public class ConfiguracoesStatusSubPeriodoEditar extends TestBaseSteven {
 	public void afterClass() {
 	}
 	
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void TFPEntrar() {
-		 acessarTFPPO .acessarTFP();
-	}
+ 
 	
-	@Test(priority = 2)
+	@Test()
 	public void editar() {
+		
+		loginTC.login();
+		acessarTFPPO.acessarTFP();
 		
 		ArrayList<Boolean> sucesso = configuracoesStatusSubPeriodoEditarPO.editar();
 		for (int i = 0; i < sucesso.size(); i++) {

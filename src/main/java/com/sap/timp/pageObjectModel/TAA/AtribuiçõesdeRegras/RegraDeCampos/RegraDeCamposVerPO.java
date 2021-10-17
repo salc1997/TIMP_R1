@@ -54,7 +54,7 @@ public class RegraDeCamposVerPO extends TestBaseFernando{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		
 		String URL = driver.getCurrentUrl();
 		
@@ -97,7 +97,7 @@ public class RegraDeCamposVerPO extends TestBaseFernando{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(9000);
 		
 		// Datoss de Editar
 		waitExpectXpath("//div[@id=\"rule-type\"]/div/div/div/input");

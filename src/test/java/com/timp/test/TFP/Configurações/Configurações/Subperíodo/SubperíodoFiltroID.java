@@ -33,7 +33,7 @@ public class SubperíodoFiltroID extends TestBaseMassiel {
 		driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void Filtro() {
 		loginTC.login();
 		acessarTFPPO.acessarTFP();

@@ -87,7 +87,7 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		
 		String idRegistro =  idObter2();
 		
-		//String idRegistro =  "3899";
+	
 		
 		System.out.println(" Id Registro Busqueda :" + idRegistro  );
 		
@@ -168,8 +168,8 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		sleep(3000);
 		sleep(12000);
 		
-		no.click();
-		sleep(3000);
+	/*	no.click();
+		sleep(3000);*/
 		
 		limpiar.click();
 		sleep(3000);

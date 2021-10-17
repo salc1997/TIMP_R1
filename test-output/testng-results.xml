@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="83" passed="68" failed="14" skipped="1">
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-10-15T14:48:58Z" name="Suite" finished-at="2021-10-15T21:58:05Z" duration-ms="25746135">
+=======
+  <suite started-at="2021-10-15T19:02:18Z" name="Default suite" finished-at="2021-10-15T19:17:16Z" duration-ms="897827">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-10-15T14:48:58Z" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 09 - Tipos de Arquivos e-Social" finished-at="2021-10-15T15:04:56Z" duration-ms="957412">
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialEditar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialEditar@38604b81]" started-at="2021-10-15T14:51:33Z" name="beforeClass" finished-at="2021-10-15T14:51:53Z" duration-ms="20545" status="PASS">
+=======
+    <test started-at="2021-10-15T19:02:18Z" name="Default test" finished-at="2021-10-15T19:17:16Z" duration-ms="897827">
+      <class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar@1838ccb8]" started-at="2021-10-15T19:02:18Z" name="beforeClass" finished-at="2021-10-15T19:03:38Z" duration-ms="79927" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="editar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialEditar@38604b81]" started-at="2021-10-15T14:51:53Z" name="editar" finished-at="2021-10-15T14:54:20Z" duration-ms="146512" status="PASS">
+=======
+        <test-method signature="criarAssociaçãoCodigoAjuste()[pri:0, instance:com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar@1838ccb8]" started-at="2021-10-15T19:03:38Z" name="criarAssociaçãoCodigoAjuste" finished-at="2021-10-15T19:17:16Z" duration-ms="817885" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- editar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialEditar@38604b81]" started-at="2021-10-15T14:54:20Z" name="afterClass" finished-at="2021-10-15T14:54:20Z" duration-ms="214" status="PASS">
           <reporter-output>
@@ -44,9 +63,14 @@
           </reporter-output>
         </test-method> <!-- excluir -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialExcluir@babafc2]" started-at="2021-10-15T15:01:09Z" name="afterClass" finished-at="2021-10-15T15:01:09Z" duration-ms="291" status="PASS">
+=======
+        </test-method> <!-- criarAssociaçãoCodigoAjuste -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar@1838ccb8]" started-at="2021-10-15T19:17:16Z" name="afterClass" finished-at="2021-10-15T19:17:16Z" duration-ms="0" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialExcluir -->
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialDetalhe">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialDetalhe@7393222f]" started-at="2021-10-15T14:56:43Z" name="beforeClass" finished-at="2021-10-15T14:57:03Z" duration-ms="19368" status="PASS">
@@ -2112,4 +2136,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasCriar -->
     </test> <!-- Determinacao Automatica De Guias -->
   </suite> <!-- Suite -->
+=======
+      </class> <!-- com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </testng-results>

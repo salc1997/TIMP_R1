@@ -32,7 +32,7 @@ public class SubperiodoEditar extends TestBaseMassiel {
 	//	driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void Editar() {
 
 		loginTC.login();

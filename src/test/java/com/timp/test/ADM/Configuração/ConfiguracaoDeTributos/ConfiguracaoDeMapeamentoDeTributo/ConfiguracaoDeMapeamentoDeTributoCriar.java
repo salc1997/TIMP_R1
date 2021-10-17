@@ -27,7 +27,7 @@ public class ConfiguracaoDeMapeamentoDeTributoCriar extends TestBaseSteven{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	
@@ -37,5 +37,6 @@ public class ConfiguracaoDeMapeamentoDeTributoCriar extends TestBaseSteven{
 		acessarADMPO.acessarADM();
 		boolean sucesso = configuracaoDeMapeamentoDeTributoCriarPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
 }

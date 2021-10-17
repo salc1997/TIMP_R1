@@ -306,7 +306,7 @@ public class CriarProcessocomTarefaManualPO extends TestBaseSteven{
 		aplicar.click();
 
 		
-		sleep(4000);
+		sleep(5000);
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -317,7 +317,7 @@ public class CriarProcessocomTarefaManualPO extends TestBaseSteven{
 		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		justificativa.sendKeys("JUSTIFICATIVA TESTE AUTOMATIZADO");
 		sleep(2000);

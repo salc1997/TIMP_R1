@@ -36,6 +36,8 @@ public class ConfiguracaoDeTipoTributoEditar extends TestBaseSteven {
 		acessarADMPO.acessarADM();
 		boolean sucesso = configuracaoDeTipoTributoEditarPO.editar();
 
-		assertTrue(sucesso, Editar);		
+		assertTrue(sucesso, Editar);	
+		sleep(2000);
+
 	}
 }

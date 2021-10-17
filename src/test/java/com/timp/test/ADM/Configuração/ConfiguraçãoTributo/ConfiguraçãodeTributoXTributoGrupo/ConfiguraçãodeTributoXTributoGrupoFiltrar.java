@@ -9,6 +9,9 @@ import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.Configu
 import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãodeTributoXTributoGrupo.ConfiguraçãodeTributoXTributoGrupoFiltrarPO;
 
 import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.AfterClass;
 
 public class ConfiguraçãodeTributoXTributoGrupoFiltrar extends TestBaseSteven {
@@ -34,7 +37,12 @@ public class ConfiguraçãodeTributoXTributoGrupoFiltrar extends TestBaseSteven {
 	public void filtros() {
 		loginTC.login();
 		acessarADMPO.acessarADM();
-		configuraçãodeTributoXTributoGrupoFiltrarPO.filtro();
+		
+		boolean sucesso = configuraçãodeTributoXTributoGrupoFiltrarPO.filtro();
+
+		assertTrue(sucesso, Eliminado);
+		
+		sleep(2000);
 
 		
 	}

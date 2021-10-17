@@ -91,7 +91,7 @@
 
 	</test>
 
-<!-- 
+
 	<test name="Centralização > Fator de Crecimento do CIAP">
 
 		<classes>
@@ -125,7 +125,7 @@
 	</test>
 
 
-
+<!-- 
 	<test name="Centralização > Tributos">
 
 		<classes>

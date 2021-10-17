@@ -42,6 +42,7 @@ public class ConfiguraçãodeTributoXTributoGrupoEditar extends TestBaseSteven {
 		acessarADMPO.acessarADM();
 		boolean sucesso = configuraçãodeTributoXTributoGrupoEditarPO.editar();
 		assertTrue(sucesso, Editar);
+		sleep(2000);
 
 		
 	}

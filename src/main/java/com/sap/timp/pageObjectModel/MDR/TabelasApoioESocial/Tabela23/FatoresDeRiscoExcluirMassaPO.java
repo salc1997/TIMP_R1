@@ -210,7 +210,7 @@ public class FatoresDeRiscoExcluirMassaPO extends TestBaseSteven {
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		sleep(8000);
 		
 		btnUltimaPagina.click();
 		sleep(2000);

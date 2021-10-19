@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 10 - Tipos de Lotação Tributária(failed)">
+=======
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioExcluir">
         <methods>
           <include name="beforeClass"/>
@@ -15,7 +21,11 @@
   <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 11 - Compatibilidade en Cat. Trab.(failed)">
     <classes>
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar">
+=======
+      <class name="com.timp.test.BSC.FiltroPorIDRegistroCriar">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="afterClass"/>
           <include name="visualizar"/>
           <include name="beforeClass"/>
@@ -66,10 +76,20 @@
         <methods>
           <include name="detalle"/>
           <include name="afterClass"/>
+=======
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
+<<<<<<< HEAD
         </methods>
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroDetalle -->
+=======
+          <include name="criar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BSC.FiltroPorIDRegistroCriar -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
+<<<<<<< HEAD
   </test> <!-- Tabelas de Apoio E-SOCIAL Tabela 20 - Tipos de Logradouro(failed) -->
   <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Unidade de Medida(failed)">
     <classes>
@@ -144,3 +164,7 @@
     </classes>
   </test> <!-- Determinacao Automatica De Guias(failed) -->
 </suite> <!-- Failed suite [Suite] -->
+=======
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git

@@ -226,7 +226,7 @@ public class TabelaDeCodigosDeTransferenciasExcluirEmMassaPO extends TestBaseFer
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(9000);
+		sleep(13000);
 		
 		//waitExpectElement(novatabela);
 		

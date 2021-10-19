@@ -13,7 +13,8 @@
 	</test> 	
 	<test name="ATR-ESTRUCTURAS-ESTRUCTURAS">
 		<classes>		
-			<!-- ATR -  ESTRUCTURAS - ESTRUCTURAS -->				
+			<!-- ATR -  ESTRUCTURAS - ESTRUCTURAS -->	
+			<class name="com.timp.test.ATR.Estruturas.Estruturas.EstruturasDetalles"></class>			
 			<class name="com.timp.test.ATR.Estruturas.Estruturas.EstruturasVisualizar"></class>
 			<class name="com.timp.test.ATR.Estruturas.Estruturas.EstruturasVisualizarFiltros"></class>
 		</classes>

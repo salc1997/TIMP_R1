@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="83" passed="65" failed="15" skipped="3">
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-10-18T14:44:48Z" name="Suite" finished-at="2021-10-19T01:30:03Z" duration-ms="38715096">
+=======
+  <suite started-at="2021-10-19T22:00:02Z" name="Default suite" finished-at="2021-10-19T22:01:39Z" duration-ms="96477">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-10-18T14:44:48Z" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 09 - Tipos de Arquivos e-Social" finished-at="2021-10-18T15:04:16Z" duration-ms="1168340">
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialEditar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialEditar@38604b81]" started-at="2021-10-18T14:47:33Z" name="beforeClass" finished-at="2021-10-18T14:47:53Z" duration-ms="20646" status="PASS">
+=======
+    <test started-at="2021-10-19T22:00:02Z" name="Default test" finished-at="2021-10-19T22:01:39Z" duration-ms="96477">
+      <class name="com.timp.test.ATR.Estruturas.Estruturas.EstruturasDetalles">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.Estruturas.EstruturasDetalles@2d778add]" started-at="2021-10-19T22:00:02Z" name="beforeClass" finished-at="2021-10-19T22:00:38Z" duration-ms="36059" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="editar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialEditar@38604b81]" started-at="2021-10-18T14:47:53Z" name="editar" finished-at="2021-10-18T14:50:40Z" duration-ms="166155" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -26,13 +41,21 @@
           </reporter-output>
         </test-method> <!-- beforeClass -->
         <test-method signature="visualizar()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialVisualizar@1e44b638]" started-at="2021-10-18T14:51:11Z" name="visualizar" finished-at="2021-10-18T14:53:32Z" duration-ms="140895" status="PASS">
+=======
+        <test-method signature="visualizar()[pri:0, instance:com.timp.test.ATR.Estruturas.Estruturas.EstruturasDetalles@2d778add]" started-at="2021-10-19T22:00:38Z" name="visualizar" finished-at="2021-10-19T22:01:39Z" duration-ms="60394" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- visualizar -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialVisualizar@1e44b638]" started-at="2021-10-18T14:53:32Z" name="afterClass" finished-at="2021-10-18T14:53:36Z" duration-ms="4444" status="PASS">
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.Estruturas.EstruturasDetalles@2d778add]" started-at="2021-10-19T22:01:39Z" name="afterClass" finished-at="2021-10-19T22:01:39Z" duration-ms="1" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialVisualizar -->
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialExcluir">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialExcluir@babafc2]" started-at="2021-10-18T14:56:16Z" name="beforeClass" finished-at="2021-10-18T14:56:52Z" duration-ms="35809" status="PASS">
@@ -2342,4 +2365,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasCriar -->
     </test> <!-- Determinacao Automatica De Guias -->
   </suite> <!-- Suite -->
+=======
+      </class> <!-- com.timp.test.ATR.Estruturas.Estruturas.EstruturasDetalles -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </testng-results>

@@ -25,15 +25,27 @@ public class EstructurasDetallesPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[4]/div[2]/div")
 	public WebElement descrição;
 	
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[5]/div[2]/div")
+	public WebElement activo;
+	
 	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
 	public WebElement fechar; 
+	
+	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[4]/div")
+	public WebElement descriçãoTabla;
+	
+	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[5]/div")
+	public WebElement versãoTabla;
+	
+	@FindBy(xpath = "//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[8]/div")
+	public WebElement activoTabla;
 
 	public EstructurasDetallesPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void Detalles() {
+	public ArrayList<Boolean> Detalles() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -67,28 +79,37 @@ public class EstructurasDetallesPO extends TestBaseSteven{
 		String nomeversão = versão.getText();
 		String nomegrupo = grupo.getText();
 		String nomedescrição = descrição.getText();
+		String nomeActivo = activo.getText();
 		
 		System.out.println(nomeversão);
 		System.out.println(nomegrupo);
 		System.out.println(nomedescrição);
+		System.out.println(nomeActivo);
 		
 		fechar.click();
 		sleep(2000);
 		waitExpectElement(siguiente);
 		sleep(2000);
 		
+		String nomedescrição2 = descriçãoTabla.getText();
+		String nomeversão2 = versãoTabla.getText();
+		String nomeActivo2 = activoTabla.getText();
 		
-		WebElement menu1 = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[1]/span[2]"));
-		WebElement ver = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[2]/span[2]"));
 		
-		actionsMoveToElementElement(menu);
-		sleep(2000);
-		menu1.click();
-		sleep(1000);
+		System.out.println("-----------");
+		System.out.println(nomedescrição2);
+		System.out.println(nomeversão2);
+		System.out.println(nomeActivo2);
 		
-		ver.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		sucesso.add(nomeversão.contains(nomeversão2));
+		sucesso.add(nomedescrição.contains(nomedescrição2));
+		sucesso.add(nomeActivo.contains(nomeActivo2));
+
+		System.out.println(sucesso);
+		
+		
+		return sucesso;
 	}
 }

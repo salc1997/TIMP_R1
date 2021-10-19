@@ -101,13 +101,13 @@ public class DeParaLivroApuraçaoXSpedFiscalEditarPO extends TestBaseSteven {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		sleep(2000);
+		sleep(12000);
 		
 		//ediçao
 		//attributeToBeXpath("//div[@class=\"element\" and @id=\"tipoTributo\"]/div", "class", "base-select required");
 		sleep(2000);
 		tipotributo.click();
-		sleep(2000);
+		sleep(3000);
 		opcaotipotributo.click();
 		sleep(2000);
 		String data = "21/08/2020";
@@ -115,7 +115,7 @@ public class DeParaLivroApuraçaoXSpedFiscalEditarPO extends TestBaseSteven {
 		datavigencia.clear();
 		sleep(2000);
 		datavigencia.sendKeys(data);
-		
+		 
 		sleep(2000);
 		gravar.click();
 		sleep(2000);

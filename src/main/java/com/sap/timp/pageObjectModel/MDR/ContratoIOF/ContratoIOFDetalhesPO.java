@@ -164,8 +164,8 @@ public class ContratoIOFDetalhesPO extends TestBaseSteven{
 		sucesso.add(contratoNVText.equals(contratoNDText));
 		sucesso.add(codigoResVText.equals(codigoResDText));
 		sucesso.add(tipoPessVText.equals(tipoPessDText));
-		sucesso.add(descripcionVText.equals(descripcionDText));
-		
+		sucesso.add(descripcionVText.contains(descripcionDText));
+		System.out.println(sucesso);
 		return sucesso;
 	}
 

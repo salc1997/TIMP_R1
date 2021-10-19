@@ -53,13 +53,12 @@ public class EstruturasDetalles extends TestBaseSteven {
 	 		loginTC.login();
 	 		
 	 		 acessarATRPO.acessarATR();
-	 		estruturasDetallesPO.Detalles();
 	 		 
-	 	/*	ArrayList<Boolean> sucesso = estruturasDetallesPO.Detalles();
+	 	ArrayList<Boolean> sucesso = estruturasDetallesPO.Detalles();
 	 		for (int i = 0; i < sucesso.size(); i++) {
 	 			assertTrue(sucesso.get(i), visualizaçar);
 				
-			}	*/
+			}	
 	 		sleep(3000);
 	 }
 }

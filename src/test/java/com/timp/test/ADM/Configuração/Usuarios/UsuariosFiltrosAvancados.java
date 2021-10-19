@@ -38,7 +38,6 @@ public class UsuariosFiltrosAvancados extends TestBaseSteven {
 	@Test
 	public void filtros() {
 
-		// codigoTipoCreditoFiltrosAvançadosPO.filtros();
 		loginTC.login();
 		acessarADMPO.acessarADM();
 		ArrayList<Boolean> sucesso = usuariosFiltrosAvacadosPO.filtros();

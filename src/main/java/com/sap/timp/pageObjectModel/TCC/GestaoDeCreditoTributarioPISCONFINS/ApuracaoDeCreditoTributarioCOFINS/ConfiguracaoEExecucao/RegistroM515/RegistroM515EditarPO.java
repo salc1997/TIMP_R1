@@ -60,7 +60,7 @@ public class RegistroM515EditarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		gestaoCredito.click();
-		sleep(2000);
+		sleep(4000);
 		apuracaocreditocofins.click();
 		sleep(2000);
 		configuracaoEExecucao.click();
@@ -90,7 +90,7 @@ public class RegistroM515EditarPO extends TestBaseMassiel{
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(28000);
+		sleep(32000);
 		
 		String empresa1 = empresa.getAttribute("value");
 		String uf1 = uf.getText();
@@ -120,7 +120,7 @@ public class RegistroM515EditarPO extends TestBaseMassiel{
 		driver.navigate().refresh();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(30000);
+		sleep(35000);
 		
 		
 		String empresa11 = empresa.getAttribute("value");

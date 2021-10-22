@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" preserve-order="true">
 
-	<test name="BRE - REGRAS DE NEGOCIO">
+	<test name="Regras de Negocio">
 
 		<classes>
 

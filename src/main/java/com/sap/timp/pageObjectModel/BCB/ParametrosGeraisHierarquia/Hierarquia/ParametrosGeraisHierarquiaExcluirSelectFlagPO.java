@@ -74,7 +74,7 @@ public class ParametrosGeraisHierarquiaExcluirSelectFlagPO extends TestBaseKenss
 		
 		driver.navigate().refresh();
 		waitExpectElement(hierarquiaConfiguracao);
-		sleep(2000);
+		sleep(10000);
 		
 		ultimo.click();
 		sleep(2000);

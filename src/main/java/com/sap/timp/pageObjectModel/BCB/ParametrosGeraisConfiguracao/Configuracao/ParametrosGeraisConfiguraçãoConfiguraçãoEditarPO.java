@@ -91,7 +91,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoEditarPO extends TestBaseSt
 		//attributoNotToBeEmptyElement(campo, "value");
 		//sleep(2000);
 		editarR.click();
-		sleep(2000);
+		sleep(6000);
 		
 		String valor = campo.getAttribute("value");
 		

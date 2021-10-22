@@ -3,6 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluirMassa">
         <methods>
           <include name="afterClass"/>
@@ -11,6 +12,19 @@
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluirMassa -->
+=======
+      <class name="com.timp.test.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.FatorDeCreditamentoContabilizaçãoDeCIAP">
+        <methods>
+          <include name="EnviarLixeria"/>
+          <include name="configurarConfiguracao"/>
+          <include name="CriarConfiguracao"/>
+          <include name="criarConfiguracaoExecucoes"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="executar"/>
+        </methods>
+      </class> <!-- com.timp.test.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.FatorDeCreditamentoContabilizaçãoDeCIAP -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

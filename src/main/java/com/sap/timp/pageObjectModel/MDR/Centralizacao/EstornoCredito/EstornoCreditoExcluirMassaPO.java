@@ -313,7 +313,8 @@ public class EstornoCreditoExcluirMassaPO extends TestBaseMassiel{
 		
 		excluirMassa.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		sleep(2000);
 		
 		aceitar.click();

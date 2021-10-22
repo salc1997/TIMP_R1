@@ -307,8 +307,8 @@ public class RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 
 		regrasdemensagens.click();
 		sleep(2000);
-		waitExpectElement(siguiente);
-		sleep(2000);
+		//waitExpectElement(siguiente);
+		sleep(6000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

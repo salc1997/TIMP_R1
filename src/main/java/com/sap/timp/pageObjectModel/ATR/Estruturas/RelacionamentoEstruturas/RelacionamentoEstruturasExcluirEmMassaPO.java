@@ -11,7 +11,7 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBaseFernando{
 	@FindBy(xpath = "//span[text()=\"Relacionamentos de Estruturas\"]")
 	public WebElement relacionamentoEstruturas;
 	
-	@FindBy(xpath = "//span[contains(text(),\"Nov\")]")
+	@FindBy(xpath = "//span[contains(text(),\"Novo\")]")
 	public WebElement btnNovo;
 	
 	@FindBy(xpath = "//div[contains(@class, \"icon-right\")][2]")

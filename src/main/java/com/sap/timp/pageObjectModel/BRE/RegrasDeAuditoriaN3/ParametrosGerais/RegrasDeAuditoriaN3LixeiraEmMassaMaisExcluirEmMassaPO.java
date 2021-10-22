@@ -494,8 +494,8 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		sleep(2000);
 		//waitExpectElement(mensagem);
 		//sleep(2000);
-		waitExpectElement(mensagembloqueio);
-		sleep(2000);
+	//	waitExpectElement(mensagembloqueio);
+		sleep(4000);
 		lixeira.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -1,26 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 10 - Tipos de Lotação Tributária(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioExcluir">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioExcluir -->
-    </classes>
-  </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 10 - Tipos de Lotação Tributária(failed) -->
-  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 11 - Compatibilidade en Cat. Trab.(failed)">
-=======
   <test thread-count="5" name="Cadastro Específico do INSS (CEI) &gt; Cadastro de Obras(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar">
-=======
       <class name="com.timp.test.MDR.CadastroEspecificoDoINNSS.CadastroDeObras.CadastroDeObrasEditar">
         <methods>
           <include name="beforeClass"/>
@@ -28,6 +10,13 @@
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.timp.test.MDR.CadastroEspecificoDoINNSS.CadastroDeObras.CadastroDeObrasEditar -->
+      <class name="com.timp.test.MDR.CadastroEspecificoDoINNSS.CadastroDeObras.CadastroDeObrasCriar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CadastroEspecificoDoINNSS.CadastroDeObras.CadastroDeObrasCriar -->
       <class name="com.timp.test.MDR.CadastroEspecificoDoINNSS.CadastroDeObras.CadastroDeObrasExcluirEmMassa">
         <methods>
           <include name="excluirEmMassa"/>
@@ -36,13 +25,6 @@
           <include name="criar"/>
         </methods>
       </class> <!-- com.timp.test.MDR.CadastroEspecificoDoINNSS.CadastroDeObras.CadastroDeObrasExcluirEmMassa -->
-      <class name="com.timp.test.MDR.CadastroEspecificoDoINNSS.CadastroDeObras.CadastroDeObrasCriar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.CadastroEspecificoDoINNSS.CadastroDeObras.CadastroDeObrasCriar -->
       <class name="com.timp.test.MDR.CadastroEspecificoDoINNSS.CadastroDeObras.CadastroDeObrasExcluir">
         <methods>
           <include name="afterClass"/>
@@ -55,137 +37,8 @@
   <test thread-count="5" name="Evento Social &gt; s2230  Afastamento Temporário(failed)">
     <classes>
       <class name="com.timp.test.MDR.EventosESocial.S2230AfastamentoTemporário.S2230AfastamentoTemporárioFiltroId">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="visualizar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar -->
-    </classes>
-  </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 11 - Compatibilidade en Cat. Trab.(failed) -->
-  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 14 - Agente Causador de Acidente(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteVisualizar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="visualizar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteVisualizar -->
-    </classes>
-  </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 14 - Agente Causador de Acidente(failed) -->
-  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 15 - Agente Causador de SGDP(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPVisualizar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="visualizar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPVisualizar -->
-    </classes>
-  </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 15 - Agente Causador de SGDP(failed) -->
-  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL Tabela 20 - Tipos de Logradouro(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroExcluirEmMasa">
-        <methods>
-          <include name="afterClass"/>
-          <include name="excluirEmMassa"/>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroExcluirEmMasa -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroVisualizar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="visualizar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroVisualizar -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroDetalle">
-        <methods>
-          <include name="detalle"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroDetalle -->
-    </classes>
-  </test> <!-- Tabelas de Apoio E-SOCIAL Tabela 20 - Tipos de Logradouro(failed) -->
-  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Unidade de Medida(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaEditar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="editar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaEditar -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaExcluir">
-        <methods>
-          <include name="excluir"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaExcluir -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaExcluirEmMasa">
-        <methods>
-          <include name="afterClass"/>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaExcluirEmMasa -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="filtroCodigo"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaFiltroCodigo -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaCriar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaCriar -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaDetalhes">
-        <methods>
-          <include name="detalhes"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaDetalhes -->
-      <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaVisualizar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="visualizar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaVisualizar -->
-    </classes>
-  </test> <!-- Tabelas de Apoio E-SOCIAL > Unidade de Medida(failed) -->
-  <test thread-count="5" name="Determinacao Automatica De Guias(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasCriar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasCriar -->
-      <class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasFiltroPorId">
-        <methods>
-          <include name="filtro"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasFiltroPorId -->
-    </classes>
-  </test> <!-- Determinacao Automatica De Guias(failed) -->
-=======
           <include name="beforeClass"/>
           <include name="filtro"/>
         </methods>
@@ -203,27 +56,15 @@
       </class> <!-- com.timp.test.MDR.CadastrosIRPJCSLL.ContasContábeisRBLP.ContasContábeisRBLPFiltroId -->
     </classes>
   </test> <!-- Contas Contábeis RBLP(failed) -->
-  <test thread-count="5" name="Livros Fiscais &gt; Parametrização Do Livro Oficial(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialEditar">
-        <methods>
-          <include name="Editar"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.LivrosFiscais.ParametrizaçãoDoLivroOficial.ParametrizaçãoDoLivroOficialEditar -->
-    </classes>
-  </test> <!-- Livros Fiscais > Parametrização Do Livro Oficial(failed) -->
   <test thread-count="5" name="Determinacao Relevancia Tarefa Motivo Reabertura &gt; Determinacion Relevancia Por Motivo(failed)">
     <classes>
-      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoEditar">
+      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoVisualizar">
         <methods>
-          <include name="editar"/>
           <include name="beforeClass"/>
+          <include name="visualizar"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoEditar -->
+      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoVisualizar -->
     </classes>
   </test> <!-- Determinacao Relevancia Tarefa Motivo Reabertura > Determinacion Relevancia Por Motivo(failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </suite> <!-- Failed suite [Suite] -->

@@ -25,7 +25,7 @@ public class RegrasdeAuditoriaN2EdiçãoTabelasPO extends TestBaseSteven {
 	@FindBy(xpath = "//input[@placeholder=\"Selecione uma tabela\"]")
 	public WebElement inputSeleccionTabela;
 	
-	@FindBy(xpath = "//li[text()=\"10jul_moc\"]")
+	@FindBy(xpath = "//li[text()=\"CFOP\"]")
 	public WebElement seleccionTabela;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecione um campo \"]")
@@ -51,6 +51,9 @@ public class RegrasdeAuditoriaN2EdiçãoTabelasPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[4]/div[2]/div[1]/div/div[1]/input")
 	public WebElement acoes;
+	
+	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	public WebElement acoesOPC;
 	
 	@FindBy(xpath = "//div[@id=\"graph\"]//*[name()=\"g\"][5]")
 	public WebElement CFOP;
@@ -166,9 +169,21 @@ public boolean editar() {
 	condicoes2.sendKeys("Apresent. Treinamento 4 - CFOP (VE)");
 	sleep(2000);
 	condicoes2.sendKeys(Keys.ENTER);
+	sleep(5000);
+	
+//	actionsMoveToElementElement(acoes);
+	sleep(2000);
+	acoes.sendKeys("AL");
 	sleep(2000);
 	
-	acoes.sendKeys("Alíquotas não apresentam valores iguais");
+	acoes.clear();
+	sleep(2000);
+
+	acoes.sendKeys("AL");
+	sleep(2000);
+	
+	
+	acoesOPC.click();
 	sleep(2000);
 	closeSelectTypeCheckbox(acoes);
 	

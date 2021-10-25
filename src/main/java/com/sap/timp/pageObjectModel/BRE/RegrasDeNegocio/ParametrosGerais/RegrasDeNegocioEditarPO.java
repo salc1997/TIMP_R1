@@ -284,7 +284,7 @@ public class RegrasDeNegocioEditarPO extends TestBaseSteven{
 		boolean sucesso2 = texto1.contains(enviar);
 		sucesso.add(sucesso2);
 		*/
-		waitExpectElement(primeiracaixar5);
+	//	waitExpectElement(primeiracaixar5);
 		sleep(28000);
 		
 		primeiracaixar5.click();

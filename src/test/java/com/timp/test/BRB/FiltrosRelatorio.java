@@ -44,7 +44,7 @@ public class FiltrosRelatorio extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//diver.close();
+		driver.close();
 	}
 
 

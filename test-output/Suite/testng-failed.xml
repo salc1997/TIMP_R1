@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="Regra de Escrituração(failed)">
+=======
+  <test thread-count="5" name="Regras de Negocio(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasdeEscrituraçãoEdiçãoSimular">
         <methods>
           <include name="beforeClass"/>
@@ -19,4 +24,50 @@
       </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasDeEscrituraçãoEdiçãoValoresCalculados -->
     </classes>
   </test> <!-- Regra de Escrituração(failed) -->
+=======
+      <class name="com.timp.test.BRE.RegrasDeNegocio.BREGerenciarRegulamentosCriarEditarExcluir">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.BREGerenciarRegulamentosCriarEditarExcluir -->
+      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriarComCopia">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriarComCopia -->
+      <class name="com.timp.test.BRE.RegrasDeNegocio.Edicao.RegrasDeNegocioEdicaoRelacionamento">
+        <methods>
+          <include name="relacionamento"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.Edicao.RegrasDeNegocioEdicaoRelacionamento -->
+      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa -->
+      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasdeNegócioExcluirdefinitivamente">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasdeNegócioExcluirdefinitivamente -->
+      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioEditar">
+        <methods>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioEditar -->
+    </classes>
+  </test> <!-- Regras de Negocio(failed) -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </suite> <!-- Failed suite [Suite] -->

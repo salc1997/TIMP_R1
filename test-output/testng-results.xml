@@ -1,24 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="11" passed="9" failed="2" skipped="0">
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-10-24T05:39:58Z" name="Suite" finished-at="2021-10-24T06:20:31Z" duration-ms="2432973">
+=======
+  <suite started-at="2021-10-24T07:41:20Z" name="Default suite" finished-at="2021-10-24T07:46:48Z" duration-ms="328715">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-10-24T05:39:58Z" name="Regra de Escrituração" finished-at="2021-10-24T06:20:31Z" duration-ms="2432973">
       <class name="com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoVisualizar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoVisualizar@3246fb96]" started-at="2021-10-24T06:01:12Z" name="beforeClass" finished-at="2021-10-24T06:01:36Z" duration-ms="24114" status="PASS">
+=======
+    <test started-at="2021-10-24T07:41:20Z" name="Default test" finished-at="2021-10-24T07:46:48Z" duration-ms="328715">
+      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasdeNegócioExcluirdefinitivamente">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasdeNegócioExcluirdefinitivamente@2d778add]" started-at="2021-10-24T07:41:20Z" name="beforeClass" finished-at="2021-10-24T07:41:30Z" duration-ms="10576" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="visualizar()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoVisualizar@3246fb96]" started-at="2021-10-24T06:01:36Z" name="visualizar" finished-at="2021-10-24T06:03:26Z" duration-ms="109599" status="PASS">
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasdeNegócioExcluirdefinitivamente@2d778add]" started-at="2021-10-24T07:41:30Z" name="criar" finished-at="2021-10-24T07:46:48Z" duration-ms="317762" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- visualizar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoVisualizar@3246fb96]" started-at="2021-10-24T06:03:26Z" name="afterClass" finished-at="2021-10-24T06:03:30Z" duration-ms="4239" status="PASS">
+=======
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasdeNegócioExcluirdefinitivamente@2d778add]" started-at="2021-10-24T07:46:48Z" name="afterClass" finished-at="2021-10-24T07:46:48Z" duration-ms="364" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoVisualizar -->
       <class name="com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoCriarMasCaminho">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoCriarMasCaminho@26275bef]" started-at="2021-10-24T05:39:58Z" name="beforeClass" finished-at="2021-10-24T05:41:07Z" duration-ms="68993" status="PASS">
@@ -290,4 +314,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoCriarComCopia -->
     </test> <!-- Regra de Escrituração -->
   </suite> <!-- Suite -->
+=======
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasdeNegócioExcluirdefinitivamente -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </testng-results>

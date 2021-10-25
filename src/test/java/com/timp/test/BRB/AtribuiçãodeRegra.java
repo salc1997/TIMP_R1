@@ -30,7 +30,7 @@ public class AtribuiçãodeRegra extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
@@ -41,5 +41,6 @@ public class AtribuiçãodeRegra extends TestBaseSteven {
 
 		boolean sucesso = atribuiçãodeRegraPO.editar();
 		assertTrue(sucesso, Editar);
+		sleep(2000);
 	}
 }

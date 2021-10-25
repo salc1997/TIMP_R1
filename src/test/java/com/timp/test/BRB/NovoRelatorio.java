@@ -45,7 +45,7 @@ public class NovoRelatorio extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test()
@@ -59,7 +59,7 @@ public class NovoRelatorio extends TestBaseSteven {
 		boolean sucesso = novoRelatorioPO.criar();
 		sleep(4000);
 		assertTrue(sucesso, Criar);
-
+		sleep(2000);
 	}
 
 

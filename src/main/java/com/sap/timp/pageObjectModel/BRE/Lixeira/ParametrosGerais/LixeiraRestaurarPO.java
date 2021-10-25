@@ -50,7 +50,7 @@ public class LixeiraRestaurarPO extends TestBaseSteven {
 		ultimapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		String idRegistro = idObter("LixeiraParametrosGerais");
 		

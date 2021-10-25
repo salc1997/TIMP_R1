@@ -44,6 +44,7 @@ public class Cabeçalho extends TestBaseSteven {
 		acessarBrbPO.acessar();
 		
 		cabeçalhoPO.cabeçalho();
+		sleep(2000);
 	}
 
 }

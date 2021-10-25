@@ -132,6 +132,8 @@ public class RelacionamentoEstruturasCriarPO extends TestBaseSteven{
 		sleep(25000);
 		sleep(25000);
 		sleep(25000);
+		sleep(25000);
+		sleep(25000);
 		grupo1.click();
 		sleep(1000);
 		grupo1O.click();

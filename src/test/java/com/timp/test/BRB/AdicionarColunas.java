@@ -46,7 +46,7 @@ public class AdicionarColunas extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		driver.close();
 	}
 
 	@Test()
@@ -63,7 +63,7 @@ public class AdicionarColunas extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), "The Colunms weren't added");
 		}
-
+		sleep(2000);
 	}
 
 }

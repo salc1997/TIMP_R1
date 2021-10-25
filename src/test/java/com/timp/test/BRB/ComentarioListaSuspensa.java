@@ -31,7 +31,7 @@ public class ComentarioListaSuspensa extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
@@ -50,7 +50,7 @@ public class ComentarioListaSuspensa extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), "The information is not valid");
 		}
-
+		sleep(2000);
 	}
 
 }

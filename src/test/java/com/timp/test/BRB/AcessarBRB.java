@@ -27,7 +27,7 @@ public class AcessarBRB extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
@@ -40,7 +40,7 @@ public class AcessarBRB extends TestBaseSteven {
 		System.out.println(sucesso);
 
 		assertTrue(sucesso, semAcesso);
-
+		sleep(2000);
 	}
 
 }

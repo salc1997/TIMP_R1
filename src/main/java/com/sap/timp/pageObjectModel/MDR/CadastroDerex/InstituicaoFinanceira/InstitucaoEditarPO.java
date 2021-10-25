@@ -63,8 +63,8 @@ public class InstitucaoEditarPO extends TestBaseSteven{
 		menu.click();
 		sleep(2000);
 		editar.click();
-		sleep(2000);
-		attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");
+		sleep(8000);
+		//attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");
 		
 
 		String valor = campo.getAttribute("value");

@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="SCANC &gt; Relacionamento entre Quadros(failed)">
+=======
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar">
+=======
+      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+          <include name="afterClass"/>
+          <include name="detalle"/>
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="editar"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar -->
+=======
+        </methods>
+      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
+<<<<<<< HEAD
   </test> <!-- SCANC > Relacionamento entre Quadros(failed) -->
   <test thread-count="5" name="Parâmetros de criação de NF &gt; Cadastro de Nota Fiscal(failed)">
     <classes>
@@ -182,3 +199,7 @@
     </classes>
   </test> <!-- Preco de transferencia > Definicao Vinculacao(failed) -->
 </suite> <!-- Failed suite [Suite] -->
+=======
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git

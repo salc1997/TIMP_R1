@@ -1,36 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Regra de Escrituração(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasdeEscrituraçãoEdiçãoSimular">
+      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle">
         <methods>
+          <include name="afterClass"/>
+          <include name="detalle"/>
           <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="simular"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasdeEscrituraçãoEdiçãoSimular -->
-      <class name="com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasDeEscrituraçãoEdiçãoValoresCalculados">
-=======
-      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioEditar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-        <methods>
-<<<<<<< HEAD
-          <include name="afterClass"/>
-          <include name="ValoresCalculados"/>
-=======
-          <include name="criar"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasDeEscrituraçãoEdiçãoValoresCalculados -->
-=======
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioEditar -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle -->
     </classes>
-  </test> <!-- Regra de Escrituração(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

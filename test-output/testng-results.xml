@@ -1,120 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="0" total="11" passed="9" failed="2" skipped="0">
-=======
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2021-10-24T05:39:58Z" name="Suite" finished-at="2021-10-24T06:20:31Z" duration-ms="2432973">
-=======
-  <suite started-at="2021-10-24T07:41:20Z" name="Default suite" finished-at="2021-10-24T07:46:48Z" duration-ms="328715">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  <suite started-at="2021-10-27T19:39:47Z" name="Default suite" finished-at="2021-10-27T19:50:02Z" duration-ms="614793">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2021-10-24T05:39:58Z" name="Regra de Escrituração" finished-at="2021-10-24T06:20:31Z" duration-ms="2432973">
-      <class name="com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoVisualizar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoVisualizar@3246fb96]" started-at="2021-10-24T06:01:12Z" name="beforeClass" finished-at="2021-10-24T06:01:36Z" duration-ms="24114" status="PASS">
-=======
-    <test started-at="2021-10-24T07:41:20Z" name="Default test" finished-at="2021-10-24T07:46:48Z" duration-ms="328715">
-      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasdeNegócioExcluirdefinitivamente">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasdeNegócioExcluirdefinitivamente@2d778add]" started-at="2021-10-24T07:41:20Z" name="beforeClass" finished-at="2021-10-24T07:41:30Z" duration-ms="10576" status="PASS">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+    <test started-at="2021-10-27T19:39:47Z" name="Default test" finished-at="2021-10-27T19:50:02Z" duration-ms="614793">
+      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle@ae3540e]" started-at="2021-10-27T19:39:47Z" name="beforeClass" finished-at="2021-10-27T19:43:02Z" duration-ms="194968" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method signature="visualizar()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoVisualizar@3246fb96]" started-at="2021-10-24T06:01:36Z" name="visualizar" finished-at="2021-10-24T06:03:26Z" duration-ms="109599" status="PASS">
-=======
-        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasdeNegócioExcluirdefinitivamente@2d778add]" started-at="2021-10-24T07:41:30Z" name="criar" finished-at="2021-10-24T07:46:48Z" duration-ms="317762" status="PASS">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- visualizar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoVisualizar@3246fb96]" started-at="2021-10-24T06:03:26Z" name="afterClass" finished-at="2021-10-24T06:03:30Z" duration-ms="4239" status="PASS">
-=======
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasdeNegócioExcluirdefinitivamente@2d778add]" started-at="2021-10-24T07:46:48Z" name="afterClass" finished-at="2021-10-24T07:46:48Z" duration-ms="364" status="PASS">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoVisualizar -->
-      <class name="com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoCriarMasCaminho">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoCriarMasCaminho@26275bef]" started-at="2021-10-24T05:39:58Z" name="beforeClass" finished-at="2021-10-24T05:41:07Z" duration-ms="68993" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="criarMaisCaminho()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoCriarMasCaminho@26275bef]" started-at="2021-10-24T05:41:07Z" name="criarMaisCaminho" finished-at="2021-10-24T05:44:53Z" duration-ms="226659" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criarMaisCaminho -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoCriarMasCaminho@26275bef]" started-at="2021-10-24T05:44:53Z" name="afterClass" finished-at="2021-10-24T05:44:53Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoCriarMasCaminho -->
-      <class name="com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa@6b8ca3c8]" started-at="2021-10-24T06:15:19Z" name="beforeClass" finished-at="2021-10-24T06:15:35Z" duration-ms="16249" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="lixeiraEmMassaMaisExcluirEmMassa()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa@6b8ca3c8]" started-at="2021-10-24T06:15:35Z" name="lixeiraEmMassaMaisExcluirEmMassa" finished-at="2021-10-24T06:20:26Z" duration-ms="291280" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- lixeiraEmMassaMaisExcluirEmMassa -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa@6b8ca3c8]" started-at="2021-10-24T06:20:26Z" name="afterClass" finished-at="2021-10-24T06:20:31Z" duration-ms="4358" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa -->
-      <class name="com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasDeEscrituraçãoEdiçãoRelacionamento">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasDeEscrituraçãoEdiçãoRelacionamento@73ee04c8]" started-at="2021-10-24T06:06:48Z" name="beforeClass" finished-at="2021-10-24T06:07:04Z" duration-ms="16692" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="relacionamento()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasDeEscrituraçãoEdiçãoRelacionamento@73ee04c8]" started-at="2021-10-24T06:07:04Z" name="relacionamento" finished-at="2021-10-24T06:11:03Z" duration-ms="238619" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- relacionamento -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasDeEscrituraçãoEdiçãoRelacionamento@73ee04c8]" started-at="2021-10-24T06:11:03Z" name="afterClass" finished-at="2021-10-24T06:11:08Z" duration-ms="4428" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasDeEscrituraçãoEdiçãoRelacionamento -->
-      <class name="com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasdeEscrituraçãoEdiçãoSimular">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasdeEscrituraçãoEdiçãoSimular@61386958]" started-at="2021-10-24T06:05:04Z" name="beforeClass" finished-at="2021-10-24T06:05:22Z" duration-ms="17265" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="simular()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasdeEscrituraçãoEdiçãoSimular@61386958]" started-at="2021-10-24T06:05:22Z" name="simular" finished-at="2021-10-24T06:06:48Z" duration-ms="86099" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="detalle()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle@ae3540e]" started-at="2021-10-27T19:43:02Z" name="detalle" finished-at="2021-10-27T19:50:02Z" duration-ms="419804" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="graph-wrapper"]//*[name()="g"][5]"}
+              <![CDATA[timeout: Timed out receiving message from renderer: 300.000
   (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-C57COV6', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57569}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 0d693585b896ecbfe469f69115aea5ae
-*** Element info: {Using=xpath, value=//div[@class="graph-wrapper"]//*[name()="g"][5]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60468}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a38cbaf3544dcbf5d5da166503c2b45d]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="graph-wrapper"]//*[name()="g"][5]"}
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
   (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-C57COV6', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57569}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 0d693585b896ecbfe469f69115aea5ae
-*** Element info: {Using=xpath, value=//div[@class="graph-wrapper"]//*[name()="g"][5]}
-at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60468}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a38cbaf3544dcbf5d5da166503c2b45d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
@@ -124,15 +41,16 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at com.sun.proxy.$Proxy12.click(Unknown Source)
-at com.sap.timp.pageObjectModel.BRE.RegrasDeEscrituração.Edicao.RegrasdeEscrituraçãoEdiçãoSimularPO.editar(RegrasdeEscrituraçãoEdiçãoSimularPO.java:161)
-at com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasdeEscrituraçãoEdiçãoSimular.simular(RegrasdeEscrituraçãoEdiçãoSimular.java:48)
+at com.sap.timp.pageObjectModel.MDR.AcessarMDRPO.acessarMDR(AcessarMDRPO.java:43)
+at com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle.detalle(RegraDeReaberturaDetalle.java:44)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -160,163 +78,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- simular -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasdeEscrituraçãoEdiçãoSimular@61386958]" started-at="2021-10-24T06:06:48Z" name="afterClass" finished-at="2021-10-24T06:06:48Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasdeEscrituraçãoEdiçãoSimular -->
-      <class name="com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoDetalhes">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoDetalhes@2e222612]" started-at="2021-10-24T06:03:30Z" name="beforeClass" finished-at="2021-10-24T06:03:46Z" duration-ms="16056" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="detalhes()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoDetalhes@2e222612]" started-at="2021-10-24T06:03:46Z" name="detalhes" finished-at="2021-10-24T06:05:04Z" duration-ms="78366" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- detalhes -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoDetalhes@2e222612]" started-at="2021-10-24T06:05:04Z" name="afterClass" finished-at="2021-10-24T06:05:04Z" duration-ms="0" status="PASS">
+        </test-method> <!-- detalle -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle@ae3540e]" started-at="2021-10-27T19:50:02Z" name="afterClass" finished-at="2021-10-27T19:50:02Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoDetalhes -->
-      <class name="com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituracaoExcluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituracaoExcluir@49dc7102]" started-at="2021-10-24T06:12:25Z" name="beforeClass" finished-at="2021-10-24T06:12:52Z" duration-ms="26934" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituracaoExcluir@49dc7102]" started-at="2021-10-24T06:12:52Z" name="excluir" finished-at="2021-10-24T06:15:19Z" duration-ms="146629" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituracaoExcluir@49dc7102]" started-at="2021-10-24T06:15:19Z" name="afterClass" finished-at="2021-10-24T06:15:19Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituracaoExcluir -->
-      <class name="com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasDeEscrituraçãoEdiçãoValoresCalculados">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasDeEscrituraçãoEdiçãoValoresCalculados@7671cb68]" started-at="2021-10-24T06:11:08Z" name="beforeClass" finished-at="2021-10-24T06:11:22Z" duration-ms="14314" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="ValoresCalculados()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasDeEscrituraçãoEdiçãoValoresCalculados@7671cb68]" started-at="2021-10-24T06:11:22Z" name="ValoresCalculados" finished-at="2021-10-24T06:12:25Z" duration-ms="62965" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()="Valores Calculados"]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-C57COV6', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58234}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 092383822afdd51ff96a43ff66e3e5bf
-*** Element info: {Using=xpath, value=//span[text()="Valores Calculados"]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()="Valores Calculados"]"}
-  (Session info: chrome=83.0.4103.106)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-C57COV6', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58234}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 092383822afdd51ff96a43ff66e3e5bf
-*** Element info: {Using=xpath, value=//span[text()="Valores Calculados"]}
-at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy12.click(Unknown Source)
-at com.sap.timp.pageObjectModel.BRE.RegrasDeEscrituração.Edicao.RegrasDeEscrituraçãoEdiçãoValoresCalculadosPO.Valores(RegrasDeEscrituraçãoEdiçãoValoresCalculadosPO.java:156)
-at com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasDeEscrituraçãoEdiçãoValoresCalculados.ValoresCalculados(RegrasDeEscrituraçãoEdiçãoValoresCalculados.java:44)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValoresCalculados -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasDeEscrituraçãoEdiçãoValoresCalculados@7671cb68]" started-at="2021-10-24T06:12:25Z" name="afterClass" finished-at="2021-10-24T06:12:25Z" duration-ms="314" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.Edicao.RegrasDeEscrituraçãoEdiçãoValoresCalculados -->
-      <class name="com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoEditar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoEditar@77eca502]" started-at="2021-10-24T05:49:54Z" name="beforeClass" finished-at="2021-10-24T05:50:45Z" duration-ms="51452" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoEditar@77eca502]" started-at="2021-10-24T05:50:45Z" name="editar" finished-at="2021-10-24T06:01:12Z" duration-ms="627030" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoEditar@77eca502]" started-at="2021-10-24T06:01:12Z" name="afterClass" finished-at="2021-10-24T06:01:12Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoEditar -->
-      <class name="com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoCriarComCopia">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoCriarComCopia@7690781]" started-at="2021-10-24T05:44:53Z" name="beforeClass" finished-at="2021-10-24T05:45:33Z" duration-ms="39851" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="criarcomCopia()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoCriarComCopia@7690781]" started-at="2021-10-24T05:45:33Z" name="criarcomCopia" finished-at="2021-10-24T05:49:09Z" duration-ms="215631" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criarcomCopia -->
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoCriarComCopia@7690781]" started-at="2021-10-24T05:49:09Z" name="excluir" finished-at="2021-10-24T05:49:54Z" depends-on-methods="com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoCriarComCopia.criarcomCopia" duration-ms="44758" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoCriarComCopia@7690781]" started-at="2021-10-24T05:49:54Z" name="afterClass" finished-at="2021-10-24T05:49:54Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoCriarComCopia -->
-    </test> <!-- Regra de Escrituração -->
-  </suite> <!-- Suite -->
-=======
-      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasdeNegócioExcluirdefinitivamente -->
+      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </testng-results>

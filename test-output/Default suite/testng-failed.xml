@@ -3,29 +3,32 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoFiltroAbansado">
-=======
-      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioEditar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.BFB.Leiautes.ExecucaoDaConfiguracaoGeralFuncionalidades">
         <methods>
-<<<<<<< HEAD
+          <include name="datoDeReferencia"/>
+          <include name="tabelaRepetitiva"/>
+          <include name="centralizacao"/>
+          <include name="copiarEditarPublicoPrivadoFavoritosLixeiraRestaurarExcluir"/>
+          <include name="numeroDePagina"/>
           <include name="afterClass"/>
-          <include name="Filtro"/>
-=======
-          <include name="criar"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="etiquetaDeParagrafo"/>
+          <include name="formula"/>
+          <include name="visualizar"/>
+          <include name="etiquetaCampoEstrutura"/>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
-          <include name="afterClass"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="relacionamento"/>
+          <include name="filtrosAvancados"/>
+          <include name="filtroObjetoDeDatos"/>
+          <include name="formato"/>
+          <include name="data"/>
+          <include name="saidaSemantica"/>
+          <include name="criarConfiguracao"/>
+          <include name="etiquetaComTexto"/>
+          <include name="etiquetaOutputOutros"/>
+          <include name="executar"/>
+          <include name="gravarExecucao"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoFiltroAbansado -->
-=======
-      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioEditar -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.BFB.Leiautes.ExecucaoDaConfiguracaoGeralFuncionalidades -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

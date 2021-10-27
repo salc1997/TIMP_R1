@@ -973,7 +973,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		if (tc2==true) {
 			selectBCB3.click();
 			selectBCB3.sendKeys(Keys.ESCAPE);
-			sleep(3000);
+			sleep(8000);
 		}else if(tq1==true) {
 			selectBCB1.click();
 			selectBCB1.sendKeys(Keys.ESCAPE);
@@ -1857,7 +1857,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	//	waitExpectElement(aba1);
-		sleep(12000);
+		sleep(21000);
 		
 		aba1.click();
 		sleep(2000);

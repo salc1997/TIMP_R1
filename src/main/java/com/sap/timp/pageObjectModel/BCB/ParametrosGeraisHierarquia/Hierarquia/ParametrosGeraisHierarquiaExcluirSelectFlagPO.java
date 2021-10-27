@@ -41,12 +41,12 @@ public class ParametrosGeraisHierarquiaExcluirSelectFlagPO extends TestBaseKenss
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		String idRegistro = "1474";
 		
 		ultimo.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 //		pesquisar.sendKeys(idRegistro);
 //		pesquisar.sendKeys(Keys.ENTER);
@@ -69,7 +69,7 @@ public class ParametrosGeraisHierarquiaExcluirSelectFlagPO extends TestBaseKenss
 		simLexeira.click();
 		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+	//	waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(5000);
 		
 		driver.navigate().refresh();

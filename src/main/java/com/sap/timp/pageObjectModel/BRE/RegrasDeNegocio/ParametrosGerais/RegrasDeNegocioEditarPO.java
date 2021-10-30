@@ -232,7 +232,7 @@ public class RegrasDeNegocioEditarPO extends TestBaseSteven{
 		sleep(1000);
 		gravar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		nao.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

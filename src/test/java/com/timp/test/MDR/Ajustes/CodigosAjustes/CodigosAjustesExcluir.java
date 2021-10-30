@@ -47,7 +47,7 @@ public class CodigosAjustesExcluir extends TestBaseSteven {
 		boolean sucesso = codigoAjustesExcluirPO.excluir();
 
 		assertTrue(sucesso, Eliminado);
-
+		sleep(2000);
 	}
 
 }

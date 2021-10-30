@@ -45,8 +45,7 @@ public class CadastroDeObrasCriar extends TestBaseMassiel{
 	  
 	  boolean sucesso = cadastroDeObrasCriarPO.Criar();
 	  assertTrue(sucesso, Criar);
+	  sleep(2000);
 	}
-  
-
 
 }

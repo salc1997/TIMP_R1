@@ -39,6 +39,7 @@ public class SaldosEditar extends TestBaseKenssy{
 		
 		boolean sucesso = saldosEditarPO.editar();
 		assertTrue(sucesso, editado);
+		sleep(2000);
 	}
 
 }

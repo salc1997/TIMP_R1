@@ -48,6 +48,7 @@ public class AtividadeDeTributacaoXFornecedorExcluirEmMassa extends TestBaseStev
 		
 		boolean sucesso2 = atividadeDeTributacaoXFornecedorExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
+		sleep(2000);
 	}
 
 }

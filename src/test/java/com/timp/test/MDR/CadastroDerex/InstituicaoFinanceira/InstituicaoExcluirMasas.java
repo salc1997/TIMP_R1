@@ -30,7 +30,7 @@ public class InstituicaoExcluirMasas extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test()
@@ -50,5 +50,7 @@ public class InstituicaoExcluirMasas extends TestBaseMassiel {
 
 		boolean sucesso2 = instituicaoExcluirMasasPO.InstituicaoExcluirMasas();
 		assertTrue(sucesso2, Eliminado);
+		
+		sleep(2000);
 	}
 }

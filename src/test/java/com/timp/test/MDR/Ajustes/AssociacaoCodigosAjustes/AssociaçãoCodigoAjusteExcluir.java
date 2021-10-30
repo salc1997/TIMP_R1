@@ -41,5 +41,7 @@ public class AssociaçãoCodigoAjusteExcluir extends TestBaseFernando{
 	  
 	  boolean sucesso = associaçãoCodigoAjusteExcluirPO.excluirAssociaçãoCodigoAjuste();
 	  assertTrue(sucesso, Eliminado);
+	  
+	  sleep(2000);
   }
 }

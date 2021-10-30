@@ -50,6 +50,7 @@ public class CadastroDeObrasExcluirEmMassa extends TestBaseKenssy {
 	  
 	boolean sucesso2 = cadastroDeObrasExcluirEmMassaPO.cadastroDeObrasExcluirEmMassa();
 	assertTrue(sucesso2, Eliminado);
+	sleep(2000);
   }
 
 }

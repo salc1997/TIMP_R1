@@ -28,7 +28,7 @@ public class TabelaDeApoioECFCriar extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
@@ -38,5 +38,6 @@ public class TabelaDeApoioECFCriar extends TestBaseFernando{
 		acessarMDRPO.acessarMDR();
 		boolean sucesso = tabelaDeApoioECFCriarPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
 }

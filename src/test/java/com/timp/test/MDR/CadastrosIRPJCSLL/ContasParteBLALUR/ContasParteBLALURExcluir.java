@@ -42,6 +42,7 @@ public class ContasParteBLALURExcluir extends TestBaseSteven {
 		boolean sucesso = contasParteBLALURExcluirPO.excluir();
 
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 
 	}
 

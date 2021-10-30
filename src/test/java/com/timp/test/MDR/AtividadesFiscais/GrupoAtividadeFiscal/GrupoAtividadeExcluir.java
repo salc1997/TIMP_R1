@@ -28,7 +28,7 @@ public class GrupoAtividadeExcluir extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
@@ -42,5 +42,7 @@ public class GrupoAtividadeExcluir extends TestBaseFernando{
 		
 		boolean sucesso = grupoAtividadeExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
+	
 }

@@ -40,6 +40,7 @@ public class CadastroCondiçaoExcluirMasas extends TestBaseMassiel {
 
 		boolean sucesso = cadastroCondiçaoExcluirenMasasPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 
 	}
 	
@@ -48,6 +49,7 @@ public class CadastroCondiçaoExcluirMasas extends TestBaseMassiel {
 
 		boolean sucesso2 = cadastroCondiçaoExcluirenMasasPO.HierarquiaDeCenariosDeCorreçaoExcluirMasas();
 		assertTrue(sucesso2, Eliminado);
+		sleep(2000);
 	}
 	
 }

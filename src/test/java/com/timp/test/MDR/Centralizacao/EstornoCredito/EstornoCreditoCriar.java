@@ -43,7 +43,7 @@ public class EstornoCreditoCriar extends TestBaseSteven {
 		boolean sucesso = estornoCreditoCriarPO.CriarEstornoCredito();
 
 		assertTrue(sucesso, Criar);
-
+		sleep(2000);
 
 
 	}

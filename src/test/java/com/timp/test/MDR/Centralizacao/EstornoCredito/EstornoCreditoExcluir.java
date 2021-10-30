@@ -45,7 +45,7 @@ public class EstornoCreditoExcluir extends TestBaseSteven {
 
 		boolean sucesso = estornoCreditoExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-
+		sleep(2000);
 	}
 
 }

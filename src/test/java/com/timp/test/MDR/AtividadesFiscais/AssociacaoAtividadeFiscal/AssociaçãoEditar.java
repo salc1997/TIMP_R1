@@ -38,5 +38,7 @@ public class AssociaçãoEditar extends TestBaseFernando {
 
 		boolean sucesso = associaçãoEditarPO.editarAssociação();
 		assertTrue(sucesso, Editar);
+		
+		sleep(2000);
 	}
 }

@@ -56,6 +56,6 @@ public class GrupoAtividadeFiltrosAvancados extends TestBaseKenssy {
 		for (int i = 0; i < descricao.size(); i++) {
 			assertTrue(descricao.get(i), Filtros);
 		}
-		
+		sleep(2000);
 	  }
 }

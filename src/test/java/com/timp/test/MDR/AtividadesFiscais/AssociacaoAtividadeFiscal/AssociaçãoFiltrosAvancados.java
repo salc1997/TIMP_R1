@@ -66,7 +66,7 @@ public class AssociaçãoFiltrosAvancados extends TestBaseKenssy{
 		for (int i = 0; i < tributo.size(); i++) {
 			assertTrue(tributo.get(i), Filtros);
 		}
-		
+		sleep(2000);
 	  }
 
 }

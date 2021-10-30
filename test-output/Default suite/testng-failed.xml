@@ -3,50 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BFB.Leiautes.ExecucaoDaConfiguracaoGeralFuncionalidades">
-=======
-      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriar">
         <methods>
-<<<<<<< HEAD
-          <include name="datoDeReferencia"/>
-          <include name="tabelaRepetitiva"/>
-          <include name="centralizacao"/>
-          <include name="copiarEditarPublicoPrivadoFavoritosLixeiraRestaurarExcluir"/>
-          <include name="numeroDePagina"/>
-=======
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="etiquetaDeParagrafo"/>
-          <include name="formula"/>
-          <include name="visualizar"/>
-          <include name="etiquetaCampoEstrutura"/>
-=======
-          <include name="detalle"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="criar"/>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="relacionamento"/>
-          <include name="filtrosAvancados"/>
-          <include name="filtroObjetoDeDatos"/>
-          <include name="formato"/>
-          <include name="data"/>
-          <include name="saidaSemantica"/>
-          <include name="criarConfiguracao"/>
-          <include name="etiquetaComTexto"/>
-          <include name="etiquetaOutputOutros"/>
-          <include name="executar"/>
-          <include name="gravarExecucao"/>
-=======
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BFB.Leiautes.ExecucaoDaConfiguracaoGeralFuncionalidades -->
-=======
-      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeReabertura.RegraDeReaberturaDetalle -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

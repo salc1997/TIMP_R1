@@ -39,7 +39,11 @@ public class ResponsavelMovimentoEditar extends TestBaseSteven {
 
 		acessarMDRPO.acessarMDR();
 
-		responsavelMovimentoEditarPO.editar();
+		
+		boolean sucesso = responsavelMovimentoEditarPO.editar();
+
+		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
 
 }

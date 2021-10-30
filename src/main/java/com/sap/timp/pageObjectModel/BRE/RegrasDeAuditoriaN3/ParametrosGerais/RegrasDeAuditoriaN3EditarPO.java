@@ -279,6 +279,8 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBaseSteven{
 			sucesso.add(false);
 		}
 		
+		sleep(9000);
+		
 		configuracoes.click();
 		sleep(1000);
 		
@@ -289,7 +291,7 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBaseSteven{
 		sleep(1000);
 		nome.sendKeys(nome1);
 		waitExpectElement(aplicar);
-		sleep(3000);
+		sleep(7000);
 		aplicar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

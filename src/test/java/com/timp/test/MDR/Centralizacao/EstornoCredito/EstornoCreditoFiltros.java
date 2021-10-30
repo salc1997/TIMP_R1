@@ -44,6 +44,7 @@ public class EstornoCreditoFiltros extends TestBaseSteven {
 		
 		boolean text = estornoCreditoFiltrosPO.filtroEstornoCredito();
 		assertTrue(text, "Resultado diferente");
+		sleep(2000);
 
 	}
 

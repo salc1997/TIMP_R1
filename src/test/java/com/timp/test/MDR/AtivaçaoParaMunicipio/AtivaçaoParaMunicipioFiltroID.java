@@ -44,6 +44,7 @@ public class AtivaçaoParaMunicipioFiltroID extends TestBaseSteven {
 		boolean sucesso = ativaçaoParaMunicipioFiltroIDPO.filtro();
 
 		assertTrue(sucesso, Filtros);
+		sleep(2000);
 
 	}
 }

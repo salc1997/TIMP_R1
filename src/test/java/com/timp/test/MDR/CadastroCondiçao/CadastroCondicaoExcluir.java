@@ -42,7 +42,7 @@ public class CadastroCondicaoExcluir extends TestBaseSteven {
 
 		boolean sucesso = cadastroExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-
+		sleep(2000);
 	}
 
 }

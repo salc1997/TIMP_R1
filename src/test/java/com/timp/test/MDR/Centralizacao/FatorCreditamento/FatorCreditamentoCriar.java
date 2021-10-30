@@ -28,7 +28,7 @@ public class FatorCreditamentoCriar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		driver.close();
 	}
 
 
@@ -41,5 +41,6 @@ public class FatorCreditamentoCriar extends TestBaseSteven {
 		
 		boolean sucesso = fatorCreditamentoCriarPO.fatorCreditamentoCriar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
 }

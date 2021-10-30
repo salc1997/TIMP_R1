@@ -42,6 +42,7 @@ public class CenariosCorrecaoExcluir extends TestBaseSteven {
 		
 		boolean sucesso = cenariosCorrecaoExcluirPO.cenariosCorrecaoExcluir();
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 
 }

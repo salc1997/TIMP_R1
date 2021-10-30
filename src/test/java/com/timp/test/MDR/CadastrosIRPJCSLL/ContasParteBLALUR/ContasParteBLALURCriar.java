@@ -42,6 +42,7 @@ public class ContasParteBLALURCriar extends TestBaseSteven {
 		boolean sucesso = contasParteBLALURCriarPO.criar();
 
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 
 	}
 

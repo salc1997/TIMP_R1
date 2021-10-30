@@ -42,6 +42,6 @@ public class InstituicaoFiltroId extends TestBaseSteven {
 		boolean sucesso = instituicaoFiltroIdPO.filtro();
 
 		assertTrue(sucesso, Filtros);
-
+		sleep(2000);
 	}
 }

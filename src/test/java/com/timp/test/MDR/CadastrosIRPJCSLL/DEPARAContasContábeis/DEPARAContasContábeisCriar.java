@@ -42,6 +42,7 @@ public class DEPARAContasContábeisCriar extends TestBaseMassiel {
 		//dEPARAContasContábeisCriarPO.Criar();
 		  boolean sucesso = dEPARAContasContábeisCriarPO.Criar();
 		  assertTrue(sucesso, Criar);
+		  sleep(2000);
 	  }
 
 }

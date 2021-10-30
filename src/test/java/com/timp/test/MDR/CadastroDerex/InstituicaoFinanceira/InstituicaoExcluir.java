@@ -41,5 +41,6 @@ public class InstituicaoExcluir extends TestBaseSteven {
 		boolean sucesso = institucaoEliminarPO.eliminar();
 
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 }

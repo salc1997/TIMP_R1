@@ -46,6 +46,8 @@ public class AtivaçaoParaMunicipioVisualizar extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
+		
+		sleep(2000);
 	}
 
 }

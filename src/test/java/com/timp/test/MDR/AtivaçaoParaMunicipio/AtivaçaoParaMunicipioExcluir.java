@@ -42,6 +42,7 @@ public class AtivaçaoParaMunicipioExcluir extends TestBaseSteven {
 		
 		boolean sucesso = ativaçaoParaMunicipioExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 
 }

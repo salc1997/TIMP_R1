@@ -42,11 +42,13 @@ public class CenariosCorrecaoExcluirMassa extends TestBaseFernando{
 		
 		boolean sucesso = cenariosCorrecaoExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
 	
 	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = cenariosCorrecaoExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 }

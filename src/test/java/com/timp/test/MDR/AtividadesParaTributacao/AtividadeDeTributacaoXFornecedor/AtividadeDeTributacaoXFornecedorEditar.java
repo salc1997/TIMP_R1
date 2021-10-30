@@ -42,7 +42,7 @@ public class AtividadeDeTributacaoXFornecedorEditar extends TestBaseMassiel {
 		boolean sucesso = atividadeDeTributacaoXFornecedorEditarPO.Editar();
 
 		assertTrue(sucesso, Editar);
-
+		sleep(2000);
 	}
 
 }

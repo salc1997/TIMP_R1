@@ -30,7 +30,7 @@ public class EstornoCreditoExcluirMassa extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
-	  //driver.close();
+	  driver.close();
   }
 
   @Test()
@@ -43,6 +43,7 @@ public class EstornoCreditoExcluirMassa extends TestBaseMassiel{
 		boolean sucesso = 	estornoCreditoExcluirMassaPO.CriarEstornoCredito();
 
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 
 	}
   
@@ -53,7 +54,7 @@ public class EstornoCreditoExcluirMassa extends TestBaseMassiel{
 		boolean sucesso = 	estornoCreditoExcluirMassaPO.ExcluirMasas();
 
 		assertTrue(sucesso, Criar);
-
+		sleep(2000);
 
 
 	}

@@ -42,5 +42,6 @@ public class FatorCreditamentoExcluir extends TestBaseSteven {
 		boolean sucesso = fatorCreditamentoExcluirPO.excluir();
 
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 }

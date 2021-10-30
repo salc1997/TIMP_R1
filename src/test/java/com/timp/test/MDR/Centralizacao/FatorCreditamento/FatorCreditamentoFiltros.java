@@ -43,6 +43,7 @@ public class FatorCreditamentoFiltros extends TestBaseSteven {
 
 		boolean sucesso = fatorCreditamentoFiltrosPO.fatorCrecimentoFiltros();
 		assertTrue(sucesso, Filtros);
+		sleep(2000);
 	}
 
 }

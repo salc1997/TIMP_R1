@@ -32,7 +32,7 @@ public class MovimentoDetalhes extends TestBaseKenssy {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test()
@@ -49,6 +49,7 @@ public class MovimentoDetalhes extends TestBaseKenssy {
 			assertTrue(sucesso.get(i), visualizaçar);
 
 		}
+		sleep(2000);
 
 	}
 

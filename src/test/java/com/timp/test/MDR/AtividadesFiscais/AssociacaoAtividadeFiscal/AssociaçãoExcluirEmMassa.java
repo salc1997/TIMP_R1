@@ -51,7 +51,7 @@ public class AssociaçãoExcluirEmMassa extends TestBaseKenssy{
 		
 		boolean sucesso2 = associaçãoExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
-
+		sleep(2000);
 	}
 
 

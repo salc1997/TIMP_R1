@@ -30,6 +30,21 @@
 		</classes>
 	</test> 
 	
+	<test name="Mapeamento Substituicao Conta Estoque Cenarios Correcoes">
+		<classes>
+		<!-- ParametrosContabilizacao > Mapeamento Substituicao Conta Estoque Cenarios Correcoes -->
+		
+			<class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriar"></class>
+			<class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesEditar"></class>
+			<class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizar"></class>
+			<class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhes"></class>
+			<class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesFiltroId"></class>
+			<class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluir"></class>
+			<class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoSubstituiçãoContaEstoqueCenáriosCorreções.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa"></class>
+		
+		</classes>
+	</test> 
+	
 	<test name="RegistroDeExportaçao">
 		<classes>
 		
@@ -184,7 +199,6 @@
 		
 		</classes>
 	</test> 
-	
 	
 	
 </suite> <!-- Suite -->

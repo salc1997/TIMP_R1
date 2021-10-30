@@ -76,7 +76,7 @@ public class RegrasdeAuditoriaN2VisualizarPO extends TestBaseSteven {
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(9000);
+		sleep(20000);
 
 		
 		String CFOPV1 = CFOPVisualizar.getText();
@@ -102,7 +102,7 @@ public class RegrasdeAuditoriaN2VisualizarPO extends TestBaseSteven {
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(12000);
+		sleep(18000);
 		
 		String CFOPE1 = CFOPEditar.getText();
 

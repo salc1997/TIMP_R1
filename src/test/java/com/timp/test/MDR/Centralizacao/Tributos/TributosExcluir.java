@@ -41,6 +41,7 @@ public class TributosExcluir extends TestBaseSteven {
 		
 		boolean sucesso = tributosExcluirPO.tributosExcluir();
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 
 }

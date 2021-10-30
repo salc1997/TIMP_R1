@@ -29,7 +29,7 @@ public class TabelaDeApoioECFLeiaute extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
-	//  driver.close();
+	  driver.close();
   }
   
 
@@ -40,6 +40,7 @@ public class TabelaDeApoioECFLeiaute extends TestBaseMassiel{
 		acessarMDRPO.acessarMDR();
 		boolean sucesso = tabelaDeApoioECFLeiautePO.Leiaute();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
 
 }

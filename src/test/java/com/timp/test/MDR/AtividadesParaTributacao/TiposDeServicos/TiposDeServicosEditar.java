@@ -38,7 +38,7 @@ public class TiposDeServicosEditar extends TestBaseSteven {
 		
 		boolean sucesso = tiposDeServicosEditarPO.editar();
 		assertTrue(sucesso, Editar);
-
+		sleep(2000);
 	}
 
 }

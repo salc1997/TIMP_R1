@@ -42,7 +42,7 @@ public class AtivaçaoParaMunicipioEditar extends TestBaseSteven {
 		boolean sucesso = ativaçaoParaMunicipioEditarPO.editar();
 
 		assertTrue(sucesso, Editar);
-
+		sleep(2000);
 	}
 
 }

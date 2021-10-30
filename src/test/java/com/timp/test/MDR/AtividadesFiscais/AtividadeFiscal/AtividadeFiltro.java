@@ -30,7 +30,7 @@ public class AtividadeFiltro extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test()
@@ -43,5 +43,7 @@ public class AtividadeFiltro extends TestBaseSteven {
 		boolean sucesso = atividadeFiltroPO.filtro();
 
 		assertTrue(sucesso, Filtros);
+		
+		sleep(2000);
 	}
 }

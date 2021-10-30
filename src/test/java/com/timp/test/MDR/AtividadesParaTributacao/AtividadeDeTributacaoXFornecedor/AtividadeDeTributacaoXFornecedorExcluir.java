@@ -39,7 +39,7 @@ public class AtividadeDeTributacaoXFornecedorExcluir extends TestBaseSteven{
 
 		boolean sucesso = atividadeDeTributacaoXFornecedorExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-
+		sleep(2000);
 	}
  
 	

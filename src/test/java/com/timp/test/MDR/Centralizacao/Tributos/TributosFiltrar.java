@@ -40,5 +40,6 @@ public class TributosFiltrar extends TestBaseFernando{
 		
 		boolean sucesso = tributosFiltrarPO.filtrar();
 		assertTrue(sucesso, Filtros);
+		sleep(2000);
 	}
 }

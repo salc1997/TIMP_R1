@@ -44,6 +44,7 @@ public class TributosEditar extends TestBaseSteven {
 		
 		boolean sucesso = tributoEditarPO.tributosEditar();
 		assertTrue(sucesso, Editar);
+		sleep(2000);
 	}
 
 }

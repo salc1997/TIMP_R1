@@ -43,6 +43,7 @@ public class AssociaçãoExcluir extends TestBaseSteven {
 		boolean sucesso = associaçãoExcluirPO.excluir();
 
 		assertTrue(sucesso, Editar);
+		sleep(2000);
 
 	}
 

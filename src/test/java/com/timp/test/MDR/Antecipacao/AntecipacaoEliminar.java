@@ -44,5 +44,6 @@ public class AntecipacaoEliminar extends TestBaseSteven {
 		boolean sucesso = antecipacaoEliminarPO.eliminar();
 
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 }

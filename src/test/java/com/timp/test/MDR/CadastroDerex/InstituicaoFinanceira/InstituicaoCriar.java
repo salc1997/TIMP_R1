@@ -28,7 +28,7 @@ public class InstituicaoCriar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		driver.close();
 	}
 
 
@@ -42,6 +42,8 @@ public class InstituicaoCriar extends TestBaseSteven {
 		boolean sucesso = institucaoCriarPO.criar();
 
 		assertTrue(sucesso, Criar);
+		
+		sleep(2000);
 	}
 
 }

@@ -46,18 +46,21 @@ public class CenariosCorrecaoFiltrosAvanzados extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), "The results in the filter attribute aren't equal");
 		}
+		sleep(2000);
 
 		ArrayList<Boolean> sucesso2 = cenariosCorrecaoFiltrosAvanzadosPO.usuario();
 		sleep(2000);
 		for (int i = 0; i < sucesso2.size(); i++) {
 			assertTrue(sucesso2.get(i), "The results in the filter user aren't equal");
 		}
+		sleep(2000);
 
 		ArrayList<Boolean> sucesso4 = cenariosCorrecaoFiltrosAvanzadosPO.usuarioModificado();
 		sleep(2000);
 		for (int i = 0; i < sucesso4.size(); i++) {
 			assertTrue(sucesso4.get(i), "The results in the filter user modified aren't equal");
 		}
+		sleep(2000);
 
 	}
 }

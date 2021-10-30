@@ -43,7 +43,7 @@ public class CadastroCondicaoCriar extends TestBaseMassiel{
 
 		boolean text = cadastroCondicaoCriarPO.criar();
 		assertTrue(text, Criar);
-
+		sleep(2000);
 
 	}
 

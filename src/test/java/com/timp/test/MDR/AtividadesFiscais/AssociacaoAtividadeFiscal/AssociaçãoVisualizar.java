@@ -42,5 +42,6 @@ public class AssociaçãoVisualizar extends TestBaseFernando {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), "Ocurrio un error");
 		}
+		sleep(2000);
 	}
 }

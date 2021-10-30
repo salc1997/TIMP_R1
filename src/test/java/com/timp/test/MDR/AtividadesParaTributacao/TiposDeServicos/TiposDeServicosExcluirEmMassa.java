@@ -46,5 +46,6 @@ public class TiposDeServicosExcluirEmMassa extends TestBaseSteven{
 	public void excluir() {
 		boolean sucesso2 = tiposDeServicosExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
+		sleep(2000);
 	}
 }

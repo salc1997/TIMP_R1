@@ -47,6 +47,7 @@ public class SaldosDetalhes extends TestBaseKenssy{
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
+		sleep(2000);
 	}
 
 }

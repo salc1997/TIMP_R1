@@ -50,6 +50,7 @@ public class ResponsavelMovimientoExcluirMasas extends TestBaseMassiel{
 		
 		boolean sucesso2 = responsavelMovimientoExcluirMasasPO.ResponsavelMovimientoExcluirMasas();
 		assertTrue(sucesso2, Eliminado);
+		sleep(2000);
 	}
 
 

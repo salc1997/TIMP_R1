@@ -29,7 +29,7 @@ public class BairroCriar extends TestBaseSteven {
 	@AfterClass
 	public void afterClass() {
 
-		//driver.close();
+		driver.close();
 
 	}
 
@@ -44,6 +44,7 @@ public class BairroCriar extends TestBaseSteven {
 		boolean sucesso = bairroCriarPO.criarBairro();
 
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 
 	}
 }

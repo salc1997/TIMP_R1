@@ -75,14 +75,14 @@ public class RegradeAbasEditarPO extends TestBaseSteven {
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		String valorDescricao = "13/01/2021";
 		System.out.println("Fecha Nueva: " + valorDescricao);
 		
 		validaDe.clear();
 		validaDe.sendKeys(valorDescricao);
-		sleep(1000);
+		sleep(3000);
 		
 		btnGravar.click();
 		sleep(2000);
@@ -97,7 +97,7 @@ public class RegradeAbasEditarPO extends TestBaseSteven {
 		
 		sleep(10000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(10000);
+		sleep(25000);
 		
 		AtribuiçõesdeRegras.click();
 		sleep(2000);

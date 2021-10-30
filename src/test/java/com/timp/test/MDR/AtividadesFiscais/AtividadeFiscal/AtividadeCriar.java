@@ -31,7 +31,7 @@ public class AtividadeCriar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test()
@@ -44,6 +44,8 @@ public class AtividadeCriar extends TestBaseSteven {
 		boolean sucesso = atividadeCriarPO.criar();
 
 		assertTrue(sucesso, Criar);
+		
+		sleep(2000);
 	}
 
 }

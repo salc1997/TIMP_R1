@@ -43,5 +43,6 @@ public class FatorCreditamentoEditar extends TestBaseSteven {
 		
 		boolean sucesso = fatorCreditamentoEditarPO.editar();
 		assertTrue(sucesso, editado);
+		sleep(2000);
 	}
 }

@@ -45,7 +45,7 @@ public class CadastroCondicaoEditar extends TestBaseSteven {
 
 		assertTrue(sucesso, Editar);
 
-
+		sleep(2000);
 	}
 
 }

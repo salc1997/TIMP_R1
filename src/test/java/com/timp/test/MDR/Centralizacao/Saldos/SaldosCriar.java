@@ -44,6 +44,7 @@ public class SaldosCriar extends TestBaseKenssy {
 		
 		boolean sucesso = saldosCriarPO.CriarSaldo();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 		
 	}
 }

@@ -42,5 +42,6 @@ public class TributosDetalhes extends TestBaseSteven {
 
 		String sucesso = tributosDetalhesPO.tributoDetalhes();
 		assertEquals(sucesso, "detail", Filtros);
+		sleep(2000);
 	}
 }

@@ -41,6 +41,7 @@ public class LogradouroExcluir extends TestBaseSteven {
 		
 		boolean sucesso = logradouroExcluirPO.logradouroExcluir();
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 
 }

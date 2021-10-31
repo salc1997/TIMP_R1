@@ -53,7 +53,7 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 
 		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
 
-		ferramenta.sendKeys("3298");
+		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
 		
 		sleep(3000);

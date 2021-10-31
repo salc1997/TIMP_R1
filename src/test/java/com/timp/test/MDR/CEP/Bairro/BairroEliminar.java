@@ -27,7 +27,7 @@ public class BairroEliminar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		driver.close();
 	}
 
 
@@ -41,6 +41,6 @@ public class BairroEliminar extends TestBaseSteven {
 		boolean sucesso = bairroEliminarPO.eliminar();
 
 		assertTrue(sucesso, Eliminado);
-
+		sleep(2000);
 	}
 }

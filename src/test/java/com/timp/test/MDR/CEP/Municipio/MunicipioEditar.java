@@ -45,6 +45,6 @@ public class MunicipioEditar extends TestBaseSteven {
 		
 		assertTrue(sucesso, editado);
 		
-		
+		sleep(2000);
 	}
 }

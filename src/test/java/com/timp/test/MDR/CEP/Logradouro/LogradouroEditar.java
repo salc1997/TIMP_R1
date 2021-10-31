@@ -40,5 +40,6 @@ public class LogradouroEditar extends TestBaseSteven {
 		
 		boolean sucesso = logradouroEditarPO.logradouroEditar();
 		assertTrue(sucesso, Editar);
+		sleep(2000);
 	}
 }

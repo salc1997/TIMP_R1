@@ -29,7 +29,7 @@ public class LogradouroExcluirMassa extends TestBaseKenssy{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
@@ -41,12 +41,14 @@ public class LogradouroExcluirMassa extends TestBaseKenssy{
 		
 		boolean sucesso = logradouroExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
 	
 	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = logradouroExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 
 }

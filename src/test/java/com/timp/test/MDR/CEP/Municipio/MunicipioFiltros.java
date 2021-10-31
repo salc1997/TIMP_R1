@@ -41,5 +41,6 @@ public class MunicipioFiltros extends TestBaseSteven {
 		boolean sucesso = municipioFiltroPO.filtro();
 
 		assertTrue(sucesso, Editar);
+		sleep(2000);
 	}
 }

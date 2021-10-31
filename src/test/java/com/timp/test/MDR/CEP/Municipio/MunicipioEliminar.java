@@ -45,5 +45,6 @@ public class MunicipioEliminar extends TestBaseSteven {
 		boolean sucesso = municipioEliminarPO.eliminar();
 		
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 }

@@ -1,151 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name="onfiguração &gt; ManuaisDeComponente(failed)">
-=======
-  <test thread-count="5" name="RenomearColuna(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  <test thread-count="5" name="FatorDeCreditamento(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteDetalle">
+      <class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados">
+        <methods>
+          <include name="Filtro"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltrosAvançados -->
+      <class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltroPorId">
         <methods>
           <include name="afterClass"/>
-          <include name="detalle"/>
+          <include name="beforeClass"/>
+          <include name="filtroPorId"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoFiltroPorId -->
+      <class name="com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoDetalhes">
+        <methods>
+          <include name="afterClass"/>
+          <include name="detalhes"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteDetalle -->
-      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponentesFiltrosAvançados">
+      </class> <!-- com.timp.test.TCC.FatorDeCreditamento.FatorDeCreditamentoDetalhes -->
+    </classes>
+  </test> <!-- FatorDeCreditamento(failed) -->
+  <test thread-count="5" name="Gestao De Credito Tributario ICMS &gt; Configuracao E Execucao Painel Credito ICMS(failed)">
+    <classes>
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSVisualizar">
         <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="visualizar"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSVisualizar -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSFiltrosAvansados">
+        <methods>
+          <include name="beforeClass"/>
           <include name="afterClass"/>
           <include name="filtros"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSFiltrosAvansados -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSExecutar">
+        <methods>
+          <include name="Executar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSExecutar -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSCriar -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="editar"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponentesFiltrosAvançados -->
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSEditar -->
     </classes>
-  </test> <!-- onfiguração > ManuaisDeComponente(failed) -->
-  <test thread-count="5" name="Configuração &gt; Usuarios(failed)">
+  </test> <!-- Gestao De Credito Tributario ICMS > Configuracao E Execucao Painel Credito ICMS(failed) -->
+  <test thread-count="5" name="Gestao De Credito Tributario ICMS &gt; PainelICMS &gt; Executados (failed)">
     <classes>
-      <class name="com.timp.test.ADM.Configuração.Usuarios.UsuariosEditar">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSVisualizar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="visualizar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSVisualizar -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSExcluir">
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
+          <include name="excluir"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoPainelCreditoICMS.ConfiguracaoEExecucaoPainelCreditoICMSExcluir -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSExcluir -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSEditar">
+        <methods>
+          <include name="afterClass"/>
           <include name="Editar"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.ADM.Configuração.Usuarios.UsuariosEditar -->
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.PainelCreditoICMS.PainelCreditoICMSEditar -->
     </classes>
-  </test> <!-- Configuração > Usuarios(failed) -->
-  <test thread-count="5" name="Usuários &gt; Pacotes(failed)">
+  </test> <!-- Gestao De Credito Tributario ICMS > PainelICMS > Executados (failed) -->
+  <test thread-count="5" name="Gestao De Credito Tributario ICMS &gt; Configuracao E Execucao &gt; Registro 1200(failed)">
     <classes>
-      <class name="com.timp.test.ADM.Usuários.Pacotes.PacotesCriar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="Crear"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.ADM.Usuários.Pacotes.PacotesCriar -->
-    </classes>
-  </test> <!-- Usuários > Pacotes(failed) -->
-=======
-      <class name="com.timp.test.BRB.RenomearColuna">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Criar">
         <methods>
           <include name="afterClass"/>
-          <include name="renomearColuna"/>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Criar -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Executar">
+        <methods>
+          <include name="executar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Executar -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Editar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="editar"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.RenomearColuna -->
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Editar -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Visualizar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="visualizar"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Visualizar -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200FiltrosAvansados">
+        <methods>
+          <include name="filtrosAvancados"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200FiltrosAvansados -->
     </classes>
-  </test> <!-- RenomearColuna(failed) -->
-  <test thread-count="5" name="AgrupadoPeloCampo(failed)">
+  </test> <!-- Gestao De Credito Tributario ICMS > Configuracao E Execucao > Registro 1200(failed) -->
+  <test thread-count="5" name="Gestao De Credito Tributario ICMS &gt; Executados &gt; Registro 1200(failed)">
     <classes>
-      <class name="com.timp.test.BRB.AgrupadoPeloCampo">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Excluir">
         <methods>
           <include name="beforeClass"/>
-          <include name="agrupadoPeloCampo"/>
+          <include name="excluir"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.AgrupadoPeloCampo -->
-    </classes>
-  </test> <!-- AgrupadoPeloCampo(failed) -->
-  <test thread-count="5" name="CampoOutput(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.CampoOutput">
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200Excluir -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.Registro1200.Executados1200Editar">
         <methods>
           <include name="afterClass"/>
-          <include name="campoOutput"/>
+          <include name="Editar"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.CampoOutput -->
-    </classes>
-  </test> <!-- CampoOutput(failed) -->
-  <test thread-count="5" name="FormatacaoEVariante(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.FormatacaoEVariante">
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.Registro1200.Executados1200Editar -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.Registro1200.Executados1200Excluir">
         <methods>
-          <include name="formatacaoEVariante"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="excluirVariante"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.FormatacaoEVariante -->
-    </classes>
-  </test> <!-- FormatacaoEVariante(failed) -->
-  <test thread-count="5" name="FiltroColunas(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.FiltroColunas">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="filtroConFerramenta1"/>
-          <include name="filtroConFerramenta2"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.FiltroColunas -->
-    </classes>
-  </test> <!-- FiltroColunas(failed) -->
-  <test thread-count="5" name="GruposAvancados(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.GruposAvancados">
-        <methods>
-          <include name="gruposAvanzados"/>
-          <include name="afterClass"/>
-          <include name="eliminarGrupos"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.GruposAvancados -->
-    </classes>
-  </test> <!-- GruposAvancados(failed) -->
-  <test thread-count="5" name="CrescenteEDecrescente(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.CrescenteEDecrescente">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="crescenteEDecrescente"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.CrescenteEDecrescente -->
-    </classes>
-  </test> <!-- CrescenteEDecrescente(failed) -->
-  <test thread-count="5" name="ComentarioListaSuspensa(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
-        <methods>
-          <include name="listaSuspensa"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
-    </classes>
-  </test> <!-- ComentarioListaSuspensa(failed) -->
-  <test thread-count="5" name="ComentarioLibre(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.ComentarioLibre">
-        <methods>
-          <include name="comentarioLibre"/>
+          <include name="excluir"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.ComentarioLibre -->
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.Registro1200.Executados1200Excluir -->
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.Registro1200.Executados1200Visualizar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="visualizar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioICMS.Executados.Registro1200.Executados1200Visualizar -->
     </classes>
-  </test> <!-- ComentarioLibre(failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  </test> <!-- Gestao De Credito Tributario ICMS > Executados > Registro 1200(failed) -->
 </suite> <!-- Failed suite [Suite] -->

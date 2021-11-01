@@ -121,7 +121,7 @@ public class Registro1102EditarPO extends TestBaseSteven {
 		sleep(6000);
 		sleep(6000);
 		sleep(6000);
-		sleep(6000);
+		sleep(16000);
 	  	String nuevoTexto = filialE.getText();
 	  	System.out.println(enviar);
 		System.out.println(nuevoTexto);

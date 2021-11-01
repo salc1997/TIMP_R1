@@ -51,6 +51,8 @@ public class ConfiguraçãoTributoTributoXEstruturaCriarPO extends TestBaseKenssy{
 		PageFactory.initElements(driver, this);
 	}
 	
+	String idPrimerRegistro ="0";
+	
 	public boolean criar() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -125,7 +127,7 @@ public class ConfiguraçãoTributoTributoXEstruturaCriarPO extends TestBaseKenssy{
 		}
 		
 		// Se obtiene el primer registro de la tabla
-		String idPrimerRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText(); 
+		idPrimerRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText(); 
 		System.out.println("");
 		System.out.println("ID ultimo nuevo registro: " + idPrimerRegistro);
 		

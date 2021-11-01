@@ -102,7 +102,7 @@ public class RegistroM230VisualizaPO extends TestBaseMassiel{
 		sleep(4000);
 		
 		no.click();
-		sleep(12000);
+		sleep(20000);
 		
 		siguiente.click();
 		sleep(2000);

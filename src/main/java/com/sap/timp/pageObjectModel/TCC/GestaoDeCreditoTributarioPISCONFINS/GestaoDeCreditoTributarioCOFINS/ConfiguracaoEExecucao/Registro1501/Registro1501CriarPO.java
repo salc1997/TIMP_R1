@@ -243,7 +243,7 @@ public class Registro1501CriarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		anio.click();
-		sleep(2000);
+		sleep(4000);
 		
 		enero.click();
 		sleep(4000);

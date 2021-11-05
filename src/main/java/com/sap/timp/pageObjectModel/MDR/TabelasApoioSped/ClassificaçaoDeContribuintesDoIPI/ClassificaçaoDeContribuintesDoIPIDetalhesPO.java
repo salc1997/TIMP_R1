@@ -120,12 +120,12 @@ public class ClassificaçaoDeContribuintesDoIPIDetalhesPO extends TestBaseSteven{
 
 
 
-		sleep(2000);
+		sleep(6000);
 		fechar.click();
 
 		actionsMoveToElementElement(menu);
 
-		menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
+	
 		açao = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 

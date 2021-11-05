@@ -28,7 +28,7 @@ public class RegistroM610EditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Código da Contribuição social apurada no periodo \"]")
 	public WebElement campoTexto;
 	
-	@FindBy(xpath = "//li[@id][2]")
+	@FindBy(xpath = "//li[@id][3]")
 	public WebElement opcao;
 
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
@@ -76,7 +76,7 @@ public class RegistroM610EditarPO extends TestBaseSteven{
 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(12000);
 
 		String idRegistro = idObter("GestaoCreditoTributarioCOFINSRegistroM610");
 		System.out.println("ID Registro: " + idRegistro);
@@ -93,7 +93,7 @@ public class RegistroM610EditarPO extends TestBaseSteven{
 		waitExpectXpath("//div[@id=\"branch\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
 		waitExpectXpath("//div[@id=\"uf\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(18000);
 		
 		campo.click();
 		sleep(1000);
@@ -122,7 +122,7 @@ public class RegistroM610EditarPO extends TestBaseSteven{
 		String textoCampoE = campoTexto.getAttribute("value");
 		System.out.println("O texto do campo após a edição é: " + textoCampoE);
 		
-		boolean sucesso = textoCampoE.equals(opcaoT);
+		boolean sucesso = opcaoT.contains(textoCampoE);
 		
 		System.out.println("O registro foi editado com sucesso: " +sucesso);
 		

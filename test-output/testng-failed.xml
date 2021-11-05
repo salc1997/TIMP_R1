@@ -1,131 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
-=======
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="RenomearColuna(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar">
-=======
-      <class name="com.timp.test.BRB.RenomearColuna">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIDetalhes">
         <methods>
           <include name="afterClass"/>
-<<<<<<< HEAD
-=======
-          <include name="renomearColuna"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="detalhes"/>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="criarRelacionamento"/>
-=======
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar -->
-=======
-      </class> <!-- com.timp.test.BRB.RenomearColuna -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIDetalhes -->
     </classes>
-<<<<<<< HEAD
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
-=======
-  </test> <!-- RenomearColuna(failed) -->
-  <test thread-count="5" name="AgrupadoPeloCampo(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.AgrupadoPeloCampo">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="agrupadoPeloCampo"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.AgrupadoPeloCampo -->
-    </classes>
-  </test> <!-- AgrupadoPeloCampo(failed) -->
-  <test thread-count="5" name="CampoOutput(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.CampoOutput">
-        <methods>
-          <include name="afterClass"/>
-          <include name="campoOutput"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.CampoOutput -->
-    </classes>
-  </test> <!-- CampoOutput(failed) -->
-  <test thread-count="5" name="FormatacaoEVariante(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.FormatacaoEVariante">
-        <methods>
-          <include name="formatacaoEVariante"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="excluirVariante"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.FormatacaoEVariante -->
-    </classes>
-  </test> <!-- FormatacaoEVariante(failed) -->
-  <test thread-count="5" name="FiltroColunas(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.FiltroColunas">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="filtroConFerramenta1"/>
-          <include name="filtroConFerramenta2"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.FiltroColunas -->
-    </classes>
-  </test> <!-- FiltroColunas(failed) -->
-  <test thread-count="5" name="GruposAvancados(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.GruposAvancados">
-        <methods>
-          <include name="gruposAvanzados"/>
-          <include name="afterClass"/>
-          <include name="eliminarGrupos"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.GruposAvancados -->
-    </classes>
-  </test> <!-- GruposAvancados(failed) -->
-  <test thread-count="5" name="CrescenteEDecrescente(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.CrescenteEDecrescente">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="crescenteEDecrescente"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.CrescenteEDecrescente -->
-    </classes>
-  </test> <!-- CrescenteEDecrescente(failed) -->
-  <test thread-count="5" name="ComentarioListaSuspensa(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
-        <methods>
-          <include name="listaSuspensa"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
-    </classes>
-  </test> <!-- ComentarioListaSuspensa(failed) -->
-  <test thread-count="5" name="ComentarioLibre(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.ComentarioLibre">
-        <methods>
-          <include name="comentarioLibre"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.ComentarioLibre -->
-    </classes>
-  </test> <!-- ComentarioLibre(failed) -->
-</suite> <!-- Failed suite [Suite] -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git

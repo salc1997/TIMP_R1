@@ -114,7 +114,7 @@ public class DocumentosFiscaisICMSEditarPO extends TestBaseSteven {
 		//waitExpectElement(codigodedocumentofiscal);
 
 		
-		sleep(12000);
+		sleep(2000);
 
 		String novoTexto = codigodedocumentofiscal.getAttribute("value");
 		System.out.println(valor);

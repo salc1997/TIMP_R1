@@ -149,7 +149,7 @@ public class RegistroM605CriarPO extends TestBaseSteven{
 	
 		
 		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
-		sleep(2000);
+		sleep(6000);
 		
 		filial.click();
 		sleep(2000);

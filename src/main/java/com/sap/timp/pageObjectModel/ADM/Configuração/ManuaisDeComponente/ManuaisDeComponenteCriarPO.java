@@ -98,12 +98,12 @@ public class ManuaisDeComponenteCriarPO extends TestBaseSteven {
 		sleep(2000);
 		
 
-		File filePath = new File("C:\\Users\\AGILE SOLUTIONS\\Desktop\\automatizacion.txt");
-		//File filePath = new File("C:\\Users\\Massiel\\Desktop\\automatizacion.txt"); 
+		//File filePath = new File("C:\\Users\\AGILE SOLUTIONS\\Desktop\\automatizacion.txt");
+		File filePath = new File("C:\\Users\\Massiel\\Desktop\\automatizacion.txt"); 
 		String pathString = filePath.getAbsolutePath();
 		
 		driver.findElement(By.className("file-uploader")).sendKeys(pathString);
-		sleep(9000);
+		sleep(11000);
 //		driver.findElement(By.className("browse-button")).click();
 //		sleep(9000);
 		
@@ -135,9 +135,9 @@ public class ManuaisDeComponenteCriarPO extends TestBaseSteven {
 		
 		boolean sucesso = false;
 		  
-		if(rows == 0) {
+		/*	if(rows == 0) {
 			return sucesso = true; 
-		}
+		}*/
 		
 		// Se obtiene el primer registro de la tabla
 		String idPrimerRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 

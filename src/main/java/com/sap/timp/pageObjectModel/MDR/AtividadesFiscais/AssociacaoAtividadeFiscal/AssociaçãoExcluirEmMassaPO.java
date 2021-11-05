@@ -51,10 +51,10 @@ public class AssociaçãoExcluirEmMassaPO extends TestBaseKenssy{
 	@FindBy(xpath = "//div[contains(@class, \"tipoTributo\")]/div/div[2]/div/div[2]")
 	public WebElement inputTipoTributo;
 	
-	@FindBy(xpath = "//div[contains(@class, \"atividadeFiscal\")]/div/div[2]/div/div[2]")
+	@FindBy(xpath = "//div[@class=\"field-element atividadeFiscal_0_6\"]/div/div/div/div[2]")
 	public WebElement inputAtividadeFiscal;
 	
-	@FindBy(xpath = "//div[@class=\"list-option\"]/div/div[contains(text(),\"Atividade Fiscal Teste\")]")
+	@FindBy(xpath = "//div[@class=\"list-item\"]/div[contains(text(),\"AF00003\")]")
 	public WebElement opcionComboAtividadeFiscal;
 	
 	
@@ -178,7 +178,7 @@ public class AssociaçãoExcluirEmMassaPO extends TestBaseKenssy{
 		body.click();
 		sleep(2000);
 		*/
-		sleep(2000);
+		sleep(4000);
 		inputAtividadeFiscal.click();		
 		sleep(2000);
 		opcionComboAtividadeFiscal.click();

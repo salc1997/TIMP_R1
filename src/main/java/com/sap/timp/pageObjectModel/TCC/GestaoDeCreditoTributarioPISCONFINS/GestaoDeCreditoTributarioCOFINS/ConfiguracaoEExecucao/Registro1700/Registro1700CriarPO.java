@@ -132,13 +132,13 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 		System.out.println("Id ultimo registro: " +idRegistro);
 		
 		nuevo.click();
-		sleep(8000);
+		sleep(12000);
 		
 		empresa.click();
 		sleep(4000);
 		
 		empresaoPC.click();
-		sleep(9000);
+		sleep(13000);
 		
 		uf.click();
 		sleep(4000);

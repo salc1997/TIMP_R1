@@ -38,5 +38,6 @@ public class RegradeAbasExcluir extends TestBaseSteven {
 		acessarTAAPO.acessarTAA();
 		boolean sucesso = regradeAbasExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 }

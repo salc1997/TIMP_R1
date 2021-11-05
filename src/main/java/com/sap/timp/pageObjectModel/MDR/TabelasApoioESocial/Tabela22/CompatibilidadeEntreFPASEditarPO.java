@@ -102,7 +102,7 @@ public class CompatibilidadeEntreFPASEditarPO extends TestBaseKenssy{
 		driver.navigate().refresh();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
+		sleep(10000);
 		
 		waitExpectElement(campo);
 		attributoNotToBeEmptyElement(campo, "value"); // OJO ESTE ES UN TEXTAREA XD CON VALUE

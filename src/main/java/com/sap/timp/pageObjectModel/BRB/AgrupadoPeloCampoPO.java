@@ -30,7 +30,10 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 	public WebElement execucao;
 	@FindBy(xpath = "//*[@id=\"right\"]/div[2]/div[1]/div/div/ul/li[1]/button")				
 	public WebElement executar;
-	@FindBy(xpath = "//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/div[1]/span[4]")				
+	/*@FindBy(xpath = "//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/div[1]/span[4]")				
+	public WebElement data1;*/
+	
+	@FindBy(xpath = "//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]")				
 	public WebElement data1;
 	@FindBy(xpath = "//div[@data-group =\"1\"]")				
 	public WebElement cfop;
@@ -120,7 +123,7 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 		sleep(5000);
 		//waitExpectXpath("//div[@data-group=\"1\"]/div/div[1]/span[1]/label");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		sleep(6000);
 		
 		
 		

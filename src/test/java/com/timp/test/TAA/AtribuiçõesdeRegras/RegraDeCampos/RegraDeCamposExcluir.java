@@ -35,5 +35,6 @@ public class RegraDeCamposExcluir extends TestBaseFernando {
 		acessarTAAPO.acessarTAA();
 		boolean sucesso = regraDeCamposExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 }

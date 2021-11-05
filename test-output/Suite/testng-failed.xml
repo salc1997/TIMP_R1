@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 21 - Natureza Juridica(failed)">
+=======
+  <test thread-count="5" name="ExcluirColuna(failed)">
     <classes>
+      <class name="com.timp.test.BRB.ExcluirColuna">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="excluirColunaDragNDrop"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.ExcluirColuna -->
+    </classes>
+  </test> <!-- ExcluirColuna(failed) -->
+  <test thread-count="5" name="RenomearColuna(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+    <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa">
         <methods>
           <include name="excluirMassa"/>
@@ -41,6 +57,9 @@
         </methods>
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaExcluir -->
       <class name="com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida.UnidadeDeMedidaExcluirEmMasa">
+=======
+      <class name="com.timp.test.BRB.RenomearColuna">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="afterClass"/>
           <include name="criar"/>
@@ -80,7 +99,57 @@
   </test> <!-- Tabelas de Apoio E-SOCIAL > Unidade de Medida(failed) -->
   <test thread-count="5" name="Determinacao Automatica De Guias(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasCriar">
+=======
+      <class name="com.timp.test.BRB.AgrupadoPeloCampo">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="agrupadoPeloCampo"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.AgrupadoPeloCampo -->
+    </classes>
+  </test> <!-- AgrupadoPeloCampo(failed) -->
+  <test thread-count="5" name="CampoOutput(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.CampoOutput">
+        <methods>
+          <include name="afterClass"/>
+          <include name="campoOutput"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.CampoOutput -->
+    </classes>
+  </test> <!-- CampoOutput(failed) -->
+  <test thread-count="5" name="FormatacaoEVariante(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.FormatacaoEVariante">
+        <methods>
+          <include name="formatacaoEVariante"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="excluirVariante"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.FormatacaoEVariante -->
+    </classes>
+  </test> <!-- FormatacaoEVariante(failed) -->
+  <test thread-count="5" name="FiltroColunas(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.FiltroColunas">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="filtroConFerramenta1"/>
+          <include name="filtroConFerramenta2"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.FiltroColunas -->
+    </classes>
+  </test> <!-- FiltroColunas(failed) -->
+  <test thread-count="5" name="CrescenteEDecrescente(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.CrescenteEDecrescente">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
@@ -95,5 +164,9 @@
         </methods>
       </class> <!-- com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasFiltroPorId -->
     </classes>
+<<<<<<< HEAD
   </test> <!-- Determinacao Automatica De Guias(failed) -->
+=======
+  </test> <!-- ComentarioLibre(failed) -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </suite> <!-- Failed suite [Suite] -->

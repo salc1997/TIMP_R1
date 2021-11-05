@@ -87,7 +87,7 @@ public class Registro1501EditarPO extends TestBaseSteven {
 		sleep(12000);
 		
 		waitExpectElement(filial);
-		sleep(17000);
+		sleep(27000);
 		String valor = filialE.getText();
 		//String valor = filialE.getAttribute("value");
 		System.out.println(valor);

@@ -100,7 +100,7 @@ public class AssociaçãoCodigoAjusteEditarPO extends TestBaseFernando{
 		sleep(2000);
 		
 		attributeToBeXpath("//div[@id=\"filial\"]/div", "class", "base-MultipleSelect3 required");
-		sleep(1000);
+		sleep(9000);
 		
 		// Obtengo el valor actualizado ya recargada la página
 		actionsMoveToElementElement(dataInicioVigencia);

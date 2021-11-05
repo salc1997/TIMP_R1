@@ -2,6 +2,7 @@ package com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal;
 
 import org.testng.annotations.Test;
 
+import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -16,7 +17,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class AssociaçãoFiltrosAvancados extends TestBaseKenssy{
+public class AssociaçãoFiltrosAvancados extends TestBaseFernando{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AssociaçãoFiltrosAvancadosPO associaçãoFiltrosAvancadosPO;
@@ -25,7 +26,7 @@ public class AssociaçãoFiltrosAvancados extends TestBaseKenssy{
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationKen();
+		driver = initializationF();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		associaçãoFiltrosAvancadosPO = new AssociaçãoFiltrosAvancadosPO();

@@ -250,7 +250,7 @@ public class RegrasDeAuditoriaN1CriarPO extends TestBaseSteven{
 		justificativa.sendKeys("TESTE AUTOMATIZADO");
 		sleep(1000);
 		aceitar.click();
-		sleep(1000);
+		sleep(65000);
 		//1 caminho
 		adicionarcaminho.click();
 		sleep(2000);
@@ -298,8 +298,14 @@ public class RegrasDeAuditoriaN1CriarPO extends TestBaseSteven{
 			sucesso.add(caminhocriador1.isDisplayed());
 		}*/
 		
+		nao.click();
+		sleep(36000);
+		
 		biblioteca.click();
 		sleep(2000);
+		
+		sleep(2000);
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

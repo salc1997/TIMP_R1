@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="13" passed="6" failed="7" skipped="0">
+=======
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-11-08T05:42:52Z" name="Suite" finished-at="2021-11-08T06:18:46Z" duration-ms="2153321">
+=======
+  <suite started-at="2021-11-10T00:40:50Z" name="Default suite" finished-at="2021-11-10T00:54:51Z" duration-ms="840655">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-11-08T05:42:52Z" name="Regras de Auditoria N2" finished-at="2021-11-08T06:18:46Z" duration-ms="2153321">
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente@6f44a157]" started-at="2021-11-08T06:13:03Z" name="beforeClass" finished-at="2021-11-08T06:13:20Z" duration-ms="17209" status="PASS">
+=======
+    <test started-at="2021-11-10T00:40:50Z" name="Default test" finished-at="2021-11-10T00:54:51Z" duration-ms="840655">
+      <class name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeFiltro">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeFiltro@2d778add]" started-at="2021-11-10T00:40:50Z" name="beforeClass" finished-at="2021-11-10T00:42:33Z" duration-ms="102689" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="lexeira()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente@6f44a157]" started-at="2021-11-08T06:13:20Z" name="lexeira" finished-at="2021-11-08T06:15:56Z" duration-ms="155808" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -27,7 +42,12 @@
         </test-method> <!-- beforeClass -->
         <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Correção@432038ec]" started-at="2021-11-08T05:58:47Z" name="editar" finished-at="2021-11-08T06:00:50Z" duration-ms="122953" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
+=======
+        <test-method signature="filtro()[pri:0, instance:com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeFiltro@2d778add]" started-at="2021-11-10T00:42:33Z" name="filtro" finished-at="2021-11-10T00:54:51Z" duration-ms="737952" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
             <message>
+<<<<<<< HEAD
               <![CDATA[element click intercepted: Element <g class="path-start edited" tabindex="-100" height="24" transform="">...</g> is not clickable at point (202, 332). Other element would receive the click: <div class="base-loader-container">...</div>
   (Session info: chrome=83.0.4103.106)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
@@ -35,8 +55,17 @@ System info: host: 'DESKTOP-C57COV6', ip: '192.168.0.108', os.name: 'Windows 10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\AGILES~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
 Session ID: 35bbe62167f7e251f2ef62b2fe71cc2c]]>
+=======
+              <![CDATA[Expected condition failed: waiting for element to no longer be visible: By.xpath: //div[@class="overlay loader dark"] (tried for 360 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51171}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 90934ba38ea936fd09030cb7a014c47b]]>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
             </message>
             <full-stacktrace>
+<<<<<<< HEAD
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <g class="path-start edited" tabindex="-100" height="24" transform="">...</g> is not clickable at point (202, 332). Other element would receive the click: <div class="base-loader-container">...</div>
   (Session info: chrome=83.0.4103.106)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
@@ -227,6 +256,19 @@ at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invok
 at com.sun.proxy.$Proxy12.click(Unknown Source)
 at com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2.Edicao.RegrasDeAuditoriaN2EdicaoRelacionamentoPO.editar(RegrasDeAuditoriaN2EdicaoRelacionamentoPO.java:70)
 at com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento.editar(RegrasDeAuditoriaN2EdicaoRelacionamento.java:36)
+=======
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to no longer be visible: By.xpath: //div[@class="overlay loader dark"] (tried for 360 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MASSIELV', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51171}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 90934ba38ea936fd09030cb7a014c47b
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.sap.timp.base.TestBaseSteven.invisibilityOfElement(TestBaseSteven.java:301)
+at com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeFiltroPO.filtro(AtividadeFiltroPO.java:65)
+at com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeFiltro.filtro(AtividadeFiltro.java:43)
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -254,14 +296,20 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- editar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento@7daa0fbd]" started-at="2021-11-08T06:02:04Z" name="afterClass" finished-at="2021-11-08T06:02:08Z" duration-ms="4274" status="PASS">
+=======
+        </test-method> <!-- filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeFiltro@2d778add]" started-at="2021-11-10T00:54:51Z" name="afterClass" finished-at="2021-11-10T00:54:51Z" duration-ms="0" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento -->
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarComCopia">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarComCopia@51549490]" started-at="2021-11-08T05:47:13Z" name="beforeClass" finished-at="2021-11-08T05:47:26Z" duration-ms="12964" status="PASS">
@@ -668,4 +716,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarCaminhos -->
     </test> <!-- Regras de Auditoria N2 -->
   </suite> <!-- Suite -->
+=======
+      </class> <!-- com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeFiltro -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </testng-results>

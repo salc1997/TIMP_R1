@@ -54,7 +54,7 @@ public class AssociaçãoExcluirEmMassaPO extends TestBaseKenssy{
 	@FindBy(xpath = "//div[@class=\"field-element atividadeFiscal_0_6\"]/div/div/div/div[2]")
 	public WebElement inputAtividadeFiscal;
 	
-	@FindBy(xpath = "//div[@class=\"list-item\"]/div[contains(text(),\"AF00003\")]")
+	@FindBy(xpath = "//div[@id=\"option-1\"]")
 	public WebElement opcionComboAtividadeFiscal;
 	
 	

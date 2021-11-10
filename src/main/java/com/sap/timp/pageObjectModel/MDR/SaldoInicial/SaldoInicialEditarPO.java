@@ -102,7 +102,7 @@ public class SaldoInicialEditarPO extends TestBaseKenssy {
 		editar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		sleep(9000);
 		
 		String valor = campo.getAttribute("value");
 		//System.out.println("mes que trae 1:" +valor);

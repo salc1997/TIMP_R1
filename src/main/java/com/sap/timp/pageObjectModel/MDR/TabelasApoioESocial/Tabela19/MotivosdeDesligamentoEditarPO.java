@@ -98,7 +98,7 @@ public class MotivosdeDesligamentoEditarPO extends TestBaseKenssy {
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(campo);
-		sleep(1000);
+		sleep(9000);
 		
 		waitExpectElement(campo);
 		attributoNotToBeEmptyElement(campo, "value"); // OJO ESTE ES UN TEXTAREA XD CON VALUE

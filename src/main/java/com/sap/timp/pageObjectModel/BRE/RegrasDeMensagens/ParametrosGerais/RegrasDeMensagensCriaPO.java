@@ -250,7 +250,7 @@ public class RegrasDeMensagensCriaPO extends TestBaseSteven {
 		justificativa.sendKeys("TESTE AUTOMATIZADO");
 		sleep(1000);
 		aceitar.click();
-		sleep(1000);
+		sleep(65000);
 		//1 caminho
 		adicionarcaminho.click();
 		sleep(2000);
@@ -285,6 +285,9 @@ public class RegrasDeMensagensCriaPO extends TestBaseSteven {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		nao.click();
+		sleep(25000);
 		
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		

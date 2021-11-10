@@ -101,7 +101,7 @@ public class DeParaLivroApuraçaoXSpedFiscalEditarPO extends TestBaseSteven {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		sleep(12000);
+		sleep(19000);
 		
 		//ediçao
 		//attributeToBeXpath("//div[@class=\"element\" and @id=\"tipoTributo\"]/div", "class", "base-select required");

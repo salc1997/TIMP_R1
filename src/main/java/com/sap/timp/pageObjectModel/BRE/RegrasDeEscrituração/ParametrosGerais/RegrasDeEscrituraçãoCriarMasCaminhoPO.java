@@ -104,6 +104,9 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement btnBiblioteca;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
+	
 	public RegrasDeEscrituraçãoCriarMasCaminhoPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -224,7 +227,7 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 		justificativa.sendKeys("TESTE AUTOMATIZADO");
 		sleep(1000);
 		btnAceitar.click();
-		sleep(1000);
+		sleep(24000);
 		
 		adicionarCaminho.click();
 		sleep(2000);
@@ -257,7 +260,10 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 		btnGravar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(1000);
+		
+		nao.click();
+		sleep(12000);
 		
 		driver.navigate().refresh();
 		sleep(2000);

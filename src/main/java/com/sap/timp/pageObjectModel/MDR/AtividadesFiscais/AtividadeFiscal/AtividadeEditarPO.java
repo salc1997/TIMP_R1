@@ -112,7 +112,7 @@ public class AtividadeEditarPO extends TestBaseSteven{
 
 	 
 	
-		sleep(16000);
+		sleep(74000);
 
 
 

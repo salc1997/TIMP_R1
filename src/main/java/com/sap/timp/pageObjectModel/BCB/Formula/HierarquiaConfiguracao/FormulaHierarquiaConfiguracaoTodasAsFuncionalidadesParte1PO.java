@@ -677,7 +677,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			sleep(5000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
-			sleep(3000);
+			sleep(9000);
 			
 			ultimo.click();
 			sleep(3000);

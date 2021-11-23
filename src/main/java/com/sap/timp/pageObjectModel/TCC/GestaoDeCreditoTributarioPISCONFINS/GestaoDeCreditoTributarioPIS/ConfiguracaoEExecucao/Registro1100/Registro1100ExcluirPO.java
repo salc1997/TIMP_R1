@@ -64,7 +64,7 @@ public class Registro1100ExcluirPO extends TestBaseMassiel{
 		menu.click();
 		sleep(1000);
 		excluir.click();
-		sleep(3000);
+		sleep(4000);
 		
 		sim.click();
 		sleep(2000);

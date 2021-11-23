@@ -57,14 +57,14 @@ public class ConfiguracoesLixeiraMasRestaurarPO extends TestBaseFernando{
 		System.out.println("ID Registro: " + idRegistro);
 		sleep(1000);
 		
-		btnFiltrosAvanzados.click();
-		sleep(2000);
-		waitExpectElement(inputId);
-		inputId.click();
+	/*	btnFiltrosAvanzados.click();
+		sleep(2000);*/
+		waitExpectElement(btnFiltrosAvanzados);
+		//inputId.click();
 		sleep(1000);
-		inputId.sendKeys(idRegistro);
+		pesquisar.sendKeys(idRegistro);
 		sleep(1000);
-		inputId.sendKeys(Keys.ENTER);
+		pesquisar.sendKeys(Keys.ENTER);
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -91,12 +91,12 @@ public class ConfiguracoesLixeiraMasRestaurarPO extends TestBaseFernando{
 		sleep(2000);
 	
 		waitExpectElement(inputId);
-		inputId.clear();
-		inputId.click();
+		pesquisar.clear();
+	//	inputId.click();
 		sleep(1000);
-		inputId.sendKeys(idRegistro);
+		pesquisar.sendKeys(idRegistro);
 		sleep(1000);
-		inputId.sendKeys(Keys.ENTER);
+		pesquisar.sendKeys(Keys.ENTER);
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -123,12 +123,12 @@ public class ConfiguracoesLixeiraMasRestaurarPO extends TestBaseFernando{
 		sleep(2000);
 
 		waitExpectElement(inputId);
-		inputId.clear();
-		inputId.click();
+		pesquisar.clear();
+	//	inputId.click();
 		sleep(1000);
-		inputId.sendKeys(idRegistro);
+		pesquisar.sendKeys(idRegistro);
 		sleep(1000);
-		inputId.sendKeys(Keys.ENTER);
+		pesquisar.sendKeys(Keys.ENTER);
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

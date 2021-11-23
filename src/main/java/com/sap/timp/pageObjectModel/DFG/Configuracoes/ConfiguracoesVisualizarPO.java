@@ -25,7 +25,7 @@ public class ConfiguracoesVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Filtros Avançados\"]")
 	public WebElement filtrosAvanzados;
 	
-	@FindBy(xpath = "//div[@id=\"id\"]/div/div/input")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Pesquisar\")]")
 	public WebElement procurar;
 	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Inicio\")]")
@@ -83,9 +83,9 @@ public class ConfiguracoesVisualizarPO extends TestBaseSteven{
 		System.out.println("Id Registro: " + id);
 		System.out.println("");
 		
-		filtrosAvanzados.click();
-		sleep(3000);
-		waitExpectElement(procurar);
+	/*	filtrosAvanzados.click();
+		sleep(3000);*/
+		waitExpectElement(filtrosAvanzados);
 		sleep(2000);
 		
 		procurar.sendKeys(id);

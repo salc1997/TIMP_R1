@@ -1846,3 +1846,4 @@
 [1027/062008.069:ERROR:http_transport_win.cc(276)] WinHttpSendRequest: La operación se completó correctamente. (0x0)
 [1027/062008.070:ERROR:http_transport_win.cc(276)] WinHttpSendRequest: La operación se completó correctamente. (0x0)
 [1027/062008.071:ERROR:http_transport_win.cc(276)] WinHttpSendRequest: La operación se completó correctamente. (0x0)
+[1118/012825.992:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\Massiel\AppData\Local\Temp\scoped_dir30048_1689379341\Crashpad\reports\fdc79733-3ab1-4ecf-b160-8ef83925c262.dmp: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso. (0x20)

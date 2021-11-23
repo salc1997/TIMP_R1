@@ -623,7 +623,7 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 		abaCriarEditarLancamento.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
+		sleep(10000);
 		
 		actionsMoveToElementElement(btnGravar);
 		btnGravar.click();

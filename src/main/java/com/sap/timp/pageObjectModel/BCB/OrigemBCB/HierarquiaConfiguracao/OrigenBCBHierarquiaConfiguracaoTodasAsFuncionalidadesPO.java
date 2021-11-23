@@ -759,7 +759,8 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
 		sleep(3000);
-		
+	//	nao.click();
+		sleep(5000);
 		ultimo.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1713,9 +1714,9 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	//	WebElement btnSeguirBloqueo = driver.findElement(By.xpath("//button[text()=\"Sim\"]"));
 		sleep(1000);
 	//	btnSeguirBloqueo.click();
-		sleep(2000);
+		sleep(6000);
 		
-	//	negativo6.click();
+		negativo6.click();
 		sleep(3000);
 		
 		

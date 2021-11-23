@@ -186,7 +186,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseKenssy{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(7000);
+		sleep(11000);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 
@@ -196,7 +196,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseKenssy{
 
 			String textFiltroData = driver
 					.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["
-							+ rows + "]/div[5]/div"))
+							+ rows + "]/div[8]/div"))
 					.getText();
 			System.out.println(textFiltroData + " data Filtro");
 			sucesso.add(textFiltroData.contains(text));

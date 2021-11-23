@@ -302,7 +302,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 		}
 		
 		sleep(2000);
-		execucaoAnalitica.click();
+	//	execucaoAnalitica.click();
 		sleep(1000);
 		
 		executarB.click();
@@ -478,7 +478,10 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 	
 	public ArrayList<Boolean> excluirConfiguracoes2() {
 		
-		
+		biblioteca.click();
+		sleep(8000);
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		sleep(2000);
 		configuracoes.click();
 		sleep(2000);

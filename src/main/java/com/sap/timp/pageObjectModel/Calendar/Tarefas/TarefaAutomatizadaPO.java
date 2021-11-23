@@ -273,7 +273,7 @@ public class TarefaAutomatizadaPO extends TestBaseMassiel{
 			criar.click();
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
-			sleep(2000);
+			sleep(8000);
 
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
@@ -283,7 +283,7 @@ public class TarefaAutomatizadaPO extends TestBaseMassiel{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			moveToElement(fin, driver.findElement(By.xpath("//div[@id=\"canvas\"]/div[1]/div[1]")));
-			sleep(2000);
+			sleep(6000);
 
 			//OPERACAO
 			dobleClickElement(NovoOperacao);
@@ -743,7 +743,7 @@ public class TarefaAutomatizadaPO extends TestBaseMassiel{
 				sucesso.add(false);
 			}
 			
-			sleep(2000);
+			sleep(6000);
 			WebElement menuFiltradoTpf3 = driver.findElement(By.xpath("//div[contains(@data-id,"+idFiltroTFPSubperiodoFiscais+")]/div[1]/div"));
 			sleep(2000);
 			WebElement preFechamento2 = driver.findElement(

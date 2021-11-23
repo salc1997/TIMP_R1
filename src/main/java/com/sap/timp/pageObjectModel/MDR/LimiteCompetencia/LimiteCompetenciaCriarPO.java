@@ -231,7 +231,7 @@ public class LimiteCompetenciaCriarPO extends TestBaseMassiel{
 		biblioteca.click();
 		sleep(2000);
 		
-		nao.click();
+		//nao.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

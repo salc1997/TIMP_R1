@@ -125,7 +125,7 @@ public class SaldoInicialFiltroAvanPO extends TestBaseKenssy {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
-		sleep(12000);
+		sleep(16000);
 
 		
 		
@@ -170,7 +170,7 @@ public class SaldoInicialFiltroAvanPO extends TestBaseKenssy {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
-		sleep(7000);
+		sleep(10000);
 
 		
 		

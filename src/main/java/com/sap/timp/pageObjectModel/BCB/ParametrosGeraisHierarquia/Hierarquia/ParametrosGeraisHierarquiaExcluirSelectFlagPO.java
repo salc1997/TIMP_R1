@@ -41,7 +41,7 @@ public class ParametrosGeraisHierarquiaExcluirSelectFlagPO extends TestBaseKenss
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = "1474";
+		String idRegistro = idObter1();
 		
 		ultimo.click();
 		sleep(2000);

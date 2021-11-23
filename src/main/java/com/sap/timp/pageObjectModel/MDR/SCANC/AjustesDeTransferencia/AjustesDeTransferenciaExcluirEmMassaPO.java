@@ -59,7 +59,7 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[contains(@id,\"tax-type-transfers\")]/div/div/div[2]")
 	public WebElement tipoImposto;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Inicio\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Selecionar Data de Início de Vigência\")]")
 	public WebElement dataVigencia;
 	
 	
@@ -151,7 +151,7 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 		tipoImposto.click();
 		sleep(2000);
 		opcao2.click();
-		sleep(2000);
+		sleep(8000);
 		
 
 		dataVigencia.sendKeys(fechaActual());

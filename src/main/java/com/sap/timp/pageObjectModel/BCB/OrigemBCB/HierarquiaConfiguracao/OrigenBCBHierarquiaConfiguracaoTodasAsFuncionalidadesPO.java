@@ -1715,7 +1715,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	//	btnSeguirBloqueo.click();
 		sleep(2000);
 		
-	//	negativo6.click();
+		negativo6.click();
 		sleep(3000);
 		
 		
@@ -2089,7 +2089,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		
 		System.out.println("---------------------------------Abrir SubNivel 6-------------------------------------");
-		sleep(1000);
+		sleep(6000);
 		
 		subnivel6.click();
 		sleep(5000);

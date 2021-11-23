@@ -42,7 +42,7 @@ public class ParametrosGeraisHierarquiaLixeiraPO extends TestBaseKenssy {
 		sleep(2000);
 		
 		
-		String idRegistro = "1474";
+		String idRegistro = idObter1();
 		
 		
 		ultimo.click();

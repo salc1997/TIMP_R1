@@ -31,7 +31,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditarPO extends TestBaseMass
 	@FindBy(xpath = "//li[text()=\"COFINS\"]")
 	public WebElement opcionTributoDestinoTC2;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Ajuste de Débito\"]")
+	@FindBy(xpath = "//div[@id=\"targetAdjustment\"]/div/div[1]/div[2]")
 	public WebElement cboAjuste;
 	@FindBy(xpath = "//li[text()=\"427 - A0205\"]")
 	public WebElement opcionAjusteTC2;
@@ -92,8 +92,8 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditarPO extends TestBaseMass
 		sleep(2000);
 		editar.click();
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"revenueCode\"]/div","class", "base-select ");
-		sleep(2000);
+	//	attributeToBeXpath("//div[@id=\"revenueCode\"]/div","class", "base-select ");
+		sleep(12000);
 	  	
 	  	
 //		attributeToBeXpath("//div[@id=\"revenueCode\"]/div","class", "base-select  disabled");
@@ -116,7 +116,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditarPO extends TestBaseMass
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		if ( tq1 == true) {
 			cboAjuste.click();
@@ -151,8 +151,8 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditarPO extends TestBaseMass
 		sleep(2000);
 		editar1.click();
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"revenueCode\"]/div","class", "base-select ");
-		sleep(2000);
+	//	attributeToBeXpath("//div[@id=\"revenueCode\"]/div","class", "base-select ");
+		sleep(12000);
 	  	
 	  	String nuevoTexto = validaDe.getAttribute("value");
 	  	System.out.println(enviar);

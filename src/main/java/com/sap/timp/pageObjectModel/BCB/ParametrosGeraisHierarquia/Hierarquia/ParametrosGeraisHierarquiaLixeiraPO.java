@@ -77,7 +77,7 @@ public class ParametrosGeraisHierarquiaLixeiraPO extends TestBaseKenssy {
 		
 		driver.navigate().refresh();
 		waitExpectElement(pastaLexeiraH);
-		sleep(2000);
+		sleep(6000);
 		
 		ultimo.click();
 		sleep(2000);

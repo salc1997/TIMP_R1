@@ -77,7 +77,7 @@ public class CodigoTipoCreditoVisualizarPO extends TestBaseSteven {
 	public WebElement codigoTipoCreditoE;
 	@FindBy(xpath = "//input[contains(@placeholder,\"descrição\")]")
 	public WebElement descricaoE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Inicio\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Início\")]")
 	public WebElement dataVigenciaE;
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")

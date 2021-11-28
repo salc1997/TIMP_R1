@@ -112,7 +112,7 @@ public class AgrupamentoDeTributosCriarComCopiaPO extends TestBaseSteven {
 		nome.clear();
 		sleep(2000);
 		nome.sendKeys("Teste ATR Copia");
-		sleep(2000);
+		sleep(5000);
 		excluiricms.click();
 		sleep(2000);
 		

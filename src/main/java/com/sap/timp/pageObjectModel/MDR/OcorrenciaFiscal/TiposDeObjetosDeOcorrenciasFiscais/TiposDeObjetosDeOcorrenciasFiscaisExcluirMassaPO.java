@@ -52,7 +52,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisExcluirMassaPO extends TestBaseSt
 	public WebElement codigopagamento;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Inicio de Vigência\"]")
+	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Início de Vigência\"]")
 	public WebElement dataincio;
 	
 	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Fim de Vigência\"]")

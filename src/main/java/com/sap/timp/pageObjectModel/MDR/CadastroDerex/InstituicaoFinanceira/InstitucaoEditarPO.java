@@ -74,7 +74,7 @@ public class InstitucaoEditarPO extends TestBaseSteven{
 		
 		campo.clear();
 		campo.sendKeys(enviar);
-		sleep(1000);
+		sleep(9000);
 		gravar.click();
 		sleep(2000);
 		waitExpectElement(sim);

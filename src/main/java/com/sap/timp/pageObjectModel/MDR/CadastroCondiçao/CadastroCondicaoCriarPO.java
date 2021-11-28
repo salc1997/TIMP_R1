@@ -194,7 +194,7 @@ public class CadastroCondicaoCriarPO extends TestBaseMassiel{
 		butaosim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+	//	waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 	
 		biblioteca.click();

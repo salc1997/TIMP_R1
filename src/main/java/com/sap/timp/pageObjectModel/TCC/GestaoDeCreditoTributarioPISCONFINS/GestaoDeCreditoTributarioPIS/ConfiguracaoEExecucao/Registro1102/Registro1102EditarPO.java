@@ -93,6 +93,8 @@ public class Registro1102EditarPO extends TestBaseSteven {
 		sleep(6000);
 		sleep(6000);
 		sleep(6000);
+		sleep(6000);
+		sleep(6000);
 		String valor = filialE.getText();
 		//String valor = filialE.getAttribute("value");
 		System.out.println(valor);

@@ -69,7 +69,7 @@ public class Registro1100ExcluirPO extends TestBaseMassiel{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(7000);
 		
 		siguiente.click();
 		

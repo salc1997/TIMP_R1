@@ -17,7 +17,7 @@ public class AntecipacaoEditarPO extends TestBaseSteven {
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[2]/div/div[3]")
 	public WebElement idC;
 
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[6]")
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
 
 	@FindBy(xpath = "//*[@id=\"percAntecipacao\"]/div/div/input")

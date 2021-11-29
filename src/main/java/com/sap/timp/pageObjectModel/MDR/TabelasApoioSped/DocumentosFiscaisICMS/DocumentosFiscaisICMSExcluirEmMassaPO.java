@@ -25,7 +25,7 @@ public class DocumentosFiscaisICMSExcluirEmMassaPO extends TestBaseSteven {
 	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcaoespecie;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//span[contains(text(),\"Novo\")]")

@@ -37,7 +37,7 @@ public class DeParaLivroApuracaoXSpedFiscalExcluirEmMassaPO extends TestBaseStev
 	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcaolinha;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement data;
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;

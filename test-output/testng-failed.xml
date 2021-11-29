@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Centralizacao &gt; Movimento(failed)">
+=======
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.Centralizacao.Movimento.MovimentoDetalhes">
+=======
+      <class name="com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURCriar">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+          <include name="afterClass"/>
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="detalheMovimento"/>
           <include name="afterClass"/>
         </methods>
@@ -88,7 +99,13 @@
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoEditar -->
+=======
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURCriar -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
+<<<<<<< HEAD
   </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 27 - Códigos de Lotação(failed) -->
   <test thread-count="5" name="Taxas de Atualização &gt; Alíquotas de Taxa de Atualização(failed)">
     <classes>
@@ -109,3 +126,7 @@
     </classes>
   </test> <!-- Taxas de Atualização > Alíquotas de Taxa de Atualização(failed) -->
 </suite> <!-- Failed suite [Suite] -->
+=======
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git

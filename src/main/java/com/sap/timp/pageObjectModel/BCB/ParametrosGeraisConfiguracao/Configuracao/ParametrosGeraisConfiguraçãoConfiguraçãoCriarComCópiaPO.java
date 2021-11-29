@@ -67,7 +67,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO extends Tes
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter1();
+		String idRegistro = idObter3();
 		Integer idRegistro2 = Integer.parseUnsignedInt(idRegistro) + 1;
 		System.out.println(idRegistro);
 		

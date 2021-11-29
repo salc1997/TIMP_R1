@@ -77,7 +77,7 @@ public class InformaçoesAdicionaisVisualizarPO extends TestBaseSteven {
 	public WebElement sequenciaE;
 	@FindBy(xpath = "//textarea[contains(@placeholder,\"descrição\")]")
 	public WebElement descricaoE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Data de Inicio\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Data de Início\")]")
 	public WebElement dataVigenciaE;
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")

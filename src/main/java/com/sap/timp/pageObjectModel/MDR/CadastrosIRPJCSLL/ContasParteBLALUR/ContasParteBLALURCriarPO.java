@@ -42,7 +42,7 @@ public class ContasParteBLALURCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[contains(@placeholder,\"Descrição Conta\")]")
 	public WebElement descricao;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Inicio\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Início\")]")
 	public WebElement dataVigencia;
 	
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")

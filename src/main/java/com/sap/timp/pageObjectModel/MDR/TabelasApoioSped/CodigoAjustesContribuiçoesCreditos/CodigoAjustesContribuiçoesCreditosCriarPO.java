@@ -36,7 +36,7 @@ public class CodigoAjustesContribuiçoesCreditosCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div[@class=\"list-item\" and @id]/div/label/span")
 	public WebElement tributoO;
 		
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")

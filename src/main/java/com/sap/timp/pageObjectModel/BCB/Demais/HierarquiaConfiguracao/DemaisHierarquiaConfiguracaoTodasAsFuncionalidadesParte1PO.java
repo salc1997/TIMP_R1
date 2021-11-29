@@ -1530,7 +1530,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(configuracoes);
-		sleep(2000);
+		sleep(8000);
 		
 		sleep(2000);
 		configuracoes.click();
@@ -1838,7 +1838,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		waitExpectElement(opcConfiguracaoConsolidacao);
 		opcConfiguracaoConsolidacao.click();
 		String campo2 = opcConfiguracaoConsolidacao.getText();
-		sleep(2000);
+		sleep(6000);
 		
 		
 		
@@ -2476,7 +2476,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		
 		sleep(5000);
 		criar.click();
-		sleep(2000);
+		sleep(4000);
 		
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"Configuração de Resultado inserido com sucesso\")]")).size();
 		
@@ -2501,7 +2501,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(executar);
-		sleep(2000);
+		sleep(4000);
 		
 		mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
 		

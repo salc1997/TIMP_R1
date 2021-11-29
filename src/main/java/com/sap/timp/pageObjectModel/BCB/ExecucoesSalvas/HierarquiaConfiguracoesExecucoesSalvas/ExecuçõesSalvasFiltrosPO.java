@@ -36,7 +36,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseKenssy{
 	
 	@FindBy(xpath = "//div[@id=\"company-filter\"]/div/div[1]/div[2]")
 	public WebElement empresaS;
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][1]")
 	public WebElement opc;
 	
 	@FindBy(xpath = "//div[@id=\"uf-filter\"]/div/div[2]")

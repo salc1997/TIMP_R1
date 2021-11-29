@@ -25,7 +25,7 @@ public class ConfrontacaoEditarPO extends TestBaseSteven{
 	public WebElement opcao;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement data;
 	
 	

@@ -39,7 +39,7 @@ public class InstituicaoEditar extends TestBaseSteven {
 
 		boolean sucesso = institucaoEditarPO.editar();
 		assertTrue(sucesso, Editar);
-		sleep(2000);
+		sleep(4000);
 	}
 
 }

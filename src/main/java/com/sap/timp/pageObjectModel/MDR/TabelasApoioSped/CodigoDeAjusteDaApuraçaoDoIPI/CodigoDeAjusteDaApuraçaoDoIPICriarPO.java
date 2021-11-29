@@ -30,7 +30,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPICriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher a descrição do Código de Ajuste da Apuração do IPI\"]")
 	public WebElement descricao;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigencia;
 
 	

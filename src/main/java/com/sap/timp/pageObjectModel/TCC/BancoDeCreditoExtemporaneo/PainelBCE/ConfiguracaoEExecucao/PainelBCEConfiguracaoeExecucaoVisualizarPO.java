@@ -104,7 +104,7 @@ public class PainelBCEConfiguracaoeExecucaoVisualizarPO extends TestBaseKenssy {
 		editar1.click();
 		invisibilityOfElementOverlay();
 
-		sleep(6000);
+		sleep(9000);
 
 		
 		String empresaE1 = empresaE.getText();

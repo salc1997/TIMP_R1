@@ -67,7 +67,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisCriarPO extends TestBaseSteven{
 	public WebElement codigopagamento;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Inicio de Vigência\"]")
+	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Início de Vigência\"]")
 	public WebElement dataincio;
 	
 	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Fim de Vigência\"]")
@@ -149,7 +149,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisCriarPO extends TestBaseSteven{
 		sleep(30000);
 		
 		actionsMoveToElementElement(codigocredito);
-		sleep(8000);
+		sleep(13000);
 		
 		codigocredito.click();
 		

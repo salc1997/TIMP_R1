@@ -191,7 +191,7 @@ public class Registro1101CriarPO extends TestBaseSteven{
 		gestaocreditopis.click();
 		sleep(2000);
 		configuracaoEExecucao.click();
-		sleep(2000);
+		sleep(4000);
 		registro1101.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -223,8 +223,8 @@ public class Registro1101CriarPO extends TestBaseSteven{
 		sleep(1000);
 		
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
-		sleep(5000);
+	//	attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		sleep(9000);
 		
 		uf.click();
 		sleep(1000);
@@ -257,7 +257,7 @@ public class Registro1101CriarPO extends TestBaseSteven{
 		empresaV.click();
 		sleep(2000);
 		empresaOV.click();
-		sleep(6000);
+		sleep(9000);
 		
 		filialV.click();
 		sleep(2000);
@@ -271,10 +271,10 @@ public class Registro1101CriarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		anio.click();
-		sleep(2000);
+		sleep(4000);
 		
 		enero.click();
-		sleep(2000);
+		sleep(4000);
 		
 		m1.click();
 		sleep(2000);

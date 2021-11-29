@@ -69,7 +69,7 @@ public class CodigosDasObrigaçoesDeICMSaRecolherVisualizarPO extends TestBaseSte
 	public WebElement descricaoe;
 	
 
-	@FindBy (xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy (xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigenciae;
 	
 	public CodigosDasObrigaçoesDeICMSaRecolherVisualizarPO() {

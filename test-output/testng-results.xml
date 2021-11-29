@@ -1,24 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="83" passed="70" failed="11" skipped="2">
+=======
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-11-26T16:04:43Z" name="Suite" finished-at="2021-11-26T20:06:55Z" duration-ms="14532695">
+=======
+  <suite started-at="2021-11-27T05:53:51Z" name="Default suite" finished-at="2021-11-27T05:58:51Z" duration-ms="300235">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-11-26T16:04:43Z" name="Centralização &gt; Saldos" finished-at="2021-11-26T16:23:52Z" duration-ms="1149009">
       <class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar@31add175]" started-at="2021-11-26T16:04:43Z" name="beforeClass" finished-at="2021-11-26T16:06:02Z" duration-ms="78999" status="PASS">
+=======
+    <test started-at="2021-11-27T05:53:51Z" name="Default test" finished-at="2021-11-27T05:58:51Z" duration-ms="300235">
+      <class name="com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa@73302995]" started-at="2021-11-27T05:53:51Z" name="beforeClass" finished-at="2021-11-27T05:54:12Z" duration-ms="21340" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="CriarSaldo()[pri:0, instance:com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar@31add175]" started-at="2021-11-26T16:06:02Z" name="CriarSaldo" finished-at="2021-11-26T16:11:28Z" duration-ms="326785" status="PASS">
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa@73302995]" started-at="2021-11-27T05:54:12Z" name="criar" finished-at="2021-11-27T05:57:37Z" duration-ms="205426" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- CriarSaldo -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar@31add175]" started-at="2021-11-26T16:11:28Z" name="afterClass" finished-at="2021-11-26T16:11:33Z" duration-ms="4893" status="PASS">
+=======
+        </test-method> <!-- criar -->
+        <test-method signature="exlcuir()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa@73302995]" started-at="2021-11-27T05:57:37Z" name="exlcuir" finished-at="2021-11-27T05:58:51Z" depends-on-methods="com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa.criar" duration-ms="73452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exlcuir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa@73302995]" started-at="2021-11-27T05:58:51Z" name="afterClass" finished-at="2021-11-27T05:58:51Z" duration-ms="0" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar -->
       <class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosFiltrarId">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Centralizacao.Saldos.SaldosFiltrarId@69f1a286]" started-at="2021-11-26T16:21:02Z" name="beforeClass" finished-at="2021-11-26T16:21:36Z" duration-ms="34479" status="PASS">
@@ -1719,4 +1747,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoVisualizar -->
     </test> <!-- Taxas de Atualização > Alíquotas de Taxa de Atualização -->
   </suite> <!-- Suite -->
+=======
+      </class> <!-- com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </testng-results>

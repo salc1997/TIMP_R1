@@ -97,13 +97,13 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 	public ArrayList<Boolean> criar() {	
 		
 		mapamentoEstruturas.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(2000);
 		siguiente.click();
-		
+		sleep(2000);
 		invisibilityOfElementOverlay();
-		
+		sleep(2000);
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
 		
 		String idAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
@@ -164,7 +164,7 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 		gravar.click();
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		
 		novo.click();
 		sleep(2000);

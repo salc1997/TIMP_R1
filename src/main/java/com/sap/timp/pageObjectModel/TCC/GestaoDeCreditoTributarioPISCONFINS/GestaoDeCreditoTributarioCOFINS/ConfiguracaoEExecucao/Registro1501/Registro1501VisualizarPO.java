@@ -102,7 +102,7 @@ public class Registro1501VisualizarPO extends TestBaseSteven{
 		visualizar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(12000);
+		sleep(18000);
 		
 		
 		String empresavisualizar = empresa.getAttribute("value");

@@ -161,9 +161,9 @@ public class Registro1610CriarPO extends TestBaseSteven {
 		configuracaoEExecucao.click();
 		sleep(2000);
 		registro1610.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
 		
 		siguiente.click();
 		

@@ -1,172 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<suite name="Failed suite [Gestao De Credito Tributario PIS/CONFINS  &gt; Apuracao De Credito Tributario COFINS &gt; Configuracao E Execucao]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Registro M600(failed)">
-=======
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Parametros Gerais Hierarquia(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  <test thread-count="5" name="Centralizacao &gt; Movimento(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM600.RegistroM600Visualizar">
+      <class name="com.timp.test.MDR.Centralizacao.Movimento.MovimentoDetalhes">
         <methods>
           <include name="beforeClass"/>
-          <include name="visualizar"/>
+          <include name="detalheMovimento"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM600.RegistroM600Visualizar -->
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM600.RegistroM600Editar">
+      </class> <!-- com.timp.test.MDR.Centralizacao.Movimento.MovimentoDetalhes -->
+    </classes>
+  </test> <!-- Centralizacao > Movimento(failed) -->
+  <test thread-count="5" name="DeXParaM010 Plano de Contas Societario(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.DeXParaM010PlanodeContasSocietario.DeXParaM010PlanodeContasSocietarioExcluirEmMassa">
+        <methods>
+          <include name="excluirEmMassa"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.DeXParaM010PlanodeContasSocietario.DeXParaM010PlanodeContasSocietarioExcluirEmMassa -->
+    </classes>
+  </test> <!-- DeXParaM010 Plano de Contas Societario(failed) -->
+  <test thread-count="5" name="Thin Capitalization &gt; Empréstimos(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosEditar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="editarEmprestimos"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosEditar -->
+      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluirEmMassa">
+        <methods>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluirEmMassa -->
+      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosCriar">
+        <methods>
+          <include name="criarEmprestimos"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosCriar -->
+      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluir">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="excluirEmprestimos"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluir -->
+    </classes>
+  </test> <!-- Thin Capitalization > Empréstimos(failed) -->
+  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 19 - Motivos de Desligamento(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="editarMotivoDesligamento"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoEditar -->
+    </classes>
+  </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 19 - Motivos de Desligamento(failed) -->
+  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 22 - Compatibilidade entre FPAS(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASEditar">
+        <methods>
+          <include name="editarCompatibilidadeEntreFPAS"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASEditar -->
+    </classes>
+  </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 22 - Compatibilidade entre FPAS(failed) -->
+  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 27 - Códigos de Lotação(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoEditar">
         <methods>
           <include name="afterClass"/>
           <include name="editar"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM600.RegistroM600Editar -->
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM600.RegistroM600Criar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM600.RegistroM600Criar -->
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM600.RegistroM600Excluir">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM600.RegistroM600Excluir -->
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoEditar -->
     </classes>
-  </test> <!-- Registro M600(failed) -->
-  <test thread-count="5" name="Registro M605(failed)">
+  </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 27 - Códigos de Lotação(failed) -->
+  <test thread-count="5" name="Taxas de Atualização &gt; Alíquotas de Taxa de Atualização(failed)">
     <classes>
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM605.RegistroM605Visualizar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="visualizar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM605.RegistroM605Visualizar -->
-    </classes>
-  </test> <!-- Registro M605(failed) -->
-  <test thread-count="5" name="Registro M610(failed)">
-    <classes>
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM610.RegistroM610Editar">
-=======
-      <class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaRaiz">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-        <methods>
-          <include name="beforeClass"/>
-          <include name="criarConfiguracao"/>
-          <include name="afterClass"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM610.RegistroM610Editar -->
-    </classes>
-  </test> <!-- Registro M610(failed) -->
-  <test thread-count="5" name="Registro M625(failed)">
-    <classes>
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625Editar">
-=======
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaRaiz -->
-      <class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaVisualizar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-        <methods>
-<<<<<<< HEAD
-          <include name="Editar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM625.RegistroM625Editar -->
-    </classes>
-  </test> <!-- Registro M625(failed) -->
-  <test thread-count="5" name="Registro M630(failed)">
-    <classes>
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630Visualizar">
-        <methods>
-          <include name="afterClass"/>
-=======
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <include name="visualizar"/>
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-        </methods>
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM630.RegistroM630Visualizar -->
-=======
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaVisualizar -->
-      <class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaCriar">
+      <class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoEditar">
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="criarConfiguracaoHierarquia"/>
+          <include name="editar"/>
         </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaCriar -->
-      <class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaCriarComCópia">
+      </class> <!-- com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoEditar -->
+      <class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoDetalhes">
         <methods>
-          <include name="beforeClass"/>
-          <include name="criarConfiguracaoHierarquia"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaCriarComCópia -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-    </classes>
-<<<<<<< HEAD
-  </test> <!-- Registro M630(failed) -->
-</suite> <!-- Failed suite [Gestao De Credito Tributario PIS/CONFINS  > Apuracao De Credito Tributario COFINS > Configuracao E Execucao] -->
-=======
-  </test> <!-- Parametros Gerais Hierarquia(failed) -->
-  <test thread-count="5" name="Parametros Gerais Configuracao Configuracao(failed)">
-    <classes>
-      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoRaiz">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="criarConfiguracao"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoRaiz -->
-      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFavoritos">
-        <methods>
-          <include name="criarConfiguracao"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFavoritos -->
-      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes">
-        <methods>
-          <include name="afterClass"/>
           <include name="detalhes"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes -->
-      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="criarConfiguracao"/>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente -->
+      </class> <!-- com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoDetalhes -->
     </classes>
-  </test> <!-- Parametros Gerais Configuracao Configuracao(failed) -->
-  <test thread-count="5" name="Parametros Gerais Hierarquia Excluir(failed)">
-    <classes>
-      <class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaExcluirSelectFlag">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaExcluirSelectFlag -->
-      <class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaLixeira">
-        <methods>
-          <include name="afterClass"/>
-          <include name="excluir"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaLixeira -->
-    </classes>
-  </test> <!-- Parametros Gerais Hierarquia Excluir(failed) -->
+  </test> <!-- Taxas de Atualização > Alíquotas de Taxa de Atualização(failed) -->
 </suite> <!-- Failed suite [Suite] -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git

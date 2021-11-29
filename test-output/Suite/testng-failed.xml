@@ -1,270 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name="Banco De Credito Extemporaneo &gt; Configuracao e Execucao (failed)">
-=======
-  <test thread-count="5" name="Parametros Gerais Hierarquia(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  <test thread-count="5" name="Centralizacao &gt; Movimento(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar -->
-      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoFiltrosAvançados">
-=======
-      <class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaRaiz">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.MDR.Centralizacao.Movimento.MovimentoDetalhes">
         <methods>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="Filtro"/>
+          <include name="detalheMovimento"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoFiltrosAvançados -->
+      </class> <!-- com.timp.test.MDR.Centralizacao.Movimento.MovimentoDetalhes -->
     </classes>
-  </test> <!-- Banco De Credito Extemporaneo > Configuracao e Execucao (failed) -->
-  <test thread-count="5" name="Banco De Credito Extemporaneo &gt; PainelBCE(failed)">
+  </test> <!-- Centralizacao > Movimento(failed) -->
+  <test thread-count="5" name="DeXParaM010 Plano de Contas Societario(failed)">
     <classes>
-      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExecucao.PainelBCEConfiguracaoeExecucaoVisualizar">
+      <class name="com.timp.test.MDR.DeXParaM010PlanodeContasSocietario.DeXParaM010PlanodeContasSocietarioExcluirEmMassa">
         <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="visualizar"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExecucao.PainelBCEConfiguracaoeExecucaoVisualizar -->
-      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExecucao.PainelBCEConfiguracaoeExecucaoEditar">
-        <methods>
-          <include name="editar"/>
-          <include name="beforeClass"/>
-=======
-          <include name="criarConfiguracao"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <include name="afterClass"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExecucao.PainelBCEConfiguracaoeExecucaoEditar -->
-    </classes>
-  </test> <!-- Banco De Credito Extemporaneo > PainelBCE(failed) -->
-  <test thread-count="5" name="Banco De Credito Extemporaneo &gt; PainelBCE &gt; Executados(failed)">
-    <classes>
-      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosEditar">
-=======
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaRaiz -->
-      <class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaVisualizar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-        <methods>
-<<<<<<< HEAD
-          <include name="afterClass"/>
-          <include name="editar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.Executados.PainelBCEExecutadosEditar -->
-    </classes>
-  </test> <!-- Banco De Credito Extemporaneo > PainelBCE > Executados(failed) -->
-  <test thread-count="5" name="Banco De Credito Tributaro &gt; Configuração de Banco de Crédito Tributário(failed)">
-    <classes>
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar">
-        <methods>
-          <include name="beforeClass"/>
+          <include name="excluirEmMassa"/>
           <include name="criar"/>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioCriar -->
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioExcluir">
+      </class> <!-- com.timp.test.MDR.DeXParaM010PlanodeContasSocietario.DeXParaM010PlanodeContasSocietarioExcluirEmMassa -->
+    </classes>
+  </test> <!-- DeXParaM010 Plano de Contas Societario(failed) -->
+  <test thread-count="5" name="Thin Capitalization &gt; Empréstimos(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosEditar">
         <methods>
+          <include name="beforeClass"/>
+          <include name="editarEmprestimos"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosEditar -->
+      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluirEmMassa">
+        <methods>
+          <include name="criar"/>
+          <include name="beforeClass"/>
           <include name="excluir"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluirEmMassa -->
+      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosCriar">
+        <methods>
+          <include name="criarEmprestimos"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioExcluir -->
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioEditar">
+      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosCriar -->
+      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluir">
         <methods>
+          <include name="beforeClass"/>
+          <include name="excluirEmprestimos"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluir -->
+    </classes>
+  </test> <!-- Thin Capitalization > Empréstimos(failed) -->
+  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 19 - Motivos de Desligamento(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="editarMotivoDesligamento"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoEditar -->
+    </classes>
+  </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 19 - Motivos de Desligamento(failed) -->
+  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 22 - Compatibilidade entre FPAS(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASEditar">
+        <methods>
+          <include name="editarCompatibilidadeEntreFPAS"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASEditar -->
+    </classes>
+  </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 22 - Compatibilidade entre FPAS(failed) -->
+  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 27 - Códigos de Lotação(failed)">
+    <classes>
+      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoEditar">
+        <methods>
+          <include name="afterClass"/>
           <include name="editar"/>
           <include name="beforeClass"/>
-          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioEditar -->
+      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoEditar -->
     </classes>
-  </test> <!-- Banco De Credito Tributaro > Configuração de Banco de Crédito Tributário(failed) -->
-  <test thread-count="5" name="Banco De Credito Tributario &gt; Configuração de Layout de Painel(failed)">
+  </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 27 - Códigos de Lotação(failed) -->
+  <test thread-count="5" name="Taxas de Atualização &gt; Alíquotas de Taxa de Atualização(failed)">
     <classes>
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExecutarGravar">
-        <methods>
-          <include name="executarGravar"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExecutarGravar -->
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelVisualizar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="ver"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelVisualizar -->
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelCriar">
+      <class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoEditar">
         <methods>
           <include name="afterClass"/>
-          <include name="criar"/>
           <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelCriar -->
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelEditar">
-        <methods>
           <include name="editar"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelEditar -->
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExcluir">
+      </class> <!-- com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoEditar -->
+      <class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoDetalhes">
         <methods>
-          <include name="excluir"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExcluir -->
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluir">
-        <methods>
-          <include name="excluir"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="criarComCopiaExcluir"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluir -->
-    </classes>
-  </test> <!-- Banco De Credito Tributario > Configuração de Layout de Painel(failed) -->
-  <test thread-count="5" name="Banco De Ocorrecias &gt; Configuracao E Execucao (failed)">
-    <classes>
-      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar">
-        <methods>
-          <include name="criar"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoCriar -->
-      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoVisualizar">
-        <methods>
-          <include name="afterClass"/>
-=======
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <include name="visualizar"/>
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoVisualizar -->
-      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoEditar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-=======
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <include name="afterClass"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoEditar -->
-      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao">
-=======
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaVisualizar -->
-      <class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaCriar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="criarConfiguracaoHierarquia"/>
-        </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaCriar -->
-      <class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaCriarComCópia">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-        <methods>
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
-          <include name="criarConfiguracaoHierarquia"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <include name="afterClass"/>
-          <include name="executarr"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao -->
-=======
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaCriarComCópia -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-    </classes>
-<<<<<<< HEAD
-  </test> <!-- Banco De Ocorrecias > Configuracao E Execucao (failed) -->
-  <test thread-count="5" name="Banco De Ocorrecias &gt;  Executados(failed)">
-    <classes>
-      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExcluir">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="excluirExecutar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExcluir -->
-      <class name="com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar">
-        <methods>
-          <include name="executarEditar"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar -->
-    </classes>
-  </test> <!-- Banco De Ocorrecias >  Executados(failed) -->
-=======
-  </test> <!-- Parametros Gerais Hierarquia(failed) -->
-  <test thread-count="5" name="Parametros Gerais Configuracao Configuracao(failed)">
-    <classes>
-      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoRaiz">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="criarConfiguracao"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoRaiz -->
-      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFavoritos">
-        <methods>
-          <include name="criarConfiguracao"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFavoritos -->
-      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes">
-        <methods>
-          <include name="afterClass"/>
           <include name="detalhes"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes -->
-      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="criarConfiguracao"/>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente -->
+      </class> <!-- com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoDetalhes -->
     </classes>
-  </test> <!-- Parametros Gerais Configuracao Configuracao(failed) -->
-  <test thread-count="5" name="Parametros Gerais Hierarquia Excluir(failed)">
-    <classes>
-      <class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaExcluirSelectFlag">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaExcluirSelectFlag -->
-      <class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaLixeira">
-        <methods>
-          <include name="afterClass"/>
-          <include name="excluir"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaLixeira -->
-    </classes>
-  </test> <!-- Parametros Gerais Hierarquia Excluir(failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  </test> <!-- Taxas de Atualização > Alíquotas de Taxa de Atualização(failed) -->
 </suite> <!-- Failed suite [Suite] -->

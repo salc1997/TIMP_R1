@@ -83,7 +83,7 @@ public class ArquivosImportadosInformacaoPO extends TestBaseFernando{
 		açao.click();
 		sleep(10000);
 	//	waitExpectXpath("//div[@class=\"overlay loader dark\"]");
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(12000);
 		
 		logDeInconcisstencia.click();

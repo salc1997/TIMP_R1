@@ -1,132 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Centralizacao &gt; Movimento(failed)">
-=======
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  <test thread-count="5" name="Estructuras(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.Centralizacao.Movimento.MovimentoDetalhes">
-=======
-      <class name="com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURCriar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.BRE.Estruturas.ParametrosGerais.EstruturasFiltrosAvançadosLimpaFiltros">
         <methods>
-          <include name="afterClass"/>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="detalheMovimento"/>
+          <include name="Filtro"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.Centralizacao.Movimento.MovimentoDetalhes -->
+      </class> <!-- com.timp.test.BRE.Estruturas.ParametrosGerais.EstruturasFiltrosAvançadosLimpaFiltros -->
     </classes>
-  </test> <!-- Centralizacao > Movimento(failed) -->
-  <test thread-count="5" name="DeXParaM010 Plano de Contas Societario(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.DeXParaM010PlanodeContasSocietario.DeXParaM010PlanodeContasSocietarioExcluirEmMassa">
-        <methods>
-          <include name="excluirEmMassa"/>
-          <include name="criar"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.DeXParaM010PlanodeContasSocietario.DeXParaM010PlanodeContasSocietarioExcluirEmMassa -->
-    </classes>
-  </test> <!-- DeXParaM010 Plano de Contas Societario(failed) -->
-  <test thread-count="5" name="Thin Capitalization &gt; Empréstimos(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosEditar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="editarEmprestimos"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosEditar -->
-      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluirEmMassa">
-        <methods>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluirEmMassa -->
-      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosCriar">
-        <methods>
-          <include name="criarEmprestimos"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosCriar -->
-      <class name="com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluir">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="excluirEmprestimos"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluir -->
-    </classes>
-  </test> <!-- Thin Capitalization > Empréstimos(failed) -->
-  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 19 - Motivos de Desligamento(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoEditar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="editarMotivoDesligamento"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoEditar -->
-    </classes>
-  </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 19 - Motivos de Desligamento(failed) -->
-  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 22 - Compatibilidade entre FPAS(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASEditar">
-        <methods>
-          <include name="editarCompatibilidadeEntreFPAS"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela22.CompatibilidadeEntreFPASEditar -->
-    </classes>
-  </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 22 - Compatibilidade entre FPAS(failed) -->
-  <test thread-count="5" name="Tabelas de Apoio E-SOCIAL &gt; Tabela 27 - Códigos de Lotação(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoEditar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="editar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelasApoioESocial.Tabela27.CodigosDeLotacaoEditar -->
-=======
-          <include name="criar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.CadastrosIRPJCSLL.ContasParteBLALUR.ContasParteBLALURCriar -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-    </classes>
-<<<<<<< HEAD
-  </test> <!-- Tabelas de Apoio E-SOCIAL > Tabela 27 - Códigos de Lotação(failed) -->
-  <test thread-count="5" name="Taxas de Atualização &gt; Alíquotas de Taxa de Atualização(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoEditar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="editar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoEditar -->
-      <class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoDetalhes">
-        <methods>
-          <include name="detalhes"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoDetalhes -->
-    </classes>
-  </test> <!-- Taxas de Atualização > Alíquotas de Taxa de Atualização(failed) -->
+  </test> <!-- Estructuras(failed) -->
 </suite> <!-- Failed suite [Suite] -->
-=======
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git

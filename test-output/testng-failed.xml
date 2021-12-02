@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+=======
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="Regras de Auditoria N2(failed)">
+=======
+  <test thread-count="5" name="Estructuras(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Correção">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Criar">
+=======
+      <class name="com.timp.test.BRE.Estruturas.ParametrosGerais.EstruturasFiltrosAvançadosLimpaFiltros">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
+          <include name="criar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Criar -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+=======
           <include name="beforeClass"/>
           <include name="editar"/>
           <include name="afterClass"/>
@@ -90,3 +117,4 @@
     </classes>
   </test> <!-- Regras de Auditoria N2(failed) -->
 </suite> <!-- Failed suite [Suite] -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git

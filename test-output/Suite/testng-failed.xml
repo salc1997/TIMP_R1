@@ -1,14 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="Regras de Auditoria N2(failed)">
+=======
+<<<<<<< HEAD
+  <test thread-count="5" name="Lixeira(failed)">
+=======
+  <test thread-count="5" name="Estructuras(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Correção">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraRestaurar">
+=======
+      <class name="com.timp.test.BRE.Estruturas.ParametrosGerais.EstruturasFiltrosAvançadosLimpaFiltros">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="editar"/>
+=======
+<<<<<<< HEAD
+=======
+          <include name="Filtro"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="afterClass"/>
+<<<<<<< HEAD
+          <include name="restaurar"/>
+=======
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraRestaurar -->
+      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir">
+        <methods>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Correção -->
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarComCopia">
         <methods>
@@ -87,6 +123,18 @@
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Editar -->
+=======
+      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir -->
     </classes>
+  </test> <!-- Lixeira(failed) -->
+=======
+      </class> <!-- com.timp.test.BRE.Estruturas.ParametrosGerais.EstruturasFiltrosAvançadosLimpaFiltros -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+    </classes>
+<<<<<<< HEAD
   </test> <!-- Regras de Auditoria N2(failed) -->
+=======
+  </test> <!-- Estructuras(failed) -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </suite> <!-- Failed suite [Suite] -->

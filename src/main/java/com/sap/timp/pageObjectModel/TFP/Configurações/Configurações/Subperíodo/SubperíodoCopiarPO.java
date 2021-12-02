@@ -79,7 +79,7 @@ public class SubperíodoCopiarPO extends TestBaseMassiel  {
 		sleep(2000);
 		acao.click();
 		sleep(2000);
-		sleep(2000);
+		sleep(12000);
 		
 		dia.click();
 		sleep(2000);
@@ -106,7 +106,7 @@ public class SubperíodoCopiarPO extends TestBaseMassiel  {
 		validadeAte.sendKeys("31/12/1974");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		String diaCopiar = diaInput.getAttribute("value");
 		String validadeDeCopiar = validadeDeInput.getAttribute("value");
@@ -160,7 +160,7 @@ public class SubperíodoCopiarPO extends TestBaseMassiel  {
 		menu1.click();
 		sleep(2000);
 		editar.click();
-		sleep(6000);
+		sleep(12000);
 		
 		String diaVer = diaInput.getAttribute("value");
 		String validadeDeVer = validadeDeInput.getAttribute("value");
@@ -175,7 +175,7 @@ public class SubperíodoCopiarPO extends TestBaseMassiel  {
 		sucesso.add(validadeAteCopiar.equals(validadeAteVer));
 		
 		System.out.println(sucesso);
-		
+		sleep(6000);
 		cancelar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

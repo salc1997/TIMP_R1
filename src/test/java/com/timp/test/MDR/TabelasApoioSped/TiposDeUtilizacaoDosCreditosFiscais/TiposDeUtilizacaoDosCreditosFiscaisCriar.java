@@ -28,7 +28,7 @@ public class TiposDeUtilizacaoDosCreditosFiscaisCriar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-	driver.close();
+		driver.close();
 	}
 
 	@Test()
@@ -37,6 +37,7 @@ public class TiposDeUtilizacaoDosCreditosFiscaisCriar extends TestBaseSteven {
 		acessarMDRPO.acessarMDR();
 		boolean sucesso = tiposDeUtilizacaoDosCreditosFiscaisCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
+		sleep(2000);
 
 	}
 

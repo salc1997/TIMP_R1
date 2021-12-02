@@ -67,7 +67,7 @@ public class RRGConfiguracaoDeAjusteExcluirPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		sleep(2000);
+		sleep(4000);
 		relatoriosRefineriaGerados.click();
 		
 		sleep(2000);

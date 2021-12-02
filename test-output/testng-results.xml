@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+=======
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-12-01T14:58:30Z" name="Default suite" finished-at="2021-12-01T15:04:11Z" duration-ms="340539">
+=======
+  <suite started-at="2021-12-01T12:48:23Z" name="Default suite" finished-at="2021-12-01T12:53:26Z" duration-ms="303222">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-12-01T14:58:30Z" name="Default test" finished-at="2021-12-01T15:04:11Z" duration-ms="340539">
       <class name="com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Criar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Criar@13b13b5d]" started-at="2021-12-01T14:58:31Z" name="beforeClass" finished-at="2021-12-01T14:59:06Z" duration-ms="35140" status="PASS">
+=======
+    <test started-at="2021-12-01T12:48:23Z" name="Default test" finished-at="2021-12-01T12:53:26Z" duration-ms="303222">
+      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjustePresquisaPorIDOuCodigoDeAjuste">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjustePresquisaPorIDOuCodigoDeAjuste@2e48362c]" started-at="2021-12-01T12:48:23Z" name="beforeClass" finished-at="2021-12-01T12:48:38Z" duration-ms="15544" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Criar@13b13b5d]" started-at="2021-12-01T14:59:06Z" name="criar" finished-at="2021-12-01T15:04:11Z" duration-ms="305350" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
@@ -86,6 +101,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Criar -->
+=======
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjustePresquisaPorIDOuCodigoDeAjuste@2e48362c]" started-at="2021-12-01T12:48:38Z" name="ingresar" finished-at="2021-12-01T12:50:27Z" duration-ms="108230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ingresar -->
+        <test-method signature="scancEntrar()[pri:1, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjustePresquisaPorIDOuCodigoDeAjuste@2e48362c]" started-at="2021-12-01T12:50:27Z" name="scancEntrar" finished-at="2021-12-01T12:51:43Z" duration-ms="75991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scancEntrar -->
+        <test-method signature="pesquisar()[pri:2, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjustePresquisaPorIDOuCodigoDeAjuste@2e48362c]" started-at="2021-12-01T12:51:43Z" name="pesquisar" finished-at="2021-12-01T12:53:22Z" duration-ms="99020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pesquisar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjustePresquisaPorIDOuCodigoDeAjuste@2e48362c]" started-at="2021-12-01T12:53:22Z" name="afterClass" finished-at="2021-12-01T12:53:26Z" duration-ms="4411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjustePresquisaPorIDOuCodigoDeAjuste -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

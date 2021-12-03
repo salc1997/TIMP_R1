@@ -1,140 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name="Regras de Auditoria N2(failed)">
-=======
-<<<<<<< HEAD
-  <test thread-count="5" name="Lixeira(failed)">
-=======
-  <test thread-count="5" name="Estructuras(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  <test thread-count="5" name="Regra De Campos(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Correção">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraRestaurar">
-=======
-      <class name="com.timp.test.BRE.Estruturas.ParametrosGerais.EstruturasFiltrosAvançadosLimpaFiltros">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-        <methods>
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="editar"/>
-=======
-<<<<<<< HEAD
-=======
-          <include name="Filtro"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="restaurar"/>
-=======
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraRestaurar -->
-      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir">
-        <methods>
-          <include name="criar"/>
-          <include name="beforeClass"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <include name="afterClass"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Correção -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarComCopia">
-        <methods>
-          <include name="criarComCopia"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarComCopia -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoSimular">
-        <methods>
-          <include name="afterClass"/>
-          <include name="editar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoSimular -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="lexeira"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2ValoresCalculados">
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasEditar">
         <methods>
           <include name="beforeClass"/>
           <include name="editar"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2ValoresCalculados -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoTabelas">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="editar"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoTabelas -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Estrutura">
-        <methods>
-          <include name="editar"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Estrutura -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa">
-        <methods>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Detalhes">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="detalhes"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Detalhes -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarCaminhos">
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasEditar -->
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasExcluir">
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
           <include name="criar"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarCaminhos -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento">
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasExcluir -->
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasCriar">
         <methods>
           <include name="afterClass"/>
-          <include name="editar"/>
           <include name="beforeClass"/>
+          <include name="criar"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Editar">
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasCriar -->
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasVer">
         <methods>
-          <include name="editar"/>
+          <include name="ver"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Editar -->
-=======
-      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir -->
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasVer -->
     </classes>
-  </test> <!-- Lixeira(failed) -->
-=======
-      </class> <!-- com.timp.test.BRE.Estruturas.ParametrosGerais.EstruturasFiltrosAvançadosLimpaFiltros -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-    </classes>
-<<<<<<< HEAD
-  </test> <!-- Regras de Auditoria N2(failed) -->
-=======
-  </test> <!-- Estructuras(failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  </test> <!-- Regra De Campos(failed) -->
 </suite> <!-- Failed suite [Suite] -->

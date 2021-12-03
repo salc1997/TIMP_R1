@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="32" passed="15" failed="11" skipped="6">
+=======
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-12-02T21:18:00Z" name="Suite" finished-at="2021-12-03T00:30:51Z" duration-ms="11571091">
+=======
+  <suite started-at="2021-12-02T22:31:24Z" name="Suite" finished-at="2021-12-02T22:55:26Z" duration-ms="1441723">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-12-02T21:18:00Z" name="AdicionarColunas" finished-at="2021-12-02T21:25:07Z" duration-ms="426837">
       <class name="com.timp.test.BRB.AdicionarColunas">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.AdicionarColunas@1838ccb8]" started-at="2021-12-02T21:18:00Z" name="beforeClass" finished-at="2021-12-02T21:20:09Z" duration-ms="128860" status="PASS">
+=======
+    <test started-at="2021-12-02T22:31:24Z" name="Regra De Campos" finished-at="2021-12-02T22:55:26Z" duration-ms="1441723">
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposCriar@12d2ce03]" started-at="2021-12-02T22:31:24Z" name="beforeClass" finished-at="2021-12-02T22:32:48Z" duration-ms="83604" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="adicionarColunas()[pri:0, instance:com.timp.test.BRB.AdicionarColunas@1838ccb8]" started-at="2021-12-02T21:20:09Z" name="adicionarColunas" finished-at="2021-12-02T21:25:07Z" duration-ms="297940" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -423,21 +438,36 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposCriar@12d2ce03]" started-at="2021-12-02T22:32:48Z" name="criar" finished-at="2021-12-02T22:36:41Z" duration-ms="233032" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- renomearColuna -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRB.RenomearColuna@4716be8b]" started-at="2021-12-02T22:34:35Z" name="afterClass" finished-at="2021-12-02T22:34:39Z" duration-ms="4223" status="PASS">
+=======
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposCriar@12d2ce03]" started-at="2021-12-02T22:36:41Z" name="afterClass" finished-at="2021-12-02T22:36:45Z" duration-ms="4470" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.RenomearColuna -->
     </test> <!-- RenomearColuna -->
     <test started-at="2021-12-02T22:34:39Z" name="Formula" finished-at="2021-12-02T22:42:28Z" duration-ms="468964">
       <class name="com.timp.test.BRB.Formula">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.Formula@416c58f5]" started-at="2021-12-02T22:34:39Z" name="beforeClass" finished-at="2021-12-02T22:37:28Z" duration-ms="168393" status="PASS">
+=======
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposCriar -->
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposVer">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposVer@413f69cc]" started-at="2021-12-02T22:43:37Z" name="beforeClass" finished-at="2021-12-02T22:45:19Z" duration-ms="101363" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="formulaColuna()[pri:0, instance:com.timp.test.BRB.Formula@416c58f5]" started-at="2021-12-02T22:37:28Z" name="formulaColuna" finished-at="2021-12-02T22:40:17Z" duration-ms="169198" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -532,21 +562,50 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        <test-method signature="ver()[pri:0, instance:com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposVer@413f69cc]" started-at="2021-12-02T22:45:19Z" name="ver" finished-at="2021-12-02T22:50:41Z" duration-ms="321871" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- agrupadoPeloCampo -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRB.AgrupadoPeloCampo@512baff6]" started-at="2021-12-02T22:48:19Z" name="afterClass" finished-at="2021-12-02T22:48:19Z" duration-ms="0" status="PASS">
+        </test-method> <!-- ver -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposVer@413f69cc]" started-at="2021-12-02T22:50:41Z" name="afterClass" finished-at="2021-12-02T22:50:41Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposVer -->
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposEditar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposEditar@7e5c856f]" started-at="2021-12-02T22:36:45Z" name="beforeClass" finished-at="2021-12-02T22:38:43Z" duration-ms="118379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="editar()[pri:0, instance:com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposEditar@7e5c856f]" started-at="2021-12-02T22:38:43Z" name="editar" finished-at="2021-12-02T22:43:33Z" duration-ms="289341" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- agrupadoPeloCampo -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRB.AgrupadoPeloCampo@512baff6]" started-at="2021-12-02T22:48:19Z" name="afterClass" finished-at="2021-12-02T22:48:19Z" duration-ms="0" status="PASS">
+=======
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposEditar@7e5c856f]" started-at="2021-12-02T22:43:33Z" name="afterClass" finished-at="2021-12-02T22:43:37Z" duration-ms="4503" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.AgrupadoPeloCampo -->
     </test> <!-- AgrupadoPeloCampo -->
     <test started-at="2021-12-02T22:48:19Z" name="CampoOutput" finished-at="2021-12-02T22:53:29Z" duration-ms="309997">
       <class name="com.timp.test.BRB.CampoOutput">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.CampoOutput@363a52f]" started-at="2021-12-02T22:48:19Z" name="beforeClass" finished-at="2021-12-02T22:50:04Z" duration-ms="104742" status="PASS">
+=======
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposEditar -->
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposExcluir@1f53a5dc]" started-at="2021-12-02T22:50:41Z" name="beforeClass" finished-at="2021-12-02T22:52:40Z" duration-ms="119106" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="campoOutput()[pri:0, instance:com.timp.test.BRB.CampoOutput@363a52f]" started-at="2021-12-02T22:50:04Z" name="campoOutput" finished-at="2021-12-02T22:53:25Z" duration-ms="200938" status="PASS">
           <reporter-output>
           </reporter-output>
@@ -802,8 +861,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposExcluir@1f53a5dc]" started-at="2021-12-02T22:52:40Z" name="excluir" finished-at="2021-12-02T22:55:21Z" duration-ms="161588" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- filtroConFerramenta1 -->
         <test-method signature="filtroConFerramenta2()[pri:0, instance:com.timp.test.BRB.FiltroColunas@5d066c7d]" started-at="2021-12-02T23:04:38Z" name="filtroConFerramenta2" finished-at="2021-12-02T23:04:44Z" duration-ms="5440" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
@@ -1660,5 +1723,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.BRB.AtribuiçãodeRegra -->
     </test> <!-- Atribucao De Regra (Regra) -->
+=======
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposExcluir@1f53a5dc]" started-at="2021-12-02T22:55:21Z" name="afterClass" finished-at="2021-12-02T22:55:26Z" duration-ms="4431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposExcluir -->
+    </test> <!-- Regra De Campos -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
   </suite> <!-- Suite -->
 </testng-results>

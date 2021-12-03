@@ -45,6 +45,16 @@ public class ConfiguraçãoTributoTributoXEstruturaCriar extends TestBaseKenssy{
 		
 		sleep(2000);
 	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+		
+		
+		boolean sucesso = configuraçãoTributoTributoXEstruturaCriarPO.excluir();
+		assertTrue(sucesso, Criar);
+		
+		sleep(2000);
+	}
 
 
 }

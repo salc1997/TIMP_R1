@@ -1,140 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name="Regras de Auditoria N2(failed)">
-=======
-<<<<<<< HEAD
-  <test thread-count="5" name="Lixeira(failed)">
-=======
-  <test thread-count="5" name="Estructuras(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  <test thread-count="5" name="ExcluirColuna(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Correção">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraRestaurar">
-=======
-      <class name="com.timp.test.BRE.Estruturas.ParametrosGerais.EstruturasFiltrosAvançadosLimpaFiltros">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.BRB.ExcluirColuna">
         <methods>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="editar"/>
-=======
-<<<<<<< HEAD
-=======
-          <include name="Filtro"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="restaurar"/>
-=======
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="excluirColunaDragNDrop"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraRestaurar -->
-      <class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir">
-        <methods>
-          <include name="criar"/>
-          <include name="beforeClass"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <include name="afterClass"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Correção -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarComCopia">
-        <methods>
-          <include name="criarComCopia"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarComCopia -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoSimular">
-        <methods>
-          <include name="afterClass"/>
-          <include name="editar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoSimular -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="lexeira"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2ValoresCalculados">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="editar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2ValoresCalculados -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoTabelas">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="editar"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoTabelas -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Estrutura">
-        <methods>
-          <include name="editar"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Estrutura -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa">
-        <methods>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Detalhes">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="detalhes"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Detalhes -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarCaminhos">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarCaminhos -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento">
-        <methods>
-          <include name="afterClass"/>
-          <include name="editar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Editar">
-        <methods>
-          <include name="editar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Editar -->
-=======
-      </class> <!-- com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir -->
+      </class> <!-- com.timp.test.BRB.ExcluirColuna -->
     </classes>
-  </test> <!-- Lixeira(failed) -->
-=======
-      </class> <!-- com.timp.test.BRE.Estruturas.ParametrosGerais.EstruturasFiltrosAvançadosLimpaFiltros -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  </test> <!-- ExcluirColuna(failed) -->
+  <test thread-count="5" name="FiltrosRelatorio(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.FiltrosRelatorio">
+        <methods>
+          <include name="CasignarValores"/>
+          <include name="BfiltrosBiblioteca"/>
+          <include name="beforeClass"/>
+          <include name="AfiltrosEditor"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
     </classes>
-<<<<<<< HEAD
-  </test> <!-- Regras de Auditoria N2(failed) -->
-=======
-  </test> <!-- Estructuras(failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  </test> <!-- FiltrosRelatorio(failed) -->
+  <test thread-count="5" name="RenomearColuna(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.RenomearColuna">
+        <methods>
+          <include name="afterClass"/>
+          <include name="renomearColuna"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.RenomearColuna -->
+    </classes>
+  </test> <!-- RenomearColuna(failed) -->
+  <test thread-count="5" name="AgrupadoPeloCampo(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.AgrupadoPeloCampo">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="agrupadoPeloCampo"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.AgrupadoPeloCampo -->
+    </classes>
+  </test> <!-- AgrupadoPeloCampo(failed) -->
+  <test thread-count="5" name="FormatacaoEVariante(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.FormatacaoEVariante">
+        <methods>
+          <include name="formatacaoEVariante"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="excluirVariante"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.FormatacaoEVariante -->
+    </classes>
+  </test> <!-- FormatacaoEVariante(failed) -->
+  <test thread-count="5" name="FiltroColunas(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.FiltroColunas">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="filtroConFerramenta1"/>
+          <include name="filtroConFerramenta2"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.FiltroColunas -->
+    </classes>
+  </test> <!-- FiltroColunas(failed) -->
+  <test thread-count="5" name="GruposAvancados(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.GruposAvancados">
+        <methods>
+          <include name="gruposAvanzados"/>
+          <include name="afterClass"/>
+          <include name="eliminarGrupos"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.GruposAvancados -->
+    </classes>
+  </test> <!-- GruposAvancados(failed) -->
+  <test thread-count="5" name="CrescenteEDecrescente(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.CrescenteEDecrescente">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="crescenteEDecrescente"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.CrescenteEDecrescente -->
+    </classes>
+  </test> <!-- CrescenteEDecrescente(failed) -->
+  <test thread-count="5" name="ComentarioLibre(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.ComentarioLibre">
+        <methods>
+          <include name="comentarioLibre"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.ComentarioLibre -->
+    </classes>
+  </test> <!-- ComentarioLibre(failed) -->
+  <test thread-count="5" name="Output Automatico(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.OutputAutomático">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="outputAutomatico"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.OutputAutomático -->
+    </classes>
+  </test> <!-- Output Automatico(failed) -->
+  <test thread-count="5" name="Output Referencia(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.OutputdeReferência">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="outputReferencia"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.OutputdeReferência -->
+    </classes>
+  </test> <!-- Output Referencia(failed) -->
+  <test thread-count="5" name="Atribucao De Regra (Regra)(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.AtribuiçãodeRegra">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="editar"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.AtribuiçãodeRegra -->
+    </classes>
+  </test> <!-- Atribucao De Regra (Regra)(failed) -->
 </suite> <!-- Failed suite [Suite] -->

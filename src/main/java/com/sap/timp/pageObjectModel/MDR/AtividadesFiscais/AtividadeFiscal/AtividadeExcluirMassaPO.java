@@ -89,6 +89,12 @@ public class AtividadeExcluirMassaPO extends TestBaseFernando{
 	@FindBy(xpath = "//span[@class = \"button-icon icon-font-Sign-and-Symbols icon-persign\"]")
 	public WebElement btnExcluirMassa;
 	
+	@FindBy(xpath = "//div[@id=\"municipio\"]/div/div/div[2]")
+	public WebElement municipio;
+	
+	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	public WebElement municipioOpc;
+	
 	// Variable que controla si se crean con exito los registro, si no se crean con exito no se pasa al metodo de Excluir em Massa
 	Boolean creado = true;
 	
@@ -98,25 +104,13 @@ public class AtividadeExcluirMassaPO extends TestBaseFernando{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void llenarDatos1() {
-		name.sendKeys("Teste Atividade2");
-		sleep(1000);
-		descricao.sendKeys("Teste de Atividade Fiscal 2");
-		sleep(1000);
-		
-		llenarDatos();
-	}
 	
-	public void llenarDatos2() {
-		name.sendKeys("Teste Atividade 3");
-		sleep(1000);
-		descricao.sendKeys("Teste de Atividade Fiscal 3");
-		sleep(1000);
-		
-		llenarDatos();
-	}
 	
 	public void llenarDatos() {		
+		
+		municipio.click();
+		sleep(1000);
+		municipioOpc.click();
 		diaE.click();
 		sleep(1000);
 		diaO.click();
@@ -184,7 +178,12 @@ public class AtividadeExcluirMassaPO extends TestBaseFernando{
 		sleep(2000);
 		
 		// Se llenan los datos
-		llenarDatos1();
+		name.sendKeys("Teste Atividade2");
+		sleep(1000);
+		descricao.sendKeys("Teste de Atividade Fiscal 2");
+		sleep(1000);
+		
+		llenarDatos();
 		
 		gravar.click();
 		sleep(2000);
@@ -197,10 +196,10 @@ public class AtividadeExcluirMassaPO extends TestBaseFernando{
 
 	
 		
-		/*biblioteca.click();
+		biblioteca.click();
 		sleep(2000);
 		waitExpectElement(sim);
-		sim.click();
+		nao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -208,7 +207,7 @@ public class AtividadeExcluirMassaPO extends TestBaseFernando{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		*/
+		
 
 		btnUltimaPagina.click();
 		
@@ -241,8 +240,12 @@ public class AtividadeExcluirMassaPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		// Se llenan los datos
-		llenarDatos2();
+		name.sendKeys("Teste Atividade3");
+		sleep(1000);
+		descricao.sendKeys("Teste de Atividade Fiscal 3");
+		sleep(1000);
+		
+		llenarDatos();
 		
 		gravar.click();
 		sleep(2000);
@@ -252,7 +255,13 @@ public class AtividadeExcluirMassaPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(7000);		
 		
-
+		biblioteca.click();
+		sleep(2000);
+		waitExpectElement(sim);
+		nao.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
 
 		btnUltimaPagina.click();

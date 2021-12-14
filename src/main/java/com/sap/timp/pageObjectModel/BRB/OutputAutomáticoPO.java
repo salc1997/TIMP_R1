@@ -194,6 +194,8 @@ public class OutputAutomáticoPO extends TestBaseSteven {
 //		opcionCampoReferencia.click();
 //		sleep(1000);
 		
+		btnsim.click();
+		sleep(3000);
 		btnAplicar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -208,8 +210,8 @@ public class OutputAutomáticoPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		execucao.click();
-		
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		sleep(19000);
+	//	waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 		executar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -218,8 +220,8 @@ public class OutputAutomáticoPO extends TestBaseSteven {
 		edicao.click();
 		sleep(3000);
 		
-		waitExpectElement(nao);
-		nao.click();
+	//	waitExpectElement(nao);
+	//	nao.click();
 		sleep(2000);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -64,8 +64,15 @@ public class AtividadeCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"option-1\"]")
 	public WebElement diaOrO;
 	
+	@FindBy(xpath = "//div[@id=\"municipio\"]/div/div/div[2]")
+	public WebElement municipio;
+	
+	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	public WebElement municipioOpc;
+	
 	@FindBy(xpath = "//div[@id=\"mes\"]/div/div/div[2]")
 	public WebElement mes;
+	
 	@FindBy(xpath = "//*[@id=\"option-1\"]")
 	public WebElement mesO;
 	
@@ -76,6 +83,9 @@ public class AtividadeCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//*[@id=\"vigencia1-activities\"]/div/div[1]/input")
 	public WebElement data;
+	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	/*
 	@FindBy(xpath = "")
 	public WebElement ;
@@ -132,7 +142,11 @@ public class AtividadeCriarPO extends TestBaseSteven{
 		name.sendKeys("Teste Atividade");
 		sleep(1000);
 		descricao.sendKeys("Teste de Atividade Fiscal");
+		sleep(9000);
+		
+		municipio.click();
 		sleep(1000);
+		municipioOpc.click();
 		
 		diaE.click();
 		sleep(1000);
@@ -171,13 +185,13 @@ public class AtividadeCriarPO extends TestBaseSteven{
 		sleep(8000);
 	
 
-		/*biblioteca.click();
+		biblioteca.click();
 		waitExpectElement(sim);
 		sleep(2000);
-		sim.click();*/
+		nao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(10000);
 
 		siguiente.click();
 		

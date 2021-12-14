@@ -100,7 +100,7 @@ public class RegradeAbasVerPO extends TestBaseSteven{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		// Datos de Editar
 		String empresaString1 = driver.findElement(By.xpath("//div[@id=\"rule-company\"]/div/div/div/div/div/div[@class=\"componentName\"]")).getText();

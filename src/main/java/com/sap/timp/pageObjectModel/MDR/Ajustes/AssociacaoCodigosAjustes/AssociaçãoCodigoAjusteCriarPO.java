@@ -60,8 +60,11 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@id=\"ufOrigin\"]/div/div/div[2]")
 	public WebElement inputUFOrigem;
 	
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][3]")
 	public WebElement opcionCombo;
+	
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
+	public WebElement opcionCombo1;
 	
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][2]")
 	public WebElement opcionComboCodigoOficial;
@@ -184,7 +187,7 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBaseFernando{
 		actionsMoveToElementElement(inputCodigoRegistroSPED);
 		inputCodigoRegistroSPED.click();
 		sleep(1000);
-		opcionCombo.click();
+		opcionCombo1.click();
 		sleep(1000);
 		body.click();	
 		sleep(1000);		

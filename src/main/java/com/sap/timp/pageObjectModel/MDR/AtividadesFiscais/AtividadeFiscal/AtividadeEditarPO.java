@@ -55,7 +55,10 @@ public class AtividadeEditarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//ul[@class=\"accordion\" and @style]/li/div/span[text()=\"Atividades Fiscais\"]")
 	public WebElement atividadesO;
-	
+	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
+	public WebElement biblioteca;
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	public AtividadeEditarPO() {
 
@@ -112,8 +115,15 @@ public class AtividadeEditarPO extends TestBaseSteven{
 
 	 
 	
-		sleep(74000);
+		sleep(8000);
 
+		biblioteca.click();
+		waitExpectElement(sim);
+		sleep(2000);
+		nao.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(10000);
 
 
 

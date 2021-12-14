@@ -261,7 +261,7 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 		limpar.click();
 		String limpo = dataLan2.getCssValue("font-style");
 		sucesso.add(limpo.equals("normal"));
-		
+		sleep(000);
 		
 		
 		return sucesso;
@@ -273,7 +273,7 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 		
 		
 		salvar.click();
-		sleep(2000);
+		sleep(4000);
 		nome.sendKeys("Visualizacão de teste");
 		aplicar.click();
 		sleep(3000);

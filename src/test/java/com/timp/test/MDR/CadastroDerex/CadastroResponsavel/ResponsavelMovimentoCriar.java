@@ -42,7 +42,7 @@ public class ResponsavelMovimentoCriar extends TestBaseSteven {
 		boolean sucesso = responsavelMovimentoCriarPO.criar();
 
 		assertTrue(sucesso, Criar);
-
+		sleep(2000);
 	}
 
 }

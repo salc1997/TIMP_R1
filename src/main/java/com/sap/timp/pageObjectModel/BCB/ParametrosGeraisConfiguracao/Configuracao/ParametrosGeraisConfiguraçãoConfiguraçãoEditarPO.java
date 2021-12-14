@@ -87,7 +87,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoEditarPO extends TestBaseSt
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(editarR);
-		sleep(3000);
+		sleep(5000);
 		//attributoNotToBeEmptyElement(campo, "value");
 		//sleep(2000);
 		editarR.click();

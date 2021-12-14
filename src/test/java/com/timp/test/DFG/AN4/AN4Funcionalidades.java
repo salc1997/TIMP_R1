@@ -44,7 +44,7 @@ public class AN4Funcionalidades extends TestBaseMassiel{
 
 	}
 
-	@Test(priority = 2)
+/*	@Test(priority = 2)
 	public void AN4ID() {
 		aN4FuncionalidadesPO.Id();
 
@@ -117,7 +117,7 @@ public class AN4Funcionalidades extends TestBaseMassiel{
 		
 
 	}
-	
+	*/
 	@Test(priority = 11)
 	public void criarAN4() {
 

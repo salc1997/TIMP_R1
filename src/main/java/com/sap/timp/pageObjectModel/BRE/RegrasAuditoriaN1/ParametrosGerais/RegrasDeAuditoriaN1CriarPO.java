@@ -250,7 +250,7 @@ public class RegrasDeAuditoriaN1CriarPO extends TestBaseSteven{
 		justificativa.sendKeys("TESTE AUTOMATIZADO");
 		sleep(1000);
 		aceitar.click();
-		sleep(65000);
+		sleep(85000);
 		//1 caminho
 		adicionarcaminho.click();
 		sleep(2000);

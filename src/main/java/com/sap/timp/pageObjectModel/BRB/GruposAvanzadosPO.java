@@ -149,7 +149,7 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 		
 		edicao.click();
 		sleep(3000);
-		nao1.click();
+	//	nao1.click();
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
 		
 		grupoAvanzado.click();

@@ -1103,7 +1103,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			componentetc2.click();
 			sleep(2000);
 
-			WebElement Opc1 = driver.findElement(By.xpath("//li[@id=\"option-10\"]"));
+			WebElement Opc1 = driver.findElement(By.xpath("//li[@id=\"option-11\"]"));
 
 			Opc1 .click();
 			sleep(2000);
@@ -2382,11 +2382,11 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		
 		AN4OPC.click();
-		sleep(3000);
+		sleep(6000);
 		
 		
 		configuracaoComparacaoAN4.click();
-		sleep(3000);
+		sleep(5000);
 		
 		
 		String idRegistro4 = idObter8();
@@ -2404,7 +2404,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		sleep(2000);
 		
 		adicionarFiltroComperacaoAN4.click();
-		sleep(3000);
+		sleep(6000);
 	
 		
 
@@ -2534,7 +2534,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			raizAN4 .click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+			sleep(6000);
 		}
 		
 		rows = rows("//div[@class=\"tr\" and @data-id]");
@@ -2643,6 +2643,9 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		sleep(12000);
 		
 		EditarAN4.click();
+		sleep(5000);
+		
+		sim.click();
 		sleep(5000);
 		
 		siguiente.click();

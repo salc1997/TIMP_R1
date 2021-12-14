@@ -41,6 +41,7 @@ public class ResponsavelMovimientoExcluirMasas extends TestBaseMassiel{
 		
 		boolean sucesso =responsavelMovimientoExcluirMasasPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 		
 
 	}

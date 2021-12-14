@@ -70,7 +70,7 @@ public class ParametrosParaLivrosCMSSTExcluirPO extends TestBaseMassiel{
 		sleep(2000);
 		//waitExpectXpath("//div[@class=\"overlay loader dark\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(11000);
+		sleep(18000);
 		
 		ultimaPagina.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

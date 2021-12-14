@@ -1970,7 +1970,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 		sleep(2000);
 		
 		parametrosManuais.click();
-		sleep(3000);
+		sleep(6000);
 		
 //		camposManualExecutar.click();
 //		sleep(2000);

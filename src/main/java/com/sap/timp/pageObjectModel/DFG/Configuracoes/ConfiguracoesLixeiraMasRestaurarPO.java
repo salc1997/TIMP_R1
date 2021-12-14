@@ -29,6 +29,9 @@ public class ConfiguracoesLixeiraMasRestaurarPO extends TestBaseFernando{
 	@FindBy(xpath = "//span[text()=\"Limpar Filtros\"]")
 	public WebElement limpiarFiltros;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement no;
+	
 	public ConfiguracoesLixeiraMasRestaurarPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -77,20 +80,23 @@ public class ConfiguracoesLixeiraMasRestaurarPO extends TestBaseFernando{
 		sleep(1000);
 		açao.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		no.click();
+		sleep(3000);
 		
 		lixeira.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		limpiarFiltros.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 	
-		waitExpectElement(inputId);
+		waitExpectElement(pesquisar);
 		pesquisar.clear();
 	//	inputId.click();
 		sleep(1000);
@@ -115,14 +121,14 @@ public class ConfiguracoesLixeiraMasRestaurarPO extends TestBaseFernando{
 		raiz.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		limpiarFiltros.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 
-		waitExpectElement(inputId);
+	//	waitExpectElement(inputId);
 		pesquisar.clear();
 	//	inputId.click();
 		sleep(1000);

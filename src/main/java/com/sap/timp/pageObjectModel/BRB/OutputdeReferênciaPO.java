@@ -220,8 +220,8 @@ public class OutputdeReferênciaPO extends TestBaseSteven {
 		edicao.click();
 		sleep(3000);
 		
-		waitExpectElement(nao);
-		nao.click();
+	//	waitExpectElement(nao);
+	//	nao.click();
 		sleep(2000);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

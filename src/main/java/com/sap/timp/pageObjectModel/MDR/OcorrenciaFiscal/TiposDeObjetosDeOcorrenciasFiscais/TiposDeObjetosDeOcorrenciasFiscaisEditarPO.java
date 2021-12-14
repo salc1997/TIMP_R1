@@ -111,7 +111,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisEditarPO extends TestBaseSteven {
 		String valor = datainicio.getAttribute("value");
 
 		String enviar = fechaAyer();
-		sleep(40000);
+		sleep(48000);
 		datainicio.clear();
 		sleep(2000);
 		datainicio.sendKeys(enviar);

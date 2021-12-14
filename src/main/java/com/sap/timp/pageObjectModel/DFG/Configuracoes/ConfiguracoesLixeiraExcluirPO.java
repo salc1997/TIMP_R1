@@ -267,7 +267,10 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		
 		lixeira2.click();
 		sleep(3000);
-		sleep(9000);
+		//sleep(9000);
+		
+		no.click();
+		sleep(3000);
 		
 		int rows2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String idUltimo1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows2+"]/div[5]/div")).getText();

@@ -792,7 +792,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			sim.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+			sleep(3000);
 			
 			justificativa.sendKeys("JUSTIFICATIVA 2 TESTE AUTOMATIZADO");
 			sleep(2000);
@@ -952,10 +952,10 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			sleep(2000);
 			
 			
-//			sim.click();
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
+			nao.click();
+			sleep(3000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
 //			
 //			aplicarJustificativa.click();
 //			sleep(3000);
@@ -1105,6 +1105,8 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
+			nao.click();
+			sleep(5000);
 			
 			int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
 			
@@ -1222,7 +1224,10 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			
+			nao.click();
+			sleep(3000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
 			int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
 			
 			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -1340,7 +1345,10 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			
+			nao.click();
+			sleep(3000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
 			int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
 			
 			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();

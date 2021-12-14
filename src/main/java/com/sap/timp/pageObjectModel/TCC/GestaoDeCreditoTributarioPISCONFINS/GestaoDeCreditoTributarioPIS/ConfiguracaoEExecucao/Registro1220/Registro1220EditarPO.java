@@ -299,7 +299,7 @@ public class Registro1220EditarPO extends TestBaseSteven {
 				sleep(1000);
 
 				attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
-				sleep(5000);
+				sleep(12000);
 
 				filial.click();
 				sleep(1000);

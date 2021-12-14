@@ -125,7 +125,7 @@ public class ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluirPO extends TestBase
 			cboLeiaute.sendKeys("235 - TESTE AUTOMATIZADO - QA");
 			sleep(3000);
 			cboLeiaute.sendKeys(Keys. ESCAPE);
-			sleep(3000);
+			sleep(7000);
 		}
 		
 		
@@ -137,7 +137,7 @@ public class ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluirPO extends TestBase
 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		ultimapagina.click();
 		

@@ -77,7 +77,7 @@ public class ConfiguraçãodeLayoutdePainelEditarPO extends TestBaseSteven {
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(9000);
+		sleep(18000);
 		
 		String valorDescricao = "13/01/2021";
 		System.out.println("Fecha Nueva: " + valorDescricao);
@@ -99,7 +99,7 @@ public class ConfiguraçãodeLayoutdePainelEditarPO extends TestBaseSteven {
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(9000);
 		
 		BancoCréditoTributário.click();
 		sleep(2000);

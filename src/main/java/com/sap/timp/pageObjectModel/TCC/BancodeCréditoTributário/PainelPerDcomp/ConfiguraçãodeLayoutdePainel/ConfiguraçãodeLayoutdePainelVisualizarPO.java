@@ -69,7 +69,7 @@ public class ConfiguraçãodeLayoutdePainelVisualizarPO extends TestBaseSteven {
 		açao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(30000);
+		sleep(39000);
 		
 		// Datos de visualizar
 		String empresaString = driver.findElement(By.xpath("//div[@id=\"company\"]/div/div/div/div/div/div[@class=\"componentName\"]")).getText();

@@ -1648,7 +1648,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		WebElement Opc6 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro+"\")]"));
 
 		Opc6 .click();
-		sleep(4000);
+		sleep(6000);
 
 		versaoConfiguracoe.click();
 		sleep(6000);
@@ -2324,7 +2324,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			sleep(3000);
 			
 			mes.click();
-			sleep(3000);
+			sleep(4000);
 			
 			periodo.click();
 			sleep(3000);

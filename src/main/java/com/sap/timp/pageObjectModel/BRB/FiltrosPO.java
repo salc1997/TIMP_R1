@@ -210,8 +210,8 @@ public class FiltrosPO  extends TestBaseSteven{
 			mayor.sendKeys("01/01/2016");
 			menor.sendKeys("31/01/2016");
 		}else {
-			mayor.sendKeys("01/01/2018");
-			menor.sendKeys("31/01/2018");
+			mayor.sendKeys("01/01/2016");
+			menor.sendKeys("31/01/2016");
 		}
 		
 		

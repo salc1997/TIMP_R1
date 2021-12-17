@@ -163,10 +163,10 @@ public class ConfiguraçãodeLayoutdePainelCriarPO extends TestBaseSteven {
 		cboTributo.click();
 		sleep(2000);
 		opcionTributo.click();
-		sleep(2000);
+		sleep(6000);
 		
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+	//	attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		cboUf.click();

@@ -9,36 +9,7 @@
 			<class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir"></class>
 		</classes>
 		
-		<test name="Login">
-		<classes>
-			<!-- Login -->
-			<class name="com.timp.test.ADM.LoginBRB"></class>
-		</classes>
-	</test>
-	<test name="AcessarBRB">
-		<classes>
-			<!-- Acessar BRB -->
-			<class name="com.timp.test.BRB.AcessarBRB"></class>
-		</classes>
-	</test>
-	<test name="Paginacao">
-		<classes>
-			<!-- Paginação -->
-			<class name="com.timp.test.BRB.Paginacao"></class>
-		</classes>
-	</test>
-	<test name="FiltrosAvancados">
-		<classes>
-			<!-- Filtros Avançados -->
-			<class name="com.timp.test.BRB.FiltrosAvancados"></class>
-		</classes>
-	</test>
-	<test name="NovoRelatorio">
-		<classes>
-			<!-- Novo Relatório -->
-			<class name="com.timp.test.BRB.NovoRelatorio"></class>
-		</classes>
-	</test>
+
 	</test>
 	
 	

@@ -236,7 +236,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 		cboComponenteOrigen.click();
 		sleep(1000);
 		opcionComponenteOrigen.click();
-		sleep(12000);
+		sleep(18000);
 		
 		
 		if ( tq1 == true) {

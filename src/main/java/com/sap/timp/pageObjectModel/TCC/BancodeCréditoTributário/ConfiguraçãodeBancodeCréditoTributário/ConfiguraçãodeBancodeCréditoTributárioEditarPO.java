@@ -116,7 +116,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditarPO extends TestBaseMass
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(13000);
 		
 		if ( tq1 == true) {
 			cboAjuste.click();

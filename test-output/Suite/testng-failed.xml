@@ -1,16 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="RenomearColuna(failed)">
+=======
+<<<<<<< HEAD
+  <test thread-count="5" name="Regras de Auditoria N3(failed)">
+=======
+  <test thread-count="5" name="Regra De Campos(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.RenomearColuna">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.Edicao.RegrasDeAuditoriaN3Relacionamento">
         <methods>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="relacionamento"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.Edicao.RegrasDeAuditoriaN3Relacionamento -->
+      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Excluir">
+        <methods>
+=======
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasEditar">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+        <methods>
+          <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="renomearColuna"/>
+=======
+        </methods>
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasEditar -->
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasVer">
+        <methods>
+          <include name="ver"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="beforeClass"/>
+<<<<<<< HEAD
+=======
+          <include name="afterClass"/>
+          <include name="excluir"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRB.RenomearColuna -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Excluir -->
+      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Detalhes">
+        <methods>
+          <include name="afterClass"/>
+          <include name="detalhes"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.RenomearColuna -->
+      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Detalhes -->
+=======
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasVer -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
+<<<<<<< HEAD
   </test> <!-- RenomearColuna(failed) -->
   <test thread-count="5" name="AgrupadoPeloCampo(failed)">
     <classes>
@@ -114,4 +167,11 @@
       </class> <!-- com.timp.test.BRB.AtribuiçãodeRegra -->
     </classes>
   </test> <!-- Atribucao De Regra (Regra)(failed) -->
+=======
+<<<<<<< HEAD
+  </test> <!-- Regras de Auditoria N3(failed) -->
+=======
+  </test> <!-- Regra De Campos(failed) -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </suite> <!-- Failed suite [Suite] -->

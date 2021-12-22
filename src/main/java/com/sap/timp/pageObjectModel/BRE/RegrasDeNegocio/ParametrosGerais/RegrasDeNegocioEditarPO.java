@@ -236,7 +236,7 @@ public class RegrasDeNegocioEditarPO extends TestBaseSteven{
 		nao.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(36000);
+		sleep(46000);
 		
 		primeiracaixar1.click();
 		sleep(4000);
@@ -306,7 +306,7 @@ public class RegrasDeNegocioEditarPO extends TestBaseSteven{
 		nome.clear();
 		sleep(1000);
 		nome.sendKeys(nome1);
-		sleep(3000);
+		sleep(6000);
 		aplicar.click();
 		sleep(3000);
 		gravar.click();

@@ -189,7 +189,7 @@ public boolean criar() {
 		novo.click();
 		
 	
-		sleep(6000);
+		sleep(9000);
 		
 		nome.sendKeys("PRUEBA QA 007");
 		sleep(2000);
@@ -377,12 +377,12 @@ public boolean criar() {
 		
 		aceitar.click();
 
-		sleep(2000);
+		sleep(19000);
 		
 		biblioteca.click();
 		
 		sleep(2000);
-		sim.click();
+		//sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		sleep(2000);

@@ -153,12 +153,12 @@ public class RegrasdeAuditoriaN1EdiçãoEstruturasPO extends TestBaseSteven {
 		sleep(3000);
 
 		aceitar.click();
-		sleep(4000);
+		sleep(24000);
 
 		biblioteca.click();
 		sleep(3000);
 
-		sim.click();
+		//sim.click();
 		sleep(3000);
 
 
@@ -215,12 +215,12 @@ public class RegrasdeAuditoriaN1EdiçãoEstruturasPO extends TestBaseSteven {
 		sleep(3000);
 
 		aceitar.click();
-		sleep(4000);
+		sleep(24000);
 
 		biblioteca.click();
 		sleep(3000);
 
-		sim.click();
+		//sim.click();
 		sleep(3000);
 
 		//----------------Entrando de nuevo a excluir--------------------------
@@ -267,12 +267,12 @@ public class RegrasdeAuditoriaN1EdiçãoEstruturasPO extends TestBaseSteven {
 		sleep(3000);
 
 		aceitar.click();
-		sleep(4000);
+		sleep(24000);
 
 		biblioteca.click();
-		sleep(3000);
+		sleep(18000);
 
-		sim.click();
+		//sim.click();
 		sleep(3000);
 
 		//----------------------FINAL---------------------------------------

@@ -199,7 +199,7 @@ public class ConfiguracoesFundoSocialCriarPO extends TestBaseSteven{
 		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		
 		siguiente.click();
 		

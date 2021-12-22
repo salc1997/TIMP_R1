@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" preserve-order="true" >
 
-	<test name="Configuracao De Tipo Tributo" >
+	<test name="Configuracao>  Configuracao Tributo > ConfiguraçãodeTributo X Tributo Grupo Configuracao " >
 		<classes>
 			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãodeTributoXTributoGrupo.ConfiguraçãodeTributoXTributoGrupoCriar">
 			</class>
@@ -17,7 +17,7 @@
 		</classes>
 	</test> 
 	
-	<test name="Configuracao De Tipo Tributo > Configuração Tributo Agrupamento Criar" >
+	<test name="Configuracao>  Configuracao Tributo > Configuração Tributo Agrupamento Criar" >
 		<classes>
 			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAgrupamento.ConfiguraçãoTributoAgrupamentoCriar">
 			</class>

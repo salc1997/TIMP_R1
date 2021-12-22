@@ -1,177 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name="RenomearColuna(failed)">
-=======
-<<<<<<< HEAD
-  <test thread-count="5" name="Regras de Auditoria N3(failed)">
-=======
-  <test thread-count="5" name="Regra De Campos(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  <test thread-count="5" name=" ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.RenomearColuna">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.Edicao.RegrasDeAuditoriaN3Relacionamento">
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar">
         <methods>
-          <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="relacionamento"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.Edicao.RegrasDeAuditoriaN3Relacionamento -->
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Excluir">
-        <methods>
-=======
-      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasEditar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-        <methods>
           <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="renomearColuna"/>
-=======
+          <include name="EditarRelacionamento"/>
         </methods>
-      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasEditar -->
-      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasVer">
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar -->
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa">
         <methods>
-          <include name="ver"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="criarRelacionamento"/>
+          <include name="excluirMassa"/>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
           <include name="afterClass"/>
-          <include name="excluir"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.RenomearColuna -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Excluir -->
-      <class name="com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Detalhes">
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa -->
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar">
         <methods>
-          <include name="afterClass"/>
-          <include name="detalhes"/>
           <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="VisualizarRelacionamento"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3Detalhes -->
-=======
-      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasVer -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar -->
     </classes>
-<<<<<<< HEAD
-  </test> <!-- RenomearColuna(failed) -->
-  <test thread-count="5" name="AgrupadoPeloCampo(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.AgrupadoPeloCampo">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="agrupadoPeloCampo"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.AgrupadoPeloCampo -->
-    </classes>
-  </test> <!-- AgrupadoPeloCampo(failed) -->
-  <test thread-count="5" name="FormatacaoEVariante(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.FormatacaoEVariante">
-        <methods>
-          <include name="formatacaoEVariante"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="excluirVariante"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.FormatacaoEVariante -->
-    </classes>
-  </test> <!-- FormatacaoEVariante(failed) -->
-  <test thread-count="5" name="FiltroColunas(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.FiltroColunas">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="filtroConFerramenta1"/>
-          <include name="filtroConFerramenta2"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.FiltroColunas -->
-    </classes>
-  </test> <!-- FiltroColunas(failed) -->
-  <test thread-count="5" name="GruposAvancados(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.GruposAvancados">
-        <methods>
-          <include name="gruposAvanzados"/>
-          <include name="afterClass"/>
-          <include name="eliminarGrupos"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.GruposAvancados -->
-    </classes>
-  </test> <!-- GruposAvancados(failed) -->
-  <test thread-count="5" name="CrescenteEDecrescente(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.CrescenteEDecrescente">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="crescenteEDecrescente"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.CrescenteEDecrescente -->
-    </classes>
-  </test> <!-- CrescenteEDecrescente(failed) -->
-  <test thread-count="5" name="ComentarioListaSuspensa(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
-        <methods>
-          <include name="listaSuspensa"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
-    </classes>
-  </test> <!-- ComentarioListaSuspensa(failed) -->
-  <test thread-count="5" name="ComentarioLibre(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.ComentarioLibre">
-        <methods>
-          <include name="comentarioLibre"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.ComentarioLibre -->
-    </classes>
-  </test> <!-- ComentarioLibre(failed) -->
-  <test thread-count="5" name="Output Automatico(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.OutputAutomático">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="outputAutomatico"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.OutputAutomático -->
-    </classes>
-  </test> <!-- Output Automatico(failed) -->
-  <test thread-count="5" name="Atribucao De Regra (Regra)(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.AtribuiçãodeRegra">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="editar"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.AtribuiçãodeRegra -->
-    </classes>
-  </test> <!-- Atribucao De Regra (Regra)(failed) -->
-=======
-<<<<<<< HEAD
-  </test> <!-- Regras de Auditoria N3(failed) -->
-=======
-  </test> <!-- Regra De Campos(failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+  </test> <!--  ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed) -->
 </suite> <!-- Failed suite [Suite] -->

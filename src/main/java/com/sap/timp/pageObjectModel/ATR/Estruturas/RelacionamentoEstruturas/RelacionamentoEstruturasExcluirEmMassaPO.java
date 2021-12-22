@@ -99,30 +99,26 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBaseFernando{
 		// Primer ingreso
 		btnNovo.click();
 		sleep(40400);
-		sleep(40400);
-		sleep(40400);
-		sleep(40400);
-		sleep(40400);
-		sleep(40400);
+		
 		waitExpectElement(cboGrupo1);
 		cboGrupo1.click();
-		sleep(1000);
+		sleep(3000);
 		opcionGrupo1.click();
-		sleep(1000);
+		sleep(3000);
 		
 		attributeToBeXpath("//div[@class=\"structure1-select\"]/div", "class", "base-select ");
 		cboEstrutura1.click();
-		sleep(1000);
+		sleep(3000);
 		opcionEstrutura1.click();
-		sleep(1000);
+		sleep(3000);
 		
 		cboCamposEstrutura1.click();
-		sleep(1000);
+		sleep(3000);
 		opcionCamposEstruturas1.click();
-		sleep(1000);
+		sleep(3000);
 		
 		cboGrupo2.click();
-		sleep(1000);
+		sleep(3000);
 		
 		if(URL.contains("tp1") || URL.contains("tc2")) {
 			opcionGrupo2 = driver.findElement(By.xpath("//li[@tabindex=\"0\" and @class=\"list-item\" and @id and text()=\"Empresa Filial\"][1]"));
@@ -132,20 +128,20 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBaseFernando{
 		
 		attributeToBeXpath("//div[@class=\"structure2-select\"]/div", "class", "base-select ");
 		cboEstrutura2.click();
-		sleep(1000);
+		sleep(3000);
 		opcionEstrutura2.click();
-		sleep(1000);
+		sleep(3000);
 		
 		cboCamposEstrutura2.click();
-		sleep(1000);
+		sleep(3000);
 		opcionCamposEstruturas2.click();
-		sleep(1000);
+		sleep(3000);
 		
 		inputDataInicioVigencia.sendKeys("01/01/1974");
-		sleep(1000);
+		sleep(3000);
 		
 		inputDataFimVigencia.sendKeys("01/01/1975");
-		sleep(1000);
+		sleep(3000);
 		
 		btnGravar.click();
 		invisibilityOfElementOverlay();
@@ -182,46 +178,46 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBaseFernando{
 		
 		waitExpectElement(cboGrupo1);
 		cboGrupo1.click();
-		sleep(1000);
+		sleep(3000);
 		opcionGrupo1.click();
-		sleep(1000);
+		sleep(3000);
 		
 		attributeToBeXpath("//div[@class=\"structure1-select\"]/div", "class", "base-select ");
 		cboEstrutura1.click();
-		sleep(1000);
+		sleep(3000);
 		opcionEstrutura1.click();
-		sleep(1000);
+		sleep(3000);
 		
 		cboCamposEstrutura1.click();
-		sleep(1000);
+		sleep(3000);
 		opcionCamposEstruturas12.click();
-		sleep(1000);
+		sleep(3000);
 		
 		cboGrupo2.click();
-		sleep(1000);
+		sleep(3000);
 		
 		if(URL.contains("tp1") || URL.contains("tc2")) {
 			opcionGrupo2 = driver.findElement(By.xpath("//li[@tabindex=\"0\" and @class=\"list-item\" and @id and text()=\"Empresa Filial\"][1]"));
 		}
 		opcionGrupo2.click();
-		sleep(1000);
+		sleep(3000);
 		
 		attributeToBeXpath("//div[@class=\"structure2-select\"]/div", "class", "base-select ");
 		cboEstrutura2.click();
-		sleep(1000);
+		sleep(3000);
 		opcionEstrutura2.click();
-		sleep(1000);
+		sleep(3000);
 		
 		cboCamposEstrutura2.click();
-		sleep(1000);
+		sleep(3000);
 		opcionCamposEstruturas22.click();
-		sleep(1000);
+		sleep(3000);
 		
 		inputDataInicioVigencia.sendKeys("01/01/1972");
-		sleep(1000);
+		sleep(3000);
 		
 		inputDataFimVigencia.sendKeys("01/01/1973");
-		sleep(1000);
+		sleep(3000);
 		
 		btnGravar.click();
 		invisibilityOfElementOverlay();

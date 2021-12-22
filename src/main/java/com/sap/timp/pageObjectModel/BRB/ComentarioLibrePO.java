@@ -53,7 +53,7 @@ public class ComentarioLibrePO extends TestBaseSteven{
 	
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[1]/div[1]")
 	public WebElement comentario2;
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div[1]")
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[3]/div[1]")
 	public WebElement comentario1;
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[3]/div[2]/div[1]")
 	public WebElement usuario1;

@@ -131,15 +131,7 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		sleep(1000);
 		acao.click();
 		
-		sleep(2000);
-		//waitExpectElement(grupo1);
-		//invisibilityOfElementOverlay();
-		sleep(371400);
-		sleep(1000);
-		sleep(11000);
-		sleep(11000);
-		sleep(11000);
-		sleep(11000);
+		sleep(100000);
 		adicionar.click();
 		sleep(2000);
 		
@@ -184,9 +176,7 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		sleep(2000);
 	//	waitExpectElement(grupo1);
 	//	invisibilityOfElementOverlay();
-		sleep(371400);
-		sleep(1000);
-		sleep(1000);
+		sleep(90000);
 		System.out.println("---------------------------Verificação das Informações-------------------------------------------");
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();

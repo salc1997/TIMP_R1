@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Dec 09 00:17:20 CST 2021</td>
+<td>Started on:</td><td>Sat Dec 18 13:44:40 CST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>836 seconds (836579 ms)</td>
+<tr><td>Total time:</td><td>1992 seconds (1992581 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,57 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.timp.test.MDR.RegistroECAC.RegistroECACCVisualizar.Visualizar()'><b>Visualizar</b><br>Test class: com.timp.test.MDR.RegistroECAC.RegistroECACCVisualizar</td>
-<td><div><pre>java.lang.AssertionError: O modo visualização não está ativado expected [true] but found [false]
-	at com.timp.test.MDR.RegistroECAC.RegistroECACCVisualizar.Visualizar(RegistroECACCVisualizar.java:44)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace123037428", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace123037428'><pre>java.lang.AssertionError: O modo visualização não está ativado expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.timp.test.MDR.RegistroECAC.RegistroECACCVisualizar.Visualizar(RegistroECACCVisualizar.java:44)
+<td title='com.timp.test.MDR.RegistroECAC.RegistroECACEditar.editar()'><b>editar</b><br>Test class: com.timp.test.MDR.RegistroECAC.RegistroECACEditar</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AGILE&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61341}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1dc8fe19a7945bb2d8896c62ee771240
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:134)
+	at org.openqa.selenium.support.ui.ExpectedConditions$31.apply(ExpectedConditions.java:878)
+	at org.openqa.selenium.support.ui.ExpectedConditions$31.apply(ExpectedConditions.java:872)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.sap.timp.base.TestBaseSteven.attributeToBeXpath(TestBaseSteven.java:308)
+	at com.sap.timp.pageObjectModel.MDR.RegistroECAC.RegistroECACEditarPO.editar(RegistroECACEditarPO.java:132)
+	at com.timp.test.MDR.RegistroECAC.RegistroECACEditar.editar(RegistroECACEditar.java:39)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1765108426", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1765108426'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;AGILE&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61341}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 1dc8fe19a7945bb2d8896c62ee771240
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:134)
+	at org.openqa.selenium.support.ui.ExpectedConditions$31.apply(ExpectedConditions.java:878)
+	at org.openqa.selenium.support.ui.ExpectedConditions$31.apply(ExpectedConditions.java:872)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.sap.timp.base.TestBaseSteven.attributeToBeXpath(TestBaseSteven.java:308)
+	at com.sap.timp.pageObjectModel.MDR.RegistroECAC.RegistroECACEditarPO.editar(RegistroECACEditarPO.java:132)
+	at com.timp.test.MDR.RegistroECAC.RegistroECACEditar.editar(RegistroECACEditar.java:39)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -110,8 +152,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>87</td>
-<td>com.timp.test.MDR.RegistroECAC.RegistroECACCVisualizar@5a2d131d</td></tr>
+<td>270</td>
+<td>com.timp.test.MDR.RegistroECAC.RegistroECACEditar@60df60da</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -121,34 +163,34 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.timp.test.MDR.RegistroECAC.RegistroECACCVisualizar.Visualizar()'><b>Visualizar</b><br>Test class: com.timp.test.MDR.RegistroECAC.RegistroECACCVisualizar</td>
+<td></td>
+<td>200</td>
+<td>com.timp.test.MDR.RegistroECAC.RegistroECACCVisualizar@5a2d131d</td></tr>
+<tr>
 <td title='com.timp.test.MDR.RegistroECAC.RegistroECACCriar.criar()'><b>criar</b><br>Test class: com.timp.test.MDR.RegistroECAC.RegistroECACCriar</td>
 <td></td>
-<td>127</td>
+<td>287</td>
 <td>com.timp.test.MDR.RegistroECAC.RegistroECACCriar@7a362b6b</td></tr>
 <tr>
 <td title='com.timp.test.MDR.RegistroECAC.RegistroECACExcluirMassa.criar()'><b>criar</b><br>Test class: com.timp.test.MDR.RegistroECAC.RegistroECACExcluirMassa</td>
 <td></td>
-<td>168</td>
+<td>354</td>
 <td>com.timp.test.MDR.RegistroECAC.RegistroECACExcluirMassa@512baff6</td></tr>
-<tr>
-<td title='com.timp.test.MDR.RegistroECAC.RegistroECACEditar.editar()'><b>editar</b><br>Test class: com.timp.test.MDR.RegistroECAC.RegistroECACEditar</td>
-<td></td>
-<td>120</td>
-<td>com.timp.test.MDR.RegistroECAC.RegistroECACEditar@60df60da</td></tr>
 <tr>
 <td title='com.timp.test.MDR.RegistroECAC.RegistroECACExcluir.excluir()'><b>excluir</b><br>Test class: com.timp.test.MDR.RegistroECAC.RegistroECACExcluir</td>
 <td></td>
-<td>86</td>
+<td>269</td>
 <td>com.timp.test.MDR.RegistroECAC.RegistroECACExcluir@4ae9cfc1</td></tr>
 <tr>
 <td title='com.timp.test.MDR.RegistroECAC.RegistroECACExcluirMassa.excluirMassa()'><b>excluirMassa</b><br>Test class: com.timp.test.MDR.RegistroECAC.RegistroECACExcluirMassa</td>
 <td></td>
-<td>40</td>
+<td>50</td>
 <td>com.timp.test.MDR.RegistroECAC.RegistroECACExcluirMassa@512baff6</td></tr>
 <tr>
 <td title='com.timp.test.MDR.RegistroECAC.RegistroECACFiltrosAvan.filtrarAvanRegistroECAC()'><b>filtrarAvanRegistroECAC</b><br>Test class: com.timp.test.MDR.RegistroECAC.RegistroECACFiltrosAvan</td>
 <td></td>
-<td>97</td>
+<td>173</td>
 <td>com.timp.test.MDR.RegistroECAC.RegistroECACFiltrosAvan@14fc1f0</td></tr>
 </table><p>
 </body>

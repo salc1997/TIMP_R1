@@ -49,7 +49,7 @@ public class RelacionamentoEntreQuadrosEditarPO extends TestBaseSteven {
 	public WebElement quadro;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Data de Inicio de Vigência\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Data de Início de Vigência\"]")
 	public WebElement datainicial;
 	
 	

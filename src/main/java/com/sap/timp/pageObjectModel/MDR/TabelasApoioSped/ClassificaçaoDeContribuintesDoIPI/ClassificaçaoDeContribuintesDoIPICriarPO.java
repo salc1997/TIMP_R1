@@ -38,7 +38,7 @@ public class ClassificaçaoDeContribuintesDoIPICriarPO extends TestBaseSteven {
 	
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Inicio de Vigência\"]")
+	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Início de Vigência\"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")

@@ -78,7 +78,7 @@ public class CadastroMotivosReaberturaVisualizarPO extends TestBaseSteven {
 	public WebElement descricaoE;
 	@FindBy(xpath = "//input[contains(@placeholder,\"Impacto\")]")
 	public WebElement impactoE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Inicio\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Data de Início de Vigência \")]")
 	public WebElement dataVigenciaE;
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")

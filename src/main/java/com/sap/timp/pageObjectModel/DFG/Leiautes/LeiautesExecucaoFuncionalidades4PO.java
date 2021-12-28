@@ -702,7 +702,7 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//waitExpectElement(adicionarBloco);
-		sleep(12000);
+		sleep(24000);
 		
 		//ADICIONAR 5 BLOCOS
 		//DEBEN ADICIONARSE UNO POR UNO

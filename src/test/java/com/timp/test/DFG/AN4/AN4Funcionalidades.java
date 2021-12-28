@@ -50,7 +50,7 @@ public class AN4Funcionalidades extends TestBaseMassiel{
 
 	}
 
-	/*	@Test(priority = 3)
+	@Test(priority = 3)
 	public void AN4Criar1() {
 
 		boolean sucesso = aN4FuncionalidadesPO.Criar();
@@ -116,7 +116,7 @@ public class AN4Funcionalidades extends TestBaseMassiel{
 		}
 		
 
-	}*/
+	}
 
 	@Test(priority = 11)
 	public void criarAN4() {

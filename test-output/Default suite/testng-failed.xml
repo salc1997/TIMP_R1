@@ -3,13 +3,29 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracoesFundoSocialExcluir">
+=======
+      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaVisualizar">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
         <methods>
+<<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="excluir"/>
+=======
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <include name="afterClass"/>
+<<<<<<< HEAD
+=======
+          <include name="visualizar"/>
+          <include name="beforeClass"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.ConfiguracoesFundoSocial.ConfiguracoesFundoSocialExcluir -->
+=======
+      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaVisualizar -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

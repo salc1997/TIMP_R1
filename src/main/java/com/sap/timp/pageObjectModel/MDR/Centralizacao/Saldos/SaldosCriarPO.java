@@ -432,7 +432,7 @@ public class SaldosCriarPO extends TestBaseKenssy{
 		tributoR.click();
 		sleep(1000);
 		opcTributoR.click();
-		sleep(1000);
+		sleep(3000);
 		
 		attributeToBeXpath("//div[@id=\"tributeType\" and @class=\"add-form\"]/div/div","class", "base-autocomplete required");
 		sleep(2000);
@@ -510,7 +510,7 @@ public class SaldosCriarPO extends TestBaseKenssy{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		biblioteca.click();
 		sleep(2000);

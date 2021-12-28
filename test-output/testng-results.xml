@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="62" passed="29" failed="30" skipped="3">
+=======
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2021-12-22T21:37:45Z" name="Suite" finished-at="2021-12-22T23:11:35Z" duration-ms="5629987">
+=======
+  <suite started-at="2021-12-28T21:46:19Z" name="Default suite" finished-at="2021-12-28T21:50:47Z" duration-ms="267685">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2021-12-22T21:37:45Z" name="SCANC &gt; Relacionamento entre Quadros" finished-at="2021-12-22T21:45:43Z" duration-ms="477710">
       <class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosFiltroID">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosFiltroID@7e5c856f]" started-at="2021-12-22T21:41:15Z" name="beforeClass" finished-at="2021-12-22T21:41:27Z" duration-ms="11996" status="PASS">
+=======
+    <test started-at="2021-12-28T21:46:19Z" name="Default test" finished-at="2021-12-28T21:50:47Z" duration-ms="267685">
+      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa@36060e]" started-at="2021-12-28T21:46:20Z" name="beforeClass" finished-at="2021-12-28T21:46:44Z" duration-ms="23996" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="filtro()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosFiltroID@7e5c856f]" started-at="2021-12-22T21:41:27Z" name="filtro" finished-at="2021-12-22T21:42:31Z" duration-ms="63336" status="PASS">
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa@36060e]" started-at="2021-12-28T21:46:44Z" name="criar" finished-at="2021-12-28T21:50:10Z" duration-ms="206121" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- filtro -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosFiltroID@7e5c856f]" started-at="2021-12-22T21:42:31Z" name="afterClass" finished-at="2021-12-22T21:42:31Z" duration-ms="297" status="PASS">
           <reporter-output>
@@ -96,9 +115,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- excluir -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir@413f69cc]" started-at="2021-12-22T21:43:42Z" name="afterClass" finished-at="2021-12-22T21:43:42Z" duration-ms="336" status="PASS">
+=======
+        </test-method> <!-- criar -->
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa@36060e]" started-at="2021-12-28T21:50:10Z" name="excluir" finished-at="2021-12-28T21:50:47Z" depends-on-methods="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa.criar" duration-ms="37497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa@36060e]" started-at="2021-12-28T21:50:47Z" name="afterClass" finished-at="2021-12-28T21:50:47Z" duration-ms="45" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir -->
       <class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar@12d2ce03]" started-at="2021-12-22T21:39:51Z" name="beforeClass" finished-at="2021-12-22T21:40:05Z" duration-ms="13978" status="PASS">
@@ -2870,4 +2898,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoFiltroID -->
     </test> <!-- Preco de transferencia > Definicao Vinculacao -->
   </suite> <!-- Suite -->
+=======
+      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 </testng-results>

@@ -111,8 +111,14 @@ public class DocumentosFiscaisICMSCriarPO extends TestBaseSteven {
 		sleep(2000);
 		
 
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+	int botaoNao = rows("//button[text()=\"Não\"]");
+		
+		if (botaoNao > 0) {
+			nao.click();
+		}
+		
 		waitExpectElement(siguiente);
 		sleep(2000);
 		siguiente.click();

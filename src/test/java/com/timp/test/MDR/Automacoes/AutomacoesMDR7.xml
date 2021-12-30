@@ -12,6 +12,9 @@
 			<class 
 			name="com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFLeiaute"></class>
 			
+			<class 
+			name="com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFTabela"></class>
+			
 		</classes>
 	</test> 
 			

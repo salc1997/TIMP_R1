@@ -43,7 +43,7 @@ public class DefinicaoVinculacaoCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"inputDescription\"]/div/div/input")
 	public WebElement inputCheck;
 	
-	@FindBy(xpath = "//*[@id=\"code\"]")
+	@FindBy(xpath = "//div[@id=\"code\"]/div/div[1]/div[2]")
 	public WebElement comboCodigo;
 		
 	@FindBy(xpath = "//*[@id=\"vinculation\"]")
@@ -113,7 +113,8 @@ public boolean criar() {
 		sleep(1000);
 		inputCheck.sendKeys("1");
 		sim.click();	
-		sleep(10000);
+		sleep(30000);
+		
 		comboCodigo.click();
 		sleep(1000);
 		opcao.click();

@@ -20,19 +20,19 @@ public class DeXParaContraPartidaExcluirEmMassaPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@id=\"field-item-1\"]/div/div/div[2]")
 	public WebElement cboItem1;
 	
-	@FindBy(xpath = "//li[@class=\"list-item\" and @tabindex=\"0\" and @id and text()=\"1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\" and @tabindex=\"0\" and @id=\"option-2\"]")
 	public WebElement opcionItem1;
 	
 	@FindBy(xpath = "//div[@id=\"field-item-counterpart-1\"]/div/div/div[2]")
 	public WebElement cboItemContraPartida1;
 	
-	@FindBy(xpath = "//div[@class=\"list-item-text\" and text()=\"1\"]")
+	@FindBy(xpath = "//div[@class=\"list-item-text\" and text()=\"103031\"]")
 	public WebElement opcionItemContraPartida1;
 	
 	@FindBy(xpath = "//div[@id=\"field-item-documentType-1\"]/div/div/div[2]")
 	public WebElement cboTipoDocumento;
 	
-	@FindBy(xpath = "//li[@class=\"list-item\" and @tabindex=\"0\" and @id and text()=\"1\"]")
+	@FindBy(xpath = "//li[@class=\"list-item\" and text()=\"XG\"]")
 	public WebElement opcionTipoDocumento;
 	
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")

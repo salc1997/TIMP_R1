@@ -1,335 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name="SCANC &gt; Relacionamento entre Quadros(failed)">
-=======
-  <test thread-count="5" name="BSC Automacoes(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+  <test thread-count="5" name="AgrupadoPeloCampo(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar">
+      <class name="com.timp.test.BRB.AgrupadoPeloCampo">
         <methods>
           <include name="beforeClass"/>
-          <include name="editar"/>
+          <include name="agrupadoPeloCampo"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar -->
-      <class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir -->
-      <class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa">
-        <methods>
-          <include name="afterClass"/>
-          <include name="criar"/>
-          <include name="excluir"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa -->
-      <class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosCriar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="criar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosCriar -->
+      </class> <!-- com.timp.test.BRB.AgrupadoPeloCampo -->
     </classes>
-  </test> <!-- SCANC > Relacionamento entre Quadros(failed) -->
-  <test thread-count="5" name="Determinação de Relevância de Tarefa por Motivo de Reabertura &gt; Cadastro de Motivos de Reabertura(failed)">
+  </test> <!-- AgrupadoPeloCampo(failed) -->
+  <test thread-count="5" name="GruposAvancados(failed)">
     <classes>
-      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaDetalhes">
+      <class name="com.timp.test.BRB.GruposAvancados">
         <methods>
-          <include name="beforeClass"/>
+          <include name="gruposAvanzados"/>
           <include name="afterClass"/>
-          <include name="detalhes"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaDetalhes -->
-      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaCriar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaCriar -->
-      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluir">
-        <methods>
-          <include name="afterClass"/>
-          <include name="excluir"/>
+          <include name="eliminarGrupos"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluir -->
-      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaVisualizar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="visualizar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaVisualizar -->
-      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaEditar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="editar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaEditar -->
-      <class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-          <include name="excluir"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa -->
+      </class> <!-- com.timp.test.BRB.GruposAvancados -->
     </classes>
-  </test> <!-- Determinação de Relevância de Tarefa por Motivo de Reabertura > Cadastro de Motivos de Reabertura(failed) -->
-  <test thread-count="5" name="Parâmetros de criação de NF &gt; Cadastro de Nota Fiscal(failed)">
+  </test> <!-- GruposAvancados(failed) -->
+  <test thread-count="5" name="CrescenteEDecrescente(failed)">
     <classes>
-      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalEditar">
+      <class name="com.timp.test.BRB.CrescenteEDecrescente">
         <methods>
-          <include name="beforeClass"/>
-          <include name="editar"/>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="crescenteEDecrescente"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalEditar -->
+      </class> <!-- com.timp.test.BRB.CrescenteEDecrescente -->
     </classes>
-  </test> <!-- Parâmetros de criação de NF > Cadastro de Nota Fiscal(failed) -->
-  <test thread-count="5" name="Parâmetros de Oficialização de Livros(failed)">
+  </test> <!-- CrescenteEDecrescente(failed) -->
+  <test thread-count="5" name="ComentarioListaSuspensa(failed)">
     <classes>
-      <class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosDetalhes">
+      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
         <methods>
-          <include name="beforeClass"/>
+          <include name="listaSuspensa"/>
           <include name="afterClass"/>
-          <include name="detalhes"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosDetalhes -->
+      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
     </classes>
-  </test> <!-- Parâmetros de Oficialização de Livros(failed) -->
-  <test thread-count="5" name="Tabela de Apoio ECF(failed)">
+  </test> <!-- ComentarioListaSuspensa(failed) -->
+  <test thread-count="5" name="ComentarioLibre(failed)">
     <classes>
-      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaVersaoLeiaute">
+      <class name="com.timp.test.BRB.ComentarioLibre">
         <methods>
-          <include name="novaTabela"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaVersaoLeiaute -->
-      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar">
-        <methods>
-          <include name="criar"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar -->
-      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFAtualizar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="atualizar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFAtualizar -->
-      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFEditar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="editar"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFEditar -->
-      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluirMasas">
-        <methods>
-          <include name="ExcluirEmMassa"/>
-          <include name="criar"/>
+          <include name="comentarioLibre"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluirMasas -->
-      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaTabelaECF">
-        <methods>
-          <include name="afterClass"/>
-          <include name="novaTabela"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaTabelaECF -->
-      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluir">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluir -->
-      <class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizar">
-        <methods>
-          <include name="visualizar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizar -->
+      </class> <!-- com.timp.test.BRB.ComentarioLibre -->
     </classes>
-  </test> <!-- Tabela de Apoio ECF(failed) -->
-  <test thread-count="5" name="Controle de Crédito Tributário &gt; Status para BCE(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEVisualizar">
-=======
-      <class name="com.timp.test.BSC.CorreçãodeNFAprovarS_JOB">
-        <methods>
-          <include name="afterClass"/>
-          <include name="Aprovar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFAprovarS_JOB -->
-      <class name="com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
-        <methods>
-          <include name="beforeClass"/>
-          <include name="rejeitar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa -->
-      <class name="com.timp.test.BSC.CorrecaoDeNFAprovarEmMassaCJOB">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="Aprovar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorrecaoDeNFAprovarEmMassaCJOB -->
-      <class name="com.timp.test.BSC.CorreçãodeNFRejeitar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="rejeitar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFRejeitar -->
-      <class name="com.timp.test.BSC.CorreçãodeNFVisualizarHistorico">
-        <methods>
-          <include name="Aprovar"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFVisualizarHistorico -->
-      <class name="com.timp.test.BSC.CorreçãodeNFEditar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="executar"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFEditar -->
-      <class name="com.timp.test.BSC.CorreçãodeNFVisualizar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="visualizar"/>
-          <include name="afterClass"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEVisualizar -->
-    </classes>
-  </test> <!-- Controle de Crédito Tributário > Status para BCE(failed) -->
-  <test thread-count="5" name="Parametros Criacao NF &gt; Cadastro Fornecedor(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorFiltroId">
-=======
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFVisualizar -->
-      <class name="com.timp.test.BSC.FiltroPorIDRegistroCriar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
-        <methods>
-          <include name="afterClass"/>
-          <include name="filtroId"/>
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-        </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorFiltroId -->
-      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorVisualizar">
-        <methods>
-          <include name="visualizar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorVisualizar -->
-      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorCriar">
-        <methods>
-=======
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
-          <include name="criar"/>
-<<<<<<< HEAD
-          <include name="beforeClass"/>
-=======
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
-          <include name="afterClass"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorCriar -->
-      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorExcluir">
-=======
-      </class> <!-- com.timp.test.BSC.FiltroPorIDRegistroCriar -->
-      <class name="com.timp.test.BSC.CorrecaoDeNFDetalhes">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
-        <methods>
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="excluir"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorExcluir -->
-      <class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorEditar">
-        <methods>
-          <include name="editar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorEditar -->
-    </classes>
-  </test> <!-- Parametros Criacao NF > Cadastro Fornecedor(failed) -->
-  <test thread-count="5" name=" Preço de Transferência &gt; Commoditie para TP(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPFiltroID">
-        <methods>
-          <include name="filtro"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPFiltroID -->
-      <class name="com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPCriar">
-        <methods>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPCriar -->
-    </classes>
-  </test> <!--  Preço de Transferência > Commoditie para TP(failed) -->
-  <test thread-count="5" name="Preco de transferencia &gt; Definicao Vinculacao(failed)">
-    <classes>
-      <class name="com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar">
-        <methods>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar -->
-      <class name="com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoFiltroID">
-        <methods>
-          <include name="filtro"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoFiltroID -->
-    </classes>
-  </test> <!-- Preco de transferencia > Definicao Vinculacao(failed) -->
-=======
-          <include name="Aprovar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorrecaoDeNFDetalhes -->
-      <class name="com.timp.test.BSC.CorreçãodeNFAprovarC_JOB">
-        <methods>
-          <include name="afterClass"/>
-          <include name="Aprovar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFAprovarC_JOB -->
-    </classes>
-  </test> <!-- BSC Automacoes(failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+  </test> <!-- ComentarioLibre(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -12,6 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseKenssy;
 
 public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends TestBaseKenssy  {
+	//TSTNG-2230
 	//NUEVA CONFIGURACION HIERARQUIA
 		@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][1]")
 		public WebElement hierarquias;

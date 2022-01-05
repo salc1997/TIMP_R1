@@ -30,6 +30,7 @@ public class TabelaDeApoioECFVisualizar extends TestBaseFernando{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
   @Test()

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFVisualizar">
+      <class name="com.timp.test.BRB.Cabeçalho">
         <methods>
+          <include name="cabeçalho"/>
           <include name="beforeClass"/>
-          <include name="Visualizar"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFVisualizar -->
+      </class> <!-- com.timp.test.BRB.Cabeçalho -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

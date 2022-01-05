@@ -247,7 +247,7 @@ public class AssociaçãoExcluirEmMassaPO extends TestBaseKenssy{
 		*/
 		sleep(2000);
 		inputAtividadeFiscal.click();		
-		sleep(2000);
+		sleep(6000);
 		opcionComboAtividadeFiscal.click();
 		sleep(2000);
 		

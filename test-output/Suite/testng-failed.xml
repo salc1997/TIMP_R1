@@ -1,60 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="AgrupadoPeloCampo(failed)">
+  <test thread-count="5" name=" ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed)">
     <classes>
-      <class name="com.timp.test.BRB.AgrupadoPeloCampo">
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir">
         <methods>
-          <include name="beforeClass"/>
-          <include name="agrupadoPeloCampo"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.AgrupadoPeloCampo -->
-    </classes>
-  </test> <!-- AgrupadoPeloCampo(failed) -->
-  <test thread-count="5" name="GruposAvancados(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.GruposAvancados">
-        <methods>
-          <include name="gruposAvanzados"/>
-          <include name="afterClass"/>
-          <include name="eliminarGrupos"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.GruposAvancados -->
-    </classes>
-  </test> <!-- GruposAvancados(failed) -->
-  <test thread-count="5" name="CrescenteEDecrescente(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.CrescenteEDecrescente">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="crescenteEDecrescente"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.CrescenteEDecrescente -->
-    </classes>
-  </test> <!-- CrescenteEDecrescente(failed) -->
-  <test thread-count="5" name="ComentarioListaSuspensa(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
-        <methods>
-          <include name="listaSuspensa"/>
+          <include name="excluir"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
-    </classes>
-  </test> <!-- ComentarioListaSuspensa(failed) -->
-  <test thread-count="5" name="ComentarioLibre(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.ComentarioLibre">
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir -->
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar">
         <methods>
-          <include name="comentarioLibre"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="EditarRelacionamento"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar -->
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia">
+        <methods>
+          <include name="afterClass"/>
+          <include name="excluirCopia"/>
+          <include name="editarCopia"/>
+          <include name="beforeClass"/>
+          <include name="criarCopia"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia -->
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa">
+        <methods>
+          <include name="criarRelacionamento"/>
+          <include name="excluirMassa"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.ComentarioLibre -->
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa -->
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="VisualizarRelacionamento"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar -->
     </classes>
-  </test> <!-- ComentarioLibre(failed) -->
+  </test> <!--  ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed) -->
+  <test thread-count="5" name=" ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS (failed)">
+    <classes>
+      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criarcopia"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia -->
+    </classes>
+  </test> <!--  ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS (failed) -->
 </suite> <!-- Failed suite [Suite] -->

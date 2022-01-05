@@ -12,6 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseSteven;
 
 public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO extends TestBaseSteven {
+	//TSTNG-2265
 	
 	// TAA	
 	@FindBy(xpath = "//div[text()=\"TAA\"]")

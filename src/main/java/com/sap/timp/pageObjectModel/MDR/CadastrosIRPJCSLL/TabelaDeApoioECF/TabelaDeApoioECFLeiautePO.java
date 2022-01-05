@@ -41,6 +41,9 @@ public class TabelaDeApoioECFLeiautePO extends TestBaseMassiel{
 
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement aceitar;
+	
+	@FindBy(xpath="//li[@id][1]")
+	public WebElement opcTipoImposto;
 
 
 	public TabelaDeApoioECFLeiautePO() {
@@ -100,11 +103,12 @@ public class TabelaDeApoioECFLeiautePO extends TestBaseMassiel{
 		aceitar.click();invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(10000);
+		sleep(16000);
 
 		boolean sucesso = false;
 		int rows2 = driver.findElements(By.xpath("//div[@id=\"id-version-list\"]/div/div/div/div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size(); 
 		String idB = driver.findElement(By.xpath("//div[@id=\"id-version-list\"]/div/div/div/div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows2+"]/div[2]/div")).getText();
+	
 		System.out.println(id);
 
 		System.out.println("-----------------------------");
@@ -113,6 +117,10 @@ public class TabelaDeApoioECFLeiautePO extends TestBaseMassiel{
 
 		double idD = Integer.valueOf(id); 
 		double idBD = Integer.valueOf(idB);
+		
+		String Rows3 = String.valueOf(rows2);
+		
+		idInserir("TabelaDeApoioECFLeiute", Rows3);
 
 		if (idBD > idD) { 
 			sucesso = true; 
@@ -123,5 +131,59 @@ public class TabelaDeApoioECFLeiautePO extends TestBaseMassiel{
 		System.out.println(sucesso);
 		
 		return sucesso;
+	}
+	
+	public boolean Excluir() {
+
+		System.out.println("--------------EXCLUIR---------------");
+		//pega o ultimo id que foi gerado no criar
+		String idRegistro = idObter("TabelaDeApoioECFLeiute");
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@id=\"id-version-list\"]/div/div/div/div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+idRegistro+"]/div[1]"));
+	
+		actionsMoveToElementElement(menu);
+		sleep(2000);
+		menu.click();
+		sleep(1000);
+		
+		WebElement Excluir = driver.findElement(By.xpath("//div[@class=\"popover active\"]/ul/li/span[text()=\"Excluir\"]"));
+		
+		Excluir.click();
+		sleep(6000);
+		
+	
+		
+		driver.navigate().refresh();
+		sleep(2000);
+		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
+		
+		leiaute.click();invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); 
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		
+		
+		
+		int rows = driver.findElements(By.xpath("//div[@id=\"id-version-list\"]/div/div/div/div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size(); 
+		
+		double rows3 = Integer.valueOf(idRegistro);
+		
+		
+		
+		System.out.println( rows); // Ultimo registro despues de excluir el registro de la automatizacion y recargar
+		
+		boolean sucesso = false;
+		
+		if (rows != rows3 ) {
+			sucesso= true;
+		}
+		System.out.println(sucesso);
+		return sucesso;
+	  	
+		
+		
 	}
 }

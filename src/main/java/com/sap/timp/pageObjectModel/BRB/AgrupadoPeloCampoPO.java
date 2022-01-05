@@ -22,7 +22,7 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 	public WebElement valorICMS;
 	@FindBy(xpath = "//*[@id=\"draggable-115\"]/div/div/div")				
 	public WebElement menuC;
-	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/ul/li[4]")				
+	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/ul/li[3]")				
 	public WebElement agrupado;
 	@FindBy(xpath = "//*[@id=\"editor-toolbar\"]/div/div/ul/li[1]/button")
 	public WebElement gravar;
@@ -33,7 +33,7 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 	/*@FindBy(xpath = "//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/div[1]/span[4]")				
 	public WebElement data1;*/
 	
-	@FindBy(xpath = "//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]")				
+	@FindBy(xpath = "//*[@id=\"table-fixed-wrapper\"]/div[3]/div[1]/div[1]/span")				
 	public WebElement data1;
 	@FindBy(xpath = "//div[@data-group =\"1\"]")				
 	public WebElement cfop;
@@ -152,7 +152,7 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 			f = f+1;
 		}
 				
-		data1C.click();
+		//data1C.click();
 		
 		return sucesso;
 		

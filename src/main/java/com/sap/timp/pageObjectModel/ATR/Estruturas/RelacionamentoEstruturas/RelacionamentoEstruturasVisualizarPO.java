@@ -131,8 +131,8 @@ public class RelacionamentoEstruturasVisualizarPO extends TestBaseSteven{
 		sleep(1000);
 		acao.click();
 		
-		sleep(92000);
-		
+		sleep(100000);
+		sleep(40000);
 		waitExpectElement(grupo1);
 //		invisibilityOfElementOverlay();
 		

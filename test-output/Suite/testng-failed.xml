@@ -1,28 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="AgrupadoPeloCampo(failed)">
+=======
+  <test thread-count="5" name=" ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.AgrupadoPeloCampo">
+=======
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
         <methods>
+<<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="agrupadoPeloCampo"/>
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.timp.test.BRB.AgrupadoPeloCampo -->
+=======
+          <include name="excluir"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir -->
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="EditarRelacionamento"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar -->
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia">
+        <methods>
+          <include name="afterClass"/>
+          <include name="excluirCopia"/>
+          <include name="editarCopia"/>
+          <include name="beforeClass"/>
+          <include name="criarCopia"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia -->
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa">
+        <methods>
+          <include name="criarRelacionamento"/>
+          <include name="excluirMassa"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa -->
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="VisualizarRelacionamento"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
     </classes>
+<<<<<<< HEAD
   </test> <!-- AgrupadoPeloCampo(failed) -->
   <test thread-count="5" name="GruposAvancados(failed)">
+=======
+  </test> <!--  ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed) -->
+  <test thread-count="5" name=" ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS (failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.GruposAvancados">
         <methods>
           <include name="gruposAvanzados"/>
           <include name="afterClass"/>
           <include name="eliminarGrupos"/>
+=======
+      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criarcopia"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.GruposAvancados -->
+=======
+      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
     </classes>
+<<<<<<< HEAD
   </test> <!-- GruposAvancados(failed) -->
   <test thread-count="5" name="CrescenteEDecrescente(failed)">
     <classes>
@@ -57,4 +121,7 @@
       </class> <!-- com.timp.test.BRB.ComentarioLibre -->
     </classes>
   </test> <!-- ComentarioLibre(failed) -->
+=======
+  </test> <!--  ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS (failed) -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 </suite> <!-- Failed suite [Suite] -->

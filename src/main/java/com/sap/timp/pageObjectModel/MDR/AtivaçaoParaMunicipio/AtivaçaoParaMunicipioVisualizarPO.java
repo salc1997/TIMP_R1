@@ -86,7 +86,7 @@ public class AtivaçaoParaMunicipioVisualizarPO extends TestBaseSteven {
 	public WebElement filialCentralizadaE;
 	@FindBy(xpath = "//input[contains(@placeholder,\"Fantasia\")]")
 	public WebElement fantasiaE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"CNPJ\")]")
+	@FindBy(xpath = "//div[@id=\"cnpj\"]/div/div/input")
 	public WebElement cnpjE;
 	
 	

@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="Banco De Credito Extemporaneo &gt; Configuracao e Execucao  &gt; Executados(failed)">
+=======
+  <test thread-count="5" name="DFG - Leiautes(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar">
+=======
+      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
         <methods>
+<<<<<<< HEAD
+=======
+          <include name="filtrosFechaUsuarioCriado"/>
+          <include name="filtrosId"/>
+          <include name="filtrosVersao"/>
+          <include name="filtrosFechaUsuarioModificado"/>
+          <include name="filtrosUsuarioModificado"/>
+          <include name="filtrosUsuarioCriado"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="beforeClass"/>
           <include name="executarEditar"/>
         </methods>
@@ -19,7 +37,12 @@
           <include name="beforeClass"/>
           <include name="afterClass"/>
           <include name="excluir"/>
+=======
+          <include name="filtrosFiltroTipo"/>
+          <include name="beforeClass"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExecucao.PainelBCEConfiguracaoeExecucaoExcluir -->
       <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExecucao.PainelBCEConfiguracaoeExecucaoVisualizar">
         <methods>
@@ -28,7 +51,11 @@
           <include name="visualizar"/>
         </methods>
       </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExecucao.PainelBCEConfiguracaoeExecucaoVisualizar -->
+=======
+      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
     </classes>
+<<<<<<< HEAD
   </test> <!-- Banco De Credito Extemporaneo > PainelBCE(failed) -->
   <test thread-count="5" name="Banco De Credito Tributaro &gt; Configuração de Banco de Crédito Tributário(failed)">
     <classes>
@@ -95,4 +122,7 @@
       </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar -->
     </classes>
   </test> <!-- Banco De Ocorrecias >  Executados(failed) -->
+=======
+  </test> <!-- DFG - Leiautes(failed) -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 </suite> <!-- Failed suite [Suite] -->

@@ -526,6 +526,10 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[text()=\"DCTF\"]")
 	public WebElement tipoOTC2;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement no;
+	
+	
 	
 	public AN3FuncionalidadesPO() {
 
@@ -1220,6 +1224,9 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		}
 		
 		sleep(2000);
+		
+	//	no.click();
+		sleep(8000);
 		
 		executarB.click();
 		

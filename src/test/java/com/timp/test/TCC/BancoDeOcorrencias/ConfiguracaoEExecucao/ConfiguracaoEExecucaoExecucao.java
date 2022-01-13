@@ -42,6 +42,7 @@ public class ConfiguracaoEExecucaoExecucao extends TestBaseSteven {
 		
 		boolean sucesso = configuracaoEExecucaoExecucaoPO.executar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
 
 }

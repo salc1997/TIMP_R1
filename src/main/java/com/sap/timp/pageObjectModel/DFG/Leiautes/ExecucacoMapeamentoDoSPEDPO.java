@@ -722,7 +722,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBaseKenssy  {
 		sleep(1000);
 		String nomeValor = nomeSPED.getAttribute("value");
 		System.out.println("nombreInicial SPED "+nomeValor);
-		
+		sleep(9000);
 		leiaute.click();
 		sleep(2000);
 
@@ -828,7 +828,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBaseKenssy  {
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		
 		rowsSPED = driver.findElements(By.xpath("//div[@data-id and @class=\"tr\"]")).size();
 		

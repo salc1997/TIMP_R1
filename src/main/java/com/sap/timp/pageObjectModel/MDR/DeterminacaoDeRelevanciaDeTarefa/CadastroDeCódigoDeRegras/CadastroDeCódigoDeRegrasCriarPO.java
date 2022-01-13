@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.CadastroDeCódigoDeRegras;
+package com.sap.timp.pageObjectModel.MDR.DeterminacaoDeRelevanciaDeTarefa.CadastroDeCódigoDeRegras;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -26,7 +26,7 @@ public class CadastroDeCódigoDeRegrasCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[contains(@placeholder,\"Preencher a descrição do Cadastro de Código de Regras\")]")
 	public WebElement descricao;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Data de Inicio de Vigência \")]")
+	@FindBy(xpath = "//div[@id=\"validFrom\"]/div/div[1]/input")
 	public WebElement validade;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")

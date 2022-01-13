@@ -55,7 +55,7 @@ public class DeterminacaoDeRelevanciaPorRegraEditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@id=\"output\"]/div/div/div[2]")
 	public WebElement saida;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//div[@id=\"validFrom\"]/div/div[1]/input")
 	public WebElement datainiciovigencia;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")

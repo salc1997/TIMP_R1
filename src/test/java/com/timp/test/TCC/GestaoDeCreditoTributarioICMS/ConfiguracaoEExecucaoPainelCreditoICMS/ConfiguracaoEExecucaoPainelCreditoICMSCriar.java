@@ -29,7 +29,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriar extends TestBaseMassiel
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		 driver.close();
 	}
 
 
@@ -41,6 +41,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriar extends TestBaseMassiel
 		
 		boolean sucesso = configuracaoEExecucaoPainelCreditoICMSCriarPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
 
 }

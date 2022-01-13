@@ -13,6 +13,7 @@ import com.sap.timp.base.TestBaseKenssy;
 
 
 public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseKenssy{
+	//TSTNG-838
 	
 	//CRIAR CONFIGURACION
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][3]")

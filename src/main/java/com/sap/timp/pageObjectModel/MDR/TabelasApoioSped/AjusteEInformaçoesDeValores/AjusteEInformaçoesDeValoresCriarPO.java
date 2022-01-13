@@ -24,7 +24,7 @@ public class AjusteEInformaçoesDeValoresCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher a descrição do Ajustes e Informações de Valores Provenientes de Documento Fiscal\"]")
 	public WebElement descricao;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//div[@id=\"Validity\"]/div/div[1]/input")
 	public WebElement datadeiniciodevigencia;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")

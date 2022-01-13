@@ -34,7 +34,7 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Agrupador de CFOP\"]")
 	public WebElement agrupadorcfop;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Data Inicial\"]")
+	@FindBy(xpath = "//div[@id=\"validityFrom\"]/div/div[1]/input")
 	public WebElement dataincial;
 	
 	
@@ -90,6 +90,8 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//waitExpectElement(empresa);
 		sleep(12000);
+		actionsMoveToElementElement(empresa);
+		sleep(2000);
 		
 		empresa.click();
 		sleep(7000);

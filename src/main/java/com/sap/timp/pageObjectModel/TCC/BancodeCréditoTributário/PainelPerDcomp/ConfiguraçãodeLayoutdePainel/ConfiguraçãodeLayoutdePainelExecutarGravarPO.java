@@ -224,7 +224,7 @@ public class ConfiguraçãodeLayoutdePainelExecutarGravarPO extends TestBaseSteven
 		  
 		boolean sucesso = false;
 		
-/*		if(valorDescricaoGuardado.equals(valorDescricao)) {
+	/*	if(valorDescricaoGuardado.equals(valorDescricao)) {
 	 		System.out.println("");
 			System.out.println("Valor editado satisfactoriamente...");
 			sucesso = true;

@@ -178,7 +178,7 @@ public class RegistroECACVisualizarPO extends TestBaseMassiel {
 		
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		String textoEmpresa1 = Empresa1.getAttribute("value");
 		String textoUF1 = UF1.getAttribute("value");

@@ -1,12 +1,12 @@
-package com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.CadastroDeCódigoDeRegras;
+package com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.CadastroDeCódigoDeRegras;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
+import com.sap.timp.pageObjectModel.MDR.DeterminacaoDeRelevanciaDeTarefa.CadastroDeCódigoDeRegras.CadastroDeCódigoDeRegrasCriarPO;
 import com.sap.timp.pageObjectModel.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraCriarPO;
-import com.sap.timp.pageObjectModel.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.CadastroDeCódigoDeRegras.CadastroDeCódigoDeRegrasCriarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -31,7 +31,7 @@ public class CadastroDeCódigoDeRegrasCriar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 

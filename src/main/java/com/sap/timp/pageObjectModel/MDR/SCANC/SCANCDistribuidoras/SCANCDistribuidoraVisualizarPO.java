@@ -43,7 +43,7 @@ public class SCANCDistribuidoraVisualizarPO extends TestBaseSteven {
 	public WebElement ufE;
 	@FindBy(xpath = "//input[contains(@placeholder,\"Nome\")]")
 	public WebElement nomeE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"CNPJ\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Selecionar Cnpj\")]")
 	public WebElement cnpjE;
 	@FindBy(xpath = "//input[contains(@placeholder,\"Validade De\")]")
 	public WebElement dataVigenciaE;
@@ -137,7 +137,7 @@ public class SCANCDistribuidoraVisualizarPO extends TestBaseSteven {
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 
 		String empresaE1 = empresaE.getText();
 		String ufE1 = ufE.getText();

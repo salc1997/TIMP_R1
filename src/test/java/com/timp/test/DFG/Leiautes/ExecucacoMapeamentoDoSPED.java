@@ -63,7 +63,7 @@ public class ExecucacoMapeamentoDoSPED extends TestBaseKenssy {
 		}
 	}
 	
-	@Test(priority = 4)
+/*	@Test(priority = 4)
 	public void executar() {
 		ArrayList<Boolean> sucesso =execucacoMapeamentoDoSPEDPO.executar();
 		
@@ -79,6 +79,6 @@ public class ExecucacoMapeamentoDoSPED extends TestBaseKenssy {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Eliminado);
 		}
-	}
+	}*/
 
 }

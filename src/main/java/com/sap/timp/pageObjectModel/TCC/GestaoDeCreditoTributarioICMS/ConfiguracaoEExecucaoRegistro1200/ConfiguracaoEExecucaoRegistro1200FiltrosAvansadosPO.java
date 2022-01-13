@@ -138,7 +138,7 @@ public class ConfiguracaoEExecucaoRegistro1200FiltrosAvansadosPO extends TestBas
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		sleep(8000);
+		sleep(13000);
 		
 		uf.click();
 		sleep(2000);
@@ -151,7 +151,7 @@ public class ConfiguracaoEExecucaoRegistro1200FiltrosAvansadosPO extends TestBas
 		opcUf.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		sleep(14000);
 		
 		filial.click();
 		sleep(2000);

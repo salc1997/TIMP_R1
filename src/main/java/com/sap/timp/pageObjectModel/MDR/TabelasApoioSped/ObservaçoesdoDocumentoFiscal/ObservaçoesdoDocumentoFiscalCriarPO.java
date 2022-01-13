@@ -134,7 +134,7 @@ public class ObservaçoesdoDocumentoFiscalCriarPO extends TestBaseMassiel {
 		biblioteca.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		siguiente.click();
 		

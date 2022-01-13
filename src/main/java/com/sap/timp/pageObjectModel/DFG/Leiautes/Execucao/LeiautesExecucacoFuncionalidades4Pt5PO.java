@@ -1741,7 +1741,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 		//li[@id="7754"]
 		waitExpectElement(opcLeiauteObter);
 		opcLeiauteObter.click();
-		sleep(4000);
+		sleep(8000);
 		
 		versaoConfiguracao.click();
 		sleep(3000);

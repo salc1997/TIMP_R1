@@ -3,25 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.ComentarioLibre">
-=======
-      <class name="com.timp.test.BRB.Cabeçalho">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM110.RegistroM110Visualizar">
         <methods>
-<<<<<<< HEAD
-          <include name="comentarioLibre"/>
-=======
-          <include name="cabeçalho"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
-          <include name="beforeClass"/>
           <include name="afterClass"/>
+          <include name="visualizar"/>
+          <include name="beforeClass"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.ComentarioLibre -->
-=======
-      </class> <!-- com.timp.test.BRB.Cabeçalho -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM110.RegistroM110Visualizar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

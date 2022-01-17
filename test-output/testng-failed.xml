@@ -3,6 +3,7 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="BSC Automacoes(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BSC.CorreçãodeNFAprovarS_JOB">
         <methods>
           <include name="afterClass"/>
@@ -53,11 +54,24 @@
         </methods>
       </class> <!-- com.timp.test.BSC.CorreçãodeNFVisualizar -->
       <class name="com.timp.test.BSC.FiltroPorIDRegistroCriar">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM110.RegistroM110Visualizar">
+=======
+      <class name="com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.CadastroDeCódigoDeRegras.CadastroDeCódigoDeRegrasCriar">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
+=======
           <include name="beforeClass"/>
           <include name="criar"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <include name="afterClass"/>
+          <include name="visualizar"/>
+          <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BSC.FiltroPorIDRegistroCriar -->
       <class name="com.timp.test.BSC.CorrecaoDeNFDetalhes">
         <methods>
@@ -73,6 +87,13 @@
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.timp.test.BSC.CorreçãodeNFAprovarC_JOB -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM110.RegistroM110Visualizar -->
+=======
+      </class> <!-- com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.CadastroDeCódigoDeRegras.CadastroDeCódigoDeRegrasCriar -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- BSC Automacoes(failed) -->
 </suite> <!-- Failed suite [Suite] -->

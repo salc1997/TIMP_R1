@@ -12,7 +12,7 @@
 		</classes>
 	</test> 
 	
-	<test name="Tabelas de Apoio do Sped > Código de Codigo de Contribuição Social Apurada" >
+	<test name="Tabelas de Apoio do Sped > Código de  Contribuição Social Apurada" >
 		<classes>
 			<class 
 			name="com.timp.test.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada.CodigoContribuiçaoSocialApuradaCriar">
@@ -179,7 +179,7 @@
 		</classes>
 	</test>
 	
-	<test name="Tabela de Apoio do SPED > Observações do Documento Fiscal - Registro 0461" >
+	<test name="Tabela de Apoio do SPED > Observações do Documento Fiscal " >
 		<classes>
 			<class 
 			name="com.timp.test.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçoesdoDocumentoFiscalCriar">

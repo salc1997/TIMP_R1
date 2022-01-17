@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.CadastroDeCódigoDeRegras.CadastroDeCódigoDeRegrasCriar">
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Criar">
         <methods>
-          <include name="beforeClass"/>
           <include name="criar"/>
           <include name="afterClass"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.CadastroDeCódigoDeRegras.CadastroDeCódigoDeRegrasCriar -->
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Criar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

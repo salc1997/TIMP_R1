@@ -78,7 +78,7 @@ public class RegrasDeAuditoriaN1CriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[@placeholder=\" selecionar Data\"]")
 	public WebElement dataValidadeDe;
 		
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
@@ -232,8 +232,8 @@ public class RegrasDeAuditoriaN1CriarPO extends TestBaseSteven{
 		//dataValidadeDe.click();
 		sleep(1000);
 		dataValidadeDe.sendKeys("01/01/2013");
-		sleep(1000);		
-		waitExpectElement(aplicar);
+		sleep(2000);		
+		//waitExpectElement(aplicar);
 		sleep(2000);
 		aplicar.click();
 		sleep(2000);
@@ -299,7 +299,7 @@ public class RegrasDeAuditoriaN1CriarPO extends TestBaseSteven{
 		}*/
 		
 		nao.click();
-		sleep(36000);
+		sleep(46000);
 		
 		biblioteca.click();
 		sleep(2000);

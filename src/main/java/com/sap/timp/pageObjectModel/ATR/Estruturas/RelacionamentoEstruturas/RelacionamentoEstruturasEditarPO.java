@@ -123,12 +123,14 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		
 		invisibilityOfElementOverlay();
 		
+		sleep(2000);
+		
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/div"));
-		WebElement acao = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/div/div/ul/li/span[text()=\"Editar\"]"));
-		
-		
+	
 		menu.click();
-		sleep(1000);
+		sleep(2000);
+		
+		WebElement acao = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/div/div/ul/li/span[text()=\"Editar\"]"));
 		acao.click();
 		
 		sleep(100000);

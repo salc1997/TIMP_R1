@@ -1,15 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="BSC Automacoes(failed)">
     <classes>
-      <class name="com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.CadastroDeCódigoDeRegras.CadastroDeCódigoDeRegrasCriar">
+      <class name="com.timp.test.BSC.CorreçãodeNFAprovarS_JOB">
+        <methods>
+          <include name="afterClass"/>
+          <include name="Aprovar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BSC.CorreçãodeNFAprovarS_JOB -->
+      <class name="com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="rejeitar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa -->
+      <class name="com.timp.test.BSC.CorrecaoDeNFAprovarEmMassaCJOB">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="Aprovar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BSC.CorrecaoDeNFAprovarEmMassaCJOB -->
+      <class name="com.timp.test.BSC.CorreçãodeNFRejeitar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="rejeitar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BSC.CorreçãodeNFRejeitar -->
+      <class name="com.timp.test.BSC.CorreçãodeNFVisualizarHistorico">
+        <methods>
+          <include name="Aprovar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BSC.CorreçãodeNFVisualizarHistorico -->
+      <class name="com.timp.test.BSC.CorreçãodeNFEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="executar"/>
+        </methods>
+      </class> <!-- com.timp.test.BSC.CorreçãodeNFEditar -->
+      <class name="com.timp.test.BSC.CorreçãodeNFVisualizar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="visualizar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BSC.CorreçãodeNFVisualizar -->
+      <class name="com.timp.test.BSC.FiltroPorIDRegistroCriar">
         <methods>
           <include name="beforeClass"/>
           <include name="criar"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.CadastroDeCódigoDeRegras.CadastroDeCódigoDeRegrasCriar -->
+      </class> <!-- com.timp.test.BSC.FiltroPorIDRegistroCriar -->
+      <class name="com.timp.test.BSC.CorrecaoDeNFDetalhes">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="Aprovar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BSC.CorrecaoDeNFDetalhes -->
+      <class name="com.timp.test.BSC.CorreçãodeNFAprovarC_JOB">
+        <methods>
+          <include name="afterClass"/>
+          <include name="Aprovar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BSC.CorreçãodeNFAprovarC_JOB -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- BSC Automacoes(failed) -->
+</suite> <!-- Failed suite [Suite] -->

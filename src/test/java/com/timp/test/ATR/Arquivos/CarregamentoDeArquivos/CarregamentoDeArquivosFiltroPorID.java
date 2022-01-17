@@ -32,7 +32,7 @@ public class CarregamentoDeArquivosFiltroPorID extends TestBaseSteven{
 	  @AfterClass
 	  public void afterClass() {
 		  
-		driver.close();
+		  driver.close();
 
 	  }
 	  
@@ -50,7 +50,7 @@ public class CarregamentoDeArquivosFiltroPorID extends TestBaseSteven{
 			}
 			
 		
-	 		sleep(3000);
+	 		sleep(4000);
 	 	}
 	
  

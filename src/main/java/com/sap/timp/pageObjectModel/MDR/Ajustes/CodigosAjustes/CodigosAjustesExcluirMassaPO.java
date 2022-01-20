@@ -172,9 +172,8 @@ public class CodigosAjustesExcluirMassaPO extends TestBaseSteven {
 		tipoTributo.click();
 		sleep(1000);
 		opcion.click();
-		sleep(1000);
-		attributeToBeXpath("//div[@id=\"tributeTypeDetail\"]/div/div/div/div[1]", "class", "input-wrapper base-input  required");
-		sleep(2000);
+
+		sleep(3000);
 		detalheTributo.click();
 		sleep(1000);
 		detalheTributoO.click();
@@ -278,6 +277,11 @@ public class CodigosAjustesExcluirMassaPO extends TestBaseSteven {
 		
 		biblioteca.click();
 		
+		sleep(2000);
+		
+		nao.click();
+		
+		sleep(2000);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

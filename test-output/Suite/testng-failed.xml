@@ -1,242 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name=" ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS (failed)">
-=======
-<<<<<<< HEAD
-  <test thread-count="5" name="BSC Automacoes(failed)">
-=======
-<<<<<<< HEAD
-  <test thread-count="5" name="Banco De Credito Extemporaneo &gt; Configuracao e Execucao  &gt; Executados(failed)">
-=======
-  <test thread-count="5" name="DFG - Leiautes(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+  <test thread-count="5" name=" ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasExcluir">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BSC.CorreçãodeNFAprovarS_JOB">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditar">
-=======
-      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar">
         <methods>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-          <include name="filtrosFechaUsuarioCriado"/>
-          <include name="filtrosId"/>
-          <include name="filtrosVersao"/>
-          <include name="filtrosFechaUsuarioModificado"/>
-          <include name="filtrosUsuarioModificado"/>
-          <include name="filtrosUsuarioCriado"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+          <include name="beforeClass"/>
           <include name="afterClass"/>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-          <include name="Aprovar"/>
-=======
-<<<<<<< HEAD
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-<<<<<<< HEAD
-=======
-=======
-          <include name="filtrosFiltroTipo"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-          <include name="beforeClass"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+          <include name="EditarRelacionamento"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasExcluir -->
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar -->
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia">
+        <methods>
+          <include name="afterClass"/>
+          <include name="excluirCopia"/>
+          <include name="editarCopia"/>
+          <include name="beforeClass"/>
+          <include name="criarCopia"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia -->
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="criarRelacionamento"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar -->
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa">
+        <methods>
+          <include name="criarRelacionamento"/>
+          <include name="excluirMassa"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa -->
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="VisualizarRelacionamento"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar -->
     </classes>
-  </test> <!--  ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS (failed) -->
-  <test thread-count="5" name=" ATR - ESTRUCTURAS - MAPAMENTO DE PARAMETROS DE ENTRADA (failed)">
-    <classes>
-      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaEditar">
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFAprovarS_JOB -->
-      <class name="com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="rejeitar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa -->
-      <class name="com.timp.test.BSC.CorrecaoDeNFAprovarEmMassaCJOB">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="Aprovar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorrecaoDeNFAprovarEmMassaCJOB -->
-      <class name="com.timp.test.BSC.CorreçãodeNFRejeitar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="rejeitar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFRejeitar -->
-      <class name="com.timp.test.BSC.CorreçãodeNFVisualizarHistorico">
-        <methods>
-          <include name="Aprovar"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFVisualizarHistorico -->
-      <class name="com.timp.test.BSC.CorreçãodeNFEditar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="executar"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFEditar -->
-      <class name="com.timp.test.BSC.CorreçãodeNFVisualizar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="visualizar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFVisualizar -->
-      <class name="com.timp.test.BSC.FiltroPorIDRegistroCriar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.FiltroPorIDRegistroCriar -->
-      <class name="com.timp.test.BSC.CorrecaoDeNFDetalhes">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="Aprovar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorrecaoDeNFDetalhes -->
-      <class name="com.timp.test.BSC.CorreçãodeNFAprovarC_JOB">
-        <methods>
-          <include name="afterClass"/>
-          <include name="Aprovar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFAprovarC_JOB -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExecucao.PainelBCEConfiguracaoeExecucaoExcluir -->
-      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExecucao.PainelBCEConfiguracaoeExecucaoVisualizar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
-        <methods>
-          <include name="afterClass"/>
-<<<<<<< HEAD
-=======
-          <include name="beforeClass"/>
-          <include name="visualizar"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExecucao.PainelBCEConfiguracaoeExecucaoVisualizar -->
-=======
-      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
-    </classes>
-<<<<<<< HEAD
-  </test> <!-- BSC Automacoes(failed) -->
-=======
-<<<<<<< HEAD
-  </test> <!-- Banco De Credito Extemporaneo > PainelBCE(failed) -->
-  <test thread-count="5" name="Banco De Credito Tributaro &gt; Configuração de Banco de Crédito Tributário(failed)">
-    <classes>
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioEditar">
-        <methods>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
-          <include name="editar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaEditar -->
-      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaCriar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="criar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaCriar -->
-    </classes>
-<<<<<<< HEAD
-  </test> <!--  ATR - ESTRUCTURAS - MAPAMENTO DE PARAMETROS DE ENTRADA (failed) -->
-=======
-  </test> <!-- Banco De Credito Tributaro > Configuração de Banco de Crédito Tributário(failed) -->
-  <test thread-count="5" name="Banco De Credito Tributario &gt; Configuração de Layout de Painel(failed)">
-    <classes>
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelEditar">
-        <methods>
-          <include name="editar"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelEditar -->
-      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExecutarGravar">
-        <methods>
-          <include name="executarGravar"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExecutarGravar -->
-    </classes>
-  </test> <!-- Banco De Credito Tributario > Configuração de Layout de Painel(failed) -->
-  <test thread-count="5" name="Banco De Ocorrecias &gt; Configuracao E Execucao (failed)">
-    <classes>
-      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoVisualizar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="visualizar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoVisualizar -->
-      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="executarr"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao -->
-      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguraçãoeExecuçãoFiltrosavançados">
-        <methods>
-          <include name="afterClass"/>
-          <include name="filtros"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguraçãoeExecuçãoFiltrosavançados -->
-    </classes>
-  </test> <!-- Banco De Ocorrecias > Configuracao E Execucao (failed) -->
-  <test thread-count="5" name="Banco De Ocorrecias &gt;  Executados(failed)">
-    <classes>
-      <class name="com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar">
-        <methods>
-          <include name="executarEditar"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar -->
-    </classes>
-  </test> <!-- Banco De Ocorrecias >  Executados(failed) -->
-=======
-  </test> <!-- DFG - Leiautes(failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+  </test> <!--  ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed) -->
 </suite> <!-- Failed suite [Suite] -->

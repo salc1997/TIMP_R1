@@ -1,4 +1,4 @@
-package com.timp.test.MDR.TipoDeTributoContaContabil;
+package com.timp.test.MDR.CadastroPISCONFINS.TipoDeTributoContaContabil;
 
 import static org.testng.Assert.assertTrue;
 
@@ -9,13 +9,13 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabilExcluirPO;
+import com.sap.timp.pageObjectModel.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabilCriarPO;
 
-public class TipoDeTributoContaContabilExcluir extends TestBaseSteven {
+public class TipoDeTributoContaContabilCriar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TipoDeTributoContaContabilExcluirPO tipoDeTributoContaContabilExcluirPO;
+	TipoDeTributoContaContabilCriarPO tipoDeTributoContaContabilCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -23,21 +23,21 @@ public class TipoDeTributoContaContabilExcluir extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		tipoDeTributoContaContabilExcluirPO = new TipoDeTributoContaContabilExcluirPO();
+		tipoDeTributoContaContabilCriarPO = new TipoDeTributoContaContabilCriarPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		// driver.close();
 	}
 
 	@Test()
-	public void excluir() {
+	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
-		boolean sucesso = tipoDeTributoContaContabilExcluirPO.excluir();
-		assertTrue(sucesso, Eliminado);
+		boolean sucesso = tipoDeTributoContaContabilCriarPO.criar();
+		assertTrue(sucesso, semAcesso);
 
 	}
 

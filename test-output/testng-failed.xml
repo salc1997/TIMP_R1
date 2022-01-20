@@ -1,102 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="BSC Automacoes(failed)">
+  <test thread-count="5" name=" ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasExcluir">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.BSC.CorreçãodeNFAprovarS_JOB">
-        <methods>
-          <include name="afterClass"/>
-          <include name="Aprovar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFAprovarS_JOB -->
-      <class name="com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa">
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar">
         <methods>
           <include name="beforeClass"/>
-          <include name="rejeitar"/>
           <include name="afterClass"/>
+          <include name="EditarRelacionamento"/>
         </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFRejeitarEmMassa -->
-      <class name="com.timp.test.BSC.CorrecaoDeNFAprovarEmMassaCJOB">
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar -->
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia">
         <methods>
-          <include name="beforeClass"/>
-          <include name="Aprovar"/>
           <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorrecaoDeNFAprovarEmMassaCJOB -->
-      <class name="com.timp.test.BSC.CorreçãodeNFRejeitar">
-        <methods>
+          <include name="excluirCopia"/>
+          <include name="editarCopia"/>
           <include name="beforeClass"/>
-          <include name="rejeitar"/>
-          <include name="afterClass"/>
+          <include name="criarCopia"/>
         </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFRejeitar -->
-      <class name="com.timp.test.BSC.CorreçãodeNFVisualizarHistorico">
-        <methods>
-          <include name="Aprovar"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFVisualizarHistorico -->
-      <class name="com.timp.test.BSC.CorreçãodeNFEditar">
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia -->
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar">
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="executar"/>
+          <include name="criarRelacionamento"/>
         </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFEditar -->
-      <class name="com.timp.test.BSC.CorreçãodeNFVisualizar">
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar -->
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa">
         <methods>
+          <include name="criarRelacionamento"/>
+          <include name="excluirMassa"/>
           <include name="beforeClass"/>
-          <include name="visualizar"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFVisualizar -->
-      <class name="com.timp.test.BSC.FiltroPorIDRegistroCriar">
-=======
-<<<<<<< HEAD
-      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM110.RegistroM110Visualizar">
-=======
-      <class name="com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.CadastroDeCódigoDeRegras.CadastroDeCódigoDeRegrasCriar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasExcluir -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BSC.FiltroPorIDRegistroCriar -->
-      <class name="com.timp.test.BSC.CorrecaoDeNFDetalhes">
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa -->
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar">
         <methods>
           <include name="beforeClass"/>
-          <include name="Aprovar"/>
           <include name="afterClass"/>
+          <include name="VisualizarRelacionamento"/>
         </methods>
-      </class> <!-- com.timp.test.BSC.CorrecaoDeNFDetalhes -->
-      <class name="com.timp.test.BSC.CorreçãodeNFAprovarC_JOB">
-        <methods>
-          <include name="afterClass"/>
-          <include name="Aprovar"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BSC.CorreçãodeNFAprovarC_JOB -->
-=======
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM110.RegistroM110Visualizar -->
-=======
-      </class> <!-- com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.CadastroDeCódigoDeRegras.CadastroDeCódigoDeRegrasCriar -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar -->
     </classes>
-  </test> <!-- BSC Automacoes(failed) -->
+  </test> <!--  ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed) -->
 </suite> <!-- Failed suite [Suite] -->

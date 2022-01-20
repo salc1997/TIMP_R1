@@ -1,4 +1,4 @@
-package com.timp.test.MDR.TipoDeTributoContaContabil;
+package com.timp.test.MDR.CadastroPISCONFINS.TipoDeTributoContaContabil;
 
 import org.testng.annotations.Test;
 

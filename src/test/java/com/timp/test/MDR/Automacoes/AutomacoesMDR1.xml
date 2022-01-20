@@ -46,6 +46,9 @@
 
 			<class
 				name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir"></class>
+				
+			<class
+				name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluirMassa"></class>
 
 		</classes>
 

@@ -36,6 +36,12 @@ public class TaxasDeConversaoExcluirEmMassaPO extends TestBaseSteven{
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
+	@FindBy(xpath = "//div[@id=\"codCompany\"]/div/div[2]/div/div[2]")
+	public WebElement empresa;
+	
+	@FindBy(xpath = "//div[@class=\"list\"][2]/div[1]")
+	public WebElement empresaOPC;
+	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
@@ -87,7 +93,14 @@ public boolean criar() {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//Primeiro Registro
+		empresa.click();
+		sleep(2000);
 		
+		empresaOPC.click();
+		sleep(2000);
+		
+		closeSelectTypeCheckbox(empresa);
+		sleep(2000);
 		tipo.sendKeys("Tipo teste");
 		
 		sleep(2000);
@@ -106,6 +119,7 @@ public boolean criar() {
 		
 		datainicio.sendKeys(fechaActual());
 		sleep(2000);
+		
 		novo1.click();
 		sleep(2000);
 		waitExpectElement(sim);
@@ -116,6 +130,14 @@ public boolean criar() {
 		sleep(3000);
 		
 		//Segundo Registro
+		empresa.click();
+		sleep(2000);
+		
+		empresaOPC.click();
+		sleep(2000);
+		
+		closeSelectTypeCheckbox(empresa);
+		sleep(2000);
 		
 		tipo.sendKeys("Tipo teste 1");
 		

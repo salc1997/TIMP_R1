@@ -58,10 +58,10 @@
 	<test name="TipoDeTributoContaContabil">
 		<classes>
 			<!-- Tipo de Tributo Conta Contabil -->	
-			<class name="com.timp.test.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabilCriar"></class>
-			<class name="com.timp.test.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabilEditar"></class>
-			<class name="com.timp.test.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabilExcluir"></class>
-			<class name="com.timp.test.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabiExcluirMassa"></class>
+			<class name="com.timp.test.MDR.CadastroPISCONFINS.TipoDeTributoContaContabil.TipoDeTributoContaContabilCriar"></class>
+			<class name="com.timp.test.MDR.CadastroPISCONFINS.TipoDeTributoContaContabil.TipoDeTributoContaContabilEditar"></class>
+			<class name="com.timp.test.MDR.CadastroPISCONFINS.TipoDeTributoContaContabil.TipoDeTributoContaContabilExcluir"></class>
+		    <class name="com.timp.test.MDR.CadastroPISCONFINS.TipoDeTributoContaContabil.TipoDeTributoContaContabiExcluirMassa"></class>
 			
 		</classes>
 	</test>

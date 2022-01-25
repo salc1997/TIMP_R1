@@ -231,7 +231,7 @@ public boolean editar() {
 	
 	
 	waitExpectElement(grafico);
-	sleep(3000);
+	sleep(16000);
 	
 	String graf2 = grafico.getText();
 	
@@ -242,6 +242,10 @@ public boolean editar() {
 
 	
 	boolean sucesso = true;
+	
+	if (graf2 != graf1) {
+		sucesso= true;
+	}
 	System.out.println(sucesso);
 	return sucesso;
 }

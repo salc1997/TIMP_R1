@@ -1,46 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name=" ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed)">
+  <test thread-count="5" name="DFG - Leiautes(failed)">
     <classes>
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar">
+      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPasta">
         <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="EditarRelacionamento"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia">
-        <methods>
-          <include name="afterClass"/>
-          <include name="excluirCopia"/>
-          <include name="editarCopia"/>
-          <include name="beforeClass"/>
-          <include name="criarCopia"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="criarRelacionamento"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa">
-        <methods>
-          <include name="criarRelacionamento"/>
-          <include name="excluirMassa"/>
+          <include name="criarGerenciarMoverPasta"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar">
+      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPasta -->
+      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
         <methods>
-          <include name="beforeClass"/>
+          <include name="filtrosFechaUsuarioCriado"/>
+          <include name="filtrosId"/>
+          <include name="filtrosVersao"/>
+          <include name="filtrosFechaUsuarioModificado"/>
+          <include name="filtrosUsuarioModificado"/>
+          <include name="filtrosUsuarioCriado"/>
           <include name="afterClass"/>
-          <include name="VisualizarRelacionamento"/>
+          <include name="filtrosFiltroTipo"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar -->
+      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
     </classes>
-  </test> <!--  ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed) -->
+  </test> <!-- DFG - Leiautes(failed) -->
 </suite> <!-- Failed suite [Suite] -->

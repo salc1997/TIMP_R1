@@ -3,13 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar">
+      <class name="com.timp.test.DFG.Leiautes.LeiautesExecuçãoFuncionalidades1">
         <methods>
-          <include name="beforeClass"/>
+          <include name="Ordenar"/>
+          <include name="Agrupamiento"/>
+          <include name="OrdenarPor"/>
+          <include name="Filtro"/>
           <include name="afterClass"/>
+          <include name="copiarBloco"/>
+          <include name="beforeClass"/>
+          <include name="Formato"/>
+          <include name="separdor"/>
+          <include name="CriarConfiguracion"/>
           <include name="criar"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar -->
+      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecuçãoFuncionalidades1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

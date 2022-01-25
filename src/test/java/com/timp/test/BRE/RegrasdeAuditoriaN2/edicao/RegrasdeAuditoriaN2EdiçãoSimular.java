@@ -32,7 +32,7 @@ public class RegrasdeAuditoriaN2EdiçãoSimular extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 
 	}
 

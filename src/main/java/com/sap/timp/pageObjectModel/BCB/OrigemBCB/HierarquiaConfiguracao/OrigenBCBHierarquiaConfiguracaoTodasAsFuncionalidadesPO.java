@@ -964,9 +964,9 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		campolinha1.click();
 		sleep(2000);
 		campoLinhaO1.click();
-		sleep(2000);
+		sleep(6000);
 		
-		attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
+		//attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
 		sleep(3000);
 		
 		selectBCB.click();

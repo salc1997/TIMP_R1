@@ -173,7 +173,7 @@ public class CodigosAjustesExcluirMassaPO extends TestBaseSteven {
 		sleep(1000);
 		opcion.click();
 
-		sleep(3000);
+		sleep(6000);
 		detalheTributo.click();
 		sleep(1000);
 		detalheTributoO.click();

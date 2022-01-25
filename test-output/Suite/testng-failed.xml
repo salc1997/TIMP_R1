@@ -1,46 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name=" ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed)">
+  <test thread-count="5" name="Parametros Gerais Configuracao Configuracao(failed)">
     <classes>
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="EditarRelacionamento"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia">
-        <methods>
-          <include name="afterClass"/>
-          <include name="excluirCopia"/>
-          <include name="editarCopia"/>
-          <include name="beforeClass"/>
-          <include name="criarCopia"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar">
+      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoEditar">
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="criarRelacionamento"/>
+          <include name="editar"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa">
-        <methods>
-          <include name="criarRelacionamento"/>
-          <include name="excluirMassa"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="VisualizarRelacionamento"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar -->
+      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoEditar -->
     </classes>
-  </test> <!--  ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed) -->
+  </test> <!-- Parametros Gerais Configuracao Configuracao(failed) -->
 </suite> <!-- Failed suite [Suite] -->

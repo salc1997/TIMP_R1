@@ -1,29 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="17" passed="15" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-19T15:32:43Z" name="Default suite" finished-at="2022-01-19T15:39:31Z" duration-ms="407461">
+  <suite started-at="2022-01-24T02:34:52Z" name="Default suite" finished-at="2022-01-24T02:49:03Z" duration-ms="851504">
     <groups>
     </groups>
-    <test started-at="2022-01-19T15:32:43Z" name="Default test" finished-at="2022-01-19T15:39:31Z" duration-ms="407461">
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@46b61c56]" started-at="2022-01-19T15:32:43Z" name="beforeClass" finished-at="2022-01-19T15:33:19Z" duration-ms="35407" status="PASS">
+    <test started-at="2022-01-24T02:34:52Z" name="Default test" finished-at="2022-01-24T02:49:03Z" duration-ms="851504">
+      <class name="com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-01-24T02:34:52Z" name="beforeClass" finished-at="2022-01-24T02:36:26Z" duration-ms="94039" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="criarRelacionamento()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@46b61c56]" started-at="2022-01-19T15:33:19Z" name="criarRelacionamento" finished-at="2022-01-19T15:38:49Z" duration-ms="330340" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-01-24T02:36:26Z" name="login" finished-at="2022-01-24T02:36:48Z" duration-ms="22647" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criarRelacionamento -->
-        <test-method signature="excluirMassa()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@46b61c56]" started-at="2022-01-19T15:38:49Z" name="excluirMassa" finished-at="2022-01-19T15:39:31Z" depends-on-methods="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa.criarRelacionamento" duration-ms="41689" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="brbEntrar()[pri:1, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-01-24T02:36:48Z" name="brbEntrar" finished-at="2022-01-24T02:37:35Z" duration-ms="46591" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- excluirMassa -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@46b61c56]" started-at="2022-01-19T15:39:31Z" name="afterClass" finished-at="2022-01-19T15:39:31Z" duration-ms="0" status="PASS">
+        </test-method> <!-- brbEntrar -->
+        <test-method signature="criarConfiguracaoExecucoes()[pri:2, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-01-24T02:37:35Z" name="criarConfiguracaoExecucoes" finished-at="2022-01-24T02:39:04Z" duration-ms="89118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracaoExecucoes -->
+        <test-method signature="criarConfiguracionConfiguracao()[pri:3, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-01-24T02:39:04Z" name="criarConfiguracionConfiguracao" finished-at="2022-01-24T02:41:09Z" duration-ms="124474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracionConfiguracao -->
+        <test-method signature="criarConfiguracao()[pri:4, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-01-24T02:41:09Z" name="criarConfiguracao" finished-at="2022-01-24T02:41:53Z" duration-ms="44532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracao -->
+        <test-method signature="outputBCB()[pri:5, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-01-24T02:41:53Z" name="outputBCB" finished-at="2022-01-24T02:42:31Z" duration-ms="37577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- outputBCB -->
+        <test-method signature="subNivel2()[pri:6, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-01-24T02:42:31Z" name="subNivel2" finished-at="2022-01-24T02:43:07Z" duration-ms="36486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subNivel2 -->
+        <test-method signature="subNivel3()[pri:7, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-01-24T02:43:07Z" name="subNivel3" finished-at="2022-01-24T02:43:49Z" duration-ms="41972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subNivel3 -->
+        <test-method signature="subNivel4()[pri:8, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-01-24T02:43:49Z" name="subNivel4" finished-at="2022-01-24T02:44:27Z" duration-ms="37868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subNivel4 -->
+        <test-method signature="subNivel5()[pri:9, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-01-24T02:44:27Z" name="subNivel5" finished-at="2022-01-24T02:45:09Z" duration-ms="42398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subNivel5 -->
+        <test-method signature="abrirSubnivel1()[pri:10, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-01-24T02:45:09Z" name="abrirSubnivel1" finished-at="2022-01-24T02:46:01Z" duration-ms="51730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abrirSubnivel1 -->
+        <test-method signature="abrirSubnivel2()[pri:11, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-01-24T02:46:01Z" name="abrirSubnivel2" finished-at="2022-01-24T02:46:06Z" duration-ms="5345" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Os Subniveis não foram adicinados com sucesso expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Os Subniveis não foram adicinados com sucesso expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades.abrirSubnivel2(OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades.java:144)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abrirSubnivel2 -->
+        <test-method signature="abrirSubnivel3()[pri:12, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-01-24T02:46:06Z" name="abrirSubnivel3" finished-at="2022-01-24T02:46:12Z" duration-ms="5317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abrirSubnivel3 -->
+        <test-method signature="abrirSubnivel4()[pri:13, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-01-24T02:46:12Z" name="abrirSubnivel4" finished-at="2022-01-24T02:46:17Z" duration-ms="5226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abrirSubnivel4 -->
+        <test-method signature="abrirSubnivel5()[pri:14, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-01-24T02:46:17Z" name="abrirSubnivel5" finished-at="2022-01-24T02:46:22Z" duration-ms="5267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abrirSubnivel5 -->
+        <test-method signature="excluirConfiguracoes()[pri:15, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-01-24T02:46:22Z" name="excluirConfiguracoes" finished-at="2022-01-24T02:47:56Z" duration-ms="93562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirConfiguracoes -->
+        <test-method signature="excluirHierarquia()[pri:16, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-01-24T02:47:56Z" name="excluirHierarquia" finished-at="2022-01-24T02:49:03Z" duration-ms="67261" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[O registro não foi eliminado com sucesso expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: O registro não foi eliminado com sucesso expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades.excluirHierarquia(OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades.java:195)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirHierarquia -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-01-24T02:49:03Z" name="afterClass" finished-at="2022-01-24T02:49:03Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa -->
+      </class> <!-- com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -28,16 +28,18 @@ public class ParametrizaçãoDoLivroOficialEditarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement Sim;
 	
-	@FindBy(xpath = "//div[@id=\"bookType\"]/div/div/div/input")
+	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[1]/div[1]/div/div[1]")
 	public WebElement tipoDoLibro;
 	
-	@FindBy(xpath = "//div[@id=\"bookType\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[2]")
 	public WebElement tipoDoLibroenviar;
 	
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
+	@FindBy(xpath = "//div[@class=\"list\"][2]/div[1]")
 	public WebElement opcionCombo;
 	
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][2]")
+	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[1]/div[1]/div[1]/div[2]")
+	public WebElement eliminar;
+	@FindBy(xpath = "//div[@class=\"list\"][2]/div[2]")
 	public WebElement opcionComboenviar;
 	
 	public ParametrizaçãoDoLivroOficialEditarPO() {
@@ -73,22 +75,26 @@ public class ParametrizaçãoDoLivroOficialEditarPO extends TestBaseMassiel{
 		menu.click();
 		sleep(2000);
 		editar.click();
-		sleep(16000);
+		sleep(18000);
 	
 		
-	  	String valor = tipoDoLibro.getAttribute("value");
+	  	String valor = tipoDoLibro.getText();
 		System.out.println(valor);
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		eliminar.click();
+		sleep(2000);
+		
 		tipoDoLibroenviar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		opcionComboenviar.click();
 		sleep(2000);	
 		
-
-		String enviar = tipoDoLibro.getAttribute("value");
+		closeSelectTypeCheckbox(tipoDoLibroenviar);
+		sleep(2000);
+		
+		String enviar = tipoDoLibro.getText();
 		System.out.println(enviar);
 		
 		Gravar.click();
@@ -109,22 +115,26 @@ public class ParametrizaçãoDoLivroOficialEditarPO extends TestBaseMassiel{
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		attributoNotToBeEmptyElement(tipoDoLibro, "value");
+	//	attributoNotToBeEmptyElement(tipoDoLibro, "value");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(22000);
 		
-		String nuevoTexto = tipoDoLibro.getAttribute("value");
+		String nuevoTexto = tipoDoLibro.getText();
 		System.out.println(valor);
 		System.out.println(nuevoTexto);
 		boolean sucesso = nuevoTexto.equals(enviar);
 		System.out.println(sucesso);
+		
+		eliminar.click();
+		sleep(2000);
 		
 		tipoDoLibroenviar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		opcionCombo.click();
 		sleep(2000);	
-
+		closeSelectTypeCheckbox(tipoDoLibroenviar);
+		sleep(2000);
 		Gravar.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

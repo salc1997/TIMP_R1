@@ -19,6 +19,12 @@ public class TaxasDeConversaoCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//input[@placeholder=\"Preencher o Tipo de Taxa de Atualização\"]")
 	public WebElement tipo;
 	
+	@FindBy(xpath = "//div[@id=\"codCompany\"]/div/div[2]/div/div[2]")
+	public WebElement empresa;
+	
+	@FindBy(xpath = "//div[@class=\"list\"][2]/div[1]")
+	public WebElement empresaOPC;
+	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher a descrição do Cadastro de Tipo de Taxa de Atualização\"]")
 	public WebElement descricao;
 	
@@ -82,6 +88,14 @@ public class TaxasDeConversaoCriarPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		empresa.click();
+		sleep(2000);
+		
+		empresaOPC.click();
+		sleep(2000);
+		
+		closeSelectTypeCheckbox(empresa);
+		sleep(2000);
 		
 		tipo.sendKeys("Tipo");
 		

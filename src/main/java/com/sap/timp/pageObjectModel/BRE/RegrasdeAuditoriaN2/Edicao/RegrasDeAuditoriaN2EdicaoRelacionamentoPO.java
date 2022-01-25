@@ -65,7 +65,7 @@ public class RegrasDeAuditoriaN2EdicaoRelacionamentoPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(15000);
 		
 		btnSeleccionarRelacionamento.click();
 		sleep(8000);
@@ -77,7 +77,7 @@ public class RegrasDeAuditoriaN2EdicaoRelacionamentoPO extends TestBaseFernando{
 		String URL = driver.getCurrentUrl();
 		
 		if(URL.contains("tc2")) {
-			opcion = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and contains(text(), \"Ajustes Fiscais\")]"));
+			opcion = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and contains(text(), \"Empresa / Filial\")]"));
 		}
 		
 		if(URL.contains("tp1")) {
@@ -138,7 +138,7 @@ public class RegrasDeAuditoriaN2EdicaoRelacionamentoPO extends TestBaseFernando{
 		sleep(6000);
 		
 		btnSeleccionarRelacionamento.click();
-		sleep(2000);
+		sleep(8000);
 		
 		waitExpectElement(cboRelacionamentoElementoDeEstrutura);
 		

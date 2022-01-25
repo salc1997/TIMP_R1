@@ -90,6 +90,9 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseSteven {
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement btnAceitar;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
+	
 	public RegrasdeAuditoriaN2EstruturaPO() {
 
 		PageFactory.initElements(driver, this);
@@ -154,13 +157,16 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseSteven {
 	sleep(3000);
 	
 	aceitar.click();
-	sleep(4000);
+	sleep(19000);
 	
 	biblioteca.click();
 	sleep(3000);
 	
-	sim.click();
-	sleep(3000);
+	int botaoNao = rows("//button[text()=\"Não\"]");
+	
+	if (botaoNao > 0) {
+		nao.click();
+	}
 	
 	
 	//----------------Entrando de nuevo a editar--------------------------
@@ -216,13 +222,14 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseSteven {
 	sleep(3000);
 	
 	aceitar.click();
-	sleep(4000);
+	sleep(20000);
 	
 	biblioteca.click();
 	sleep(3000);
 	
-	sim.click();
-	sleep(3000);
+	if (botaoNao > 0) {
+		nao.click();
+	}
 	
 	//----------------Entrando de nuevo a excluir--------------------------
 	
@@ -268,13 +275,15 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseSteven {
 	sleep(3000);
 	
 	aceitar.click();
-	sleep(4000);
+	sleep(19000);
 	
 	biblioteca.click();
 	sleep(3000);
 	
-	sim.click();
-	sleep(3000);
+	
+	if (botaoNao > 0) {
+		nao.click();
+	}
 	
 	//----------------------FINAL---------------------------------------
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

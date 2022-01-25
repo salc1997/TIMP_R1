@@ -213,10 +213,7 @@ public class CalculoDeTributoCriarPO extends TestBaseSteven{
 		waitExpectElement(adicionarcaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		//sleep(2000);
-		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//sleep(2000);
+	
 		
 		Justificactiva.click();
 		sleep(2000);
@@ -229,8 +226,8 @@ public class CalculoDeTributoCriarPO extends TestBaseSteven{
 		sleep(1000);
 		
 		adicionarcaminho.click();
-		sleep(2000);
-		waitExpectElement(Condicoes);
+		sleep(15000);
+		//waitExpectElement(Condicoes);
 		Condicoes.click();
 		sleep(1000);
 		opcaoCondicoes.click();

@@ -77,7 +77,7 @@ public class RegrasDeAuditoriaN3ExcluirPO extends TestBaseSteven{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(mensagembloqueio);
+	//	waitExpectElement(mensagembloqueio);
 		sleep(2000);
 		
 		lixeira.click();

@@ -30,11 +30,9 @@ public class PainelNovaConfiguração extends TestBaseSteven{
 
   @AfterClass
   public void afterClass() {
-<<<<<<< HEAD
+
 	 // driver.close();
-=======
-	//  driver.close();
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+
   }
   
 

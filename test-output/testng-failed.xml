@@ -3,34 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades">
-=======
-      <class name="com.timp.test.DFG.Leiautes.LeiautesExecuçãoFuncionalidades1">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+      <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
         <methods>
-<<<<<<< HEAD
-          <include name="beforeClass"/>
-          <include name="abrirSubnivel2"/>
-          <include name="excluirHierarquia"/>
+          <include name="verBloco5"/>
+          <include name="verBloco2"/>
+          <include name="verBloco3"/>
+          <include name="excluirLeiaute"/>
+          <include name="verBloco1"/>
           <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades -->
-=======
-          <include name="Ordenar"/>
-          <include name="Agrupamiento"/>
-          <include name="OrdenarPor"/>
-          <include name="Filtro"/>
-          <include name="afterClass"/>
-          <include name="copiarBloco"/>
+          <include name="verBloco4"/>
+          <include name="excluirConfiguracao"/>
           <include name="beforeClass"/>
-          <include name="Formato"/>
-          <include name="separdor"/>
-          <include name="CriarConfiguracion"/>
-          <include name="criar"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.Leiautes.LeiautesExecuçãoFuncionalidades1 -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+      </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

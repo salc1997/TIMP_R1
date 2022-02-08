@@ -1229,7 +1229,9 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		sleep(8000);
 		
 		executarB.click();
-		
+		sleep(2000);
+		no.click();
+		sleep(2000);
 		waitExpectXpath("//div[@class=\"base-dialog   medium ui-draggable\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"base-dialog   medium ui-draggable\"]");

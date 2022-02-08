@@ -34,7 +34,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriar extends TestBaseMass
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 

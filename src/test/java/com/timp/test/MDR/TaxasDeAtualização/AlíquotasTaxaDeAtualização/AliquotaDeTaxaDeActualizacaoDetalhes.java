@@ -1,26 +1,21 @@
-package com.timp.test.MDR.TaxasDeActualizacao;
+package com.timp.test.MDR.TaxasDeAtualização.AlíquotasTaxaDeAtualização;
 
 import org.testng.annotations.Test;
-
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteVisualizarPO;
-import com.sap.timp.pageObjectModel.MDR.TaxasDeActualizacao.AliquotasDeTaxaDeActualizacaoVisualizarPO;
-
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada.CodigoContribuiçaoSocialApuradaDetalhesPO;
+import com.sap.timp.pageObjectModel.MDR.TaxasDeActualizacao.AliquotasDeTaxaActualizarDetalhesPO;
 import org.testng.annotations.BeforeClass;
-
 import static org.testng.Assert.assertTrue;
-
 import java.util.ArrayList;
-
 import org.testng.annotations.AfterClass;
 
-public class AliquotaDeTaxaDeActualizacaoVisualizar extends TestBaseSteven {
+public class AliquotaDeTaxaDeActualizacaoDetalhes extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	AliquotasDeTaxaDeActualizacaoVisualizarPO aliquotasDeTaxaDeActualizacaoVisualizarPO;
+	AliquotasDeTaxaActualizarDetalhesPO aliquotasDeTaxaActualizarDetalhesPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -28,7 +23,7 @@ public class AliquotaDeTaxaDeActualizacaoVisualizar extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		aliquotasDeTaxaDeActualizacaoVisualizarPO = new AliquotasDeTaxaDeActualizacaoVisualizarPO();
+		aliquotasDeTaxaActualizarDetalhesPO = new AliquotasDeTaxaActualizarDetalhesPO();
 	}
 
 	@AfterClass
@@ -37,17 +32,18 @@ public class AliquotaDeTaxaDeActualizacaoVisualizar extends TestBaseSteven {
 	}
 
 	@Test()
-	public void visualizar() {
+	public void detalhes() {
 
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
 
-		ArrayList<Boolean> sucesso = aliquotasDeTaxaDeActualizacaoVisualizarPO.visualizar();
+		ArrayList<Boolean> sucesso = aliquotasDeTaxaActualizarDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
-		}
 
+			assertTrue(sucesso.get(i), Detalhes);
+		}
 	}
+
 }

@@ -1,4 +1,4 @@
-package com.timp.test.MDR.TaxasDeActualizacao;
+package com.timp.test.MDR.TaxasDeAtualização.AlíquotasTaxaDeAtualização;
 
 import static org.testng.Assert.assertTrue;
 

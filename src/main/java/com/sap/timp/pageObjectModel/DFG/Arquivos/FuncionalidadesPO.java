@@ -508,7 +508,7 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		
 		WebElement opcionLeiaute = driver.findElement(By.xpath("//li[@tabindex=\"0\" and @class=\"list-item\" and @id and contains(text(), \""+this.idRegistroNuevo+"\")]"));
 		opcionLeiaute.click();
-		sleep(4000);
+		sleep(9000);
 		
 	//	attributeToBeXpath("//div[@id=\"inputTimpVersion\"]/div", "class", "base-select required");
 		cboLVersaoLeiaute.click();

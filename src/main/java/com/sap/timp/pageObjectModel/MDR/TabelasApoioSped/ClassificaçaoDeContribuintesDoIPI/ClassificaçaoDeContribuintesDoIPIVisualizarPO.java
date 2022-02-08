@@ -47,7 +47,7 @@ public class ClassificaçaoDeContribuintesDoIPIVisualizarPO extends TestBaseSteve
 	public WebElement tipoAtividadeE;
 	@FindBy(xpath = "//*[contains(@placeholder,\"Descrição\")]")
 	public WebElement descricaoE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Data de Inicio\")]")
+	@FindBy(xpath = "//div[@id=\"effective-date-from\"]/div/div[1]/input")
 	public WebElement dataVigenciaE;
 	
 	public ClassificaçaoDeContribuintesDoIPIVisualizarPO() {

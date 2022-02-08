@@ -194,7 +194,7 @@ public class OutputAutomáticoPO extends TestBaseSteven {
 //		opcionCampoReferencia.click();
 //		sleep(1000);
 		
-	//	btnsim.click();
+		btnsim.click();
 		sleep(3000);
 		btnAplicar.click();
 		sleep(3000);

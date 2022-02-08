@@ -137,7 +137,7 @@ public class DeterminacionRelevanciaPorMotivoCriarPO extends TestBaseSteven{
 		ufSeleccion.click();
 		ufSeleccion.sendKeys(Keys.ESCAPE);
 		sleep(3000);
-		attributeToBeXpath("//*[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		//attributeToBeXpath("//*[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(3000);
 		
 		filial.click();

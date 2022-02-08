@@ -91,7 +91,7 @@ public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(descricao);
 		sleep(2000);
-		String enviar = "Teste da Descrição";
+		String enviar = "Teste da Descrição mass";
 		descricao.clear();
 		descricao.sendKeys(enviar);
 		
@@ -105,7 +105,7 @@ public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();
-		sleep(2000);
+		sleep(6000);
 		//sim.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -115,7 +115,7 @@ public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseSteven{
 		sleep(2000);
 		siguiente.click();
 		
-		
+		sleep(6000);
 		//pega o ultimo id que foi gerado no criar
 		
 		

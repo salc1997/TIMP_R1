@@ -873,7 +873,7 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//waitExpectElement(adicionarCaminho);
-		sleep(13000);
+		sleep(20000);
 		
 		
 		adicionarCaminho.click();

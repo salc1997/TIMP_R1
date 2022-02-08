@@ -181,15 +181,15 @@ public class HierarquiaDeCenariosDeCorreçaoFiltrosAbansadosPO extends TestBaseM
 		String diahoy = diaHoy();
 		System.out.println("dia de  hoy : "+diahoy);
 		
-		//String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+	//	String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
 		
-		//String dia = driver.findElement(By.xpath("//div[(@tabindex=\"0\" and @class=\"date\" and text()="+diahoy+") or (@tabindex=\"0\" and @class=\"date weekend today\")]")).getText();
+		String dia = driver.findElement(By.xpath("//div[(@tabindex=\"0\" and @class=\"date\" and text()="+diahoy+") or (@tabindex=\"0\" and @class=\"date weekend today\")]")).getText();
 		
 		//div[@class="calendars"]/div[1]/div[3]/div[@tabindex="0" and @class="date" and text()=5]
 		
 		filtroDataCriacao.click();
-		sleep(6000);
+		sleep(9000);
 		
 		WebElement dia1 = driver.findElement(By.xpath("//div[@class=\"calendars\"]/div[1]/div[3]/div[@tabindex=\"0\" and @class=\"date\" and text()="+diahoy+"]"));
 		System.out.println("dia 1 : "+ dia1);

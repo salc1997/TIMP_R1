@@ -394,7 +394,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		sleep(2000);
 		
 		salvar.click();
-		sleep(11000);
+		sleep(13000);
 		
 		
 		if (tq1 == true && tc2 == true||tq2 == true) {
@@ -427,7 +427,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		while (!separadores.isDisplayed()) {
 			flecha.click();
 		}
-		sleep(1000);
+		sleep(40000);
 		
 		separadores.click();
 		sleep(2000);
@@ -668,7 +668,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		raizConfiguracao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		siguiente.click();
 		sleep(2000);
@@ -710,7 +710,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		//li[@id="7754"]
 		waitExpectElement(opcLeiauteObter);
 		opcLeiauteObter.click();
-		sleep(2000);
+		sleep(6000);
 		
 		versaoConfiguracao.click();
 		sleep(1000);

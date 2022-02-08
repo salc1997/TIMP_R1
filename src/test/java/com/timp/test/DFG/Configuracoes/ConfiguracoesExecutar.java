@@ -32,7 +32,7 @@ public class ConfiguracoesExecutar extends TestBaseMassiel{
   @AfterClass
   public void afterClass() {
 
-	 ///sw driver.close();
+	  driver.close();
 
   }
 

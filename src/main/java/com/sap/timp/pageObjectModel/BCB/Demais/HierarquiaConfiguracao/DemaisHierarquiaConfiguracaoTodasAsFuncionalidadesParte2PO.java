@@ -235,7 +235,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 		ultimo.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 //		pesquisar.sendKeys(idConfiguracaoExecutar);
 //		//pesquisar.sendKeys("1171");

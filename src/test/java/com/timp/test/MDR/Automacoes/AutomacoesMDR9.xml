@@ -159,13 +159,13 @@
 	
 	<test name="Taxas de Atualização >	Alíquotas de Taxa de Atualização">
 		<classes>
-			<class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoCriar"></class>
-			<class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoEditar"></class>
-			<class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoDetalhes"></class>
-			<class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoVisualizar"></class>
-			<class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoExcluir"></class>
-			<class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoExcluirEmMassa"></class>
-			<class name="com.timp.test.MDR.TaxasDeActualizacao.AliquotaDeTaxaDeActualizacaoPesquisaPorID"></class>
+			<class name="com.timp.test.MDR.TaxasDeAtualização.AlíquotasTaxaDeAtualização.AliquotaDeTaxaDeActualizacaoCriar"></class>
+			<class name="com.timp.test.MDR.TaxasDeAtualização.AlíquotasTaxaDeAtualização.AliquotaDeTaxaDeActualizacaoEditar"></class>
+			<class name="com.timp.test.MDR.TaxasDeAtualização.AlíquotasTaxaDeAtualização.AliquotaDeTaxaDeActualizacaoDetalhes"></class>
+			<class name="com.timp.test.MDR.TaxasDeAtualização.AlíquotasTaxaDeAtualização.AliquotaDeTaxaDeActualizacaoVisualizar"></class>
+			<class name="com.timp.test.MDR.TaxasDeAtualização.AlíquotasTaxaDeAtualização.AliquotaDeTaxaDeActualizacaoExcluir"></class>
+			<class name="com.timp.test.MDR.TaxasDeAtualização.AlíquotasTaxaDeAtualização.AliquotaDeTaxaDeActualizacaoExcluirEmMassa"></class>
+			<class name="com.timp.test.MDR.TaxasDeAtualização.AlíquotasTaxaDeAtualização.AliquotaDeTaxaDeActualizacaoPesquisaPorID"></class>
 		</classes>
 	</test> 
 	

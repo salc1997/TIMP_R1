@@ -1,4 +1,4 @@
-package com.timp.test.MDR.TaxasDeActualizacao;
+package com.timp.test.MDR.TaxasDeAtualização.AlíquotasTaxaDeAtualização;
 
 import org.testng.annotations.Test;
 
@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class AliquotasDeTaxaDeActualizacaoExcluirEmMassa extends TestBaseKenssy {
+public class AliquotaDeTaxaDeActualizacaoExcluirEmMassa extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO aliquotaDeTaxaDeActualizacaoExcluirEmMassaPO;
@@ -31,22 +31,21 @@ public class AliquotasDeTaxaDeActualizacaoExcluirEmMassa extends TestBaseKenssy 
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
+	@Test()
+	public void criar() {
 
-	@Test(priority = 1)
-	public void mdrEntrar() {
+		loginTC.login();
+
 		accesarMDR.acessarMDR();
 
-	}
-
-	@Test(priority = 2)
-	public void excluirEmMassa() {
 		boolean sucesso = aliquotaDeTaxaDeActualizacaoExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
+
+	}
+
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
 
 		boolean sucesso2 = aliquotaDeTaxaDeActualizacaoExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);

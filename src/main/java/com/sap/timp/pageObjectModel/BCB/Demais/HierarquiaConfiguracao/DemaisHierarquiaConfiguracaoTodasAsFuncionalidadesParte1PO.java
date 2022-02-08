@@ -898,7 +898,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		waitExpectElement(calculator);
-		sleep(6000);
+		sleep(12000);
 		
 		calculator.click();
 		sleep(1000);
@@ -923,13 +923,13 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 
 		gravar.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		nao.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
 		
 		//corregir mensaje al parecer
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
@@ -998,12 +998,15 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		entradaManual1.click();
 		sleep(1000);
 		entradaManualO1.click();
-		sleep(2000);
+		sleep(12000);
 		
 		gravar.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		nao.click();
+		sleep(8000);
 		
 		//corregir mensaje al parecer
 		mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
@@ -1065,7 +1068,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		criarAdicionarCamposSaida.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"Campo de saída criado com sucesso\")]")).size();
 		

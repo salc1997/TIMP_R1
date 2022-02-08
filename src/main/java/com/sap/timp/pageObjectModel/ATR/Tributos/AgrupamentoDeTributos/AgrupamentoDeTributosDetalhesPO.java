@@ -109,7 +109,7 @@ public class AgrupamentoDeTributosDetalhesPO extends TestBaseSteven {
 		fechar.click();
 		sleep(2000);
 		waitExpectElement(siguiente);
-		sleep(2000);
+		sleep(6000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

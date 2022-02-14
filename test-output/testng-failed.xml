@@ -3,39 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.DFG.Arquivos.Funcionalidades">
-=======
-      <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+      <class name="com.timp.test.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.FatorDeCreditamentoContabilizaçãoDeCIAP">
         <methods>
-<<<<<<< HEAD
-          <include name="idPublicoPrivado"/>
-=======
-          <include name="verBloco5"/>
-          <include name="verBloco2"/>
-          <include name="verBloco3"/>
-          <include name="excluirLeiaute"/>
-          <include name="verBloco1"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+          <include name="EnviarLixeria"/>
+          <include name="configurarConfiguracao"/>
+          <include name="CriarConfiguracao"/>
           <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="oficializarArquivo"/>
-          <include name="informacao"/>
-          <include name="favorito"/>
-          <include name="executar"/>
-          <include name="lixeira"/>
-=======
-          <include name="verBloco4"/>
-          <include name="excluirConfiguracao"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <include name="beforeClass"/>
+          <include name="executar"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.DFG.Arquivos.Funcionalidades -->
-=======
-      </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+      </class> <!-- com.timp.test.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.FatorDeCreditamentoContabilizaçãoDeCIAP -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

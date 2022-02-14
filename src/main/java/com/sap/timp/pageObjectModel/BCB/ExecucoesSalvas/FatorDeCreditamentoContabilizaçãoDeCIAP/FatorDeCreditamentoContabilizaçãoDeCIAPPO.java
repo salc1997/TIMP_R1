@@ -563,7 +563,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			//idInserir3(id); //antes de crear herarquia configuracao
 			
 			nova.click();
-			sleep(5000);
+			sleep(8000);
 
 
 			nomeHirarquia.sendKeys("Prueba Automatizada Massiel");

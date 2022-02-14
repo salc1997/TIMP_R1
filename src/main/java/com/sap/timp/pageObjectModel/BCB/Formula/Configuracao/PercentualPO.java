@@ -572,7 +572,7 @@ public class PercentualPO extends TestBaseKenssy {
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		sucesso.add(valorCampoSaidaSubNivel1.equals("10,00%"));
+		sucesso.add(valorCampoSaidaSubNivel1.equals("0,10%"));
 		
 		System.out.println(sucesso);
 		

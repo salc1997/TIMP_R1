@@ -678,7 +678,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 		sleep(6000);
 		
 		waitExpectElement(adicionarBloco);
-		sleep(40000);
+		sleep(50000);
 		
 		
 		adicionarBloco.click();

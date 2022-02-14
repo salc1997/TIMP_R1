@@ -131,7 +131,7 @@ public class ExecuçõesSalvasRecalcularPO extends TestBaseSteven {
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(9000);
 		
 		recalcular.click();
 		sleep(4000);

@@ -268,7 +268,14 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
 	public WebElement opcCampoSaida44;
 	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][4]/div/div/div[@id=\"check-zero-value\"]/div/label/span")
+	@FindBy(xpath = "//div[@class=\"subLevel\"][3]/div[2]/div[2]/div[4]/div/label/span")
+	public WebElement zerado1;
+	
+	@FindBy(xpath = "//div[@class=\"subLevel\"][3]//div[@id=\"zero-value\"]/div/div/div[2]")
+	public WebElement condicaoZerado1;
+	
+	
+	@FindBy(xpath = "//div[@class=\"subLevel\"][4]/div[2]/div[2]/div[4]/div/label/span")
 	public WebElement zerado;
 	
 	@FindBy(xpath = "//div[@class=\"subLevel\"][4]//div[@id=\"zero-value\"]/div/div/div[2]")
@@ -1273,10 +1280,10 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		opcCantSubPeriodosAnteriores3.click();
 		sleep(2000);
 		
-		zerado.click();
+		zerado1.click();
 		sleep(3000);
 		
-		condicaoZerado.click();
+		condicaoZerado1.click();
 		sleep(3000);
 		opcZerado.click();
 		opcZerado.sendKeys(Keys.ESCAPE);

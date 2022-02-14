@@ -1,128 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name="EditarRelatorio(failed)">
-=======
-  <test thread-count="5" name="DFG - Leiautes(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+  <test thread-count="5" name="Parametros Gerais Configuracao Configuracao(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BRB.EditarRelatorio">
+      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoVisualizar">
         <methods>
-          <include name="afterClass"/>
+          <include name="visualizar"/>
           <include name="beforeClass"/>
-          <include name="editar"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.EditarRelatorio -->
-=======
-      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
-        <methods>
-          <include name="filtrosFechaUsuarioCriado"/>
-          <include name="filtrosId"/>
-          <include name="filtrosFechaUsuarioModificado"/>
-          <include name="filtrosUsuarioModificado"/>
-          <include name="filtrosUsuarioCriado"/>
           <include name="afterClass"/>
-          <include name="filtrosFiltroTipo"/>
-          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoVisualizar -->
     </classes>
-<<<<<<< HEAD
-  </test> <!-- EditarRelatorio(failed) -->
-  <test thread-count="5" name="CampoOutput(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.CampoOutput">
-        <methods>
-          <include name="afterClass"/>
-          <include name="campoOutput"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.CampoOutput -->
-    </classes>
-  </test> <!-- CampoOutput(failed) -->
-  <test thread-count="5" name="FormatacaoEVariante(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.FormatacaoEVariante">
-        <methods>
-          <include name="formatacaoEVariante"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="excluirVariante"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.FormatacaoEVariante -->
-    </classes>
-  </test> <!-- FormatacaoEVariante(failed) -->
-  <test thread-count="5" name="GruposAvancados(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.GruposAvancados">
-        <methods>
-          <include name="gruposAvanzados"/>
-          <include name="afterClass"/>
-          <include name="eliminarGrupos"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.GruposAvancados -->
-    </classes>
-  </test> <!-- GruposAvancados(failed) -->
-  <test thread-count="5" name="CrescenteEDecrescente(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.CrescenteEDecrescente">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="crescenteEDecrescente"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.CrescenteEDecrescente -->
-    </classes>
-  </test> <!-- CrescenteEDecrescente(failed) -->
-  <test thread-count="5" name="ComentarioListaSuspensa(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
-        <methods>
-          <include name="listaSuspensa"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
-    </classes>
-  </test> <!-- ComentarioListaSuspensa(failed) -->
-  <test thread-count="5" name="ComentarioLibre(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.ComentarioLibre">
-        <methods>
-          <include name="comentarioLibre"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.ComentarioLibre -->
-    </classes>
-  </test> <!-- ComentarioLibre(failed) -->
-  <test thread-count="5" name="Output Automatico(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.OutputAutomático">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="outputAutomatico"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.OutputAutomático -->
-    </classes>
-  </test> <!-- Output Automatico(failed) -->
-  <test thread-count="5" name="Output Referencia(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.OutputdeReferência">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="outputReferencia"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.OutputdeReferência -->
-    </classes>
-  </test> <!-- Output Referencia(failed) -->
-=======
-  </test> <!-- DFG - Leiautes(failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+  </test> <!-- Parametros Gerais Configuracao Configuracao(failed) -->
 </suite> <!-- Failed suite [Suite] -->

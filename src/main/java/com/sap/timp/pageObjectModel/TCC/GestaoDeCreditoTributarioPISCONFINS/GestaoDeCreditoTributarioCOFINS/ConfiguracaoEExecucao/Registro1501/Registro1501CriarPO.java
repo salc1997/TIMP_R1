@@ -229,7 +229,7 @@ public class Registro1501CriarPO extends TestBaseSteven{
 		empresaV.click();
 		sleep(2000);
 		empresaOV.click();
-		sleep(9000);
+		sleep(13000);
 		
 		filialV.click();
 		sleep(2000);

@@ -150,7 +150,7 @@ public class Registro1501VisualizarPO extends TestBaseSteven{
 		
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(13000);
+		sleep(18000);
 		
 		System.out.println("==============================");
 		String empresaeditar = empresa.getAttribute("value");

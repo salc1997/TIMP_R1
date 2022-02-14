@@ -1086,7 +1086,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBaseSteven{
 		sleep(1000);
 		
 		//waitExpectElement(versaoLeiauteR);
-		sleep(1000);
+		sleep(9000);
 		leiauteR.click();
 		sleep(1000);
 		WebElement leiauteO = driver.findElement(By.xpath("//li[contains(text(),\""+idObter2()+"\")]"));

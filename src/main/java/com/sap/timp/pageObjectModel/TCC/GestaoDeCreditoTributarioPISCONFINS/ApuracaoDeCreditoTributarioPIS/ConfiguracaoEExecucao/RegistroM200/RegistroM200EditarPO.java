@@ -137,11 +137,10 @@ public class RegistroM200EditarPO extends TestBaseMassiel{
 		
 		driver.navigate().refresh();
 		sleep(10000);
-		waitExpectElement(filialInput);
-		sleep(8000);
+	//	waitExpectElement(filialInput);
+		sleep(28000);
 		
 		String nuevoTexto = filialInput.getText();
-		/*System.out.println(valor);*/
 		System.out.println(nuevoTexto);
 		
 		boolean sucesso = nuevoTexto.contains(enviado);

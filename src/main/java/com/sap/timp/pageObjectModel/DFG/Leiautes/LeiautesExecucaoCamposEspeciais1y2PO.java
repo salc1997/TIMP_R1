@@ -427,7 +427,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		while (!separadores.isDisplayed()) {
 			flecha.click();
 		}
-		sleep(40000);
+		sleep(50000);
 		
 		separadores.click();
 		sleep(2000);

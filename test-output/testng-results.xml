@@ -1,19 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="7" passed="3" failed="4" skipped="0">
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2022-02-09T14:40:30Z" name="Default suite" finished-at="2022-02-09T14:44:40Z" duration-ms="250961">
+=======
+  <suite started-at="2022-02-10T05:39:09Z" name="Default suite" finished-at="2022-02-10T05:41:19Z" duration-ms="130139">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2022-02-09T14:40:30Z" name="Default test" finished-at="2022-02-09T14:44:40Z" duration-ms="250961">
       <class name="com.timp.test.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.FatorDeCreditamentoContabilizaçãoDeCIAP">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.FatorDeCreditamentoContabilizaçãoDeCIAP@74bf1791]" started-at="2022-02-09T14:40:30Z" name="beforeClass" finished-at="2022-02-09T14:40:42Z" duration-ms="12460" status="PASS">
+=======
+    <test started-at="2022-02-10T05:39:09Z" name="Default test" finished-at="2022-02-10T05:41:19Z" duration-ms="130139">
+      <class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1101.Registro1101Excluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1101.Registro1101Excluir@5b367418]" started-at="2022-02-10T05:39:09Z" name="beforeClass" finished-at="2022-02-10T05:39:30Z" duration-ms="21192" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="login()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.FatorDeCreditamentoContabilizaçãoDeCIAP@74bf1791]" started-at="2022-02-09T14:40:42Z" name="login" finished-at="2022-02-09T14:40:50Z" duration-ms="8350" status="PASS">
+=======
+        <test-method signature="Excluir()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1101.Registro1101Excluir@5b367418]" started-at="2022-02-10T05:39:30Z" name="Excluir" finished-at="2022-02-10T05:41:15Z" duration-ms="104496" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- login -->
         <test-method signature="brbEntrar()[pri:1, instance:com.timp.test.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.FatorDeCreditamentoContabilizaçãoDeCIAP@74bf1791]" started-at="2022-02-09T14:40:50Z" name="brbEntrar" finished-at="2022-02-09T14:41:10Z" duration-ms="19780" status="PASS">
           <reporter-output>
@@ -307,10 +326,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- EnviarLixeria -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.FatorDeCreditamentoContabilizaçãoDeCIAP@74bf1791]" started-at="2022-02-09T14:44:40Z" name="afterClass" finished-at="2022-02-09T14:44:40Z" duration-ms="0" status="PASS">
+=======
+        </test-method> <!-- Excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1101.Registro1101Excluir@5b367418]" started-at="2022-02-10T05:41:15Z" name="afterClass" finished-at="2022-02-10T05:41:19Z" duration-ms="4432" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.FatorDeCreditamentoContabilizaçãoDeCIAP -->
+=======
+      </class> <!-- com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1101.Registro1101Excluir -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

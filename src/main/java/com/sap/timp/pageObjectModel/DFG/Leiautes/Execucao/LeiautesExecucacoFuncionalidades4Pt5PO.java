@@ -459,7 +459,9 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 		
 		@FindBy(xpath = "//div[contains(text(),\"Nenhum resultado\")]")
 		public WebElement resultado;
-		
+
+		@FindBy(xpath = "//div[contains(@class, \"icon-right\")][2]")
+		public WebElement btnUltimaPagina;		
 	public LeiautesExecucacoFuncionalidades4Pt5PO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -1526,10 +1528,38 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 		
 	//BLOCO 5 - REGISTRO 5
 	public ArrayList<Boolean> distinto() {
-		System.out.println("------------------------BLOCOS 4 - REGISTROS 4-------------------");
+	
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		raiz.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		btnUltimaPagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		String idRegistro = idObter1();
+	//	String idRegistro = "1879";
+		System.out.println("");
+		System.out.println("ID Registro: " + idRegistro);
 		System.out.println("");
 		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
+
+		menu.click();
+		sleep(1000);
+		açao.click();
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -1539,22 +1569,15 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 		adicionarRegistro5.click();
 		sleep(2000);
 		
-		nombreBloco5.sendKeys("5");
+		actionsMoveToElementElement(nombreBloco5);
+		
+		nombreBloco5.sendKeys("Bloco 5");
 		sleep(2000);
 		
-		nombreRegistro5.sendKeys("1");
+		nombreRegistro5.sendKeys("Registro 1");
 		sleep(2000);
 		
-//		abaCamposEspeciais.click();
-//		sleep(2000);
-//		
-//		abaAjusteFiscais.click();
-//		sleep(2000);
-		
-//		subAbaAjusteFiscais.click();
-//		sleep(2000);
-		
-		//ARRASTRAR ELEMENTOS
+
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

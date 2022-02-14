@@ -105,7 +105,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriarPO extends TestBaseMassi
 		nuevo.click();
 		sleep(2000);
 		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(9000);
+		sleep(13000);
 		
 		empresa.click();
 		sleep(2000);

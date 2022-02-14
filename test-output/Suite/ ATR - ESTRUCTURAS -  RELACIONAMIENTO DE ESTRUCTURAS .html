@@ -55,23 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'> ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS </h2><table border='1' align="center">
 <tr>
-<<<<<<< HEAD
 <td>Tests passed/Failed/Skipped:</td><td>8/1/1</td>
-=======
-<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 </tr><tr>
-<<<<<<< HEAD
-<td>Started on:</td><td>Tue Jan 25 11:24:34 CST 2022</td>
-=======
-<td>Started on:</td><td>Mon Feb 07 07:10:21 CST 2022</td>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+<td>Started on:</td><td>Tue Feb 08 11:50:45 CST 2022</td>
 </tr>
-<<<<<<< HEAD
-<tr><td>Total time:</td><td>2784 seconds (2784584 ms)</td>
-=======
-<tr><td>Total time:</td><td>2288 seconds (2288989 ms)</td>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+<tr><td>Total time:</td><td>2320 seconds (2320877 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -80,7 +68,6 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<<<<<<< HEAD
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -89,13 +76,14 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa.criarRelacionamento()'><b>criarRelacionamento</b><br>Test class: com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div id=&quot;main-icon&quot; class=&quot;icon main-icon icon-font-Sign-and-Symbols icon-downmenu&quot;&gt;&lt;/div&gt; is not clickable at point (682, 339). Other element would receive the click: &lt;div class=&quot;base-loader-container&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=83.0.4103.106)
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;AGILE&apos;, ip: &apos;192.168.0.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.1.74&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53586}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f56bc240dcfa794afad966dd75b2bd62
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61911}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: df190f98a8c6ca26db11f120c698d5d7
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -106,16 +94,17 @@ Session ID: f56bc240dcfa794afad966dd75b2bd62
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassaPO.criar(RelacionamentoEstruturasExcluirEmMassaPO.java:115)
+	at com.sap.timp.pageObjectModel.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassaPO.criar(RelacionamentoEstruturasExcluirEmMassaPO.java:191)
 	at com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa.criarRelacionamento(RelacionamentoEstruturasExcluirEmMassa.java:41)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace208157941", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace208157941'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div id=&quot;main-icon&quot; class=&quot;icon main-icon icon-font-Sign-and-Symbols icon-downmenu&quot;&gt;&lt;/div&gt; is not clickable at point (682, 339). Other element would receive the click: &lt;div class=&quot;base-loader-container&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=83.0.4103.106)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace575197504", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace575197504'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;AGILE&apos;, ip: &apos;192.168.0.108&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.1.74&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53586}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f56bc240dcfa794afad966dd75b2bd62
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61911}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: df190f98a8c6ca26db11f120c698d5d7
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -134,7 +123,7 @@ Session ID: f56bc240dcfa794afad966dd75b2bd62
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassaPO.criar(RelacionamentoEstruturasExcluirEmMassaPO.java:115)
+	at com.sap.timp.pageObjectModel.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassaPO.criar(RelacionamentoEstruturasExcluirEmMassaPO.java:191)
 	at com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa.criarRelacionamento(RelacionamentoEstruturasExcluirEmMassa.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -162,191 +151,8 @@ Session ID: f56bc240dcfa794afad966dd75b2bd62
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>130</td>
+<td>267</td>
 <td>com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@74bf1791</td></tr>
-=======
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar.afterClass()'><b>afterClass</b><br>Test class: com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=83.0.4103.61)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.1.74&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57990}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: db8d326cc9b6fc138792fa37bb15e2ca
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-	at com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar.afterClass(RelacionamentoEstruturasVisualizar.java:38)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace792210014", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace792210014'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=83.0.4103.61)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.1.74&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57990}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: db8d326cc9b6fc138792fa37bb15e2ca
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-	at com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar.afterClass(RelacionamentoEstruturasVisualizar.java:38)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar@65b104b9</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar.VisualizarRelacionamento()'><b>VisualizarRelacionamento</b><br>Test class: com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=83.0.4103.61)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.1.74&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57990}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: db8d326cc9b6fc138792fa37bb15e2ca
-*** Element info: {Using=xpath, value=//input[@placeholder=&quot;Selecione Grupo 1&quot;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.sap.timp.base.TestBaseSteven.waitExpectElement(TestBaseSteven.java:282)
-	at com.sap.timp.pageObjectModel.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizarPO.visualizar(RelacionamentoEstruturasVisualizarPO.java:137)
-	at com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar.VisualizarRelacionamento(RelacionamentoEstruturasVisualizar.java:49)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace269853881", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace269853881'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=83.0.4103.61)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.1.74&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57990}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: db8d326cc9b6fc138792fa37bb15e2ca
-*** Element info: {Using=xpath, value=//input[@placeholder=&quot;Selecione Grupo 1&quot;]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.sap.timp.base.TestBaseSteven.waitExpectElement(TestBaseSteven.java:282)
-	at com.sap.timp.pageObjectModel.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizarPO.visualizar(RelacionamentoEstruturasVisualizarPO.java:137)
-	at com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar.VisualizarRelacionamento(RelacionamentoEstruturasVisualizar.java:49)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>347</td>
-<td>com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar@65b104b9</td></tr>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -358,47 +164,24 @@ Session ID: db8d326cc9b6fc138792fa37bb15e2ca
 <tr>
 <td title='com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar.EditarRelacionamento()'><b>EditarRelacionamento</b><br>Test class: com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar</td>
 <td></td>
-<<<<<<< HEAD
-<td>481</td>
-=======
-<td>430</td>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+<td>432</td>
 <td>com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar@3403e2ac</td></tr>
 <tr>
-<<<<<<< HEAD
 <td title='com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar.VisualizarRelacionamento()'><b>VisualizarRelacionamento</b><br>Test class: com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar</td>
 <td></td>
-<td>480</td>
+<td>466</td>
 <td>com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar@65b104b9</td></tr>
 <tr>
-=======
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 <td title='com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia.criarCopia()'><b>criarCopia</b><br>Test class: com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia</td>
 <td></td>
-<<<<<<< HEAD
-<td>466</td>
-=======
-<td>442</td>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+<td>441</td>
 <td>com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@6c4980d3</td></tr>
 <tr>
 <td title='com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar.criarRelacionamento()'><b>criarRelacionamento</b><br>Test class: com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar</td>
 <td></td>
-<<<<<<< HEAD
-<td>143</td>
-=======
-<td>101</td>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+<td>104</td>
 <td>com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar@6d167f58</td></tr>
 <tr>
-<<<<<<< HEAD
-=======
-<td title='com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa.criarRelacionamento()'><b>criarRelacionamento</b><br>Test class: com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa</td>
-<td></td>
-<td>314</td>
-<td>com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@74bf1791</td></tr>
-<tr>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 <td title='com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia.editarCopia()'><b>editarCopia</b><br>Test class: com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia</td>
 <td></td>
 <td>376</td>
@@ -406,33 +189,17 @@ Session ID: db8d326cc9b6fc138792fa37bb15e2ca
 <tr>
 <td title='com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir.excluir()'><b>excluir</b><br>Test class: com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir</td>
 <td></td>
-<<<<<<< HEAD
-<td>79</td>
-=======
 <td>56</td>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 <td>com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir@19c65cdc</td></tr>
 <tr>
 <td title='com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia.excluirCopia()'><b>excluirCopia</b><br>Test class: com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia</td>
 <td></td>
-<td>26</td>
+<td>22</td>
 <td>com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@6c4980d3</td></tr>
 <tr>
-<<<<<<< HEAD
-=======
-<td title='com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa.excluirMassa()'><b>excluirMassa</b><br>Test class: com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa</td>
-<td></td>
-<td>44</td>
-<td>com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@74bf1791</td></tr>
-<tr>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 <td title='com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros.filtrarPorIdMasLimpiarFiltros()'><b>filtrarPorIdMasLimpiarFiltros</b><br>Test class: com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros</td>
 <td></td>
-<<<<<<< HEAD
-<td>82</td>
-=======
-<td>47</td>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+<td>46</td>
 <td>com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@327bcebd</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -445,8 +212,8 @@ Session ID: db8d326cc9b6fc138792fa37bb15e2ca
 <tr>
 <td title='com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa.excluirMassa()'><b>excluirMassa</b><br>Test class: com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa</td>
 <td><div><pre>java.lang.Throwable: Method RelacionamentoEstruturasExcluirEmMassa.excluirMassa()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@74bf1791] depends on not successfully finished methods
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace486371171", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace486371171'><pre>java.lang.Throwable: Method RelacionamentoEstruturasExcluirEmMassa.excluirMassa()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@74bf1791] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace477700359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace477700359'><pre>java.lang.Throwable: Method RelacionamentoEstruturasExcluirEmMassa.excluirMassa()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@74bf1791] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)

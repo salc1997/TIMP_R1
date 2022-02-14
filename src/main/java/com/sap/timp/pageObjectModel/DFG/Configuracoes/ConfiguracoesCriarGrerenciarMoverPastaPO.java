@@ -224,7 +224,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 		salvar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		
 		pasta2 = driver.findElement(By.xpath("//span[text()=\"Pasta 2\"]"));
 		pasta2.click();

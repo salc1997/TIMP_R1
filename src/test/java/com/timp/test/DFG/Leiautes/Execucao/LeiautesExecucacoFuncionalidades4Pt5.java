@@ -44,7 +44,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5 extends TestBaseSteven {
 		acessarDFGPO.acessarDFG();
 	}
 	
-	@Test(priority = 2)
+/*	@Test(priority = 2)
 	public void criar() {
 		ArrayList<Boolean> sucesso =leiautesExecucacoFuncionalidades4Pt5PO.criarLeiaute();
 		
@@ -166,7 +166,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5 extends TestBaseSteven {
 		}
 	}
 	
-	
+*/	
 	@Test(priority = 14)
 	public void distinto() {
 		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.distinto();

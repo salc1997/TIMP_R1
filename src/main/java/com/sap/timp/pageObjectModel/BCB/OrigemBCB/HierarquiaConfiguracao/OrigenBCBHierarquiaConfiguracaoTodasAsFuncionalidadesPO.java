@@ -1280,14 +1280,14 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		opcCantSubPeriodosAnteriores3.click();
 		sleep(2000);
 		
-		zerado1.click();
+	/*	zerado1.click();
 		sleep(3000);
 		
 		condicaoZerado1.click();
 		sleep(3000);
 		opcZerado.click();
 		opcZerado.sendKeys(Keys.ESCAPE);
-		sleep(3000);
+		sleep(3000);*/
 		
 		gravar.click();
 		sleep(3000);

@@ -3,14 +3,22 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
+=======
+      <class name="com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
         <methods>
+<<<<<<< HEAD
           <include name="excluirLeiaute"/>
           <include name="afterClass"/>
           <include name="criarConfiguracao"/>
           <include name="comparar"/>
           <include name="excluirConfiguracao"/>
+=======
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="distinto"/>
           <include name="verBloco5"/>
           <include name="verBloco2"/>
@@ -18,8 +26,16 @@
           <include name="verBloco1"/>
           <include name="verBloco4"/>
           <include name="executar"/>
+=======
+          <include name="abrirSubnivel2"/>
+          <include name="afterClass"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
+=======
+      </class> <!-- com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

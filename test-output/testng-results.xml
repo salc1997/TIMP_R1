@@ -1,27 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="13" passed="2" failed="11" skipped="0">
+=======
+<testng-results ignored="0" total="15" passed="14" failed="1" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2022-02-15T02:27:31Z" name="Default suite" finished-at="2022-02-15T02:33:57Z" duration-ms="386018">
+=======
+  <suite started-at="2022-02-15T08:08:51Z" name="Default suite" finished-at="2022-02-15T08:17:50Z" duration-ms="538577">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2022-02-15T02:27:31Z" name="Default test" finished-at="2022-02-15T02:33:57Z" duration-ms="386018">
       <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@3bd323e9]" started-at="2022-02-15T02:27:31Z" name="beforeClass" finished-at="2022-02-15T02:29:51Z" duration-ms="140406" status="PASS">
+=======
+    <test started-at="2022-02-15T08:08:51Z" name="Default test" finished-at="2022-02-15T08:17:50Z" duration-ms="538577">
+      <class name="com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:08:51Z" name="beforeClass" finished-at="2022-02-15T08:09:04Z" duration-ms="13280" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@3bd323e9]" started-at="2022-02-15T02:29:51Z" name="ingresar" finished-at="2022-02-15T02:30:42Z" duration-ms="50842" status="PASS">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:09:04Z" name="login" finished-at="2022-02-15T08:09:12Z" duration-ms="8100" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- ingresar -->
         <test-method signature="mdrEntrar()[pri:1, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@3bd323e9]" started-at="2022-02-15T02:30:42Z" name="mdrEntrar" finished-at="2022-02-15T02:31:44Z" duration-ms="62251" status="PASS">
+=======
+        </test-method> <!-- login -->
+        <test-method signature="brbEntrar()[pri:1, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:09:12Z" name="brbEntrar" finished-at="2022-02-15T08:09:31Z" duration-ms="18313" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- mdrEntrar -->
         <test-method signature="distinto()[pri:14, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@3bd323e9]" started-at="2022-02-15T02:31:44Z" name="distinto" finished-at="2022-02-15T02:33:39Z" duration-ms="114331" status="FAIL">
           <exception class="org.openqa.selenium.JavascriptException">
+=======
+        </test-method> <!-- brbEntrar -->
+        <test-method signature="criarConfiguracaoExecucoes()[pri:2, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:09:31Z" name="criarConfiguracaoExecucoes" finished-at="2022-02-15T08:10:55Z" duration-ms="84034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracaoExecucoes -->
+        <test-method signature="criarConfiguracionConfiguracao()[pri:3, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:10:55Z" name="criarConfiguracionConfiguracao" finished-at="2022-02-15T08:12:40Z" duration-ms="105049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracionConfiguracao -->
+        <test-method signature="criarConfiguracao()[pri:4, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:12:40Z" name="criarConfiguracao" finished-at="2022-02-15T08:13:24Z" duration-ms="43822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracao -->
+        <test-method signature="outputBCB()[pri:5, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:13:24Z" name="outputBCB" finished-at="2022-02-15T08:14:01Z" duration-ms="37080" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- outputBCB -->
+        <test-method signature="subNivel2()[pri:6, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:14:01Z" name="subNivel2" finished-at="2022-02-15T08:14:38Z" duration-ms="37236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subNivel2 -->
+        <test-method signature="subNivel3()[pri:7, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:14:38Z" name="subNivel3" finished-at="2022-02-15T08:15:19Z" duration-ms="40819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subNivel3 -->
+        <test-method signature="subNivel4()[pri:8, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:15:19Z" name="subNivel4" finished-at="2022-02-15T08:15:56Z" duration-ms="37599" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subNivel4 -->
+        <test-method signature="subNivel5()[pri:9, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:15:56Z" name="subNivel5" finished-at="2022-02-15T08:16:39Z" duration-ms="42641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subNivel5 -->
+        <test-method signature="abrirSubnivel1()[pri:10, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:16:39Z" name="abrirSubnivel1" finished-at="2022-02-15T08:17:29Z" duration-ms="49826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abrirSubnivel1 -->
+        <test-method signature="abrirSubnivel2()[pri:11, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:17:29Z" name="abrirSubnivel2" finished-at="2022-02-15T08:17:34Z" duration-ms="5189" status="FAIL">
+          <exception class="java.lang.AssertionError">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
             <message>
+<<<<<<< HEAD
               <![CDATA[javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
   (Session info: chrome=83.0.4103.106)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
@@ -29,8 +95,12 @@ System info: host: 'AGILE', ip: '192.168.0.107', os.name: 'Windows 10', os.arch:
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
 Session ID: 5dc105ce53dc3ece399c8df1c96bccfa]]>
+=======
+              <![CDATA[Os Subniveis não foram adicinados com sucesso expected [true] but found [false]]]>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
             </message>
             <full-stacktrace>
+<<<<<<< HEAD
               <![CDATA[org.openqa.selenium.JavascriptException: javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
   (Session info: chrome=83.0.4103.106)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
@@ -128,6 +198,13 @@ at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invok
 at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
 at com.sap.timp.pageObjectModel.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5PO.comparar(LeiautesExecucacoFuncionalidades4Pt5PO.java:1658)
 at com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5.comparar(LeiautesExecucacoFuncionalidades4Pt5.java:181)
+=======
+              <![CDATA[java.lang.AssertionError: Os Subniveis não foram adicinados com sucesso expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades.abrirSubnivel2(OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades.java:144)
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -155,9 +232,10 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- comparar -->
         <test-method signature="criarConfiguracao()[pri:16, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@3bd323e9]" started-at="2022-02-15T02:33:44Z" name="criarConfiguracao" finished-at="2022-02-15T02:33:46Z" duration-ms="2108" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
@@ -229,8 +307,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        </test-method> <!-- abrirSubnivel2 -->
+        <test-method signature="abrirSubnivel3()[pri:12, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:17:34Z" name="abrirSubnivel3" finished-at="2022-02-15T08:17:39Z" duration-ms="5206" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criarConfiguracao -->
         <test-method signature="executar()[pri:17, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@3bd323e9]" started-at="2022-02-15T02:33:46Z" name="executar" finished-at="2022-02-15T02:33:50Z" duration-ms="4079" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
@@ -302,8 +385,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        </test-method> <!-- abrirSubnivel3 -->
+        <test-method signature="abrirSubnivel4()[pri:13, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:17:39Z" name="abrirSubnivel4" finished-at="2022-02-15T08:17:44Z" duration-ms="5185" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- executar -->
         <test-method signature="verBloco1()[pri:18, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@3bd323e9]" started-at="2022-02-15T02:33:50Z" name="verBloco1" finished-at="2022-02-15T02:33:53Z" duration-ms="3108" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
@@ -808,14 +896,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+=======
+        </test-method> <!-- abrirSubnivel4 -->
+        <test-method signature="abrirSubnivel5()[pri:14, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:17:44Z" name="abrirSubnivel5" finished-at="2022-02-15T08:17:50Z" duration-ms="5152" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- excluirLeiaute -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@3bd323e9]" started-at="2022-02-15T02:33:57Z" name="afterClass" finished-at="2022-02-15T02:33:57Z" duration-ms="0" status="PASS">
+=======
+        </test-method> <!-- abrirSubnivel5 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:17:50Z" name="afterClass" finished-at="2022-02-15T08:17:50Z" duration-ms="0" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
+=======
+      </class> <!-- com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

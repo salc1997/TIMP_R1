@@ -1,80 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name="Configuração &gt; ManuaisDeComponente(failed)">
-=======
-  <test thread-count="5" name="Parametros Gerais Configuracao Configuracao(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+  <test thread-count="5" name="Parametros Gerais Hierarquia(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteEditar">
-=======
-      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoVisualizar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+      <class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaVisualizar">
         <methods>
-<<<<<<< HEAD
-          <include name="afterClass"/>
-          <include name="editar"/>
-          <include name="beforeClass"/>
-=======
           <include name="visualizar"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteEditar -->
-      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteCriar">
+      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaVisualizar -->
+      <class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaEditar">
         <methods>
-          <include name="criar"/>
           <include name="beforeClass"/>
+          <include name="editar"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteCriar -->
-      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir">
-        <methods>
-          <include name="afterClass"/>
-          <include name="Excluir"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir -->
-      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponentesFiltrosAvançados">
-        <methods>
-          <include name="afterClass"/>
-          <include name="filtros"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponentesFiltrosAvançados -->
-=======
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoVisualizar -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaEditar -->
     </classes>
-<<<<<<< HEAD
-  </test> <!-- Configuração > ManuaisDeComponente(failed) -->
-  <test thread-count="5" name="Configuração &gt; Usuarios(failed)">
+  </test> <!-- Parametros Gerais Hierarquia(failed) -->
+  <test thread-count="5" name="Parametros Gerais Configuracao Configuracao(failed)">
     <classes>
-      <class name="com.timp.test.ADM.Configuração.Usuarios.UsuariosEditar">
+      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoEditar">
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="Editar"/>
+          <include name="editar"/>
         </methods>
-      </class> <!-- com.timp.test.ADM.Configuração.Usuarios.UsuariosEditar -->
+      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoEditar -->
     </classes>
-  </test> <!-- Configuração > Usuarios(failed) -->
-  <test thread-count="5" name="Usuários &gt; Pacotes(failed)">
-    <classes>
-      <class name="com.timp.test.ADM.Usuários.Pacotes.PacotesCriar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="Crear"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.ADM.Usuários.Pacotes.PacotesCriar -->
-    </classes>
-  </test> <!-- Usuários > Pacotes(failed) -->
-=======
   </test> <!-- Parametros Gerais Configuracao Configuracao(failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 </suite> <!-- Failed suite [Suite] -->

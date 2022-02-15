@@ -948,6 +948,9 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 	
 	public ArrayList<Boolean> entradaManual() {
 		sleep(3000);
+		System.out.println("***********");
+		System.out.println("Entrada Manual");
+		System.out.println("***********");
 		entrada.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1024,6 +1027,9 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 	}
 	
 	public ArrayList<Boolean> campoOutput() {
+		System.out.println("***********");
+		System.out.println("campo Output");
+		System.out.println("***********");
 		sleep(3000);
 		verCamposSaida.click();
 		sleep(3000);
@@ -1068,7 +1074,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		criarAdicionarCamposSaida.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(8000);
+		sleep(2000);
 		
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"Campo de saída criado com sucesso\")]")).size();
 		
@@ -1095,6 +1101,10 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		nao.click();
+		sleep(8000);
+		
 		
 		return sucesso;
 	}
@@ -2403,7 +2413,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 //		sleep(2000);
 		
 		attributeToBeXpath("//div[@class=\"column-wrapper second\"]/div/div","class", "animation-wrapper show");
-		sleep(3000);
+		sleep(4000);
 		
 		dobleClickElement(selectCampoSaidaAba1OPC1);
 		sleep(3000);

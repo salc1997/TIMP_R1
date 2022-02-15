@@ -83,7 +83,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends Te
 		}
 	}
 	
-/*	@Test(priority = 6)	
+	@Test(priority = 6)	
 	public void campoOutput() {
 		ArrayList<Boolean> sucesso = demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.campoOutput();
 		System.out.println(sucesso);
@@ -190,7 +190,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends Te
 			assertTrue(sucesso.get(i), subniveis);
 		}
 	}
-	
+	/*
 	//desde aqui dividir para hacer version 2
 	
 //	@Test(priority = 17)

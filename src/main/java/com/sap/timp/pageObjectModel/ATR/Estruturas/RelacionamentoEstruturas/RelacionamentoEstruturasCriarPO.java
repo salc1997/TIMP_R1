@@ -127,7 +127,7 @@ public class RelacionamentoEstruturasCriarPO extends TestBaseSteven{
 	
 	
 		//waitExpectElement(grupo1);
-		sleep(20000);
+		sleep(28000);
 	
 		grupo1.click();
 		sleep(1000);

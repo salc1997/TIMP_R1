@@ -211,17 +211,18 @@ public class AdicionarColunasPO extends TestBaseSteven{
 		sleep(3000);
 		actions.doubleClick(bc).perform();
 		
-		buscarCampo.clear();
-		buscarCampo.sendKeys("Alíquota ICMS");
-		actions.moveToElement(aliquota);
-		sleep(3000);
-		actions.doubleClick(aliquota).perform();
-		
+	
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Valor ICMS");
 		actions.moveToElement(valorICMS);
 		sleep(3000);
 		actions.doubleClick(valorICMS).perform();
+		
+		buscarCampo.clear();
+		buscarCampo.sendKeys("Alíquota ICMS");
+		actions.moveToElement(aliquota);
+		sleep(3000);
+		actions.doubleClick(aliquota).perform();
 		
 		sleep(2000);
 		

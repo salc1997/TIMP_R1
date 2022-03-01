@@ -1,33 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Parametros Gerais Hierarquia(failed)">
+  <test thread-count="5" name="Banco De Credito Extemporaneo &gt; Configuracao e Execucao (failed)">
     <classes>
-      <class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaVisualizar">
-        <methods>
-          <include name="visualizar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaVisualizar -->
-      <class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaEditar">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="editar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaEditar -->
-    </classes>
-  </test> <!-- Parametros Gerais Hierarquia(failed) -->
-  <test thread-count="5" name="Parametros Gerais Configuracao Configuracao(failed)">
-    <classes>
-      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoEditar">
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoEditar">
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
           <include name="editar"/>
         </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoEditar -->
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoEditar -->
     </classes>
-  </test> <!-- Parametros Gerais Configuracao Configuracao(failed) -->
+  </test> <!-- Banco De Credito Extemporaneo > Configuracao e Execucao (failed) -->
+  <test thread-count="5" name="Banco De Credito Extemporaneo &gt; Configuracao e Execucao  &gt; Executados(failed)">
+    <classes>
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir -->
+    </classes>
+  </test> <!-- Banco De Credito Extemporaneo > Configuracao e Execucao  > Executados(failed) -->
+  <test thread-count="5" name="Banco De Credito Tributaro &gt; Configuração de Banco de Crédito Tributário(failed)">
+    <classes>
+      <class name="com.timp.test.TCC.BancoDeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioEditar">
+        <methods>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioEditar -->
+    </classes>
+  </test> <!-- Banco De Credito Tributaro > Configuração de Banco de Crédito Tributário(failed) -->
+  <test thread-count="5" name="Banco De Credito Tributario &gt; Configuração de Layout de Painel(failed)">
+    <classes>
+      <class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExecutarGravar">
+        <methods>
+          <include name="executarGravar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelExecutarGravar -->
+    </classes>
+  </test> <!-- Banco De Credito Tributario > Configuração de Layout de Painel(failed) -->
+  <test thread-count="5" name="Banco De Ocorrecias &gt; Configuracao E Execucao (failed)">
+    <classes>
+      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="executarr"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao -->
+    </classes>
+  </test> <!-- Banco De Ocorrecias > Configuracao E Execucao (failed) -->
+  <test thread-count="5" name="Banco De Ocorrecias &gt;  Executados(failed)">
+    <classes>
+      <class name="com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar">
+        <methods>
+          <include name="executarEditar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar -->
+    </classes>
+  </test> <!-- Banco De Ocorrecias >  Executados(failed) -->
 </suite> <!-- Failed suite [Suite] -->

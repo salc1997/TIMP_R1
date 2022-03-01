@@ -130,14 +130,16 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditarPO extends TestBaseMass
 			opcionAjusteTC2.click();
 			sleep(9000);
 		}
-		
+		sleep(68000);
 		btnGravar.click();
 		sleep(2000);
 		
 
-		btnNo.click();
-		sleep(2000);
+		int botaoNao = rows("//button[text()=\"Não\"]");
 		
+		if (botaoNao > 0) {
+			btnNo.click();
+		}
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

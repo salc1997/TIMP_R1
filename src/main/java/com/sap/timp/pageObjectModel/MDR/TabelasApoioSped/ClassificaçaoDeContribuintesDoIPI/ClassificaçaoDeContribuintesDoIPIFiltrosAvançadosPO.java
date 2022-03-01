@@ -60,7 +60,7 @@ public class ClassificaçaoDeContribuintesDoIPIFiltrosAvançadosPO extends TestBas
 	@FindBy(xpath = "//div[@class=\"library-advanced-filter-item\"][1]/div/div/div/div[2]")
 	public WebElement filtrousuario;
 	
-	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"option-2\"]/div/label/span")
+	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"option-1\"]/div/label/span")
 	public WebElement opcaofiltrousuario;
 	
 	@FindBy(xpath = " Filtrar por Data Inicial")
@@ -108,7 +108,7 @@ public class ClassificaçaoDeContribuintesDoIPIFiltrosAvançadosPO extends TestBas
 		for (int i = 0; i < rows; i++) {
 
 			String tributo ="";
-			tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]["+j+"]/div[4]/div")).getText();
+			tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]["+j+"]/div[8]/div")).getText();
 			
 			if (data.size()==0) {
 				
@@ -127,7 +127,7 @@ public class ClassificaçaoDeContribuintesDoIPIFiltrosAvançadosPO extends TestBas
 		String tipoatividade = "";
 		j=1;
 		for (int i = 0; i < rows; i++) {
-			tipoatividade = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]["+j+"]/div[4]/div")).getText();
+			tipoatividade = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]["+j+"]/div[8]/div")).getText();
 			sucesso.add(data.get(0).equals(tipoatividade));
 			j=j+1;
 		}

@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseFernando;
 
 public class TaxasDeConversaoDetalhesPO extends TestBaseFernando{
-	@FindBy(xpath = "//span[text()=\"Taxas de Conversão\"]")
+	@FindBy(xpath = "//span[text()=\"Taxas de Conversão \"]")
 	public WebElement taxasdeconversao;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")

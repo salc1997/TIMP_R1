@@ -10,7 +10,7 @@ import com.sap.timp.base.TestBaseSteven;
 public class TaxasDeConversaoCriarPO extends TestBaseSteven {
 	
 	
-	@FindBy(xpath = "//span[text()=\"Taxas de Conversão\"]")
+	@FindBy(xpath = "//span[text()=\"Taxas de Conversão \"]")
 	public WebElement taxasdeconversao;
 	
 	@FindBy(xpath = "//span[text()=\"Nova Taxa de Conversão\"]")

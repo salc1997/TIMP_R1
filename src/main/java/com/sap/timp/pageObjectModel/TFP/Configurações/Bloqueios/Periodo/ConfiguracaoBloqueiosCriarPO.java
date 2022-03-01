@@ -120,7 +120,7 @@ public class ConfiguracaoBloqueiosCriarPO extends TestBaseFernando{
 		sleep(1000);
 		opcionUf.click();
 		closeSelectTypeCheckbox(cboUf);
-		sleep(4000);
+		sleep(8000);
 		
 	//	attributeToBeXpath("//div[@id=\"branchInput\"]/div", "class", "base-MultipleSelect3 required");
 		cbofilial.click();

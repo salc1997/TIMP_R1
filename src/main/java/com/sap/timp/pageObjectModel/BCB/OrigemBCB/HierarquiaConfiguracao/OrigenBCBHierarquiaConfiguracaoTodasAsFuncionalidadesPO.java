@@ -299,7 +299,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	
 	@FindBy(xpath = "//div[@class=\"subLevel\"][5]/div/div[@id=\"value\"]/div/div[2]")
 	public WebElement campoSaida5;
-	@FindBy(xpath = "//li[text()=\"Campo de Saída 2\"][1]")
+	@FindBy(xpath = "//li[text()=\"Campo de Saída 1\"][1]")
 	public WebElement opcCampoSaida5tc2;
 	@FindBy(xpath = "//li[@id][text()=\"Campo de saída 2\"][1]")
 	public WebElement opcCampoSaida5;
@@ -759,7 +759,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		gravarC.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(7000);
+		sleep(8000);
 		
 		biblioteca.click();
 		sleep(5000);
@@ -981,11 +981,11 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		if (tc2==true) {
 			selectBCB3.click();
 			selectBCB3.sendKeys(Keys.ESCAPE);
-			sleep(8000);
+			sleep(9000);
 		}else if(tq1==true) {
 			selectBCB1.click();
 			selectBCB1.sendKeys(Keys.ESCAPE);
-			sleep(1000);
+			sleep(6000);
 		}else if(tq2==true){
 			selectBCB1.click();
 			selectBCB1.sendKeys(Keys.ESCAPE);
@@ -1542,7 +1542,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		
 		campoSaida5.click();
-		sleep(3000);
+		sleep(10000);
 		if (tc2==true) {
 			opcCampoSaida5tc2.click();
 			opcCampoSaida5tc2.sendKeys(Keys.ESCAPE);
@@ -1578,7 +1578,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 //		
 //		sim.click();
 //		sleep(3000);

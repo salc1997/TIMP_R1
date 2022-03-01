@@ -508,9 +508,9 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
 		System.out.println("");
 		
 		novo.click();
-		sleep(3000);
+		sleep(9000);
 		waitExpectElement(nome);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		nome.sendKeys("Teste Automatizado kenssy");

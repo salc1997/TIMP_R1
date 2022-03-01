@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="14" failed="1" skipped="0">
+<testng-results ignored="0" total="17" passed="16" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-15T08:08:51Z" name="Default suite" finished-at="2022-02-15T08:17:50Z" duration-ms="538577">
+  <suite started-at="2022-02-28T13:08:09Z" name="Default suite" finished-at="2022-02-28T13:19:24Z" duration-ms="675735">
     <groups>
     </groups>
-    <test started-at="2022-02-15T08:08:51Z" name="Default test" finished-at="2022-02-15T08:17:50Z" duration-ms="538577">
+    <test started-at="2022-02-28T13:08:09Z" name="Default test" finished-at="2022-02-28T13:19:24Z" duration-ms="675735">
       <class name="com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:08:51Z" name="beforeClass" finished-at="2022-02-15T08:09:04Z" duration-ms="13280" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:08:09Z" name="beforeClass" finished-at="2022-02-28T13:08:19Z" duration-ms="10675" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:09:04Z" name="login" finished-at="2022-02-15T08:09:12Z" duration-ms="8100" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:08:19Z" name="login" finished-at="2022-02-28T13:08:26Z" duration-ms="7060" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="brbEntrar()[pri:1, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:09:12Z" name="brbEntrar" finished-at="2022-02-15T08:09:31Z" duration-ms="18313" status="PASS">
+        <test-method signature="brbEntrar()[pri:1, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:08:26Z" name="brbEntrar" finished-at="2022-02-28T13:08:45Z" duration-ms="18927" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- brbEntrar -->
-        <test-method signature="criarConfiguracaoExecucoes()[pri:2, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:09:31Z" name="criarConfiguracaoExecucoes" finished-at="2022-02-15T08:10:55Z" duration-ms="84034" status="PASS">
+        <test-method signature="criarConfiguracaoExecucoes()[pri:2, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:08:45Z" name="criarConfiguracaoExecucoes" finished-at="2022-02-28T13:10:09Z" duration-ms="83297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criarConfiguracaoExecucoes -->
-        <test-method signature="criarConfiguracionConfiguracao()[pri:3, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:10:55Z" name="criarConfiguracionConfiguracao" finished-at="2022-02-15T08:12:40Z" duration-ms="105049" status="PASS">
+        <test-method signature="criarConfiguracionConfiguracao()[pri:3, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:10:09Z" name="criarConfiguracionConfiguracao" finished-at="2022-02-28T13:11:53Z" duration-ms="103967" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criarConfiguracionConfiguracao -->
-        <test-method signature="criarConfiguracao()[pri:4, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:12:40Z" name="criarConfiguracao" finished-at="2022-02-15T08:13:24Z" duration-ms="43822" status="PASS">
+        <test-method signature="criarConfiguracao()[pri:4, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:11:53Z" name="criarConfiguracao" finished-at="2022-02-28T13:12:36Z" duration-ms="43485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criarConfiguracao -->
-        <test-method signature="outputBCB()[pri:5, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:13:24Z" name="outputBCB" finished-at="2022-02-15T08:14:01Z" duration-ms="37080" status="PASS">
+        <test-method signature="outputBCB()[pri:5, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:12:36Z" name="outputBCB" finished-at="2022-02-28T13:13:13Z" duration-ms="37060" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- outputBCB -->
-        <test-method signature="subNivel2()[pri:6, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:14:01Z" name="subNivel2" finished-at="2022-02-15T08:14:38Z" duration-ms="37236" status="PASS">
+        <test-method signature="subNivel2()[pri:6, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:13:13Z" name="subNivel2" finished-at="2022-02-28T13:13:49Z" duration-ms="35557" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- subNivel2 -->
-        <test-method signature="subNivel3()[pri:7, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:14:38Z" name="subNivel3" finished-at="2022-02-15T08:15:19Z" duration-ms="40819" status="PASS">
+        <test-method signature="subNivel3()[pri:7, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:13:49Z" name="subNivel3" finished-at="2022-02-28T13:14:29Z" duration-ms="40542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- subNivel3 -->
-        <test-method signature="subNivel4()[pri:8, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:15:19Z" name="subNivel4" finished-at="2022-02-15T08:15:56Z" duration-ms="37599" status="PASS">
+        <test-method signature="subNivel4()[pri:8, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:14:29Z" name="subNivel4" finished-at="2022-02-28T13:15:08Z" duration-ms="38720" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- subNivel4 -->
-        <test-method signature="subNivel5()[pri:9, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:15:56Z" name="subNivel5" finished-at="2022-02-15T08:16:39Z" duration-ms="42641" status="PASS">
+        <test-method signature="subNivel5()[pri:9, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:15:08Z" name="subNivel5" finished-at="2022-02-28T13:15:49Z" duration-ms="40922" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- subNivel5 -->
-        <test-method signature="abrirSubnivel1()[pri:10, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:16:39Z" name="abrirSubnivel1" finished-at="2022-02-15T08:17:29Z" duration-ms="49826" status="PASS">
+        <test-method signature="abrirSubnivel1()[pri:10, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:15:49Z" name="abrirSubnivel1" finished-at="2022-02-28T13:16:39Z" duration-ms="49776" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abrirSubnivel1 -->
-        <test-method signature="abrirSubnivel2()[pri:11, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:17:29Z" name="abrirSubnivel2" finished-at="2022-02-15T08:17:34Z" duration-ms="5189" status="FAIL">
+        <test-method signature="abrirSubnivel2()[pri:11, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:16:39Z" name="abrirSubnivel2" finished-at="2022-02-28T13:16:44Z" duration-ms="5200" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Os Subniveis não foram adicinados com sucesso expected [true] but found [false]]]>
@@ -97,19 +97,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abrirSubnivel2 -->
-        <test-method signature="abrirSubnivel3()[pri:12, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:17:34Z" name="abrirSubnivel3" finished-at="2022-02-15T08:17:39Z" duration-ms="5206" status="PASS">
+        <test-method signature="abrirSubnivel3()[pri:12, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:16:44Z" name="abrirSubnivel3" finished-at="2022-02-28T13:16:49Z" duration-ms="5179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abrirSubnivel3 -->
-        <test-method signature="abrirSubnivel4()[pri:13, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:17:39Z" name="abrirSubnivel4" finished-at="2022-02-15T08:17:44Z" duration-ms="5185" status="PASS">
+        <test-method signature="abrirSubnivel4()[pri:13, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:16:49Z" name="abrirSubnivel4" finished-at="2022-02-28T13:16:54Z" duration-ms="5178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abrirSubnivel4 -->
-        <test-method signature="abrirSubnivel5()[pri:14, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:17:44Z" name="abrirSubnivel5" finished-at="2022-02-15T08:17:50Z" duration-ms="5152" status="PASS">
+        <test-method signature="abrirSubnivel5()[pri:14, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:16:54Z" name="abrirSubnivel5" finished-at="2022-02-28T13:16:59Z" duration-ms="5236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abrirSubnivel5 -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:17:50Z" name="afterClass" finished-at="2022-02-15T08:17:50Z" duration-ms="0" status="PASS">
+        <test-method signature="excluirConfiguracoes()[pri:15, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:16:59Z" name="excluirConfiguracoes" finished-at="2022-02-28T13:18:22Z" duration-ms="82280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirConfiguracoes -->
+        <test-method signature="excluirHierarquia()[pri:16, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:18:22Z" name="excluirHierarquia" finished-at="2022-02-28T13:19:24Z" duration-ms="62621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirHierarquia -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:19:24Z" name="afterClass" finished-at="2022-02-28T13:19:24Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

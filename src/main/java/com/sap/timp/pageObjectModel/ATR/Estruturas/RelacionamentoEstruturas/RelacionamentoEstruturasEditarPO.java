@@ -134,7 +134,7 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		acao.click();
 		
 		sleep(100000);
-		sleep(16000);
+		sleep(34000);
 		adicionar.click();
 		sleep(2000);
 		

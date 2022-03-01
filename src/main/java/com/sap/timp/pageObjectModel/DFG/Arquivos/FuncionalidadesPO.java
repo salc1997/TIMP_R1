@@ -606,12 +606,12 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		btnRaiz.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		btnUltimaPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		String idRegistro = idObter4();
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -670,7 +670,7 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		
 		
 		 btnNO.click();
-		sleep(8000);
+		sleep(14000);
 		
 		// Verificar si es guardado con exito, si no se va quedar esperando por el
 		// waitExpectXpath

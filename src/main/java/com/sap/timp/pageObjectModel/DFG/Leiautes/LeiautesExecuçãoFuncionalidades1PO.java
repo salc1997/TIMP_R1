@@ -678,7 +678,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 		sleep(6000);
 		
 		waitExpectElement(adicionarBloco);
-		sleep(50000);
+		sleep(80000);
 		
 		
 		adicionarBloco.click();
@@ -747,7 +747,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 		ajuste1.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		  if(tp1 == true) {
 		  

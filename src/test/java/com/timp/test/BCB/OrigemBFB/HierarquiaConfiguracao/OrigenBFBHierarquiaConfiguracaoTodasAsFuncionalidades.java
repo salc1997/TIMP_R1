@@ -174,7 +174,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 			assertTrue(sucesso.get(i), subniveis);
 		}
 	}
-/*	
+	
 	@Test(priority = 15)
 	public void excluirConfiguracoes() {
 		
@@ -196,5 +196,5 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 		}
 	}
 
-*/
+
 }

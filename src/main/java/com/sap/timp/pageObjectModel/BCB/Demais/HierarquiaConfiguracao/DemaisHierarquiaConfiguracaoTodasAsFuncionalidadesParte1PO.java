@@ -1840,7 +1840,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		sleep(3000);
 		
 		selectConfiguracaoConsolidacao.click();
-		sleep(2000);
+		sleep(4000);
 		
 		WebElement opcConfiguracaoConsolidacao = driver.findElement(By.xpath("//li[contains(text(),\""+idObter3()+"\")]"));
 		//WebElement opcConfiguracaoConsolidacao = driver.findElement(By.xpath("//li[contains(text(),\"1170\")]"));

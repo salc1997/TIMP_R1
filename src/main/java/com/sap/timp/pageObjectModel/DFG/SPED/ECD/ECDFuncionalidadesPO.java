@@ -596,6 +596,8 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		editar.click();
 		invisibilityOfElementOverlay();
 		
+		nao.click();
+		sleep(2000);
 		primeira.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -603,7 +605,7 @@ public class ECDFuncionalidadesPO extends TestBaseSteven{
 		siguiente.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		
 		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

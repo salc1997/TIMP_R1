@@ -322,7 +322,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBaseMassi
 			cboTipoCredito.click();
 			sleep(2000);
 			opcionTipoCreditoTC2.click();
-			sleep(56000);
+			sleep(70000);
 			
 			cboACredito.click();
 			sleep(1000);

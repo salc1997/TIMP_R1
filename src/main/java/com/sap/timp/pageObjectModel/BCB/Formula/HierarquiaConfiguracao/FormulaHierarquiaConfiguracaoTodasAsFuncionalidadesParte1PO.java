@@ -1074,7 +1074,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			sleep(2000);
 			
 			nao.click();
-			sleep(6000);
+			sleep(7000);
 			
 			int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
 			

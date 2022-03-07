@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="Prueba6(failed)">
+=======
+<<<<<<< HEAD
+  <test thread-count="5" name="DFG - Leiautes(failed)">
+=======
+<<<<<<< HEAD
+  <test thread-count="5" name="Banco De Credito Extemporaneo &gt; Configuracao e Execucao (failed)">
+=======
+<<<<<<< HEAD
+  <test thread-count="5" name="GruposAvancados(failed)">
+=======
+  <test thread-count="5" name="Parametros Gerais Hierarquia(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.RateioDeConsorcio.RateioDeConsorcioPesquisaPorID">
         <methods>
           <include name="afterClass"/>
@@ -186,6 +203,75 @@
       </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosVisualizar -->
       <class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.StatusParaBancoIndébitosExcluir">
         <methods>
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoEditar">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.BRB.GruposAvancados">
+=======
+      <class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaVisualizar">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+        <methods>
+          <include name="filtrosFechaUsuarioCriado"/>
+          <include name="filtrosId"/>
+          <include name="filtrosFechaUsuarioModificado"/>
+          <include name="filtrosUsuarioModificado"/>
+          <include name="filtrosUsuarioCriado"/>
+          <include name="afterClass"/>
+          <include name="filtrosFiltroTipo"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
+    </classes>
+<<<<<<< HEAD
+  </test> <!-- DFG - Leiautes(failed) -->
+=======
+<<<<<<< HEAD
+  </test> <!-- GruposAvancados(failed) -->
+  <test thread-count="5" name="CrescenteEDecrescente(failed)">
+=======
+  </test> <!-- Parametros Gerais Hierarquia(failed) -->
+  <test thread-count="5" name="Parametros Gerais Configuracao Configuracao(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+    <classes>
+<<<<<<< HEAD
+      <class name="com.timp.test.BRB.CrescenteEDecrescente">
+=======
+      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoEditar">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+<<<<<<< HEAD
+          <include name="crescenteEDecrescente"/>
+=======
+          <include name="editar"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucaoEditar -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRB.CrescenteEDecrescente -->
+=======
+      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoEditar -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+    </classes>
+<<<<<<< HEAD
+  </test> <!-- Banco De Credito Extemporaneo > Configuracao e Execucao (failed) -->
+  <test thread-count="5" name="Banco De Credito Extemporaneo &gt; Configuracao e Execucao  &gt; Executados(failed)">
+    <classes>
+      <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosExcluir">
+        <methods>
+          <include name="beforeClass"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="excluir"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
@@ -213,5 +299,61 @@
         </methods>
       </class> <!-- com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos.statusParaBancoIndébitosCriar -->
     </classes>
+<<<<<<< HEAD
   </test> <!-- Prueba27(failed) -->
+=======
+  </test> <!-- Banco De Credito Tributario > Configuração de Layout de Painel(failed) -->
+  <test thread-count="5" name="Banco De Ocorrecias &gt; Configuracao E Execucao (failed)">
+    <classes>
+      <class name="com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="executarr"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.ConfiguracaoEExecucao.ConfiguracaoEExecucaoExecucao -->
+    </classes>
+  </test> <!-- Banco De Ocorrecias > Configuracao E Execucao (failed) -->
+  <test thread-count="5" name="Banco De Ocorrecias &gt;  Executados(failed)">
+    <classes>
+      <class name="com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar">
+        <methods>
+          <include name="executarEditar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar -->
+    </classes>
+  </test> <!-- Banco De Ocorrecias >  Executados(failed) -->
+=======
+<<<<<<< HEAD
+  </test> <!-- CrescenteEDecrescente(failed) -->
+  <test thread-count="5" name="ComentarioListaSuspensa(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
+        <methods>
+          <include name="listaSuspensa"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
+    </classes>
+  </test> <!-- ComentarioListaSuspensa(failed) -->
+  <test thread-count="5" name="ComentarioLibre(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.ComentarioLibre">
+        <methods>
+          <include name="comentarioLibre"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.ComentarioLibre -->
+    </classes>
+  </test> <!-- ComentarioLibre(failed) -->
+=======
+  </test> <!-- Parametros Gerais Configuracao Configuracao(failed) -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </suite> <!-- Failed suite [Suite] -->

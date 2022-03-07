@@ -3,13 +3,33 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Prueba6(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.RateioDeConsorcio.RateioDeConsorcioPesquisaPorID">
+=======
+      <class name="com.timp.test.DFG.Arquivos.Funcionalidades">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
+=======
+          <include name="idPublicoPrivado"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="filtro"/>
+=======
+          <include name="oficializarArquivo"/>
+          <include name="informacao"/>
+          <include name="favorito"/>
+          <include name="executar"/>
+          <include name="lixeira"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.RateioDeConsorcio.RateioDeConsorcioPesquisaPorID -->
+=======
+      </class> <!-- com.timp.test.DFG.Arquivos.Funcionalidades -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Prueba6(failed) -->
   <test thread-count="5" name="Prueba9(failed)">

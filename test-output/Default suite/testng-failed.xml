@@ -3,14 +3,34 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDeContribucaoSocialApurada.TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa">
+=======
+      <class name="com.timp.test.DFG.Arquivos.Funcionalidades">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="excluirEmMassa"/>
+=======
+          <include name="idPublicoPrivado"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="criar"/>
+=======
+          <include name="oficializarArquivo"/>
+          <include name="informacao"/>
+          <include name="favorito"/>
+          <include name="executar"/>
+          <include name="lixeira"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <include name="beforeClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDeContribucaoSocialApurada.TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa -->
+=======
+      </class> <!-- com.timp.test.DFG.Arquivos.Funcionalidades -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

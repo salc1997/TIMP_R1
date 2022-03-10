@@ -142,7 +142,7 @@ public class ProdutosSCANCCriarPO extends TestBaseSteven{
 		sleep(2000);
 
 		
-		dataVigencia.sendKeys("01/01/1870");
+		dataVigencia.sendKeys("01/01/2020");
 		
 		
 		sleep(2000);

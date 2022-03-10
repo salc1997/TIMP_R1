@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>3/4/1</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 25 14:07:45 CST 2022</td>
+<td>Started on:</td><td>Mon Mar 07 18:21:30 CST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>1241 seconds (1241621 ms)</td>
+<tr><td>Total time:</td><td>844 seconds (844084 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -78,8 +78,8 @@ function toggleAllBoxes() {
 <td title='com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar.criar()'><b>criar</b><br>Test class: com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar</td>
 <td><div><pre>java.lang.AssertionError: O registro não foi criado com sucesso expected [true] but found [false]
 	at com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar.criar(GrupoDeEstruturasCriar.java:45)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1992162329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1992162329'><pre>java.lang.AssertionError: O registro não foi criado com sucesso expected [true] but found [false]
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace309546677", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace309546677'><pre>java.lang.AssertionError: O registro não foi criado com sucesso expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
@@ -110,18 +110,57 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>109</td>
+<td>98</td>
 <td>com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar@2f67b837</td></tr>
 <tr>
 <td title='com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa.criar()'><b>criar</b><br>Test class: com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa</td>
-<td><div><pre>java.lang.AssertionError: O registro não foi criado com sucesso expected [true] but found [false]
-	at com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa.criar(GrupoDeEstruturasExcluirEmMassa.java:45)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace136837576", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace136837576'><pre>java.lang.AssertionError: O registro não foi criado com sucesso expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa.criar(GrupoDeEstruturasExcluirEmMassa.java:45)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&quot;tbody&quot;)]/div[contains(@class,&quot;tr&quot;) and @data-id][0]/div[3]/div&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57775}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 016bc6c79e454a87b44294b50377014b
+*** Element info: {Using=xpath, value=//div[contains(@class,&quot;tbody&quot;)]/div[contains(@class,&quot;tr&quot;) and @data-id][0]/div[3]/div}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.sap.timp.pageObjectModel.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassaPO.criar(GrupoDeEstruturasExcluirEmMassaPO.java:147)
+	at com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa.criar(GrupoDeEstruturasExcluirEmMassa.java:44)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace98847539", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace98847539'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&quot;tbody&quot;)]/div[contains(@class,&quot;tr&quot;) and @data-id][0]/div[3]/div&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57775}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 016bc6c79e454a87b44294b50377014b
+*** Element info: {Using=xpath, value=//div[contains(@class,&quot;tbody&quot;)]/div[contains(@class,&quot;tr&quot;) and @data-id][0]/div[3]/div}
+	at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.sap.timp.pageObjectModel.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassaPO.criar(GrupoDeEstruturasExcluirEmMassaPO.java:147)
+	at com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa.criar(GrupoDeEstruturasExcluirEmMassa.java:44)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -148,7 +187,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>122</td>
+<td>113</td>
 <td>com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa@ca30bc1</td></tr>
 <tr>
 <td title='com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes.detalhes()'><b>detalhes</b><br>Test class: com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes</td>
@@ -158,8 +197,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50419}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7cf10e119bab0f34dc86189b3113e90a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57505}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8ec94a90605d6cc6584cac9fa6170301
 *** Element info: {Using=xpath, value=//div[@aria-label=&quot;Row; Nome: Ajustes Fiscais&quot;]/div/div}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -176,15 +215,15 @@ Session ID: 7cf10e119bab0f34dc86189b3113e90a
 	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
 	at com.sap.timp.pageObjectModel.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhesPO.detalhes(GrupoDeEstruturasDetalhesPO.java:131)
 	at com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes.detalhes(GrupoDeEstruturasDetalhes.java:46)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2104428878", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2104428878'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@aria-label=&quot;Row; Nome: Ajustes Fiscais&quot;]/div/div&quot;}
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2045708211", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2045708211'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@aria-label=&quot;Row; Nome: Ajustes Fiscais&quot;]/div/div&quot;}
   (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50419}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7cf10e119bab0f34dc86189b3113e90a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57505}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8ec94a90605d6cc6584cac9fa6170301
 *** Element info: {Using=xpath, value=//div[@aria-label=&quot;Row; Nome: Ajustes Fiscais&quot;]/div/div}
 	at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -231,7 +270,7 @@ Session ID: 7cf10e119bab0f34dc86189b3113e90a
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>84</td>
+<td>67</td>
 <td>com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes@6af9fcb2</td></tr>
 <tr>
 <td title='com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturaVer.visualizar()'><b>visualizar</b><br>Test class: com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturaVer</td>
@@ -241,8 +280,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50514}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4580a69fd3a82e794f4be616ac506364
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a7d6e78e4a662610ba6861ecde843b52
 *** Element info: {Using=xpath, value=//div[@aria-label=&quot;Row; Nome: Ajustes Fiscais&quot;]/div/div}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -259,15 +298,15 @@ Session ID: 4580a69fd3a82e794f4be616ac506364
 	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
 	at com.sap.timp.pageObjectModel.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasVerPO.visualizar(GrupoDeEstruturasVerPO.java:95)
 	at com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturaVer.visualizar(GrupoDeEstruturaVer.java:45)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1581947926", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1581947926'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@aria-label=&quot;Row; Nome: Ajustes Fiscais&quot;]/div/div&quot;}
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1813996673", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1813996673'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@aria-label=&quot;Row; Nome: Ajustes Fiscais&quot;]/div/div&quot;}
   (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:50514}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 4580a69fd3a82e794f4be616ac506364
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57568}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a7d6e78e4a662610ba6861ecde843b52
 *** Element info: {Using=xpath, value=//div[@aria-label=&quot;Row; Nome: Ajustes Fiscais&quot;]/div/div}
 	at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -314,7 +353,7 @@ Session ID: 4580a69fd3a82e794f4be616ac506364
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>61</td>
+<td>53</td>
 <td>com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturaVer@6cce16f4</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -327,17 +366,17 @@ Session ID: 4580a69fd3a82e794f4be616ac506364
 <tr>
 <td title='com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir.criar()'><b>criar</b><br>Test class: com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir</td>
 <td></td>
-<td>104</td>
+<td>67</td>
 <td>com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir@291a7e3c</td></tr>
 <tr>
 <td title='com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasEditar.editar()'><b>editar</b><br>Test class: com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasEditar</td>
 <td></td>
-<td>224</td>
+<td>146</td>
 <td>com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasEditar@1869fbd2</td></tr>
 <tr>
 <td title='com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasFiltroPorID.filtro()'><b>filtro</b><br>Test class: com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasFiltroPorID</td>
 <td></td>
-<td>69</td>
+<td>61</td>
 <td>com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasFiltroPorID@7efaad5a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -350,8 +389,8 @@ Session ID: 4580a69fd3a82e794f4be616ac506364
 <tr>
 <td title='com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa.Excluir()'><b>Excluir</b><br>Test class: com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa</td>
 <td><div><pre>java.lang.Throwable: Method GrupoDeEstruturasExcluirEmMassa.Excluir()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa@ca30bc1] depends on not successfully finished methods
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace37277554", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace37277554'><pre>java.lang.Throwable: Method GrupoDeEstruturasExcluirEmMassa.Excluir()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa@ca30bc1] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace454153660", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace454153660'><pre>java.lang.Throwable: Method GrupoDeEstruturasExcluirEmMassa.Excluir()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa@ca30bc1] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)

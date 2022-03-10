@@ -279,9 +279,11 @@ public class CodigosAjustesExcluirMassaPO extends TestBaseSteven {
 		
 		sleep(2000);
 		
-		nao.click();
+		int botaoNao = rows("//button[text()=\"Não\"]");
 		
-		sleep(2000);
+		if (botaoNao > 0) {
+			nao.click();
+		}
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

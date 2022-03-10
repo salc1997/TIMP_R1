@@ -125,7 +125,7 @@ public class TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassaPO extends Test
 			sleep(2000);
 			sim.click();
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+			sleep(6000);
 			
 			//Segundo registro
 			tributo.click();

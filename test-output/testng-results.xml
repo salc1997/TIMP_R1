@@ -1,17 +1,266 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="72" passed="33" failed="36" skipped="3">
+=======
+<<<<<<< HEAD
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+=======
+<<<<<<< HEAD
+<testng-results ignored="0" total="11" passed="5" failed="6" skipped="0">
+=======
+<<<<<<< HEAD
+<testng-results ignored="0" total="17" passed="16" failed="1" skipped="0">
+=======
+<<<<<<< HEAD
+<testng-results ignored="0" total="13" passed="2" failed="11" skipped="0">
+=======
+<testng-results ignored="0" total="15" passed="14" failed="1" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2022-03-04T18:38:37Z" name="Suite" finished-at="2022-03-04T23:38:34Z" duration-ms="17997572">
+=======
+<<<<<<< HEAD
+  <suite started-at="2022-03-05T01:31:20Z" name="Default suite" finished-at="2022-03-05T01:34:49Z" duration-ms="208500">
+=======
+<<<<<<< HEAD
+  <suite started-at="2022-02-28T10:10:37Z" name="Default suite" finished-at="2022-02-28T10:23:31Z" duration-ms="774304">
+=======
+<<<<<<< HEAD
+  <suite started-at="2022-02-28T13:08:09Z" name="Default suite" finished-at="2022-02-28T13:19:24Z" duration-ms="675735">
+=======
+<<<<<<< HEAD
+  <suite started-at="2022-02-15T02:27:31Z" name="Default suite" finished-at="2022-02-15T02:33:57Z" duration-ms="386018">
+=======
+  <suite started-at="2022-02-15T08:08:51Z" name="Default suite" finished-at="2022-02-15T08:17:50Z" duration-ms="538577">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2022-03-04T18:38:37Z" name="ParametrosParaTP" finished-at="2022-03-04T18:57:09Z" duration-ms="1112668">
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPEditar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPEditar@c7ba306]" started-at="2022-03-04T18:42:51Z" name="beforeClass" finished-at="2022-03-04T18:43:34Z" duration-ms="42726" status="PASS">
+=======
+<<<<<<< HEAD
+    <test started-at="2022-03-05T01:31:20Z" name="Default test" finished-at="2022-03-05T01:34:49Z" duration-ms="208500">
+      <class name="com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluir@5b367418]" started-at="2022-03-05T01:31:20Z" name="beforeClass" finished-at="2022-03-05T01:31:59Z" duration-ms="38393" status="PASS">
+=======
+<<<<<<< HEAD
+    <test started-at="2022-02-28T10:10:37Z" name="Default test" finished-at="2022-02-28T10:23:31Z" duration-ms="774304">
+      <class name="com.timp.test.DFG.Arquivos.Funcionalidades">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@3bd323e9]" started-at="2022-02-28T10:10:37Z" name="beforeClass" finished-at="2022-02-28T10:11:30Z" duration-ms="53643" status="PASS">
+=======
+<<<<<<< HEAD
+    <test started-at="2022-02-28T13:08:09Z" name="Default test" finished-at="2022-02-28T13:19:24Z" duration-ms="675735">
+=======
+<<<<<<< HEAD
+    <test started-at="2022-02-15T02:27:31Z" name="Default test" finished-at="2022-02-15T02:33:57Z" duration-ms="386018">
+      <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@3bd323e9]" started-at="2022-02-15T02:27:31Z" name="beforeClass" finished-at="2022-02-15T02:29:51Z" duration-ms="140406" status="PASS">
+=======
+    <test started-at="2022-02-15T08:08:51Z" name="Default test" finished-at="2022-02-15T08:17:50Z" duration-ms="538577">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+      <class name="com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades">
+<<<<<<< HEAD
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:08:09Z" name="beforeClass" finished-at="2022-02-28T13:08:19Z" duration-ms="10675" status="PASS">
+=======
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:08:51Z" name="beforeClass" finished-at="2022-02-15T08:09:04Z" duration-ms="13280" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="editar()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPEditar@c7ba306]" started-at="2022-03-04T18:43:34Z" name="editar" finished-at="2022-03-04T18:45:53Z" duration-ms="139229" status="FAIL">
+=======
+<<<<<<< HEAD
+        <test-method signature="excluir()[pri:0, instance:com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluir@5b367418]" started-at="2022-03-05T01:31:59Z" name="excluir" finished-at="2022-03-05T01:34:44Z" duration-ms="165648" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@3bd323e9]" started-at="2022-02-28T10:11:30Z" name="ingresar" finished-at="2022-02-28T10:12:04Z" duration-ms="33782" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:08:19Z" name="login" finished-at="2022-02-28T13:08:26Z" duration-ms="7060" status="PASS">
+=======
+<<<<<<< HEAD
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@3bd323e9]" started-at="2022-02-15T02:29:51Z" name="ingresar" finished-at="2022-02-15T02:30:42Z" duration-ms="50842" status="PASS">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:09:04Z" name="login" finished-at="2022-02-15T08:09:12Z" duration-ms="8100" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluir@5b367418]" started-at="2022-03-05T01:34:44Z" name="afterClass" finished-at="2022-03-05T01:34:49Z" duration-ms="4441" status="PASS">
+=======
+        </test-method> <!-- ingresar -->
+<<<<<<< HEAD
+        <test-method signature="dfgEntrar()[pri:1, instance:com.timp.test.DFG.Arquivos.Funcionalidades@3bd323e9]" started-at="2022-02-28T10:12:04Z" name="dfgEntrar" finished-at="2022-02-28T10:13:16Z" duration-ms="71616" status="PASS">
+=======
+        <test-method signature="mdrEntrar()[pri:1, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@3bd323e9]" started-at="2022-02-15T02:30:42Z" name="mdrEntrar" finished-at="2022-02-15T02:31:44Z" duration-ms="62251" status="PASS">
+=======
+        </test-method> <!-- login -->
+<<<<<<< HEAD
+        <test-method signature="brbEntrar()[pri:1, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:08:26Z" name="brbEntrar" finished-at="2022-02-28T13:08:45Z" duration-ms="18927" status="PASS">
+=======
+        <test-method signature="brbEntrar()[pri:1, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:09:12Z" name="brbEntrar" finished-at="2022-02-15T08:09:31Z" duration-ms="18313" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- dfgEntrar -->
+        <test-method signature="criarNovoLeiaute()[pri:2, instance:com.timp.test.DFG.Arquivos.Funcionalidades@3bd323e9]" started-at="2022-02-28T10:13:16Z" name="criarNovoLeiaute" finished-at="2022-02-28T10:15:46Z" duration-ms="150460" status="PASS">
+=======
+<<<<<<< HEAD
+        </test-method> <!-- mdrEntrar -->
+        <test-method signature="distinto()[pri:14, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@3bd323e9]" started-at="2022-02-15T02:31:44Z" name="distinto" finished-at="2022-02-15T02:33:39Z" duration-ms="114331" status="FAIL">
+          <exception class="org.openqa.selenium.JavascriptException">
+=======
+        </test-method> <!-- brbEntrar -->
+        <test-method signature="criarConfiguracaoExecucoes()[pri:2, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:08:45Z" name="criarConfiguracaoExecucoes" finished-at="2022-02-28T13:10:09Z" duration-ms="83297" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- criarNovoLeiaute -->
+        <test-method signature="registros()[pri:3, instance:com.timp.test.DFG.Arquivos.Funcionalidades@3bd323e9]" started-at="2022-02-28T10:15:46Z" name="registros" finished-at="2022-02-28T10:16:47Z" duration-ms="60624" status="PASS">
+=======
+        </test-method> <!-- criarConfiguracaoExecucoes -->
+        <test-method signature="criarConfiguracionConfiguracao()[pri:3, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:10:09Z" name="criarConfiguracionConfiguracao" finished-at="2022-02-28T13:11:53Z" duration-ms="103967" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- registros -->
+        <test-method signature="criarConfiguracao()[pri:4, instance:com.timp.test.DFG.Arquivos.Funcionalidades@3bd323e9]" started-at="2022-02-28T10:16:47Z" name="criarConfiguracao" finished-at="2022-02-28T10:19:16Z" duration-ms="149178" status="PASS">
+=======
+        </test-method> <!-- criarConfiguracionConfiguracao -->
+        <test-method signature="criarConfiguracao()[pri:4, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:11:53Z" name="criarConfiguracao" finished-at="2022-02-28T13:12:36Z" duration-ms="43485" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracao -->
+<<<<<<< HEAD
+        <test-method signature="executar()[pri:5, instance:com.timp.test.DFG.Arquivos.Funcionalidades@3bd323e9]" started-at="2022-02-28T10:19:16Z" name="executar" finished-at="2022-02-28T10:23:24Z" duration-ms="247670" status="FAIL">
+=======
+        <test-method signature="outputBCB()[pri:5, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:12:36Z" name="outputBCB" finished-at="2022-02-28T13:13:13Z" duration-ms="37060" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- outputBCB -->
+        <test-method signature="subNivel2()[pri:6, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:13:13Z" name="subNivel2" finished-at="2022-02-28T13:13:49Z" duration-ms="35557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subNivel2 -->
+        <test-method signature="subNivel3()[pri:7, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:13:49Z" name="subNivel3" finished-at="2022-02-28T13:14:29Z" duration-ms="40542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subNivel3 -->
+        <test-method signature="subNivel4()[pri:8, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:14:29Z" name="subNivel4" finished-at="2022-02-28T13:15:08Z" duration-ms="38720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subNivel4 -->
+        <test-method signature="subNivel5()[pri:9, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:15:08Z" name="subNivel5" finished-at="2022-02-28T13:15:49Z" duration-ms="40922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subNivel5 -->
+        <test-method signature="abrirSubnivel1()[pri:10, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:15:49Z" name="abrirSubnivel1" finished-at="2022-02-28T13:16:39Z" duration-ms="49776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- abrirSubnivel1 -->
+        <test-method signature="abrirSubnivel2()[pri:11, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:16:39Z" name="abrirSubnivel2" finished-at="2022-02-28T13:16:44Z" duration-ms="5200" status="FAIL">
+          <exception class="java.lang.AssertionError">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+            <message>
+<<<<<<< HEAD
+              <![CDATA[javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5dc105ce53dc3ece399c8df1c96bccfa]]>
+=======
+              <![CDATA[Os Subniveis não foram adicinados com sucesso expected [true] but found [false]]]>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+            </message>
+            <full-stacktrace>
+<<<<<<< HEAD
+              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5dc105ce53dc3ece399c8df1c96bccfa
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+at com.sap.timp.base.TestBaseSteven.moveToElement(TestBaseSteven.java:334)
+at com.sap.timp.pageObjectModel.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5PO.distinto(LeiautesExecucacoFuncionalidades4Pt5PO.java:1586)
+at com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5.distinto(LeiautesExecucacoFuncionalidades4Pt5.java:172)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.JavascriptException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- distinto -->
+        <test-method signature="comparar()[pri:15, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@3bd323e9]" started-at="2022-02-15T02:33:39Z" name="comparar" finished-at="2022-02-15T02:33:44Z" duration-ms="5405" status="FAIL">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="1"]/div[1]/div"}
@@ -80,11 +329,548 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- editar -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPEditar@c7ba306]" started-at="2022-03-04T18:45:53Z" name="afterClass" finished-at="2022-03-04T18:45:54Z" duration-ms="419" status="PASS">
+=======
+        </test-method> <!-- idPublicoPrivado -->
+        <test-method signature="favorito()[pri:7, instance:com.timp.test.DFG.Arquivos.Funcionalidades@3bd323e9]" started-at="2022-02-28T10:23:24Z" name="favorito" finished-at="2022-02-28T10:23:27Z" duration-ms="3077" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class="icon icon-font-File-and-Folders icon-docversion padding-right "]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53382}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e14cb4aee914055ae32f013532236d73
+*** Element info: {Using=xpath, value=//span[@class="icon icon-font-File-and-Folders icon-docversion padding-right "]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class="icon icon-font-File-and-Folders icon-docversion padding-right "]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53382}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e14cb4aee914055ae32f013532236d73
+*** Element info: {Using=xpath, value=//span[@class="icon icon-font-File-and-Folders icon-docversion padding-right "]}
+at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at com.sap.timp.pageObjectModel.DFG.Arquivos.FuncionalidadesPO.favorito(FuncionalidadesPO.java:802)
+at com.timp.test.DFG.Arquivos.Funcionalidades.favorito(Funcionalidades.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- favorito -->
+        <test-method signature="informacao()[pri:8, instance:com.timp.test.DFG.Arquivos.Funcionalidades@3bd323e9]" started-at="2022-02-28T10:23:27Z" name="informacao" finished-at="2022-02-28T10:23:27Z" duration-ms="46" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2928"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53382}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e14cb4aee914055ae32f013532236d73
+*** Element info: {Using=xpath, value=//div[@data-id="2928"]/div[1]/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2928"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53382}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e14cb4aee914055ae32f013532236d73
+*** Element info: {Using=xpath, value=//div[@data-id="2928"]/div[1]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sap.timp.pageObjectModel.DFG.Arquivos.FuncionalidadesPO.informacao(FuncionalidadesPO.java:880)
+at com.timp.test.DFG.Arquivos.Funcionalidades.informacao(Funcionalidades.java:82)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- informacao -->
+        <test-method signature="oficializarArquivo()[pri:9, instance:com.timp.test.DFG.Arquivos.Funcionalidades@3bd323e9]" started-at="2022-02-28T10:23:27Z" name="oficializarArquivo" finished-at="2022-02-28T10:23:27Z" duration-ms="16" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2928"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53382}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e14cb4aee914055ae32f013532236d73
+*** Element info: {Using=xpath, value=//div[@data-id="2928"]/div[1]/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="2928"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53382}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e14cb4aee914055ae32f013532236d73
+*** Element info: {Using=xpath, value=//div[@data-id="2928"]/div[1]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sap.timp.pageObjectModel.DFG.Arquivos.FuncionalidadesPO.oficializarArquivo(FuncionalidadesPO.java:917)
+at com.timp.test.DFG.Arquivos.Funcionalidades.oficializarArquivo(Funcionalidades.java:91)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oficializarArquivo -->
+        <test-method signature="lixeira()[pri:10, instance:com.timp.test.DFG.Arquivos.Funcionalidades@3bd323e9]" started-at="2022-02-28T10:23:27Z" name="lixeira" finished-at="2022-02-28T10:23:31Z" duration-ms="4093" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class="icon icon-font-Display-and-Setting icon-setting padding-right "]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53382}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e14cb4aee914055ae32f013532236d73
+*** Element info: {Using=xpath, value=//span[@class="icon icon-font-Display-and-Setting icon-setting padding-right "]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class="icon icon-font-Display-and-Setting icon-setting padding-right "]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:53382}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: e14cb4aee914055ae32f013532236d73
+*** Element info: {Using=xpath, value=//span[@class="icon icon-font-Display-and-Setting icon-setting padding-right "]}
+at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at com.sap.timp.pageObjectModel.DFG.Arquivos.FuncionalidadesPO.lixeira(FuncionalidadesPO.java:969)
+at com.timp.test.DFG.Arquivos.Funcionalidades.lixeira(Funcionalidades.java:97)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- lixeira -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Arquivos.Funcionalidades@3bd323e9]" started-at="2022-02-28T10:23:31Z" name="afterClass" finished-at="2022-02-28T10:23:31Z" duration-ms="0" status="PASS">
+=======
+        </test-method> <!-- verBloco4 -->
+        <test-method signature="verBloco5()[pri:22, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@3bd323e9]" started-at="2022-02-15T02:33:54Z" name="verBloco5" finished-at="2022-02-15T02:33:54Z" duration-ms="71" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id="selector-block"]/div/div/div[2]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5dc105ce53dc3ece399c8df1c96bccfa
+*** Element info: {Using=xpath, value=//div[@id="selector-block"]/div/div/div[2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id="selector-block"]/div/div/div[2]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5dc105ce53dc3ece399c8df1c96bccfa
+*** Element info: {Using=xpath, value=//div[@id="selector-block"]/div/div/div[2]}
+at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at com.sap.timp.pageObjectModel.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5PO.verBloco5(LeiautesExecucacoFuncionalidades4Pt5PO.java:2205)
+at com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5.verBloco5(LeiautesExecucacoFuncionalidades4Pt5.java:253)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verBloco5 -->
+        <test-method signature="excluirConfiguracao()[pri:23, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@3bd323e9]" started-at="2022-02-15T02:33:54Z" name="excluirConfiguracao" finished-at="2022-02-15T02:33:54Z" duration-ms="52" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="tr" and @data-id ="2850"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5dc105ce53dc3ece399c8df1c96bccfa
+*** Element info: {Using=xpath, value=//div[@class="tr" and @data-id ="2850"]/div[1]/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="tr" and @data-id ="2850"]/div[1]/div"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5dc105ce53dc3ece399c8df1c96bccfa
+*** Element info: {Using=xpath, value=//div[@class="tr" and @data-id ="2850"]/div[1]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sap.timp.pageObjectModel.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5PO.excluirConfiguracao(LeiautesExecucacoFuncionalidades4Pt5PO.java:2241)
+at com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5.excluirConfiguracao(LeiautesExecucacoFuncionalidades4Pt5.java:263)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirConfiguracao -->
+        <test-method signature="excluirLeiaute()[pri:24, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@3bd323e9]" started-at="2022-02-15T02:33:54Z" name="excluirLeiaute" finished-at="2022-02-15T02:33:57Z" duration-ms="3167" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span class="icon icon-font-File-and-Folders icon-layout  "></span> is not clickable at point (364, 152). Other element would receive the click: <div class="overlay dark" style="display: block;">...</div>
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5dc105ce53dc3ece399c8df1c96bccfa]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="icon icon-font-File-and-Folders icon-layout  "></span> is not clickable at point (364, 152). Other element would receive the click: <div class="overlay dark" style="display: block;">...</div>
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60747}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5dc105ce53dc3ece399c8df1c96bccfa
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at com.sap.timp.pageObjectModel.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5PO.excluirLeiaute(LeiautesExecucacoFuncionalidades4Pt5PO.java:2299)
+at com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5.excluirLeiaute(LeiautesExecucacoFuncionalidades4Pt5.java:273)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+=======
+        </test-method> <!-- abrirSubnivel4 -->
+<<<<<<< HEAD
+        <test-method signature="abrirSubnivel5()[pri:14, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:16:54Z" name="abrirSubnivel5" finished-at="2022-02-28T13:16:59Z" duration-ms="5236" status="PASS">
+=======
+        <test-method signature="abrirSubnivel5()[pri:14, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:17:44Z" name="abrirSubnivel5" finished-at="2022-02-15T08:17:50Z" duration-ms="5152" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- excluirLeiaute -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5@3bd323e9]" started-at="2022-02-15T02:33:57Z" name="afterClass" finished-at="2022-02-15T02:33:57Z" duration-ms="0" status="PASS">
+=======
+        </test-method> <!-- abrirSubnivel5 -->
+<<<<<<< HEAD
+        <test-method signature="excluirConfiguracoes()[pri:15, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:16:59Z" name="excluirConfiguracoes" finished-at="2022-02-28T13:18:22Z" duration-ms="82280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirConfiguracoes -->
+        <test-method signature="excluirHierarquia()[pri:16, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:18:22Z" name="excluirHierarquia" finished-at="2022-02-28T13:19:24Z" duration-ms="62621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirHierarquia -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@54504ecd]" started-at="2022-02-28T13:19:24Z" name="afterClass" finished-at="2022-02-28T13:19:24Z" duration-ms="1" status="PASS">
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades@19c65cdc]" started-at="2022-02-15T08:17:50Z" name="afterClass" finished-at="2022-02-15T08:17:50Z" duration-ms="0" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPEditar -->
       <class name="com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluir">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPExcluir@6d167f58]" started-at="2022-03-04T18:49:45Z" name="beforeClass" finished-at="2022-03-04T18:50:52Z" duration-ms="67179" status="PASS">
@@ -3472,4 +4258,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPVA.ValoresParaMetodoPVAFiltroID -->
     </test> <!-- ValoresParaMetodoPVA -->
   </suite> <!-- Suite -->
+=======
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisExcluir -->
+=======
+      </class> <!-- com.timp.test.DFG.Arquivos.Funcionalidades -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 </testng-results>

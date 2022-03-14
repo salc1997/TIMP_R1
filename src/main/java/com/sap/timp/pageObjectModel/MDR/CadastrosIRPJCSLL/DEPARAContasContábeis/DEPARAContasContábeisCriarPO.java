@@ -80,8 +80,8 @@ public class DEPARAContasContábeisCriarPO extends TestBaseMassiel{
 	 	sleep(2000);
 	 	
 	   sleep(5000);
-	   novo.click();invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	   
+	   novo.click();
+	   sleep(4000);
 	   
 	   botonempresa.click();
 	   sleep(2000);

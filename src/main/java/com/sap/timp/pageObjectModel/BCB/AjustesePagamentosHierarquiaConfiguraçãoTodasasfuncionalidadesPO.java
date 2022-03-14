@@ -691,7 +691,7 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO ex
 		gravarC.click();
 		sleep(3000);
 	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(15000);
+		sleep(20000);
 		
 		biblioteca.click();
 		sleep(3000);

@@ -1,4 +1,4 @@
-package com.timp.test.MDR.TaxasDeConversao;
+package com.timp.test.MDR.TaxasComplementares;
 
 import static org.testng.Assert.assertTrue;
 
@@ -9,13 +9,13 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TaxasDeConversao.TaxasDeConversaoExcluirEmMassaPO;
+import com.sap.timp.pageObjectModel.MDR.TaxasDeConversao.TaxasDeConversaoCriarPO;
 
-public class TaxasDeConversaoExcluirEmMassa extends TestBaseSteven {
+public class TaxasComplementaresCriar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TaxasDeConversaoExcluirEmMassaPO taxasDeConversaoExcluirEmMassaPO;
+	TaxasDeConversaoCriarPO taxasDeConversaoCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -23,26 +23,22 @@ public class TaxasDeConversaoExcluirEmMassa extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		taxasDeConversaoExcluirEmMassaPO = new TaxasDeConversaoExcluirEmMassaPO();
+		taxasDeConversaoCriarPO = new TaxasDeConversaoCriarPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+	//	driver.close();
 	}
 
 	@Test()
 	public void criar() {
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
-		boolean sucesso = taxasDeConversaoExcluirEmMassaPO.criar();
-		assertTrue(sucesso, Criar);
-	}
+		boolean sucesso = taxasDeConversaoCriarPO.criar();
+		assertTrue(sucesso, semAcesso);
 
-	@Test(dependsOnMethods = "criar")
-	public void excluirEmMassa() {
-		boolean sucesso2 = taxasDeConversaoExcluirEmMassaPO.excluir();
-		assertTrue(sucesso2, Eliminado);
 	}
 }

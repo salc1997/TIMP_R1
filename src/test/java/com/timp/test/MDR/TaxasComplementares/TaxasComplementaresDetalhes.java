@@ -1,4 +1,4 @@
-package com.timp.test.MDR.TaxasDeConversao;
+package com.timp.test.MDR.TaxasComplementares;
 
 import static org.testng.Assert.assertTrue;
 
@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TaxasDeConversao.TaxasDeConversaoDetalhesPO;
 
-public class TaxasDeConversaoDetalhes extends TestBaseFernando {
+public class TaxasComplementaresDetalhes extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TaxasDeConversaoDetalhesPO taxasDeConversaoDetalhesPO;

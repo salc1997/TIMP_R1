@@ -47,7 +47,7 @@ public class MotivosdeDesligamentoEditarPO extends TestBaseKenssy {
 	public boolean editarMotivoDesligamento() {
 		sleep(2000);
 		tabelaApoio.click();
-		sleep(2000);
+		sleep(6000);
 		tabela19.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

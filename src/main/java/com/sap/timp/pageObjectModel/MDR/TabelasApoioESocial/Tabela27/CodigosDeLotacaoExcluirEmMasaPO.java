@@ -124,7 +124,7 @@ public class CodigosDeLotacaoExcluirEmMasaPO extends TestBaseKenssy {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		sleep(2000);		
+		sleep(8000);		
 		biblioteca.click();
 		
 		sleep(2000);

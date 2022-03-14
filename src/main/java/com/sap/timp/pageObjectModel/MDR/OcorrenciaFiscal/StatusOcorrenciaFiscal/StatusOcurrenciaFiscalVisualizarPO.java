@@ -76,7 +76,7 @@ public class StatusOcurrenciaFiscalVisualizarPO extends TestBaseFernando{
 		
 		sleep(2000);		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		btnUltimaPagina.click();
 		
@@ -98,7 +98,7 @@ public class StatusOcurrenciaFiscalVisualizarPO extends TestBaseFernando{
 		
 		sleep(2000);	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		// Datos de Editar
 		String empresa1 = driver.findElement(By.xpath("//div[@id=\"company\"]/div/div[2]/div/div/div/div/div[1]")).getText().trim();

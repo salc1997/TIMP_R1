@@ -171,7 +171,7 @@ public class DeterminacionRelevanciaPorMotivoVisualizarPO extends TestBaseSteven
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(12000);
 		
 		String empresaTextoE = empresaE.getAttribute("value");
 		String ufTextoE = ufE.getAttribute("value");

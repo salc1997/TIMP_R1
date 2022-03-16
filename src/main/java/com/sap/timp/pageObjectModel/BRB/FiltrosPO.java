@@ -174,9 +174,9 @@ public class FiltrosPO  extends TestBaseSteven{
 		
 		sleep(2000);
 		editor.click();
-		waitExpectElement(nao1);
+	//	waitExpectElement(nao1);
 		sleep(1000);
-		nao1.click();
+	//	nao1.click();
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
 		
@@ -210,8 +210,8 @@ public class FiltrosPO  extends TestBaseSteven{
 			mayor.sendKeys("01/01/2016");
 			menor.sendKeys("31/01/2016");
 		}else {
-			mayor.sendKeys("01/01/2018");
-			menor.sendKeys("31/01/2018");
+			mayor.sendKeys("01/01/2016");
+			menor.sendKeys("31/01/2016");
 		}
 		
 		
@@ -449,9 +449,9 @@ public class FiltrosPO  extends TestBaseSteven{
 		
 		
 		biblioteca.click();
-		waitExpectElement(nao1);
+	//	waitExpectElement(nao1);
 		sleep(1000);
-		nao1.click();
+	//	nao1.click();
 		
 		
 		
@@ -465,7 +465,7 @@ public class FiltrosPO  extends TestBaseSteven{
 		
 		
 		menu.click();
-		sleep(1000);
+		sleep(000);
 		executar.click();	
 		
 

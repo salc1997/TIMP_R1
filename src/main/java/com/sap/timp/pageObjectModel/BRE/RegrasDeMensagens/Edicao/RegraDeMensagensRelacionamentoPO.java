@@ -67,16 +67,16 @@ public class RegraDeMensagensRelacionamentoPO extends TestBaseFernando{
 		
 		waitExpectElement(btnSeleccionarRelacionamento);
 		btnSeleccionarRelacionamento.click();
-		sleep(2000);
+		sleep(6000);
 		
-		waitExpectElement(cboRelacionamentoElementoDeEstrutura);
+		
 		cboRelacionamentoElementoDeEstrutura.click();
 		sleep(1000);
 		
 		String URL = driver.getCurrentUrl();
 		
 		if(URL.contains("tc2")) {
-			opcion = driver.findElement(By.xpath("//div[@class=\"list-item\" and @id=\"58\"]/div[2]"));
+			opcion = driver.findElement(By.xpath("//div[@class=\"list-item\" and @id=\"39\"]/div[2]"));
 		}
 		
 		if(URL.contains("tp1")) {
@@ -137,7 +137,7 @@ public class RegraDeMensagensRelacionamentoPO extends TestBaseFernando{
 		
 		waitExpectElement(btnSeleccionarRelacionamento);
 		btnSeleccionarRelacionamento.click();
-		sleep(2000);
+		sleep(6000);
 		
 		waitExpectElement(cboRelacionamentoElementoDeEstrutura);
 		

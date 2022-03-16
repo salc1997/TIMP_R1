@@ -202,7 +202,7 @@ public boolean editar() {
 	sleep(3000);
 	
 	nomeVCalculado.sendKeys("TA-TESTE-Quarto Caractere");
-	sleep(3000);
+	sleep(4000);
 	
 	formula.sendKeys("MID(\"Código oficial- (aba:Dados Lançamento) (ED)\", 4, 1)");
 	sleep(3000);
@@ -290,7 +290,7 @@ public boolean editar() {
 	sleep(3000);
 	
 	aceitar.click();
-	sleep(4000);
+	sleep(24000);
 	
 	biblioteca.click();
 	sleep(3000);

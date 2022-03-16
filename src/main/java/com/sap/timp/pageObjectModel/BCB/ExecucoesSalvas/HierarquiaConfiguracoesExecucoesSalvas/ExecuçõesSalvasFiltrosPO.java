@@ -173,6 +173,11 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseKenssy{
 	}
 	
 	public ArrayList<Boolean> filtroEmpresa() {
+		
+		limpiarfiltros.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(9000);
 
 		empresaS.click();
 		sleep(2000);
@@ -186,7 +191,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseKenssy{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(11000);
+		sleep(16000);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 

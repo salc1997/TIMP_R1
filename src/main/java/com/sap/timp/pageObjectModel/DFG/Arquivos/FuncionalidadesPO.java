@@ -508,7 +508,7 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		
 		WebElement opcionLeiaute = driver.findElement(By.xpath("//li[@tabindex=\"0\" and @class=\"list-item\" and @id and contains(text(), \""+this.idRegistroNuevo+"\")]"));
 		opcionLeiaute.click();
-		sleep(4000);
+		sleep(9000);
 		
 	//	attributeToBeXpath("//div[@id=\"inputTimpVersion\"]/div", "class", "base-select required");
 		cboLVersaoLeiaute.click();
@@ -606,12 +606,12 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		btnRaiz.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		btnUltimaPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		String idRegistro = idObter4();
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -670,7 +670,7 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		
 		
 		 btnNO.click();
-		sleep(8000);
+		sleep(14000);
 		
 		// Verificar si es guardado con exito, si no se va quedar esperando por el
 		// waitExpectXpath

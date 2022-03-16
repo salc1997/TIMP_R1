@@ -26,7 +26,7 @@ public class ClassificaçaoDeContribuintesDoIPIExcluirMassaPO extends TestBaseFer
 	@FindBy(xpath = "//input[@placeholder=\"Preencher o Código de Valores Declaratórios\"]")
 	public WebElement codigodevalores;
 	
-	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Inicio de Vigência\"]")
+	@FindBy(xpath = "//div[@id=\"effective-date-from\"]/div/div[1]/input")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")

@@ -63,7 +63,7 @@ public class CodificaçãoDeAcDeTrabCriarPO extends TestBaseSteven{
 	public boolean criar() {
 		sleep(2000);
 		tabelaApoio.click();
-		sleep(2000);
+		sleep(6000);
 		tabela24.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

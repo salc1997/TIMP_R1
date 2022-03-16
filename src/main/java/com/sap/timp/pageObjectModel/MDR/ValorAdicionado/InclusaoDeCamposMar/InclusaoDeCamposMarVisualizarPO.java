@@ -54,7 +54,7 @@ public class InclusaoDeCamposMarVisualizarPO extends TestBaseSteven {
 	public WebElement ufE;
 	@FindBy(xpath = "//input[@placeholder=\"M\"]")
 	public WebElement mtE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Data de Inicio\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Data de Início de Vigência \")]")
 	public WebElement dataVigenciaE;
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")

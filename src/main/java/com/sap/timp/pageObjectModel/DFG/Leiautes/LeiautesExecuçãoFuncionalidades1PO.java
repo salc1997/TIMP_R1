@@ -69,7 +69,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 	@FindBy(xpath = "//li[text()=\"Ajuste\"][1]")
 	public WebElement opcGrupo;
 	
-	@FindBy(xpath = "//li[@id=\"option-12\"]")
+	@FindBy(xpath = "//li[@id=\"option-96\"]")
 	public WebElement opcGrupo1;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Estrutura de arquivo\"]")
@@ -678,7 +678,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 		sleep(6000);
 		
 		waitExpectElement(adicionarBloco);
-		sleep(1000);
+		sleep(80000);
 		
 		
 		adicionarBloco.click();
@@ -747,7 +747,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 		ajuste1.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		  if(tp1 == true) {
 		  

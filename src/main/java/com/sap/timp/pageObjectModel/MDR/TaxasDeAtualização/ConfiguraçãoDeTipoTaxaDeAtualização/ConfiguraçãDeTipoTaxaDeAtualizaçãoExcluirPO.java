@@ -60,7 +60,7 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirPO extends TestBaseFernand
 		sleep(12000);
 		//waitExpectXpath("//div[@class=\"overlay loader dark\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		btnPrimerPagina.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

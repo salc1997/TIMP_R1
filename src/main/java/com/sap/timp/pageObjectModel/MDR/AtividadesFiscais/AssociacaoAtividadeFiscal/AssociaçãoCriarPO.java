@@ -184,7 +184,7 @@ public class AssociaçãoCriarPO extends TestBaseFernando {
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 
 		btnUltimaPagina.click();
 		

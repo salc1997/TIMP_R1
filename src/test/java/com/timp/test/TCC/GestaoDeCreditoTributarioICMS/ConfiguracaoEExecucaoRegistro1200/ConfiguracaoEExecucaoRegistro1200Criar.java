@@ -27,7 +27,7 @@ public class ConfiguracaoEExecucaoRegistro1200Criar extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		 driver.close();
 	}
 
 
@@ -38,5 +38,6 @@ public class ConfiguracaoEExecucaoRegistro1200Criar extends TestBaseMassiel {
 		
 		boolean sucesso = configuracaoEExecucaoRegistro1200CriarPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(3000);
 	}
 }

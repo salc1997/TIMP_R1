@@ -93,7 +93,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditarPO extends TestBaseMass
 		editar.click();
 		sleep(2000);
 	//	attributeToBeXpath("//div[@id=\"revenueCode\"]/div","class", "base-select ");
-		sleep(12000);
+		sleep(74000);
 	  	
 	  	
 //		attributeToBeXpath("//div[@id=\"revenueCode\"]/div","class", "base-select  disabled");
@@ -116,8 +116,9 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditarPO extends TestBaseMass
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(110000);
 		
+		actionsMoveToElementElement(cboAjuste);
 		if ( tq1 == true) {
 			cboAjuste.click();
 			sleep(1000);
@@ -127,16 +128,18 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditarPO extends TestBaseMass
 			cboAjuste.click();
 			sleep(1000);
 			opcionAjusteTC2.click();
-			sleep(7000);
+			sleep(9000);
 		}
-		
+		sleep(68000);
 		btnGravar.click();
 		sleep(2000);
 		
 
-		btnNo.click();
-		sleep(2000);
+		int botaoNao = rows("//button[text()=\"Não\"]");
 		
+		if (botaoNao > 0) {
+			btnNo.click();
+		}
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

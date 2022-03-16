@@ -28,7 +28,7 @@ public class RegistroM230Excluir extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test()

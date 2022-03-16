@@ -55,7 +55,7 @@ public class ConfrontacaoEditarPO extends TestBaseSteven{
 	public boolean editar() {
 		sleep(2000);
 		valoradicionado.click();
-		sleep(2000);
+		sleep(4000);
 		
 		confrontacao.click();
 		

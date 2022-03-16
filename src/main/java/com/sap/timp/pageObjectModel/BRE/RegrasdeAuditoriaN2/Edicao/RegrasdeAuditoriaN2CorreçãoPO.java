@@ -133,7 +133,7 @@ public boolean editar() {
 	açao.click();
 	sleep(3000);
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(6000);
+	sleep(15000);
 	
 	waitExpectElement(CFOP);
 	
@@ -174,14 +174,14 @@ public boolean editar() {
 		cenario.sendKeys(Keys.ENTER);
 		sleep(3000);
 	}else {
-		hererarquia.sendKeys("HCNF0125 - TA-1871 NÃO MEXER");
+		hererarquia.sendKeys("HCNF0001 - Excluir DIFAL");
 		sleep(3000);
 		seleccionHererarquiaTC2.click();
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);
 		
-		cenario.sendKeys("CCNF0189 - TA-1871 NÃO MEXER");
+		cenario.sendKeys("HCNF0001 - Excluir DIFAL");
 		sleep(3000);
 		cenario.sendKeys(Keys.ENTER);
 		sleep(3000);
@@ -213,7 +213,7 @@ public boolean editar() {
 	sleep(3000);
 	
 	aceitar.click();
-	sleep(4000);
+	sleep(9000);
 	
 	
 	//----------------Entrando de nuevo a editar--------------------------

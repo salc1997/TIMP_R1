@@ -35,7 +35,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoVisualizar extends TestBas
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 

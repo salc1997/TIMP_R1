@@ -185,9 +185,13 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 	}
 	
 	public ArrayList<Boolean> decrescente() {
-
-	//	actionsMoveToElementXpath("//*[@data-column=\"126\"]");
 		sleep(2000);
+		actionsMoveToElementXpath("//div[@id=\"table-report-container\"]/div[1]/div[14]");
+		sleep(10000);
+	
+		System.out.println("Recargo");
+		
+		actionsMoveToElementXpath("//div[@data-column=\"66\"]/span");
 		
 		menuC.click();
 		decrescente.click();

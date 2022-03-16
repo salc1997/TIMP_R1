@@ -19,7 +19,7 @@ public class RenomearColunaPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@id=\"draggable-28\"]/div/div/div/span")
 	public WebElement menuC;
 
-	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/ul/li[5]")
+	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/ul/li[4]")
 	public WebElement opcion;
 	@FindBy(xpath = "//li[@id=\"draggable-28\"]/div/div/div/div/div/div/div[2]/input")
 	public WebElement coluna;

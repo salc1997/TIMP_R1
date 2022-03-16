@@ -563,7 +563,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			//idInserir3(id); //antes de crear herarquia configuracao
 			
 			nova.click();
-			sleep(5000);
+			sleep(8000);
 
 
 			nomeHirarquia.sendKeys("Prueba Automatizada Massiel");
@@ -1144,7 +1144,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			ultimo.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+			sleep(9000);
 			
 			String idRegistro  =  idObter("IdExecucoes3");
 			

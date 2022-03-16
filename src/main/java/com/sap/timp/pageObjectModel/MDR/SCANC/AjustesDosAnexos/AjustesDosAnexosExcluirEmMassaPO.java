@@ -73,7 +73,7 @@ public class AjustesDosAnexosExcluirEmMassaPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@id=\"1,7,8,9\"]/div/label/span")
 	public WebElement opcaolinhaquadro;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Data de Inicio de Vigência\"]")
+	@FindBy(xpath = "//div[@id=\"validity-start-annexes\"]/div/div[1]/input")
 	public WebElement datainicial;
 	
 	
@@ -156,10 +156,10 @@ public class AjustesDosAnexosExcluirEmMassaPO extends TestBaseSteven{
 		
 		opcaotributo.click();
 		
-		sleep(2000);
+		sleep(6000);
 		
-		attributeToBeXpath("//div[@id=\"tax-type-annexes\"]/div", "class", "base-select required");
-		sleep(2000);
+
+		
 		
 		tipodetributo.click();
 		

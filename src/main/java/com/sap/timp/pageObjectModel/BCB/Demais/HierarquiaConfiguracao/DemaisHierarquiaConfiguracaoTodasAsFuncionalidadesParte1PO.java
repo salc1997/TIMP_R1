@@ -12,6 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseKenssy;
 
 public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends TestBaseKenssy  {
+	//TSTNG-2230
 	//NUEVA CONFIGURACION HIERARQUIA
 		@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][1]")
 		public WebElement hierarquias;
@@ -897,7 +898,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		waitExpectElement(calculator);
-		sleep(6000);
+		sleep(12000);
 		
 		calculator.click();
 		sleep(1000);
@@ -922,13 +923,13 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 
 		gravar.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		nao.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
 		
 		//corregir mensaje al parecer
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
@@ -947,6 +948,9 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 	
 	public ArrayList<Boolean> entradaManual() {
 		sleep(3000);
+		System.out.println("***********");
+		System.out.println("Entrada Manual");
+		System.out.println("***********");
 		entrada.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -997,12 +1001,15 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		entradaManual1.click();
 		sleep(1000);
 		entradaManualO1.click();
-		sleep(2000);
+		sleep(12000);
 		
 		gravar.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		nao.click();
+		sleep(8000);
 		
 		//corregir mensaje al parecer
 		mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
@@ -1020,6 +1027,9 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 	}
 	
 	public ArrayList<Boolean> campoOutput() {
+		System.out.println("***********");
+		System.out.println("campo Output");
+		System.out.println("***********");
 		sleep(3000);
 		verCamposSaida.click();
 		sleep(3000);
@@ -1091,6 +1101,10 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		nao.click();
+		sleep(8000);
+		
 		
 		return sucesso;
 	}
@@ -1619,7 +1633,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		gravarC.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		biblioteca.click();
 		sleep(2000);
@@ -1694,7 +1708,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 //			sleep(2000);
 		//HASTA AQUI
 			
-		sleep(2000);
+		sleep(6000);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter5()+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter5()+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -1826,7 +1840,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		sleep(3000);
 		
 		selectConfiguracaoConsolidacao.click();
-		sleep(2000);
+		sleep(4000);
 		
 		WebElement opcConfiguracaoConsolidacao = driver.findElement(By.xpath("//li[contains(text(),\""+idObter3()+"\")]"));
 		//WebElement opcConfiguracaoConsolidacao = driver.findElement(By.xpath("//li[contains(text(),\"1170\")]"));
@@ -2399,7 +2413,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 //		sleep(2000);
 		
 		attributeToBeXpath("//div[@class=\"column-wrapper second\"]/div/div","class", "animation-wrapper show");
-		sleep(3000);
+		sleep(4000);
 		
 		dobleClickElement(selectCampoSaidaAba1OPC1);
 		sleep(3000);

@@ -71,13 +71,13 @@ public class RegrasDeNegocioCriarComCopiaPO extends TestBaseSteven {
 		nome.clear();
 		nome.sendKeys("Testeautomatizado - Nao Mexer - Copia");
 		waitExpectElement(aplicar);
-		sleep(3000);
+		sleep(6000);
 		aplicar.click();
 		
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"overlay loader transp\"]");
+	//	waitExpectXpath("//div[@class=\"overlay loader transp\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader transp\"]");
-		sleep(2000);	
+		sleep(28000);	
 		
 		biblioteca.click();
 		

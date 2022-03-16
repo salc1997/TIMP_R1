@@ -124,7 +124,7 @@ public class Registro1102VisualizarPO extends TestBaseSteven{
 		nao.click();
 		sleep(2000);
 	//	waitExpectElement(ultimaPagina);
-		sleep(8000);
+		sleep(12000);
 		ultimaPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

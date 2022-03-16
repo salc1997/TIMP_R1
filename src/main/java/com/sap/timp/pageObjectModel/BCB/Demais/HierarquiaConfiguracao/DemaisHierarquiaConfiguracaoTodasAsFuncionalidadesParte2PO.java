@@ -235,7 +235,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 		ultimo.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(9000);
 		
 //		pesquisar.sendKeys(idConfiguracaoExecutar);
 //		//pesquisar.sendKeys("1171");
@@ -570,7 +570,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 		ultimo.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 //		pesquisar.sendKeys(idConfiguracao2);
 //		pesquisar.sendKeys(Keys.ENTER);
@@ -771,7 +771,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 		ultimo.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 //		pesquisar.sendKeys(idConfiguracao1);
 //		pesquisar.sendKeys(Keys.ENTER);

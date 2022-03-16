@@ -123,23 +123,18 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		
 		invisibilityOfElementOverlay();
 		
+		sleep(2000);
+		
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/div"));
-		WebElement acao = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/div/div/ul/li/span[text()=\"Editar\"]"));
-		
-		
+	
 		menu.click();
-		sleep(1000);
+		sleep(2000);
+		
+		WebElement acao = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/div/div/ul/li/span[text()=\"Editar\"]"));
 		acao.click();
 		
-		sleep(2000);
-		//waitExpectElement(grupo1);
-		//invisibilityOfElementOverlay();
-		sleep(371400);
-		sleep(1000);
-		sleep(11000);
-		sleep(11000);
-		sleep(11000);
-		sleep(11000);
+		sleep(100000);
+		sleep(34000);
 		adicionar.click();
 		sleep(2000);
 		
@@ -184,9 +179,8 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		sleep(2000);
 	//	waitExpectElement(grupo1);
 	//	invisibilityOfElementOverlay();
-		sleep(371400);
-		sleep(1000);
-		sleep(1000);
+		sleep(100000);
+		sleep(80000);
 		System.out.println("---------------------------Verificação das Informações-------------------------------------------");
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();

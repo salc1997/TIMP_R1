@@ -73,10 +73,9 @@ public class ConfiguracaoEExecucaoExecucaoPO extends TestBaseSteven {
 
 	public boolean executar() {
 		String url = driver.getCurrentUrl();
-		System.out.println("11");
 		bancoOcorrencia.click();
 		sleep(2000);
-		System.out.println("22");
+	
 		
 		executados.click();
 		sleep(2000);
@@ -104,7 +103,7 @@ public class ConfiguracaoEExecucaoExecucaoPO extends TestBaseSteven {
 	//	waitExpectXpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(9000);
+		sleep(28000);
 	
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -145,9 +144,9 @@ public class ConfiguracaoEExecucaoExecucaoPO extends TestBaseSteven {
 		
 		btnGravar.click();
 		sleep(1000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		sleep(7000);
+		sleep(13000);
 		
 		biblioteca.click();
 		sleep(1000);

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<<<<<<< HEAD
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
 <<<<<<< HEAD
   <test thread-count="5" name="TabelaServicos(failed)">
@@ -10,7 +11,12 @@
   <test thread-count="5" name="Regra De Campos(failed)">
 >>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+>>>>>>> refs/heads/Yessy
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosExcluirEmMassa">
 =======
@@ -20,17 +26,29 @@
       <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasEditar">
 >>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      <class name="com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPExcluir">
+>>>>>>> refs/heads/Yessy
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="afterClass"/>
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+>>>>>>> refs/heads/Yessy
           <include name="beforeClass"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
           <include name="criar"/>
+=======
+          <include name="excluir"/>
+          <include name="afterClass"/>
+>>>>>>> refs/heads/Yessy
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaServicos.TabelaServicosExcluirEmMassa -->
     </classes>
   </test> <!-- TabelaServicos(failed) -->
@@ -106,7 +124,11 @@
       </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegradeAbasVer -->
 >>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
+=======
+      </class> <!-- com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPExcluir -->
+>>>>>>> refs/heads/Yessy
     </classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
   </test> <!-- TipoDeTributoContaContabil(failed) -->
   <test thread-count="5" name="InclusaoDeCamposMar(failed)">
@@ -324,3 +346,7 @@
 >>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 >>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 </suite> <!-- Failed suite [Suite] -->
+=======
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+>>>>>>> refs/heads/Yessy

@@ -99,7 +99,7 @@ public class GrupoDeEstruturasCriarPO extends TestBaseSteven{
 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(12000);
 		
 		
 		

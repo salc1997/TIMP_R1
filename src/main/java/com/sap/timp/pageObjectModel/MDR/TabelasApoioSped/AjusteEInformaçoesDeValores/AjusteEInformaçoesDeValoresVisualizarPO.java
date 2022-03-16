@@ -69,7 +69,7 @@ public class AjusteEInformaçoesDeValoresVisualizarPO extends TestBaseSteven{
 	public WebElement sequenciaE;
 	@FindBy(xpath = "//*[contains(@placeholder,\"descrição\")]")
 	public WebElement descricaoE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Data de Inicio\")]")
+	@FindBy(xpath = "//div[@id=\"Validity\"]/div/div[1]/input")
 	public WebElement dataVigenciaE;
 	
 	public AjusteEInformaçoesDeValoresVisualizarPO() {

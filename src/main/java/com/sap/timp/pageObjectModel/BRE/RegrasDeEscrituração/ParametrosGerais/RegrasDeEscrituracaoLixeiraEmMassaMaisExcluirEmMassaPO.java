@@ -159,7 +159,7 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends Test
 		tipoDeRegra.click();
 		sleep(1000);
 		opcTipoDeRegra.click();
-		sleep(1000);
+		sleep(2000);
 		
 		tipoTributo.click();
 		sleep(1000);
@@ -354,7 +354,7 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends Test
 		//waitExpectElement(mensagem);
 		//sleep(2000);
 		waitExpectElement(mensagembloqueio);
-		sleep(2000);
+		sleep(6000);
 		lixeira.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -413,10 +413,10 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends Test
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		//waitExpectElement(mensagem);
 		//sleep(2000);
-		waitExpectElement(mensagembloqueio);
+	//	waitExpectElement(mensagembloqueio);
 		sleep(2000);
 		lixeira.click();
 		sleep(2000);

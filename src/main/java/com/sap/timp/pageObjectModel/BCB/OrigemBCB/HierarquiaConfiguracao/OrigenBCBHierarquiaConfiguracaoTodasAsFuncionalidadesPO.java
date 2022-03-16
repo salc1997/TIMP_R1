@@ -268,7 +268,14 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
 	public WebElement opcCampoSaida44;
 	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][4]/div/div/div[@id=\"check-zero-value\"]/div/label/span")
+	@FindBy(xpath = "//div[@class=\"subLevel\"][3]/div[2]/div[2]/div[4]/div/label/span")
+	public WebElement zerado1;
+	
+	@FindBy(xpath = "//div[@class=\"subLevel\"][3]//div[@id=\"zero-value\"]/div/div/div[2]")
+	public WebElement condicaoZerado1;
+	
+	
+	@FindBy(xpath = "//div[@class=\"subLevel\"][4]/div[2]/div[2]/div[4]/div/label/span")
 	public WebElement zerado;
 	
 	@FindBy(xpath = "//div[@class=\"subLevel\"][4]//div[@id=\"zero-value\"]/div/div/div[2]")
@@ -292,7 +299,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	
 	@FindBy(xpath = "//div[@class=\"subLevel\"][5]/div/div[@id=\"value\"]/div/div[2]")
 	public WebElement campoSaida5;
-	@FindBy(xpath = "//li[text()=\"Campo de Saída 2\"][1]")
+	@FindBy(xpath = "//li[text()=\"Campo de Saída 1\"][1]")
 	public WebElement opcCampoSaida5tc2;
 	@FindBy(xpath = "//li[@id][text()=\"Campo de saída 2\"][1]")
 	public WebElement opcCampoSaida5;
@@ -752,7 +759,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		gravarC.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(7000);
+		sleep(8000);
 		
 		biblioteca.click();
 		sleep(5000);
@@ -964,9 +971,9 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		campolinha1.click();
 		sleep(2000);
 		campoLinhaO1.click();
-		sleep(2000);
+		sleep(6000);
 		
-		attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
+		//attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
 		sleep(3000);
 		
 		selectBCB.click();
@@ -974,11 +981,11 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		if (tc2==true) {
 			selectBCB3.click();
 			selectBCB3.sendKeys(Keys.ESCAPE);
-			sleep(8000);
+			sleep(9000);
 		}else if(tq1==true) {
 			selectBCB1.click();
 			selectBCB1.sendKeys(Keys.ESCAPE);
-			sleep(1000);
+			sleep(6000);
 		}else if(tq2==true){
 			selectBCB1.click();
 			selectBCB1.sendKeys(Keys.ESCAPE);
@@ -1007,6 +1014,10 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		//comentar cuando junte todo
 //		sim.click();
 //		sleep(3000);
@@ -1156,6 +1167,10 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 //		sim.click();
 //		sleep(3000);
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1207,38 +1222,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			tq2 = true;
 		}
 		
-		//COMENTAR DESPUES PORFAVOR
-//		sleep(2000);
-//		configuracoes.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		configuracaoDaConsolidacao.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		
-//		pesquisar.sendKeys("1072");
-//		pesquisar.sendKeys(Keys.ENTER);
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		
-//		
-//		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1072\"]/div[1]/div"));
-//		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1072\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-//		sleep(2000);
-//		
-//		menu.click();
-//		sleep(1000);
-//		editar.click();
-//		sleep(6000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		waitExpectElement(calculator);
-//		sleep(2000);
-	//HASTA AQUI
+
 		
 		System.out.println("--------------------------------------------SubNivel 3-------------------------------------");
 		sleep(1000);
@@ -1296,8 +1280,21 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		opcCantSubPeriodosAnteriores3.click();
 		sleep(2000);
 		
+	/*	zerado1.click();
+		sleep(3000);
+		
+		condicaoZerado1.click();
+		sleep(3000);
+		opcZerado.click();
+		opcZerado.sendKeys(Keys.ESCAPE);
+		sleep(3000);*/
 		
 		gravar.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -1448,6 +1445,11 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 //		sim.click();
 //		sleep(3000);
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1540,7 +1542,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		
 		campoSaida5.click();
-		sleep(3000);
+		sleep(10000);
 		if (tc2==true) {
 			opcCampoSaida5tc2.click();
 			opcCampoSaida5tc2.sendKeys(Keys.ESCAPE);
@@ -1572,6 +1574,11 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(5000);
 //		
 //		sim.click();
 //		sleep(3000);
@@ -1721,6 +1728,11 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		
 		gravar.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

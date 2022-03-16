@@ -526,6 +526,10 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[text()=\"DCTF\"]")
 	public WebElement tipoOTC2;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement no;
+	
+	
 	
 	public AN3FuncionalidadesPO() {
 
@@ -869,7 +873,7 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//waitExpectElement(adicionarCaminho);
-		sleep(13000);
+		sleep(20000);
 		
 		
 		adicionarCaminho.click();
@@ -1221,8 +1225,13 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		
 		sleep(2000);
 		
-		executarB.click();
+	//	no.click();
+		sleep(8000);
 		
+		executarB.click();
+		sleep(2000);
+		no.click();
+		sleep(2000);
 		waitExpectXpath("//div[@class=\"base-dialog   medium ui-draggable\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"base-dialog   medium ui-draggable\"]");

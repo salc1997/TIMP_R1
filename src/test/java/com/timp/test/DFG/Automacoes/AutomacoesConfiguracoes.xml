@@ -10,8 +10,9 @@
 			<class name="com.timp.test.DFG.Configuracoes.ConfiguracoesFavoritos"></class>
 			<class name="com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar"></class>
 			<class name="com.timp.test.DFG.Configuracoes.ConfiguracoesVisualizar"></class>
-			<class name="com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir"></class>
+			
 			<class name="com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraMasRestaurar"></class>
+			<class name="com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir"></class>
 		</classes>
 	</test> 	 	
 

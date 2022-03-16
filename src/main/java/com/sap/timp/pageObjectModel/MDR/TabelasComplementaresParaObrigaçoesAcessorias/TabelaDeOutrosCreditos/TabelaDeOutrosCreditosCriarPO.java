@@ -61,7 +61,7 @@ public class TabelaDeOutrosCreditosCriarPO extends TestBaseSteven{
 	public boolean criar() {
 		sleep(2000);
 		tabelacomplementares.click();
-		sleep(2000);
+		sleep(6000);
 		
 		tabeladeoutroscreditos.click();
 		

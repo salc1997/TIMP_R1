@@ -71,7 +71,7 @@ public class AssociaçãoCodigoAjusteEditarPO extends TestBaseFernando{
 		sleep(2000);
 		
 		attributeToBeXpath("//div[@id=\"filial\"]/div", "class", "base-MultipleSelect3 required");
-		sleep(2000);
+		sleep(8000);
 		
 		String dataInicioVigenciaValorNuevo = fechaAyer();
 		System.out.println("Data a ser inserida: " +dataInicioVigenciaValorNuevo);

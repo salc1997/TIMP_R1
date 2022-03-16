@@ -71,7 +71,7 @@ public class PainelNovaConfiguraçãoPO extends TestBaseSteven{
 		
 		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and @data-id]")).size();
 		
-		String ultimoIdAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
+		String ultimoIdAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Último Id antes da criação do registro DFG : " + ultimoIdAC);
 		
 		novo.click();

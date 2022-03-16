@@ -131,7 +131,7 @@ public class ConfiguracaoEExecucacoCriarPO extends TestBaseMassiel{
 		sleep(1000);
 		opcionCheckbox.click();
 		closeSelectTypeCheckbox(cboUf);
-		sleep(7000);
+		sleep(10000);
 		
 		//attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);

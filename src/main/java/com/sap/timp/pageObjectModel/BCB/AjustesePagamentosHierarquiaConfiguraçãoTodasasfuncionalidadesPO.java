@@ -12,6 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseSteven;
 
 public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO extends TestBaseSteven {
+	//TSTNG-2265
 	
 	// TAA	
 	@FindBy(xpath = "//div[text()=\"TAA\"]")
@@ -424,7 +425,7 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO ex
 		primeira.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 
 		//conta o numero de linhas
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
@@ -690,7 +691,7 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO ex
 		gravarC.click();
 		sleep(3000);
 	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(15000);
+		sleep(20000);
 		
 		biblioteca.click();
 		sleep(3000);

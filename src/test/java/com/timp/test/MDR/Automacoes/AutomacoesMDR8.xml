@@ -69,17 +69,6 @@
 
 	</test> 
 	
-	<test name="Contas Contábeis RBLP">
-
-		<classes>
-		
-			<!--  Cadastros IRPJ/CSLL > Contas Contábeis RBLP  -->
-				
-				<class name="com.timp.test.MDR.CadastrosIRPJCSLL.ContasContábeisRBLP.ContasContábeisRBLPFiltroId"></class>
-		
-		</classes>
-
-	</test> 
 	
 	<test name="Livros Fiscais > Parametrização Do Livro Oficial">
 
@@ -100,7 +89,7 @@
 		<classes>
 			<!--  Determinacao De Relevancia De Tarefa > Cadastro De Código De Regras -->
 				
-				<class name="com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.CadastroDeCódigoDeRegras.CadastroDeCódigoDeRegrasCriar"></class>
+				<class name="com.timp.test.MDR.DeterminacaoDeRelevanciaDeTarefa.CadastroDeCódigoDeRegras.CadastroDeCódigoDeRegrasCriar"></class>
 			</classes>
 
 	</test> 

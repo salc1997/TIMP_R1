@@ -130,13 +130,13 @@ public class ConfiguraçãoeExecuçãoFiltrosavançadosPO extends TestBaseSteven {
 		filtrosavancados.click();
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		empresa.click();
 		sleep(2000);
 		
 		opcEmpresa.click();
-		sleep(9000);
+		sleep(15000);
 		
 		uf.click();
 		sleep(2000);

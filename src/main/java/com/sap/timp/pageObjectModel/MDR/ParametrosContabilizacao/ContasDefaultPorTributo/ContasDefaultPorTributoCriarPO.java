@@ -102,7 +102,7 @@ public class ContasDefaultPorTributoCriarPO extends TestBaseSteven {
 		sleep(2000);
 		Actions action = new Actions(driver); 
 		action.sendKeys(Keys.ESCAPE).build().perform(); 
-		sleep(2000);
+		sleep(6000);
 		
 		filial.click();
 		

@@ -77,7 +77,7 @@ public class PainelBCEConfiguracaoeExecucaoVisualizarPO extends TestBaseKenssy {
 		visualizar.click();
 		invisibilityOfElementOverlay();
 
-		sleep(6000);
+		sleep(16000);
 
 		
 		String empresaV1 = empresaV.getText();

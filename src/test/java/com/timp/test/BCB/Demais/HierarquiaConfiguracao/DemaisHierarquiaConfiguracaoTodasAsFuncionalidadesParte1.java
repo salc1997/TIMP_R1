@@ -190,7 +190,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends Te
 			assertTrue(sucesso.get(i), subniveis);
 		}
 	}
-	
+	/*
 	//desde aqui dividir para hacer version 2
 	
 //	@Test(priority = 17)
@@ -254,5 +254,5 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends Te
 //		}
 //	}
 	
-	
+	*/
 }

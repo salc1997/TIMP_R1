@@ -84,6 +84,10 @@ public class ConfiguraçãodeLayoutdePainelExecutarGravarPO extends TestBaseSteven
 	@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[2]")
 	public WebElement executa;
 	
+	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
+	public WebElement biblioteca;
+	
+	
 	
 	public ConfiguraçãodeLayoutdePainelExecutarGravarPO() {
 		PageFactory.initElements(driver, this);
@@ -180,14 +184,17 @@ public class ConfiguraçãodeLayoutdePainelExecutarGravarPO extends TestBaseSteven
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(12000);
 		
-		BancoCréditoTributário.click();
+		biblioteca.click();
+		sleep(7000);
+		
+	//	BancoCréditoTributário.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
-		Painel.click();
+	//	Painel.click();
 		sleep(2000);
 		
 		configuracionPainel.click();
@@ -208,7 +215,7 @@ public class ConfiguraçãodeLayoutdePainelExecutarGravarPO extends TestBaseSteven
 		açao2.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(24000);
 		
 		attributoNotToBeEmptyElement(validaDe, "value");
 		String valorDescricaoGuardado = validaDe.getAttribute("value");
@@ -217,14 +224,14 @@ public class ConfiguraçãodeLayoutdePainelExecutarGravarPO extends TestBaseSteven
 		  
 		boolean sucesso = false;
 		
-//		if(valorDescricaoGuardado.equals(valorDescricao)) {
-//			System.out.println("");
-//			System.out.println("Valor editado satisfactoriamente...");
-//			sucesso = true;
-//		}else {
-//			System.out.println("");
-//			System.out.println("Error al prencher descricao...");
-//		}
+	/*	if(valorDescricaoGuardado.equals(valorDescricao)) {
+	 		System.out.println("");
+			System.out.println("Valor editado satisfactoriamente...");
+			sucesso = true;
+		}else {
+			System.out.println("");
+			System.out.println("Error al prencher descricao...");
+		}*/
 		
 		return sucesso;
 	}

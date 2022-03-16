@@ -42,5 +42,13 @@ public class TabelaDeApoioECFLeiaute extends TestBaseMassiel{
 		assertTrue(sucesso, Criar);
 		sleep(2000);
 	}
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+	    
+		boolean sucesso = tabelaDeApoioECFLeiautePO.Excluir();
+		assertTrue(sucesso, Criar);
+		sleep(2000);
+	}
+
 
 }

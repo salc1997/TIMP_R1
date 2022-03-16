@@ -31,7 +31,7 @@ public class TipoDeTributoContaContabiExcluirMassaPO extends TestBaseMassiel{
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher Descrição\"]")
 	public WebElement descricao;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Data de Inicio de Vigência\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Data de Início de Vigência\"]")
 	public WebElement datainicial;
 	
 	

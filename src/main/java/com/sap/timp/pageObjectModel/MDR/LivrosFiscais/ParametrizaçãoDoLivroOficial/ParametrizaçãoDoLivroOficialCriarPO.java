@@ -30,7 +30,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseMassiel {
 	@FindBy(xpath = "//div[contains(@class, \"icon-right\")][2]")
 	public WebElement btnUltimaPagina;
 	
-	@FindBy(xpath = "//span[text()=\"Nova configuração livro oficial\"]")
+	@FindBy(xpath = "//span[text()=\"Nova configuração Livro Oficial\"]")
 	public WebElement btnNovaConfigurazacaoDoLivroOficial;
 	
 	@FindBy(xpath = "//div[@id=\"bookType\"]/div/div/div[2]")
@@ -202,7 +202,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseMassiel {
 		
 		System.out.println("Ultimo ID: " + id);
 		
-		sleep(2000);
+		sleep(6000);
 		btnNovaConfigurazacaoDoLivroOficial.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

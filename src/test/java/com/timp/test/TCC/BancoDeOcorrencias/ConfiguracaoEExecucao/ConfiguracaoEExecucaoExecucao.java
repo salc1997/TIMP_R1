@@ -30,7 +30,7 @@ public class ConfiguracaoEExecucaoExecucao extends TestBaseSteven {
 	@AfterClass
 	public void afterClass() {
 
-		driver.close();
+	//	driver.close();
 
 	}
 
@@ -42,6 +42,7 @@ public class ConfiguracaoEExecucaoExecucao extends TestBaseSteven {
 		
 		boolean sucesso = configuracaoEExecucaoExecucaoPO.executar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
 
 }

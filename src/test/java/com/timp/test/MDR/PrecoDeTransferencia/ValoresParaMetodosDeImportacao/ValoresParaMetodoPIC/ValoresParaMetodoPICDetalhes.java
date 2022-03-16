@@ -29,7 +29,10 @@ public class ValoresParaMetodoPICDetalhes extends TestBaseSteven{
 		valoresParaMetodoPICDetalhesPO = new ValoresParaMetodoPICDetalhesPO();
 	}
 	
-	 @AfterClass public void afterClass(){ driver.close(); }
+	 @AfterClass public void afterClass(){
+		  driver.close(); 
+		 
+	 }
 	 
 
 	@Test()

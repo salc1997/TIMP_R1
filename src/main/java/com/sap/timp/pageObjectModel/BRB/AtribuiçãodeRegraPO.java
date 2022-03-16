@@ -205,9 +205,9 @@ public class AtribuiçãodeRegraPO extends TestBaseSteven{
 		
 		btnEdicao.click();
 		sleep(2000);
-		waitExpectElement(nao);
+	///	waitExpectElement(nao);
 		sleep(1000);
-		nao.click();
+	//	nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

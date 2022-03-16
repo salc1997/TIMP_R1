@@ -63,12 +63,12 @@ public class InstitucaoEditarPO extends TestBaseSteven{
 		menu.click();
 		sleep(2000);
 		editar.click();
-		sleep(8000);
+		sleep(13000);
 		//attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");
 		
 
 		String valor = campo.getAttribute("value");
-
+		System.out.println(valor);
 		
 		String enviar = "Prueba";
 		
@@ -80,7 +80,7 @@ public class InstitucaoEditarPO extends TestBaseSteven{
 		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
-		sleep(3000);		 
+		sleep(9000);		 
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 
 		
@@ -90,6 +90,8 @@ public class InstitucaoEditarPO extends TestBaseSteven{
 		sleep(1000);
 		
 		String nuevoTexto = campo.getAttribute("value");
+		
+		System.out.println(nuevoTexto);
 
 		boolean sucesso = nuevoTexto.equals(enviar);
 		System.out.println(sucesso);

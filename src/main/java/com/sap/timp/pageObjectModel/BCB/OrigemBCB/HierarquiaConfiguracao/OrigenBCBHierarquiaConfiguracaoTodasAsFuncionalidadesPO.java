@@ -759,7 +759,8 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
 		sleep(3000);
-		
+	//	nao.click();
+		sleep(5000);
 		ultimo.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -973,7 +974,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		if (tc2==true) {
 			selectBCB3.click();
 			selectBCB3.sendKeys(Keys.ESCAPE);
-			sleep(3000);
+			sleep(8000);
 		}else if(tq1==true) {
 			selectBCB1.click();
 			selectBCB1.sendKeys(Keys.ESCAPE);
@@ -1709,11 +1710,11 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		*/
 		opcCampoSaida6.click();
 		sleep(9000);
-		waitExpectXpath("//button[text()=\"Sim\"]");
-		WebElement btnSeguirBloqueo = driver.findElement(By.xpath("//button[text()=\"Sim\"]"));
+	//	waitExpectXpath("//button[text()=\"Sim\"]");
+	//	WebElement btnSeguirBloqueo = driver.findElement(By.xpath("//button[text()=\"Sim\"]"));
 		sleep(1000);
-		btnSeguirBloqueo.click();
-		sleep(2000);
+	//	btnSeguirBloqueo.click();
+		sleep(6000);
 		
 		negativo6.click();
 		sleep(3000);
@@ -1847,7 +1848,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		}		
 		
 		sleep(2000);
-		execucaoAnalitica.click();
+		//execucaoAnalitica.click();
 		sleep(1000);
 		
 		executarB.click();
@@ -1857,7 +1858,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	//	waitExpectElement(aba1);
-		sleep(12000);
+		sleep(21000);
 		
 		aba1.click();
 		sleep(2000);
@@ -2089,7 +2090,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		
 		System.out.println("---------------------------------Abrir SubNivel 6-------------------------------------");
-		sleep(1000);
+		sleep(6000);
 		
 		subnivel6.click();
 		sleep(5000);

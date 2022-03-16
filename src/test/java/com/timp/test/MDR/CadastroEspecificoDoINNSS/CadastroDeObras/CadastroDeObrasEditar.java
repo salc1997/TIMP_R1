@@ -43,7 +43,7 @@ public class CadastroDeObrasEditar extends TestBaseMassiel{
 
 	  boolean sucesso = cadastroDeObrasEditarPO.Editar();
 	  assertTrue(sucesso, Editar);
-	  
+	  sleep(2000);
 	}
 
 }

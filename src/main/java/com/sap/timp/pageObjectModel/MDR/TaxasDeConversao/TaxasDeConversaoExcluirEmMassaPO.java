@@ -27,7 +27,7 @@ public class TaxasDeConversaoExcluirEmMassaPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[@placeholder=\"Prencher a Taxa\"]")
 	public WebElement taxa;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datainicio;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")

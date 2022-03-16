@@ -197,7 +197,7 @@ public class ConfiguracoesStatusPeriodoCriarPO extends TestBaseKenssy {
 		gravar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(9000);
 		
 		primeira.click();
 		sleep(2000);

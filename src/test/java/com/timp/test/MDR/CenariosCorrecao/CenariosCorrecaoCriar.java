@@ -41,6 +41,7 @@ public class CenariosCorrecaoCriar extends TestBaseSteven {
 		
 		boolean sucesso = cenariosCorrecaoCriarPO.cenariosCorrecaoCriar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
 
 }

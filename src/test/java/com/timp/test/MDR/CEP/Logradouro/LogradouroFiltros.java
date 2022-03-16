@@ -42,5 +42,6 @@ public class LogradouroFiltros extends TestBaseSteven {
 		
 		boolean sucesso = logradouroFiltrosPO.logradouroFiltros();
 		assertTrue(sucesso, Filtros);
+		sleep(2000);
 	}
 }

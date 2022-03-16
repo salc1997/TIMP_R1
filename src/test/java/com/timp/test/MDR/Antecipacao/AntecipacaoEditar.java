@@ -30,7 +30,7 @@ public class AntecipacaoEditar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+	//	driver.close();
 	}
 
 
@@ -44,6 +44,6 @@ public class AntecipacaoEditar extends TestBaseSteven {
 		boolean sucesso = antecipacaoEditarPO.editar();
 
 		assertTrue(sucesso, Editar);
-
+		sleep(2000);
 	}
 }

@@ -88,15 +88,15 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 		novodeterminacaoautomaticadeguias.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(empresa);
-		sleep(2000);
+		//waitExpectElement(empresa);
+		sleep(12000);
 		
 		empresa.click();
-		sleep(2000);
+		sleep(7000);
 		opcaoempresa.click();
 		sleep(2000);
 		closeSelectTypeCheckbox(empresa);
-		sleep(2000);
+		sleep(5000);
 		
 		
 		

@@ -336,7 +336,7 @@ public class Registro1220EditarPO extends TestBaseSteven {
 				empresa.click();
 				sleep(2000);
 				opcao1.click();
-				sleep(6000);
+				sleep(10000);
 
 			//	attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 				sleep(3000);

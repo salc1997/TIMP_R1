@@ -37,7 +37,7 @@ public class DocumentosFiscaisICMSVisualizarPO extends TestBaseSteven{
 	public WebElement siguiente;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -138,12 +138,12 @@ public class DocumentosFiscaisICMSVisualizarPO extends TestBaseSteven{
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(9000);
 		
 		
 		//editar
-		attributeToBeXpath("//div[@class=\"element\" and @id=\"taxDocCode\"]/div/div", "class", "base-input  required type2 success");
-		sleep(2000);
+	//	attributeToBeXpath("//div[@class=\"element\" and @id=\"taxDocCode\"]/div/div", "class", "base-input  required type2 success");
+		sleep(9000);
 	
 		String codigoeditar=codigodedocumentofiscal.getAttribute("value");
 		String especieeditar= especieed.getAttribute("value");

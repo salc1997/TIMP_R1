@@ -37,5 +37,7 @@ public class ConfiguracaoDeTributoExcluir extends TestBaseSteven {
 		boolean sucesso = configuracaoDeTributoExcluirPO.excluir();
 
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
+
 	} 
 }

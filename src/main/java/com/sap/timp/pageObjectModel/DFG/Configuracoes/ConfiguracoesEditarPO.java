@@ -25,7 +25,7 @@ public class ConfiguracoesEditarPO extends TestBaseSteven{
 	public WebElement filtrosAvanzados;
 	
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Id\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Pesquisar\")]")
 	public WebElement procurar;
 	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Inicio\")]")
@@ -78,9 +78,9 @@ public class ConfiguracoesEditarPO extends TestBaseSteven{
 		
 		String id = idObter2();
 		
-		filtrosAvanzados.click();
-		sleep(3000);
-		waitExpectElement(procurar);
+		/*filtrosAvanzados.click();
+		sleep(3000);*/
+		waitExpectElement(filtrosAvanzados);
 		sleep(2000);
 		
 		procurar.sendKeys(id);
@@ -115,14 +115,14 @@ public class ConfiguracoesEditarPO extends TestBaseSteven{
 		
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		sleep(10000);
 		
 		raiz2.click();
 		
 		raiz2.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		sleep(10000);
 		
 		siguiente.click();
 		sleep(2000);

@@ -46,7 +46,7 @@ public class CodigosAjustesCriar extends TestBaseSteven {
 		boolean sucesso = codigosAjustesCriarPO.criar();
 
 		assertTrue(sucesso, Criar);
-
+		sleep(2000);
 	}
 
 }

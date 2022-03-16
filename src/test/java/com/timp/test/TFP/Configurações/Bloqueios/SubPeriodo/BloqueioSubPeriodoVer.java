@@ -32,24 +32,21 @@ public class BloqueioSubPeriodoVer extends TestBaseSteven {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
 
-	@Test(priority = 1)
-	public void TFPEntrar() {
-		acessarTFPPO.acessarTFP();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void ver() {
+		
+		loginTC.login();
+		acessarTFPPO.acessarTFP();
+		
 		ArrayList<Boolean> sucesso = bloqueioSubPeriodoVerPO.ver();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
+	
+		sleep(3000); 
 	}
 
 }

@@ -26,7 +26,7 @@ public class RegraDeCamposCriar extends TestBaseFernando {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 	
 	@Test()
@@ -35,5 +35,7 @@ public class RegraDeCamposCriar extends TestBaseFernando {
 		acessarTAAPO.acessarTAA();
 		boolean sucesso = regraDeCamposCriarPO.criar();
 		assertTrue(sucesso, Criar);
+		
+		sleep(2000);
 	}
 }

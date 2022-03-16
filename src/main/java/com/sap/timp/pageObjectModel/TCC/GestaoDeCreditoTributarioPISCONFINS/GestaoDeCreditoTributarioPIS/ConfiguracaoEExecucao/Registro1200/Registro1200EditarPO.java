@@ -102,7 +102,7 @@ public class Registro1200EditarPO extends TestBaseSteven {
 		editar.click();
 		sleep(2000);
 		waitExpectElement(naturaleza);
-		sleep(11000);
+		sleep(16000);
 		
 		
 		

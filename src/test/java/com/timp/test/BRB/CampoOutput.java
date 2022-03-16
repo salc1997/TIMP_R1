@@ -44,7 +44,7 @@ public class CampoOutput extends TestBaseSteven {
 		System.out.println(sucesso);
 
 		assertTrue(sucesso, semCampoOutput);
-
+		sleep(2000);
 	}
 
 }

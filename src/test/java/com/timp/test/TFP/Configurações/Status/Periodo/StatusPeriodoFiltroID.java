@@ -36,7 +36,7 @@ public class StatusPeriodoFiltroID extends TestBaseMassiel {
 
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void filtro() {
 		loginTC.login();
 		acessarTFPPO.acessarTFP();

@@ -11,7 +11,7 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBaseFernando{
 	@FindBy(xpath = "//span[text()=\"Relacionamentos de Estruturas\"]")
 	public WebElement relacionamentoEstruturas;
 	
-	@FindBy(xpath = "//span[contains(text(),\"Nov\")]")
+	@FindBy(xpath = "//span[contains(text(),\"Novo\")]")
 	public WebElement btnNovo;
 	
 	@FindBy(xpath = "//div[contains(@class, \"icon-right\")][2]")
@@ -98,8 +98,12 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBaseFernando{
 		
 		// Primer ingreso
 		btnNovo.click();
-		sleep(401400);
-		
+		sleep(40400);
+		sleep(40400);
+		sleep(40400);
+		sleep(40400);
+		sleep(40400);
+		sleep(40400);
 		waitExpectElement(cboGrupo1);
 		cboGrupo1.click();
 		sleep(1000);
@@ -172,7 +176,9 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBaseFernando{
 		
 		// Segundo registro
 		btnNovo.click();
-		sleep(371400);
+		sleep(40400);
+		sleep(40400);
+		sleep(40400);
 		
 		waitExpectElement(cboGrupo1);
 		cboGrupo1.click();

@@ -40,6 +40,8 @@ public class ConfiguraçãodeTributoXTributoGrupoExcluir extends TestBaseSteven {
 		boolean sucesso = configuraçãodeTributoXTributoGrupoExcluirPO.excluir();
 
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
+
 	}
 	
 

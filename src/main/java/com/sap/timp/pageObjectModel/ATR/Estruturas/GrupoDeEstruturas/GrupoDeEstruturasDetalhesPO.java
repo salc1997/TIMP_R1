@@ -129,7 +129,7 @@ public class GrupoDeEstruturasDetalhesPO extends TestBaseSteven {
 		sleep(2000);
 		
 		String ajustefiscaisvisualizar = ajustefiscaisvi.getText();
-		String cfopvisualizar = cfopvi.getText();
+		//String cfopvisualizar = cfopvi.getText();
 		
 		 System.out.println("");
 		 System.out.println("visualizar");
@@ -141,7 +141,7 @@ public class GrupoDeEstruturasDetalhesPO extends TestBaseSteven {
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
 		//cfopvisualizar
-		sucesso.add(ajustefiscaisdetalhes.contains(cfopvisualizar));
+		sucesso.add(ajustefiscaisdetalhes.contains(ajustefiscaisvisualizar));
 		//sucesso.add(cfopdetalhes.contains(ajustefiscaisvisualizar));
 		
 		

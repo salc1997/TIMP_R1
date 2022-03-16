@@ -129,7 +129,7 @@ public class RelatorioRefinariaGeradosFiltrosAvacadosPO extends TestBaseFernando
 		cboFiltroEmpresa.click();
 		sleep(1000);
 		
-		String empresa = driver.findElement(By.xpath("//div[contains(@class, \"tbody\")]/div[contains(@class, \"tr\") and @data-id][1]/div[6]/div")).getText();
+		String empresa = "1000";
 		System.out.println("");
 		System.out.println("Empresa filtro: " + empresa);
 		

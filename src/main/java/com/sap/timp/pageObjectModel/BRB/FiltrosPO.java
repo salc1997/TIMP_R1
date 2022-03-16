@@ -363,7 +363,7 @@ public class FiltrosPO  extends TestBaseSteven{
 		
 		
 		configuracion.click();
-		sleep(1000);
+		sleep(3000);
 		
 		if (amb==false) {
 			uf.sendKeys("SP");

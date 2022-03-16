@@ -28,7 +28,7 @@ public class ArmazenarArquivoEditar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
@@ -40,7 +40,7 @@ public class ArmazenarArquivoEditar extends TestBaseSteven {
 		acessarTBDPO.acessarTBD();
 		boolean sucesso = armazenarArquivoEditarPO.editar();
 		assertTrue(sucesso, Editar);
-
+		sleep(3000);
 	}
 
 }

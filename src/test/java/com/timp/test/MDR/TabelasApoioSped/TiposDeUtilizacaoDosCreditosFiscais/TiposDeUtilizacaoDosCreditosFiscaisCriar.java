@@ -37,6 +37,7 @@ public class TiposDeUtilizacaoDosCreditosFiscaisCriar extends TestBaseSteven {
 		acessarMDRPO.acessarMDR();
 		boolean sucesso = tiposDeUtilizacaoDosCreditosFiscaisCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
+		sleep(2000);
 
 	}
 

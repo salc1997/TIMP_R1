@@ -91,7 +91,7 @@ public class Registro1700EditarPO extends TestBaseMassiel{
 		sleep(3000);
 		//waitExpectElement(componenteInput);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(9000);
 		
 		String valor = indicadordeNaturezaInput.getAttribute("value");
 		System.out.println(valor);

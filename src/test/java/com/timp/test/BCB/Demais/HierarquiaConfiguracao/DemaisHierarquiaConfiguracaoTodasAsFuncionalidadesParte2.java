@@ -49,24 +49,24 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 extends Te
 		assertTrue(sucesso,Acessar);
 	}
 
-	//desde aqui dividir para hacer version 2
+//	desde aqui dividir para hacer version 2
 	
-//	@Test(priority = 1)
-//	public void ejecutarFinal() {
-//		demaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO.ejecutarFinal();
-//	}
-//	
-//	
-//	@Test(priority = 2)
-//	public void relacionamentoFinalyAbrirHierarquiaGrupo() {
-//		//demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.resultadoFinalParte2();
-//		ArrayList<Boolean> sucesso = demaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO.relacionamentoFinalyAbrirHierarquiaGrupo();
-//		System.out.println(sucesso);
-//		
-//		for (int i = 0; i < sucesso.size(); i++) {
-//			assertTrue(sucesso.get(i), subniveis);
-//		}
-//	}
+	@Test(priority = 1)
+	public void ejecutarFinal() {
+		demaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO.ejecutarFinal();
+	}
+	
+	
+	@Test(priority = 2)
+	public void relacionamentoFinalyAbrirHierarquiaGrupo() {
+		//demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.resultadoFinalParte2();
+		ArrayList<Boolean> sucesso = demaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO.relacionamentoFinalyAbrirHierarquiaGrupo();
+		System.out.println(sucesso);
+		
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), subniveis);
+		}
+	}
 	
 	
 	@Test(priority = 3)

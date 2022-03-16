@@ -36,5 +36,6 @@ public class RegraDeCamposEditar extends TestBaseFernando {
 		acessarTAAPO.acessarTAA();
 		boolean sucesso = regraDeCamposEditarPO.editar();
 		assertTrue(sucesso, Editar);
+		sleep(2000);
 	}
 }

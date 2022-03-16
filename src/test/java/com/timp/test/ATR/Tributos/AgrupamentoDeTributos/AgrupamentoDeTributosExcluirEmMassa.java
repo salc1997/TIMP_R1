@@ -40,6 +40,7 @@ public class AgrupamentoDeTributosExcluirEmMassa extends TestBaseSteven{
 
 		boolean sucesso = agrupamentoDeTributosExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	
 	}
 	
@@ -49,6 +50,7 @@ public class AgrupamentoDeTributosExcluirEmMassa extends TestBaseSteven{
 		sleep(1000);
 		boolean sucesso2 = agrupamentoDeTributosExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
+		sleep(2000);
 
 	}
  

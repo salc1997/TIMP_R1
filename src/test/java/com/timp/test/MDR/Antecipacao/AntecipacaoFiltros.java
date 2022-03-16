@@ -42,7 +42,7 @@ public class AntecipacaoFiltros extends TestBaseSteven {
 		String sucesso = antecipacaoFiltrosPO.filtro();
 
 		assertEquals(sucesso, antecipacaoFiltrosPO.id.getText(), Filtros);
-
+		sleep(2000);
 	}
 
 }

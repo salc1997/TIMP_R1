@@ -40,6 +40,6 @@ public class AprovacaoDeDocumentosExcluir extends TestBaseSteven {
 
 		boolean sucesso = aprovacaoDeDocumentosExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-
+		sleep(3000);
 	}
 }

@@ -51,7 +51,7 @@ public class AntecipacaoVisualizarPO extends TestBaseSteven{
 	public WebElement filialE;
 	@FindBy(xpath = "//input[contains(@placeholder,\"um  Tributo\")]")
 	public WebElement tributoE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione um  Tipo de tributo\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione um  Tipo de Tributo\")]")
 	public WebElement tipoTributoE;
 	@FindBy(xpath = "//input[contains(@placeholder,\"% Antecipação\")]")
 	public WebElement antecipacaoE;
@@ -146,7 +146,9 @@ public class AntecipacaoVisualizarPO extends TestBaseSteven{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(8000);
+
+		sleep(10000);
+
 		
 		String empresaE1 = empresaE.getText();
 		String ufE1 = ufE.getText();

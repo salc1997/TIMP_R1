@@ -149,7 +149,7 @@ public class RegistroM605CriarPO extends TestBaseSteven{
 	
 		
 		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
-		sleep(2000);
+		sleep(6000);
 		
 		filial.click();
 		sleep(2000);
@@ -176,7 +176,7 @@ public class RegistroM605CriarPO extends TestBaseSteven{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		sleep(8000);
 
 		biblioteca.click();
 		sleep(2000);

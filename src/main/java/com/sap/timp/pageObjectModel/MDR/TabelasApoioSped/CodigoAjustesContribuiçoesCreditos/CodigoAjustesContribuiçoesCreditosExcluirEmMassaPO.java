@@ -31,7 +31,7 @@ public class CodigoAjustesContribuiçoesCreditosExcluirEmMassaPO extends TestBase
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div[@class=\"list-item\" and @id]/div/label/span")
 	public WebElement tributoO;
 		
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigencia;
 
 	
@@ -166,7 +166,7 @@ public class CodigoAjustesContribuiçoesCreditosExcluirEmMassaPO extends TestBase
 	
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 
 		primeira.click();
 		

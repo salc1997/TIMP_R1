@@ -29,7 +29,7 @@ public class AssociaçãoCodigoAjusteEditar extends TestBaseFernando{
 	  @AfterClass
 	  public void afterClass() {
 
-		  //driver.close();
+		 // driver.close();
 
 	  }
 	  
@@ -44,5 +44,6 @@ public class AssociaçãoCodigoAjusteEditar extends TestBaseFernando{
 		  
 		  boolean sucesso = associaçãoCodigoAjusteEditarPO.editarAssociaçãoCodigoAjuste();
 		  assertTrue(sucesso, Editar);
+		  sleep(2000);
 	  }
 }

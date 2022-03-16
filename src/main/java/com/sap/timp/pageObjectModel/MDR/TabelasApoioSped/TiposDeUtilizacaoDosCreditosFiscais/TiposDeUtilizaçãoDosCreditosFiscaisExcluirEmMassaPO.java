@@ -25,7 +25,7 @@ public class TiposDeUtilizaçãoDosCreditosFiscaisExcluirEmMassaPO extends TestBas
 	public WebElement descricao;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datainicio;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")

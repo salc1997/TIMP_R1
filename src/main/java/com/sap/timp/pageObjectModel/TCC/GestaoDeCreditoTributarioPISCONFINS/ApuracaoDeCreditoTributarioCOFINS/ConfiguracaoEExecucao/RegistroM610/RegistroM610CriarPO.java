@@ -207,7 +207,7 @@ public class RegistroM610CriarPO extends TestBaseSteven{
 		gravar.click();
 		sleep(2000);
 		sim.click();
-		sleep(12000);
+		sleep(17000);
 	
 		biblioteca.click();
 		sleep(6000);

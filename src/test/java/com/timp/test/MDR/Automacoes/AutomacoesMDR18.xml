@@ -30,6 +30,7 @@
 		</classes>
 	</test> 
 	
+	
 	<test name="RegistroDeExportaçao">
 		<classes>
 		
@@ -184,7 +185,6 @@
 		
 		</classes>
 	</test> 
-	
 	
 	
 </suite> <!-- Suite -->

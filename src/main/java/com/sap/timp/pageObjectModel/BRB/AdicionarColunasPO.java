@@ -148,7 +148,7 @@ public class AdicionarColunasPO extends TestBaseSteven{
 		buscarCampo.sendKeys("Empresa");
 		Actions actions = new Actions(driver);
 		actions.moveToElement(empresa);
-		sleep(12000);
+		sleep(15000);
 		actions.doubleClick(empresa).perform();
 		
 		buscarCampo.clear();

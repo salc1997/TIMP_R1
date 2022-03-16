@@ -99,12 +99,12 @@ public class ConfiguracaoEExecucaoExecucaoPO extends TestBaseSteven {
 		sleep(2000);
 	
 		String idRegistro = idObter("idBOConfiguracaoEExecucaco");
-		
+	
 		siguiente.click();
 	//	waitExpectXpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(9000);
 	
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

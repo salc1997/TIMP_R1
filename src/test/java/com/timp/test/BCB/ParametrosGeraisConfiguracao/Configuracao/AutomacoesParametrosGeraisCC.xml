@@ -3,7 +3,7 @@
 <suite name="Suite" preserve-order="true">
 	<test name="Parametros Gerais Configuracao Configuracao">
 		<classes>
-			<!-- ATR -  ARQUIVOCOS    -->	
+			<!--   Parametros Gerais Configuracao Configuracao  -->	
 			<class name="com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaCriar"></class>		
 			<class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoCriar"></class>
 			<class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia"></class>
@@ -17,4 +17,6 @@
 		
 		</classes>
 	</test> 	
+	
+	
 </suite>

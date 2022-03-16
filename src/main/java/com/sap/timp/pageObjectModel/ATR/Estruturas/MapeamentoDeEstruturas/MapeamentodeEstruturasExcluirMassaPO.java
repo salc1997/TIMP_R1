@@ -97,13 +97,13 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 	public ArrayList<Boolean> criar() {	
 		
 		mapamentoEstruturas.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(2000);
 		siguiente.click();
-		
+		sleep(2000);
 		invisibilityOfElementOverlay();
-		
+		sleep(2000);
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
 		
 		String idAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
@@ -149,7 +149,7 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 		sleep(2000);
 		opctributo.click();
 
-		sleep(2000);
+		sleep(5000);
 		closeSelectTypeCheckbox(tributo);
 		sleep(2000);
 	
@@ -159,12 +159,12 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 		sleep(2000);
 		
 		dataFim.sendKeys("31/12/1979");
-		sleep(2000);
+		sleep(5000);
 		
 		gravar.click();
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		
 		novo.click();
 		sleep(2000);
@@ -223,10 +223,6 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 			sleep(1000);
 		}
 		
-		sleep(2000);
-		closeSelectTypeCheckbox(tributo);
-		sleep(2000);
-		
 
 	
 		
@@ -234,7 +230,7 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 		sleep(1000);
 		
 		dataFim.sendKeys("31/12/1979");
-		sleep(1000);
+		sleep(5000);
 		
 		gravar.click();
 		sleep(3000);

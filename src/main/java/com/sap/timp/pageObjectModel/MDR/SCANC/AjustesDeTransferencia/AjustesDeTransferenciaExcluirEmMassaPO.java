@@ -59,7 +59,7 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[contains(@id,\"tax-type-transfers\")]/div/div/div[2]")
 	public WebElement tipoImposto;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Inicio\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Selecionar Data de Início de Vigência\")]")
 	public WebElement dataVigencia;
 	
 	
@@ -151,7 +151,7 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 		tipoImposto.click();
 		sleep(2000);
 		opcao2.click();
-		sleep(2000);
+		sleep(8000);
 		
 
 		dataVigencia.sendKeys(fechaActual());
@@ -216,9 +216,9 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");	
 		waitExpectElement(empresa);
-		sleep(5000);
+		sleep(60000);
 		System.out.println("llege antes del segundo registro");
-		
+		sleep(12000);
 		empresa.click();
 		sleep(2000);
 		opcao.click();
@@ -302,19 +302,7 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-
-		biblioteca.click();
-		
-		sleep(2000);
-
-		
-		no.click();
-		
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(12000);
 		
 
 		siguiente.click();

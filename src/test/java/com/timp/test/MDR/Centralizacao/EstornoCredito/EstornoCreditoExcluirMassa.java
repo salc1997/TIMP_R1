@@ -43,6 +43,7 @@ public class EstornoCreditoExcluirMassa extends TestBaseMassiel{
 		boolean sucesso = 	estornoCreditoExcluirMassaPO.CriarEstornoCredito();
 
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 
 	}
   
@@ -53,7 +54,7 @@ public class EstornoCreditoExcluirMassa extends TestBaseMassiel{
 		boolean sucesso = 	estornoCreditoExcluirMassaPO.ExcluirMasas();
 
 		assertTrue(sucesso, Criar);
-
+		sleep(2000);
 
 
 	}

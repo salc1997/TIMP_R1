@@ -30,7 +30,7 @@ public class AssociaçãoExcluirEmMassa extends TestBaseKenssy{
 
   @AfterClass
   public void afterClass() {
-	  driver.close();
+	 // driver.close();
   }
 
 
@@ -51,7 +51,7 @@ public class AssociaçãoExcluirEmMassa extends TestBaseKenssy{
 		
 		boolean sucesso2 = associaçãoExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
-
+		sleep(2000);
 	}
 
 

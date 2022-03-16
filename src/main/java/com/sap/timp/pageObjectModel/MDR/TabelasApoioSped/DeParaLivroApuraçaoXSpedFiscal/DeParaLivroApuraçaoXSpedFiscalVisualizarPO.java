@@ -83,7 +83,7 @@ public class DeParaLivroApuraçaoXSpedFiscalVisualizarPO extends TestBaseSteven {
 	@FindBy(xpath = "//input[@placeholder=\"SelecionarLinha\"]")
 	public WebElement linede;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datade;
 	
 	public DeParaLivroApuraçaoXSpedFiscalVisualizarPO() {

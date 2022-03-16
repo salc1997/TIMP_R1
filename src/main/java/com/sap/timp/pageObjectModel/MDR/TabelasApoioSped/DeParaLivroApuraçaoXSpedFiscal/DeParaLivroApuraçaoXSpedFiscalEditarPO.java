@@ -42,7 +42,7 @@ public class DeParaLivroApuraçaoXSpedFiscalEditarPO extends TestBaseSteven {
 	public WebElement siguiente;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -101,13 +101,13 @@ public class DeParaLivroApuraçaoXSpedFiscalEditarPO extends TestBaseSteven {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		sleep(2000);
+		sleep(19000);
 		
 		//ediçao
-		attributeToBeXpath("//div[@class=\"element\" and @id=\"tipoTributo\"]/div", "class", "base-select required");
+		//attributeToBeXpath("//div[@class=\"element\" and @id=\"tipoTributo\"]/div", "class", "base-select required");
 		sleep(2000);
 		tipotributo.click();
-		sleep(2000);
+		sleep(3000);
 		opcaotipotributo.click();
 		sleep(2000);
 		String data = "21/08/2020";
@@ -115,7 +115,7 @@ public class DeParaLivroApuraçaoXSpedFiscalEditarPO extends TestBaseSteven {
 		datavigencia.clear();
 		sleep(2000);
 		datavigencia.sendKeys(data);
-		
+		 
 		sleep(2000);
 		gravar.click();
 		sleep(2000);

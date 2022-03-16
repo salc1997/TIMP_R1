@@ -29,7 +29,7 @@ public class GrupoDeEstruturasCriar extends TestBaseSteven{
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		//driver.close();
 	}
 
 
@@ -44,7 +44,7 @@ public class GrupoDeEstruturasCriar extends TestBaseSteven{
 		boolean sucesso = grupoDeEstruturasCriarPO.criar();
 		assertTrue(sucesso, Criar);
 		
-		sleep(2000);
+		sleep(3000);
 
 	}
 

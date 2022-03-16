@@ -32,7 +32,7 @@ public class TabelaCodigoDaSituaçãoTributáriaExcluirEmMassaPO extends TestBaseSt
 	public WebElement descricao;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datadeiniciodevigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")

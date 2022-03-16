@@ -84,7 +84,7 @@ public class SubperiodoEditarPO  extends TestBaseKenssy {
 		sleep(2000);
 
 		waitExpectElement(dia1);
-		sleep(2000);
+		sleep(5000);
 		
 		String valor = dia.getAttribute("value");
 		System.out.println(valor);
@@ -123,7 +123,7 @@ public class SubperiodoEditarPO  extends TestBaseKenssy {
 		menu2.click();
 		sleep(2000);
 		editar2.click();		
-		sleep(6000);
+		sleep(8000);
 
 		
 		String novoTexto = dia.getAttribute("value");

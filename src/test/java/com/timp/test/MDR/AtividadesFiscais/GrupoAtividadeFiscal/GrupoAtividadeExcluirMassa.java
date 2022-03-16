@@ -47,5 +47,6 @@ public class GrupoAtividadeExcluirMassa extends TestBaseFernando{
 	public void excluirMassa() {
 		boolean sucesso = grupoAtividadeExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 }

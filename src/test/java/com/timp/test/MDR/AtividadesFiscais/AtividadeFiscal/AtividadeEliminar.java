@@ -41,6 +41,6 @@ public class AtividadeEliminar extends TestBaseSteven {
 		boolean sucesso = atividadeEliminarPO.eliminar();
 
 		assertTrue(sucesso, Eliminado);
-
+		sleep(2000);
 	}
 }

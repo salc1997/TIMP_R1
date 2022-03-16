@@ -45,5 +45,6 @@ public class TiposDeServicosDetalhes extends TestBaseSteven {
 			assertTrue(sucesso.get(i), Detalhes);
 
 		}
+		sleep(2000);
 	}
 }

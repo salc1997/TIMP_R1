@@ -21,7 +21,7 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Filtros Avançados\"]")
 	public WebElement filtrosAbansados;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Id\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement idFiltro;
 	
 	@FindBy(xpath = "//div[@id=\"baseTabs-wrapper\"]/div[2]/div/div[2]/div/ul/li[4]/div/span[2]")
@@ -73,12 +73,12 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		raizAba.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
-		filtrosAbansados.click();
+		/*filtrosAbansados.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(2000);*/
 
 		idFiltro.click();
 		sleep(3000);
@@ -87,7 +87,7 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		
 		String idRegistro =  idObter2();
 		
-		//String idRegistro =  "3899";
+	
 		
 		System.out.println(" Id Registro Busqueda :" + idRegistro  );
 		
@@ -114,21 +114,21 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		sleep(9000);
 		
 		no.click();
-		sleep(3000);
+		sleep(9000);
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String idUltimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
+	//	String idUltimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
 		
-		int id1 = convertToInt(idUltimo);
+	//	int id1 = convertToInt(idUltimo);
 		int id2 = convertToInt(idRegistro);
-		System.out.println(id1);
+	//	System.out.println(id1);
 		System.out.println(id2);
 		
-		System.out.println(idUltimo + "Ultimo Id del Grid"); // Ultimo registro despues de excluir el registro de la automatizacion y recargar
+		System.out.println(rows + "datos"); // Ultimo registro despues de excluir el registro de la automatizacion y recargar
 		
 		boolean sucesso = false;
 		
-		if (id1 != id2) {
+		if (rows == 0) {
 			sucesso= true;
 		}
 		System.out.println(sucesso);
@@ -143,7 +143,7 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		limpiar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		System.out.println(" Id Registro Busqueda :" + idRegistro  );
 		
@@ -168,13 +168,13 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		sleep(3000);
 		sleep(12000);
 		
-		no.click();
-		sleep(3000);
+	/*	no.click();
+		sleep(3000);*/
 		
 		limpiar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		idFiltro.sendKeys(idRegistro);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -220,7 +220,7 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 			raiz1.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);			
+			sleep(9000);			
 		}else {
 			WebElement raiz1 = driver.findElement(By.xpath("//div[@id=\"baseTabs-wrapper\"]/div[2]/div/div[1]/div/div[1]/div/div[1]/div[1]/div[2]/div[3]"));
 			
@@ -236,15 +236,15 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		
 		System.out.println(" Id Registro Busqueda de Leiautes :" + idRegistro2  );
 		
-		filtrosAbansados.click();
+	/*	filtrosAbansados.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(7000);
-
-		idFiltro.click();
+		sleep(7000);*/
+		
+		limpiar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		System.out.println(" Id Registro Busqueda :" + idRegistro2  );
 		

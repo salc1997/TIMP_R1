@@ -42,7 +42,7 @@ public class AprovacaoDeDocumentosFiltroPorID extends TestBaseSteven {
 
 		boolean sucesso = aprovacaoDeDocumentosFiltroPorIDPO.filtro();
 		assertTrue(sucesso, Filtros);
-
+		sleep(3000);
 	}
 
 }

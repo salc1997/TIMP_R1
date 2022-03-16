@@ -42,5 +42,7 @@ public class BairroEditar extends TestBaseSteven {
 		boolean sucesso = bairroEditarPO.editar();
 
 		assertTrue(sucesso, Editar);
+		
+		sleep(2000);
 	}
 }

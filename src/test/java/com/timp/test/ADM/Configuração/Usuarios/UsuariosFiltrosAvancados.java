@@ -38,7 +38,6 @@ public class UsuariosFiltrosAvancados extends TestBaseSteven {
 	@Test
 	public void filtros() {
 
-		// codigoTipoCreditoFiltrosAvançadosPO.filtros();
 		loginTC.login();
 		acessarADMPO.acessarADM();
 		ArrayList<Boolean> sucesso = usuariosFiltrosAvacadosPO.filtros();
@@ -46,6 +45,6 @@ public class UsuariosFiltrosAvancados extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), "The results in the filter aren't equal");
 		}
-
+		sleep(2000);
 	}
 }

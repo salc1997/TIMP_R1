@@ -17,7 +17,7 @@ public class AntecipacaoEditarPO extends TestBaseSteven {
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[2]/div/div[3]")
 	public WebElement idC;
 
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[5]")
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
 
 	@FindBy(xpath = "//*[@id=\"percAntecipacao\"]/div/div/input")
@@ -49,7 +49,7 @@ public class AntecipacaoEditarPO extends TestBaseSteven {
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		String idRegistro = idObter("antecipacao");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

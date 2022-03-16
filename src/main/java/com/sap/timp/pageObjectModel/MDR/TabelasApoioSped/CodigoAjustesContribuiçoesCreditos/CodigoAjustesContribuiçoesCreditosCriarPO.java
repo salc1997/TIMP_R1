@@ -36,7 +36,7 @@ public class CodigoAjustesContribuiçoesCreditosCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div[@class=\"list-item\" and @id]/div/label/span")
 	public WebElement tributoO;
 		
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -68,7 +68,7 @@ public class CodigoAjustesContribuiçoesCreditosCriarPO extends TestBaseSteven {
 	
 		//conta o numero de linhas
 
-		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		int rows =1;
 		
 		String id = "0";
 		
@@ -90,7 +90,7 @@ public class CodigoAjustesContribuiçoesCreditosCriarPO extends TestBaseSteven {
 		tributoO.click();
 		tributoO.sendKeys(Keys.ESCAPE);
 		sleep(2000);
-		codigo.sendKeys("987");
+		codigo.sendKeys("97");
 		
 		
 		descricao.sendKeys("Teste de código de ajustes 987");
@@ -115,7 +115,7 @@ public class CodigoAjustesContribuiçoesCreditosCriarPO extends TestBaseSteven {
 		sleep(2000);
 
 		
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		rows = 1;
 		
 		String id2 = "0";
 		

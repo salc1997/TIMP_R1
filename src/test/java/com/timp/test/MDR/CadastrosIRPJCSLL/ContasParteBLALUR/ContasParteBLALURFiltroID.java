@@ -42,6 +42,7 @@ public class ContasParteBLALURFiltroID extends TestBaseSteven {
 
 		boolean sucesso = contasParteBLALURFiltroIDPO.filtro();
 		assertTrue(sucesso, semAcesso);
+		sleep(2000);
 
 	}
 

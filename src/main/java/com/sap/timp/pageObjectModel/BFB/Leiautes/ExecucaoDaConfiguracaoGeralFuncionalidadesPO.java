@@ -227,12 +227,12 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBaseFernan
 		sleep(2000);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(18000);
 		
-		btnConfiguraciones.click();
+		/*btnConfiguraciones.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(2000);*/
 		
 		String valorEditado = inputNome.getAttribute("value");
 		System.out.println("Nome valor ya editado: " + valorEditado);

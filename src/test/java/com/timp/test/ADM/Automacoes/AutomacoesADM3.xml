@@ -11,7 +11,7 @@
 	
 	</test>
 	
-	<test name="onfiguração > ManuaisDeComponente" >
+	<test name="Configuração > ManuaisDeComponente" >
 		<classes>
 			<class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteCriar">
 			</class>

@@ -116,7 +116,7 @@ public class AjusteEInformaçoesDeValoresCriarPO extends TestBaseSteven {
 		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		sleep(8000);
 		
 		siguiente.click();
 		

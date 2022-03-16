@@ -189,7 +189,7 @@ public class HierarquiaDeCenariosDeCorreçaoFiltrosAbansadosPO extends TestBaseM
 		//div[@class="calendars"]/div[1]/div[3]/div[@tabindex="0" and @class="date" and text()=5]
 		
 		filtroDataCriacao.click();
-		sleep(2000);
+		sleep(6000);
 		
 		WebElement dia1 = driver.findElement(By.xpath("//div[@class=\"calendars\"]/div[1]/div[3]/div[@tabindex=\"0\" and @class=\"date\" and text()="+diahoy+"]"));
 		System.out.println("dia 1 : "+ dia1);

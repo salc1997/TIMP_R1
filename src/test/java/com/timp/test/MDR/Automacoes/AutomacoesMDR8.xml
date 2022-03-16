@@ -119,12 +119,12 @@
 				
 				</classes>
 	</test> 
-	
+<!-- 	
 	<test name="Eventos e-Social > S1060 Ambientes de trabalho">
 
 		<classes>
 			
-			<!-- Eventos e-Social > S1060 Ambientes de trabalho -->
+			Eventos e-Social > S1060 Ambientes de trabalho 
 				
 				<class name="com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoCriar"></class>
 				<class name="com.timp.test.MDR.EventosESocial.S1060AmbientesDeTrablho.S1060AmbientesDeTrablhoEditar"></class>
@@ -139,7 +139,7 @@
 	<test name="Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Aquisição">
 
 		<classes>
-			<!-- Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Aquisição -->
+			 Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Aquisição 
 			
 				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250Aquisição.S1250AquisiçãoCriar"></class>
 				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250Aquisição.S1250AquisiçãoEditar"></class>
@@ -153,7 +153,7 @@
 
 		<classes>
 	
-			<!-- Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Aquisição Toltal -->
+			 Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Aquisição Toltal 
 				
 				
 				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisiçãoTotal.S1250AquisiçãoTotalCriar"></class>
@@ -166,7 +166,7 @@
 
 		<classes>
 				
-			<!-- Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Dados de eventos -->
+			 Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Dados de eventos 
 				
 				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DadosdeEventos.S1250DadosdeEventoCriar"></class>
 				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DadosdeEventos.S1250DadosdeEventoEditar"></class>
@@ -179,7 +179,7 @@
 	<test name="Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Det Aquisição">
 
 		<classes>
-			<!-- Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Det Aquisição -->
+			 Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Det Aquisição 
 				
 				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoCriar"></class>
 				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetAquisição.S1250DetAquisiçãoEditar"></class>
@@ -191,7 +191,7 @@
 	<test name="Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Det nota fiscal ">
 
 		<classes>
-			<!-- Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Det nota fiscal -->
+			 Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Det nota fiscal 
 				
 				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetNotaFiscal.S1250DetNotaFiscalCriar"></class>
 				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetNotaFiscal.S1250DetNotaFiscalEditar"></class>
@@ -204,7 +204,7 @@
 
 		<classes>
 				
-			<!-- Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Det Processo Judicial -->
+			 Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Det Processo Judicial 
 			
 				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetProcessoJudicial.S1250DetProcessoJudicialCriar"></class>
 				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250DetProcessoJudicial.S1250DetProcessoJudicialEditar"></class>
@@ -217,7 +217,7 @@
 	<test name="Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Inf Proc Judicial ">
 
 		<classes>
-			<!-- Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Inf Proc Judicial -->
+			 Eventos e-social > S1250 Aquisicao De Producao Rural > S1250 Inf Proc Judicial 
 				
 				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250InfProcJudicial.S1250InfProcJudicialCriar"></class>
 				<class name="com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250InfProcJudicial.S1250InfProcJudicialEditar"></class>
@@ -230,7 +230,7 @@
 	<test name="Parametros Para Categoria De IRF ">
 
 		<classes>
-			<!-- Parametros Para Categoria De IRF -->
+			 Parametros Para Categoria De IRF 
 				
 				<class name="com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFCriar"></class>
 				<class name="com.timp.test.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFEditar"></class>
@@ -243,7 +243,7 @@
 		</classes>
 	
 	</test>		
-	
+-->
 	
 	
 	

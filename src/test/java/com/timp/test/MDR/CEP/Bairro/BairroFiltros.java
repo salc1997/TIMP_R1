@@ -29,7 +29,7 @@ public class BairroFiltros extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		driver.close();
 	}
 
 
@@ -44,6 +44,7 @@ public class BairroFiltros extends TestBaseSteven {
 		boolean sucesso = bairroFiltrosPO.filtro();
 
 		assertTrue(sucesso, Filtros);
+		sleep(2000);
 	}
 
 }

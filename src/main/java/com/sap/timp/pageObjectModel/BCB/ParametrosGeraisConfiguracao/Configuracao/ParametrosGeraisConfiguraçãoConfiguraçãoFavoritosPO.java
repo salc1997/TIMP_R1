@@ -50,13 +50,13 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoFavoritosPO extends TestBas
 //		sleep(3000);
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //		sleep(2000);
-		String idRegistro = idObter1();
+		String idRegistro = idObter3();
 		
 		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		
 		
 		System.out.println("Registro que cree:"+idRegistro);
@@ -70,7 +70,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoFavoritosPO extends TestBas
 		anadirAFavoritos.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(9000);
 		
 		configuracaoFavoritos.click();
 		sleep(3000);
@@ -82,7 +82,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoFavoritosPO extends TestBas
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		
 		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id="+idRegistro+"]/div[4]/div")).getText();
 		System.out.println("Registro favorito:"+idRegistro1);

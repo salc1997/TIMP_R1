@@ -28,7 +28,7 @@ public class GrupoAtividadeCriar extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test()
@@ -41,6 +41,6 @@ public class GrupoAtividadeCriar extends TestBaseMassiel {
 		boolean sucesso = grupoAtividadeCriarPO.criar();
 
 		assertTrue(sucesso, Criar);
-
+		sleep(2000);
 	}
 }

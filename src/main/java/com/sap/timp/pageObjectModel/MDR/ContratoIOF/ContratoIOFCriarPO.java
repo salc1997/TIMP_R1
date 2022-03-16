@@ -59,7 +59,7 @@ public class ContratoIOFCriarPO extends TestBaseMassiel {
 	@FindBy(xpath = "//div[@id=\"coin\"]/div/div[2]")
 	public WebElement moeda;
 	
-	@FindBy(xpath = "//li[@id][1]")
+	@FindBy(xpath = "//li[@id=\"option-1\"]")
 	public WebElement opcaomoeda;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Valor do Contrato\"]")
@@ -146,9 +146,9 @@ public class ContratoIOFCriarPO extends TestBaseMassiel {
 		
 		preenchercontrato.sendKeys("123");
 		sleep(1000);
-		codigoreceita.click();
+		//codigoreceita.click();
 		sleep(1000);
-		opcaocodigoreceita.click();
+		//opcaocodigoreceita.click();
 		sleep(1000);
 		
 		tipopessoa.click();
@@ -173,7 +173,7 @@ public class ContratoIOFCriarPO extends TestBaseMassiel {
 		opcaoperiocidade.click();
 		sleep(1000);
 		waitExpectElement(moeda);
-		sleep(2000);
+		sleep(14000);
 		moeda.click();
 		sleep(1000);
 		opcaomoeda.click();

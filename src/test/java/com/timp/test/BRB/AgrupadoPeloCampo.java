@@ -31,7 +31,7 @@ public class AgrupadoPeloCampo extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		//driver.close();
 	}
 
 
@@ -64,6 +64,7 @@ public class AgrupadoPeloCampo extends TestBaseSteven {
 
 		agrupadoPeloCampoPO.excluirGrupo();
 
+		sleep(2000);
 	}
 
 }

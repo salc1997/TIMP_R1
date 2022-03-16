@@ -154,7 +154,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseSteven {
 		novo.click();
 		
 	
-		sleep(9000);
+		sleep(11000);
 		
 		nome.sendKeys("TESTE AUTOMATIZADO RODADA ");
 		sleep(2000);
@@ -294,13 +294,13 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseSteven {
 		
 		aceitar.click();
 
-		sleep(2000);
+		sleep(29000);
 		
 		biblioteca.click();
 		
 		sleep(2000);
-		sim.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		/*sim.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");*/
 		sleep(2000);
 		sleep(2000);
 		sleep(2000);

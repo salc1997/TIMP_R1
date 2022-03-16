@@ -40,6 +40,8 @@ public class AtividadeEditar extends TestBaseSteven {
 		boolean sucesso = atividadeEditarPO.editar();
 
 		assertTrue(sucesso, Editar);
+		
+		sleep(2000);
 	}
 
 }

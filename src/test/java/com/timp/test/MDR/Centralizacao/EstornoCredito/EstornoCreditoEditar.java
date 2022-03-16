@@ -47,7 +47,7 @@ public class EstornoCreditoEditar extends TestBaseSteven {
 	
 		boolean sucesso = estornoCreditoEditarPO.Editar();
 		 assertTrue(sucesso, Editar);
-
+		 sleep(2000);
 	}
 
 }

@@ -191,7 +191,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSExecutarPO extends TestBaseMa
 		invisibilityOfElementOverlay();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		actionsMoveToElementElement(executados);
 		sleep(2000);

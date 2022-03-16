@@ -37,5 +37,7 @@ public class RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros extends TestBa
 		
 		boolean sucesso = relacionamentoEstruturasFiltroPorIdMasLimpiarFiltrosPO.filtrarPorIdMasLimpiarFiltros();
 		assertTrue(sucesso, Filtros);
+		
+		sleep(2000);
 	}
 }

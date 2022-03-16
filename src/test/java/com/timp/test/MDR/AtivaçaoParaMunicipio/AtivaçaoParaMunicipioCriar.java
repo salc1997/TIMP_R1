@@ -42,6 +42,6 @@ public class AtivaçaoParaMunicipioCriar extends TestBaseSteven {
 
 		boolean sucesso = ativaçaoParaMunicipioCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-
+		sleep(2000);
 	}
 }

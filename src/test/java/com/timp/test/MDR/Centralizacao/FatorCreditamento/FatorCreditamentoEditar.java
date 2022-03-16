@@ -29,7 +29,7 @@ public class FatorCreditamentoEditar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
@@ -43,5 +43,6 @@ public class FatorCreditamentoEditar extends TestBaseSteven {
 		
 		boolean sucesso = fatorCreditamentoEditarPO.editar();
 		assertTrue(sucesso, editado);
+		sleep(2000);
 	}
 }

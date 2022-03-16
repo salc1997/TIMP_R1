@@ -45,5 +45,7 @@ public class AntecipacaoExcluirMassa extends TestBaseMassiel{
 	public void excluir() {
 		boolean sucesso = antecipacaoExcluirMassaPO.ExcluirMasas();
 		assertTrue(sucesso, Eliminado);
+		
+		sleep(2000);
 	}
 }

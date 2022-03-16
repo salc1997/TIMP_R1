@@ -30,7 +30,7 @@ public class ConfiguraçãoTributoTributoXEstruturaCriar extends TestBaseKenssy{
   @AfterClass
   public void afterClass() {
 
-	  driver.close();
+	  //driver.close();
 	  
 
   }
@@ -42,6 +42,18 @@ public class ConfiguraçãoTributoTributoXEstruturaCriar extends TestBaseKenssy{
 		
 		boolean sucesso = configuraçãoTributoTributoXEstruturaCriarPO.criar();
 		assertTrue(sucesso, Criar);
+		
+		sleep(2000);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+		
+		
+		boolean sucesso = configuraçãoTributoTributoXEstruturaCriarPO.excluir();
+		assertTrue(sucesso, Criar);
+		
+		sleep(2000);
 	}
 
 

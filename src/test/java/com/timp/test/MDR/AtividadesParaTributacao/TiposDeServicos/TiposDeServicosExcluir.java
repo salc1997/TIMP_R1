@@ -38,7 +38,7 @@ public class TiposDeServicosExcluir extends TestBaseSteven {
 		
 		boolean sucesso = tiposDeServicosExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
-
+		sleep(2000);
 	}
 
 }

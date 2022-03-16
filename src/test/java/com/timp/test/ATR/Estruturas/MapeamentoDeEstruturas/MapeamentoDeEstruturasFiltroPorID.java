@@ -46,7 +46,7 @@ public class MapeamentoDeEstruturasFiltroPorID extends TestBaseSteven{
 	 			assertTrue(sucesso.get(i), Filtros);
 			}
 			
-		
+	 		sleep(2000);
 	 		
 	 	}
 

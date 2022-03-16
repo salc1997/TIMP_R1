@@ -144,7 +144,7 @@ public class ConfiguraçãoeExecuçãoFiltrosavançadosPO extends TestBaseSteven {
 		
 		if (tc2==true) {
 			opcUfTC2.click();
-			sleep(7000);
+			sleep(14000);
 
 		}else {
 			opcUfTP1.click();

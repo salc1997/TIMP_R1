@@ -41,7 +41,7 @@ public class ConfiguraçãoTributoAgrupamentofiltrar extends TestBaseSteven {
 		loginTC.login();
 		acessarADMPO.acessarADM();
 		configuraçãoTributoAgrupamentofiltrarPO.filtro();
-
+		sleep(2000);
 		
 	}
 

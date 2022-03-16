@@ -47,7 +47,7 @@ public class AgrupamentoDeTributosDetalhes extends TestBaseSteven {
 				
 			}
 			
-		
+	 		sleep(2000);
 	 		
 	 	}
 	

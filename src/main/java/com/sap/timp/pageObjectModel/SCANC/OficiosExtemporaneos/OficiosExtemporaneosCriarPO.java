@@ -29,7 +29,7 @@ public class OficiosExtemporaneosCriarPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@id=\"company\"]/div/div[2]")
 	public WebElement cboEmpre;
 	
-	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[text()=\"1000\"]")
 	public WebElement opcionEmpre;
 	
 	@FindBy(xpath = "//div[@id=\"frame\"]/div/div[2]")
@@ -110,7 +110,7 @@ public class OficiosExtemporaneosCriarPO extends TestBaseFernando{
 		cboEmpre.click();
 		sleep(1000);
 		opcionEmpre.click();
-		sleep(1000);
+		sleep(8000);
 		
 		cboAnexo.click();
 		sleep(1000);

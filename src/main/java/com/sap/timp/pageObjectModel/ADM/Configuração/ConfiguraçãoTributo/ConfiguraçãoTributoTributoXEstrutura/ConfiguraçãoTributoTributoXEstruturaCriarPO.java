@@ -47,9 +47,14 @@ public class ConfiguraçãoTributoTributoXEstruturaCriarPO extends TestBaseKenssy{
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement btnBiblioteca;
 	
+	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
+	public WebElement sim;
+	
 	public ConfiguraçãoTributoTributoXEstruturaCriarPO() {
 		PageFactory.initElements(driver, this);
 	}
+	
+	String idPrimerRegistro ="0";
 	
 	public boolean criar() {
 		sleep(2000);
@@ -125,7 +130,7 @@ public class ConfiguraçãoTributoTributoXEstruturaCriarPO extends TestBaseKenssy{
 		}
 		
 		// Se obtiene el primer registro de la tabla
-		String idPrimerRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText(); 
+		idPrimerRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText(); 
 		System.out.println("");
 		System.out.println("ID ultimo nuevo registro: " + idPrimerRegistro);
 		
@@ -142,4 +147,70 @@ public class ConfiguraçãoTributoTributoXEstruturaCriarPO extends TestBaseKenssy{
 		return sucesso;
 		
 	}
+	
+	public Boolean excluir() {
+
+		
+
+		String idRegistro = idObter("ConfiguraçãoTributoEstrutura");
+
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
+		WebElement excluir = driver.findElement(
+				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+
+		actionsMoveToElementElement(menu);
+		sleep(2000);
+		menu.click();
+		sleep(1000);
+
+		excluir.click();
+		sleep(2000);
+		waitExpectElement(sim);
+		sleep(2000);
+		sim.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		driver.navigate().refresh();
+		waitExpectElement(Configuração);
+		sleep(2000);
+		
+		Configuração.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		ConfiguraçãodeTributos.click();
+		sleep(2000);
+		ConfiguraçãodeTributosEstrutura.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		String id = driver
+				.findElement(By.xpath(
+						"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[2]/div"))
+				.getText();
+
+		int id1 = convertToInt(id);
+		int id2 = convertToInt(idRegistro);
+		System.out.println(id1);
+		System.out.println(id2);
+
+		boolean sucesso = false;
+
+		if (id1 != id2) {
+			sucesso = true;
+		}
+		System.out.println(sucesso);
+		return sucesso;
+
+	}
+
+	
 }

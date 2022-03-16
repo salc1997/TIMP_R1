@@ -41,6 +41,7 @@ public class ResponsavelMovimentoFiltros extends TestBaseSteven {
 		boolean sucesso = responsavelMovimentoFiltrosPO.filtros();
 		System.out.println(sucesso);
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
 
 }

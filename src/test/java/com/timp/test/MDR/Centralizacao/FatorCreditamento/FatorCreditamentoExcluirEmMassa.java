@@ -40,6 +40,7 @@ public class FatorCreditamentoExcluirEmMassa extends TestBaseSteven {
 
 		boolean sucesso = fatorCreditamentoExcluirEmMassaPO.fatorCreditamentoCriar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 
 	}
 
@@ -48,6 +49,7 @@ public class FatorCreditamentoExcluirEmMassa extends TestBaseSteven {
 
 		boolean sucesso2 = fatorCreditamentoExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
+		sleep(2000);
 
 	}
 }

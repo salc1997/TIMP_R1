@@ -30,10 +30,10 @@ public class SubperíodoCopiar extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
-	@Test(priority = 1)
+	@Test()
 	public void Copiar() {
 
 		loginTC.login();

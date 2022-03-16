@@ -80,7 +80,7 @@ public class Registro1101EditarPO extends TestBaseSteven{
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
 		actionsMoveToElementElement(menu);
-		sleep(2000);
+		sleep(3000);
 		menu.click();
 		sleep(2000);
 		editar.click();

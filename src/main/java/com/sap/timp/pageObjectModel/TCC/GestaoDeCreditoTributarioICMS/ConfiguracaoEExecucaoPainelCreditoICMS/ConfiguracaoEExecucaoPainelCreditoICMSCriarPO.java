@@ -104,8 +104,8 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriarPO extends TestBaseMassi
 		
 		nuevo.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(9000);
 		
 		empresa.click();
 		sleep(2000);
@@ -114,7 +114,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriarPO extends TestBaseMassi
 		sleep(2000);
 		
 		closeSelectTypeCheckbox(empresa);
-		sleep(8000);
+		sleep(12000);
 		
 
 		filial.click();
@@ -178,7 +178,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriarPO extends TestBaseMassi
 		sleep(8000);
 		
 		waitExpectElement(siguiente);
-		sleep(12000);
+		sleep(19000);
 		siguiente.click();
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

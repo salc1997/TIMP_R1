@@ -52,7 +52,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisExcluirMassaPO extends TestBaseSt
 	public WebElement codigopagamento;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Inicio de Vigência\"]")
+	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Início de Vigência\"]")
 	public WebElement dataincio;
 	
 	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Fim de Vigência\"]")
@@ -150,6 +150,7 @@ public boolean criar() {
 		sleep(8000);
 		sleep(8000);
 		sleep(8000);
+		sleep(8000);
 		
 		codigocredito.click();
 		sleep(3000);
@@ -209,7 +210,7 @@ public boolean criar() {
 		sleep(8000);
 		sleep(8000);
 		sleep(8000);
-		sleep(8000);		
+		sleep(16000);		
 		codigocredito.click();
 		sleep(2000);
 		opcao.click();

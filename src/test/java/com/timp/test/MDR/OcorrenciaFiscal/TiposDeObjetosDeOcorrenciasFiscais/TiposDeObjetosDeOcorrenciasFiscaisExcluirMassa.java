@@ -30,7 +30,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisExcluirMassa extends TestBaseStev
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test()

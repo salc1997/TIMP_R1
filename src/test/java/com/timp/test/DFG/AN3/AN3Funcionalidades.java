@@ -12,6 +12,7 @@ import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
+import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.AN3.AN3FuncionalidadesPO;
 import com.sap.timp.pageObjectModel.DFG.Configuracoes.ConfiguracoesCriarPO;
@@ -21,6 +22,7 @@ public class AN3Funcionalidades extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
 	AN3FuncionalidadesPO an3FuncionalidadesPO;
+	AcessarBREPO acessarBREPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -28,11 +30,12 @@ public class AN3Funcionalidades extends TestBaseSteven{
 		loginTC = new LoginTC();
 		acessarDFGPO = new AcessarDFGPO();
 		an3FuncionalidadesPO = new AN3FuncionalidadesPO();
+		acessarBREPO = new AcessarBREPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -55,8 +58,11 @@ public class AN3Funcionalidades extends TestBaseSteven{
 		}
 	}
 	
-	
 	@Test(priority = 3)
+	public void BREEntrar() {
+		acessarBREPO.acessarBRE();
+	}
+	@Test(priority = 4)
 	public void BRE() {
 		ArrayList<Boolean> sucesso =an3FuncionalidadesPO.BRE();
 		
@@ -65,7 +71,7 @@ public class AN3Funcionalidades extends TestBaseSteven{
 		}
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 5)
 	public void DFG() {
 		ArrayList<Boolean> sucesso =an3FuncionalidadesPO.DFG();
 		
@@ -75,7 +81,7 @@ public class AN3Funcionalidades extends TestBaseSteven{
 	}
 
 	
-	@Test(priority = 5)
+	@Test(priority = 6)
 	public void ExecucaoDFG() {
 		ArrayList<Boolean> sucesso =an3FuncionalidadesPO.execucao();
 		
@@ -85,7 +91,7 @@ public class AN3Funcionalidades extends TestBaseSteven{
 	}
 	
 	
-	@Test(priority = 6)
+	@Test(priority = 7)
 	public void Arquivos() {
 		ArrayList<Boolean> sucesso =an3FuncionalidadesPO.arquivos();
 		
@@ -96,7 +102,7 @@ public class AN3Funcionalidades extends TestBaseSteven{
 	
 
 	
-	@Test(priority = 7)
+	@Test(priority = 8)
 	public void AN3() {
 		
 		ArrayList<Boolean> sucesso = an3FuncionalidadesPO.DFGAN3();
@@ -106,7 +112,7 @@ public class AN3Funcionalidades extends TestBaseSteven{
 	
 	}
 
-	@Test(priority = 8)
+	@Test(priority = 9)
 	public void publicoyPrivado() {
 		
 		boolean sucesso = an3FuncionalidadesPO.publicoYPrivado();
@@ -116,7 +122,7 @@ public class AN3Funcionalidades extends TestBaseSteven{
 	
 	}
 
-	@Test(priority = 9)
+	@Test(priority = 10)
 	public void favorito() {
 		
 		ArrayList<Boolean> sucesso = an3FuncionalidadesPO.favorito();
@@ -128,7 +134,7 @@ public class AN3Funcionalidades extends TestBaseSteven{
 	
 	}
 
-	@Test(priority = 10)
+	@Test(priority = 11)
 	public void editar() {
 		
 		boolean sucesso = an3FuncionalidadesPO.editar();
@@ -141,7 +147,7 @@ public class AN3Funcionalidades extends TestBaseSteven{
 	
 
 	
-	@Test(priority = 11)
+	@Test(priority = 12)
 	public void informacao() {
 		
 		boolean sucesso = an3FuncionalidadesPO.informacao();

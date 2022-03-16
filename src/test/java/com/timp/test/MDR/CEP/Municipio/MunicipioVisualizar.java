@@ -30,7 +30,7 @@ public class MunicipioVisualizar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test()
@@ -47,6 +47,7 @@ public class MunicipioVisualizar extends TestBaseSteven {
 			assertTrue(sucesso.get(i), visualizaçar);
 
 		}
+		sleep(2000);
 
 	}
 }

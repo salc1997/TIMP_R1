@@ -50,6 +50,7 @@ public class AtivaçaoParaMunicipioDetalhes extends TestBaseSteven {
 			assertTrue(sucesso.get(i), Detalhes);
 
 		}
+		sleep(2000);
 	}
 
 }

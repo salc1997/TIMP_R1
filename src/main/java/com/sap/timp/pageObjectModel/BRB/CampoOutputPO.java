@@ -77,7 +77,7 @@ public class CampoOutputPO extends TestBaseSteven{
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
 		
-		actionsMoveToElementXpath("//*[@id=\"draggable-117\"]");
+		actionsMoveToElementXpath("//*[@id=\"draggable-66\"]");
 		
 		coluna.click();
 		

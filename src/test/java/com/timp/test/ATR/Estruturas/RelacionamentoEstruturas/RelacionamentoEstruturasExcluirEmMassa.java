@@ -28,7 +28,7 @@ public class RelacionamentoEstruturasExcluirEmMassa extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
@@ -40,11 +40,13 @@ public class RelacionamentoEstruturasExcluirEmMassa extends TestBaseFernando{
  		
 		boolean sucesso = relacionamentoEstruturasExcluirEmMassaPO.criar();
 		assertTrue(sucesso,Criar);
+		sleep(2000);
 	}
 
 	@Test(dependsOnMethods = "criarRelacionamento")
 	public void excluirMassa() {
 		boolean sucesso = relacionamentoEstruturasExcluirEmMassaPO.exluirMassa();
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 }

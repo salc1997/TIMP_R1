@@ -33,7 +33,7 @@ public class DeterminacaoDeTipoDeCondicaoEditarPO extends TestBaseSteven{
 	
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement dataVigencia;
 	
 	public DeterminacaoDeTipoDeCondicaoEditarPO() {
@@ -74,8 +74,8 @@ public class DeterminacaoDeTipoDeCondicaoEditarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 	
-		sleep(10000);
-		waitExpectElement(dataVigencia);
+		sleep(24000);
+		//waitExpectElement(dataVigencia);
 		sleep(2000);
 		String valor = dataVigencia.getAttribute("value");
 

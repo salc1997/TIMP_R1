@@ -93,6 +93,8 @@ public class Registro1102EditarPO extends TestBaseSteven {
 		sleep(6000);
 		sleep(6000);
 		sleep(6000);
+		sleep(6000);
+		sleep(6000);
 		String valor = filialE.getText();
 		//String valor = filialE.getAttribute("value");
 		System.out.println(valor);
@@ -121,7 +123,7 @@ public class Registro1102EditarPO extends TestBaseSteven {
 		sleep(6000);
 		sleep(6000);
 		sleep(6000);
-		sleep(6000);
+		sleep(16000);
 	  	String nuevoTexto = filialE.getText();
 	  	System.out.println(enviar);
 		System.out.println(nuevoTexto);

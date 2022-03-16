@@ -287,7 +287,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarPO extends TestBaseSte
 
 		//sucesso.add(nome.contains("Prueba Automatizada de Hierarq"));
 		sucesso.add(nome.contains("Teste QA PREUBA 007"));
-		idInserir1(id2);
+		idInserir3(id2);
 
 		int id1I = convertToInt(id);
 		int id2I = convertToInt(id2);

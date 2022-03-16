@@ -185,6 +185,9 @@ public class RegrasDeNegocioCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
 	public WebElement componente3;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
+	
 	public RegrasDeNegocioCriarPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -357,11 +360,11 @@ public class RegrasDeNegocioCriarPO extends TestBaseSteven{
 		justificativa.sendKeys("TESTE AUTOMATIZADO");
 		sleep(1000);
 		aceitar.click();
-		sleep(1000);
+		sleep(65000);
 		//1 caminho
 		adicionarcaminho.click();
-		sleep(2000);
-		waitExpectElement(Condicoes);
+		sleep(9000);
+		//waitExpectElement(Condicoes);
 		Condicoes.click();
 		sleep(1000);
 		Condicoes.sendKeys("Tributo- (aba:Dados Lançamento) (ED)");
@@ -576,6 +579,10 @@ public class RegrasDeNegocioCriarPO extends TestBaseSteven{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		nao.click();
+		sleep(15000);
+		
 		driver.navigate().refresh();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader transp\"]");

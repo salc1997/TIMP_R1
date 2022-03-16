@@ -49,7 +49,7 @@ public class RelacionamentoEstruturasExcluir extends TestBaseSteven{
 
  		assertTrue(sucesso, Eliminado);
 	
- 		
+ 		sleep(2000);
 
  	}
  	

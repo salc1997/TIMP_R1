@@ -41,7 +41,7 @@ public class AgrupamentoDeTributosCriar extends TestBaseSteven{
 	 		
 	 		boolean sucesso = agrupamentoDeTributosCriarPO.criar();
 			assertTrue(sucesso, Criar);
-		
+			sleep(2000);
 	 		
 	 	}
 }

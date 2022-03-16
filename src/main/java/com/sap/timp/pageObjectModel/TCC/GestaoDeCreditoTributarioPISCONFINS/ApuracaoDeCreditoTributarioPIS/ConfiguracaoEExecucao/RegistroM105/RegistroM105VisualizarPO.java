@@ -158,7 +158,7 @@ public class RegistroM105VisualizarPO extends TestBaseMassiel{
 		menu1.click();
 		sleep(1000);
 		editar.click();
-		sleep(19000);
+		sleep(26000);
 		
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

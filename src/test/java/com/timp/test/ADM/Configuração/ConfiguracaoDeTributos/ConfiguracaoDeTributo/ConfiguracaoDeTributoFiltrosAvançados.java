@@ -41,5 +41,8 @@ public class ConfiguracaoDeTributoFiltrosAvançados extends TestBaseSteven{
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Filtros);
 		}		
+		
+		sleep(2000);
+
 	}	
 }

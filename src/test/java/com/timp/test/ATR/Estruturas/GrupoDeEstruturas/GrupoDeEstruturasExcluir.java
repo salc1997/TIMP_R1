@@ -46,7 +46,7 @@ public class GrupoDeEstruturasExcluir extends TestBaseSteven{
 		boolean sucesso = grupoDeEstruturasExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 
-
+		sleep(2000);
 	}
 
 }

@@ -31,7 +31,7 @@ public class FatorCreditamentoDetalhes extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
@@ -47,5 +47,6 @@ public class FatorCreditamentoDetalhes extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
+		sleep(2000);
 	}
 }

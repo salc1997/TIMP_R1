@@ -47,6 +47,7 @@ public class AtividadeDeTributacaoXFornecedorVisualizar extends TestBaseSteven {
 			assertTrue(sucesso.get(i), visualizaçar);
 
 		}
+		sleep(2000);
 	}
  
 }

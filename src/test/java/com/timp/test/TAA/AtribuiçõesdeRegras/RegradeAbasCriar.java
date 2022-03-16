@@ -38,6 +38,7 @@ public class RegradeAbasCriar extends TestBaseSteven {
 		acessarTAAPO.acessarTAA();
 		boolean sucesso = regradeAbasCriarPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
 
 }

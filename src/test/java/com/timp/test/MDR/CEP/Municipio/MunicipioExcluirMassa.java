@@ -28,7 +28,7 @@ public class MunicipioExcluirMassa extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
@@ -41,11 +41,13 @@ public class MunicipioExcluirMassa extends TestBaseFernando{
 		
 		boolean sucesso = municipioExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
 	
 	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = municipioExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 }

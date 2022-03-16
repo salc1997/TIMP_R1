@@ -44,6 +44,7 @@ public class AtividadeDeTributacaoXFornecedorCriar extends TestBaseMassiel{
 
 		// teste pra conferir se o resultado mostrado é igual
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
 
 

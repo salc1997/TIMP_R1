@@ -112,33 +112,10 @@ public class AtividadeEditarPO extends TestBaseSteven{
 
 	 
 	
-		sleep(16000);
+		sleep(74000);
 
 
-		 menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		 
-		 editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		
 
-		menu.click();
-		sleep(1000);
-		editar.click();
-		sleep(6000);
-
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-//		atividades.click();
-//		sleep(2000);
-//		atividadesO.click();
-//		sleep(2000);
-//		
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		siguiente.click();
-//		sleep(2000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
 
 		idRegistro = idObter("AtividadeFiscal");
 		

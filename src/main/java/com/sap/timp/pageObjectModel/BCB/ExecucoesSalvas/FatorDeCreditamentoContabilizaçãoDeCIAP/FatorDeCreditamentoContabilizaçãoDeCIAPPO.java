@@ -371,7 +371,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			//IR A HIERARQUIA CONFIGURACAO
 			sleep(2000);
 			hierarquias.click();
-			sleep(5000);
+			sleep(9000);
 			hierarquiaConfiguracao.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -524,7 +524,11 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			} else {
 				sucesso.add(false);
 			}
+			System.out.println("*****CRIAR******");
 
+			
+			System.out.println(sucesso);
+			
 			return sucesso;
 
 		}
@@ -1056,7 +1060,12 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			salvarExecucoes.click();
+			nao.click();
+			sleep(3000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(5000);
+			
+			//salvarExecucoes.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(3000);
@@ -1121,7 +1130,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			if (url.contains("tc2")) {
 				tc2 = true;
 			}
-			
+			sleep(9000);
 			execucoes.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1273,7 +1282,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			
 			sleep(2000);
 			hierarquias.click();
-			sleep(1000);
+			sleep(5000);
 			hierarquiaConfiguracao.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

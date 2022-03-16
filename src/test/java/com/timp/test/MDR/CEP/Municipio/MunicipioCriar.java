@@ -42,5 +42,6 @@ public class MunicipioCriar extends TestBaseSteven {
 		boolean sucesso = municipioCriarPO.criar();
 		System.out.println(sucesso);
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
 }

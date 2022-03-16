@@ -102,7 +102,7 @@ public class Registro1610VisualizarPO extends TestBaseSteven {
 		visualizar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(8000);
+		sleep(12000);
 		
 		
 		String empresavisualizar = empresa.getAttribute("value");
@@ -148,7 +148,7 @@ public class Registro1610VisualizarPO extends TestBaseSteven {
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(10000);
+		sleep(16000);
 		
 		System.out.println("==============================");
 		String empresaeditar = empresa.getAttribute("value");

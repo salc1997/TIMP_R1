@@ -30,7 +30,7 @@ public class AssociaçãoDetalhes extends TestBaseFernando {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test()
@@ -44,5 +44,7 @@ public class AssociaçãoDetalhes extends TestBaseFernando {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), "Ocurrio un error");
 		}
+		
+		sleep(2000);
 	}
 }

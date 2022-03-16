@@ -138,6 +138,8 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		sleep(1000);
 		sleep(11000);
 		sleep(11000);
+		sleep(11000);
+		sleep(11000);
 		adicionar.click();
 		sleep(2000);
 		

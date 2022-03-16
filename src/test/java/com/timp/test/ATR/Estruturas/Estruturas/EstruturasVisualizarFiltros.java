@@ -40,6 +40,6 @@ public class EstruturasVisualizarFiltros extends TestBaseFernando{
 		boolean sucesso = estruturasVisualizarFiltrosPO.visualizar();
 		assertTrue(sucesso, visualizaçar);
 		
-		sleep(2000);
+		sleep(3000);
 	}
 }

@@ -123,8 +123,8 @@ public class InstitucaoCriarPO extends TestBaseSteven{
 		sleep(1000);
 		empresaO.click();
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-select required");
-		sleep(2000);
+	//	attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-select required");
+		sleep(6000);
 		
 		filial.click();
 		sleep(1000);

@@ -87,15 +87,15 @@ public class Registro1501EditarPO extends TestBaseSteven {
 		sleep(12000);
 		
 		waitExpectElement(filial);
-		sleep(17000);
+		sleep(35000);
 		String valor = filialE.getText();
 		//String valor = filialE.getAttribute("value");
 		System.out.println(valor);
 		String enviar = valor;
 		
 		
-		Efilial.click();
-		sleep(3000);
+	/*	Efilial.click();
+		sleep(3000);*/
 		filial.click();
 		sleep(1000);
 		filialO.click();
@@ -114,7 +114,7 @@ public class Registro1501EditarPO extends TestBaseSteven {
 		driver.navigate().refresh();
 		waitExpectElement(filial);
 		sleep(8000);
-		sleep(10000);
+		sleep(19000);
 	  	String nuevoTexto = filialE.getText();
 	  	System.out.println(enviar);
 		System.out.println(nuevoTexto);

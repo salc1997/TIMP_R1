@@ -38,7 +38,7 @@ public class CriarComCopia extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 
@@ -61,7 +61,7 @@ public class CriarComCopia extends TestBaseSteven {
 		}
 
 		criarCopiaPO.eliminarCopia();
-
+		sleep(2000);
 	}
 
 }

@@ -135,8 +135,8 @@ public class AntecipacaoExcluirMassaPO extends TestBaseMassiel{
 
 		novaAntecipacao.click();
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"tributo\"]/div", "class", "base-select required");
-		sleep(5000);
+		//attributeToBeXpath("//div[@id=\"tributo\"]/div", "class", "base-select required");
+		sleep(9000);
 		
 		empresa.click();
 		sleep(2000);
@@ -168,7 +168,7 @@ public class AntecipacaoExcluirMassaPO extends TestBaseMassiel{
 		opcao1.click();
 		sleep(2000);
 		
-		attributeToBeXpath("//*[@id=\"tipoTributo\"]/div", "class", "base-select required");
+	//	attributeToBeXpath("//*[@id=\"tipoTributo\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		tipoTributo.click();
@@ -316,7 +316,7 @@ public class AntecipacaoExcluirMassaPO extends TestBaseMassiel{
 		
 		sleep(8000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(8000);
+		sleep(12000);
 		
 		
 		biblioteca.click();
@@ -375,8 +375,7 @@ public class AntecipacaoExcluirMassaPO extends TestBaseMassiel{
 		
 		excluirMassa.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		sim.click();
 		sleep(3000);

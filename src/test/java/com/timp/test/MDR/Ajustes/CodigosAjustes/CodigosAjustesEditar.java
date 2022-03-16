@@ -46,7 +46,7 @@ public class CodigosAjustesEditar extends TestBaseSteven {
 		boolean sucesso = codigoAjustesEditarPO.editar();
 
 		assertTrue(sucesso, Editar);
-
+		sleep(2000);
 	}
 
 }

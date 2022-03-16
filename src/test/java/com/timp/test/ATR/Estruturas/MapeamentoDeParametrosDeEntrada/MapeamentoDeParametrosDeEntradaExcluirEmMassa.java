@@ -50,7 +50,7 @@ public class MapeamentoDeParametrosDeEntradaExcluirEmMassa extends TestBaseSteve
 		
 		boolean sucesso2 = mapeamentoDeParametrosDeEntradaExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
-
+		sleep(2000);
 	}
 	
 }

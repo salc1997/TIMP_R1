@@ -32,7 +32,7 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseSteven {
 	public WebElement descricao;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datadeiniciodevigencia;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
@@ -121,7 +121,7 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseSteven {
 		
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		siguiente.click();
 		sleep(3000);

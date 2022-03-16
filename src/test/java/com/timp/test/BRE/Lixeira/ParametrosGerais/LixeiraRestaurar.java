@@ -37,5 +37,6 @@ public class LixeiraRestaurar extends TestBaseSteven{
 		acessarBREPO.acessarBRE();
 		boolean sucesso = lixeiraRestaurarPO.restaurar();
 		assertTrue(sucesso, Restaurar);
+		sleep(2000);
 	} 
 }

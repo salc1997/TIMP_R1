@@ -6,7 +6,6 @@ import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
 import com.sap.timp.pageObjectModel.BCB.ExecucoesSalvas.HierarquiaConfiguracoesExecucoesSalvas.ExecuçõesSalvasFiltrosPO;
-import com.sap.timp.pageObjectModel.BCB.ExecucoesSalvas.HierarquiaConfiguracoesExecucoesSalvas.ExecuçõesSalvasRecalcularPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -32,6 +31,7 @@ public class ExecuçõesSalvasFiltros extends TestBaseKenssy{
 	@AfterClass
 	public void afterClass() {
 		//driver.close();
+		
 	}
 
 	@Test(priority = 0)

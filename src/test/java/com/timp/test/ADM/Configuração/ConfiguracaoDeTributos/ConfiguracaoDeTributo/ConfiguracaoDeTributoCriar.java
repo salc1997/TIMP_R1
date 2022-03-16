@@ -40,5 +40,7 @@ public class ConfiguracaoDeTributoCriar extends TestBaseSteven {
 		boolean sucesso = configuracaoDeTributoCriarPO.criar();
 
 		assertTrue(sucesso, Criar);
+		sleep(2000);
+
 	}
 }

@@ -48,7 +48,7 @@ public class GrupoDeEstruturaVer extends TestBaseSteven{
 
 		}
 
-
+		sleep(2000);
 
 	}
 }

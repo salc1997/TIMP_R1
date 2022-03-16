@@ -29,7 +29,7 @@ public class RegradeAbasEditar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
@@ -40,6 +40,8 @@ public class RegradeAbasEditar extends TestBaseSteven {
 		acessarTAAPO.acessarTAA();
 		boolean sucesso = regradeAbasEditarPO.editar();
 		assertTrue(sucesso, Editar);
+		
+		sleep(2000);
 	}
 
 }

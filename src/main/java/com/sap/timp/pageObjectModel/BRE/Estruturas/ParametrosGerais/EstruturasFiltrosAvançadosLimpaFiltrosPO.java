@@ -67,10 +67,10 @@ public class EstruturasFiltrosAvançadosLimpaFiltrosPO extends TestBaseSteven {
 		filtros.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 
-		waitExpectElement(filtrosEstructura);
-		sleep(2000);
+	//	waitExpectElement(filtrosEstructura);
+		sleep(6000);
 		
 		 filtrosEstructura.click();
 		 sleep(2000);

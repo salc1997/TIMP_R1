@@ -28,7 +28,7 @@ public class TiposDeServicosCriar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test()
@@ -38,6 +38,6 @@ public class TiposDeServicosCriar extends TestBaseSteven {
 		
 		boolean sucesso = tiposDeServicosCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-
+		sleep(2000);
 	}
 }

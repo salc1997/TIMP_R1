@@ -31,6 +31,7 @@ public class Registro1210Visualizar extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
   @Test()

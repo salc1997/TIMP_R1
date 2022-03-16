@@ -44,7 +44,7 @@ public class AntecipacaoCriar extends TestBaseSteven {
 		boolean sucesso = antecipacaoCriarPO.criarAntecipacao();
 
 		assertTrue(sucesso, Criar);
-
+		sleep(6000);
 	}
 
 }

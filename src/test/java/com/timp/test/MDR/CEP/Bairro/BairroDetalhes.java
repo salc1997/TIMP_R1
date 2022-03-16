@@ -31,7 +31,7 @@ public class BairroDetalhes extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		driver.close();
 	}
 
 
@@ -49,6 +49,6 @@ public class BairroDetalhes extends TestBaseSteven {
 			assertTrue(sucesso.get(i), visualizaçar);
 
 		}
-
+		sleep(2000);
 	}
 }

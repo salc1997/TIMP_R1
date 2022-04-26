@@ -64,7 +64,7 @@ public class TarefaAtualizar extends TestBaseSteven {
 
 	}
 	
-	@Test(priority = 4)
+		@Test(priority = 4)
 	public void tfp() {
 
 		boolean sucesso = atualizarPO.TFP();

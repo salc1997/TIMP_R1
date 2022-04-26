@@ -187,13 +187,13 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO extends TestBaseMa
 		
 		biblioteca.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
 		
 		raiz.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -330,8 +330,8 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		
 		biblioteca.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(8000);
 		
 		//conta o numero de linhas
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();

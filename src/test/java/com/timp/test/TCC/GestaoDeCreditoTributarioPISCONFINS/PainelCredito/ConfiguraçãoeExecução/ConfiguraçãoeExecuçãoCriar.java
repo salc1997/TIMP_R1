@@ -39,5 +39,7 @@ public class ConfiguraçãoeExecuçãoCriar extends TestBaseSteven {
 		
 		boolean sucesso = configuraçãoeExecuçãoCriarPO.Criar();
 		assertTrue(sucesso, Criar);
+		
+		sleep(4000);
 	}
 }

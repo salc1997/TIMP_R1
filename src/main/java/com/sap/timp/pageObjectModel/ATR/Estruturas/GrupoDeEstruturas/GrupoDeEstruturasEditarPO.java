@@ -75,7 +75,7 @@ public class GrupoDeEstruturasEditarPO extends TestBaseSteven{
 		editar.click();
 		sleep(2000);
 		
-		sleep(11000);
+		sleep(16000);
 		waitExpectElement(nomedogrupo);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -118,8 +118,8 @@ public class GrupoDeEstruturasEditarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(40000);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		

@@ -47,7 +47,7 @@ public class MapeamentoDeEstruturasCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"input dataMap\"]/div/div/div[2]")
 	public WebElement data;
 	
-	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"Data de lançamento\"]")
+	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"Data de lançamento de Ajuste\"]")
 	public WebElement opcaodata;
 	
 	@FindBy(xpath = "//div[@class=\"input taxMap\"]/div/div/div[2]")

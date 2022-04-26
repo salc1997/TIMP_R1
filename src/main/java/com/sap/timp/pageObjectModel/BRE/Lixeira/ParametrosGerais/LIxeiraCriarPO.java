@@ -67,7 +67,7 @@ public class LIxeiraCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[@placeholder=\" selecionar Data\"]")
 	public WebElement dataValidadeDe;
 		
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[contains(@class,\"dialog-buttons\")]//child::button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")

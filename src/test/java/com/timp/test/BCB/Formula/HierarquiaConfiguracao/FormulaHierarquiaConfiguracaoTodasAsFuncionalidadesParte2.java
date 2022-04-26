@@ -106,7 +106,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 extends T
 		}
 	}
 	
-	@Test(priority = 16)
+/*	@Test(priority = 16)
 	public void excluirConfiguracoes() {
 		
 		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO.excluirConfiguracoes();
@@ -126,5 +126,5 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 extends T
 			assertTrue(sucesso.get(i), Eliminado);
 		}
 	}
-
+*/
 }

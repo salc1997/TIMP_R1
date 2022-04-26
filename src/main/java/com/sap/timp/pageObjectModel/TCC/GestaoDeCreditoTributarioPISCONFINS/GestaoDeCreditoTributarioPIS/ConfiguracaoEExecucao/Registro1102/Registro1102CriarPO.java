@@ -183,7 +183,7 @@ public class Registro1102CriarPO extends TestBaseSteven {
 		ufO.click();
 		sleep(1000);
 		closeSelectTypeCheckbox(uf);
-		sleep(6000);
+		sleep(9000);
 	
 	
 		sleep(3000);

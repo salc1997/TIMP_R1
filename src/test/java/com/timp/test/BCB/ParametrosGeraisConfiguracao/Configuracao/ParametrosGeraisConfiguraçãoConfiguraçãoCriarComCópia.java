@@ -49,6 +49,8 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia extends TestB
 			assertTrue(sucesso.get(i), Criar);
 		}
 		
+		sleep(3000);
+		
 	}
 	
 	@Test(dependsOnMethods = "criarConfiguracaoHierarquia")
@@ -56,6 +58,8 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia extends TestB
 		
 		boolean sucesso = parametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO.excluir();
 		assertTrue(sucesso, Editar);
+		
+		sleep(3000);
 
 	}
 

@@ -53,7 +53,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseSteven {
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Justificativa\"]")
@@ -154,7 +154,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseSteven {
 		novo.click();
 		
 	
-		sleep(11000);
+		sleep(16000);
 		
 		nome.sendKeys("TESTE AUTOMATIZADO RODADA ");
 		sleep(2000);

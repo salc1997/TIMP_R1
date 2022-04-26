@@ -46,5 +46,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriar extends TestBaseSteve
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), subniveis);
 		}
+		
+		sleep(3000);
 	}
 }

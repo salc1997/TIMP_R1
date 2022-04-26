@@ -1847,3 +1847,5 @@
 [1027/062008.070:ERROR:http_transport_win.cc(276)] WinHttpSendRequest: La operación se completó correctamente. (0x0)
 [1027/062008.071:ERROR:http_transport_win.cc(276)] WinHttpSendRequest: La operación se completó correctamente. (0x0)
 [1118/012825.992:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\Massiel\AppData\Local\Temp\scoped_dir30048_1689379341\Crashpad\reports\fdc79733-3ab1-4ecf-b160-8ef83925c262.dmp: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso. (0x20)
+[0311/005139.561:ERROR:process_reader_win.cc(123)] NtOpenThread: {Acceso denegado} Un proceso ha solicitado acceso a un objeto, pero no se le han concedido esos derechos de acceso. (0xc0000022)
+[0311/005139.780:ERROR:exception_snapshot_win.cc(98)] thread ID 6560 not found in process

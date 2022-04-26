@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>7/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 07 18:40:26 CST 2022</td>
+<td>Started on:</td><td>Tue Apr 26 10:18:43 CST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>1006 seconds (1006261 ms)</td>
+<tr><td>Total time:</td><td>946 seconds (946264 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,71 +76,14 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar.editar()'><b>editar</b><br>Test class: com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57988}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 1730a9a936e72de9bf5bb97b53a70a1b
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.sap.timp.base.TestBaseSteven.waitExpectElement(TestBaseSteven.java:282)
-	at com.sap.timp.pageObjectModel.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditarPO.editar(AgrupamentoDeTributosEditarPO.java:154)
-	at com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar.editar(AgrupamentoDeTributosEditar.java:45)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1106645384", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1106645384'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=83.0.4103.61)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57988}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 1730a9a936e72de9bf5bb97b53a70a1b
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
-	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.sap.timp.base.TestBaseSteven.waitExpectElement(TestBaseSteven.java:282)
-	at com.sap.timp.pageObjectModel.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditarPO.editar(AgrupamentoDeTributosEditarPO.java:154)
-	at com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar.editar(AgrupamentoDeTributosEditar.java:45)
+<td><div><pre>java.lang.AssertionError: O valor do campo não foi editado expected [true] but found [false]
+	at com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar.editar(AgrupamentoDeTributosEditar.java:47)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2025994974", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2025994974'><pre>java.lang.AssertionError: O valor do campo não foi editado expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar.editar(AgrupamentoDeTributosEditar.java:47)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -167,7 +110,7 @@ Session ID: 1730a9a936e72de9bf5bb97b53a70a1b
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>107</td>
+<td>111</td>
 <td>com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar@1046d517</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -180,37 +123,37 @@ Session ID: 1730a9a936e72de9bf5bb97b53a70a1b
 <tr>
 <td title='com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa.Excluir()'><b>Excluir</b><br>Test class: com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa</td>
 <td></td>
-<td>25</td>
+<td>28</td>
 <td>com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa@21337f7b</td></tr>
 <tr>
 <td title='com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar.criar()'><b>criar</b><br>Test class: com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar</td>
 <td></td>
-<td>88</td>
+<td>93</td>
 <td>com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar@ca30bc1</td></tr>
 <tr>
 <td title='com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa.criar()'><b>criar</b><br>Test class: com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa</td>
 <td></td>
-<td>124</td>
+<td>152</td>
 <td>com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa@21337f7b</td></tr>
 <tr>
 <td title='com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia.criarcopia()'><b>criarcopia</b><br>Test class: com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia</td>
 <td></td>
-<td>153</td>
+<td>157</td>
 <td>com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia@5505ae1a</td></tr>
 <tr>
 <td title='com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes.detalhes()'><b>detalhes</b><br>Test class: com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes</td>
 <td></td>
-<td>83</td>
+<td>74</td>
 <td>com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes@3b7d3a38</td></tr>
 <tr>
 <td title='com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir.excluir()'><b>excluir</b><br>Test class: com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir</td>
 <td></td>
-<td>72</td>
+<td>66</td>
 <td>com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir@73cd37c0</td></tr>
 <tr>
 <td title='com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer.visualizar()'><b>visualizar</b><br>Test class: com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer</td>
 <td></td>
-<td>75</td>
+<td>71</td>
 <td>com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer@416c58f5</td></tr>
 </table><p>
 </body>

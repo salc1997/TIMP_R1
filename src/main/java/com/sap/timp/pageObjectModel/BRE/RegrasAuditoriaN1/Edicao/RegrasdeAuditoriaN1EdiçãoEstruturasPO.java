@@ -18,7 +18,7 @@ public class RegrasdeAuditoriaN1EdiçãoEstruturasPO extends TestBaseSteven {
 	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
 	public WebElement camino;
 
-	@FindBy(xpath = "//button[text()=\"Create estructuras associadas\"]")
+	@FindBy(xpath = "//button[text()=\"Criar estruturas associadas\"]")
 	public WebElement asociarEstrutura;
 
 	@FindBy(xpath = "//input[@placeholder=\"Selecione uma tabela\"]")
@@ -267,7 +267,7 @@ public class RegrasdeAuditoriaN1EdiçãoEstruturasPO extends TestBaseSteven {
 		sleep(3000);
 
 		aceitar.click();
-		sleep(24000);
+		sleep(30000);
 
 		biblioteca.click();
 		sleep(18000);

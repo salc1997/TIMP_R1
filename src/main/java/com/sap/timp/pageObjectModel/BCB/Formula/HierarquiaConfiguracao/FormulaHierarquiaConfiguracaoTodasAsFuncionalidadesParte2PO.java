@@ -634,7 +634,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		//if (tc2==true) {
-			sucesso.add(valorFormulaSubNivel1.equals("1000/2"));
+			sucesso.add(valorFormulaSubNivel1.equals("1000.00/2"));
 			sucesso.add(valorTotalizadorSubNivel1.equals("500,00"));
 		//}else {
 //			sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
@@ -690,7 +690,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		//if (tc2==true) {
-			sucesso.add(valorFormulaSubNivel2.equals("-1000/2"));
+			sucesso.add(valorFormulaSubNivel2.equals("-1000.00/2"));
 			sucesso.add(valorTotalizadorSubNivel2.equals("-500,00"));
 		//}else {
 //			sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
@@ -745,7 +745,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		//if (tc2==true) {
-			sucesso.add(valorFormulaSubNivel3.equals("1000/2"));
+			sucesso.add(valorFormulaSubNivel3.equals("1000.00/2"));
 			sucesso.add(valorTotalizadorSubNivel3.equals("0,00"));
 		//}else {
 //			sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
@@ -798,10 +798,10 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		if (tp1==true) {
-			sucesso.add(valorFormulaSubNivel4.equals("1000/2"));
+			sucesso.add(valorFormulaSubNivel4.equals("-1000.00/2"));
 			sucesso.add(valorTotalizadorSubNivel4.equals("500,00"));
 		}else {
-			sucesso.add(valorFormulaSubNivel4.equals("-1000/2"));
+			sucesso.add(valorFormulaSubNivel4.equals("-1000.00/2"));
 			sucesso.add(valorTotalizadorSubNivel4.equals("0,00"));
 		}
 		
@@ -852,7 +852,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		//if (tc2==true) {
-			sucesso.add(valorFormulaSubNivel5.equals("1000/56"));
+			sucesso.add(valorFormulaSubNivel5.equals("1000.00/56"));
 			sucesso.add(valorTotalizadorSubNivel5.equals("17,857"));
 		//}else {
 //			sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));

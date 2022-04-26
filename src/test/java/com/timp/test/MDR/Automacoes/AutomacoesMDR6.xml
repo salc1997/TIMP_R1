@@ -129,12 +129,13 @@
 		<classes>		
 			<!--Taxas De Conversao-->
 
-			<class name="com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoCriar"></class>
-			<class name="com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoEditar"></class>
-			<class name="com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoVisualizar"></class>			
-			<class name="com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoDetalhes"></class>
-			<class name="com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoExcluir"></class>
-			<class name="com.timp.test.MDR.TaxasDeConversao.TaxasDeConversaoExcluirEmMassa"></class>
+			<class name="com.timp.test.MDR.TaxasComplementares.TaxasComplementaresCriar"></class>
+			<class name="com.timp.test.MDR.TaxasComplementares.TaxasComplementaresDetalhes"></class>
+			<class name="com.timp.test.MDR.TaxasComplementares.TaxasComplementaresEditar"></class>
+			<class name="com.timp.test.MDR.TaxasComplementares.TaxasComplementaresVisualizar"></class>
+			<class name="com.timp.test.MDR.TaxasComplementares.TaxasComplementaresExcluir"></class>
+			<class name="com.timp.test.MDR.TaxasComplementares.TaxasComplementaresExcluirEmMassa"></class>		
+		
 		</classes>
 	</test>	
 

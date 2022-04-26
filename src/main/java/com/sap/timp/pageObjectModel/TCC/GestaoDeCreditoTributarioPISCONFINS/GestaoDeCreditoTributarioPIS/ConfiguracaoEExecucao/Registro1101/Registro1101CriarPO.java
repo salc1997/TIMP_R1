@@ -257,7 +257,7 @@ public class Registro1101CriarPO extends TestBaseSteven{
 		empresaV.click();
 		sleep(2000);
 		empresaOV.click();
-		sleep(9000);
+		sleep(12000);
 		
 		filialV.click();
 		sleep(2000);

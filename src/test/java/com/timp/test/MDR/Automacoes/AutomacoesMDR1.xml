@@ -6,7 +6,7 @@
 
 		<classes>
 
-			<!-- Associção Código de Ajustes -->
+			<!-- Ajustes - Associção Código de Ajustes -->
 
 			<class
 				name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar"></class>

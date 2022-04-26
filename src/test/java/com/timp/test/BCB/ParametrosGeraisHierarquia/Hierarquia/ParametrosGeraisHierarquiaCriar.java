@@ -32,7 +32,7 @@ public class ParametrosGeraisHierarquiaCriar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test()
@@ -46,6 +46,6 @@ public class ParametrosGeraisHierarquiaCriar extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), subniveis);
 		}
-		
+		sleep(3000);
 	}
 }

@@ -63,7 +63,7 @@ public class NovaTarefa extends TestBaseSteven {
 	}
 	
 
-	@Test(priority = 4)
+/*	@Test(priority = 4)
 	public void excluir() {
 
 		boolean sucesso = novaTarefaPO.excluir();
@@ -72,6 +72,6 @@ public class NovaTarefa extends TestBaseSteven {
 
 
 	}
-
+*/
 
 }

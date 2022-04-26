@@ -1,4 +1,4 @@
-package com.timp.test.MDR.TaxasDeConversao;
+package com.timp.test.MDR.TaxasComplementares;
 
 import static org.testng.Assert.assertTrue;
 
@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TaxasDeConversao.TaxasDeConversaoEditarPO;
 
-public class TaxasDeConversaoEditar extends TestBaseSteven {
+public class TaxasComplementaresEditar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;

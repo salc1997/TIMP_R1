@@ -43,7 +43,7 @@ public class ArquivosImportadosNaVisualizacaoPO extends TestBaseFernando{
 		}
 		
 		if(url.contains("tc2")) {
-			idRegistro = "32";
+			idRegistro = "48";
 		}
 		
 		System.out.println("ID Registro do Ambiente: " + idRegistro);

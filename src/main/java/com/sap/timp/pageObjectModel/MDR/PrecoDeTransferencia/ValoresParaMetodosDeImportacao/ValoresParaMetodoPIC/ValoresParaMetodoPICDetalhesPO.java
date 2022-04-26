@@ -197,8 +197,8 @@ public class ValoresParaMetodoPICDetalhesPO extends TestBaseSteven{
 		sleep(1000);
 		
 		visualizar.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(8000);
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		//visualizar
 		

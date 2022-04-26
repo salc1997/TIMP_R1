@@ -44,6 +44,8 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamen
 		
 		boolean sucesso = parametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamentePO.lixeiraExcluirDefinitivamenteConfiguracao();
 		assertTrue(sucesso, Eliminado);
+		
+		sleep(3000);
 	}
 
 }

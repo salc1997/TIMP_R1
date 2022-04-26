@@ -44,6 +44,8 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoRaiz extends TestBaseKenssy
 		
 		boolean sucesso = parametrosGeraisConfiguraçãoConfiguraçãoRaizPO.raizConfiguracao();
 		assertTrue(sucesso, "O registro existe na raiz");
+		
+		sleep(3000);
 	
 	}
 

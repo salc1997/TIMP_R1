@@ -45,7 +45,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados extends Te
 		
 		ArrayList<Boolean> sucesso = parametrosGeraisFiltrosAvancadosPO.Filtros();
 		System.out.println("veamos: "+sucesso);
-
+		sleep(3000);
 		
 	}
 }

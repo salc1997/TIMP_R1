@@ -195,7 +195,7 @@ public class OutputAutomáticoPO extends TestBaseSteven {
 //		sleep(1000);
 		
 	//	btnsim.click();
-		sleep(3000);
+		sleep(6000);
 		btnAplicar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

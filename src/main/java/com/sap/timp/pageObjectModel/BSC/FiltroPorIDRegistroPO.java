@@ -75,7 +75,7 @@ public class FiltroPorIDRegistroPO extends TestBaseSteven {
 			id = "8004766";
 			pesquisar.sendKeys(id);
 		}else if (tc2 == true) {
-			id = "2123";
+			id = "639";
 			pesquisar.sendKeys(id);
 		}else {
 			

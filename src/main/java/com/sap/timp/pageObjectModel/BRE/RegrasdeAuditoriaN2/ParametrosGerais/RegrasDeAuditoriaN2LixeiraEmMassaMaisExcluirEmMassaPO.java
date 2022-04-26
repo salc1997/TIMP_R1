@@ -55,7 +55,7 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Justificativa\"]")
@@ -419,9 +419,7 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		//waitExpectElement(mensagem);
-		//sleep(2000);
-		waitExpectElement(mensagembloqueio);
+	
 		sleep(2000);
 		lixeira.click();
 		sleep(2000);

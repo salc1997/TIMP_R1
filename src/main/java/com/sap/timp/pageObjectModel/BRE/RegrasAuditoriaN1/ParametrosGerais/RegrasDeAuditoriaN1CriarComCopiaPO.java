@@ -17,7 +17,7 @@ public class RegrasDeAuditoriaN1CriarComCopiaPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement ultimapagina;
 	
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
@@ -91,7 +91,7 @@ public class RegrasDeAuditoriaN1CriarComCopiaPO extends TestBaseSteven {
 		
 		nome.clear();
 		nome.sendKeys("Testeautomatizado N1 - Copia");
-		waitExpectElement(aplicar);
+		//waitExpectElement(aplicar);
 		sleep(3000);
 		aplicar.click();
 		

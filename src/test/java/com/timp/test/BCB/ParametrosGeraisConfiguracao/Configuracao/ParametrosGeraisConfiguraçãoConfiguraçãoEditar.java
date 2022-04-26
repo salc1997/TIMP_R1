@@ -43,6 +43,8 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoEditar extends TestBaseStev
 	boolean sucesso = parametrosGeraisConfiguraçãoEditarPO.editar();
 
 	assertTrue(sucesso, Editar);
+	
+	sleep(3000);
 
   }
 

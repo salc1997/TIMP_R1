@@ -31,7 +31,7 @@ public class ParametrosGeraisFiltrosAvanzadosPO extends TestBaseKenssy {
 	public WebElement usuarioCriacao;
 	@FindBy(xpath = "//div[@id=\"modificationUser\"]/div/div/div[2]")
 	public WebElement usuarioModificao;
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][1]")
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][47]")
 	public WebElement opc;
 	
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")

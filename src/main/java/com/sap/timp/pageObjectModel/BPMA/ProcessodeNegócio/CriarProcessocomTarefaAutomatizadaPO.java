@@ -316,7 +316,7 @@ public class CriarProcessocomTarefaAutomatizadaPO extends TestBaseSteven{
 		inputEntrada.click();
 		sleep(3000);
 	//	invisibilityOfElement("div[@class=\"overlay loader dark\"]");
-		sleep(10000);
+		sleep(14000);
 		
 		flag.click();
 		sleep(3000);

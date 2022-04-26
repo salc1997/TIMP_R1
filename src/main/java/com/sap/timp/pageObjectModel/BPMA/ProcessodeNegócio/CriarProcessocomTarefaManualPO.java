@@ -157,7 +157,7 @@ public class CriarProcessocomTarefaManualPO extends TestBaseSteven{
 		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println(id); 
 		
-		sleep(2000);
+		sleep(4000);
 		
 		novo.click();
 		sleep(3000);
@@ -306,7 +306,7 @@ public class CriarProcessocomTarefaManualPO extends TestBaseSteven{
 		aplicar.click();
 
 		
-		sleep(5000);
+		sleep(9000);
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

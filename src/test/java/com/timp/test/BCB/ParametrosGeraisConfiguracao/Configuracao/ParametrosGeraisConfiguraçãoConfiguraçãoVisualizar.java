@@ -45,6 +45,8 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoVisualizar extends TestBase
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
+		
+		sleep(3000);
   }
 
 }

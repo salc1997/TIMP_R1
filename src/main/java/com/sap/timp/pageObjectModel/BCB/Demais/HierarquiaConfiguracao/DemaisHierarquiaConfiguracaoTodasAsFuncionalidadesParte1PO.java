@@ -61,6 +61,12 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		@FindBy(xpath = "//span[text()=\"Gravar\"]")
 		public WebElement gravar;
 		
+		@FindBy(xpath = "//button[text()=\"Prosseguir\"]")
+		public WebElement proseguir;
+		
+		@FindBy(xpath = "//div[@id=\"justification\"]/div/textarea")
+		public WebElement justi;
+		
 		@FindBy(xpath = "//button[text()=\"Sim\"]")
 		public WebElement sim;
 		
@@ -1199,18 +1205,20 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		executarB.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(8000);
+		sleep(10000);
 		
 		gravar.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		
+		proseguir.click();
 		sleep(2000);
 		
-		nao.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		justi.sendKeys("Ciclo TA ");
+		sleep(1000);
 		
+		aplicarJustificativa.click();
+		sleep(3000);
 		salvarExecucoes.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1633,7 +1641,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		gravarC.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		biblioteca.click();
 		sleep(2000);
@@ -1708,7 +1716,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 //			sleep(2000);
 		//HASTA AQUI
 			
-		sleep(2000);
+		sleep(6000);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter5()+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter5()+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));

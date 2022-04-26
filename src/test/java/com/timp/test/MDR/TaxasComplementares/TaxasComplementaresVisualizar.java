@@ -1,6 +1,8 @@
-package com.timp.test.MDR.TaxasDeConversao;
+package com.timp.test.MDR.TaxasComplementares;
 
 import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -9,13 +11,13 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TaxasDeConversao.TaxasDeConversaoExcluirPO;
+import com.sap.timp.pageObjectModel.MDR.TaxasDeConversao.TaxasDeConversaoVisualizarPO;
 
-public class TaxasDeConversaoExcluir extends TestBaseSteven {
+public class TaxasComplementaresVisualizar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	TaxasDeConversaoExcluirPO taxasDeConversaoExcluirPO;
+	TaxasDeConversaoVisualizarPO taxasDeConversaoVisualizarPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -23,7 +25,7 @@ public class TaxasDeConversaoExcluir extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		taxasDeConversaoExcluirPO = new TaxasDeConversaoExcluirPO();
+		taxasDeConversaoVisualizarPO = new TaxasDeConversaoVisualizarPO();
 	}
 
 	@AfterClass
@@ -32,13 +34,18 @@ public class TaxasDeConversaoExcluir extends TestBaseSteven {
 	}
 
 	@Test()
-	public void excluir() {
+	public void Visualizar() {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
-		boolean sucesso = taxasDeConversaoExcluirPO.excluir();
-		assertTrue(sucesso, Eliminado);
+		ArrayList<Boolean> sucesso = taxasDeConversaoVisualizarPO.visualizar();
 
+		for (int i = 0; i < sucesso.size(); i++) {
+
+			assertTrue(sucesso.get(i), visualizaçar);
+
+		}
 	}
+
 }

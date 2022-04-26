@@ -47,6 +47,8 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes  extends TestBaseK
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
+		
+		sleep(3000);
 
 	}
 

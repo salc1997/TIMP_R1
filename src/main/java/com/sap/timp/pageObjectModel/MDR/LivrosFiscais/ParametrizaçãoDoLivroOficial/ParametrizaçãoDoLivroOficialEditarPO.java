@@ -75,7 +75,7 @@ public class ParametrizaçãoDoLivroOficialEditarPO extends TestBaseMassiel{
 		menu.click();
 		sleep(2000);
 		editar.click();
-		sleep(18000);
+		sleep(24000);
 	
 		
 	  	String valor = tipoDoLibro.getText();

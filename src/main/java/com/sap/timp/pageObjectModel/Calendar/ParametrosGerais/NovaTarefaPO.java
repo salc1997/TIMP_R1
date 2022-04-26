@@ -81,11 +81,11 @@ public class NovaTarefaPO extends TestBaseSteven{
 		sleep(1000);
 		
 		vencimento.sendKeys(fechaActual());
-		sleep(1000);
+		sleep(10000);
 		
 		gravar.click();
 		
-		invisibilityOfElementOverlay();
+	//	invisibilityOfElementOverlay();
 		
 		refresh();
 		

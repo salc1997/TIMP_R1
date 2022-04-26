@@ -43,6 +43,8 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoFavoritos extends TestBaseK
 		
 		boolean sucesso = parametrosGeraisConfiguraçãoConfiguraçãoFavoritosPO.favoritosConfiguracao();
 		assertTrue(sucesso, Criar);
+		
+		sleep(3000);
 	}
 
 }

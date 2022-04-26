@@ -78,7 +78,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseS
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[contains(@class,\"dialog-buttons\")]//child::button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Justificativa\"]")

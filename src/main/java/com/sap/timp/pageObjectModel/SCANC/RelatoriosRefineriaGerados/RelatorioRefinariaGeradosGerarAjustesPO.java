@@ -106,7 +106,7 @@ public class RelatorioRefinariaGeradosGerarAjustesPO extends TestBaseFernando{
 		}
 		
 		if(url.contains("tc2")) {
-			idRegistro = "9";
+			idRegistro = "49";
 		}
 		
 		System.out.println("ID: " + idRegistro);

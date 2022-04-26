@@ -1,38 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite">
-	<test name="Filiais" preserve-order="true">
+
+	<test name="TaxasComplementares" preserve-order="true">
 
 
 		<classes>
 
-			<!-- Associção Código de Ajustes -->
-
-			<class name="com.timp.test.MDR.Filiais.FiliaisDetalle"></class>
-	    	<class name="com.timp.test.MDR.Filiais.FiliaisEditar"></class>
-	    	<class name="com.timp.test.MDR.Filiais.FiliaisVisualizar"></class>
+			<class name="com.timp.test.MDR.TaxasComplementares.TaxasComplementaresCriar"></class>
+			<class name="com.timp.test.MDR.TaxasComplementares.TaxasComplementaresDetalhes"></class>
+			<class name="com.timp.test.MDR.TaxasComplementares.TaxasComplementaresEditar"></class>
+			<class name="com.timp.test.MDR.TaxasComplementares.TaxasComplementaresVisualizar"></class>
+			<class name="com.timp.test.MDR.TaxasComplementares.TaxasComplementaresExcluir"></class>
+			<class name="com.timp.test.MDR.TaxasComplementares.TaxasComplementaresExcluirEmMassa"></class>
+			
+			
 	
+		</classes>
+
+	</test> <!-- PruebaTestNG -->
+	
+	<test name="DeterminacaoAutomaticaDeGuias" preserve-order="true">
+
+
+		<classes>
+
+			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasCriar"></class>
+			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasFiltroPorId"></class>
+
+			
+			
+			
+			
 			
 		</classes>
 
 	</test> <!-- PruebaTestNG -->
 	
-	<test name="Produtos SCANC" preserve-order="true">
-	<classes>
 
-			<!-- Associção Código de Ajustes -->
-
-			<class name="com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCCriar"></class>
-			<class name="com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCEditar"></class>
-			<class name="com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCVisualizar"></class>
-			<class name="com.timp.test.MDR.SCANC.ProdutosSCANC.ProdutosSCANCDetalhes"></class>
-			<class name="com.timp.test.MDR.SCANC.ProdutosSCANC.ProductosSCANCExcluir"></class>
-	    	
 	
-			
-	</classes>
-
-	</test> <!-- PruebaTestNG -->
 
 
 </suite> <!-- Suite -->

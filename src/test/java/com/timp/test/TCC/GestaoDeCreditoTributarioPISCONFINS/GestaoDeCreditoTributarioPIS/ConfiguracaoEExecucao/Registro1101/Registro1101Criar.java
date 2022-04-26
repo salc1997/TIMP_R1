@@ -30,7 +30,7 @@ public class Registro1101Criar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		driver.close();
 	}
 
 	@Test()
@@ -41,5 +41,7 @@ public class Registro1101Criar extends TestBaseSteven {
 		boolean sucesso = registros1101CriarPO.criar();
 
 		assertTrue(sucesso, Criar);
+		
+		sleep(2000);
 	}
 }

@@ -14,11 +14,8 @@ public class RegrasDeAuditoriaN3CriarMasCriarComCopiaPO extends TestBaseFernando
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement btnUltimaPagina;
 	
-<<<<<<< HEAD
-	@FindBy(xpath = "/div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
-=======
+
 	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")

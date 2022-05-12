@@ -1,46 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name=" ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed)">
-=======
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+  <test thread-count="5" name="Regras de Auditoria N2(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar">
-=======
-      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Correção">
         <methods>
           <include name="beforeClass"/>
+          <include name="editar"/>
           <include name="afterClass"/>
-<<<<<<< HEAD
-          <include name="EditarRelacionamento"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar -->
-=======
-          <include name="criar"/>
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Correção -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2ValoresCalculados">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
-    </classes>
-<<<<<<< HEAD
-  </test> <!--  ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed) -->
-  <test thread-count="5" name=" ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS (failed)">
-    <classes>
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar">
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2ValoresCalculados -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoTabelas">
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
           <include name="editar"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar -->
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoTabelas -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa">
+        <methods>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa -->
     </classes>
-  </test> <!--  ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS (failed) -->
+  </test> <!-- Regras de Auditoria N2(failed) -->
 </suite> <!-- Failed suite [Suite] -->
-=======
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1

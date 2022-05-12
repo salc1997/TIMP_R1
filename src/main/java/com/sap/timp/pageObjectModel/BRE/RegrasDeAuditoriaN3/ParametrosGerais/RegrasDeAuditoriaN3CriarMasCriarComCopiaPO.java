@@ -14,7 +14,7 @@ public class RegrasDeAuditoriaN3CriarMasCriarComCopiaPO extends TestBaseFernando
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement btnUltimaPagina;
 	
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "/div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")

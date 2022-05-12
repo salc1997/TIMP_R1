@@ -1,68 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="0" total="18" passed="16" failed="2" skipped="0">
-=======
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+<testng-results ignored="0" total="13" passed="9" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2022-04-26T15:39:49Z" name="Suite" finished-at="2022-04-26T16:34:29Z" duration-ms="3280165">
-=======
-  <suite started-at="2022-04-26T16:43:31Z" name="Default suite" finished-at="2022-04-26T16:44:55Z" duration-ms="83071">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+  <suite started-at="2022-05-10T20:07:49Z" name="Suite" finished-at="2022-05-10T21:06:20Z" duration-ms="3510299">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2022-04-26T15:39:49Z" name=" ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS " finished-at="2022-04-26T16:18:43Z" duration-ms="2333739">
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@327bcebd]" started-at="2022-04-26T16:09:36Z" name="beforeClass" finished-at="2022-04-26T16:09:53Z" duration-ms="16981" status="PASS">
-=======
-    <test started-at="2022-04-26T16:43:31Z" name="Default test" finished-at="2022-04-26T16:44:55Z" duration-ms="83071">
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir@5b367418]" started-at="2022-04-26T16:43:31Z" name="beforeClass" finished-at="2022-04-26T16:43:45Z" duration-ms="13095" status="PASS">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+    <test started-at="2022-05-10T20:07:49Z" name="Regras de Auditoria N2" finished-at="2022-05-10T21:06:20Z" duration-ms="3510299">
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Correção">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Correção@6239aba6]" started-at="2022-05-10T20:30:38Z" name="beforeClass" finished-at="2022-05-10T20:31:41Z" duration-ms="62966" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method signature="filtrarPorIdMasLimpiarFiltros()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@327bcebd]" started-at="2022-04-26T16:09:53Z" name="filtrarPorIdMasLimpiarFiltros" finished-at="2022-04-26T16:10:42Z" duration-ms="48363" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filtrarPorIdMasLimpiarFiltros -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros@327bcebd]" started-at="2022-04-26T16:10:42Z" name="afterClass" finished-at="2022-04-26T16:10:42Z" duration-ms="271" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar@3403e2ac]" started-at="2022-04-26T15:42:05Z" name="beforeClass" finished-at="2022-04-26T15:42:44Z" duration-ms="39021" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="EditarRelacionamento()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar@3403e2ac]" started-at="2022-04-26T15:42:44Z" name="EditarRelacionamento" finished-at="2022-04-26T15:45:55Z" duration-ms="191332" status="FAIL">
+        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Correção@6239aba6]" started-at="2022-05-10T20:31:41Z" name="editar" finished-at="2022-05-10T20:33:40Z" duration-ms="118987" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="fieldRow-wrapper"][2]/div/div[@id="add-icon"]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()="HCNF0125 - TA-1871 NÃO MEXER"]"}
   (Session info: chrome=83.0.4103.106)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'AGILE', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a6bb688def3b046cd0a6bf5afb53c86b
-*** Element info: {Using=xpath, value=//div[@class="fieldRow-wrapper"][2]/div/div[@id="add-icon"]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65276}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8b1d3b4f46e355fb958b4490f49c2036
+*** Element info: {Using=xpath, value=//div[text()="HCNF0125 - TA-1871 NÃO MEXER"]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="fieldRow-wrapper"][2]/div/div[@id="add-icon"]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()="HCNF0125 - TA-1871 NÃO MEXER"]"}
   (Session info: chrome=83.0.4103.106)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'AGILE', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52323}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a6bb688def3b046cd0a6bf5afb53c86b
-*** Element info: {Using=xpath, value=//div[@class="fieldRow-wrapper"][2]/div/div[@id="add-icon"]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65276}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8b1d3b4f46e355fb958b4490f49c2036
+*** Element info: {Using=xpath, value=//div[text()="HCNF0125 - TA-1871 NÃO MEXER"]}
 at jdk.internal.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
@@ -80,8 +51,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-at com.sap.timp.pageObjectModel.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditarPO.editar(RelacionamentoEstruturasEditarPO.java:138)
-at com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar.EditarRelacionamento(RelacionamentoEstruturasEditar.java:47)
+at com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2.Edicao.RegrasdeAuditoriaN2CorreçãoPO.editar(RegrasdeAuditoriaN2CorreçãoPO.java:179)
+at com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Correção.editar(RegrasdeAuditoriaN2Correção.java:40)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -112,172 +83,261 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EditarRelacionamento -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar@3403e2ac]" started-at="2022-04-26T15:45:55Z" name="afterClass" finished-at="2022-04-26T15:45:55Z" duration-ms="0" status="PASS">
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Correção@6239aba6]" started-at="2022-05-10T20:33:40Z" name="afterClass" finished-at="2022-05-10T20:33:45Z" duration-ms="4636" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@74bf1791]" started-at="2022-04-26T16:12:06Z" name="beforeClass" finished-at="2022-04-26T16:12:23Z" duration-ms="17111" status="PASS">
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Correção -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente@4f3bbf68]" started-at="2022-05-10T20:55:42Z" name="beforeClass" finished-at="2022-05-10T20:56:16Z" duration-ms="33976" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="criarRelacionamento()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@74bf1791]" started-at="2022-04-26T16:12:23Z" name="criarRelacionamento" finished-at="2022-04-26T16:17:56Z" duration-ms="332827" status="PASS">
+        <test-method signature="lexeira()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente@4f3bbf68]" started-at="2022-05-10T20:56:16Z" name="lexeira" finished-at="2022-05-10T20:59:35Z" duration-ms="199245" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criarRelacionamento -->
-        <test-method signature="excluirMassa()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@74bf1791]" started-at="2022-04-26T16:17:56Z" name="excluirMassa" finished-at="2022-04-26T16:18:38Z" depends-on-methods="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa.criarRelacionamento" duration-ms="42613" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluirMassa -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa@74bf1791]" started-at="2022-04-26T16:18:38Z" name="afterClass" finished-at="2022-04-26T16:18:43Z" duration-ms="4309" status="PASS">
+        </test-method> <!-- lexeira -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente@4f3bbf68]" started-at="2022-05-10T20:59:35Z" name="afterClass" finished-at="2022-05-10T20:59:40Z" duration-ms="4280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir@19c65cdc]" started-at="2022-04-26T16:10:42Z" name="beforeClass" finished-at="2022-04-26T16:10:56Z" duration-ms="14420" status="PASS">
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoTabelas">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoTabelas@68df9280]" started-at="2022-05-10T20:43:03Z" name="beforeClass" finished-at="2022-05-10T20:44:01Z" duration-ms="57858" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir@19c65cdc]" started-at="2022-04-26T16:10:56Z" name="excluir" finished-at="2022-04-26T16:12:01Z" duration-ms="65061" status="PASS">
+        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoTabelas@68df9280]" started-at="2022-05-10T20:44:01Z" name="editar" finished-at="2022-05-10T20:46:29Z" duration-ms="148288" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <li tabindex="-100" class="list-item visible selected" id="option-1" title="...">Agrupamento (ED)</li> is not clickable at point (836, 428). Other element would receive the click: <div class="overlay" style="display: block;"></div>
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55356}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2761f164987c564ba84a29bbefeb8bd2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <li tabindex="-100" class="list-item visible selected" id="option-1" title="...">Agrupamento (ED)</li> is not clickable at point (836, 428). Other element would receive the click: <div class="overlay" style="display: block;"></div>
+  (Session info: chrome=83.0.4103.106)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:55356}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2761f164987c564ba84a29bbefeb8bd2
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2.Edicao.RegrasdeAuditoriaN2EdiçãoTabelasPO.editar(RegrasdeAuditoriaN2EdiçãoTabelasPO.java:186)
+at com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoTabelas.editar(RegrasdeAuditoriaN2EdiçãoTabelas.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir@19c65cdc]" started-at="2022-04-26T16:12:01Z" name="afterClass" finished-at="2022-04-26T16:12:06Z" duration-ms="4505" status="PASS">
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoTabelas@68df9280]" started-at="2022-05-10T20:46:29Z" name="afterClass" finished-at="2022-05-10T20:46:29Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar@65b104b9]" started-at="2022-04-26T15:45:55Z" name="beforeClass" finished-at="2022-04-26T15:46:17Z" duration-ms="22280" status="PASS">
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoTabelas -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento@3e6104fc]" started-at="2022-05-10T20:33:45Z" name="beforeClass" finished-at="2022-05-10T20:34:34Z" duration-ms="49140" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="VisualizarRelacionamento()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar@65b104b9]" started-at="2022-04-26T15:46:17Z" name="VisualizarRelacionamento" finished-at="2022-04-26T15:55:08Z" duration-ms="530475" status="PASS">
+        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento@3e6104fc]" started-at="2022-05-10T20:34:34Z" name="editar" finished-at="2022-05-10T20:37:59Z" duration-ms="204736" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VisualizarRelacionamento -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar@65b104b9]" started-at="2022-04-26T15:55:08Z" name="afterClass" finished-at="2022-04-26T15:55:12Z" duration-ms="4566" status="PASS">
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento@3e6104fc]" started-at="2022-05-10T20:37:59Z" name="afterClass" finished-at="2022-05-10T20:37:59Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@6c4980d3]" started-at="2022-04-26T15:55:12Z" name="beforeClass" finished-at="2022-04-26T15:55:30Z" duration-ms="17169" status="PASS">
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasDeAuditoriaN2EdicaoRelacionamento -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Detalhes">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Detalhes@1fb669c3]" started-at="2022-05-10T20:25:18Z" name="beforeClass" finished-at="2022-05-10T20:25:58Z" duration-ms="39840" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="criarCopia()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@6c4980d3]" started-at="2022-04-26T15:55:30Z" name="criarCopia" finished-at="2022-04-26T16:02:55Z" duration-ms="445937" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criarCopia -->
-        <test-method signature="editarCopia()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@6c4980d3]" started-at="2022-04-26T16:02:56Z" name="editarCopia" finished-at="2022-04-26T16:09:13Z" depends-on-methods="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia.criarCopia" duration-ms="377015" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editarCopia -->
-        <test-method signature="excluirCopia()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@6c4980d3]" started-at="2022-04-26T16:09:13Z" name="excluirCopia" finished-at="2022-04-26T16:09:36Z" depends-on-methods="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia.editarCopia" duration-ms="23660" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluirCopia -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia@6c4980d3]" started-at="2022-04-26T16:09:36Z" name="afterClass" finished-at="2022-04-26T16:09:36Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia -->
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar@6d167f58]" started-at="2022-04-26T15:39:49Z" name="beforeClass" finished-at="2022-04-26T15:40:06Z" duration-ms="17106" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="criarRelacionamento()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar@6d167f58]" started-at="2022-04-26T15:40:06Z" name="criarRelacionamento" finished-at="2022-04-26T15:42:05Z" duration-ms="118630" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criarRelacionamento -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar@6d167f58]" started-at="2022-04-26T15:42:05Z" name="afterClass" finished-at="2022-04-26T15:42:05Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar -->
-    </test> <!--  ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS  -->
-    <test started-at="2022-04-26T16:18:43Z" name=" ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS " finished-at="2022-04-26T16:34:29Z" duration-ms="946264">
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar@ca30bc1]" started-at="2022-04-26T16:18:43Z" name="beforeClass" finished-at="2022-04-26T16:19:03Z" duration-ms="19698" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar@ca30bc1]" started-at="2022-04-26T16:19:03Z" name="criar" finished-at="2022-04-26T16:20:36Z" duration-ms="93247" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar@ca30bc1]" started-at="2022-04-26T16:20:36Z" name="afterClass" finished-at="2022-04-26T16:20:40Z" duration-ms="4530" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar -->
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa@21337f7b]" started-at="2022-04-26T16:30:54Z" name="beforeClass" finished-at="2022-04-26T16:31:23Z" duration-ms="29327" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa@21337f7b]" started-at="2022-04-26T16:31:23Z" name="criar" finished-at="2022-04-26T16:33:56Z" duration-ms="152442" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criar -->
-        <test-method signature="Excluir()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa@21337f7b]" started-at="2022-04-26T16:33:56Z" name="Excluir" finished-at="2022-04-26T16:34:25Z" depends-on-methods="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa.criar" duration-ms="28714" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa@21337f7b]" started-at="2022-04-26T16:34:25Z" name="afterClass" finished-at="2022-04-26T16:34:29Z" duration-ms="4488" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa -->
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes@3b7d3a38]" started-at="2022-04-26T16:22:50Z" name="beforeClass" finished-at="2022-04-26T16:23:33Z" duration-ms="42058" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="detalhes()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes@3b7d3a38]" started-at="2022-04-26T16:23:33Z" name="detalhes" finished-at="2022-04-26T16:24:47Z" duration-ms="74853" status="PASS">
+        <test-method signature="detalhes()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Detalhes@1fb669c3]" started-at="2022-05-10T20:25:58Z" name="detalhes" finished-at="2022-05-10T20:27:34Z" duration-ms="95917" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- detalhes -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes@3b7d3a38]" started-at="2022-04-26T16:24:47Z" name="afterClass" finished-at="2022-04-26T16:24:52Z" duration-ms="4269" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Detalhes@1fb669c3]" started-at="2022-05-10T20:27:34Z" name="afterClass" finished-at="2022-05-10T20:27:34Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes -->
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir@73cd37c0]" started-at="2022-04-26T16:29:21Z" name="beforeClass" finished-at="2022-04-26T16:29:43Z" duration-ms="22093" status="PASS">
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Detalhes -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2ValoresCalculados">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2ValoresCalculados@7164ca4c]" started-at="2022-05-10T20:53:32Z" name="beforeClass" finished-at="2022-05-10T20:54:07Z" duration-ms="34224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir@73cd37c0]" started-at="2022-04-26T16:29:43Z" name="excluir" finished-at="2022-04-26T16:30:50Z" duration-ms="66718" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir@73cd37c0]" started-at="2022-04-26T16:30:50Z" name="afterClass" finished-at="2022-04-26T16:30:54Z" duration-ms="4296" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir -->
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar@1046d517]" started-at="2022-04-26T16:20:40Z" name="beforeClass" finished-at="2022-04-26T16:20:55Z" duration-ms="14599" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="editar()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar@1046d517]" started-at="2022-04-26T16:20:55Z" name="editar" finished-at="2022-04-26T16:22:46Z" duration-ms="111030" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2ValoresCalculados@7164ca4c]" started-at="2022-05-10T20:54:07Z" name="editar" finished-at="2022-05-10T20:55:42Z" duration-ms="95630" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[O valor do campo não foi editado expected [true] but found [false]]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//textarea[@aria-label="Insira a fórmula"]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61794}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 3d276718dc707afd7c0c4a6b95c0c945
+*** Element info: {Using=xpath, value=//textarea[@aria-label="Insira a fórmula"]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: O valor do campo não foi editado expected [true] but found [false]
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//textarea[@aria-label="Insira a fórmula"]"}
+  (Session info: chrome=83.0.4103.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'AGILE', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\MASSIEL\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61794}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 3d276718dc707afd7c0c4a6b95c0c945
+*** Element info: {Using=xpath, value=//textarea[@aria-label="Insira a fórmula"]}
+at jdk.internal.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.sendKeys(Unknown Source)
+at com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2.Edicao.RegrasdeAuditoriaN2ValoresCalculadosPO.editar(RegrasdeAuditoriaN2ValoresCalculadosPO.java:175)
+at com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2ValoresCalculados.editar(RegrasdeAuditoriaN2ValoresCalculados.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2ValoresCalculados@7164ca4c]" started-at="2022-05-10T20:55:42Z" name="afterClass" finished-at="2022-05-10T20:55:42Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2ValoresCalculados -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarComCopia">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarComCopia@38b27cdc]" started-at="2022-05-10T20:13:23Z" name="beforeClass" finished-at="2022-05-10T20:14:55Z" duration-ms="91401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="criarComCopia()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarComCopia@38b27cdc]" started-at="2022-05-10T20:14:55Z" name="criarComCopia" finished-at="2022-05-10T20:19:36Z" duration-ms="280609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarComCopia -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarComCopia@38b27cdc]" started-at="2022-05-10T20:19:36Z" name="afterClass" finished-at="2022-05-10T20:19:40Z" duration-ms="4490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarComCopia -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Editar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Editar@1339e7aa]" started-at="2022-05-10T20:19:40Z" name="beforeClass" finished-at="2022-05-10T20:20:29Z" duration-ms="48974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Editar@1339e7aa]" started-at="2022-05-10T20:20:29Z" name="editar" finished-at="2022-05-10T20:25:18Z" duration-ms="288952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Editar@1339e7aa]" started-at="2022-05-10T20:25:18Z" name="afterClass" finished-at="2022-05-10T20:25:18Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Editar -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@5be46f9d]" started-at="2022-05-10T20:59:40Z" name="beforeClass" finished-at="2022-05-10T21:00:11Z" duration-ms="31447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@5be46f9d]" started-at="2022-05-10T21:00:11Z" name="criar" finished-at="2022-05-10T21:06:20Z" duration-ms="368574" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[O registro não foi criado com sucesso expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: O registro não foi criado com sucesso expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertTrue(Assert.java:44)
-at com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar.editar(AgrupamentoDeTributosEditar.java:47)
+at com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa.criar(RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa.java:40)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -308,53 +368,68 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa@5be46f9d]" started-at="2022-05-10T21:06:20Z" name="afterClass" finished-at="2022-05-10T21:06:20Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Estrutura">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Estrutura@479460a6]" started-at="2022-05-10T20:46:29Z" name="beforeClass" finished-at="2022-05-10T20:46:50Z" duration-ms="20813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Estrutura@479460a6]" started-at="2022-05-10T20:46:50Z" name="editar" finished-at="2022-05-10T20:53:32Z" duration-ms="402571" status="PASS">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- editar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar@1046d517]" started-at="2022-04-26T16:22:46Z" name="afterClass" finished-at="2022-04-26T16:22:50Z" duration-ms="4498" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Estrutura@479460a6]" started-at="2022-05-10T20:53:32Z" name="afterClass" finished-at="2022-05-10T20:53:32Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar -->
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia@5505ae1a]" started-at="2022-04-26T16:26:23Z" name="beforeClass" finished-at="2022-04-26T16:26:39Z" duration-ms="16610" status="PASS">
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Estrutura -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoSimular">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoSimular@12359a82]" started-at="2022-05-10T20:37:59Z" name="beforeClass" finished-at="2022-05-10T20:38:29Z" duration-ms="30590" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="criarcopia()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia@5505ae1a]" started-at="2022-04-26T16:26:39Z" name="criarcopia" finished-at="2022-04-26T16:29:17Z" duration-ms="157389" status="PASS">
+        <test-method signature="editar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoSimular@12359a82]" started-at="2022-05-10T20:38:29Z" name="editar" finished-at="2022-05-10T20:43:03Z" duration-ms="273379" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criarcopia -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia@5505ae1a]" started-at="2022-04-26T16:29:17Z" name="afterClass" finished-at="2022-04-26T16:29:21Z" duration-ms="4308" status="PASS">
+        </test-method> <!-- editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoSimular@12359a82]" started-at="2022-05-10T20:43:03Z" name="afterClass" finished-at="2022-05-10T20:43:03Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia -->
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer@416c58f5]" started-at="2022-04-26T16:24:52Z" name="beforeClass" finished-at="2022-04-26T16:25:07Z" duration-ms="15675" status="PASS">
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoSimular -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Visualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Visualizar@49c66ade]" started-at="2022-05-10T20:27:34Z" name="beforeClass" finished-at="2022-05-10T20:28:16Z" duration-ms="42540" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="visualizar()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer@416c58f5]" started-at="2022-04-26T16:25:07Z" name="visualizar" finished-at="2022-04-26T16:26:18Z" duration-ms="71107" status="PASS">
+        <test-method signature="visualizar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Visualizar@49c66ade]" started-at="2022-05-10T20:28:16Z" name="visualizar" finished-at="2022-05-10T20:30:38Z" duration-ms="142137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- visualizar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer@416c58f5]" started-at="2022-04-26T16:26:18Z" name="afterClass" finished-at="2022-04-26T16:26:23Z" duration-ms="4275" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Visualizar@49c66ade]" started-at="2022-05-10T20:30:38Z" name="afterClass" finished-at="2022-05-10T20:30:38Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer -->
-    </test> <!--  ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS  -->
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasdeAuditoriaN2Visualizar -->
+      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarCaminhos">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarCaminhos@54504ecd]" started-at="2022-05-10T20:07:49Z" name="beforeClass" finished-at="2022-05-10T20:08:35Z" duration-ms="45498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarCaminhos@54504ecd]" started-at="2022-05-10T20:08:35Z" name="criar" finished-at="2022-05-10T20:13:23Z" duration-ms="288498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarCaminhos@54504ecd]" started-at="2022-05-10T20:13:23Z" name="afterClass" finished-at="2022-05-10T20:13:23Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2CriarCaminhos -->
+    </test> <!-- Regras de Auditoria N2 -->
   </suite> <!-- Suite -->
-=======
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir@5b367418]" started-at="2022-04-26T16:43:45Z" name="excluir" finished-at="2022-04-26T16:44:50Z" duration-ms="65539" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir@5b367418]" started-at="2022-04-26T16:44:50Z" name="afterClass" finished-at="2022-04-26T16:44:55Z" duration-ms="4414" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 </testng-results>

@@ -1,4 +1,4 @@
-package com.timp.test.TAA.AtribuiçõesdeRegras;
+package com.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas;
 
 import org.testng.annotations.Test;
 

@@ -1,77 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name=" ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed)">
-=======
-  <test thread-count="5" name="ATR - Arquivos(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+  <test thread-count="5" name="Configuração &gt; ManuaisDeComponente(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar">
-=======
-      <class name="com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
-        <methods>
-<<<<<<< HEAD
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="EditarRelacionamento"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar -->
-    </classes>
-  </test> <!--  ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed) -->
-  <test thread-count="5" name=" ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS (failed)">
-    <classes>
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar">
+      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteEditar">
         <methods>
           <include name="afterClass"/>
-          <include name="beforeClass"/>
           <include name="editar"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar -->
-    </classes>
-  </test> <!--  ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS (failed) -->
-=======
-          <include name="filtro"/>
-          <include name="afterClass"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID -->
-    </classes>
-  </test> <!-- ATR - Arquivos(failed) -->
-  <test thread-count="5" name="ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed)">
-    <classes>
-      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes">
+      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteEditar -->
+      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteCriar">
         <methods>
-          <include name="afterClass"/>
-          <include name="detalhes"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes -->
-      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa">
-        <methods>
-          <include name="beforeClass"/>
           <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteCriar -->
+      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir">
+        <methods>
           <include name="afterClass"/>
           <include name="Excluir"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa -->
-      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar">
-        <methods>
           <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="criar"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar -->
-      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturaVer">
+      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir -->
+      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponentesFiltrosAvançados">
         <methods>
-          <include name="beforeClass"/>
-          <include name="visualizar"/>
           <include name="afterClass"/>
+          <include name="filtros"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturaVer -->
+      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponentesFiltrosAvançados -->
     </classes>
-  </test> <!-- ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+  </test> <!-- Configuração > ManuaisDeComponente(failed) -->
+  <test thread-count="5" name="Configuração &gt; Usuarios(failed)">
+    <classes>
+      <class name="com.timp.test.ADM.Configuração.Usuarios.UsuariosEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="Editar"/>
+        </methods>
+      </class> <!-- com.timp.test.ADM.Configuração.Usuarios.UsuariosEditar -->
+    </classes>
+  </test> <!-- Configuração > Usuarios(failed) -->
+  <test thread-count="5" name="Usuários &gt; Pacotes(failed)">
+    <classes>
+      <class name="com.timp.test.ADM.Usuários.Pacotes.PacotesCriar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="Crear"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.ADM.Usuários.Pacotes.PacotesCriar -->
+    </classes>
+  </test> <!-- Usuários > Pacotes(failed) -->
 </suite> <!-- Failed suite [Suite] -->

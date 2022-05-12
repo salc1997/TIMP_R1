@@ -14,6 +14,9 @@ public class RegrasdeAuditoriaN2CorreçãoPO extends TestBaseSteven {
 	@FindBy(xpath = "//span[text()=\"Regras de Auditoria N2\"]")
 	public WebElement AN2;
 	
+	@FindBy(xpath = "//div[@class=\"right-content\"]")
+	public WebElement fuera;
+	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Hierarquia\"]")
 	public WebElement hererarquia;
 	
@@ -28,6 +31,9 @@ public class RegrasdeAuditoriaN2CorreçãoPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Cenário\"]")
 	public WebElement cenario;
+	
+	@FindBy(xpath = "//div[@class=\"list-option\"]/div[@id=\"option-1\"]/div[1]/label/span")
+	public WebElement cenario1;
 	
 	@FindBy(xpath = "//div[@class=\"dialog-content bienpinchewide wide\"]/div/div[2]/div[2]/div/div[3]/div/div[2]/div[1]/div[2]/div[1]/div[2]/div/div[2]/div/div[1]/div[2]/input")
 	public WebElement valor1;
@@ -85,6 +91,10 @@ public class RegrasdeAuditoriaN2CorreçãoPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement btnAceitar;
+	
+	
+	@FindBy(xpath = "//div[@class=\"dialog-content bienpinchewide wide\"]//child::div[@class=\"correction-header\"]/div[2]/div/div/div[2]/div/div[2]")
+	public WebElement cerrar;
 	
 	public RegrasdeAuditoriaN2CorreçãoPO() {
 
@@ -159,7 +169,7 @@ public boolean editar() {
 		
 		cenario.sendKeys("CCNF0168 - TA-1871 - NÃO MEXER");
 		sleep(3000);
-		cenario.sendKeys(Keys.ENTER);
+		cenario1.click();
 		sleep(3000);
 	} else if (tp1) {
 		hererarquia.sendKeys("HCNF0051 - TA-1871 - NÃO MEXER");
@@ -174,17 +184,21 @@ public boolean editar() {
 		cenario.sendKeys(Keys.ENTER);
 		sleep(3000);
 	}else {
-		hererarquia.sendKeys("HCNF0001 - Excluir DIFAL");
+		hererarquia.sendKeys("HCNF0125 - TA-1871 NÃO MEXER");
 		sleep(3000);
 		seleccionHererarquiaTC2.click();
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);
 		
-		cenario.sendKeys("HCNF0001 - Excluir DIFAL");
+		cenario.sendKeys("CCNF0189 - TA-1871 NÃO MEXER");
 		sleep(3000);
-		cenario.sendKeys(Keys.ENTER);
+		cenario1.click();
 		sleep(3000);
+		
+		closeSelectTypeCheckbox(cerrar);
+		sleep(3000);
+		
 	}
 	
 	
@@ -213,7 +227,7 @@ public boolean editar() {
 	sleep(3000);
 	
 	aceitar.click();
-	sleep(9000);
+	sleep(24000);
 	
 	
 	//----------------Entrando de nuevo a editar--------------------------

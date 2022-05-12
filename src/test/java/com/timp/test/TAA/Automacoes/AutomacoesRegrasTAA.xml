@@ -2,6 +2,20 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" preserve-order="true" >
 
+	<test name="Regra De Abas">
+		<classes>
+			<class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas.RegradeAbasCriar">
+			</class>
+			<class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas.RegradeAbasEditar">
+			</class>
+			<class name="ccom.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas.RegradeAbasVer">
+			</class>
+			<class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas.RegradeAbasExcluir">
+			</class>
+		
+		</classes>
+	</test> <!-- PruebaTest -->
+	
 	<test name="Regra De Campos">
 		<classes>
 			<class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposCriar">

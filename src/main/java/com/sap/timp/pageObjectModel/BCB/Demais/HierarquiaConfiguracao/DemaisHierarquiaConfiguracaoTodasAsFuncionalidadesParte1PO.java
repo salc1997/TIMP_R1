@@ -774,7 +774,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		sleep(2000);
 
 		//attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
-		sleep(5000);
+		sleep(7000);
 
 		nomeHirarquia.sendKeys("Prueba Automatizada de Hierarq");
 		sleep(1000);
@@ -935,7 +935,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		nao.click();
 		sleep(2000);
 //	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		sleep(9000);
 		
 		//corregir mensaje al parecer
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
@@ -1229,16 +1229,16 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		//int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"Número de Versão 1 de Execução do Builder foi criada com sucesso\")]")).size();
+	int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"Número de Versão 1 de Execução do Builder foi criada com sucesso\")]")).size();
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		//if (mensaje > 0) {
+		/*		if (mensaje > 0) {
 			sucesso.add(true);
 			
-//		}else {
-//			sucesso.add(false);
-//		}
+		}else {
+			sucesso.add(false);
+		}*/
 //		
 		return sucesso;
 	}

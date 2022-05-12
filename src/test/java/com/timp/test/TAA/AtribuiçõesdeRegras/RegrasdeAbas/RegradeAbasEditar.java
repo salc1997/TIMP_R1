@@ -1,12 +1,12 @@
-package com.timp.test.TAA.AtribuiçõesdeRegras;
+package com.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
-import com.sap.timp.pageObjectModel.TAA.Agendamento.AgendamentoExcluirPO;
-import com.sap.timp.pageObjectModel.TAA.AtribuiçõesdeRegras.RegradeAbasExcluirPO;
+import com.sap.timp.pageObjectModel.TAA.Agendamento.AgendamentoEditarPO;
+import com.sap.timp.pageObjectModel.TAA.AtribuiçõesdeRegras.RegradeAbasEditarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -14,17 +14,17 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class RegradeAbasExcluir extends TestBaseSteven {
+public class RegradeAbasEditar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTAAPO acessarTAAPO;
-	RegradeAbasExcluirPO regradeAbasExcluirPO;
+	RegradeAbasEditarPO regradeAbasEditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTAAPO = new AcessarTAAPO();
-		regradeAbasExcluirPO = new RegradeAbasExcluirPO();
+		regradeAbasEditarPO = new RegradeAbasEditarPO();
 	}
 
 	@AfterClass
@@ -32,12 +32,16 @@ public class RegradeAbasExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
+
+
 	@Test()
-	public void criar() {
+	public void editar() {
 		loginTC.login();
 		acessarTAAPO.acessarTAA();
-		boolean sucesso = regradeAbasExcluirPO.excluir();
-		assertTrue(sucesso, Eliminado);
+		boolean sucesso = regradeAbasEditarPO.editar();
+		assertTrue(sucesso, Editar);
+		
 		sleep(2000);
 	}
+
 }

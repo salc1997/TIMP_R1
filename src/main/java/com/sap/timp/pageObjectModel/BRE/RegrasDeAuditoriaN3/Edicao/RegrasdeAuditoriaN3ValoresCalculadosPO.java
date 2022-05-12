@@ -25,7 +25,7 @@ public class RegrasdeAuditoriaN3ValoresCalculadosPO extends TestBaseSteven {
 	@FindBy(xpath = "//input[@placeholder=\"Nome\"]")
 	public WebElement nomeVCalculado;
 	
-	@FindBy(xpath = "//textarea[@aria-label=\"Insira a fórmula\"]")
+	@FindBy(xpath = "//div[@class=\"textarea-wrapper\"]//child::textarea")
 	public WebElement formula;
 	
 	
@@ -200,7 +200,7 @@ public class RegrasdeAuditoriaN3ValoresCalculadosPO extends TestBaseSteven {
 		sleep(3000);
 		//primer Valor Calculado
 		nomeVCalculado.sendKeys("TA-TESTE");
-		sleep(4000);	
+		sleep(6000);	
 		
 		formula.sendKeys("MID(\"Código registro SPED(Bloco 1 Teste-Registro 1 Teste-18S23C0) (ED)\", 1, 1)");
 		sleep(3000);

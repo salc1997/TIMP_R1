@@ -279,7 +279,7 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 		sleep(3000);
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		driver.navigate().refresh();
 
 		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
@@ -374,7 +374,7 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 	
 	
 	public boolean excluirVariantes() {
-		
+		sleep(3000);
 		excluir.click();
 		sleep(3000);
 		sim.click();
@@ -386,7 +386,7 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 		attributeToBeXpath("//div[@id=\"variant-select\"]/div", "class", "base-select ");
 		sleep(2000);
 		visualizar.click();
-		sleep(2000);
+		sleep(6000);
 		boolean excluido = false;
 		
 		excluido = noResult.isDisplayed(); 

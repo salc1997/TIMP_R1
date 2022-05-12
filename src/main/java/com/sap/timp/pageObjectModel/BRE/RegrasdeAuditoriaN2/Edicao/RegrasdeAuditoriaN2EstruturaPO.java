@@ -157,7 +157,7 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseSteven {
 	sleep(3000);
 	
 	aceitar.click();
-	sleep(19000);
+	sleep(24000);
 	
 	biblioteca.click();
 	sleep(3000);
@@ -222,7 +222,7 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseSteven {
 	sleep(3000);
 	
 	aceitar.click();
-	sleep(20000);
+	sleep(26000);
 	
 	biblioteca.click();
 	sleep(3000);
@@ -275,7 +275,7 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseSteven {
 	sleep(3000);
 	
 	aceitar.click();
-	sleep(19000);
+	sleep(24000);
 	
 	biblioteca.click();
 	sleep(3000);

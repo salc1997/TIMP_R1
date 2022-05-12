@@ -711,11 +711,13 @@ public class TestBaseSteven {
 	
 	public String Atualizar = "Não foi possivel atualizar os registros";
 	public String Favoritos = "Não foi possivel mandar o registro para favoritos";
+	public String Ingresar = "Error ao tentar ingresar";
 	
 	
 	//BCB
 	public String subniveis = "Os Subniveis não foram adicinados com sucesso";
 	public String Acessar = "Erro ao tentar acessar ao componente";	
+	
 	
 	
 	public String Restaurar = "O registro não foi restaurado com sucesso";

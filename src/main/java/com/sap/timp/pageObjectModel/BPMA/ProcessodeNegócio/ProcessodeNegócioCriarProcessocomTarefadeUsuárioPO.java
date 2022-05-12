@@ -308,7 +308,7 @@ public class ProcessodeNegócioCriarProcessocomTarefadeUsuárioPO extends TestBase
 		dobleClickElement(NovoOperacao);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		
 		dobleClickElement(NovoActividad);
 		sleep(3000);

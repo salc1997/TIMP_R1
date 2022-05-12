@@ -1,34 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" preserve-order="true">
-	<test name="AcessarBRB">
+	<test name="Novo Relatorio">
 		<classes>
-			<!-- Acessar BRB -->
-			<class name="com.timp.test.BRB.AcessarBRB"></class>
-		</classes>
-	</test>
-	<test name="Paginacao">
-		<classes>
-			<!-- Paginação -->
-			<class name="com.timp.test.BRB.Paginacao"></class>
-		</classes>
-	</test>
-	<test name="FiltrosAvancados">
-		<classes>
-			<!-- Filtros Avançados -->
-			<class name="com.timp.test.BRB.FiltrosAvancados"></class>
-		</classes>
-	</test>
-	<test name="NovoRelatorio">
-		<classes>
-			<!-- Novo Relatório -->
+			<!-- Novo Relatorio -->
 			<class name="com.timp.test.BRB.NovoRelatorio"></class>
 		</classes>
 	</test>
 
-	<test name="AdicionarColunas">
+	<test name="Adicionar Columnas">
 		<classes>
-			<!-- Adicionar Colunas -->
+			<!-- Adicionar Columnas -->
 			<class name="com.timp.test.BRB.AdicionarColunas"></class>
 		</classes>
 	</test>

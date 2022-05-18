@@ -1,101 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-<<<<<<< HEAD
-  <test thread-count="5" name="Regras de Auditoria N2(failed)">
-=======
-  <test thread-count="5" name="Configuração &gt; ManuaisDeComponente(failed)">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+  <test thread-count="5" name="Regras de Negocio(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Correção">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="editar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2Correção -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2ValoresCalculados">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="editar"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2ValoresCalculados -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoTabelas">
-=======
-      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteEditar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+      <class name="com.timp.test.BRE.RegrasDeNegocio.Edicao.RegradeNegócioEdiçãoValoresCalculados">
         <methods>
           <include name="afterClass"/>
           <include name="editar"/>
-<<<<<<< HEAD
-        </methods>
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.edicao.RegrasdeAuditoriaN2EdiçãoTabelas -->
-      <class name="com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa">
-=======
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteEditar -->
-      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteCriar">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.Edicao.RegradeNegócioEdiçãoValoresCalculados -->
+      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioEditar">
         <methods>
           <include name="criar"/>
-<<<<<<< HEAD
-=======
           <include name="beforeClass"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteCriar -->
-      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir">
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioEditar -->
+      <class name="com.timp.test.BRE.RegrasDeNegocio.BREGerenciarRegulamentosCriarEditarExcluir">
         <methods>
           <include name="afterClass"/>
-          <include name="Excluir"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="afterClass"/>
-=======
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa -->
-=======
-      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir -->
-      <class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponentesFiltrosAvançados">
-        <methods>
-          <include name="afterClass"/>
-          <include name="filtros"/>
+          <include name="criar"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponentesFiltrosAvançados -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
-    </classes>
-<<<<<<< HEAD
-  </test> <!-- Regras de Auditoria N2(failed) -->
-=======
-  </test> <!-- Configuração > ManuaisDeComponente(failed) -->
-  <test thread-count="5" name="Configuração &gt; Usuarios(failed)">
-    <classes>
-      <class name="com.timp.test.ADM.Configuração.Usuarios.UsuariosEditar">
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.BREGerenciarRegulamentosCriarEditarExcluir -->
+      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa">
         <methods>
-          <include name="afterClass"/>
           <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa -->
+      <class name="com.timp.test.BRE.TabelasExternas.TabelasExternasEditar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
           <include name="Editar"/>
         </methods>
-      </class> <!-- com.timp.test.ADM.Configuração.Usuarios.UsuariosEditar -->
-    </classes>
-  </test> <!-- Configuração > Usuarios(failed) -->
-  <test thread-count="5" name="Usuários &gt; Pacotes(failed)">
-    <classes>
-      <class name="com.timp.test.ADM.Usuários.Pacotes.PacotesCriar">
+      </class> <!-- com.timp.test.BRE.TabelasExternas.TabelasExternasEditar -->
+      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasdeNegócioExcluirdefinitivamente">
         <methods>
           <include name="beforeClass"/>
-          <include name="Crear"/>
+          <include name="criar"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.ADM.Usuários.Pacotes.PacotesCriar -->
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasdeNegócioExcluirdefinitivamente -->
+      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriarComCopia">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriarComCopia -->
+      <class name="com.timp.test.BRE.RegrasDeNegocio.Edicao.RegrasDeNegocioEdicaoRelacionamento">
+        <methods>
+          <include name="relacionamento"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.Edicao.RegrasDeNegocioEdicaoRelacionamento -->
     </classes>
-  </test> <!-- Usuários > Pacotes(failed) -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+  </test> <!-- Regras de Negocio(failed) -->
 </suite> <!-- Failed suite [Suite] -->

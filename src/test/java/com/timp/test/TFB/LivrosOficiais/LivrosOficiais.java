@@ -80,7 +80,7 @@ public class LivrosOficiais extends TestBaseMassiel{
  	
  	  librosOficiaisPO.LivrosIPI();
  	  
- 	 /* ArrayList<Boolean> sucesso = librosOficiaisPO.LivrosICMSST();
+ 	/* ArrayList<Boolean> sucesso = librosOficiaisPO.LivrosICMSST();
 
  		for (int i = 0; i < sucesso.size(); i++) {
  			assertTrue(sucesso.get(i), Criar);
@@ -90,17 +90,15 @@ public class LivrosOficiais extends TestBaseMassiel{
  			
  	}*/
   
-  @Test(priority = 4)
+   @Test(priority = 4)
 	public void livrosICMSDIFAL() {
 	
-	  librosOficiaisPO.LivroICMSDIFAL();
-	  
-	 /* ArrayList<Boolean> sucesso = librosOficiaisPO.LivrosICMSST();
+	  ArrayList<Boolean> sucesso = librosOficiaisPO.LivroICMSDIFAL();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
 		}
-		sleep(2000);*/
+		sleep(2000);
 	
 			
 		

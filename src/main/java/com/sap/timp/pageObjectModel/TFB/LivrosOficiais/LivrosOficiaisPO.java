@@ -91,7 +91,13 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//div[contains(@class,\"small ui-draggable\")]//child::div[@class=\"dialog-buttons\"]/button[2]")
 	public WebElement sim;
-
+	
+	@FindBy(xpath = "//span[text()=\"Gravar Rascunho\"]")
+	public WebElement gravarRascunho;
+	
+	@FindBy(xpath = "//span[text()=\"Imprimir\"]")
+	public WebElement imprimir;
+	
 	//----- Livros ICMS- ST
 	
 	@FindBy(xpath = "//div[@class=\"baseTabs-view-wrapper\"]//child::span[text()=\"Livro ICMS-ST\"]")
@@ -101,7 +107,7 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 	public WebElement executarLivrosICMSST;
 	
 	@FindBy(xpath = "//div[@id=\"SP\"]")
-	public WebElement estadoOPCLivrosICMSST;
+	public WebElement estadoOPC2;
 	
 	@FindBy(xpath = "//span[@id=\"textLabel\"]")
 	public WebElement mensajeLivro;
@@ -112,6 +118,15 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
+	@FindBy(xpath = "//div[@class=\"bar-container boxes\"]//child::span[contains(text(),\"Resumo\")]")
+	public WebElement resumoICMSST;
+	
+	@FindBy(xpath = "//div[@class=\"bar-container boxes\"]//child::span[contains(text(),\"Informações \")]")
+	public WebElement informaçõesICMSST;
+	
+	@FindBy(xpath = "//div[@class=\"bar-container boxes\"]//child::span[contains(text(),\"Detalhes\")]")
+	public WebElement detalhesICMSST;
+	
 	//----- Livros IPI
 	
 	@FindBy(xpath = "//div[@class=\"baseTabs-view-wrapper\"]//child::span[text()=\"Livro IPI\"]")
@@ -119,6 +134,8 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//button/span[text()=\"Executar Livro IPI\"]")
 	public WebElement executarLivrosIPI;
+	
+	
 	
 	//----- Livros ICMS DIFAL
 	
@@ -172,10 +189,18 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 	
 	public  ArrayList<Boolean>  livrosICMS() {
 		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		livrosICMS.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
+		
+		String idLivroICMS = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div"))
+				.getText();
+		System.out.println("Ultimo ID de Livro ICMS: "+idLivroICMS);
+
+		
 		
 		executarLivrosICMS.click();
 		sleep(2000);
@@ -223,7 +248,7 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		sleep(4000);
 		
 		//&& !saidas.isDisplayed() && !resumo.isDisplayed() && !informações.isDisplayed() && !detalhes.isDisplayed()
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+	
 
 		sucesso.add( entradas.isDisplayed());
 		sucesso.add( saidas.isDisplayed());
@@ -233,7 +258,7 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		        
 		System.out.println("Presenta Entradas & salidas: "+sucesso);
 		
-		oficializar.click();
+		gravarRascunho.click();
 		sleep(1000);
 		
 		String txtNomeLivro = NomeLivro.getAttribute("value");
@@ -241,7 +266,63 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		System.out.println("Nome do Livro "+txtNomeLivro);
 		
 		gravar.click();
+		sleep(15000);
+
+		String id2 = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div"))
+				.getText();
+		String nome = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[4]/div"))
+				.getText();
+		System.out.println(nome);
+		
+		sucesso.add(nome.contains(txtNomeLivro ));
+		
+		int id1LI = convertToInt(idLivroICMS);
+		int id2LI = convertToInt(id2);
+
+		System.out.println("***********");
+		System.out.println("Livros ICMS");
+		System.out.println("Id antes da criação: " + id1LI);
+		System.out.println("Id Após a criação: " + id2LI);
+		System.out.println("");
+		System.out.println("***********");
+
+		if (id2LI > id1LI) {
+			sucesso.add(true);
+		} else {
+			sucesso.add(false);
+		}
+		
+	
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+id2+"\"]/div[1]/div"));
+		
+		menu.click();
 		sleep(1000);
+		
+		
+		
+		sucesso.add( entradas.isDisplayed());
+		sucesso.add( saidas.isDisplayed());
+		sucesso.add(resumo.isDisplayed());
+		sucesso.add( informações.isDisplayed());
+		sucesso.add( detalhes.isDisplayed());
+		        
+		System.out.println("Presenta Entradas & salidas: "+sucesso);
+		
+		oficializar.click();
+		sleep(6000);
+		
+		String txtNomeLivroOficializar = NomeLivro.getAttribute("value");
+		
+		System.out.println("Nome do Livro "+txtNomeLivroOficializar);
+		sleep(1000);
+		
+		gravar.click();
+		sleep(3000);
+		
+		gravar.click();
+		sleep(3000);
 		
 		String txtAviso = aviso.getText();
 		System.out.println("Nome do Livro "+txtAviso);
@@ -251,22 +332,18 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		sucesso.add(txtAvisoCaso.equals(txtAviso));
 		
 		sim.click();
-		sleep(1000);
+		sleep(24000);
 		
-		sucesso.add( executarLivrosICMS.isDisplayed());
-		System.out.println("Retorno a Biblioteca: "+sucesso);
+		WebElement identificador = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]//child::div[@data-id=\""+id2+"\"]/div[2]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\"]"));
+		String nomeLivro = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id=\""+id2+"\"]/div[4]/div"))
+				.getText();
+		sucesso.add( identificador.isDisplayed());
+		sucesso.add(nomeLivro.contains(txtNomeLivroOficializar ));
+	
 		
-		return sucesso;		
-	}
-	   
-	public  ArrayList<Boolean>   LivrosICMSST() {
 		
-		livrosICMSST.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);  
-		
-		executarLivrosICMSST.click();
+		executarLivrosICMS.click();
 		sleep(2000);
 		
 		empresa.click();
@@ -279,7 +356,7 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		
 		estado.click();
 		sleep(1000);
-		estadoOPCLivrosICMSST.click();
+		estadoOPC2.click();
 		sleep(1000);
 		closeSelectTypeCheckbox(estado);
 		sleep(1000);
@@ -309,26 +386,168 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		executar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		sleep(4000);
 		
-		String txtMensajeLivro = mensajeLivro.getText();
-		
-		System.out.println("Mensaje de Livros "+ txtMensajeLivro);
-		
-		String  txtMensajeEsperado= "Livro executado con éxtio ";
-		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
-		sucesso.add(txtMensajeLivro.equals( txtMensajeEsperado));
-		
-		System.out.println("--Livros ICMS-ST--: "+sucesso);
-		sleep(1000);
-		
-		cancelar.click();
-		sleep(1000);
+		sucesso.add( entradas.isDisplayed());
+		sucesso.add( saidas.isDisplayed());
+		sucesso.add(resumo.isDisplayed());
+		sucesso.add( informações.isDisplayed());
+		sucesso.add( detalhes.isDisplayed());
+		        
+		System.out.println("Presenta Entradas & salidas: "+sucesso);
 		
 		biblioteca.click();
 		sleep(1000);
+		
+		
+		return sucesso;		
+	}
+	   
+	public  ArrayList<Boolean>   LivrosICMSST() {
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		livrosICMSST.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);  
+		
+		String idLivroICMSST = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div"))
+				.getText();
+		System.out.println("Ultimo ID de Livro ICMS: "+idLivroICMSST);
+
+		
+		executarLivrosICMSST.click();
+		sleep(2000);
+		
+		empresa.click();
+		sleep(1000);
+		empresaOPC.click();
+		sleep(1000);
+		closeSelectTypeCheckbox(empresa);
+		sleep(1000);
+		
+		
+		estado.click();
+		sleep(1000);
+		estadoOPC2.click();
+		sleep(1000);
+		closeSelectTypeCheckbox(estado);
+		sleep(1000);
+		
+		filial.click();
+		sleep(1000);
+		filialOPC.click();
+		sleep(1000);
+		closeSelectTypeCheckbox(filial);
+		sleep(1000);
+		
+		periodo.click();
+		sleep(2000);
+		paginaAnterior.click();
+		sleep(2000);
+		ano2016.click();
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		jan.click();
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		m1.click();
+		sleep(1000);
+		
+		executar.click();
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(15000);
+		
+
+		sucesso.add(resumo.isDisplayed());
+		sucesso.add( informações.isDisplayed());
+		sucesso.add( detalhes.isDisplayed());
+		        
+		System.out.println("Presenta Entradas & salidas: "+sucesso);
+		
+		gravarRascunho.click();
+		sleep(1000);
+		
+		String txtNomeLivro = NomeLivro.getAttribute("value");
+		
+		System.out.println("Nome do Livro "+txtNomeLivro);
+		
+		gravar.click();
+		sleep(24000);
+
+		String id2 = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div"))
+				.getText();
+		String nome = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[4]/div"))
+				.getText();
+		System.out.println(nome);
+		
+		sucesso.add(nome.contains(txtNomeLivro ));
+		
+		int id1LI = convertToInt(idLivroICMSST);
+		int id2LI = convertToInt(id2);
+
+		System.out.println("***********");
+		System.out.println("Livros ICMS-ST");
+		System.out.println("Id antes da criação: " + id1LI);
+		System.out.println("Id Após a criação: " + id2LI);
+		System.out.println("");
+		System.out.println("***********");
+
+		if (id2LI > id1LI) {
+			sucesso.add(true);
+		} else {
+			sucesso.add(false);
+		}
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+id2+"\"]/div[1]/div"));
+		
+		menu.click();
+		sleep(3000);
+		
+		sucesso.add(resumo.isDisplayed());
+		sucesso.add( informações.isDisplayed());
+		sucesso.add( detalhes.isDisplayed());
+		        
+		System.out.println("Presenta Entradas & salidas: "+sucesso);
+		
+		oficializar.click();
+		sleep(3000);
+		
+		
+		String txtNomeLivroOficializar = NomeLivro.getAttribute("value");
+		
+		System.out.println("Nome do Livro "+txtNomeLivroOficializar);
+		sleep(1000);
+		
+		gravar.click();
+		sleep(3000);
+		
+		
+		String txtAviso = aviso.getText();
+		System.out.println("Nome do Livro "+txtAviso);
+		
+		String txtAvisoCaso = "Ao oficializar esse período (01/2016) todos os períodos mensais de 01/2016 até 05/2022 terão que ser oficializados novamente para que o mês corrente 05/2022 seja oficializado . Tem certeza de que deseja continuar?";
+		
+		sucesso.add(txtAvisoCaso.equals(txtAviso));
+		
+		sim.click();
+		sleep(85000);
+		
+		WebElement identificador = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]//child::div[@data-id=\""+id2+"\"]/div[2]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\"]"));
+		String nomeLivro = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id=\""+id2+"\"]/div[4]/div"))
+				.getText();
+		sucesso.add( identificador.isDisplayed());
+		sucesso.add(nomeLivro.contains(txtNomeLivroOficializar ));
+	
+		
 		
 		return sucesso;
 	}
@@ -353,7 +572,7 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		
 		estado.click();
 		sleep(1000);
-		estadoOPCLivrosICMSST.click();
+		estadoOPC2.click();
 		sleep(1000);
 		closeSelectTypeCheckbox(estado);
 		sleep(1000);
@@ -396,12 +615,19 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		System.out.println("Presenta Entradas & salidas: "+sucesso);
 	}
 	
-	public  void  LivroICMSDIFAL() {
+	public  ArrayList<Boolean>  LivroICMSDIFAL() {
 		
 		livrosICMSDIFAL.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);  
+		sleep(6000);  
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		String idLivroICMSDIFAL = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div"))
+				.getText();
+		System.out.println("Ultimo ID de Livro ICMS: "+idLivroICMSDIFAL);
 		
 		executarLivrosICMSDIFAL.click();
 		sleep(2000);
@@ -448,7 +674,7 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+	
 
 		sucesso.add( entradasOrigen.isDisplayed());
 		sucesso.add( saidasOrigen.isDisplayed());
@@ -458,15 +684,68 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		        
 		System.out.println("Presenta Entradas & salidas: "+sucesso);
 
-		oficializar.click();
+		gravarRascunho.click();
 		sleep(1000);
 		
-		String txtNomeLivroICMSDIFAL = NomeLivro.getAttribute("value");
+		String txtNomeLivro = NomeLivro.getAttribute("value");
 		
-		System.out.println("Nome do Livro: "+txtNomeLivroICMSDIFAL);
+		System.out.println("Nome do Livro "+txtNomeLivro);
 		
 		gravar.click();
+		sleep(24000);
+
+		String id2 = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div"))
+				.getText();
+		String nome = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[4]/div"))
+				.getText();
+		System.out.println(nome);
+		
+		int id1LI = convertToInt(idLivroICMSDIFAL);
+		int id2LI = convertToInt(id2);
+
+		System.out.println("***********");
+		System.out.println("Livros ICMS");
+		System.out.println("Id antes da criação: " + id1LI);
+		System.out.println("Id Após a criação: " + id2LI);
+		System.out.println("");
+		System.out.println("***********");
+
+		if (id2LI > id1LI) {
+			sucesso.add(true);
+		} else {
+			sucesso.add(false);
+		}
+		
+	
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+id2+"\"]/div[1]/div"));
+		
+		menu.click();
+		sleep(10000);
+		
+		
+		
+		sucesso.add( entradasOrigen.isDisplayed());
+		sucesso.add( saidasOrigen.isDisplayed());
+		sucesso.add(resumoOrigen.isDisplayed());
+		sucesso.add( informaçõesOrigen.isDisplayed());
+		sucesso.add( detalhesOrigen.isDisplayed());
+		        
+		System.out.println("Presenta Entradas & salidas: "+sucesso);
+		
+		oficializar.click();
+		sleep(6000);
+		
+		String txtNomeLivroOficializar = NomeLivro.getAttribute("value");
+		
+		System.out.println("Nome do Livro "+txtNomeLivroOficializar);
 		sleep(1000);
+		
+		gravar.click();
+		sleep(3000);
+		
+
 		
 		String txtAviso = aviso.getText();
 		System.out.println("Nome do Livro "+txtAviso);
@@ -476,7 +755,74 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		sucesso.add(txtAvisoCaso.equals(txtAviso));
 		
 		sim.click();
+		sleep(65000);
+		
+		WebElement identificador = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]//child::div[@data-id=\""+id2+"\"]/div[2]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\"]"));
+		String nomeLivro = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id=\""+id2+"\"]/div[4]/div"))
+				.getText();
+		sucesso.add( identificador.isDisplayed());
+		sucesso.add(nomeLivro.contains(txtNomeLivroOficializar ));
+		
+		
+		executarLivrosICMSDIFAL.click();
+		sleep(2000);
+	
+		empresa.click();
 		sleep(1000);
+		empresaOPC.click();
+		sleep(1000);
+		closeSelectTypeCheckbox(empresa);
+		sleep(1000);
+		
+		
+		estado.click();
+		sleep(1000);
+		estadoOPC2.click();
+		sleep(1000);
+		closeSelectTypeCheckbox(estado);
+		sleep(1000);
+		
+		filial.click();
+		sleep(1000);
+		filialOPC.click();
+		sleep(1000);
+		closeSelectTypeCheckbox(filial);
+		sleep(1000);
+		
+		periodo.click();
+		sleep(2000);
+		paginaAnterior.click();
+		sleep(2000);
+		ano2016.click();
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		jan.click();
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		m1.click();
+		sleep(1000);
+		
+		executar.click();
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+		
+		sucesso.add( entradas.isDisplayed());
+		sucesso.add( saidas.isDisplayed());
+		sucesso.add(resumo.isDisplayed());
+		sucesso.add( informações.isDisplayed());
+		sucesso.add( detalhes.isDisplayed());
+		        
+		System.out.println("Presenta Entradas & salidas: "+sucesso);
+		
+		biblioteca.click();
+		sleep(1000);
+		
+		return sucesso;
+		
 	}
 }
 

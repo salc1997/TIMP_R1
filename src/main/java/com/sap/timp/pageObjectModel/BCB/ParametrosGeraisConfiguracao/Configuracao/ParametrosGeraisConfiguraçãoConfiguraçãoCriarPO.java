@@ -195,7 +195,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarPO extends TestBaseSte
 		
 		nova.click();
 		sleep(3000);
-		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
+	//	attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
 		
 		int rows = driver

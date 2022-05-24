@@ -3,25 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="com.timp.test.ADM.Configuração.ConfiguracaoDeTributos.ConfiguracaoDeMapeamentoDeTributo.ConfiguracaoDeMapeamentoDeTributoCriar">
-=======
-      <class name="com.timp.test.TFB.LivrosOficiais.LivrosOficiais">
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+      <class name="com.timp.test.BCB.Formula.HierarquiaConfiguracao.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1">
         <methods>
+          <include name="subNivel4"/>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="criar"/>
-=======
-          <include name="livrosICMSDIFAL"/>
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+          <include name="criarConfiguracao"/>
+          <include name="subNivel3"/>
+          <include name="criarConfiguracionConfiguracao"/>
+          <include name="subNivel2"/>
           <include name="afterClass"/>
+          <include name="outputBCB"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.ADM.Configuração.ConfiguracaoDeTributos.ConfiguracaoDeMapeamentoDeTributo.ConfiguracaoDeMapeamentoDeTributoCriar -->
-=======
-      </class> <!-- com.timp.test.TFB.LivrosOficiais.LivrosOficiais -->
->>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+      </class> <!-- com.timp.test.BCB.Formula.HierarquiaConfiguracao.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

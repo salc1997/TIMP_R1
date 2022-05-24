@@ -96,8 +96,8 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO extends TestBa
 		String subNivel = "";
 		
 		if(url.contains("tc2") || url.contains("tp1")) {
-			nomeHerarquiaText = driver.findElement(By.xpath("//div[@class=\"groups\"]/div/div[2]/label")).getText().trim();
-			subNivel = driver.findElement(By.xpath("//div[@class=\"groups\"]/div/div[4]/div/div[1]/div[3]")).getText().trim();
+			nomeHerarquiaText = driver.findElement(By.xpath("//div[@id=\"main-title\"]")).getText().trim();
+			subNivel = driver.findElement(By.xpath("//div[@class=\"groups\"]/div/div[2]/div/div[1]/div[4]")).getText().trim();
 		} else {
 			nomeHerarquiaText = driver.findElement(By.xpath("//div[@class=\"groups\"]/div/div[1]/div/div/div[2]/label")).getText().trim();
 			subNivel = driver.findElement(By.xpath("//div[@class=\"groups\"]/div/div[2]/div/div[1]/div[3]")).getText().trim();
@@ -133,14 +133,14 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO extends TestBa
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		String nomeHerarquiaText1 = "";
 		String subNivel1 = "";
 		
 		if(url.contains("tc2") || url.contains("tp1")) {
-			nomeHerarquiaText1 = driver.findElement(By.xpath("//div[@class=\"groups\"]/div/div[2]/label")).getText().trim();
-			subNivel1 = driver.findElement(By.xpath("//div[@class=\"groups\"]/div/div[4]/div/div[1]/div[3]")).getText().trim();
+			nomeHerarquiaText1 = driver.findElement(By.xpath("//div[@id=\"main-title\"]")).getText().trim();
+			subNivel1 = driver.findElement(By.xpath("//div[@class=\"groups\"]/div/div[2]/div/div[1]/div[4]")).getText().trim();
 		} else {
 			nomeHerarquiaText1 = driver.findElement(By.xpath("//div[@class=\"groups\"]/div/div[1]/div/div/div[2]/label")).getText().trim();
 			subNivel1 = driver.findElement(By.xpath("//div[@class=\"groups\"]/div/div[2]/div/div[1]/div[3]")).getText().trim();

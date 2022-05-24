@@ -3,13 +3,25 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.ADM.Configuração.ConfiguracaoDeTributos.ConfiguracaoDeMapeamentoDeTributo.ConfiguracaoDeMapeamentoDeTributoCriar">
+=======
+      <class name="com.timp.test.TFB.LivrosOficiais.LivrosOficiais">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
         <methods>
           <include name="beforeClass"/>
+<<<<<<< HEAD
           <include name="criar"/>
+=======
+          <include name="livrosICMSDIFAL"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <include name="afterClass"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.ADM.Configuração.ConfiguracaoDeTributos.ConfiguracaoDeMapeamentoDeTributo.ConfiguracaoDeMapeamentoDeTributoCriar -->
+=======
+      </class> <!-- com.timp.test.TFB.LivrosOficiais.LivrosOficiais -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

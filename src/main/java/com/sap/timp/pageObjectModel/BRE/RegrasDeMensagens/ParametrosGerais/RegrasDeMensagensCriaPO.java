@@ -77,7 +77,7 @@ public class RegrasDeMensagensCriaPO extends TestBaseSteven {
 	@FindBy(xpath = "//input[@placeholder=\" selecionar Data\"]")
 	public WebElement dataValidadeDe;
 		
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
@@ -178,7 +178,7 @@ public class RegrasDeMensagensCriaPO extends TestBaseSteven {
 		tiporegra.click();
 		sleep(1000);
 		opcaotiporegra.click();
-		sleep(1000);
+		sleep(4000);
 		
 		tipotributo.click();
 		sleep(1000);

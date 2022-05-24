@@ -84,7 +84,7 @@ public class RegrasDeNegocioCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[@placeholder=\" selecionar Data\"]")
 	public WebElement dataValidadeDe;
 		
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
@@ -110,7 +110,7 @@ public class RegrasDeNegocioCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@id][text()=\"BC ICMS (ED)\"]")
 	public WebElement opcaoNomeDoValor;
 	
-	@FindBy(xpath = "//div[@class=\"action-section\"]/div/div/div/div/div[2]")
+	@FindBy(xpath = "//div[@class=\"action-section\"]/div/div[1]//child::input")
 	public WebElement acoes;
 	
 	//@FindBy(xpath = "//div[@id=\"T1\"]/div/label/span")
@@ -118,8 +118,14 @@ public class RegrasDeNegocioCriarPO extends TestBaseSteven{
 	public WebElement opcaoacoes;
 	
 	//@FindBy(xpath = "//div[@id=\"T2\"]/div/label/span")
-	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"Registro E111\"]")
+	@FindBy(xpath = "//div[@class=\"list-option\"]/div[@id=\"T207\"]")
 	public WebElement opcaoacoesr2;
+	
+	@FindBy(xpath = "//div[@class=\"list-option\"]/div[@id=\"T262\"]")
+	public WebElement opcaoacoesr22;
+	
+	@FindBy(xpath = "//div[@class=\"list-option\"]/div[@id=\"T2\"]")
+	public WebElement opcaoacoesr222;
 	
 	//@FindBy(xpath = "//div[@id=\"T3\"]/div/label/span")
 	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"Registro C197 ou D197\"]")
@@ -425,8 +431,11 @@ public class RegrasDeNegocioCriarPO extends TestBaseSteven{
 		sleep(1000);
 		NomeDoValor.sendKeys("E111");
 		NomeDoValor.sendKeys(Keys.ESCAPE);
-		sleep(1000);
-		acoes.click();
+		sleep(3000);
+		
+		acoes.sendKeys("Registro E111");
+		sleep(3000);
+		actionsMoveToElementElement(opcaoacoesr2);
 		sleep(1000);
 		opcaoacoesr2.click();
 		closeSelectTypeCheckbox(acoes);

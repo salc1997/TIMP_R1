@@ -6,6 +6,8 @@
 		<classes>
 			<class name="com.timp.test.ADM.Configuração.Licenças.LicençasDetalhes">
 			</class>
+			<class name="com.timp.test.ADM.Configuração.Licenças.LicençasVisualizar">
+			</class>
 			
 		</classes>
 	

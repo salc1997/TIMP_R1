@@ -81,7 +81,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseKenssy{
 		cosolidacaoExecucoes.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		String idBuscar = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[4]/div")).getText();
 		

@@ -1989,7 +1989,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		if (tc2==true) {
 			sucesso.add(valorCampoSaidaSubNivel3.equals("1.000,00"));
-			sucesso.add(valorCampoPeriodoTiempoSubNivel3.equals("(Subperíodo 01/2014 - 1Y)"));
+			sucesso.add(valorCampoPeriodoTiempoSubNivel3.equals(" (Subperíodo 1/2014 - 1Y)"));
 		}else {
 			sucesso.add(valorCampoSaidaSubNivel3.equals("1.000,00"));
 			sucesso.add(valorCampoPeriodoTiempoSubNivel3.equals("(Subperíodo 12/2015 - 1M)"));

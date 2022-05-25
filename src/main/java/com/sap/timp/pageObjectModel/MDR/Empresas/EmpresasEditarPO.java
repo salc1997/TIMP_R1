@@ -38,7 +38,7 @@ public class EmpresasEditarPO extends TestBaseSteven{
 		sleep(2000);
 		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
 
-		String idRegistro = "1000";
+		String idRegistro = "8603";
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));

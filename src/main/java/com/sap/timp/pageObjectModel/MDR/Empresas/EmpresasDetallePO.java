@@ -61,12 +61,13 @@ public ArrayList<Boolean> Detalle() {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 	
 		
-		sleep(2000);
-		WebElement menu = driver.findElement(By.xpath("//div[@data-id][1]/div[1]/div"));
-		WebElement detalle = driver.findElement(By.xpath("//div[@data-id][1]/div/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));
+		String idRegistro = "8603";
+		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement detalle = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));
 		
 		menu.click();
 		sleep(1000);
@@ -95,15 +96,15 @@ public ArrayList<Boolean> Detalle() {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		menu =  driver.findElement(By.xpath("//div[@data-id][1]/div[1]/div"));
-		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id][1]/div/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 
 		menu.click();
 		sleep(1000);
 		visualizar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		String codigoV1 = codigoV.getText();
 		String razaoV1 = razaoV.getText();

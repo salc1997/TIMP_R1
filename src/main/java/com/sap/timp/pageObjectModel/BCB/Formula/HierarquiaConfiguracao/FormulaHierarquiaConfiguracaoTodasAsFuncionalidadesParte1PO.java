@@ -671,7 +671,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			gravarC.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(4000);
+			sleep(9000);
 			
 			biblioteca.click();
 			sleep(5000);

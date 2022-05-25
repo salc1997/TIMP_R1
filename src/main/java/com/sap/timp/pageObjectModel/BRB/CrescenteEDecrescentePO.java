@@ -24,7 +24,7 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 	@FindBy(xpath = "//*[@id=\"right\"]/div[2]/div[1]/div/div/ul/li[1]/button")
 	public WebElement executar;
 
-	@FindBy(xpath = "//div[@data-column=\"66\"]/span")
+	@FindBy(xpath = "//div[@class=\"tabs-container\"]//child::div[@data-column=\"66\"]/span")
 	public WebElement menuC;
 
 	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/div[1]/div")
@@ -187,7 +187,7 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 	public ArrayList<Boolean> decrescente() {
 		sleep(2000);
 		actionsMoveToElementXpath("//div[@id=\"table-report-container\"]/div[1]/div[14]");
-		sleep(12000);
+		sleep(18000);
 	
 		System.out.println("Recargo");
 		

@@ -206,7 +206,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarPO extends TestBaseSte
 				.getText();
 
 		
-		nomeHirarquia.sendKeys("Teste QA PREUBA 007");
+		nomeHirarquia.sendKeys("Teste QA PRUEBA TA");
 
 		sleep(1000);
 		nomeHirarquia.sendKeys(Keys.ENTER);
@@ -286,7 +286,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarPO extends TestBaseSte
 		System.out.println(nome);
 
 		//sucesso.add(nome.contains("Prueba Automatizada de Hierarq"));
-		sucesso.add(nome.contains("Teste QA PREUBA 007"));
+		sucesso.add(nome.contains("Teste QA PRUEBA TA"));
 		idInserir3(id2);
 
 		int id1I = convertToInt(id);

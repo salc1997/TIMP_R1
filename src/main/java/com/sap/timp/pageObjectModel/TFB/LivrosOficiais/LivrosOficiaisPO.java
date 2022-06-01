@@ -298,7 +298,7 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+id2+"\"]/div[1]/div"));
 		
 		menu.click();
-		sleep(1000);
+		sleep(27000);
 		
 		
 		
@@ -321,9 +321,6 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		gravar.click();
 		sleep(3000);
 		
-		gravar.click();
-		sleep(3000);
-		
 		String txtAviso = aviso.getText();
 		System.out.println("Nome do Livro "+txtAviso);
 		
@@ -332,7 +329,7 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		sucesso.add(txtAvisoCaso.equals(txtAviso));
 		
 		sim.click();
-		sleep(24000);
+		sleep(34000);
 		
 		WebElement identificador = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]//child::div[@data-id=\""+id2+"\"]/div[2]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\"]"));
 		String nomeLivro = driver.findElement(By.xpath(
@@ -395,9 +392,10 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		sucesso.add( detalhes.isDisplayed());
 		        
 		System.out.println("Presenta Entradas & salidas: "+sucesso);
+		sleep(3000);
 		
 		biblioteca.click();
-		sleep(1000);
+		sleep(37000);
 		
 		
 		return sucesso;		
@@ -509,7 +507,7 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+id2+"\"]/div[1]/div"));
 		
 		menu.click();
-		sleep(3000);
+		sleep(20000);
 		
 		sucesso.add(resumo.isDisplayed());
 		sucesso.add( informações.isDisplayed());

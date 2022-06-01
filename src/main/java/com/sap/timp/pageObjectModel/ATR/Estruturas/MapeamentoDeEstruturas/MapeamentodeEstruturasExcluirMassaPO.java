@@ -164,7 +164,7 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 		gravar.click();
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		sleep(6000);
 		
 		novo.click();
 		sleep(2000);

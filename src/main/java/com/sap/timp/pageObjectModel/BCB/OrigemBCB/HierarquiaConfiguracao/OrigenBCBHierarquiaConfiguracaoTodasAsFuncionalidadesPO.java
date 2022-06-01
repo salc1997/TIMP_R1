@@ -275,7 +275,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	public WebElement condicaoZerado1;
 	
 	
-	@FindBy(xpath = "//div[@class=\"subLevel\"][4]/div[2]/div[2]/div[4]/div/label/span")
+	@FindBy(xpath = "//div[@class=\"subLevel\"][4]/div[3]/div[3]/div[1]/div/label/span")
 	public WebElement zerado;
 	
 	@FindBy(xpath = "//div[@class=\"subLevel\"][4]//div[@id=\"zero-value\"]/div/div/div[2]")
@@ -1427,7 +1427,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(3000);
 		opcCampoSaida4.click();
 		opcCampoSaida4.sendKeys(Keys.ESCAPE);
-		sleep(3000);
+		sleep(4000);
 		
 		
 		zerado.click();
@@ -1870,7 +1870,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	//	waitExpectElement(aba1);
-		sleep(21000);
+		sleep(31000);
 		
 		aba1.click();
 		sleep(2000);
@@ -1989,7 +1989,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		if (tc2==true) {
 			sucesso.add(valorCampoSaidaSubNivel3.equals("1.000,00"));
-			sucesso.add(valorCampoPeriodoTiempoSubNivel3.equals(" (Subperíodo 1/2014 - 1Y)"));
+			sucesso.add(valorCampoPeriodoTiempoSubNivel3.equals("(Subperíodo 1/2014 - 1Y)"));
 		}else {
 			sucesso.add(valorCampoSaidaSubNivel3.equals("1.000,00"));
 			sucesso.add(valorCampoPeriodoTiempoSubNivel3.equals("(Subperíodo 12/2015 - 1M)"));

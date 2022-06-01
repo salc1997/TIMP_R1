@@ -86,7 +86,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO extends TestBase
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		
 		System.out.println("Registro que cree:"+idRegistro);

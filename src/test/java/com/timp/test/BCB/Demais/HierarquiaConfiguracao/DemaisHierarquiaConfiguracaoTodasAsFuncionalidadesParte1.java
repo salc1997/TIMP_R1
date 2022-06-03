@@ -159,7 +159,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends Te
 		}
 	}
 	
-	@Test(priority = 14)
+/*	@Test(priority = 14)
 	public void resultadoFinalParte1() {
 		//demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.relacionamentoTotalizadorSubperiodoFixoReplicar();
 		ArrayList<Boolean> sucesso = demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.resultadoFinalParte1();

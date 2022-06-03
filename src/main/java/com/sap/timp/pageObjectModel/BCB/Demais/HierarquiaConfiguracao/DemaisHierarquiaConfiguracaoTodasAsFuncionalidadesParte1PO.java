@@ -318,8 +318,14 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
 		public WebElement opcCamposSaida;
 		
-		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][1]/div/div[2]/div/div[4]/div/div[@class=\"subLevels\"][1]/div[1]/div[1]/div[2]")
+		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][1]/div/div[2]/div/div[2]/div/div[@class=\"subLevels\"][1]/div[1]/div[1]/div/div[1]")
 		public WebElement replicarSubnivel;
+		
+		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][1]/div/div[2]/div/div[2]/div/div[@class=\"subLevels\"][1]/div[1]/div[1]/div[2]")
+		public WebElement ampliarSub;
+		
+		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][1]/div/div[2]/div/div[2]/div/div[@class=\"subLevels\"][1]/div[2]/div[1]/div[2]")
+		public WebElement ampliarSub2;
 		
 		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][1]/div/div[2]/div/div[2]/div/div[@class=\"subLevels\"][1]/div[1]/div[1]/div[2]")
 		public WebElement replicarSubnivelTQ1;
@@ -329,7 +335,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		//SEGUNDO SUBNIVEL
 		@FindBy(xpath = "//div[@class=\"page-number icon-btn trans btn\" and text()=\"2\"]")
 		public WebElement segundoNivel;
-		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][1]/div/div[2]/div/div[4]/div/div[5]/div/div[@class=\"page-number icon-btn trans btn\" and text()=\"2\"]")
+		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][1]/div/div[2]/div/div[2]/div/div[3]/div/div[@class=\"page-number icon-btn trans btn\" and text()=\"2\"]")
 		public WebElement segundoNivelTC2;
 		
 		@FindBy(xpath = "//div[@class=\"subLevel\"][2]/div/div[@id=\"configuration\"]/div/div[2]")
@@ -348,7 +354,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		@FindBy(xpath = "//div[@class=\"subLevel\"][2]/div/div/div[@id=\"totalize\"]/div/label/span")
 		public WebElement totalizar2;
 		
-		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][1]/div/div[2]/div/div[4]/div/div[@class=\"subLevels\"][1]/div[2]/div[1]/div[2]")
+		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][1]/div/div[2]/div/div[2]/div/div[@class=\"subLevels\"][1]/div[2]/div[1]/div/div[1]")
 		public WebElement replicarSubnivel2;
 		
 		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][1]/div/div[2]/div/div[2]/div/div[@class=\"subLevels\"][1]/div[2]/div[1]/div[2]")
@@ -388,18 +394,20 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		public WebElement subnivelMudado2;
 		
 	//CAMPOS ABA2 SUBNIVEL 1
-	@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][2]/div/div[2]/div/div[4]/div/div[@class=\"subLevels\"][1]/div[1]/div[1]/div[@id=\"configuration\"]/div/div/input")
+
+	@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][2]//child::div[@class=\"subLevel\"][2]//child::div[@id=\"configuration\"]/div/div/input")
 	public WebElement camposBCBAba2Subnivel1;
+	
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][2]/div/div[2]/div/div[2]/div/div[@class=\"subLevels\"][1]/div[1]/div[1]/div[@id=\"configuration\"]/div/div/input")
 	public WebElement camposBCBAba2Subnivel1TQ1;
 	
 		
-	@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][2]/div/div[2]/div/div[4]/div/div[@class=\"subLevels\"][1]/div[1]/div[1]/div[@id=\"report\"]/div/div/div/input")
+	@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][2]//child::div[@class=\"subLevel\"][2]//child::div[@id=\"report\"]/div/div/div/input")
 	public WebElement campoConfiguracaoAba2Subnivel1;
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][2]/div/div[2]/div/div[2]/div/div[@class=\"subLevels\"][1]/div[1]/div[1]/div[@id=\"report\"]/div/div/div/input")
 	public WebElement campoConfiguracaoAba2Subnivel1TQ1;
 	
-	@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][2]/div/div[2]/div/div[4]/div/div[@class=\"subLevels\"][1]/div[1]/div[1]/div[@id=\"value\"]/div/div/input")
+	@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][2]//child::div[@class=\"subLevel\"][2]//child::div[@id=\"value\"]/div/div/input")
 	public WebElement camposSaidaAba2Subnivel1;
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][2]/div/div[2]/div/div[2]/div/div[@class=\"subLevels\"][1]/div[1]/div[1]/div[@id=\"value\"]/div/div/input")
 	public WebElement camposSaidaAba2Subnivel1TQ1;
@@ -935,7 +943,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		nao.click();
 		sleep(2000);
 //	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(9000);
+		sleep(4000);
 		
 		//corregir mensaje al parecer
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
@@ -1574,9 +1582,8 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		//idInserir2(id); //antes de crear herarquia configuracao
 		
 		nova.click();
-		sleep(3000);
+		sleep(6000);
 
-		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
 
 		nomeHirarquia.sendKeys("Prueba Automat Hierarquia 2");
@@ -1840,12 +1847,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		sleep(2000);
 		campoLinhaRO1.click();
 		String campo1 = campoLinhaRO1.getText();
-		sleep(2000);
-		
-		
-		
-		attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
-		sleep(3000);
+		sleep(9000);
 		
 		selectConfiguracaoConsolidacao.click();
 		sleep(4000);
@@ -1875,6 +1877,9 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		System.out.println("Campo Configuracao 1:" +campo2 );
 		System.out.println("Campo Saida 1:" +campo3 );
 		System.out.println("");
+		sleep(2000);
+		
+		ampliarSub.click();
 		sleep(2000);
 		
 		if (tp1) {
@@ -1963,11 +1968,13 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		System.out.println("");
 		sleep(2000);
 		
+		ampliarSub2.click();
+		sleep(2000);
 		
-		if (tp1) {
+		if (tp1==true) {
 			replicarSubnivel2.click();
 			sleep(2000);
-		}else if (tq1) {
+		}else if (tq1==true) {
 			replicarSubnivel2TQ1.click();
 			sleep(2000);
 		}else {

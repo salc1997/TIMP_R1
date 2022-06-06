@@ -43,7 +43,11 @@ public class LivrosOficiais extends TestBaseMassiel{
 		
 	}
   
+<<<<<<< HEAD
+/*  @Test(priority = 1)
+=======
  @Test(priority = 1)
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 	public void livrosICMS() {
 		
 
@@ -55,8 +59,14 @@ public class LivrosOficiais extends TestBaseMassiel{
 		sleep(2000);
 		
 		
+<<<<<<< HEAD
+	}*/
+  
+  @Test(priority = 2)
+=======
 	}
     @Test(priority = 2)
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 	public void livrosICMSST() {
 	
 		
@@ -73,13 +83,13 @@ public class LivrosOficiais extends TestBaseMassiel{
 	}
   
 
-
+  /*
   @Test(priority = 3)
- 	public void livrosIPI() {
+   	public void livrosIPI() {
  	
  	  librosOficiaisPO.LivrosIPI();
  	  
- 	/* ArrayList<Boolean> sucesso = librosOficiaisPO.LivrosICMSST();
+ 	ArrayList<Boolean> sucesso = librosOficiaisPO.LivrosICMSST();
 
  		for (int i = 0; i < sucesso.size(); i++) {
  			assertTrue(sucesso.get(i), Criar);

@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="Banco De Credito Extemporaneo &gt; Configuracao e Execucao (failed)">
+=======
+  <test thread-count="5" name="DFG - Leiautes(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.TCC.BancoDeCreditoExtemporaneo.ConfiguracaoEExecucao.ConfiguracaoEExecucacoCriar">
         <methods>
           <include name="afterClass"/>
@@ -46,7 +51,30 @@
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.timp.test.TCC.BancoDeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioEditar -->
+=======
+      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPasta">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criarGerenciarMoverPasta"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPasta -->
+      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
+        <methods>
+          <include name="filtrosVersao"/>
+          <include name="filtrosId"/>
+          <include name="filtrosFechaUsuarioCriado"/>
+          <include name="afterClass"/>
+          <include name="filtrosUsuarioCriado"/>
+          <include name="filtrosUsuarioModificado"/>
+          <include name="filtrosFiltroTipo"/>
+          <include name="filtrosFechaUsuarioModificado"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
     </classes>
+<<<<<<< HEAD
   </test> <!-- Banco De Credito Tributaro > Configuração de Banco de Crédito Tributário(failed) -->
   <test thread-count="5" name="Banco De Credito Tributario &gt; Configuração de Layout de Painel(failed)">
     <classes>
@@ -138,4 +166,7 @@
       </class> <!-- com.timp.test.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditar -->
     </classes>
   </test> <!-- Banco De Ocorrecias >  Executados(failed) -->
+=======
+  </test> <!-- DFG - Leiautes(failed) -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 </suite> <!-- Failed suite [Suite] -->

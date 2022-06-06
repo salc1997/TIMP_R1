@@ -120,7 +120,7 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBaseSteven {
 				.getText();
 		System.out.println(nome);
 
-		sucesso.add(nome.contains("Cópia de - Teste QA PREUBA 007"));
+		sucesso.add(nome.contains("Cópia de - Teste QA PRUEBA TA"));
 		
 		System.out.println("nuevo Copia: "+id2);
 		idInserir2(id2);
@@ -162,7 +162,7 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBaseSteven {
 		waitExpectElement(lixeira);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -193,7 +193,7 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBaseSteven {
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

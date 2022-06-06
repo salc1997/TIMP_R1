@@ -44,7 +44,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO extends TestBase
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div/div/div[2]/div/div[2]/div/div[1]/div[1]/div/div[2]/label")
 	public WebElement nombreHierarquiaV;
 	
-	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div/div/div[2]/div/div[4]/div/div[2]/label")
+	@FindBy(xpath = "//div[@id=\"main-title\"]")
 	public WebElement nombreHierarquiaVTC2;
 	
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div/div/div[2]/div/div[4]/div/div[2]/label")
@@ -86,7 +86,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO extends TestBase
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		
 		System.out.println("Registro que cree:"+idRegistro);

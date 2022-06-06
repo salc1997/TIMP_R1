@@ -34,10 +34,10 @@ public class ParametrosGeraisHierarquiaCriarComCópia extends TestBaseSteven{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
-	@Test()
+	@Test(priority = 0)
 	public void criarConfiguracaoHierarquia() {
 		loginTC.login();
 		acessarBCBPO.acessar();
@@ -49,15 +49,26 @@ public class ParametrosGeraisHierarquiaCriarComCópia extends TestBaseSteven{
 			assertTrue(sucesso.get(i), Criar);
 			
 		}
+	}
+	
+	@Test(priority = 1)
+	public void Excluir() {
 		
 		boolean sucesso1 = parametrosGeraisHierarquiaCriarComCópiaPO.excluir();
 
 		assertTrue(sucesso1, Eliminado);
 		
+
+	}
+	
+	@Test(priority = 2)
+	public void Lixeria() {
+		
 		boolean sucesso2 = parametrosGeraisHierarquiaCriarComCópiaPO.excluirLixeira();
 
 		assertTrue(sucesso2, Eliminado);
 	}
+	
 	
 
 	

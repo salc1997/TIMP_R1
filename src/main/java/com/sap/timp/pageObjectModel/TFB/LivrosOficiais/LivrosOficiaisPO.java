@@ -298,7 +298,11 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+id2+"\"]/div[1]/div"));
 		
 		menu.click();
+<<<<<<< HEAD
 		sleep(16000);
+=======
+		sleep(27000);
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 		
 		
 		
@@ -329,7 +333,11 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		sucesso.add(txtAvisoCaso.equals(txtAviso));
 		
 		sim.click();
+<<<<<<< HEAD
 		sleep(44000);
+=======
+		sleep(34000);
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 		
 		WebElement identificador = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]//child::div[@data-id=\""+id2+"\"]/div[2]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\"]"));
 		String nomeLivro = driver.findElement(By.xpath(
@@ -392,9 +400,14 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		sucesso.add( detalhes.isDisplayed());
 		        
 		System.out.println("Presenta Entradas & salidas: "+sucesso);
+		sleep(3000);
 		
 		biblioteca.click();
+<<<<<<< HEAD
 		sleep(6000);
+=======
+		sleep(37000);
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 		
 		
 		return sucesso;		
@@ -506,7 +519,11 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+id2+"\"]/div[1]/div"));
 		
 		menu.click();
+<<<<<<< HEAD
 		sleep(16000);
+=======
+		sleep(20000);
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
 		
 		sucesso.add(resumo.isDisplayed());
 		sucesso.add( informações.isDisplayed());

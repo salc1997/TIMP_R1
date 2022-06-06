@@ -79,7 +79,7 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")

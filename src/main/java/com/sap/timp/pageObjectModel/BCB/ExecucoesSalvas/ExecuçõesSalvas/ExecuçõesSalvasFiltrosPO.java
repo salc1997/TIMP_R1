@@ -73,7 +73,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 		int rows = 1;
 				
 		String idRegistro = driver.findElement(By.xpath(
-				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[4]/div"))
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[5]/div"))
 				.getText();
 		
 		System.out.println(" ID de Execucoes: "+id);

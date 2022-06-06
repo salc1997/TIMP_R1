@@ -19,7 +19,7 @@ public class TipoDeTributoContaContabilCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Novo Tipo de Tributo x Conta Contábil\"]")
 	public WebElement novotipodetributocontacontabil;
 	
-	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"company\"]/div/div[2]")
 	public WebElement empresa;
 	
 	@FindBy(xpath = "//li[@id][1]")
@@ -29,8 +29,8 @@ public class TipoDeTributoContaContabilCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Tributo Grupo\"]")
 	public WebElement tributogrupo;
 	
-	@FindBy(xpath = "//textarea[@placeholder=\"Preencher Descrição\"]")
-	public WebElement descricao;
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Conta Contábil\"]")
+	public WebElement contabil;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Data de Início de Vigência\"]")
 	public WebElement datainicial;
@@ -90,7 +90,7 @@ public class TipoDeTributoContaContabilCriarPO extends TestBaseSteven{
 		//criaçao
 		novotipodetributocontacontabil.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		empresa.click();
 		
@@ -103,7 +103,7 @@ public class TipoDeTributoContaContabilCriarPO extends TestBaseSteven{
 		
 		sleep(2000);
 		
-		descricao.sendKeys("teste");
+		contabil.sendKeys("3101220001");
 		
 		
 		sleep(2000);

@@ -413,20 +413,20 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 	public WebElement camposSaidaAba2Subnivel1TQ1;
 	
 	//CAMPOS ABA2 SUBNIVEL 2
-	@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][2]/div/div[2]/div/div[4]/div/div[@class=\"subLevels\"][1]/div[2]/div[1]/div[@id=\"configuration\"]/div/div/input")
+	@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][2]//child::div[@class=\"subLevels\"][1]/div[2]//child::div[@id=\"configuration\"]/div/div/input")
 	public WebElement camposBCBAba2Subnivel2;
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][2]/div/div[2]/div/div[2]/div/div[@class=\"subLevels\"][1]/div[2]/div[1]/div[@id=\"configuration\"]/div/div/input")
 	public WebElement camposBCBAba2Subnivel2TQ1;	
 	
 	
-	@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][2]/div/div[2]/div/div[4]/div/div[@class=\"subLevels\"][1]/div[2]/div[1]/div[@id=\"report\"]/div/div/div/input")
+	@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][2]//child::div[@class=\"subLevels\"][1]/div[2]//child::div[@id=\"report\"]/div/div[1]/div[1]/input")
 	public WebElement campoConfiguracaoAba2Subnivel2;
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][2]/div/div[2]/div/div[2]/div/div[@class=\"subLevels\"][1]/div[2]/div[1]/div[@id=\"report\"]/div/div/div/input")
 	public WebElement campoConfiguracaoAba2Subnivel2TQ1;
 	
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][2]/div/div[2]/div/div[4]/div/div[@class=\"subLevels\"][1]/div[2]/div[1]/div[@id=\"value\"]/div/div/input")
 	public WebElement camposSaidaAba2Subnivel2;
-	@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][2]/div/div[2]/div/div[2]/div/div[@class=\"subLevels\"][1]/div[2]/div[1]/div[@id=\"value\"]/div/div/input")
+	@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][2]//child::div[@class=\"subLevels\"][1]/div[2]//child::div[@id=\"value\"]/div[1]/div[1]/input")
 	public WebElement camposSaidaAba2Subnivel2TQ1;
 	
 	
@@ -1071,6 +1071,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		sleep(2000);
 		camposSaidaValor.click();
 		sleep(2000);
+		
 		
 		camposSaidaSubNivel.click();
 		sleep(2000);

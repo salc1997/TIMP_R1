@@ -266,7 +266,7 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		System.out.println("Nome do Livro "+txtNomeLivro);
 		
 		gravar.click();
-		sleep(15000);
+		sleep(25000);
 
 		String id2 = driver.findElement(By.xpath(
 				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div"))
@@ -332,7 +332,7 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		
 		sim.click();
 
-		sleep(44000);
+		sleep(54000);
 
 		
 		WebElement identificador = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]//child::div[@data-id=\""+id2+"\"]/div[2]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\"]"));

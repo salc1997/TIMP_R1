@@ -674,33 +674,8 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		if (url.contains("tc2")) {
 			tc2 = true;
 		}
-		
-		//COMENTAR DESPUES PORFAVOR
-//			sleep(2000);
-//			configuracoes.click();
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
-//			configuracaoDaConsolidacao.click();
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
-//			
-//			
-//			pesquisar.sendKeys("1072");
-//			pesquisar.sendKeys(Keys.ENTER);
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
-//			
-//			
-//			
-//			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1072\"]/div[1]/div"));
-//			WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1072\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-//			sleep(2000);
-		//HASTA AQUI
 			
-		sleep(2000);
+		sleep(9000);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter3()+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter3()+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));

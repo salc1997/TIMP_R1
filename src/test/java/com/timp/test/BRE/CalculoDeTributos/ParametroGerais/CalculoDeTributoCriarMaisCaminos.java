@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.CalculoDeTributos.ParametrosGerais.CalculoDeTributoCriarPO;
 
-public class CalculoDeTributoCriar extends TestBaseSteven {
+public class CalculoDeTributoCriarMaisCaminos extends TestBaseSteven {
 	
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;

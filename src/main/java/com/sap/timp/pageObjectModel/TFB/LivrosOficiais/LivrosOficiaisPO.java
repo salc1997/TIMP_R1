@@ -324,15 +324,16 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		sleep(3000);
 		
 		String txtAviso = aviso.getText();
-		System.out.println("Nome do Livro "+txtAviso);
+		System.out.println("AVISO "+txtAviso);
 		
-		String txtAvisoCaso = "Ao oficializar esse período (01/2016) todos os períodos mensais de 01/2016 até 05/2022 terão que ser oficializados novamente para que o mês corrente 05/2022 seja oficializado . Tem certeza de que deseja continuar?";
+		String txtAvisoCaso = "Ao oficializar esse período (01/2016)";
 		
-		sucesso.add(txtAvisoCaso.equals(txtAviso));
+		sucesso.add(txtAviso.contains(txtAvisoCaso));
+		System.out.println("Mensaje de Aviso Correcto : "+sucesso);
 		
 		sim.click();
 
-		sleep(54000);
+		sleep(64000);
 
 		
 		WebElement identificador = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]//child::div[@data-id=\""+id2+"\"]/div[2]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\"]"));
@@ -343,8 +344,8 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		sucesso.add(nomeLivro.contains(txtNomeLivroOficializar ));
 	
 		
-		
-		executarLivrosICMS.click();
+		System.out.println("Livro Oficializado : "+sucesso);
+	/*	executarLivrosICMS.click();
 		sleep(2000);
 		
 		empresa.click();
@@ -401,8 +402,8 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		biblioteca.click();
 
 	
-
-		sleep(37000);
+*
+		sleep(37000);*/
 
 		
 		
@@ -467,7 +468,7 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		executar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(15000);
+		sleep(34000);
 		
 
 		sucesso.add(resumo.isDisplayed());
@@ -541,9 +542,9 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		String txtAviso = aviso.getText();
 		System.out.println("Nome do Livro "+txtAviso);
 		
-		String txtAvisoCaso = "Ao oficializar esse período (01/2016) todos os períodos mensais de 01/2016 até 05/2022 terão que ser oficializados novamente para que o mês corrente 05/2022 seja oficializado . Tem certeza de que deseja continuar?";
+		String txtAvisoCaso = "Ao oficializar esse período (01/2016) ";
 		
-		sucesso.add(txtAvisoCaso.equals(txtAviso));
+		sucesso.add(txtAviso.contains(txtAvisoCaso));
 		
 		sim.click();
 		sleep(99000);
@@ -773,7 +774,7 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		sucesso.add(nomeLivro.contains(txtNomeLivroOficializar ));
 		
 		
-		executarLivrosICMSDIFAL.click();
+		/*executarLivrosICMSDIFAL.click();
 		sleep(2000);
 	
 		empresa.click();
@@ -816,7 +817,7 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		executar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		sleep(12000);
 		
 		sucesso.add( entradas.isDisplayed());
 		sucesso.add( saidas.isDisplayed());
@@ -828,7 +829,7 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		
 		biblioteca.click();
 		sleep(1000);
-		
+		*/
 		return sucesso;
 		
 	}

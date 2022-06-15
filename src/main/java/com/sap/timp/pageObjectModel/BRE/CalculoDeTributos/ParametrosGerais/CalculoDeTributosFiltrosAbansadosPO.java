@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.BRE.CalculoDeTributos.Edicao;
+package com.sap.timp.pageObjectModel.BRE.CalculoDeTributos.ParametrosGerais;
 
 import java.util.ArrayList;
 

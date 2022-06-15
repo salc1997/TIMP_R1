@@ -663,7 +663,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		
 		sleep(2000);
 		abaConfiguracao.click();
-		sleep(2000);
+		sleep(12000);
 		
 		raizConfiguracao.click();
 		sleep(2000);

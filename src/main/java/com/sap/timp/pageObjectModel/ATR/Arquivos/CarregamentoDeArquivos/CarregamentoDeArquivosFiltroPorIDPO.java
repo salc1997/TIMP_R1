@@ -70,7 +70,7 @@ public class CarregamentoDeArquivosFiltroPorIDPO extends TestBaseSteven{
 		
 		sucesso.add(idRegistro.equals(idBusqueda));
 		//waitExpectElement(limpar);
-		sleep(24000);
+		sleep(34000);
 		
 		limpar.click();
 		sleep(4000);

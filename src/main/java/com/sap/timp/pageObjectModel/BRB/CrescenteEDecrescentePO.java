@@ -80,7 +80,7 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 		menuC.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		String valorPrimeiro = driver.findElement(By.xpath("//div[@class=\"column-filter visible\"][1]/input")).getAttribute("value");
 		System.out.println(valorPrimeiro);

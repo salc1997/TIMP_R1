@@ -157,7 +157,7 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 		sleep(1000);
 		
 		sleep(2000);
-	//	gravar.click();
+		gravar.click();
 		sleep(2000);
 		waitExpectElement(sim);
 		sleep(2000);

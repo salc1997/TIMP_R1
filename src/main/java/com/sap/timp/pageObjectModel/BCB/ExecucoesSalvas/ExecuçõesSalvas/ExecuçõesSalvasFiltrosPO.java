@@ -20,7 +20,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[4]/div")
+	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[5]/div")
 	public WebElement id;
 	
 	@FindBy(xpath = "//span[text()=\"Limpar Filtros\"]")
@@ -125,7 +125,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 
 			String textFiltroEmpresa = driver
 					.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["
-							+ rows + "]/div[6]/div"))
+							+ rows + "]/div[7]/div"))
 					.getText();
 			System.out.println(textFiltroEmpresa + " Hierarquia Filtro");
 			sucesso.add(textFiltroEmpresa.contains(HierarquiaText));
@@ -143,7 +143,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String Empresa = driver
 				.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["
-						+ rows + "]/div[8]/div"))
+						+ rows + "]/div[9]/div"))
 				.getText();
 		
 		
@@ -154,7 +154,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 		empresa.click();
 		sleep(2000);
 		
-		actionsMoveToElementXpath("//li[contains(text(),\""+Empresa+"\")]");
+		actionsMoveToElementXpath("//li[@id=\"option-196\"]");
 		sleep(2000);
 
 		WebElement Opc = driver.findElement(By.xpath("//li[contains(text(),\""+Empresa+"\")]"));
@@ -174,7 +174,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 
 			String textFiltroEmpresa = driver
 					.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["
-							+ rows1 + "]/div[8]/div"))
+							+ rows1 + "]/div[9]/div"))
 					.getText();
 			System.out.println(textFiltroEmpresa + " Empresa Filtro");
 			sucesso.add(Empresa.equals(textFiltroEmpresa));
@@ -193,7 +193,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String UF = driver
 				.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["
-						+ rows + "]/div[9]/div"))
+						+ rows + "]/div[10]/div"))
 				.getText();
 		
 		
@@ -224,7 +224,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 
 			String textFiltroEmpresa = driver
 					.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["
-							+ rows1 + "]/div[9]/div"))
+							+ rows1 + "]/div[10]/div"))
 					.getText();
 			System.out.println(textFiltroEmpresa + " UF Filtro");
 			sucesso.add(UF.equals(textFiltroEmpresa));
@@ -242,13 +242,9 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String Filial = driver
 				.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["
-						+ rows + "]/div[10]/div"))
+						+ rows + "]/div[11]/div"))
 				.getText();
-		
-		
-		Filial = Filial.substring(7,11);
-		
-		
+			
 		
 		
 		System.out.println("Filial en Libreria: "+ filial);
@@ -258,10 +254,9 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 		filial.click();
 		sleep(2000);
 		
-		actionsMoveToElementXpath("//li[contains(text(),\""+Filial+"\")]");
-		sleep(2000);
+	
 
-		WebElement Opc = driver.findElement(By.xpath("//li[contains(text(),\""+Filial+"\")]"));
+		WebElement Opc = driver.findElement(By.xpath("//li[@id=\"option-2\"]"));
 
 		Opc.click();
 		sleep(4000);
@@ -278,7 +273,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 
 			String textFiltroEmpresa = driver
 					.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["
-							+ rows1 + "]/div[10]/div"))
+							+ rows1 + "]/div[11]/div"))
 					.getText();
 			System.out.println(textFiltroEmpresa + " Filial Filtro");
 			sucesso.add(textFiltroEmpresa.contains(Filial));

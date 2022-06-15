@@ -1,11 +1,11 @@
-package com.timp.test.BRE.CalculoDeTributos.Edicao;
+package com.timp.test.BRE.CalculoDeTributos.ParametroGerais;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
-import com.sap.timp.pageObjectModel.BRE.CalculoDeTributos.Edicao.CalculoDeTributosFiltrosAbansadosPO;
+import com.sap.timp.pageObjectModel.BRE.CalculoDeTributos.ParametrosGerais.CalculoDeTributosFiltrosAbansadosPO;
 
 import org.testng.annotations.BeforeClass;
 

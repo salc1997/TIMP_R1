@@ -44,130 +44,8 @@ public class LeiautesExecucacoFuncionalidades4Pt5 extends TestBaseSteven {
 		acessarDFGPO.acessarDFG();
 	}
 	
-/*	@Test(priority = 2)
-	public void criar() {
-		ArrayList<Boolean> sucesso =leiautesExecucacoFuncionalidades4Pt5PO.criarLeiaute();
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
-		}
-	}
-	
+
 	@Test(priority = 2)
-	public void separadores() {
-		leiautesExecucacoFuncionalidades4Pt5PO.separadores();
-	}
-	
-	@Test(priority = 3)
-	public void dataInicialDeReferencia() {
-		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.dataInicialDeReferencia();
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
-		}
-	}
-	
-	
-	@Test(priority = 4)
-	public void saltodeLinha() {
-		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.saltodeLinha();
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
-		}
-	}
-	
-	@Test(priority = 5)
-	public void dataFinalDeReferencia() {
-		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.dataFinalDeReferencia();
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
-		}
-	}
-	
-	
-	@Test(priority = 6)
-	public void versao() {
-		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.versao();
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
-		}
-	}
-	
-	
-	@Test(priority = 7)
-	public void horaDaExecucao() {
-		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.horaDaExecucao();
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
-		}
-	}
-	
-	@Test(priority = 8)
-	public void dataDaExecucao() {
-		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.dataDaExecucao();
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
-		}
-	}
-	
-	@Test(priority = 9)
-	public void periodoDaReferencia() {
-		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.periodoDaReferencia();
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
-		}
-	}
-	
-	
-	
-	
-	
-	
-	@Test(priority = 10)
-	public void campoFixo() {
-		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.campoFixo();
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
-		}
-	}
-	
-	@Test(priority = 11)
-	public void campoFixoManual() {
-		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.campoFixoManual();
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
-		}
-	}
-	
-	
-	@Test(priority = 12)
-	public void sequencia() {
-		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.sequencia();
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
-		}
-	}
-	
-	@Test(priority = 13)
-	public void sequenciaDeItemPorDocumento() {
-		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.sequenciaDeItemPorDocumento();
-		
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Criar);
-		}
-	}
-	
-*/	
-	@Test(priority = 14)
 	public void distinto() {
 		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.distinto();
 		
@@ -176,7 +54,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5 extends TestBaseSteven {
 		}
 	}
 	
-	@Test(priority = 15)
+	@Test(priority = 3)
 	public void comparar() {
 		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.comparar();
 		
@@ -185,7 +63,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5 extends TestBaseSteven {
 		}
 	}
 	
-	@Test(priority = 16)
+	@Test(priority = 4)
 	public void criarConfiguracao() {
 		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.criarConfiguracao();
 		
@@ -195,7 +73,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5 extends TestBaseSteven {
 	}
 	
 
-	@Test(priority = 17)
+	@Test(priority = 5)
 	public void executar() {
 		leiautesExecucacoFuncionalidades4Pt5PO.executar();
 //		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.executar();
@@ -205,7 +83,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5 extends TestBaseSteven {
 //		}
 	}
 	
-	@Test(priority = 18)
+	@Test(priority = 6)
 	public void verBloco1() {
 		//leiautesExecucacoFuncionalidades4Pt5PO.verSaltoLinha();
 		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.verBloco1();
@@ -215,7 +93,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5 extends TestBaseSteven {
 		}
 	}
 	
-	@Test(priority = 19)
+	@Test(priority = 7)
 	public void verBloco2() {
 		//leiautesExecucacoFuncionalidades4Pt5PO.verSaltoLinha();
 		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.verBloco2();
@@ -225,7 +103,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5 extends TestBaseSteven {
 		}
 	}
 	
-	@Test(priority = 20)
+	@Test(priority = 8)
 	public void verBloco3() {
 		//leiautesExecucacoFuncionalidades4Pt5PO.verSaltoLinha();
 		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.verBloco3();
@@ -236,7 +114,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5 extends TestBaseSteven {
 	}
 	
 	
-	@Test(priority = 21)
+	@Test(priority = 9)
 	public void verBloco4() {
 		leiautesExecucacoFuncionalidades4Pt5PO.verBloco4();
 		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.verBloco4();
@@ -247,7 +125,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5 extends TestBaseSteven {
 	}
 	
 	
-	@Test(priority = 22)
+	@Test(priority = 10)
 	public void verBloco5() {
 		//leiautesExecucacoFuncionalidades4Pt5PO.verSaltoLinha();
 		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.verBloco5();
@@ -257,7 +135,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5 extends TestBaseSteven {
 		}
 	}
 	
-	@Test(priority = 23)
+	@Test(priority = 11)
 	public void excluirConfiguracao() {
 		//leiautesExecucacoFuncionalidades4Pt5PO.verSaltoLinha();
 		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.excluirConfiguracao();
@@ -267,7 +145,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5 extends TestBaseSteven {
 		}
 	}
 	
-	@Test(priority = 24)
+	@Test(priority = 12)
 	public void excluirLeiaute() {
 		//leiautesExecucacoFuncionalidades4Pt5PO.verSaltoLinha();
 		ArrayList<Boolean> sucesso = leiautesExecucacoFuncionalidades4Pt5PO.excluirLeiaute();

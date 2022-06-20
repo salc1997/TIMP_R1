@@ -1,10 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="GruposAvancados(failed)">
+=======
+  <test thread-count="5" name="AgrupadoPeloCampo(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.GruposAvancados">
+=======
+      <class name="com.timp.test.BRB.AgrupadoPeloCampo">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
         <methods>
+<<<<<<< HEAD
+          <include name="gruposAvanzados"/>
+          <include name="afterClass"/>
+          <include name="eliminarGrupos"/>
+=======
+          <include name="agrupadoPeloCampo"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+          <include name="beforeClass"/>
+<<<<<<< HEAD
+=======
+          <include name="afterClass"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRB.GruposAvancados -->
+=======
+      </class> <!-- com.timp.test.BRB.AgrupadoPeloCampo -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+    </classes>
+<<<<<<< HEAD
+  </test> <!-- GruposAvancados(failed) -->
+  <test thread-count="5" name="CrescenteEDecrescente(failed)">
+=======
+  </test> <!-- AgrupadoPeloCampo(failed) -->
+  <test thread-count="5" name="FormatacaoEVariante(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+    <classes>
+<<<<<<< HEAD
+      <class name="com.timp.test.BRB.CrescenteEDecrescente">
+=======
+      <class name="com.timp.test.BRB.FormatacaoEVariante">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+        <methods>
+          <include name="afterClass"/>
+<<<<<<< HEAD
+          <include name="crescenteEDecrescente"/>
+=======
+          <include name="formatacaoEVariante"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+          <include name="beforeClass"/>
+<<<<<<< HEAD
+=======
+          <include name="excluirVariante"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRB.CrescenteEDecrescente -->
+=======
+      </class> <!-- com.timp.test.BRB.FormatacaoEVariante -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+    </classes>
+<<<<<<< HEAD
+  </test> <!-- CrescenteEDecrescente(failed) -->
+  <test thread-count="5" name="ComentarioListaSuspensa(failed)">
+=======
+  </test> <!-- FormatacaoEVariante(failed) -->
+  <test thread-count="5" name="FiltroColunas(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+    <classes>
+<<<<<<< HEAD
+      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
+=======
+      <class name="com.timp.test.BRB.FiltroColunas">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+<<<<<<< HEAD
+          <include name="listaSuspensa"/>
+=======
+          <include name="filtroConFerramenta2"/>
+          <include name="filtroConFerramenta1"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
+=======
+      </class> <!-- com.timp.test.BRB.FiltroColunas -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+    </classes>
+<<<<<<< HEAD
+  </test> <!-- ComentarioListaSuspensa(failed) -->
+  <test thread-count="5" name="ComentarioLibre(failed)">
+=======
+  </test> <!-- FiltroColunas(failed) -->
+  <test thread-count="5" name="GruposAvancados(failed)">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+    <classes>
+<<<<<<< HEAD
+      <class name="com.timp.test.BRB.ComentarioLibre">
+=======
+      <class name="com.timp.test.BRB.GruposAvancados">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
+        <methods>
+<<<<<<< HEAD
+=======
           <include name="gruposAvanzados"/>
           <include name="afterClass"/>
           <include name="eliminarGrupos"/>
@@ -39,6 +143,7 @@
     <classes>
       <class name="com.timp.test.BRB.ComentarioLibre">
         <methods>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1
           <include name="beforeClass"/>
           <include name="comentarioLibre"/>
           <include name="afterClass"/>

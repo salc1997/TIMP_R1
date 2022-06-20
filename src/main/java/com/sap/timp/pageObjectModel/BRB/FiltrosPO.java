@@ -199,7 +199,7 @@ public class FiltrosPO  extends TestBaseSteven{
 			fValor.sendKeys("0001");
 		}else {
 			sleep(1000);
-			fValor.sendKeys("0143");
+			fValor.sendKeys("0236");
 		}
 		
 		sleep(1000);
@@ -373,7 +373,7 @@ public class FiltrosPO  extends TestBaseSteven{
 		}else {
 			uf.sendKeys("BA");
 			sleep(1000);
-			fi.sendKeys("0143");
+			fi.sendKeys("0236");
 		
 			d1.click();
 			sleep(2000);
@@ -482,7 +482,7 @@ public class FiltrosPO  extends TestBaseSteven{
 		}else {
 			uf.sendKeys("BA");
 			sleep(1000);
-			fi.sendKeys("0143");
+			fi.sendKeys("0236");
 			d1.click();
 			sleep(2000);
 			

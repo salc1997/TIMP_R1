@@ -200,7 +200,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 		}
 	}
 	
-/*	@Test(priority = 17)
+	@Test(priority = 17)
 	public void excluirConfiguracoes() {
 		
 		ArrayList<Boolean> sucesso = origenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO.excluirConfiguracoes();
@@ -221,5 +221,5 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 		}
 	}
 
-*/
+
 }

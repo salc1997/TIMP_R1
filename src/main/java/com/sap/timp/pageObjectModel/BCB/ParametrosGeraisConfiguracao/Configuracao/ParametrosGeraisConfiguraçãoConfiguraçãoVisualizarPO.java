@@ -133,7 +133,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO extends TestBa
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(11000);
 		
 		String nomeHerarquiaText1 = "";
 		String subNivel1 = "";

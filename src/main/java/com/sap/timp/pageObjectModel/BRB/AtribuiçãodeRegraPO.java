@@ -40,7 +40,7 @@ public class AtribuiçãodeRegraPO extends TestBaseSteven{
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/div[2]/div[40]/div[1]/label/span")
 	public WebElement flagSeleccionTP1;
 	
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/div[2]/div[56]/div[1]/label/span")
+	@FindBy(xpath = "//div[@data-id=\"_rule1690\"]//child::span")
 	public WebElement flagSeleccionTC2;
 	
 	@FindBy(xpath = "//button[text()=\"Próximo\"]")

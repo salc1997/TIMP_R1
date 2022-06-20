@@ -35,7 +35,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class TestBaseSteven {
+public class TestBaseSteven  {
 
 	// TC2
 	protected String tc2 = "http://as1-100-01-tc2:8000/timp/login/#/login";
@@ -624,6 +624,10 @@ public class TestBaseSteven {
 	}
 	
 	public void closeSelectTypeCheckbox(WebElement element) {
+		new Actions(driver).moveToElement(element).click().perform();
+	}
+	
+	public void closeSelect(WebElement element) {
 		new Actions(driver).moveToElement(element).click().perform();
 	}
 	

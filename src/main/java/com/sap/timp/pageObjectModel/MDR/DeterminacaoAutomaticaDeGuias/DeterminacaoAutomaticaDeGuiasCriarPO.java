@@ -105,7 +105,7 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 		sleep(2000);
 		//criaçao
 		novodeterminacaoautomaticadeguias.click();
-		sleep(8000);
+		sleep(12000);
 
 		empresa.click();
 		sleep(2000);

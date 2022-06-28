@@ -52,7 +52,7 @@ public class TestBaseSteven  {
 
 	public static WebDriver driver;
 	public String usuarioL = "TESTEAUTOMATIZADO";
-	public String senhaL = "Alltax20";
+	public String senhaL = "Alltax2023";
 	public int menuT = 12000;
 
 	public WebDriver initialization() {

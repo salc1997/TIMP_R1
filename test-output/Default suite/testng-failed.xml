@@ -3,13 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasCriar">
+      <class name="com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2">
         <methods>
-          <include name="afterClass"/>
+          <include name="excluirHierarquia2"/>
+          <include name="excluirConfiguracoes2"/>
           <include name="beforeClass"/>
-          <include name="criar"/>
+          <include name="relacionamentoFinalyAbrirHierarquiaGrupo"/>
+          <include name="afterClass"/>
+          <include name="excluirConfiguracoes1"/>
+          <include name="ejecutarFinal"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasCriar -->
+      </class> <!-- com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

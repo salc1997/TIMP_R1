@@ -64,7 +64,7 @@
 	
 	<test name="Banco De Credito Tributario > Configuração de Layout de Painel">
 		<classes>
-				<!-- *******************************BancoDeCreditoExtemporaneo*************************** -->
+				
 				
 				<!-- PainelBCE > ConfiguracaoEExecucao -->
 				<class name="com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainel.ConfiguraçãodeLayoutdePainelCriar"></class>

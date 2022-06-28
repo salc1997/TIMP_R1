@@ -1273,7 +1273,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		
 		subPeriodosAnteriores3.click();
-		sleep(3000);
+		sleep(4000);
 		
 		cantSubPeriodosAnteriores3.click();
 		sleep(2000);		

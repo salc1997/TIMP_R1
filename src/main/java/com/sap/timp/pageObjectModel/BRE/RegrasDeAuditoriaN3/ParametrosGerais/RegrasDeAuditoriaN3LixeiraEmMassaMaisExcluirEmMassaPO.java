@@ -166,7 +166,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		componente.click();
 		sleep(1000);
 		opcaoComponente.click();
-		sleep(1000);
+		sleep(3000);
 		
 		tipoTributo.click();
 		sleep(1000);
@@ -306,7 +306,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		estruturaDeDatos.click();
 		sleep(1000);
 		opcaoEstruturaDeDatos.click();
-		sleep(10000);
+		sleep(15000);
 		
 		caracteristicaEspecial.click();
 		sleep(1000);

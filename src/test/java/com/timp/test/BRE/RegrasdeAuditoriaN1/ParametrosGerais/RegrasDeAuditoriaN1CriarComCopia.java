@@ -42,6 +42,8 @@ public class RegrasDeAuditoriaN1CriarComCopia extends TestBaseSteven{
 			assertTrue(sucesso.get(i), Criar);
 		}
 		
+		sleep(2000);
+		
 	}
  
 	

@@ -1,15 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Parametros Gerais Configuracao Configuracao(failed)">
+  <test thread-count="5" name="Regras de Negocio(failed)">
     <classes>
-      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados">
+      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasdeNegócioExcluirdefinitivamente">
         <methods>
-          <include name="criarConfiguracao"/>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasdeNegócioExcluirdefinitivamente -->
+      <class name="com.timp.test.BRE.RegrasDeNegocio.Edicao.RegradeNegócioEdiçãoValoresCalculados">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.Edicao.RegradeNegócioEdiçãoValoresCalculados -->
+      <class name="com.timp.test.BRE.RegrasDeNegocio.BREGerenciarRegulamentosCriarEditarExcluir">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.BREGerenciarRegulamentosCriarEditarExcluir -->
+      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriarComCopia">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="criar"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriarComCopia -->
+      <class name="com.timp.test.BRE.TabelasExternas.TabelasExternasEditar">
+        <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
+          <include name="Editar"/>
         </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados -->
+      </class> <!-- com.timp.test.BRE.TabelasExternas.TabelasExternasEditar -->
+      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa">
+        <methods>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa -->
+      <class name="com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioEditar">
+        <methods>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioEditar -->
+      <class name="com.timp.test.BRE.RegrasDeNegocio.Edicao.RegrasDeNegocioEdicaoRelacionamento">
+        <methods>
+          <include name="relacionamento"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRE.RegrasDeNegocio.Edicao.RegrasDeNegocioEdicaoRelacionamento -->
     </classes>
-  </test> <!-- Parametros Gerais Configuracao Configuracao(failed) -->
+  </test> <!-- Regras de Negocio(failed) -->
 </suite> <!-- Failed suite [Suite] -->

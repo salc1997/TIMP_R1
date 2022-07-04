@@ -260,7 +260,7 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 		btnGravar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
+		sleep(6000);
 		
 		nao.click();
 		sleep(12000);

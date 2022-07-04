@@ -3,17 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2">
+      <class name="com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa">
         <methods>
-          <include name="excluirHierarquia2"/>
-          <include name="excluirConfiguracoes2"/>
+          <include name="lixeiraEmMassaMaisExcluirEmMassa"/>
           <include name="beforeClass"/>
-          <include name="relacionamentoFinalyAbrirHierarquiaGrupo"/>
           <include name="afterClass"/>
-          <include name="excluirConfiguracoes1"/>
-          <include name="ejecutarFinal"/>
         </methods>
-      </class> <!-- com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 -->
+      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -40,6 +40,7 @@ public class RegrasdeAuditoriaN1EdiçãoSimula extends TestBaseSteven {
 		acessarBREPO.acessarBRE();
 		boolean sucesso = regrasdeAuditoriaN1EdiçãoSimulaPO.editar();
 		assertTrue(sucesso, Editar);
+		sleep(2000);
 
 	}
 

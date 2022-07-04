@@ -40,6 +40,8 @@ public class RegrasdeAuditoriaN1ParâmetrosgeraisSimular extends TestBaseSteven {
 		acessarBREPO.acessarBRE();
 		boolean sucesso = regrasdeAuditoriaN1ParâmetrosgeraisSimularPO.editar();
 		assertTrue(sucesso, Editar);
+		
+		sleep(2000);
 
 	}
 

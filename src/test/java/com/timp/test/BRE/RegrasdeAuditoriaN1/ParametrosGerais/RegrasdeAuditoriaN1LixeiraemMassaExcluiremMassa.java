@@ -31,7 +31,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa extends TestBaseSte
   
   @AfterClass
   public void afterClass() {
-	  //driver.close();
+	  driver.close();
   }
 
 	@Test()
@@ -41,7 +41,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa extends TestBaseSte
 		boolean sucesso = regrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO.excluirMassa();
 
 		assertTrue(sucesso, Criar);
-
+		sleep(2000);
 	}
 
 }

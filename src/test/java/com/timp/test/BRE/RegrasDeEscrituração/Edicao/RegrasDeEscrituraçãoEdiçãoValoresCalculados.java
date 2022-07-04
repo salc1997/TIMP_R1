@@ -30,7 +30,7 @@ public class RegrasDeEscrituraçãoEdiçãoValoresCalculados extends TestBaseFernand
 
   @AfterClass
   public void afterClass() {
-	  driver.close();
+	//  driver.close();
   }
   
   @Test()

@@ -54,7 +54,7 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBaseFernando {
 	@FindBy(xpath = "//button[text()=\"Remover\"]")
 	public WebElement remover;
 	
-	@FindBy(xpath = "//span[text()=\"Configurações\"]")
+	@FindBy(xpath = "//div[@id=\"toolbar-container\"]//child::span[text()=\"Configurações\"")
 	public WebElement configuracoes;
 	
 	@FindBy(xpath = "//button[text()=\"Aplicar\"]")

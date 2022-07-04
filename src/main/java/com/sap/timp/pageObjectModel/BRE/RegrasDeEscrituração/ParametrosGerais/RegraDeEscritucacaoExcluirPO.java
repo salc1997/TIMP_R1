@@ -135,7 +135,7 @@ public class RegraDeEscritucacaoExcluirPO extends TestBaseSteven{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(mensagem);
+		//waitExpectElement(mensagem);
 		sleep(3000);
 
 		lixeira.click();

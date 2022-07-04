@@ -42,5 +42,7 @@ public class RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamente extends TestBa
 			assertTrue(sucesso.get(i), "O registro não foi excluido");
 		}
 		
+		sleep(2000);
+		
 	}
 }

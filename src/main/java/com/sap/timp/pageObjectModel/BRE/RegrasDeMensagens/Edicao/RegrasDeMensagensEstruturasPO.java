@@ -23,7 +23,7 @@ public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
 	@FindBy(xpath = "//span[text()=\"Estruturas\"]")
 	public WebElement estruturas;
 	
-	@FindBy(xpath = "//button[text()=\"Create estructuras associadas\"]")
+	@FindBy(xpath = "//button[text()=\"Criar estruturas associadas\"]")
 	public WebElement crearEstruturas;
 
 	@FindBy(xpath = "//div[@id=\"select-associatedStructure\"]/div/div/div[2]")
@@ -134,7 +134,7 @@ public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
 		sleep(2000);
 		
 		estruturas.click();
-		sleep(3000);
+		sleep(12000);
 		crearEstruturas.click();
 		sleep(3000);
 		
@@ -266,8 +266,8 @@ public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
 		sleep(2000);
 		nao.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(12000);
 		biblioteca.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

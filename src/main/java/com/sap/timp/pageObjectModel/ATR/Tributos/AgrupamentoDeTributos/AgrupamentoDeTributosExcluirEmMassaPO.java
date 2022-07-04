@@ -122,7 +122,6 @@ public class AgrupamentoDeTributosExcluirEmMassaPO extends TestBaseSteven {
 		novo.click();
 		sleep(2000);
 		waitExpectElement(nome);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		//Segundo Registro
 		

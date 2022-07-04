@@ -17,7 +17,7 @@ public class RegrasDeEscrituraçãoEdiçãoValoresCalculadosPO extends TestBaseFerna
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement btnUltimaPagina;
 	
-	@FindBy(xpath = "//span[text()=\"Valores Calculados\"]")
+	@FindBy(xpath = "//div[@class=\"toolbar-container\"]//child::span[text()=\"Valores Calculados\"]")
 	public WebElement valoresCalculados;
 	
 	@FindBy(xpath = "//button[text()=\"Criar Valor Calculado\"]")
@@ -47,8 +47,11 @@ public class RegrasDeEscrituraçãoEdiçãoValoresCalculadosPO extends TestBaseFerna
 	@FindBy(xpath = "//div[@class=\"conditions-section\"]/div/div/div/div/div[4]/div/div/input")
 	public WebElement nomeValor2;
 	
-	@FindBy(xpath = "//div[@class=\"action-section\"]/div/div/div/div/input")
+	@FindBy(xpath = "//div[@class=\"dialog-content wide\"]//child::div[@class=\"action-section\"]//child::div[@id=\"main-icon\"]")
 	public WebElement acao;
+	
+	@FindBy(xpath = "//li[text()=\"Finalizar\"]")
+	public WebElement acaoOPC;
 	
 	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
@@ -91,7 +94,7 @@ public class RegrasDeEscrituraçãoEdiçãoValoresCalculadosPO extends TestBaseFerna
 	@FindBy(xpath = "//span[@id=\"textLabel\"]")
 	public WebElement verificar;
 	
-	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[7]/*/*[1]")
+	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[8]/*[2]")
 	public WebElement nomeEditado;
 	
 	@FindBy(xpath = "//span[text()=\"Justificativa\"]")
@@ -151,7 +154,7 @@ public class RegrasDeEscrituraçãoEdiçãoValoresCalculadosPO extends TestBaseFerna
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(16000);
 		
 		valoresCalculados.click();
 		sleep(3000);
@@ -180,12 +183,14 @@ public class RegrasDeEscrituraçãoEdiçãoValoresCalculadosPO extends TestBaseFerna
 		nomeValor2.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 		
-		acao.sendKeys("Apresenta valor nulo");
-		acao.sendKeys(Keys.ESCAPE);
+		
+		
+		acao.click();
 		sleep(2000);
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		
+		acaoOPC.click();
+		sleep(4000);
+		
 		
 		
 		aplicar.click();
@@ -248,9 +253,11 @@ public class RegrasDeEscrituraçãoEdiçãoValoresCalculadosPO extends TestBaseFerna
 		nomeValorL22.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 		
-		acao.sendKeys("Teste Fórmula MID");
-		acao.sendKeys(Keys.ESCAPE);
-		sleep(1000);
+		acao.click();
+		sleep(2000);
+		
+		acaoOPC.click();
+		sleep(4000);
 		
 		aplicar.click();
 		sleep(2000);
@@ -259,18 +266,8 @@ public class RegrasDeEscrituraçãoEdiçãoValoresCalculadosPO extends TestBaseFerna
 		sleep(2000);
 		waitExpectElement(sim);
 		sleep(2000);
-		sim.click();
-		sleep(3000);
-		justificativa.clear();
-		sleep(1000);
-		justificativa.sendKeys("TESTE DE VALOR CALCULADO");
-		sleep(1000);
-		aceitar.click();
-		sleep(2000);
-		gravar.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		nao.click();
+		sleep(24000);
 		
 		
 		biblioteca.click();

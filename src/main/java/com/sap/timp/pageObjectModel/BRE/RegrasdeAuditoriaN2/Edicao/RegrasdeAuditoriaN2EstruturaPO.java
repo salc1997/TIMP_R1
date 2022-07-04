@@ -128,7 +128,7 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseSteven {
 	estrutura.click();
 	sleep(4000);
 	asociarEstrutura.click();
-	sleep(3000);
+	sleep(6000);
 	
 	inputSeleccionTabela.click();
 	sleep(4000);
@@ -151,13 +151,13 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseSteven {
 	
 	
 	grabar.click();
-	sleep(2000);
+	sleep(9000);
 	
 	sim.click();
 	sleep(3000);
 	
 	aceitar.click();
-	sleep(24000);
+	sleep(34000);
 	
 	biblioteca.click();
 	sleep(3000);
@@ -216,7 +216,7 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseSteven {
 	sleep(4000);
 	
 	grabar.click();
-	sleep(2000);
+	sleep(7000);
 	
 	sim.click();
 	sleep(3000);

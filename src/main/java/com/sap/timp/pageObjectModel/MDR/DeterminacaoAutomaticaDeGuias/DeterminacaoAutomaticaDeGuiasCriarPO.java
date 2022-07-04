@@ -37,7 +37,7 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 	@FindBy(xpath = "//div[@id=\"componentOutput\"]//child::div[contains(@class,\"icon-downmenu\")]")
 	public WebElement componente;
 	
-	@FindBy(xpath = "//li[@id=\"option-2\"]")
+	@FindBy(xpath = "//li[@id=\"option-1\"]")
 	public WebElement opcaoComponente;
 	
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher Descrição\"]")
@@ -46,8 +46,17 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 	@FindBy(xpath = "//div[@id=\"componentConfiguration\"]//child::div[contains(@class,\"icon-downmenu\")]")
 	public WebElement codigoConfiguração;
 	
+	@FindBy(xpath = "//div[@id=\"idLayout\"]//child::div[contains(@class,\"icon-downmenu\")]")
+	public WebElement layoutGuia;
+	
+	@FindBy(xpath = "//div[@id=\"outputCodePR\"]//child::div[contains(@class,\"icon-downmenu\")]")
+	public WebElement codigoOutputPR;
+	
 	@FindBy(xpath = "//div[@id=\"option-1\"]")
-	public WebElement opcaoCodigoConfiguração;
+	public WebElement opcao;
+	
+	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	public WebElement opcaoli;
 
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Agrupador de CFOP\"]")
@@ -105,7 +114,7 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 		sleep(2000);
 		//criaçao
 		novodeterminacaoautomaticadeguias.click();
-		sleep(12000);
+		sleep(24000);
 
 		empresa.click();
 		sleep(2000);
@@ -116,7 +125,7 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 		
 		
 		aCodigoAjuste.click();
-		sleep(9000);
+		sleep(4000);
 		
 		item.click();
 		sleep(2000);
@@ -125,18 +134,39 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 		sleep(10000);
 		
 		descricao.sendKeys("test Prueba");
-		sleep(2000);
+		sleep(8000);
 		
 		componente.click();
 		sleep(3000);
+		
 		opcaoComponente.click();
 		sleep(3000);
 		
+		//attributeToBeXpath("//*[@id=\"filial\"]/div", "class", "base-MultipleSelect3 required");
+		
 		codigoConfiguração.click();
-		sleep(45000);
-	
-		opcaoCodigoConfiguração.click();
 		sleep(3000);
+		
+		//waitExpectElement(opcao);
+		sleep(3000);
+		
+		opcao.click();
+		sleep(3000);
+		
+		
+		codigoOutputPR.click();
+		sleep(3000);
+		
+		opcaoli.click();
+		sleep(8000);
+		
+		layoutGuia.click();
+		sleep(3000);
+		
+		opcaoli.click();
+		sleep(3000);
+		
+		
 		/*String data=fechaActual();
 		dataincial.sendKeys(data);
 		

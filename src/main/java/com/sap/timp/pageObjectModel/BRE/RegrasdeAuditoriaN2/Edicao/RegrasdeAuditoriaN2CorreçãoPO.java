@@ -157,7 +157,7 @@ public boolean editar() {
 	
 	
 	adicionarCorrecoes.click();
-	sleep(3000);
+	sleep(9000);
 	
 	if (tq1 == true || tq2 == true) {
 		hererarquia.sendKeys("HCNF0110 - TA-1871 - NÃO MEXER");
@@ -184,7 +184,7 @@ public boolean editar() {
 		cenario.sendKeys(Keys.ENTER);
 		sleep(3000);
 	}else {
-		hererarquia.sendKeys("HCNF0125 - TA-1871 NÃO MEXER");
+		hererarquia.sendKeys("HCNF0125");
 		sleep(3000);
 		seleccionHererarquiaTC2.click();
 		sleep(4000);
@@ -227,7 +227,7 @@ public boolean editar() {
 	sleep(3000);
 	
 	aceitar.click();
-	sleep(24000);
+	sleep(40000);
 	
 	
 	//----------------Entrando de nuevo a editar--------------------------

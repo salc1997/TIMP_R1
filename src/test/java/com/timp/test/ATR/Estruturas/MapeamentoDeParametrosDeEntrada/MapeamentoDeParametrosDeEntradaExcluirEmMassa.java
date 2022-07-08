@@ -28,7 +28,7 @@ public class MapeamentoDeParametrosDeEntradaExcluirEmMassa extends TestBaseSteve
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+	//	driver.close();
 	}
 
 	

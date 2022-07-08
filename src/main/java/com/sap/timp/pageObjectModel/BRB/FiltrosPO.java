@@ -207,11 +207,11 @@ public class FiltrosPO  extends TestBaseSteven{
 		candadoD.click();
 		
 		if (amb == false) {
-			mayor.sendKeys("01/01/2016");
-			menor.sendKeys("31/01/2016");
+			mayor.sendKeys("01/01/2020");
+			menor.sendKeys("31/01/2020");
 		}else {
-			mayor.sendKeys("01/01/2016");
-			menor.sendKeys("31/01/2016");
+			mayor.sendKeys("01/01/2020");
+			menor.sendKeys("31/01/2020");
 		}
 		
 		
@@ -368,8 +368,8 @@ public class FiltrosPO  extends TestBaseSteven{
 		if (amb==false) {
 			uf.sendKeys("SP");
 			fi.sendKeys("0001");
-			d1.sendKeys("01/01/2014");
-			d2.sendKeys("31/01/2014");
+			d1.sendKeys("01/01/2020");
+			d2.sendKeys("31/01/2020");
 		}else {
 			uf.sendKeys("BA");
 			sleep(1000);
@@ -477,8 +477,8 @@ public class FiltrosPO  extends TestBaseSteven{
 		if (amb==false) {
 			uf.sendKeys("SP");
 			fi.sendKeys("0001");
-			d1.sendKeys("01/01/2014");
-			d2.sendKeys("31/01/2014");
+			d1.sendKeys("01/01/2020");
+			d2.sendKeys("31/01/2020");
 		}else {
 			uf.sendKeys("BA");
 			sleep(1000);
@@ -619,15 +619,15 @@ public class FiltrosPO  extends TestBaseSteven{
 			String datal = (driver.findElement(By.xpath("//div[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[@data-column=\"21\" and contains(@aria-label, \"Linha: "+i+"\")]/div[contains(@style,\"text-overflow\")]")).getText());
 			
 			try {
-				String mayorString = "01/01/2016";
-				String menorString = "31/01/2014";
+				String mayorString = "01/01/2020";
+				String menorString = "31/01/2020";
 				
 				if (amb== false) {
-					mayorString = "01/01/2014";
-					menorString = "31/01/2014";
+					mayorString = "01/01/2020";
+					menorString = "31/01/2020";
 				}else {
-					mayorString = "01/01/2016";
-					menorString = "31/01/2016";
+					mayorString = "01/01/2020";
+					menorString = "31/01/2020";
 				}
 				
 				

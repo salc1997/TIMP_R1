@@ -319,10 +319,10 @@ public class SaldosCriarPO extends TestBaseKenssy{
 		opcTributo.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		servicioWeb.click();
+		/*servicioWeb.click();
 		opcServicioWeb.click();
 		sleep(2000);
-		//clickFuera.click();
+		//clickFuera.click();*/
 		
 //		nf.click();
 //		sleep(2000);
@@ -357,22 +357,7 @@ public class SaldosCriarPO extends TestBaseKenssy{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		tributoA.click();
-		sleep(1000);
-		opcTributoA.click();
-		sleep(1000);
-		
-		attributeToBeXpath("//div[@id=\"tributeType\" and @class=\"add-form\"]/div/div","class", "base-autocomplete required");
-		sleep(2000);
-		
-		tipoTributoA.click();
-		sleep(1000);
-		opcTipoTributoA.click();
-		sleep(1000);
-		
-		attributeToBeXpath("//div[@id=\"saldo\" and @class=\"add-form\"]/div/div","class", "base-autocomplete required");
-		sleep(2000);
-		
+	
 		saldoA.click();
 		sleep(1000);
 		opcSaldoA.click();

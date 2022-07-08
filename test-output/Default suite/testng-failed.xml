@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa">
+      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar">
         <methods>
-          <include name="lixeiraEmMassaMaisExcluirEmMassa"/>
-          <include name="beforeClass"/>
           <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa -->
+      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

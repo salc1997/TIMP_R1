@@ -52,6 +52,10 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 	@FindBy(xpath = "//div[@id=\"outputCodePR\"]//child::div[contains(@class,\"icon-downmenu\")]")
 	public WebElement codigoOutputPR;
 	
+
+	@FindBy(xpath = "//div[@id=\"idLayoutConfiguration\"]//child::div[contains(@class,\"icon-downmenu\")]")
+	public WebElement configuraçãodoLayout;
+	
 	@FindBy(xpath = "//div[@id=\"option-1\"]")
 	public WebElement opcao;
 	
@@ -142,7 +146,7 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 		opcaoComponente.click();
 		sleep(3000);
 		
-		//attributeToBeXpath("//*[@id=\"filial\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBeXpath("//div[@id=\"componentConfiguration\"]/div/div/div/div[1]", "class", "input-wrapper base-input  required");
 		
 		codigoConfiguração.click();
 		sleep(3000);
@@ -166,7 +170,8 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 		opcaoli.click();
 		sleep(3000);
 		
-		
+		configuraçãodoLayout.click();
+		sleep(3000);
 		/*String data=fechaActual();
 		dataincial.sendKeys(data);
 		

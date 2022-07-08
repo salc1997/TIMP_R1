@@ -39,9 +39,5 @@ public class AtivaçaoParaMunicipioExcluirMassa extends TestBaseSteven{
 		acessarMDRPO.acessarMDR();
 		ativaçaoParaMunicipioExcluirMassaPO.ExcluirMassa();
 		
-
-	/*	boolean sucesso = ativaçaoParaMunicipioExcluirMassaPO.ExcluirMassa();
-		assertTrue(sucesso, semAcesso);
-		sleep(2000);*/
 	}
 }

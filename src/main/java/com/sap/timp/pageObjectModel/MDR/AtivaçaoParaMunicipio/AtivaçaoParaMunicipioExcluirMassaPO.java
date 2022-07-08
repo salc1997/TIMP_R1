@@ -73,7 +73,7 @@ public class AtivaçaoParaMunicipioExcluirMassaPO extends TestBaseSteven{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void ExcluirMassa() {
+	public boolean ExcluirMassa() {
 		
 		sleep(2000);
 		ativaçaoparamunicipio.click();
@@ -175,13 +175,13 @@ public class AtivaçaoParaMunicipioExcluirMassaPO extends TestBaseSteven{
 		gravar.click();
 		sleep(2000);
 		sim.click();
-		sleep(2000);
+		sleep(10000);
 	
 		biblioteca.click();
 		
 		sleep(2000);
 		
-/*		int botaoNao = rows("//button[text()=\"Não\"]");
+		int botaoNao = rows("//button[text()=\"Não\"]");
 		
 		if (botaoNao > 0) {
 			nao.click();
@@ -227,7 +227,7 @@ public class AtivaçaoParaMunicipioExcluirMassaPO extends TestBaseSteven{
 	
 		
 		return sucesso;
-	*/
+
 		
 		
 	}

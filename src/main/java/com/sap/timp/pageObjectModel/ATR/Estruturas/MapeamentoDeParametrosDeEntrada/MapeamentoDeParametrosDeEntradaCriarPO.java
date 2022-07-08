@@ -27,6 +27,11 @@ public class MapeamentoDeParametrosDeEntradaCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[@class=\"input structureMap\"]/div/div[2]")
 	public WebElement estruturadedados;
 	
+	@FindBy(xpath = "//div[@class=\"input tributeMap\"]/div/div/div[2]")
+	public WebElement tributo;
+	@FindBy(xpath = "//div[@id=\"05\"]")
+	public WebElement opcaoTributo;
+	
 	@FindBy(xpath = "//li[@id][text()=\"1 - NFs Entrada\"]")
 	public WebElement opcaoestrutura;
 	
@@ -90,9 +95,16 @@ public class MapeamentoDeParametrosDeEntradaCriarPO extends TestBaseSteven {
 		estruturadedados.click();
 		sleep(2000);
 		opcaoestrutura.click();
-		sleep(2000);
+		sleep(5000);
 	
+		tributo.click();
 		sleep(2000);
+		
+		opcaoTributo.click();
+		sleep(2000);
+		
+		closeSelectTypeCheckbox(tributo);
+		
 		direcaomovimento.click();
 		sleep(2000);
 		opcaodirecaomovimento.click();

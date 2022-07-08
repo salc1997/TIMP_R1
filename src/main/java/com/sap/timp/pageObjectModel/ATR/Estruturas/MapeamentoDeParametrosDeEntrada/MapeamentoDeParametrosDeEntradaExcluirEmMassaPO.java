@@ -47,9 +47,13 @@ public class MapeamentoDeParametrosDeEntradaExcluirEmMassaPO extends TestBaseSte
 	public WebElement motivo;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-left\")][2]")
-
 	public WebElement primerapagina;
-
+	
+	@FindBy(xpath = "//div[@class=\"input tributeMap\"]/div/div/div[2]")
+	public WebElement tributo;
+	
+	@FindBy(xpath = "//div[@id=\"05\"]")
+	public WebElement opcaoTributo;
 	
 	@FindBy(xpath = "//button/span[contains(@class,\"icon-persign\")]")
 	public WebElement excluirMassa;
@@ -95,12 +99,21 @@ public class MapeamentoDeParametrosDeEntradaExcluirEmMassaPO extends TestBaseSte
 		sleep(2000);
 		opcaoestrutura.click();
 		sleep(2000);
-	
+		
+		tributo.click();
 		sleep(2000);
+		
+		opcaoTributo.click();
+		sleep(4000);
+		
+		closeSelectTypeCheckbox(tributo);
+		
 		direcaomovimento.click();
 		sleep(2000);
 		opcaodirecaomovimento.click();
 		sleep(2000);
+		
+		
 		gravar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -116,7 +129,15 @@ public class MapeamentoDeParametrosDeEntradaExcluirEmMassaPO extends TestBaseSte
 		sleep(2000);
 		opcaoestrutura1.click();
 		sleep(2000);
-	
+		
+		tributo.click();
+		sleep(2000);
+		
+		opcaoTributo.click();
+		sleep(2000);
+		
+		closeSelectTypeCheckbox(tributo);
+		
 		sleep(2000);
 		direcaomovimento.click();
 		sleep(2000);

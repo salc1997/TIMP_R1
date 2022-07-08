@@ -56,7 +56,7 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//*[@id=\"00\"]/div[1]/label/span")
+	@FindBy(xpath = "//*[@id=\"10\"]/div[1]/label/span")
 	public WebElement opctributo;
 	
 	@FindBy(xpath = "//*[@id=\"23\"]/div[1]/label/span")
@@ -119,7 +119,7 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 		estruturaDados.click();
 		sleep(1000);
 		opcEstruturaDados.click();
-		sleep(1000);
+		sleep(3000);
 
 		
 		empresa.click();
@@ -175,7 +175,7 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 		estruturaDados.click();
 		sleep(1000);
 		opcEstruturaDados.click();
-		sleep(1000);
+		sleep(3000);
 
 		
 		empresa.click();

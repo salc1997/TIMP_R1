@@ -105,7 +105,7 @@ public class TestBaseSteven  {
 		driver.manage().window().maximize();
 		
 
-		driver.get(tq1);
+		driver.get(tc2);
 
 		return driver;
 	}

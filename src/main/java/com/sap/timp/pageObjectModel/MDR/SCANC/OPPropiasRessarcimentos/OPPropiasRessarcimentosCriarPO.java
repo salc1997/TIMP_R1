@@ -92,8 +92,8 @@ public class OPPropiasRessarcimentosCriarPO extends TestBaseSteven{
 		sleep(2000);
 	
 		//conta o numero de linhas
-		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
 		System.out.println(id);
 		
@@ -149,11 +149,7 @@ public class OPPropiasRessarcimentosCriarPO extends TestBaseSteven{
 		
 		dataVigencia.sendKeys(fechaActual());
 		
-		
-		
-		
 	
-		
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
@@ -172,8 +168,9 @@ public class OPPropiasRessarcimentosCriarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		
+		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
 		
 		
 		idInserir("OPPropiasRessarcimentos",id2);
@@ -187,7 +184,6 @@ public class OPPropiasRessarcimentosCriarPO extends TestBaseSteven{
 		if (idD < id2D) {
 			sucesso = true;
 		}
-		
 		
 		System.out.println(sucesso);
 		

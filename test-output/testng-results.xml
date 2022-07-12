@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-07T15:21:06 CST" name="Default suite" finished-at="2022-07-07T15:22:31 CST" duration-ms="85763">
+  <suite started-at="2022-07-11T15:13:05 CST" name="Default suite" finished-at="2022-07-11T15:15:36 CST" duration-ms="150736">
     <groups>
     </groups>
-    <test started-at="2022-07-07T15:21:06 CST" name="Default test" finished-at="2022-07-07T15:22:31 CST" duration-ms="85763">
-      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar@54a7079e]" started-at="2022-07-07T15:21:06 CST" name="beforeClass" finished-at="2022-07-07T15:21:16 CST" duration-ms="10928" status="PASS">
+    <test started-at="2022-07-11T15:13:05 CST" name="Default test" finished-at="2022-07-11T15:15:36 CST" duration-ms="150736">
+      <class name="com.timp.test.MDR.SCANC.OPPropiasRessarcimentos.OPPropriosRessarcimentosEditar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.SCANC.OPPropiasRessarcimentos.OPPropriosRessarcimentosEditar@54a7079e]" started-at="2022-07-11T15:13:05 CST" name="beforeClass" finished-at="2022-07-11T15:13:16 CST" duration-ms="10432" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar@54a7079e]" started-at="2022-07-07T15:21:17 CST" name="criar" finished-at="2022-07-07T15:22:31 CST" duration-ms="74805" status="FAIL">
+        <test-method signature="Editar()[pri:0, instance:com.timp.test.MDR.SCANC.OPPropiasRessarcimentos.OPPropriosRessarcimentosEditar@54a7079e]" started-at="2022-07-11T15:13:16 CST" name="Editar" finished-at="2022-07-11T15:15:36 CST" duration-ms="140268" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[O registro não foi criado com sucesso expected [true] but found [false]]]>
@@ -21,7 +21,7 @@
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failNotEquals(Assert.java:1413)
 at org.testng.Assert.assertTrue(Assert.java:56)
-at com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar.criar(GrupoDeEstruturasCriar.java:45)
+at com.timp.test.MDR.SCANC.OPPropiasRessarcimentos.OPPropriosRessarcimentosEditar.Editar(OPPropriosRessarcimentosEditar.java:44)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -55,12 +55,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar@54a7079e]" started-at="2022-07-07T15:22:31 CST" name="afterClass" finished-at="2022-07-07T15:22:31 CST" duration-ms="0" status="PASS">
+        </test-method> <!-- Editar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.SCANC.OPPropiasRessarcimentos.OPPropriosRessarcimentosEditar@54a7079e]" started-at="2022-07-11T15:15:36 CST" name="afterClass" finished-at="2022-07-11T15:15:36 CST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar -->
+      </class> <!-- com.timp.test.MDR.SCANC.OPPropiasRessarcimentos.OPPropriosRessarcimentosEditar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -2,18 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite">
 
-	<test name="Centralizacao >  Saldos" preserve-order="true">
+	<test name="Filiais" preserve-order="true">
 
 
 		<classes>
 
 			
-			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar"></class>
-			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosDetalhes"></class>
-			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosEditar"></class>
-			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosVisualizar"></class>
-			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosFiltrarId"></class>
-			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosExcluir"></class>
+			<class name="com.timp.test.MDR.Filiais.FiliaisDetalle"></class>
+			<class name="com.timp.test.MDR.Filiais.FiliaisEditar"></class>
+			<class name="com.timp.test.MDR.Filiais.FiliaisVisualizar"></class>
+			
+
 			
 			
 		</classes>

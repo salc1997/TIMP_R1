@@ -446,33 +446,33 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		
 		
 		//CAMPOS ABA3 SUBNIVEL 1
-		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][3]/div/div[2]/div/div[4]/div/div[@class=\"subLevels\"][1]/div[1]/div[1]/div[@id=\"configuration\"]/div/div/input")
+		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][3]//child::div[@class=\"subLevels\"][1]/div[1]//child::div[@id=\"configuration\"]//child::input")
 		public WebElement camposBCBAba3Subnivel1;
 		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][3]/div/div[2]/div/div[2]/div/div[@class=\"subLevels\"][1]/div[1]/div[1]/div[@id=\"configuration\"]/div/div/input")
 		public WebElement camposBCBAba3Subnivel1TQ1;
 		
-		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][3]/div/div[2]/div/div[4]/div/div[@class=\"subLevels\"][1]/div[1]/div[1]/div[@id=\"report\"]/div/div/div/input")
+		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][3]//child::div[@class=\"subLevels\"][1]/div[2]//child::div[@id=\"report\"]//child::input")
 		public WebElement campoConfiguracaoAba3Subnivel1;
 		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][3]/div/div[2]/div/div[2]/div/div[@class=\"subLevels\"][1]/div[1]/div[1]/div[@id=\"report\"]/div/div/div/input")
 		public WebElement campoConfiguracaoAba3Subnivel1TQ1;
 		
-		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][3]/div/div[2]/div/div[4]/div/div[@class=\"subLevels\"][1]/div[1]/div[1]/div[@id=\"value\"]/div/div/input")
+		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][3]//child::div[@class=\"subLevels\"][1]/div[2]//child::div[@id=\"value\"]//child::input")
 		public WebElement camposSaidaAba3Subnivel1;
 		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][3]/div/div[2]/div/div[2]/div/div[@class=\"subLevels\"][1]/div[1]/div[1]/div[@id=\"value\"]/div/div/input")
 		public WebElement camposSaidaAba3Subnivel1TQ1;
 		
 		//CAMPOS ABA3 SUBNIVEL 2
-		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][3]/div/div[2]/div/div[4]/div/div[@class=\"subLevels\"][1]/div[2]/div[1]/div[@id=\"configuration\"]/div/div/input")
+		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][3]//child::div[@class=\"subLevels\"][1]/div[2]//child::div[@id=\"configuration\"]//child::input")
 		public WebElement camposBCBAba3Subnivel2;	
 		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][3]/div/div[2]/div/div[2]/div/div[@class=\"subLevels\"][1]/div[2]/div[1]/div[@id=\"configuration\"]/div/div/input")
 		public WebElement camposBCBAba3Subnivel2TQ1;
 		
-		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][3]/div/div[2]/div/div[4]/div/div[@class=\"subLevels\"][1]/div[2]/div[1]/div[@id=\"report\"]/div/div/div/input")
+		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][3]//child::div[@class=\"subLevels\"][1]/div[2]//child::div[@id=\"report\"]//child::input")
 		public WebElement campoConfiguracaoAba3Subnivel2;
 		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][3]/div/div[2]/div/div[2]/div/div[@class=\"subLevels\"][1]/div[2]/div[1]/div[@id=\"report\"]/div/div/div/input")
 		public WebElement campoConfiguracaoAba3Subnivel2TQ1;
 		
-		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][3]/div/div[2]/div/div[4]/div/div[@class=\"subLevels\"][1]/div[2]/div[1]/div[@id=\"value\"]/div/div/input")
+		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][3]//child::div[@class=\"subLevels\"][1]/div[2]//child::div[@id=\"value\"]//child::input")
 		public WebElement camposSaidaAba3Subnivel2;
 		@FindBy(xpath = "//div[contains(@class,\"baseTabs-view -view-wrapper\")][3]/div/div[2]/div/div[2]/div/div[@class=\"subLevels\"][1]/div[2]/div[1]/div[@id=\"value\"]/div/div/input")
 		public WebElement camposSaidaAba3Subnivel2TQ1;
@@ -1277,7 +1277,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		sleep(2000);
 		
 		periodo.click();
-		sleep(2000);
+		sleep(3000);
 		paginaSiguiente.click();
 		sleep(3000);
 		
@@ -2202,7 +2202,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 				sucesso.add(campoConfiguracaoAba3Sunivel1.contains(campo2));
 				sucesso.add(campoSaidaAba3Sunivel1.contains(campo3));
 		}else {
-			System.out.println("OBTENGO DATOS DE ABA 2 - SUBNIVEL 1");
+			System.out.println("OBTENGO DATOS DE ABA 3 - SUBNIVEL 1");
 			String campoBCBAba3Sunivel1 = camposBCBAba3Subnivel1.getAttribute("value");
 			String campoConfiguracaoAba3Sunivel1 = campoConfiguracaoAba3Subnivel1.getAttribute("value");
 			String campoSaidaAba3Sunivel1 = camposSaidaAba3Subnivel1.getAttribute("value");

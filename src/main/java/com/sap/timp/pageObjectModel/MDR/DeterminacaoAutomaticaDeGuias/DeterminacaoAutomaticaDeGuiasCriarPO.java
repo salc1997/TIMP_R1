@@ -28,7 +28,7 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 	@FindBy(xpath = "//button[@id=\"adjustmentCode-btn-open-dialog\"]")
 	public WebElement aCodigoAjuste;
 	
-	@FindBy(xpath = "//div[@id=\"content-list\"]//child::div[contains(@class,\"tbody\")]/div[@class=\"tr\"]//child::span")
+	@FindBy(xpath = "//div[@id=\"content-list\"]//child::div[contains(@class,\"tbody\")]/div[@class=\"tr\" and @data-id=\"824\"]//span")
 	public WebElement item;
 	
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
@@ -46,8 +46,14 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 	@FindBy(xpath = "//div[@id=\"componentConfiguration\"]//child::div[contains(@class,\"icon-downmenu\")]")
 	public WebElement codigoConfiguração;
 	
+	@FindBy(xpath = "//div[@id=\"componentConfiguration\"]//child::input")
+	public WebElement codigoConfiguraçãoInput;
+	
 	@FindBy(xpath = "//div[@id=\"idLayout\"]//child::div[contains(@class,\"icon-downmenu\")]")
 	public WebElement layoutGuia;
+	
+	@FindBy(xpath = "//div[@id=\"idLayout\"]//child::input")
+	public WebElement layoutGuiaInput;
 	
 	@FindBy(xpath = "//div[@id=\"outputCodePR\"]//child::div[contains(@class,\"icon-downmenu\")]")
 	public WebElement codigoOutputPR;
@@ -61,6 +67,9 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 	
 	@FindBy(xpath = "//li[@id=\"option-1\"]")
 	public WebElement opcaoli;
+	
+	@FindBy(xpath = "//li[@id=\"option-30\"]")
+	public WebElement opcaoLayout;
 
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Agrupador de CFOP\"]")
@@ -151,6 +160,9 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 		codigoConfiguração.click();
 		sleep(3000);
 		
+		codigoConfiguraçãoInput.sendKeys("1564");
+		sleep(3000);
+		
 		//waitExpectElement(opcao);
 		sleep(3000);
 		
@@ -167,12 +179,19 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 		layoutGuia.click();
 		sleep(3000);
 		
-		opcaoli.click();
+		layoutGuiaInput.sendKeys("61");
+		sleep(3000);
+		opcaoLayout.click();
 		sleep(3000);
 		
 		configuraçãodoLayout.click();
-		sleep(3000);
-		/*String data=fechaActual();
+		sleep(1000);
+		
+		opcaoli.click();
+		sleep(1000);
+		
+		
+		String data=fechaActual();
 		dataincial.sendKeys(data);
 		
 		sleep(2000);
@@ -196,7 +215,7 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		*/
+
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		

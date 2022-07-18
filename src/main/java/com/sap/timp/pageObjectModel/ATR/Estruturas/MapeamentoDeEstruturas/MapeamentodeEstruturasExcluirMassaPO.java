@@ -56,7 +56,7 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBaseSteven {
 
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//*[@id=\"10\"]/div[1]/label/span")
+	@FindBy(xpath = "//*[@id=\"30\"]/div[1]/label/span")
 	public WebElement opctributo;
 	
 	@FindBy(xpath = "//*[@id=\"23\"]/div[1]/label/span")

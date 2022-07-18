@@ -40,9 +40,11 @@ public class OPPropiasRessarcimentosCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	
 	@FindBy(xpath = "//li[@class=\"list-item\" and @id][1]")
 	public WebElement opcao;
+	
+	@FindBy(xpath = "//li[@class=\"list-item\" and @id][2]")
+	public WebElement opcao3;
 	
 	@FindBy(xpath = "//div[@id=\"company-repayments\"]/div/div/div[2]")
 	public WebElement empresa;
@@ -67,6 +69,9 @@ public class OPPropiasRessarcimentosCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//input[contains(@placeholder,\"início\")]")
 	public WebElement dataVigencia;
+	
+	@FindBy(xpath = "//button/span[text()=\"Salvar e Novo\"]")
+	public WebElement salvarNovo;
 	
 	public OPPropiasRessarcimentosCriarPO() {
 
@@ -148,9 +153,8 @@ public class OPPropiasRessarcimentosCriarPO extends TestBaseSteven{
 		sleep(1000);
 		
 		dataVigencia.sendKeys(fechaActual());
-		
-	
 		sleep(2000);
+	
 		gravar.click();
 		sleep(2000);
 		sim.click();

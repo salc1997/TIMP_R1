@@ -109,6 +109,12 @@
 		<!--  SCANC > OP PropriosRessarcimentos -->
 		
 			<class name="com.timp.test.MDR.SCANC.OPPropiasRessarcimentos.OPPropriosRessarcimentosCriar"></class>
+			<class name="com.timp.test.MDR.SCANC.OPPropiasRessarcimentos.OPPropriosRessarcimentosEditar"></class>
+			<class name="com.timp.test.MDR.SCANC.OPPropiasRessarcimentos.OPPropriosRessarcimentosDetalhes"></class>
+			<class name="com.timp.test.MDR.SCANC.OPPropiasRessarcimentos.OPPropriosRessarcimentosVisualizar"></class>
+			<class name="com.timp.test.MDR.SCANC.OPPropiasRessarcimentos.OPPropriosRessarcimentosExcluir"></class>
+			<class name="com.timp.test.MDR.SCANC.OPPropiasRessarcimentos.OPPropriosRessarcimentosExcluirMassa"></class>
+		
 		
 		
 		</classes>

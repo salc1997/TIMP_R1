@@ -110,7 +110,7 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBaseFernando{
 		cboEstrutura1.click();
 		sleep(3000);
 		opcionEstrutura1.click();
-		sleep(3000);
+		sleep(6000);
 		
 		cboCamposEstrutura1.click();
 		sleep(3000);

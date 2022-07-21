@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Massiel\Documents\TestTimp\TIMP_R1\src\test\java\com\timp\test\ATR\Automacoes\AutomacoesATR1.xml</span>
+                    <span>C:\Users\Massiel\Documents\TestTimp\TIMP_R1\src\test\java\com\timp\test\DFG\Automacoes\AutomacoesConfiguracoes.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">16 methods,   16 passed</span>
+                    <span class="method-stats">8 methods, 4 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir" class="method navigator-link" hash-for-method="Lixeria">Lixeria</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.timp.test.DFG.Configuracoes.ConfiguracoesCriar" class="method navigator-link" hash-for-method="criar">criar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar" class="method navigator-link" hash-for-method="executar">executar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraMasRestaurar" class="method navigator-link" hash-for-method="lixeiraMasRestaurar">lixeiraMasRestaurar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,82 +133,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa" class="method navigator-link" hash-for-method="Excluir">Excluir</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.timp.test.DFG.Configuracoes.ConfiguracoesVisualizar" class="method navigator-link" hash-for-method="criar">criar</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar" class="method navigator-link" hash-for-method="criar">criar</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.timp.test.DFG.Configuracoes.ConfiguracoesEditar" class="method navigator-link" hash-for-method="criar">criar</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa" class="method navigator-link" hash-for-method="criar">criar</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta" class="method navigator-link" hash-for-method="criarGerenciarMoverPasta">criarGerenciarMoverPasta</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir" class="method navigator-link" hash-for-method="criar">criar</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes" class="method navigator-link" hash-for-method="detalhes">detalhes</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasEditar" class="method navigator-link" hash-for-method="editar">editar</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE" class="method navigator-link" hash-for-method="filtro">filtro</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados" class="method navigator-link" hash-for-method="filtro">filtro</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE" class="method navigator-link" hash-for-method="filtro">filtro</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID" class="method navigator-link" hash-for-method="filtro">filtro</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasFiltroPorID" class="method navigator-link" hash-for-method="filtro">filtro</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados" class="method navigator-link" hash-for-method="filtroAvansado">filtroAvansado</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.timp.test.ATR.Estruturas.Estruturas.EstruturasVisualizar" class="method navigator-link" hash-for-method="visualizar">visualizar</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.timp.test.ATR.Estruturas.Estruturas.EstruturasDetalles" class="method navigator-link" hash-for-method="visualizar">visualizar</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.timp.test.ATR.Estruturas.Estruturas.EstruturasVisualizarFiltros" class="method navigator-link" hash-for-method="visualizar">visualizar</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturaVer" class="method navigator-link" hash-for-method="visualizar">visualizar</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.timp.test.DFG.Configuracoes.ConfiguracoesFavoritos" class="method navigator-link" hash-for-method="favoritos">favoritos</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -194,70 +163,162 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasEditar</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="editar">
-                  </a> <!-- editar -->
-                  <span class="method-name">editar</span>
+                  <a name="executar">
+                  </a> <!-- executar -->
+                  <span class="method-name">executar</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&quot;tbody&quot;)]/div[contains(@class,&quot;tr&quot;) and @data-id][0]/div[5]/div&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:65456}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 2bedd79566db21e3a717e3b5b03b5ee1
+*** Element info: {Using=xpath, value=//div[contains(@class,&quot;tbody&quot;)]/div[contains(@class,&quot;tr&quot;) and @data-id][0]/div[5]/div}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.sap.timp.pageObjectModel.DFG.Configuracoes.ConfiguracoesExecutarPO.Executar(ConfiguracoesExecutarPO.java:120)
+	at com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar.executar(ConfiguracoesExecutar.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="filtroAvansado">
-                  </a> <!-- filtroAvansado -->
-                  <span class="method-name">filtroAvansado</span>
+                  <a name="Lixeria">
+                  </a> <!-- Lixeria -->
+                  <span class="method-name">Lixeria</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@data-id=&quot;217&quot;]/div[1]/div&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49349}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: aaf297b4fbd56983ecf7f91a4f30e291
+*** Element info: {Using=xpath, value=//div[@data-id=&quot;217&quot;]/div[1]/div}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.sap.timp.pageObjectModel.DFG.Configuracoes.ConfiguracoesLixeiraExcluirPO.LixeriaExcluir(ConfiguracoesLixeiraExcluirPO.java:260)
+	at com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir.Lixeria(ConfiguracoesLixeiraExcluir.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.timp.test.ATR.Estruturas.Estruturas.EstruturasVisualizar</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.timp.test.DFG.Configuracoes.ConfiguracoesCriar</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="visualizar">
-                  </a> <!-- visualizar -->
-                  <span class="method-name">visualizar</span>
+                  <a name="criar">
+                  </a> <!-- criar -->
+                  <span class="method-name">criar</span>
+                  <div class="stack-trace">java.lang.AssertionError: O registro não foi criado com sucesso expected [true] but found [false]
+	at com.timp.test.DFG.Configuracoes.ConfiguracoesCriar.criar(ConfiguracoesCriar.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraMasRestaurar</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="filtro">
-                  </a> <!-- filtro -->
-                  <span class="method-name">filtro</span>
+                  <a name="lixeiraMasRestaurar">
+                  </a> <!-- lixeiraMasRestaurar -->
+                  <span class="method-name">lixeiraMasRestaurar</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[@id=&quot;login-btn&quot;]&apos; (tried for 3600 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.sap.timp.base.TestBaseSteven.waitExpectElement(TestBaseSteven.java:282)
+	at com.sap.timp.pageObjectModel.ADM.LoginTC.login(LoginTC.java:31)
+	at com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraMasRestaurar.lixeiraMasRestaurar(ConfiguracoesLixeiraMasRestaurar.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;login-btn&quot;]&quot;}
+  (Session info: chrome=83.0.4103.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 30b2339e13aa63ca5baa3f2ec7a01248
+*** Element info: {Using=xpath, value=//*[@id=&quot;login-btn&quot;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar</span>
+              <span class="class-name">com.timp.test.DFG.Configuracoes.ConfiguracoesVisualizar</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -272,21 +333,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa</span>
+              <span class="class-name">com.timp.test.DFG.Configuracoes.ConfiguracoesFavoritos</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Excluir">
-                  </a> <!-- Excluir -->
-                  <span class="method-name">Excluir</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="criar">
-                  </a> <!-- criar -->
-                  <span class="method-name">criar</span>
+                  <a name="favoritos">
+                  </a> <!-- favoritos -->
+                  <span class="method-name">favoritos</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -294,112 +348,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="filtro">
-                  </a> <!-- filtro -->
-                  <span class="method-name">filtro</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.timp.test.ATR.Estruturas.Estruturas.EstruturasDetalles</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="visualizar">
-                  </a> <!-- visualizar -->
-                  <span class="method-name">visualizar</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasFiltroPorID</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="filtro">
-                  </a> <!-- filtro -->
-                  <span class="method-name">filtro</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturaVer</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="visualizar">
-                  </a> <!-- visualizar -->
-                  <span class="method-name">visualizar</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="filtro">
-                  </a> <!-- filtro -->
-                  <span class="method-name">filtro</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="detalhes">
-                  </a> <!-- detalhes -->
-                  <span class="method-name">detalhes</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="filtro">
-                  </a> <!-- filtro -->
-                  <span class="method-name">filtro</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir</span>
+              <span class="class-name">com.timp.test.DFG.Configuracoes.ConfiguracoesEditar</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -414,14 +363,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.timp.test.ATR.Estruturas.Estruturas.EstruturasVisualizarFiltros</span>
+              <span class="class-name">com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="visualizar">
-                  </a> <!-- visualizar -->
-                  <span class="method-name">visualizar</span>
+                  <a name="criarGerenciarMoverPasta">
+                  </a> <!-- criarGerenciarMoverPasta -->
+                  <span class="method-name">criarGerenciarMoverPasta</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -429,40 +378,25 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Massiel\Documents\TestTimp\TIMP_R1\src\test\java\com\timp\test\ATR\Automacoes\AutomacoesATR1.xml</span>
+            <span class="header-content">C:\Users\Massiel\Documents\TestTimp\TIMP_R1\src\test\java\com\timp\test\DFG\Automacoes\AutomacoesConfiguracoes.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;ATR - Arquivos&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;DFG - Configuracao &quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID&quot;/&gt;
-      &lt;class name=&quot;com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE&quot;/&gt;
-      &lt;class name=&quot;com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados&quot;/&gt;
-      &lt;class name=&quot;com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE&quot;/&gt;
-      &lt;class name=&quot;com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados&quot;/&gt;
+      &lt;class name=&quot;com.timp.test.DFG.Configuracoes.ConfiguracoesCriar&quot;/&gt;
+      &lt;class name=&quot;com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta&quot;/&gt;
+      &lt;class name=&quot;com.timp.test.DFG.Configuracoes.ConfiguracoesEditar&quot;/&gt;
+      &lt;class name=&quot;com.timp.test.DFG.Configuracoes.ConfiguracoesFavoritos&quot;/&gt;
+      &lt;class name=&quot;com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar&quot;/&gt;
+      &lt;class name=&quot;com.timp.test.DFG.Configuracoes.ConfiguracoesVisualizar&quot;/&gt;
+      &lt;class name=&quot;com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraMasRestaurar&quot;/&gt;
+      &lt;class name=&quot;com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- ATR - Arquivos --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;ATR-ESTRUCTURAS-ESTRUCTURAS&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.timp.test.ATR.Estruturas.Estruturas.EstruturasDetalles&quot;/&gt;
-      &lt;class name=&quot;com.timp.test.ATR.Estruturas.Estruturas.EstruturasVisualizar&quot;/&gt;
-      &lt;class name=&quot;com.timp.test.ATR.Estruturas.Estruturas.EstruturasVisualizarFiltros&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- ATR-ESTRUCTURAS-ESTRUCTURAS --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar&quot;/&gt;
-      &lt;class name=&quot;com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasEditar&quot;/&gt;
-      &lt;class name=&quot;com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes&quot;/&gt;
-      &lt;class name=&quot;com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturaVer&quot;/&gt;
-      &lt;class name=&quot;com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasFiltroPorID&quot;/&gt;
-      &lt;class name=&quot;com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir&quot;/&gt;
-      &lt;class name=&quot;com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS --&gt;
+  &lt;/test&gt; &lt;!-- DFG - Configuracao  --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -474,13 +408,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">ATR - Arquivos (5 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">ATR-ESTRUCTURAS-ESTRUCTURAS (3 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS (7 classes)</span>
+                <span class="test-name">DFG - Configuracao  (8 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -506,76 +434,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(16);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'editar')
-data.setCell(0, 2, 'com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasEditar')
-data.setCell(0, 3, 160741);
+data.setCell(0, 1, 'lixeiraMasRestaurar')
+data.setCell(0, 2, 'com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraMasRestaurar')
+data.setCell(0, 3, 3600223);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'criar')
-data.setCell(1, 2, 'com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa')
-data.setCell(1, 3, 117385);
+data.setCell(1, 2, 'com.timp.test.DFG.Configuracoes.ConfiguracoesCriar')
+data.setCell(1, 3, 618443);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'filtro')
-data.setCell(2, 2, 'com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID')
-data.setCell(2, 3, 106696);
+data.setCell(2, 1, 'Lixeria')
+data.setCell(2, 2, 'com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir')
+data.setCell(2, 3, 273739);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'criar')
-data.setCell(3, 2, 'com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar')
-data.setCell(3, 3, 99156);
+data.setCell(3, 1, 'criarGerenciarMoverPasta')
+data.setCell(3, 2, 'com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta')
+data.setCell(3, 3, 260594);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'visualizar')
-data.setCell(4, 2, 'com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturaVer')
-data.setCell(4, 3, 85355);
+data.setCell(4, 1, 'criar')
+data.setCell(4, 2, 'com.timp.test.DFG.Configuracoes.ConfiguracoesEditar')
+data.setCell(4, 3, 206698);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'criar')
-data.setCell(5, 2, 'com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir')
-data.setCell(5, 3, 82597);
+data.setCell(5, 2, 'com.timp.test.DFG.Configuracoes.ConfiguracoesVisualizar')
+data.setCell(5, 3, 181262);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'filtro')
-data.setCell(6, 2, 'com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados')
-data.setCell(6, 3, 79791);
+data.setCell(6, 1, 'favoritos')
+data.setCell(6, 2, 'com.timp.test.DFG.Configuracoes.ConfiguracoesFavoritos')
+data.setCell(6, 3, 119007);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'filtroAvansado')
-data.setCell(7, 2, 'com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados')
-data.setCell(7, 3, 79204);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'visualizar')
-data.setCell(8, 2, 'com.timp.test.ATR.Estruturas.Estruturas.EstruturasVisualizar')
-data.setCell(8, 3, 78271);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'detalhes')
-data.setCell(9, 2, 'com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes')
-data.setCell(9, 3, 69925);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'visualizar')
-data.setCell(10, 2, 'com.timp.test.ATR.Estruturas.Estruturas.EstruturasVisualizarFiltros')
-data.setCell(10, 3, 66552);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'visualizar')
-data.setCell(11, 2, 'com.timp.test.ATR.Estruturas.Estruturas.EstruturasDetalles')
-data.setCell(11, 3, 61943);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'filtro')
-data.setCell(12, 2, 'com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE')
-data.setCell(12, 3, 58304);
-data.setCell(13, 0, 13)
-data.setCell(13, 1, 'filtro')
-data.setCell(13, 2, 'com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE')
-data.setCell(13, 3, 58297);
-data.setCell(14, 0, 14)
-data.setCell(14, 1, 'filtro')
-data.setCell(14, 2, 'com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasFiltroPorID')
-data.setCell(14, 3, 52250);
-data.setCell(15, 0, 15)
-data.setCell(15, 1, 'Excluir')
-data.setCell(15, 2, 'com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa')
-data.setCell(15, 3, 41327);
+data.setCell(7, 1, 'executar')
+data.setCell(7, 2, 'com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar')
+data.setCell(7, 3, 80506);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 minutes</span>
+              <span class="suite-total-time">Total running time: 1 hours</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -601,238 +497,131 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.timp.test.DFG.Configuracoes.ConfiguracoesCriar</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">filtro</span>
-                <span class="method-start">20807 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">criar</span>
+                <span class="method-start">235790 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">127507 ms</span>
+                <span class="method-start">854237 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">127509 ms</span>
+                <span class="method-start">854239 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">filtro</span>
-                <span class="method-start">146114 ms</span>
+                <span class="method-name">criarGerenciarMoverPasta</span>
+                <span class="method-start">874772 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">204413 ms</span>
+                <span class="method-start">1135370 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.timp.test.DFG.Configuracoes.ConfiguracoesEditar</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">208830 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">filtroAvansado</span>
-                <span class="method-start">222553 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">301761 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">306169 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">filtro</span>
-                <span class="method-start">324327 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">382632 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">387049 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">filtro</span>
-                <span class="method-start">408600 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">488391 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.timp.test.ATR.Estruturas.Estruturas.EstruturasDetalles</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">492888 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">visualizar</span>
-                <span class="method-start">510079 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">572023 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.timp.test.ATR.Estruturas.Estruturas.EstruturasVisualizar</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">576424 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">visualizar</span>
-                <span class="method-start">597717 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">675991 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.timp.test.ATR.Estruturas.Estruturas.EstruturasVisualizarFiltros</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">680434 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">visualizar</span>
-                <span class="method-start">695867 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">762419 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">766850 ms</span>
+                <span class="method-start">1135372 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">criar</span>
-                <span class="method-start">780931 ms</span>
+                <span class="method-start">1161201 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">880090 ms</span>
+                <span class="method-start">1367900 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasEditar</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.timp.test.DFG.Configuracoes.ConfiguracoesFavoritos</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">880091 ms</span>
+                <span class="method-start">1372116 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">editar</span>
-                <span class="method-start">896686 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">1057428 ms</span>
-              </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasEditar</div> <!-- chronological-class-name -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">1057428 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">detalhes</span>
-                <span class="method-start">1072247 ms</span>
+                <span class="method-name">favoritos</span>
+                <span class="method-start">1393353 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">1142173 ms</span>
+                <span class="method-start">1512360 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturaVer</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">1146586 ms</span>
+                <span class="method-start">1516793 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">visualizar</span>
-                <span class="method-start">1167420 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">executar</span>
+                <span class="method-start">1537551 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">1252776 ms</span>
+                <span class="method-start">1618058 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasFiltroPorID</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.timp.test.DFG.Configuracoes.ConfiguracoesVisualizar</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">1257201 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">filtro</span>
-                <span class="method-start">1277619 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">1329869 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">1329941 ms</span>
+                <span class="method-start">1622484 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">criar</span>
-                <span class="method-start">1348945 ms</span>
+                <span class="method-start">1655899 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">1431543 ms</span>
+                <span class="method-start">1837161 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraMasRestaurar</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">1435979 ms</span>
+                <span class="method-start">1841603 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">criar</span>
-                <span class="method-start">1451576 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Excluir</span>
-                <span class="method-start">1568965 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">lixeiraMasRestaurar</span>
+                <span class="method-start">2044817 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">1610293 ms</span>
+                <span class="method-start">5645040 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">5649530 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Lixeria</span>
+                <span class="method-start">5683421 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">5957162 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

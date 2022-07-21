@@ -2,42 +2,58 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite">
 
-	<test name="Empresas" preserve-order="true">
+	<test name="Cenarios Correcao" preserve-order="true">
 
 
 		<classes>
 
 			
-			<class name="com.timp.test.MDR.Empresas.EmpresaEditar"></class>
-			<class name="com.timp.test.MDR.Empresas.EmpresasDetalhes"></class>
-			<class name="com.timp.test.MDR.Empresas.EmpresasVisualizar"></class>
-			<class name="com.timp.test.MDR.Empresas.EmpresasFiltros"></class>
-			
-			
-
+			<class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoCriar"></class>
+			<class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoEditar"></class>
+			<class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar"></class>
+			<class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoFiltrosAvanzados"></class>
+			<class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluir"></class>
+			<class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluirMassa"></class>
 			
 			
 		</classes>
 
 	</test> <!-- PruebaTestNG -->
 	
-	
-	<test name="Ajustes > AssociacaoCodigosAjustes" preserve-order="true">
+		<test name="Ocorrencia Fiscal > Status Ocorrencia Fiscal" preserve-order="true">
 
 
 		<classes>
 
 			
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar"></class>
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteEditar"></class>
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteDetalhe"></class>
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteVisualizar"></class>
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteExcluir"></class>
-		
+			<class name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalCriar"></class>
+			<class name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalEditar"></class>
+			<class name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcurrenciaFiscalVisualizar"></class>
+			<class name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalExcluir"></class>
+			<class name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalExcluirEmMassa"></class>
 	
 		</classes>
 
 	</test> <!-- PruebaTestNG -->
+	
+	
+		<test name="Representante Legais" preserve-order="true">
+
+
+		<classes>
+
+			
+			<class name="com.timp.test.MDR.RepresentanteLegais.RepresentanteLegaisCriar"></class>
+			<class name="com.timp.test.MDR.RepresentanteLegais.RepresentanteLegaisEditar"></class>
+			<class name="com.timp.test.MDR.RepresentanteLegais.RepresentanteLegaisVisualizar"></class>
+			<class name="com.timp.test.MDR.RepresentanteLegais.RepresentantesLegaisDetalhes"></class>
+			<class name="com.timp.test.MDR.RepresentanteLegais.RepresentantesLegaisExcluir"></class>
+
+	
+		</classes>
+
+	</test> <!-- PruebaTestNG -->
+
 	
 
 </suite> <!-- Suite -->

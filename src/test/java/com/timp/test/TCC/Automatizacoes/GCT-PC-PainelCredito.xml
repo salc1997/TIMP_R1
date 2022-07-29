@@ -4,7 +4,6 @@
 
 	<test name="Configuracao e Execucao">
 		<classes>
-				<!-- Registro M505 -->
 				<class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.ConfiguraçãoeExecução.ConfiguraçãoeExecuçãoFiltrosAva"></class>
 				<class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.ConfiguraçãoeExecução.ConfiguraçãoeExecuçãoCriar"></class>
 				<class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.ConfiguraçãoeExecução.ConfiguraçãoeExecuçãoEditar"></class>
@@ -15,11 +14,9 @@
 	
 	<test name="Executados" >
 		<classes>
-			<!-- Registro M510 -->
 				<class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.Executados.ExecutadosEditar"></class>
 				<class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.Executados.ExecutadosVisualizar"></class>
 				<class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.Executados.ExecutadosExcluir"></class>
-				
 				<class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.ConfiguraçãoeExecução.ConfiguraçãoeExecuçãoExcluir"></class>
 
 		</classes>

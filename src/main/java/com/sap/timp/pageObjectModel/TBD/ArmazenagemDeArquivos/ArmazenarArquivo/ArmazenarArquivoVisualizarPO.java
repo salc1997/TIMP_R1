@@ -143,7 +143,7 @@ public class ArmazenarArquivoVisualizarPO extends TestBaseSteven{
 			// opcao para TC2
 			pesquisar.sendKeys("49");
 			pesquisar.sendKeys(Keys.ENTER);
-			sleep(4000);
+			sleep(16000);
 			
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"49\"]/div[1]/div"));
 			WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\"49\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));

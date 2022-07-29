@@ -1,4 +1,4 @@
-package com.timp.test.DFG.Leiautes;
+package com.timp.test.DFG.LeiautesExecução;
 
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;

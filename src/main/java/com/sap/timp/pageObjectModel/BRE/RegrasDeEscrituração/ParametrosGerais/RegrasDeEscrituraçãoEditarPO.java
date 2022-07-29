@@ -54,7 +54,7 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBaseFernando {
 	@FindBy(xpath = "//button[text()=\"Remover\"]")
 	public WebElement remover;
 	
-	@FindBy(xpath = "//div[@id=\"toolbar-container\"]//child::span[text()=\"Configurações\"")
+	@FindBy(xpath = "//div[@id=\"toolbar-container\"]//child::span[text()=\"Configurações\"]")
 	public WebElement configuracoes;
 	
 	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
@@ -207,7 +207,7 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBaseFernando {
 		sleep(300);
 		waitExpectElement(caminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		sleep(7000);
 		
 		
 		copia = driver.findElements(By.xpath("//*[name()=\"tspan\" and contains(text(),\" Alíquota ICMS = BC ICMS\")]")).size();
@@ -221,12 +221,14 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBaseFernando {
 		System.out.println(copia);
 		System.out.println("Verificação exclusão Cópia: " + sucesso.get(3));
 		
-		configuracoes.click();
+ 
 		
-		waitExpectElement(descricaoConf);
+	//	waitExpectElement(descricaoConf);
 		invisibilityOfElementOverlay();
-		sleep(2000);
+		sleep(9000);
 		
+		configuracoes.click();
+		waitExpectElement(descricaoConf);
 		
 		String enviar = "Teste Editar";
 		descricaoConf.clear();

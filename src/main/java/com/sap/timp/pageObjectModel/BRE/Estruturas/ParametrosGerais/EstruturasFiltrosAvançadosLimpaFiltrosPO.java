@@ -70,7 +70,7 @@ public class EstruturasFiltrosAvançadosLimpaFiltrosPO extends TestBaseSteven {
 		sleep(4000);
 
 	//	waitExpectElement(filtrosEstructura);
-		sleep(6000);
+		sleep(13000);
 		
 		 filtrosEstructura.click();
 		 sleep(2000);

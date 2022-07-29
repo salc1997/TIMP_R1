@@ -328,7 +328,7 @@ public class RegraDeMensagensCriaComCopiaPO extends TestBaseSteven {
 			sim.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(3000);
+			sleep(9000);
 
 
 			

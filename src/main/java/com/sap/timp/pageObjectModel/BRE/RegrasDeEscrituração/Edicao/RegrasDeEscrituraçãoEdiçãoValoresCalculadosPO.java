@@ -154,7 +154,7 @@ public class RegrasDeEscrituraçãoEdiçãoValoresCalculadosPO extends TestBaseFerna
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(16000);
+		sleep(19000);
 		
 		valoresCalculados.click();
 		sleep(3000);
@@ -251,7 +251,7 @@ public class RegrasDeEscrituraçãoEdiçãoValoresCalculadosPO extends TestBaseFerna
 		
 		nomeValorL22.sendKeys("5012");
 		nomeValorL22.sendKeys(Keys.ESCAPE);
-		sleep(1000);
+		sleep(4000);
 		
 		acao.click();
 		sleep(2000);
@@ -267,7 +267,7 @@ public class RegrasDeEscrituraçãoEdiçãoValoresCalculadosPO extends TestBaseFerna
 		waitExpectElement(sim);
 		sleep(2000);
 		nao.click();
-		sleep(24000);
+		sleep(34000);
 		
 		
 		biblioteca.click();
@@ -315,7 +315,7 @@ public class RegrasDeEscrituraçãoEdiçãoValoresCalculadosPO extends TestBaseFerna
 		aplicar.click();
 		sleep(2000);
 		fechar.click();
-		sleep(2000);
+		sleep(10000);
 		
 		String nomeEditadoT = nomeEditado.getText();
 		System.out.println(nomeEditadoT + " Nome Editado Pegado");
@@ -329,19 +329,31 @@ public class RegrasDeEscrituraçãoEdiçãoValoresCalculadosPO extends TestBaseFerna
 		justificativaB.click();
 		sleep(2000);
 		
+		justificativa.clear();
+		justificativa.sendKeys("TESTE DE VALOR CALCULADO");
 		String justificativaT = justificativa.getAttribute("value");
-		System.out.println(justificativaT);
-		System.out.println(justificativaT.equals("TESTE DE VALOR CALCULADO") + " Verficação após edição Justificativa");
-		sucesso.add(justificativaT.equals("TESTE DE VALOR CALCULADO"));
+		cancelar.click();
+		sleep(2000);
+		
+		justificativaB.click();
+		sleep(2000);
+		
+		String justificativaTE = justificativa.getAttribute("value");
+		cancelar.click();
+		sucesso.add(justificativaT.equals(justificativaTE));
 		System.out.println(sucesso + " Edição Justificativa");
 		cancelar.click();
 		sleep(2000);
 		gravar.click();
 
 		sleep(2000);
-		waitExpectElement(nao);
-		sleep(2000);
-		nao.click();
+
+		int botaoNao = rows("//button[text()=\"Não\"]");
+		
+		if (botaoNao > 0) {
+			nao.click();
+		}
+
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

@@ -75,7 +75,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBaseSteven{
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Estrutura de arquivo\"]")
 	public WebElement estrutura;
 	
-	@FindBy(xpath = "//*[@id=\"18\"]/div[1]/label/span")
+	@FindBy(xpath = "//*[@id=\"700\"]/div[1]/label/span")
 	public WebElement opcEstrutura;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher o Versão do Leiaute\"]")

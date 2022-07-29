@@ -119,7 +119,7 @@ public class GrupoDeEstruturasEditarPO extends TestBaseSteven{
 		
 		sleep(2000);
 		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(50000);
+		sleep(90000);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		

@@ -93,7 +93,7 @@ public class ArmazenarArquivoEditarPO extends TestBaseSteven{
 			
 			pesquisar.sendKeys("49");
 			pesquisar.sendKeys(Keys.ENTER);
-			sleep(6000);
+			sleep(14000);
 			
 			
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"49\"]/div[1]/div"));

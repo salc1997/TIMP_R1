@@ -82,7 +82,8 @@ public class AprovacaoDeDocumentosCriarPO extends TestBaseSteven {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		sleep(1000);
+		
+		attributeToBeXpath("//div[@id=\"docType\"]/div", "class", "base-autocomplete required");
 		tipodedocumento.click();
 		sleep(1000);
 		opcaotipodedocumento.click();

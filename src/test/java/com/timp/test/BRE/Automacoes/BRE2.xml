@@ -3,24 +3,22 @@
 <suite name="Suite" preserve-order="true">
 	<test name="Parametros Gerais">	
 		<classes>
-			<!--  Parametros Gerais -->	
-			<class name="com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributoCriar"></class>
+			<class name="com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributoCriarMaisCaminos"></class>
 			<class name="com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributosDetalhes"></class>
 			<class name="com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributosVisualizar"></class>
-			<class name="com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributoLixeiraMaisExcluirDefinitivamente"></class>
 			<class name="com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassa"></class>
 		</classes>
 	</test>
 	<test name="Edicao">	
 		<classes>
-			<!--  Parametros Gerais -->	
-			<class name="com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributoCriar"></class>
 			<class name="com.timp.test.BRE.CalculoDeTributos.Edicao.CálculodeTributosEdiçãoEstruturas"></class>
 			<class name="com.timp.test.BRE.CalculoDeTributos.Edicao.CálculodeTributosEdiçãoSimular"></class>
 			<class name="com.timp.test.BRE.CalculoDeTributos.Edicao.CalculodeTributosEdiçãoRelacionamento"></class>
-			<class name="com.timp.test.BRE.CalculoDeTributos.Edicao.CalculoDeTributosFiltrosAvansados"></class>
+			<class name="com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributosFiltrosAvansados"></class>
 			<class name="com.timp.test.BRE.CalculoDeTributos.Edicao.CalculodeTributosTabelas"></class>
 			<class name="com.timp.test.BRE.CalculoDeTributos.Edicao.CálculodeTributosValoresCalculados"></class>
+		    <class name="com.timp.test.BRE.CalculoDeTributos.ParametroGerais.CalculoDeTributoLixeiraMaisExcluirDefinitivamente"></class>
 		</classes>
+		
 	</test>
 </suite>

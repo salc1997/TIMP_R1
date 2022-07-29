@@ -267,7 +267,7 @@ public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
 		nao.click();
 		sleep(3000);
 	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(12000);
+		sleep(20000);
 		biblioteca.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -307,9 +307,8 @@ public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
 		
 		String noListT = noList.getText();
 		System.out.println(noListT);
-		System.out.println(noListT.equals("A regra ainda não tem estructuras associadas") + " Apos Exclusão Estritura");
 		
-		if (noListT.equals("A regra ainda não tem estructuras associadas")) {
+		if (noListT.equals("A regra ainda não tem estruturas associadas")) {
 			sucesso.add(true);
 		}else {
 			sucesso.add(false);

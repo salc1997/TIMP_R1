@@ -261,8 +261,8 @@ public class Registro1501CriarPO extends TestBaseSteven{
 		sleep(8000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		flagNota.click();
-		sleep(2000);
+		/*flagNota.click();
+		sleep(2000);*/
 		
 		transferir.click();
 		sleep(2000);

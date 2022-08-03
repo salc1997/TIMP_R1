@@ -76,19 +76,6 @@ public class TestBaseSteven  {
         //options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
         //driver = new ChromeDriver(options);
 
-		/*
-		ChromeOptions options = new ChromeOptions();
-		options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
-		driver = new ChromeDriver(options);
-        options.addArguments("--headless");
-        options.addArguments("start-maximized"); // open Browser in maximized mode
-        options.addArguments("disable-infobars"); // disabling infobars
-        options.addArguments("--disable-extensions"); // disabling extensions
-        options.addArguments("--disable-gpu"); // applicable to windows os only
-        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-        driver = new ChromeDriver(options);
-		*/
-		//ChromeOptions options = new ChromeOptions();
 		options.addArguments("disable-infobars");
 		options.setExperimentalOption("useAutomationExtension", false);
 		

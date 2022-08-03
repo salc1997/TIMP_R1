@@ -18,7 +18,22 @@
 
 	</test> <!-- PruebaTestNG -->
 	
+	<test name="Representante Legais" preserve-order="true">
 
+
+		<classes>
+
+			
+			<class name="com.timp.test.MDR.RepresentanteLegais.RepresentanteLegaisCriar"></class>
+			<class name="com.timp.test.MDR.RepresentanteLegais.RepresentanteLegaisEditar"></class>
+			<class name="com.timp.test.MDR.RepresentanteLegais.RepresentanteLegaisVisualizar"></class>
+			<class name="com.timp.test.MDR.RepresentanteLegais.RepresentantesLegaisDetalhes"></class>
+			<class name="com.timp.test.MDR.RepresentanteLegais.RepresentantesLegaisExcluir"></class>
+			
+
+		</classes>
+
+	</test> <!-- PruebaTestNG -->
 	
 
 </suite> <!-- Suite -->

@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-28T19:16:15 CST" name="Default suite" finished-at="2022-07-28T19:17:56 CST" duration-ms="100977">
+  <suite started-at="2022-08-02T08:51:27 CST" name="Default suite" finished-at="2022-08-02T08:52:56 CST" duration-ms="88943">
     <groups>
     </groups>
-    <test started-at="2022-07-28T19:16:15 CST" name="Default test" finished-at="2022-07-28T19:17:56 CST" duration-ms="100977">
+    <test started-at="2022-08-02T08:51:27 CST" name="Default test" finished-at="2022-08-02T08:52:56 CST" duration-ms="88943">
       <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir@54a7079e]" started-at="2022-07-28T19:16:15 CST" name="beforeClass" finished-at="2022-07-28T19:16:36 CST" duration-ms="21475" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir@54a7079e]" started-at="2022-08-02T08:51:27 CST" name="beforeClass" finished-at="2022-08-02T08:51:43 CST" duration-ms="15962" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir@54a7079e]" started-at="2022-07-28T19:16:36 CST" name="criar" finished-at="2022-07-28T19:17:51 CST" duration-ms="75033" status="PASS">
+        <test-method signature="criar()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir@54a7079e]" started-at="2022-08-02T08:51:43 CST" name="criar" finished-at="2022-08-02T08:52:52 CST" duration-ms="68517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir@54a7079e]" started-at="2022-07-28T19:17:51 CST" name="afterClass" finished-at="2022-07-28T19:17:56 CST" duration-ms="4433" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir@54a7079e]" started-at="2022-08-02T08:52:52 CST" name="afterClass" finished-at="2022-08-02T08:52:56 CST" duration-ms="4436" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

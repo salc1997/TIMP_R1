@@ -2,6 +2,9 @@
 <<<<<<<=HEAD
 >>>>>>>=refs/remotes/origin/Eliel
 eclipse.preferences.version=1
+encoding//src/main/java/com/sap/timp/base/TestBaseEliel.java=UTF-8
+encoding//src/main/java/com/sap/timp/base/TestBaseSteven.java=UTF-8
+encoding//src/main/java/com/sap/timp/pageObjectModel/ADM/Usu\u00E1rios/Pacotes/PacotesCriarPO.java=UTF-8
 encoding//src/main/java/com/sap/timp/pageObjectModel/BCB/HierarquiaConfiguracaoTodasAsFuncionalidadesPO.java=UTF-8
 encoding//src/main/java/com/sap/timp/pageObjectModel/BRE/CalculoDeTributos/Edicao/C\u00E1lculodeTributosEdi\u00E7\u00E3oSimularPO.java=UTF-8
 encoding//src/main/java/com/sap/timp/pageObjectModel/BRE/CalculoDeTributos/Edicao/C\u00E1lculodeTributosValoresCalculadosPO.java=UTF-8
@@ -25,3 +28,4 @@ encoding//src/main/java/com/sap/timp/pageObjectModel/DFG/SPED/ESocial/Eventos/S1
 encoding//src/main/java/com/sap/timp/pageObjectModel/MDR/HierarquiaDeCenariosDeCorre\u00E7ao/HierarquiaDeCenariosDeCorre\u00E7aoFiltrosAbansadosPO.java=UTF-8
 encoding//src/main/java/com/sap/timp/pageObjectModel/MDR/LivrosFiscais/Parametriza\u00E7\u00E3oDoLivroOficial/Parametriza\u00E7\u00E3oDoLivroOficialCriarPO.java=UTF-8
 encoding//src/main/java/com/sap/timp/pageObjectModel/TDK/Dashboard/DashboardCriarPO.java=UTF-8
+encoding/<project>=UTF-8

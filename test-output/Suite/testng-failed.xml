@@ -1,15 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name=" ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed)">
+  <test thread-count="5" name="Regra De Abas(failed)">
     <classes>
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar">
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas.RegradeAbasCriar">
         <methods>
-          <include name="criarRelacionamento"/>
+          <include name="criar"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar -->
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas.RegradeAbasCriar -->
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas.RegradeAbasVer">
+        <methods>
+          <include name="afterClass"/>
+          <include name="ver"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas.RegradeAbasVer -->
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas.RegradeAbasExcluir">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas.RegradeAbasExcluir -->
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas.RegradeAbasEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+        </methods>
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas.RegradeAbasEditar -->
     </classes>
-  </test> <!--  ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed) -->
+  </test> <!-- Regra De Abas(failed) -->
+  <test thread-count="5" name="Regra De Campos(failed)">
+    <classes>
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposCriar">
+        <methods>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposCriar -->
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposEditar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+        </methods>
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposEditar -->
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposVer">
+        <methods>
+          <include name="ver"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposVer -->
+      <class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposExcluir">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+        </methods>
+      </class> <!-- com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposExcluir -->
+    </classes>
+  </test> <!-- Regra De Campos(failed) -->
 </suite> <!-- Failed suite [Suite] -->

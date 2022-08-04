@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.ADM.Usuários.Pacotes;
+package com.sap.timp.pageObjectModel.ADM.UsuÃ¡rios.Pacotes;
 
 import java.util.ArrayList;
 
@@ -50,7 +50,7 @@ public class PacotesCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//Span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	@FindBy(xpath = "//button[text()=\"Não\"]")
+	@FindBy(xpath = "//button[text()=\"Nï¿½o\"]")
 	public WebElement no;
 	
 

@@ -31,7 +31,7 @@ public class RegrasDeNegocioDetalhes extends TestBaseKenssy {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
@@ -50,6 +50,7 @@ public class RegrasDeNegocioDetalhes extends TestBaseKenssy {
 			assertTrue(sucesso.get(i), Detalhes);
 
 		}
+		sleep(2000);
 	}
 
 

@@ -29,7 +29,7 @@ public class RegrasDeAuditoriaN3Relacionamento extends TestBaseSteven{
   
   @AfterClass
   public void afterClass() {
-	  //driver.close();
+	  driver.close();
   }
 
 	@Test()
@@ -40,7 +40,7 @@ public class RegrasDeAuditoriaN3Relacionamento extends TestBaseSteven{
 		
 		boolean sucesso = regrasDeAuditoriaN3RelacionamentoPO.relacionamento();
 		assertTrue(sucesso, "Não foi adicionado o relacionamento");
-	
+		sleep(2000);
 	}
 
 	

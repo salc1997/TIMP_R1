@@ -35,7 +35,7 @@ public class RegrasDeEscrituraçãoDetalhes extends TestBaseSteven{
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		driver.close();
 	}
 
 
@@ -52,7 +52,7 @@ public class RegrasDeEscrituraçãoDetalhes extends TestBaseSteven{
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
-		
+		sleep(2000);
 
 		
 	}

@@ -32,7 +32,7 @@ public class RegrasDeMensagensSimular extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test()
@@ -46,7 +46,7 @@ public class RegrasDeMensagensSimular extends TestBaseSteven {
 		boolean sucesso = regrasDeMensagensSimularPO.simular();
 		
 		assertTrue(sucesso, filtros);
-		
+		sleep(2000);
 	}
  
  

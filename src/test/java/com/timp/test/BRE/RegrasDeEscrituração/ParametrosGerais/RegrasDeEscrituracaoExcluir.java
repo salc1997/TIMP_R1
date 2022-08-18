@@ -29,7 +29,7 @@ public class RegrasDeEscrituracaoExcluir extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test()
@@ -44,7 +44,7 @@ public class RegrasDeEscrituracaoExcluir extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Eliminado);
 		}
-		
+		sleep(2000);
 	}
  
  

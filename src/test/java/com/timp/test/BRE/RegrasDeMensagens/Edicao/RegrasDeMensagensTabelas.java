@@ -31,7 +31,7 @@ public class RegrasDeMensagensTabelas extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
@@ -48,7 +48,7 @@ public class RegrasDeMensagensTabelas extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Editar);
 		}
-		
+		sleep(2000);
 	}
  
  

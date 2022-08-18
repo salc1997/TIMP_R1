@@ -32,7 +32,7 @@ public class RegrasdeAuditoriaN2Detalhes extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+	driver.close();
 	}
 
 	@Test()
@@ -43,7 +43,7 @@ public class RegrasdeAuditoriaN2Detalhes extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
-
+		sleep(2000);
 	}
 
 }

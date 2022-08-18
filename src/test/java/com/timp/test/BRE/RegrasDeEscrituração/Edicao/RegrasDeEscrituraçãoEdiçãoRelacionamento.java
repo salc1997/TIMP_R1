@@ -40,5 +40,7 @@ public class RegrasDeEscrituraçãoEdiçãoRelacionamento extends TestBaseFernando{
 		
 		boolean sucesso = regrasDeEscrituraçãoEdiçãoRelacionamentoPO.relacionamento();
 		assertTrue(sucesso, Criar);
+		
+		sleep(2000);
 	}
 }

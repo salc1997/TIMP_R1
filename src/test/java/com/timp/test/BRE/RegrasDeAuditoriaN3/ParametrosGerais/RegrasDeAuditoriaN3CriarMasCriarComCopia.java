@@ -26,7 +26,7 @@ public class RegrasDeAuditoriaN3CriarMasCriarComCopia extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test()
@@ -36,5 +36,7 @@ public class RegrasDeAuditoriaN3CriarMasCriarComCopia extends TestBaseFernando{
 		
 		boolean sucesso = regrasDeAuditoriaN3CriarMasCriarComCopiaPO.criarComCopia();
 		assertTrue(sucesso, Criar);
+		
+		sleep(2000);
 	}
 }

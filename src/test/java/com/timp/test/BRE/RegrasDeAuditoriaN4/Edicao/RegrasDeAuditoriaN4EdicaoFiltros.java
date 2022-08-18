@@ -41,6 +41,7 @@ public class RegrasDeAuditoriaN4EdicaoFiltros extends TestBaseKenssy {
 		
 		boolean sucesso = regrasDeAuditoriaN4FiltrosPO.filtros();
 		assertTrue(sucesso, "disque se mostro");
+		sleep(2000);
 	}
 
 }

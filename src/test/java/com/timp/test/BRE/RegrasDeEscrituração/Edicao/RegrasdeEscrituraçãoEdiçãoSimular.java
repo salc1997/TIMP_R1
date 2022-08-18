@@ -47,7 +47,7 @@ public class RegrasdeEscrituraçãoEdiçãoSimular extends TestBaseSteven {
 
 		boolean sucesso = bRERegradeEscrituraçãoEdiçãoSimularPO.editar();
 		assertTrue(sucesso, Editar);
-
+		sleep(2000);
 	}
 
 }

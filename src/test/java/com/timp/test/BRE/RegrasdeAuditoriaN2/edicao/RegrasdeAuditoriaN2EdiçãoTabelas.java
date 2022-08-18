@@ -40,7 +40,7 @@ public class RegrasdeAuditoriaN2EdiçãoTabelas extends TestBaseSteven {
 		acessarBREPO.acessarBRE();
 		boolean sucesso = regrasdeAuditoriaN2EdiçãoTabelasPO.editar();
 		assertTrue(sucesso, Editar);
-
+		sleep(2000);
 	}
 
 }

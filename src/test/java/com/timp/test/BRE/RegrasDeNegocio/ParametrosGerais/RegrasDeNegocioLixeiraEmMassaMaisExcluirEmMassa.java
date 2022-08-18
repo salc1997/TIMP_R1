@@ -30,7 +30,7 @@ public class RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa extends TestBaseSte
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
@@ -45,6 +45,6 @@ public class RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassa extends TestBaseSte
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
 		}
-		
+		sleep(2000);
 	}
 }

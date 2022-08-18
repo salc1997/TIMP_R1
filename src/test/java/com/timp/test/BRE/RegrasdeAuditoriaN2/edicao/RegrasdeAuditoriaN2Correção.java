@@ -30,7 +30,7 @@ public class RegrasdeAuditoriaN2Correção extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		driver.close();
 	}
 
 	@Test()
@@ -39,7 +39,7 @@ public class RegrasdeAuditoriaN2Correção extends TestBaseSteven {
 		acessarBREPO.acessarBRE();
 		boolean sucesso = regrasdeAuditoriaN2CorreçãoPO.editar();
 		assertTrue(sucesso, Editar);
-
+		sleep(2000);
 	}
 
 }

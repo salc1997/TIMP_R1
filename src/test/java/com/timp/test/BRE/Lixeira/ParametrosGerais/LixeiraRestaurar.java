@@ -38,5 +38,8 @@ public class LixeiraRestaurar extends TestBaseSteven{
 		boolean sucesso = lixeiraRestaurarPO.restaurar();
 		assertTrue(sucesso, Restaurar);
 		sleep(2000);
+		
+		sleep(1000);
 	} 
+	
 }

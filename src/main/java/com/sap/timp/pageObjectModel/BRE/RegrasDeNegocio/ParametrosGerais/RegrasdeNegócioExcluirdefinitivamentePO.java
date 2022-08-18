@@ -251,7 +251,7 @@ public boolean criar() {
 		caracteristicas.click();
 		sleep(3000);
 		opcCaracteristicas.click();
-		sleep(4000);
+		sleep(8000);
 		
 		
 		

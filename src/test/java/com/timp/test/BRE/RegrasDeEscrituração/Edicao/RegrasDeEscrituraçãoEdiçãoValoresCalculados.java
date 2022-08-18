@@ -30,7 +30,7 @@ public class RegrasDeEscrituraçãoEdiçãoValoresCalculados extends TestBaseFernand
 
   @AfterClass
   public void afterClass() {
-	//  driver.close();
+	  driver.close();
   }
   
   @Test()
@@ -40,13 +40,12 @@ public class RegrasDeEscrituraçãoEdiçãoValoresCalculados extends TestBaseFernand
 		
 		acessarBREPO.acessarBRE();
 		
-		
-ArrayList<Boolean> sucesso = regrasDeEscrituraçãoEdiçãoValoresCalculadosPO.Valores();
+		ArrayList<Boolean> sucesso = regrasDeEscrituraçãoEdiçãoValoresCalculadosPO.Valores();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Editar);
 		}
-		
+		sleep(2000);
 	}
 
 }

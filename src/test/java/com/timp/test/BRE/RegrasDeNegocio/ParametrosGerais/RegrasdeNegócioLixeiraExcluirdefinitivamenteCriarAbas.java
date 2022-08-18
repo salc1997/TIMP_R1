@@ -47,7 +47,7 @@ public class RegrasdeNegócioLixeiraExcluirdefinitivamenteCriarAbas extends TestB
 		sleep(3000);
 		boolean sucesso1 = regrasdeNegócioLixeiraExcluirdefinitivamenteCriarAbasPO.excluirDefinitivo();
 		assertTrue(sucesso1, Criar);
-
+		sleep(2000);
 	}
 	
 

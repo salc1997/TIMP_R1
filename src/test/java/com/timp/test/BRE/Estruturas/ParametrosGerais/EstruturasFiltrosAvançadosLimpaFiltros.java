@@ -32,7 +32,7 @@ public class EstruturasFiltrosAvançadosLimpaFiltros extends TestBaseSteven {
 
   @AfterClass
   public void afterClass() {
-	//  driver.close();
+	  driver.close();
   }
 
 
@@ -46,7 +46,7 @@ public class EstruturasFiltrosAvançadosLimpaFiltros extends TestBaseSteven {
 		for (int i = 0; i < estructura.size(); i++) {
 			assertTrue(estructura.get(i), Filtros);
 		}
-		
+		sleep(1000);
 
 	}
 

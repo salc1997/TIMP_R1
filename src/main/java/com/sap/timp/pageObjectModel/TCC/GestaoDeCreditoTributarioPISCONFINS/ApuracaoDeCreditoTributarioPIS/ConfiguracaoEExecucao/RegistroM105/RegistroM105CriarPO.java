@@ -338,7 +338,7 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 		sim.click();
 		sleep(10000);		
 		waitExpectElement(biblioteca);
-		sleep(8000);
+		sleep(12000);
 		
 		biblioteca.click();
 		sleep(4000);

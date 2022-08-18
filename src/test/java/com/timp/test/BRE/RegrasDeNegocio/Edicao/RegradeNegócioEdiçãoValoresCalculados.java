@@ -43,7 +43,7 @@ public void afterClass() {
 
 		boolean sucesso = regradeNegócioEdiçãoValoresCalculadosPO.editar();
 		assertTrue(sucesso, Editar);
-
+		sleep(2000);
 
 	}
 

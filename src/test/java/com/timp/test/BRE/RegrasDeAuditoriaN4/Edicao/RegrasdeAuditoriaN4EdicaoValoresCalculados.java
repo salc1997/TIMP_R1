@@ -47,5 +47,7 @@ public class RegrasdeAuditoriaN4EdicaoValoresCalculados extends TestBaseKenssy{
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), "Valor calculado con exito");
 		}
+		
+		sleep(2000);
 	}
 }

@@ -28,7 +28,7 @@ public class RegrasDeAuditoriaN3CriarMasCaminho extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		driver.close();
 	}
 
 	@Test()
@@ -38,5 +38,6 @@ public class RegrasDeAuditoriaN3CriarMasCaminho extends TestBaseFernando{
 		
 		boolean sucesso = regrasDeAuditoriaN3CriarMasCaminhoPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
 }

@@ -26,7 +26,7 @@ public class RegrasDeNegocioEdicaoRelacionamento extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
@@ -39,5 +39,6 @@ public class RegrasDeNegocioEdicaoRelacionamento extends TestBaseFernando{
 		
 		boolean sucesso = regrasDeNegocioEdicaoRelacionamentoPO.relacionamento();
 		assertTrue(sucesso, Editar);
+		sleep(2000);
 	}
 }

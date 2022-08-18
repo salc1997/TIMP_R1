@@ -30,6 +30,7 @@ public class LicençasVisualizar extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
   @Test

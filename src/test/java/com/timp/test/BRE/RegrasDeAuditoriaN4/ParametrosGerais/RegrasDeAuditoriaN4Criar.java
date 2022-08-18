@@ -27,7 +27,7 @@ public class RegrasDeAuditoriaN4Criar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+	 driver.close();
 	}
 	
 	@Test()
@@ -37,6 +37,8 @@ public class RegrasDeAuditoriaN4Criar extends TestBaseSteven {
 		
 		boolean sucesso = regrasDeAuditoriaN4CriarPO.criar();
 		assertTrue(sucesso, Criar);
+		
+		sleep(2000);
 	}
  
 }

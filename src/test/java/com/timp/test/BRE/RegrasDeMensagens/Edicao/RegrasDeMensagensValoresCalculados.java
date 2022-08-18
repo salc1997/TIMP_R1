@@ -51,7 +51,7 @@ public class RegrasDeMensagensValoresCalculados extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Editar);
 		}
-		
+		sleep(2000);
 	}
  
  

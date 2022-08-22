@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguracaoDeTributos.ConfiguracaoDeTipoTributo.ConfiguracaoDeTipoTributoEditarPO;
+import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoDeTipoTributo.ConfiguracaoDeTipoTributoEditarPO;
 import com.sap.timp.pageObjectModel.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteEditarPO;
 
 import org.testng.annotations.BeforeClass;

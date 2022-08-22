@@ -97,7 +97,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarPO extends TestBaseSte
 
 	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[2]")
 	public WebElement filial;
-	@FindBy(xpath = "//div[contains(@id,\"1000_SP_0001\")]/div/label/span")
+	@FindBy(xpath = "//div[contains(@id,\"1000_SP_0016\")]/div/label/span")
 	public WebElement filialO;
 
 	@FindBy(xpath = "//div[@id=\"calculation-type\"]/div/div/div[2]")

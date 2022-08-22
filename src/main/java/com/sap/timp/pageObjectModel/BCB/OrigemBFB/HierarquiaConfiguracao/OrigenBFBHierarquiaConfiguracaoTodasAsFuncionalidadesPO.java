@@ -107,7 +107,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		public WebElement filial;
 		@FindBy(xpath = "//div[contains(@id,\"1000_SP_0001\")]/div/label/span")
 		public WebElement filialO;
-		@FindBy(xpath = "//div[contains(@id,\"1000_AL_0008\")]/div/label/span")
+		@FindBy(xpath = "//div[contains(@id,\"1000_AL_0805\")]/div/label/span")
 		public WebElement filialTc2;
 	
 		@FindBy(xpath = "//div[@id=\"calculation-type\"]/div/div/div[2]")

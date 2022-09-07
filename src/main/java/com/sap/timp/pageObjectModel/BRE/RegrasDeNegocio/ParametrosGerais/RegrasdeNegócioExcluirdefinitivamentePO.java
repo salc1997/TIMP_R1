@@ -189,7 +189,7 @@ public boolean criar() {
 		novo.click();
 		
 	
-		sleep(9000);
+		sleep(12000);
 		
 		nome.sendKeys("PRUEBA QA 007");
 		sleep(2000);

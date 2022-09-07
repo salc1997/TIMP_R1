@@ -62,11 +62,11 @@ public class SubPeriodoPeriodicidadeAlterarStatusSubperiodoAvulsoPO extends Test
 			pesquisar.sendKeys(Keys.ENTER);
 			sleep(3000);
 		}else {
-			idFiltro = "14416";
-			pesquisar.sendKeys("14416");
+			idFiltro = "21690";
+			pesquisar.sendKeys("21690");
 			sleep(2000);
 			pesquisar.sendKeys(Keys.ENTER);
-			sleep(9000);
+			sleep(12000);
 		}
 		
 		WebElement menuFiltradoTpf2 = driver.findElement(By.xpath("//div[contains(@data-id,"+idFiltro+")]/div[1]/div"));
@@ -84,20 +84,20 @@ public class SubPeriodoPeriodicidadeAlterarStatusSubperiodoAvulsoPO extends Test
 		
 		sleep(2000);
 		waitExpectXpath("//span[contains(text(),\"O status foi alterado com sucesso\")]");
-		sleep(2000);
+		sleep(6000);
 		
 		String Codstatus1 = driver.findElement(By.xpath("//div[contains(@data-id,"+idFiltro+")]/div[9]/div")).getText();
 		String status1 = driver.findElement(By.xpath("//div[contains(@data-id,"+idFiltro+")]/div[10]/div")).getText();
 		System.out.println("CodStatus 1: "+Codstatus1);
 		System.out.println("Status 1: "+status1);
 		System.out.println(" ");
-		sleep(2000);
+		sleep(4000);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 			sucesso.add(Codstatus1.contains("200"));
 			sucesso.add(status1.contains("Pré-Fechamento"));
 			
-			
+		sleep(2000);
 		menuFiltradoTpf2 = driver.findElement(By.xpath("//div[contains(@data-id,"+idFiltro+")]/div[1]/div"));
 		sleep(2000);
 		WebElement preFechamento2 = driver.findElement(
@@ -109,10 +109,10 @@ public class SubPeriodoPeriodicidadeAlterarStatusSubperiodoAvulsoPO extends Test
 		preFechamento2.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		sleep(2000);
-		waitExpectXpath("//span[contains(text(),\"O status foi alterado com sucesso\")]");
+		//waitExpectXpath("//span[contains(text(),\"O status foi alterado com sucesso\")]");
 		sleep(2000);
 		
 		String Codstatus2 = driver.findElement(By.xpath("//div[contains(@data-id,"+idFiltro+")]/div[9]/div")).getText();

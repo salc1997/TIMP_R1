@@ -2,20 +2,33 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite">
 
+	<test name="Ajustes > AssociacaoCodigosAjustes" preserve-order="true">
+
+
+		<classes>
+
+			
+			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar"></class>
+			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteDetalhe"></class>
+			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteEditar"></class>
+			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteVisualizar"></class>
+			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteExcluir"></class>
+
+		</classes>
+
+
+	</test> <!-- PruebaTestNG -->
+	
 	<test name="Ocorrencia Fiscal > Status Ocorrencia Fiscal" preserve-order="true">
 
 
 		<classes>
 
 			
-			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar"></class>
-			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesDetalhes"></class>
-			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesEditar"></class>
-			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesVisualizar"></class>
-			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir"></class>
-			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluirMassa"></class>
-
-
+			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasCriar"></class>
+			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasEditar"></class>
+			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasFiltroPorId"></class>
+			
 		</classes>
 
 

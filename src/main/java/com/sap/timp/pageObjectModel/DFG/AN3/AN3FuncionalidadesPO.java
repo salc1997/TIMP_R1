@@ -851,9 +851,9 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		caracterisiticaO.click();
 		sleep(3000);
 		actionsMoveToElementElement(dataVigenciaR);
-		sleep(1000);
+		sleep(5000);
 		
-		waitExpectElement(leiauteR);
+		//waitExpectElement(leiauteR);
 		leiauteR.click();
 		sleep(1000);
 		actionsMoveToElementXpath("//li[contains(text(),\""+idObter2()+"\")]");

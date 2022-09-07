@@ -30,7 +30,7 @@ public class ConfiguraçãoTributoAgrupamentofiltrar extends TestBaseSteven {
 
   @AfterClass
   public void afterClass() {
-	  driver.close();
+	 driver.close();
   }
   
   
@@ -40,9 +40,9 @@ public class ConfiguraçãoTributoAgrupamentofiltrar extends TestBaseSteven {
 
 		loginTC.login();
 		acessarADMPO.acessarADM();
-		configuraçãoTributoAgrupamentofiltrarPO.filtro();
+		boolean sucesso = configuraçãoTributoAgrupamentofiltrarPO.filtro();
+		assertTrue(sucesso, Criar);
 		sleep(2000);
-		
 	}
 
 }

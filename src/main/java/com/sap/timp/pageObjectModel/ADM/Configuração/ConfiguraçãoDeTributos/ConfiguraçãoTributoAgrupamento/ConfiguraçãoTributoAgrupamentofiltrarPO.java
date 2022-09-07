@@ -36,6 +36,9 @@ public class ConfiguraçãoTributoAgrupamentofiltrarPO extends TestBaseSteven {
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement btnBiblioteca;
 	
+	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
+	public WebElement id;
+	
 	public ConfiguraçãoTributoAgrupamentofiltrarPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -70,13 +73,13 @@ public class ConfiguraçãoTributoAgrupamentofiltrarPO extends TestBaseSteven {
 		
 		pesquisar.sendKeys(Keys. ENTER);
 		sleep(2000);
-		System.out.println("1111");
-		int j=1;
-		ArrayList<String> data = new ArrayList<String>();
-		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]")).size();
+
+		String idBusqueda = id.getText();
+		System.out.println(idBusqueda + " Id Busqueda");
+		
+		boolean sucesso = idBusqueda.equals(idRegistro);
 
 		
-		Boolean sucesso = true;
 		System.out.println(sucesso);
 		return sucesso;
 	}

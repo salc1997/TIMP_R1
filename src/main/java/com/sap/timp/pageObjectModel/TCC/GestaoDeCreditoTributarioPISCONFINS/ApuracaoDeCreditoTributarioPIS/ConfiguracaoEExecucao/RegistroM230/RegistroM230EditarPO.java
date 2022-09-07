@@ -134,8 +134,8 @@ public class RegistroM230EditarPO extends TestBaseMassiel{
 		
 		driver.navigate().refresh();
 		sleep(12000);
-		//waitExpectElement(filialInput);
-		sleep(25000);
+	
+		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		
 		String nuevoTexto = filialInput.getText();
 		/*System.out.println(valor);*/

@@ -147,7 +147,7 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//div[@id=\"inputSelectFilial\"]/div/div/div[2]")
 	public WebElement filial;
-	@FindBy(xpath = "//div[@id=\"1000SP0001\"]/div/label/span")
+	@FindBy(xpath = "//div[@id=\"1000SP0014\"]/div/label/span")
 	public WebElement filialO;
 	
 	@FindBy(xpath = "//div[@id=\"inputTimpVersion\"]/div/div/div[2]")
@@ -481,7 +481,7 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 		sucesso.add(nomeC.equals("Teste Automatizado Massiel"));
 		sucesso.add(empresaC.equals("1000"));
 		sucesso.add(ufC.equals("SP"));
-		sucesso.add(filialC.equals("0001"));
+		sucesso.add(filialC.equals("0014"));
 		sucesso.add(tributoC.equals("ICMS"));
 
 		

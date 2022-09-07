@@ -31,7 +31,7 @@ public class SubPeriodoPeriodicidadeAlterarStatusSubperiodoAvulso extends TestBa
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test()

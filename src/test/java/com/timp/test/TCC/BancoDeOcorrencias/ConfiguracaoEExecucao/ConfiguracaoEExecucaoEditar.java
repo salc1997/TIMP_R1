@@ -37,7 +37,7 @@ public class ConfiguracaoEExecucaoEditar extends TestBaseSteven {
 	}
 
 	@Test()
-	public void criar() {
+	public void editar() {
 		loginTC.login();
 		acessarTCCPO.acessarTCC();
 		

@@ -55,7 +55,7 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//label[@for=\"check-1000_SP_0001\"]/span")
 	public WebElement filialOTQ1;
 	
-	@FindBy(xpath = "//label[@for=\"check-1000_BA_0143\"]/span")
+	@FindBy(xpath = "//label[@for=\"check-1000_BA_0075\"]/span")
 	public WebElement filialOTC2;
 	
 	@FindBy(xpath = "//div[@id=\"occurrence-type\"]/div/div[2]/div/div[2]")
@@ -64,7 +64,7 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[text()=\"Auto de infração\"]")
 	public WebElement tipoOcorreciaOTQ1;
 	
-	@FindBy(xpath = "//div[text()=\"Cobrança em fronteira\"]")
+	@FindBy(xpath = "//div[text()=\"Auditoria Interna\"]")
 	public WebElement tipoOcorrenciaOTC2;
 	
 	@FindBy(xpath = "//div[@id=\"object-type\"]/div/div[2]/div/div[2]")
@@ -73,7 +73,7 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[text()=\"ICMS\"]")
 	public WebElement tipoObjetoTQ1;
 	
-	@FindBy(xpath = "//div[text()=\"DIFAL\"]")
+	@FindBy(xpath = "//div[text()=\"ICMS\"]")
 	public WebElement tipoObjetoTC2;
 	
 	@FindBy(xpath = "//div[@id=\"objectTypeFiscalOccurrenceRegister\"]/div/div[2]/div/div[2]")
@@ -83,7 +83,7 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBaseSteven {
 	public WebElement idTipoObjetoTQ1;
 	
 
-	@FindBy(xpath = "//div[text()=\"2 - Controle Interno\"]")
+	@FindBy(xpath = "//div[text()=\"118 - Auditoria Interna\"]")
 	public WebElement idTipoObjetoTC2;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Observação\"]")
@@ -112,6 +112,12 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//button[text()=\"Selecionar\"]")
 	public WebElement seleccionar;
+	
+	@FindBy(xpath = "//div[@id=\"idBocStatusMdr\"]//div[@class=\"icon icon-font-Sign-and-Symbols icon-downmenu drop-down\"]")
+	public WebElement iDdoStatus;
+	
+	@FindBy(xpath = "//div[@id=\"option-1\"]")
+	public WebElement iDdoStatusOPC;
 	
 	public ConfiguracaoEExecucaoCriarPO() {
 
@@ -211,38 +217,53 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBaseSteven {
 			tipoOcorreciaOTQ1.click();
 		}
 		
+		attributeToBeXpath("//div[@id=\"object-type\"]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
+		sleep(3000);
 		
 		tipoObjeto.click();
+		sleep(1000);
 		
 		if (tc2==true) {
 			
 			tipoObjetoTC2.click();
 			sleep(1000);
 			closeSelectTypeCheckbox(tipoObjeto);
-			sleep(1000);
+			sleep(5000);
 			
 		}else {
 			
 			tipoObjetoTQ1.click();
 			sleep(1000);
 			closeSelectTypeCheckbox(tipoObjeto);
-			sleep(3000);
+	
 		}
 		
+		attributeToBeXpath("//div[@id=\"objectTypeFiscalOccurrenceRegister\"]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
+		sleep(9000);
 		
-		idTipoObjeto.click();
-		
+		 idTipoObjeto.click();
+		 sleep(3000);
+		 
 		if (tc2==true) {
 			idTipoObjetoTC2.click();
+			 sleep(3000);
 		}else if(tq1 == true) {
 			idTipoObjetoTQ1.click();
+			 sleep(3000);
 		}else {
 			idTipoObjetoTC2.click();
+			 sleep(3000);
 		}
 		
-		invisibilityOfElementOverlay();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
+		iDdoStatus.click();
+		sleep(1000);
 		
+		iDdoStatusOPC.click();
+		sleep(7000);
 		associaçãoCódigoAjusteCrédito.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -306,9 +327,9 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBaseSteven {
 		sleep(2000);
 		
 		siguiente.click();
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(5000);
 
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();

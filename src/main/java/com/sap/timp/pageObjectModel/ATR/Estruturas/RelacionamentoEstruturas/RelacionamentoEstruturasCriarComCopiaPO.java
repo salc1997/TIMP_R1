@@ -153,11 +153,11 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
 		
 		gravar.click();
 		
-		sleep(4000);
+		sleep(9000);
 		
 		relacionamentoEstruturas.click();
 		
-		sleep(8000);
+		sleep(16000);
 		
 		siguiente.click();
 		

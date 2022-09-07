@@ -49,10 +49,10 @@ public class RegradeAbasCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//input[@placeholder=\"SelecionarFilial\"]")
 	public WebElement cboFilial;
 	
-	@FindBy(xpath = "//*[@id=\"1000_SP_0001\"]/div[1]/label/span")
+	@FindBy(xpath = "//*[@id=\"1000 - 0805\"]/div[1]/label/span")
 	public WebElement opcionFilial;
 	
-	@FindBy(xpath = "//*[@id=\"1000_AL_0008\"]/div[1]/label/span")
+	@FindBy(xpath = "//div[@id=\"1000_AL_0805\"]/div[1]/label/span")
 	public WebElement opcionFilialTC2;
 	
 	@FindBy(xpath = "//*[@id=\"main-icon\"]")

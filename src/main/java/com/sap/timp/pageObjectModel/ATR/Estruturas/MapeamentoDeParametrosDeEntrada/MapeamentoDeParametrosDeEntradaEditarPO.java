@@ -75,7 +75,7 @@ public class MapeamentoDeParametrosDeEntradaEditarPO extends TestBaseSteven{
 		menu.click();
 		sleep(1000);
 		editar.click();
-		sleep(2000);
+		sleep(6000);
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

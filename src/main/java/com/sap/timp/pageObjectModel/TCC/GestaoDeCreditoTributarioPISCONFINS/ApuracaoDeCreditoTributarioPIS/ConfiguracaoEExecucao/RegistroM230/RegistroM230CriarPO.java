@@ -47,7 +47,7 @@ public class RegistroM230CriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@id=\"1000_SP_0001\"]")
 	public WebElement filialOPC;
 	
-	@FindBy(xpath = "//div[@id=\"1000_AL_0008\"]")
+	@FindBy(xpath = "//div[@id=\"1000_AL_0805\"]")
 	public WebElement filialOPC1;
 	
 	@FindBy(xpath = "//li[@id=\"option-1\"]")
@@ -131,8 +131,8 @@ public class RegistroM230CriarPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		empresaoPC.click();
-		sleep(10000);
 		
+		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		uf.click();
 		sleep(4000);
 		
@@ -154,8 +154,7 @@ public class RegistroM230CriarPO extends TestBaseMassiel{
 			
 		}
 		
-		
-		sleep(10000);
+		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		filial.click();
 		sleep(2000);
 		

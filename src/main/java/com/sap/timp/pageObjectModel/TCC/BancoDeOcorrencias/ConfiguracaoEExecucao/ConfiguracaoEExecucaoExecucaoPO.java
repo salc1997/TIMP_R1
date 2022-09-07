@@ -144,9 +144,8 @@ public class ConfiguracaoEExecucaoExecucaoPO extends TestBaseSteven {
 		
 		btnGravar.click();
 		sleep(1000);
-		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		sleep(13000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(40000);
 		
 		biblioteca.click();
 		sleep(1000);

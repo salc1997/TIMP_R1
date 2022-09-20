@@ -1,3 +1,4 @@
+
 package com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoDeTipoTributo;
 
 import static org.testng.Assert.assertTrue;
@@ -46,3 +47,4 @@ public class ConfiguracaoDeTipoTributoVisualizar extends TestBaseSteven{
 
 	}		
 }
+

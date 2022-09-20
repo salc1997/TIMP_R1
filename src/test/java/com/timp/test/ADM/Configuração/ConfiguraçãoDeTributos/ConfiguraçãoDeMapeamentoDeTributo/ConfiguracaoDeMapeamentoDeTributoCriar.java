@@ -40,3 +40,4 @@ public class ConfiguracaoDeMapeamentoDeTributoCriar extends TestBaseSteven{
 		sleep(2000);
 	}
 }
+

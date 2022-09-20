@@ -226,7 +226,7 @@ public class RegrasDeAuditoriaN4EditarPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		new Actions(driver).moveToElement(codigoempresadireita).click().perform();
+	//	new Actions(driver).moveToElement(codigoempresadireita).click().perform();
 		exclusao.click();
 		sleep(2000);
 		registro1direita.click();

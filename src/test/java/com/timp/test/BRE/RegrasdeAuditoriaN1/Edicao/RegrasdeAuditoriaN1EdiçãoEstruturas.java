@@ -44,7 +44,7 @@ public class RegrasdeAuditoriaN1EdiçãoEstruturas extends TestBaseSteven{
 		boolean sucesso = regrasdeAuditoriaN1EdiçãoEstruturasPO.editar();
 		assertTrue(sucesso, Editar);
 		sleep(2000);
-
+		sleep(1000);
 
 	}
 

@@ -29,7 +29,7 @@ public class RegrasDeNegocioCriar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
@@ -44,7 +44,7 @@ public class RegrasDeNegocioCriar extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
 		}
-		
+		sleep(2000);
 	}
  
 }

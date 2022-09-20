@@ -27,6 +27,8 @@
 			</class>
 			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAgrupamento.ConfiguraçãoTributoAgrupamentofiltrar">
 			</class>
+			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAgrupamento.ConfiguraçãoTributoAgrupamentoExcluir">
+			</class>
 	
 		</classes>
 	</test>

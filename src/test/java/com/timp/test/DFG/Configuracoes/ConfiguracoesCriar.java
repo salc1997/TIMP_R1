@@ -35,7 +35,7 @@ public class ConfiguracoesCriar extends TestBaseMassiel{
 
 	@AfterClass
 	public void afterClass() {
-		//Sdriver.close();
+		driver.close();
 	}
 
 

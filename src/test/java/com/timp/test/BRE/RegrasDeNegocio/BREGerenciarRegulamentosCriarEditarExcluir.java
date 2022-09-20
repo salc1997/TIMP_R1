@@ -42,6 +42,8 @@ public class BREGerenciarRegulamentosCriarEditarExcluir extends TestBaseSteven{
 
 		boolean sucesso = bREGerenciarRegulamentosCriarEditarExcluirPO.criar();
 		assertTrue(sucesso, Criar);
+		
+		sleep(2000);
 	}
 
 }

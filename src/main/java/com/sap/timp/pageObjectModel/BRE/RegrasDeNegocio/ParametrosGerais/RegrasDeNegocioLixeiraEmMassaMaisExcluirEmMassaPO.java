@@ -349,7 +349,7 @@ public class RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseS
 		caracteristicaespecial.click();
 		sleep(1000);
 		opcaocaracteristicaespecial.click();
-		sleep(3000);
+		sleep(6000);
 		
 		abas.click();
 		sleep(1000);
@@ -505,9 +505,7 @@ public class RegrasDeNegocioLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseS
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		//waitExpectElement(mensagem);
-		//sleep(2000);
-		waitExpectElement(mensagembloqueio);
+		
 		sleep(2000);
 		lixeira.click();
 		sleep(2000);

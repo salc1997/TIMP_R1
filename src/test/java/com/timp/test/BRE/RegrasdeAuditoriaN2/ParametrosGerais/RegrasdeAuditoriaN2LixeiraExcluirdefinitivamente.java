@@ -44,7 +44,7 @@ public class RegrasdeAuditoriaN2LixeiraExcluirdefinitivamente extends TestBaseSt
 		sleep(3000);
 		boolean sucesso1 = regrasdeAuditoriaN2LixeiraExcluirdefinitivamentePO.excluirDefinitivo();
 		assertTrue(sucesso1, Criar);
-
+		sleep(2000);
 	}
 
 }

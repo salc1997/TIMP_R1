@@ -28,7 +28,7 @@ public class LixeiraExcluir extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		driver.close();
 	}
 	
 	@Test()
@@ -38,6 +38,8 @@ public class LixeiraExcluir extends TestBaseSteven {
 		ArrayList<Boolean> sucesso = lixeiraExcluirPO.excluir();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Eliminado);
-		}		
+		}	
+		
+		sleep(1000);
 	}
 }

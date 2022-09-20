@@ -49,5 +49,6 @@ public class RegrasdeAuditoriaN4LixeiraExcluirdefinitivamente extends TestBaseSt
 	public void excluirDefinitivo() {
 		boolean sucesso1 = regrasdeAuditoriaN4LixeiraExcluirdefinitivamentePO.excluirDefinitivo();
 		assertTrue(sucesso1, Eliminado);
+		sleep(2000);
 	}
 }

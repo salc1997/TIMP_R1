@@ -77,7 +77,7 @@ public class RegrasDeNegocioCriarComCopiaPO extends TestBaseSteven {
 		sleep(2000);
 	//	waitExpectXpath("//div[@class=\"overlay loader transp\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader transp\"]");
-		sleep(28000);	
+		sleep(48000);	
 		
 		biblioteca.click();
 		
@@ -133,8 +133,8 @@ public class RegrasDeNegocioCriarComCopiaPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(mensagem);
-		sleep(2000);
+	//	waitExpectElement(mensagem);
+		sleep(6000);
 		lixeira.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -130,7 +130,7 @@ String url = driver.getCurrentUrl();
 		sleep(2000);
 		
 		waitExpectElement(relacionamentoestrutura);
-		sleep(2000);
+		sleep(6000);
 		relacionamentoestrutura.click();
 		sleep(2000);
 		if(tq1== true)

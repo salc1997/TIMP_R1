@@ -7,7 +7,7 @@
 			<class name="com.timp.test.ADM.Configuração.ConfiguracaoDeTributos.ConfiguracaoDeMapeamentoDeTributo.ConfiguracaoDeMapeamentoDeTributoCriar"></class>
 		</classes>
 	</test> 	 	
-	<test name="ADM - Configuracao - Configuracao de Tributos - Configuracao de Tipo Tributo">
+	<test name=" ADM -  Configuração > ConfiguraçãoDeTributos ">
 		<classes>
 			<!-- Configuracao - Configuracao de Tributos - Configuracao de Tipo Tributo -->			
 			<class name="com.timp.test.ADM.Configuração.ConfiguracaoDeTributos.ConfiguracaoDeTipoTributo.ConfiguracaoDeTipoTributoCriar"></class>

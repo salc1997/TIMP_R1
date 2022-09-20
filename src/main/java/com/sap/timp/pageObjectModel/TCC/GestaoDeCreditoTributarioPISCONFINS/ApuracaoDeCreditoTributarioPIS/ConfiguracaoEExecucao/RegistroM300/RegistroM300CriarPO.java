@@ -47,7 +47,7 @@ public class RegistroM300CriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@id=\"1000_SP_0001\"]")
 	public WebElement filialOPC;
 	
-	@FindBy(xpath = "//div[@id=\"1000_AL_0008\"]")
+	@FindBy(xpath = "//div[@id=\"1000_AL_0805\"]")
 	public WebElement filialOPC1;
 	
 	@FindBy(xpath = "//li[@id=\"option-1\"]")

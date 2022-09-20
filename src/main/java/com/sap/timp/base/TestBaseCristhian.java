@@ -39,6 +39,7 @@ public class TestBaseCristhian extends TestBaseSteven{
 		driver.manage().window().maximize();
 		driver.get(tc2);
 		
+		
 		return driver;
 	}
 	

@@ -48,7 +48,7 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@id=\"1000_SP_0001\"]")
 	public WebElement filialOPC;
 	
-	@FindBy(xpath = "//div[@id=\"1000_AL_0008\"]")
+	@FindBy(xpath = "//div[@id=\"1000_AL_0805\"]")
 	public WebElement filialOPC1;
 	
 	@FindBy(xpath = "//div[@id=\"natBcCred\"]/div/div[2]")
@@ -338,7 +338,7 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 		sim.click();
 		sleep(10000);		
 		waitExpectElement(biblioteca);
-		sleep(8000);
+		sleep(12000);
 		
 		biblioteca.click();
 		sleep(4000);

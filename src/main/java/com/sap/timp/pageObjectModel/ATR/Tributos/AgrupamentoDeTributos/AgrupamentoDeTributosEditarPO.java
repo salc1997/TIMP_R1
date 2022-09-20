@@ -115,9 +115,9 @@ public class AgrupamentoDeTributosEditarPO extends TestBaseSteven{
 		opcaotributo.click();
 		sleep(2000);
 		closeSelectTypeCheckbox(tributo);
-		sleep(2000);
+		sleep(3000);
 		tributosaavaliar.click();
-		sleep(2000);
+		sleep(3000);
 		opcaotributosaavaliar.click();
 		sleep(2000);
 		closeSelectTypeCheckbox(tributosaavaliar);

@@ -105,7 +105,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[2]")
 		public WebElement filial;
-		@FindBy(xpath = "//div[contains(@id,\"1000_SP_0001\")]/div/label/span")
+		@FindBy(xpath = "//div[contains(@id,\"1000_SP_0016\")]/div/label/span")
 		public WebElement filialO;
 		@FindBy(xpath = "//div[contains(@id,\"1000_DF_0019\")]/div/label/span")
 		//@FindBy(xpath = "//div[contains(@id,\"1000_DF_0013\")]/div/label/span")
@@ -693,8 +693,8 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		nova.click();
 		sleep(3000);
 
-		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
-		sleep(2000);
+//		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
+		sleep(7000);
 
 		//nomeHirarquia.sendKeys("Prueba Automatizada de Hierarq");
 		nomeHirarquia.sendKeys("teste automatizado hierar");

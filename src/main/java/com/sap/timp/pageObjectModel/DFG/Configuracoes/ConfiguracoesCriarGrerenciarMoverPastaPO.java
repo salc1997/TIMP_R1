@@ -58,7 +58,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 	
 	@FindBy(xpath = "//div[@id=\"inputSelectFilial\"]/div/div/div[2]")
 	public WebElement filial;
-	@FindBy(xpath = "//div[@id=\"1000SP0001\"]/div/label/span")
+	@FindBy(xpath = "//div[@id=\"1000SP0014\"]/div/label/span")
 	public WebElement opcionFilial;
 	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Inicio\")]")
@@ -175,10 +175,9 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 		cboLeiautes.click();
 		sleep(1000);
 		
-		String idRegistro = idObter3();
+		String idRegistro = "17";
 		
-	//	actionsMoveToElementXpath("//li[contains(text(),\""+idRegistro+"\")]");
-		sleep(2000);
+		System.out.println("id: " + idRegistro);
 
 		WebElement Opc6 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro+"\")]"));
 

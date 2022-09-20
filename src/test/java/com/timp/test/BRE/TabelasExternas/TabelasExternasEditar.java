@@ -29,7 +29,7 @@ public class TabelasExternasEditar extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
-		//driver.close();
+		driver.close();
   }
 
 	
@@ -41,5 +41,6 @@ public class TabelasExternasEditar extends TestBaseMassiel{
 		boolean sucesso = tabelasExternasEditarPO.Editar();
 
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
 }

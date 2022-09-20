@@ -87,8 +87,8 @@ public class SubperíodoVerPO extends TestBaseMassiel {
 		menu.click();
 		sleep(2000);
 		acao.click();
-		sleep(2000);
-		sleep(2000);
+		sleep(8000);
+	
 
 		String empresaVer = empresa.getText();
 		String tributoVer = tributo.getAttribute("value");

@@ -112,6 +112,8 @@ public class RegistroM200VisualizarPO extends TestBaseMassiel{
 		sleep(2000);
 		waitExpectElement(filial);
 		sleep(2000);
+		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required disabled");
+		sleep(2000);
 		
 		String empresavisualizar = empresa.getAttribute("value");
 		String ufvisualizar = uf.getText();

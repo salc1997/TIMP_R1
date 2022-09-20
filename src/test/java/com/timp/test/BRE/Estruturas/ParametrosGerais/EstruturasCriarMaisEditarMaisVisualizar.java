@@ -28,7 +28,7 @@ public class EstruturasCriarMaisEditarMaisVisualizar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 	
 	@Test()
@@ -39,5 +39,7 @@ public class EstruturasCriarMaisEditarMaisVisualizar extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
 		}		
+		
+		sleep(1000);
 	}	
 }

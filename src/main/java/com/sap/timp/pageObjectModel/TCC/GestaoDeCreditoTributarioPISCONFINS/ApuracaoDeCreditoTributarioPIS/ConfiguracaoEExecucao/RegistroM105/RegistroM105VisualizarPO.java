@@ -142,11 +142,14 @@ public class RegistroM105VisualizarPO extends TestBaseMassiel{
 		biblioteca.click();
 		sleep(4000);
 		
-		no.click();
-		sleep(8000);
+		int botaoNao = rows("//button[text()=\"Não\"]");
+		
+		if (botaoNao > 0) {
+			no.click();
+		}
+
 			
-	
-		sleep(4000);
+		sleep(12000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

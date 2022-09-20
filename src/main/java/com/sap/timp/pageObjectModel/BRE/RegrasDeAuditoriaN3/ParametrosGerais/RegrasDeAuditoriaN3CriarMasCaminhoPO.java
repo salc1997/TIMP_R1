@@ -212,43 +212,7 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		opcionCaracteristicaEspecial.click();
 		sleep(1000);
 		
-		waitExpectElement(leiaute);
-		leiaute.click();
-		sleep(1000);
-		
-		if(URL.contains("tc2")) {
-			// opcion para TC2
-			WebElement opcionLeiaute = driver.findElement(By.xpath("//li[contains(@class,\"list-item\") and @id and text()=\"ID107-TA-TESTE (Complemento BRE)\"][1]"));
-			opcionLeiaute.click();
-			sleep(1000);
-		}
-		
-		// Opcion para TQ1
-		if(URL.contains("tq1")) {
-			WebElement opcionLeiaute = driver.findElement(By.xpath("//li[contains(@class,\"list-item\") and @id and text()=\"ID7403-TA-TESTE (Complemento BRE)\"][1]"));
-			opcionLeiaute.click();
-			sleep(1000);
-		}
-		
-		if(URL.contains("tq2")) {
-			WebElement opcionLeiaute = driver.findElement(By.xpath("//li[contains(@class,\"list-item\") and @id and text()=\"ID7403-TA-TESTE (Complemento BRE)\"][1]"));
-			opcionLeiaute.click();
-			sleep(1000);
-		}
-		
-		// Opcion para TP1
-		if(URL.contains("tp1")) {
-			WebElement opcionLeiaute = driver.findElement(By.xpath("//li[contains(@class,\"list-item\") and @id and text()=\"ID547-TA-TESTE (Complemento BRE)\"][1]"));
-			opcionLeiaute.click();
-			sleep(1000);
-		}
-		
-		attributeToBeXpath("//td[contains(@class, \"layoutVersion-field\")]/div", "class", "base-select required");
-		versaoDoLeiaute.click();
-		sleep(1000);
-		opcionversaoDoLeiaute.click();
-		sleep(8000);
-		
+
 		actionsMoveToElementXpath("//td[contains(@class, \"EffectiveDateTo\")]/div/div/input");
 		regulamento.click();
 		sleep(1000);
@@ -258,11 +222,11 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		dataValidadeDe.click();
 		sleep(1000);
 		dataValidadeDe.sendKeys("01/01/2013");
-		sleep(1000);		
+		sleep(6000);		
 		
 		aplicar.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		sleep(2000);

@@ -42,7 +42,7 @@ public class RegrasDeAuditoriaN4LixeiraEmMassaMaisExcluirEmMassa extends TestBas
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
 		}
-		
+		sleep(2000);
 	}
 
 }

@@ -31,7 +31,7 @@ public class PeriodosAlterarStatusSubPeriodoAvulso extends TestBaseKenssy{
 
 	@AfterClass
 	public void afterClass() {
-		//Sdriver.close();
+		//driver.close();
 	}
 
 	@Test()

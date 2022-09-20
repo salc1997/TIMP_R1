@@ -54,6 +54,7 @@ public class RegrasDeEscrituraçãoCriarComCopia extends TestBaseSteven{
 		for (int i = 0; i < sucesso2.size(); i++) {
 			assertTrue(sucesso2.get(i), Eliminado);
 		}
+		sleep(2000);
 	}
 	
 	

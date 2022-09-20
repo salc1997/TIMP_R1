@@ -106,7 +106,7 @@ public class MapeamentoDeEstruturasCriarPO extends TestBaseSteven{
 		estruturadedados.click();
 		sleep(2000);
 		opcaoestrutura.click();
-		sleep(2000);
+		sleep(6000);
 		
 		empresa.click();
 		sleep(2000);

@@ -4,7 +4,7 @@
 
 	<test name="Registros 1500">
 		<classes>
-				<!-- Registro M105 -->
+				<!-- Registro 1500 -->
 			
 				<class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1500.Registro1500Criar"></class>
 				<class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1500.Registro1500Editar"></class>

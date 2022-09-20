@@ -23,8 +23,8 @@
 		<classes>			
 			<!-- ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS -->	
 			<class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar"></class>
-			<class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasEditar"></class>
 			<class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes"></class>
+			<class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasEditar"></class>			
 			<class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturaVer"></class>
 			<class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasFiltroPorID"></class>
 			<class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir"></class>

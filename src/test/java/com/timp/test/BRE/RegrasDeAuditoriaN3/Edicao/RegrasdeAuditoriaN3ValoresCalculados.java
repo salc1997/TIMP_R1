@@ -29,7 +29,7 @@ public class RegrasdeAuditoriaN3ValoresCalculados extends TestBaseSteven{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();  
+		driver.close();  
 	}
 
 	@Test()
@@ -39,6 +39,7 @@ public class RegrasdeAuditoriaN3ValoresCalculados extends TestBaseSteven{
 		
 		boolean sucesso = regrasdeAuditoriaN3ValoresCalculadosPO.valoresCalculados();
 		assertTrue(sucesso, Editar);
+		sleep(2000);
 	}
 
 

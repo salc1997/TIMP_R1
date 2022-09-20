@@ -36,5 +36,7 @@ public class RegrasDeAuditoriaN2CriarComCopia extends TestBaseFernando {
 		acessarBREPO.acessarBRE();
 		boolean sucesso = regrasDeAuditoriaN2CriarComCopiaPO.criarComCopia();
 		assertTrue(sucesso, Criar);
+		
+		sleep(2000);
 	}
 }

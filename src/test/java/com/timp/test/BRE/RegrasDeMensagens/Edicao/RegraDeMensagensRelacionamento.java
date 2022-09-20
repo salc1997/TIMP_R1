@@ -26,7 +26,7 @@ public class RegraDeMensagensRelacionamento extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	
@@ -39,5 +39,6 @@ public class RegraDeMensagensRelacionamento extends TestBaseFernando{
 		
 		boolean sucesso = regraDeMensagensRelacionamentoPO.relacionamento();
 		assertTrue(sucesso, Editar);
+		sleep(2000);
 	}
 }

@@ -43,12 +43,12 @@ public class RegrasDeAuditoriaN4VisualizarPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[3]/*/*[1]")
 	public WebElement r1ed;
 	
-	@FindBy(xpath = "//div[@class=\"left-field field-condition ui-droppable\"]/div/div/div/span[2]")
+	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[1]/*/*[1]")
 	public WebElement campo1ed;
 	
-	@FindBy(xpath = "//div[@class=\"right-field field-condition ui-droppable\"]/div/div/div/span[2]")
+	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[1]/*/*[2]")
 	public WebElement campo2ed;
-	@FindBy(xpath = "//input[@placeholder=\"Mensagem\"]")
+	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[2]/*[2]/*[1]")
 	public WebElement segundocampo1ed;
 	
 	
@@ -137,9 +137,9 @@ public class RegrasDeAuditoriaN4VisualizarPO extends TestBaseSteven {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		//editar
-		waitExpectElement(campo1ed);
-		sleep(2000);
+		sleep(14000);
+		System.out.println("Campos de Editar");
+		
 		String nomeeditar = nomeed.getText();
 		//String r1editar=r1ed.getText();
 		String primeirocampo1ed = campo1ed.getText();
@@ -158,7 +158,6 @@ public class RegrasDeAuditoriaN4VisualizarPO extends TestBaseSteven {
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		
 		sucesso.add(nomeeditar.contains(nomevisualizar));
-		
 		sucesso.add(primeirocampo1.contains(primeirocampo1ed));
 		sucesso.add(segundocampo1ed1.contains(segundocampo1));
 		sucesso.add(segundocampo1visualizar.contains(segundocampo1editar));

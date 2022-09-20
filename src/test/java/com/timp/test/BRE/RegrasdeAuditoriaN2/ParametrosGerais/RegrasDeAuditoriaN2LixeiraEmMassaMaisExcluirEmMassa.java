@@ -29,7 +29,7 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa extends TestBas
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		 driver.close();
 	}
 	@Test()
 	public void criar() {
@@ -39,6 +39,6 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa extends TestBas
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
 		}
-
+		sleep(2000);
 	}
 }

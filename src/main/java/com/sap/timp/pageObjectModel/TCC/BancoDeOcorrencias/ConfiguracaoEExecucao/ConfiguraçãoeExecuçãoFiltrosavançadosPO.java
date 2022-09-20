@@ -93,7 +93,7 @@ public class ConfiguraçãoeExecuçãoFiltrosavançadosPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[@class=\"branch-filter\"]/div/div[1]/div[2]")
 	public WebElement filial;
 	
-	@FindBy(xpath = "//li[text()=\"0143\"]")
+	@FindBy(xpath = "//li[text()=\"0156\"]")
 	public WebElement opcFilialTC2;
 	
 	@FindBy(xpath = "//li[text()=\"0001\"]")

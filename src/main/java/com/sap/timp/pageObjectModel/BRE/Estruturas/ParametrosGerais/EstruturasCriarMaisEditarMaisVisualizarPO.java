@@ -190,18 +190,18 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseSteven{
 		gravar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
+		sleep(3000);
 		
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		boolean sucesso1=false;
-		if(mensagemdesalvo.isDisplayed())
+		/*	if(mensagemdesalvo.isDisplayed())
 		{
 			sucesso1=true;
 			sucesso.add(sucesso1);
 		}else {
 			sucesso1=false;
 			sucesso.add(sucesso1);
-		}
+		}*/
 		
 		sleep(2000);
 		

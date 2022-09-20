@@ -83,8 +83,8 @@ public class RegistroM110VisualizarPO extends TestBaseMassiel{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(filial);
-		sleep(2000);
+		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required disabled");
+
 		
 		String empresavisualizar = empresa.getAttribute("value");
 		String ufvisualizar = uf.getText();
@@ -101,10 +101,14 @@ public class RegistroM110VisualizarPO extends TestBaseMassiel{
 		System.out.println(valorAjustevisualizar);
 		
 		biblioteca.click();
-		sleep(4000);
-		
-		no.click();
 		sleep(12000);
+		
+		int botaoNao = rows("//button[text()=\"Não\"]");
+		
+		if (botaoNao > 0) {
+			no.click();
+		}
+
 			
 	
 		siguiente.click();

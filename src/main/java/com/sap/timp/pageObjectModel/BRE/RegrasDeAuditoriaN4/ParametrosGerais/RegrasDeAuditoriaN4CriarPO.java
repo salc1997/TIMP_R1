@@ -100,7 +100,7 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@id][text()=\"575 - TA-TESTE  (Complemento BRE - N4) - 2\"]")
 	public WebElement opcaoleiautecomparacaotp1;
 	
-	@FindBy(xpath = "//li[@id][text()=\"143 - TA-TESTE (Complemento BRE - N4) - 2\"]")
+	@FindBy(xpath = "//li[@id][text()=\"100 - Cópia de ID 79-Teste C197/D197\"]")
 	public WebElement opcaoleiautecomparacaotc2;
 	
 	@FindBy(xpath = "//td[@class=\"layoutVersionComparison-field\"]/div/div/div[2]")
@@ -130,7 +130,7 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//td[contains(@class, \"EffectiveDateFrom\")]/div/div/input")
 	public WebElement dataValidadeDe;
 		
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//div[@class=\"left-wrapper\"]/div/div/div/div[4]/div/ul/li/ul/li/div/div/div[1]")
@@ -161,7 +161,7 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"select-one\"]/div/div[2]")
 	public WebElement cboCondicoes;
 	
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"Código da empresa(Bloco 1 Teste-Registro 1 Teste-18S2C0) (ED)\"][1]")
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"Código da empresa(Bloco 1-Registro 1-18S2C0) (ED)\"][1]")
 	public WebElement opcionCondicoes;
 	
 	@FindBy(xpath = "//div[@class=\"select-three\"]/div/div/div[2]/div/div[2]")
@@ -173,7 +173,7 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"value-one\"]/div/div[2]")
 	public WebElement cboNomeDoValor;
 	
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"Código da filial(Bloco 1 Teste-Registro 1 Teste-18S3C0) (ED)\"][1]")
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"Código da filial(Bloco 1-Registro 1-18S3C0) (ED)\"][1]")
 	public WebElement opcioncboNomeDoValor;
 	
 	@FindBy(xpath = "//div[@class=\"action-section\"]/div/div/div/div/input")
@@ -194,14 +194,20 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
+	@FindBy(xpath = "//div[@class=\"action-section\"]//div[@id=\"select\"]/div[2]")
+	public WebElement acoes2;
+	
+	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	public WebElement acoes2OPC;
+	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement btnNao;
+	
 	public RegrasDeAuditoriaN4CriarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
 	public boolean criar() {
-//		sleep(2000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
 	
 		regraAuditoriaN4.click();
 		
@@ -287,6 +293,16 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseSteven{
 		opcaoestruturadedadoscomparacao.click();
 		sleep(1000);
 		
+		caracteristicaespecial.click();
+		sleep(1000);
+		opcaocaracteristicaespecial.click();
+		sleep(1000);
+		
+		caracteristicaespecialcomparacao.click();
+		sleep(1000);
+		opcaocaracteristicaespecialcomparacao.click();
+		sleep(1000);
+		
 		waitExpectElement(leiautereferencia);
 		leiautereferencia.click();
 		sleep(1000);
@@ -354,16 +370,11 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseSteven{
 		versaoleiautecomparacao.click();
 		sleep(1000);
 		opcaoversaoleiautecomparacao.click();
-		sleep(1000);
-		caracteristicaespecial.click();
-		sleep(1000);
-		opcaocaracteristicaespecial.click();
-		sleep(1000);
-		caracteristicaespecialcomparacao.click();
-		sleep(1000);
-		opcaocaracteristicaespecialcomparacao.click();
-		sleep(1000);
-		actionsMoveToElementXpath("//td[contains(@class, \"EffectiveDateTo\")]/div/div/input");
+		sleep(6000);
+		
+		actionsMoveToElementElement(dataValidadeDe);
+		sleep(6000);
+
 		regulamento.click();
 		sleep(1000);
 		opcaoregulamento.click();
@@ -380,33 +391,58 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		adicionarCaminho.click();
+		sleep(5000);
+		waitExpectElement(cboCondicoes);
+		cboCondicoes.click();
+		sleep(1000);
+		opcionCondicoes.click();
+		sleep(1000);
+		
+		cboCondicoesOperador.click();
+		sleep(1000);
+		opcionCondicoesOperador.click();
+		sleep(1000);
+		
+		cboNomeDoValor.click();
+		sleep(1000);
+		opcioncboNomeDoValor.click();
+		sleep(1000);
+		
+		if(URL.contains("tq1")) {
+			acoes.click();
+			sleep(1000);
+			acoes.sendKeys("Teste Auditoria N3");
+			acoes.sendKeys(Keys.ENTER);
+			sleep(1000);
+		}
+		
+		if(URL.contains("tq2")) {
+			acoes.click();
+			sleep(1000);
+			acoes.sendKeys("Teste Auditoria N3");
+			acoes.sendKeys(Keys.ENTER);
+			sleep(1000);
+		}
+		
+		if(URL.contains("tp1") || URL.contains("tc2")) {
+			acoes2.click();
+			sleep(1000);
+			acoes2OPC.click();
+			sleep(1000);
+			
+		}
+		
+		aplicar.click();
 		sleep(2000);
-		registro1esquerda.click();
-		sleep(1000);
-		
-		dobleClickElement(codigoempresaesquerda);
-		
-		sleep(1000);
-		
-		operador.click();
-		sleep(1000);
-		opcaooperdaor.click();
-		sleep(1000);
-		
-		registro1direita.click();
-		sleep(1000);
-		
-		dobleClickElement(codigoempresadireita);
-		
-		sleep(1000);
-		
-		mensagem.sendKeys("Teste automatizado");
-		
-		sleep(1000);
 		waitExpectElement(Gravar);
 		sleep(2000);
 		Gravar.click();
-		sleep(1000);
+		sleep(3000);
+		
+		btnNao.click();
+		sleep(2000);
+
+		
 		waitExpectElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

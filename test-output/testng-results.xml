@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-02T08:51:27 CST" name="Default suite" finished-at="2022-08-02T08:52:56 CST" duration-ms="88943">
+  <suite started-at="2022-09-14T17:41:29 BRT" name="Default suite" finished-at="2022-09-14T17:44:26 BRT" duration-ms="176740">
     <groups>
     </groups>
-    <test started-at="2022-08-02T08:51:27 CST" name="Default test" finished-at="2022-08-02T08:52:56 CST" duration-ms="88943">
-      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir@54a7079e]" started-at="2022-08-02T08:51:27 CST" name="beforeClass" finished-at="2022-08-02T08:51:43 CST" duration-ms="15962" status="PASS">
+    <test started-at="2022-09-14T17:41:29 BRT" name="Default test" finished-at="2022-09-14T17:44:26 BRT" duration-ms="176740">
+      <class name="com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosExcluir@47d9a273]" started-at="2022-09-14T17:41:29 BRT" name="beforeClass" finished-at="2022-09-14T17:41:57 BRT" duration-ms="27693" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir@54a7079e]" started-at="2022-08-02T08:51:43 CST" name="criar" finished-at="2022-08-02T08:52:52 CST" duration-ms="68517" status="PASS">
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosExcluir@47d9a273]" started-at="2022-09-14T17:41:57 BRT" name="ingresar" finished-at="2022-09-14T17:42:16 BRT" duration-ms="18771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ingresar -->
+        <test-method signature="scancEntrar()[pri:1, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosExcluir@47d9a273]" started-at="2022-09-14T17:42:16 BRT" name="scancEntrar" finished-at="2022-09-14T17:42:59 BRT" duration-ms="43242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scancEntrar -->
+        <test-method signature="criar()[pri:2, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosExcluir@47d9a273]" started-at="2022-09-14T17:42:59 BRT" name="criar" finished-at="2022-09-14T17:44:21 BRT" duration-ms="82584" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir@54a7079e]" started-at="2022-08-02T08:52:52 CST" name="afterClass" finished-at="2022-08-02T08:52:56 CST" duration-ms="4436" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosExcluir@47d9a273]" started-at="2022-09-14T17:44:21 BRT" name="afterClass" finished-at="2022-09-14T17:44:26 BRT" duration-ms="4413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir -->
+      </class> <!-- com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosExcluir -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -137,7 +137,7 @@ public class RegraDeCamposCriarPO extends TestBaseFernando{
 		sleep(1000);
 		
 		if(URL.contains("tc2")) {
-			opcionFilial = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and text()=\"1000 - 0008\"]"));
+			opcionFilial = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and text()=\"1000 - 0805\"]"));
 		}
 		
 		sleep(2000);		

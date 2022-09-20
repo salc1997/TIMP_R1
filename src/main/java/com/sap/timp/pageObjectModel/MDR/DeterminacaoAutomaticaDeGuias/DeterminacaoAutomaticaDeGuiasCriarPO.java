@@ -28,7 +28,7 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 	@FindBy(xpath = "//button[@id=\"adjustmentCode-btn-open-dialog\"]")
 	public WebElement aCodigoAjuste;
 	
-	@FindBy(xpath = "//div[@id=\"content-list\"]//child::div[contains(@class,\"tbody\")]/div[@class=\"tr\" and @data-id=\"824\"]//span")
+	@FindBy(xpath = "//div[@id=\"content-list\"]//child::div[contains(@class,\"tbody\")]/div[@class=\"tr\" and @data-id=\"845\"]//span")
 	public WebElement item;
 	
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")

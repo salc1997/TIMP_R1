@@ -189,7 +189,7 @@ public boolean criar() {
 		novo.click();
 		
 	
-		sleep(9000);
+		sleep(12000);
 		
 		nome.sendKeys("PRUEBA QA 007");
 		sleep(2000);
@@ -251,7 +251,7 @@ public boolean criar() {
 		caracteristicas.click();
 		sleep(3000);
 		opcCaracteristicas.click();
-		sleep(4000);
+		sleep(8000);
 		
 		
 		

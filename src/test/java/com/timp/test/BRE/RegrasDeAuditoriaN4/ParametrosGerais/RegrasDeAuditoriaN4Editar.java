@@ -44,7 +44,7 @@ public class RegrasDeAuditoriaN4Editar extends TestBaseSteven{
 			assertTrue(sucesso.get(i), editado);
 		}
 		
-		
+		sleep(2000);
 	}
 	
 }

@@ -31,7 +31,7 @@ public class RegrasdeNegócioExcluirdefinitivamente extends TestBaseSteven {
   
   @AfterClass
   public void afterClass() {
-//	  driver.close();
+	//  driver.close();
   }
 
 
@@ -49,7 +49,7 @@ public class RegrasdeNegócioExcluirdefinitivamente extends TestBaseSteven {
 		sleep(3000);
 		boolean sucesso1 = regrasdeNegócioExcluirdefinitivamentePO.excluirDefinitivo();
 		assertTrue(sucesso1, Criar);
-
+		sleep(2000);
 	}
 
 }

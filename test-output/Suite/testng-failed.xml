@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ReordenarColuna(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.ReordenarColuna">
+        <methods>
+          <include name="reordenar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.ReordenarColuna -->
+    </classes>
+  </test> <!-- ReordenarColuna(failed) -->
+  <test thread-count="5" name="CriarComCopia(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.CriarComCopia">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criarCopia"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.CriarComCopia -->
+    </classes>
+  </test> <!-- CriarComCopia(failed) -->
   <test thread-count="5" name="GruposAvancados(failed)">
     <classes>
       <class name="com.timp.test.BRB.GruposAvancados">
@@ -46,4 +68,15 @@
       </class> <!-- com.timp.test.BRB.ComentarioLibre -->
     </classes>
   </test> <!-- ComentarioLibre(failed) -->
+  <test thread-count="5" name="Output Referencia(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.OutputdeReferência">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="outputReferencia"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.OutputdeReferência -->
+    </classes>
+  </test> <!-- Output Referencia(failed) -->
 </suite> <!-- Failed suite [Suite] -->

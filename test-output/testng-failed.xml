@@ -3,13 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRB.OutputdeReferência">
+      <class name="com.timp.test.BCB.Formula.HierarquiaConfiguracao.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2">
         <methods>
+          <include name="abrirSubnivel4"/>
+          <include name="excluirConfiguracoes"/>
+          <include name="abrirSubnivel5"/>
           <include name="beforeClass"/>
+          <include name="excluirHierarquia"/>
+          <include name="abrirSubnivel2"/>
           <include name="afterClass"/>
-          <include name="outputReferencia"/>
+          <include name="abrirSubnivel3"/>
+          <include name="abrirSubnivel1"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.OutputdeReferência -->
+      </class> <!-- com.timp.test.BCB.Formula.HierarquiaConfiguracao.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

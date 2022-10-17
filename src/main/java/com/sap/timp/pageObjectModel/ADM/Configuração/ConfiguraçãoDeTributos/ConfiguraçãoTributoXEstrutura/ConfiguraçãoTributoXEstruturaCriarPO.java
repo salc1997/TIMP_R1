@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoTributoTributoXEstrutura;
+package com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoTributoXEstrutura;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseKenssy;
 
-public class ConfiguraçãoTributoTributoXEstruturaCriarPO extends TestBaseKenssy{
+public class ConfiguraçãoTributoXEstruturaCriarPO extends TestBaseKenssy{
 
 	@FindBy(xpath = "//div[@class=\"baseTabs-bar boxes\"]/div/div[2]")
 	public WebElement Configuração;
@@ -50,7 +50,7 @@ public class ConfiguraçãoTributoTributoXEstruturaCriarPO extends TestBaseKenssy{
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement sim;
 	
-	public ConfiguraçãoTributoTributoXEstruturaCriarPO() {
+	public ConfiguraçãoTributoXEstruturaCriarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	

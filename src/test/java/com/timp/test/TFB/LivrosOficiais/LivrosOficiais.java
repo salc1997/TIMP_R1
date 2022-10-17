@@ -44,7 +44,7 @@ public class LivrosOficiais extends TestBaseMassiel{
 	}
   
 
-  /*    @Test(priority = 1)
+     @Test(priority = 1)
 
 	public void livrosICMS() {
 		
@@ -58,8 +58,8 @@ public class LivrosOficiais extends TestBaseMassiel{
 		
 	}
   
- 
 
+/*
  @Test(priority = 2)
 	public void livrosICMSST() {
 	
@@ -78,7 +78,7 @@ public class LivrosOficiais extends TestBaseMassiel{
  
  
   
-  @Test(priority = 3)
+/*  @Test(priority = 3)
    	public void livrosIPI() {
  	
  	  librosOficiaisPO.LivrosIPI();
@@ -91,7 +91,7 @@ public class LivrosOficiais extends TestBaseMassiel{
  		sleep(2000);
  	
  			
- 	} */
+ 	}
 
 
    @Test(priority = 4)
@@ -106,5 +106,5 @@ public class LivrosOficiais extends TestBaseMassiel{
 	
 			
 		
-	}
+	}*/
 }

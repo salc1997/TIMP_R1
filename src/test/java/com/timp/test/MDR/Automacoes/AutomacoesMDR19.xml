@@ -2,37 +2,45 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite">
 
-	<test name="Ajustes > AssociacaoCodigosAjustes" preserve-order="true">
+	<test name="Codigo Contabilizacao" preserve-order="true">
 
 
 		<classes>
 
 			
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar"></class>
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteDetalhe"></class>
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteEditar"></class>
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteVisualizar"></class>
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteExcluir"></class>
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar"></class>
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoEditar"></class>
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar"></class>
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoDetalhes"></class>
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoFiltrosAvan"></class>
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoExcluir"></class>
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa"></class>
+
 
 		</classes>
 
 
 	</test> <!-- PruebaTestNG -->
 	
-	<test name="Ocorrencia Fiscal > Status Ocorrencia Fiscal" preserve-order="true">
+	<test name="Ajustes > AssociacaoCodigosAjustes" preserve-order="true">
 
 
 		<classes>
 
 			
-			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasCriar"></class>
-			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasEditar"></class>
-			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasFiltroPorId"></class>
+			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosCriar"></class>
+			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosDetalhes"></class>
+			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosEditar"></class>
+			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosVisualizar"></class>
+			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosFiltrarId"></class>
+			<class name="com.timp.test.MDR.Centralizacao.Saldos.SaldosExcluir"></class>
 			
+
 		</classes>
 
 
 	</test> <!-- PruebaTestNG -->
+	
 	
 
 </suite> <!-- Suite -->

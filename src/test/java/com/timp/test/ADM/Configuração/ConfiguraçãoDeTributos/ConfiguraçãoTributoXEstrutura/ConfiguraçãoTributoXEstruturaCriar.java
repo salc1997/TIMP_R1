@@ -1,11 +1,11 @@
-package com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoTributoTributoXEstrutura;
+package com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoTributoXEstrutura;
 
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoTributoTributoXEstrutura.ConfiguraçãoTributoTributoXEstruturaCriarPO;
+import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoTributoXEstrutura.ConfiguraçãoTributoXEstruturaCriarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -13,25 +13,23 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãoTributoTributoXEstruturaCriar extends TestBaseKenssy{
+public class ConfiguraçãoTributoXEstruturaCriar extends TestBaseKenssy{
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
-	ConfiguraçãoTributoTributoXEstruturaCriarPO configuraçãoTributoTributoXEstruturaCriarPO;
+	ConfiguraçãoTributoXEstruturaCriarPO configuraçãoTributoTributoXEstruturaCriarPO;
 	
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationKen();
 	  loginTC = new LoginTC();
 	  acessarADMPO = new AcessarADMPO();
-	  configuraçãoTributoTributoXEstruturaCriarPO = new ConfiguraçãoTributoTributoXEstruturaCriarPO();
+	  configuraçãoTributoTributoXEstruturaCriarPO = new ConfiguraçãoTributoXEstruturaCriarPO();
   }
 
   @AfterClass
   public void afterClass() {
 
 	  driver.close();
-	  
-
   }
 
 	@Test()

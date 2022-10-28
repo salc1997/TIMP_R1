@@ -178,7 +178,7 @@ public class ConfiguracaoEExecucaoRegistro1200ExecutarPO extends TestBaseMassiel
 		invisibilityOfElementOverlay();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		actionsMoveToElementElement(executadosregistro1200);
 		executadosregistro1200.click();

@@ -106,7 +106,7 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 	@FindBy(xpath = "//button/span[text()=\"Executar Livro ICMS-ST\"]")
 	public WebElement executarLivrosICMSST;
 	
-	@FindBy(xpath = "//div[@id=\"SP\"]")
+	@FindBy(xpath = "//div[@id=\"RJ\"]")
 	public WebElement estadoOPC2;
 	
 	@FindBy(xpath = "//span[@id=\"textLabel\"]")
@@ -333,7 +333,7 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		
 		sim.click();
 
-		sleep(64000);
+		sleep(100000);
 
 		
 		WebElement identificador = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]//child::div[@data-id=\""+id2+"\"]/div[2]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\"]"));

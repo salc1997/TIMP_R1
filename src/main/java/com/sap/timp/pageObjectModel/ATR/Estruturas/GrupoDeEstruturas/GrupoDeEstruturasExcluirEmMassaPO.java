@@ -55,6 +55,9 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\" toast-inner\"]")
 	public WebElement mensagem;
 	
+	@FindBy(xpath = "//div[@class=\"th sortable\"]//span[text()=\"ID\"]")
+	public WebElement ordenar;
+	
 	public GrupoDeEstruturasExcluirEmMassaPO() {
 
 		PageFactory.initElements(driver, this);
@@ -135,6 +138,9 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBaseSteven{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
+		sleep(2000);
+		
+		ordenar.click();
 		sleep(2000);
 		
 		

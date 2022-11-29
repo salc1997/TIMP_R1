@@ -157,7 +157,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 		@FindBy(xpath = "//span[contains(@class,\"icon-function\")]")
 		public WebElement formula;
 		
-		@FindBy(xpath = "//div[@id=\"column-source\"]/div/div/div[1]")
+		@FindBy(xpath = "//body/div[6]//div[@id=\"column-source\"]/div/div/div[2]")
 		public WebElement fontedeDados;
 		
 		@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][1]")
@@ -879,11 +879,11 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			sleep(2000);
 			
 			formula.click();
-			sleep(3000);
+			sleep(6000);
 			
 //			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //			sleep(2000);
-			waitExpectElement(fontedeDados);
+	//		waitExpectElement(fontedeDados);
 			sleep(2000);
 			
 			

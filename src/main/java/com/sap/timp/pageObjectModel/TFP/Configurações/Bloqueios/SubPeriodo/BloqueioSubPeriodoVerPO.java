@@ -64,12 +64,12 @@ public class BloqueioSubPeriodoVerPO extends TestBaseSteven{
 		subperiodo.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
 		
-		/*ultimapagina.click();
+		ultimapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);*/
+		sleep(2000);
 		
 		if (tq1 == true) {
 			String idRegistro = "15";
@@ -105,7 +105,7 @@ public class BloqueioSubPeriodoVerPO extends TestBaseSteven{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 		} else {
-			String idRegistro = "7";
+			String idRegistro = "1";
 
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 			WebElement ver = driver.findElement(
@@ -150,10 +150,10 @@ public class BloqueioSubPeriodoVerPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		/*ultimapagina.click();
+		ultimapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);*/
+		sleep(2000);
 		
 		if (tq1 == true) {
 			String idRegistro = "15";
@@ -189,7 +189,7 @@ public class BloqueioSubPeriodoVerPO extends TestBaseSteven{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 		} else {
-			String idRegistro = "7";
+			String idRegistro = "1";
 
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 			WebElement editar = driver.findElement(
@@ -231,14 +231,14 @@ public class BloqueioSubPeriodoVerPO extends TestBaseSteven{
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		sucesso.add(statusString1.contains(statusString));
-		sucesso.add(empresaString1.equals(empresaString));
-		sucesso.add(estadoString1.equals(estadoString));
+		sucesso.add(statusString.contains(statusString1));
+		sucesso.add(empresaString.contains(empresaString1));
+		sucesso.add(estadoString.contains(estadoString1));
 		sucesso.add(filialString1.contains(filialString));
 		sucesso.add(tributoString.contains(tributoString1));
-		sucesso.add(validadeDeString1.equals(validadeDeString));
+		sucesso.add(validadeDeString.contains(validadeDeString1));
 		sucesso.add(validadeateString.contains(validadeateString1));
-		sucesso.add(componenteBfbString1.equals(componenteBfbString));
+		sucesso.add(componenteBfbString.contains(componenteBfbString1));
 		
 	
 		System.out.println(sucesso);

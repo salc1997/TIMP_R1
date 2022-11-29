@@ -568,6 +568,13 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);  
 		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		String idLivroIP = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div"))
+				.getText();
+		System.out.println("Ultimo ID de Livro ICMS: "+idLivroIP);
+		
 		executarLivrosIPI.click();
 		sleep(2000);
 		
@@ -613,15 +620,94 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-
 		sucesso.add( entradas.isDisplayed());
 		sucesso.add( saidas.isDisplayed());
 		sucesso.add(resumo.isDisplayed());
 		sucesso.add( informações.isDisplayed());
 		sucesso.add( detalhes.isDisplayed());
 		        
+		gravarRascunho.click();
+		sleep(1000);
+		
+		String txtNomeLivro = NomeLivro.getAttribute("value");
+		
+		System.out.println("Nome do Livro "+txtNomeLivro);
+		
+		gravar.click();
+		sleep(24000);
+
+		String id2 = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div"))
+				.getText();
+		String nome = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[4]/div"))
+				.getText();
+		System.out.println(nome);
+		
+		int id1LI = convertToInt(idLivroIP);
+		int id2LI = convertToInt(id2);
+
+		System.out.println("***********");
+		System.out.println("Livros ICMS");
+		System.out.println("Id antes da criação: " + id1LI);
+		System.out.println("Id Após a criação: " + id2LI);
+		System.out.println("");
+		System.out.println("***********");
+
+		if (id2LI > id1LI) {
+			sucesso.add(true);
+		} else {
+			sucesso.add(false);
+		}
+		
+	
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+id2+"\"]/div[1]/div"));
+		
+		menu.click();
+		sleep(10000);
+		
+		
+		
+		sucesso.add( entradasOrigen.isDisplayed());
+		sucesso.add( saidasOrigen.isDisplayed());
+		sucesso.add(resumoOrigen.isDisplayed());
+		sucesso.add( informaçõesOrigen.isDisplayed());
+		sucesso.add( detalhesOrigen.isDisplayed());
+		        
 		System.out.println("Presenta Entradas & salidas: "+sucesso);
+		
+		oficializar.click();
+		sleep(6000);
+		
+		String txtNomeLivroOficializar = NomeLivro.getAttribute("value");
+		
+		System.out.println("Nome do Livro "+txtNomeLivroOficializar);
+		sleep(1000);
+		
+		gravar.click();
+		sleep(3000);
+		
+
+		
+		String txtAviso = aviso.getText();
+		System.out.println("Nome do Livro "+txtAviso);
+		
+		String txtAvisoCaso = "Ao oficializar esse período (01/2016)";
+		
+		sucesso.add(txtAviso.contains(txtAvisoCaso));
+	
+		sim.click();
+		sleep(13000);
+		
+		WebElement identificador = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]//child::div[@data-id=\""+id2+"\"]/div[2]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\"]"));
+		String nomeLivro = driver.findElement(By.xpath(
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id=\""+id2+"\"]/div[4]/div"))
+				.getText();
+		sucesso.add( identificador.isDisplayed());
+		sucesso.add(nomeLivro.contains(txtNomeLivroOficializar ));
+		
+		System.out.println("resul "+sucesso);
+		sleep(1000);
 	}
 	
 	public  ArrayList<Boolean>  LivroICMSDIFAL() {
@@ -764,7 +850,7 @@ public class LivrosOficiaisPO extends TestBaseMassiel{
 		sucesso.add(txtAviso.contains(txtAvisoCaso));
 	
 		sim.click();
-		sleep(85000);
+		sleep(13000);
 		
 		WebElement identificador = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]//child::div[@data-id=\""+id2+"\"]/div[2]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\"]"));
 		String nomeLivro = driver.findElement(By.xpath(

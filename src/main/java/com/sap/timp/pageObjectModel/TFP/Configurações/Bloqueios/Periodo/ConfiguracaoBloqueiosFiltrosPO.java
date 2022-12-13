@@ -44,7 +44,7 @@ public class ConfiguracaoBloqueiosFiltrosPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@id=\"creationUser\"]/div/div/div[2]")
 	public WebElement cboUsuarioCriacao;
 	
-	@FindBy(xpath = "//li[@tabindex=\"0\" and contains(@class, \"list-item\") and @id and text()=\"TESTEAUTOMATIZADO TESTEAUTOMATIZADO\"]")
+	@FindBy(xpath = "//li[@tabindex=\"0\" and contains(@class, \"list-item\") and @id and text()=\"TESTE AUTOMATIZADO\"]")
 	public WebElement opcionUsuarioCriacao;
 	
 	@FindBy(xpath = "//div[@id=\"creationDate\"]/div/div/input")
@@ -53,7 +53,7 @@ public class ConfiguracaoBloqueiosFiltrosPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@id=\"modificationUser\"]/div/div/div[2]")
 	public WebElement cboUsuarioModificacao;
 	
-	@FindBy(xpath = "//li[@tabindex=\"0\" and contains(@class, \"list-item\") and @id and text()=\"TESTEAUTOMATIZADO TESTEAUTOMATIZADO\"]")
+	@FindBy(xpath = "//li[@tabindex=\"0\" and contains(@class, \"list-item\") and @id and text()=\"TESTE AUTOMATIZADO\"]")
 	public WebElement opcionUsuarioModificacao;
 	
 	@FindBy(xpath = "//div[@id=\"modificationDate\"]/div/div/input")

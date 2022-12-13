@@ -30,18 +30,6 @@
 	</test> 
 	
 	
-	<test name="Usuarios> Usuarios" >
-		<classes>
-			<class name="com.timp.test.ADM.Usuários.Usuários.UsuariosEditar"></class>
-			<class name="com.timp.test.ADM.Usuários.Usuários.UsuáriosVisualizar"></class>
-			<class name="com.timp.test.ADM.Usuários.Usuários.UsuáriosDetalhes"></class>
-			<class name="com.timp.test.ADM.Usuários.Usuários.UsuariosFiltrosAvancados"></class>
-			<class name="com.timp.test.ADM.Usuários.Usuários.UsuáriosAtivarDesativar"></class>
-			
-		</classes>
-	
-	</test>
-	
 		<test name="Usuários > Pacotes" >
 		<classes>
 			<class name="com.timp.test.ADM.Usuários.Pacotes.PacotesCriar"></class>

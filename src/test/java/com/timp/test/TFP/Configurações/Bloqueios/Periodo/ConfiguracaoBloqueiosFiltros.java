@@ -26,7 +26,7 @@ public class ConfiguracaoBloqueiosFiltros extends TestBaseFernando {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 

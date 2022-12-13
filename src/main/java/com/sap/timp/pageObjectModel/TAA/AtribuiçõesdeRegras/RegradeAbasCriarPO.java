@@ -61,7 +61,7 @@ public class RegradeAbasCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//li[@id=\"1000\"]")
 	public WebElement opcionRegra;
 	
-	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@id=\"1008\"]")
 	public WebElement opcionRegraTC2;
 	
 	@FindBy(xpath = "//*[@id=\"rule-valid-from\"]/div/div[1]/input")

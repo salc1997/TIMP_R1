@@ -105,7 +105,7 @@ public class BloqueioSubPeriodoVerPO extends TestBaseSteven{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 		} else {
-			String idRegistro = "1";
+			String idRegistro = "3";
 
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 			WebElement ver = driver.findElement(
@@ -189,7 +189,7 @@ public class BloqueioSubPeriodoVerPO extends TestBaseSteven{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 		} else {
-			String idRegistro = "1";
+			String idRegistro = "3";
 
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 			WebElement editar = driver.findElement(

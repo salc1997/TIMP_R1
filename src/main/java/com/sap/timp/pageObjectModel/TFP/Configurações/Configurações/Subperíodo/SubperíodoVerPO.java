@@ -22,7 +22,7 @@ public class SubperíodoVerPO extends TestBaseMassiel {
 	@FindBy(xpath = "//div[@id=\"company\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//div[@id=\"tax\"]/div/div[1]/div/input")
+	@FindBy(xpath = "//div[@id=\"tax\"]//input")
 	public WebElement tributo;
 	
 	@FindBy(xpath = "//div[@id=\"state\"]/div/div[1]/div//div[1]/div[1]/div[1]")

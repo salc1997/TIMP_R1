@@ -17,7 +17,7 @@ public class SubperíodoFiltroIDPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Subperíodo\"]")
 	public WebElement subPeriodo;
 	
-	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[2]/div")
+	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
 	public WebElement id;
 
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
@@ -43,7 +43,7 @@ public class SubperíodoFiltroIDPO extends TestBaseMassiel{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		String idRegistro = id.getText();
 		
 		System.out.println(" Id Registro: " + idRegistro );

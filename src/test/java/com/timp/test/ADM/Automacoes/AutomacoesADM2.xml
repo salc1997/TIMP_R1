@@ -24,5 +24,12 @@
 	
 		</classes>
 	</test>
+	
+	<test name=" ADM -  Configuração -  Configuração De  Tributo > Configuração Tributo X Estrutura  " > 
+		<classes>
+			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoTributoXEstrutura.ConfiguraçãoTributoXEstruturaCriar"></class>
+			
+		</classes>
+	</test> 
 
 </suite> <!-- Suite -->

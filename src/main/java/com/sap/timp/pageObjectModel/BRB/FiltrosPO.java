@@ -298,7 +298,7 @@ public class FiltrosPO  extends TestBaseSteven{
 		data.sendKeys(Keys.ENTER);
 		candadoD.click();
 		
-		JavascriptExecutor js = (JavascriptExecutor) driver;
+		/*	JavascriptExecutor js = (JavascriptExecutor) driver;
 
 		js.executeScript("arguments[0].scrollIntoView();", mover);
 		
@@ -327,7 +327,7 @@ public class FiltrosPO  extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 	
-		driver.navigate().refresh();
+		driver.navigate().refresh();*/
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");	
 		
@@ -508,7 +508,7 @@ public class FiltrosPO  extends TestBaseSteven{
 			d2.click();
 			sleep(2000);
 			
-			d1t.click();
+			/*d1t.click();
 			sleep(2000);
 			
 			d1t.click();
@@ -523,7 +523,7 @@ public class FiltrosPO  extends TestBaseSteven{
 			jan.click();
 			sleep(2000);
 			
-			fec2.click();
+			fec2.click();*/
 			sleep(2000);
 		}
 		

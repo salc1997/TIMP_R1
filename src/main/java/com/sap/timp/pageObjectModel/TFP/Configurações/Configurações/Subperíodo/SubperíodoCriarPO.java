@@ -151,7 +151,7 @@ public class SubperíodoCriarPO extends TestBaseMassiel{
 			
 		}else if (tc2 == true) {
 			
-			WebElement tributoOpc = driver.findElement(By.xpath( "//li[@id=\"option-7\"]"));
+			WebElement tributoOpc = driver.findElement(By.xpath( "//li[text()=\"ICMS\"]"));
 			
 			tributoOpc.click();
 			sleep(2000);

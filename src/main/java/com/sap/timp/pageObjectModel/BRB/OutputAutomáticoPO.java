@@ -210,7 +210,7 @@ public class OutputAutomáticoPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		execucao.click();
-		sleep(19000);
+		sleep(25000);
 	//	waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 		executar.click();
 		sleep(3000);

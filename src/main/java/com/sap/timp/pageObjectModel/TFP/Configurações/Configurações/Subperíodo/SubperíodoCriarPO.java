@@ -29,7 +29,7 @@ public class SubperíodoCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@id=\"3000\"]")
 	public WebElement empresaOpc;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Tributo\"]")
+	@FindBy(xpath = "//div[@id=\"tax\"]/div/div[2]")
 	public WebElement tributo;
 	
 	@FindBy(xpath = "//li[@id=\"option-13\"]")
@@ -126,7 +126,7 @@ public class SubperíodoCriarPO extends TestBaseMassiel{
 		sleep(2000);
 		
 
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[2]/div")).getText();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
 		
 		System.out.println(id);
 		
@@ -134,6 +134,41 @@ public class SubperíodoCriarPO extends TestBaseMassiel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		tributo.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		if (tq1 == true) {
+			WebElement tributoOpc = driver.findElement(By.xpath( "//li[@id=\"option-17\"]"));
+			
+			tributoOpc.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+			
+		}else if (tc2 == true) {
+			
+			WebElement tributoOpc = driver.findElement(By.xpath( "//li[text()=\"ICMS\"]"));
+			
+			tributoOpc.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+		
+		}else {
+			
+			WebElement tributoOpc = driver.findElement(By.xpath( "//li[@id=\"option-17\"]"));
+			
+			tributoOpc.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+			
+		}
 		
 		empresa.click();
 		sleep(2000);
@@ -181,42 +216,8 @@ public class SubperíodoCriarPO extends TestBaseMassiel{
 		
 	
 		
-		
-		tributo.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		if (tq1 == true) {
-			WebElement tributoOpc = driver.findElement(By.xpath( "//li[@id=\"option-17\"]"));
-			
-			tributoOpc.click();
-			sleep(2000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			
-			
-		}else if (tc2 == true) {
-			
-			WebElement tributoOpc = driver.findElement(By.xpath( "//li[@id=\"option-7\"]"));
-			
-			tributoOpc.click();
-			sleep(2000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			
-		
-		}else {
-			
-			WebElement tributoOpc = driver.findElement(By.xpath( "//li[@id=\"option-17\"]"));
-			
-			tributoOpc.click();
-			sleep(2000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			
-		}
-		
+
+
 		
 		estado.click();
 		sleep(2000);
@@ -375,7 +376,7 @@ public class SubperíodoCriarPO extends TestBaseMassiel{
 		sleep(2000);
 	
 		
-		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[2]/div")).getText();
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
 		
 		System.out.println(id);
 		sleep(2000);

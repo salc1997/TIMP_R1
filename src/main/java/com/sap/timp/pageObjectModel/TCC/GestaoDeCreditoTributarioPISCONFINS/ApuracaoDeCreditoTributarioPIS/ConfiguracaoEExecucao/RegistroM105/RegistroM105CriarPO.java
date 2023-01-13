@@ -175,7 +175,7 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 		}
 		
 		
-		sleep(9000);
+		sleep(18000);
 		filial.click();
 		sleep(2000);
 		
@@ -203,7 +203,7 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC11.click();
+			OPC1.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {

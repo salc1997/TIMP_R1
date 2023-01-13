@@ -107,7 +107,7 @@ public class SubperiodoEditarPO  extends TestBaseKenssy {
 		String enviar = dia.getAttribute("value");
 		System.out.println(enviar);
 		
-		sleep(2000);
+		sleep(4000);
 		
 		gravar.click();
 		sleep(2000);

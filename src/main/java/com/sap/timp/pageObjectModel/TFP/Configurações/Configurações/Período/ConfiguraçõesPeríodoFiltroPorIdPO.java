@@ -44,7 +44,7 @@ public class ConfiguraçõesPeríodoFiltroPorIdPO extends TestBaseKenssy{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[2]/div")).getText();
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
 		
 		System.out.println("Id a buscar: "+id);
 		
@@ -53,11 +53,11 @@ public class ConfiguraçõesPeríodoFiltroPorIdPO extends TestBaseKenssy{
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		
 		this.textId = driver
-				.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id=\""+id+"\"]/div[2]/div"))
+				.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id=\""+id+"\"]/div[3]/div"))
 				.getText();
 
 		System.out.println("ID obtenido: "+this.textId);

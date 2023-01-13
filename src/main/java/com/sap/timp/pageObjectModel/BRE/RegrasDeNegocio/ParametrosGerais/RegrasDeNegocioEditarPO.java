@@ -314,7 +314,7 @@ public class RegrasDeNegocioEditarPO extends TestBaseSteven{
 		nao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		configuracoes.click();
 		sleep(1000);
 		String verficarnome = nome.getAttribute("value");

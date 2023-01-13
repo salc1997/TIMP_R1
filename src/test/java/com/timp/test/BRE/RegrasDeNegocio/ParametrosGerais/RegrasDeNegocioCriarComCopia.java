@@ -30,7 +30,7 @@ public class RegrasDeNegocioCriarComCopia extends TestBaseSteven{
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 

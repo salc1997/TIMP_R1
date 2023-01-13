@@ -162,7 +162,7 @@ public class BloqueioSubPeriodoEditarPO extends TestBaseSteven {
 		ultimapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		if (tq1 == true) {
 			String idRegistro = "15";

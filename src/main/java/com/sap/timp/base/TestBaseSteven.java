@@ -49,10 +49,16 @@ public class TestBaseSteven  {
 	protected String tp1 = "http://as1-100-01-tp1:8000/timp/login/#/login";
 	
 	protected String td2 = "http://as1-100-01-td2:8000/timp/login/#/login";
-
+	
+	protected String cloud = "https://timp.authentication.eu10.hana.ondemand.com/login";
+	
 	public static WebDriver driver;
 	public String usuarioL = "TESTEAUTOMATIZADO";
 	public String senhaL = "Alltax2023";
+	
+	public String usuarioLL = "kenssy.medina@agilesolutions.com";
+	public String senhaLL = "Gorgojita12";
+	
 	public int menuT = 12000;
 
 	public WebDriver initialization() {

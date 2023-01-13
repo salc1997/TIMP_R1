@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Sep 14 04:48:01 BRT 2022</td>
+<td>Started on:</td><td>Wed Jan 11 10:59:11 BRT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>204 seconds (204421 ms)</td>
+<tr><td>Total time:</td><td>109 seconds (109532 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.timp.test.BRB.GruposAvancados.gruposAvanzados()'><b>gruposAvanzados</b><br>Test class: com.timp.test.BRB.GruposAvancados</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;table-fixed-wrapper&quot;]/div[2]/div[1]/div[1]/span[4]&quot;}
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@data-column=&quot;115&quot; and contains(@aria-label ,&quot;Linha: 1-&quot;)]/div[2]&quot;}
   (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52673}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 8caa35b2869cd8a1cf4d0db99bf2a21c
-*** Element info: {Using=xpath, value=//*[@id=&quot;table-fixed-wrapper&quot;]/div[2]/div[1]/div[1]/span[4]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52039}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 245d91db4e5105645374684c3a91faff
+*** Element info: {Using=xpath, value=//div[@data-column=&quot;115&quot; and contains(@aria-label ,&quot;Linha: 1-&quot;)]/div[2]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -97,20 +97,20 @@ Session ID: 8caa35b2869cd8a1cf4d0db99bf2a21c
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.BRB.GruposAvanzadosPO.gruposAvanzadosAplicar(GruposAvanzadosPO.java:213)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.getText(Unknown Source)
+	at com.sap.timp.pageObjectModel.BRB.GruposAvanzadosPO.gruposAvanzadosAplicar(GruposAvanzadosPO.java:141)
 	at com.timp.test.BRB.GruposAvancados.gruposAvanzados(GruposAvancados.java:46)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1008684017", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1008684017'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;table-fixed-wrapper&quot;]/div[2]/div[1]/div[1]/span[4]&quot;}
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1544246716", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1544246716'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@data-column=&quot;115&quot; and contains(@aria-label ,&quot;Linha: 1-&quot;)]/div[2]&quot;}
   (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52673}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 8caa35b2869cd8a1cf4d0db99bf2a21c
-*** Element info: {Using=xpath, value=//*[@id=&quot;table-fixed-wrapper&quot;]/div[2]/div[1]/div[1]/span[4]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52039}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 245d91db4e5105645374684c3a91faff
+*** Element info: {Using=xpath, value=//div[@data-column=&quot;115&quot; and contains(@aria-label ,&quot;Linha: 1-&quot;)]/div[2]}
 	at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
@@ -127,8 +127,8 @@ Session ID: 8caa35b2869cd8a1cf4d0db99bf2a21c
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.BRB.GruposAvanzadosPO.gruposAvanzadosAplicar(GruposAvanzadosPO.java:213)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.getText(Unknown Source)
+	at com.sap.timp.pageObjectModel.BRB.GruposAvanzadosPO.gruposAvanzadosAplicar(GruposAvanzadosPO.java:141)
 	at com.timp.test.BRB.GruposAvancados.gruposAvanzados(GruposAvancados.java:46)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -159,7 +159,7 @@ Session ID: 8caa35b2869cd8a1cf4d0db99bf2a21c
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>191</td>
+<td>95</td>
 <td>com.timp.test.BRB.GruposAvancados@cc43f62</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
@@ -174,8 +174,8 @@ Session ID: 8caa35b2869cd8a1cf4d0db99bf2a21c
 <td><div><pre>java.lang.Throwable: Method com.timp.test.BRB.GruposAvancados.eliminarGrupos() on instance com.timp.test.BRB.GruposAvancados@cc43f62 depends on not successfully finished methods 
 [com.timp.test.BRB.GruposAvancados.gruposAvanzados() on instance com.timp.test.BRB.GruposAvancados@cc43f62]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace741827183", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace741827183'><pre>java.lang.Throwable: Method com.timp.test.BRB.GruposAvancados.eliminarGrupos() on instance com.timp.test.BRB.GruposAvancados@cc43f62 depends on not successfully finished methods 
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1456812318", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1456812318'><pre>java.lang.Throwable: Method com.timp.test.BRB.GruposAvancados.eliminarGrupos() on instance com.timp.test.BRB.GruposAvancados@cc43f62 depends on not successfully finished methods 
 [com.timp.test.BRB.GruposAvancados.gruposAvanzados() on instance com.timp.test.BRB.GruposAvancados@cc43f62]
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)

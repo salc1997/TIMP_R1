@@ -22,7 +22,7 @@ public class UsuariosEditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-left\"]")
 	public WebElement btnPrimeraPagina;
 
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Cargo do Usuário\"]")
+	@FindBy(xpath = "//div[@id=\"form\"]/div/div[2]/table/tr[3]/td[1]//input")
 	public WebElement cargo;
 	
 	
@@ -46,6 +46,8 @@ public class UsuariosEditarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//*[@id=\"1000\"]")
 	public WebElement empresa1000;
+	@FindBy(xpath = "//*[@id=\"15\"]")
+	public WebElement TEST;
 	
 	@FindBy(xpath = "//*[@id=\"search\"]/div/div[2]/div/div[1]/div[2]/input")
 	public WebElement pesquisarPrivilegio;
@@ -105,7 +107,7 @@ public class UsuariosEditarPO extends TestBaseSteven{
 		pesquisar.sendKeys("TESTEAUTOMATIZADO");
 		sleep(2000);
 		pesquisar.sendKeys(Keys. ENTER);
-		sleep(6000);
+		sleep(7000);
 		
 	
 		
@@ -125,60 +127,32 @@ public class UsuariosEditarPO extends TestBaseSteven{
 		cargo.clear();
 		cargo.sendKeys(valorDescricao);
 		sleep(1000);
+		System.out.println(cargo);
 		
-		privilegios.click();
-		sleep(2000);
-		
-		sleep(1000);
-		moveToElement(empresa1000, driver.findElement(By.xpath("//*[@id=\"privileges-container\"]/div/div[2]/div[1]")));
-		sleep(4000);
-		
-		flag0001.click();
-		sleep(2000);
-		
-		aplicar.click();
-		sleep(3000);
-		grupoUsuario.click();
-		
-		sleep(3000);
-		moveToElement(empresa1000, driver.findElement(By.xpath("//*[@id=\"groups-container\"]/div/div[2]/div[1]")));
-		sleep(4000);
-		appUsuarios.click();
-		sleep(4000);
-		
-		moveToElement(BRE, driver.findElement(By.xpath("//*[@id=\"apps-container\"]/div/div[2]/div[1]")));
-		sleep(4000);
-		
-		aplicar.click();
-		sleep(3000);
-		
-		pacotes.click();
-		sleep(2000);
-		
-		sleep(4000);
-		moveToElement(pacotesUsuarios, driver.findElement(By.xpath("//*[@id=\"packages-container\"]/div/div[2]/div[1]")));
-		sleep(4000);
 		
 		btnGravar.click();
-		sleep(2000);
+		sleep(12000);
+		int botaoNao = rows("//button[text()=\"Sim\"]");
 		
-		btnSim.click();
-		sleep(2000);
+		if (botaoNao > 0) {
+			btnSim.click();
+		}
 		
 		driver.navigate().refresh();
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(19000);
 		
 		
-		
-		System.out.println("");
+		String valorDescricaoEditar = textContent(cargo);
+		System.out.println(cargo);
+
+		boolean sucesso = false;
+		sucesso= valorDescricao.contains(valorDescricaoEditar);
+		System.out.println(sucesso);
 	
 		  
-		boolean sucesso = false;
-	
-		sucesso = true;
 		
 		
 		return sucesso;

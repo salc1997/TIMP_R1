@@ -4,10 +4,8 @@
 
 	<test name="Configuração > Licenças" >
 		<classes>
-			<class name="com.timp.test.ADM.Configuração.Licenças.LicençasDetalhes">
-			</class>
-			<class name="com.timp.test.ADM.Configuração.Licenças.LicençasVisualizar">
-			</class>
+			<class name="com.timp.test.ADM.Configuração.Licenças.LicençasDetalhes"></class>
+			<class name="com.timp.test.ADM.Configuração.Licenças.LicençasVisualizar"></class>
 			
 		</classes>
 	
@@ -15,46 +13,35 @@
 	
 	<test name="Configuração > ManuaisDeComponente" >
 		<classes>
-			<class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteCriar">
-			</class>
-			<class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteEditar">
-			</class>
-			<class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteDetalle">
-			</class>
-			<class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteVisualizar">
-			</class>
-			<class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponentesFiltrosAvançados">
-			</class>
-			<class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir">
-			</class>
+			<class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteCriar"></class>
+			<class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteEditar"></class>
+			<class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteDetalle"></class>
+			<class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteVisualizar"></class>
+			<class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponentesFiltrosAvançados"></class>
+			<class name="com.timp.test.ADM.Configuração.ManuaisDeComponente.ManuaisDeComponenteExcluir"></class>
 		</classes>
 	
 	</test> 
 	
 	
-	<test name="Configuração > Usuarios" >
+	<test name="Usuários > Pacotes" >
 		<classes>
-			<class name="com.timp.test.ADM.Configuração.Usuarios.UsuáriosAtivarDesativar">
-			</class>
-			<class name="com.timp.test.ADM.Configuração.Usuarios.UsuáriosDetalhes">
-			</class>
-			<class name="com.timp.test.ADM.Configuração.Usuarios.UsuariosEditar">
-			</class>
-			<class name="com.timp.test.ADM.Configuração.Usuarios.UsuariosFiltrosAvancados">
-			</class>
-			<class name="com.timp.test.ADM.Configuração.Usuarios.UsuáriosVisualizar">
-			</class>
-			
-		</classes>
+			<class name="com.timp.test.ADM.Usuários.Pacotes.PacotesCriar"></class>
+	</classes>
 	
 	</test>
 	
-		<test name="Usuários > Pacotes" >
+	<test name="Usuários > Usuários " >
 		<classes>
-			<class name="com.timp.test.ADM.Usuários.Pacotes.PacotesCriar">
-			</class>
+			<class name="com.timp.test.ADM.Usuários.Usuários.UsuáriosAtivarDesativar"></class>
+			<class name="com.timp.test.ADM.Usuários.Usuários.UsuáriosDetalhes"></class>
+			<class name="com.timp.test.ADM.Usuários.Usuários.UsuariosEditar"></class>
+			<class name="com.timp.test.ADM.Usuários.Usuários.UsuariosFiltrosAvancados"></class>
+			<class name="com.timp.test.ADM.Usuários.Usuários.UsuáriosVisualizar"></class>
+			
 		</classes>
 	
-	</test><!-- PruebaTest -->
+	</test> 
+	<!-- PruebaTest -->
 
 </suite> <!-- Suite -->

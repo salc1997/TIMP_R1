@@ -1583,7 +1583,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		//idInserir2(id); //antes de crear herarquia configuracao
 		
 		nova.click();
-		sleep(6000);
+		sleep(10000);
 
 		sleep(2000);
 

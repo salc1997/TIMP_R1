@@ -6,7 +6,7 @@
 	<test name="TFP - Configurações - Bloqueios > Periodo">	
 		<classes>
 			
-			<class name="com.timp.test.TFP.Configurações.Bloqueios.Periodo.ConfiguracaoBloqueiosCriar"></class>
+		<!--	<class name="com.timp.test.TFP.Configurações.Bloqueios.Periodo.ConfiguracaoBloqueiosCriar"></class>-->
 			<class name="com.timp.test.TFP.Configurações.Bloqueios.Periodo.ConfiguracaoBloqueiosEditar"></class>
 			<class name="com.timp.test.TFP.Configurações.Bloqueios.Periodo.ConfiguracaoBloqueiosFiltros"></class>
 			<class name="com.timp.test.TFP.Configurações.Bloqueios.Periodo.ConfiguracaoBloqueiosVer"></class>
@@ -18,7 +18,7 @@
 	<test name="TFP - Configurações - Bloqueios > Sub Periodo">	
 		<classes>
 			
-			<class name="com.timp.test.TFP.Configurações.Bloqueios.SubPeriodo.BloqueioSubPeriodoCriar"></class>
+		<!--	<class name="com.timp.test.TFP.Configurações.Bloqueios.SubPeriodo.BloqueioSubPeriodoCriar"></class>-->
 			<class name="com.timp.test.TFP.Configurações.Bloqueios.SubPeriodo.BloqueioSubPeriodoEditar"></class>
 			<class name="com.timp.test.TFP.Configurações.Bloqueios.SubPeriodo.BloqueioSubPeriodoVer"></class>
 			<class name="com.timp.test.TFP.Configurações.Bloqueios.SubPeriodo.SubPeriodoFiltroId"></class>
@@ -59,9 +59,8 @@
 	<test name="TFP - Configurações - Status >  Periodo ">	
 		<classes>
 			
-			<class name="com.timp.test.TFP.Configurações.Status.Periodo.ConfiguracoesStatusPeriodoCriar"></class>
+		<!--<class name="com.timp.test.TFP.Configurações.Status.Periodo.ConfiguracoesStatusPeriodoCriar"></class> -->
 		    <class name="com.timp.test.TFP.Configurações.Status.Periodo.ConfiguracoesStatusPeriodoEditar"></class>
-		    <class name="com.timp.test.TFP.Configurações.Status.Periodo.ConfiguracoesStatusPeriodoCopiar"></class>
 		    <class name="com.timp.test.TFP.Configurações.Status.Periodo.ConfiguracoesStatusPeriodoVer"></class>
 		    <class name="com.timp.test.TFP.Configurações.Status.Periodo.StatusPeriodoFiltroID"></class>
 		

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosVisualizar">
+      <class name="com.timp.test.BRB.FiltrosRelatorio">
         <methods>
           <include name="beforeClass"/>
-          <include name="filtrosAvancados"/>
+          <include name="AfiltrosEditor"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosVisualizar -->
+      </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -40,11 +40,18 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@id=\"lastStatus\"]/div/div/div[2]")
 	public WebElement statusFinal;
 	
+	@FindBy(xpath = "//div[@id=\"occurrenceType\"]/div/div/div[2]")
+	public WebElement tipodeOcurrencia;
+	
 	@FindBy(xpath = "//textarea")
 	public WebElement descricao;
 
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcao;
+	
+
+	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	public WebElement opcao2;
 	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Data Inicial\")]")
 	public WebElement dataVigencia;
@@ -127,6 +134,11 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 		sleep(1000);
 		opcao.click();
 		new Actions(driver).moveToElement(filial).click().perform();
+		sleep(1000);
+		
+		tipodeOcurrencia.click();
+		sleep(1000);
+		opcao2.click();
 		sleep(1000);
 		
 		status.click();

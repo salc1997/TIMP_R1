@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 01 09:59:28 CST 2022</td>
+<td>Started on:</td><td>Tue Dec 06 19:21:23 BRT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>1391 seconds (1391834 ms)</td>
+<tr><td>Total time:</td><td>798 seconds (798757 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,57 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarSubPeriodoEmMassa.alterarPeriodoEmMassa()'><b>alterarPeriodoEmMassa</b><br>Test class: com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarSubPeriodoEmMassa</td>
+<td><div><pre>java.lang.AssertionError: Os resultados do filtro não são iguais expected [true] but found [false]
+	at com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarSubPeriodoEmMassa.alterarPeriodoEmMassa(PeriodosAlterarSubPeriodoEmMassa.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1401428142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1401428142'><pre>java.lang.AssertionError: Os resultados do filtro não são iguais expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarSubPeriodoEmMassa.alterarPeriodoEmMassa(PeriodosAlterarSubPeriodoEmMassa.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>280</td>
+<td>com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarSubPeriodoEmMassa@606e4010</td></tr>
+<tr>
 <td title='com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarStatusSubPeriodoAvulso.alterarStatusSubPeriodo()'><b>alterarStatusSubPeriodo</b><br>Test class: com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarStatusSubPeriodoAvulso</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@data-id,&quot;14403&quot;)]/div[1]/div/div[2]/ul/li/span[text()=&quot;200 - Pré-Fechamento&quot;]&quot;}
   (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57197}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e1c706c04f2006331d2b7722bdf3f954
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49890}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a25d2dc9c14d62fc766f09ab4cf70f95
 *** Element info: {Using=xpath, value=//div[contains(@data-id,&quot;14403&quot;)]/div[1]/div/div[2]/ul/li/span[text()=&quot;200 - Pré-Fechamento&quot;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -98,15 +140,15 @@ Session ID: e1c706c04f2006331d2b7722bdf3f954
 	at com.sap.timp.pageObjectModel.TFP.Periodos.Periodos.PeriodosAlterarStatusSubPeriodoAvulsoPO.alterarStatusSubPeriodo(PeriodosAlterarStatusSubPeriodoAvulsoPO.java:115)
 	at com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarStatusSubPeriodoAvulso.alterarStatusSubPeriodo(PeriodosAlterarStatusSubPeriodoAvulso.java:46)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace873296697", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace873296697'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@data-id,&quot;14403&quot;)]/div[1]/div/div[2]/ul/li/span[text()=&quot;200 - Pré-Fechamento&quot;]&quot;}
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace884780747", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace884780747'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@data-id,&quot;14403&quot;)]/div[1]/div/div[2]/ul/li/span[text()=&quot;200 - Pré-Fechamento&quot;]&quot;}
   (Session info: chrome=83.0.4103.61)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+System info: host: &apos;DESKTOP-M23FVFN&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57197}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: e1c706c04f2006331d2b7722bdf3f954
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\Massiel\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:49890}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a25d2dc9c14d62fc766f09ab4cf70f95
 *** Element info: {Using=xpath, value=//div[contains(@data-id,&quot;14403&quot;)]/div[1]/div/div[2]/ul/li/span[text()=&quot;200 - Pré-Fechamento&quot;]}
 	at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -153,50 +195,8 @@ Session ID: e1c706c04f2006331d2b7722bdf3f954
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>98</td>
+<td>81</td>
 <td>com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarStatusSubPeriodoAvulso@18271936</td></tr>
-<tr>
-<td title='com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarSubPeriodoEmMassa.alterarPeriodoEmMassa()'><b>alterarPeriodoEmMassa</b><br>Test class: com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarSubPeriodoEmMassa</td>
-<td><div><pre>java.lang.AssertionError: Os resultados do filtro não são iguais expected [true] but found [false]
-	at com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarSubPeriodoEmMassa.alterarPeriodoEmMassa(PeriodosAlterarSubPeriodoEmMassa.java:48)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1781228097", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1781228097'><pre>java.lang.AssertionError: Os resultados do filtro não são iguais expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarSubPeriodoEmMassa.alterarPeriodoEmMassa(PeriodosAlterarSubPeriodoEmMassa.java:48)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>801</td>
-<td>com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarSubPeriodoEmMassa@606e4010</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -206,15 +206,15 @@ Session ID: e1c706c04f2006331d2b7722bdf3f954
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.timp.test.TFP.Periodos.Periodos.PeriodosFiltroPorId.filtro()'><b>filtro</b><br>Test class: com.timp.test.TFP.Periodos.Periodos.PeriodosFiltroPorId</td>
-<td></td>
-<td>113</td>
-<td>com.timp.test.TFP.Periodos.Periodos.PeriodosFiltroPorId@8458f04</td></tr>
-<tr>
 <td title='com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarPeriodosEmMassa.alterarPeriodoEmMassa()'><b>alterarPeriodoEmMassa</b><br>Test class: com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarPeriodosEmMassa</td>
 <td></td>
-<td>298</td>
+<td>239</td>
 <td>com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarPeriodosEmMassa@909217e</td></tr>
+<tr>
+<td title='com.timp.test.TFP.Periodos.Periodos.PeriodosFiltroPorId.filtro()'><b>filtro</b><br>Test class: com.timp.test.TFP.Periodos.Periodos.PeriodosFiltroPorId</td>
+<td></td>
+<td>79</td>
+<td>com.timp.test.TFP.Periodos.Periodos.PeriodosFiltroPorId@8458f04</td></tr>
 </table><p>
 </body>
 </html>

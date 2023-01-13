@@ -9,17 +9,33 @@
 
 			
 			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar"></class>
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteDetalhe"></class>
 			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteEditar"></class>
+			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteDetalhe"></class>
 			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteVisualizar"></class>
 			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteExcluir"></class>
 
+		</classes>
+		
+		</test> <!-- PruebaTestNG -->
+	<test name="Ajustes > Codigos Ajustes" preserve-order="true">
+
+
+		<classes>
+
+			
+			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar"></class>
+			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesDetalhes"></class>
+			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesEditar"></class>
+			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesVisualizar"></class>
+			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir"></class>
+			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluirMassa"></class>
+			
 		</classes>
 
 
 	</test> <!-- PruebaTestNG -->
 	
-	<test name="Ocorrencia Fiscal > Status Ocorrencia Fiscal" preserve-order="true">
+	<test name="Determinacao Automatica De Guias" preserve-order="true">
 
 
 		<classes>
@@ -28,11 +44,31 @@
 			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasCriar"></class>
 			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasEditar"></class>
 			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasFiltroPorId"></class>
-			
+		
+
 		</classes>
 
 
 	</test> <!-- PruebaTestNG -->
 	
+	<test name="CodigoContabilizacao" preserve-order="true">
+
+
+		<classes>
+
+			
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar"></class>
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoEditar"></class>
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoDetalhes"></class>
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar"></class>
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoFiltrosAvan"></class>
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoExcluir"></class>
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CódigoContabilizaçãoExcluirMassa"></class>
+			
+			
+		</classes>
+
+
+	</test> <!-- PruebaTestNG -->
 
 </suite> <!-- Suite -->

@@ -179,7 +179,7 @@ public class OutputdeReferênciaPO extends TestBaseSteven {
 		WebElement cfopOpciones = driver.findElement(By.xpath("//li[@column-name=\"CFOP\"]/div/div/div[@id=\"chead\"]/span"));
 		cfopOpciones.click();
 		
-		sleep(2000);
+		sleep(4000);
 		
 		WebElement opcOutputDeReferencia = driver.findElement(By.xpath("//span[text()=\"Adicionar output de referência\"]"));
 		opcOutputDeReferencia.click();

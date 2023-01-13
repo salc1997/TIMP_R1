@@ -29,7 +29,7 @@ public class BloqueioSubPeriodoVer extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 

@@ -86,9 +86,8 @@ public class PacotesCriarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		//conta o numero de linhas
-		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		//conta o numero de linhas	
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")).getText();
 		System.out.println(id);			
 		sleep(2000);	
 		
@@ -103,17 +102,12 @@ public class PacotesCriarPO extends TestBaseMassiel{
 		aplicativos.click();
 		sleep(2000);
 		
-		moveToElement(elemento, driver.findElement(By.xpath("//div[@id=\"apps-container\"]/div/div[2]/div[2]")));
+		moveToElement(elemento, driver.findElement(By.xpath("//div[@id=\"apps-container\"]/div/div[3]")));
 		sleep(2000);
 		
 		chek.click();
 		sleep(4000);
-		
-		chek.click();
-		sleep(4000);
-		
-		chek.click();
-		sleep(4000);
+	
 		
 		aplicar.click();
 		sleep(4000);
@@ -132,9 +126,8 @@ public class PacotesCriarPO extends TestBaseMassiel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		int rows2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
-		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows2+"]/div[3]/div")).getText();
+			
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")).getText();
 		
 		idInserir("pacotesCriar",id2);
 		int idD = convertToInt(id);

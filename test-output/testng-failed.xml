@@ -1,18 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="DFG - Leiautes(failed)">
+  <test thread-count="5" name="ADM - Configuração - Configuração de Tributos - Configuração de Mapeamenteo de Tributos(failed)">
     <classes>
-      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
+      <class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeMapeamentoDeTributo.ConfiguracaoDeMapeamentoDeTributoCriar">
         <methods>
-          <include name="filtrosVersao"/>
-          <include name="filtrosFechaUsuarioCriado"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
           <include name="afterClass"/>
-          <include name="filtrosFiltroTipo"/>
-          <include name="filtrosFechaUsuarioModificado"/>
+        </methods>
+      </class> <!-- com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeMapeamentoDeTributo.ConfiguracaoDeMapeamentoDeTributoCriar -->
+    </classes>
+  </test> <!-- ADM - Configuração - Configuração de Tributos - Configuração de Mapeamenteo de Tributos(failed) -->
+  <test thread-count="5" name="ADM - Configuração - Configuração de Tributos - Configuração de Tributo(failed)">
+    <classes>
+      <class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoExcluir">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="excluir"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoExcluir -->
+      <class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoVisualizar">
+        <methods>
+          <include name="Visualizar"/>
+          <include name="afterClass"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
+      </class> <!-- com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoVisualizar -->
+      <class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoCriar">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criar"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoCriar -->
+      <class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoEditar">
+        <methods>
+          <include name="editar"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoEditar -->
     </classes>
-  </test> <!-- DFG - Leiautes(failed) -->
+  </test> <!-- ADM - Configuração - Configuração de Tributos - Configuração de Tributo(failed) -->
 </suite> <!-- Failed suite [Suite] -->

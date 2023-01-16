@@ -3,13 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRB.FiltrosRelatorio">
+      <class name="com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades">
         <methods>
-          <include name="beforeClass"/>
-          <include name="AfiltrosEditor"/>
+          <include name="excluirHierarquia"/>
+          <include name="abrirSubnivel4"/>
           <include name="afterClass"/>
+          <include name="abrirSubnivel1"/>
+          <include name="beforeClass"/>
+          <include name="abrirSubnivel5"/>
+          <include name="abrirSubnivel2"/>
+          <include name="abrirSubnivel3"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
+      </class> <!-- com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

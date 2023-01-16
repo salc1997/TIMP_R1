@@ -4,22 +4,24 @@
 
 	<test name=" ADM -  Configuração -  Configuração De  Tributo > Configuração deTributo X Tributo Grupo  " > 
 		<classes>
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãodeTributoXTributoGrupo.ConfiguraçãodeTributoXTributoGrupoCriar"></class>
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãodeTributoXTributoGrupo.ConfiguraçãodeTributoXTributoGrupoEditar"></class>
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãodeTributoXTributoGrupo.ConfiguraçãodeTributoXTributoGrupoVisualizar"></class>
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãodeTributoXTributoGrupo.ConfiguraçãodeTributoXTributoGrupoFiltrar"></class>
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãodeTributoXTributoGrupo.ConfiguraçãodeTributoXTributoGrupoExcluir"></class>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaodeTributoXTributoGrupo.ConfiguracaodeTributoXTributoGrupoCriar"></class>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaodeTributoXTributoGrupo.ConfiguracaodeTributoXTributoGrupoEditar"></class>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaodeTributoXTributoGrupo.ConfiguracaodeTributoXTributoGrupoVisualizar"></class>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaodeTributoXTributoGrupo.ConfiguracaodeTributoXTributoGrupoFiltrar"></class>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaodeTributoXTributoGrupo.ConfiguracaodeTributoXTributoGrupoExcluir"></class>
+			
 
 		</classes>
 	</test> 
 	
 	<test name=" ADM -Configuração -  Configuração Tributo - Configuração Tributo Agrupamento" >
 		<classes>
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoTributoAgrupamento.ConfiguraçãoTributoAgrupamentoCriar"></class>
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoTributoAgrupamento.ConfiguraçãoTributoAgrupamentoEditar"></class>
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoTributoAgrupamento.ConfiguraçãoTributoAgrupamentoVisualizar"></class>
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoTributoAgrupamento.ConfiguraçãoTributoAgrupamentofiltrar"></class>
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoTributoAgrupamento.ConfiguraçãoTributoAgrupamentoExcluir"></class>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoTributoAgrupamento.ConfiguracaoTributoAgrupamentoCriar"></class>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoTributoAgrupamento.ConfiguracaoTributoAgrupamentoEditar"></class>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoTributoAgrupamento.ConfiguracaoTributoAgrupamentoVisualizar"></class>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoTributoAgrupamento.ConfiguracaoTributoAgrupamentofiltrar"></class>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoTributoAgrupamento.ConfiguracaoTributoAgrupamentoExcluir"></class>
+			
 	
 	
 		</classes>
@@ -27,7 +29,7 @@
 	
 	<test name=" ADM -  Configuração -  Configuração De  Tributo > Configuração Tributo X Estrutura  " > 
 		<classes>
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoTributoXEstrutura.ConfiguraçãoTributoXEstruturaCriar"></class>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoTributoXEstrutura.ConfiguracaoTributoXEstruturaCriar"></class>
 			
 		</classes>
 	</test> 

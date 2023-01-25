@@ -558,7 +558,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		//idInserir2(id); //antes de crear herarquia configuracao
 		
 		nova.click();
-		sleep(3000);
+		sleep(5000);
 
 		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
 		sleep(2000);

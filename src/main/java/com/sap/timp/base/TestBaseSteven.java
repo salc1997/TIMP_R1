@@ -661,15 +661,15 @@ public class TestBaseSteven  {
 	
 
 	// BRB
-	public String elementosDiferentes = "Os elementos não são iguais";
-	public String comentariosInativos = "Os comentários não foram ativados";
-	public String correcãoInativa = "A correção não foi ativada";
-	public String semAcesso = "Não foi possivel aceder ao aplicativo";
-	public String semCampoOutput = "O campo output não foi adicionado";
-	public String comentarioNãoValido = "Os comentários não foram os ingresados";
-	public String crescenteEDecrescente = "Os resultados não estão em uma ordem válida";
-	public String copiaNaoCriada = "A cópia não foi criada com sucesso";
-	public String editado = "O relatório não foi modificado com sucesso";
+	public String elementosDiferentes = "Os elementos nao sao iguais";
+	public String comentariosInativos = "Os comentários nao foram ativados";
+	public String correcãoInativa = "A correcao nao foi ativada";
+	public String semAcesso = "Nao foi possivel aceder ao aplicativo";
+	public String semCampoOutput = "O campo output nao foi adicionado";
+	public String comentarioNãoValido = "Os comentarios nao foram os ingresados";
+	public String crescenteEDecrescente = "Os resultados nao estão em uma ordem valida";
+	public String copiaNaoCriada = "A copia nao foi criada com sucesso";
+	public String editado = "O relatorio não foi modificado com sucesso";
 	public String eliminar = "O elemento não foi deletado";
 	public String deletarColuna = "A coluna não foi deletada";
 	public String exportação = "A exportação não foi realizada com sucesso";

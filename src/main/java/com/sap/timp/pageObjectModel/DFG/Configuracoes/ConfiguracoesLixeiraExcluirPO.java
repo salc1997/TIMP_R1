@@ -137,7 +137,7 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
 		sleep(5000);
 		
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		limpiar.click();

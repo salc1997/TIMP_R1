@@ -6,8 +6,8 @@ import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
-import com.sap.timp.pageObjectModel.TFP.Configurações.Configurações.Período.ConfiguraçõesPeríodoFiltroPorIdPO;
-import com.sap.timp.pageObjectModel.TFP.Configurações.Status.SubPeriodo.SubPeriodoFiltroPorIdPO;
+import com.sap.timp.pageObjectModel.TFP.Configuracoes.Configuracoes.Periodo.ConfiguracoesPeríodoFiltroPorIdPO;
+import com.sap.timp.pageObjectModel.TFP.Configuracoes.Status.SubPeriodo.SubPeriodoFiltroPorIdPO;
 import com.sap.timp.pageObjectModel.TFP.Periodos.Periodos.PeriodoFiltroPorIdPO;
 import com.sap.timp.pageObjectModel.TFP.Periodos.SubPeriodoPeriodicidade.SubPeriodoPeriodicidadeFiltroPorIdPO;
 

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
-import com.sap.timp.pageObjectModel.BCB.AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO;
+import com.sap.timp.pageObjectModel.BCB.AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO;
 import com.sap.timp.pageObjectModel.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO;
 
 import org.testng.annotations.BeforeClass;
@@ -16,10 +16,10 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidades extends TestBaseSteven {
+public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidades extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
-	AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO ajustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO;
+	AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ajustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO;
 
 
 	@BeforeClass
@@ -27,7 +27,7 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidades exte
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBCBPO = new AcessarBCBPO();
-		ajustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO = new AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO();
+		ajustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO = new AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO();
 	}
 
 	@AfterClass

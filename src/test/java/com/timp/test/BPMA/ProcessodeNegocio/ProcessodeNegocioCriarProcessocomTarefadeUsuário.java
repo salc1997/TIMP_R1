@@ -6,7 +6,7 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BPMA.AcessarBPMAPO;
 import com.sap.timp.pageObjectModel.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrentePO;
-import com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.ProcessodeNegócioCriarProcessocomTarefadeUsuárioPO;
+import com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.ProcessodeNegocioCriarProcessocomTarefadeUsuarioPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -16,10 +16,10 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ProcessodeNegócioCriarProcessocomTarefadeUsuário extends TestBaseSteven {
+public class ProcessodeNegocioCriarProcessocomTarefadeUsuário extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBPMAPO acessarBPMA ;
-	ProcessodeNegócioCriarProcessocomTarefadeUsuárioPO  processodeNegócioCriarProcessocomTarefadeUsuárioPO;
+	ProcessodeNegocioCriarProcessocomTarefadeUsuarioPO  processodeNegócioCriarProcessocomTarefadeUsuárioPO;
 
 	
   @BeforeClass
@@ -28,7 +28,7 @@ public class ProcessodeNegócioCriarProcessocomTarefadeUsuário extends TestBaseSt
 	  driver = initialization();
 	  loginTC = new LoginTC();
 	  acessarBPMA = new AcessarBPMAPO();
-	  processodeNegócioCriarProcessocomTarefadeUsuárioPO = new  ProcessodeNegócioCriarProcessocomTarefadeUsuárioPO();
+	  processodeNegócioCriarProcessocomTarefadeUsuárioPO = new  ProcessodeNegocioCriarProcessocomTarefadeUsuarioPO();
   }
 
   @AfterClass

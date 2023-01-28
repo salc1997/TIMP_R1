@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.Sleeper;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class ProcessodeNegócioCriarProcessocomTarefadeUsuárioPO extends TestBaseSteven {
+public class ProcessodeNegocioCriarProcessocomTarefadeUsuarioPO extends TestBaseSteven {
 	
 	
 
@@ -131,7 +131,7 @@ public class ProcessodeNegócioCriarProcessocomTarefadeUsuárioPO extends TestBase
 	
 	
 	
-	public ProcessodeNegócioCriarProcessocomTarefadeUsuárioPO() {
+	public ProcessodeNegocioCriarProcessocomTarefadeUsuarioPO() {
 
 		PageFactory.initElements(driver, this);
 	}

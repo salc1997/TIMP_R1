@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseKenssy;
 
-public class ParametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO extends TestBaseKenssy {
+public class ParametrosGeraisConfiguracaoConfiguracaoDetalhesPO extends TestBaseKenssy {
 
 	// Configuracao
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][2]")
@@ -63,7 +63,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO extends TestBase
 //	@FindBy(xpath = "//span[@id=\"id\"]")
 //	public WebElement nomeHierarquiaV;
 	
-	public ParametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO() {
+	public ParametrosGeraisConfiguracaoConfiguracaoDetalhesPO() {
 		PageFactory.initElements(driver, this);
 	}
 	

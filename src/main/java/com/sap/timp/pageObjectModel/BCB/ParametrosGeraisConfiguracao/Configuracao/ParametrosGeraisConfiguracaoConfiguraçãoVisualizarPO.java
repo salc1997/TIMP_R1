@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO extends TestBaseSteven{
+public class ParametrosGeraisConfiguracaoConfiguraçãoVisualizarPO extends TestBaseSteven{
 
 
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][2]")
@@ -55,7 +55,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO extends TestBa
 	
 	
 	
-	public ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO() {
+	public ParametrosGeraisConfiguracaoConfiguraçãoVisualizarPO() {
 
 		PageFactory.initElements(driver, this);
 	}

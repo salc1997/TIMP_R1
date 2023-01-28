@@ -1333,7 +1333,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			tp1 = true;
 		}
 		
-		sleep(1000);
+		sleep(8000);
 		executar.click();
 		sleep(3000);
 		waitExpectElement(executarN);

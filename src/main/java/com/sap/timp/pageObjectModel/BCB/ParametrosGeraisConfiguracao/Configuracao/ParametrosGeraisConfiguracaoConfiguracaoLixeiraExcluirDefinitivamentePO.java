@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseKenssy;
 
-public class ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamentePO extends TestBaseKenssy{
+public class ParametrosGeraisConfiguracaoConfiguracaoLixeiraExcluirDefinitivamentePO extends TestBaseKenssy{
 
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][2]")
 	public WebElement configuracoes;
@@ -30,7 +30,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamen
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-inactiveConfigurations\"]")
 	public WebElement pastaLexeiraC;
 	
-	public ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamentePO() {
+	public ParametrosGeraisConfiguracaoConfiguracaoLixeiraExcluirDefinitivamentePO() {
 		PageFactory.initElements(driver, this);
 	}
 	

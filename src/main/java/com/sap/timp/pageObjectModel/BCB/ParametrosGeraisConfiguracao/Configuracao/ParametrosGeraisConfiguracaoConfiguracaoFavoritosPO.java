@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseKenssy;
 
-public class ParametrosGeraisConfiguraçãoConfiguraçãoFavoritosPO extends TestBaseKenssy {
+public class ParametrosGeraisConfiguracaoConfiguracaoFavoritosPO extends TestBaseKenssy {
 	// Configuracao
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][2]")
 	public WebElement configuracoes;
@@ -31,7 +31,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoFavoritosPO extends TestBas
 	public WebElement pesquisar;
 	
 	
-	public ParametrosGeraisConfiguraçãoConfiguraçãoFavoritosPO() {
+	public ParametrosGeraisConfiguracaoConfiguracaoFavoritosPO() {
 		PageFactory.initElements(driver, this);
 	}
 	

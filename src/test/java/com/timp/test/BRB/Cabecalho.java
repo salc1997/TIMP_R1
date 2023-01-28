@@ -12,13 +12,13 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.RegrasPO;
-import com.sap.timp.pageObjectModel.BRB.cabeçalhoPO;
+import com.sap.timp.pageObjectModel.BRB.cabecalhoPO;
 
-public class Cabeçalho extends TestBaseSteven {
+public class Cabecalho extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
-	cabeçalhoPO cabeçalhoPO;
+	cabecalhoPO cabeçalhoPO;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -26,7 +26,7 @@ public class Cabeçalho extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
-		cabeçalhoPO = new cabeçalhoPO();
+		cabeçalhoPO = new cabecalhoPO();
 
 	}
 

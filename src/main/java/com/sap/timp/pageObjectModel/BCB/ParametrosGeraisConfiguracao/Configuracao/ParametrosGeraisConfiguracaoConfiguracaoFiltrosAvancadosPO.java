@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancadosPO extends TestBaseSteven {
+public class ParametrosGeraisConfiguracaoConfiguracaoFiltrosAvancadosPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][2]")
 	public WebElement hierarquias;
@@ -46,7 +46,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancadosPO extends 
 	public WebElement equis;
 	
 	
-	public ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancadosPO() {
+	public ParametrosGeraisConfiguracaoConfiguracaoFiltrosAvancadosPO() {
 		PageFactory.initElements(driver, this);
 	}
 	

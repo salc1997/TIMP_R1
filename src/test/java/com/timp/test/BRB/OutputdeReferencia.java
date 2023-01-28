@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
-import com.sap.timp.pageObjectModel.BRB.DuplicidadePO;
-import com.sap.timp.pageObjectModel.BRB.OutputAutomáticoPO;
+import com.sap.timp.pageObjectModel.BRB.OutputAutomaticoPO;
+import com.sap.timp.pageObjectModel.BRB.OutputdeReferenciaPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -14,31 +14,37 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class OutputAutomático extends TestBaseSteven {
+public class OutputdeReferencia extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
-	OutputAutomáticoPO outputAutomáticoPO;
+	OutputdeReferenciaPO outputdeReferênciaPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
-		outputAutomáticoPO = new OutputAutomáticoPO();
-
+		outputdeReferênciaPO = new OutputdeReferenciaPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		//driver.close();
 	}
 
+
 	@Test()
-	public void outputAutomatico() {		
-		loginTC.login();		
-		acessarBrbPO.acessar();		
+	public void outputReferencia() {
 		
-		boolean sucesso = outputAutomáticoPO.outputAutomatico();
+		loginTC.login();
+		
+		acessarBrbPO.acessar();
+		
+		
+		boolean sucesso = outputdeReferênciaPO.outputReferencia();
 		assertTrue(sucesso, Editar);
+
 	}
+
+
 }

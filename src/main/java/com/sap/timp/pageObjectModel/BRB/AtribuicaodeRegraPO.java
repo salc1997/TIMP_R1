@@ -1,5 +1,6 @@
 package com.sap.timp.pageObjectModel.BRB;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,19 +8,13 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class EnviarParaCorreçãoPO extends TestBaseSteven {
-	
+public class AtribuicaodeRegraPO extends TestBaseSteven{
+
 	@FindBy(xpath = "//*[@id=\"draggable-28\"]")				
 	public WebElement mover;
 	
-	@FindBy(xpath = "//*[@id=\"toolbar\"]/div/div/ul/li[12]/button")				
-	public WebElement ativarCorrecao;
-	
 	@FindBy(xpath = "//*[@id=\"editor-toolbar\"]/div/div/ul/li[1]/button")				
 	public WebElement gravar;
-	
-	@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[2]")				
-	public WebElement gravarExecura;
 	
 	@FindBy(xpath = "/html/body/div[5]/div[2]/div[3]/div[2]/button[2]")				
 	public WebElement aplicar;
@@ -27,16 +22,10 @@ public class EnviarParaCorreçãoPO extends TestBaseSteven {
 	@FindBy(xpath = "//ul[@class=\"addcolumn-ul\"]/li/div/div/div/div/div/span")				
 	public WebElement agregar;
 	
-	@FindBy(xpath = "//li[@id=\"draggable-n0\"]/div/div/div/span[@class=\"dropdown-arrow icon icon-font-Sign-and-Symbols icon-down\"]")				
-	public WebElement inputColumnaTC2;
+	@FindBy(xpath = "//li[@column-id=\"n1\"]/div/div/div[@id=\"chead\"]/span")				
+	public WebElement inputColumna;
 	
-	@FindBy(xpath = "//li[@id=\"draggable-n2\"]/div/div/div/span[@class=\"dropdown-arrow icon icon-font-Sign-and-Symbols icon-down\"]")				
-	public WebElement inputColumnaTQ1;
-	
-	@FindBy(xpath = "//li[@id=\"draggable-n0\"]/div/div/div/span[@class=\"dropdown-arrow icon icon-font-Sign-and-Symbols icon-down\"]")				
-	public WebElement inputColumnaTP1;
-	
-	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/ul/li[5]/div/span")				
+	@FindBy(xpath = "//span[text()=\"Atribuir Regra\"]")				
 	public WebElement opcColumna;
 	
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
@@ -45,13 +34,13 @@ public class EnviarParaCorreçãoPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[@class=\"rules-header\"]/div[@class=\"rules-header-search\"]/div/div/input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/div[2]/div[1]/div[1]/label/span")
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/div[2]/div[86]/div[1]/label/span")
 	public WebElement flagSeleccionTQ1;
 	
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/div[2]/div[40]/div[1]/label/span")
 	public WebElement flagSeleccionTP1;
 	
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/div[2]/div[1]/div[1]/label/span")
+	@FindBy(xpath = "//div[@data-id=\"_rule1690\"]//child::span")
 	public WebElement flagSeleccionTC2;
 	
 	@FindBy(xpath = "//button[text()=\"Próximo\"]")
@@ -72,31 +61,19 @@ public class EnviarParaCorreçãoPO extends TestBaseSteven {
 	@FindBy(xpath = "//span[text()=\"Remover Coluna\"]")				
 	public WebElement removerColumna;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div")
 	public WebElement menu;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement opcao;
 	
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
-	@FindBy(xpath = "//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label/span")
-	public WebElement flagExecutar;
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement e;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div[2]/div[1]/div/div/ul/li[15]/button/span")
-	public WebElement correcao;
-	
-	@FindBy(xpath = "//*[@id=\"bsc-correction-toolbar\"]/div/ul/li[3]/button/span[2]")
-	public WebElement novaInstrucao;
-	
-	@FindBy(xpath = "//*[@id=\"bsc-correction-toolbar\"]/div/ul/li[3]/button/span[2]")
-	public WebElement inputValor;
-	
-	@FindBy(xpath = "//*[@id=\"right\"]/div[2]/div[1]/div/div/ul/li[14]/button/span")
-	public WebElement enviarCorrecao;
-	
-	public EnviarParaCorreçãoPO() {
+	public AtribuicaodeRegraPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -109,6 +86,7 @@ public class EnviarParaCorreçãoPO extends TestBaseSteven {
 		boolean tp1  = false;
 		boolean tc2  = false;
 		boolean tq1  = false;
+		boolean tq2  = false;
 
 		if (url.contains("tq1")) {
 			tq1 = true;
@@ -116,21 +94,23 @@ public class EnviarParaCorreçãoPO extends TestBaseSteven {
 			tc2 = true;
 		}else if(url.contains("tp1")){
 			tp1 = true;
+		}else if(url.contains("tq2")){
+			tq2 = true;
 		}
 		
 		if (tc2==true) {
 			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
-			ferramenta.sendKeys("2278");
+			ferramenta.sendKeys("2277");
 			ferramenta.sendKeys(Keys.ENTER);
 			
 		}else if (tq1==true) {
 			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
-			ferramenta.sendKeys("8005134");
+			ferramenta.sendKeys("8005133");
 			ferramenta.sendKeys(Keys.ENTER);
 			
 		}else {
 			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
-			ferramenta.sendKeys("1745");
+			ferramenta.sendKeys("1744");
 			ferramenta.sendKeys(Keys.ENTER);
 			
 		}
@@ -158,34 +138,30 @@ public class EnviarParaCorreçãoPO extends TestBaseSteven {
 		actionsMoveToElementElement(agregar);
 		
 		
+		if(url.contains("tc2") || url.contains("tp1")) {
+			inputColumna = driver.findElement(By.xpath("//li[@column-id=\"n0\"]/div/div/div[@id=\"chead\"]/span"));
+			inputColumna.click();
+			sleep(2000);
+		} else {
+			inputColumna.click();
+			sleep(2000);
+		}
+		
+		
+		opcColumna.click();
+		sleep(7000);
 		
 		if (tc2==true) {
-			inputColumnaTC2.click();
-			sleep(2000);
-			
-			opcColumna.click();
-			sleep(7000);
-			
-			pesquisar.sendKeys("882");
+			pesquisar.sendKeys("1690");
 			flagSeleccionTC2.click();
 			sleep(2000);
 		}else if (tq1==true) {
-			inputColumnaTQ1.click();
-			sleep(2000);
-			
-			opcColumna.click();
-			sleep(7000);
-			pesquisar.sendKeys("1190");
+			pesquisar.sendKeys("2795");
 			flagSeleccionTQ1.click();
 			sleep(2000);
 			
 		}else {
-			inputColumnaTP1.click();
-			sleep(2000);
-			
-			opcColumna.click();
-			sleep(7000);
-			pesquisar.sendKeys("653");
+			pesquisar.sendKeys("1111");
 			flagSeleccionTP1.click();
 			sleep(2000);
 			
@@ -199,9 +175,7 @@ public class EnviarParaCorreçãoPO extends TestBaseSteven {
 		sleep(6000);
 		aRegra.click();
 		sleep(2000);
-			
-		//ativarCorrecao.click();
-		sleep(2000);
+				
 		
 		sleep(2000);
 		gravar.click();
@@ -216,6 +190,11 @@ public class EnviarParaCorreçãoPO extends TestBaseSteven {
 		btnExecucao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		btnExecutar.click();
 		sleep(2000);
@@ -223,13 +202,42 @@ public class EnviarParaCorreçãoPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
-		flagExecutar.click();
-		sleep(4000);
-
 		
-		enviarCorrecao.click();
+		btnEdicao.click();
+		sleep(2000);
+	///	waitExpectElement(nao);
+		sleep(1000);
+	//	nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		if(url.contains("tc2") || url.contains("tp1")|| url.contains("tq2")) {
+			inputColumna = driver.findElement(By.xpath("//li[@column-id=\"n0\"]/div/div/div[@id=\"chead\"]/span"));
+			inputColumna.click();
+			sleep(2000);
+		} else {
+			inputColumna.click();
+			sleep(2000);
+		}
+		
+		removerColumna.click();
+		sleep(2000);
+		
+		
+		sleep(2000);
+		gravar.click();
+		sleep(2000);
+		waitExpectElement(nao);
+		sleep(1000);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		
 		boolean sucesso = true;
@@ -238,6 +246,8 @@ public class EnviarParaCorreçãoPO extends TestBaseSteven {
 		return sucesso;
 		
 		
-		}
-
+		
+		
+	}
+	
 }

@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
-import com.sap.timp.pageObjectModel.BRB.AtribuiçãodeRegraPO;
-import com.sap.timp.pageObjectModel.BRB.DuplicidadePO;
+import com.sap.timp.pageObjectModel.BRB.AtribuicaodeRegraPO;
+import com.sap.timp.pageObjectModel.BRB.EnviarParaCorrecaoPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -14,33 +14,38 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class AtribuiçãodeRegra extends TestBaseSteven {
+public class EnviarParaCorrecao extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
-	AtribuiçãodeRegraPO atribuiçãodeRegraPO;
+	EnviarParaCorrecaoPO enviarParaCorreçãoPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
-		atribuiçãodeRegraPO = new AtribuiçãodeRegraPO();
+		enviarParaCorreçãoPO = new EnviarParaCorrecaoPO();
 
 	}
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
+
 
 
 	@Test()
-	public void editar() {		
-		loginTC.login();		
-		acessarBrbPO.acessar();		
+	public void editar() {
+		
+		loginTC.login();
+		
+		acessarBrbPO.acessar();
+		
 
-		boolean sucesso = atribuiçãodeRegraPO.editar();
+		boolean sucesso = enviarParaCorreçãoPO.editar();
 		assertTrue(sucesso, Editar);
-		sleep(2000);
+
 	}
+
 }

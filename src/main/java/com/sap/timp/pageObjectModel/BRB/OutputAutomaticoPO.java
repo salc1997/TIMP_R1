@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class OutputdeReferênciaPO extends TestBaseSteven {
+public class OutputAutomaticoPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//*[@id=\"draggable-28\"]")				
 	public WebElement mover;
@@ -115,13 +115,11 @@ public class OutputdeReferênciaPO extends TestBaseSteven {
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement btnsim;
 	
-	public OutputdeReferênciaPO() {
-
+	public OutputAutomaticoPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	
-	public boolean outputReferencia() {
+	public boolean outputAutomatico() {
 		WebDriverWait wait = new WebDriverWait(driver, 7000);
 		String url = driver.getCurrentUrl();
 		
@@ -179,23 +177,25 @@ public class OutputdeReferênciaPO extends TestBaseSteven {
 		WebElement cfopOpciones = driver.findElement(By.xpath("//li[@column-name=\"CFOP\"]/div/div/div[@id=\"chead\"]/span"));
 		cfopOpciones.click();
 		
-		sleep(4000);
+		sleep(2000);
 		
-		WebElement opcOutputDeReferencia = driver.findElement(By.xpath("//span[text()=\"Adicionar output de referência\"]"));
+		WebElement opcOutputDeReferencia = driver.findElement(By.xpath("//span[text()=\"Adicionar o campo de output automática\"]"));
 		opcOutputDeReferencia.click();
 		
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		WebElement cboCampoReferencia = driver.findElement(By.xpath("//div[@id=\"reference-field\"]/div/div[2]"));
-		cboCampoReferencia.click();
-		sleep(1000);
+//		WebElement cboCampoReferencia = driver.findElement(By.xpath("//div[@id=\"reference-field\"]/div/div[2]"));
+//		cboCampoReferencia.click();
+//		sleep(1000);
+//		
+//		WebElement opcionCampoReferencia = driver.findElement(By.xpath("//li[contains(@class, \"list-item\") and text()=\"CFOP\"]"));
+//		opcionCampoReferencia.click();
+//		sleep(1000);
 		
-		WebElement opcionCampoReferencia = driver.findElement(By.xpath("//li[contains(@class, \"list-item\") and text()=\"CFOP\"]"));
-		opcionCampoReferencia.click();
-		sleep(1000);
-		
+	//	btnsim.click();
+		sleep(9000);
 		btnAplicar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -210,8 +210,8 @@ public class OutputdeReferênciaPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		execucao.click();
-		
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		sleep(25000);
+	//	waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 		executar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -231,7 +231,7 @@ public class OutputdeReferênciaPO extends TestBaseSteven {
 		cfopOpciones.click();
 		sleep(1000);
 		
-		WebElement excluirOutputReferencia = driver.findElement(By.xpath("//span[text()=\"Excluir output de referência\"]"));
+		WebElement excluirOutputReferencia = driver.findElement(By.xpath("//span[text()=\"Excluir campo de output automática\"]"));
 		excluirOutputReferencia.click();
 		sleep(1000);
 		
@@ -261,5 +261,5 @@ public class OutputdeReferênciaPO extends TestBaseSteven {
 		sleep(2000);	
 		
 		return sucesso;		
-	}
+	}	
 }

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
-import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO;
+import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguracaoConfiguracaoCriarComCopiaPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -15,10 +15,10 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia extends TestBaseSteven {
+public class ParametrosGeraisConfiguracaoConfiguracaoCriarComCópia extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
-	ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO parametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO;
+	ParametrosGeraisConfiguracaoConfiguracaoCriarComCopiaPO parametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO;
 
 
 	@BeforeClass
@@ -26,7 +26,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópia extends TestB
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBCBPO = new AcessarBCBPO();
-		parametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO = new ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO();
+		parametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO = new ParametrosGeraisConfiguracaoConfiguracaoCriarComCopiaPO();
 
 
 	}

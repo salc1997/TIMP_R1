@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
-import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO;
+import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguracaoConfiguracaoDetalhesPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -15,10 +15,10 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes  extends TestBaseKenssy {
+public class ParametrosGeraisConfiguracaoConfiguracaoDetalhes  extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
-	ParametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO parametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO;
+	ParametrosGeraisConfiguracaoConfiguracaoDetalhesPO parametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO;
 
 
 	@BeforeClass
@@ -26,7 +26,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoDetalhes  extends TestBaseK
 		driver = initializationKen();
 		loginTC = new LoginTC();
 		acessarBCBPO = new AcessarBCBPO();
-		parametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO = new ParametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO();
+		parametrosGeraisConfiguraçãoConfiguraçãoDetalhesPO = new ParametrosGeraisConfiguracaoConfiguracaoDetalhesPO();
 
 
 	}

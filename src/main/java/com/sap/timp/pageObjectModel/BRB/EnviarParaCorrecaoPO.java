@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class CorreçãoManualPO extends TestBaseSteven {
+public class EnviarParaCorrecaoPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//*[@id=\"draggable-28\"]")				
 	public WebElement mover;
@@ -28,7 +28,13 @@ public class CorreçãoManualPO extends TestBaseSteven {
 	public WebElement agregar;
 	
 	@FindBy(xpath = "//li[@id=\"draggable-n0\"]/div/div/div/span[@class=\"dropdown-arrow icon icon-font-Sign-and-Symbols icon-down\"]")				
-	public WebElement inputColumna;
+	public WebElement inputColumnaTC2;
+	
+	@FindBy(xpath = "//li[@id=\"draggable-n2\"]/div/div/div/span[@class=\"dropdown-arrow icon icon-font-Sign-and-Symbols icon-down\"]")				
+	public WebElement inputColumnaTQ1;
+	
+	@FindBy(xpath = "//li[@id=\"draggable-n0\"]/div/div/div/span[@class=\"dropdown-arrow icon icon-font-Sign-and-Symbols icon-down\"]")				
+	public WebElement inputColumnaTP1;
 	
 	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/ul/li[5]/div/span")				
 	public WebElement opcColumna;
@@ -39,13 +45,13 @@ public class CorreçãoManualPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[@class=\"rules-header\"]/div[@class=\"rules-header-search\"]/div/div/input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/div[2]/div[86]/div[1]/label/span")
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/div[2]/div[1]/div[1]/label/span")
 	public WebElement flagSeleccionTQ1;
 	
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/div[2]/div[40]/div[1]/label/span")
 	public WebElement flagSeleccionTP1;
 	
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/div[2]/div[56]/div[1]/label/span")
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/div[2]/div[1]/div[1]/label/span")
 	public WebElement flagSeleccionTC2;
 	
 	@FindBy(xpath = "//button[text()=\"Próximo\"]")
@@ -90,7 +96,7 @@ public class CorreçãoManualPO extends TestBaseSteven {
 	@FindBy(xpath = "//*[@id=\"right\"]/div[2]/div[1]/div/div/ul/li[14]/button/span")
 	public WebElement enviarCorrecao;
 	
-	public CorreçãoManualPO() {
+	public EnviarParaCorrecaoPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -151,22 +157,34 @@ public class CorreçãoManualPO extends TestBaseSteven {
 		sleep(2000);
 		actionsMoveToElementElement(agregar);
 		
-		inputColumna.click();
-		sleep(2000);
 		
-		opcColumna.click();
-		sleep(7000);
 		
 		if (tc2==true) {
+			inputColumnaTC2.click();
+			sleep(2000);
+			
+			opcColumna.click();
+			sleep(7000);
+			
 			pesquisar.sendKeys("882");
 			flagSeleccionTC2.click();
 			sleep(2000);
 		}else if (tq1==true) {
+			inputColumnaTQ1.click();
+			sleep(2000);
+			
+			opcColumna.click();
+			sleep(7000);
 			pesquisar.sendKeys("1190");
 			flagSeleccionTQ1.click();
 			sleep(2000);
 			
 		}else {
+			inputColumnaTP1.click();
+			sleep(2000);
+			
+			opcColumna.click();
+			sleep(7000);
 			pesquisar.sendKeys("653");
 			flagSeleccionTP1.click();
 			sleep(2000);
@@ -182,7 +200,7 @@ public class CorreçãoManualPO extends TestBaseSteven {
 		aRegra.click();
 		sleep(2000);
 			
-		ativarCorrecao.click();
+		//ativarCorrecao.click();
 		sleep(2000);
 		
 		sleep(2000);
@@ -214,37 +232,6 @@ public class CorreçãoManualPO extends TestBaseSteven {
 		
 		
 		
-		
-		
-		
-		btnEdicao.click();
-		sleep(2000);
-		waitExpectElement(nao);
-		sleep(1000);
-		nao.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		
-		inputColumna.click();
-		sleep(2000);
-		
-		removerColumna.click();
-		sleep(2000);
-		
-		
-		sleep(2000);
-		gravar.click();
-		sleep(2000);
-		waitExpectElement(nao);
-		sleep(1000);
-		nao.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		
 		boolean sucesso = true;
 		
 		
@@ -252,4 +239,5 @@ public class CorreçãoManualPO extends TestBaseSteven {
 		
 		
 		}
+
 }

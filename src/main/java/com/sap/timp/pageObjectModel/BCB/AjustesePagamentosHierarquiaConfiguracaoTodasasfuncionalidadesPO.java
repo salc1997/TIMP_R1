@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO extends TestBaseSteven {
+public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO extends TestBaseSteven {
 	//TSTNG-2265
 	
 	// TAA	
@@ -302,7 +302,7 @@ public class AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO ex
 		@FindBy(xpath = "/html/body/div[3]")
 		public WebElement cuerpo;
 	
-	public AjustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO() {
+	public AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO() {
 		PageFactory.initElements(driver, this);
 	}
 	

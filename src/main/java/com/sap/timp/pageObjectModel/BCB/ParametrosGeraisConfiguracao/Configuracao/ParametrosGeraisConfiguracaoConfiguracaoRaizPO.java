@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeClass;
 
 import com.sap.timp.base.TestBaseKenssy;
 
-public class ParametrosGeraisConfiguraçãoConfiguraçãoRaizPO extends TestBaseKenssy{
+public class ParametrosGeraisConfiguracaoConfiguracaoRaizPO extends TestBaseKenssy{
 
 	// Configuracao
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][2]")
@@ -28,7 +28,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoRaizPO extends TestBaseKens
 	public WebElement pesquisar;
 	
 	
-	public ParametrosGeraisConfiguraçãoConfiguraçãoRaizPO() {
+	public ParametrosGeraisConfiguracaoConfiguracaoRaizPO() {
 		PageFactory.initElements(driver, this);
 	}
 	

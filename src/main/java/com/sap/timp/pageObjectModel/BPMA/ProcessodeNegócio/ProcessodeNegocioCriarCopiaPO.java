@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseMassiel;
 
-public class ProcessodeNegócioCriarCopiaPO extends TestBaseMassiel{
+public class ProcessodeNegocioCriarCopiaPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//span[text()=\"Processo de negócio\"]")
 	public WebElement procesoNegocio;
@@ -76,7 +76,7 @@ public class ProcessodeNegócioCriarCopiaPO extends TestBaseMassiel{
 	
 	
 
-	public ProcessodeNegócioCriarCopiaPO() {
+	public ProcessodeNegocioCriarCopiaPO() {
 
 		PageFactory.initElements(driver, this);
 	}

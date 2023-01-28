@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class cabeçalhoPO extends TestBaseSteven{
+public class cabecalhoPO extends TestBaseSteven{
 	
 	
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
@@ -70,7 +70,7 @@ public class cabeçalhoPO extends TestBaseSteven{
 	*/
 	
 	
-	public cabeçalhoPO() {
+	public cabecalhoPO() {
 	
 		PageFactory.initElements(driver, this);
 	}

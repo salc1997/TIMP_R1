@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
-import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFavoritosPO;
-import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoRaizPO;
+import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguracaoConfiguracaoFavoritosPO;
+import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguracaoConfiguracaoRaizPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -17,7 +17,7 @@ import org.testng.annotations.AfterClass;
 public class ParametrosGeraisConfiguraçãoConfiguraçãoRaiz extends TestBaseKenssy{
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
-	ParametrosGeraisConfiguraçãoConfiguraçãoRaizPO parametrosGeraisConfiguraçãoConfiguraçãoRaizPO;
+	ParametrosGeraisConfiguracaoConfiguracaoRaizPO parametrosGeraisConfiguraçãoConfiguraçãoRaizPO;
 
 
 	@BeforeClass
@@ -25,7 +25,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoRaiz extends TestBaseKenssy
 		driver = initializationKen();
 		loginTC = new LoginTC();
 		acessarBCBPO = new AcessarBCBPO();
-		parametrosGeraisConfiguraçãoConfiguraçãoRaizPO = new ParametrosGeraisConfiguraçãoConfiguraçãoRaizPO();
+		parametrosGeraisConfiguraçãoConfiguraçãoRaizPO = new ParametrosGeraisConfiguracaoConfiguracaoRaizPO();
 
 
 	}

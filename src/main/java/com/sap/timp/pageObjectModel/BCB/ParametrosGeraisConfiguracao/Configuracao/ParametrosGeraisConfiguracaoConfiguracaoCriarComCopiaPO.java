@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO extends TestBaseSteven{
+public class ParametrosGeraisConfiguracaoConfiguracaoCriarComCopiaPO extends TestBaseSteven{
 	
 	
 
@@ -46,7 +46,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO extends Tes
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
-	public ParametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO() {
+	public ParametrosGeraisConfiguracaoConfiguracaoCriarComCopiaPO() {
 
 		PageFactory.initElements(driver, this);
 	}

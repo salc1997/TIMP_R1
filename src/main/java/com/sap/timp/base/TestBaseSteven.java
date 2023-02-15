@@ -6,6 +6,7 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.sql.Time;
 import java.text.DecimalFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.LocalDate;
@@ -126,7 +127,18 @@ public class TestBaseSteven  {
 		
 		
 	}
-
+	//funcion para vaidar que la fecha de  detalle tenga el formato de DD/MM/YY
+	public boolean validarFecha(String fecha) {
+	        try {
+	            SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy");
+	            formatoFecha.setLenient(false);
+	            formatoFecha.parse(fecha);
+	        } catch (ParseException e) {
+	            return false;
+	        }
+	        return true;
+	 }
+	
 	public void refresh() {
 		driver.navigate().refresh();
 	}

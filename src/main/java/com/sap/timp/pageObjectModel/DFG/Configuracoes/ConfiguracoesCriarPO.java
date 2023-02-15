@@ -297,7 +297,7 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		rows = driver.findElements(By.xpath("//div[@data-id and @class=\"tr\"]")).size();
 		
@@ -321,7 +321,10 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 		}else {
 			sucesso.add(false);
 		}
-		System.out.println("IdLeiaute: " + idLeiauteT );
+		
+		System.out.println(sucesso);
+		
+		System.out.println("Id Leiaute: " + idLeiauteT );
 		idInserir1(idLeiauteT);
 		System.out.println("Versão: " + versaoT.equals("1.0"));
 		System.out.println("Nome: " + nomeT.equals("Teste Automatizado Massiel"));

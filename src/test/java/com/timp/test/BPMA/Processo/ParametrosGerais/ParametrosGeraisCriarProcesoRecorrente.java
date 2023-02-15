@@ -50,7 +50,7 @@ public class ParametrosGeraisCriarProcesoRecorrente extends TestBaseKenssy {
  		
  	}
  	
- 	@Test(priority = 1)
+ 	@Test(priority = 2)
  	public void criar() {
  		
  		ArrayList<Boolean> sucesso = parametrosGeraisCriarProcesoRecorrentePO.criar();

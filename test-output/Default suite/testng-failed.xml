@@ -3,17 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades">
+      <class name="com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente">
         <methods>
-          <include name="abrirSubnivel4"/>
-          <include name="abrirSubnivel1"/>
           <include name="afterClass"/>
-          <include name="abrirSubnivel5"/>
+          <include name="criar"/>
           <include name="beforeClass"/>
-          <include name="abrirSubnivel2"/>
-          <include name="abrirSubnivel3"/>
         </methods>
-      </class> <!-- com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades -->
+      </class> <!-- com.timp.test.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrente -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

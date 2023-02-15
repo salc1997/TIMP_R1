@@ -62,7 +62,7 @@ public class FiltrosPO  extends TestBaseSteven{
 	
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[1]/div/div/div[4]/div[1]/div[2]/div[2]/div/div[1]/div[2]")
 	public WebElement opcion1;
-	@FindBy(xpath = "//li[@id=\"option-17\"]")
+	@FindBy(xpath = "//li[@id=\"option-18\"]")
 	public WebElement seleccion1;
 	
 	
@@ -72,7 +72,7 @@ public class FiltrosPO  extends TestBaseSteven{
 	
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[1]/div/div/div[4]/div[1]/div[3]/div[2]/div/div[1]/div[2]")
 	public WebElement opcion2;
-	@FindBy(xpath = "//li[@id=\"option-18\"]")
+	@FindBy(xpath = "//li[@id=\"option-17\"]")
 	public WebElement seleccion2;
 	
 	

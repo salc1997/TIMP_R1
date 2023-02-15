@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="25" passed="6" failed="14" skipped="5">
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2023-02-15T16:02:47 UTC" name="Suite" finished-at="2023-02-15T17:09:55 UTC" duration-ms="4027301">
+=======
+  <suite started-at="2023-02-14T04:34:38 BRT" name="Default suite" finished-at="2023-02-14T04:37:28 BRT" duration-ms="169242">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2023-02-15T16:02:47 UTC" name="Ajustes &gt; AssociacaoCodigosAjustes" finished-at="2023-02-15T16:14:16 UTC" duration-ms="688933">
       <class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteEditar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteEditar@29215f06]" started-at="2023-02-15T16:06:57 UTC" name="beforeClass" finished-at="2023-02-15T16:07:00 UTC" duration-ms="3020" status="PASS">
+=======
+    <test started-at="2023-02-14T04:34:38 BRT" name="Default test" finished-at="2023-02-14T04:37:28 BRT" duration-ms="169242">
+      <class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar@26e356f0]" started-at="2023-02-14T04:34:38 BRT" name="beforeClass" finished-at="2023-02-14T04:34:51 BRT" duration-ms="13194" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="associaçãoCodigoAjusteEditar()[pri:0, instance:com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteEditar@29215f06]" started-at="2023-02-15T16:07:00 UTC" name="associaçãoCodigoAjusteEditar" finished-at="2023-02-15T16:08:34 UTC" duration-ms="94354" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -911,9 +926,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- excluir -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilExcluir@117159c0]" started-at="2023-02-15T16:35:48 UTC" name="afterClass" finished-at="2023-02-15T16:35:49 UTC" duration-ms="340" status="PASS">
+=======
+        <test-method signature="criar()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar@26e356f0]" started-at="2023-02-14T04:34:52 BRT" name="criar" finished-at="2023-02-14T04:37:28 BRT" duration-ms="156011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar@26e356f0]" started-at="2023-02-14T04:37:28 BRT" name="afterClass" finished-at="2023-02-14T04:37:28 BRT" duration-ms="1" status="PASS">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilExcluir -->
       <class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilCriar">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilCriar@543295b0]" started-at="2023-02-15T16:29:25 UTC" name="beforeClass" finished-at="2023-02-15T16:29:29 UTC" duration-ms="3805" status="PASS">
@@ -1778,4 +1801,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
       </class> <!-- com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalExcluirEmMassa -->
     </test> <!-- Ocorrencia Fiscal > Status Ocorrencia Fiscal -->
   </suite> <!-- Suite -->
+=======
+      </class> <!-- com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
 </testng-results>

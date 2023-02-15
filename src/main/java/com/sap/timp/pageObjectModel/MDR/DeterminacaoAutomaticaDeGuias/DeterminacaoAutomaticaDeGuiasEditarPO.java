@@ -145,7 +145,7 @@ public class DeterminacaoAutomaticaDeGuiasEditarPO extends TestBaseKenssy{
 		datavigencia.sendKeys(dataInicioVigenciaValorNuevo); // Le envio la nueva fecha a editar	
 		System.out.println(dataInicioVigenciaValorNuevo); // Imprimo la fecha que se va editar el nuevo valor
 		
-		sleep(1000);
+		sleep(3000);
 		gravar.click();
 		sleep(2000);
 		waitExpectElement(sim);
@@ -164,7 +164,7 @@ public class DeterminacaoAutomaticaDeGuiasEditarPO extends TestBaseKenssy{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		sleep(9000);
+		sleep(100000);
 		
 		// Obtengo el valor actualizado ya recargada la página
 		actionsMoveToElementElement(datavigencia);

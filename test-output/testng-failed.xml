@@ -3,12 +3,25 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Ajustes &gt; AssociacaoCodigosAjustes(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteEditar">
+=======
+      <class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasEditar">
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         <methods>
+<<<<<<< HEAD
           <include name="associaçãoCodigoAjusteEditar"/>
-          <include name="beforeClass"/>
+=======
           <include name="afterClass"/>
+          <include name="criar"/>
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
+          <include name="beforeClass"/>
+<<<<<<< HEAD
+          <include name="afterClass"/>
+=======
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteEditar -->
       <class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteVisualizar">
         <methods>
@@ -17,6 +30,9 @@
           <include name="visualizarAssociaçãoCodigoAjuste"/>
         </methods>
       </class> <!-- com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteVisualizar -->
+=======
+      </class> <!-- com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasEditar -->
+>>>>>>> branch 'Yessy' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Ajustes > AssociacaoCodigosAjustes(failed) -->
   <test thread-count="5" name="Ajustes &gt; Codigos Ajustes(failed)">

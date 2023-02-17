@@ -32,7 +32,7 @@ public class FormatacaoEVariante extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		driver.close();
 	}
 
 
@@ -53,13 +53,13 @@ public class FormatacaoEVariante extends TestBaseSteven {
 		}
 		System.out.println(sucesso);
 
-	/*	ArrayList<Boolean> sucesso2 = new ArrayList<Boolean>();
+		ArrayList<Boolean> sucesso2 = new ArrayList<Boolean>();
 		sucesso2 = formatacaoEVariantePO.salvarVariante();
 
 		for (int i = 0; i < sucesso2.size(); i++) {
 			assertTrue(sucesso2.get(i), salvarVariante);
 		}
-		System.out.println(sucesso2);*/
+		System.out.println(sucesso2);
 
 	}
 

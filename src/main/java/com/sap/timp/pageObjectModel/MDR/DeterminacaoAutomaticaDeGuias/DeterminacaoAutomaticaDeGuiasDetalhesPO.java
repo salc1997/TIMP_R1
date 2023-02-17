@@ -185,7 +185,7 @@ public class DeterminacaoAutomaticaDeGuiasDetalhesPO extends TestBaseKenssy{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(35000);
+		sleep(45000);
 		
 		String empresa = empresaV.getText();
 		String uf = ufV.getText();

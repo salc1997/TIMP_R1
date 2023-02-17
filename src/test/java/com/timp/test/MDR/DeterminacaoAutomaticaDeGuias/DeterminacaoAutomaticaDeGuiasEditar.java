@@ -35,7 +35,7 @@ public class DeterminacaoAutomaticaDeGuiasEditar extends TestBaseKenssy{
 	}
 
 	@Test()
-	public void criar() {
+	public void editar() {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

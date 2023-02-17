@@ -137,7 +137,7 @@ public class DeterminacaoAutomaticaDeGuiasEditarPO extends TestBaseKenssy{
 		sleep(15000);
 		
 		
-		
+		actionsMoveToElementElement(datavigencia);
 		String dataInicioVigenciaValorNuevo = fechaAyer();
 		System.out.println("Data a ser inserida: " +dataInicioVigenciaValorNuevo);
 	
@@ -155,16 +155,27 @@ public class DeterminacaoAutomaticaDeGuiasEditarPO extends TestBaseKenssy{
 		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
+		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay dark\"]");
-		sleep(2000);	
+		sleep(16000);	
 		
-		driver.navigate().refresh();
-		sleep(3000);
+		siguiente.click();
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		sleep(100000);
+	     menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+	     açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		
+		menu.click();
+		sleep(1000);
+		açao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(15000);
+		
 		
 		// Obtengo el valor actualizado ya recargada la página
 		actionsMoveToElementElement(datavigencia);

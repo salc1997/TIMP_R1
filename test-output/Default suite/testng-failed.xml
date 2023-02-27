@@ -3,14 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRB.FiltroColunas">
+      <class name="com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades1">
         <methods>
+          <include name="copiarBloco"/>
           <include name="beforeClass"/>
+          <include name="separdor"/>
+          <include name="Formato"/>
+          <include name="criar"/>
+          <include name="CriarConfiguracion"/>
+          <include name="Ordenar"/>
+          <include name="OrdenarPor"/>
+          <include name="Agrupamiento"/>
           <include name="afterClass"/>
-          <include name="filtroConFerramenta2"/>
-          <include name="filtroConFerramenta1"/>
+          <include name="Filtro"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.FiltroColunas -->
+      </class> <!-- com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

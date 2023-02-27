@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.TAA.AtribuiçõesdeRegras;
+package com.sap.timp.pageObjectModel.TAA.AtribuiçõesdeRegras.RegraDeAbas;
 
 import java.util.ArrayList;
 
@@ -70,11 +70,11 @@ public class RegradeAbasVerPO extends TestBaseSteven{
 		sleep(1000);
 		
 		// Datos de visualizar
-		String empresaString = driver.findElement(By.xpath("//div[@id=\"rule-company\"]/div/div/div/div/div/div[@class=\"componentName\"]")).getText();
-		String ufString = driver.findElement(By.xpath("//div[@id=\"rule-state\"]/div/div/div/div/div/div[@class=\"componentName\"]")).getText();
-		String filialString = driver.findElement(By.xpath("//div[@id=\"rule-branch\"]/div/div/div/div/div/div[@class=\"componentName\"]")).getText();
-		String tributoString = driver.findElement(By.xpath("//div[@id=\"rule-tax\"]/div/div/div/input")).getAttribute("value").trim();
-		String reglaString = driver.findElement(By.xpath("//div[@id=\"rule-rule\"]/div/div/input")).getAttribute("value").trim();
+		String empresaString = driver.findElement(By.xpath("//div[@id=\"rule-company\"]//div[@class=\"componentName\"]")).getText();
+		String ufString = driver.findElement(By.xpath("//div[@id=\"rule-state\"]//div[@class=\"componentName\"]")).getText();
+		String filialString = driver.findElement(By.xpath("//div[@id=\"rule-branch\"]//div[@class=\"componentName\"]")).getText();
+		String tributoString = driver.findElement(By.xpath("//div[@id=\"rule-tax\"]//input")).getAttribute("value").trim();
+		String reglaString = driver.findElement(By.xpath("//div[@id=\"rule-rule\"]//input")).getAttribute("value").trim();
 
 		System.out.println("Datos de Ver");
 		System.out.println("Empresa: " + empresaString);
@@ -103,11 +103,11 @@ public class RegradeAbasVerPO extends TestBaseSteven{
 		sleep(12000);
 		
 		// Datos de Editar
-		String empresaString1 = driver.findElement(By.xpath("//div[@id=\"rule-company\"]/div/div/div/div/div/div[@class=\"componentName\"]")).getText();
-		String ufString1 = driver.findElement(By.xpath("//div[@id=\"rule-state\"]/div/div/div/div/div/div[@class=\"componentName\"]")).getText();
-		String filialString1 = driver.findElement(By.xpath("//div[@id=\"rule-branch\"]/div/div/div/div/div/div[@class=\"componentName\"]")).getText();
-		String tributoString1 = driver.findElement(By.xpath("//div[@id=\"rule-tax\"]/div/div/div/input")).getAttribute("value").trim();
-		String reglaString1 = driver.findElement(By.xpath("//div[@id=\"rule-rule\"]/div/div/input")).getAttribute("value").trim();
+		String empresaString1 = driver.findElement(By.xpath("//div[@id=\"rule-company\"]//div[@class=\"componentName\"]")).getText();
+		String ufString1 = driver.findElement(By.xpath("//div[@id=\"rule-state\"]//div[@class=\"componentName\"]")).getText();
+		String filialString1 = driver.findElement(By.xpath("//div[@id=\"rule-branch\"]//div[@class=\"componentName\"]")).getText();
+		String tributoString1 = driver.findElement(By.xpath("//div[@id=\"rule-tax\"]//input")).getAttribute("value").trim();
+		String reglaString1 = driver.findElement(By.xpath("//div[@id=\"rule-rule\"]//input")).getAttribute("value").trim();
 
 		
 		System.out.println("Datos de Editar");

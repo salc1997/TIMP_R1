@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name=" ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar">
+      <class name="com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades1">
         <methods>
-          <include name="EditarRelacionamento"/>
+          <include name="copiarBloco"/>
           <include name="beforeClass"/>
+          <include name="separdor"/>
+          <include name="Formato"/>
+          <include name="criar"/>
+          <include name="CriarConfiguracion"/>
+          <include name="Ordenar"/>
+          <include name="OrdenarPor"/>
+          <include name="Agrupamiento"/>
           <include name="afterClass"/>
+          <include name="Filtro"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar -->
+      </class> <!-- com.timp.test.DFG.LeiautesExecução.LeiautesExecuçãoFuncionalidades1 -->
     </classes>
-  </test> <!--  ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

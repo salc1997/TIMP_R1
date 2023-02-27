@@ -17,20 +17,6 @@
 		
 	</test> <!-- PruebaTestNG -->
 
-	<test name="Ocorrencia Fiscal > Status Ocorrencia Fiscal" preserve-order="true">
-
-
-		<classes>
-			
-			<class name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalCriar"></class>
-			<class name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalEditar"></class>
-			<class name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcurrenciaFiscalVisualizar"></class>
-			<class name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalExcluir"></class>
-			<class name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalExcluirEmMassa"></class>	    	
-
-		</classes>
-
-
-	</test> <!-- PruebaTestNG -->
+	
 
 </suite> <!-- Suite -->

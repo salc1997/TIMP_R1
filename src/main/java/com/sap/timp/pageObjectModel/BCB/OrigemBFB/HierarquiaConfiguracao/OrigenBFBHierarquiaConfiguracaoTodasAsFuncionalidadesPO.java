@@ -1337,7 +1337,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		executar.click();
 		sleep(3000);
 		waitExpectElement(executarN);
-		sleep(8000);
+		sleep(9000);
 		executarN.click();
 		
 		sleep(1000);

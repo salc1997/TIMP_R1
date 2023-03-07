@@ -8,15 +8,8 @@
 
 			<!-- ATR - ESTRUCTURAS - RELACIONAMIENTO  DE ESTRUCTURAS     -->
 			
-				<class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar"></class>
-				<class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasEditar"></class>
-				<class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasVisualizar"></class>
-				<class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarComCopia"></class>
-				<class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros"></class>
-				<class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluir"></class>
-				<class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasExcluirEmMassa"></class>
-				
-				
+				<class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasTodasFunc"></class>
+			
 		</classes>
 
 	</test> 
@@ -27,13 +20,7 @@
 
 			<!-- ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS     -->
 			
-			<class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriar"></class>
-			<class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditar"></class>
-			<class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhes"></class>
-			<class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVer"></class>
-			<class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopia"></class>
-			<class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluir"></class>
-			<class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassa"></class>
+			<class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosTodasFunc"></class>
 			
 		</classes>
 

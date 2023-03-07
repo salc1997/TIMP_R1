@@ -99,7 +99,7 @@ public class ManuaisDeComponenteCriarPO extends TestBaseSteven {
 		
 
 		//File filePath = new File("C:\\Users\\AGILE SOLUTIONS\\Desktop\\automatizacion.txt");
-		File filePath = new File("C:\\Users\\Massiel\\Desktop\\automatizacion.txt"); 
+		File filePath = new File("C:\\Users\\user_ta\\Desktop\\automatizacion.txt"); 
 		String pathString = filePath.getAbsolutePath();
 		
 		driver.findElement(By.className("file-uploader")).sendKeys(pathString);

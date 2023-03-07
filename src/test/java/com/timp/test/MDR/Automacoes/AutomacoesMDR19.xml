@@ -16,7 +16,23 @@
 		</classes>
 		
 	</test> <!-- PruebaTestNG -->
+	
+<test name="Ajustes > Codigos Ajustes" preserve-order="true">
 
+
+		<classes>
+
+			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar"></class>
+			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesDetalhes"></class>
+			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesEditar"></class>
+			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesVisualizar"></class>
+			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir"></class>
+			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluirMassa"></class>
+
+
+		</classes>
+		
+	</test> <!-- PruebaTestNG -->
 	
 
 </suite> <!-- Suite -->

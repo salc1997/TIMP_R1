@@ -32,12 +32,6 @@
 			<class name="com.timp.test.BRB.EditarRelatorio"></class>
 		</classes>
 	</test>
-	<test name="ReordenarColuna">
-		<classes>
-			<!-- Reordenar Coluna -->
-			<class name="com.timp.test.BRB.ReordenarColuna"></class>
-		</classes>
-	</test>
 	<test name="FiltrosRelatorio">
 		<classes>
 			<!-- Filtros No Relatório -->

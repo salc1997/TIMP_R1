@@ -4,8 +4,7 @@
 
 	<test name="Configuração > Licenças" >
 		<classes>
-			<class name="com.timp.test.ADM.Configuracao.Licencas.LicencasDetalhes"></class>
-			<class name="com.timp.test.ADM.Configuracao.Licencas.LicencasVisualizar"></class>
+			<class name="com.timp.test.ADM.Configuracao.Licencas.LicencasTodasFunc"></class>
 			
 			
 		</classes>
@@ -14,12 +13,8 @@
 	
 	<test name="Configuração > ManuaisDeComponente" >
 		<classes>
-			<class name="com.timp.test.ADM.Configuracao.ManuaisDeComponente.ManuaisDeComponenteCriar"></class>
-			<class name="com.timp.test.ADM.Configuracao.ManuaisDeComponente.ManuaisDeComponenteEditar"></class>
-			<class name="com.timp.test.ADM.Configuracao.ManuaisDeComponente.ManuaisDeComponenteDetalle"></class>
-			<class name="com.timp.test.ADM.Configuracao.ManuaisDeComponente.ManuaisDeComponenteVisualizar"></class>
-			<class name="com.timp.test.ADM.Configuracao.ManuaisDeComponente.ManuaisDeComponentesFiltrosAvançados"></class>
-			<class name="com.timp.test.ADM.Configuracao.ManuaisDeComponente.ManuaisDeComponenteExcluir"></class>
+			<class name="com.timp.test.ADM.Configuracao.ManuaisDeComponente.ManuaisDeComponenteTodasFunc"></class>
+			
 		</classes>
 	
 	</test> 
@@ -34,11 +29,7 @@
 	
 	<test name="Usuários > Usuários " >
 		<classes>
-			<class name="com.timp.test.ADM.Usuarios.Usuarios.UsuariosAtivarDesativar"></class>
-			<class name="com.timp.test.ADM.Usuarios.Usuarios.UsuariosDetalhes"></class>
-			<class name="com.timp.test.ADM.Usuarios.Usuarios.UsuariosEditar"></class>
-			<class name="com.timp.test.ADM.Usuarios.Usuarios.UsuariosFiltrosAvancados"></class>
-			<class name="com.timp.test.ADM.Usuarios.Usuarios.UsuariosVisualizar"></class>
+			<class name="com.timp.test.ADM.Usuarios.Usuarios.UsuariosTodasFunc"></class>
 			
 		</classes>
 	

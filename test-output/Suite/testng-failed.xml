@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="DFG - Leiautes(failed)">
+  <test thread-count="5" name="ATR - Arquivos(failed)">
     <classes>
-      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
+      <class name="com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID">
         <methods>
-          <include name="filtrosVersao"/>
-          <include name="filtrosFechaUsuarioCriado"/>
-          <include name="afterClass"/>
-          <include name="filtrosUsuarioCriado"/>
-          <include name="filtrosFiltroTipo"/>
-          <include name="filtrosUsuarioModificado"/>
-          <include name="filtrosFechaUsuarioModificado"/>
           <include name="beforeClass"/>
+          <include name="filtro"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
+      </class> <!-- com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID -->
     </classes>
-  </test> <!-- DFG - Leiautes(failed) -->
+  </test> <!-- ATR - Arquivos(failed) -->
 </suite> <!-- Failed suite [Suite] -->

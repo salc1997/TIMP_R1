@@ -41,7 +41,6 @@ public class ManuaisDeComponentesFiltrosAvançados extends TestBaseSteven {
 	public void filtros() {
 		loginTC.login();
 		acessarADMPO.acessarADM();
-		// codigoTipoCreditoFiltrosAvançadosPO.filtros();
 
 		ArrayList<Boolean> sucesso = manuaisDeComponentesFiltrosAvançadosPO.detalhes();
 		sleep(2000);

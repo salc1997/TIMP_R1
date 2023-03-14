@@ -438,7 +438,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBaseSteven{
 		sleep(2000);
 		
 		mapeamentodeestruturas.click();
-		sleep(2000);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		waitExpectElement(ultimapagina);

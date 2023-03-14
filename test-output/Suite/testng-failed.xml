@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="ATR - Arquivos(failed)">
+  <test thread-count="5" name=" ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS (failed)">
     <classes>
-      <class name="com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID">
+      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosTodasFunc">
         <methods>
+          <include name="criarcopia"/>
           <include name="beforeClass"/>
-          <include name="filtro"/>
+          <include name="visualizar"/>
+          <include name="excluir"/>
           <include name="afterClass"/>
+          <include name="detalle"/>
+          <include name="criarMassa"/>
+          <include name="editar"/>
+          <include name="Excluir"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID -->
+      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosTodasFunc -->
     </classes>
-  </test> <!-- ATR - Arquivos(failed) -->
+  </test> <!--  ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS (failed) -->
 </suite> <!-- Failed suite [Suite] -->

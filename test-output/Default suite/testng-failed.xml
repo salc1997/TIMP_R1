@@ -3,26 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BCB.OrigemBCB.HierarquicaConfiguracao.OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades">
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar">
         <methods>
-          <include name="subNivel3"/>
-          <include name="subNivel5"/>
-          <include name="subNivel2"/>
-          <include name="subNivel4"/>
-          <include name="beforeClass"/>
-          <include name="excluirConfiguracoes"/>
           <include name="afterClass"/>
-          <include name="excluirHierarquia"/>
-          <include name="abrirSubnivel6"/>
-          <include name="subNivel6Negativo"/>
-          <include name="abrirSubnivel2"/>
-          <include name="abrirSubnivel5"/>
-          <include name="abrirSubnivel4"/>
-          <include name="abrirSubnivel1"/>
-          <include name="abrirSubnivel3"/>
-          <include name="outputBCB"/>
+          <include name="criarRelacionamento"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BCB.OrigemBCB.HierarquicaConfiguracao.OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades -->
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

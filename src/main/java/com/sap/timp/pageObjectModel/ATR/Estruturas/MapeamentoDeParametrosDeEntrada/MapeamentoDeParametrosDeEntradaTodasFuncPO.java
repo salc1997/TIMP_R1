@@ -156,7 +156,7 @@ public class MapeamentoDeParametrosDeEntradaTodasFuncPO extends TestBaseSteven {
 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(7000);
+		sleep(8000);
 		
 		
 		

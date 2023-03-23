@@ -486,7 +486,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBaseSteven{
 		
 	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		actionsMoveToElementXpath("//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]");
 		sleep(8000);
 		

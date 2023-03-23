@@ -92,4 +92,14 @@ public class RegrasDeAuditoriaN1TodasFunc extends TestBaseSteven {
 		sleep(2000);
 		
 	}
+	
+	@Test(priority = 5)
+	public void Estructura() {
+
+		boolean sucesso = regrasDeAuditoriaN1TodasFuncPO.estructura();
+		assertTrue(sucesso, Editar);
+		sleep(2000);
+		sleep(1000);
+
+	}
 }

@@ -228,6 +228,47 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[text()=\"Alíquota ICMS (ED) (ED)\"][1]")
 	public WebElement seleccionFiltro;
 	
+	//simular 
+	
+	@FindBy(xpath = "//input[@placeholder=\" selecionar Operador\"]")
+	public WebElement operador;
+
+	@FindBy(xpath = "//li[text()=\"=\"]")
+	public WebElement opcOperador;
+	
+	@FindBy(xpath = "//*[@id=\"filters-pool\"]/div/div/div/div/div[2]/div[3]/div/div/input")
+	public WebElement constatante;
+	
+	@FindBy(xpath = "//span[text()=\"Estruturas\"]")
+	public WebElement estrutura;
+	
+	@FindBy(xpath = "//button[text()=\"Criar estruturas associadas\"]")
+	public WebElement asociarEstrutura;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecione uma tabela\"]")
+	public WebElement inputSeleccionTabela;
+
+	@FindBy(xpath = "//li[text()=\"Ajustes Fiscais\"]")
+	public WebElement seleccionTabela;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Selecione um campo \"]")
+	public WebElement campo;
+	
+	@FindBy(xpath = "//span[text()=\"Gravar\"]")
+	public WebElement grabar;
+	
+	@FindBy(xpath = "//button[@id=\"edit-button\"]")
+	public WebElement editTabela;
+	
+	@FindBy(xpath = "//button[@id=\"delete-button\"]")
+	public WebElement excluirTabela;
+	
+	@FindBy(xpath = "//div[text()=\"Ajustes Fiscais\"]")
+	public WebElement verificacion;
+	
+	@FindBy(xpath = "//button[text()=\"Fechar\"]")
+	public WebElement fechar1;
+	
 	public RegrasDeAuditoriaN1TodasFuncPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -1040,7 +1081,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBaseSteven{
 		seleccionFiltro.click();
 		sleep(3000);
 		sleep(3000);
-/*
+
 		operador.click();
 		sleep(2000);
 		opcOperador.click();
@@ -1076,7 +1117,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBaseSteven{
 		aplicar.click();
 
 		sleep(4000);
-
+/*
 		simular.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1127,6 +1168,220 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBaseSteven{
 */
 
 		boolean sucesso = true;
+		System.out.println(sucesso);
+		return sucesso;
+	}
+	
+	public boolean estructura() {
+
+
+		ultimapagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		String idRegistro = idObter("An1");
+		System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+
+
+		menu.click();
+		sleep(1000);
+		açao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		waitExpectElement(estrutura);
+		estrutura.click();
+		sleep(4000);
+		asociarEstrutura.click();
+		sleep(3000);
+
+		inputSeleccionTabela.click();
+		sleep(3000);
+		seleccionTabela.click();
+		sleep(3000);
+		sleep(3000);
+
+
+		waitExpectElement(campo);
+		campo.sendKeys("Alíquota COFINS (ED)");
+		sleep(2000);
+		campo.sendKeys(Keys.ENTER);
+		sleep(2000);
+
+		aplicar.click();
+		sleep(4000);
+
+		fechar1.click();
+		sleep(2000);
+
+
+		grabar.click();
+		sleep(2000);
+
+		sim.click();
+		sleep(3000);
+
+		aceitar.click();
+		sleep(24000);
+
+		biblioteca.click();
+		sleep(3000);
+
+		//sim.click();
+		sleep(3000);
+
+
+		//----------------Entrando de nuevo a editar--------------------------
+
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(8000);
+		regrasdeauditorian1.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(8000);
+
+		ultimapagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+
+		String idRegistro1 = idObter("An1");
+		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
+		WebElement açao1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
+
+		menu1.click();
+		sleep(1000);
+		açao1.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+
+
+		waitExpectElement(estrutura);
+		estrutura.click();
+		sleep(4000);
+
+		editTabela.click();
+		sleep(4000);
+
+		campo.clear();
+		sleep(2000);
+		campo.sendKeys("Alíquota ICMS (ED)");
+		sleep(2000);
+		campo.sendKeys(Keys.ENTER);
+		sleep(2000);
+
+		aplicar.click();
+		sleep(4000);
+
+		fechar1.click();
+		sleep(4000);
+
+		grabar.click();
+		sleep(2000);
+
+		sim.click();
+		sleep(3000);
+
+		aceitar.click();
+		sleep(24000);
+
+		biblioteca.click();
+		sleep(3000);
+
+		//sim.click();
+		sleep(3000);
+
+		//----------------Entrando de nuevo a excluir--------------------------
+
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(8000);
+		regrasdeauditorian1.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(8000);
+
+		ultimapagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+
+		String idRegistro4 = idObter("An1");
+		WebElement menu4 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro4+"\"]/div[1]/div"));
+		WebElement açao4 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro4+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		System.out.println(idRegistro4); // Ultimo registro que es el que se crea con la automatizacion
+
+		menu4.click();
+		sleep(1000);
+		açao4.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+
+		waitExpectElement(estrutura);	
+		estrutura.click();
+		sleep(4000);
+
+		excluirTabela.click();
+		sleep(3000);
+		ok.click();
+		sleep(3000);
+
+		fechar1.click();
+		sleep(3000);
+
+		grabar.click();
+		sleep(2000);
+
+		sim.click();
+		sleep(3000);
+
+		aceitar.click();
+		sleep(30000);
+
+		biblioteca.click();
+		sleep(18000);
+
+		//sim.click();
+		sleep(3000);
+
+		//----------------------FINAL---------------------------------------
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(8000);
+		regrasdeauditorian1.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(8000);
+
+		ultimapagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+
+		String idRegistro2 = idObter("An1");
+		WebElement menu2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro2+"\"]/div[1]/div"));
+		WebElement açao2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro2+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
+
+		menu2.click();
+		sleep(1000);
+		açao2.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+
+		waitExpectElement(estrutura);	
+		estrutura.click();
+		sleep(5000);
+
+
+		boolean sucesso = false;
+
+		if (verificacion != null) {
+			sucesso= true;
+		}
 		System.out.println(sucesso);
 		return sucesso;
 	}

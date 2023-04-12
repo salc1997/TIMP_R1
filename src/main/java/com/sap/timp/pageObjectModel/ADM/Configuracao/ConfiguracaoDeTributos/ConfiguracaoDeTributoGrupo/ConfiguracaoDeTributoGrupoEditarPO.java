@@ -104,7 +104,7 @@ public class ConfiguracaoDeTributoGrupoEditarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		codigogrupo.clear();
+ 
 		codigogrupo.sendKeys("R8");
 		
 		String codigogrupootexto= codigogrupo.getAttribute("value");

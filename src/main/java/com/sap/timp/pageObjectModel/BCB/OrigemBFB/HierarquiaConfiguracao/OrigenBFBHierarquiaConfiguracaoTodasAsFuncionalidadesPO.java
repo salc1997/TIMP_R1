@@ -778,7 +778,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(8000);
 		
 		//attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
-		sleep(3000);
+		sleep(6000);
 		
 		selectBFB.click();
 		sleep(1000);

@@ -1,49 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-12T22:13:38 UTC" name="Default suite" finished-at="2023-04-12T22:19:01 UTC" duration-ms="322384">
+  <suite started-at="2023-04-24T23:42:53 UTC" name="Default suite" finished-at="2023-04-24T23:44:15 UTC" duration-ms="81864">
     <groups>
     </groups>
-    <test started-at="2023-04-12T22:13:38 UTC" name="Default test" finished-at="2023-04-12T22:19:01 UTC" duration-ms="322384">
-      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaTodasFunc">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaTodasFunc@1151e434]" started-at="2023-04-12T22:13:38 UTC" name="beforeClass" finished-at="2023-04-12T22:13:42 UTC" duration-ms="3143" status="PASS">
+    <test started-at="2023-04-24T23:42:53 UTC" name="Default test" finished-at="2023-04-24T23:44:15 UTC" duration-ms="81864">
+      <class name="com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados@47d9a273]" started-at="2023-04-24T23:42:53 UTC" name="beforeClass" finished-at="2023-04-24T23:42:56 UTC" duration-ms="3214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaTodasFunc@1151e434]" started-at="2023-04-12T22:13:42 UTC" name="criar" finished-at="2023-04-12T22:15:01 UTC" duration-ms="79190" status="PASS">
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados@47d9a273]" started-at="2023-04-24T23:42:56 UTC" name="ingresar" finished-at="2023-04-24T23:43:03 UTC" duration-ms="6541" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- criar -->
-        <test-method signature="editar()[pri:1, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaTodasFunc@1151e434]" started-at="2023-04-12T22:15:01 UTC" name="editar" finished-at="2023-04-12T22:16:13 UTC" duration-ms="72166" status="PASS">
+        </test-method> <!-- ingresar -->
+        <test-method signature="scancEntrar()[pri:1, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados@47d9a273]" started-at="2023-04-24T23:43:03 UTC" name="scancEntrar" finished-at="2023-04-24T23:43:19 UTC" duration-ms="16235" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editar -->
-        <test-method signature="visualizar()[pri:2, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaTodasFunc@1151e434]" started-at="2023-04-12T22:16:13 UTC" name="visualizar" finished-at="2023-04-12T22:16:48 UTC" duration-ms="34955" status="PASS">
+        </test-method> <!-- scancEntrar -->
+        <test-method signature="filtrosAvancados()[pri:2, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados@47d9a273]" started-at="2023-04-24T23:43:19 UTC" name="filtrosAvancados" finished-at="2023-04-24T23:44:15 UTC" duration-ms="55824" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- visualizar -->
-        <test-method signature="filtro()[pri:3, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaTodasFunc@1151e434]" started-at="2023-04-12T22:16:48 UTC" name="filtro" finished-at="2023-04-12T22:17:04 UTC" duration-ms="16361" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filtro -->
-        <test-method signature="Excluir()[pri:4, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaTodasFunc@1151e434]" started-at="2023-04-12T22:17:04 UTC" name="Excluir" finished-at="2023-04-12T22:17:32 UTC" duration-ms="27679" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Excluir -->
-        <test-method signature="criarMassa()[pri:5, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaTodasFunc@1151e434]" started-at="2023-04-12T22:17:32 UTC" name="criarMassa" finished-at="2023-04-12T22:18:31 UTC" duration-ms="58974" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criarMassa -->
-        <test-method signature="excluir()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaTodasFunc@1151e434]" started-at="2023-04-12T22:18:31 UTC" name="excluir" finished-at="2023-04-12T22:19:01 UTC" depends-on-methods="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaTodasFunc.criarMassa" duration-ms="29852" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluir -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaTodasFunc@1151e434]" started-at="2023-04-12T22:19:01 UTC" name="afterClass" finished-at="2023-04-12T22:19:01 UTC" duration-ms="1" status="PASS">
+        </test-method> <!-- filtrosAvancados -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados@47d9a273]" started-at="2023-04-24T23:44:15 UTC" name="afterClass" finished-at="2023-04-24T23:44:15 UTC" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaTodasFunc -->
+      </class> <!-- com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

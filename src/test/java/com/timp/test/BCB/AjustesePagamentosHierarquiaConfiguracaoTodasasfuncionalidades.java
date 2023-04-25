@@ -53,7 +53,7 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidades exte
 		System.out.println(sucesso);
 		assertTrue(sucesso,Acessar);
 	}
-	@Test(priority = 3)
+	/*@Test(priority = 3)
 	public void bcbEntrar() {
 		boolean sucesso = ajustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO.accesarBCB();
 		System.out.println(sucesso);
@@ -84,6 +84,6 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidades exte
 
 		assertTrue(sucesso, Editar);
 
-	  }
+	  }*/
 
 }

@@ -101,7 +101,8 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	
+	@FindBy(xpath = "//input[@placeholder=\"Id Associação\"]")
+	public WebElement pesquisarAsoc;
 	
 	public DeterminacaoAutomaticaDeGuiasCriarPO() {
 
@@ -130,7 +131,7 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 		sleep(2000);
 		//criaçao
 		novodeterminacaoautomaticadeguias.click();
-		sleep(90000);
+		sleep(20000);
 
 		empresa.click();
 		sleep(2000);
@@ -142,6 +143,9 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 		
 		aCodigoAjuste.click();
 		sleep(6000);
+		
+		pesquisarAsoc.sendKeys("2566", Keys.ENTER);
+		sleep(3000);
 		
 		item.click();
 		sleep(2000);

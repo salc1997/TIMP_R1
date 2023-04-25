@@ -38,7 +38,7 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ex
 	public WebElement ar;	
 	@FindBy(xpath = "//*[@id=\"home-icon\"]")
 	public WebElement home;	
-	@FindBy(xpath = "//*[@id=\"left-content\"]/div[2]/ul/li[13]")
+	@FindBy(xpath = "//span[text()=\"IRPJ\"]")
 	public WebElement IRPJ;
 	
 	//BCB
@@ -417,15 +417,15 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ex
 		sleep(1000);
 
 		IRPJ.click();
-		sleep(2000);
+		sleep(24000);
 
 		waitExpectElement(primeira);
-		sleep(8000);
+		sleep(13000);
 
 		primeira.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(12000);
 
 		//conta o numero de linhas
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();

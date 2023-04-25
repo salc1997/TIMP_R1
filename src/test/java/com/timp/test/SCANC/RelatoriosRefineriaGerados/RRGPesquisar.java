@@ -11,19 +11,19 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
-import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatoriosRefinariaGeradosInformacaoPO;
+import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosPesquisarPO;
 
-public class RelatoriosRefinariaGeradosInformacao extends TestBaseFernando {
+public class RRGPesquisar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
-	RelatoriosRefinariaGeradosInformacaoPO relatoriosRefinariaGeradosInformacaoPO;
+	RelatorioRefinariaGeradosPesquisarPO relatorioRefinariaGeradosPesquisarPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationF();
 		loginTC = new LoginTC();
 		acessarSCANCPO = new AcessarSCANCPO();
-		relatoriosRefinariaGeradosInformacaoPO = new RelatoriosRefinariaGeradosInformacaoPO();
+		relatorioRefinariaGeradosPesquisarPO = new RelatorioRefinariaGeradosPesquisarPO();
 	}
 
 	@AfterClass
@@ -42,8 +42,8 @@ public class RelatoriosRefinariaGeradosInformacao extends TestBaseFernando {
 	}
 
 	@Test(priority = 2)
-	public void informacao() {
-		ArrayList<Boolean> sucesso = relatoriosRefinariaGeradosInformacaoPO.informacao();
+	public void pesquisar() {
+		ArrayList<Boolean> sucesso = relatorioRefinariaGeradosPesquisarPO.pesquisar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);

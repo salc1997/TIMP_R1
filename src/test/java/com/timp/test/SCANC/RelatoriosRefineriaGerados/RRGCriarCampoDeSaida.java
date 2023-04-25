@@ -11,24 +11,24 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
-import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RRFConfiguracaoDeAjusteFiltrosAvancadosPO;
+import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosCriarCampoDeSaidaPO;
 
-public class RRFConfiguracaoDeAjusteFiltrosAvancados extends TestBaseFernando {
+public class RRGCriarCampoDeSaida extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
-	RRFConfiguracaoDeAjusteFiltrosAvancadosPO rRFConfiguracaoDeAjusteFiltrosAvancadosPO;
+	RelatorioRefinariaGeradosCriarCampoDeSaidaPO relatorioRefinariaGeradosCriarCampoDeSaidaPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationF();
 		loginTC = new LoginTC();
 		acessarSCANCPO = new AcessarSCANCPO();
-		rRFConfiguracaoDeAjusteFiltrosAvancadosPO = new RRFConfiguracaoDeAjusteFiltrosAvancadosPO();
+		relatorioRefinariaGeradosCriarCampoDeSaidaPO = new RelatorioRefinariaGeradosCriarCampoDeSaidaPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -42,11 +42,11 @@ public class RRFConfiguracaoDeAjusteFiltrosAvancados extends TestBaseFernando {
 	}
 
 	@Test(priority = 2)
-	public void filtrosAvancados() {
-		ArrayList<Boolean> sucesso = rRFConfiguracaoDeAjusteFiltrosAvancadosPO.filtrosAvancados();
+	public void criarCampoDeSaida() {
+		ArrayList<Boolean> sucesso = relatorioRefinariaGeradosCriarCampoDeSaidaPO.criarCampoDeSaida();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Filtros);
+			assertTrue(sucesso.get(i), visualizaçar);
 		}
 	}
 }

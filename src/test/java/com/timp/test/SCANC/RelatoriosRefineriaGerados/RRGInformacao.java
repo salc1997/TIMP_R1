@@ -11,24 +11,24 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
-import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatoriosReefineriaGeradosFiltrosAvancadosNaVisualizacaoPO;
+import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatoriosRefinariaGeradosInformacaoPO;
 
-public class RelatoriosReefineriaGeradosFiltrosAvancadosNaVisualizacao extends TestBaseFernando {
+public class RRGInformacao extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
-	RelatoriosReefineriaGeradosFiltrosAvancadosNaVisualizacaoPO relatoriosReefineriaGeradosFiltrosAvancadosNaVisualizacaoPO;
+	RelatoriosRefinariaGeradosInformacaoPO relatoriosRefinariaGeradosInformacaoPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationF();
 		loginTC = new LoginTC();
 		acessarSCANCPO = new AcessarSCANCPO();
-		relatoriosReefineriaGeradosFiltrosAvancadosNaVisualizacaoPO = new RelatoriosReefineriaGeradosFiltrosAvancadosNaVisualizacaoPO();
+		relatoriosRefinariaGeradosInformacaoPO = new RelatoriosRefinariaGeradosInformacaoPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)
@@ -42,9 +42,8 @@ public class RelatoriosReefineriaGeradosFiltrosAvancadosNaVisualizacao extends T
 	}
 
 	@Test(priority = 2)
-	public void filtrosAvancadosNavisualizacao() {
-		ArrayList<Boolean> sucesso = relatoriosReefineriaGeradosFiltrosAvancadosNaVisualizacaoPO
-				.filtrosAvancadosNavisualizacao();
+	public void informacao() {
+		ArrayList<Boolean> sucesso = relatoriosRefinariaGeradosInformacaoPO.informacao();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);

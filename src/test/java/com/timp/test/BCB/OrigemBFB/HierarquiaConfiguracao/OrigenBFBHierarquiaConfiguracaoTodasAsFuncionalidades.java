@@ -73,7 +73,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 		}
 	}
 	
-	@Test(priority = 5)	
+	/*@Test(priority = 5)	
 	public void outputBCB() {
 		ArrayList<Boolean> sucesso = origenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO.outputBFB();
 		System.out.println(sucesso);

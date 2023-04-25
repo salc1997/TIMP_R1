@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 30 00:43:54 UTC 2023</td>
+<td>Started on:</td><td>Fri Apr 14 18:59:41 UTC 2023</td>
 </tr>
-<tr><td>Total time:</td><td>55 seconds (55502 ms)</td>
+<tr><td>Total time:</td><td>60 seconds (60978 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,38 +76,42 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.timp.test.BRB.FormatacaoEVariante.formatacaoEVariante()'><b>formatacaoEVariante</b><br>Test class: com.timp.test.BRB.FormatacaoEVariante</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@data-column=&quot;28&quot; and contains(@aria-label, &quot;Linha: 1-&quot;)]/div[2]&quot;}
   (Session info: chrome=110.0.5481.180)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;EC2AMAZ-8HCHO4G&apos;, ip: &apos;10.0.0.249&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: effc2d116bb6f8dfc94fae4e964e25d0
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62736}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e2b690b644912fc37f570580df66b81d
+*** Element info: {Using=xpath, value=//div[@data-column=&quot;28&quot; and contains(@aria-label, &quot;Linha: 1-&quot;)]/div[2]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.BRB.FormatacaoEVariantePO.formatacaoEVariante(FormatacaoEVariantePO.java:169)
+	at com.sap.timp.pageObjectModel.BRB.FormatacaoEVariantePO.formatacaoEVariante(FormatacaoEVariantePO.java:177)
 	at com.timp.test.BRB.FormatacaoEVariante.formatacaoEVariante(FormatacaoEVariante.java:49)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace340450931", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace340450931'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1950435960", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1950435960'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@data-column=&quot;28&quot; and contains(@aria-label, &quot;Linha: 1-&quot;)]/div[2]&quot;}
   (Session info: chrome=110.0.5481.180)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;EC2AMAZ-8HCHO4G&apos;, ip: &apos;10.0.0.249&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62924}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: effc2d116bb6f8dfc94fae4e964e25d0
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62736}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e2b690b644912fc37f570580df66b81d
+*** Element info: {Using=xpath, value=//div[@data-column=&quot;28&quot; and contains(@aria-label, &quot;Linha: 1-&quot;)]/div[2]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -117,14 +121,14 @@ Session ID: effc2d116bb6f8dfc94fae4e964e25d0
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.BRB.FormatacaoEVariantePO.formatacaoEVariante(FormatacaoEVariantePO.java:169)
+	at com.sap.timp.pageObjectModel.BRB.FormatacaoEVariantePO.formatacaoEVariante(FormatacaoEVariantePO.java:177)
 	at com.timp.test.BRB.FormatacaoEVariante.formatacaoEVariante(FormatacaoEVariante.java:49)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -155,7 +159,7 @@ Session ID: effc2d116bb6f8dfc94fae4e964e25d0
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>52</td>
+<td>58</td>
 <td>com.timp.test.BRB.FormatacaoEVariante@15043a2f</td></tr>
 </table><p>
 </body>

@@ -11,24 +11,24 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
-import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO;
+import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexoPO;
 
-public class RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacao extends TestBaseFernando {
+public class RRGManutencaoCriarLancamentoVisualizacaoAnexo extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
-	RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO relatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO;
+	RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexoPO relatorioRefinariaGeradosManutencaoCriarLancamentoVisulizacaoAnexoPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationF();
 		loginTC = new LoginTC();
 		acessarSCANCPO = new AcessarSCANCPO();
-		relatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO = new RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO();
+		relatorioRefinariaGeradosManutencaoCriarLancamentoVisulizacaoAnexoPO = new RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexoPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+	//	driver.close();
 	}
 
 	@Test(priority = 0)
@@ -42,9 +42,9 @@ public class RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacao extends Te
 	}
 
 	@Test(priority = 2)
-	public void gerarAnexosMasVisualizacao() {
-		ArrayList<Boolean> sucesso = relatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO
-				.gerarAnexosMasVisualizacao();
+	public void manutencaoCriarLancamentoVisualizacaoAnexo() {
+		ArrayList<Boolean> sucesso = relatorioRefinariaGeradosManutencaoCriarLancamentoVisulizacaoAnexoPO
+				.manutencaoCriarLancamentoVisualizacaoAnexo();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);

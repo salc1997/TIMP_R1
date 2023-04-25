@@ -8,8 +8,8 @@
           <include name="afterClass"/>
           <include name="criarRelacionamento"/>
           <include name="excluirMassa"/>
-          <include name="editarCopia"/>
           <include name="excluirCopia"/>
+          <include name="editarCopia"/>
           <include name="VisualizarRelacionamento"/>
           <include name="beforeClass"/>
           <include name="criarCopia"/>

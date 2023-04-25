@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosEditarCampoDeSaidaPO;
 
-public class RelatorioRefinariaGeradosEditarCampoDeSaida extends TestBaseFernando {
+public class RRGEditarCampoDeSaida extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RelatorioRefinariaGeradosEditarCampoDeSaidaPO relatorioRefinariaGeradosEditarCampoDeSaidaPO;

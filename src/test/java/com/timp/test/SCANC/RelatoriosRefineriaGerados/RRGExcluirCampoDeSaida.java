@@ -12,6 +12,7 @@ import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosExcluirCampoDeSaidaPO;
 
 public class RRGExcluirCampoDeSaida extends TestBaseFernando {
+	//TSTNG-1500
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RelatorioRefinariaGeradosExcluirCampoDeSaidaPO relatorioRefinariaGeradosExcluirCampoDeSaidaPO;

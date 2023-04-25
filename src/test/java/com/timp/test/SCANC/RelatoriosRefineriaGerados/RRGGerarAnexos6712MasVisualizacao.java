@@ -14,6 +14,7 @@ import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO;
 
 public class RRGGerarAnexos6712MasVisualizacao extends TestBaseFernando {
+	//TSTNG-982
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO relatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO;

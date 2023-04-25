@@ -14,6 +14,7 @@ import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RRFConfiguracaoDeAjusteFiltrosAvancadosPO;
 
 public class RRGConfiguracaoDeAjusteFiltrosAvancados extends TestBaseFernando {
+	//TSTNG-1485
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RRFConfiguracaoDeAjusteFiltrosAvancadosPO rRFConfiguracaoDeAjusteFiltrosAvancadosPO;

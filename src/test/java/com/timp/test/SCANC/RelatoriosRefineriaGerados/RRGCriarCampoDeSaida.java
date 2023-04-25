@@ -14,6 +14,7 @@ import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosCriarCampoDeSaidaPO;
 
 public class RRGCriarCampoDeSaida extends TestBaseFernando {
+	//TSTNG-1269
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RelatorioRefinariaGeradosCriarCampoDeSaidaPO relatorioRefinariaGeradosCriarCampoDeSaidaPO;

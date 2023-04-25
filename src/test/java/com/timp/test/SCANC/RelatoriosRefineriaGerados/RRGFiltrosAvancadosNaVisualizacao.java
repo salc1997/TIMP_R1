@@ -13,7 +13,8 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatoriosReefineriaGeradosFiltrosAvancadosNaVisualizacaoPO;
 
-public class RRGsFiltrosAvancadosNaVisualizacao extends TestBaseFernando {
+public class RRGFiltrosAvancadosNaVisualizacao extends TestBaseFernando {
+	//TSTNG-1911
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RelatoriosReefineriaGeradosFiltrosAvancadosNaVisualizacaoPO relatoriosReefineriaGeradosFiltrosAvancadosNaVisualizacaoPO;

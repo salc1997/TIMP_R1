@@ -22,6 +22,7 @@ public class RelatorioRefinariaGeradosExcluirCampoDeSaidaPO extends TestBaseFern
 	}
 	
 	public boolean excluir() {
+		//TSTNG-1500
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);

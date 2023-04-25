@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-24T23:42:53 UTC" name="Default suite" finished-at="2023-04-24T23:44:15 UTC" duration-ms="81864">
+  <suite started-at="2023-04-25T18:45:40 UTC" name="Default suite" finished-at="2023-04-25T18:47:03 UTC" duration-ms="83154">
     <groups>
     </groups>
-    <test started-at="2023-04-24T23:42:53 UTC" name="Default test" finished-at="2023-04-24T23:44:15 UTC" duration-ms="81864">
-      <class name="com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados@47d9a273]" started-at="2023-04-24T23:42:53 UTC" name="beforeClass" finished-at="2023-04-24T23:42:56 UTC" duration-ms="3214" status="PASS">
+    <test started-at="2023-04-25T18:45:40 UTC" name="Default test" finished-at="2023-04-25T18:47:03 UTC" duration-ms="83154">
+      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@47d9a273]" started-at="2023-04-25T18:45:40 UTC" name="beforeClass" finished-at="2023-04-25T18:45:43 UTC" duration-ms="3057" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados@47d9a273]" started-at="2023-04-24T23:42:56 UTC" name="ingresar" finished-at="2023-04-24T23:43:03 UTC" duration-ms="6541" status="PASS">
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@47d9a273]" started-at="2023-04-25T18:45:43 UTC" name="ingresar" finished-at="2023-04-25T18:45:50 UTC" duration-ms="6695" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ingresar -->
-        <test-method signature="scancEntrar()[pri:1, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados@47d9a273]" started-at="2023-04-24T23:43:03 UTC" name="scancEntrar" finished-at="2023-04-24T23:43:19 UTC" duration-ms="16235" status="PASS">
+        <test-method signature="scancEntrar()[pri:1, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@47d9a273]" started-at="2023-04-25T18:45:50 UTC" name="scancEntrar" finished-at="2023-04-25T18:46:07 UTC" duration-ms="17491" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scancEntrar -->
-        <test-method signature="filtrosAvancados()[pri:2, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados@47d9a273]" started-at="2023-04-24T23:43:19 UTC" name="filtrosAvancados" finished-at="2023-04-24T23:44:15 UTC" duration-ms="55824" status="PASS">
+        <test-method signature="excluir()[pri:2, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@47d9a273]" started-at="2023-04-25T18:46:07 UTC" name="excluir" finished-at="2023-04-25T18:46:59 UTC" duration-ms="51795" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- filtrosAvancados -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados@47d9a273]" started-at="2023-04-24T23:44:15 UTC" name="afterClass" finished-at="2023-04-24T23:44:15 UTC" duration-ms="0" status="PASS">
+        </test-method> <!-- excluir -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir@47d9a273]" started-at="2023-04-25T18:46:59 UTC" name="afterClass" finished-at="2023-04-25T18:47:03 UTC" duration-ms="4068" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados -->
+      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluir -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

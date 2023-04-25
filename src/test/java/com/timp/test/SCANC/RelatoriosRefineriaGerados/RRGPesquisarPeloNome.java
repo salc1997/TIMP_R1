@@ -13,7 +13,9 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosPesquisarPO;
 
-public class RRGPesquisar extends TestBaseFernando {
+public class RRGPesquisarPeloNome extends TestBaseFernando {
+	
+	//TSTNG-976
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RelatorioRefinariaGeradosPesquisarPO relatorioRefinariaGeradosPesquisarPO;

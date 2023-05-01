@@ -3,14 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteCriarComDiaAleatorio">
+      <class name="com.timp.test.BCB.OrigemBCB.HierarquicaConfiguracao.OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades">
         <methods>
-          <include name="afterClass"/>
-          <include name="criarComDiaAleatorio"/>
-          <include name="scancEntrar"/>
+          <include name="abrirSubnivel6"/>
+          <include name="abrirSubnivel2"/>
           <include name="beforeClass"/>
+          <include name="abrirSubnivel5"/>
+          <include name="abrirSubnivel4"/>
+          <include name="abrirSubnivel1"/>
+          <include name="abrirSubnivel3"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteCriarComDiaAleatorio -->
+      </class> <!-- com.timp.test.BCB.OrigemBCB.HierarquicaConfiguracao.OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

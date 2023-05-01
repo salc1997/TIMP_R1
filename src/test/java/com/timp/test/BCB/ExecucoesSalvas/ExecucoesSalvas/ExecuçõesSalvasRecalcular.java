@@ -1,4 +1,4 @@
-package com.timp.test.BCB.ExecucoesSalvas.HierarquiaConfiguracoesExecucoesSalvas;
+package com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas;
 
 import org.testng.annotations.Test;
 

@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name=" ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed)">
+  <test thread-count="5" name="Configuração &gt; ManuaisDeComponente(failed)">
     <classes>
-      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasTodasFunc">
+      <class name="com.timp.test.ADM.Configuracao.ManuaisDeComponente.ManuaisDeComponenteTodasFunc">
         <methods>
           <include name="afterClass"/>
-          <include name="criarRelacionamento"/>
-          <include name="excluirMassa"/>
-          <include name="excluirCopia"/>
-          <include name="editarCopia"/>
-          <include name="VisualizarRelacionamento"/>
+          <include name="filtros"/>
           <include name="beforeClass"/>
-          <include name="criarCopia"/>
-          <include name="EditarRelacionamento"/>
-          <include name="criarMasa"/>
-          <include name="excluir"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasTodasFunc -->
+      </class> <!-- com.timp.test.ADM.Configuracao.ManuaisDeComponente.ManuaisDeComponenteTodasFunc -->
     </classes>
-  </test> <!--  ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed) -->
+  </test> <!-- Configuração > ManuaisDeComponente(failed) -->
 </suite> <!-- Failed suite [Suite] -->

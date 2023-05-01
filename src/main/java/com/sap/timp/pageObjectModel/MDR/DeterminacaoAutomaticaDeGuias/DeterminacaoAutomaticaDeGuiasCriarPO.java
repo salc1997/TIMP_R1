@@ -181,7 +181,7 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 		sleep(3000);
 		
 		opcaoOutput.click();
-		sleep(8000);
+		sleep(11000);
 		
 		layoutGuia.click();
 		sleep(3000);

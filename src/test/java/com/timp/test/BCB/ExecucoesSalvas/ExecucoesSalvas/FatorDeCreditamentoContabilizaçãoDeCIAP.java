@@ -1,4 +1,4 @@
-package com.timp.test.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP;
+package com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas;
 
 import org.testng.annotations.Test;
 

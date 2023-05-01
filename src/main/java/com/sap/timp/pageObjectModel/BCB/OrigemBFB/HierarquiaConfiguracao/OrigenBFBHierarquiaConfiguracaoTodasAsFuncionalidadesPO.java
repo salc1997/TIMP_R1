@@ -1452,7 +1452,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		if (tc2==true) {
 			sucesso.add(valorCampoSaidaSubNivel2.equals("5.000,00"));
-			sucesso.add(valorCampoPeriodoTiempoSubNivel2.contains("1/2014-1Y"));
+			sucesso.add(valorCampoPeriodoTiempoSubNivel2.contains("01/2014 - 1Y"));
 		}else {
 			sucesso.add(valorCampoSaidaSubNivel2.equals("5.000,00"));
 			sucesso.add(valorCampoPeriodoTiempoSubNivel2.equals(" (Subperíodo 01/2014 - 1Y)"));

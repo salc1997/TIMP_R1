@@ -48,7 +48,7 @@ public boolean lexeira() {
 	btnUltimaPagina.click();
 	sleep(2000);
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(8000);
+	sleep(2000);
 	
 	//String idRegistro = idObter3();
 	String idRegistro = idObter("An2");
@@ -135,7 +135,7 @@ public boolean excluirDefinitivo() {
 	sleep(2000);
 	waitExpectXpath("//div[@class=\"overlay loader dark\"]");
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(6000);
+	sleep(2000);
 	
 	btnUltimaPagina.click();
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

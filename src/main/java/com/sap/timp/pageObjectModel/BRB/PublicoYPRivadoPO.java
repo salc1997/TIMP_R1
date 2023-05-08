@@ -42,6 +42,7 @@ public class PublicoYPRivadoPO extends TestBaseSteven{
 	
 	
 	public PublicoYPRivadoPO() {
+		//PageFactory.initElements(driver, this);
 		PageFactory.initElements(driver, this);
 	}
 	

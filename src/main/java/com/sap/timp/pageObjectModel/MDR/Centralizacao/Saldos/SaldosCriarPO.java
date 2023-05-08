@@ -355,7 +355,7 @@ public class SaldosCriarPO extends TestBaseKenssy{
 		novoAjuste.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(2000);
 		
 	
 		saldoA.click();

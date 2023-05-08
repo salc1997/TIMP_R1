@@ -138,7 +138,7 @@ public class AtivaçaoParaMunicipioExcluirMassaPO extends TestBaseSteven{
 		System.out.println("Segundo registro");
 		
 	
-		sleep(8000);
+		sleep(4000);
 		
 		empresa.click();
 		sleep(2000);
@@ -173,9 +173,9 @@ public class AtivaçaoParaMunicipioExcluirMassaPO extends TestBaseSteven{
 		sleep(2000);
 	
 		gravar.click();
-		sleep(4000);
+		sleep(2000);
 		sim.click();
-		sleep(15000);
+		sleep(10000);
 	
 		biblioteca.click();
 		

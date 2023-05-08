@@ -36,7 +36,6 @@ public class RelatorioRefinariaGeradosFiltrosAvacadosPO extends TestBaseFernando
 	}
 	
 	public ArrayList<Boolean> filtrosAvanzados() {
-		//TSTNG-893
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);

@@ -41,6 +41,16 @@ public class ConsultaDeDocumentosDetalhesPO extends TestBaseMassiel {
 		PageFactory.initElements(driver, this);
 	}
 	
+	public static boolean validarFecha(String fecha) {
+        try {
+            SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy");
+            formatoFecha.setLenient(false);
+            formatoFecha.parse(fecha);
+        } catch (ParseException e) {
+            return false;
+        }
+        return true;
+    }
 	
 	public   ArrayList<Boolean>  detalles() {
 		String url = driver.getCurrentUrl();

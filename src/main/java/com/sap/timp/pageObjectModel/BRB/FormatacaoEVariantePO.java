@@ -38,48 +38,32 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 	// aumentar
 	@FindBy(xpath = "//div[@data-column=\"28\" and contains(@aria-label, \"Linha: 1-\")]/div[2]")
 	public WebElement empresa1;
-	
-	@FindBy(xpath = "//div[@data-column=\"28\" and contains(@aria-label, \"Coluna. Empresa\")]/div[2]")
-	public WebElement empresa11;
-	
 	@FindBy(xpath = "//*[@id=\"variant-toolbar\"]/div/ul/li[4]/button")
 	public WebElement aumentar;
 	// disminuir
 	@FindBy(xpath = "//div[@data-column=\"193\" and contains(@aria-label, \"Linha: 1-\")]/div[2]")
 	public WebElement ufFilial1;
-	@FindBy(xpath = "//div[@data-column=\"193\" and contains(@aria-label, \"Coluna. UF da filial\")]/div[2]")
-	public WebElement ufFilial11;
 	@FindBy(xpath = "//*[@id=\"variant-toolbar\"]/div/ul/li[5]/button")
 	public WebElement diminuir;
 	// negrita
 	@FindBy(xpath = "//div[@data-column=\"30\" and contains(@aria-label, \"Linha: 1-\")]/div[2]")
 	public WebElement filial1;
-	@FindBy(xpath = "//div[@data-column=\"30\" and contains(@aria-label, \"Coluna. Filial\")]/div[2]")
-	public WebElement filial11;
 	@FindBy(xpath = "//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button")
 	public WebElement negrita;
 	// italica
 	@FindBy(xpath = "//div[@data-column=\"21\" and contains(@aria-label, \"Linha: 1-\")]/div[2]")
 	public WebElement dataLan1;
-	@FindBy(xpath = "//div[@data-column=\"21\" and contains(@aria-label, \"Coluna. Data lançamento doc. fiscal\")]/div[2]")
-	public WebElement dataLan11;
 	@FindBy(xpath = "//*[@id=\"variant-toolbar\"]/div/ul/li[7]/button")
 	public WebElement italica;
 	// Tachado
 	@FindBy(xpath = "//div[@data-column=\"8\" and contains(@aria-label, \"Linha: 1-\")]/div[2]")
 	public WebElement categoria1;
-	
-	@FindBy(xpath = "//div[@data-column=\"8\" and contains(@aria-label, \"Coluna. Categoria nota fiscal\")]/div[2]")
-	public WebElement categoria11;
-	
 	@FindBy(xpath = "//*[@id=\"variant-toolbar\"]/div/ul/li[8]/button")
 	public WebElement tachado;
 
 	// texto esquerda
 	@FindBy(xpath = "//div[@data-column=\"79\" and contains(@aria-label, \"Linha: 1-\")]/div[2]")
 	public WebElement valor1;
-	@FindBy(xpath = "//div[@data-column=\"79\" and contains(@aria-label, \"Coluna. Valor doc. fiscal\")]/div[2]")
-	public WebElement valor11;
 	@FindBy(xpath = "//*[@id=\"variant-toolbar\"]/div/ul/li[9]/button")
 	public WebElement esquerda;
 
@@ -163,14 +147,14 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 		menu.click();
 
 		opcao.click();
-		sleep(5000);
 
+		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 		sleep(10000);
 		executar.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		// Aumentar
@@ -192,8 +176,6 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 		} else {
 			sucesso.add(false);
 		}
-		
-		System.out.println("Aumentar "+sucesso);
 
 		// Diminuir
 		ufFilial1.click();
@@ -214,7 +196,6 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 			sucesso.add(false);
 		}
 
-		System.out.println("Disminuir "+sucesso);
 		// Negrita
 		filial1.click();
 		String aNegritaString = filial1.getCssValue("font-weight");
@@ -231,16 +212,12 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 		} else {
 			sucesso.add(false);
 		}
-		
-		System.out.println("Negrita "+sucesso);
 
 		// italica
 		dataLan1.click();
 		italica.click();
 		String dItalica = dataLan1.getCssValue("font-style");
 		sucesso.add(dItalica.equals("italic"));
-		
-		System.out.println("italica "+sucesso);
 
 		// tachado
 		actionsMoveToElementElement(categoria1);
@@ -249,8 +226,6 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 		String dTachadoString = categoria1.getCssValue("text-decoration");
 		dTachadoString = dTachadoString.substring(0, 12);
 		sucesso.add(dTachadoString.equals("line-through"));
-		
-		System.out.println("Tachado "+sucesso);
 
 		// esquerda
 		actionsMoveToElementElement(valor1);
@@ -258,8 +233,6 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 		esquerda.click();
 		String dEsquerdaString = categoria1.getCssValue("text-align");
 		sucesso.add(dEsquerdaString.equals("left"));
-		
-		System.out.println("Izquierda "+sucesso);
 
 		// centro
 		actionsMoveToElementElement(empresa2);
@@ -267,33 +240,29 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 		centro.click();
 		String dCentroString = empresa2.getCssValue("text-align");
 		sucesso.add(dCentroString.equals("center"));
-		
-		System.out.println("Centro "+sucesso);
 
 		// dereita
 		ufFilial2.click();
 		dereita.click();
 		String dDereitaString = ufFilial2.getCssValue("text-align");
 		sucesso.add(dDereitaString.equals("right"));
-		
-		System.out.println("Derecha "+sucesso);
 
 		// destaque
 		filial2.click();
 		destaque.click();
 		String dDestaqueString = filial2.getCssValue("background-color");
 		sucesso.add(dDestaqueString.equals("rgba(0, 0, 0, 1)"));
-		System.out.println("Destaque "+sucesso);
+
 
 		// limpar
 		dataLan2.click();
 		italica.click();
-		sleep(6000);
+		sleep(1000);
 		limpar.click();
 		String limpo = dataLan2.getCssValue("font-style");
 		sucesso.add(limpo.equals("normal"));
 		sleep(000);
-		System.out.println("Limpio "+sucesso);
+		
 		
 		return sucesso;
 
@@ -324,23 +293,17 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 		sleep(2000);
 		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		
-		driver.navigate().refresh();
-
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
-		attributeToBeXpath("//div[@id=\"variant-select\"]/div", "class", "base-select ");
-		sleep(2000);
 		
 
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
 		// Aumentar
 
-		String dAumentarString = empresa11.getCssValue("font-size");
+		String dAumentarString = empresa1.getCssValue("font-size");
 		dAumentarString = dAumentarString.replace("px", "");
 		Double dAumentarDouble = Double.valueOf(dAumentarString);
 		
-		System.out.println("Limpio "+sucesso);
-		
+
 		if (dAumentarDouble == aumentarV) {
 			sucesso.add(true);
 		} else {
@@ -348,7 +311,7 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 		}
 
 		// Diminuir
-		String dDiminuirString = ufFilial11.getCssValue("font-size");
+		String dDiminuirString = ufFilial1.getCssValue("font-size");
 		dDiminuirString = dDiminuirString.replace("px", "");
 
 		Double dDiminuirDouble = Double.valueOf(dDiminuirString);
@@ -362,7 +325,7 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 		// Negrita
 
 		negrita.click();
-		String dNegritaString = filial11.getCssValue("font-weight");
+		String dNegritaString = filial1.getCssValue("font-weight");
 		Double dNegritarDouble = Double.valueOf(dNegritaString);
 
 		if (dNegritarDouble == negritaV) {
@@ -372,23 +335,23 @@ public class FormatacaoEVariantePO extends TestBaseSteven {
 		}
 
 		// italica
-		String dItalica = dataLan11.getCssValue("font-style");
+		String dItalica = dataLan1.getCssValue("font-style");
 		sucesso.add(dItalica.equals("italic"));
 
 		// tachado
-		actionsMoveToElementElement(categoria11);
-		String dTachadoString = categoria11.getCssValue("text-decoration");
+		actionsMoveToElementElement(categoria1);
+		String dTachadoString = categoria1.getCssValue("text-decoration");
 		dTachadoString = dTachadoString.substring(0, 12);
 		sucesso.add(dTachadoString.equals("line-through"));
 
 		// esquerda
-		actionsMoveToElementElement(valor11);
-		String dEsquerdaString = categoria11.getCssValue("text-align");
+		actionsMoveToElementElement(valor1);
+		String dEsquerdaString = categoria1.getCssValue("text-align");
 		sucesso.add(dEsquerdaString.equals("left"));
 
 		// centro
-		actionsMoveToElementElement(empresa11);
-		String dCentroString = empresa11.getCssValue("text-align");
+		actionsMoveToElementElement(empresa2);
+		String dCentroString = empresa2.getCssValue("text-align");
 		sucesso.add(dCentroString.equals("center"));
 
 		// dereita

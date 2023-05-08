@@ -106,7 +106,6 @@ public class CodigoContabilizacaoCriarPO extends TestBaseSteven {
 		novocodigocontabilizacao.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(13000);
 		empresa.click();
 		
 		opcaoempresa.click();

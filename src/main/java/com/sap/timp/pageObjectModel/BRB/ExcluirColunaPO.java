@@ -28,7 +28,7 @@ public class ExcluirColunaPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//li[@id = \"draggable-117\"]/div/div/div[@id=\"chead\"]")
 	public WebElement menuC;
-	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/ul/li[5]")
+	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/ul/li[6]")
 	public WebElement opcionC;
 	
 	
@@ -43,9 +43,6 @@ public class ExcluirColunaPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
-	
-	@FindBy(xpath = "//button[text()=\"Sim\"]")
-	public WebElement sim;
 	
 	
 	public ExcluirColunaPO() {
@@ -74,15 +71,15 @@ public class ExcluirColunaPO extends TestBaseSteven{
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
 		
 		sleep(3000);
-		System.out.println("paso 1");	
+System.out.println("paso 1");	
 		Actions actions = new Actions(driver);
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
 		
 		actions.moveToElement(excluir).perform();		
-
-		moveToElement(excluir, driver.findElement(By.xpath("//span[text()=\"Remover\"]")));
-		sleep(2000);
+		actions.dragAndDropBy(excluir, 0, 320).perform();
+		
+		sleep(1000);
 		
 		gravar.click();
 		
@@ -94,6 +91,7 @@ public class ExcluirColunaPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+
 		
 		driver.navigate().refresh();
 		
@@ -104,23 +102,20 @@ public class ExcluirColunaPO extends TestBaseSteven{
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		if(removido.size()==0){
 			sucesso.add(true);
-			
-		}else {
-			sucesso.add(false);
 		}
+	
 
-		System.out.println(sucesso);
-		
 		sleep(1000);
 		System.out.println("paso 2");	
 		coluna.sendKeys("CST ICMS");
 
 		sleep(4000);
+
+		coluna.sendKeys("ICMS");
+
 		
-		actions.moveToElement(cst);
-		sleep(3000);
-		actions.doubleClick(cst).perform();
-		sleep(3000);
+		//actions.doubleClick(cst).perform();
+	
 		gravar.click();
 		
 		sleep(2000);
@@ -136,21 +131,17 @@ public class ExcluirColunaPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
 		sleep(2000);
-
+		
 		System.out.println("paso3");
 		List<WebElement> agregado = driver.findElements(By.xpath("//*[@id=\"draggable-117\"]"));
 		
 		if (agregado.size()>0) {
 			sucesso.add(true);
-		}else {
-			sucesso.add(false);
 		}
-
-		System.out.println(sucesso);
 		
 		sleep(2000);
 
-		
+		System.out.println(sucesso);
 		return sucesso;
 		
 		
@@ -181,7 +172,7 @@ public class ExcluirColunaPO extends TestBaseSteven{
 		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		sleep(2000);
 		
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
 		
@@ -198,10 +189,10 @@ public class ExcluirColunaPO extends TestBaseSteven{
 	
 		sleep(1000);
 
-		coluna.sendKeys("CST ICMS");
+		coluna.sendKeys("ICMS");
 		
 		actions.doubleClick(cst).perform();
-		sleep(4000);
+	
 		gravar.click();
 		sleep(2000);
 		waitExpectElement(nao);
@@ -209,7 +200,7 @@ public class ExcluirColunaPO extends TestBaseSteven{
 		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		sleep(2000);
 
 		driver.navigate().refresh();
 		

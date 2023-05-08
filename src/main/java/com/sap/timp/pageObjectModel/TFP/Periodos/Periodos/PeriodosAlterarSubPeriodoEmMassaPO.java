@@ -208,7 +208,7 @@ public class PeriodosAlterarSubPeriodoEmMassaPO extends TestBaseKenssy{
 			sleep(2000);
 		}
 		
-    	sleep(2000);
+		sleep(2000);
 		WebElement resultFiltrado1 = driver.findElement(By.xpath("//div[@data-id="+idFiltro1+"]/div[contains(@class,\"checkbox\")]/label/span"));
 		WebElement resultFiltrado2 = driver.findElement(By.xpath("//div[@data-id="+idFiltro2+"]/div[contains(@class,\"checkbox\")]/label/span"));
 		sleep(2000);
@@ -319,7 +319,7 @@ public class PeriodosAlterarSubPeriodoEmMassaPO extends TestBaseKenssy{
 		clickAfuera.click();
 		sleep(2000);
 		
-
+		
 		aplicar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -333,7 +333,7 @@ public class PeriodosAlterarSubPeriodoEmMassaPO extends TestBaseKenssy{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);	
 		
-
+		
 		
 		//CLICK AL MENU
 		
@@ -361,9 +361,9 @@ public class PeriodosAlterarSubPeriodoEmMassaPO extends TestBaseKenssy{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-
+		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-	
+		
 		System.out.println("----Status 2do registro = 200 - Pre fechamento ----");
 		int rows = driver.findElements(By.xpath("//div[@id=\"subPeriodTable1\"]//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		int f = 1;

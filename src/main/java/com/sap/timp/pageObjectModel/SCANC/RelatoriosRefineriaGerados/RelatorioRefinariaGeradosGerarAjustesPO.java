@@ -89,7 +89,6 @@ public class RelatorioRefinariaGeradosGerarAjustesPO extends TestBaseFernando{
 	}
 	
 	public ArrayList<Boolean> gerarAjustes() {
-		//TSTNG-1883
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);

@@ -60,7 +60,6 @@ public class RRFConfiguracaoDeAjusteFiltrosAvancadosPO extends TestBaseFernando{
 	}
 	
 	public ArrayList<Boolean> filtrosAvancados() {
-		//TSTNG-1485
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BPMA.AcessarBPMAPO;
-import com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.ProcessodeNegocioCriarCopiaPO;
+import com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.ProcessodeNegócioCriarCopiaPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -17,7 +17,7 @@ public class ProcessodeNegocioCriarCopia extends TestBaseMassiel{
 
 	LoginTC loginTC;
 	AcessarBPMAPO acessarBPMA ;
-	 ProcessodeNegocioCriarCopiaPO  processodeNegócioCriarCopiaPO;
+	 ProcessodeNegócioCriarCopiaPO  processodeNegócioCriarCopiaPO;
 	
   @BeforeClass
   public void beforeClass() {
@@ -25,7 +25,7 @@ public class ProcessodeNegocioCriarCopia extends TestBaseMassiel{
 	  driver = initializationM();
 	  loginTC = new LoginTC();
 	  acessarBPMA = new AcessarBPMAPO();
-	  processodeNegócioCriarCopiaPO = new  ProcessodeNegocioCriarCopiaPO();
+	  processodeNegócioCriarCopiaPO = new  ProcessodeNegócioCriarCopiaPO();
   }
 
   @AfterClass

@@ -32,6 +32,12 @@
 			<class name="com.timp.test.BRB.EditarRelatorio"></class>
 		</classes>
 	</test>
+	<test name="ReordenarColuna">
+		<classes>
+			<!-- Reordenar Coluna -->
+			<class name="com.timp.test.BRB.ReordenarColuna"></class>
+		</classes>
+	</test>
 	<test name="FiltrosRelatorio">
 		<classes>
 			<!-- Filtros No Relatório -->
@@ -131,17 +137,17 @@
 	</test>
 	<test name="Output Automatico">
 		<classes>
-			<class name="com.timp.test.BRB.OutputAutomatico"></class>
+			<class name="com.timp.test.BRB.OutputAutomático"></class>
 		</classes>
 	</test>
 	<test name="Output Referencia">
 		<classes>
-			<class name="com.timp.test.BRB.OutputdeReferencia"></class>
+			<class name="com.timp.test.BRB.OutputdeReferência"></class>
 		</classes>
 	</test>
 	<test name="Atribucao De Regra (Regra)">  <!-- TSTNG-2374 -->
 		<classes>
-			<class name="com.timp.test.BRB.AtribuicaodeRegra"></class>
+			<class name="com.timp.test.BRB.AtribuiçãodeRegra"></class>
 		</classes>
 	</test>
 

@@ -4,15 +4,20 @@
 
 	<test name="Regra De Abas">
 		<classes>
-			<class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas.RegradeAbasTodasAsFunc"></class>
-			
+			<class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas.RegradeAbasCriar"></class>
+			<class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas.RegradeAbasEditar"></class>
+			<class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas.RegradeAbasVer"></class>
+			<class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas.RegradeAbasExcluir"></class>
+		
 		</classes>
 	</test> <!-- PruebaTest -->
 	
 	<test name="Regra De Campos">
 		<classes>
-			<class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposTodasAsFunc"></class>
-			
+			<class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposCriar"></class>
+			<class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposEditar"></class>
+			<class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposVer"></class>
+			<class name="com.timp.test.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposExcluir"></class>
 		</classes>
 	</test> <!-- PruebaTest -->
 

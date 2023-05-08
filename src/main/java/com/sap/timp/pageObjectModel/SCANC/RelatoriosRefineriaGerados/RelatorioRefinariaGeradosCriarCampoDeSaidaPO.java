@@ -51,7 +51,6 @@ public class RelatorioRefinariaGeradosCriarCampoDeSaidaPO extends TestBaseFernan
 	}
 	
 	public ArrayList<Boolean> criarCampoDeSaida() {
-		//TSTNG-1269
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);

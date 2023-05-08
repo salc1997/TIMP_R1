@@ -181,8 +181,8 @@ public class CodigosAjustesCriarPO extends TestBaseSteven{
 		
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
-	//	biblioteca.click();
+		sleep(2000);
+		biblioteca.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

@@ -224,13 +224,13 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		dataValidadeDe.sendKeys("01/01/2013");
 		sleep(6000);		
 		
-	/*	aplicar.click();
+		aplicar.click();
 		sleep(2000);
 		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);*/
+		sleep(2000);
 		
 		sleep(2000);
-		//waitExpectElement(adicionarCaminho);
+		waitExpectElement(adicionarCaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

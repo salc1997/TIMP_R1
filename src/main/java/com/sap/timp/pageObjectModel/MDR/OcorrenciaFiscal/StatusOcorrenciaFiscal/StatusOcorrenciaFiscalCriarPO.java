@@ -21,15 +21,7 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[contains(text(),\"Novo\")]")
 	public WebElement novo;
-	
-	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div/div[2]")
-	public WebElement empresa;
-	
-	@FindBy(xpath = "//div[@id=\"state\"]/div/div/div/div[2]")
-	public WebElement ufFilial;
-	
-	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div/div[2]")
-	public WebElement filial;
+
 	
 	@FindBy(xpath = "//button[@id=\"statusButton\"]")
 	public WebElement status;
@@ -40,11 +32,18 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@id=\"lastStatus\"]/div/div/div[2]")
 	public WebElement statusFinal;
 	
+	@FindBy(xpath = "//div[@id=\"occurrenceOrigin\"]//div[2]")
+	public WebElement origemOcurrence;
+	
 	@FindBy(xpath = "//textarea")
 	public WebElement descricao;
 
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcao;
+	
+
+	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	public WebElement opcao2;
 	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Data Inicial\")]")
 	public WebElement dataVigencia;
@@ -105,28 +104,12 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
-		empresa.click();
-		sleep(1000);
-		opcao.click();
-		new Actions(driver).moveToElement(empresa).click().perform();
-		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"state\"]/div", "class", "input-element-wrapper");
-		
-		ufFilial.click();
+		origemOcurrence.click();
 		sleep(1000);
-		opcao.click();
-		new Actions(driver).moveToElement(ufFilial).click().perform();
-		sleep(1000);
-		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "input-element-wrapper");
-		
-		filial.click();
-		sleep(1000);
-		opcao.click();
-		new Actions(driver).moveToElement(filial).click().perform();
+		opcao2.click();
 		sleep(1000);
 		
 		status.click();
@@ -151,7 +134,6 @@ public class StatusOcorrenciaFiscalCriarPO extends TestBaseSteven{
 		fechar.click();
 		sleep(2000);
 		
-		descricao.sendKeys("Teste de Status da Ocorrência Fiscal");
 
 		dataVigencia.sendKeys(fechaActual());
 		sleep(1000);

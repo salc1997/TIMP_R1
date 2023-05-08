@@ -70,8 +70,7 @@ public class AssociaçãoCodigoAjusteEditarPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"filial\"]/div", "class", "base-MultipleSelect3 required");
-		sleep(8000);
+		sleep(15000);
 		
 		String dataInicioVigenciaValorNuevo = fechaAyer();
 		System.out.println("Data a ser inserida: " +dataInicioVigenciaValorNuevo);

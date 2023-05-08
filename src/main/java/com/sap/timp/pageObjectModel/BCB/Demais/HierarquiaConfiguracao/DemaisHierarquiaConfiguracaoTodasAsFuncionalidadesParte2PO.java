@@ -265,7 +265,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 		executar.click();
 		sleep(3000);
 		waitExpectElement(executarM);
-		sleep(2000);
+		sleep(10000);
 		executarM.click();
 		
 		sleep(1000);
@@ -333,6 +333,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 			tp1 = true;
 		}
 		
+		sleep(5000);
 		
 		abrirHierarquia1.click();
 		sleep(1000);

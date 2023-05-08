@@ -54,7 +54,7 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//li[@id=\"01\"]")
 	public WebElement OPC;
 	
-	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@id=\"01\"]")
 	public WebElement OPC11;
 	
 	@FindBy(xpath = "//li[@id=\"1\"]")
@@ -81,7 +81,7 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
-	@FindBy(xpath = "//button[text()=\"Sim\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[2]")
 	public WebElement sim;
 	
 	@FindBy(xpath = "//Span[text()=\"Biblioteca\"]")
@@ -209,7 +209,7 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC11.click();
+			OPC1.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -229,7 +229,7 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC11.click();
+			OPC1.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -247,7 +247,7 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC11.click();
+			OPC1.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -266,7 +266,7 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC11.click();
+			OPC1.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -285,7 +285,7 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC11.click();
+			OPC1.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {

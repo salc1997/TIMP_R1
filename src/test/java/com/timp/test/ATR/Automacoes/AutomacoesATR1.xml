@@ -13,22 +13,16 @@
 	</test> 	
 	<test name="ATR-ESTRUCTURAS-ESTRUCTURAS">
 		<classes>			
-			<class name="com.timp.test.ATR.Estruturas.Estruturas.EstruturasDetalles"></class>			
-			<class name="com.timp.test.ATR.Estruturas.Estruturas.EstruturasVisualizar"></class>
-			<class name="com.timp.test.ATR.Estruturas.Estruturas.EstruturasVisualizarFiltros"></class>
+			<class name="com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc"></class>			
+			
 		</classes>
 	</test> 
 
 	<test name="ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS">
 		<classes>			
 			<!-- ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS -->	
-			<class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriar"></class>
-			<class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhes"></class>
-			<class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasEditar"></class>			
-			<class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturaVer"></class>
-			<class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasFiltroPorID"></class>
-			<class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluir"></class>
-			<class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasExcluirEmMassa"></class>				
+			<class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc"></class>
+						
 		</classes>
 	</test> 	
 </suite>

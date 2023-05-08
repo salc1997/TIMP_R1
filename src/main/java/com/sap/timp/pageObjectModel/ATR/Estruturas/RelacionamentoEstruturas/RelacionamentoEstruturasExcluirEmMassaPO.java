@@ -98,7 +98,10 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBaseFernando{
 		
 		// Primer ingreso
 		btnNovo.click();
-		sleep(40400);
+		
+		sleep(2000);
+		invisibilityOfElementOverlay();
+		sleep(2000);
 		
 		waitExpectElement(cboGrupo1);
 		cboGrupo1.click();
@@ -130,7 +133,7 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBaseFernando{
 		cboEstrutura2.click();
 		sleep(3000);
 		opcionEstrutura2.click();
-		sleep(3000);
+		sleep(6000);
 		
 		cboCamposEstrutura2.click();
 		sleep(3000);
@@ -172,11 +175,11 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBaseFernando{
 		
 		// Segundo registro
 		btnNovo.click();
-		sleep(40400);
-		sleep(40400);
-		sleep(40400);
+		sleep(2000);
+		invisibilityOfElementOverlay();
+		sleep(2000);
 		
-		waitExpectElement(cboGrupo1);
+		
 		cboGrupo1.click();
 		sleep(3000);
 		opcionGrupo1.click();
@@ -186,7 +189,7 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBaseFernando{
 		cboEstrutura1.click();
 		sleep(3000);
 		opcionEstrutura1.click();
-		sleep(3000);
+		sleep(6000);
 		
 		cboCamposEstrutura1.click();
 		sleep(3000);

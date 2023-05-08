@@ -912,7 +912,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		waitExpectElement(calculator);
-		sleep(12000);
+		sleep(15000);
 		
 		calculator.click();
 		sleep(1000);
@@ -1000,7 +1000,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 			sucesso.add(false);
 		}
 		
-		
+		System.out.println(sucesso);
 		
 		fechar.click();
 		sleep(2000);
@@ -1023,7 +1023,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		sleep(2000);
 		
 		nao.click();
-		sleep(8000);
+		sleep(2000);
 		
 		//corregir mensaje al parecer
 		mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
@@ -1036,6 +1036,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		}else {
 			sucesso.add(false);
 		}	
+	System.out.println(sucesso);
 		
 		return sucesso;
 	}
@@ -1171,7 +1172,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		executar.click();
 		sleep(5000);
 		waitExpectElement(executarM);
-		sleep(5000);
+		sleep(8000);
 		executarM.click();
 		
 		sleep(1000);
@@ -1583,7 +1584,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		//idInserir2(id); //antes de crear herarquia configuracao
 		
 		nova.click();
-		sleep(6000);
+		sleep(10000);
 
 		sleep(2000);
 

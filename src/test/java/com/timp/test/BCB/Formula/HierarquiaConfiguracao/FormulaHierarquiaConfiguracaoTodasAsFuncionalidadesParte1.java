@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends TestBaseKenssy {
+	//TSTNG-855
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
 	FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO;

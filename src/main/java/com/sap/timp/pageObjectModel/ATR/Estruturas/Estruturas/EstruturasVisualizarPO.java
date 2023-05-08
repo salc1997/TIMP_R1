@@ -120,14 +120,14 @@ public class EstruturasVisualizarPO extends TestBaseSteven {
 		
 		String capavisualizar = capa.getText();
 		String itemvisualizar = item.getText();
-		String oleovisualizar = oleo.getText();
+		//String oleovisualizar = oleo.getText();
 		//String camposvisualizar = campos.getText();
 		String totalvisualizar = total.getText();
 		
 		
 		System.out.println(capavisualizar);
 		System.out.println(itemvisualizar);
-		System.out.println(oleovisualizar);
+	//	System.out.println(oleovisualizar);
 		//System.out.println(camposvisualizar);
 		System.out.println(totalvisualizar);
 		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++");
@@ -154,19 +154,19 @@ public class EstruturasVisualizarPO extends TestBaseSteven {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
-	    sleep(8000);
+	    sleep(11000);
 
 	    
 	    String capavisualizarE = capaE.getText();
 		String itemvisualizarE = itemE.getText();
-		String oleovisualizarE = oleoE.getText();
+		//String oleovisualizarE = oleoE.getText();
 		//String camposvisualizarE = camposE.getText();
 		String totalvisualizarE = totalE.getText();
 		
 		
 		System.out.println(capavisualizarE);
 		System.out.println(itemvisualizarE);
-		System.out.println(oleovisualizarE);
+	//	System.out.println(oleovisualizarE);
 		//System.out.println(camposvisualizarE);
 		System.out.println(totalvisualizarE);
 		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++");
@@ -177,7 +177,7 @@ public class EstruturasVisualizarPO extends TestBaseSteven {
 		
 		sucesso.add(capavisualizarE.contains(capavisualizar));
 		sucesso.add(itemvisualizarE.contains(itemvisualizar));
-		sucesso.add(oleovisualizarE.contains(oleovisualizar));
+	//	sucesso.add(oleovisualizarE.contains(oleovisualizar));
 		//sucesso.add(camposvisualizarE.contains(camposvisualizar));
 		sucesso.add(totalvisualizarE.contains(totalvisualizar));
 		

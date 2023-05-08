@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRB.FiltrosRelatorio">
+      <class name="com.timp.test.BRB.AcessarBRB">
         <methods>
+          <include name="brbEntrar"/>
           <include name="beforeClass"/>
-          <include name="AfiltrosEditor"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
+      </class> <!-- com.timp.test.BRB.AcessarBRB -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

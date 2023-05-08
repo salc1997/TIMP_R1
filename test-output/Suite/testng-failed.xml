@@ -1,18 +1,285 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="DFG - Leiautes(failed)">
+  <test thread-count="5" name="Novo Relatorio(failed)">
     <classes>
-      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
+      <class name="com.timp.test.BRB.NovoRelatorio">
         <methods>
-          <include name="filtrosVersao"/>
-          <include name="filtrosFechaUsuarioCriado"/>
+          <include name="novoRelatorio"/>
+          <include name="beforeClass"/>
           <include name="afterClass"/>
-          <include name="filtrosFiltroTipo"/>
-          <include name="filtrosFechaUsuarioModificado"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.NovoRelatorio -->
+    </classes>
+  </test> <!-- Novo Relatorio(failed) -->
+  <test thread-count="5" name="Adicionar Columnas(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.AdicionarColunas">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="adicionarColunas"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.AdicionarColunas -->
+    </classes>
+  </test> <!-- Adicionar Columnas(failed) -->
+  <test thread-count="5" name="PublicoEPrivado(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.PublicoEPrivado">
+        <methods>
+          <include name="publicoYPRivado"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.PublicoEPrivado -->
+    </classes>
+  </test> <!-- PublicoEPrivado(failed) -->
+  <test thread-count="5" name="ExcluirColuna(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.ExcluirColuna">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="excluirColunaDragNDrop"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.ExcluirColuna -->
+    </classes>
+  </test> <!-- ExcluirColuna(failed) -->
+  <test thread-count="5" name="EditarRelatorio(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.EditarRelatorio">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.EditarRelatorio -->
+    </classes>
+  </test> <!-- EditarRelatorio(failed) -->
+  <test thread-count="5" name="ReordenarColuna(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.ReordenarColuna">
+        <methods>
+          <include name="reordenar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.ReordenarColuna -->
+    </classes>
+  </test> <!-- ReordenarColuna(failed) -->
+  <test thread-count="5" name="FiltrosRelatorio(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.FiltrosRelatorio">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="AfiltrosEditor"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.FiltrosRelatorio -->
+    </classes>
+  </test> <!-- FiltrosRelatorio(failed) -->
+  <test thread-count="5" name="CriarComCopia(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.CriarComCopia">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="criarCopia"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.CriarComCopia -->
+    </classes>
+  </test> <!-- CriarComCopia(failed) -->
+  <test thread-count="5" name="AtivarCorrecao(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.AtivarCorrecao">
+        <methods>
+          <include name="ativarCorreccion"/>
+          <include name="afterClass"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
+      </class> <!-- com.timp.test.BRB.AtivarCorrecao -->
     </classes>
-  </test> <!-- DFG - Leiautes(failed) -->
+  </test> <!-- AtivarCorrecao(failed) -->
+  <test thread-count="5" name="AtivarComentario(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.AtivarComentario">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="ativarComentarios"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.AtivarComentario -->
+    </classes>
+  </test> <!-- AtivarComentario(failed) -->
+  <test thread-count="5" name="RenomearColuna(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.RenomearColuna">
+        <methods>
+          <include name="afterClass"/>
+          <include name="renomearColuna"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.RenomearColuna -->
+    </classes>
+  </test> <!-- RenomearColuna(failed) -->
+  <test thread-count="5" name="Formula(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.Formula">
+        <methods>
+          <include name="formulaBoton"/>
+          <include name="afterClass"/>
+          <include name="aplicar"/>
+          <include name="beforeClass"/>
+          <include name="formulaColuna"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.Formula -->
+    </classes>
+  </test> <!-- Formula(failed) -->
+  <test thread-count="5" name="AgrupadoPeloCampo(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.AgrupadoPeloCampo">
+        <methods>
+          <include name="agrupadoPeloCampo"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.AgrupadoPeloCampo -->
+    </classes>
+  </test> <!-- AgrupadoPeloCampo(failed) -->
+  <test thread-count="5" name="CampoOutput(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.CampoOutput">
+        <methods>
+          <include name="campoOutput"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.CampoOutput -->
+    </classes>
+  </test> <!-- CampoOutput(failed) -->
+  <test thread-count="5" name="FormatacaoEVariante(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.FormatacaoEVariante">
+        <methods>
+          <include name="afterClass"/>
+          <include name="formatacaoEVariante"/>
+          <include name="beforeClass"/>
+          <include name="excluirVariante"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.FormatacaoEVariante -->
+    </classes>
+  </test> <!-- FormatacaoEVariante(failed) -->
+  <test thread-count="5" name="FiltroColunas(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.FiltroColunas">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="filtroConFerramenta2"/>
+          <include name="filtroConFerramenta1"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.FiltroColunas -->
+    </classes>
+  </test> <!-- FiltroColunas(failed) -->
+  <test thread-count="5" name="GruposAvancados(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.GruposAvancados">
+        <methods>
+          <include name="gruposAvanzados"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="eliminarGrupos"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.GruposAvancados -->
+    </classes>
+  </test> <!-- GruposAvancados(failed) -->
+  <test thread-count="5" name="CrescenteEDecrescente(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.CrescenteEDecrescente">
+        <methods>
+          <include name="afterClass"/>
+          <include name="crescenteEDecrescente"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.CrescenteEDecrescente -->
+    </classes>
+  </test> <!-- CrescenteEDecrescente(failed) -->
+  <test thread-count="5" name="ComentarioListaSuspensa(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.ComentarioListaSuspensa">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="listaSuspensa"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.ComentarioListaSuspensa -->
+    </classes>
+  </test> <!-- ComentarioListaSuspensa(failed) -->
+  <test thread-count="5" name="ComentarioLibre(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.ComentarioLibre">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="comentarioLibre"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.ComentarioLibre -->
+    </classes>
+  </test> <!-- ComentarioLibre(failed) -->
+  <test thread-count="5" name="Visualizar(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.Visualizar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="visualizar"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.Visualizar -->
+    </classes>
+  </test> <!-- Visualizar(failed) -->
+  <test thread-count="5" name="ExcluirRelatorio(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.ExcluirRelatorio">
+        <methods>
+          <include name="eliminarLixeira"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="eliminar"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.ExcluirRelatorio -->
+    </classes>
+  </test> <!-- ExcluirRelatorio(failed) -->
+  <test thread-count="5" name="Output Automatico(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.OutputAutomático">
+        <methods>
+          <include name="afterClass"/>
+          <include name="outputAutomatico"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.OutputAutomático -->
+    </classes>
+  </test> <!-- Output Automatico(failed) -->
+  <test thread-count="5" name="Output Referencia(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.OutputdeReferência">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="outputReferencia"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.OutputdeReferência -->
+    </classes>
+  </test> <!-- Output Referencia(failed) -->
+  <test thread-count="5" name="Atribucao De Regra (Regra)(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.AtribuiçãodeRegra">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="editar"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.AtribuiçãodeRegra -->
+    </classes>
+  </test> <!-- Atribucao De Regra (Regra)(failed) -->
 </suite> <!-- Failed suite [Suite] -->

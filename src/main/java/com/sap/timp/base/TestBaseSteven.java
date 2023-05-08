@@ -66,25 +66,25 @@ public class TestBaseSteven  {
 		WebDriver driver;
 		
 		
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedrivers.exe");
 
 		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
 	
 		ChromeOptions options = new ChromeOptions();
 		//options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
 		//driver = new ChromeDriver(options);
-       // options.addArguments("--headless");
-        // para que las pestañas no se habiliten
-        //options.addArguments("start-maximized"); // open Browser in maximized mode
-        //options.addArguments("disable-infobars"); // disabling infobars
-        //options.addArguments("--disable-extensions"); // disabling extensions
-        //options.addArguments("--disable-gpu"); // applicable to windows os only
-        //options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-        //driver = new ChromeDriver(options);
+        //options.addArguments("--headless");
+        // para que las pestanaas no se habiliten
+       /* //options.addArguments("start-maximized"); // open Browser in maximized mode
+        options.addArguments("disable-infobars"); // disabling infobars
+        options.addArguments("--disable-extensions"); // disabling extensions
+        options.addArguments("--disable-gpu"); // applicable to windows os only
+        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
+        driver = new ChromeDriver(options);
 
 		options.addArguments("disable-infobars");
 		options.setExperimentalOption("useAutomationExtension", false);
-		
+		*/
 		Map<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("credentials_enable_service", false);
 		prefs.put("profile.password_manager_enabled", false);
@@ -661,63 +661,63 @@ public class TestBaseSteven  {
 	
 
 	// BRB
-	public String elementosDiferentes = "Os elementos não são iguais";
-	public String comentariosInativos = "Os comentários não foram ativados";
-	public String correcãoInativa = "A correção não foi ativada";
-	public String semAcesso = "Não foi possivel aceder ao aplicativo";
-	public String semCampoOutput = "O campo output não foi adicionado";
-	public String comentarioNãoValido = "Os comentários não foram os ingresados";
-	public String crescenteEDecrescente = "Os resultados não estão em uma ordem válida";
-	public String copiaNaoCriada = "A cópia não foi criada com sucesso";
-	public String editado = "O relatório não foi modificado com sucesso";
-	public String eliminar = "O elemento não foi deletado";
-	public String deletarColuna = "A coluna não foi deletada";
-	public String exportação = "A exportação não foi realizada com sucesso";
-	public String filtros = "Os resultados do filtro não são iguais";
-	public String aplicaçãoFiltros = "Os filtros não foram aplicados com sucesso";
-	public String formatação = "A formatação não foi aplicada";
-	public String excluirVariante = "A variante não foi excluida";
-	public String salvarVariante = "A variante não foi salvada com sucesso";
-	public String formula = "Os valores não são iguais";
-	public String gruposAvan = "Os resultados não são iguais";
-	public String gruposAvanDif = "Os resultados não são diferentes";
-	public String gruposAvanDel = "Os grupos não foram deletados";
-	public String ListaSuspensa = "Os comentários não foram inseridos";
-	public String novoRelatorio = "O novo relatório não foi criado";
-	public String colunas = "As colunas não foram inseridas";
-	public String paginaSeguiente = "Não se conseguiu avançar para a página seguiente";
-	public String paginaAnterior = "Não se conseguiu avançar para a página anterior";
-	public String paginaFinal = "Não se conseguiu avançar para a última página";
-	public String paginaInicial = "Não se conseguiu avançar para a página inicial";
-	public String paginaInserida = "Não foi possivél avaçar para a página inserida";
-	public String visualizaçar = "O modo visualização não está ativado";
-	public String compartilharE = "Não foi possivél compartilhar o relatório desde o editor";
-	public String descompartilharE = "Não foi possivél descompartilhar o relatório desde o editor";
-	public String compartilharB = "Não foi possivél compartilhar o relatório desde a biblioteca";
-	public String descompartilharB = "Não foi possivél compartilhar o relatório desde a biblioteca";
-	public String renomear = "A coluna não foi renomeada com sucesso";
-	public String reordenar = "A coluna não foi reordenada com sucesso";
+	public String elementosDiferentes = "Os elementos nï¿½o sï¿½o iguais";
+	public String comentariosInativos = "Os comentï¿½rios nï¿½o foram ativados";
+	public String correcÃ£oInativa = "A correï¿½ï¿½o nï¿½o foi ativada";
+	public String semAcesso = "Nï¿½o foi possivel aceder ao aplicativo";
+	public String semCampoOutput = "O campo output nï¿½o foi adicionado";
+	public String comentarioNÃ£oValido = "Os comentï¿½rios nï¿½o foram os ingresados";
+	public String crescenteEDecrescente = "Os resultados nï¿½o estï¿½o em uma ordem vï¿½lida";
+	public String copiaNaoCriada = "A cï¿½pia nï¿½o foi criada com sucesso";
+	public String editado = "O relatï¿½rio nï¿½o foi modificado com sucesso";
+	public String eliminar = "O elemento nï¿½o foi deletado";
+	public String deletarColuna = "A coluna nï¿½o foi deletada";
+	public String exportaÃ§Ã£o = "A exportaï¿½ï¿½o nï¿½o foi realizada com sucesso";
+	public String filtros = "Os resultados do filtro nï¿½o sï¿½o iguais";
+	public String aplicaÃ§Ã£oFiltros = "Os filtros nï¿½o foram aplicados com sucesso";
+	public String formataÃ§Ã£o = "A formataï¿½ï¿½o nï¿½o foi aplicada";
+	public String excluirVariante = "A variante nï¿½o foi excluida";
+	public String salvarVariante = "A variante nï¿½o foi salvada com sucesso";
+	public String formula = "Os valores nï¿½o sï¿½o iguais";
+	public String gruposAvan = "Os resultados nï¿½o sï¿½o iguais";
+	public String gruposAvanDif = "Os resultados nï¿½o sï¿½o diferentes";
+	public String gruposAvanDel = "Os grupos nï¿½o foram deletados";
+	public String ListaSuspensa = "Os comentï¿½rios nï¿½o foram inseridos";
+	public String novoRelatorio = "O novo relatï¿½rio nï¿½o foi criado";
+	public String colunas = "As colunas nï¿½o foram inseridas";
+	public String paginaSeguiente = "Nï¿½o se conseguiu avanï¿½ar para a pï¿½gina seguiente";
+	public String paginaAnterior = "Nï¿½o se conseguiu avanï¿½ar para a pï¿½gina anterior";
+	public String paginaFinal = "Nï¿½o se conseguiu avanï¿½ar para a ï¿½ltima pï¿½gina";
+	public String paginaInicial = "Nï¿½o se conseguiu avanï¿½ar para a pï¿½gina inicial";
+	public String paginaInserida = "Nï¿½o foi possivï¿½l avaï¿½ar para a pï¿½gina inserida";
+	public String visualizaÃ§ar = "O modo visualizaï¿½ï¿½o nï¿½o estï¿½ ativado";
+	public String compartilharE = "Nï¿½o foi possivï¿½l compartilhar o relatï¿½rio desde o editor";
+	public String descompartilharE = "Nï¿½o foi possivï¿½l descompartilhar o relatï¿½rio desde o editor";
+	public String compartilharB = "Nï¿½o foi possivï¿½l compartilhar o relatï¿½rio desde a biblioteca";
+	public String descompartilharB = "Nï¿½o foi possivï¿½l compartilhar o relatï¿½rio desde a biblioteca";
+	public String renomear = "A coluna nï¿½o foi renomeada com sucesso";
+	public String reordenar = "A coluna nï¿½o foi reordenada com sucesso";
 
 	// MDR
-	public String Editar = "O valor do campo não foi editado";
-	public String EmpresaVisualizar = "Não foi possivél visalizar o registro";
-	public String Filtros = "Os resultados não são acorde aos filtros";
-	public String Criar = "O registro não foi criado com sucesso";
-	public String Eliminado = "O registro não foi eliminado com sucesso";
-	public String Detalhes = "As informações não são as esperadas";
+	public String Editar = "O valor do campo nï¿½o foi editado";
+	public String EmpresaVisualizar = "Nï¿½o foi possivï¿½l visalizar o registro";
+	public String Filtros = "Os resultados nï¿½o sï¿½o acorde aos filtros";
+	public String Criar = "O registro nï¿½o foi criado com sucesso";
+	public String Eliminado = "O registro nï¿½o foi eliminado com sucesso";
+	public String Detalhes = "As informaï¿½ï¿½es nï¿½o sï¿½o as esperadas";
 	
-	public String Atualizar = "Não foi possivel atualizar os registros";
-	public String Favoritos = "Não foi possivel mandar o registro para favoritos";
+	public String Atualizar = "Nï¿½o foi possivel atualizar os registros";
+	public String Favoritos = "Nï¿½o foi possivel mandar o registro para favoritos";
 	public String Ingresar = "Error ao tentar ingresar";
 	
 	
 	//BCB
-	public String subniveis = "Os Subniveis não foram adicinados com sucesso";
+	public String subniveis = "Os Subniveis nï¿½o foram adicinados com sucesso";
 	public String Acessar = "Erro ao tentar acessar ao componente";	
 	
 	
 	
-	public String Restaurar = "O registro não foi restaurado com sucesso";
+	public String Restaurar = "O registro nï¿½o foi restaurado com sucesso";
 	
 }
 

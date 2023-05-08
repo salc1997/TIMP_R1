@@ -6,6 +6,7 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.sql.Time;
 import java.text.DecimalFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.LocalDate;
@@ -49,10 +50,16 @@ public class TestBaseSteven  {
 	protected String tp1 = "http://as1-100-01-tp1:8000/timp/login/#/login";
 	
 	protected String td2 = "http://as1-100-01-td2:8000/timp/login/#/login";
-
+	
+	protected String cloud = "https://timp.authentication.eu10.hana.ondemand.com/login";
+	
 	public static WebDriver driver;
 	public String usuarioL = "TESTEAUTOMATIZADO";
 	public String senhaL = "Alltax2023";
+	
+	public String usuarioLL = "kenssy.medina@agilesolutions.com";
+	public String senhaLL = "Gorgojita12";
+	
 	public int menuT = 12000;
 
 	public WebDriver initialization() {
@@ -60,14 +67,14 @@ public class TestBaseSteven  {
 		WebDriver driver;
 		
 		
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverst.exe");
 
 		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
 	
 		ChromeOptions options = new ChromeOptions();
 		//options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
 		//driver = new ChromeDriver(options);
-       // options.addArguments("--headless");
+        //  // options.addArguments("--headless");
         // para que las pestañas no se habiliten
         //options.addArguments("start-maximized"); // open Browser in maximized mode
         //options.addArguments("disable-infobars"); // disabling infobars
@@ -120,7 +127,18 @@ public class TestBaseSteven  {
 		
 		
 	}
-
+	//funcion para vaidar que la fecha de  detalle tenga el formato de DD/MM/YY
+	public boolean validarFecha(String fecha) {
+	        try {
+	            SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy");
+	            formatoFecha.setLenient(false);
+	            formatoFecha.parse(fecha);
+	        } catch (ParseException e) {
+	            return false;
+	        }
+	        return true;
+	 }
+	
 	public void refresh() {
 		driver.navigate().refresh();
 	}
@@ -655,15 +673,15 @@ public class TestBaseSteven  {
 	
 
 	// BRB
-	public String elementosDiferentes = "Os elementos não são iguais";
-	public String comentariosInativos = "Os comentários não foram ativados";
-	public String correcãoInativa = "A correção não foi ativada";
-	public String semAcesso = "Não foi possivel aceder ao aplicativo";
-	public String semCampoOutput = "O campo output não foi adicionado";
-	public String comentarioNãoValido = "Os comentários não foram os ingresados";
-	public String crescenteEDecrescente = "Os resultados não estão em uma ordem válida";
-	public String copiaNaoCriada = "A cópia não foi criada com sucesso";
-	public String editado = "O relatório não foi modificado com sucesso";
+	public String elementosDiferentes = "Os elementos nao sao iguais";
+	public String comentariosInativos = "Os comentários nao foram ativados";
+	public String correcãoInativa = "A correcao nao foi ativada";
+	public String semAcesso = "Nao foi possivel aceder ao aplicativo";
+	public String semCampoOutput = "O campo output nao foi adicionado";
+	public String comentarioNãoValido = "Os comentarios nao foram os ingresados";
+	public String crescenteEDecrescente = "Os resultados nao estão em uma ordem valida";
+	public String copiaNaoCriada = "A copia nao foi criada com sucesso";
+	public String editado = "O relatorio não foi modificado com sucesso";
 	public String eliminar = "O elemento não foi deletado";
 	public String deletarColuna = "A coluna não foi deletada";
 	public String exportação = "A exportação não foi realizada com sucesso";

@@ -198,7 +198,7 @@ public class CodigosAjustesExcluirMassaPO extends TestBaseSteven {
 		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(8000);
-		biblioteca.click();
+//		biblioteca.click();
 		
 		
 		//SEGUNDA CREACION
@@ -275,7 +275,7 @@ public class CodigosAjustesExcluirMassaPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		biblioteca.click();
+		//biblioteca.click();
 		
 		sleep(2000);
 		

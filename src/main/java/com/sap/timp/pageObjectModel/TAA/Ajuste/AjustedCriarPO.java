@@ -23,16 +23,16 @@ public class AjustedCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Novo Ajuste\"]")
 	public WebElement nueva;
 	
-	@FindBy(xpath = "//div[@id=\"labelTributo\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"labelTributo\"]//div[2]")
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//div[@id=\"codEmpresa\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"codEmpresa\"]//div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//div[@id=\"ufOrigem\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"ufOrigem\"]//div[2]")
 	public WebElement uf;
 	
-	@FindBy(xpath = "//div[@id=\"codFilial\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"codFilial\"]//div[2]")
 	public WebElement filial;
 	
 	@FindBy(xpath = "//li[text()=\"ICMS\"]")
@@ -133,7 +133,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 			
 		}else {
 			
-			WebElement icms = driver.findElement(By.xpath("//div[@class=\"adjustment-accordion accordion-adjustments\"]/ul/li[7]"));
+			WebElement icms = driver.findElement(By.xpath("//div[@class= \"adjustment-accordion accordion-adjustments\"]//span[text()=\"ICMS\"]"));
 			
 			icms.click();
 			sleep(3000);
@@ -143,7 +143,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 		}
 		
 		
-		waitExpectElement(primeira);
+		//waitExpectElement(primeira);
 		sleep(2000);
 		
 		primeira.click();

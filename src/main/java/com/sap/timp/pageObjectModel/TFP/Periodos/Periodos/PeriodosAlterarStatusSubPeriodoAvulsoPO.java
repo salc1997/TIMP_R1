@@ -78,7 +78,7 @@ public class PeriodosAlterarStatusSubPeriodoAvulsoPO extends TestBaseKenssy{
 			pesquisar.sendKeys(Keys.ENTER);
 			sleep(3000);
 		}
-		
+	
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -92,7 +92,7 @@ public class PeriodosAlterarStatusSubPeriodoAvulsoPO extends TestBaseKenssy{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+	
 		String idFiltroTFPSubperiodoFiscais = "";
 		if(tp1 == true) {
 			idFiltroTFPSubperiodoFiscais = "19534";
@@ -113,7 +113,7 @@ public class PeriodosAlterarStatusSubPeriodoAvulsoPO extends TestBaseKenssy{
 		WebElement menuFiltradoTpf2 = driver.findElement(By.xpath("//div[contains(@data-id,"+idFiltroTFPSubperiodoFiscais+")]/div[1]/div"));
 		sleep(2000);
 		WebElement preFechamento1 = driver.findElement(
-				By.xpath("//div[contains(@data-id,\"" + idFiltroTFPSubperiodoFiscais + "\")]/div[1]/div/div[2]/ul/li/span[text()=\"200 - Pré-Fechamento\"]"));
+				By.xpath("//div[contains(@data-id,\"" + idFiltroTFPSubperiodoFiscais + "\")]/div[8]//div[text()=\"200 - Pré-Fechamento\"]"));
 		
 		sleep(2000);
 		menuFiltradoTpf2.click();
@@ -122,16 +122,16 @@ public class PeriodosAlterarStatusSubPeriodoAvulsoPO extends TestBaseKenssy{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		actionsMoveToElementElement(status);
+	
 		
 		String status2 = driver.findElement(By.xpath("//div[contains(@data-id,"+idFiltroTFPSubperiodoFiscais+")]/div[8]/div")).getText();
 		System.out.println("Status 2: "+status2);
 		sleep(2000);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-			sucesso.add(status2.contains("200 - Pré-Fechamento"));
 		
+		sucesso.add(status2.contains("200 - Pré-Fechamento"));
+	
 		
 		menuFiltradoTpf2 = driver.findElement(By.xpath("//div[contains(@data-id,"+idFiltroTFPSubperiodoFiscais+")]/div[1]/div"));
 		sleep(2000);
@@ -145,15 +145,15 @@ public class PeriodosAlterarStatusSubPeriodoAvulsoPO extends TestBaseKenssy{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+	/*
 		actionsMoveToElementElement(status);
 		
 		String status3 = driver.findElement(By.xpath("//div[contains(@data-id,"+idFiltroTFPSubperiodoFiscais+")]/div[8]/div")).getText();
 		System.out.println("Status 3: "+status2);
 		sleep(2000);
-		
+			
 			sucesso.add(status3.contains("100 - Aberto"));
-		
+		*/
 		System.out.println("");
 		System.out.println(sucesso);
 		

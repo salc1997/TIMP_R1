@@ -6,7 +6,7 @@ import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BPMA.AcessarBPMAPO;
 import com.sap.timp.pageObjectModel.BPMA.Processo.ParametrosGerais.ParametrosGeraisCriarProcesoRecorrentePO;
-import com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.ProcessodeNegócioCriarCopiaPO;
+import com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.ProcessodeNegocioCriarCopiaPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -50,7 +50,7 @@ public class ParametrosGeraisCriarProcesoRecorrente extends TestBaseKenssy {
  		
  	}
  	
- 	@Test(priority = 1)
+ 	@Test(priority = 2)
  	public void criar() {
  		
  		ArrayList<Boolean> sucesso = parametrosGeraisCriarProcesoRecorrentePO.criar();

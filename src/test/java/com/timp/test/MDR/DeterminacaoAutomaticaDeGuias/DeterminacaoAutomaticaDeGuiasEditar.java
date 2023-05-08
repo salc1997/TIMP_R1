@@ -31,11 +31,11 @@ public class DeterminacaoAutomaticaDeGuiasEditar extends TestBaseKenssy{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test()
-	public void criar() {
+	public void editar() {
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

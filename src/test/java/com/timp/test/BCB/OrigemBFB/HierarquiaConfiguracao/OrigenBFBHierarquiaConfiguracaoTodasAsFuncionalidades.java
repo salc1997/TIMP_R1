@@ -175,7 +175,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 		}
 	}
 	
-@Test(priority = 15)
+	@Test(priority = 15)
 	public void excluirConfiguracoes() {
 		
 		ArrayList<Boolean> sucesso = origenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO.excluirConfiguracoes();

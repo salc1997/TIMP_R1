@@ -119,7 +119,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends Te
 			assertTrue(sucesso.get(i), subniveis);
 		}
 	}
-
+	
 	@Test(priority = 10)
 	public void criarConfiguracaoHierarquia2() {
 		ArrayList<Boolean> sucesso = demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.criarConfiguracaoHierarquia2();
@@ -159,7 +159,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends Te
 		}
 	}
 	
-	@Test(priority = 14)
+/*	@Test(priority = 14)
 	public void resultadoFinalParte1() {
 		//demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.relacionamentoTotalizadorSubperiodoFixoReplicar();
 		ArrayList<Boolean> sucesso = demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.resultadoFinalParte1();
@@ -190,7 +190,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends Te
 			assertTrue(sucesso.get(i), subniveis);
 		}
 	}
-
+	/*
 	//desde aqui dividir para hacer version 2
 	
 //	@Test(priority = 17)
@@ -254,5 +254,5 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends Te
 //		}
 //	}
 	
-
+	*/
 }

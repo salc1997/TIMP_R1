@@ -61,12 +61,12 @@ public class Registro1200EditarPO extends TestBaseSteven {
 		boolean tc2 = false;
 		boolean tp1 = false;
 		boolean tq1 = false;
-		if (url.contains("tp1")) {
-			tp1 = true;
+		if (url.contains("tc2")) {
+			tc2 = true;
 		}if (url.contains("tq1")) {
 			tq1 = true;
 		} if (url.contains("tp1")) {
-			tc2 = true;
+			tp1 = true;
 		}
 		
 		

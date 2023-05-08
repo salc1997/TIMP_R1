@@ -162,7 +162,7 @@ public class CriarCopiaPO extends TestBaseSteven{
 		sucesso.add(valorICMS.isDisplayed());
 		
 			
-		sleep(6000);
+		sleep(2000);
 		
 		
 		return sucesso;		

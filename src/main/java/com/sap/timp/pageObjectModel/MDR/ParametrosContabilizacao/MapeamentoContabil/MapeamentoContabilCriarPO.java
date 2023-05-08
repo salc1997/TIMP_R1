@@ -20,7 +20,7 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Mapeamento Contábil\"]")
 	public WebElement contabil;
 	
-	@FindBy(xpath = "//div[contains(@class,\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-left\")][1]")
+	@FindBy(xpath = "//div[contains(@class,\"icon-left\")][1]")
 	public WebElement primero;
 	
 
@@ -110,7 +110,7 @@ public class MapeamentoContabilCriarPO extends TestBaseSteven{
 		contabil.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(2000);
 		
 		primero.click();
 		

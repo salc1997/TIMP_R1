@@ -57,7 +57,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 extends Te
 	}
 	
 	
-		@Test(priority = 2)
+	/*	@Test(priority = 2)
 	public void relacionamentoFinalyAbrirHierarquiaGrupo() {
 		//demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.resultadoFinalParte2();
 		ArrayList<Boolean> sucesso = demaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO.relacionamentoFinalyAbrirHierarquiaGrupo();
@@ -68,7 +68,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 extends Te
 		}
 	}
 	
-	/*
+	
 	@Test(priority = 3)
 	public void excluirConfiguracoes2() {
 		

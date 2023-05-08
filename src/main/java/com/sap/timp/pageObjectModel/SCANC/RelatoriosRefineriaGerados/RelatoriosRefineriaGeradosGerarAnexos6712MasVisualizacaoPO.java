@@ -42,7 +42,6 @@ public class RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO extends 
 	}
 	
 	public ArrayList<Boolean> gerarAnexosMasVisualizacao() {
-		//TSTNG-982
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);

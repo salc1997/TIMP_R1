@@ -44,7 +44,7 @@ public class OficiosExtemporaneosCriarPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@id=\"filial\"]/div/div[2]")
 	public WebElement cboFilialOrigem;
 	
-	@FindBy(xpath = "//li[@tabindex=\"0\" and contains(@class, \"list-item\") and text()=\"0001 - RJ\"]")
+	@FindBy(xpath = "//li[@tabindex=\"0\" and contains(@class, \"list-item\") and text()=\"0001 - SP\"]")
 	public WebElement opcionFilialOrigem;
 	
 	@FindBy(xpath = "//div[@id=\"uf-origin\"]/div/div[2]")

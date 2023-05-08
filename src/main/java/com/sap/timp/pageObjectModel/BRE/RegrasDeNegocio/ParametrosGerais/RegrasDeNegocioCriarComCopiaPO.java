@@ -75,9 +75,11 @@ public class RegrasDeNegocioCriarComCopiaPO extends TestBaseSteven {
 		aplicar.click();
 		
 		sleep(2000);
-	
+	//	waitExpectXpath("//div[@class=\"overlay loader transp\"]");
+		invisibilityOfElement("//div[@class=\"overlay loader transp\"]");
+		sleep(48000);	
 		
-	/*	biblioteca.click();*/
+		biblioteca.click();
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

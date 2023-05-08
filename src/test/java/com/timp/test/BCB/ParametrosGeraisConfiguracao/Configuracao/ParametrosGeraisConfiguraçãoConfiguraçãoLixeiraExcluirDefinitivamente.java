@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
-import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguracaoConfiguracaoLixeiraExcluirDefinitivamentePO;
-import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguracaoConfiguracaoRaizPO;
+import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamentePO;
+import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoRaizPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -19,7 +19,7 @@ import org.testng.annotations.AfterClass;
 public class ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
-	ParametrosGeraisConfiguracaoConfiguracaoLixeiraExcluirDefinitivamentePO parametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamentePO;
+	ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamentePO parametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamentePO;
 
 
 	@BeforeClass
@@ -27,7 +27,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamen
 		driver = initializationKen();
 		loginTC = new LoginTC();
 		acessarBCBPO = new AcessarBCBPO();
-		parametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamentePO = new ParametrosGeraisConfiguracaoConfiguracaoLixeiraExcluirDefinitivamentePO();
+		parametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamentePO = new ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamentePO();
 
 
 	}

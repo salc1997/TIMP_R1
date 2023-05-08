@@ -32,7 +32,7 @@ public class MapeamentoDeParametrosDeEntradaCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[@id=\"05\"]")
 	public WebElement opcaoTributo;
 	
-	@FindBy(xpath = "//li[@id=\"1\"]")
+	@FindBy(xpath = "//li[@id][text()=\"1 - NFs Entrada\"]")
 	public WebElement opcaoestrutura;
 	
 	@FindBy(xpath = "//li[@id][text()=\"Alíquota ICMS\"]")

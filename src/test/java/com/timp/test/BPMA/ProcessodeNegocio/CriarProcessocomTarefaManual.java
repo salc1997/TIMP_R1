@@ -6,7 +6,7 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BPMA.AcessarBPMAPO;
 import com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.CriarProcessocomTarefaManualPO;
-import com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.ProcessodeNegocioCriarProcessocomTarefadeUsuarioPO;
+import com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.ProcessodeNegócioCriarProcessocomTarefadeUsuárioPO;
 
 import org.testng.annotations.BeforeClass;
 

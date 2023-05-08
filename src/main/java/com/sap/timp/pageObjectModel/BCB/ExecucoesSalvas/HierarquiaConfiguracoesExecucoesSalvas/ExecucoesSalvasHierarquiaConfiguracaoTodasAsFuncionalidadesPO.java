@@ -307,16 +307,6 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 	@FindBy(xpath = "//button[text()=\"Gravar\"]")
 	public WebElement gravarD;
 	
-	@FindBy(xpath = "//button[text()=\"Prosseguir\"]")
-	public WebElement proseguir;
-	
-	@FindBy(xpath = "//div[@id=\"justification\"]/div/textarea")
-	public WebElement justi;
-	
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
-	public WebElement aplicarJustificativa;
-	
-	
 	
 	//EXCLUIR
 	
@@ -362,7 +352,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 				.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]"))
 				.size();
 		String id = driver.findElement(By.xpath(
-				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[5]/div"))
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[4]/div"))
 				.getText();
 		
 		idInserir4(id);
@@ -402,7 +392,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
-		nomeDeHierarquia.sendKeys("Execuções Salvas TF TA");
+		nomeDeHierarquia.sendKeys("Prueba Automatizada de Hierarquia QA PREUBA 2");
 		sleep(1000);
 
 		nomeDaAba.sendKeys("Teste Automatizado");
@@ -497,7 +487,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 				.getText();
 		System.out.println(nome);
 
-		sucesso.add(nome.contains("Execuções Salvas TF TA"));
+		sucesso.add(nome.contains("Prueba Automatizada de Hierarq"));
 
 		idInserir3(iH2);
 		System.out.println("Id ultimo de Hierarquia a excluir: " + iH2);
@@ -555,7 +545,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
 
-		nomeHirarquia.sendKeys("Execuções Salvas TF TA");
+		nomeHirarquia.sendKeys("Prueba Automatizada de Hierarq");
 		sleep(1000);
 		nomeHirarquia.sendKeys(Keys.ENTER);
 		sleep(1000);
@@ -680,9 +670,10 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		menu.click();
 		sleep(1000);
 		editar.click();
-		sleep(5000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(calculator);
+		sleep(2000);
 		
 		calculator.click();
 		sleep(1000);
@@ -732,7 +723,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		entradaManualNome.sendKeys("Teste Entrada Manual");
 		sleep(1000);
 		
-		entradaManualValor.sendKeys("100000");
+		entradaManualValor.sendKeys("1000");
 		sleep(1000);
 		
 		
@@ -761,8 +752,6 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		nao.click();
-		sleep(2000);
 	}
 	
 	public boolean executar() {
@@ -780,7 +769,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		executar.click();
 		sleep(3000);
 		waitExpectElement(executarM);
-		sleep(10000);
+		sleep(2000);
 		executarM.click();
 		
 		sleep(1000);
@@ -829,14 +818,10 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
-		proseguir.click();
-		sleep(2000);
-		
-		justi.sendKeys("Ciclo TA ");
-		sleep(1000);
-		
-		aplicarJustificativa.click();
+		nao.click();
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		salvarExecucoes.click();
 		sleep(3000);
@@ -881,7 +866,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 				.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]"))
 				.size();
 		String idE = driver.findElement(By.xpath(
-				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rowsE + "]/div[5]/div"))
+				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rowsE + "]/div[4]/div"))
 				.getText();
 		System.out.println("Ultimo ID de Execucoes Configuracao: "+idE);
 		

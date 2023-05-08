@@ -28,7 +28,6 @@ public class RRGConfiguracaoDeAjustePresquisaPorIDOuCodigoDeAjustePO extends Tes
 	}
 	
 	public ArrayList<Boolean> pesquisar() {
-		//TSTNG-428
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);

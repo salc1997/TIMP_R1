@@ -29,26 +29,15 @@ public class TiposDeLogradouroEditar extends TestBaseSteven {
 		tiposDeLogradouroEditarPO = new TiposDeLogradouroEditarPO();
 	}
 
-<<<<<<< HEAD
-
-=======
->>>>>>> refs/remotes/origin/master
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
 
-<<<<<<< HEAD
-  @Test()
-  public void editar() {
-	  loginTC.login();
-	  acessarMDRPO.acessarMDR();
-=======
 	@Test()
 	public void editar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
->>>>>>> refs/remotes/origin/master
 
 		boolean sucesso = tiposDeLogradouroEditarPO.editar();
 		assertTrue(sucesso, Editar);

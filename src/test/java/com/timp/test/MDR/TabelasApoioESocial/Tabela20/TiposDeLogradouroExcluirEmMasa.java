@@ -44,25 +44,14 @@ public class TiposDeLogradouroExcluirEmMasa extends TestBaseSteven {
 
 		boolean sucesso = tiposDeLogradouroExcluirEmMasaPO.criar();
 		assertTrue(sucesso, Criar);
-<<<<<<< HEAD
-=======
 
->>>>>>> refs/remotes/origin/master
 		sleep(1000);
 
 	}
-<<<<<<< HEAD
-	
-	
-=======
 
->>>>>>> refs/remotes/origin/master
 	@Test(dependsOnMethods = "criar")
 	public void excluirEmMassa() {
-<<<<<<< HEAD
-=======
 
->>>>>>> refs/remotes/origin/master
 		boolean sucesso2 = tiposDeLogradouroExcluirEmMasaPO.excluirMassa();
 		assertTrue(sucesso2, Eliminado);
 

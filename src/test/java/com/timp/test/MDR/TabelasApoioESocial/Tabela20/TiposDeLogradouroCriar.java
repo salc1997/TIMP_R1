@@ -35,12 +35,8 @@ public class TiposDeLogradouroCriar extends TestBaseSteven {
 	}
 
 	@Test()
-
-<<<<<<< HEAD
 	  public void criar() {
-=======
-	public void criar() {
->>>>>>> refs/remotes/origin/master
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

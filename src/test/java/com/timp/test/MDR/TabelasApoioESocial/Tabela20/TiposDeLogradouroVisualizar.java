@@ -31,18 +31,11 @@ public class TiposDeLogradouroVisualizar extends TestBaseSteven {
 		tiposDeLogradouroVisualizarPO = new TiposDeLogradouroVisualizarPO();
 	}
 
-<<<<<<< HEAD
   @AfterClass
   public void afterClass() {
 	  driver.close();
   }
 
-=======
-	@AfterClass
-	public void afterClass() {
-		driver.close();
-	}
->>>>>>> refs/remotes/origin/master
 
 	@Test()
 	public void visualizar() {

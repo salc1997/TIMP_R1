@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeClass;
 import com.sap.timp.base.TestBaseKenssy;
 
 public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends TestBaseKenssy  {
+	//TSTNG-855
 	//NUEVA CONFIGURACION HIERARQUIA
 		@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][1]")
 		public WebElement hierarquias;

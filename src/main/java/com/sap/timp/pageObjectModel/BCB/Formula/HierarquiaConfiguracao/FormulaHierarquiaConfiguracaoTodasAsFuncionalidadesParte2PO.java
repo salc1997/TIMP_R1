@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseKenssy;
 
 public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends TestBaseKenssy{
+	//TSTNG-855	//TSTNG-855
 
 	//HIERARQUIAS
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][1]")

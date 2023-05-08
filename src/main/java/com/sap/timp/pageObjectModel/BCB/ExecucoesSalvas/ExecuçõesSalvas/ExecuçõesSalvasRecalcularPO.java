@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.BCB.ExecucoesSalvas.HierarquiaConfiguracoesExecucoesSalvas;
+package com.sap.timp.pageObjectModel.BCB.ExecucoesSalvas.ExecuçõesSalvas;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseSteven;
 
 public class ExecuçõesSalvasRecalcularPO extends TestBaseSteven {
+	//TSTNG-4225
 	
 	@FindBy(xpath = "//span[text()=\"Execuções\"]")
 	public WebElement execucoes;

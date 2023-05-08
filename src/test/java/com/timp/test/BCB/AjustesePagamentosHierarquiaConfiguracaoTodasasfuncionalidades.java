@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidades extends TestBaseSteven {
+	//TSTNG-2265
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
 	AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ajustesePagamentosHierarquiaConfiguraçãoTodasasfuncionalidadesPO;

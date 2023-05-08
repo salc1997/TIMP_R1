@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.BCB.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP;
+package com.sap.timp.pageObjectModel.BCB.ExecucoesSalvas.ExecuçõesSalvas;
 
 import java.util.ArrayList;
 
@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseMassiel;
 
 public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
-	
+	//TTSNG-4228
 	//CRIAR CONFIGURACION
 		@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][3]")
 		public WebElement execucoes;
@@ -193,7 +193,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 		@FindBy(xpath = "//div[@class=\"dialog-create-output\"]/div[2]/div[2]/div/div[1]/div[2]")
 		public WebElement aba;
 		
-		@FindBy(xpath = "//li[text()=\"1\"]")
+		@FindBy(xpath = "//li[@ID=\"option-1\"]")
 		public WebElement  abaOPC;
 
 		@FindBy(xpath = "//div[@class=\"dialog-create-output\"]/div[3]/div[2]/div/div[1]/div[2]")
@@ -359,7 +359,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 					.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]"))
 					.size();
 			String id = driver.findElement(By.xpath(
-					"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[4]/div"))
+					"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[5]/div"))
 					.getText();
 			
 			idInserir("IdExecucoes",id);
@@ -397,7 +397,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(1000);
 			
-			nomeDeHierarquia.sendKeys("Prueba Automatizada Massiel");
+			nomeDeHierarquia.sendKeys("Fator de Creditamento TA");
 			sleep(1000);
 
 			nomeDaAba.sendKeys("1");
@@ -503,7 +503,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 					.getText();
 			System.out.println(nome);
 
-			sucesso.add(nome.contains("Prueba Automatizada Massiel"));
+			sucesso.add(nome.contains("Fator de Creditamento TA"));
 
 			
 			idInserir("IdExecucoes2",iH2);
@@ -566,7 +566,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			sleep(8000);
 
 
-			nomeHirarquia.sendKeys("Prueba Automatizada Massiel");
+			nomeHirarquia.sendKeys("Fator de Creditamento TA");
 			sleep(1000);
 			nomeHirarquia.sendKeys(Keys.ENTER);
 			sleep(1000);
@@ -713,7 +713,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			waitExpectElement(calculator);
-			sleep(2000);
+			sleep(4000);
 			
 			calculator.click();
 			sleep(1000);
@@ -1021,7 +1021,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			executar.click();
 			sleep(3000);
 			waitExpectElement(executarM);
-			sleep(2000);
+			sleep(5000);
 			executarM.click();
 			
 			sleep(1000);

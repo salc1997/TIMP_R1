@@ -107,7 +107,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		public WebElement filial;
 		@FindBy(xpath = "//div[contains(@id,\"1000_SP_0001\")]/div/label/span")
 		public WebElement filialO;
-		@FindBy(xpath = "//div[contains(@id,\"1000_AL_0805\")]/div/label/span")
+		@FindBy(xpath = "//div[contains(@id,\"1000_AL_0008\")]/div/label/span")
 		public WebElement filialTc2;
 	
 		@FindBy(xpath = "//div[@id=\"calculation-type\"]/div/div/div[2]")
@@ -409,7 +409,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
-		nomeDeHierarquia.sendKeys("Prueba Automatizada Massiel");
+		nomeDeHierarquia.sendKeys("Prueba Automatizada Massiel Va");
 		sleep(1000);
 
 		nomeDaAba.sendKeys("Aba 1");
@@ -558,12 +558,12 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		//idInserir2(id); //antes de crear herarquia configuracao
 		
 		nova.click();
-		sleep(3000);
+		sleep(5000);
 
 		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
 
-		nomeHirarquia.sendKeys("Prueba Automatizada Massiel");
+		nomeHirarquia.sendKeys("Prueba Automatizada Massiel Va");
 		sleep(1000);
 		nomeHirarquia.sendKeys(Keys.ENTER);
 		sleep(1000);
@@ -626,7 +626,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(8000);
-		
+	
 		biblioteca.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -778,7 +778,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(8000);
 		
 		//attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
-		sleep(3000);
+		sleep(6000);
 		
 		selectBFB.click();
 		sleep(1000);
@@ -1333,11 +1333,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			tp1 = true;
 		}
 		
-		sleep(1000);
+		sleep(8000);
 		executar.click();
 		sleep(3000);
 		waitExpectElement(executarN);
-		sleep(2000);
+		sleep(9000);
 		executarN.click();
 		
 		sleep(1000);
@@ -1452,10 +1452,10 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		if (tc2==true) {
 			sucesso.add(valorCampoSaidaSubNivel2.equals("5.000,00"));
-			sucesso.add(valorCampoPeriodoTiempoSubNivel2.contains("1/2014-1Y"));
+			sucesso.add(valorCampoPeriodoTiempoSubNivel2.contains("01/2014 - 1Y"));
 		}else {
 			sucesso.add(valorCampoSaidaSubNivel2.equals("5.000,00"));
-			sucesso.add(valorCampoPeriodoTiempoSubNivel2.contains("12/2015 - 1M"));
+			sucesso.add(valorCampoPeriodoTiempoSubNivel2.equals(" (Subperíodo 01/2014 - 1Y)"));
 		}
 		
 		System.out.println(sucesso);

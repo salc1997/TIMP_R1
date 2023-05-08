@@ -239,7 +239,7 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBaseSteven {
 		}
 		
 		attributeToBeXpath("//div[@id=\"objectTypeFiscalOccurrenceRegister\"]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
-		sleep(9000);
+		sleep(32000);
 		
 		 idTipoObjeto.click();
 		 sleep(3000);
@@ -267,7 +267,7 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBaseSteven {
 		associaçãoCódigoAjusteCrédito.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		idS.click();
 		sleep(2000);

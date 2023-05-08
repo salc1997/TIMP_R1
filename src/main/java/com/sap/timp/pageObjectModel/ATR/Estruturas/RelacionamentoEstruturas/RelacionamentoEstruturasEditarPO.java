@@ -133,10 +133,12 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		WebElement acao = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/div/div/ul/li/span[text()=\"Editar\"]"));
 		acao.click();
 		
-		sleep(100000);
-		sleep(34000);
-		adicionar.click();
 		sleep(2000);
+		invisibilityOfElementOverlay();
+		sleep(2000);
+		
+		adicionar.click();
+		
 		
 		campoEstruturaE.click();
 		sleep(1000);
@@ -177,10 +179,11 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		acao.click();
 		
 		sleep(2000);
-	//	waitExpectElement(grupo1);
-	//	invisibilityOfElementOverlay();
-		sleep(100000);
-		sleep(80000);
+		invisibilityOfElementOverlay();
+		sleep(2000);
+		
+		waitExpectElement(grupo1);
+		
 		System.out.println("---------------------------Verificação das Informações-------------------------------------------");
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();

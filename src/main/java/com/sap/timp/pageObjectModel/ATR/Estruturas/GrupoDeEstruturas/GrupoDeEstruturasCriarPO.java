@@ -37,8 +37,6 @@ public class GrupoDeEstruturasCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher Comentários\"]")
 	public WebElement comentario;
 	
-	
-
 	@FindBy(xpath = "//button[text()=\"Gravar\"]")
 	public WebElement gravar;
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
@@ -49,6 +47,9 @@ public class GrupoDeEstruturasCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
+	
+	@FindBy(xpath = "//div[@class=\"th sortable\"]//span[text()=\"ID\"]")
+	public WebElement ordenar;
 	
 	public GrupoDeEstruturasCriarPO() {
 		PageFactory.initElements(driver, this);
@@ -82,7 +83,7 @@ public class GrupoDeEstruturasCriarPO extends TestBaseSteven{
 		waitExpectElement(nomedogrupo);
 		sleep(2000);
 	
-		nomedogrupo.sendKeys("Teste ATR MASSIEL");
+		nomedogrupo.sendKeys("Teste ATR");
 		sleep(2000);
 		estruturadedados.click();
 		sleep(2000);
@@ -112,6 +113,9 @@ public class GrupoDeEstruturasCriarPO extends TestBaseSteven{
 		ultimapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		ordenar.click();
 		sleep(2000);
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();	

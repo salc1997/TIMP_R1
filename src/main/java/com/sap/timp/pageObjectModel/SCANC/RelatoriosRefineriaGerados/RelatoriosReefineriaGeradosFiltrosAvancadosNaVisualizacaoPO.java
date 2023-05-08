@@ -25,6 +25,7 @@ public class RelatoriosReefineriaGeradosFiltrosAvancadosNaVisualizacaoPO extends
 	}
 	
 	public ArrayList<Boolean> filtrosAvancadosNavisualizacao() {
+		//TSTNG-1911
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);

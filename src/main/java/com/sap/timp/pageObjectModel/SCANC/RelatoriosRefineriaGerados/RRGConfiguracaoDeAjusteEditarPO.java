@@ -37,6 +37,7 @@ public class RRGConfiguracaoDeAjusteEditarPO extends TestBaseFernando{
 	}
 	
 	public boolean editar() {
+		//TSTNG-355
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

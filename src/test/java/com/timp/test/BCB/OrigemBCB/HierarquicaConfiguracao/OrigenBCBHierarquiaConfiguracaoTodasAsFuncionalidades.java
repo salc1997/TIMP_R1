@@ -95,7 +95,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 			assertTrue(sucesso.get(i), subniveis);
 		}
 	}	
-	
+
 		@Test(priority = 7)	
 	public void subNivel3() {
 		ArrayList<Boolean> sucesso = origenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel3();
@@ -105,7 +105,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 			assertTrue(sucesso.get(i), subniveis);
 		}
 	}
-			
+		
 	@Test(priority = 8)	
 	public void subNivel4() {
 		ArrayList<Boolean> sucesso = origenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel4();

@@ -101,7 +101,7 @@ public class RegistroM110VisualizarPO extends TestBaseMassiel{
 		System.out.println(valorAjustevisualizar);
 		
 		biblioteca.click();
-		sleep(12000);
+		sleep(13000);
 		
 		int botaoNao = rows("//button[text()=\"Não\"]");
 		
@@ -109,7 +109,7 @@ public class RegistroM110VisualizarPO extends TestBaseMassiel{
 			no.click();
 		}
 
-			
+		sleep(13000);
 	
 		siguiente.click();
 		sleep(2000);

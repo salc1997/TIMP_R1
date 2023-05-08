@@ -19,10 +19,10 @@ public class MapeamentoDeParametrosDeEntradaExcluirEmMassaPO extends TestBaseSte
 	@FindBy(xpath = "//div[@class=\"input structureMap\"]/div/div[2]")
 	public WebElement estruturadedados;
 	
-	@FindBy(xpath = "//li[@id=\"1\"]")
+	@FindBy(xpath = "//li[@id][text()=\"1 - NFs Entrada\"]")
 	public WebElement opcaoestrutura;
 	
-	@FindBy(xpath = "//li[@id=\"10\"]")
+	@FindBy(xpath = "//li[@id][text()=\"10 - NFs Entrada + Saida\"]")
 	public WebElement opcaoestrutura1;
 	
 	@FindBy(xpath = "//li[@id][text()=\"Alíquota ICMS\"]")
@@ -137,12 +137,12 @@ public class MapeamentoDeParametrosDeEntradaExcluirEmMassaPO extends TestBaseSte
 		sleep(2000);
 		
 		closeSelectTypeCheckbox(tributo);
-/*		
+		
 		sleep(2000);
 		direcaomovimento.click();
 		sleep(2000);
 		opcaodirecaomovimento.click();
-		sleep(2000);*/
+		sleep(2000);
 		gravar.click();
 		sleep(2000);
 	

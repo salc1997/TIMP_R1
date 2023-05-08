@@ -213,7 +213,7 @@ public class RegistroM200CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC1.click();
+			OPC11.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -231,7 +231,7 @@ public class RegistroM200CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC1.click();
+			OPC11.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -249,7 +249,7 @@ public class RegistroM200CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC1.click();
+			OPC11.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -267,7 +267,7 @@ public class RegistroM200CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC1.click();
+			OPC11.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -285,7 +285,7 @@ public class RegistroM200CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC1.click();
+			OPC11.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -303,7 +303,7 @@ public class RegistroM200CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC1.click();
+			OPC11.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -321,7 +321,7 @@ public class RegistroM200CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC1.click();
+			OPC11.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -339,7 +339,7 @@ public class RegistroM200CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC1.click();
+			OPC11.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -357,7 +357,7 @@ public class RegistroM200CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC1.click();
+			OPC11.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -375,7 +375,7 @@ public class RegistroM200CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC1.click();
+			OPC11.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -393,7 +393,7 @@ public class RegistroM200CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC1.click();
+			OPC11.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -411,7 +411,7 @@ public class RegistroM200CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC1.click();
+			OPC11.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {

@@ -11,7 +11,6 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseKenssy;
 
 public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends TestBaseKenssy{
-	//TSTNG-855	//TSTNG-855
 
 	//HIERARQUIAS
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][1]")
@@ -215,7 +214,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 	//CORREGIR EN SU DEBIDO AMBIENTE
 	@FindBy(xpath = "//div[text()=\"ID326-(BCB com campo de Output) TA\"]")
 	public WebElement selectBCB2;
-	@FindBy(xpath = "//div[text()=\"ID2759-(BCB com campo de Output) TA\"]")
+	@FindBy(xpath = "//div[text()=\"ID393-(BCB com campo de Output) TA\"]")
 	public WebElement selectBCB3;
 	
 	
@@ -224,7 +223,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 	//REVISAR CUANDO PASE POR EL AMBIENTE RESPECTIVO
 	@FindBy(xpath = "//div[contains(text(),\"1424-Campo de saída 1\")]")
 	public WebElement selectBCB12;
-	@FindBy(xpath = "//div[contains(text(),\"Campo de Saída 1\")]")
+	@FindBy(xpath = "//div[contains(text(),\"2275-Campo de Saída 1\")]")
 	public WebElement selectBCB13;
 	
 	@FindBy(xpath = "//div[@id=\"formula-Box\"]/div/textarea")
@@ -362,10 +361,10 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 			dobleClickElement(selectBCB11);
 			sleep(1000);
 		}else if (tc2 ==true) {
-			buscarCamposSaidaBCB.sendKeys("2759");
+			buscarCamposSaidaBCB.sendKeys("393");
 			sleep(1000);
-			dobleClickElement(selectBCB3);
-			sleep(6000);
+			selectBCB3.click();
+			sleep(1000);
 			dobleClickElement(selectBCB13);
 			sleep(1000);
 		}else if (tq2 == true) {
@@ -464,6 +463,12 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(executar);
 		sleep(2000);
+		sleep(2000);
+//		aplicarJustificativa.click();
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
+		
 		
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
 		
@@ -545,7 +550,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		executar.click();
 		sleep(2000);
 		waitExpectElement(executarN);
-		sleep(5000);
+		sleep(2000);
 		executarN.click();
 		
 		sleep(2000);

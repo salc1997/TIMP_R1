@@ -14,9 +14,9 @@
 		</classes>
 	</test>
 	
-<!--	<test name="Registro 1501" >
+	<test name="Registro 1501" >
 		<classes>
-			
+			<!-- Registro 1501 -->
 				<class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1501.Registro1501Criar"></class>
 				<class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1501.Registro1501Editar"></class>
 				<class name="com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.Registro1501.Registro1501Visualizar"></class>
@@ -24,7 +24,7 @@
 
 		</classes>
 	
-	</test> -->
+	</test> 
 	
 	<test name="Registro 1502" >
 		<classes>

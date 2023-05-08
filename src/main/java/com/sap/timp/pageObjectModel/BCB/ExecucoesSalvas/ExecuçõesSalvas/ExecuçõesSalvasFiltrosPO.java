@@ -11,7 +11,6 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseMassiel;
 
 public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
-	//TSTNG-4245
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][3]")
 	public WebElement execucoes;
 	
@@ -34,19 +33,19 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@id=\"hierarchy-name-filter\"]/div/div[2]")
 	public WebElement nombreHierarquia;
 	
-	@FindBy(xpath = "//li[@id=\"(BCB com campo de Output) TA\"]")
+	@FindBy(xpath = "//li[@id=\"option-1\"]")
 	public WebElement opcNombreHierarquia;
 	
-	@FindBy(xpath = "//div[@id=\"company-filter\"]//div[2]")
+	@FindBy(xpath = "//div[@id=\"company-filter\"]/div/div[1]/div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//div[@id=\"uf-filter\"]//div[2]")
+	@FindBy(xpath = "//div[@id=\"uf-filter\"]/div/div[1]/div[2]")
 	public WebElement uf;
 	
-	@FindBy(xpath = "//div[@id=\"branch-filter\"]//div[2]")
+	@FindBy(xpath = "//div[@id=\"branch-filter\"]/div/div[1]/div[2]")
 	public WebElement filial;
 	
-	@FindBy(xpath = "//div[@id=\"tax-filter\"]//div[2]")
+	@FindBy(xpath = "//div[@id=\"tax-filter\"]/div/div[1]/div[2]")
 	public WebElement tributo;
 	
 	@FindBy(xpath = "//div[@id=\"subperiod-filter\"]/div/div[1]/span")
@@ -77,7 +76,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[5]/div"))
 				.getText();
 		
-		System.out.println(" ID de Execucoes: "+idRegistro);
+		System.out.println(" ID de Execucoes: "+id);
 		
 		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
@@ -110,8 +109,8 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 		opcNombreHierarquia.click();
 		sleep(3000);
 		
-	/*	closeSelectTypeCheckbox(nombreHierarquia);
-		sleep(3000);*/
+		closeSelectTypeCheckbox(nombreHierarquia);
+		sleep(3000);
 		
 		System.out.println("VIENE EN EL SELECT HIERARQUIA: "+ HierarquiaText);
 		sleep(2000);
@@ -134,9 +133,6 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 			f = f + 1;
 		}
 		System.out.println(sucesso);
-		sleep(2000);
-		limpiar.click();
-		sleep(5000);
 
 		return sucesso;
 	}
@@ -145,7 +141,10 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 		
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String Empresa = "1000";
+		String Empresa = driver
+				.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["
+						+ rows + "]/div[9]/div"))
+				.getText();
 		
 		
 		System.out.println("Empresa en Libreria: "+ Empresa);
@@ -155,7 +154,8 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 		empresa.click();
 		sleep(2000);
 		
-		
+		actionsMoveToElementXpath("//li[@id=\"option-196\"]");
+		sleep(2000);
 
 		WebElement Opc = driver.findElement(By.xpath("//li[contains(text(),\""+Empresa+"\")]"));
 
@@ -181,10 +181,6 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 
 			f = f + 1;
 		}
-		sleep(2000);
-		limpiar.click();
-		sleep(5000);
-		
 		System.out.println(sucesso);
 		return sucesso;
 		
@@ -235,10 +231,6 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 
 			f = f + 1;
 		}
-		sleep(2000);
-		limpiar.click();
-		sleep(5000);
-		
 		System.out.println(sucesso);
 		return sucesso;
 		
@@ -255,7 +247,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 			
 		
 		
-		System.out.println("Filial en Libreria: "+ Filial);
+		System.out.println("Filial en Libreria: "+ filial);
 		sleep(2000);
 		
 		sleep(2000);
@@ -264,7 +256,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 		
 	
 
-		WebElement Opc = driver.findElement(By.xpath("//li[@id=\"0001\"]"));
+		WebElement Opc = driver.findElement(By.xpath("//li[@id=\"option-2\"]"));
 
 		Opc.click();
 		sleep(4000);
@@ -289,9 +281,6 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 			f = f + 1;
 		}
 		System.out.println(sucesso);
-		sleep(2000);
-		limpiar.click();
-		sleep(5000);
 		return sucesso;
 		
 	}
@@ -303,7 +292,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String Tributo = driver
 				.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["
-						+ rows + "]/div[12]/div"))
+						+ rows + "]/div[11]/div"))
 				.getText();
 		
 		
@@ -334,17 +323,13 @@ public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
 
 			String textFiltroEmpresa = driver
 					.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["
-							+ rows1 + "]/div[12]/div"))
+							+ rows1 + "]/div[11]/div"))
 					.getText();
 			System.out.println(textFiltroEmpresa + " Tributo Filtro");
 			sucesso.add(Tributo.equals(textFiltroEmpresa));
 
 			f = f + 1;
 		}
-		sleep(2000);
-		limpiar.click();
-		sleep(5000);
-		
 		System.out.println(sucesso);
 		return sucesso;
 		

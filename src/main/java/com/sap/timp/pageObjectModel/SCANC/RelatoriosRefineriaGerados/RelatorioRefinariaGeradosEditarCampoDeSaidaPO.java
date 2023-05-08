@@ -28,7 +28,6 @@ public class RelatorioRefinariaGeradosEditarCampoDeSaidaPO extends TestBaseFerna
 	}
 	
 	public boolean editar() {
-		//TSTNG-1270
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);

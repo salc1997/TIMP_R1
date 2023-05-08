@@ -110,7 +110,7 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBaseFernando{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(8000);
+		sleep(2000);
 		
 		btnUltimaPagina.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -209,6 +209,8 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay dark\"]");
 		sleep(2000);
 		
+		
+		btnBiblioteca.click();
 
 //		sleep(5000);
 //		nao.click();

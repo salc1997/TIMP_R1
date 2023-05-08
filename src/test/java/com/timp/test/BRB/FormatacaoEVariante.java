@@ -32,7 +32,7 @@ public class FormatacaoEVariante extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+	//	driver.close();
 	}
 
 
@@ -63,7 +63,7 @@ public class FormatacaoEVariante extends TestBaseSteven {
 
 	}
 
-/*	@Test(dependsOnMethods = "formatacaoEVariante")
+	@Test(dependsOnMethods = "formatacaoEVariante")
 	public void excluirVariante() {
 
 		boolean sucesso = false;
@@ -72,6 +72,6 @@ public class FormatacaoEVariante extends TestBaseSteven {
 		System.out.println(sucesso + "Excluir Variante");
 		assertTrue(sucesso, excluirVariante);
 
-	}*/
+	}
 
 }

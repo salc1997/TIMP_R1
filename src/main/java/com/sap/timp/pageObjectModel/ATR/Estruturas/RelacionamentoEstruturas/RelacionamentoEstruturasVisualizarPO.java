@@ -131,17 +131,16 @@ public class RelacionamentoEstruturasVisualizarPO extends TestBaseSteven{
 		sleep(1000);
 		acao.click();
 		
-		sleep(1000);
-		invisibilityOfElementOverlay();
-		sleep(1000);
-		
+		sleep(100000);
+		sleep(100000);
+		sleep(100000);
 		waitExpectElement(grupo1);
-	
+//		invisibilityOfElementOverlay();
 		
 		String grupo1V = grupo1.getAttribute("value");
 		String estrutura1V = estrutura1.getAttribute("value");
 		String campoEstrutura11V = campoEstrutura11.getAttribute("value");
-	//	String campoEstrutura12V = campoEstrutura12.getAttribute("value");
+		String campoEstrutura12V = campoEstrutura12.getAttribute("value");
 	//	String campoEstrutura13V = campoEstrutura13.getAttribute("value");
 		String campoEstrutura21V = campoEstrutura21.getAttribute("value");
 		String campoEstrutura22V = campoEstrutura22.getAttribute("value");
@@ -153,7 +152,7 @@ public class RelacionamentoEstruturasVisualizarPO extends TestBaseSteven{
 		System.out.println(grupo1V);
 		System.out.println(estrutura1V);
 		System.out.println(campoEstrutura11V);
-	//	System.out.println(campoEstrutura12V);
+		System.out.println(campoEstrutura12V);
 		//System.out.println(campoEstrutura13V);
 		System.out.println(campoEstrutura21V);
 		System.out.println(campoEstrutura22V);
@@ -175,11 +174,10 @@ public class RelacionamentoEstruturasVisualizarPO extends TestBaseSteven{
 		sleep(1000);
 		acao.click();
 		
-		sleep(1000);
-		invisibilityOfElementOverlay();
-		sleep(1000);
+		sleep(180000);
 	
 		waitExpectElement(grupo1);
+	//	invisibilityOfElementOverlay();
 
 		
 		System.out.println("---------------------------Datos Editar-------------------------------------------");
@@ -213,7 +211,7 @@ public class RelacionamentoEstruturasVisualizarPO extends TestBaseSteven{
 		sucesso.add(grupo1V.equals(grupo1E));
 		sucesso.add(estrutura1V.equals(estrutura1E));
 		sucesso.add(campoEstrutura11V.equals(campoEstrutura11E));
-	//	sucesso.add(campoEstrutura12V.equals(campoEstrutura12E));
+		sucesso.add(campoEstrutura12V.equals(campoEstrutura12E));
 	//	sucesso.add(campoEstrutura13V.equals(campoEstrutura13E));
 		sucesso.add(campoEstrutura21V.equals(campoEstrutura21E));
 		sucesso.add(campoEstrutura22V.equals(campoEstrutura22E));

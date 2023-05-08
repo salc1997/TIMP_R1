@@ -4,15 +4,18 @@
 	<test name="Estructuras">	
 		<classes>
 			<!--  Parametros Gerais -->	
-			<class name="com.timp.test.BRE.Estruturas.ParametrosGerais.EstruturasTodasFunc"></class>
+			<class name="com.timp.test.BRE.Estruturas.ParametrosGerais.EstruturasCriarMaisEditarMaisVisualizar"></class>
+			<class name="com.timp.test.BRE.Estruturas.ParametrosGerais.EstruturasExcluir"></class>
+			<class name="com.timp.test.BRE.Estruturas.ParametrosGerais.EstruturasFiltrosAvançadosLimpaFiltros"></class>
 		</classes>
 	</test>
 	
 	<test name="Lixeira">	
 		<classes>
 			<!--  Parametros Gerais -->	
-			<class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraTodasFunc"></class>
-			
+			<class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraCriar"></class>
+			<class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraRestaurar"></class>
+			<class name="com.timp.test.BRE.Lixeira.ParametrosGerais.LixeiraExcluir"></class>
 		</classes>
 		
 

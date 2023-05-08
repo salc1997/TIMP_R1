@@ -16,7 +16,6 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class ExecuçõesSalvasFiltros extends TestBaseMassiel{
-	//TSTNG-4245
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
 	ExecuçõesSalvasFiltrosPO execuçõesSalvasFiltrosPO;
@@ -96,7 +95,7 @@ public class ExecuçõesSalvasFiltros extends TestBaseMassiel{
 	
 	
 	}
-
+	
 	@Test(priority = 6)
 	public void FiltroFilial() {
 			

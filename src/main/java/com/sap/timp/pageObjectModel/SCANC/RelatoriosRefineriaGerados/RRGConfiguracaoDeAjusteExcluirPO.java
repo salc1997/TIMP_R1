@@ -25,7 +25,6 @@ public class RRGConfiguracaoDeAjusteExcluirPO extends TestBaseFernando{
 	}
 	
 	public boolean excluir() {
-		//TSTNG-357
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

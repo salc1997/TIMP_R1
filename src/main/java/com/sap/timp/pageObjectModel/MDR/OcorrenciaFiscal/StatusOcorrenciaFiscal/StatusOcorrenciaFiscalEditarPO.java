@@ -100,7 +100,7 @@ public class StatusOcorrenciaFiscalEditarPO extends TestBaseSteven {
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(8000);
+		sleep(6000);
 		
 		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -137,6 +137,7 @@ public class StatusOcorrenciaFiscalEditarPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		
 		return sucesso;
 

@@ -8,8 +8,14 @@
 
 			<!-- ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS     -->
 			
-				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasTodasFunc"></class>
-		
+				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasCriar"></class>
+				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasCriarComCopia"></class>
+				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasEditar"></class>
+				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasVisualizar"></class>
+				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasFiltroPorID"></class>
+				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasExcluir"></class>
+				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentodeEstruturasExcluirMassa"></class>
+				
 		</classes>
 
 	</test> 
@@ -18,10 +24,14 @@
 
 		<classes>
 
-			<!-- ATR - ESTRUCTURAS - MAPAMENTO DE PARAMETROS DE ENTRADA -->
+			<!-- ATR - ESTRUCTURAS - MAPAMENTO DE ESTRUCTURAS     -->
 			
-				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaTodasFunc"></class>
-				
+				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaCriar"></class>
+				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaEditar"></class>
+				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaVisualizar"></class>
+				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentodeParâmetrosdeEntradaFiltroporIDLimpar"></class>
+				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaExcluir"></class>
+				<class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaExcluirEmMassa"></class>  
 				
 		</classes>
 

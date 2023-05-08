@@ -175,7 +175,7 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 		}
 		
 		
-		sleep(18000);
+		sleep(9000);
 		filial.click();
 		sleep(2000);
 		
@@ -203,7 +203,7 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC.click();
+			OPC11.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -230,7 +230,7 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC1.click();
+			OPC11.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -248,7 +248,7 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC1.click();
+			OPC11.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -266,7 +266,7 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC1.click();
+			OPC11.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -284,7 +284,7 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC1.click();
+			OPC11.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -302,7 +302,7 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC1.click();
+			OPC11.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -320,7 +320,7 @@ public class RegistroM105CriarPO  extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC1.click();
+			OPC11.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {

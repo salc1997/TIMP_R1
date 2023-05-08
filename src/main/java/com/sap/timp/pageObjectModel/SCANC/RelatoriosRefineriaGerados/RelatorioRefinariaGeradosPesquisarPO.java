@@ -22,7 +22,6 @@ public class RelatorioRefinariaGeradosPesquisarPO extends TestBaseFernando{
 	}
 	
 	public ArrayList<Boolean> pesquisar() {
-		//TSTNG-976
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);

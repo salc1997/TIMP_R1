@@ -51,11 +51,10 @@ public class OficiosExtemporaneosFiltrosAvancadosPO extends TestBaseFernando{
 			sucesso = true;
 		}
 		
-	//	String subperiodo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[4]/div")).getText();
+		String subperiodo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[4]/div")).getText();
 		
 		
-		String subperiodo = "03/03/2022";
-		
+	//	String subperiodoFormatString = "01/" + subperiodo;
 		System.out.println("Subperiodo: " + subperiodo);
 //		System.out.println("Subperiodo formateado: " + subperiodoFormatString);
 		

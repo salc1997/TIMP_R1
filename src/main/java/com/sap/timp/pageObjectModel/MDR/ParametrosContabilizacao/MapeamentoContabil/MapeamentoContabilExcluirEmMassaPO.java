@@ -74,7 +74,7 @@ public class MapeamentoContabilExcluirEmMassaPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[contains(@class,\"icon-left\")][1]")
 	public WebElement primero;
 	
-	@FindBy(xpath = "//div[contains(@class,\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-left\")][1]")
+	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-left\"]")
 	public WebElement primeira;
 	
 	public MapeamentoContabilExcluirEmMassaPO() {

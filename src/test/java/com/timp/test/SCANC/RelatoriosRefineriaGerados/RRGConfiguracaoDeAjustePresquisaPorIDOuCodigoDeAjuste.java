@@ -14,7 +14,6 @@ import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjustePresquisaPorIDOuCodigoDeAjustePO;
 
 public class RRGConfiguracaoDeAjustePresquisaPorIDOuCodigoDeAjuste extends TestBaseFernando {
-	//TSTNG-428
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RRGConfiguracaoDeAjustePresquisaPorIDOuCodigoDeAjustePO rRGConfiguracaoDeAjustePresquisaPorIDOuCodigoDeAjustePO;

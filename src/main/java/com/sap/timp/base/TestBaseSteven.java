@@ -44,7 +44,7 @@ public class TestBaseSteven {
 
 	public static WebDriver driver;
 	public String usuarioL = "TESTEAUTOMATIZADO";
-	public String senhaL = "Alltax20";
+	public String senhaL = "Alltax2023";
 	public int menuT = 12000;
 
 	public WebDriver initialization() {
@@ -52,7 +52,7 @@ public class TestBaseSteven {
 		WebDriver driver;
 		
 		
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedrivers.exe");
 
 		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
 	

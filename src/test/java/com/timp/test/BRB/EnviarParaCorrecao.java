@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
-import com.sap.timp.pageObjectModel.BRB.OutputAutomáticoPO;
-import com.sap.timp.pageObjectModel.BRB.OutputdeReferênciaPO;
+import com.sap.timp.pageObjectModel.BRB.AtribuicaodeRegraPO;
+import com.sap.timp.pageObjectModel.BRB.EnviarParaCorrecaoPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -14,24 +14,25 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class OutputdeReferência extends TestBaseCristhian {
+public class EnviarParaCorrecao extends TestBaseCristhian{
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
-	OutputdeReferênciaPO outputdeReferênciaPO;
+	EnviarParaCorrecaoPO enviarParaCorreçãoPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
-		outputdeReferênciaPO = new OutputdeReferênciaPO();
+		enviarParaCorreçãoPO = new EnviarParaCorrecaoPO();
 
 	}
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
+
 
 
 	@Test()
@@ -41,11 +42,10 @@ public class OutputdeReferência extends TestBaseCristhian {
 		
 		acessarBrbPO.acessar();
 		
-		
-		boolean sucesso = outputdeReferênciaPO.editar();
+
+		boolean sucesso = enviarParaCorreçãoPO.editar();
 		assertTrue(sucesso, Editar);
 
 	}
-
 
 }

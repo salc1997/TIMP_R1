@@ -6,7 +6,7 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.FiltrosAvanazadosPO;
-import com.sap.timp.pageObjectModel.BRB.PaginacionPO;
+import com.sap.timp.pageObjectModel.BRB.PaginacaoPO;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;

@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.sap.timp.base.TestBaseCristhian;
 
-public class OutputdeReferênciaPO extends TestBaseCristhian {
+public class OutputdeReferenciaPO extends TestBaseCristhian {
 	
 	@FindBy(xpath = "//*[@id=\"draggable-28\"]")				
 	public WebElement mover;
@@ -109,7 +109,7 @@ public class OutputdeReferênciaPO extends TestBaseCristhian {
 	@FindBy(xpath = "//span[text()=\"Remover Coluna\"]")
 	public WebElement removerRegla;
 	
-	public OutputdeReferênciaPO() {
+	public OutputdeReferenciaPO() {
 
 		PageFactory.initElements(driver, this);
 	}

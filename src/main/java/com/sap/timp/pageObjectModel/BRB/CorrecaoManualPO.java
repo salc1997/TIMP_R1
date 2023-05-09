@@ -7,13 +7,19 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseCristhian;
 
-public class AtribuiçãodeRegraPO extends TestBaseCristhian{
-
+public class CorrecaoManualPO extends TestBaseCristhian {
+	
 	@FindBy(xpath = "//*[@id=\"draggable-28\"]")				
 	public WebElement mover;
 	
+	@FindBy(xpath = "//*[@id=\"toolbar\"]/div/div/ul/li[12]/button")				
+	public WebElement ativarCorrecao;
+	
 	@FindBy(xpath = "//*[@id=\"editor-toolbar\"]/div/div/ul/li[1]/button")				
 	public WebElement gravar;
+	
+	@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[2]")				
+	public WebElement gravarExecura;
 	
 	@FindBy(xpath = "/html/body/div[5]/div[2]/div[3]/div[2]/button[2]")				
 	public WebElement aplicar;
@@ -69,10 +75,22 @@ public class AtribuiçãodeRegraPO extends TestBaseCristhian{
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
-	@FindBy(xpath = "//button[text()=\"Não\"]")
-	public WebElement e;
+	@FindBy(xpath = "//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label/span")
+	public WebElement flagExecutar;
 	
-	public AtribuiçãodeRegraPO() {
+	@FindBy(xpath = "//*[@id=\"right\"]/div[2]/div[1]/div/div/ul/li[15]/button/span")
+	public WebElement correcao;
+	
+	@FindBy(xpath = "//*[@id=\"bsc-correction-toolbar\"]/div/ul/li[3]/button/span[2]")
+	public WebElement novaInstrucao;
+	
+	@FindBy(xpath = "//*[@id=\"bsc-correction-toolbar\"]/div/ul/li[3]/button/span[2]")
+	public WebElement inputValor;
+	
+	@FindBy(xpath = "//*[@id=\"right\"]/div[2]/div[1]/div/div/ul/li[14]/button/span")
+	public WebElement enviarCorrecao;
+	
+	public CorrecaoManualPO() {
 
 		PageFactory.initElements(driver, this);
 	}
@@ -140,16 +158,16 @@ public class AtribuiçãodeRegraPO extends TestBaseCristhian{
 		sleep(7000);
 		
 		if (tc2==true) {
-			pesquisar.sendKeys("1690");
+			pesquisar.sendKeys("882");
 			flagSeleccionTC2.click();
 			sleep(2000);
 		}else if (tq1==true) {
-			pesquisar.sendKeys("2795");
+			pesquisar.sendKeys("1190");
 			flagSeleccionTQ1.click();
 			sleep(2000);
 			
 		}else {
-			pesquisar.sendKeys("1111");
+			pesquisar.sendKeys("653");
 			flagSeleccionTP1.click();
 			sleep(2000);
 			
@@ -163,7 +181,9 @@ public class AtribuiçãodeRegraPO extends TestBaseCristhian{
 		sleep(6000);
 		aRegra.click();
 		sleep(2000);
-				
+			
+		ativarCorrecao.click();
+		sleep(2000);
 		
 		sleep(2000);
 		gravar.click();
@@ -185,6 +205,17 @@ public class AtribuiçãodeRegraPO extends TestBaseCristhian{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
+		flagExecutar.click();
+		sleep(4000);
+
+		
+		enviarCorrecao.click();
+		sleep(2000);
+		
+		
+		
+		
+		
 		
 		btnEdicao.click();
 		sleep(2000);
@@ -220,8 +251,5 @@ public class AtribuiçãodeRegraPO extends TestBaseCristhian{
 		return sucesso;
 		
 		
-		
-		
-	}
-	
+		}
 }

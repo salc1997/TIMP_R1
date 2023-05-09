@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.sap.timp.base.TestBaseSteven;
 
-public class PaginacionPO extends TestBaseSteven{
+public class PaginacaoPO extends TestBaseSteven{
 	
 	//Página siguiente
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][1]")
@@ -47,7 +47,7 @@ public class PaginacionPO extends TestBaseSteven{
 	public WebElement output;
 	
 	
-	public PaginacionPO() {
+	public PaginacaoPO() {
 		//PageFactory.initElements(driver, this);
 		PageFactory.initElements(driver, this);
 	}

@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseCristhian;
 
-public class EnviarParaCorreçãoPO extends TestBaseCristhian {
+public class EnviarParaCorrecaoPO extends TestBaseCristhian {
 	
 	@FindBy(xpath = "//*[@id=\"draggable-28\"]")				
 	public WebElement mover;
@@ -96,7 +96,7 @@ public class EnviarParaCorreçãoPO extends TestBaseCristhian {
 	@FindBy(xpath = "//*[@id=\"right\"]/div[2]/div[1]/div/div/ul/li[14]/button/span")
 	public WebElement enviarCorrecao;
 	
-	public EnviarParaCorreçãoPO() {
+	public EnviarParaCorrecaoPO() {
 
 		PageFactory.initElements(driver, this);
 	}

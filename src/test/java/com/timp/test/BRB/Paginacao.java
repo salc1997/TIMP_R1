@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
-import com.sap.timp.pageObjectModel.BRB.PaginacionPO;
+import com.sap.timp.pageObjectModel.BRB.PaginacaoPO;
 
 import net.bytebuddy.implementation.bytecode.ByteCodeAppender.Size;
 
@@ -28,7 +28,7 @@ public class Paginacao extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
-	PaginacionPO paginacionOP;
+	PaginacaoPO paginacionOP;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -36,7 +36,7 @@ public class Paginacao extends TestBaseSteven {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
-		paginacionOP = new PaginacionPO();
+		paginacionOP = new PaginacaoPO();
 	}
 
 	@AfterClass

@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
+import com.sap.timp.pageObjectModel.BRB.AtribuicaodeRegraPO;
 import com.sap.timp.pageObjectModel.BRB.DuplicidadePO;
-import com.sap.timp.pageObjectModel.BRB.OutputAutomáticoPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -14,23 +14,23 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class OutputAutomático extends TestBaseCristhian {
+public class AtribuicaodeRegra extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
-	OutputAutomáticoPO outputAutomáticoPO;
+	AtribuicaodeRegraPO atribuiçãodeRegraPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationC();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
-		outputAutomáticoPO = new OutputAutomáticoPO();
+		atribuiçãodeRegraPO = new AtribuicaodeRegraPO();
 
 	}
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
@@ -41,8 +41,8 @@ public class OutputAutomático extends TestBaseCristhian {
 		
 		acessarBrbPO.acessar();
 		
-		
-		boolean sucesso = outputAutomáticoPO.editar();
+
+		boolean sucesso = atribuiçãodeRegraPO.editar();
 		assertTrue(sucesso, Editar);
 
 	}

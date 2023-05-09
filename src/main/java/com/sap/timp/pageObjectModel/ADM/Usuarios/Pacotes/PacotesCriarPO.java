@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.ADM.Usuários.Pacotes;
+package com.sap.timp.pageObjectModel.ADM.Usuarios.Pacotes;
 
 import java.util.ArrayList;
 

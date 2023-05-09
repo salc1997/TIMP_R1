@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.ADM.Configuração.Licenças.LicençasDetalhesPO;
+import com.sap.timp.pageObjectModel.ADM.Configuração.Licencas.LicencasDetalhesPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -18,13 +18,13 @@ import org.testng.annotations.AfterClass;
 public class LicençasDetalhes extends TestBaseMassiel{
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
-	LicençasDetalhesPO licençasDetalhesPO;
+	LicencasDetalhesPO licençasDetalhesPO;
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationM();
 	  loginTC = new LoginTC();
 	  acessarADMPO = new AcessarADMPO();
-	  licençasDetalhesPO = new LicençasDetalhesPO();
+	  licençasDetalhesPO = new LicencasDetalhesPO();
   }
 
   @AfterClass

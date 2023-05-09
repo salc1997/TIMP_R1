@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAgrupamento.ConfiguraçãoTributoAgrupamentoCriarPO;
-import com.sap.timp.pageObjectModel.ADM.Configuração.Licenças.LicençasDetalhesPO;
+import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaoTributoAgrupamento.ConfiguracaoTributoAgrupamentoCriarPO;
+import com.sap.timp.pageObjectModel.ADM.Configuração.Licencas.LicencasDetalhesPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -19,14 +19,14 @@ import org.testng.annotations.AfterClass;
 public class ConfiguraçãoTributoAgrupamentoCriar extends TestBaseCristhian{
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
-	ConfiguraçãoTributoAgrupamentoCriarPO configuraçãoTributoAgrupamentoCriarPO;
+	ConfiguracaoTributoAgrupamentoCriarPO configuraçãoTributoAgrupamentoCriarPO;
 	
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationC();
 	  loginTC = new LoginTC();
 	  acessarADMPO = new AcessarADMPO();
-	  configuraçãoTributoAgrupamentoCriarPO = new ConfiguraçãoTributoAgrupamentoCriarPO();
+	  configuraçãoTributoAgrupamentoCriarPO = new ConfiguracaoTributoAgrupamentoCriarPO();
   }
 
   @AfterClass

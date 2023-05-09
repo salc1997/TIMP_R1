@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.ADM.Usuários.Pacotes.PacotesCriarPO;
+import com.sap.timp.pageObjectModel.ADM.Usuarios.Pacotes.PacotesCriarPO;
 
 import org.testng.annotations.BeforeClass;
 

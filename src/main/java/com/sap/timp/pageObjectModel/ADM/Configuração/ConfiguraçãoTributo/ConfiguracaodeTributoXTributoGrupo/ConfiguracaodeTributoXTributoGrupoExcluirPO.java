@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãodeTributoXTributoGrupo;
+package com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaodeTributoXTributoGrupo;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseCristhian;
 
-public class ConfiguraçãodeTributoXTributoGrupoEditarPO extends TestBaseCristhian {
+public class ConfiguracaodeTributoXTributoGrupoExcluirPO extends TestBaseCristhian {
 	
 	@FindBy(xpath = "//div[@class=\"baseTabs-bar boxes\"]/div/div[2]")
 	public WebElement Configuração;
@@ -34,11 +34,11 @@ public class ConfiguraçãodeTributoXTributoGrupoEditarPO extends TestBaseCristhia
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement btnBiblioteca;
 	
-	public ConfiguraçãodeTributoXTributoGrupoEditarPO() {
+	public ConfiguracaodeTributoXTributoGrupoExcluirPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public boolean editar() {
+	public boolean excluir() {
 
 		
 		sleep(2000);
@@ -69,7 +69,7 @@ public class ConfiguraçãodeTributoXTributoGrupoEditarPO extends TestBaseCristhia
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 		
 		menu.click();
 		sleep(1000);
@@ -77,43 +77,32 @@ public class ConfiguraçãodeTributoXTributoGrupoEditarPO extends TestBaseCristhia
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(7000);
-		
-		String valorDescricao = "222";
 	
 		
-		tributoGrupo.clear();
-		tributoGrupo.sendKeys(valorDescricao);
-		sleep(1000);
-		
-		btnGravar.click();
-		sleep(2000);
-		
 		btnSim.click();
-		sleep(2000);
-		
-		driver.navigate().refresh();
-		
-		sleep(2000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(2000);
 		
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
 		
-		attributoNotToBeEmptyElement(tributoGrupo, "value");
-		String valorDescricaoGuardado = tributoGrupo.getAttribute("value");
-		System.out.println("");
-		System.out.println("Descricao valor guardado: " + valorDescricaoGuardado);
-		  
+		String id = "0"; // Primer ID antes de crear un registro
+		
+		if(rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+			System.out.println("ID Primer Registro: " + id);
+		}
+		int id1 = convertToInt(id);
+		int id2 = convertToInt(idRegistro);
+		System.out.println(id1);
+		System.out.println(id2);
+		
 		boolean sucesso = false;
 		
-		if(valorDescricaoGuardado.equals(valorDescricao)) {
-			System.out.println("");
-			System.out.println("Valor editado satisfactoriamente...");
-			sucesso = true;
-		}else {
-			System.out.println("");
-			System.out.println("Error al prencher descricao...");
+		if (id1 != id2) {
+			sucesso= true;
 		}
-		
+		System.out.println( sucesso);
 		return sucesso;
 	}
 

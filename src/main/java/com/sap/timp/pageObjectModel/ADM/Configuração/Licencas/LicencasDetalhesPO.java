@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.ADM.Configuração.Licenças;
+package com.sap.timp.pageObjectModel.ADM.Configuração.Licencas;
 
 import java.util.ArrayList;
 
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseMassiel;
 
-public class LicençasDetalhesPO extends TestBaseMassiel{
+public class LicencasDetalhesPO extends TestBaseMassiel{
 
 	@FindBy(xpath = "//div[@class=\"baseTabs-bar boxes\"]/div/div[2]")
 	public WebElement Configuração;
@@ -23,7 +23,7 @@ public class LicençasDetalhesPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@class=\"detail-content\"]/div/div[2]/div[2]")
 	public WebElement data;
 	
-	public LicençasDetalhesPO() {
+	public LicencasDetalhesPO() {
 
 		PageFactory.initElements(driver, this);
 	}

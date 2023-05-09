@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAgrupamento.ConfiguraçãoTributoAgrupamentoEditarPO;
-import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãodeTributoXTributoGrupo.ConfiguraçãodeTributoXTributoGrupoEditarPO;
+import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaoTributoAgrupamento.ConfiguracaoTributoAgrupamentoEditarPO;
+import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaodeTributoXTributoGrupo.ConfiguracaodeTributoXTributoGrupoEditarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -17,14 +17,14 @@ import org.testng.annotations.AfterClass;
 public class ConfiguraçãodeTributoXTributoGrupoEditar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
-	ConfiguraçãodeTributoXTributoGrupoEditarPO configuraçãodeTributoXTributoGrupoEditarPO;
+	ConfiguracaodeTributoXTributoGrupoEditarPO configuraçãodeTributoXTributoGrupoEditarPO;
 	
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationC();
 	  loginTC = new LoginTC();
 	  acessarADMPO = new AcessarADMPO();
-	  configuraçãodeTributoXTributoGrupoEditarPO = new ConfiguraçãodeTributoXTributoGrupoEditarPO();
+	  configuraçãodeTributoXTributoGrupoEditarPO = new ConfiguracaodeTributoXTributoGrupoEditarPO();
   }
 
   @AfterClass

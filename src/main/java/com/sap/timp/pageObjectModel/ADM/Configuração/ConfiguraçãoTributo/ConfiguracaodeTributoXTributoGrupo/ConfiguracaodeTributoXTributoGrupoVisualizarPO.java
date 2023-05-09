@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAgrupamento;
+package com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaodeTributoXTributoGrupo;
 
 import java.util.ArrayList;
 
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseCristhian;
 
-public class ConfiguraçãoTributoAgrupamentoVisualizarPO extends TestBaseCristhian {
+public class ConfiguracaodeTributoXTributoGrupoVisualizarPO extends TestBaseCristhian {
 	
 	@FindBy(xpath = "//div[@class=\"baseTabs-bar boxes\"]/div/div[2]")
 	public WebElement Configuração;
@@ -17,14 +17,17 @@ public class ConfiguraçãoTributoAgrupamentoVisualizarPO extends TestBaseCristhia
 	@FindBy(xpath = "//span[text()=\"Configuração de Tributos\"]")
 	public WebElement ConfiguraçãodeTributos;
 	
-	@FindBy(xpath = "//span[text()=\"Configuração de Tributo Agrupamento\"]")
-	public WebElement ConfiguraçãodeTributosAgrupamento;
+	@FindBy(xpath = "//span[text()=\"Configuração de Tributo X Tributo Grupo\"]")
+	public WebElement ConfiguraçãodeTributosXTributo;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-left\"]")
 	public WebElement btnPrimeraPagina;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Agrupamento\"]")
-	public WebElement agrupamentoE;
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Código Tributo Grupo\"]")
+	public WebElement tributoGrupo;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Código Tributo\"]")
+	public WebElement tributo;
 	
 	@FindBy(xpath = "//*[@id=\"grouping\"]")
 	public WebElement agrupamentoV;
@@ -36,7 +39,7 @@ public class ConfiguraçãoTributoAgrupamentoVisualizarPO extends TestBaseCristhia
 	public WebElement btnFechar;
 	
 	
-	public ConfiguraçãoTributoAgrupamentoVisualizarPO() {
+	public ConfiguracaodeTributoXTributoGrupoVisualizarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -60,7 +63,7 @@ public class ConfiguraçãoTributoAgrupamentoVisualizarPO extends TestBaseCristhia
 		sleep(3000);
 
 		
-		ConfiguraçãodeTributosAgrupamento.click();
+		ConfiguraçãodeTributosXTributo.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -84,12 +87,13 @@ public class ConfiguraçãoTributoAgrupamentoVisualizarPO extends TestBaseCristhia
 		sleep(7000);
 		
 		// Datos de visualizar
-		String agrupamentoStringV = driver.findElement(By.xpath("//*[@id=\"grouping\"]")).getText();
-
+		String tributoGrupoStringV = driver.findElement(By.xpath("//*[@id=\"cod-tax-group\"]")).getText();
+		String tributoStringV = driver.findElement(By.xpath("//*[@id=\"cod-tax\"]")).getText();
 		
 		
 		System.out.println("Datos de Ver");
-		System.out.println("Agrupamento: " + agrupamentoStringV);
+		System.out.println("tributo Grupo: " + tributoGrupoStringV);
+		System.out.println("Tributo: " + tributoStringV);
 
 		System.out.println("");
 		
@@ -118,23 +122,26 @@ public class ConfiguraçãoTributoAgrupamentoVisualizarPO extends TestBaseCristhia
 		sleep(7000);
 		
 		// Datos de Editar
-		String agrupamentoStringE = driver.findElement(By.xpath("//input[@placeholder=\"Preencher Agrupamento\"]")).getAttribute("value").trim();
-
+		String tributoGrupoStringE = driver.findElement(By.xpath("//input[@placeholder=\"Preencher Código Tributo Grupo\"]")).getAttribute("value").trim();
+		String tributoStringE = driver.findElement(By.xpath("//input[@placeholder=\"Preencher Código Tributo\"]")).getAttribute("value").trim();
 
 		
 		System.out.println("Datos de Editar");
-		System.out.println("Agrupamento: " + agrupamentoStringE);
+		System.out.println("tributo Grupo: " + tributoGrupoStringE);
+		System.out.println("Tributo: " + tributoStringE);
+
 
 		System.out.println("");
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		sucesso.add(agrupamentoStringV.equals(agrupamentoStringE));
-
+		sucesso.add(tributoGrupoStringV.equals(tributoGrupoStringE));
+		sucesso.add(tributoStringV.equals(tributoStringE));
 		
 		System.out.println("");
 		System.out.println(sucesso);
 		
 		return sucesso;
 	}
+	
 
 }

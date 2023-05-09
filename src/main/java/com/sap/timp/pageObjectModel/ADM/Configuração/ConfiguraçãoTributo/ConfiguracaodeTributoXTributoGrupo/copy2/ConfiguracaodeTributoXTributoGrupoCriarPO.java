@@ -1,32 +1,33 @@
-package com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAgrupamento;
+package com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaodeTributoXTributoGrupo.copy2;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseCristhian;
 
-public class ConfiguraçãoTributoAgrupamentoCriarPO extends TestBaseCristhian {
-	
+public class ConfiguracaodeTributoXTributoGrupoCriarPO extends TestBaseCristhian {
 	@FindBy(xpath = "//div[@class=\"baseTabs-bar boxes\"]/div/div[2]")
 	public WebElement Configuração;
 	
 	@FindBy(xpath = "//span[text()=\"Configuração de Tributos\"]")
 	public WebElement ConfiguraçãodeTributos;
 	
-	@FindBy(xpath = "//span[text()=\"Configuração de Tributo Agrupamento\"]")
-	public WebElement ConfiguraçãodeTributosAgrupamento;
+	@FindBy(xpath = "//span[text()=\"Configuração de Tributo X Tributo Grupo\"]")
+	public WebElement ConfiguraçãodeTributosXTributo;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-left\"]")
 	public WebElement btnPrimeraPagina;
 	
-	@FindBy(xpath = "//span[text()=\"Novo Tributo Agrupamento\"]")
+	@FindBy(xpath = "//span[text()=\"Novo Tributo X Tributo Grupo\"]")
 	public WebElement btnNovo;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Agrupamento\"]")
-	public WebElement agrupamento;
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Código Tributo Grupo\"]")
+	public WebElement tributoGrupo;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Código Tributo\"]")
+	public WebElement tributo;
 	
 	@FindBy(xpath = "//*[@id=\"toolbar\"]/div/div/ul/li[4]/button/span")
 	public WebElement actualizar;
@@ -40,7 +41,7 @@ public class ConfiguraçãoTributoAgrupamentoCriarPO extends TestBaseCristhian {
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement btnBiblioteca;
 	
-	public ConfiguraçãoTributoAgrupamentoCriarPO() {
+	public ConfiguracaodeTributoXTributoGrupoCriarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -61,7 +62,7 @@ public class ConfiguraçãoTributoAgrupamentoCriarPO extends TestBaseCristhian {
 		sleep(3000);
 
 		
-		ConfiguraçãodeTributosAgrupamento.click();
+		ConfiguraçãodeTributosXTributo.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -85,8 +86,10 @@ public class ConfiguraçãoTributoAgrupamentoCriarPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		agrupamento.sendKeys("TESTE QA");
-		
+		tributoGrupo.sendKeys("002");
+		sleep(2000);
+		tributo.sendKeys("2");
+		sleep(2000);
 	
 		btnGravar.click();
 		sleep(2000);

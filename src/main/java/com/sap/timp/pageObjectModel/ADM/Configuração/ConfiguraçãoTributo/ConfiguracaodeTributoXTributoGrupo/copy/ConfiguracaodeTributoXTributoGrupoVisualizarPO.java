@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãodeTributoXTributoGrupo;
+package com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaodeTributoXTributoGrupo.copy;
 
 import java.util.ArrayList;
 
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseCristhian;
 
-public class ConfiguraçãodeTributoXTributoGrupoVisualizarPO extends TestBaseCristhian {
+public class ConfiguracaodeTributoXTributoGrupoVisualizarPO extends TestBaseCristhian {
 	
 	@FindBy(xpath = "//div[@class=\"baseTabs-bar boxes\"]/div/div[2]")
 	public WebElement Configuração;
@@ -39,7 +39,7 @@ public class ConfiguraçãodeTributoXTributoGrupoVisualizarPO extends TestBaseCris
 	public WebElement btnFechar;
 	
 	
-	public ConfiguraçãodeTributoXTributoGrupoVisualizarPO() {
+	public ConfiguracaodeTributoXTributoGrupoVisualizarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	

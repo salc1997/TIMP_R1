@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAgrupamento;
+package com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaodeTributoXTributoGrupo.copy2;
 
 import java.util.ArrayList;
 
@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseCristhian;
 
-public class ConfiguraçãoTributoAgrupamentofiltrarPO extends TestBaseCristhian {
+public class ConfiguracaodeTributoXTributoGrupoFiltrarPO extends TestBaseCristhian {
 	
 	@FindBy(xpath = "//div[@class=\"baseTabs-bar boxes\"]/div/div[2]")
 	public WebElement Configuração;
@@ -18,8 +18,8 @@ public class ConfiguraçãoTributoAgrupamentofiltrarPO extends TestBaseCristhian {
 	@FindBy(xpath = "//span[text()=\"Configuração de Tributos\"]")
 	public WebElement ConfiguraçãodeTributos;
 	
-	@FindBy(xpath = "//span[text()=\"Configuração de Tributo Agrupamento\"]")
-	public WebElement ConfiguraçãodeTributosAgrupamento;
+	@FindBy(xpath = "//span[text()=\"Configuração de Tributo X Tributo Grupo\"]")
+	public WebElement ConfiguraçãodeTributosXTributo;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-left\"]")
 	public WebElement btnPrimeraPagina;
@@ -36,7 +36,7 @@ public class ConfiguraçãoTributoAgrupamentofiltrarPO extends TestBaseCristhian {
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement btnBiblioteca;
 	
-	public ConfiguraçãoTributoAgrupamentofiltrarPO() {
+	public ConfiguracaodeTributoXTributoGrupoFiltrarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -57,7 +57,7 @@ public class ConfiguraçãoTributoAgrupamentofiltrarPO extends TestBaseCristhian {
 		sleep(3000);
 
 		
-		ConfiguraçãodeTributosAgrupamento.click();
+		ConfiguraçãodeTributosXTributo.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -70,7 +70,7 @@ public class ConfiguraçãoTributoAgrupamentofiltrarPO extends TestBaseCristhian {
 		
 		pesquisar.sendKeys(Keys. ENTER);
 		sleep(2000);
-		System.out.println("1111");
+
 		int j=1;
 		ArrayList<String> data = new ArrayList<String>();
 		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]")).size();
@@ -80,4 +80,5 @@ public class ConfiguraçãoTributoAgrupamentofiltrarPO extends TestBaseCristhian {
 		System.out.println(sucesso);
 		return sucesso;
 	}
+
 }

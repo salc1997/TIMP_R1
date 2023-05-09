@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãodeTributoXTributoGrupo;
+package com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaodeTributoXTributoGrupo;
 
 import java.util.ArrayList;
 
@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseCristhian;
 
-public class ConfiguraçãodeTributoXTributoGrupoFiltrarPO extends TestBaseCristhian {
+public class ConfiguracaodeTributoXTributoGrupoFiltrarPO extends TestBaseCristhian {
 	
 	@FindBy(xpath = "//div[@class=\"baseTabs-bar boxes\"]/div/div[2]")
 	public WebElement Configuração;
@@ -36,7 +36,7 @@ public class ConfiguraçãodeTributoXTributoGrupoFiltrarPO extends TestBaseCristhi
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement btnBiblioteca;
 	
-	public ConfiguraçãodeTributoXTributoGrupoFiltrarPO() {
+	public ConfiguracaodeTributoXTributoGrupoFiltrarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	

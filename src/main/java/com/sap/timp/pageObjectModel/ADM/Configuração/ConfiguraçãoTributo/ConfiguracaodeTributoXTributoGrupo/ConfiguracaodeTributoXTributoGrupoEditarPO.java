@@ -1,4 +1,4 @@
-package com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAgrupamento;
+package com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaodeTributoXTributoGrupo;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseCristhian;
 
-public class ConfiguraçãoTributoAgrupamentoExcluirPO extends TestBaseCristhian {
+public class ConfiguracaodeTributoXTributoGrupoEditarPO extends TestBaseCristhian {
 	
 	@FindBy(xpath = "//div[@class=\"baseTabs-bar boxes\"]/div/div[2]")
 	public WebElement Configuração;
@@ -15,8 +15,8 @@ public class ConfiguraçãoTributoAgrupamentoExcluirPO extends TestBaseCristhian {
 	@FindBy(xpath = "//span[text()=\"Configuração de Tributos\"]")
 	public WebElement ConfiguraçãodeTributos;
 	
-	@FindBy(xpath = "//span[text()=\"Configuração de Tributo Agrupamento\"]")
-	public WebElement ConfiguraçãodeTributosAgrupamento;
+	@FindBy(xpath = "//span[text()=\"Configuração de Tributo X Tributo Grupo\"]")
+	public WebElement ConfiguraçãodeTributosXTributo;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-left\"]")
 	public WebElement btnPrimeraPagina;
@@ -34,11 +34,11 @@ public class ConfiguraçãoTributoAgrupamentoExcluirPO extends TestBaseCristhian {
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement btnBiblioteca;
 	
-	public ConfiguraçãoTributoAgrupamentoExcluirPO() {
+	public ConfiguracaodeTributoXTributoGrupoEditarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public boolean excluir() {
+	public boolean editar() {
 
 		
 		sleep(2000);
@@ -55,7 +55,7 @@ public class ConfiguraçãoTributoAgrupamentoExcluirPO extends TestBaseCristhian {
 		sleep(3000);
 
 		
-		ConfiguraçãodeTributosAgrupamento.click();
+		ConfiguraçãodeTributosXTributo.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -69,7 +69,7 @@ public class ConfiguraçãoTributoAgrupamentoExcluirPO extends TestBaseCristhian {
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
 		menu.click();
 		sleep(1000);
@@ -77,32 +77,43 @@ public class ConfiguraçãoTributoAgrupamentoExcluirPO extends TestBaseCristhian {
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(7000);
+		
+		String valorDescricao = "222";
 	
 		
-		btnSim.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		tributoGrupo.clear();
+		tributoGrupo.sendKeys(valorDescricao);
+		sleep(1000);
+		
+		btnGravar.click();
 		sleep(2000);
 		
-		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
+		btnSim.click();
+		sleep(2000);
 		
-		String id = "0"; // Primer ID antes de crear un registro
+		driver.navigate().refresh();
 		
-		if(rows > 0) {
-			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
-			System.out.println("ID Primer Registro: " + id);
-		}
-		int id1 = convertToInt(id);
-		int id2 = convertToInt(idRegistro);
-		System.out.println(id1);
-		System.out.println(id2);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
 		
+		
+		attributoNotToBeEmptyElement(tributoGrupo, "value");
+		String valorDescricaoGuardado = tributoGrupo.getAttribute("value");
+		System.out.println("");
+		System.out.println("Descricao valor guardado: " + valorDescricaoGuardado);
+		  
 		boolean sucesso = false;
 		
-		if (id1 != id2) {
-			sucesso= true;
+		if(valorDescricaoGuardado.equals(valorDescricao)) {
+			System.out.println("");
+			System.out.println("Valor editado satisfactoriamente...");
+			sucesso = true;
+		}else {
+			System.out.println("");
+			System.out.println("Error al prencher descricao...");
 		}
-		System.out.println( sucesso);
+		
 		return sucesso;
 	}
 

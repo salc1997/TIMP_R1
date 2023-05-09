@@ -1,4 +1,4 @@
-package com.timp.test.ADM.Usuários.Pacotes;
+package com.timp.test.ADM.Usuarios.Pacotes;
 
 import org.testng.annotations.Test;
 

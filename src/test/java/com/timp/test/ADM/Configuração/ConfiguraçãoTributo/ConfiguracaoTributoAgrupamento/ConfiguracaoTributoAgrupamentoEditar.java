@@ -1,4 +1,4 @@
-package com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãodeTributoXTributoGrupo;
+package com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaoTributoAgrupamento;
 
 import org.testng.annotations.Test;
 
@@ -6,7 +6,7 @@ import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaoTributoAgrupamento.ConfiguracaoTributoAgrupamentoCriarPO;
-import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaodeTributoXTributoGrupo.ConfiguracaodeTributoXTributoGrupoCriarPO;
+import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaoTributoAgrupamento.ConfiguracaoTributoAgrupamentoEditarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -14,17 +14,17 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãodeTributoXTributoGrupoCriar extends TestBaseCristhian {
+public class ConfiguracaoTributoAgrupamentoEditar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
-	ConfiguracaodeTributoXTributoGrupoCriarPO configuraçãodeTributoXTributoGrupoCriarPO;
+	ConfiguracaoTributoAgrupamentoEditarPO configuraçãoTributoAgrupamentoEditarPO;
 	
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationC();
 	  loginTC = new LoginTC();
 	  acessarADMPO = new AcessarADMPO();
-	  configuraçãodeTributoXTributoGrupoCriarPO = new ConfiguracaodeTributoXTributoGrupoCriarPO();
+	  configuraçãoTributoAgrupamentoEditarPO = new ConfiguracaoTributoAgrupamentoEditarPO();
   }
 
   @AfterClass
@@ -45,11 +45,11 @@ public class ConfiguraçãodeTributoXTributoGrupoCriar extends TestBaseCristhian {
 	}
 	
 	@Test(priority = 2)
-	public void criar() {
+	public void Editar() {
 
 		
-		boolean sucesso = configuraçãodeTributoXTributoGrupoCriarPO.criar();
-		assertTrue(sucesso, Criar);
+		boolean sucesso = configuraçãoTributoAgrupamentoEditarPO.editar();
+		assertTrue(sucesso, Editar);
 
 		
 	}

@@ -1,4 +1,4 @@
-package com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãodeTributoXTributoGrupo;
+package com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaodeTributoXTributoGrupo;
 
 import org.testng.annotations.Test;
 
@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãodeTributoXTributoGrupoExcluir extends TestBaseCristhian {
+public class ConfiguracaodeTributoXTributoGrupoExcluir extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	ConfiguracaodeTributoXTributoGrupoExcluirPO configuraçãodeTributoXTributoGrupoExcluirPO;

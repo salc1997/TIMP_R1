@@ -1,4 +1,4 @@
-package com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAgrupamento;
+package com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaodeTributoXTributoGrupo;
 
 import org.testng.annotations.Test;
 
@@ -6,27 +6,25 @@ import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaoTributoAgrupamento.ConfiguracaoTributoAgrupamentoCriarPO;
-import com.sap.timp.pageObjectModel.ADM.Configuração.Licencas.LicencasDetalhesPO;
+import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaodeTributoXTributoGrupo.ConfiguracaodeTributoXTributoGrupoCriarPO;
 
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
 
-import java.util.ArrayList;
-
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãoTributoAgrupamentoCriar extends TestBaseCristhian{
+public class ConfiguracaodeTributoXTributoGrupoCriar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
-	ConfiguracaoTributoAgrupamentoCriarPO configuraçãoTributoAgrupamentoCriarPO;
+	ConfiguracaodeTributoXTributoGrupoCriarPO configuraçãodeTributoXTributoGrupoCriarPO;
 	
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationC();
 	  loginTC = new LoginTC();
 	  acessarADMPO = new AcessarADMPO();
-	  configuraçãoTributoAgrupamentoCriarPO = new ConfiguracaoTributoAgrupamentoCriarPO();
+	  configuraçãodeTributoXTributoGrupoCriarPO = new ConfiguracaodeTributoXTributoGrupoCriarPO();
   }
 
   @AfterClass
@@ -50,7 +48,7 @@ public class ConfiguraçãoTributoAgrupamentoCriar extends TestBaseCristhian{
 	public void criar() {
 
 		
-		boolean sucesso = configuraçãoTributoAgrupamentoCriarPO.criar();
+		boolean sucesso = configuraçãodeTributoXTributoGrupoCriarPO.criar();
 		assertTrue(sucesso, Criar);
 
 		

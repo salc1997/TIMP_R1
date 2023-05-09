@@ -1,4 +1,4 @@
-package com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãodeTributoXTributoGrupo;
+package com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaoTributoAgrupamento;
 
 import org.testng.annotations.Test;
 
@@ -6,22 +6,26 @@ import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaoTributoAgrupamento.ConfiguracaoTributoAgrupamentofiltrarPO;
-import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaodeTributoXTributoGrupo.ConfiguracaodeTributoXTributoGrupoFiltrarPO;
 
 import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
+
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãodeTributoXTributoGrupoFiltrar extends TestBaseCristhian {
+public class ConfiguracaoTributoAgrupamentofiltrar extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
-	ConfiguracaodeTributoXTributoGrupoFiltrarPO configuraçãodeTributoXTributoGrupoFiltrarPO;
+	ConfiguracaoTributoAgrupamentofiltrarPO configuraçãoTributoAgrupamentofiltrarPO;
 	
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationC();
 	  loginTC = new LoginTC();
 	  acessarADMPO = new AcessarADMPO();
-	  configuraçãodeTributoXTributoGrupoFiltrarPO = new ConfiguracaodeTributoXTributoGrupoFiltrarPO();
+	  configuraçãoTributoAgrupamentofiltrarPO = new ConfiguracaoTributoAgrupamentofiltrarPO();
   }
 
   @AfterClass
@@ -43,8 +47,9 @@ public class ConfiguraçãodeTributoXTributoGrupoFiltrar extends TestBaseCristhian
 	@Test(priority = 2)
 	public void filtros() {
 
-		configuraçãodeTributoXTributoGrupoFiltrarPO.filtro();
+		configuraçãoTributoAgrupamentofiltrarPO.filtro();
 
 		
 	}
+
 }

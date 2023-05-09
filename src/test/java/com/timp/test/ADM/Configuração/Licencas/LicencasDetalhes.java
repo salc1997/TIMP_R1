@@ -1,11 +1,11 @@
-package com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAgrupamento;
+package com.timp.test.ADM.Configuração.Licencas;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaoTributoAgrupamento.ConfiguracaoTributoAgrupamentofiltrarPO;
+import com.sap.timp.pageObjectModel.ADM.Configuração.Licencas.LicencasDetalhesPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -15,17 +15,16 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãoTributoAgrupamentofiltrar extends TestBaseCristhian {
+public class LicencasDetalhes extends TestBaseMassiel{
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
-	ConfiguracaoTributoAgrupamentofiltrarPO configuraçãoTributoAgrupamentofiltrarPO;
-	
+	LicencasDetalhesPO licençasDetalhesPO;
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationC();
+	  driver = initializationM();
 	  loginTC = new LoginTC();
 	  acessarADMPO = new AcessarADMPO();
-	  configuraçãoTributoAgrupamentofiltrarPO = new ConfiguracaoTributoAgrupamentofiltrarPO();
+	  licençasDetalhesPO = new LicencasDetalhesPO();
   }
 
   @AfterClass
@@ -44,11 +43,16 @@ public class ConfiguraçãoTributoAgrupamentofiltrar extends TestBaseCristhian {
 		acessarADMPO.acessarADM();
 		
 	}
+	
 	@Test(priority = 2)
-	public void filtros() {
+	public void Detalles() {
 
-		configuraçãoTributoAgrupamentofiltrarPO.filtro();
+		
+		ArrayList<Boolean> sucesso = licençasDetalhesPO.detalles();
 
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
 		
 	}
 

@@ -1,4 +1,4 @@
-package com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguraçãoTributoAgrupamento;
+package com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaoTributoAgrupamento;
 
 import org.testng.annotations.Test;
 
@@ -6,25 +6,27 @@ import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaoTributoAgrupamento.ConfiguracaoTributoAgrupamentoCriarPO;
-import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaoTributoAgrupamento.ConfiguracaoTributoAgrupamentoEditarPO;
+import com.sap.timp.pageObjectModel.ADM.Configuração.Licencas.LicencasDetalhesPO;
 
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
 
+import java.util.ArrayList;
+
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãoTributoAgrupamentoEditar extends TestBaseCristhian {
+public class ConfiguracaoTributoAgrupamentoCriar extends TestBaseCristhian{
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
-	ConfiguracaoTributoAgrupamentoEditarPO configuraçãoTributoAgrupamentoEditarPO;
+	ConfiguracaoTributoAgrupamentoCriarPO configuraçãoTributoAgrupamentoCriarPO;
 	
   @BeforeClass
   public void beforeClass() {
 	  driver = initializationC();
 	  loginTC = new LoginTC();
 	  acessarADMPO = new AcessarADMPO();
-	  configuraçãoTributoAgrupamentoEditarPO = new ConfiguracaoTributoAgrupamentoEditarPO();
+	  configuraçãoTributoAgrupamentoCriarPO = new ConfiguracaoTributoAgrupamentoCriarPO();
   }
 
   @AfterClass
@@ -45,11 +47,11 @@ public class ConfiguraçãoTributoAgrupamentoEditar extends TestBaseCristhian {
 	}
 	
 	@Test(priority = 2)
-	public void Editar() {
+	public void criar() {
 
 		
-		boolean sucesso = configuraçãoTributoAgrupamentoEditarPO.editar();
-		assertTrue(sucesso, Editar);
+		boolean sucesso = configuraçãoTributoAgrupamentoCriarPO.criar();
+		assertTrue(sucesso, Criar);
 
 		
 	}

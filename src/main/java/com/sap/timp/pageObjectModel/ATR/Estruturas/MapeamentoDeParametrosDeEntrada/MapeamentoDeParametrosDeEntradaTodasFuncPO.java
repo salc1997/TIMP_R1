@@ -327,7 +327,7 @@ public class MapeamentoDeParametrosDeEntradaTodasFuncPO extends TestBaseSteven {
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	    sleep(2000);
+	    sleep(5000);
 	    
 	  
 	    String estruturaeditar = estruturaE.getAttribute("value");

@@ -55,7 +55,7 @@ public class TestBaseSteven  {
 	
 	public static WebDriver driver;
 	public String usuarioL = "TESTEAUTOMATIZADO";
-	public String senhaL = "Alltax2023";
+	public String senhaL = "Alltax20";
 	
 	public String usuarioLL = "kenssy.medina@agilesolutions.com";
 	public String senhaLL = "Gorgojita12";

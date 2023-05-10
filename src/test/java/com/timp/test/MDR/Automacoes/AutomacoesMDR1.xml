@@ -6,8 +6,7 @@
 
 		<classes>
 
-
-			<!-- Associção Código de Ajustes -->
+			<!-- Ajustes - Associção Código de Ajustes -->
 
 			<class
 				name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar"></class>
@@ -47,6 +46,9 @@
 
 			<class
 				name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir"></class>
+				
+			<class
+				name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluirMassa"></class>
 
 		</classes>
 
@@ -70,6 +72,8 @@
 				name="com.timp.test.MDR.Antecipacao.AntecipacaoVisualizar"></class>
 
 			<class name="com.timp.test.MDR.Antecipacao.AntecipacaoEliminar"></class>
+			
+			<class name="com.timp.test.MDR.Antecipacao.AntecipacaoExcluirMassa"></class>
 
 
 		</classes>
@@ -120,6 +124,9 @@
 
 			<class
 				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeVisualizar"></class>
+				
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar"></class>
 
 
 			<class
@@ -155,6 +162,8 @@
 
 			<class
 				name="com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeExcluirMassa"></class>
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeFiltrosAvancados"></class>
 
 		</classes>
 
@@ -183,7 +192,9 @@
 				name="com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoExcluir"></class>
 
 			<class
-				name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEliminar"></class>
+				name="com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoExcluirEmMassa"></class>
+			<class
+				name="com.timp.test.MDR.AtividadesFiscais.AssociacaoAtividadeFiscal.AssociaçãoFiltrosAvancados"></class>
 
 		</classes>
 

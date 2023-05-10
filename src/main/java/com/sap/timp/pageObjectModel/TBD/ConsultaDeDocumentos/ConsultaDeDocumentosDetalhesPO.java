@@ -41,16 +41,6 @@ public class ConsultaDeDocumentosDetalhesPO extends TestBaseMassiel {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public static boolean validarFecha(String fecha) {
-        try {
-            SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy");
-            formatoFecha.setLenient(false);
-            formatoFecha.parse(fecha);
-        } catch (ParseException e) {
-            return false;
-        }
-        return true;
-    }
 	
 	public   ArrayList<Boolean>  detalles() {
 		String url = driver.getCurrentUrl();
@@ -119,12 +109,12 @@ public class ConsultaDeDocumentosDetalhesPO extends TestBaseMassiel {
 		if (tc2 == true) {
 
 
-			Numero1 = Numero1.replace("Igor Pereira, ", "");
+			Numero1 = Numero1.replace("TESTEAUTOMATIZADO TESTEAUTOMATIZADO, ", "");
 			Numero2 = Numero2.replace("Igor Pereira, ", "");
 			
-			Numero3 = Numero3.replace("Criado por Igor Pereira, ", "");
+			Numero3 = Numero3.replace("Criado por —, ", "");
 			
-			Numero4 = Numero4.replace("Última edição por Igor Pereira, ", "");
+			Numero4 = Numero4.replace("Última edição por —, ", "");
 
 		}else if (tq1 == true) {
 			Numero1 = Numero1.replace("TESTE AUTOMATIZADO, ", "");

@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigoDeMotivosDeAjustesCriarPO extends TestBaseEliel {
+public class CodigoDeMotivosDeAjustesCriarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
 	public WebElement tabelacomplementares;
@@ -94,13 +94,13 @@ public class CodigoDeMotivosDeAjustesCriarPO extends TestBaseEliel {
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigodeajustes.sendKeys("559937");
+
+		codigodeajustes.sendKeys("04937");
 
 		
 		sleep(2000);
 		
-		descricaodeajustes.sendKeys("Teste0 55");
-		
+		descricaodeajustes.sendKeys("Teste120");
 		sleep(2000);
 		
 		String data=fechaActual();

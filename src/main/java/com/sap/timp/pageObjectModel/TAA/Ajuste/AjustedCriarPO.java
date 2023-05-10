@@ -23,16 +23,16 @@ public class AjustedCriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Novo Ajuste\"]")
 	public WebElement nueva;
 	
-	@FindBy(xpath = "//div[@id=\"labelTributo\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"labelTributo\"]//div[2]")
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//div[@id=\"codEmpresa\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"codEmpresa\"]//div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//div[@id=\"ufOrigem\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"ufOrigem\"]//div[2]")
 	public WebElement uf;
 	
-	@FindBy(xpath = "//div[@id=\"codFilial\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"codFilial\"]//div[2]")
 	public WebElement filial;
 	
 	@FindBy(xpath = "//li[text()=\"ICMS\"]")
@@ -92,6 +92,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 		boolean tp1  = false;
 		boolean tc2  = false;
 		boolean tq1  = false;
+		boolean tq2  = false;
 
 		if (url.contains("tq1")) {
 			tq1 = true;
@@ -99,6 +100,8 @@ public class AjustedCriarPO extends TestBaseMassiel{
 			tc2 = true;
 		}else if(url.contains("tp1")){
 			tp1 = true;
+		}else if(url.contains("tq2")){
+			tq2 = true;
 		}
 		
 		sleep(2000);
@@ -110,7 +113,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		if (tq1 == true) {
+		if (tq1 == true || tq2 == true) {
 
 			WebElement icms = driver.findElement(By.xpath("//div[@class=\"adjustment-accordion accordion-adjustments\"]/ul/li[1]"));
 			
@@ -130,7 +133,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 			
 		}else {
 			
-			WebElement icms = driver.findElement(By.xpath("//div[@class=\"adjustment-accordion accordion-adjustments\"]/ul/li[7]"));
+			WebElement icms = driver.findElement(By.xpath("//div[@class= \"adjustment-accordion accordion-adjustments\"]//span[text()=\"ICMS\"]"));
 			
 			icms.click();
 			sleep(3000);
@@ -140,7 +143,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 		}
 		
 		
-		waitExpectElement(primeira);
+		//waitExpectElement(primeira);
 		sleep(2000);
 		
 		primeira.click();
@@ -150,7 +153,11 @@ public class AjustedCriarPO extends TestBaseMassiel{
 	
 		//conta o numero de linhas
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		String id ="0";
+		
+		if(rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		} 
 		
 		System.out.println("Id Anterior"+id);
 		
@@ -190,7 +197,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		if (tq1 == true) {
+		if (tq1 == true|| tq2 == true) {
 
 			WebElement ufOPC = driver.findElement(By.xpath("//li[text()=\"SP\"]"));
 			
@@ -221,8 +228,8 @@ public class AjustedCriarPO extends TestBaseMassiel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		if (tq1 == true) {
+		 
+		if (tq1 == true|| tq2 == true){
 
 			WebElement filialOPC = driver.findElement(By.xpath("//li[text()=\"0001\"]"));
 			
@@ -285,11 +292,12 @@ public class AjustedCriarPO extends TestBaseMassiel{
 		aplicar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(16000);
-		
 		waitExpectElement(biblioteca);
-		sleep(10000);
-		sleep(16000);
+		sleep(2000);
+		
+		
+		//sleep(10000);
+		sleep(2000);
 		
 		valorAjuste.click();
 		sleep(2000);
@@ -319,7 +327,7 @@ public class AjustedCriarPO extends TestBaseMassiel{
 		
 		int rows1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String idN = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
-		idInserir1(idN );
+		idInserir("Ajuste",idN);
 		System.out.println("Id Nuevo"+id);
 		
 

@@ -56,11 +56,12 @@ public class ConfiguracaoEExecucaoExcluirPO extends TestBaseSteven{
 		
 		invisibilityOfElementOverlay();
 		
+		String idRegistro = idObter("idBOConfiguracaoEExecucaco");
+		
 		siguiente.click();
-		
 		invisibilityOfElementOverlay();
-		
-		String idRegistro = idObter3();
+		waitExpectXpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div");
+		sleep(2000);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));

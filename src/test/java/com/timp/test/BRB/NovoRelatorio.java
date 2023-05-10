@@ -54,12 +54,12 @@ public class NovoRelatorio extends TestBaseSteven {
 		loginTc.login();
 		
 		accesarBrbPO.acessar();
-
+		sleep(4000);
 
 		boolean sucesso = novoRelatorioPO.criar();
 		sleep(4000);
 		assertTrue(sucesso, Criar);
-
+		sleep(2000);
 	}
 
 

@@ -5,11 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TaxasDeConversaoExcluirEmMassaPO extends TestBaseEliel{
+public class TaxasDeConversaoExcluirEmMassaPO extends TestBaseSteven{
 	
-	@FindBy(xpath = "//span[text()=\"Taxas de Conversão\"]")
+	@FindBy(xpath = "//span[text()=\"Taxas Complementares\"]")
 	public WebElement taxasdeconversao;
 	
 	@FindBy(xpath = "//span[text()=\"Nova Taxa de Conversão\"]")
@@ -27,7 +27,7 @@ public class TaxasDeConversaoExcluirEmMassaPO extends TestBaseEliel{
 	@FindBy(xpath = "//input[@placeholder=\"Prencher a Taxa\"]")
 	public WebElement taxa;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datainicio;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
@@ -35,6 +35,12 @@ public class TaxasDeConversaoExcluirEmMassaPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
+	
+	@FindBy(xpath = "//div[@id=\"codCompany\"]/div/div[2]/div/div[2]")
+	public WebElement empresa;
+	
+	@FindBy(xpath = "//div[@class=\"list\"][2]/div[1]")
+	public WebElement empresaOPC;
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
@@ -87,7 +93,14 @@ public boolean criar() {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//Primeiro Registro
+		empresa.click();
+		sleep(2000);
 		
+		empresaOPC.click();
+		sleep(2000);
+		
+		closeSelectTypeCheckbox(empresa);
+		sleep(2000);
 		tipo.sendKeys("Tipo teste");
 		
 		sleep(2000);
@@ -106,6 +119,7 @@ public boolean criar() {
 		
 		datainicio.sendKeys(fechaActual());
 		sleep(2000);
+		
 		novo1.click();
 		sleep(2000);
 		waitExpectElement(sim);
@@ -116,6 +130,14 @@ public boolean criar() {
 		sleep(3000);
 		
 		//Segundo Registro
+		empresa.click();
+		sleep(2000);
+		
+		empresaOPC.click();
+		sleep(2000);
+		
+		closeSelectTypeCheckbox(empresa);
+		sleep(2000);
 		
 		tipo.sendKeys("Tipo teste 1");
 		

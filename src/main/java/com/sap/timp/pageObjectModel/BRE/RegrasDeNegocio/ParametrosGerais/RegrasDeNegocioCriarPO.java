@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeNegocioCriarPO extends TestBaseEliel{
+public class RegrasDeNegocioCriarPO extends TestBaseSteven{
 	
 	 
 	@FindBy(xpath = "//span[text()=\"Regras de Negócio\"]")
@@ -33,6 +33,11 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componente;
+	
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
+	public WebElement componenteTQ2;
+	
+	
 	
 	@FindBy(xpath = "//li[@id][text()=\"TAA\"]")
 	public WebElement opcaocomponente;
@@ -79,7 +84,7 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//input[@placeholder=\" selecionar Data\"]")
 	public WebElement dataValidadeDe;
 		
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
@@ -105,7 +110,7 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//li[@id][text()=\"BC ICMS (ED)\"]")
 	public WebElement opcaoNomeDoValor;
 	
-	@FindBy(xpath = "//div[@class=\"action-section\"]/div/div/div/div/div[2]")
+	@FindBy(xpath = "//div[@class=\"action-section\"]/div/div[1]//child::input")
 	public WebElement acoes;
 	
 	//@FindBy(xpath = "//div[@id=\"T1\"]/div/label/span")
@@ -113,8 +118,14 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 	public WebElement opcaoacoes;
 	
 	//@FindBy(xpath = "//div[@id=\"T2\"]/div/label/span")
-	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"Registro E111\"]")
+	@FindBy(xpath = "//div[@class=\"list-option\"]/div[@id=\"T207\"]")
 	public WebElement opcaoacoesr2;
+	
+	@FindBy(xpath = "//div[@class=\"list-option\"]/div[@id=\"T262\"]")
+	public WebElement opcaoacoesr22;
+	
+	@FindBy(xpath = "//div[@class=\"list-option\"]/div[@id=\"T2\"]")
+	public WebElement opcaoacoesr222;
 	
 	//@FindBy(xpath = "//div[@id=\"T3\"]/div/label/span")
 	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"Registro C197 ou D197\"]")
@@ -174,8 +185,14 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"Registro 1210\"]")
 	public WebElement opcaoacoesr4;
 	
-	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componente2;
+	
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	public WebElement componente3;
+	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	public RegrasDeNegocioCriarPO() {
 		PageFactory.initElements(driver, this);
@@ -190,13 +207,15 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		boolean tp1  = false;
 		boolean tc2  = false;
 		boolean tq1  = false;
-
+		boolean tq2  = false;
 		if (url.contains("tq1")) {
 			tq1 = true;
 		}else if(url.contains("tc2")){
 			tc2 = true;
 		}else if(url.contains("tp1")){
 			tp1 = true;
+		}else if(url.contains("tq2")){
+			tq2 = true;
 		}
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -249,9 +268,15 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 			sleep(1000);
 			
 			
-		}else {
+		}else if (tq2 == true) {
+			componenteTQ2.click();
+			sleep(1000);
+			opcaocomponente.click();
+			sleep(1000);
+		
+		}else{
 			
-			componente2.click();
+			componente3.click();
 			sleep(1000);
 			opcaocomponente.click();
 			sleep(1000);
@@ -341,11 +366,11 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		justificativa.sendKeys("TESTE AUTOMATIZADO");
 		sleep(1000);
 		aceitar.click();
-		sleep(1000);
+		sleep(65000);
 		//1 caminho
 		adicionarcaminho.click();
-		sleep(2000);
-		waitExpectElement(Condicoes);
+		sleep(9000);
+		//waitExpectElement(Condicoes);
 		Condicoes.click();
 		sleep(1000);
 		Condicoes.sendKeys("Tributo- (aba:Dados Lançamento) (ED)");
@@ -406,8 +431,11 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		sleep(1000);
 		NomeDoValor.sendKeys("E111");
 		NomeDoValor.sendKeys(Keys.ESCAPE);
-		sleep(1000);
-		acoes.click();
+		sleep(3000);
+		
+		acoes.sendKeys("Registro E111");
+		sleep(3000);
+		actionsMoveToElementElement(opcaoacoesr2);
 		sleep(1000);
 		opcaoacoesr2.click();
 		closeSelectTypeCheckbox(acoes);
@@ -560,11 +588,14 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		nao.click();
+		sleep(15000);
+		
 		driver.navigate().refresh();
 		sleep(2000);
-		//waitExpectXpath("//div[@class=\"overlay loader transp\"]");
-		waitExpectElement(adicionarcaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader transp\"]");
+		waitExpectElement(adicionarcaminho);
 		sleep(2000);
 		WebElement caminhos = driver.findElement(By.xpath("//div[@id=\"graph\"]/*[name()=\"svg\"]/*[name()=\"g\"]"));
 		waitExpectElement(caminhos);
@@ -595,7 +626,7 @@ public class RegrasDeNegocioCriarPO extends TestBaseEliel{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		System.out.println("p1");
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir1(idB);
+		idInserir("RegrasDeNegocioCriar",idB);
 		
 
 		System.out.println(id);

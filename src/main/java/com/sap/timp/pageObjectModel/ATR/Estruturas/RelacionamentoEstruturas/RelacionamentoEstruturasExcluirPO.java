@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseSteven;
 
 public class RelacionamentoEstruturasExcluirPO extends TestBaseSteven{
@@ -111,9 +111,9 @@ public class RelacionamentoEstruturasExcluirPO extends TestBaseSteven{
 	
 	public boolean excluir() {
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("RelacionamentoEstruturasCriar");
 		
-relacionamentoEstruturas.click();
+		relacionamentoEstruturas.click();
 		
 		invisibilityOfElementOverlay();
 		

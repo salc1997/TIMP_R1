@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigoDeMotivosDeAjustesExcluirPO extends TestBaseEliel {
+public class CodigoDeMotivosDeAjustesExcluirPO extends TestBaseSteven {
 	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
 	public WebElement tabelacomplementares;
 	
@@ -27,7 +27,7 @@ public class CodigoDeMotivosDeAjustesExcluirPO extends TestBaseEliel {
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
-	
+	 
 	
 	
 	public CodigoDeMotivosDeAjustesExcluirPO() {
@@ -63,7 +63,7 @@ public class CodigoDeMotivosDeAjustesExcluirPO extends TestBaseEliel {
 		menu.click();
 		sleep(1000);
 		excluir.click();
-		sleep(2000);
+		sleep(4000);
 		
 		sim.click();
 		sleep(2000);

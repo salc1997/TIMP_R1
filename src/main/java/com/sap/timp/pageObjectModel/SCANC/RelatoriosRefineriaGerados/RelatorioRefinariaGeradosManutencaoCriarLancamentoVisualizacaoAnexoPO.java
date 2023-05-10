@@ -112,9 +112,11 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 	@FindBy(xpath = "//div[contains(@class, \"socialReason_0_1\")]/div/div[2]/div/div/div[2]/input")
 	public WebElement inputRazaoSocial;
 	
+	@FindBy(xpath = "//span[text()=\"Limpar Filtros\"]")
+	public WebElement Filtros;
+	
 	@FindBy(xpath = "//span[text()=\"Aplicar Filtros\"]")
 	public WebElement btnAplicarFiltros;
-	
 	@FindBy(xpath = "//span[text()=\"Visualizar anexos\"]")
 	public WebElement btnVisualizarAnexos;
 	
@@ -152,6 +154,9 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 	@FindBy(xpath = "//div[@class=\"baseTabs-view-container\"]/div[1]/div/div/button[@id=\"advanced-filters-btn-apply\"]")
 	public WebElement btnAplicarFiltros2;
 	
+	@FindBy(xpath = "//div[@class=\"baseTabs-view-container\"]/div[1]/div/div/button[@id=\"reset-filters-btn\"]")
+	public WebElement btnFiltros2;
+	
 	@FindBy(xpath = "//div[@id=\"ufEmit\"]/div/div[2]/div/div[2]")
 	public WebElement cboFiltroUFEmitente;
 	
@@ -160,6 +165,15 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 	
 	@FindBy(xpath = "//div[@class=\"list-item\"  and @id]/div[text()=\"RJ\"]")
 	public WebElement opcionFiltroUFEmitente1;
+	
+	@FindBy(xpath = "//div[@id=\"company\"]/div/div[2]")
+	public WebElement cboEmpre;
+	
+	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	public WebElement opcionEmpre;
+	
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement ultimapagina;
 	
 	int idRegistro = 0;
 	String parentG = "";
@@ -334,6 +348,7 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
+		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		System.out.println("Rows busqueda: " + rows);
 		String cnpjDestinoString = "";
@@ -471,7 +486,7 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 	}
 	
 	public ArrayList<Boolean> llenarDatosTC2() {
-		idRegistro = 9;
+		idRegistro = 26;
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement acoe = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Manutenção \"]"));
 		String periodo = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[7]/div")).getText();
@@ -499,6 +514,12 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 			return sucesso;
 		}
 		
+		sleep(3000);
+		
+		cboEmpre.click();
+		sleep(1000);
+		opcionEmpre.click();
+		sleep(5000);
 		abaCriarEditarLancamento.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -512,7 +533,7 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 		cboQuadro.click();
 		sleep(1000);
 		opcionQuadro.click();
-		sleep(1000);
+		sleep(5000);
 		
 		cboFilialOrigem.click();
 		sleep(1000);
@@ -579,6 +600,10 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		menu = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[1]/div/div/span[2]"));
 		acoe = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 		
@@ -598,7 +623,7 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 		abaCriarEditarLancamento.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
+		sleep(10000);
 		
 		actionsMoveToElementElement(btnGravar);
 		btnGravar.click();
@@ -637,6 +662,10 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
+		Filtros.click();
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(1000);
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		System.out.println("Rows busqueda: " + rows);
 		String cnpjDestinoString = "";
@@ -715,6 +744,9 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 		sleep(1000);
 		
 		btnAplicarFiltros2.click();		
+		sleep(3000);
+		
+		btnFiltros2.click();		
 		sleep(3000);
 		
 		// Datos de vissualizar Quadro 4

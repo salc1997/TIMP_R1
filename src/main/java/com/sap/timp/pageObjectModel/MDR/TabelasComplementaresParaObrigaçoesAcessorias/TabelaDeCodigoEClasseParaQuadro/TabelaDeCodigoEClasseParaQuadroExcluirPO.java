@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TabelaDeCodigoEClasseParaQuadroExcluirPO extends TestBaseEliel{
+public class TabelaDeCodigoEClasseParaQuadroExcluirPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
 	public WebElement tabelacomplementares;
@@ -31,11 +31,12 @@ public class TabelaDeCodigoEClasseParaQuadroExcluirPO extends TestBaseEliel{
 	public boolean excluir() {
 		sleep(2000);
 		tabelacomplementares.click();
-		sleep(2000);
+		
+		sleep(3000);
 		
 		tabeladecodigoeclasseparaquadro.click();
 		
-		sleep(2000);
+		sleep(3000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

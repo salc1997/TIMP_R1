@@ -202,8 +202,8 @@ import com.sap.timp.base.TestBaseSteven;
 			sleep(1000);
 			empresaO.click();
 			
-			attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-select required");
-			sleep(1000);
+		//	attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-select required");
+			sleep(5000);
 			filial.click();
 			sleep(1000);
 			filialO.click();
@@ -263,7 +263,7 @@ import com.sap.timp.base.TestBaseSteven;
 			siguiente.click();
 			
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+			sleep(6000);
 			
 
 			rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();

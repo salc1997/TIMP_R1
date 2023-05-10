@@ -2,54 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" preserve-order="true" >
 
-
-	<test name="Tabelas de Apoio do Sped > Classificação De Contribuentes Do IPI" >
-		<classes>
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPICriar">
-			</class>
-			
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIEditar">
-			</class>
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIDetalhes">
-			</class>
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIVisualizar">
-			</class>
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIFiltrosAvançados">
-			</class>
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIExcluirMassa">
-			</class>
-
-		</classes>
-	</test> 
 	
 	<test name="Tabelas de Apoio do Sped > CodigoAjustesContribuiçoesCreditos" >
 		<classes>
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosCriar">
-			</class>
-			
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçoesCreditosEditar">
-			</class>
-			
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir">
-			</class>
-			
-			<class 
-			name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçoesCreditosExcluirEmMassa">
-			</class>
-			
+			<class name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosCriar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçoesCreditosEditar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçaoCreditosExcluir"></class>
+			<class name="com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçoesCreditosExcluirEmMassa"></class>
 		</classes>
 	</test> 
 	
-	<test name="Tabelas de Apoio do Sped > Código de Codigo de Contribuição Social Apurada" >
+	<test name="Tabelas de Apoio do Sped > Código de  Contribuição Social Apurada" >
 		<classes>
 			<class 
 			name="com.timp.test.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada.CodigoContribuiçaoSocialApuradaCriar">
@@ -216,7 +179,7 @@
 		</classes>
 	</test>
 	
-	<test name="Tabela de Apoio do SPED > Observações do Documento Fiscal - Registro 0461" >
+	<test name="Tabela de Apoio do SPED > Observações do Documento Fiscal " >
 		<classes>
 			<class 
 			name="com.timp.test.MDR.TabelasApoioSped.ObservaçoesdoDocumentoFiscal.ObservaçoesdoDocumentoFiscalCriar">

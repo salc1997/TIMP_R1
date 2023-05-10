@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TabelaCodigoDaSituaçaoTributariaVisualizarPO extends TestBaseEliel{
+public class TabelaCodigoDaSituaçaoTributariaVisualizarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
@@ -76,7 +76,7 @@ public class TabelaCodigoDaSituaçaoTributariaVisualizarPO extends TestBaseEliel{
 	public WebElement codigoE;
 	@FindBy(xpath = "//input[contains(@placeholder,\"descrição\")]")
 	public WebElement descricaoE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Data de Inicio\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Data de Início de Vigência \")]")
 	public WebElement dataVigenciaE;
 
 	
@@ -148,7 +148,7 @@ public class TabelaCodigoDaSituaçaoTributariaVisualizarPO extends TestBaseEliel{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		String tributoE1 = tributoE.getAttribute("value");
 		String codigoaE1 = codigoE.getAttribute("value");

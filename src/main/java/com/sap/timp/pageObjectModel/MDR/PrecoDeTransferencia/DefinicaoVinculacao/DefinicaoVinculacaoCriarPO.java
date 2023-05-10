@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class DefinicaoVinculacaoCriarPO extends TestBaseKathy{
+public class DefinicaoVinculacaoCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li/div/span[text()=\"Preço de Transferência\"]")
 	public WebElement precoTransferencia;
 	@FindBy(xpath = "//span[text()=\" Definição de Vinculação\"]")
@@ -43,7 +43,7 @@ public class DefinicaoVinculacaoCriarPO extends TestBaseKathy{
 	@FindBy(xpath = "//*[@id=\"inputDescription\"]/div/div/input")
 	public WebElement inputCheck;
 	
-	@FindBy(xpath = "//*[@id=\"code\"]")
+	@FindBy(xpath = "//div[@id=\"code\"]/div/div[1]/div[2]")
 	public WebElement comboCodigo;
 		
 	@FindBy(xpath = "//*[@id=\"vinculation\"]")
@@ -113,7 +113,8 @@ public boolean criar() {
 		sleep(1000);
 		inputCheck.sendKeys("1");
 		sim.click();	
-		sleep(10000);
+		sleep(30000);
+		
 		comboCodigo.click();
 		sleep(1000);
 		opcao.click();

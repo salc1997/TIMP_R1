@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassaPO;
 
-public class AgrupamentoDeTributosExcluirEmMassa extends TestBaseEliel{
+public class AgrupamentoDeTributosExcluirEmMassa extends TestBaseSteven{
   
 	
 	LoginTC loginTC;
@@ -21,7 +21,7 @@ public class AgrupamentoDeTributosExcluirEmMassa extends TestBaseEliel{
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarATRPO = new AcessarATRPO();
 		agrupamentoDeTributosExcluirEmMassaPO = new AgrupamentoDeTributosExcluirEmMassaPO();
@@ -32,27 +32,25 @@ public class AgrupamentoDeTributosExcluirEmMassa extends TestBaseEliel{
 		//driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarATR() {
-
-		acessarATRPO.acessarATR();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
+		
+		loginTC.login();
+ 		acessarATRPO.acessarATR();
 
 		boolean sucesso = agrupamentoDeTributosExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
+	
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void Excluir() {
+		
 		sleep(1000);
 		boolean sucesso2 = agrupamentoDeTributosExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
+		sleep(2000);
 
 	}
  

@@ -30,6 +30,7 @@ public class EliminacoesDaConsolidacaoDetalhes extends TestBaseKenssy {
 
 	@AfterClass
 	public void afterClass() {
+		
 	}
 
 	@Test(priority = 0)

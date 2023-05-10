@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeMensagensLixeiraMaisExcluirDefinitivamentePO extends TestBaseEliel {
+public class RegrasDeMensagensLixeiraMaisExcluirDefinitivamentePO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//li[@class=\"base-accordion-li \"]/div/span[text()=\"Lixeira\"]")
 	public WebElement lixeira;
@@ -53,7 +53,7 @@ public class RegrasDeMensagensLixeiraMaisExcluirDefinitivamentePO extends TestBa
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("RegraDeMensagens");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement lixeira1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));

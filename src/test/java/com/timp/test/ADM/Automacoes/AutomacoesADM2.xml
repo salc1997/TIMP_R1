@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" preserve-order="true" >
+
+	<test name=" ADM -  Configuração -  Configuração De  Tributo > Configuração deTributo X Tributo Grupo  " > 
+		<classes>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaodeTributoXTributoGrupo.ConfiguracaodeTributoXTributoGrupoTodasFunc"></class>
+			
+
+		</classes>
+	</test> 
+	
+	<test name=" ADM -Configuração -  Configuração Tributo - Configuração Tributo Agrupamento" >
+		<classes>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoTributoAgrupamento.ConfiguracaoTributoAgrupamentoTodasFunc"></class>
+
+		</classes>
+	</test>
+	
+	<test name=" ADM -  Configuração -  Configuração De  Tributo > Configuração Tributo X Estrutura  " > 
+		<classes>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoTributoXEstrutura.ConfiguracaoTributoXEstruturaCriar"></class>
+			
+		</classes>
+	</test> 
+
+</suite> <!-- Suite -->

@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ConfiguracaoEExecucaoExecucaoPO extends TestBaseCristhian {
+public class ConfiguracaoEExecucaoExecucaoPO extends TestBaseSteven {
 	
 
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-boc\"]")
@@ -72,13 +72,10 @@ public class ConfiguracaoEExecucaoExecucaoPO extends TestBaseCristhian {
 	}
 
 	public boolean executar() {
-
-
 		String url = driver.getCurrentUrl();
-		System.out.println("11");
 		bancoOcorrencia.click();
 		sleep(2000);
-		System.out.println("22");
+	
 		
 		executados.click();
 		sleep(2000);
@@ -95,23 +92,22 @@ public class ConfiguracaoEExecucaoExecucaoPO extends TestBaseCristhian {
 		String id = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[2]/div")).getText();
 		System.out.println("Id ultimo registro: " +id);
 		
-
-		
-		
 		configuracaoEExecucao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(2000);
+	
+		String idRegistro = idObter("idBOConfiguracaoEExecucaco");
+	
 		siguiente.click();
+	//	waitExpectXpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		
-		String idRegistro = idObter3();
+		sleep(28000);
+	
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Executar\"]"));
-
 
 		menu.click();
 		sleep(1000);
@@ -130,7 +126,6 @@ public class ConfiguracaoEExecucaoExecucaoPO extends TestBaseCristhian {
 		
 		atrasCalendario.click();
 		sleep(4000);
-		
 	
 		anio.click();
 		sleep(3000);
@@ -150,8 +145,7 @@ public class ConfiguracaoEExecucaoExecucaoPO extends TestBaseCristhian {
 		btnGravar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		sleep(7000);
+		sleep(40000);
 		
 		biblioteca.click();
 		sleep(1000);
@@ -175,7 +169,9 @@ public class ConfiguracaoEExecucaoExecucaoPO extends TestBaseCristhian {
 		  
 		String id2 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[2]/div")).getText();
 		System.out.println("ID Ultimo Nuevo Registro Executados: " +id2);
-		idInserir2(id2);
+		
+		idInserir("idBOConfiguracaoEExecucacoExecutados",id2);
+		
 		int id1 = convertToInt(id);
 		int id21 = convertToInt(id2);
 		

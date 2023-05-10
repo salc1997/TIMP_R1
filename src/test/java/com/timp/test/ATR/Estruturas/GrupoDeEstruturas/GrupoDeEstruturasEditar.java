@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasEditarPO;
 
-public class GrupoDeEstruturasEditar extends TestBaseEliel {
+public class GrupoDeEstruturasEditar extends TestBaseSteven {
 
 	
 	LoginTC loginTC;
@@ -21,41 +21,36 @@ public class GrupoDeEstruturasEditar extends TestBaseEliel {
 	GrupoDeEstruturasEditarPO grupoDeEstruturasEditarPO;
 	
 	@BeforeClass
-	  public void beforeClass() {
-		  
-		  driver = initializationE();
-		  loginTC = new LoginTC();
-		  acessarATRPO = new AcessarATRPO();
-		  grupoDeEstruturasEditarPO = new  GrupoDeEstruturasEditarPO();
-	  }
+	public void beforeClass() {
 
-	  @AfterClass
-	  public void afterClass() {
-	  }
-	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
+		driver = initialization();
+		loginTC = new LoginTC();
+		acessarATRPO = new AcessarATRPO();
+		grupoDeEstruturasEditarPO = new  GrupoDeEstruturasEditarPO();
+	}
 
-	 	}
 
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
-	 	public void editar() {
-	 		
-	 		ArrayList<Boolean> sucesso = grupoDeEstruturasEditarPO.editar();
-	 		for (int i = 0; i < sucesso.size(); i++) {
-	 			assertTrue(sucesso.get(i), Editar);
-				
-			}
-			
-		
-	 		
-	 	}
+	@AfterClass
+	public void afterClass() {
+		driver.close(); 
+	}
+
+
+	@Test()
+	public void editar() {
+
+		loginTC.login();
+
+		acessarATRPO.acessarATR();
+
+
+		ArrayList<Boolean> sucesso = grupoDeEstruturasEditarPO.editar();
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), Editar);
+
+		}
+		sleep(2000);
+
+
+	}
 }

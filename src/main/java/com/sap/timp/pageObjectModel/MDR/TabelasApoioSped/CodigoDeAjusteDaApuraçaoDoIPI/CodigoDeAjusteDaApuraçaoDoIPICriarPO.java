@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigoDeAjusteDaApuraçaoDoIPICriarPO extends TestBaseEliel{
+public class CodigoDeAjusteDaApuraçaoDoIPICriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
@@ -30,7 +30,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPICriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher a descrição do Código de Ajuste da Apuração do IPI\"]")
 	public WebElement descricao;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigencia;
 
 	
@@ -91,7 +91,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPICriarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigo.sendKeys("55093");
+		codigo.sendKeys("002093");
 		
 		sleep(2000);
 		
@@ -101,7 +101,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPICriarPO extends TestBaseEliel{
 		opcaoindicadorajuste.click();
 		sleep(2000);
 		
-		descricao.sendKeys("Teste do IPI0 55");
+		descricao.sendKeys("Teste do IPI987");
 		
 		sleep(2000);
 		

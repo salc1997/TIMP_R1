@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParâmetrosParaEnvioDeMensagensDetalhes extends TestBaseFernando{
+public class ParâmetrosParaEnvioDeMensagensDetalhes extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 	ParâmetrosParaEnvioDeMensagensDetalhesPO parâmetrosParaEnvioDeMensagensDetalhesPO;
@@ -33,14 +33,12 @@ public class ParâmetrosParaEnvioDeMensagensDetalhes extends TestBaseFernando{
 		driver.close();
 	}
 
-
-
 	@Test(priority = 1)
 	public void detalhes() {
-		
+
 		loginTC.login();
 		accesarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = parâmetrosParaEnvioDeMensagensDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {

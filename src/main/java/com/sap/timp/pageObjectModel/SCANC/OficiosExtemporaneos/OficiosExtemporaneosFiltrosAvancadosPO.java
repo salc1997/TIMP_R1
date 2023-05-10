@@ -51,16 +51,19 @@ public class OficiosExtemporaneosFiltrosAvancadosPO extends TestBaseFernando{
 			sucesso = true;
 		}
 		
-		String subperiodo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
-		String subperiodoFormatString = "01/" + subperiodo;
+	//	String subperiodo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[4]/div")).getText();
+		
+		
+		String subperiodo = "03/03/2022";
+		
 		System.out.println("Subperiodo: " + subperiodo);
-		System.out.println("Subperiodo formateado: " + subperiodoFormatString);
+//		System.out.println("Subperiodo formateado: " + subperiodoFormatString);
 		
 		btnFiltrosAvanzados.click();
 		sleep(2000);
 		
 		waitExpectElement(inputFiltrar);
-		inputFiltrar.sendKeys(subperiodoFormatString);
+		inputFiltrar.sendKeys(subperiodo);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -76,6 +79,7 @@ public class OficiosExtemporaneosFiltrosAvancadosPO extends TestBaseFernando{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
+	
 		
 		return sucesso;
 	}

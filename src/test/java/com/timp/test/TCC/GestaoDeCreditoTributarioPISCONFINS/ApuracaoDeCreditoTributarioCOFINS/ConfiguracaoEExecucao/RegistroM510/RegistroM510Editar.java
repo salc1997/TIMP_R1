@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioCOFINS.ConfiguracaoEExecucao.RegistroM510.RegistroM510EditarPO;
 
-public class RegistroM510Editar extends TestBaseEliel {
+public class RegistroM510Editar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
@@ -20,7 +20,7 @@ public class RegistroM510Editar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		registroM510EditarPO = new RegistroM510EditarPO();
@@ -39,7 +39,6 @@ public class RegistroM510Editar extends TestBaseEliel {
 		acessarTCCPO.acessarTCC();
 
 		boolean sucesso = registroM510EditarPO.editar();
-
 		assertTrue(sucesso, Editar);
 	}
 

@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseMassiel;
 
 public class ObservaçoesdoDocumentoFiscalEditarPO extends TestBaseMassiel{
@@ -72,7 +72,7 @@ public class ObservaçoesdoDocumentoFiscalEditarPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(2000); 
 		
 		siguiente.click();	
 		
@@ -94,8 +94,8 @@ public class ObservaçoesdoDocumentoFiscalEditarPO extends TestBaseMassiel{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		
+		waitExpectElement(descricaosped);
+		sleep(4000);
 		
 		String valor = descricaosped.getAttribute("value");
 
@@ -112,17 +112,15 @@ public class ObservaçoesdoDocumentoFiscalEditarPO extends TestBaseMassiel{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-
 		driver.navigate().refresh();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-			
 		waitExpectElement(descricaosped);
-		
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		
 		
 		String novoTexto=descricaosped.getAttribute("value");
 		

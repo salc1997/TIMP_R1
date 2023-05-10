@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class MapeamentoDeEstruturasCriarPO extends TestBaseEliel{
+public class MapeamentoDeEstruturasCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Mapeamento de Estruturas\"]")
 	public WebElement mapeamentodeestruturas;
@@ -47,7 +47,7 @@ public class MapeamentoDeEstruturasCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@class=\"input dataMap\"]/div/div/div[2]")
 	public WebElement data;
 	
-	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"Data de lançamento\"]")
+	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"Data de lançamento de Ajuste\"]")
 	public WebElement opcaodata;
 	
 	@FindBy(xpath = "//div[@class=\"input taxMap\"]/div/div/div[2]")
@@ -106,7 +106,7 @@ public class MapeamentoDeEstruturasCriarPO extends TestBaseEliel{
 		estruturadedados.click();
 		sleep(2000);
 		opcaoestrutura.click();
-		sleep(2000);
+		sleep(6000);
 		
 		empresa.click();
 		sleep(2000);
@@ -157,7 +157,7 @@ public class MapeamentoDeEstruturasCriarPO extends TestBaseEliel{
 		
 		String idultimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		idInserir1(idultimo);
+		idInserir("MapeamentoDeEstruturasCriar",idultimo);
 
 		System.out.println(id);
 		System.out.println(idultimo);

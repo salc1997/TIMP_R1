@@ -91,10 +91,10 @@ public class CommoditieParaTPCriarPO extends TestBaseMassiel{
 		NumeroEmpresa.click();invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
-		commodine.sendKeys("98676216");invisibilityOfElement("//div[@class=\\\"overlay loader dark\\\"]");
+		commodine.sendKeys("98676216");invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
-		tipo.sendKeys("33726667");invisibilityOfElement("//div[@class=\\\"overlay loader dark\\\"]");
+		tipo.sendKeys("33726667");invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
 		filtro.click();invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

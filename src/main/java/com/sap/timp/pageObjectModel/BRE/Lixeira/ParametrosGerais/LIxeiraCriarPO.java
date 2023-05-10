@@ -8,10 +8,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
 
-public class LIxeiraCriarPO extends TestBaseEliel{
+public class LIxeiraCriarPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//li[@class=\"base-accordion-li \"]/div/span[text()=\"Lixeira\"]")
 	public WebElement lixeira;
@@ -67,7 +67,7 @@ public class LIxeiraCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//input[@placeholder=\" selecionar Data\"]")
 	public WebElement dataValidadeDe;
 		
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[contains(@class,\"dialog-buttons\")]//child::button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
@@ -252,7 +252,7 @@ public class LIxeiraCriarPO extends TestBaseEliel{
 		
 		 rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir1(idB);
+		idInserir("LixeiraParametrosGerais", idB);
 
 		System.out.println(id);
 		System.out.println(idB);
@@ -282,10 +282,10 @@ public class LIxeiraCriarPO extends TestBaseEliel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(mensagem);
+		//waitExpectElement(mensagem);
 		sleep(2000);
-		waitExpectElement(mensagembloqueio);
-		sleep(2000);
+		//waitExpectElement(mensagembloqueio);
+		sleep(5000);
 		lixeira.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

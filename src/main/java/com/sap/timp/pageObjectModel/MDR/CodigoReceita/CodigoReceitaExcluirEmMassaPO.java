@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigoReceitaExcluirEmMassaPO extends TestBaseEliel{
+public class CodigoReceitaExcluirEmMassaPO extends TestBaseSteven{
 	
 
 	@FindBy(xpath = "//span[text()=\"Código da Receita\"]")
@@ -138,7 +138,7 @@ public class CodigoReceitaExcluirEmMassaPO extends TestBaseEliel{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay dark\"]");
-		sleep(2000);
+		sleep(6000);
 
 		//Segundo Registro
 		

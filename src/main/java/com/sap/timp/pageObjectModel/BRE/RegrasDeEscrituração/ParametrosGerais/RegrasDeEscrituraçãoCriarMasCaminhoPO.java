@@ -59,7 +59,7 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 	@FindBy(xpath = "//td[contains(@class, \"EffectiveDateFrom\")]/div/div/input")
 	public WebElement dataValidadeDe;
 		
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
@@ -103,6 +103,9 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement btnBiblioteca;
+	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	public RegrasDeEscrituraçãoCriarMasCaminhoPO() {
 		PageFactory.initElements(driver, this);
@@ -214,10 +217,7 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 		aplicar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(btnJustificactiva);
 		sleep(2000);
 		
 		btnJustificactiva.click();
@@ -227,7 +227,7 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 		justificativa.sendKeys("TESTE AUTOMATIZADO");
 		sleep(1000);
 		btnAceitar.click();
-		sleep(1000);
+		sleep(24000);
 		
 		adicionarCaminho.click();
 		sleep(2000);
@@ -260,7 +260,10 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 		btnGravar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
+		
+		nao.click();
+		sleep(12000);
 		
 		driver.navigate().refresh();
 		sleep(2000);
@@ -294,7 +297,7 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBaseFernando{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir2(idB);
+		idInserir("RegraDeEscrituracao",idB);
 
 		System.out.println(id);
 		System.out.println(idB);

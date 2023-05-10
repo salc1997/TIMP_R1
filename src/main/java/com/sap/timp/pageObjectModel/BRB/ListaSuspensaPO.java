@@ -27,10 +27,10 @@ public class ListaSuspensaPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
 	public WebElement ferramenta;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div")
 	public WebElement menu;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement opcao;
 	
 	@FindBy(xpath = "//li[contains(@class,\"add-column\")]/div/div/div")
@@ -130,7 +130,7 @@ public class ListaSuspensaPO extends TestBaseSteven{
 		
 		
 		agregar.click();
-		
+		sleep(1000);
 
 		actionsMoveToElementElement(agregar);
 		sleep(5000);
@@ -139,11 +139,11 @@ public class ListaSuspensaPO extends TestBaseSteven{
 		cambiarNombre.click();
 		sleep(3000);
 		listaSuspensa.sendKeys("ListaSuspensa");
-		
+		sleep(1000);
 		nombre.click();
 		
 		adicionarCom.click();
-		
+		sleep(1000);
 		sleep(3000);
 		valor1.sendKeys("Teste 1");
 		adicionar.click();
@@ -178,7 +178,7 @@ public class ListaSuspensaPO extends TestBaseSteven{
 		
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		//waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 		
 		
@@ -212,7 +212,7 @@ public class ListaSuspensaPO extends TestBaseSteven{
 			menuListaTc2.click();
 			sleep(5000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+			sleep(7000);
 			//sleep(10000);
 		}
 
@@ -223,7 +223,7 @@ public class ListaSuspensaPO extends TestBaseSteven{
 		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(70000);
 		//sleep(5000);
 		if (amb== false) {
 			menulistaTd1.click();
@@ -232,22 +232,24 @@ public class ListaSuspensaPO extends TestBaseSteven{
 			menuListaTc2.click();
 			sleep(5000);
 		}
-		sleep(5000);
+		sleep(9000);
 		teste2.click();
 		
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		//sleep(5000);
 		if (amb== false) {
 			menulistaTd1.click();
 			sleep(2000);
 		}else {
-			menuListaTc2.click();
 			sleep(2000);
+			menuListaTc2.click();
+			sleep(3000);
+			
 		}
-		sleep(5000);
+		sleep(9000);
 		teste2.click();
 		sleep(5000);
 		info.click();

@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
@@ -51,7 +51,7 @@ public class RegrasDeMensagensValoresCalculados extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Editar);
 		}
-		
+		sleep(2000);
 	}
  
  

@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigosDasObrigaçoesDeICMSaRecolherExcluirPO extends TestBaseEliel{
+public class CodigosDasObrigaçoesDeICMSaRecolherExcluirPO extends TestBaseSteven{
 	
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
@@ -90,15 +90,20 @@ public class CodigosDasObrigaçoesDeICMSaRecolherExcluirPO extends TestBaseEliel{
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(aceitar);
+		sleep(2000);
 		
 		aceitar.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		driver.navigate().refresh();
 		waitExpectElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

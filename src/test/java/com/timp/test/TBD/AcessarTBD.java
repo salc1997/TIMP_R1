@@ -2,7 +2,7 @@ package com.timp.test.TBD;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TBD.AcessarTBDPO;
@@ -13,13 +13,13 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class AcessarTBD extends TestBaseEliel{
+public class AcessarTBD extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarTBDPO acessarTBDPO;
 
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationE();
+	  driver = initialization();
 	  loginTC = new LoginTC();
 	  acessarTBDPO = new  AcessarTBDPO();
   }

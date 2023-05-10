@@ -90,8 +90,8 @@ public class Registro1700VisualizarPO extends TestBaseMassiel{
 		menu.click();
 		sleep(1000);
 		visualizar.click();
-		sleep(3000);
-		waitExpectElement(filial);
+		sleep(9000);
+		//waitExpectElement(filial);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
@@ -118,7 +118,7 @@ public class Registro1700VisualizarPO extends TestBaseMassiel{
 		biblioteca.click();
 		sleep(4000);
 		
-		no.click();
+		//no.click();
 		sleep(2000);
 		
 		waitExpectElement(siguiente);
@@ -135,7 +135,8 @@ public class Registro1700VisualizarPO extends TestBaseMassiel{
 		sleep(1000);
 		editar.click();
 		sleep(3000);
-		waitExpectElement(filial);
+	//	waitExpectElement(filial);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		

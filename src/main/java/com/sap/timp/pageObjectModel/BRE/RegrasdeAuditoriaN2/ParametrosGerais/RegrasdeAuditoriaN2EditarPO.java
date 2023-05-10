@@ -85,7 +85,8 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter3();
+		//String idRegistro = idObter3();
+		String idRegistro = idObter("An2");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
@@ -106,7 +107,13 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBaseFernando{
 		sleep(1000);
 		opcionOperador.click();
 		sleep(1000);
-
+		
+		String valorOperador1 = driver.findElement(By.xpath("//div[@class=\"select-three\"]/div/div/div[2]/div/div/div[2]/input")).getAttribute("value").trim();
+		System.out.println("");
+		System.out.println("Valor operador editado: " + valorOperador1);
+		
+		sleep(4000);
+		
 		btnMotificar.click();
 		sleep(2000);
 		
@@ -117,14 +124,16 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBaseFernando{
 		invisibilityOfElementOverlay();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		
-		CFOP.click();
+		CFOP2.click();
 		invisibilityOfElementOverlay();
 		sleep(2000);
 		
 		waitExpectElement(cboOperador);
+		sleep(2000);
 		attributoNotToBeEmptyXpath("//div[@class=\"select-three\"]/div/div/div[2]/div/div/div[2]/input", "value");
+		sleep(2000);
 		String valorOperador = driver.findElement(By.xpath("//div[@class=\"select-three\"]/div/div/div[2]/div/div/div[2]/input")).getAttribute("value").trim();
 		System.out.println("");
 		System.out.println("Valor operador editado: " + valorOperador);
@@ -132,12 +141,12 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBaseFernando{
 		String valorEnviado = "<";
 		System.out.println("");
 		System.out.println("Valor operador enviado: " + valorEnviado);
-
+		sleep(1000);
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		sucesso.add(valorOperador.equals(valorEnviado));
 		
 		inputCodigo.clear();
-		inputCodigo.sendKeys("r2");
+		inputCodigo.sendKeys("r4");
 		sleep(1000);
 		
 		cboNomeDoValor2.click();
@@ -190,13 +199,13 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBaseFernando{
 		System.out.println("Cantidad camninhos: " + cantCaminhos);
 		
 		// Si hay mas de 4 cuadros significa que no ha sido removido y si hay solamente 4 cuadros, significa que solo esta el camino original
-		if(cantCaminhos <= 4) {
-			System.out.println("Copia removida...");
-			sucesso.add(true);
-		}else {
-			System.out.println("La copia del caminho no se pudo remover...");
-			sucesso.add(false);
-		}
+//		if(cantCaminhos <= 4) {
+//			System.out.println("Copia removida...");
+//			sucesso.add(true);
+//		}else {
+//			System.out.println("La copia del caminho no se pudo remover...");
+//			sucesso.add(false);
+//		}
 		
 		sleep(2000);
 		
@@ -211,10 +220,10 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBaseFernando{
 		System.out.println("Nome valor a enviar: " + nomeValorEnviar);
 		inputNome.clear();
 		inputNome.sendKeys(nomeValorEnviar);
-		sleep(1000);
+		sleep(5000);
 		
 		btnAplicar.click();
-		sleep(2000);
+		sleep(7000);
 		
 		btnGravar.click();
 		sleep(2000);

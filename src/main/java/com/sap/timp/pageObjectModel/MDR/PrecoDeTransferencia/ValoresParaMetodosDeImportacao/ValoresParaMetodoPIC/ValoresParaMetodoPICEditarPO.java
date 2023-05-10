@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ValoresParaMetodoPICEditarPO extends TestBaseEliel {
+public class ValoresParaMetodoPICEditarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Preço de Transferência\"]")
 	public WebElement precodetransferencia;
@@ -79,7 +79,7 @@ public class ValoresParaMetodoPICEditarPO extends TestBaseEliel {
 	public WebElement qtdedep;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Data Inicial\"]")
+	@FindBy(xpath = "//div[@id=\"startDate\"]/div/div/input")
 	public WebElement datainicial;
 	
 	
@@ -130,11 +130,14 @@ public class ValoresParaMetodoPICEditarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		waitExpectElement(datainicial);
+
+		sleep(9000);
+
 		
 		String valor = datainicial.getAttribute("value");
 
-		String enviar = dataanterior();
+		String enviar = fechaAyer();
 
 		datainicial.clear();
 		sleep(2000);
@@ -147,13 +150,13 @@ public class ValoresParaMetodoPICEditarPO extends TestBaseEliel {
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(2000);
 
 		driver.navigate().refresh();
 		sleep(2000);
-		waitExpectElement(biblioteca);
+		waitExpectElement(datainicial);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		
 		String novoTexto=datainicial.getAttribute("value");
@@ -163,10 +166,12 @@ public class ValoresParaMetodoPICEditarPO extends TestBaseEliel {
 		boolean sucesso = novoTexto.equals(enviar);
 		System.out.println(sucesso);
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(datainicial);
+		sleep(2000);
+		
 		datainicial.clear();
-
 		sleep(2000);
 		datainicial.sendKeys(valor);
 		

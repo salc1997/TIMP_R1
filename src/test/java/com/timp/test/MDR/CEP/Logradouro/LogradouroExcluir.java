@@ -2,7 +2,7 @@ package com.timp.test.MDR.CEP.Logradouro;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CEP.Logradouro.LogradouroExcluirPO;
@@ -13,14 +13,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class LogradouroExcluir extends TestBaseKathy {
+public class LogradouroExcluir extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	LogradouroExcluirPO logradouroExcluirPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationK();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		logradouroExcluirPO = new LogradouroExcluirPO();
@@ -41,6 +41,7 @@ public class LogradouroExcluir extends TestBaseKathy {
 		
 		boolean sucesso = logradouroExcluirPO.logradouroExcluir();
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 
 }

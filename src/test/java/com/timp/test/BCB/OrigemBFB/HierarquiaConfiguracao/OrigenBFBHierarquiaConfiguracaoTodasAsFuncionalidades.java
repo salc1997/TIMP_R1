@@ -31,7 +31,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 	
 	@Test(priority = 0)
@@ -175,7 +175,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 		}
 	}
 	
-	@Test(priority = 15)
+@Test(priority = 15)
 	public void excluirConfiguracoes() {
 		
 		ArrayList<Boolean> sucesso = origenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO.excluirConfiguracoes();

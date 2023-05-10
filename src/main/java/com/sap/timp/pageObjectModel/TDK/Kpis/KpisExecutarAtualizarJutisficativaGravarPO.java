@@ -9,9 +9,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Factory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class KpisExecutarAtualizarJutisficativaGravarPO extends TestBaseEliel{
+public class KpisExecutarAtualizarJutisficativaGravarPO extends TestBaseSteven{
 	
 
 	@FindBy(xpath = "//span[text()=\"Kpi's\"]")
@@ -125,7 +125,8 @@ public class KpisExecutarAtualizarJutisficativaGravarPO extends TestBaseEliel{
 	//@FindBy(xpath = "//div[@id=\"UIComp_1\"]/*[1]/*[8]/*[1]/*/*/*[2]/*/*[2]")
 	//@FindBy(xpath = "//div[@data-gs-height=\"5\"]/div[1]/div/div[2]/div/div/div/div/div/div//*[1]/*[8]/*[1]/*/*/*[2]/*/*[2]")
 	//@FindBy(xpath = "//div[contains(@id,\"UIComp_\")]//*[1]/*[8]/*[1]/*/*/*[2]/*/*[2]")
-	@FindBy(xpath = "//div[@id=\"tdk-Wrapper\"]/div/div[2]/div/div/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div[1]/div[1]/div//*[1]/*[8]/*[1]/*/*/*[2]/*/*[5]")
+	//@FindBy(xpath = "//div[@id=\"tdk-Wrapper\"]/div/div[2]/div/div/div/div/div[2]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div[2]/div/div/div/div[1]/div[1]/div//*[1]/*[8]/*[1]/*/*/*[2]/*/*[5]")
+	@FindBy(xpath = "//*[name()=\"g\" and @class=\"v-datapoint-group\"]/*[name()=\"g\"]/*[name()=\"g\" and @data-id][4]")
 	public WebElement quartacolunagrafico;
 	
 	@FindBy(xpath = "//div[@id=\"tdk-Wrapper\"]/div/div[2]/div/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div[1]/div/div[1]/div/div/div[2]/div/div/div[1]/div/div//*[1]/*[8]/*[1]/*/*/*[2]/*/*[5]")
@@ -202,7 +203,7 @@ public class KpisExecutarAtualizarJutisficativaGravarPO extends TestBaseEliel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter2();
+		String idRegistro = idObter("KpisCriar");
 	
 		System.out.println("Ultimo registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -218,8 +219,8 @@ public class KpisExecutarAtualizarJutisficativaGravarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(cartaoindicador);
-		sleep(2000);
+	//	waitExpectElement(cartaoindicador);
+		sleep(10000);
 		
 		fechar.click();
 		
@@ -230,13 +231,17 @@ public class KpisExecutarAtualizarJutisficativaGravarPO extends TestBaseEliel{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		fechar.click();
 		sleep(2000);
 		//String valorcartãoindicadorposexecutar= driver.findElement(By.xpath("//div[@id=\"indicator-card-container\"]/div/p")).getText();
-	
-			quartacolunagrafico.click();
-			sleep(2000);
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		quartacolunagrafico.click();
+		sleep(2000);
 		
 		String dimensao1= dimensao.getText();
 		String valoricms1=valoricms.getText();
@@ -357,7 +362,7 @@ public class KpisExecutarAtualizarJutisficativaGravarPO extends TestBaseEliel{
 		
 		
 		if (idBD > idD) {
-			idInserir1(idB);
+			idInserir("KpisExecutarAtualizarJustificativaGravar", idB);
 			sucesso.add(true);
 		}else {
 			sucesso.add(false);

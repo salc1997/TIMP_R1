@@ -6,13 +6,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasdeAuditoriaN2CorreçãoPO extends TestBaseCristhian {
+public class RegrasdeAuditoriaN2CorreçãoPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//span[text()=\"Regras de Auditoria N2\"]")
 	public WebElement AN2;
+	
+	@FindBy(xpath = "//div[@class=\"right-content\"]")
+	public WebElement fuera;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Hierarquia\"]")
 	public WebElement hererarquia;
@@ -20,7 +23,7 @@ public class RegrasdeAuditoriaN2CorreçãoPO extends TestBaseCristhian {
 	@FindBy(xpath = "//div[text()=\"HCNF0110 - TA-1871 - NÃO MEXER\"]")
 	public WebElement seleccionHererarquiaTQ1;
 	
-	@FindBy(xpath = "//div[text()=\"HCNF0051 - TA-1871 NÃO MEXER\"]")
+	@FindBy(xpath = "//div[text()=\"HCNF0051 - TA-1871 - NÃO MEXER\"]")
 	public WebElement seleccionHererarquiaTP1;
 	
 	@FindBy(xpath = "//div[text()=\"HCNF0125 - TA-1871 NÃO MEXER\"]")
@@ -29,11 +32,18 @@ public class RegrasdeAuditoriaN2CorreçãoPO extends TestBaseCristhian {
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Cenário\"]")
 	public WebElement cenario;
 	
-	@FindBy(xpath = "/html/body/div[4]/div/div[2]/div/div[2]/div[2]/div/div[3]/div/div[2]/div[1]/div[2]/div[1]/div[2]/div/div[2]/div/div[1]/div[2]/input")
+	@FindBy(xpath = "//div[@class=\"list-option\"]/div[@id=\"option-1\"]/div[1]/label/span")
+	public WebElement cenario1;
+	
+	@FindBy(xpath = "//div[@class=\"dialog-content bienpinchewide wide\"]/div/div[2]/div[2]/div/div[3]/div/div[2]/div[1]/div[2]/div[1]/div[2]/div/div[2]/div/div[1]/div[2]/input")
 	public WebElement valor1;
 	
-	@FindBy(xpath = "/html/body/div[4]/div/div[2]/div/div[2]/div[2]/div/div[3]/div/div[2]/div[2]/div[2]/div[1]/div[2]/div/div[2]/div/div[1]/div[2]/input")
+	@FindBy(xpath = "//div[@class=\"dialog-content bienpinchewide wide\"]/div/div[2]/div[2]/div/div[3]/div/div[2]/div[2]/div[2]/div[1]/div[2]/div/div[2]/div/div[1]/div[2]/input")
 	public WebElement valor2;
+	
+	@FindBy(xpath = "//div[@class=\"dialog-content bienpinchewide wide\"]/div/div[2]/div[2]/div/div[3]/div/div[2]/div[3]/div[2]/div[1]/div[2]/div/div[2]/div/div[1]/div[2]/input")
+	public WebElement valor3;
+	
 	
 	@FindBy(xpath = "//button[@class=\"add-btn btn icon icon-font-Sign-and-Symbols icon-plussign\"]")
 	public WebElement adicionarAcoes;
@@ -82,6 +92,10 @@ public class RegrasdeAuditoriaN2CorreçãoPO extends TestBaseCristhian {
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement btnAceitar;
 	
+	
+	@FindBy(xpath = "//div[@class=\"dialog-content bienpinchewide wide\"]//child::div[@class=\"correction-header\"]/div[2]/div/div/div[2]/div/div[2]")
+	public WebElement cerrar;
+	
 	public RegrasdeAuditoriaN2CorreçãoPO() {
 
 		PageFactory.initElements(driver, this);
@@ -94,14 +108,18 @@ public boolean editar() {
 	boolean tp1  = false;
 	boolean tc2  = false;
 	boolean tq1  = false;
-
+	boolean tq2  = false;
+	
 	if (url.contains("tq1")) {
 		tq1 = true;
 	}else if(url.contains("tc2")){
 		tc2 = true;
 	}else if(url.contains("tp1")){
 		tp1 = true;
+	}else if(url.contains("tq2")){
+		tq2 = true;
 	}
+	
 	
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
@@ -114,7 +132,8 @@ public boolean editar() {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
 	
-	String idRegistro = idObter3();
+	//String idRegistro = idObter3();
+	String idRegistro = idObter("An2");
 	WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 	WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
@@ -124,23 +143,23 @@ public boolean editar() {
 	açao.click();
 	sleep(3000);
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(2000);
+	sleep(15000);
 	
 	waitExpectElement(CFOP);
 	
 	CFOP.click();
-	sleep(2000);
+	sleep(4000);
 	
 	adicionarAcoes.click();
 	sleep(3000);
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(6000);
+	sleep(8000);
 	
 	
 	adicionarCorrecoes.click();
-	sleep(3000);
+	sleep(9000);
 	
-	if (tq1 == true) {
+	if (tq1 == true || tq2 == true) {
 		hererarquia.sendKeys("HCNF0110 - TA-1871 - NÃO MEXER");
 		sleep(3000);
 		seleccionHererarquiaTQ1.click();
@@ -150,10 +169,10 @@ public boolean editar() {
 		
 		cenario.sendKeys("CCNF0168 - TA-1871 - NÃO MEXER");
 		sleep(3000);
-		cenario.sendKeys(Keys.ENTER);
+		cenario1.click();
 		sleep(3000);
 	} else if (tp1) {
-		hererarquia.sendKeys("HCNF0051 - TA-1871 NÃO MEXER");
+		hererarquia.sendKeys("HCNF0051 - TA-1871 - NÃO MEXER");
 		sleep(3000);
 		seleccionHererarquiaTP1.click();
 		sleep(4000);
@@ -165,7 +184,7 @@ public boolean editar() {
 		cenario.sendKeys(Keys.ENTER);
 		sleep(3000);
 	}else {
-		hererarquia.sendKeys("HCNF0125 - TA-1871 NÃO MEXER");
+		hererarquia.sendKeys("HCNF0125");
 		sleep(3000);
 		seleccionHererarquiaTC2.click();
 		sleep(4000);
@@ -174,8 +193,12 @@ public boolean editar() {
 		
 		cenario.sendKeys("CCNF0189 - TA-1871 NÃO MEXER");
 		sleep(3000);
-		cenario.sendKeys(Keys.ENTER);
+		cenario1.click();
 		sleep(3000);
+		
+		closeSelectTypeCheckbox(cerrar);
+		sleep(3000);
+		
 	}
 	
 	
@@ -186,6 +209,11 @@ public boolean editar() {
 	valor2.sendKeys("1");
 	sleep(3000);
 	
+	
+	if (tq1 == true || tq2 == true) {
+		valor3.sendKeys("1");
+		sleep(3000);
+	}
 	aplicar.click();
 	sleep(3000);
 	
@@ -199,7 +227,7 @@ public boolean editar() {
 	sleep(3000);
 	
 	aceitar.click();
-	sleep(4000);
+	sleep(40000);
 	
 	
 	//----------------Entrando de nuevo a editar--------------------------

@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ValoresParaMetodoCAPEditarPO extends TestBaseEliel {
+public class ValoresParaMetodoCAPEditarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Preço de Transferência\"]")
 	public WebElement precodetransferencia;
@@ -122,11 +122,15 @@ public class ValoresParaMetodoCAPEditarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		String valor = datainicial.getAttribute("value");
 
-		String enviar = dataanterior();
+		String enviar = fechaAyer();
 
 		datainicial.clear();
 		sleep(2000);
@@ -139,11 +143,16 @@ public class ValoresParaMetodoCAPEditarPO extends TestBaseEliel {
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(2000);
 
 		driver.navigate().refresh();
 		sleep(2000);
 		waitExpectElement(biblioteca);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

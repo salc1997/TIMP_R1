@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" preserve-order="true">
-<<<<<<< HEAD
-
 
 	<test name="SCANC > Relacionamento entre Quadros">
-=======
-	<test name="Prueba0" >
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
 		<classes>
-<<<<<<< HEAD
-
-			<!-- -->
+			<!--  -->
 
 			<class
 				name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosCriar"></class>
@@ -19,155 +12,15 @@
 				name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar"></class>
 			<class
 				name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosFiltroID"></class>
-			<class
-				name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir"></class>
+			<class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir"></class>
 			<class
 				name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa"></class>
 
 
 
-=======
-			<!--  Determinação de Relevância de Tarefa por Motivo de Reabertura > Cadastro de Motivos de Reabertura -->
-			
-			<class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaCriar"></class>
-			<class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaEditar"></class>
-			<class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaDetalhes"></class>
-			<class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaVisualizar"></class>
-			<class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluirEmMassa"></class>
-			<class name="com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.CadastroMotivosReabertura.CadastroMotivosReaberturaExcluir"></class>
-			</classes>
-	
-	</test> 
-	
-	<test name="Prueba1" >
-		<classes>
-			<!--  Parâmetros de criação de NF > Cadastro de Nota Fiscal -->
-			
-			<class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalCriar"></class>
-			<class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalEditar"></class>
-			<class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalExcluir"></class>
-			<class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalExcluirEmMassa"></class>
-			
-				</classes>
-	
-	</test> 
-	
-	<test name="Prueba2" >
-		<classes>
-			<!--  Ocorrência Fiscal > Status de Ocorrência Fiscal -->
-			
-			<class name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalCriar"></class>
-			<class name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalEditar"></class>
-			<class name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalExcluir"></class>
-			
-			</classes>
-	
-	</test> 
-	
-	<test name="Prueba3" >
-		<classes>
-			<!--  Parâmetros de Oficialização de Livros -->
-			
-			<class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosCriar"></class>
-			<class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosDetalhes"></class>
-			<class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosEditar"></class>
-			<class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosVisualizar"></class>
-			<class name="com.timp.test.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosExcluir"></class>
-			
-			</classes>
-	
-	</test> 
-	<test name="Prueba4" >
-		<classes>
-			<!-- Tabela de Apoio ECF -->
-			
-			<class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFCriar"></class>
-			<class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFEditar"></class>
-			<class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFVisualizar"></class>
-			<class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFAtualizar"></class>
-			<class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaTabelaECF"></class>
-			<class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFNovaVersaoLeiaute"></class>
-			<class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluirMasas"></class>
-			<class name="com.timp.test.MDR.TabelaDeApoioECF.TabelaDeApoioECFExcluir"></class>
-			
-			</classes>
-	
-	</test> 
-	
-	<test name="Prueba5" >
-		<classes>
-			<!-- Controle de Crédito Tributário > Status para BCE -->
-		
-			<class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCECriar"></class>
-			<class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEEditar"></class>
-			<class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEVisualizar"></class>
-			<class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEDetalhes"></class>
-			<class name="com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluir"></class>
-			
-			</classes>
-	
-	</test> 
-	
-	<test name="Prueba6" >
-		<classes>
-			<!-- Valor Adicionado > municipios -->
-		
-			<class name="com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioCriar"></class>
-			<class name="com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioEditar"></class>
-			<class name="com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioVisualizar"></class>
-			<class name="com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioDetalhes"></class>
-			<class name="com.timp.test.MDR.ValorAdicionado.Municipio.MunicipioExcluir"></class>
-			
-			</classes>
-	
-	</test> 
-	<test name="Prueba7" >
-		<classes>
-			<!-- cadastroFornecedorcers Fiscais > cadastroFornecedorcers Fiscais -->
-		
-			<class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorCriar"></class>
-			<class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorEditar"></class>
-			<class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorVisualizar"></class>
-			<class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorFiltroId"></class>
-			<class name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorExcluir"></class>
-			</classes>
-	
-	</test> 
-	<test name="Prueba8" >
-		<classes>
-			<!-- Preço de Transferência > Commoditie para TP -->
-		
-			<class name="com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPCriar"></class>
-			<class name="com.timp.test.MDR.PrecoDeTransferencia.CommoditieParaTP.CommoditieParaTPFiltroID"></class>
-		
+
 		</classes>
-	
-	</test> 	
-	<test name="Prueba9" >
-		<classes>
-			<!-- Preco de transferencia > Definicao Vinculacao -->
-		
-			<class name="com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoFiltroID"></class>
-			<class name="com.timp.test.MDR.PrecoDeTransferencia.DefinicaoVinculacao.DefinicaoVinculacaoCriar"></class>
-			
-		</classes>
-	
-	</test> 
-	<test name="Prueba10" >
-		<classes>
-			<!-- SCANC > Relacionamento entre Quadros -->
-		
-			<class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosCriar"></class>
-			<class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosEditar"></class>
-			<class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosFiltroID"></class>
-			<class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluir"></class>
-			<class name="com.timp.test.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosExcluirMassa"></class>
-			
-			
-			
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-		</classes>
-<<<<<<< HEAD
+
 
 	</test> <!-- PruebaTestNG -->
 
@@ -206,6 +59,12 @@
 			<class
 				name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalEditar"></class>
 			<class
+				name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalDetalles"></class>
+				
+			<class
+				name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalVisualizar"></class>
+				
+			<class
 				name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalExcluir"></class>
 			<class
 				name="com.timp.test.MDR.ParametrosCriacaoNF.CadastroNotaFiscal.CadastroNotaFiscalExcluirEmMassa"></class>
@@ -228,9 +87,13 @@
 			<class
 				name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalEditar"></class>
 			<class
+				name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcurrenciaFiscalVisualizar"></class>
+			<class
 				name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalExcluir"></class>
-
-
+			<class
+				name="com.timp.test.MDR.OcorrenciaFiscal.StatusOcorrenciaFiscal.StatusOcorrenciaFiscalExcluirEmMassa"></class>
+			
+			
 
 		</classes>
 
@@ -409,8 +272,6 @@
 
 
 
-=======
-	
-	</test> 
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-</suite> <!-- Suite -->
+
+
+</suite> 

@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtividadesParaTributacao.TiposDeServicos.TiposDeServicosCriarPO;
 
-public class TiposDeServicosCriar extends TestBaseEliel {
+public class TiposDeServicosCriar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -20,7 +20,7 @@ public class TiposDeServicosCriar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		tiposDeServicosCriarPO = new TiposDeServicosCriarPO();
@@ -38,6 +38,6 @@ public class TiposDeServicosCriar extends TestBaseEliel {
 		
 		boolean sucesso = tiposDeServicosCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-
+		sleep(2000);
 	}
 }

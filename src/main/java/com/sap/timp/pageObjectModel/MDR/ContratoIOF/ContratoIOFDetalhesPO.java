@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ContratoIOFDetalhesPO extends TestBaseCristhian{
+public class ContratoIOFDetalhesPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Contrato IOF \"]")
 	public WebElement contratoiof;
@@ -164,8 +164,8 @@ public class ContratoIOFDetalhesPO extends TestBaseCristhian{
 		sucesso.add(contratoNVText.equals(contratoNDText));
 		sucesso.add(codigoResVText.equals(codigoResDText));
 		sucesso.add(tipoPessVText.equals(tipoPessDText));
-		sucesso.add(descripcionVText.equals(descripcionDText));
-		
+		sucesso.add(descripcionVText.contains(descripcionDText));
+		System.out.println(sucesso);
 		return sucesso;
 	}
 

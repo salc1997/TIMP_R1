@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodificaçãoDeAcDeTrabCriarPO extends TestBaseCristhian{
+public class CodificaçãoDeAcDeTrabCriarPO extends TestBaseSteven{
 	
 
 	
@@ -63,7 +63,7 @@ public class CodificaçãoDeAcDeTrabCriarPO extends TestBaseCristhian{
 	public boolean criar() {
 		sleep(2000);
 		tabelaApoio.click();
-		sleep(2000);
+		sleep(6000);
 		tabela24.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

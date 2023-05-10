@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class BancodeOcorrênciasExecutadosEditarPO extends TestBaseCristhian {
+public class BancodeOcorrênciasExecutadosEditarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-boc\"]")
 	public WebElement bancoOcorrencia;
@@ -61,7 +61,7 @@ public class BancodeOcorrênciasExecutadosEditarPO extends TestBaseCristhian {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void editar() {
+	public boolean editar() {
 		
 		bancoOcorrencia.click();
 		sleep(2000);
@@ -69,11 +69,12 @@ public class BancodeOcorrênciasExecutadosEditarPO extends TestBaseCristhian {
 		executados.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();
 		
-		String idRegistroConfiguracaoEExecucao = idObter2();
+		String idRegistroConfiguracaoEExecucao = idObter("idBOConfiguracaoEExecucacoExecutados");
 		
 		System.out.println("");
 		System.out.println("ID Registro Excecutado: " + idRegistroConfiguracaoEExecucao);
@@ -140,7 +141,7 @@ public class BancodeOcorrênciasExecutadosEditarPO extends TestBaseCristhian {
 
 		WebElement monthCalendar = driver.findElement(By.xpath("//div[@tabindex=\"0\" and contains(@class, \"month\") and text()=\"Fev\"]"));
 		monthCalendar.click();
-		sleep(3000);
+		sleep(6000);
 
 		WebElement subperiodoCalendar = driver.findElement(By.xpath("//span[@class=\"subperiod-text\" and text()=\"1M\"]"));
 		subperiodoCalendar.click();
@@ -160,11 +161,13 @@ public class BancodeOcorrênciasExecutadosEditarPO extends TestBaseCristhian {
 		
 		String nuevoTexto = inputSubperiodo.getText();
 		nuevoTexto = nuevoTexto.replace("-", ",");
-		nuevoTexto = nuevoTexto.replace(" ", "");
+		//nuevoTexto = nuevoTexto.replace(" ", "");
 		System.out.println("nuevo Texto " + nuevoTexto);
 		
 		boolean sucesso= nuevoTexto.contains(enviar);
 		System.out.println(sucesso);
+		
+		return sucesso;
 		
 	}
 

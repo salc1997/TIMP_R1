@@ -34,11 +34,15 @@ public class RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO extends 
 	@FindBy(xpath = "//span[text()=\"Log de Geração\"]")
 	public WebElement logDeGeracao;
 	
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement ultimapagina;
+	
 	public RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
 	public ArrayList<Boolean> gerarAnexosMasVisualizacao() {
+		//TSTNG-982
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
@@ -61,10 +65,10 @@ public class RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO extends 
 		}
 		
 		if(url.contains("tc2")) {
-			idRegistro = "8";
+			idRegistro = "30";
 		}
 		
-		WebElement checkBox = driver.findElement(By.xpath("//div[@class=\"dialog-content big\"]/div/div[2]/div/div/div/div[contains(@class, \"tbody\")]/div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/label/span"));
+		WebElement checkBox = driver.findElement(By.xpath("//div[@class=\"dialog-content big\"]/div/div[3]/div/div/div/div[contains(@class, \"tbody\")]/div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/label/span"));
 		
 		sleep(1000);
 		checkBox.click();
@@ -98,6 +102,10 @@ public class RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO extends 
 		if(url.contains("tc2")) {
 			idRegistro = "9";
 		}
+		ultimapagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));

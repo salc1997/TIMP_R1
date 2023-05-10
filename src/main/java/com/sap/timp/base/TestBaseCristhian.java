@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
-
+ 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,7 +21,7 @@ public class TestBaseCristhian extends TestBaseSteven{
 	public WebDriver initializationC() {
 		
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
-		
+	
 		//Evita que el mensaje de "Chorme siendo controlado por un software de automatizacion" aprezca
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("disable-infobars");
@@ -33,12 +33,13 @@ public class TestBaseCristhian extends TestBaseSteven{
 		prefs.put("credentials_enable_service", false);
 		prefs.put("profile.password_manager_enabled", false);
 		options.setExperimentalOption("prefs", prefs);
-        
+	///	options.addArguments("--headless");
+		
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-
 		driver.get(tc2);
-
+		
+		
 		return driver;
 	}
 	

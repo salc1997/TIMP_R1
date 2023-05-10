@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ClassificaçaoDeContribuintesDoIPIDetalhesPO extends TestBaseEliel{
+public class ClassificaçaoDeContribuintesDoIPIDetalhesPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
@@ -120,12 +120,12 @@ public class ClassificaçaoDeContribuintesDoIPIDetalhesPO extends TestBaseEliel{
 
 
 
-		sleep(2000);
+		sleep(6000);
 		fechar.click();
 
 		actionsMoveToElementElement(menu);
 
-		menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
+	
 		açao = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 

@@ -6,7 +6,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -15,7 +15,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelasOutrosDebitosCriarPO;
 
 public class ParametrosOficializacaoLivrosCriar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ParametrosOficializacaoLivrosCriarPO parametrosOficializacaoLivrosCriarPO;
@@ -31,25 +31,13 @@ public class ParametrosOficializacaoLivrosCriar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
-	}
-	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
+		//driver.close();
 	}
 
-	@Test(priority = 1)
-	public void acessarMDR() {
-		
-		acessarMDRPO.acessarMDR();
-
-	}*/
 
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

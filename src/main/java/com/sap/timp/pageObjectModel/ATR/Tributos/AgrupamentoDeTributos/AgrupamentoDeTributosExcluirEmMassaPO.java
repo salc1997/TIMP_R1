@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AgrupamentoDeTributosExcluirEmMassaPO extends TestBaseEliel {
+public class AgrupamentoDeTributosExcluirEmMassaPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[@class=\"title-boxes \"][text()=\"Tributos\"]")
 	public WebElement tributos;
@@ -65,18 +65,24 @@ public class AgrupamentoDeTributosExcluirEmMassaPO extends TestBaseEliel {
 	}
 	
 	public boolean criar() {
-		
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		tributos.click();
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		agrupamentodetributos.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
+		waitExpectElement(siguiente);
+		sleep(2000);
+		
 		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -112,12 +118,10 @@ public class AgrupamentoDeTributosExcluirEmMassaPO extends TestBaseEliel {
 		sleep(2000);
 		agrupamentodetributos.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		sleep(24000);
 		novo.click();
 		sleep(2000);
 		waitExpectElement(nome);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		//Segundo Registro
 		
@@ -138,8 +142,10 @@ public class AgrupamentoDeTributosExcluirEmMassaPO extends TestBaseEliel {
 		gravar.click();
 		sleep(2000);
 	
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		agrupamentodetributos.click();
 		
 		sleep(2000);
@@ -150,10 +156,8 @@ public class AgrupamentoDeTributosExcluirEmMassaPO extends TestBaseEliel {
 		
 		siguiente.click();
 		
-		sleep(3000);
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
 		sleep(2000);
 		
 		
@@ -220,18 +224,18 @@ public class AgrupamentoDeTributosExcluirEmMassaPO extends TestBaseEliel {
 		aceitar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
-		agrupamentodetributos.click();
+		/*agrupamentodetributos.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);*/
 		waitExpectElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();

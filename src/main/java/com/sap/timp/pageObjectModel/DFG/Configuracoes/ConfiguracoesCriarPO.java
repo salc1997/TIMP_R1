@@ -147,7 +147,7 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 	
 	@FindBy(xpath = "//div[@id=\"inputSelectFilial\"]/div/div/div[2]")
 	public WebElement filial;
-	@FindBy(xpath = "//div[@id=\"1000SP0001\"]/div/label/span")
+	@FindBy(xpath = "//div[@id=\"1000SP0014\"]/div/label/span")
 	public WebElement filialO;
 	
 	@FindBy(xpath = "//div[@id=\"inputTimpVersion\"]/div/div/div[2]")
@@ -196,7 +196,7 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		nome.sendKeys("Teste Automatizado");
+		nome.sendKeys("Teste Automatizado Massiel");
 		sleep(1000);
 		
 		tipo.click();
@@ -287,21 +287,23 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 		
 		biblioteca.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
 		
 		raiz1.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		rows = driver.findElements(By.xpath("//div[@data-id and @class=\"tr\"]")).size();
 		
 		String idLeiauteT = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[5]/div")).getText();
+		System.out.println("Id nuevo: " +idLeiauteT);
+		idInserir3(idLeiauteT);
 		String versaoT = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[6]/div")).getText();
 		String nomeT = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[7]/div")).getText();
 		String tipoTE = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[9]/div")).getText();
@@ -319,14 +321,17 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 		}else {
 			sucesso.add(false);
 		}
-		System.out.println("IdLeiaute: " + idLeiauteT );
+		
+		System.out.println(sucesso);
+		
+		System.out.println("Id Leiaute: " + idLeiauteT );
 		idInserir1(idLeiauteT);
 		System.out.println("Versão: " + versaoT.equals("1.0"));
-		System.out.println("Nome: " + nomeT.equals("Teste Automatizado"));
+		System.out.println("Nome: " + nomeT.equals("Teste Automatizado Massiel"));
 		System.out.println("Tipo: " + tipoTE.equals(tipoT));
 		
 		sucesso.add(versaoT.equals("1.0"));
-		sucesso.add(nomeT.equals("Teste Automatizado"));
+		sucesso.add(nomeT.equals("Teste Automatizado Massiel"));
 		sucesso.add(tipoTE.equals(tipoT));
 		
 		configuracoes.click();
@@ -361,14 +366,22 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		nome.sendKeys("Teste Automatizado");
+		nome.sendKeys("Teste Automatizado Massiel");
 		
 		sleep(1000);
 		
 		tipo.click();
 		sleep(1000);
-		leiaute.click();
-		sleep(1000);
+		
+		String idRegistro = idObter3();
+		
+		actionsMoveToElementXpath("//li[contains(text(),\""+idRegistro+"\")]");
+		sleep(2000);
+
+		WebElement Opc6 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro+"\")]"));
+
+		Opc6 .click();
+		sleep(4000);
 		
 		attributeToBeXpath("//div[@id=\"inputTimpVersion\"]/div", "class", "base-select required");
 		sleep(2000);
@@ -430,6 +443,10 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(10000);
 		
+		raiz2.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -464,10 +481,10 @@ public class ConfiguracoesCriarPO extends TestBaseMassiel{
 		System.out.println("Filial: "+ filialC);
 		System.out.println("Tributo: "+tributoC);
 		
-		sucesso.add(nomeC.equals("Teste Automatizado"));
+		sucesso.add(nomeC.equals("Teste Automatizado Massiel"));
 		sucesso.add(empresaC.equals("1000"));
 		sucesso.add(ufC.equals("SP"));
-		sucesso.add(filialC.equals("0001"));
+		sucesso.add(filialC.equals("0014"));
 		sucesso.add(tributoC.equals("ICMS"));
 
 		

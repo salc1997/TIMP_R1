@@ -44,6 +44,11 @@ public class KpisCriarCopiaPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@class=\"baseTabs-view -view-wrapper  selected\"]/div/div[3]/ul/li[3]")
 	public WebElement lixeira;
 	
+	@FindBy(xpath = "//li[@id=\"1\"]")
+	public WebElement clasificacionOPCTQ2;
+	
+	@FindBy(xpath = "//div[@id=\"classification\"]/div/div/div[2]")
+	public WebElement clasificacion;
 	
 	public KpisCriarCopiaPO() {
 		PageFactory.initElements(driver, this);
@@ -56,13 +61,15 @@ public class KpisCriarCopiaPO extends TestBaseMassiel{
 		boolean tp1  = false;
 		boolean tc2  = false;
 		boolean tq1  = false;
-
+		boolean tq2  = false;
 		if (url.contains("tq1")) {
 			tq1 = true;
 		}else if(url.contains("tc2")){
 			tc2 = true;
 		}else if(url.contains("tp1")){
 			tp1 = true;
+		}else if(url.contains("tq2")){
+			tq2 = true;
 		}
 		
 		sleep(2000);
@@ -86,7 +93,8 @@ public class KpisCriarCopiaPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter("kpisCriar");
+		String idRegistro = idObter("KpisCriar");
+		//String idRegistro = idObter2();
 		
 		System.out.println("Ultimo registro: " + idRegistro);
 		
@@ -109,6 +117,11 @@ public class KpisCriarCopiaPO extends TestBaseMassiel{
 		String valor = nome.getAttribute("value");
 		System.out.println("nombre de copia: " + valor);
 		
+		clasificacion.click();
+		sleep(2000);
+		clasificacionOPC.click();
+		sleep(2000);
+		
 		clasificacionAcceso.click();
 		sleep(2000);
 		
@@ -125,6 +138,10 @@ public class KpisCriarCopiaPO extends TestBaseMassiel{
 			clasificacionOPC.click();
 			sleep(2000);
 			
+		}else if (tq2==true ) {
+			clasificacionOPCTQ2.click();
+			sleep(2000);
+			
 		}else {
 			clasificacionOPC.click();
 			sleep(2000);
@@ -133,22 +150,29 @@ public class KpisCriarCopiaPO extends TestBaseMassiel{
 		Gravar.click();
 		sleep(2000);
 		
-		waitExpectElement(biblioteca);
-		sleep(4000);
+		//waitExpectElement(biblioteca);
+		sleep(18000);
 		
 		biblioteca.click();
 		sleep(2000);
 		
 		sim.click();
-		sleep(2000);
+		sleep(12000);
 
-		waitExpectElement(kpispublicos);
+		//waitExpectElement(kpispublicos);
 		sleep(2000);
 		
-		kpispublicos.click();
+		kpis.click();
+		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		kpispublicos.click();
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
 		
 		ultimapagina.click();
 		sleep(2000);
@@ -321,10 +345,13 @@ public class KpisCriarCopiaPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		
 		int rows2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		String idRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows2+"]/div[5]/div")).getText();
-	
+		String idRegistro = "0";
+		if(rows > 0) {
+			idRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows2+"]/div[5]/div")).getText();
+		} 
 		
 		int id1 = convertToInt(idRegistro);
 		int id2 = convertToInt(idRegistro11);

@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class DeterminacaoDeTipoDeCondicaoEditarPO extends TestBaseEliel{
+public class DeterminacaoDeTipoDeCondicaoEditarPO extends TestBaseSteven{
 	
 	
 	@FindBy(xpath = "//span[text()=\"Determinação de Tipo de Condição\"]")
@@ -33,7 +33,7 @@ public class DeterminacaoDeTipoDeCondicaoEditarPO extends TestBaseEliel{
 	
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement dataVigencia;
 	
 	public DeterminacaoDeTipoDeCondicaoEditarPO() {
@@ -74,12 +74,12 @@ public class DeterminacaoDeTipoDeCondicaoEditarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 	
-		sleep(10000);
-		waitExpectElement(dataVigencia);
+		sleep(24000);
+		//waitExpectElement(dataVigencia);
 		sleep(2000);
 		String valor = dataVigencia.getAttribute("value");
 
-		String enviar = dataanterior();
+		String enviar = fechaAyer();
 
 		dataVigencia.clear();
 		sleep(2000);

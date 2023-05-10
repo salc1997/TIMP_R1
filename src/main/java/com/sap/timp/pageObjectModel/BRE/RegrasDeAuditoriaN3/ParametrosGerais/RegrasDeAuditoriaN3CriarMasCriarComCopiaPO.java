@@ -14,7 +14,8 @@ public class RegrasDeAuditoriaN3CriarMasCriarComCopiaPO extends TestBaseFernando
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement btnUltimaPagina;
 	
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
@@ -27,7 +28,7 @@ public class RegrasDeAuditoriaN3CriarMasCriarComCopiaPO extends TestBaseFernando
 	public WebElement lixeira;
 	
 	public RegrasDeAuditoriaN3CriarMasCriarComCopiaPO() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver, this); 
 	}
 	
 	public boolean criarComCopia() {
@@ -61,7 +62,7 @@ public class RegrasDeAuditoriaN3CriarMasCriarComCopiaPO extends TestBaseFernando
 		sleep(2000);
 		
 		waitExpectElement(aplicar);
-		sleep(3000);
+		sleep(9000);
 		aplicar.click();
 		
 		sleep(2000);

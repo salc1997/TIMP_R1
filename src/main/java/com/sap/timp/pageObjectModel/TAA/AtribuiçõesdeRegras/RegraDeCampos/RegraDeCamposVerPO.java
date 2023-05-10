@@ -31,7 +31,7 @@ public class RegraDeCamposVerPO extends TestBaseFernando{
 	
 	public ArrayList<Boolean> ver() {
 		invisibilityOfElementOverlay();
-		abaAtribucoesDeRegras.click();
+		abaAtribucoesDeRegras.click(); 
 		invisibilityOfElementOverlay();
 		
 		icms.click();
@@ -43,7 +43,7 @@ public class RegraDeCamposVerPO extends TestBaseFernando{
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("RegraDeCampos");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -54,7 +54,7 @@ public class RegraDeCamposVerPO extends TestBaseFernando{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		
 		String URL = driver.getCurrentUrl();
 		
@@ -97,7 +97,7 @@ public class RegraDeCamposVerPO extends TestBaseFernando{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(16000);
 		
 		// Datoss de Editar
 		waitExpectXpath("//div[@id=\"rule-type\"]/div/div/div/input");

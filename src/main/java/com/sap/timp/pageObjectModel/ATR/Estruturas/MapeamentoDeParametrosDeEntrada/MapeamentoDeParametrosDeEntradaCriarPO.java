@@ -5,16 +5,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class MapeamentoDeParametrosDeEntradaCriarPO extends TestBaseEliel {
+public class MapeamentoDeParametrosDeEntradaCriarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Mapeamento de Parâmetros de Entrada\"]")
 	public WebElement mapeamento;
 	
 	
-	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
-	public WebElement ultimapagina;
+	@FindBy(xpath = "//div[contains(@class,\"icon-left\")][2]")
+
+	public WebElement primerapagina;
+
 	
 	@FindBy(xpath = "//span[text()=\"Novo Mapeamento\"]")
 	public WebElement novo;
@@ -25,7 +27,12 @@ public class MapeamentoDeParametrosDeEntradaCriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"input structureMap\"]/div/div[2]")
 	public WebElement estruturadedados;
 	
-	@FindBy(xpath = "//li[@id][text()=\"1 - NFs Entrada\"]")
+	@FindBy(xpath = "//div[@class=\"input tributeMap\"]/div/div/div[2]")
+	public WebElement tributo;
+	@FindBy(xpath = "//div[@id=\"05\"]")
+	public WebElement opcaoTributo;
+	
+	@FindBy(xpath = "//li[@id=\"1\"]")
 	public WebElement opcaoestrutura;
 	
 	@FindBy(xpath = "//li[@id][text()=\"Alíquota ICMS\"]")
@@ -64,15 +71,17 @@ public class MapeamentoDeParametrosDeEntradaCriarPO extends TestBaseEliel {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectElement(primerapagina);
 		sleep(2000);
-		ultimapagina.click();
+		primerapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")).getText();
+
 		
 		System.out.println("Ultimo registro: " + id);
 		
@@ -86,9 +95,16 @@ public class MapeamentoDeParametrosDeEntradaCriarPO extends TestBaseEliel {
 		estruturadedados.click();
 		sleep(2000);
 		opcaoestrutura.click();
-		sleep(2000);
+		sleep(5000);
 	
+		tributo.click();
 		sleep(2000);
+		
+		opcaoTributo.click();
+		sleep(2000);
+		
+		closeSelectTypeCheckbox(tributo);
+		
 		direcaomovimento.click();
 		sleep(2000);
 		opcaodirecaomovimento.click();
@@ -97,7 +113,7 @@ public class MapeamentoDeParametrosDeEntradaCriarPO extends TestBaseEliel {
 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		
 		
 		
@@ -105,9 +121,9 @@ public class MapeamentoDeParametrosDeEntradaCriarPO extends TestBaseEliel {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectElement(primerapagina);
 		sleep(2000);
-		ultimapagina.click();
+		primerapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -115,9 +131,11 @@ public class MapeamentoDeParametrosDeEntradaCriarPO extends TestBaseEliel {
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();	
 	//	System.out.println("Rows:" +rows);
 		
-		String idultimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+
+		String idultimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")).getText();
+
 		
-		idInserir1(idultimo);
+		idInserir("MapeamentoDeParametrosDeEntradaCriar",idultimo);
 
 		System.out.println(id);
 		System.out.println(idultimo);

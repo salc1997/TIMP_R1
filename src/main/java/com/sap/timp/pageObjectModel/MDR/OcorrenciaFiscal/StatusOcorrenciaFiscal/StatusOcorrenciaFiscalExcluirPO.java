@@ -22,6 +22,9 @@ public class StatusOcorrenciaFiscalExcluirPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
+	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement No;
 
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
@@ -68,12 +71,23 @@ public class StatusOcorrenciaFiscalExcluirPO extends TestBaseSteven{
 		menu.click();
 		sleep(1000);
 		
+	/*	excluir.click();
+		sleep(2000);
+		waitExpectElement(sim);
+		sleep(2000);
+		No.click();
+		sleep(5000);
+		
+		menu.click();
+		sleep(1000);*/
+		
 		excluir.click();
 		sleep(2000);
 		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(5000);
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		driver.navigate().refresh();

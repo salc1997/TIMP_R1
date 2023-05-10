@@ -81,7 +81,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriarPO extends TestBaseMassi
 		gestaoCredito.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		configuracaoEExecucao.click();
 		sleep(2000);
@@ -104,8 +104,8 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriarPO extends TestBaseMassi
 		
 		nuevo.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(13000);
 		
 		empresa.click();
 		sleep(2000);
@@ -114,7 +114,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriarPO extends TestBaseMassi
 		sleep(2000);
 		
 		closeSelectTypeCheckbox(empresa);
-		sleep(5000);
+		sleep(12000);
 		
 
 		filial.click();
@@ -145,7 +145,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriarPO extends TestBaseMassi
 			sleep(2000);
 			
 			leiaute.click();
-			sleep(2000);
+			sleep(4000);
 			
 			leiauteOPC2.click();
 			sleep(2000);
@@ -178,17 +178,18 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriarPO extends TestBaseMassi
 		sleep(8000);
 		
 		waitExpectElement(siguiente);
-		sleep(8000);
+		sleep(19000);
 		siguiente.click();
-		sleep(2000);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
 		
-		idInserir4(id2);
+		idInserir("id-GCT-ICMS-PainelCreditoICMSConfiguracaoEExecucaco",id2);
+		
 		int idD = convertToInt(idRegistro);
 		int id2D = convertToInt(id2);
 		

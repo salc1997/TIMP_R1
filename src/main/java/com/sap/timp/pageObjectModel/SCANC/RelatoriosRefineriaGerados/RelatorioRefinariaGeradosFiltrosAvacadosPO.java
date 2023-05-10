@@ -36,6 +36,7 @@ public class RelatorioRefinariaGeradosFiltrosAvacadosPO extends TestBaseFernando
 	}
 	
 	public ArrayList<Boolean> filtrosAvanzados() {
+		//TSTNG-893
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
@@ -129,7 +130,7 @@ public class RelatorioRefinariaGeradosFiltrosAvacadosPO extends TestBaseFernando
 		cboFiltroEmpresa.click();
 		sleep(1000);
 		
-		String empresa = driver.findElement(By.xpath("//div[contains(@class, \"tbody\")]/div[contains(@class, \"tr\") and @data-id][1]/div[6]/div")).getText();
+		String empresa = "1000";
 		System.out.println("");
 		System.out.println("Empresa filtro: " + empresa);
 		
@@ -156,7 +157,7 @@ public class RelatorioRefinariaGeradosFiltrosAvacadosPO extends TestBaseFernando
 		
 		cboFiltroStatus.click();
 		sleep(1000);
-		String status = driver.findElement(By.xpath("//div[contains(@class, \"tbody\")]/div[contains(@class, \"tr\") and @data-id][1]/div[8]/div")).getText();
+		String status = driver.findElement(By.xpath("//div[contains(@class, \"tbody\")]/div[contains(@class, \"tr\") and @data-id][1]/div[9]/div")).getText();
 		System.out.println("");
 		System.out.println("Status filtro: " + status);
 		
@@ -172,7 +173,7 @@ public class RelatorioRefinariaGeradosFiltrosAvacadosPO extends TestBaseFernando
 		String statusString = "";
 		
 		for(int i = 0; i < rows2; i++) {
-			statusString = driver.findElement(By.xpath("//div[contains(@class, \"tbody\")]/div[contains(@class, \"tr\") and @data-id][1]/div[8]/div")).getText();			
+			statusString = driver.findElement(By.xpath("//div[contains(@class, \"tbody\")]/div[contains(@class, \"tr\") and @data-id][1]/div[9]/div")).getText();			
 			sucesso.add(statusString.contains(status));
 		}
 		

@@ -10,9 +10,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseEliel{
+public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Regras\"]")
 	public WebElement Regras;
@@ -32,7 +32,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"Auditoria Nvl 3\"][1]")
 	public WebElement opcTipoDeRegra;
 	
-	@FindBy(xpath = "//td[contains(@class, \"component-field\")]/div/div/div[2]")
+	@FindBy(xpath = "//td[contains(@class, \"component-field\")]/div/div[2]")
 	public WebElement componente;
 	
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"DFG\"][1]")
@@ -81,7 +81,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Justificativa\"]")
@@ -166,7 +166,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		componente.click();
 		sleep(1000);
 		opcaoComponente.click();
-		sleep(1000);
+		sleep(3000);
 		
 		tipoTributo.click();
 		sleep(1000);
@@ -193,7 +193,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		estruturaDeDatos.click();
 		sleep(1000);
 		opcaoEstruturaDeDatos.click();
-		sleep(1000);
+		sleep(8000);
 		
 		caracteristicaEspecial.click();
 		sleep(1000);
@@ -229,7 +229,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		versaoDoLeiaute.click();
 		sleep(1000);
 		opcaoversaoDoLeiaute.click();
-		sleep(1000);
+		sleep(10000);
 		
 		actionsMoveToElementXpath("//td[contains(@class, \"EffectiveDateTo\")]/div/div/input");
 		regulamento.click();
@@ -306,7 +306,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		estruturaDeDatos.click();
 		sleep(1000);
 		opcaoEstruturaDeDatos.click();
-		sleep(1000);
+		sleep(15000);
 		
 		caracteristicaEspecial.click();
 		sleep(1000);
@@ -342,7 +342,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		versaoDoLeiaute.click();
 		sleep(1000);
 		opcaoversaoDoLeiaute.click();
-		sleep(1000);
+		sleep(9000);
 		
 		actionsMoveToElementXpath("//td[contains(@class, \"EffectiveDateTo\")]/div/div/input");
 		regulamento.click();
@@ -431,7 +431,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		//--------------------------- excluir em massa ---------------------------------
 		//waitExpectElement(mensagem);
 		//sleep(2000);
-		waitExpectElement(mensagembloqueio);
+		//waitExpectElement(mensagembloqueio);
 		sleep(2000);
 		lixeira.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -494,8 +494,8 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		sleep(2000);
 		//waitExpectElement(mensagem);
 		//sleep(2000);
-		waitExpectElement(mensagembloqueio);
-		sleep(2000);
+	//	waitExpectElement(mensagembloqueio);
+		sleep(4000);
 		lixeira.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -530,6 +530,10 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		
 		System.out.println(sucesso);
 		return sucesso;
+		
+	}
+	
+	public void excluirEmMassa() {
 		
 	}
 

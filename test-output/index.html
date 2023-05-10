@@ -5,8 +5,14 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
+<<<<<<< HEAD
     <link type="text/css" href="testng-reports.css" rel="stylesheet" />
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+=======
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+>>>>>>> refs/remotes/origin/Yessy
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -23,6 +29,7 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
@@ -49,7 +56,11 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+<<<<<<< HEAD
                     <span>C:\Users\lezam\AppData\Local\Temp\testng-eclipse-985975045\testng-customsuite.xml</span>
+=======
+                    <span>C:\Users\user_ta\AppData\Local\Temp\4\testng-eclipse--1203859908\testng-customsuite.xml</span>
+>>>>>>> refs/remotes/origin/Yessy
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +113,11 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
+<<<<<<< HEAD
                         <a href="#" panel-name="suite-Default_suite" title="com.timp.test.BRB.AcessarBRB" class="method navigator-link" hash-for-method="brbEntrar">brbEntrar</a> <!-- method navigator-link -->
+=======
+                        <a href="#" panel-name="suite-Default_suite" title="com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID" class="method navigator-link" hash-for-method="filtro">filtro</a> <!-- method navigator-link -->
+>>>>>>> refs/remotes/origin/Yessy
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,11 +135,16 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+<<<<<<< HEAD
               <span class="class-name">com.timp.test.BRB.AcessarBRB</span>
+=======
+              <span class="class-name">com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID</span>
+>>>>>>> refs/remotes/origin/Yessy
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+<<<<<<< HEAD
                   <a name="brbEntrar">
                   </a> <!-- brbEntrar -->
                   <span class="method-name">brbEntrar</span>
@@ -185,6 +205,44 @@ Session ID: 5873cc86bdb7609a6406267a1f0f1f3e
 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	... 26 more
+=======
+                  <a name="filtro">
+                  </a> <!-- filtro -->
+                  <span class="method-name">filtro</span>
+                  <div class="stack-trace">java.lang.AssertionError: Os resultados não são acorde aos filtros expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID.filtro(CarregamentoDeArquivosFiltroPorID.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+>>>>>>> refs/remotes/origin/Yessy
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -194,16 +252,28 @@ Session ID: 5873cc86bdb7609a6406267a1f0f1f3e
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
+<<<<<<< HEAD
             <span class="header-content">C:\Users\lezam\AppData\Local\Temp\testng-eclipse-985975045\testng-customsuite.xml</span>
+=======
+            <span class="header-content">C:\Users\user_ta\AppData\Local\Temp\4\testng-eclipse--1203859908\testng-customsuite.xml</span>
+>>>>>>> refs/remotes/origin/Yessy
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+<<<<<<< HEAD
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+=======
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+>>>>>>> refs/remotes/origin/Yessy
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
+<<<<<<< HEAD
       &lt;class name=&quot;com.timp.test.BRB.AcessarBRB&quot;/&gt;
+=======
+      &lt;class name=&quot;com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID&quot;/&gt;
+>>>>>>> refs/remotes/origin/Yessy
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -245,6 +315,7 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
+<<<<<<< HEAD
 data.setCell(0, 1, 'brbEntrar')
 data.setCell(0, 2, 'com.timp.test.BRB.AcessarBRB')
 data.setCell(0, 3, 363078);
@@ -253,6 +324,16 @@ return data;
 }
               </script>
               <span class="suite-total-time">Total running time: 6 minutes</span>
+=======
+data.setCell(0, 1, 'filtro')
+data.setCell(0, 2, 'com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID')
+data.setCell(0, 3, 90287);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+>>>>>>> refs/remotes/origin/Yessy
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -278,26 +359,48 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+<<<<<<< HEAD
               <div class="chronological-class-name">com.timp.test.BRB.AcessarBRB</div> <!-- chronological-class-name -->
+=======
+              <div class="chronological-class-name">com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID</div> <!-- chronological-class-name -->
+>>>>>>> refs/remotes/origin/Yessy
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+<<<<<<< HEAD
                 <img src="failed.png">
                 </img>
                 <span class="method-name">brbEntrar</span>
                 <span class="method-start">4738 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
+=======
+>>>>>>> refs/remotes/origin/Yessy
                 <img src="failed.png">
                 </img>
+<<<<<<< HEAD
+=======
+                <span class="method-name">filtro</span>
+                <span class="method-start">3136 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+>>>>>>> refs/remotes/origin/Yessy
                 <span class="method-name">afterClass</span>
+<<<<<<< HEAD
                 <span class="method-start">367820 ms</span>
+=======
+                <span class="method-start">93428 ms</span>
+>>>>>>> refs/remotes/origin/Yessy
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<<<<<<< HEAD
+=======
+<script type="text/javascript" src="testng-reports2.js"></script>
+>>>>>>> refs/remotes/origin/Yessy
 </html>

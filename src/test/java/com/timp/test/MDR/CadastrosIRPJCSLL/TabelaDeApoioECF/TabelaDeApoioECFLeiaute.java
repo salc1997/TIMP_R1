@@ -40,6 +40,15 @@ public class TabelaDeApoioECFLeiaute extends TestBaseMassiel{
 		acessarMDRPO.acessarMDR();
 		boolean sucesso = tabelaDeApoioECFLeiautePO.Leiaute();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
+	@Test(dependsOnMethods = "criar")
+	public void excluir() {
+	    
+		boolean sucesso = tabelaDeApoioECFLeiautePO.Excluir();
+		assertTrue(sucesso, Criar);
+		sleep(2000);
+	}
+
 
 }

@@ -40,7 +40,7 @@ public class ParametrosModeloDeApuracaoTPExcluirEmMasa extends TestBaseKenssy{
 		assertTrue(sucesso, Criar);
 	}
 	
-	@Test()
+	@Test(dependsOnMethods = "criar")
 	public void excluirEmMasa() {
 		sleep(1000);
 		boolean sucesso2 = parametrosModeloDeApuracaoTPExcluirEnMasaPO.excluirEmMasaParametrosModeloApuracaoTP();

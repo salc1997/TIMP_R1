@@ -32,10 +32,9 @@ public class ContasParteBLALURExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void excluir() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
@@ -43,6 +42,7 @@ public class ContasParteBLALURExcluir extends TestBaseSteven {
 		boolean sucesso = contasParteBLALURExcluirPO.excluir();
 
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 
 	}
 

@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigoDIPAMExcluirPO extends TestBaseEliel{
+public class CodigoDIPAMExcluirPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
 	public WebElement tabelacomplementares;
@@ -73,6 +73,7 @@ public class CodigoDIPAMExcluirPO extends TestBaseEliel{
 		excluir.click();
 		sleep(2000);
 		
+		waitExpectElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

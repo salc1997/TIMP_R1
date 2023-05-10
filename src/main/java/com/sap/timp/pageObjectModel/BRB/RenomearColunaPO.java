@@ -19,7 +19,7 @@ public class RenomearColunaPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@id=\"draggable-28\"]/div/div/div/span")
 	public WebElement menuC;
 
-	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/ul/li[5]")
+	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/ul/li[4]")
 	public WebElement opcion;
 	@FindBy(xpath = "//li[@id=\"draggable-28\"]/div/div/div/div/div/div/div[2]/input")
 	public WebElement coluna;
@@ -34,10 +34,10 @@ public class RenomearColunaPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
 	public WebElement ferramenta;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div")
 	public WebElement menu;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement opcao;
 	
 	@FindBy(xpath = "//button[text()=\"Não\"]")

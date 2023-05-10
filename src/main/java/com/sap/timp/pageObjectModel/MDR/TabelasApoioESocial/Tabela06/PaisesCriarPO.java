@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class PaisesCriarPO extends TestBaseEliel{
+public class PaisesCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")
 	public WebElement tabelaApoio;
@@ -77,7 +77,7 @@ public class PaisesCriarPO extends TestBaseEliel{
 		sleep(1000);
 		
 		
-		nome.sendKeys("Brasil");
+		nome.sendKeys("Honduras");
 		sleep(1000);
 		
 		String data = fechaActual();

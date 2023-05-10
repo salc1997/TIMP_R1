@@ -44,5 +44,6 @@ public class SaldosFiltrarId extends TestBaseKenssy {
 		boolean dato = saldosFiltrarIdPO.FiltrarSaldosId();
 
 		assertTrue(dato, "El registro devuelto no coincide con el buscado");
+		sleep(2000);
 	}
 }

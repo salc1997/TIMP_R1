@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamentePO extends TestBaseEliel{
+public class RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamentePO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Lixeira\"]")
 	public WebElement lixeira;
@@ -34,7 +34,7 @@ public class RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamentePO extends Test
 	
 	public RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamentePO() {
 		PageFactory.initElements(driver, this);
-	}
+	} 
 	
 	
 	public ArrayList<Boolean> excluir() {
@@ -53,8 +53,8 @@ public class RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamentePO extends Test
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
-		
+		//String idRegistro = idObter1();
+		String idRegistro = idObter("An1");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement lixeira1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 		
@@ -71,7 +71,7 @@ public class RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamentePO extends Test
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(mensagem);
+		//waitExpectElement(mensagem);
 		sleep(2000);
 		
 		regrasdeauditorian1.click();
@@ -137,7 +137,7 @@ public class RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamentePO extends Test
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(mensagem);
+		//waitExpectElement(mensagem);
 		sleep(2000);
 		
 		sleep(2000);

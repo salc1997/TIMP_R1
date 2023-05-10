@@ -24,17 +24,17 @@ public class EmprestimosCriarPO extends TestBaseKenssy {
 	//DATOS DE NUEVO EMPRESTIMO
 	@FindBy(xpath="//div[@id=\"companies\"]/div/div/div[2]")
 	public WebElement empresa;
-		@FindBy(xpath="//li[@id][1]")
+		@FindBy(xpath="//div[text()=\"1000\"]")
 		public WebElement opcEmpresa;
 		
 	@FindBy(xpath="//div[@id=\"uf\"]/div/div/div[2]")
 	public WebElement ufFilial;
-		@FindBy(xpath="//li[@id][1]")
+		@FindBy(xpath="//diV[text()=\"AL\"]")
 		public WebElement opcUfFilial;
 	
 	@FindBy(xpath="//div[@id=\"branches\"]/div/div/div[2]")
 	public WebElement filial;
-		@FindBy(xpath="//li[@id][1]")
+		@FindBy(xpath="//div[text()=\"1000-AL-0008\"]")
 		public WebElement opcFilial;
 		
 	@FindBy(xpath="//*[@id=\"loanDate\"]/div/div[1]/input")
@@ -94,6 +94,9 @@ public class EmprestimosCriarPO extends TestBaseKenssy {
 	@FindBy(xpath="//button[text()=\"Sim\"]")
 	public WebElement simGravar;
 	
+	@FindBy(xpath="//button[text()=\"Não\"]")
+	public WebElement no;
+	
 	@FindBy(xpath="//span[text()=\"Biblioteca\"]")
 	public WebElement irBiblioteca;
 	
@@ -146,25 +149,26 @@ public class EmprestimosCriarPO extends TestBaseKenssy {
 		
 		
 		empresa.click();
+		sleep(2000);
 		opcEmpresa.click();
-		opcEmpresa.sendKeys(Keys.ESCAPE);
+		closeSelectTypeCheckbox(empresa);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div","class", "base-select required");
-		sleep(2000);
+		//attributeToBeXpath("//div[@id=\"uf\"]/div","class", "base-select required");
+		sleep(8000);
 		
 		ufFilial.click();
 		opcUfFilial.click();
-		opcUfFilial.sendKeys(Keys.ESCAPE);
+		closeSelectTypeCheckbox(ufFilial);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"branches\"]/div","class", "base-select required");
-		sleep(2000);
+	//	attributeToBeXpath("//div[@id=\"branches\"]/div","class", "base-select required");
+		sleep(8000);
 		
 		filial.click();
 		opcFilial.click();
-		opcFilial.sendKeys(Keys.ESCAPE);
-		sleep(2000);
+		closeSelectTypeCheckbox(filial);
+		sleep(8000);
 		
 		String fecha = fechaActual();
 		datadoEmprestimo.sendKeys(fecha);
@@ -240,6 +244,9 @@ public class EmprestimosCriarPO extends TestBaseKenssy {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		
+		no.click();
+		sleep(2000);
 		
 		irFinalPagina.click();
 		

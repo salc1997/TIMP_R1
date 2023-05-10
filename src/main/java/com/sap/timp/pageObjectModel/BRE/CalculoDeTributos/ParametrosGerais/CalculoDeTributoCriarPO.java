@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CalculoDeTributoCriarPO extends TestBaseEliel{
+public class CalculoDeTributoCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Cálculo de Tributos\"]")
 	public WebElement calculodetributos;
@@ -213,10 +213,7 @@ public class CalculoDeTributoCriarPO extends TestBaseEliel{
 		waitExpectElement(adicionarcaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		//sleep(2000);
-		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//sleep(2000);
+	
 		
 		Justificactiva.click();
 		sleep(2000);
@@ -229,8 +226,8 @@ public class CalculoDeTributoCriarPO extends TestBaseEliel{
 		sleep(1000);
 		
 		adicionarcaminho.click();
-		sleep(2000);
-		waitExpectElement(Condicoes);
+		sleep(15000);
+		//waitExpectElement(Condicoes);
 		Condicoes.click();
 		sleep(1000);
 		opcaoCondicoes.click();
@@ -264,7 +261,8 @@ public class CalculoDeTributoCriarPO extends TestBaseEliel{
 		//sleep(2000);
 		//waitExpectXpath("//div[@class=\"overlay loader transp\"]");
 		//invisibilityOfElement("//div[@class=\"overlay loader transp\"]");
-	   //sleep(2000);		
+	   //sleep(2000);	
+	   
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		
 		WebElement caminhocriado = driver.findElement(By.xpath("//div[@id=\"graph\"]//*[name()=\"svg\"]/*[name()=\"g\"]"));
@@ -295,7 +293,7 @@ public class CalculoDeTributoCriarPO extends TestBaseEliel{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir1(idB);
+		idInserir("CalculoDeTributoCriar", idB);
 
 		System.out.println(id);
 		System.out.println(idB);

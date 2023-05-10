@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseSteven;
 
 public class RegistroM600CriarPO extends TestBaseSteven{
@@ -184,18 +184,18 @@ public class RegistroM600CriarPO extends TestBaseSteven{
 		ufO.click();
 		sleep(1000);
 		closeSelectTypeCheckbox(uf);
-		sleep(1000);
+		sleep(4000);
 	
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
-		sleep(3000);
+	//	attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		sleep(9000);
 		
 		filial.click();
 		sleep(1000);
 		filialO.click();
 		sleep(1000);
 		closeSelectTypeCheckbox(filial);
-		sleep(1000);
+		sleep(6000);
 		
 	
 		valorTotalContribuicao.click();
@@ -283,8 +283,8 @@ public class RegistroM600CriarPO extends TestBaseSteven{
 		}
 		
 		
-		sleep(3000);
-		waitExpectElement(siguiente);
+		sleep(6000);
+		//waitExpectElement(siguiente);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();
@@ -296,7 +296,7 @@ public class RegistroM600CriarPO extends TestBaseSteven{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		idInserir("GestaoCreditoTributarioPISRegistroM600",id2);
+		idInserir("GestaoCreditoTributarioCOFINSRegistroM600",id2);
 		int idD = convertToInt(idRegistro);
 		int id2D = convertToInt(id2);
 		

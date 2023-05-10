@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TarefasExecutarConfiguracaoBFBPO extends TestBaseEliel{
+public class TarefasExecutarConfiguracaoBFBPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Calendário de Usuários\"]")
 	public WebElement calendario;
@@ -48,6 +48,9 @@ public class TarefasExecutarConfiguracaoBFBPO extends TestBaseEliel{
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
+	@FindBy(xpath = "//div[@class=\"title\"][text()=\"Fevereiro, 2021\"]")
+	public WebElement febre;
+	
 	public TarefasExecutarConfiguracaoBFBPO() {
 
 		PageFactory.initElements(driver, this);
@@ -82,26 +85,32 @@ public class TarefasExecutarConfiguracaoBFBPO extends TestBaseEliel{
 		sleep(3000);
 		waitExpectXpath("//div[@class=\"day\"][1]");
 		sleep(2000);
-
+		
 		String tituloS = titulo.getText();
-		System.out.println("Titulo: " + tituloS);
+		// System.out.println("Titulo: " + tituloS);
 
 		WebElement setaesquerda = driver
 				.findElement(By.xpath("//div[@class=\"left-arrow icon icon-font-Sign-and-Symbols icon-leftmenu\"]"));
-		int Fevereiro2021 = driver.findElements(By.xpath("//div[@class=\"title\"][text()=\"Fevereiro, 2021\"]")).size();
-		while (Fevereiro2021 == 0) {
-			setaesquerda.click();
-			sleep(2000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-		}
 
 		
-			WebElement dia18 = driver.findElement(By.xpath("//div[@month=\"1\" and @date=\"18\"]"));
-			dia18.click();
-			sleep(2000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+		boolean calendarMonthString = true;	
+		
+		while (calendarMonthString)  {
+			if(titulo.getText().contentEquals("Fevereiro, 2021")  ) {
+				calendarMonthString = false;
+			}else {
+				setaesquerda.click();
+				sleep(2000);
+				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+				sleep(2000);
+			}
+		}
+
+		WebElement dia18 = driver.findElement(By.xpath("//div[@month=\"1\" and @date=\"18\"]"));
+		dia18.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		
 		actionsMoveToElementElement(pesquisar);

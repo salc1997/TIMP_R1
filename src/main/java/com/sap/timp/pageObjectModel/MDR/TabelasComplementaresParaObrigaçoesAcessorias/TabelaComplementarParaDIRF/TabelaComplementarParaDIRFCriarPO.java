@@ -7,9 +7,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TabelaComplementarParaDIRFCriarPO extends TestBaseEliel{
+public class TabelaComplementarParaDIRFCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
 	public WebElement tabelacomplementares;
@@ -140,14 +140,14 @@ public class TabelaComplementarParaDIRFCriarPO extends TestBaseEliel{
 		
 		sleep(2000);
 		
-		cnpj.sendKeys("5553007");
+		cnpj.sendKeys("9873007");
 		sleep(2000);
 		
-		nome.sendKeys("Teste055093");
+		nome.sendKeys("Teste9873");
 		
 		sleep(2000);
 		
-		ans.sendKeys("5");
+		ans.sendKeys("1");
 		
 		sleep(2000);
 		gravar.click();

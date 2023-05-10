@@ -13,7 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosVisualizarPO;
 
-public class SPCBFederaisRetidosVisualizar extends TestBaseFernando{
+public class SPCBFederaisRetidosVisualizar extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	SPCBFederaisRetidosVisualizarPO sPCBFederaisRetidosVisualizarPO;
@@ -35,14 +35,13 @@ public class SPCBFederaisRetidosVisualizar extends TestBaseFernando{
 		driver.close();
 	}
 
-
 	@Test()
 	public void visualizar() {
-		
+
 		loginTC.login();
 
 		acesarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = sPCBFederaisRetidosVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

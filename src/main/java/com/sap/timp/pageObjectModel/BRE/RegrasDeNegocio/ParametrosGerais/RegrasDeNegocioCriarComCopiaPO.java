@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeNegocioCriarComCopiaPO extends TestBaseEliel {
+public class RegrasDeNegocioCriarComCopiaPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Regras de Negócio\"]")
 	public WebElement regrasdenegocio;
@@ -18,7 +18,7 @@ public class RegrasDeNegocioCriarComCopiaPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement ultimapagina;
 	
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
@@ -56,7 +56,7 @@ public class RegrasDeNegocioCriarComCopiaPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("RegrasDeNegocioCriar");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Copiar\"]"));
 		System.out.println("ID ultimo registro: " + idRegistro);
@@ -71,15 +71,13 @@ public class RegrasDeNegocioCriarComCopiaPO extends TestBaseEliel {
 		nome.clear();
 		nome.sendKeys("Testeautomatizado - Nao Mexer - Copia");
 		waitExpectElement(aplicar);
-		sleep(3000);
+		sleep(6000);
 		aplicar.click();
 		
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"overlay loader transp\"]");
-		invisibilityOfElement("//div[@class=\"overlay loader transp\"]");
-		sleep(2000);	
+	
 		
-		biblioteca.click();
+	/*	biblioteca.click();*/
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -133,8 +131,8 @@ public class RegrasDeNegocioCriarComCopiaPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(mensagem);
-		sleep(2000);
+	//	waitExpectElement(mensagem);
+		sleep(6000);
 		lixeira.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -48,13 +48,13 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@id=\"1000_SP_0001\"]")
 	public WebElement filialOPC;
 	
-	@FindBy(xpath = "//div[@id=\"1000_AL_0008\"]")
+	@FindBy(xpath = "//div[@id=\"1000_AL_0805\"]")
 	public WebElement filialOPC1;
 	
 	@FindBy(xpath = "//li[@id=\"01\"]")
 	public WebElement OPC;
 	
-	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@id=\"01\"]")
 	public WebElement OPC11;
 	
 	@FindBy(xpath = "//li[@id=\"1\"]")
@@ -81,7 +81,7 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
-	@FindBy(xpath = "//button[text()=\"Sim\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[2]")
 	public WebElement sim;
 	
 	@FindBy(xpath = "//Span[text()=\"Biblioteca\"]")
@@ -132,16 +132,16 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 		System.out.println("Id ultimo registro: " +idRegistro);
 		
 		nuevo.click();
-		sleep(4000);
+		sleep(12000);
 		
 		empresa.click();
-		sleep(2000);
+		sleep(4000);
 		
 		empresaoPC.click();
-		sleep(6000);
+		sleep(13000);
 		
 		uf.click();
-		sleep(2000);
+		sleep(4000);
 		
 		if (tc2 == true) {
 
@@ -162,7 +162,7 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 		}
 		
 		
-		sleep(6000);
+		sleep(10000);
 		filial.click();
 		sleep(2000);
 		
@@ -209,11 +209,11 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC11.click();
+			OPC1.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
-			OPC.click();
+			OPC1.click();
 			sleep(2000);
 			
 		}else {
@@ -229,11 +229,11 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC11.click();
+			OPC1.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
-			OPC.click();
+			OPC1.click();
 			sleep(2000);
 			
 		}else {
@@ -247,11 +247,11 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC11.click();
+			OPC1.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
-			OPC.click();
+			OPC1.click();
 			sleep(2000);
 			
 		}else {
@@ -266,11 +266,11 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC11.click();
+			OPC1.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
-			OPC.click();
+			OPC1.click();
 			sleep(2000);
 			
 		}else {
@@ -285,11 +285,11 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC11.click();
+			OPC1.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
-			OPC.click();
+			OPC1.click();
 			sleep(2000);
 			
 		}else {
@@ -301,17 +301,21 @@ public class Registro1700CriarPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		sim.click();
+		sleep(10000);
+		
+		
+
+		//waitExpectElement(biblioteca);
 		sleep(6000);
 		
-		waitExpectElement(biblioteca);
-		sleep(2000);
+		
 		
 		biblioteca.click();
 		sleep(4000);
-		
+	
 		/*no.click();
 		sleep(2000);*/
-		waitExpectElement(nuevo);
+		waitExpectElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);

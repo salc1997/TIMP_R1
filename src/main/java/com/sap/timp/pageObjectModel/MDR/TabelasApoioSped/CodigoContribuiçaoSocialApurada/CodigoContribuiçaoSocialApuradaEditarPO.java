@@ -55,12 +55,12 @@ public class CodigoContribuiçaoSocialApuradaEditarPO extends TestBaseSteven{
 		sleep(2000);
 		codigoContri.click();
 
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 		siguiente.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -102,9 +102,8 @@ public class CodigoContribuiçaoSocialApuradaEditarPO extends TestBaseSteven{
 		sleep(2000);
 
 		siguiente.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
 		sleep(2000);
 		
 		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -114,7 +113,7 @@ public class CodigoContribuiçaoSocialApuradaEditarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		açao.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		

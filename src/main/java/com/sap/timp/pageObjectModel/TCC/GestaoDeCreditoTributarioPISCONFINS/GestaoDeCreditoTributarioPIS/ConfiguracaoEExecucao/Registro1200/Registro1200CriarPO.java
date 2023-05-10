@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class Registro1200CriarPO extends TestBaseCristhian{
+public class Registro1200CriarPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
@@ -136,12 +136,12 @@ public class Registro1200CriarPO extends TestBaseCristhian{
 		boolean tc2 = false;
 		boolean tp1 = false;
 		boolean tq1 = false;
-		if (url.contains("tc2")) {
-			tc2 = true;
+		if (url.contains("tp1")) {
+			tp1 = true;
 		}if (url.contains("tq1")) {
 			tq1 = true;
 		} else {
-			tp1 = true;
+			tc2 = true;
 		}
 		
 
@@ -289,7 +289,7 @@ public class Registro1200CriarPO extends TestBaseCristhian{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		idInserir1(id2);
+		idInserir("GestaoCréditoTributárioPISRegistro1200",id2);
 		int idD = convertToInt(idRegistro);
 		int id2D = convertToInt(id2);
 		
@@ -317,7 +317,7 @@ public class Registro1200CriarPO extends TestBaseCristhian{
 			rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 			String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 			
-			idInserir1(id2);
+			idInserir("GestaoCréditoTributárioPISRegistro1200",id2);
 			int idD = convertToInt(idRegistro);
 			int id2D = convertToInt(id2);
 			

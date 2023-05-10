@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Kpis.Raiz.KpisRaizFiltroPorIdPO;
 
-public class KpisRaizFiltroPorId extends TestBaseEliel {
+public class KpisRaizFiltroPorId extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
@@ -21,7 +21,7 @@ public class KpisRaizFiltroPorId extends TestBaseEliel {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		kpisRaizFiltroPorIdPO = new KpisRaizFiltroPorIdPO();
@@ -29,26 +29,17 @@ public class KpisRaizFiltroPorId extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		 //driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarTDK() {
-		acessarTDKPO.acessarTDK();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void filtro() {
+		loginTC.login();
+		acessarTDKPO.acessarTDK();
+		
 		ArrayList<Boolean> sucesso = kpisRaizFiltroPorIdPO.filtro();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Filtros);
 		}
-
 	}
-
 }

@@ -14,7 +14,7 @@ public class FuncionalidadesPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[contains(@class, \"baseTabs-view -view-wrapper  selected\")]/div/div/div/div/div/div/div[@class=\"folder-collapsed icon icon-font-File-and-Folders icon-Closedfolder\"]")
 	public WebElement btnRaiz;
 	
-	@FindBy(xpath = "//div[contains(@class, \"baseTabs-view -view-wrapper selected\")]/div/div/div/div/div/div/div[@class=\"folder-collapsed icon icon-font-File-and-Folders icon-Closedfolder\"]")
+	@FindBy(xpath = "//div[contains(@class, \"baseTabs-view -view-wrapper  selected\")]/div/div/div/div[1]/div/div/div[@class=\"folder-collapsed icon icon-font-File-and-Folders icon-Closedfolder\"]")
 	public WebElement btnRaiz2;
 	
 	@FindBy(xpath = "//div[contains(@class, \"icon-right\")][2]")
@@ -76,6 +76,9 @@ public class FuncionalidadesPO extends TestBaseFernando{
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement btnSim;
+	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement btnNO;
 	
 	@FindBy(xpath = "//span[text()=\"Justificativa\"]")
 	public WebElement btnJustificativa;
@@ -182,6 +185,10 @@ public class FuncionalidadesPO extends TestBaseFernando{
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-my-digitalFile\"]")
 	public WebElement btnMeusArquivos;
 	
+	@FindBy(xpath = "//li[@identifier=\"accordion-item-my-layout\"]")
+	public WebElement btnMeusArquivos2;
+	
+	
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-favorite-digitalFile\"]")
 	public WebElement btnMeusFavoritoss;
 	
@@ -202,6 +209,9 @@ public class FuncionalidadesPO extends TestBaseFernando{
 	
 	@FindBy(xpath = "//div[@id=\"advancedSearch2\"]/div/div[1]/div/div/input")
 	public WebElement inputPesquisarId;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
+	public WebElement PesquisarId;
 	
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-trash-setting\"]")
 	public WebElement pastaLixeira;
@@ -471,6 +481,11 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		btnUltimaPagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		rows = driver.findElements(By.xpath("//div[contains(@class, \"tbody\")]/div[contains(@class, \"tr\") and @data-id and @tabindex=\"0\"]")).size();
 		String idRegistroConfiguracoes = driver.findElement(By.xpath("//div[@class=\"tr\" and @tabindex=\"0\" and @data-id]["+ rows +"]/div[5]/div")).getText();
 		
@@ -493,16 +508,17 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		
 		WebElement opcionLeiaute = driver.findElement(By.xpath("//li[@tabindex=\"0\" and @class=\"list-item\" and @id and contains(text(), \""+this.idRegistroNuevo+"\")]"));
 		opcionLeiaute.click();
-		sleep(1000);
+		sleep(9000);
 		
+	//	attributeToBeXpath("//div[@id=\"inputTimpVersion\"]/div", "class", "base-select required");
 		cboLVersaoLeiaute.click();
-		sleep(1000);
+		sleep(3000);
 		opcionVersaoLeiaute.click();
 		sleep(1000);
 		
 		actionsMoveToElementElement(dataInicioVigencia);
 		cboTributo.click();
-		sleep(1000);
+		sleep(3000);
 		opcionTributo.click();
 		sleep(1000);
 		
@@ -535,7 +551,18 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		sleep(2000);
+		abaConfiguracoes.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		btnRaiz.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		btnUltimaPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -579,7 +606,12 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		btnRaiz.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
+		
+		btnUltimaPagina.click();
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
 		
 		String idRegistro = idObter4();
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -614,7 +646,7 @@ public class FuncionalidadesPO extends TestBaseFernando{
 
 		WebElement monthCalendar = driver.findElement(By.xpath("//div[@tabindex=\"0\" and contains(@class, \"month\") and text()=\"Jan\"]"));
 		monthCalendar.click();
-		sleep(3000);
+		sleep(5000);
 
 		WebElement subperiodoCalendar = driver.findElement(By.xpath("//span[@class=\"subperiod-text\" and text()=\"1M\"]"));
 		subperiodoCalendar.click();
@@ -628,15 +660,21 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+			
 		invisibilityOfElement("//div[@class=\"dialog-indicator\"]");
-		sleep(2000);
+		sleep(12000);
 		
 		btnGravar.click();
 		sleep(1000);
 		
+		
+		 btnNO.click();
+		sleep(14000);
+		
 		// Verificar si es guardado con exito, si no se va quedar esperando por el
 		// waitExpectXpath
-		waitExpectXpath("//li[@class=\"base-toast  toast-success   \"]");
+		//waitExpectXpath("//li[@class=\"base-toast  toast-success   \"]");
 		String mensajeSucesso = driver.findElement(By.xpath("//li[@class=\"base-toast  toast-success   \"]/div/span[2]/span")).getText();
 		invisibilityOfElement("//li[@class=\"base-toast  toast-success   \"]");
 		sleep(2000);
@@ -725,6 +763,10 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		btnUltimaPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -773,7 +815,7 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		sleep(2000);
 		
 		String idRegistro = idObter2();
-		System.out.println("");
+		System.out.println("---");
 		System.out.println("Id Registro Arquivo publico: " + idRegistro);
 		
 		WebElement favorito = driver.findElement(By.xpath("//div[@class=\"tr\" and @tabindex=\"0\" and @data-id=\""+idRegistro+"\"]/div[3]/span"));
@@ -781,14 +823,24 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		favorito.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
+		
+		
+		if(URL.contains("tp1")) {
+			btnMeusArquivos = driver.findElement(By.xpath("//li[@identifier=\"accordion-item-my-digitalFile\"]"));
+		}
 		
 		btnMeusArquivos.click();
-		sleep(1000);
+		sleep(2000);
 		
 		sleep(3000);
+		
+		
+		if(URL.contains("tp1")) {
+			btnMeusFavoritoss = driver.findElement(By.xpath("//li[@identifier=\"accordion-item-favorite-digitalFile\"]"));
+		}
 		btnMeusFavoritoss.click();
-		sleep(1000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -885,6 +937,15 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		btnUltimaPagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(8000);
+		//String idRegistro1 = idObter4();	
 		WebElement status = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[6]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\" and @tabindex=\"0\"]"));
 		
 		boolean sucesso = false;
@@ -914,7 +975,7 @@ public class FuncionalidadesPO extends TestBaseFernando{
 			btnRaiz2.click();
 		}
 		
-		if(URL.contains("tq1")) {
+		if(URL.contains("tq1") || URL.contains("tc2")|| URL.contains("tq2")) {
 			btnRaiz.click();
 		}
 		
@@ -922,14 +983,16 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		btnFiltrosAvancados.click();
-		waitExpectElement(inputPesquisarId);
 		
-		String idRegistro = idObter4();		
-		inputPesquisarId.clear();
-		inputPesquisarId.sendKeys(idRegistro);
-		inputPesquisarId.sendKeys(Keys.ENTER);
+		String idRegistro = idObter4();	
+		
+		btnUltimaPagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		sleep(1000);
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -983,7 +1046,16 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		btnRaiz2.click();
+		if(URL.contains("tp1")) {
+			btnRaiz2 = driver.findElement(By.xpath("//div[contains(@class, \"baseTabs-view -view-wrapper selected\")]/div/div/div/div/div/div/div[@class=\"folder-collapsed icon icon-font-File-and-Folders icon-Closedfolder\"]"));
+			btnRaiz2.click();
+		}
+		
+		if(URL.contains("tq1") || URL.contains("tc2")|| URL.contains("tq2")) {
+			btnRaiz = driver.findElement(By.xpath("//div[contains(@class, \"baseTabs-view -view-wrapper selected\")]/div/div/div/div/div/div/div[@class=\"folder-collapsed icon icon-font-File-and-Folders icon-Closedfolder\"]"));
+			btnRaiz.click();
+		}
+		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -1005,6 +1077,10 @@ public class FuncionalidadesPO extends TestBaseFernando{
 		}else {
 			sucesso.add(true);
 		}
+		
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistroLeiaute+"\"]/div[1]/div"));
 		lixeira = driver.findElement(By.xpath("//div[@data-id=\""+idRegistroLeiaute+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));

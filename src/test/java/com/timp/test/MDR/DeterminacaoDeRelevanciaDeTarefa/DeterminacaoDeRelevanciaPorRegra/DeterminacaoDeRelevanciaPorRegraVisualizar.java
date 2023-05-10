@@ -8,13 +8,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.DeterminacaoDeRelevanciaDeTarefa.DeterminacaoDeRelevanciaPorRegra.DeterminacaoDeRelevanciaPorRegraVisualizarPO;
 
-public class DeterminacaoDeRelevanciaPorRegraVisualizar extends TestBaseCristhian {
+public class DeterminacaoDeRelevanciaPorRegraVisualizar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -23,7 +23,7 @@ public class DeterminacaoDeRelevanciaPorRegraVisualizar extends TestBaseCristhia
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		determinacaoDeRelevanciaPorRegraVisualizarPO = new DeterminacaoDeRelevanciaPorRegraVisualizarPO();
@@ -34,11 +34,9 @@ public class DeterminacaoDeRelevanciaPorRegraVisualizar extends TestBaseCristhia
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void Visualizar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

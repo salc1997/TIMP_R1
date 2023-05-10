@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ClassificaçaoDeContribuintesDoIPIVisualizarPO extends TestBaseEliel{
+public class ClassificaçaoDeContribuintesDoIPIVisualizarPO extends TestBaseSteven{
 	
 	
 	
@@ -47,7 +47,7 @@ public class ClassificaçaoDeContribuintesDoIPIVisualizarPO extends TestBaseEliel
 	public WebElement tipoAtividadeE;
 	@FindBy(xpath = "//*[contains(@placeholder,\"Descrição\")]")
 	public WebElement descricaoE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Data de Inicio\")]")
+	@FindBy(xpath = "//div[@id=\"effective-date-from\"]/div/div[1]/input")
 	public WebElement dataVigenciaE;
 	
 	public ClassificaçaoDeContribuintesDoIPIVisualizarPO() {

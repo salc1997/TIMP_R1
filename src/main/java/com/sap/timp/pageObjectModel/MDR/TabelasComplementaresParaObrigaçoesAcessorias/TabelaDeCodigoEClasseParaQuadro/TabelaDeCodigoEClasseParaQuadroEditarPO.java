@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TabelaDeCodigoEClasseParaQuadroEditarPO extends TestBaseEliel{
+public class TabelaDeCodigoEClasseParaQuadroEditarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
 	public WebElement tabelacomplementares;
@@ -95,9 +95,8 @@ public class TabelaDeCodigoEClasseParaQuadroEditarPO extends TestBaseEliel{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		waitExpectElement(codigo);
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		String valor = codigo.getAttribute("value");
 
@@ -114,17 +113,15 @@ public class TabelaDeCodigoEClasseParaQuadroEditarPO extends TestBaseEliel{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-
+		
 		driver.navigate().refresh();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-			
 		waitExpectElement(codigo);
-		
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+
 		
 		String novoTexto=codigo.getAttribute("value");
 		
@@ -133,7 +130,9 @@ public class TabelaDeCodigoEClasseParaQuadroEditarPO extends TestBaseEliel{
 		boolean sucesso = novoTexto.equals(enviar);
 		System.out.println(sucesso);
 		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(codigo);
 		sleep(2000);
 		codigo.clear();
 
@@ -149,7 +148,7 @@ public class TabelaDeCodigoEClasseParaQuadroEditarPO extends TestBaseEliel{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(2000);
 		
 		return sucesso;
 	}	

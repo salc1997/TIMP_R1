@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CamposChavesFiltroPorIDPO extends TestBaseEliel{
+public class CamposChavesFiltroPorIDPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Configuração de TBD\"]")
 	public WebElement configuracao;
@@ -26,7 +26,7 @@ public class CamposChavesFiltroPorIDPO extends TestBaseEliel{
 		PageFactory.initElements(driver, this);
 	}
 	
-public boolean filtro() {
+	public boolean filtro() {
 
 		
 		sleep(2000);

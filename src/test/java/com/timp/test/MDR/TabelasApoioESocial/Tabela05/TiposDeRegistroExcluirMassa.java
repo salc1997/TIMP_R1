@@ -38,7 +38,7 @@ public class TiposDeRegistroExcluirMassa extends TestBaseFernando {
 		boolean sucesso = tiposDeRegistroExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = tiposDeRegistroExcluirMassaPO.exluirMassa();

@@ -2,7 +2,7 @@ package com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriarComCopiaPO;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-public class RegrasDeNegocioCriarComCopia extends TestBaseEliel{
+public class RegrasDeNegocioCriarComCopia extends TestBaseSteven{
 
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
@@ -22,7 +22,7 @@ public class RegrasDeNegocioCriarComCopia extends TestBaseEliel{
 	
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		regrasDeNegocioCriarComCopiaPO = new RegrasDeNegocioCriarComCopiaPO();
@@ -33,22 +33,17 @@ public class RegrasDeNegocioCriarComCopia extends TestBaseEliel{
 		//driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
 
-	@Test(priority = 1)
-	public void acessarBRE() {
-		acessarBREPO.acessarBRE();
-	}
 	
-	@Test(priority = 2)
+	@Test()
 	public void criar() {
+		loginTC.login();
+		acessarBREPO.acessarBRE();
+		
 		ArrayList<Boolean> sucesso = regrasDeNegocioCriarComCopiaPO.criarComCopia();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
 		}
-		
+		sleep(2000);
 	}
 }

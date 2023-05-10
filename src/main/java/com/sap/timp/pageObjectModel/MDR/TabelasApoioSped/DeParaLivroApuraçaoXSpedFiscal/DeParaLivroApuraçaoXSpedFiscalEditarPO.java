@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class DeParaLivroApuraçaoXSpedFiscalEditarPO extends TestBaseEliel {
+public class DeParaLivroApuraçaoXSpedFiscalEditarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
@@ -42,7 +42,7 @@ public class DeParaLivroApuraçaoXSpedFiscalEditarPO extends TestBaseEliel {
 	public WebElement siguiente;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -100,13 +100,14 @@ public class DeParaLivroApuraçaoXSpedFiscalEditarPO extends TestBaseEliel {
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		
+		sleep(19000);
 		
 		//ediçao
-		attributeToBeXpath("//div[@class=\"element\" and @id=\"tipoTributo\"]/div", "class", "base-select required");
+		//attributeToBeXpath("//div[@class=\"element\" and @id=\"tipoTributo\"]/div", "class", "base-select required");
 		sleep(2000);
 		tipotributo.click();
-		sleep(2000);
+		sleep(3000);
 		opcaotipotributo.click();
 		sleep(2000);
 		String data = "21/08/2020";
@@ -114,7 +115,7 @@ public class DeParaLivroApuraçaoXSpedFiscalEditarPO extends TestBaseEliel {
 		datavigencia.clear();
 		sleep(2000);
 		datavigencia.sendKeys(data);
-		
+		 
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
@@ -146,10 +147,11 @@ public class DeParaLivroApuraçaoXSpedFiscalEditarPO extends TestBaseEliel {
 		sleep(1000);
 		
 		editar1.click();
-		sleep(2000);
-		waitExpectElement(biblioteca);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+
+		sleep(8000);
+
 		
 		
 		boolean sucesso = data.contains(datavigencia.getAttribute("value"));

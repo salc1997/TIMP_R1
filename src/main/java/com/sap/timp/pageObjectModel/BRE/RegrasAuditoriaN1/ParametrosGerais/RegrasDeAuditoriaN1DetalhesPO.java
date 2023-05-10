@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeAuditoriaN1DetalhesPO  extends TestBaseEliel {
+public class RegrasDeAuditoriaN1DetalhesPO  extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Regras de Auditoria N1\"]")
 	public WebElement regrasdeauditorian1;
@@ -35,7 +35,7 @@ public class RegrasDeAuditoriaN1DetalhesPO  extends TestBaseEliel {
 	
 	@FindBy(xpath = "//div[@class=\"detail-label\"]")
 	public WebElement nomede;
-
+ 
 	@FindBy(xpath = "//div[@id=\"graph\"]/*/*/*[3]/*/*[1]")
 	public WebElement r1vi;
 	
@@ -63,7 +63,8 @@ public class RegrasDeAuditoriaN1DetalhesPO  extends TestBaseEliel {
 		//String	id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
 		//System.out.println("Ultimo registro: " + id);
-		String idRegistro = idObter1();
+		//String idRegistro = idObter1();
+		String idRegistro = idObter("An1");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement detalhe = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhe\"]"));

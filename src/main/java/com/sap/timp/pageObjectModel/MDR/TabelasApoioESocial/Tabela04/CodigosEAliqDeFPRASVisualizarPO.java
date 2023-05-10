@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigosEAliqDeFPRASVisualizarPO extends TestBaseEliel {
+public class CodigosEAliqDeFPRASVisualizarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")
 	public WebElement tabelaApoio;
@@ -24,7 +24,7 @@ public class CodigosEAliqDeFPRASVisualizarPO extends TestBaseEliel {
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Codigo FPAS\"]")
 	public WebElement codigo;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Base de cálculo \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Base de Cálculo\"]")
 	public WebElement base;
 	
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher Descrição das Atividades\"]")

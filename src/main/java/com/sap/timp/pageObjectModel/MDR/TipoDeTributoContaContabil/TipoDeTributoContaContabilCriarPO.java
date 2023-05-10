@@ -5,10 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TipoDeTributoContaContabilCriarPO extends TestBaseEliel{
+public class TipoDeTributoContaContabilCriarPO extends TestBaseSteven{
 	
+	@FindBy(xpath = "//span[text()=\"Cadastros PIS/COFINS\"]")
+	public WebElement cadastroPisConfins;
 	
 	@FindBy(xpath = "//span[text()=\"Tipo de Tributo x Conta Contábil\"]")
 	public WebElement tipodetributocontacontabil;
@@ -17,7 +19,7 @@ public class TipoDeTributoContaContabilCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//span[text()=\"Novo Tipo de Tributo x Conta Contábil\"]")
 	public WebElement novotipodetributocontacontabil;
 	
-	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"company\"]/div/div[2]")
 	public WebElement empresa;
 	
 	@FindBy(xpath = "//li[@id][1]")
@@ -27,10 +29,10 @@ public class TipoDeTributoContaContabilCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Tributo Grupo\"]")
 	public WebElement tributogrupo;
 	
-	@FindBy(xpath = "//textarea[@placeholder=\"Preencher Descrição\"]")
-	public WebElement descricao;
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Conta Contábil\"]")
+	public WebElement contabil;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Data de Inicio de Vigência\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Data de Início de Vigência\"]")
 	public WebElement datainicial;
 	
 	
@@ -58,6 +60,10 @@ public class TipoDeTributoContaContabilCriarPO extends TestBaseEliel{
 	
 	public boolean criar() {
 		sleep(2000);
+		
+		cadastroPisConfins.click();
+		sleep(2000);
+		
 		tipodetributocontacontabil.click();
 		sleep(2000);
 
@@ -72,7 +78,11 @@ public class TipoDeTributoContaContabilCriarPO extends TestBaseEliel{
 	
 		//conta o numero de linhas
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String id = "0";
+		
+		if(rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		}
 		
 		System.out.println(id);
 		
@@ -80,7 +90,7 @@ public class TipoDeTributoContaContabilCriarPO extends TestBaseEliel{
 		//criaçao
 		novotipodetributocontacontabil.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		empresa.click();
 		
@@ -93,7 +103,7 @@ public class TipoDeTributoContaContabilCriarPO extends TestBaseEliel{
 		
 		sleep(2000);
 		
-		descricao.sendKeys("teste");
+		contabil.sendKeys("3101220001");
 		
 		
 		sleep(2000);

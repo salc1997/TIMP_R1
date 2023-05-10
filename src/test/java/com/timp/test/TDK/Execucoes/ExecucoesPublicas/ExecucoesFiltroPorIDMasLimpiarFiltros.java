@@ -31,18 +31,11 @@ public class ExecucoesFiltroPorIDMasLimpiarFiltros extends TestBaseFernando{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarTDK() {
-		acessarTDKPO.acessarTDK();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void detalhes() {
+		loginTC.login();
+		acessarTDKPO.acessarTDK();
+		
 		ArrayList<Boolean> sucesso = execucoesFiltroPorIDMasLimpiarFiltrosPO.filtroPorID();
 
 		for (int i = 0; i < sucesso.size(); i++) {

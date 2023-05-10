@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class MapeamentoDeEstruturasExcluirPO extends TestBaseEliel{
+public class MapeamentoDeEstruturasExcluirPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Mapeamento de Estruturas\"]")
 	public WebElement mapeamentodeestruturas;
@@ -43,7 +43,7 @@ public class MapeamentoDeEstruturasExcluirPO extends TestBaseEliel{
 		sleep(2000);
 
 		// pega o ultimo id que foi gerado no criar
-		String idRegistro = idObter1();
+		String idRegistro = idObter("MapeamentoDeEstruturasCriar");
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(

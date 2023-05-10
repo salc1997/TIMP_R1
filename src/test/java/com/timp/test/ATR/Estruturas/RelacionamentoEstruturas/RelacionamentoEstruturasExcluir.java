@@ -2,7 +2,7 @@ package com.timp.test.ATR.Estruturas.RelacionamentoEstruturas;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
@@ -35,31 +35,21 @@ public class RelacionamentoEstruturasExcluir extends TestBaseSteven{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
-  @Test(priority = 1)
- 	public void login() {
- 		loginTC.login();
 
- 	}
-
- 	@Test(priority = 2)
- 	public void ATREntrar() {
-
- 		boolean sucesso = acessarATRPO.acessarATR();
-
- 	}
-
- 
- 	
- 	@Test(priority = 3)
+ 	@Test()
  	public void excluir() {
+ 		
+ 		loginTC.login();
+ 		acessarATRPO.acessarATR();
  		
  		boolean sucesso =relacionamentoEstruturasExcluirPO.excluir();
 
  		assertTrue(sucesso, Eliminado);
 	
- 		
+ 		sleep(2000);
 
  	}
  	

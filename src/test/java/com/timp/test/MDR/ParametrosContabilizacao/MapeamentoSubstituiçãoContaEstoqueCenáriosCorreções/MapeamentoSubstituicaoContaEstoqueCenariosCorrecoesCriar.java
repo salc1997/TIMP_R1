@@ -16,7 +16,7 @@ import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoConta
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoes.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriarPO;
 
 public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriarPO mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriarPO;
@@ -34,7 +34,6 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriar extends Te
 	public void afterClass() {
 		driver.close();
 	}
-
 
 	@Test()
 	public void criar() {

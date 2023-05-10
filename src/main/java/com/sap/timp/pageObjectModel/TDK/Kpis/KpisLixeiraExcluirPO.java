@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class KpisLixeiraExcluirPO extends TestBaseCristhian{
+public class KpisLixeiraExcluirPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//span[text()=\"Kpi's\"]")
 	public WebElement kpis;
@@ -114,7 +114,7 @@ public class KpisLixeiraExcluirPO extends TestBaseCristhian{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter1();
+		String idRegistro = idObter("KpisLixeira");
 
 		System.out.println("Ultimo registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
@@ -128,12 +128,13 @@ public class KpisLixeiraExcluirPO extends TestBaseCristhian{
 		sleep(1000);
 		lixeira.click();
 		sleep(2000);
+		waitExpectElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		waitExpectElement(Lixeira);
-		sleep(2000);
+		sleep(12000);
 		Lixeira.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -53,7 +53,7 @@ public class AssociaçãoCriarPO extends TestBaseFernando {
 	@FindBy(xpath = "//div[contains(@class, \"atividadeFiscal\")]/div/div[2]/div/div[2]")
 	public WebElement inputAtividadeFiscal;
 	
-	@FindBy(xpath = "//div[@class=\"list-option\"]/div/div[contains(text(),\"Atividade Fiscal Teste\")]")
+	@FindBy(xpath = "//div[@id=\"option-1\"]")
 	public WebElement opcionComboAtividadeFiscal;
 	
 	@FindBy(xpath = "//div[contains(@class, \"grupoAtividade\")]/div/div[2]/div/div[2]")
@@ -184,7 +184,7 @@ public class AssociaçãoCriarPO extends TestBaseFernando {
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 
 		btnUltimaPagina.click();
 		

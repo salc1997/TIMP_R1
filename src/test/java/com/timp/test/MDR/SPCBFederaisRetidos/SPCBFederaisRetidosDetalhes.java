@@ -20,8 +20,6 @@ public class SPCBFederaisRetidosDetalhes extends TestBaseKenssy {
 	AcessarMDRPO acesarMDRPO;
 	SPCBFederaisRetidosDetalhesPO sPCBFederaisRetidosDetalhesPO;
 
-
-
 	@BeforeClass
 	public void beforeClass() {
 		driver = initializationKen();
@@ -35,14 +33,13 @@ public class SPCBFederaisRetidosDetalhes extends TestBaseKenssy {
 		driver.close();
 	}
 
-
 	@Test()
 	public void detalhe() {
-		
+
 		loginTC.login();
 
 		acesarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = sPCBFederaisRetidosDetalhesPO.detalhe();
 
 		for (int i = 0; i < sucesso.size(); i++) {

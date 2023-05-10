@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class LimiteDeCreditoAUtilizarEditarPO extends TestBaseEliel{
+public class LimiteDeCreditoAUtilizarEditarPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//span[text()=\"Controle de Crédito Tributário\"]")
 	public WebElement controledecreditotributario;
@@ -102,7 +102,7 @@ public class LimiteDeCreditoAUtilizarEditarPO extends TestBaseEliel{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 
 		String valor = limitedeutilizacaodecredito.getAttribute("value");
 
@@ -125,10 +125,14 @@ public class LimiteDeCreditoAUtilizarEditarPO extends TestBaseEliel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 			
 		waitExpectElement(limitedeutilizacaodecredito);
 		
-		sleep(2000);
+		sleep(8000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		String novoTexto=limitedeutilizacaodecredito.getAttribute("value");

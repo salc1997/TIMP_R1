@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AgrupadorDeCFOPExcluirEmMassaPO extends TestBaseEliel{
+public class AgrupadorDeCFOPExcluirEmMassaPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
 	public WebElement tabelacomplementares;
@@ -102,11 +102,11 @@ public class AgrupadorDeCFOPExcluirEmMassaPO extends TestBaseEliel{
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigodeagrupamento.sendKeys("0709307");
+		codigodeagrupamento.sendKeys("1239307");
 		
 		sleep(2000);
 		
-		agrupadorcfop.sendKeys("7770937");
+		agrupadorcfop.sendKeys("1230937");
 		
 		sleep(2000);
 		
@@ -134,11 +134,11 @@ public class AgrupadorDeCFOPExcluirEmMassaPO extends TestBaseEliel{
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigodeagrupamento.sendKeys("70931008");
+		codigodeagrupamento.sendKeys("12331008");
 		
 		sleep(2000);
 		
-		agrupadorcfop.sendKeys("7093778");
+		agrupadorcfop.sendKeys("1233778");
 		
 		sleep(2000);
 		

@@ -2,7 +2,7 @@ package com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasAuditoriaN1.Edicao.RegrasdeAuditoriaN1EdiçãoSimulaPO;
@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class RegrasdeAuditoriaN1EdiçãoSimula extends TestBaseCristhian {
+public class RegrasdeAuditoriaN1EdiçãoSimula extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasdeAuditoriaN1EdiçãoSimulaPO regrasdeAuditoriaN1EdiçãoSimulaPO;
@@ -22,7 +22,7 @@ public class RegrasdeAuditoriaN1EdiçãoSimula extends TestBaseCristhian {
   @BeforeClass
   public void beforeClass() {
 
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		regrasdeAuditoriaN1EdiçãoSimulaPO = new RegrasdeAuditoriaN1EdiçãoSimulaPO();
@@ -34,23 +34,13 @@ public class RegrasdeAuditoriaN1EdiçãoSimula extends TestBaseCristhian {
 	  driver.close();
   }
 
-  @Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
-
-		acessarBREPO.acessarBRE();
-
-	}
-	@Test(priority = 2)
+	@Test()
 	public void editar() {
-
+		loginTC.login();
+		acessarBREPO.acessarBRE();
 		boolean sucesso = regrasdeAuditoriaN1EdiçãoSimulaPO.editar();
 		assertTrue(sucesso, Editar);
+		sleep(2000);
 
 	}
 

@@ -2,7 +2,7 @@ package com.timp.test.MDR.ControleDeCreditoTributario.StatusParaBancoIndébitos;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.StatusParaBCE.StatusParaBCEExcluirPO;
@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class StatusParaBancoIndébitosExcluir extends TestBaseCristhian{
+public class StatusParaBancoIndébitosExcluir extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	StatusParaBancoIndébitosExcluirPO statusParaBancoIndébitosExcluirPO;
@@ -22,7 +22,7 @@ public class StatusParaBancoIndébitosExcluir extends TestBaseCristhian{
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		statusParaBancoIndébitosExcluirPO = new StatusParaBancoIndébitosExcluirPO();
@@ -33,10 +33,9 @@ public class StatusParaBancoIndébitosExcluir extends TestBaseCristhian{
 		driver.close();
 	}
 
-
 	@Test()
 	public void excluir() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

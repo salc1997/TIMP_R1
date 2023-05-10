@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ParametrosGeraisHierarquiaCriarPO extends TestBaseCristhian {
+public class ParametrosGeraisHierarquiaCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][1]")
 	public WebElement hierarquias;
 
@@ -106,22 +106,22 @@ public class ParametrosGeraisHierarquiaCriarPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1100);
 
-		nomeDeHierarquia.sendKeys("Teste QA PREUBA 007");
+		nomeDeHierarquia.sendKeys("Teste QA PRUEBA TA");
 		sleep(1100);
 
-		nomeDaAba.sendKeys("Teste QA PREUBA 007");
+		nomeDaAba.sendKeys("Teste QA PRUEBA TA");
 		sleep(1100);
 
 		actionsMoveToElementElement(nomeDoCampoDeLinha);
 		sleep(1100);
-		nomeDaHierarquia.sendKeys("Teste QA PREUBA 007");
+		nomeDaHierarquia.sendKeys("Teste QA PRUEBA TA");
 		sleep(1100);
 		listaNomeDaAba.click();
 		opcao.click();
 		opcao.sendKeys(Keys.ESCAPE);
 		sleep(1100);
 
-		nomeDoGrupo.sendKeys("Teste QA PREUBA 007");
+		nomeDoGrupo.sendKeys("Teste QA PRUEBA TA");
 		sleep(1100);
 		listaNomeDoHierarquia.click();
 		opcao.click();
@@ -161,7 +161,7 @@ public class ParametrosGeraisHierarquiaCriarPO extends TestBaseCristhian {
 			f = f + 1;
 		}
 
-		nomeDoCampoDeLinha.sendKeys("Teste QA PREUBA 007");
+		nomeDoCampoDeLinha.sendKeys("Teste QA PRUEBA TA");
 		sleep(1000);
 		listanomeDoSubnivel.click();
 		opcaoTodos.click();
@@ -197,7 +197,7 @@ public class ParametrosGeraisHierarquiaCriarPO extends TestBaseCristhian {
 				.getText();
 		System.out.println(nome);
 
-		sucesso.add(nome.equals("Teste QA PREUBA 007"));
+		sucesso.add(nome.equals("Teste QA PRUEBA TA"));
 
 		idInserir1(id2);
 

@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AjusteEInformaçoesDeValoresVisualizarPO extends TestBaseEliel{
+public class AjusteEInformaçoesDeValoresVisualizarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
@@ -69,7 +69,7 @@ public class AjusteEInformaçoesDeValoresVisualizarPO extends TestBaseEliel{
 	public WebElement sequenciaE;
 	@FindBy(xpath = "//*[contains(@placeholder,\"descrição\")]")
 	public WebElement descricaoE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Data de Inicio\")]")
+	@FindBy(xpath = "//div[@id=\"Validity\"]/div/div[1]/input")
 	public WebElement dataVigenciaE;
 	
 	public AjusteEInformaçoesDeValoresVisualizarPO() {
@@ -138,7 +138,7 @@ public class AjusteEInformaçoesDeValoresVisualizarPO extends TestBaseEliel{
 		
 		
 		biblioteca.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();
@@ -161,10 +161,9 @@ public class AjusteEInformaçoesDeValoresVisualizarPO extends TestBaseEliel{
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		attributoNotToBeEmptyXpath("//input[@placeholder=\"Preencher o Reflexo na Apuração ICMS\"]", "value");
 		sleep(2000);
 		
+		sleep(12000);
 		String codigoE1 = codigoE.getAttribute("value");
 		String origemE1 = origemE.getAttribute("value");
 		String ufE1 = ufE.getAttribute("value");

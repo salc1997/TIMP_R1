@@ -62,6 +62,7 @@ public class CodigoAjustesContribuiçoesCreditosEditarPO extends TestBaseFernando
 		açao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(inputDataInicioVigencia);
 		sleep(3000);
 		
 		String textoDataInicioVigenciaValorOriginal = inputDataInicioVigencia.getAttribute("value"); 
@@ -88,9 +89,10 @@ public class CodigoAjustesContribuiçoesCreditosEditarPO extends TestBaseFernando
 		driver.navigate().refresh();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		waitExpectElement(inputDataInicioVigencia);	
+		sleep(3000);
 		
-		waitExpectElement(inputDataInicioVigencia);		
+			
 		attributoNotToBeEmptyElement(inputDataInicioVigencia, "value");
 		sleep(2000);
 		String dataInicioVigenciaEditadoString = inputDataInicioVigencia.getAttribute("value");

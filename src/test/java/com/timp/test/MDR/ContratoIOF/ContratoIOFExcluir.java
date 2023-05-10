@@ -2,7 +2,7 @@ package com.timp.test.MDR.ContratoIOF;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CodigoContabilizacao.CodigoContabilizacaoExcluirPO;
@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ContratoIOFExcluir extends TestBaseEliel {
+public class ContratoIOFExcluir extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ContratoIOFExcluirPO contratoIOFEcluirPO;
@@ -22,7 +22,7 @@ public class ContratoIOFExcluir extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		contratoIOFEcluirPO = new ContratoIOFExcluirPO();
@@ -33,10 +33,9 @@ public class ContratoIOFExcluir extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void excluir() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();

@@ -5,12 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TaxasDeConversaoExcluirPO extends TestBaseEliel{
+public class TaxasDeConversaoExcluirPO extends TestBaseSteven{
 	
 	
-	@FindBy(xpath = "//span[text()=\"Taxas de Conversão\"]")
+	@FindBy(xpath = "//span[text()=\"Taxas Complementares\"]")
 	public WebElement taxasdeconversao;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")

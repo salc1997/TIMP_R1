@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CenariosCorrecaoVisualizarPO extends TestBaseKathy{
+public class CenariosCorrecaoVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li/div/span[text()=\"Cenários de Correção\"]")
 	public WebElement cenarios;
 		
@@ -121,6 +121,7 @@ public class CenariosCorrecaoVisualizarPO extends TestBaseKathy{
 		visibilityOfElementXpath("//span[@id=\"tax\"]");
 		sleep(1000);
 		
+		
 		String tributoV1 = tributoV.getText();
 		String codigoV1 = codigoV.getText();
 		String descricaoV1 = descricaoV.getText();
@@ -129,6 +130,7 @@ public class CenariosCorrecaoVisualizarPO extends TestBaseKathy{
 		String dataVigenciaV1 = dataVigenciaV.getText();
 		
 		
+		System.out.println("Datos del Visualizar");
 		System.out.println(tributoV1);
 		System.out.println(codigoV1);
 		System.out.println(descricaoV1);
@@ -162,7 +164,8 @@ public class CenariosCorrecaoVisualizarPO extends TestBaseKathy{
 		String campoE1 = campoE.getAttribute("value");
 		String dataVigenciaE1 = dataVigenciaE.getAttribute("value");
 		
-		
+		System.out.println("");
+		System.out.println("Datos del Editar");
 		System.out.println(tributoE1);
 		System.out.println(codigoE1);
 		System.out.println(descricaoE1);

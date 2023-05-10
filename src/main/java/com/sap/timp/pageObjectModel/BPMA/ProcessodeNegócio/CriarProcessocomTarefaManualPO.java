@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CriarProcessocomTarefaManualPO extends TestBaseCristhian{
+public class CriarProcessocomTarefaManualPO extends TestBaseSteven{
 	
 	
 	
@@ -123,7 +123,7 @@ public class CriarProcessocomTarefaManualPO extends TestBaseCristhian{
 	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
-	@FindBy(xpath = "//*[@id=\"createProcess\"]/div/div/div[4]/div[2]/div[2]/label/span")
+	@FindBy(xpath = "//*[@id=\"createProcess\"]/div/div/div[5]/div[2]/div[2]/label/span")
 	public WebElement periodoFiscalTP1;
 	
 	@FindBy(xpath = "//*[@id=\"createProcess\"]/div/div/div[5]/div[2]/div[2]/label/span")
@@ -157,7 +157,7 @@ public class CriarProcessocomTarefaManualPO extends TestBaseCristhian{
 		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println(id); 
 		
-		sleep(2000);
+		sleep(4000);
 		
 		novo.click();
 		sleep(3000);
@@ -204,7 +204,7 @@ public class CriarProcessocomTarefaManualPO extends TestBaseCristhian{
 		criar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		
 		
@@ -214,11 +214,11 @@ public class CriarProcessocomTarefaManualPO extends TestBaseCristhian{
 		sleep(2000);
 		
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		/*invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		moveToElement(inicio, driver.findElement(By.xpath("//div[@id=\"canvas\"]/div[1]/div[1]")));
 		sleep(2000);
-		
+		*/
 		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -306,18 +306,18 @@ public class CriarProcessocomTarefaManualPO extends TestBaseCristhian{
 		aplicar.click();
 
 		
-		sleep(4000);
+		sleep(9000);
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		
 		
 		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		justificativa.sendKeys("JUSTIFICATIVA TESTE AUTOMATIZADO");
 		sleep(2000);
@@ -329,8 +329,8 @@ public class CriarProcessocomTarefaManualPO extends TestBaseCristhian{
 		driver.navigate().refresh();
 		
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(27000);
 		
 		
 		dobleClickElement(NovoOperacao);

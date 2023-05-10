@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseEliel{
+public class RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Regras de Mensagens\"]")
 	public WebElement regrasdemensagens;
@@ -79,7 +79,7 @@ public class RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Justificativa\"]")
@@ -307,8 +307,8 @@ public class RegrasDeMensagensLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 
 		regrasdemensagens.click();
 		sleep(2000);
-		waitExpectElement(siguiente);
-		sleep(2000);
+		//waitExpectElement(siguiente);
+		sleep(6000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

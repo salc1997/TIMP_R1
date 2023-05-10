@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
+public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
@@ -32,7 +32,7 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
 	public WebElement descricao;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datadeiniciodevigencia;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
@@ -76,7 +76,7 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
 		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		 
 		sleep(2000);
 	
 		//conta o numero de linhas
@@ -98,13 +98,10 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
 		opcaotributo.click();
 		
 		sleep(2000);
-
-		codigocst.sendKeys("55937");
-
-		
+		codigocst.sendKeys("637");
 		sleep(2000);
-		
-		descricao.sendKeys("Teste QA55");
+		descricao.sendKeys("Teste QA605");
+
 		
 		sleep(2000);
 		
@@ -116,17 +113,18 @@ public class TabelaCodigoDaSituaçaoTributariaCriarPO extends TestBaseEliel {
 		gravar.click();
 		sleep(2000);
 		sim.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		biblioteca.click();
 		
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		siguiente.click();
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

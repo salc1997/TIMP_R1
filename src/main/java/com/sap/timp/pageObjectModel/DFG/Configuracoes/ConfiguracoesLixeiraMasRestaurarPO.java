@@ -29,6 +29,9 @@ public class ConfiguracoesLixeiraMasRestaurarPO extends TestBaseFernando{
 	@FindBy(xpath = "//span[text()=\"Limpar Filtros\"]")
 	public WebElement limpiarFiltros;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement no;
+	
 	public ConfiguracoesLixeiraMasRestaurarPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -57,14 +60,14 @@ public class ConfiguracoesLixeiraMasRestaurarPO extends TestBaseFernando{
 		System.out.println("ID Registro: " + idRegistro);
 		sleep(1000);
 		
-		btnFiltrosAvanzados.click();
-		sleep(2000);
-		waitExpectElement(inputId);
-		inputId.click();
+	/*	btnFiltrosAvanzados.click();
+		sleep(2000);*/
+		waitExpectElement(btnFiltrosAvanzados);
+		//inputId.click();
 		sleep(1000);
-		inputId.sendKeys(idRegistro);
+		pesquisar.sendKeys(idRegistro);
 		sleep(1000);
-		inputId.sendKeys(Keys.ENTER);
+		pesquisar.sendKeys(Keys.ENTER);
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -77,26 +80,29 @@ public class ConfiguracoesLixeiraMasRestaurarPO extends TestBaseFernando{
 		sleep(1000);
 		açao.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		no.click();
+		sleep(3000);
 		
 		lixeira.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		limpiarFiltros.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 	
-		waitExpectElement(inputId);
-		inputId.clear();
-		inputId.click();
+		waitExpectElement(pesquisar);
+		pesquisar.clear();
+	//	inputId.click();
 		sleep(1000);
-		inputId.sendKeys(idRegistro);
+		pesquisar.sendKeys(idRegistro);
 		sleep(1000);
-		inputId.sendKeys(Keys.ENTER);
+		pesquisar.sendKeys(Keys.ENTER);
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -115,20 +121,20 @@ public class ConfiguracoesLixeiraMasRestaurarPO extends TestBaseFernando{
 		raiz.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		limpiarFiltros.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 
-		waitExpectElement(inputId);
-		inputId.clear();
-		inputId.click();
+	//	waitExpectElement(inputId);
+		pesquisar.clear();
+	//	inputId.click();
 		sleep(1000);
-		inputId.sendKeys(idRegistro);
+		pesquisar.sendKeys(idRegistro);
 		sleep(1000);
-		inputId.sendKeys(Keys.ENTER);
+		pesquisar.sendKeys(Keys.ENTER);
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -5,12 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class LogradouroCriarPO extends TestBaseKathy{
+public class LogradouroCriarPO extends TestBaseSteven{
 
-	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
 	public WebElement cep;
+	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	public WebElement cep2;
 	
 	@FindBy(xpath = "//li/div/span[text()=\"Logradouro\"]")
 	public WebElement logradouro;
@@ -56,8 +58,17 @@ public class LogradouroCriarPO extends TestBaseKathy{
 	}
 	
 	public boolean logradouroCriar() {
-		cep.click();
-		sleep(1000);
+		String url = driver.getCurrentUrl();
+		
+		if (url.contains("tq1")) {
+			cep2.click();
+			sleep(1000);
+
+		} else {
+			cep2.click();
+
+			sleep(1000);
+		}
 		logradouro.click();
 		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);
@@ -94,6 +105,9 @@ public class LogradouroCriarPO extends TestBaseKathy{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);
 		String idRegistro = id.getText();
+		
+		idInserir("CEP-Logradouro",idRegistro);
+		System.out.println("IdLogradouro: "+ idRegistro);
 		
 		boolean sucesso = idRegistro.equals(numEnviar);
 	

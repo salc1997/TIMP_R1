@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.google.errorprone.annotations.FormatMethod;
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 
@@ -33,6 +33,9 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement no;
+	
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement aceitar;
 	
@@ -56,7 +59,7 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[contains(@id,\"tax-type-transfers\")]/div/div/div[2]")
 	public WebElement tipoImposto;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Inicio\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Selecionar Data de Início de Vigência\")]")
 	public WebElement dataVigencia;
 	
 	
@@ -98,11 +101,10 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 		sleep(2000);
 		
 		ajusteTransferencia.click();
-		
 		sleep(2000);
-		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -114,7 +116,7 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 		
 		if(rows > 0) {
 			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-			System.out.println(id);
+			//System.out.println(id);
 		}
 		//String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
@@ -123,10 +125,9 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 		sleep(2000);
 		//criaçao
 		novo.click();
-		
 		sleep(3000);
-		waitExpectElement(empresa);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(empresa);
 		sleep(2000);
 		
 	
@@ -142,60 +143,60 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 		tributo.click();
 		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 		
 		attributeToBeXpath("//div[@id=\"tax-type-transfers\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		tipoImposto.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(8000);
 		
 
 		dataVigencia.sendKeys(fechaActual());
-		
+		sleep(2000);
 		
 		
 		detalheTipoTributoO.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 		
 		anexoO.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 		
 		quadroO.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 		
 		limiteO.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 		
 		detalheTipoTributoD.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 		
 		anexoD.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 		
 		quadroD.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 		
 		limiteD.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 
 
 		sleep(2000);
@@ -207,34 +208,35 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		refresh();
-		
-		waitExpectElement(empresa);
+		driver.navigate(); refresh();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		
+	
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");	
+		waitExpectElement(empresa);
+		sleep(60000);
+		System.out.println("llege antes del segundo registro");
+		sleep(12000);
 		empresa.click();
 		sleep(2000);
 		opcao.click();
 		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
-		
-
-		
+	
 		tributo.click();
 		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 		
 		attributeToBeXpath("//div[@id=\"tax-type-transfers\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		tipoImposto.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 		
 
 		dataVigencia.sendKeys(fechaActual());
@@ -242,73 +244,79 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 		
 		
 		detalheTipoTributoO.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 		
 		anexoO.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 		
 		quadroO.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 		
 		limiteO.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 		
 		detalheTipoTributoD.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 		
 		anexoD.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 		
 		quadroD.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 		
 		limiteD.click();
-		sleep(1000);
+		sleep(2000);
 		opcao2.click();
-		sleep(1000);
+		sleep(2000);
 
 		
 		
-		sleep(2000);
-		gravar.click();
-		sleep(2000);
-		sim.click();
-		
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+//		sleep(2000);
+//		gravar.click();
+//		sleep(2000);
+//		sim.click();
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		biblioteca.click();
-		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		sleep(2000);
+		sim.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(12000);
+		
+
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		int rows1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows1+"]/div[3]/div")).getText();
 		
-		rows = rows -1;
-		String id3 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		rows1 = rows1 -1;
+		String id3 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows1+"]/div[3]/div")).getText();
 		
 		
 
@@ -341,7 +349,7 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 		
 		WebElement check1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/label/span"));
 		check1.click();
-		sleep(1000);
+		sleep(2000);
 		rows = rows-1;
 		
 		String idRegistro2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
@@ -349,12 +357,12 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
 		WebElement check2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/label/span"));
 		check2.click();
 		
-		sleep(1000);
+		sleep(2000);
 		
 		excluirMassa.click();
-		sleep(1000);
+		sleep(2000);
 		waitExpectElement(sim);
-		sleep(1000);
+		sleep(2000);
 		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

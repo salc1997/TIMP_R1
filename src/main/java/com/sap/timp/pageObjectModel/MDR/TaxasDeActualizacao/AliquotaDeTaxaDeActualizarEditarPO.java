@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AliquotaDeTaxaDeActualizarEditarPO extends TestBaseCristhian{
+public class AliquotaDeTaxaDeActualizarEditarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Taxas de Atualização\"]")
 	public WebElement taxasActualizacao;
@@ -70,14 +70,14 @@ public class AliquotaDeTaxaDeActualizarEditarPO extends TestBaseCristhian{
 		editar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributoNotToBeEmptyElement(taxa, "value");
+		//attributoNotToBeEmptyElement(taxa, "value");
 		
 		
 		sleep(2000);
 
 		String valor = taxa.getAttribute("value");
 
-		String enviar = "1111";
+		String enviar = "1,11";
 
 		taxa.clear();
 		sleep(1000);

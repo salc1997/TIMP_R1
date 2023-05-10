@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TributosExcluirPO extends TestBaseKathy{
+public class TributosExcluirPO extends TestBaseSteven{
 	@FindBy(xpath = "//li/div/span[text()=\"Centralização\"]")
 	public WebElement centralização;
 	

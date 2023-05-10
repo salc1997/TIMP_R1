@@ -32,7 +32,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+	////	driver.close();
 	}
 	
 	@Test(priority = 0)
@@ -59,14 +59,14 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 		}
 	}
 	
-	@Test(priority = 3)
+@Test(priority = 3)
 	public void criarConfiguracionConfiguracao() {
 		sleep(2000);
 		boolean sucesso = origenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO.criarConfiguracionConfiguracao();
 		assertTrue(sucesso, Criar);	
 	}
 	
-	@Test(priority = 4)	
+		@Test(priority = 4)	
 	public void criarConfiguracao() {
 		ArrayList<Boolean> sucesso = origenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO.configurarConfiguracao();
 		System.out.println(sucesso);
@@ -86,7 +86,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 		}
 	}
 	
-	@Test(priority = 6)	
+@Test(priority = 6)	
 	public void subNivel2() {
 		ArrayList<Boolean> sucesso = origenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel2();
 		System.out.println(sucesso);
@@ -95,8 +95,8 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 			assertTrue(sucesso.get(i), subniveis);
 		}
 	}	
-	
-	@Test(priority = 7)	
+
+		@Test(priority = 7)	
 	public void subNivel3() {
 		ArrayList<Boolean> sucesso = origenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel3();
 		System.out.println(sucesso);
@@ -105,7 +105,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 			assertTrue(sucesso.get(i), subniveis);
 		}
 	}
-	
+		
 	@Test(priority = 8)	
 	public void subNivel4() {
 		ArrayList<Boolean> sucesso = origenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel4();
@@ -115,6 +115,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 			assertTrue(sucesso.get(i), subniveis);
 		}
 	}
+	
 	
 	@Test(priority = 9)	
 	public void subNivel5() {
@@ -126,6 +127,8 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 		}
 	}
 	
+	
+	
 	@Test(priority = 10)	
 	public void subNivel6Negativo() {
 		ArrayList<Boolean> sucesso = origenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel6Negativo();
@@ -135,6 +138,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 			assertTrue(sucesso.get(i), subniveis);
 		} 
 	}
+
 	
 	@Test(priority = 11)	
 	public void abrirSubnivel1() {
@@ -216,6 +220,6 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 			assertTrue(sucesso.get(i), Eliminado);
 		}
 	}
-	
-	
+
+
 }

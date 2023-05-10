@@ -83,7 +83,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSVisualizarPO extends TestBase
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("id-GCT-ICMS-PainelCreditoICMSConfiguracaoEExecucaco");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"visualizar\"]"));
@@ -94,7 +94,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSVisualizarPO extends TestBase
 		sleep(2000);
 		waitExpectElement(componenteInput);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		sleep(13000);
 		
 		
 		String empresaV = empresaInput.getText();
@@ -122,7 +122,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSVisualizarPO extends TestBase
 		sleep(2000);
 		waitExpectElement(componenteInput);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		sleep(18000);
 		
 		String empresaE = empresaInput.getText();
 		String filialE = filialInput.getText();

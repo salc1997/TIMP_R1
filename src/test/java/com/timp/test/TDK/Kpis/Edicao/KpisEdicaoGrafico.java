@@ -27,27 +27,17 @@ public class KpisEdicaoGrafico extends TestBaseMassiel {
 		acessarTDKPO = new AcessarTDKPO();
 		kpisEdicaoGraficoPO = new KpisEdicaoGraficoPO();
 	}
-
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
+	
+	@AfterClass
+	public void afterClass() {
+		//driver.close();
 	}
 
-	@Test(priority = 1)
-	public void acessarTDK() {
-		acessarTDKPO.acessarTDK();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void Grafico() {
+		loginTC.login();
+		acessarTDKPO.acessarTDK();
+		
 		kpisEdicaoGraficoPO.Grafico();
-
-		/*
-		 * boolean sucesso = kpisCriarP.Criar();
-		 * 
-		 * assertTrue(sucesso, Criar);
-		 */
-
 	}
-
 }

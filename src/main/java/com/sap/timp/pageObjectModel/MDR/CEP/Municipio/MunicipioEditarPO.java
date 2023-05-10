@@ -5,13 +5,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseSteven;
 
 public class MunicipioEditarPO extends TestBaseSteven{
 	
-	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
 	public WebElement cep;
+	
+	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	public WebElement cep2;
 	
 	@FindBy(xpath = "//li/div/span[text()=\"Município\"]")
 	public WebElement municipio;
@@ -23,7 +26,7 @@ public class MunicipioEditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li/span[text()=\"Editar\"]")
 	public WebElement editar;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Nome de localização\")]")
+	@FindBy(xpath = "//div[contains(@class,\"locNo_0_1\")]/div/div/div/div/div/input")
 	public WebElement campo;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
@@ -54,13 +57,26 @@ public class MunicipioEditarPO extends TestBaseSteven{
 	
 	public boolean editar() {
 		
-		cep.click();
-		sleep(1000);
+		String url = driver.getCurrentUrl();
+		
+		if (url.contains("tq1")) {
+			cep2.click();
+			sleep(1000);
+
+		} else {
+			cep2.click();
+
+			sleep(1000);
+		}
+		
 		municipio.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys("99999999");
+		String idRegistro = idObter("CEP-Municipio");
+	    System.out.println("idEditar: "+ idRegistro);
+	    
+		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -68,8 +84,8 @@ public class MunicipioEditarPO extends TestBaseSteven{
 		sleep(2000);
 		editar.click();
 		sleep(2000);
-		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(campo);
 		sleep(2000);
 		String valor = campo.getAttribute("value");
 		System.out.println(valor);

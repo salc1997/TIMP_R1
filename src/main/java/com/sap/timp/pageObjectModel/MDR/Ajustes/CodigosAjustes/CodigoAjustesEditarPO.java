@@ -75,9 +75,9 @@ public class CodigoAjustesEditarPO extends TestBaseSteven {
 		menu.click();
 		sleep(1000);
 		editar.click();
-		sleep(3000);
+		sleep(30000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributeToBeXpath("//div[@id=\"tributeTypeDetail\"]/div/div/div/div[1]", "class", "input-wrapper base-input  required");
+		//attributeToBeXpath("//div[@id=\"tributeTypeDetail\"]/div/div/div/div[1]", "class", "input-wrapper base-input  required");
 
 		String valor = campo.getAttribute("value");
 
@@ -93,8 +93,8 @@ public class CodigoAjustesEditarPO extends TestBaseSteven {
 		waitExpectElement(sim);
 		sleep(1000);
 		nao.click();
-		waitExpectElement(sim);
-		sleep(2000);
+	//	waitExpectElement(sim);
+		sleep(3000);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay dark\"]");
@@ -107,10 +107,25 @@ public class CodigoAjustesEditarPO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributeToBeXpath("//div[@id=\"tributeTypeDetail\"]/div/div/div/div[1]", "class", "input-wrapper base-input  required");
+	//	attributeToBeXpath("//div[@id=\"tributeTypeDetail\"]/div/div/div/div[1]", "class", "input-wrapper base-input  required");
 		
 		sleep(2000);
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+	
+		
+		 menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+	  editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		
+		actionsMoveToElementElement(menu);
+		sleep(4000);
 
+		menu.click();
+		sleep(1000);
+		editar.click();
+		sleep(24000);
 		String nuevoTexto = campo.getAttribute("value");
 		System.out.println(valor);
 		System.out.println(nuevoTexto);

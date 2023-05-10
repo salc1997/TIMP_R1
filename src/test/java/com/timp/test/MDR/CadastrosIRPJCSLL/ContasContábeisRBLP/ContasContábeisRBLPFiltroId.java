@@ -29,7 +29,7 @@ public class ContasContábeisRBLPFiltroId extends TestBaseMassiel{
 
   @AfterClass
   public void afterClass() {
-	  driver.close();
+	//  driver.close();
   }
   
 
@@ -39,10 +39,10 @@ public class ContasContábeisRBLPFiltroId extends TestBaseMassiel{
  		loginTC.login();
  		acessarMDRPO.acessarMDR();
 
- 		contasContábeisRBLPFiltroIdPO.filtro();
- 		//boolean sucesso = contasContábeisRBLPFiltroIdPO.filtro();
+ 		boolean sucesso = contasContábeisRBLPFiltroIdPO.filtro();
 
- 		//assertTrue(sucesso, Filtros);
+ 		assertTrue(sucesso, Filtros);
+ 		sleep(2000);
 
 
  	}

@@ -109,7 +109,12 @@ public class LivrosFiscaisDetalhesPO extends TestBaseSteven {
 		
 		sleep(2000);
 		fechar.click();
-
+		sleep(2000);
+		
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
 		menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		açao = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));

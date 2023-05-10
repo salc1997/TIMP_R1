@@ -8,11 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 
-public class ContribuiçõesFuncionalidadesPO extends TestBaseCristhian{
+public class ContribuiçõesFuncionalidadesPO extends TestBaseSteven{
 	
 
 	
@@ -173,8 +173,12 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseCristhian{
 	@FindBy(xpath = "//li[text()=\"Auditoria Nvl 3\"]")
 	public WebElement tipoRegraO;
 	
-	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componente;
+	
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
+	public WebElement componenteTC2;
+	
 	
 	@FindBy(xpath = "//li[text()=\"DFG\"]")
 	public WebElement componenteO;
@@ -190,6 +194,9 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseCristhian{
 	
 	@FindBy(xpath = "//li[text()=\"Ajuste\"][1]")
 	public WebElement grupoEstruturaRO;
+	
+	@FindBy(xpath = "//li[@id=\"option-17\"]")
+	public WebElement grupoEstruturaROTC2;
 	
 	@FindBy(xpath = "//li[text()=\"Ajustes\"][1]")
 	public WebElement grupoEstruturaROTP1;
@@ -217,6 +224,10 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseCristhian{
 	
 	@FindBy(xpath = "//td[@class=\"EffectiveDateFrom\"]/div/div/input")
 	public WebElement dataVigenciaR;
+	
+	@FindBy(xpath = "//td[@class=\"EffectiveDateTo\"]/div/div/input")
+	public WebElement dataVigenciato;
+	
 	
 	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
 	public WebElement adicionarCaminho;
@@ -694,10 +705,21 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseCristhian{
 		String url = driver.getCurrentUrl();
 		
 		boolean tp1  = false;
+		boolean tc2  = false;
+		boolean tq1  = false;
+		
+		if (url.contains("tq1")) {
+			tq1 = true;
+		}	
 		
 		if (url.contains("tp1")) {
 			tp1 = true;
 		}
+		
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}
+		
 		home.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -728,7 +750,7 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseCristhian{
 		waitExpectElement(nomeRegra);
 		sleep(2000);
 		
-		nomeRegra.sendKeys("Teste Automatizado DFG Cristhian");
+		nomeRegra.sendKeys("Teste Automatizado DFG Ken Prueba");
 		sleep(1000);
 		
 		
@@ -737,10 +759,23 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseCristhian{
 		tipoRegraO.click();
 		sleep(1000);
 		
-		componente.click();
-		sleep(1000);
-		componenteO.click();
-		sleep(1000);
+		if (tc2 == true) {
+			componenteTC2.click();
+			sleep(1000);
+			componenteO.click();
+			sleep(1000);
+		}else if (tq1 == true) {
+			componente.click();
+			sleep(1000);
+			componenteO.click();
+			sleep(1000);
+		}else if (tp1 == true){
+			componenteTC2.click();
+			sleep(1000);
+			componenteO.click();
+			sleep(1000);
+		}
+		
 		
 		actionsMoveToElementElement(dataVigenciaR);
 		
@@ -755,9 +790,17 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseCristhian{
 		
 		grupoEstruturaR.click();
 		sleep(1000);
-		if (tp1 == true) {
+		
+		if (tq1 == true) {
+			
+			actionsMoveToElementElement(grupoEstruturaROTC2);
+			grupoEstruturaROTC2.click();
+			
+		}else if (tp1 == true) {
+		
 			grupoEstruturaROTP1.click();
-		}else {
+			
+		}else if (tc2 == true) {
 			grupoEstruturaRO.click();
 		}
 		
@@ -774,7 +817,8 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseCristhian{
 		caracterisiticaO.click();
 		sleep(3000);
 		actionsMoveToElementElement(dataVigenciaR);
-		sleep(1000);
+		waitExpectElement(leiauteR);
+		sleep(3000);
 		
 		leiauteR.click();
 		sleep(1000);
@@ -787,8 +831,12 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseCristhian{
 		versaoLeiauteRO.click();
 		sleep(1000);
 		
-		dataVigenciaR.sendKeys("01/01/2013");
 		sleep(1000);
+		actionsMoveToElementElement(dataVigenciato);
+		sleep(2000);
+		
+		dataVigenciaR.sendKeys("01/01/2013");
+		sleep(2000);
 		aplicar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -909,9 +957,11 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseCristhian{
 		sleep(2000);
 		
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
-		
-		String ultimoIdAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
-		System.out.println("Id antes da criação (DFG SPED EFD): "+ ultimoIdAC);
+		String ultimoIdAC = "0";
+		if(rows > 0) {
+			ultimoIdAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
+			System.out.println("Id antes da criação (DFG SPED EFD): "+ ultimoIdAC);
+		} 
 		
 		blocosApuracao.click();
 		sleep(3000);
@@ -929,9 +979,11 @@ public class ContribuiçõesFuncionalidadesPO extends TestBaseCristhian{
 		sleep(2000);
 		
 		rows = rows("//div[@class=\"tr\" and @data-id]");
-		
-		String ultimoIdACB = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
-		System.out.println("Id antes da criação (DFG SPED Bloco): "+ ultimoIdACB);
+		String ultimoIdACB = "0";
+		if(rows > 0) {
+			ultimoIdACB = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
+			System.out.println("Id antes da criação (DFG SPED Bloco): "+ ultimoIdACB);
+		}  
 		
 		sleep(2000);
 		efdO.click();

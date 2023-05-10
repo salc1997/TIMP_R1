@@ -8,9 +8,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class KpisLinksRapidosMaisExecutarPO extends TestBaseEliel{
+public class KpisLinksRapidosMaisExecutarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Kpi's\"]")
 	public WebElement kpis;
@@ -125,7 +125,7 @@ public class KpisLinksRapidosMaisExecutarPO extends TestBaseEliel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter2();
+		String idRegistro = idObter("KpisCriar");
 		
 		System.out.println("Ultimo registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

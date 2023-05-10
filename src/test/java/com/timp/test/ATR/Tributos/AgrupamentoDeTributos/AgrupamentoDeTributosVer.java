@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVerPO;
 
-public class AgrupamentoDeTributosVer extends TestBaseEliel {
+public class AgrupamentoDeTributosVer extends TestBaseSteven {
 	
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
@@ -22,7 +22,7 @@ public class AgrupamentoDeTributosVer extends TestBaseEliel {
 	@BeforeClass
 	  public void beforeClass() {
 		  
-		  driver = initializationE();
+		  driver = initialization();
 		  loginTC = new LoginTC();
 		  acessarATRPO = new AcessarATRPO();
 		  agrupamentoDeTributosVerPO = new  AgrupamentoDeTributosVerPO();
@@ -30,31 +30,24 @@ public class AgrupamentoDeTributosVer extends TestBaseEliel {
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
 
-	 	}
-
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
 	 	
-	 	@Test(priority = 1)
+	 	@Test()
 	 	public void visualizar() {
 	 		
+	 		loginTC.login();
+	 		 acessarATRPO.acessarATR();
+	 		 
 	 		ArrayList<Boolean> sucesso = agrupamentoDeTributosVerPO.visualizar();
 	 		for (int i = 0; i < sucesso.size(); i++) {
 	 			assertTrue(sucesso.get(i), visualizaçar);
 				
 			}
 			
-		
+	 		sleep(2000);
 	 		
 	 	}
 

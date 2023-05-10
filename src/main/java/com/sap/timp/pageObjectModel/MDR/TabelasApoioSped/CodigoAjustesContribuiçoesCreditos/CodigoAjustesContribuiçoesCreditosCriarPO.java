@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseSteven;
 
 
@@ -36,7 +36,7 @@ public class CodigoAjustesContribuiçoesCreditosCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div[@class=\"list-item\" and @id]/div/label/span")
 	public WebElement tributoO;
 		
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -62,17 +62,20 @@ public class CodigoAjustesContribuiçoesCreditosCriarPO extends TestBaseSteven {
 		sleep(2000);
 		
 		ajusteeinformacao.click();
-		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
 		sleep(2000);
 	
 		//conta o numero de linhas
 
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		int rows =1;
 		
-		System.out.println(id);
+		String id = "0";
+		
+		if(rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+			System.out.println(id);
+		}	
 		
 		sleep(2000);
 		
@@ -87,10 +90,10 @@ public class CodigoAjustesContribuiçoesCreditosCriarPO extends TestBaseSteven {
 		tributoO.click();
 		tributoO.sendKeys(Keys.ESCAPE);
 		sleep(2000);
-		codigo.sendKeys("55");
+		codigo.sendKeys("97");
 		
 		
-		descricao.sendKeys("Teste de código de ajustes 55");
+		descricao.sendKeys("Teste de código de ajustes 987");
 		datavigencia.sendKeys(fechaActual());
 				
 		gravar.click();
@@ -112,7 +115,14 @@ public class CodigoAjustesContribuiçoesCreditosCriarPO extends TestBaseSteven {
 		sleep(2000);
 
 		
-		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		rows = 1;
+		
+		String id2 = "0";
+		
+		if(rows > 0) {
+			id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+			System.out.println(id2);
+		}
 		
 		
 		idInserir("codigoajustescontribuicoescreditos", id2);

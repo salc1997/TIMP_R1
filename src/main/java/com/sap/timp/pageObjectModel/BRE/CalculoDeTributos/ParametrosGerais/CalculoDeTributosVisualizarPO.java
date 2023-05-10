@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CalculoDeTributosVisualizarPO extends TestBaseEliel {
+public class CalculoDeTributosVisualizarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Cálculo de Tributos\"]")
 	public WebElement calculodetributos;
@@ -64,7 +64,7 @@ public class CalculoDeTributosVisualizarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("CalculoDeTributoCriar");
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
 		String	id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();

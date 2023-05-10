@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeAuditoriaN1EditarPO extends TestBaseEliel{
+public class RegrasDeAuditoriaN1EditarPO extends TestBaseSteven{
 
 	
 	@FindBy(xpath = "//span[text()=\"Regras de Auditoria N1\"]")
@@ -162,7 +162,7 @@ public class RegrasDeAuditoriaN1EditarPO extends TestBaseEliel{
 
 		PageFactory.initElements(driver, this);
 	}
-
+ 
 	public ArrayList<Boolean> editar() {
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -181,8 +181,8 @@ public class RegrasDeAuditoriaN1EditarPO extends TestBaseEliel{
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		String idRegistro = idObter1();
-		
+		//String idRegistro = idObter1();
+		String idRegistro = idObter("An1");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
@@ -298,7 +298,7 @@ public class RegrasDeAuditoriaN1EditarPO extends TestBaseEliel{
 		waitExpectElement(aplicar);
 		sleep(2000);
 		aplicar.click();
-		sleep(1000);
+		sleep(5000);
 		gravar.click();
 
 		sleep(1000);

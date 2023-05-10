@@ -32,7 +32,8 @@ public class RegrasDeAuditoriaN2EdicaoRelacionamentoPO extends TestBaseFernando{
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement btnBiblioteca;
 	
-	@FindBy(xpath = "//div[@class=\"list-item-text\" and text()=\"ID 50-Ajustes Fiscais\"]")
+
+	@FindBy(xpath = "//div[contains(text(),\"Ajustes Fiscais\")]")
 	public WebElement opcion;
 	
 	public RegrasDeAuditoriaN2EdicaoRelacionamentoPO() {
@@ -51,7 +52,8 @@ public class RegrasDeAuditoriaN2EdicaoRelacionamentoPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter3();
+		//String idRegistro = idObter3();
+		String idRegistro = idObter("An2");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
@@ -63,23 +65,23 @@ public class RegrasDeAuditoriaN2EdicaoRelacionamentoPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(18000);
 		
 		btnSeleccionarRelacionamento.click();
-		sleep(2000);
+		sleep(8000);
 		
-		waitExpectElement(cboRelacionamentoElementoDeEstrutura);
+	//	waitExpectElement(cboRelacionamentoElementoDeEstrutura);
 		cboRelacionamentoElementoDeEstrutura.click();
 		sleep(1000);
 		
 		String URL = driver.getCurrentUrl();
 		
 		if(URL.contains("tc2")) {
-			opcion = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and text()=\"ID 47-Ajustes Fiscais\"]"));
+			opcion = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and contains(text(), \"Empresa / Filial\")]"));
 		}
 		
 		if(URL.contains("tp1")) {
-			opcion = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and text()=\"ID 14-Ajustes Fiscais\"]"));
+			opcion = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and contains(text(), \"Ajustes Fiscais\")]"));
 		}
 		
 		sleep(2000);
@@ -133,10 +135,10 @@ public class RegrasDeAuditoriaN2EdicaoRelacionamentoPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(9000);
 		
 		btnSeleccionarRelacionamento.click();
-		sleep(2000);
+		sleep(8000);
 		
 		waitExpectElement(cboRelacionamentoElementoDeEstrutura);
 		

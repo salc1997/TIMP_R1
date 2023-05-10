@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ValoresParaMetodoPECEXDetalhesPO extends TestBaseEliel {
+public class ValoresParaMetodoPECEXDetalhesPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Preço de Transferência\"]")
 	public WebElement precodetransferencia;

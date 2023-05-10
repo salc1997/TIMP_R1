@@ -8,6 +8,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialDetalhe"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela09.TiposDeArquivosESocialExcluirEmMassa"></class>
 		</classes>
@@ -20,6 +21,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioDetalhe"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela10.TiposDeLotacaoTributarioExcluirEmMassa"></class>
 		</classes>
@@ -31,6 +33,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabDetalhe"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela11.CompatibilidadEnCatTrabExcluirMassa"></class>
 		</classes>
@@ -45,6 +48,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotacaoEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotacaoVisualizar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotacaoExcluir"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela12.CompatibilidadeEntreLotaçãoExcluirEmMassa"></class>
 		</classes>
 	</test>
 	
@@ -54,6 +58,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaDetalles"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela13.ParteDoCorpoAtingidaExcluirEmMassa"></class>
 		</classes>
@@ -65,8 +70,10 @@
 			<!-- Tabelas de Apoio E-SOCIAL > Tabela 14 - Agente Causador de Acidente  -->
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteEditar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteDetalles"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteVisualizar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluir"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela14.AgenteCausadorDeAcidenteExcluirEmMassa"></class>
 		</classes>
 	</test>
 	
@@ -77,6 +84,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPDetalle"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela15.AgenteCausadorDeSGDPExlusionMassa"></class>
 		</classes>
@@ -89,6 +97,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoDetalle"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoExcluirEmMassa"></class>
 		</classes>
@@ -101,6 +110,7 @@
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroEditar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroDetalle"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela20.TiposDeLogradouroExcluirEmMasa"></class>
 		</classes>
@@ -111,12 +121,25 @@
 			<!-- Tabelas de Apoio E-SOCIAL > Tabela 21 - Natureza Juridica -->
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaCriar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaEditar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaDetalhes"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaVisualizar"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluir"></class>
 			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassa"></class>
 		</classes>
 	</test>
 		
+	<test name="Tabela De Apoio E Social > Tabela 16  - SGDP" >
+		<classes> 
+			<!--Tabela De Apoio E Social > Tabela 16  - SGDP-->
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPCriar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPEditar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPDetalle"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluir"></class>
+			<class name="com.timp.test.MDR.TabelasApoioESocial.Tabela16.SGDPExcluirEmMassa"></class>
+		</classes>
+	</test>
+	
 	<test name="Tabelas de Apoio E-SOCIAL > Unidade de Medida" >
 		<classes>		
 			<!-- Tabelas de Apoio E-SOCIAL > Unidade de Medida -->
@@ -130,6 +153,14 @@
 		</classes>
 	</test>
 	
+	<test name="Determinacao Automatica De Guias" >
+		<classes>		
+			<!-- Determinacao Automatica De Guias -->
+			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasCriar"></class>
+			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasEditar"></class>
+			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasFiltroPorId"></class>
+		</classes>
+	</test>
 	
 	
 	

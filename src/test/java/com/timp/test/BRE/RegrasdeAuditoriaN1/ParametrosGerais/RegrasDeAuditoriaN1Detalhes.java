@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1DetalhesPO;
 
-public class RegrasDeAuditoriaN1Detalhes extends TestBaseEliel{
+public class RegrasDeAuditoriaN1Detalhes extends TestBaseSteven{
 	
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
@@ -21,7 +21,7 @@ public class RegrasDeAuditoriaN1Detalhes extends TestBaseEliel{
 	
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		regrasDeAuditoriaN1DetalhesPO = new RegrasDeAuditoriaN1DetalhesPO();
@@ -32,22 +32,17 @@ public class RegrasDeAuditoriaN1Detalhes extends TestBaseEliel{
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
-		acessarBREPO.acessarBRE();
-	}
 	
-	@Test(priority = 2)
+	@Test()
 	public void detalhes() {
+		loginTC.login();
+		acessarBREPO.acessarBRE();
 		ArrayList<Boolean> sucesso = regrasDeAuditoriaN1DetalhesPO.detalhes();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
+		
+		sleep(2000);
 		
 	}
  

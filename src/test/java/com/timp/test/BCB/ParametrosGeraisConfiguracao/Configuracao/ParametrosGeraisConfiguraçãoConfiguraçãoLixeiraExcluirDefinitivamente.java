@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
-import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamentePO;
-import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoRaizPO;
+import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguracaoConfiguracaoLixeiraExcluirDefinitivamentePO;
+import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguracaoConfiguracaoRaizPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -19,7 +19,7 @@ import org.testng.annotations.AfterClass;
 public class ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamente extends TestBaseKenssy {
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
-	ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamentePO parametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamentePO;
+	ParametrosGeraisConfiguracaoConfiguracaoLixeiraExcluirDefinitivamentePO parametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamentePO;
 
 
 	@BeforeClass
@@ -27,36 +27,25 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamen
 		driver = initializationKen();
 		loginTC = new LoginTC();
 		acessarBCBPO = new AcessarBCBPO();
-		parametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamentePO = new ParametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamentePO();
+		parametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamentePO = new ParametrosGeraisConfiguracaoConfiguracaoLixeiraExcluirDefinitivamentePO();
 
 
 	}
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
-	}
-
-	@Test(priority = 0)
-	public void login() {
-
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-		boolean sucesso = acessarBCBPO.acessar();
-		System.out.println(sucesso);
-		assertTrue(sucesso,Acessar);
-
+		driver.close();
 	}
 	
 	@Test(priority = 2)
 	public void criarConfiguracao() {
+		loginTC.login();
+		acessarBCBPO.acessar();
+		
 		boolean sucesso = parametrosGeraisConfiguraçãoConfiguraçãoLixeiraExcluirDefinitivamentePO.lixeiraExcluirDefinitivamenteConfiguracao();
-
 		assertTrue(sucesso, Eliminado);
+		
+		sleep(3000);
 	}
 
 }

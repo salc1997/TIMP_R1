@@ -32,14 +32,13 @@ public class FiliaisVisualizar extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void visualizar() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		String sucesso = filiaisVisualizarPO.visualizar();
 
 		assertEquals(sucesso, "edit", EmpresaVisualizar);

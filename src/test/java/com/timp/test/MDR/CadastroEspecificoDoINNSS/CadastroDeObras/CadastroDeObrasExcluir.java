@@ -43,7 +43,7 @@ public class CadastroDeObrasExcluir extends TestBaseMassiel {
 	  
 	  boolean sucesso = cadastroDeObrasExcluirPO.Excluir();
 	  assertTrue(sucesso, Editar);
-	
+	  sleep(2000);
 	}
   
 

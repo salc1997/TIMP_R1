@@ -2,7 +2,7 @@ package com.timp.test.MDR.TabelasApoioSped.InformaçoesAdicionais;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 
@@ -10,12 +10,11 @@ import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.InformaçoesAdicionais.I
 
 import org.testng.annotations.BeforeClass;
 
-
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class InformaçoesAdicionaisEditar extends TestBaseEliel {
+public class InformaçoesAdicionaisEditar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -24,7 +23,7 @@ public class InformaçoesAdicionaisEditar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		informaçoesAdicionaisEditarPO = new InformaçoesAdicionaisEditarPO();
@@ -32,7 +31,7 @@ public class InformaçoesAdicionaisEditar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+	//	driver.close();
 	}
 
 	@Test()

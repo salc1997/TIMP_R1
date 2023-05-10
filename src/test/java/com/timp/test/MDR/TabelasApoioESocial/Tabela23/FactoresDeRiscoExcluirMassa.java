@@ -5,8 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoExcluirMassaPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela25.TiposDeBenefíciosExcluirMassaPO;
+import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela23.FatoresDeRiscoExcluirMassaPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -17,14 +16,14 @@ import org.testng.annotations.AfterClass;
 public class FactoresDeRiscoExcluirMassa extends TestBaseCristhian {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
-	FactoresDeRiscoExcluirMassaPO factoresDeRiscoExcluirMassaPO;
+	FatoresDeRiscoExcluirMassaPO factoresDeRiscoExcluirMassaPO;
 
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		factoresDeRiscoExcluirMassaPO = new FactoresDeRiscoExcluirMassaPO();
+		factoresDeRiscoExcluirMassaPO = new FatoresDeRiscoExcluirMassaPO();
 	}
 
 	@AfterClass

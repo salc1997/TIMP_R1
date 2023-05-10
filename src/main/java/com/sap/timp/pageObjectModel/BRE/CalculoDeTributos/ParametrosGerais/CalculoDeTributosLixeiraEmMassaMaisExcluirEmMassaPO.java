@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseEliel{
+public class CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Cálculo de Tributos\"]")
 	public WebElement calculodetributos;
@@ -362,8 +362,8 @@ public class CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 		//--------------------------- excluir em massa ---------------------------------
 		//waitExpectElement(mensagem);
 		//sleep(2000);
-		waitExpectElement(mensagembloqueio);
-		sleep(2000);
+//		waitExpectElement(mensagembloqueio);
+		sleep(5000);
 		lixeira.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

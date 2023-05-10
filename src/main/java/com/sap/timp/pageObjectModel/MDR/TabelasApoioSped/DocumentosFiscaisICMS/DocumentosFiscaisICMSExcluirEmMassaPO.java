@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class DocumentosFiscaisICMSExcluirEmMassaPO extends TestBaseEliel {
+public class DocumentosFiscaisICMSExcluirEmMassaPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
@@ -25,7 +25,7 @@ public class DocumentosFiscaisICMSExcluirEmMassaPO extends TestBaseEliel {
 	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcaoespecie;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//span[contains(text(),\"Novo\")]")
@@ -96,7 +96,7 @@ public class DocumentosFiscaisICMSExcluirEmMassaPO extends TestBaseEliel {
 		sleep(2000);
 		//Primeiro Registro
 	
-		codigodedocumentofiscal.sendKeys("770937");
+		codigodedocumentofiscal.sendKeys("798737");
 		sleep(2000);
 		
 		especie.click();
@@ -123,7 +123,7 @@ public class DocumentosFiscaisICMSExcluirEmMassaPO extends TestBaseEliel {
 		
 		
 		
-		codigodedocumentofiscal.sendKeys("787093");
+		codigodedocumentofiscal.sendKeys("789873");
 		sleep(2000);
 		
 		especie.click();

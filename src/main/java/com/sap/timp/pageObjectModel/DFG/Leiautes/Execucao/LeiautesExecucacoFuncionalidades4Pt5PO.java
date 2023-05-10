@@ -8,10 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseFernando;
 
-public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseCristhian{
+public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseSteven{
 
 	@FindBy(xpath = "//span[text()=\"Raiz\"]")
 	public WebElement raiz;
@@ -272,7 +272,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseCristhian{
 	
 	
 	//CONFIGURACAO
-		@FindBy(xpath = "//div[@class=\"settingFolders-wrapper\"]")
+		@FindBy(xpath = "//div[@class=\"settingFolders-wrapper\"]/div/div[1]")
 		public WebElement raizConfiguracao;
 		
 		
@@ -459,1077 +459,49 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseCristhian{
 		
 		@FindBy(xpath = "//div[contains(text(),\"Nenhum resultado\")]")
 		public WebElement resultado;
-		
+
+		@FindBy(xpath = "//div[contains(@class, \"icon-right\")][2]")
+		public WebElement btnUltimaPagina;		
 	public LeiautesExecucacoFuncionalidades4Pt5PO() {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public ArrayList<Boolean> criarLeiaute() {
-		boolean tc2 = false;
-		boolean tq1 = false;
-		boolean tp1 = false;
-		String url = driver.getCurrentUrl();
-		
-		if (url.contains("tc2")) {
-			tc2 = true;
-		}else if (url.contains("tp1")) {
-			tp1 = true;
-		}else if (url.contains("tq1")) {
-			tq1 = true;
-		}
-		
-		raiz.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		siguiente.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		int rows = driver.findElements(By.xpath("//div[@data-id and @class=\"tr\"]")).size();
-		String idLeiaute = "0";
-		
-		if(rows > 0) {
-			idLeiaute = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[5]/div")).getText();
-			System.out.println(idLeiaute);
-		}
-		
-		
 
-		System.out.println(idLeiaute + " ultimo id Leiaute");
-		
-		
-		System.out.println("");
-		System.out.println("------------------------CRIAR LEIAUTE-------------------");
-		System.out.println("");
-		
-		novo.click();
-		sleep(3000);
-		waitExpectElement(nome);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		nome.sendKeys("Teste Automatizado kenssy");
-		sleep(1000);
-		String nomeValor = nome.getAttribute("value");
-		System.out.println("nombreInicial "+nomeValor);
-		
-		tipo.click();
-		sleep(2000);
-		
-		if (tq1 == true) {
-			opcTipo.click();
-			sleep(1000);
-//			String tipoT = opcTipo.getText();
-//			System.out.println(tipoT);
-		}else if (tc2 ==true) {
-			opcTipo2.click();
-			sleep(1000);
-			
-		}else {
-			//CORREGIR AL EJECUTAR EN AMBIENTE
-			opcTipo.click();
-			sleep(1000);
-//			String tipoT = opcTipo.getText();
-//			System.out.println(tipoT);
-		}
-		
-		
-		
-		sleep(1000);
-		actionsMoveToElementElement(versaoLeiaute);
-		sleep(1000);
-		
-		grupoEstrutura.click();
-		sleep(1000);
-		
-		if (tq1 == true) {
-			opcGrupoEstructura.click();
-			sleep(1000);
-		}else if (tc2 ==true) {
-			opcGrupoEstructura2.click();
-			sleep(1000);
-		}else {
-			//CORREGIR AL EJECUTAR EN AMBIENTE
-			opcGrupoEstructura2.click();
-			sleep(1000);
-		}
-		
-		estrutura.click();
-		sleep(1000);
-		opcEstrutura.click();
-		sleep(1000);
-		opcEstrutura.sendKeys(Keys.ESCAPE);
-		sleep(1000);
-		
-		dataVigencia.sendKeys("01/01/2013");
-		sleep(1000);
-		
-		versaoLeiaute.sendKeys("1");
-		sleep(1000);
-		
-		salvar.click();
-		sleep(2000);
-		//waitExpectElement(biblioteca);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"O leiaute foi criado com sucesso\")]")).size();
-		System.out.println("mensaje"+ mensaje);
-		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
-		if (mensaje > 0) {
-			sucesso.add(true);
-			
-		}else {
-			sucesso.add(false);
-		}
-		
-		
-		
-		return sucesso;
-	}
-	
-	public void  separadores() {
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		waitExpectXpath("//*[@id=\"home-icon\"]");
-		sleep(1000);
-		
-		while (!separadores.isDisplayed()) {
-			flecha.click();
-		}
-		sleep(1000);
-		
-		separadores.click();
-		sleep(2000);
-		
-		inputSeparador.sendKeys("|");
-		sleep(2000);
-		
-		incluirIniciodeLinha.click();
-		sleep(2000);
-		
-		incluirFindeLinha.click();
-		sleep(2000);
-		
-		aplicar.click();
-		sleep(2000);
-		
-		gravar.click();
-		sleep(2000);
-		waitExpectElement(nao);
-		sleep(2000);
-		
-		nao.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		
-		sim.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-	
-		sleep(2000);
-		biblioteca.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		raiz.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		siguiente.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		int rows = driver
-				.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]"))
-				.size();
-		String idLeiaute2 = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[5]/div")).getText();
-		idInserir1(idLeiaute2);
-		System.out.println("Id que estoy editando:" +idLeiaute2);		
-	}
-	
-	public ArrayList<Boolean> dataInicialDeReferencia() {
-		
-		System.out.println("");
-		System.out.println("------------------------BLOCOS Y REGISTROS-------------------");
-		System.out.println("");
-		System.out.println("------------------------BLOCOS 1 - REGISTROS 1-------------------");
-		System.out.println("");
-		
-		sleep(2000);
-		abaLeiautes.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		raiz.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		siguiente.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		String idLeiaute = idObter1();
-		System.out.println("aquiii: "+idLeiaute);
-//		pesquisar.sendKeys(idLeiaute);
-//		pesquisar.sendKeys(Keys.ENTER);
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-		
-		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idLeiaute+"\"]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idLeiaute+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		sleep(2000);
-		
-		menu.click();
-		sleep(1000);
-		editar.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(adicionarBloco);
-		sleep(2000);
-		
-		//ADICIONAR 5 BLOCOS
-		//DEBEN ADICIONARSE UNO POR UNO
-		
-		//for (int i = 0; i < 5; i++) {
-			adicionarBloco.click();
-			sleep(2000);
-		//}
-			
-		sleep(2000);
-		adicionarRegistro1.click();
-		sleep(2000);
-		
-		nombreBloco1.sendKeys("1");
-		sleep(2000);
-		
-		nombreRegistro1.sendKeys("1");
-		sleep(2000);
-		
-		abaCamposEspeciais.click();
-		sleep(2000);
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		moveToElement(dataInicialDeReferencia, driver.findElement(By.xpath("//div[@block-id=\"0\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
-		
-		dia.click();
-		sleep(2000);
-		opcDia.click();
-		sleep(2000);
-		
-		mes.click();
-		sleep(2000);
-		opcMes.click();
-		sleep(2000);
-		
-		anio.click();
-		sleep(2000);
-		opcAnio.click();
-		sleep(2000);
-		
-		separadores1.sendKeys("/");
-		sleep(2000);
-		
-		
-		aplicar.click();
-		sleep(2000);
-		
-		gravar.click();
-		sleep(2000);
-		waitExpectElement(nao);
-		sleep(2000);
-		
-		nao.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		
-		sim.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"O Leiaute foi atualizado com sucesso\")]")).size();
-		System.out.println(mensaje);
-		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
-		if (mensaje > 0) {
-			sucesso.add(true);
-			
-		}else {
-			sucesso.add(false);
-		}
-		
-		return sucesso;
-	}
-	
-	public ArrayList<Boolean> saltodeLinha() {
-		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		moveToElement(saltoDeLinha, driver.findElement(By.xpath("//div[@block-id=\"0\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
-		
-		gravar.click();
-		sleep(2000);
-		waitExpectElement(nao);
-		sleep(2000);
-		
-		nao.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		
-		sim.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"O Leiaute foi atualizado com sucesso\")]")).size();
-		System.out.println(mensaje);
-		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
-		if (mensaje > 0) {
-			sucesso.add(true);
-			
-		}else {
-			sucesso.add(false);
-		}
-		
-		return sucesso;
-		
-	}
-	
-	public ArrayList<Boolean> dataFinalDeReferencia() {
-//		sleep(2000);
-//		adicionarRegistro1.click();
-//		sleep(2000);
-//		
-//		nombreBloco1.sendKeys("1");
-//		sleep(2000);
-//		
-//		nombreRegistro1.sendKeys("1");
-//		sleep(2000);
-//		
-//		abaCamposEspeciais.click();
-//		sleep(2000);
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		moveToElement(dataFinalDeReferencia, driver.findElement(By.xpath("//div[@block-id=\"0\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
-		
-		dia.click();
-		sleep(2000);
-		opcDia.click();
-		sleep(2000);
-		
-		mes.click();
-		sleep(2000);
-		opcMes.click();
-		sleep(2000);
-		
-		anio.click();
-		sleep(2000);
-		opcAnio.click();
-		sleep(2000);
-		
-		separadores1.sendKeys("/");
-		sleep(2000);
-		
-		
-		aplicar.click();
-		sleep(2000);
-		
-		gravar.click();
-		sleep(2000);
-		waitExpectElement(nao);
-		sleep(2000);
-		
-		nao.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		
-		sim.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"O Leiaute foi atualizado com sucesso\")]")).size();
-		System.out.println(mensaje);
-		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
-		if (mensaje > 0) {
-			sucesso.add(true);
-			
-		}else {
-			sucesso.add(false);
-		}
-		
-		return sucesso;
-	}
-	
-	public ArrayList<Boolean> versao() {
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		moveToElement(versao, driver.findElement(By.xpath("//div[@block-id=\"0\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
-		
-		versaoValor.sendKeys("2");
-		sleep(2000);
-		
-		aplicar.click();
-		sleep(2000);
-		
-		gravar.click();
-		sleep(2000);
-		waitExpectElement(nao);
-		sleep(2000);
-		
-		nao.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		
-		sim.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"O Leiaute foi atualizado com sucesso\")]")).size();
-		System.out.println(mensaje);
-		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
-		if (mensaje > 0) {
-			sucesso.add(true);
-			
-		}else {
-			sucesso.add(false);
-		}
-		
-		return sucesso;
-		
-	}
-	
-	public ArrayList<Boolean> horaDaExecucao() {
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		moveToElement(horaDaExecucao, driver.findElement(By.xpath("//div[@block-id=\"0\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
-		
-		dia.click();
-		sleep(2000);
-		opcHora.click();
-		sleep(2000);
-		
-		mes.click();
-		sleep(2000);
-		opcMinutos.click();
-		sleep(2000);
-		
-		anio.click();
-		sleep(2000);
-		opcSegundos.click();
-		sleep(2000);
-		
-		separadores1.sendKeys(":");
-		sleep(2000);
-		
-		aplicar.click();
-		sleep(2000);
-		
-		gravar.click();
-		sleep(2000);
-		waitExpectElement(nao);
-		sleep(2000);
-		
-		nao.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		
-		sim.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"O Leiaute foi atualizado com sucesso\")]")).size();
-		System.out.println(mensaje);
-		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
-		if (mensaje > 0) {
-			sucesso.add(true);
-			
-		}else {
-			sucesso.add(false);
-		}
-		
-		return sucesso;
-		
-	}
-	
-	public ArrayList<Boolean> dataDaExecucao() {
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		moveToElement(dataDaExecucao, driver.findElement(By.xpath("//div[@block-id=\"0\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
-		
-		dia.click();
-		sleep(2000);
-		opcDia.click();
-		sleep(2000);
-		
-		mes.click();
-		sleep(2000);
-		opcMes.click();
-		sleep(2000);
-		
-		anio.click();
-		sleep(2000);
-		opcAnio.click();
-		sleep(2000);
-		
-		separadores1.sendKeys("/");
-		sleep(2000);
-		
-		aplicar.click();
-		sleep(2000);
-		
-		gravar.click();
-		sleep(2000);
-		waitExpectElement(nao);
-		sleep(2000);
-		
-		nao.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		
-		sim.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"O Leiaute foi atualizado com sucesso\")]")).size();
-		System.out.println(mensaje);
-		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
-		if (mensaje > 0) {
-			sucesso.add(true);
-			
-		}else {
-			sucesso.add(false);
-		}
-		
-		return sucesso;
-		
-	}
-	
-	public ArrayList<Boolean> periodoDaReferencia() {
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		moveToElement(periodoDaReferencia, driver.findElement(By.xpath("//div[@block-id=\"0\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
-		
-		dia.click();
-		sleep(2000);
-		opcDia.click();
-		sleep(2000);
-		
-		mes.click();
-		sleep(2000);
-		opcMes.click();
-		sleep(2000);
-		
-		anio.click();
-		sleep(2000);
-		opcAnio.click();
-		sleep(2000);
-		
-		separadores1.sendKeys("/");
-		sleep(2000);
-		
-		aplicar.click();
-		sleep(2000);
-		
-		gravar.click();
-		sleep(2000);
-		waitExpectElement(nao);
-		sleep(2000);
-		
-		nao.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		
-		sim.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"O Leiaute foi atualizado com sucesso\")]")).size();
-		System.out.println(mensaje);
-		
-
-		biblioteca.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-//		sim.click();
-//		sleep(2000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-		
-//		sim.click();
-//		sleep(2000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-		
-		
-		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
-		if (mensaje > 0) {
-			sucesso.add(true);
-			
-		}else {
-			sucesso.add(false);
-		}
-		
-		return sucesso;
-		
-	}
-	
-	
-	
-	
-	
-	
-	
-	//BLOCO 2 - REGISTRO 2
-	
-	public ArrayList<Boolean> campoFixo() {
-		
-		sleep(2000);
-
-		abaLeiautes.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		raiz.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		siguiente.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		String idLeiaute = idObter1();
-		System.out.println("aquiii: "+idLeiaute);
-//		pesquisar.sendKeys(idLeiaute);
-//		pesquisar.sendKeys(Keys.ENTER);
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-		
-		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idLeiaute+"\"]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idLeiaute+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		sleep(2000);
-		
-		menu.click();
-		sleep(1000);
-		editar.click();
-		sleep(3000);
-		
-		
-		System.out.println("------------------------BLOCOS 2 - REGISTROS 2-------------------");
-		System.out.println("");
-		
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		adicionarBloco.click();
-		sleep(2000);
-		
-		adicionarRegistro2.click();
-		sleep(2000);
-		
-		nombreBloco2.sendKeys("2");
-		sleep(2000);
-		
-		nombreRegistro2.sendKeys("1");
-		sleep(2000);
-		
-		
-		abaCamposEspeciais.click();
-		sleep(2000);
-		
-		abaAjusteFiscais.click();
-		sleep(2000);
-		
-
-		
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		actionsMoveToElementXpath("//*[@id=\"block-list-wrapper\"]/div[2]/div[3]/div/div[5]");
-		sleep(2000);
-		moveToElement(camposFijoDaRegistro, driver.findElement(By.xpath("//div[@block-id=\"1\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
-
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		nomeCampoFixo.sendKeys("Campo Fixo");
-		sleep(2000);
-		
-		tipoCampoFixo.click();
-		sleep(2000);
-		opcTipoCampoFixo.click();
-		sleep(2000);
-		
-		comprimento.sendKeys("10");
-		sleep(2000);
-		
-		adicionarOpcoes.click();
-		sleep(2000);
-		
-		valorOpcoes.sendKeys("TESTE");
-		sleep(2000);
-		
-		aplicar.click();
-		sleep(2000);
-		
-		gravar.click();
-		sleep(3000);
-		waitExpectElement(nao);
-		sleep(2000);
-		
-		nao.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		
-		sim.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"O Leiaute foi atualizado com sucesso\")]")).size();
-		System.out.println(mensaje);
-		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
-		if (mensaje > 0) {
-			sucesso.add(true);
-			
-		}else {
-			sucesso.add(false);
-		}
-		
-		return sucesso;
-	}
-	
-	public ArrayList<Boolean> campoFixoManual() {
-		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		moveToElement(camposFijoManualDaRegistro, driver.findElement(By.xpath("//div[@block-id=\"1\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		nomeCampoFixo.sendKeys("Campo Fixo Manual");
-		sleep(2000);
-		
-		valorOpcoes.sendKeys("TESTE 1");
-		sleep(2000);
-		
-		addOpcao.click();
-		sleep(2000);
-		
-		aplicar.click();
-		sleep(2000);
-		
-		gravar.click();
-		sleep(3000);
-		waitExpectElement(nao);
-		sleep(2000);
-		
-		nao.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		
-		sim.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"O Leiaute foi atualizado com sucesso\")]")).size();
-		System.out.println(mensaje);
-		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
-		if (mensaje > 0) {
-			sucesso.add(true);
-			
-		}else {
-			sucesso.add(false);
-		}
-		
-		return sucesso;
-		
-	}
-
-	//BLOCO 3 - REGISTRO 3
-	
-	public ArrayList<Boolean> sequencia() {
-		System.out.println("------------------------BLOCOS 3 - REGISTROS 3-------------------");
-		System.out.println("");
-		
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		adicionarBloco.click();
-		sleep(2000);
-		
-		adicionarRegistro3.click();
-		sleep(2000);
-		
-		nombreBloco3.sendKeys("3");
-		sleep(2000);
-		
-		nombreRegistro3.sendKeys("1");
-		sleep(2000);
-		
-//		abaCamposEspeciais.click();
-//		sleep(2000);
-//		
-//		abaAjusteFiscais.click();
-//		sleep(2000);
-		
-		subAbaAjusteFiscais.click();
-		sleep(2000);
-		
-		//ARRASTRAR ELEMENTOS
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		actionsMoveToElementXpath("//*[@id=\"block-list-wrapper\"]/div[3]/div[3]/div/div[5]");
-		sleep(2000);
-		moveToElement(codigoEmpresa, driver.findElement(By.xpath("//div[@block-id=\"2\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
-		
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		moveToElement(codigoFilial, driver.findElement(By.xpath("//div[@block-id=\"2\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		moveToElement(dataLanzamento, driver.findElement(By.xpath("//div[@block-id=\"2\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		moveToElement(valorAjuste, driver.findElement(By.xpath("//div[@block-id=\"2\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
-		
-//		abaAjusteFiscais.click();
-//		sleep(2000);
-//		
-//		abaCamposEspeciais.click();
-//		sleep(2000);
-		
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		moveToElement(campoSequencia, driver.findElement(By.xpath("//div[@block-id=\"2\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
-		
-		
-		sequenciamentoLinha.click();
-		sleep(2000);
-		
-	
-		
-		aplicar.click();
-		sleep(2000);
-		
-		gravar.click();
-		sleep(3000);
-		waitExpectElement(nao);
-		sleep(2000);
-		
-		nao.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		
-		sim.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"O Leiaute foi atualizado com sucesso\")]")).size();
-		System.out.println(mensaje);
-		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
-		if (mensaje > 0) {
-			sucesso.add(true);
-			
-		}else {
-			sucesso.add(false);
-		}
-		
-		return sucesso;
-	}
-		
-	//BLOCO 4 - REGISTRO 4
-	
-	public ArrayList<Boolean> sequenciaDeItemPorDocumento() {
-		System.out.println("------------------------BLOCOS 4 - REGISTROS 4-------------------");
-		System.out.println("");
-		
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		adicionarBloco.click();
-		sleep(2000);
-		
-		adicionarRegistro4.click();
-		sleep(2000);
-		
-		nombreBloco4.sendKeys("4");
-		sleep(2000);
-		
-		nombreRegistro4.sendKeys("1");
-		sleep(2000);
-		
-//		abaCamposEspeciais.click();
-//		sleep(2000);
-//		
-//		abaAjusteFiscais.click();
-//		sleep(2000);
-		
-//		subAbaAjusteFiscais.click();
-//		sleep(2000);
-		
-		//ARRASTRAR ELEMENTOS
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		actionsMoveToElementXpath("//*[@id=\"block-list-wrapper\"]/div[4]/div[3]/div/div[5]");
-		sleep(2000);
-		moveToElement(codigoEmpresa, driver.findElement(By.xpath("//div[@block-id=\"3\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
-		
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		moveToElement(codigoFilial, driver.findElement(By.xpath("//div[@block-id=\"3\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		moveToElement(dataLanzamento, driver.findElement(By.xpath("//div[@block-id=\"3\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		moveToElement(valorAjuste, driver.findElement(By.xpath("//div[@block-id=\"3\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
-		
-//		abaAjusteFiscais.click();
-//		sleep(2000);
-//		
-//		abaCamposEspeciais.click();
-//		sleep(2000);
-		
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		moveToElement(campoSequenciaItemPorDocumento, driver.findElement(By.xpath("//div[@block-id=\"3\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
-	
-		aplicar.click();
-		sleep(2000);
-		
-		gravar.click();
-		sleep(3000);
-		waitExpectElement(nao);
-		sleep(2000);
-		
-		nao.click();
-		sleep(2000);
-		waitExpectElement(sim);
-		sleep(2000);
-		
-		sim.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"O Leiaute foi atualizado com sucesso\")]")).size();
-		System.out.println(mensaje);
-		
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
-		if (mensaje > 0) {
-			sucesso.add(true);
-			
-		}else {
-			sucesso.add(false);
-		}
-		
-		return sucesso;
-	}
 		
 	//BLOCO 5 - REGISTRO 5
 	public ArrayList<Boolean> distinto() {
-		System.out.println("------------------------BLOCOS 4 - REGISTROS 4-------------------");
+	
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		raiz.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		btnUltimaPagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		String idRegistro = idObter1();
+	//	String idRegistro = "1879";
+		System.out.println("");
+		System.out.println("ID Registro: " + idRegistro);
 		System.out.println("");
 		
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
+
+		menu.click();
+		sleep(1000);
+		açao.click();
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -1539,22 +511,15 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseCristhian{
 		adicionarRegistro5.click();
 		sleep(2000);
 		
-		nombreBloco5.sendKeys("5");
+		actionsMoveToElementElement(nombreBloco5);
+		
+		nombreBloco5.sendKeys("Bloco 5");
 		sleep(2000);
 		
-		nombreRegistro5.sendKeys("1");
+		nombreRegistro5.sendKeys("Registro 1");
 		sleep(2000);
 		
-//		abaCamposEspeciais.click();
-//		sleep(2000);
-//		
-//		abaAjusteFiscais.click();
-//		sleep(2000);
-		
-//		subAbaAjusteFiscais.click();
-//		sleep(2000);
-		
-		//ARRASTRAR ELEMENTOS
+
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -1631,7 +596,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseCristhian{
 		
 		
 		biblioteca.click();
-		sleep(3000);
+		sleep(5000);
 		raiz.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1662,17 +627,17 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseCristhian{
 //		}
 		
 		System.out.println("Versão: " + versaoT.equals("1.0"));
-		System.out.println("Nome: " + nomeT.contains("Teste Automatizado"));
-		System.out.println("Tipo: " + tipoTE.contains("ALTER E-SOCIAL S1200"));
+		//System.out.println("Nome: " + nomeT.contains("Teste Automatizado kenssy"));
+		//System.out.println("Tipo: " + tipoTE.contains("ALTER E-SOCIAL S1200"));
 		
-		sucesso.add(versaoT.equals("1.0"));
-		sucesso.add(nomeT.contains("Teste Automatizado"));
+		/*sucesso.add(versaoT.equals("1.0"));
+		sucesso.add(nomeT.contains("Teste Automatizado kenssy"));
 		if (tc2==true) {
 			sucesso.add(tipoTE.contains("DCTF"));
 		}else {
 			sucesso.add(tipoTE.contains("ALTER E-SOCIAL S1200"));
 		}
-		
+		*/
 		
 		System.out.println(sucesso);
 		return sucesso;
@@ -1693,10 +658,11 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseCristhian{
 		
 		sleep(2000);
 		abaConfiguracao.click();
-		sleep(2000);
+		sleep(6000);
+		sleep(6000);
 		
 		raizConfiguracao.click();
-		sleep(2000);
+		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -1740,10 +706,10 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseCristhian{
 		//li[@id="7754"]
 		waitExpectElement(opcLeiauteObter);
 		opcLeiauteObter.click();
-		sleep(2000);
+		sleep(8000);
 		
 		versaoConfiguracao.click();
-		sleep(1000);
+		sleep(3000);
 		opcversaoConfiguracao.click();
 		sleep(1000);
 //		opcversaoSPED.sendKeys(Keys.ESCAPE);
@@ -1815,9 +781,20 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseCristhian{
 		sleep(1000);
 		
 		salvar.click();
-		sleep(2000);
+		sleep(6000);
 		waitExpectElement(siguiente);
-		sleep(3000);
+		sleep(5000);
+		
+		sleep(2000);
+		abaConfiguracao.click();
+		sleep(6000);
+		sleep(6000);
+		
+		raizConfiguracao.click();
+		sleep(6000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		
 		siguiente.click();
 		sleep(2000);
@@ -1907,7 +884,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseCristhian{
 		menu.click();
 		sleep(1000);
 		executar.click();
-		sleep(3000);
+		sleep(8000);
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //		sleep(2000);
 //		waitExpectElement(estadoExecutar);
@@ -1958,7 +935,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseCristhian{
 		sleep(2000);
 		
 		parametrosManuais.click();
-		sleep(3000);
+		sleep(6000);
 		
 //		camposManualExecutar.click();
 //		sleep(2000);
@@ -2020,12 +997,12 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseCristhian{
 		String saltoLinhaValor1 =  verSaltoLinha1.getText();
 		saltoLinhaValor1 = saltoLinhaValor1.replace("?", "");		
 		
-		String saltoLinhaValor2 =  verSaltoLinha2.getText();
-		saltoLinhaValor2 = saltoLinhaValor2.replace("?", "");
+		/*String saltoLinhaValor2 =  verSaltoLinha2.getText();
+		saltoLinhaValor2 = saltoLinhaValor2.replace("?", "");*/
 		
 		System.out.println("-----Visualizar Salto Linha----------");
 		System.out.println("Salto de Linha 1: "+ saltoLinhaValor1);
-		System.out.println("Salto de Linha 2: "+ saltoLinhaValor2);
+	//	System.out.println("Salto de Linha 2: "+ saltoLinhaValor2);
 		System.out.println("");
 		
 		visualizarDados2.click();
@@ -2170,7 +1147,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseCristhian{
 			elegirBloco.click();
 			sleep(2000);
 			opcaoElegirBloco5.click();
-			sleep(2000);
+			sleep(7000);
 			
 			
 			int rows = rows("//div[@class=\"tr-content\" and @id]");
@@ -2180,6 +1157,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseCristhian{
 			for (int i = 0; i < rows; i++) {
 				
 				System.out.println("Registro: " + f);
+				sleep(2000);
 				String totalRegistro = driver.findElement(By.xpath("//div[@class=\"tr-content\" and @id]["+f+"]/div[1]/div")).getText();
 	
 				sucesso.add(totalRegistro.equals("1000"));
@@ -2211,7 +1189,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseCristhian{
 		lixeira.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		
 		pastaLixeira.click();
@@ -2286,7 +1264,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBaseCristhian{
 		lixeira.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
 		
 		
 

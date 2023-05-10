@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegistroM600ExcluirPO extends TestBaseEliel{
+public class RegistroM600ExcluirPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
@@ -75,7 +75,7 @@ public class RegistroM600ExcluirPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter("GestaoCreditoTributarioPISRegistroM600");
+		String idRegistro = idObter("GestaoCreditoTributarioCOFINSRegistroM600");
 		System.out.println("Registro a ser excluido: " +idRegistro);
 		
 		

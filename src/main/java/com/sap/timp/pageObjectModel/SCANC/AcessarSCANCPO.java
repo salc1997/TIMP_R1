@@ -17,7 +17,7 @@ public class AcessarSCANCPO extends TestBaseFernando{
 	@FindBy(xpath = "//*[@id=\"acc-reports\"]/ul/li[3]/div/span[2]")
 	public WebElement cadastro;
 	
-	@FindBy(xpath = "//span[@class=\"baseTabs-title\"]/span[text()=\"Arquivos\"]")
+	@FindBy(xpath = "//span[text()=\"Arquivos Importados\"]")
 	public WebElement mostrar;
 	
 	public AcessarSCANCPO() {

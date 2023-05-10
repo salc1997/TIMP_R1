@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBaseCristhian {
+public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBaseSteven {
 	
 
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][1]")
@@ -106,7 +106,10 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBaseCristhian
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		
+		siguiente.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
 		
 		int rows = driver
@@ -120,7 +123,7 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBaseCristhian
 				.getText();
 		System.out.println(nome);
 
-		sucesso.add(nome.contains("Cópia de - Teste QA PREUBA 007"));
+		sucesso.add(nome.contains("Cópia de - Teste QA PRUEBA TA"));
 		
 		System.out.println("nuevo Copia: "+id2);
 		idInserir2(id2);
@@ -162,7 +165,7 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBaseCristhian
 		waitExpectElement(lixeira);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -193,7 +196,7 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBaseCristhian
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

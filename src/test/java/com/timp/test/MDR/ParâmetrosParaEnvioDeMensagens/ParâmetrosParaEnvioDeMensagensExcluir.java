@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ParâmetrosParaEnvioDeMensagensExcluir extends TestBaseFernando{
+public class ParâmetrosParaEnvioDeMensagensExcluir extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 	ParâmetrosParaEnvioDeMensagensExcluirPO parâmetrosParaEnvioDeMensagensExcluirPO;
@@ -31,14 +31,12 @@ public class ParâmetrosParaEnvioDeMensagensExcluir extends TestBaseFernando{
 		driver.close();
 	}
 
-
-
-	@Test(priority = 1 )
+	@Test(priority = 1)
 	public void excluir() {
-		
+
 		loginTC.login();
 		accesarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = parâmetrosParaEnvioDeMensagensExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 	}

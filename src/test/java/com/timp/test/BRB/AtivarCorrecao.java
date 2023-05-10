@@ -61,7 +61,7 @@ public class AtivarCorrecao extends TestBaseSteven {
 			assertTrue(sucesso.get(i), correcãoInativa);
 			System.out.println(sucesso.get(i));
 		}
-
+		sleep(2000);
 	}
 
 }

@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ConfiguraçãoeExecuçãoFiltrosavançadosPO extends TestBaseCristhian {
+public class ConfiguraçãoeExecuçãoFiltrosavançadosPO extends TestBaseSteven {
 
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-boc\"]")
 	public WebElement bancoOcorrencia;
@@ -90,18 +90,18 @@ public class ConfiguraçãoeExecuçãoFiltrosavançadosPO extends TestBaseCristhian {
 	@FindBy(xpath = "//li[text()=\"SP\"]")
 	public WebElement opcUfTP1;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione uma Filial\"]")
+	@FindBy(xpath = "//div[@class=\"branch-filter\"]/div/div[1]/div[2]")
 	public WebElement filial;
 	
-	@FindBy(xpath = "//li[text()=\"0143\"]")
+	@FindBy(xpath = "//li[text()=\"0156\"]")
 	public WebElement opcFilialTC2;
 	
 	@FindBy(xpath = "//li[text()=\"0001\"]")
 	public WebElement opcFilialTP1;
 	
 	
-	@FindBy(xpath = "//*[@id=\"right-content\"]/div/div[3]/div[4]/button/span[2]")
-	public WebElement aplicar;
+	@FindBy(xpath = "//span[text()=\"Pesquisar\"]")
+	public WebElement pesquisar;
 	
 	
 	public ConfiguraçãoeExecuçãoFiltrosavançadosPO() {
@@ -128,15 +128,15 @@ public class ConfiguraçãoeExecuçãoFiltrosavançadosPO extends TestBaseCristhian {
 		sleep(2000);
 		
 		filtrosavancados.click();
-		
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		empresa.click();
 		sleep(2000);
 		
 		opcEmpresa.click();
-		sleep(7000);
+		sleep(15000);
 		
 		uf.click();
 		sleep(2000);
@@ -144,11 +144,11 @@ public class ConfiguraçãoeExecuçãoFiltrosavançadosPO extends TestBaseCristhian {
 		
 		if (tc2==true) {
 			opcUfTC2.click();
-			sleep(7000);
+			sleep(14000);
 
 		}else {
 			opcUfTP1.click();
-			sleep(7000);
+			sleep(10000);
 
 		}
 		
@@ -167,7 +167,7 @@ public class ConfiguraçãoeExecuçãoFiltrosavançadosPO extends TestBaseCristhian {
 		}
 		
 		
-		aplicar.click();
+		pesquisar.click();
 		sleep(1000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -204,7 +204,9 @@ public class ConfiguraçãoeExecuçãoFiltrosavançadosPO extends TestBaseCristhian {
 			icms = driver.findElement(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")][1]/div[2]/div")).getText();
 			sucesso.add(data.get(0).equals(icms));
 		}
-		
+	
+		System.out.println(sucesso);
+		sleep(3000);
 		return sucesso;
 		
 		

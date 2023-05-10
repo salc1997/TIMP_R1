@@ -2,7 +2,7 @@ package com.timp.test.MDR.RegistroDeExportaçao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -31,16 +31,16 @@ public class RegistroDeExportaçaoCriar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
-	}
 
-	
+		driver.close();
+
+	}
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = registroDeExportaçaoCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
 

@@ -137,15 +137,23 @@ public class ConfiguracaoEExecucaoRegistro1200CriarPO extends TestBaseMassiel {
 		
 		gestaoCredito.click();
 		sleep(2000);
+		invisibilityOfElementOverlay();
+		sleep(2000);
+		
 		configuracaoEExecucao.click();
 		sleep(2000);
-		registro1200.click();
-		
 		invisibilityOfElementOverlay();
+		sleep(2000);
+		
+		registro1200.click();
+		sleep(2000);
+		invisibilityOfElementOverlay();
+		sleep(2000);
 		
 		siguiente.click();
-		
+		sleep(2000);
 		invisibilityOfElementOverlay();
+		sleep(2000);
 		
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
 
@@ -166,7 +174,7 @@ public class ConfiguracaoEExecucaoRegistro1200CriarPO extends TestBaseMassiel {
 		sleep(1000);
 		
 		//attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
-		sleep(5000);
+		sleep(20000);
 		
 		uf.click();
 		sleep(1000);
@@ -179,7 +187,7 @@ public class ConfiguracaoEExecucaoRegistro1200CriarPO extends TestBaseMassiel {
 	
 		
 		//attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
-		sleep(5000);
+		sleep(12000);
 		
 		filial.click();
 		sleep(1000);
@@ -280,7 +288,9 @@ public class ConfiguracaoEExecucaoRegistro1200CriarPO extends TestBaseMassiel {
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
 		
-		idInserir4(id2);
+		idInserir("id-GCT-ICMS-ConfiguracaoEExecucacoRegistro1200",id2);
+		
+		//idInserir4(id2);
 		int idD = convertToInt(idRegistro);
 		int id2D = convertToInt(id2);
 		

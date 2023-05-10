@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
+public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Regras\"]")
 	public WebElement Regras;
@@ -53,7 +53,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Justificativa\"]")
@@ -103,8 +103,14 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 	@FindBy(xpath = "//td[@class=\"datastructureCategory-field\"]/div/div/div[2]")
 	public WebElement grupodeestrutura;
 	
-	@FindBy(xpath = "//li[@id][text()=\"Ajuste\"][1]")
+	@FindBy(xpath = "//li[@id][text()=\"TA-TESTE\"][1]")
 	public WebElement opcaogrupodeestrutura;
+	
+	@FindBy(xpath = "//td[@class=\"regulation-field\"]/div/div/div[2]")
+	public WebElement regulamiento;
+	
+	@FindBy(xpath = "//li[@id][text()=\"TA-TESTE\"][1]")
+	public WebElement regulamientoOPC;
 	
 	@FindBy(xpath = "//li[@id][text()=\"Ajustes\"][1]")
 	public WebElement opcaogrupodeestruturatp1;
@@ -135,7 +141,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 		sleep(2000);
 
 		siguiente.click();
-		
+		 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
@@ -148,7 +154,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 		novo.click();
 		
 	
-		sleep(6000);
+		sleep(16000);
 		
 		nome.sendKeys("TESTE AUTOMATIZADO RODADA ");
 		sleep(2000);
@@ -197,13 +203,21 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 			sleep(1000);
 		}
 		
-		
+	 
 		
 		estructura.click();
 		sleep(3000);
 		opcEstructura.click();
 		sleep(3000);
 		
+		 regulamiento.click();
+		sleep(3000);
+		
+		actionsMoveToElementElement(regulamientoOPC);
+		sleep(4000);
+		regulamientoOPC.click();
+		sleep(3000);
+			
 		String data = fechaActual();
 		validade.sendKeys("01/01/2013");
 		sleep(1000);
@@ -280,30 +294,31 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBaseCristhian {
 		
 		aceitar.click();
 
-		sleep(2000);
+		sleep(29000);
 		
 		biblioteca.click();
 		
 		sleep(2000);
-		sim.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		/*sim.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");*/
 		sleep(2000);
 		sleep(2000);
 		sleep(2000);
 		waitExpectElement(AN2);
-		sleep(4000);
+		sleep(7000);
 		AN2.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir3(idB);
+		//idInserir3(idB);
+		idInserir("An2",idB);
 		sleep(2000);
 		System.out.println("ID: "+id);
 		System.out.println("IDB: "+idB);

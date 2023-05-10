@@ -30,13 +30,14 @@ public class AN4Funcionalidades extends TestBaseMassiel{
 
 	@AfterClass
 	public void afterClass() {
+	//	driver.close();
 	}
 
 	@Test(priority = 0)
 	public void ingresar() {
 		loginTC.login();
 	}
-
+	
 	@Test(priority = 1)
 	public void DFGEntrar() {
 		acessarDFGPO.acessarDFG();
@@ -69,7 +70,7 @@ public class AN4Funcionalidades extends TestBaseMassiel{
 	public void AN4IdBRE() {
 
 		aN4FuncionalidadesPO.IdBRE();
-
+     
 	}
 
 	@Test(priority = 6)
@@ -78,7 +79,7 @@ public class AN4Funcionalidades extends TestBaseMassiel{
 		boolean sucesso = aN4FuncionalidadesPO.CriarRegra();
 		assertTrue(sucesso, Criar);
 	}
-	
+
 	@Test(priority = 7)
 	public void AN4IdDFG() {
 
@@ -116,7 +117,7 @@ public class AN4Funcionalidades extends TestBaseMassiel{
 		
 
 	}
-	
+
 	@Test(priority = 11)
 	public void criarAN4() {
 

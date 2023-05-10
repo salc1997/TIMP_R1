@@ -28,7 +28,7 @@ public class SaldoInicialCriar extends TestBaseKenssy {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test()

@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class GrupoDeEstruturasExcluirPO extends TestBaseEliel{
+public class GrupoDeEstruturasExcluirPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Grupo de Estruturas\"]")
 	public WebElement grupodeestrutura;
@@ -42,7 +42,7 @@ public class GrupoDeEstruturasExcluirPO extends TestBaseEliel{
 		sleep(2000);
 
 		// pega o ultimo id que foi gerado no criar
-		String idRegistro = idObter1();
+		String idRegistro = idObter("GrupoDeEstruturasCriar");
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(

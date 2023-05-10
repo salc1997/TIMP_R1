@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigosDasObrigaçoesDeICMSaRecolherVisualizarPO extends TestBaseEliel {
+public class CodigosDasObrigaçoesDeICMSaRecolherVisualizarPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
@@ -69,7 +69,7 @@ public class CodigosDasObrigaçoesDeICMSaRecolherVisualizarPO extends TestBaseEli
 	public WebElement descricaoe;
 	
 
-	@FindBy (xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy (xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigenciae;
 	
 	public CodigosDasObrigaçoesDeICMSaRecolherVisualizarPO() {

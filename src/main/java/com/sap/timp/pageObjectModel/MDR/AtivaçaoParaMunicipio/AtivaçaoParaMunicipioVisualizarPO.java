@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AtivaçaoParaMunicipioVisualizarPO extends TestBaseEliel {
+public class AtivaçaoParaMunicipioVisualizarPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//span[text()=\"Ativação para Município\"]")
@@ -78,7 +78,7 @@ public class AtivaçaoParaMunicipioVisualizarPO extends TestBaseEliel {
 	public WebElement razaoE;
 	@FindBy(xpath = "//input[contains(@placeholder,\"UF\")]")
 	public WebElement ufE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Municipio\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Selecionar Município \")]")
 	public WebElement municipioE;
 	@FindBy(xpath = "//input[contains(@placeholder,\"Centralizadora\")]")
 	public WebElement FilialCentralizadoraE;
@@ -86,7 +86,7 @@ public class AtivaçaoParaMunicipioVisualizarPO extends TestBaseEliel {
 	public WebElement filialCentralizadaE;
 	@FindBy(xpath = "//input[contains(@placeholder,\"Fantasia\")]")
 	public WebElement fantasiaE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"CNPJ\")]")
+	@FindBy(xpath = "//div[@id=\"cnpj\"]/div/div/input")
 	public WebElement cnpjE;
 	
 	
@@ -165,7 +165,7 @@ public class AtivaçaoParaMunicipioVisualizarPO extends TestBaseEliel {
 		sleep(2000);
 		waitExpectElement(empresaE);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 
 
 		

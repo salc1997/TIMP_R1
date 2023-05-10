@@ -2,7 +2,7 @@ package com.timp.test.MDR.CenariosCorrecao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CenariosCorrecao.CenariosCorrecaoVisualizarPO;
@@ -16,14 +16,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CenariosCorrecaoVisualizar extends TestBaseKathy {
+public class CenariosCorrecaoVisualizar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CenariosCorrecaoVisualizarPO cenariosCorrecaoVisualizarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationK();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		cenariosCorrecaoVisualizarPO = new CenariosCorrecaoVisualizarPO();
@@ -47,5 +47,6 @@ public class CenariosCorrecaoVisualizar extends TestBaseKathy {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
+		sleep(2000);
 	}
 }

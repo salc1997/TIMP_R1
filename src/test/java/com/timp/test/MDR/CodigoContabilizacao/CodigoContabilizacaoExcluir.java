@@ -2,7 +2,7 @@ package com.timp.test.MDR.CodigoContabilizacao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CodigoContabilizacao.CodigoContabilizacaoExcluirPO;
@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class CodigoContabilizacaoExcluir extends TestBaseEliel {
+public class CodigoContabilizacaoExcluir extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoContabilizacaoExcluirPO codigoContabilizacaoExcluirPO;
@@ -21,7 +21,7 @@ public class CodigoContabilizacaoExcluir extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		codigoContabilizacaoExcluirPO = new CodigoContabilizacaoExcluirPO();

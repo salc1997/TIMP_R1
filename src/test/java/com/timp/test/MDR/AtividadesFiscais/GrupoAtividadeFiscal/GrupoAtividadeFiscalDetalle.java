@@ -49,6 +49,7 @@ public class GrupoAtividadeFiscalDetalle extends TestBaseMassiel{
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
+		sleep(2000);
 	}
 	
 }

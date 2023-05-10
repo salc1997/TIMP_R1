@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela01.CategoriasDeTrabalhadoresVisualizarPO;
 
-public class CategoriasDeTrabalhadoresVisualizar extends TestBaseEliel {
+public class CategoriasDeTrabalhadoresVisualizar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -22,7 +22,7 @@ public class CategoriasDeTrabalhadoresVisualizar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		categoriasDeTrabalhadoresVisualizarPO = new CategoriasDeTrabalhadoresVisualizarPO();
@@ -32,7 +32,7 @@ public class CategoriasDeTrabalhadoresVisualizar extends TestBaseEliel {
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test()
 	public void Visualizar() {
 

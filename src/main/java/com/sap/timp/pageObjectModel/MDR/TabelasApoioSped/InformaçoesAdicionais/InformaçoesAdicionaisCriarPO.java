@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class InformaçoesAdicionaisCriarPO extends TestBaseEliel{
+public class InformaçoesAdicionaisCriarPO extends TestBaseSteven{
 	
 	
 
@@ -38,7 +38,7 @@ public class InformaçoesAdicionaisCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher a descrição do Informação Adicional\"]")
 	public WebElement descricao;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -97,10 +97,10 @@ public class InformaçoesAdicionaisCriarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigodevalores.sendKeys("SP55002");
+		codigodevalores.sendKeys("SP987502");
 		codigodevalores.sendKeys(Keys.ENTER);
 		
-		descricao.sendKeys("Teste55");
+		descricao.sendKeys("Teste987");
 		
 		//data atual
 		String data = fechaActual();

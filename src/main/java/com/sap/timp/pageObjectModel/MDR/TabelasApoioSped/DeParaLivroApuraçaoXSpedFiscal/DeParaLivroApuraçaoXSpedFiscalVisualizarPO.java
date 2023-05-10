@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class DeParaLivroApuraçaoXSpedFiscalVisualizarPO extends TestBaseEliel {
+public class DeParaLivroApuraçaoXSpedFiscalVisualizarPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
@@ -83,7 +83,7 @@ public class DeParaLivroApuraçaoXSpedFiscalVisualizarPO extends TestBaseEliel {
 	@FindBy(xpath = "//input[@placeholder=\"SelecionarLinha\"]")
 	public WebElement linede;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datade;
 	
 	public DeParaLivroApuraçaoXSpedFiscalVisualizarPO() {

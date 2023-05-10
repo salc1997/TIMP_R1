@@ -5,11 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class LogradouroExcluirPO extends TestBaseKathy{
-	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+public class LogradouroExcluirPO extends TestBaseSteven{
+	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
 	public WebElement cep;
+	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	public WebElement cep2;
 	
 	@FindBy(xpath = "//li/div/span[text()=\"Logradouro\"]")
 	public WebElement logradouro;
@@ -37,14 +39,24 @@ public class LogradouroExcluirPO extends TestBaseKathy{
 	}
 
 	public boolean logradouroExcluir() {
-		cep.click();
-		sleep(1000);
+		String url = driver.getCurrentUrl();
+		
+		if (url.contains("tq1")) {
+			cep2.click();
+			sleep(1000);
+
+		} else {
+			cep2.click();
+
+			sleep(1000);
+		}
 		logradouro.click();
 		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);
-		String numEnviar = "11112222";
-		
-		pesquisar.sendKeys(numEnviar);
+		String idRegistro = idObter("CEP-Logradouro");
+	    System.out.println("idEditar: "+ idRegistro);
+	    
+		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -60,7 +72,7 @@ public class LogradouroExcluirPO extends TestBaseKathy{
 		
 		pesquisar.clear();
 		sleep(1000);
-		pesquisar.sendKeys(numEnviar);
+		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		

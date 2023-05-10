@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegistroM610VisualizarPO extends TestBaseEliel{
+public class RegistroM610VisualizarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
@@ -111,7 +111,7 @@ public class RegistroM610VisualizarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter("GestaoCreditoTributarioPISRegistroM610");
+		String idRegistro = idObter("GestaoCreditoTributarioCOFINSRegistroM610");
 		System.out.println("ID Registro: " + idRegistro);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
@@ -169,7 +169,7 @@ public class RegistroM610VisualizarPO extends TestBaseEliel{
 			nao.click();
 		}
 		
-		sleep(5000);
+		sleep(7000);
 		waitExpectElement(siguiente);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
@@ -186,7 +186,7 @@ public class RegistroM610VisualizarPO extends TestBaseEliel{
 		waitExpectXpath("//div[@id=\"branch\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
 		waitExpectXpath("//div[@id=\"uf\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		
 		String empresaE = empresa.getAttribute("value");

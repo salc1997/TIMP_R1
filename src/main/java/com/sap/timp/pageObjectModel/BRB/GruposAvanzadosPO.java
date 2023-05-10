@@ -14,13 +14,13 @@ import com.sap.timp.base.TestBaseSteven;
 public class GruposAvanzadosPO extends TestBaseSteven{
 
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[4]")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[4]")
 	public WebElement opcao;
 
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
 	public WebElement ferramenta;
 
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div")
 	public WebElement menu;
 
 	@FindBy(xpath = "//*[@id=\"right\"]/div[2]/div[1]/div/div/ul/li[1]/button")
@@ -134,7 +134,7 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 		executar.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 	
 	
@@ -149,7 +149,7 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 		
 		edicao.click();
 		sleep(3000);
-		nao1.click();
+	//	nao1.click();
 		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
 		
 		grupoAvanzado.click();
@@ -194,7 +194,7 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 		nao1.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		execucao.click();
 		sleep(5000);

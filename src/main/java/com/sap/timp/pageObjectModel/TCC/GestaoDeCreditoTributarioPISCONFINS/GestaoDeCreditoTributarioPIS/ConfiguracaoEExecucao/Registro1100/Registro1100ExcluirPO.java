@@ -55,7 +55,7 @@ public class Registro1100ExcluirPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter("GestionCreditoTributoRegistro1100");
+		String idRegistro = idObter("GestaoCréditoTributárioPISRegistro1100");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
@@ -64,12 +64,12 @@ public class Registro1100ExcluirPO extends TestBaseMassiel{
 		menu.click();
 		sleep(1000);
 		excluir.click();
-		sleep(3000);
+		sleep(4000);
 		
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(7000);
 		
 		siguiente.click();
 		
@@ -78,8 +78,13 @@ public class Registro1100ExcluirPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String id ="0";
 		
+		if (rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+			System.out.println("Id ultimo registro: " +id);
+		}
+ 
 		int id1 = convertToInt(id);
 		int id2 = convertToInt(idRegistro);
 		System.out.println(id1);

@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigoContabilizacaoCriarPO extends TestBaseEliel {
+public class CodigoContabilizacaoCriarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Códigos de Contabilização\"]")
 	public WebElement codigoscontabilizacao;
@@ -50,7 +50,7 @@ public class CodigoContabilizacaoCriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"icon main-icon icon-font-Sign-and-Symbols icon-downmenu\"]")
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//li[text()=\"ICMS\"]")
+	@FindBy(xpath = "//li[text()=\"00 - ICMS\"]")
 	public WebElement opcaotributo;
 	
 	@FindBy(xpath = "//*[@id=\"start-date\"]/div/div[1]/input")
@@ -106,6 +106,7 @@ public class CodigoContabilizacaoCriarPO extends TestBaseEliel {
 		novocodigocontabilizacao.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(13000);
 		empresa.click();
 		
 		opcaoempresa.click();
@@ -137,7 +138,7 @@ public class CodigoContabilizacaoCriarPO extends TestBaseEliel {
 		
 		//pega a data atual
 		//String data= fechaActual();
-		String data = dataanterior();
+		String data = fechaAyer();
 		datainicio.sendKeys(data);
 		
 		gravar.click();

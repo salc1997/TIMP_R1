@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasdeAuditoriaN2LixeiraExcluirdefinitivamentePO extends TestBaseCristhian {
+public class RegrasdeAuditoriaN2LixeiraExcluirdefinitivamentePO extends TestBaseSteven {
 
 	@FindBy(xpath = "//span[text()=\"Regras\"]")
 	public WebElement Regras;
@@ -44,13 +44,14 @@ public boolean lexeira() {
 	AN2.click();
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
-
+ 
 	btnUltimaPagina.click();
 	sleep(2000);
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(2000);
+	sleep(8000);
 	
-	String idRegistro = idObter3();
+	//String idRegistro = idObter3();
+	String idRegistro = idObter("An2");
 	WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 	WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
@@ -71,7 +72,7 @@ public boolean lexeira() {
 	sleep(2000);
 	waitExpectXpath("//div[@class=\"overlay loader dark\"]");
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(2000);
+	sleep(6000);
 	
 	btnUltimaPagina.click();
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -113,7 +114,7 @@ public boolean excluirDefinitivo() {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
 	
-	String idRegistro = idObter3();
+	String idRegistro = idObter("An2");
 	WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 	WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
@@ -134,7 +135,7 @@ public boolean excluirDefinitivo() {
 	sleep(2000);
 	waitExpectXpath("//div[@class=\"overlay loader dark\"]");
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(2000);
+	sleep(6000);
 	
 	btnUltimaPagina.click();
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

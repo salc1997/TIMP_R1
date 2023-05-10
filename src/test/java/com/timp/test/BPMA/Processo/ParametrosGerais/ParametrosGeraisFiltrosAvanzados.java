@@ -35,7 +35,7 @@ public class ParametrosGeraisFiltrosAvanzados extends TestBaseKenssy {
 
 	  @AfterClass
 	  public void afterClass() {
-		  driver.close();
+		//  driver.close();
 	  }
 	  
 	  
@@ -59,10 +59,7 @@ public class ParametrosGeraisFiltrosAvanzados extends TestBaseKenssy {
 			assertTrue(usuarioCriacao.get(i), Filtros);
 		}
 		
-		ArrayList<Boolean> usuarioModificao = parametrosGeraisFiltrosAvanzadosPO.filtrosUsuarioModificao();
-		for (int i = 0; i < usuarioModificao.size(); i++) {
-			assertTrue(usuarioModificao.get(i), Filtros);
-		}
+
 		
 		
 		ArrayList<Boolean> dataCriacao = parametrosGeraisFiltrosAvanzadosPO.filtroDataCriacao();
@@ -73,6 +70,11 @@ public class ParametrosGeraisFiltrosAvanzados extends TestBaseKenssy {
 		ArrayList<Boolean> dataModificao = parametrosGeraisFiltrosAvanzadosPO.filtroDataModificao();
 		for (int i = 0; i < dataModificao.size(); i++) {
 			assertTrue(dataModificao.get(i), Filtros);
+		}
+		
+		ArrayList<Boolean> usuarioModificao = parametrosGeraisFiltrosAvanzadosPO.filtrosUsuarioModificao();
+		for (int i = 0; i < usuarioModificao.size(); i++) {
+			assertTrue(usuarioModificao.get(i), Filtros);
 		}
 	}
 

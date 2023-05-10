@@ -2,7 +2,6 @@ package com.timp.test.MDR.AtivaçaoParaMunicipio;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -43,6 +42,6 @@ public class AtivaçaoParaMunicipioCriar extends TestBaseSteven {
 
 		boolean sucesso = ativaçaoParaMunicipioCriarPO.criar();
 		assertTrue(sucesso, semAcesso);
-
+		sleep(2000);
 	}
 }

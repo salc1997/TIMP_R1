@@ -44,11 +44,14 @@ public class ParametrosGeraisFiltroAvancadosPO extends TestBaseMassiel{
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Usuário de Criação\"]")
 	public WebElement usuarioCriado;
 
-	@FindBy(xpath = "//li[@id=\"option-200\"]")
+	@FindBy(xpath = "//li[@id=\"option-212\"]")
 	public WebElement usuarioCriadoOpc;
 
 	@FindBy(xpath = "//li[@id=\"option-168\"]")
 	public WebElement usuarioCriadoOpc2;
+	
+	@FindBy(xpath = "//li[@id=\"option-180\"]")
+	public WebElement usuarioCriadoOpc3;
 
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Data de criação a partir\"]")
 	public WebElement FechaUsuarioCriado;
@@ -56,11 +59,14 @@ public class ParametrosGeraisFiltroAvancadosPO extends TestBaseMassiel{
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Usuário de Modificação\"]")
 	public WebElement usuarioModificado;
 
-	@FindBy(xpath = "//li[@id=\"option-200\"]")
+	@FindBy(xpath = "//li[@id=\"option-212\"]")
 	public WebElement usuarioModificadoOpc;
 
 	@FindBy(xpath = "//li[@id=\"option-168\"]")
 	public WebElement usuarioModificadoOpc2;
+	
+	@FindBy(xpath = "//li[@id=\"option-180\"]")
+	public WebElement usuarioModificadoOpc3;
 
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Data de modificação a partir\"]")
 	public WebElement FechaUsuarioModificado;
@@ -404,10 +410,14 @@ public class ParametrosGeraisFiltroAvancadosPO extends TestBaseMassiel{
 			usuarioCriadoOpc.click();
 			sleep(1000);
 
-		}if (url.contains("tp1")==true){
+		}else if (url.contains("tp1")==true){
 
 			textUsuarioCriado = usuarioCriadoOpc2.getText();
 			usuarioCriadoOpc2.click();
+			sleep(1000);
+		}else if (url.contains("tq1")==true) {
+			textUsuarioCriado = usuarioCriadoOpc3.getText();
+			usuarioCriadoOpc3.click();
 			sleep(1000);
 		}
 
@@ -468,6 +478,7 @@ public class ParametrosGeraisFiltroAvancadosPO extends TestBaseMassiel{
 		sleep(2000);
 		
 		FechaUsuarioCriado.sendKeys(textFechaCriado);
+		sleep(2000);
 		FechaUsuarioCriado.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -535,10 +546,14 @@ public class ParametrosGeraisFiltroAvancadosPO extends TestBaseMassiel{
 			usuarioModificadoOpc.click();
 			sleep(2000);
 
-		}if (url.contains("tp1")==true){
+		}else if (url.contains("tp1")==true){
 
 			textUsuarioModificado = usuarioModificadoOpc2.getText();
 			usuarioModificadoOpc2.click();
+			sleep(2000);
+		}else if (url.contains("tq1")==true){
+			textUsuarioModificado = usuarioModificadoOpc3.getText();
+			usuarioModificadoOpc3.click();
 			sleep(2000);
 		}
 
@@ -597,6 +612,7 @@ public class ParametrosGeraisFiltroAvancadosPO extends TestBaseMassiel{
 		sleep(2000);
 
 		FechaUsuarioModificado.sendKeys(textFechaModificado);
+		sleep(2000);
 		FechaUsuarioModificado.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

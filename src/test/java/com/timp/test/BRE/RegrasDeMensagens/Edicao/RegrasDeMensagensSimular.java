@@ -46,7 +46,7 @@ public class RegrasDeMensagensSimular extends TestBaseSteven {
 		boolean sucesso = regrasDeMensagensSimularPO.simular();
 		
 		assertTrue(sucesso, filtros);
-		
+		sleep(2000);
 	}
  
  

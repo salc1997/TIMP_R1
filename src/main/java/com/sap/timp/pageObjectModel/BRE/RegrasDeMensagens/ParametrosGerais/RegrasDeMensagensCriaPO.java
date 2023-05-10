@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeMensagensCriaPO extends TestBaseEliel {
+public class RegrasDeMensagensCriaPO extends TestBaseSteven {
 	@FindBy(xpath = "//span[text()=\"Regras de Mensagens\"]")
 	public WebElement regrasdemensagens;
 	
@@ -77,7 +77,7 @@ public class RegrasDeMensagensCriaPO extends TestBaseEliel {
 	@FindBy(xpath = "//input[@placeholder=\" selecionar Data\"]")
 	public WebElement dataValidadeDe;
 		
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
@@ -178,7 +178,7 @@ public class RegrasDeMensagensCriaPO extends TestBaseEliel {
 		tiporegra.click();
 		sleep(1000);
 		opcaotiporegra.click();
-		sleep(1000);
+		sleep(4000);
 		
 		tipotributo.click();
 		sleep(1000);
@@ -192,6 +192,7 @@ public class RegrasDeMensagensCriaPO extends TestBaseEliel {
 		boolean td1 = false;
 		boolean tp1 = false;
 		boolean tq1 = false;
+		boolean tq2 = false;
 		
 		if (url.contains("tc2")) {
 			tc2 = true;
@@ -199,6 +200,8 @@ public class RegrasDeMensagensCriaPO extends TestBaseEliel {
 			tp1 = true;
 		}else if (url.contains("tq1")) {
 			tq1 = true;
+		}	else if (url.contains("tq2")) {
+			tq2 = true;
 		}else {
 			td1 = true;
 		}
@@ -247,7 +250,7 @@ public class RegrasDeMensagensCriaPO extends TestBaseEliel {
 		justificativa.sendKeys("TESTE AUTOMATIZADO");
 		sleep(1000);
 		aceitar.click();
-		sleep(1000);
+		sleep(65000);
 		//1 caminho
 		adicionarcaminho.click();
 		sleep(2000);
@@ -283,6 +286,9 @@ public class RegrasDeMensagensCriaPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		nao.click();
+		sleep(25000);
+		
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		
 		WebElement caminhocriador1 = driver.findElement(By.xpath("//div[@id=\"graph\"]//*[name()=\"svg\"]/*[name()=\"g\"]"));
@@ -312,7 +318,7 @@ public class RegrasDeMensagensCriaPO extends TestBaseEliel {
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir1(idB);
+		idInserir("RegraDeMensagens",idB);
 
 		System.out.println(id);
 		System.out.println(idB);

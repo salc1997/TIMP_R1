@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseSteven;
 
 public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
@@ -105,7 +105,7 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 	
 	public ArrayList<Boolean> editar() {
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("RelacionamentoEstruturasCriar");
 		
 		String url = driver.getCurrentUrl();
 		
@@ -123,22 +123,22 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		
 		invisibilityOfElementOverlay();
 		
+		sleep(2000);
+		
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/div"));
-		WebElement acao = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/div/div/ul/li/span[text()=\"Editar\"]"));
-		
-		
+	
 		menu.click();
-		sleep(1000);
+		sleep(2000);
+		
+		WebElement acao = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/div/div/ul/li/span[text()=\"Editar\"]"));
 		acao.click();
 		
 		sleep(2000);
-		waitExpectElement(grupo1);
 		invisibilityOfElementOverlay();
-		
-		
-	
-		adicionar.click();
 		sleep(2000);
+		
+		adicionar.click();
+		
 		
 		campoEstruturaE.click();
 		sleep(1000);
@@ -160,11 +160,11 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		
 		gravar.click();
 		
-		invisibilityOfElementOverlay();
+		sleep(7000);
 		
 		relacionamentoEstruturas.click();
 		
-		invisibilityOfElementOverlay();
+		sleep(7000);
 		
 		siguiente.click();
 		
@@ -179,9 +179,10 @@ public class RelacionamentoEstruturasEditarPO extends TestBaseSteven{
 		acao.click();
 		
 		sleep(2000);
-		waitExpectElement(grupo1);
 		invisibilityOfElementOverlay();
-
+		sleep(2000);
+		
+		waitExpectElement(grupo1);
 		
 		System.out.println("---------------------------Verificação das Informações-------------------------------------------");
 		

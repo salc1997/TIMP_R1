@@ -83,10 +83,10 @@ public class FormulaPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
 	public WebElement ferramenta;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div")
 	public WebElement menu;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement opcao;
 	
 	
@@ -228,7 +228,7 @@ public class FormulaPO extends TestBaseSteven{
 	
 		aplicar.click();
 		
-		sleep(2000);
+		sleep(6000);
 	
 		nombre2.click();
 		
@@ -257,8 +257,8 @@ public class FormulaPO extends TestBaseSteven{
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//sleep(2000);
-		sleep(2000);
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		sleep(9000);
+	//	waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		
 	}
 	
@@ -279,7 +279,7 @@ public class FormulaPO extends TestBaseSteven{
 			String bc = (driver.findElement(By.xpath("//*[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[@data-column=\"5\" and contains(@aria-label,\"Linha: "+f+"-\")]"))).getText();
 			String bc2 = bc.replace(".", "");
 			String bc3 = bc2.replace(",", ".");
-			
+		
 			
 			String valor = (driver.findElement(By.xpath("//*[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[@data-column=\"66\" and contains(@aria-label,\"Linha: "+f+"-\")]/div[2]"))).getText();
 			String valor2 = valor.replace(".", "");
@@ -287,27 +287,35 @@ public class FormulaPO extends TestBaseSteven{
 			
 			
 			String suma1 = driver.findElement(By.xpath("//*[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[contains(@aria-label,\"Linha: "+f+"-\") and contains(@aria-label,\"Suma1\")]/div[2]")).getText();
-			String suma11 = suma1.replace(".", "");
-			String suma12 = suma11.replace(",", ".");
+		/*	String suma11 = suma1.replace(".", "");
+			String suma12 = suma11.replace(",", ".");*/
+			
+			
 			
 			String suma2 = driver.findElement(By.xpath("//*[@id=\"table-data-wrapper\"]/div[@class=\"row visible\"]/div[contains(@aria-label,\"Linha: "+f+"-\") and contains(@aria-label,\"Suma2\")]/div[2]")).getText();
-			String suma21 = suma2.replace(".", "");
-			String suma22 = suma21.replace(",", ".");
-
+		/*	String suma21 = suma2.replace(".", "");
+			String suma22 = suma21.replace(",", ".");*/
+			
 			
 			try {
 				DecimalFormat df = new DecimalFormat("#.00");
 				
 				Double bcC = new Double(bc3);
 				Double valorC = new Double(valor3);
-				Double suma1C = new Double(suma12);
-				Double suma2C = new Double(suma22);
+				Double suma1C = new Double(suma1);
+				Double suma2C = new Double(suma2);
 				
 				
 				double resultado =bcC + valorC;
 				
 				sucesso.add(df.format(resultado).equals(df.format(suma1C)));
 				sucesso.add(df.format(resultado).equals(df.format(suma2C)));
+				
+				System.out.println("BC ICMS: "+bc3);
+				System.out.println("Valor ICMS: "+valor3);
+				System.out.println("resultado: "+resultado);
+				System.out.println("suma 1: "+suma1);
+				System.out.println("suma 2: "+suma2);
 				
 				 
 			} catch (NumberFormatException ex) {
@@ -319,6 +327,8 @@ public class FormulaPO extends TestBaseSteven{
 			
 			
 		}
+		
+		System.out.println("Teste "+ sucesso);
 		
 		return sucesso;
 	

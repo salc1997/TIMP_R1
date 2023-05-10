@@ -6,9 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBaseKenssy;
 
-public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseEliel{
+public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseKenssy{
 	
 	
 	@FindBy(xpath = "//span[text()=\"Determinação Automática de Guias\"]")
@@ -21,17 +22,63 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@class=\"field\" and @id=\"company\"]/div/div/div[2]")
 	public WebElement empresa;
 	
-	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
-	public WebElement opcaoempresa;
+	@FindBy(xpath = "//div[@id=\"1000\"]//span")
+	public WebElement opcaoEmpresa;
 	
+	@FindBy(xpath = "//button[@id=\"adjustmentCode-btn-open-dialog\"]")
+	public WebElement aCodigoAjuste;
+	
+	@FindBy(xpath = "//div[@data-id=\"2566\"]//span")
+	public WebElement item;
+	
+	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
+	public WebElement aceitar;
+	
+	@FindBy(xpath = "//div[@id=\"componentOutput\"]//child::div[contains(@class,\"icon-downmenu\")]")
+	public WebElement componente;
+	
+	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	public WebElement opcaoComponente;
 	
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher Descrição\"]")
 	public WebElement descricao;
 	
+	@FindBy(xpath = "//div[@id=\"componentConfiguration\"]//child::div[contains(@class,\"icon-downmenu\")]")
+	public WebElement codigoConfiguração;
+	
+	@FindBy(xpath = "//div[@id=\"componentConfiguration\"]//child::input")
+	public WebElement codigoConfiguraçãoInput;
+	
+	@FindBy(xpath = "//div[@id=\"idLayout\"]//child::div[contains(@class,\"icon-downmenu\")]")
+	public WebElement layoutGuia;
+	
+	@FindBy(xpath = "//div[@id=\"idLayout\"]//child::input")
+	public WebElement layoutGuiaInput;
+	
+	@FindBy(xpath = "//div[@id=\"outputCodePR\"]//child::div[contains(@class,\"icon-downmenu\")]")
+	public WebElement codigoOutputPR;
+	
+
+	@FindBy(xpath = "//div[@id=\"idLayoutConfiguration\"]//child::div[contains(@class,\"icon-downmenu\")]")
+	public WebElement configuraçãodoLayout;
+	
+	@FindBy(xpath = "//div[@id=\"option-1\"]")
+	public WebElement opcao;
+	
+	@FindBy(xpath = "//li[@id=\"64\"]")
+	public WebElement opcaoli;
+	
+	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	public WebElement opcaoOutput;
+	
+	@FindBy(xpath = "//li[@id=\"61\"]")
+	public WebElement opcaoLayout;
+
+	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Agrupador de CFOP\"]")
 	public WebElement agrupadorcfop;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Data Inicial\"]")
+	@FindBy(xpath = "//div[@id=\"validityFrom\"]/div/div[1]/input")
 	public WebElement dataincial;
 	
 	
@@ -54,7 +101,8 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	
+	@FindBy(xpath = "//input[@placeholder=\"Id Associação\"]")
+	public WebElement pesquisarAsoc;
 	
 	public DeterminacaoAutomaticaDeGuiasCriarPO() {
 
@@ -70,9 +118,8 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
 		sleep(2000);
 	
 		//conta o numero de linhas
@@ -84,20 +131,72 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseEliel{
 		sleep(2000);
 		//criaçao
 		novodeterminacaoautomaticadeguias.click();
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
+		sleep(20000);
+
 		empresa.click();
+		sleep(2000);
+		opcaoEmpresa.click();
+		sleep(2000);
+		closeSelectTypeCheckbox(empresa);
+		sleep(3000);
 		
+		
+		aCodigoAjuste.click();
+		sleep(6000);
+		
+		pesquisarAsoc.sendKeys("2566", Keys.ENTER);
+		sleep(3000);
+		
+		item.click();
 		sleep(2000);
 		
-		opcaoempresa.click();
+		aceitar.click();
+		sleep(10000);
 		
-		sleep(2000);
+		descricao.sendKeys("test Prueba");
+		sleep(8000);
 		
-		empresa.sendKeys(Keys.ESCAPE);
+		componente.click();
+		sleep(3000);
 		
-		sleep(2000);
+		opcaoComponente.click();
+		sleep(3000);
+		
+		attributeToBeXpath("//div[@id=\"componentConfiguration\"]/div/div/div/div[1]", "class", "input-wrapper base-input  required");
+		
+		codigoConfiguração.click();
+		sleep(3000);
+		
+		codigoConfiguraçãoInput.sendKeys("1564");
+		sleep(3000);
+		
+		//waitExpectElement(opcao);
+		sleep(3000);
+		
+		opcao.click();
+		sleep(3000);
+		
+		
+		codigoOutputPR.click();
+		sleep(3000);
+		
+		opcaoOutput.click();
+		sleep(11000);
+		
+		layoutGuia.click();
+		sleep(3000);
+		
+		layoutGuiaInput.sendKeys("61");
+		sleep(3000);
+		opcaoLayout.click();
+		sleep(3000);
+		
+		configuraçãodoLayout.click();
+		sleep(1000);
+		
+		opcaoli.click();
+		sleep(1000);
+		
 		
 		String data=fechaActual();
 		dataincial.sendKeys(data);
@@ -105,23 +204,25 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBaseEliel{
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
+	
+		nao.click();
+		sleep(2000);
 		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
-		biblioteca.click();
+	//	biblioteca.click();
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
-		sleep(2000);
+		
 		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		
+
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		

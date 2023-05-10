@@ -2,7 +2,7 @@ package com.timp.test.MDR.NotasDeclararAnexoIIIDIAAM;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -36,7 +36,6 @@ public class NotasDeclararAnexoIIIExcluirMassa extends TestBaseSteven {
 
 	}
 
-
 	@Test()
 	public void criar() {
 
@@ -49,8 +48,7 @@ public class NotasDeclararAnexoIIIExcluirMassa extends TestBaseSteven {
 		assertTrue(sucesso, Criar);
 
 	}
-	
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluir() {
 

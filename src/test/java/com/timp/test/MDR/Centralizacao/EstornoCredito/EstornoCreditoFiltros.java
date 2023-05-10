@@ -8,13 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
-import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Centralizacao.EstornoCredito.*;
 
-public class EstornoCreditoFiltros extends TestBaseEliel {
+public class EstornoCreditoFiltros extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	EstornoCreditoFiltrosPO estornoCreditoFiltrosPO;
@@ -22,7 +21,7 @@ public class EstornoCreditoFiltros extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		estornoCreditoFiltrosPO = new EstornoCreditoFiltrosPO();
@@ -45,6 +44,7 @@ public class EstornoCreditoFiltros extends TestBaseEliel {
 		
 		boolean text = estornoCreditoFiltrosPO.filtroEstornoCredito();
 		assertTrue(text, "Resultado diferente");
+		sleep(2000);
 
 	}
 

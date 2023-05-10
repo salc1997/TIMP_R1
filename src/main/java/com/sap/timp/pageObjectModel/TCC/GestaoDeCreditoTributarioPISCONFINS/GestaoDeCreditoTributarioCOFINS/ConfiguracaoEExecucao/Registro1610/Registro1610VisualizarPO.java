@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class Registro1610VisualizarPO extends TestBaseCristhian {
+public class Registro1610VisualizarPO extends TestBaseSteven {
 
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
@@ -90,7 +90,7 @@ public class Registro1610VisualizarPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("GestaoCréditoTributárioCOFINSRegistro1610");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -102,7 +102,7 @@ public class Registro1610VisualizarPO extends TestBaseCristhian {
 		visualizar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(8000);
+		sleep(12000);
 		
 		
 		String empresavisualizar = empresa.getAttribute("value");
@@ -144,11 +144,16 @@ public class Registro1610VisualizarPO extends TestBaseCristhian {
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(8000);
+		sleep(10000);
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(16000);
 		
 		System.out.println("==============================");
 		String empresaeditar = empresa.getAttribute("value");
 		String ufeditar = uf.getText();
+		sleep(5000);
 		String filialeditar = filial.getText();
 		String tributoeditar = tributo.getAttribute("value");
 		String registroeditar = registro.getAttribute("value");

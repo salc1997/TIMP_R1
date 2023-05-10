@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasdeAuditoriaN2ValoresCalculadosPO extends TestBaseCristhian {
+public class RegrasdeAuditoriaN2ValoresCalculadosPO extends TestBaseSteven {
 	
 
 	@FindBy(xpath = "//span[text()=\"Regras de Auditoria N2\"]")
@@ -150,7 +150,8 @@ public boolean editar() {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
 	
-	String idRegistro = idObter3();
+	//String idRegistro = idObter3();
+	String idRegistro = idObter("An2");
 	WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 	WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
@@ -217,10 +218,10 @@ public boolean editar() {
 	vCalculados.click();
 	sleep(4000);
 	criarvCalculados.click();
-	sleep(3000);
+	sleep(7000);
 	
 	nomeVCalculado.sendKeys("TA-TESTE 2");
-	sleep(3000);
+	sleep(4000);
 	
 	formula.sendKeys("MID(\"Cód. material (ED)\", 1, 2)");
 	sleep(3000);
@@ -313,7 +314,7 @@ public boolean editar() {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(4000);
 	
-	String idRegistro1 = idObter3();
+	String idRegistro1 = idObter("An2");
 	WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 	WebElement açao1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion

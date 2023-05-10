@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class Registro1220EditarPO extends TestBaseEliel {
+public class Registro1220EditarPO extends TestBaseSteven {
 
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
@@ -165,7 +165,7 @@ public class Registro1220EditarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter1();
+		String idRegistro = idObter("GestaoCréditoTributárioPISRegistro1220");
 		System.out.println("ID Registro: " + idRegistro);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
@@ -277,9 +277,9 @@ public class Registro1220EditarPO extends TestBaseEliel {
 
 		} else {
 			if (tc2 == true) {
-				waitExpectElement(uf1);
-				sleep(2000);
-				waitExpectElement(filialtc2);
+				//waitExpectElement(uf1);
+				sleep(10000);
+				//waitExpectElement(filialtc2);
 				empresa.click();
 				sleep(1000);
 				opcao.click();
@@ -288,8 +288,8 @@ public class Registro1220EditarPO extends TestBaseEliel {
 				String empresatexto = empresa1.getAttribute("value");
 				System.out.println("Empresa antes de atualizar:" + empresatexto);
 
-				attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
-				sleep(3000);
+			//	attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+				sleep(8000);
 
 				uf.click();
 				sleep(1000);
@@ -299,7 +299,7 @@ public class Registro1220EditarPO extends TestBaseEliel {
 				sleep(1000);
 
 				attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
-				sleep(3000);
+				sleep(12000);
 
 				filial.click();
 				sleep(1000);
@@ -336,8 +336,9 @@ public class Registro1220EditarPO extends TestBaseEliel {
 				empresa.click();
 				sleep(2000);
 				opcao1.click();
+				sleep(10000);
 
-				attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+			//	attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 				sleep(3000);
 
 				uf.click();

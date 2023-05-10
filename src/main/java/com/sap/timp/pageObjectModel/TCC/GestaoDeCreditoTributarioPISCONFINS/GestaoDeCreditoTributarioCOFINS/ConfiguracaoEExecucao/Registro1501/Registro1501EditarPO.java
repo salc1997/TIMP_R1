@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class Registro1501EditarPO extends TestBaseCristhian {
+public class Registro1501EditarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
@@ -54,7 +54,7 @@ public class Registro1501EditarPO extends TestBaseCristhian {
 	}
 	
 	public boolean Editar() {
-		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		gestaoCredito.click();
@@ -73,7 +73,7 @@ public class Registro1501EditarPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro =idObter1();
+		String idRegistro = idObter("GestaoCréditoTributárioCOFINSRegistro1501");
 		
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -84,24 +84,24 @@ public class Registro1501EditarPO extends TestBaseCristhian {
 		menu.click();
 		sleep(2000);
 		editar.click();
-		sleep(2000);
+		sleep(12000);
 		
 		waitExpectElement(filial);
-		sleep(8000);
+		sleep(35000);
 		String valor = filialE.getText();
 		//String valor = filialE.getAttribute("value");
 		System.out.println(valor);
 		String enviar = valor;
 		
 		
-		Efilial.click();
-		sleep(3000);
+	/*	Efilial.click();
+		sleep(3000);*/
 		filial.click();
 		sleep(1000);
 		filialO.click();
 		sleep(1000);
 		closeSelectTypeCheckbox(filial);
-		sleep(1000);
+		sleep(9000);
 		
 		btnGravar.click();
 		sleep(2000);
@@ -114,7 +114,7 @@ public class Registro1501EditarPO extends TestBaseCristhian {
 		driver.navigate().refresh();
 		waitExpectElement(filial);
 		sleep(8000);
-	  	
+		sleep(19000);
 	  	String nuevoTexto = filialE.getText();
 	  	System.out.println(enviar);
 		System.out.println(nuevoTexto);

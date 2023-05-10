@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class InclusaoDeCamposMarVisualizarPO extends TestBaseEliel {
+public class InclusaoDeCamposMarVisualizarPO extends TestBaseSteven {
 	
 
 	@FindBy(xpath = "//span[text()=\"Valor Adicionado\"]")
@@ -54,7 +54,7 @@ public class InclusaoDeCamposMarVisualizarPO extends TestBaseEliel {
 	public WebElement ufE;
 	@FindBy(xpath = "//input[@placeholder=\"M\"]")
 	public WebElement mtE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Data de Inicio\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Data de Início de Vigência \")]")
 	public WebElement dataVigenciaE;
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")

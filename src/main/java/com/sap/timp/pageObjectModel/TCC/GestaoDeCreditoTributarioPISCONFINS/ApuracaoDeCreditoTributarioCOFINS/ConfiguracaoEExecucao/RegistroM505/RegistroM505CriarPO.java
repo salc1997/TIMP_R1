@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegistroM505CriarPO extends TestBaseEliel{
+public class RegistroM505CriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
@@ -129,13 +129,13 @@ public class RegistroM505CriarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		gestaoCredito.click();
-		sleep(2000);
+		sleep(4000);
 		apuracaocreditocofins.click();
-		sleep(2000);
+		sleep(4000);
 		configuracaoEExecucao.click();
-		sleep(2000);
+		sleep(5000);
 		registrom505.click();
-		sleep(2000);
+		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -179,7 +179,7 @@ public class RegistroM505CriarPO extends TestBaseEliel{
 	
 		
 		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
-		sleep(3000);
+		sleep(5000);
 		
 		filial.click();
 		sleep(1000);
@@ -250,7 +250,7 @@ public class RegistroM505CriarPO extends TestBaseEliel{
 			rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 			String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 			
-			idInserir1(id2);
+			idInserir("id-GCTPISCOFINS-ACTCOFINSConfiguracaoEExecucacoRegistroM505",id2);
 			int idD = convertToInt(idRegistro);
 			int id2D = convertToInt(id2);
 			
@@ -279,7 +279,7 @@ public class RegistroM505CriarPO extends TestBaseEliel{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		idInserir1(id2);
+		idInserir("id-GCTPISCOFINS-ACTCOFINSConfiguracaoEExecucacoRegistroM505",id2);
 		int idD = convertToInt(idRegistro);
 		int id2D = convertToInt(id2);
 		

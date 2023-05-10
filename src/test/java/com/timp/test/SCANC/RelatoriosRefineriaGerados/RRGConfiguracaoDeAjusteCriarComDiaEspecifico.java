@@ -12,6 +12,7 @@ import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteCriarComDiaEspecificoPO;
 
 public class RRGConfiguracaoDeAjusteCriarComDiaEspecifico extends TestBaseFernando {
+	//TSTNG-443
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RRGConfiguracaoDeAjusteCriarComDiaEspecificoPO rRGConfiguracaoDeAjusteCriarComDiaEspecificoPO;

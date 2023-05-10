@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ExecutadosExcluirPO extends TestBaseCristhian {
+public class ExecutadosExcluirPO extends TestBaseSteven {
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
 	
@@ -47,29 +47,32 @@ public class ExecutadosExcluirPO extends TestBaseCristhian {
 	}
 	
 	public Boolean excluir() {
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		actionsMoveToElementElement(gestaoCredito);
 		sleep(2000);
+		
 		gestaoCredito.click();
 		sleep(2000);
+		
 		painelCredito.click();
-		sleep(4000);
+		sleep(4000); 
+		
 		executados.click();
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+//		sleep(2000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		siguiente.click();
-		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("idPainelCreditoConfiguracaoEExecucacoExecutados");
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
@@ -87,26 +90,8 @@ public class ExecutadosExcluirPO extends TestBaseCristhian {
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		driver.navigate().refresh();
 		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		actionsMoveToElementElement(gestaoCredito);
-		sleep(2000);
-		gestaoCredito.click();
-		sleep(2000);
-		painelCredito.click();
-		sleep(4000);
-		executados.click();
-		sleep(4000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
-		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 		siguiente.click();
-		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

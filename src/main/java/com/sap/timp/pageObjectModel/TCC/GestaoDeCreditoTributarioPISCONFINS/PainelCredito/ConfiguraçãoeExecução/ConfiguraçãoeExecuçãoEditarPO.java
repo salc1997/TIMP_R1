@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ConfiguraçãoeExecuçãoEditarPO extends TestBaseCristhian {
+public class ConfiguraçãoeExecuçãoEditarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
@@ -84,7 +84,8 @@ public class ConfiguraçãoeExecuçãoEditarPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro =idObter1();
+		String idRegistro = idObter("idPainelCreditoConfiguracaoEExecucaco");
+		//String idRegistro =idObter1();
 		
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -98,7 +99,7 @@ public class ConfiguraçãoeExecuçãoEditarPO extends TestBaseCristhian {
 		sleep(2000);
 		
 		waitExpectElement(componente);
-		sleep(6000);
+		sleep(19000);
 		String valor = componente.getAttribute("value");
 		//String valor = filialE.getAttribute("value");
 		System.out.println(valor);
@@ -138,8 +139,6 @@ public class ConfiguraçãoeExecuçãoEditarPO extends TestBaseCristhian {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		idRegistro =idObter1();
 		
 		sleep(2000);
 		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AgrupamentoDeTributosCriarPO extends TestBaseEliel{
+public class AgrupamentoDeTributosCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[@class=\"title-boxes \"][text()=\"Tributos\"]")
 	public WebElement tributos;
@@ -123,7 +123,7 @@ public class AgrupamentoDeTributosCriarPO extends TestBaseEliel{
 		
 		String idultimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		idInserir1(idultimo);
+		idInserir("AgrupamentoDeTributosCriar",idultimo);
 
 		System.out.println(id);
 		System.out.println(idultimo);

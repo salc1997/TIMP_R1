@@ -30,7 +30,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseMassiel {
 	@FindBy(xpath = "//div[contains(@class, \"icon-right\")][2]")
 	public WebElement btnUltimaPagina;
 	
-	@FindBy(xpath = "//span[text()=\"Nova configuração livro oficial\"]")
+	@FindBy(xpath = "//span[text()=\"Nova configuração Livro Oficial\"]")
 	public WebElement btnNovaConfigurazacaoDoLivroOficial;
 	
 	@FindBy(xpath = "//div[@id=\"bookType\"]/div/div/div[2]")
@@ -126,6 +126,9 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseMassiel {
 	@FindBy(xpath = "//div[@id=\"adjustmentStructure11\"]/div/div/div[2]")
 	public WebElement idAjuste;
 	
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure15\"]/div/div/div[2]")
+	public WebElement idAjuste11;
+	
 	@FindBy(xpath = "//div[@id=\"headerStructure\"]/div/div/div[2]")
 	public WebElement estructuraDeCabecalho;
 	
@@ -199,7 +202,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseMassiel {
 		
 		System.out.println("Ultimo ID: " + id);
 		
-		sleep(2000);
+		sleep(6000);
 		btnNovaConfigurazacaoDoLivroOficial.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -286,6 +289,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseMassiel {
 		body.click();
 		sleep(1000);
 		
+		
 		attributeToBeXpath("//div[@id=\"fiscalNoteStructure7\"]/div/div/div/div[2]/input", "class", "");
 		empresa1.click();
 		sleep(2000);
@@ -350,6 +354,15 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseMassiel {
 		body.click();
 		sleep(1000);
 		
+		attributeToBeXpath("//div[@id=\"fiscalNoteStructure15\"]/div/div/div/div[2]/input", "class", "");
+		idAjuste11.click();
+		sleep(2000);
+		opcionCheckbox.click();
+		sleep(1000);
+		body.click();
+		sleep(1000);
+		
+	
 		estructuraDeAjuste.click();
 		sleep(2000);
 		opcionCombo.click();
@@ -444,6 +457,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseMassiel {
 		sleep(1000);
 		body.click();
 		sleep(1000);
+	
 		
 		actionsMoveToElementElement(estructuraDeCabecalho);
 		estructuraDeCabecalho.click();
@@ -520,10 +534,12 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseMassiel {
 		sleep(1000);
 		btnGravar.click();
 		sleep(2000);
+		sleep(9000);
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);		
+		sleep(9000);	
+		sleep(9000);
 
 		btnUltimaPagina.click();
 		
@@ -531,7 +547,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseMassiel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000); 
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		  
+		  	  
 		boolean sucesso = false;
 		  
 		if(rows == 0) {
@@ -540,7 +556,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseMassiel {
 		  
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
 		idInserir("ParametrizaçãoDoLivroOficial",idB);
-		  
+	
 		sleep(2000); 
 		System.out.println(id); 
 		System.out.println(idB);

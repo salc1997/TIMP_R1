@@ -212,7 +212,7 @@ public class CompatibilidadeEnCatTrabVisualizarPO extends TestBaseFernando{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		String codigoString1 = codigo1.getAttribute("value");
 		String classificacaoTributariaString1 = clasificacaoTributaria1.getAttribute("value");

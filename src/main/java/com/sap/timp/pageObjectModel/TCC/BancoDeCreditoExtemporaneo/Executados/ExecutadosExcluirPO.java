@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ExecutadosExcluirPO extends TestBaseEliel {
+public class ExecutadosExcluirPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-bce\"]")
 	public WebElement bancoCreditoExtemporaneo;
@@ -53,7 +53,8 @@ public class ExecutadosExcluirPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter4();
+		//String idRegistro = idObter4();
+		String idRegistro = idObter("idResultadoDeExecucaco");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		
@@ -88,7 +89,7 @@ public class ExecutadosExcluirPO extends TestBaseEliel {
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		ultimaPagina.click();
 		sleep(2000);
@@ -111,6 +112,6 @@ public class ExecutadosExcluirPO extends TestBaseEliel {
 		}
 		System.out.println(sucesso);
 		return sucesso;
-	}
+		}
 
 }

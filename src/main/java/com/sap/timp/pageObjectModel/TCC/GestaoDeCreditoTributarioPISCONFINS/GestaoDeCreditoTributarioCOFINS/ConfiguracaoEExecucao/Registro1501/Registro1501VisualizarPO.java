@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class Registro1501VisualizarPO extends TestBaseCristhian{
+public class Registro1501VisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
 	
@@ -71,6 +71,7 @@ public class Registro1501VisualizarPO extends TestBaseCristhian{
 	}
 	
 	public ArrayList<Boolean> visualizar() {
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		gestaoCredito.click();
@@ -89,7 +90,7 @@ public class Registro1501VisualizarPO extends TestBaseCristhian{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("GestaoCréditoTributárioCOFINSRegistro1501");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -101,7 +102,7 @@ public class Registro1501VisualizarPO extends TestBaseCristhian{
 		visualizar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(8000);
+		sleep(18000);
 		
 		
 		String empresavisualizar = empresa.getAttribute("value");
@@ -128,6 +129,8 @@ public class Registro1501VisualizarPO extends TestBaseCristhian{
 		nao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
+		
 		ultimaPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -144,6 +147,10 @@ public class Registro1501VisualizarPO extends TestBaseCristhian{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(8000);
+		
+		sleep(5000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(18000);
 		
 		System.out.println("==============================");
 		String empresaeditar = empresa.getAttribute("value");

@@ -312,7 +312,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		public WebElement executarB;
 		
 	//VERIFICAR INFORMACION DE SUBNIVELES
-		@FindBy(xpath = "//div[contains(@class,\"lvl-0\")]/div/div/div/div")
+		@FindBy(xpath = "//div[contains(@class,\"lvl-0\")]/div[1]/div[1]/div[1]/div[1]")
 		public WebElement aba1;
 		
 		@FindBy(xpath = "//div[contains(@class,\"lvl-1\")]/div[1]/div[1]/div[1]/div[1]")
@@ -409,7 +409,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
-		nomeDeHierarquia.sendKeys("Prueba Automatizada Massiel");
+		nomeDeHierarquia.sendKeys("Prueba Automatizada Massiel Va");
 		sleep(1000);
 
 		nomeDaAba.sendKeys("Aba 1");
@@ -476,16 +476,16 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
-		sim.click();
+		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		justificativa.sendKeys("Justificativa TESTE AUTOMATIZADO");
-		aplicarJustificativa.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+//		justificativa.sendKeys("Justificativa TESTE AUTOMATIZADO");
+//		aplicarJustificativa.click();
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		biblioteca.click();
 		sleep(3000);
@@ -558,12 +558,12 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		//idInserir2(id); //antes de crear herarquia configuracao
 		
 		nova.click();
-		sleep(3000);
+		sleep(5000);
 
 		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
 
-		nomeHirarquia.sendKeys("Prueba Automatizada Massiel");
+		nomeHirarquia.sendKeys("Prueba Automatizada Massiel Va");
 		sleep(1000);
 		nomeHirarquia.sendKeys(Keys.ENTER);
 		sleep(1000);
@@ -625,8 +625,8 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		gravarC.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
-		
+		sleep(8000);
+	
 		biblioteca.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -674,33 +674,8 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		if (url.contains("tc2")) {
 			tc2 = true;
 		}
-		
-		//COMENTAR DESPUES PORFAVOR
-//			sleep(2000);
-//			configuracoes.click();
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
-//			configuracaoDaConsolidacao.click();
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
-//			
-//			
-//			pesquisar.sendKeys("1072");
-//			pesquisar.sendKeys(Keys.ENTER);
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
-//			
-//			
-//			
-//			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1072\"]/div[1]/div"));
-//			WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1072\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-//			sleep(2000);
-		//HASTA AQUI
 			
-		sleep(2000);
+		sleep(9000);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter3()+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter3()+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -742,17 +717,17 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		sim.click();
+		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		justificativa.sendKeys("JUSTIFICATIVA 2 TESTE AUTOMATIZADO");
-		sleep(2000);
-		aplicarJustificativa.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+//		justificativa.sendKeys("JUSTIFICATIVA 2 TESTE AUTOMATIZADO");
+//		sleep(2000);
+//		aplicarJustificativa.click();
+//		sleep(3000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 		//corregir mensaje al parecer
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
@@ -783,39 +758,10 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			tq1 = true;
 		}
 		
-		
-//		//COMENTAR DESPUES PORFAVOR
-//		sleep(2000);
-//		configuracoes.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		configuracaoDaConsolidacao.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		
-//		pesquisar.sendKeys("1175");
-//		pesquisar.sendKeys(Keys.ENTER);
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		
-//		
-//		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1175\"]/div[1]/div"));
-//		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1175\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-//		sleep(2000);
-//		
-//		menu.click();
-//		sleep(1000);
-//		editar.click();
-//		sleep(6000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		waitExpectElement(calculator);
-//		sleep(2000);
-//	//HASTA AQUI
+		boolean tq2 = false;
+		if (url.contains("tq2")) {
+			tq2 = true;
+		}
 		
 		//PRIMER SUBNIVEL
 		
@@ -829,10 +775,10 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		campolinha1.click();
 		sleep(2000);
 		campoLinhaO1.click();
-		sleep(2000);
+		sleep(8000);
 		
-		attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
-		sleep(3000);
+		//attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
+		sleep(6000);
 		
 		selectBFB.click();
 		sleep(1000);
@@ -844,7 +790,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			selectBFB1.click();
 			selectBFB1.sendKeys(Keys.ESCAPE);
 			sleep(1000);
-		}else {
+		}else if(tq2==true) {
+			selectBFB1.click();
+			selectBFB1.sendKeys(Keys.ESCAPE);
+			sleep(1000);
+		}else{
 			//CORREGIR PARA TP1
 			selectBCB2.click();
 			selectBCB2.sendKeys(Keys.ESCAPE);
@@ -858,6 +808,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(3000);
 		
 		gravar.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -909,6 +864,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		}
 		
 		
+		boolean tq2 = false;
+		if (url.contains("tq2")) {
+			tq2 = true;
+		}
+		
 		System.out.println("--------------------------------------------SubNivel 2-------------------------------------");
 		sleep(1000);
 
@@ -934,7 +894,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			selectBFB1.click();
 			selectBFB1.sendKeys(Keys.ESCAPE);
 			sleep(1000);
-		}else {
+		}else if(tq2==true) {
+			selectBFB1.click();
+			selectBFB1.sendKeys(Keys.ESCAPE);
+			sleep(1000);
+		}else{
 			//CORREGIR PARA TP1
 			selectBCB2.click();
 			selectBCB2.sendKeys(Keys.ESCAPE);
@@ -961,7 +925,10 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 //		sim.click();
 //		sleep(3000);
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1003,6 +970,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		if (url.contains("tp1")) {
 			tp1 = true;
+		}
+		
+		boolean tq2 = false;
+		if (url.contains("tq2")) {
+			tq2 = true;
 		}
 		
 		//COMENTAR DESPUES PORFAVOR
@@ -1063,7 +1035,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			selectBFB1.click();
 			selectBFB1.sendKeys(Keys.ESCAPE);
 			sleep(1000);
-		}else {
+		}else if(tq2==true) {
+			selectBFB1.click();
+			selectBFB1.sendKeys(Keys.ESCAPE);
+			sleep(1000);
+		}else{
 			selectBCB2.click();
 			selectBCB2.sendKeys(Keys.ESCAPE);
 			sleep(1000);
@@ -1088,8 +1064,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(5000);
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
 	//	sim.click();
 	//	sleep(3000);
 	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1132,6 +1111,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		if (url.contains("tp1")) {
 			tp1 = true;
+		}
+		
+		boolean tq2 = false;
+		if (url.contains("tq2")) {
+			tq2 = true;
 		}
 		
 		//COMENTAR DESPUES PORFAVOR
@@ -1192,7 +1176,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			selectBFB1.click();
 			selectBFB1.sendKeys(Keys.ESCAPE);
 			sleep(1000);
-		}else {
+		}else if(tq2==true) {
+			selectBFB1.click();
+			selectBFB1.sendKeys(Keys.ESCAPE);
+			sleep(1000);
+		}else{
 			selectBCB2.click();
 			selectBCB2.sendKeys(Keys.ESCAPE);
 			sleep(1000);
@@ -1219,7 +1207,10 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
 		
@@ -1253,6 +1244,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			tp1 = true;
 		}
 		
+		boolean tq2 = false;
+		if (url.contains("tq2")) {
+			tq2 = true;
+		}
+		
 		System.out.println("--------------------------------------------SubNivel 5-------------------------------------");
 		sleep(1000);
 		
@@ -1262,7 +1258,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		campolinha5.click();
 		sleep(2000);
 		campoLinhaO5.click();
-		sleep(2000);
+		sleep(5000);
 		
 //		attributeToBeXpath("//div[@id=\"report\"]/div", "class", "base-select required");
 //		sleep(3000);
@@ -1277,26 +1273,33 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			selectBFB1.click();
 			selectBFB1.sendKeys(Keys.ESCAPE);
 			sleep(1000);
-		}else {
+		}else if(tq2==true) {
+			selectBFB1.click();
+			selectBFB1.sendKeys(Keys.ESCAPE);
+			sleep(1000);
+		}else{
 			selectBCB2.click();
 			selectBCB2.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 		}
 		
 		campoSaida5.click();
-		sleep(3000);
+		sleep(5000);
 		opcCampoSaida5.click();
 		opcCampoSaida5.sendKeys(Keys.ESCAPE);
 		sleep(3000);
 		
 		negativo5.click();
-		sleep(3000);
+		sleep(5000);
 		
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -1330,11 +1333,11 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			tp1 = true;
 		}
 		
-		sleep(1000);
+		sleep(8000);
 		executar.click();
 		sleep(3000);
 		waitExpectElement(executarN);
-		sleep(2000);
+		sleep(9000);
 		executarN.click();
 		
 		sleep(1000);
@@ -1371,7 +1374,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		}		
 		
 		sleep(2000);
-		execucaoAnalitica.click();
+	//	execucaoAnalitica.click();
 		sleep(1000);
 		
 		executarB.click();
@@ -1449,10 +1452,10 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		if (tc2==true) {
 			sucesso.add(valorCampoSaidaSubNivel2.equals("5.000,00"));
-			sucesso.add(valorCampoPeriodoTiempoSubNivel2.contains("01/2014"));
+			sucesso.add(valorCampoPeriodoTiempoSubNivel2.contains("01/2014 - 1Y"));
 		}else {
 			sucesso.add(valorCampoSaidaSubNivel2.equals("5.000,00"));
-			sucesso.add(valorCampoPeriodoTiempoSubNivel2.contains("12/2015 - 1M"));
+			sucesso.add(valorCampoPeriodoTiempoSubNivel2.equals(" (Subperíodo 01/2014 - 1Y)"));
 		}
 		
 		System.out.println(sucesso);
@@ -1650,17 +1653,19 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		}else {
 			sucesso.add(false);
 		}
-		
+		sleep(6000);
 		pastaLexeiraC.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
+		pesquisar.clear();
 		pesquisar.sendKeys(idConfiguracao);
 		pesquisar.sendKeys(Keys.ENTER);
+		
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div"));
 		WebElement excluirC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
@@ -1702,11 +1707,16 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		System.out.println("");
 		
 		
-		pesquisar.sendKeys(idHierarquia);
+		/*pesquisar.sendKeys(idHierarquia);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		sleep(4000);*/
+		ultimo.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(5000);
+		
 		
 //		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1100\"]/div[1]/div"));
 //		WebElement lixeiraH = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1100\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
@@ -1727,7 +1737,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		sleep(1000);
+		sleep(2000);
 		
 		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();
 		System.out.println(exclucao);
@@ -1749,9 +1759,14 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys(idHierarquia);
+	/*	pesquisar.sendKeys(idHierarquia);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);*/
+		
+		ultimo.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TiposDeObjetosDeOcorrenciasFiscaisEditarPO extends TestBaseEliel {
+public class TiposDeObjetosDeOcorrenciasFiscaisEditarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Ocorrência Fiscal\"]")
 	public WebElement ocorrenciafiscal;
@@ -63,7 +63,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisEditarPO extends TestBaseEliel {
 	public WebElement codigopagamento;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Inicio de Vigência\"]")
+	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Início de Vigência\"]")
 	public WebElement datainicio;
 	
 	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Fim de Vigência\"]")
@@ -106,14 +106,12 @@ public class TiposDeObjetosDeOcorrenciasFiscaisEditarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(20000);
 		
 		String valor = datainicio.getAttribute("value");
 
-		String enviar = dataanterior();
-		sleep(40000);
+		String enviar = fechaAyer();
+		sleep(48000);
 		datainicio.clear();
 		sleep(2000);
 		datainicio.sendKeys(enviar);
@@ -130,7 +128,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisEditarPO extends TestBaseEliel {
 		driver.navigate().refresh();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(20000);
 			
 		waitExpectElement(datainicio);
 		

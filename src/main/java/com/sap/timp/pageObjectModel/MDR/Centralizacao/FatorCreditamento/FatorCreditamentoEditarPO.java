@@ -94,8 +94,10 @@ public class FatorCreditamentoEditarPO extends TestBaseSteven{
 		
 		driver.navigate().refresh();
 		
-		attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");
-		sleep(1000);
+		//attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");
+		sleep(8000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(12000);
 		
 		String nuevoTexto = campo.getAttribute("value");
 		System.out.println(nuevoTexto);

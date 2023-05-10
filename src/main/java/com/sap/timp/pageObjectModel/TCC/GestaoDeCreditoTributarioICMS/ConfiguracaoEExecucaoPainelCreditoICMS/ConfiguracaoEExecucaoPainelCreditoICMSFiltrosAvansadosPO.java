@@ -90,7 +90,8 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO extends Te
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);
 
-		String idRegistro = idObter4();
+		String idRegistro = idObter("id-GCT-ICMS-PainelCreditoICMSConfiguracaoEExecucaco");
+		System.out.println("Id a Pesquisar: "+idRegistro);
 
 		pesquisarID.sendKeys(idRegistro);
 		sleep(1000);
@@ -137,6 +138,10 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO extends Te
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
+		sleep(8000);
+//		attributeToBeXpath("//div[@id=\"uf-filter\"]/div", "class", "base-select  disabled");
+//		sleep(1000);
+		
 		uf.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -171,13 +176,13 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO extends Te
 			opcUf.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(4000);
+			sleep(2000);
 			
 			
 		}
 		
 		
-		
+		sleep(7000);
 
 		filial.click();
 		sleep(2000);

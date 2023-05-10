@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AtivaçaoParaMunicipioCriarPO extends TestBaseEliel {
+public class AtivaçaoParaMunicipioCriarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Ativação para Município\"]")
 	public WebElement ativaçaoparamunicipio;
@@ -77,6 +77,7 @@ public class AtivaçaoParaMunicipioCriarPO extends TestBaseEliel {
 	public boolean criar() {
 		sleep(2000);
 		ativaçaoparamunicipio.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();
@@ -132,16 +133,20 @@ public class AtivaçaoParaMunicipioCriarPO extends TestBaseEliel {
 		gravar.click();
 		sleep(2000);
 		sim.click();
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+
+		waitExpectElement(biblioteca);
+		sleep(2000);
+
+		sleep(6000);
+
 		
 		biblioteca.click();
-		
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigoDeOutrasSaidasCriarPO extends TestBaseEliel {
+public class CodigoDeOutrasSaidasCriarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
 	public WebElement tabelacomplementares;
@@ -94,11 +94,11 @@ public class CodigoDeOutrasSaidasCriarPO extends TestBaseEliel {
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigodesaidas.sendKeys("5570937");
+		codigodesaidas.sendKeys("660937");
 		
 		sleep(2000);
 		
-		descricaodeoutrassaidas.sendKeys("Teste5 55");
+		descricaodeoutrassaidas.sendKeys("Teste6");
 		
 		sleep(2000);
 		

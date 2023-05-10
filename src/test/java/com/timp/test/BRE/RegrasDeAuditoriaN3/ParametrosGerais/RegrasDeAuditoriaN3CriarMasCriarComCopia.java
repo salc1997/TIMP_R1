@@ -26,22 +26,17 @@ public class RegrasDeAuditoriaN3CriarMasCriarComCopia extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+	@Test()
+	public void criarComCopia() {
 		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
 		acessarBREPO.acessarBRE();
-	}
-	
-	@Test(priority = 2)
-	public void criarComCopia() {		
+		
 		boolean sucesso = regrasDeAuditoriaN3CriarMasCriarComCopiaPO.criarComCopia();
 		assertTrue(sucesso, Criar);
+		
+		sleep(2000);
 	}
 }

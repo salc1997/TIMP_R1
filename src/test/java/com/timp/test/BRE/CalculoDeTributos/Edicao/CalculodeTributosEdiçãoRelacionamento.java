@@ -11,7 +11,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.CalculoDeTributos.Edicao.CalculodeTributosEdiçãoRelacionamentoPO;
 
-public class CalculodeTributosEdiçãoRelacionamento extends TestBaseFernando{
+public class CalculodeTributosEdiçãoRelacionamento extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	CalculodeTributosEdiçãoRelacionamentoPO calculodeTributosEdiçãoRelacionamentoPO;
@@ -24,24 +24,15 @@ public class CalculodeTributosEdiçãoRelacionamento extends TestBaseFernando{
 		calculodeTributosEdiçãoRelacionamentoPO = new CalculodeTributosEdiçãoRelacionamentoPO();
 	}
 
-
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+	//	driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
-		acessarBREPO.acessarBRE();
-
-	}
-	@Test(priority = 2)
+	@Test()
 	public void editar() {
+		loginTC.login();
+		acessarBREPO.acessarBRE();
 		boolean sucesso = calculodeTributosEdiçãoRelacionamentoPO.relacionamiento();
 		assertTrue(sucesso, Editar);
 	}

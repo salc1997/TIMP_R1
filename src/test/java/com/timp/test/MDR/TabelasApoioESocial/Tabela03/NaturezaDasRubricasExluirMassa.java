@@ -38,7 +38,7 @@ public class NaturezaDasRubricasExluirMassa extends TestBaseFernando {
 		boolean sucesso = naturezaDasRubricasExluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso1 = naturezaDasRubricasExluirMassaPO.exluirMassa();

@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class InformaçoesAdicionaisVisualizarPO extends TestBaseEliel {
+public class InformaçoesAdicionaisVisualizarPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
@@ -77,7 +77,7 @@ public class InformaçoesAdicionaisVisualizarPO extends TestBaseEliel {
 	public WebElement sequenciaE;
 	@FindBy(xpath = "//textarea[contains(@placeholder,\"descrição\")]")
 	public WebElement descricaoE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Data de Inicio\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Data de Início\")]")
 	public WebElement dataVigenciaE;
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")

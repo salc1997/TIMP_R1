@@ -511,8 +511,11 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBaseKenssy  {
 		
 		while (!mapeamento.isDisplayed()) {
 			flecha.click();
+			sleep(1000);
 		}
-		sleep(1000);
+
+
+		sleep(20000);
 		
 		mapeamento.click();
 		sleep(1000);
@@ -600,7 +603,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBaseKenssy  {
 		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(12000);
 		
 		
 //		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"O Leiaute foi atualizado com sucesso.\")]")).size();
@@ -621,13 +624,15 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBaseKenssy  {
 //	public ArrayList<Boolean> continuacionBlocosYRegistros() {
 		
 		biblioteca.click();
-		sleep(3000);
+		sleep(12000);
 		raiz.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
+		sleep(3000);
 		siguiente.click();
 		sleep(2000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -690,6 +695,11 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBaseKenssy  {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		primero.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -712,7 +722,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBaseKenssy  {
 		sleep(1000);
 		String nomeValor = nomeSPED.getAttribute("value");
 		System.out.println("nombreInicial SPED "+nomeValor);
-		
+		sleep(9000);
 		leiaute.click();
 		sleep(2000);
 
@@ -818,7 +828,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBaseKenssy  {
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		
 		rowsSPED = driver.findElements(By.xpath("//div[@data-id and @class=\"tr\"]")).size();
 		
@@ -986,7 +996,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBaseKenssy  {
 		visualizar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(18000);
 	
 		String nomeV = nomeSpedVisualizar.getAttribute("value");
 		String leiauteV =  leiauteSpedVisualizar.getAttribute("value");
@@ -1026,12 +1036,12 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBaseKenssy  {
 		
 		sucesso.add(dataV.contains("01/01/2013"));
 		
-		
+		sleep(8000);
 		fechar.click();
 		sleep(2000);
 		waitExpectElement(home);
 		sleep(3000);
-		
+		System.out.println(sucesso);
 		
 		return sucesso;
 	}

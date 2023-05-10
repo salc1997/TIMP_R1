@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class FinanciamentoDeAposEspVisualizarPO extends TestBaseEliel {
+public class FinanciamentoDeAposEspVisualizarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")
 	public WebElement tabelaApoio;
@@ -100,10 +100,6 @@ public ArrayList<Boolean> visualizar() {
 		System.out.println(descricaovisualizar);
 		System.out.println(datavisualizar);
 		
-		
-		
-		
-		
 		biblioteca.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -130,9 +126,11 @@ public ArrayList<Boolean> visualizar() {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 			
-		//editar
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		
+		//editar		
 		String codigoeditar = codigo.getAttribute("value");
 		String descricaoeditar=descricao.getAttribute("value");
 		String dataeditar = datainicio.getAttribute("value");

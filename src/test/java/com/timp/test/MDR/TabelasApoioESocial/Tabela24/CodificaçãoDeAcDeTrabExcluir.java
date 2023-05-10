@@ -2,10 +2,9 @@ package com.timp.test.MDR.TabelasApoioESocial.Tabela24;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela23.FactoresDeRiscoExcluirPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela24.CodificaçãoDeAcDeTrabExcluirPO;
 
 import org.testng.annotations.BeforeClass;
@@ -14,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class CodificaçãoDeAcDeTrabExcluir extends TestBaseCristhian {
+public class CodificaçãoDeAcDeTrabExcluir extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -23,7 +22,7 @@ public class CodificaçãoDeAcDeTrabExcluir extends TestBaseCristhian {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		codificaçãoDeAcDeTrabExcluirPO = new CodificaçãoDeAcDeTrabExcluirPO();
@@ -42,8 +41,7 @@ public class CodificaçãoDeAcDeTrabExcluir extends TestBaseCristhian {
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = codificaçãoDeAcDeTrabExcluirPO.excluir();
-
-		assertTrue(sucesso, Editar);
+		assertTrue(sucesso, Eliminado);
 
 	}
 

@@ -81,11 +81,15 @@ public class RelatorioRefinariaGeradosGerarAjustesPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@class=\"baseTabs-view-container\"]/div[1]/div/div/button[@id=\"advanced-filters-btn-apply\"]")
 	public WebElement btnAplicarFiltrosAnexoVI;
 	
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
+	public WebElement ultimapagina;
+	
 	public RelatorioRefinariaGeradosGerarAjustesPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
 	public ArrayList<Boolean> gerarAjustes() {
+		//TSTNG-1883
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
@@ -103,14 +107,20 @@ public class RelatorioRefinariaGeradosGerarAjustesPO extends TestBaseFernando{
 		}
 		
 		if(url.contains("tc2")) {
-			idRegistro = "9";
+			idRegistro = "49";
 		}
 		
 		System.out.println("ID: " + idRegistro);
 		
+		ultimapagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
 		WebElement marcarCheckBox = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[2]/label/span"));
 		marcarCheckBox.click();
-		sleep(1000);
+		sleep(5000);
 		
 		btnExecutarAjustes.click();
 		sleep(3000);
@@ -199,6 +209,8 @@ public class RelatorioRefinariaGeradosGerarAjustesPO extends TestBaseFernando{
 		if(url.contains("tc2")) {
 			idRegistroTAA = "236";
 		}
+		
+		sleep(3000);
 		
 		String valorAjuste = driver.findElement(By.xpath("//div[@data-id and contains(@class, \"tr\") and contains(@aria-label, \"ID Associação Cod Ajuste: "+idRegistroTAA+"\")]/div[12]/div")).getText();
 		System.out.println("");
@@ -378,7 +390,7 @@ public class RelatorioRefinariaGeradosGerarAjustesPO extends TestBaseFernando{
 		
 		
 		String valor = driver.findElement(By.xpath("//div[@id=\"baseTabs-wrapper\"]/div[2]/div/div[1]/div/div[3]/div/div[1]/div[2]/div[9]/div/div[2]")).getText();
-		
+		System.out.println("valor del final: "+valor);
 		sucesso.add(valor.equals(valorAjuste));
 		
 		System.out.println("");

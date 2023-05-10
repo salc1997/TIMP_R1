@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TarefasExecutarRelatorioBRBPO extends TestBaseEliel {
+public class TarefasExecutarRelatorioBRBPO extends TestBaseSteven {
 
 	@FindBy(xpath = "//span[text()=\"Calendário de Usuários\"]")
 	public WebElement calendario;
@@ -46,6 +46,9 @@ public class TarefasExecutarRelatorioBRBPO extends TestBaseEliel {
 	
 	@FindBy(xpath = "//button[@id=\"home-icon\"]")
 	public WebElement home;
+	
+	@FindBy(xpath = "//span[text()=\"Fechar Calendário\"]")
+	public WebElement fecharCalendario;
 
 	public TarefasExecutarRelatorioBRBPO() {
 
@@ -82,18 +85,27 @@ public class TarefasExecutarRelatorioBRBPO extends TestBaseEliel {
 		waitExpectXpath("//div[@class=\"day\"][1]");
 		sleep(2000);
 
-		String tituloS = titulo.getText();
-		System.out.println("Titulo: " + tituloS);
+
 
 		WebElement setaesquerda = driver
 				.findElement(By.xpath("//div[@class=\"left-arrow icon icon-font-Sign-and-Symbols icon-leftmenu\"]"));
-		int Fevereiro2021 = driver.findElements(By.xpath("//div[@class=\"title\"][text()=\"Fevereiro, 2021\"]")).size();
-		while (Fevereiro2021 == 0) {
-			setaesquerda.click();
-			sleep(2000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+		
+		boolean calendarMonthString = true;	
+		
+		while (calendarMonthString)  {
+			if(titulo.getText().contentEquals("Fevereiro, 2021")  ) {
+				calendarMonthString = false;
+			}else {
+				setaesquerda.click();
+				sleep(2000);
+				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+				sleep(2000);
+			}
 		}
+
+		String tituloS = titulo.getText();
+		System.out.println("Titulo: " + tituloS);
+		
 
 		if (tq1 == true || tp1 == true) {
 			WebElement dia16 = driver.findElement(By.xpath("//div[@month=\"1\" and @date=\"16\"]"));
@@ -110,6 +122,12 @@ public class TarefasExecutarRelatorioBRBPO extends TestBaseEliel {
 			sleep(2000);
 
 		}
+		
+		
+		fecharCalendario.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
 		
 		actionsMoveToElementElement(pesquisar);
 		sleep(2000);
@@ -153,9 +171,9 @@ public class TarefasExecutarRelatorioBRBPO extends TestBaseEliel {
 		    driver.switchTo().window(winHandle);
 		}
 		waitExpectElement(home);
-		sleep(2000);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		boolean sucesso=false;
 		WebElement totalElement= driver.findElement(By.xpath("//div[@id=\"table-report-wrapper\"]/div/div[2]/div[2]/div[2]/div[2]"));

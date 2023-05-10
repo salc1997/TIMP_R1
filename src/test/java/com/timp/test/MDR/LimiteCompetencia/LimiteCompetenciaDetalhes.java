@@ -32,16 +32,14 @@ public class LimiteCompetenciaDetalhes extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
-
-	
 
 	@Test()
 	public void detalhes() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		ArrayList<Boolean> sucesso = limiteCompetenciaDetalhesPO.detalhes();

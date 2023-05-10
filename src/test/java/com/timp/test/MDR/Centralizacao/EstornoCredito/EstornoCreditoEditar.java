@@ -2,7 +2,7 @@ package com.timp.test.MDR.Centralizacao.EstornoCredito;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
@@ -47,7 +47,7 @@ public class EstornoCreditoEditar extends TestBaseSteven {
 	
 		boolean sucesso = estornoCreditoEditarPO.Editar();
 		 assertTrue(sucesso, Editar);
-
+		 sleep(2000);
 	}
 
 }

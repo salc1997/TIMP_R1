@@ -60,7 +60,7 @@ public class RegrasDeEscrituraçãoDetalhesPO extends TestBaseFernando {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter2();
+		String idRegistro = idObter("RegraDeEscrituracao");
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement acao = driver.findElement(
@@ -92,7 +92,7 @@ public class RegrasDeEscrituraçãoDetalhesPO extends TestBaseFernando {
 		sleep(3000);
 		waitExpectElement(configuracoes);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		sleep(9000);
 
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		

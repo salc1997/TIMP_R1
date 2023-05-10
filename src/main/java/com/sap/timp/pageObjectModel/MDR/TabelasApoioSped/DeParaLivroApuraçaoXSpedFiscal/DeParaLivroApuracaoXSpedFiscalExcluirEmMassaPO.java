@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class DeParaLivroApuracaoXSpedFiscalExcluirEmMassaPO extends TestBaseEliel {
+public class DeParaLivroApuracaoXSpedFiscalExcluirEmMassaPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
@@ -37,7 +37,7 @@ public class DeParaLivroApuracaoXSpedFiscalExcluirEmMassaPO extends TestBaseElie
 	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcaolinha;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement data;
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
@@ -146,8 +146,8 @@ public class DeParaLivroApuracaoXSpedFiscalExcluirEmMassaPO extends TestBaseElie
 		
 		opcaotributo.click();
 		
-		sleep(2000);
-		attributeToBeXpath("//div[@class=\"element\" and @id=\"tipoTributo\"]/div", "class", "base-select required");
+		sleep(6000);
+		//attributeToBeXpath("//div[@class=\"element\" and @id=\"tipoTributo\"]/div", "class", "base-select required");
 		sleep(2000);
 		tipotributo.click();
 		sleep(2000);

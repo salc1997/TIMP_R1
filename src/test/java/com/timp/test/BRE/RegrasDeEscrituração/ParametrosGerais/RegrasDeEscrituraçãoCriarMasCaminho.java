@@ -27,7 +27,8 @@ public class RegrasDeEscrituraçãoCriarMasCaminho extends TestBaseFernando{
 	}
 
 	@AfterClass
-	public void afterClass() {		driver.close();
+	public void afterClass() {		
+		driver.close();
 	}
 
 
@@ -41,5 +42,6 @@ public class RegrasDeEscrituraçãoCriarMasCaminho extends TestBaseFernando{
 		
 		boolean sucesso = regrasDeEscrituraçãoCriarMasCaminhoPO.criar();
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 }

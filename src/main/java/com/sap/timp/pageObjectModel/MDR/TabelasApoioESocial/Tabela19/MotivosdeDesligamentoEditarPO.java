@@ -18,7 +18,7 @@ public class MotivosdeDesligamentoEditarPO extends TestBaseKenssy {
 	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[1]/div/div[2]/div/div[3]")
 	public WebElement idC;
 	
-	@FindBy(xpath = "//textarea[contains(@placeholder,\"Preencher Descrição\")]")
+	@FindBy(xpath = "//div[contains(@class,\"description_0_1\")]/div/textarea")
 	public WebElement campo;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -47,7 +47,7 @@ public class MotivosdeDesligamentoEditarPO extends TestBaseKenssy {
 	public boolean editarMotivoDesligamento() {
 		sleep(2000);
 		tabelaApoio.click();
-		sleep(2000);
+		sleep(6000);
 		tabela19.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -67,6 +67,7 @@ public class MotivosdeDesligamentoEditarPO extends TestBaseKenssy {
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(campo);
 		sleep(2000);
 		//attributoNotToBeEmptyElement(campo, "value");
 		
@@ -77,7 +78,7 @@ public class MotivosdeDesligamentoEditarPO extends TestBaseKenssy {
 		String enviar = "Teste Editar KENSSY 7";
 
 		campo.clear();
-		sleep(1000);
+		sleep(2000);
 		
 		campo.sendKeys(enviar);
 		sleep(2000);
@@ -96,7 +97,8 @@ public class MotivosdeDesligamentoEditarPO extends TestBaseKenssy {
 		driver.navigate().refresh();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
+		waitExpectElement(campo);
+		sleep(9000);
 		
 		waitExpectElement(campo);
 		attributoNotToBeEmptyElement(campo, "value"); // OJO ESTE ES UN TEXTAREA XD CON VALUE

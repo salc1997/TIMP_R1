@@ -5,21 +5,27 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TaxasDeConversaoCriarPO extends TestBaseEliel {
+public class TaxasDeConversaoCriarPO extends TestBaseSteven {
 	
 	
-	@FindBy(xpath = "//span[text()=\"Taxas de Conversão\"]")
+	@FindBy(xpath = "//span[text()=\"Taxas Complementares\"]")
 	public WebElement taxasdeconversao;
 	
-	@FindBy(xpath = "//span[text()=\"Nova Taxa de Conversão\"]")
+	@FindBy(xpath = "//span[text()=\"Nova Taxas Complementares\"]")
 	public WebElement novo;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o Tipo de Taxa de Atualização\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Preencher o Tipo de Taxa\"]")
 	public WebElement tipo;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher a descrição do Cadastro de Tipo de Taxa de Atualização\"]")
+	@FindBy(xpath = "//div[@id=\"codCompany\"]/div/div[2]/div/div[2]")
+	public WebElement empresa;
+	
+	@FindBy(xpath = "//div[@class=\"list\"][2]/div[1]")
+	public WebElement empresaOPC;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Preencher a descrição do Cadastro de Tipo de Taxa\"]")
 	public WebElement descricao;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inclusão \"]")
@@ -28,7 +34,7 @@ public class TaxasDeConversaoCriarPO extends TestBaseEliel {
 	@FindBy(xpath = "//input[@placeholder=\"Prencher a Taxa\"]")
 	public WebElement taxa;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datainicio;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
@@ -82,6 +88,14 @@ public class TaxasDeConversaoCriarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		empresa.click();
+		sleep(2000);
+		
+		empresaOPC.click();
+		sleep(2000);
+		
+		closeSelectTypeCheckbox(empresa);
+		sleep(2000);
 		
 		tipo.sendKeys("Tipo");
 		
@@ -101,7 +115,7 @@ public class TaxasDeConversaoCriarPO extends TestBaseEliel {
 		
 		datainicio.sendKeys(fechaActual());
 		
-		sleep(2000);
+		sleep(3000);
 		gravar.click();
 		sleep(2000);
 		sim.click();

@@ -1,5 +1,4 @@
 package com.sap.timp.pageObjectModel.DFG.AN4;
-
 import java.security.MessageDigest;
 import java.util.ArrayList;
 
@@ -105,7 +104,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
-	@FindBy(xpath = "//button[text()=\"Não\"]")
+	@FindBy(xpath = "//button[text()=\"NÃ£o\"]")
 	public WebElement sim;
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
@@ -114,7 +113,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@id=\"justification\"]/div/textarea")
 	public WebElement justificar;
 	
-	@FindBy(xpath = "//button[text()=\"Não\"]")
+	@FindBy(xpath = "//button[text()=\"NÃ£o\"]")
 	public WebElement no;
 	
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
@@ -134,8 +133,12 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 	@FindBy(xpath = "//table[@class=\"create-rule-form\"]/tbody/tr[4]/td[2]/div/div/div[2] ")
 	public WebElement tipoRegra;
 	
-	@FindBy(xpath = "//table[@class=\"create-rule-form\"]/tbody/tr[5]/td[2]/div/div/div[2] ")
+	@FindBy(xpath = "//table[@class=\"create-rule-form\"]/tbody/tr[5]/td[2]/div/div[2] ")
 	public WebElement componente;
+	
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
+	public WebElement componentetc2;
+	
 	
 	@FindBy(xpath = "//div[@class=\"base-MultipleSelect3 required\"]/div/div[2]")
 	public WebElement tributo;
@@ -210,7 +213,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@class=\"container-tabs\"]/div[2]")
 	public WebElement abaConfiguraciones;
 	
-	@FindBy(xpath = "//span[text()=\"Nova Configuração\"]")
+	@FindBy(xpath = "//span[text()=\"Nova ConfiguraÃ§Ã£o\"]")
 	public WebElement novoConfiguracoe;
 	
 	@FindBy(xpath = "//div[@id=\"inputTextFileName\"]/div/div/input")
@@ -336,7 +339,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 	public WebElement aplicarAN4;
 	
 	@FindBy(xpath = "//div[@id=\"inputfileReference\"]/div/div/div[2]")
-	public WebElement arquivoReferênciaAN4;
+	public WebElement arquivoReferÃªnciaAN4;
 	
 	@FindBy(xpath = "//div[@id=\"inputSelectTypeFileComparison\"]/div/div/div[2]")
 	public WebElement comperacaoAN4;
@@ -374,30 +377,30 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 	@FindBy(xpath = "//button/span[text()=\"Executar\"][1]")
 	public WebElement executarAN4;
 	
-	@FindBy(xpath = "//tr[@line-id=\"171.171\"]/td[1]")
+	@FindBy(xpath = "//tr[@line-id=\"168.168\"]/td[1]")
 	public WebElement bloco1;
 	
-	@FindBy(xpath = "//tr[@line-id=\"171.171\"]/td[2]")
+	@FindBy(xpath = "//tr[@line-id=\"168.168\"]/td[2]")
 	public WebElement registro1;
 	
-	@FindBy(xpath = "//tr[@line-id=\"171.171\"]/td[8]")
+	@FindBy(xpath = "//tr[@line-id=\"168.168\"]/td[8]")
 	public WebElement bloco2;
 	
-	@FindBy(xpath = "//tr[@line-id=\"171.171\"]/td[9]")
+	@FindBy(xpath = "//tr[@line-id=\"168.168\"]/td[9]")
 	public WebElement registro2;
 	
 	//---------------
 	
-	@FindBy(xpath = "//tr[@line-id=\"62.134\"]/td[1]")
+	@FindBy(xpath = "//tr[@line-id=\"62.135\"]/td[1]")
 	public WebElement bloco1TP1;
 	
-	@FindBy(xpath = "//tr[@line-id=\"62.134\"]/td[2]")
+	@FindBy(xpath = "//tr[@line-id=\"62.135\"]/td[2]")
 	public WebElement registro1TP1;
 	
-	@FindBy(xpath = "//tr[@line-id=\"62.134\"]/td[8]")
+	@FindBy(xpath = "//tr[@line-id=\"62.135\"]/td[8]")
 	public WebElement bloco2TP1;
 	
-	@FindBy(xpath = "//tr[@line-id=\"62.134\"]/td[9]")
+	@FindBy(xpath = "//tr[@line-id=\"62.135\"]/td[9]")
 	public WebElement registro2TP1;
 	//----------
 	@FindBy(xpath = "//tr[@line-id=\"0.0\"]/td[1]")
@@ -537,7 +540,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 
 			actionsMoveToElementXpath("//li[@id=\"option-8\"]");
 			
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-14\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -548,7 +551,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 
 			actionsMoveToElementXpath("//li[@id=\"option-2\"]");
 			
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-2\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajustes\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -556,9 +559,9 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			sleep(2000);
 		}else {
 			
-			actionsMoveToElementXpath("//li[@id=\"option-5\"]");
+			actionsMoveToElementXpath("//li[@id=\"option-6\"]");
 			
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-5\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -572,7 +575,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		sleep(2000);
 		
 
-		WebElement estructuraOPC = driver.findElement(By.xpath("//div[@id=\"18\"]"));
+		WebElement estructuraOPC = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and text()=\"Ajustes Fiscais\"]"));
 
 
 		estructuraOPC .click();
@@ -745,6 +748,13 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		System.out.println("---------- Criar2 --------- " );
 		String url = driver.getCurrentUrl();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
 		boolean tp1  = false;
 		boolean tc2  = false;
@@ -792,7 +802,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 
 			actionsMoveToElementXpath("//li[@id=\"option-14\"]");
 			
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-14\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -801,7 +811,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 
 		}else if (tp1==true) {
 
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-2\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajustes\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -809,9 +819,9 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			sleep(2000);
 		}else {
 			
-			actionsMoveToElementXpath("//li[@id=\"option-5\"]");
+			actionsMoveToElementXpath("//li[@id=\"option-6\"]");
 			
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-5\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -824,7 +834,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		WebElement estructuraOPC = driver.findElement(By.xpath("//div[@id=\"18\"]"));
+		WebElement estructuraOPC = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and text()=\"Ajustes Fiscais\"]"));
 
 
 		estructuraOPC .click();
@@ -1023,7 +1033,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
 
 		String idregra = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
-		System.out.println("Id Antes da Criação en Regra N4: " +idregra);
+		System.out.println("Id Antes da CriaÃ§Ã£o en Regra N4: " +idregra);
 		idInserir4(idregra);
 		
 	}
@@ -1064,7 +1074,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		WebElement Opc = driver.findElement(By.xpath("//li[@id=\"option-4\"]"));
 
 		Opc .click();
-		sleep(2000);
+		sleep(6000);
 
 		
 		if (tq1 == true) {
@@ -1090,10 +1100,10 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			Opc1 .click();
 			sleep(2000);
 		}else {
-			componente.click();
+			componentetc2.click();
 			sleep(2000);
 
-			WebElement Opc1 = driver.findElement(By.xpath("//li[@id=\"option-10\"]"));
+			WebElement Opc1 = driver.findElement(By.xpath("//li[@id=\"option-11\"]"));
 
 			Opc1 .click();
 			sleep(2000);
@@ -1122,19 +1132,19 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		if (tq1 == true) {
 			
-			WebElement Opc3 = driver.findElement(By.xpath("//li[@id=\"option-14\"]"));
+			WebElement Opc3 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
 			Opc3 .click();
 			sleep(2000);
 		
 		}else if (tp1==true) {
 
-			WebElement Opc3 = driver.findElement(By.xpath("//li[@id=\"option-2\"]"));
+			WebElement Opc3 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajustes\"]"));
 
 			Opc3 .click();
 			sleep(2000);
 		}else {
-			WebElement Opc3 = driver.findElement(By.xpath("//li[@id=\"option-5\"]"));
+			WebElement Opc3 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
 			Opc3 .click();
 			sleep(2000);
@@ -1143,7 +1153,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		EstructuraDatosReferencia.click();
 		sleep(2000);
 
-		WebElement Opc4 = driver.findElement(By.xpath("//li[@id=\"option-1\"]"));
+		WebElement Opc4 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajustes Fiscais\"]"));
 
 		Opc4 .click();
 		sleep(2000);
@@ -1154,25 +1164,25 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		if (tq1 == true) {
 			
-			actionsMoveToElementXpath("//li[@id=\"option-14\"]");
+			actionsMoveToElementXpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]");
 			sleep(2000);
 			
-			WebElement Opc5 = driver.findElement(By.xpath("//li[@id=\"option-14\"]"));
+			WebElement Opc5 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
 			Opc5 .click();
 			sleep(2000);
 
 		}else if (tp1==true) {
-
-			WebElement Opc5 = driver.findElement(By.xpath("//li[@id=\"option-2\"]"));
+			actionsMoveToElementXpath("//li[@class=\"list-item\" and text()=\"Ajustes\"]");
+			WebElement Opc5 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajustes\"]"));
 
 			Opc5 .click();
 			sleep(2000);
 			
 		}else {
 			
-			actionsMoveToElementXpath("//li[@id=\"option-5\"]");
-			WebElement Opc5 = driver.findElement(By.xpath("//li[@id=\"option-5\"]"));
+			actionsMoveToElementXpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]");
+			WebElement Opc5 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
 			Opc5 .click();
 			sleep(2000);
@@ -1181,7 +1191,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		EstructuraDatosComparacao.click();
 		sleep(2000);
 		
-		WebElement Opc5 = driver.findElement(By.xpath("//li[@id=\"option-1\"]"));
+		WebElement Opc5 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajustes Fiscais\"]"));
 
 		Opc5.click();
 		sleep(2000);
@@ -1204,7 +1214,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		versaoLeiauteReferencia.click();
 		sleep(2000);
 		versaoLeiauteOPC.click();
-		sleep(2000);
+		sleep(8000);
 
 		String idRegistro2 = idObter3();
 		System.out.println(idRegistro2);
@@ -1219,12 +1229,12 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		WebElement Opc1 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro2+"\")]"));
 
 		Opc1 .click();
-		sleep(4000);
+		sleep(6000);
 
 		versaoLeiauteComparacao.click();
 		sleep(2000);
 		versaoLeiauteOPC.click();
-		sleep(2000);
+		sleep(8000);
 		
 		caracteristicaEspacialReferencia.click();
 		sleep(2000);
@@ -1404,7 +1414,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
 
 		String idraizAba = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
-		System.out.println("Id Antes da Criação en Raiz Configuracoe: " +idraizAba);
+		System.out.println("Id Antes da CriaÃ§Ã£o en Raiz Configuracoe: " +idraizAba);
 		idInserir6(idraizAba);
 		
 	}
@@ -1449,7 +1459,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		WebElement Opc6 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro+"\")]"));
 
 		Opc6 .click();
-		sleep(4000);
+		sleep(6000);
 
 		versaoConfiguracoe.click();
 		sleep(2000);
@@ -1562,9 +1572,10 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		fechaConfiguracoe.sendKeys(Keys.ENTER);
 		
 		closeSelectTypeCheckbox(fechaConfiguracoeSpan);
+		sleep(4000);
 		
 		salvar.click();
-		sleep(8000);
+		sleep(16000);
 		
 		waitExpectElement(siguiente);
 		sleep(3000);
@@ -1637,10 +1648,10 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		WebElement Opc6 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro+"\")]"));
 
 		Opc6 .click();
-		sleep(4000);
+		sleep(6000);
 
 		versaoConfiguracoe.click();
-		sleep(2000);
+		sleep(6000);
 
 		versaoLeiauteOPC.click();
 		sleep(2000);
@@ -1751,9 +1762,10 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		fechaConfiguracoe.sendKeys(Keys.ENTER);
 		
 		closeSelectTypeCheckbox(fechaConfiguracoeSpan);
+		sleep(4000);
 		
 		salvar.click();
-		sleep(8000);
+		sleep(16000);
 		
 		waitExpectElement(siguiente);
 		sleep(3000);
@@ -1895,11 +1907,14 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		executarConfiguracao.click();
 		sleep(3000);
 		
-		waitExpectXpath("//span[text()=\"Execução\"]");
+		waitExpectXpath("//span[text()=\"ExecuÃ§Ã£o\"]");
 		sleep(10000);
 		
 		gravarExecutado.click();
-		sleep(2000);
+		sleep(4000);
+		
+		no.click();
+		sleep(8000);
 	
 		biblioteca.click();
 		sleep(2000);
@@ -1993,12 +2008,16 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		executarConfiguracao.click();
 		sleep(3000);
 		
-		waitExpectXpath("//span[text()=\"Execução\"]");
+		waitExpectXpath("//span[text()=\"ExecuÃ§Ã£o\"]");
 		sleep(10000);
 		
 		gravarExecutado.click();
 		sleep(2000);
 	
+		no.click();
+		sleep(8000);
+	
+		
 		
 		biblioteca.click();
 		sleep(2000);
@@ -2035,7 +2054,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 
@@ -2069,7 +2088,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 						+ rows2 + "]/div[13]/div"))
 				.getText();
 		
-		System.out.println("Año  Primero Executado: " +  anioArquivo );
+		System.out.println("AÃ±o  Primero Executado: " +  anioArquivo );
 		
 		String periodoArquivo = driver
 				.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["
@@ -2107,7 +2126,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 						+ rows + "]/div[13]/div"))
 				.getText();
 		
-		System.out.println("Año  Segundo Executado: " +  anioArquivo2 );
+		System.out.println("AÃ±o  Segundo Executado: " +  anioArquivo2 );
 		
 		String periodoArquivo2 = driver
 				.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["
@@ -2179,9 +2198,13 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		}
 		
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
-
-		String idAN4 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
-		System.out.println("Id Antes da Criação en AN4: " +idAN4);
+		String idAN4 = "0";
+		
+		if(rows > 0) {
+			idAN4 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
+		}
+		
+		System.out.println("Id Antes da CriaÃ§Ã£o en AN4: " +idAN4);
 		
 		nuevoAN4.click();
 		sleep(3000);
@@ -2200,11 +2223,11 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		
 		AN4OPC.click();
-		sleep(2000);
+		sleep(6000);
 	
 		
 		leiauteReferenciaAN4.click();
-		sleep(2000);
+		sleep(3000);
 		
 		
 		String idRegistro = idObter2();
@@ -2223,7 +2246,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		
 		AN4OPC.click();
-		sleep(3000);
+		sleep(6000);
 		
 		
 		configuracionReferenciaAN4.click();
@@ -2242,10 +2265,10 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		sleep(4000);
 		
 		actionsMoveToElementElement(adicionarFiltroReferenciaAN4);
-		sleep(4000);
+		sleep(6000);
 		
 		adicionarFiltroReferenciaAN4.click();
-		sleep(2000);
+		sleep(6000);
 		
 		
 		if (tq1 == true) {
@@ -2274,7 +2297,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			WebElement flecha = driver.findElement(By.xpath("//div[@class=\"wrapper small\"]/div[1]/div[1]"));
 
 			calendario .click();
-			sleep(2000);
+			sleep(5000);
 			
 			flecha .click();
 			sleep(2000);
@@ -2301,7 +2324,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			sleep(3000);
 			
 			mes.click();
-			sleep(3000);
+			sleep(4000);
 			
 			periodo.click();
 			sleep(3000);
@@ -2309,10 +2332,12 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		sleep(3000);
 		aplicar.click();
-		sleep(3000);
+		sleep(6000);
 		
-		arquivoReferênciaAN4.click();
+
+		arquivoReferÃªnciaAN4.click();
 		sleep(3000);
+
 		
 		
 		String idRegistro2 = idObter9();
@@ -2335,6 +2360,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		sleep(3000);
 		
 		
+		attributeToBeXpath("//div[contains(@class, \"layout-dfg-selectComparison\")]/div", "class", "base-select required");
 		leiauteComperacaoAN4.click();
 		sleep(3000);
 		
@@ -2343,23 +2369,24 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		System.out.println("Leiaute Comparacao "+idRegistro3);
 
 		actionsMoveToElementXpath("//li[contains(text(),\""+idRegistro3+"\")]");
-		sleep(2000);
+		sleep(3000);
 
 		WebElement Opc3 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro3+"\")]"));
 
 		Opc3.click();
 		sleep(4000);
 		
+		attributeToBeXpath("//div[contains(@class, \"version-selectComparison\")]/div", "class", "base-select required");
 		versaoAN42.click();
 		sleep(3000);
 		
 		
 		AN4OPC.click();
-		sleep(3000);
+		sleep(6000);
 		
 		
 		configuracaoComparacaoAN4.click();
-		sleep(3000);
+		sleep(5000);
 		
 		
 		String idRegistro4 = idObter8();
@@ -2377,7 +2404,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		sleep(2000);
 		
 		adicionarFiltroComperacaoAN4.click();
-		sleep(3000);
+		sleep(6000);
 	
 		
 
@@ -2441,6 +2468,8 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		
 		aplicar.click();
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		arquivoComparacaoAN4.click();
 		sleep(3000);
@@ -2505,7 +2534,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			raizAN4 .click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+			sleep(6000);
 		}
 		
 		rows = rows("//div[@class=\"tr\" and @data-id]");
@@ -2611,9 +2640,12 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 		sleep(1000);
 		
 		nomeAN4.sendKeys(enviar);
-		sleep(10000);
+		sleep(12000);
 		
 		EditarAN4.click();
+		sleep(5000);
+		
+		sim.click();
 		sleep(5000);
 		
 		siguiente.click();
@@ -2754,7 +2786,7 @@ public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
 			waitExpectElement(bloco1TP1);
 			sleep(3000);
 		
-			this. blocoReferencia = bloco1TP1.getText();
+			this.blocoReferencia = bloco1TP1.getText();
 			System.out.println(blocoReferencia);
 			
 			this.registroReferencia  = registro1TP1.getText();

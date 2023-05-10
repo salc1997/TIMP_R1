@@ -129,7 +129,7 @@ public class EmpresasFiltrosPO extends TestBaseSteven{
 		razaoSocial.sendKeys(Keys.ENTER);
 		
 		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
-		sleep(3000);
+		sleep(8000);
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -155,7 +155,7 @@ public class EmpresasFiltrosPO extends TestBaseSteven{
 		
 		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
 
-		sleep(2000);
+		sleep(9000);
 		
 		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]")).size();
 
@@ -182,7 +182,7 @@ public class EmpresasFiltrosPO extends TestBaseSteven{
 			
 		
 		while (data.size() == 0) {
-			
+			sleep(9000);
 			siguiente.click();
 			waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
 			sleep(2000);

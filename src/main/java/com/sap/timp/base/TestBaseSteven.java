@@ -1,4 +1,3 @@
-
 package com.sap.timp.base;
 
 import java.awt.AWTException;
@@ -6,14 +5,19 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.sql.Time;
 import java.text.DecimalFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.format.TextStyle;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -31,7 +35,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class TestBaseSteven {
+public class TestBaseSteven  {
 
 	// TC2
 	protected String tc2 = "http://as1-100-01-tc2:8000/timp/login/#/login";
@@ -39,12 +43,22 @@ public class TestBaseSteven {
 	protected String td1 = "http://as1-100-01-td1:8000/timp/login/#/login";
 
 	protected String tq1 = "http://as1-100-01-tq1:8000/timp/login/#/login";
+	
+	protected String tq2 = "http://as1-100-01-tq2:8000/timp/login/#/login";
 
 	protected String tp1 = "http://as1-100-01-tp1:8000/timp/login/#/login";
-
+	
+	protected String td2 = "http://as1-100-01-td2:8000/timp/login/#/login";
+	
+	protected String cloud = "https://timp.authentication.eu10.hana.ondemand.com/login";
+	
 	public static WebDriver driver;
 	public String usuarioL = "TESTEAUTOMATIZADO";
 	public String senhaL = "Alltax2023";
+	
+	public String usuarioLL = "kenssy.medina@agilesolutions.com";
+	public String senhaLL = "Gorgojita12";
+	
 	public int menuT = 12000;
 
 	public WebDriver initialization() {
@@ -52,14 +66,15 @@ public class TestBaseSteven {
 		WebDriver driver;
 		
 		
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedrivers.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverst.exe");
 
 		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
 	
-		//ChromeOptions options = new ChromeOptions();
+		ChromeOptions options = new ChromeOptions();
 		//options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
 		//driver = new ChromeDriver(options);
-       // options.addArguments("--headless");
+        //  // options.addArguments("--headless");
+        // para que las pestañas no se habiliten
         //options.addArguments("start-maximized"); // open Browser in maximized mode
         //options.addArguments("disable-infobars"); // disabling infobars
         //options.addArguments("--disable-extensions"); // disabling extensions
@@ -67,19 +82,6 @@ public class TestBaseSteven {
         //options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
         //driver = new ChromeDriver(options);
 
-		/*
-		ChromeOptions options = new ChromeOptions();
-		options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
-		driver = new ChromeDriver(options);
-        options.addArguments("--headless");
-        options.addArguments("start-maximized"); // open Browser in maximized mode
-        options.addArguments("disable-infobars"); // disabling infobars
-        options.addArguments("--disable-extensions"); // disabling extensions
-        options.addArguments("--disable-gpu"); // applicable to windows os only
-        options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-        driver = new ChromeDriver(options);
-		*/
-		ChromeOptions options = new ChromeOptions();
 		options.addArguments("disable-infobars");
 		options.setExperimentalOption("useAutomationExtension", false);
 		
@@ -94,13 +96,13 @@ public class TestBaseSteven {
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
+		
+
 		driver.get(tc2);
 
 		return driver;
 	}
 
-	
-	
 	public void fecharMensagens(String rows, String xpath) {
 		int rowsR = driver.findElements(By.xpath(xpath)).size();
 		
@@ -124,7 +126,18 @@ public class TestBaseSteven {
 		
 		
 	}
-
+	//funcion para vaidar que la fecha de  detalle tenga el formato de DD/MM/YY
+	public boolean validarFecha(String fecha) {
+	        try {
+	            SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy");
+	            formatoFecha.setLenient(false);
+	            formatoFecha.parse(fecha);
+	        } catch (ParseException e) {
+	            return false;
+	        }
+	        return true;
+	 }
+	
 	public void refresh() {
 		driver.navigate().refresh();
 	}
@@ -268,7 +281,7 @@ public class TestBaseSteven {
 	}
 
 	public void waitExpectElement(WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, 360);
+		WebDriverWait wait = new WebDriverWait(driver, 3600);
 
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 
@@ -288,7 +301,7 @@ public class TestBaseSteven {
 
 	public void invisibilityOfElement(String xpath) {
 		WebDriverWait wait = new WebDriverWait(driver, 360);
-
+				 
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpath)));
 
 	}
@@ -618,20 +631,56 @@ public class TestBaseSteven {
 		new Actions(driver).moveToElement(element).click().perform();
 	}
 	
+	public void closeSelect(WebElement element) {
+		new Actions(driver).moveToElement(element).click().perform();
+	}
+	
+	public String capitalize(String 
+			cadena) {
+		String[] split = cadena.split("");
+        for (int i = 0; i < split.length; i++) {
+            if(i == 0 || split[i-1].equals(" ")) {
+                split[i] = split[i].toUpperCase();
+            }
+        }
+        
+        return String.join("", split);
+	}
+	
+	public String mesActual() {
+		// Obtienes el mes actual
+		Month mes = LocalDate.now().getMonth();
+
+		// Obtienes el nombre del mes
+		String nombreMes = mes.getDisplayName(TextStyle.FULL, new Locale("es", "ES"));
+		nombreMes = capitalize(nombreMes);
+		
+		return nombreMes;
+	}
+	
+	public String anioActual() {
+		// Obtienes el mes actual
+		int anio = LocalDate.now().getYear();
+		
+		String anioString = String.valueOf(anio);
+		return anioString;
+	}
+	
+	
 
 	
 	
 
 	// BRB
-	public String elementosDiferentes = "Os elementos não são iguais";
-	public String comentariosInativos = "Os comentários não foram ativados";
-	public String correcãoInativa = "A correção não foi ativada";
-	public String semAcesso = "Não foi possivel aceder ao aplicativo";
-	public String semCampoOutput = "O campo output não foi adicionado";
-	public String comentarioNãoValido = "Os comentários não foram os ingresados";
-	public String crescenteEDecrescente = "Os resultados não estão em uma ordem válida";
-	public String copiaNaoCriada = "A cópia não foi criada com sucesso";
-	public String editado = "O relatório não foi modificado com sucesso";
+	public String elementosDiferentes = "Os elementos nao sao iguais";
+	public String comentariosInativos = "Os comentários nao foram ativados";
+	public String correcãoInativa = "A correcao nao foi ativada";
+	public String semAcesso = "Nao foi possivel aceder ao aplicativo";
+	public String semCampoOutput = "O campo output nao foi adicionado";
+	public String comentarioNãoValido = "Os comentarios nao foram os ingresados";
+	public String crescenteEDecrescente = "Os resultados nao estão em uma ordem valida";
+	public String copiaNaoCriada = "A copia nao foi criada com sucesso";
+	public String editado = "O relatorio não foi modificado com sucesso";
 	public String eliminar = "O elemento não foi deletado";
 	public String deletarColuna = "A coluna não foi deletada";
 	public String exportação = "A exportação não foi realizada com sucesso";
@@ -670,10 +719,15 @@ public class TestBaseSteven {
 	
 	public String Atualizar = "Não foi possivel atualizar os registros";
 	public String Favoritos = "Não foi possivel mandar o registro para favoritos";
+	public String Ingresar = "Error ao tentar ingresar";
 	
 	
 	//BCB
 	public String subniveis = "Os Subniveis não foram adicinados com sucesso";
 	public String Acessar = "Erro ao tentar acessar ao componente";	
+	
+	
+	
+	public String Restaurar = "O registro não foi restaurado com sucesso";
 	
 }

@@ -14,7 +14,7 @@ public class RegrasDeAuditoriaN2CriarComCopiaPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement btnUltimaPagina;
 	
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement btnAplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
@@ -39,7 +39,8 @@ public class RegrasDeAuditoriaN2CriarComCopiaPO extends TestBaseFernando{
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();
 		
-		String idRegistro = idObter3();
+		//String idRegistro = idObter3();
+		String idRegistro = idObter("An2");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

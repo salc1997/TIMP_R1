@@ -25,6 +25,7 @@ public class RRGConfiguracaoDeAjusteExcluirPO extends TestBaseFernando{
 	}
 	
 	public boolean excluir() {
+		//TSTNG-357
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -67,7 +68,7 @@ public class RRGConfiguracaoDeAjusteExcluirPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		sleep(2000);
+		sleep(4000);
 		relatoriosRefineriaGerados.click();
 		
 		sleep(2000);

@@ -122,7 +122,7 @@ public class ParametrosGeraisVisualizarPO extends TestBaseKenssy{
 		criar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(12000);
 
 
 
@@ -132,11 +132,11 @@ public class ParametrosGeraisVisualizarPO extends TestBaseKenssy{
 		sleep(2000);
 
 
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+	/*	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		moveToElement(inicio, driver.findElement(By.xpath("//div[@id=\"canvas\"]/div[1]/div[1]")));
 		sleep(2000);
-
+*/
 
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -231,14 +231,40 @@ public class ParametrosGeraisVisualizarPO extends TestBaseKenssy{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		biblioteca.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		siguiente.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
-
-		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+rows+"\"]/div[1]/div"));
-		WebElement açao1 = driver.findElement(By.xpath("//div[@data-id=\""+rows+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		WebElement menu1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[1]/div"));
+		WebElement açao1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 
 		menu1.click();
 		sleep(2000);
 		açao1.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		biblioteca.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		siguiente.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

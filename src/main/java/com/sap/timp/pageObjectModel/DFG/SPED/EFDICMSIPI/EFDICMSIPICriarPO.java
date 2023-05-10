@@ -178,6 +178,8 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
 	public WebElement componente;
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
+	public WebElement componentetc2;
 	
 	@FindBy(xpath = "//li[text()=\"DFG\"]")
 	public WebElement componenteO;
@@ -428,6 +430,9 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-trash_rules\"]")
 	public WebElement lixeiraBRE;
 	
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
+	public WebElement componenteTQ1;
+	
 	public EFDICMSIPICriarPO() {
 
 		PageFactory.initElements(driver, this);
@@ -454,10 +459,11 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and @data-id]")).size();
-		
-		String ultimoIdAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
-		System.out.println("Último Id antes da criação do registro (Raiz): " + ultimoIdAC);
-
+		String ultimoIdAC = "0";
+		if(rows > 0) {
+			ultimoIdAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
+			System.out.println("Último Id antes da criação do registro (Raiz): " + ultimoIdAC);
+		}
 		
 		novo.click();
 		sleep(3000);
@@ -688,11 +694,18 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 	
 	
 	public boolean BRE() {
+
 		String url = driver.getCurrentUrl();
-		
+
 		boolean tp1  = false;
-		
-		if (url.contains("tp1")) {
+		boolean tc2  = false;
+		boolean tq1  = false;
+
+		if (url.contains("tq1")) {
+			tq1 = true;
+		}else if(url.contains("tc2")){
+			tc2 = true;
+		}else if(url.contains("tp1")){
 			tp1 = true;
 		}
 		home.click();
@@ -725,7 +738,7 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		waitExpectElement(nomeRegra);
 		sleep(2000);
 		
-		nomeRegra.sendKeys("Teste Automatizado DFG Massi");
+		nomeRegra.sendKeys("Teste Automatizado DFG Massi3");
 		sleep(1000);
 		
 		
@@ -734,7 +747,16 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		tipoRegraO.click();
 		sleep(1000);
 		
-		componente.click();
+
+		
+		if (tc2 == true) {
+			componentetc2.click();
+		}else if (tp1==true ) {
+			componente.click();
+		}else {
+			componenteTQ1.click();
+		}
+		
 		sleep(1000);
 		componenteO.click();
 		sleep(1000);
@@ -759,12 +781,14 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		}
 		
 		
-		sleep(1000);
+		sleep(2000);
 		
 		estruturaR.click();
 		sleep(1000);
 		estruturaRO.click();
-		sleep(1000);
+		sleep(3000);
+//		waitExpectElement(leiauteR);
+//		sleep(3000);
 		
 		caracteristica.click();
 		sleep(1000);
@@ -892,27 +916,37 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		System.out.println("dio click 1");
+		
 		efd.click();
 		sleep(2000);
 		efdO.click();
 		
+		System.out.println("dio click 2");
+		
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		siguiente.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		int rows = rows("//div[@class=\"tr\" and @data-id]");
+		System.out.println("dio click 3");
 		
-		String ultimoIdAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
-		System.out.println("Id antes da criação (DFG SPED EFD): "+ ultimoIdAC);
+		int rows = rows("//div[@class=\"tr\" and @data-id]");
+		String ultimoIdAC = "0";
+		if(rows > 0) {
+			ultimoIdAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
+			System.out.println("Id antes da criação (DFG SPED EFD): "+ ultimoIdAC);
+		} 
 		
 		blocosApuracao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
 		primeira.click();
 		System.out.println("Dio click en primera pagina");
 		sleep(3000);
@@ -925,9 +959,11 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		rows = rows("//div[@class=\"tr\" and @data-id]");
-		
-		String ultimoIdACB = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
-		System.out.println("Id antes da criação (DFG SPED Bloco): "+ ultimoIdACB);
+		String ultimoIdACB = "0";
+		if(rows > 0) {
+			ultimoIdACB = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
+			System.out.println("Id antes da criação (DFG SPED Bloco): "+ ultimoIdACB);
+		}  
 		
 		sleep(2000);
 		efdO.click();
@@ -941,7 +977,7 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sleep(2000); 
 		
 		nome.sendKeys("Teste Automatizado");
-		sleep(1000);
+		sleep(3000);
 		
 		leiauteE.click();
 		sleep(1000);
@@ -992,11 +1028,31 @@ public class EFDICMSIPICriarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		primeira.click();
-		sleep(5000);
+		System.out.println("Dio click en primera pagina");
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();
+		System.out.println("Dio click en ultima pagina");
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+		blocosApuracao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		primeira.click();
+		System.out.println("Dio click en primera pagina");
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		siguiente.click();
+		System.out.println("Dio click en ultima pagina");
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

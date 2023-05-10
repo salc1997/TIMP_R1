@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçoesCreditosExcluirEmMassaPO;
 
-public class CodigoAjustesContribuiçoesCreditosExcluirEmMassa extends TestBaseEliel {
+public class CodigoAjustesContribuiçoesCreditosExcluirEmMassa extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -20,7 +20,7 @@ public class CodigoAjustesContribuiçoesCreditosExcluirEmMassa extends TestBaseEl
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization(); 
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		codigoAjustesContribuiçoesCreditosExcluirEmMassaPO = new CodigoAjustesContribuiçoesCreditosExcluirEmMassaPO();
@@ -28,19 +28,23 @@ public class CodigoAjustesContribuiçoesCreditosExcluirEmMassa extends TestBaseEl
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test()
 	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
+		
 		boolean sucesso = codigoAjustesContribuiçoesCreditosExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
+	}
+	
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {
 		boolean sucesso2 = codigoAjustesContribuiçoesCreditosExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
-
 	}
 
 }

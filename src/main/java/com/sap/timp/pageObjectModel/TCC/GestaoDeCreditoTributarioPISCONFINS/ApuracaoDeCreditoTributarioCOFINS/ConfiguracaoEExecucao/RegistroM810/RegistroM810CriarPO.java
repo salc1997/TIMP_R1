@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegistroM810CriarPO extends TestBaseEliel{
+public class RegistroM810CriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
@@ -133,7 +133,7 @@ public class RegistroM810CriarPO extends TestBaseEliel{
 			System.out.println("Id ultimo registro: " +idRegistro);
 		}
 		novo.click();
-		sleep(2000);
+		sleep(6000);
 		waitExpectElement(empresa);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -141,10 +141,10 @@ public class RegistroM810CriarPO extends TestBaseEliel{
 		empresa.click();
 		sleep(1000);
 		opcao.click();
-		sleep(1000);
+		sleep(6000);
 		
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		//attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(4000);
 		
 		uf.click();
@@ -206,7 +206,7 @@ public class RegistroM810CriarPO extends TestBaseEliel{
 			rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 			String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 			
-			idInserir("RegistroM810",id2);
+			idInserir("GestaoCreditoTributarioCOFINSRegistroM810",id2);
 			int idD = convertToInt(idRegistro);
 			int id2D = convertToInt(id2);
 			
@@ -235,7 +235,7 @@ public class RegistroM810CriarPO extends TestBaseEliel{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		idInserir("RegistroM810",id2);
+		idInserir("GestaoCreditoTributarioCOFINSRegistroM810",id2);
 		int idD = convertToInt(idRegistro);
 		int id2D = convertToInt(id2);
 		

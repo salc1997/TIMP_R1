@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AgrupamentoDeTributosVerPO extends TestBaseEliel{
+public class AgrupamentoDeTributosVerPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[@class=\"title-boxes \"][text()=\"Tributos\"]")
 	public WebElement tributos;
@@ -83,7 +83,7 @@ public class AgrupamentoDeTributosVerPO extends TestBaseEliel{
 		sleep(2000);
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro = idObter1();
+		String idRegistro = idObter("AgrupamentoDeTributosCriar");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement ver = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Ver\"]"));
@@ -115,7 +115,7 @@ public class AgrupamentoDeTributosVerPO extends TestBaseEliel{
 		sleep(2000);
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter1();
+		String idRegistro1 =  idObter("AgrupamentoDeTributosCriar");
 		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));

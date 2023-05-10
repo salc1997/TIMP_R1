@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.OcorrenciaFiscal.TiposDeObjetosDeOcorrenciasFiscais.TiposDeObjetosDeOcorrenciasFiscaisEditarPO;
 
-public class TiposDeObjetosDeOcorrenciasFiscaisEditar extends TestBaseEliel {
+public class TiposDeObjetosDeOcorrenciasFiscaisEditar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -20,7 +20,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisEditar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		tiposDeObjetosDeOcorrenciasFiscaisEditarPO = new TiposDeObjetosDeOcorrenciasFiscaisEditarPO();
@@ -31,13 +31,11 @@ public class TiposDeObjetosDeOcorrenciasFiscaisEditar extends TestBaseEliel {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void editar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = tiposDeObjetosDeOcorrenciasFiscaisEditarPO.editar();

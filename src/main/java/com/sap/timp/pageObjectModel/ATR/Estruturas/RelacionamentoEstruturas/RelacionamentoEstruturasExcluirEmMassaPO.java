@@ -11,7 +11,7 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBaseFernando{
 	@FindBy(xpath = "//span[text()=\"Relacionamentos de Estruturas\"]")
 	public WebElement relacionamentoEstruturas;
 	
-	@FindBy(xpath = "//span[contains(text(),\"Nov\")]")
+	@FindBy(xpath = "//span[contains(text(),\"Novo\")]")
 	public WebElement btnNovo;
 	
 	@FindBy(xpath = "//div[contains(@class, \"icon-right\")][2]")
@@ -98,27 +98,30 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBaseFernando{
 		
 		// Primer ingreso
 		btnNovo.click();
+		
+		sleep(2000);
 		invisibilityOfElementOverlay();
+		sleep(2000);
 		
 		waitExpectElement(cboGrupo1);
 		cboGrupo1.click();
-		sleep(1000);
+		sleep(3000);
 		opcionGrupo1.click();
-		sleep(1000);
+		sleep(3000);
 		
 		attributeToBeXpath("//div[@class=\"structure1-select\"]/div", "class", "base-select ");
 		cboEstrutura1.click();
-		sleep(1000);
+		sleep(3000);
 		opcionEstrutura1.click();
-		sleep(1000);
+		sleep(6000);
 		
 		cboCamposEstrutura1.click();
-		sleep(1000);
+		sleep(3000);
 		opcionCamposEstruturas1.click();
-		sleep(1000);
+		sleep(3000);
 		
 		cboGrupo2.click();
-		sleep(1000);
+		sleep(3000);
 		
 		if(URL.contains("tp1") || URL.contains("tc2")) {
 			opcionGrupo2 = driver.findElement(By.xpath("//li[@tabindex=\"0\" and @class=\"list-item\" and @id and text()=\"Empresa Filial\"][1]"));
@@ -128,20 +131,20 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBaseFernando{
 		
 		attributeToBeXpath("//div[@class=\"structure2-select\"]/div", "class", "base-select ");
 		cboEstrutura2.click();
-		sleep(1000);
+		sleep(3000);
 		opcionEstrutura2.click();
-		sleep(1000);
+		sleep(6000);
 		
 		cboCamposEstrutura2.click();
-		sleep(1000);
+		sleep(3000);
 		opcionCamposEstruturas2.click();
-		sleep(1000);
+		sleep(3000);
 		
 		inputDataInicioVigencia.sendKeys("01/01/1974");
-		sleep(1000);
+		sleep(3000);
 		
 		inputDataFimVigencia.sendKeys("01/01/1975");
-		sleep(1000);
+		sleep(3000);
 		
 		btnGravar.click();
 		invisibilityOfElementOverlay();
@@ -172,50 +175,52 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBaseFernando{
 		
 		// Segundo registro
 		btnNovo.click();
+		sleep(2000);
 		invisibilityOfElementOverlay();
+		sleep(2000);
 		
-		waitExpectElement(cboGrupo1);
+		
 		cboGrupo1.click();
-		sleep(1000);
+		sleep(3000);
 		opcionGrupo1.click();
-		sleep(1000);
+		sleep(3000);
 		
 		attributeToBeXpath("//div[@class=\"structure1-select\"]/div", "class", "base-select ");
 		cboEstrutura1.click();
-		sleep(1000);
+		sleep(3000);
 		opcionEstrutura1.click();
-		sleep(1000);
+		sleep(6000);
 		
 		cboCamposEstrutura1.click();
-		sleep(1000);
+		sleep(3000);
 		opcionCamposEstruturas12.click();
-		sleep(1000);
+		sleep(3000);
 		
 		cboGrupo2.click();
-		sleep(1000);
+		sleep(3000);
 		
 		if(URL.contains("tp1") || URL.contains("tc2")) {
 			opcionGrupo2 = driver.findElement(By.xpath("//li[@tabindex=\"0\" and @class=\"list-item\" and @id and text()=\"Empresa Filial\"][1]"));
 		}
 		opcionGrupo2.click();
-		sleep(1000);
+		sleep(3000);
 		
 		attributeToBeXpath("//div[@class=\"structure2-select\"]/div", "class", "base-select ");
 		cboEstrutura2.click();
-		sleep(1000);
+		sleep(3000);
 		opcionEstrutura2.click();
-		sleep(1000);
+		sleep(3000);
 		
 		cboCamposEstrutura2.click();
-		sleep(1000);
+		sleep(3000);
 		opcionCamposEstruturas22.click();
-		sleep(1000);
+		sleep(3000);
 		
 		inputDataInicioVigencia.sendKeys("01/01/1972");
-		sleep(1000);
+		sleep(3000);
 		
 		inputDataFimVigencia.sendKeys("01/01/1973");
-		sleep(1000);
+		sleep(3000);
 		
 		btnGravar.click();
 		invisibilityOfElementOverlay();
@@ -258,9 +263,9 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBaseFernando{
 		WebElement marcarCheckbox = driver.findElement(By.xpath("//div[@data-id=\""+idUltimoRegistro+"\"]/div[2]/label/span"));
 		System.out.println("Id Ultimo registro: " + idUltimoRegistro); // Ultimo registro que es el que se crea con la automatizacion
 		
-		sleep(2000);
+		sleep(5000);
 		marcarCheckbox.click();
-		sleep(2000);
+		sleep(5000);
 		
 		int idPenultimoUltimoRegistro = convertToInt(this.idPrimerRegistroCreado);
 		marcarCheckbox = driver.findElement(By.xpath("//div[@data-id=\""+idPenultimoUltimoRegistro+"\"]/div[2]/label/span"));

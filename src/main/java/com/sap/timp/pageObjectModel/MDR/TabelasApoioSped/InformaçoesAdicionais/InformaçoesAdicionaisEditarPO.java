@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class InformaçoesAdicionaisEditarPO extends TestBaseEliel {
+public class InformaçoesAdicionaisEditarPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
@@ -114,14 +114,11 @@ public class InformaçoesAdicionaisEditarPO extends TestBaseEliel {
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		waitExpectElement(descricao);
+	
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(16000);
 		
 		String novoTexto=descricao.getAttribute("value");
 		

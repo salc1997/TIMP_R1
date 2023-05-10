@@ -112,15 +112,13 @@ public class RegistroECACFiltrosAvanPO extends TestBaseKenssy{
 		
 		opcEmpresa.click();
 		sleep(1000);
+		
 		String filialText = opcEmpresa.getText();
 		System.out.println("VIENE EN EL SELECT filial: "+ filialText);
-		
-		clickFuera.click();
-		sleep(1000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		
+		closeSelectTypeCheckbox(filial);
+		 sleep(6000);
+		 
+		 
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();

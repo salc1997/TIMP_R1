@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class S1060AmbientesDeTrablhoEditarPO extends TestBaseEliel {
+public class S1060AmbientesDeTrablhoEditarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Eventos e-Social\"]")
 	public WebElement eventosesocial;

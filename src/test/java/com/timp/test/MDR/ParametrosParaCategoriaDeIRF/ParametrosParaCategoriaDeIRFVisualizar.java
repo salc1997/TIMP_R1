@@ -6,6 +6,7 @@ import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 //import com.sap.timp.pageObjectModel.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFVisualizarPO;
+import com.sap.timp.pageObjectModel.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFVisualizarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -15,36 +16,35 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrosParaCategoriaDeIRFVisualizar extends TestBaseMassiel{
+public class ParametrosParaCategoriaDeIRFVisualizar extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
-//	ParametrosParaCategoriaDeIRFVisualizarPO parametrosParaCategoriaDeIRFVisualizarPO;
+	ParametrosParaCategoriaDeIRFVisualizarPO parametrosParaCategoriaDeIRFVisualizarPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  	driver = initializationM();
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
 		accesarMDRPO = new AcessarMDRPO();
 		loginTC = new LoginTC();
-	//	parametrosParaCategoriaDeIRFVisualizarPO = new ParametrosParaCategoriaDeIRFVisualizarPO();
-  }
+		 parametrosParaCategoriaDeIRFVisualizarPO = new ParametrosParaCategoriaDeIRFVisualizarPO();
+	}
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
+	@AfterClass
+	public void afterClass() {
+	//	driver.close();
+	}
 
 	@Test()
 	public void visualizar() {
 		loginTC.login();
 		accesarMDRPO.acessarMDR();
-		
-//		parametrosParaCategoriaDeIRFVisualizarPO.Visualizar();
-		//ArrayList<Boolean> sucesso = regradeReaberturaVisualizarPO.visualizar();
 
-		//for (int i = 0; i < sucesso.size(); i++) {
-		//	assertTrue(sucesso.get(i), visualizaçar);
-		//}
+		
+		 ArrayList<Boolean> sucesso = parametrosParaCategoriaDeIRFVisualizarPO.Visualizar();
+
+		 for (int i = 0; i < sucesso.size(); i++) {
+			 assertTrue(sucesso.get(i), visualizaçar);
+		 }
 	}
 
 }

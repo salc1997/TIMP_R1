@@ -138,7 +138,7 @@ public class ParametrosOficializacaoLivrosCriarPO extends TestBaseSteven{
 		layoutTFB.click();
 		sleep(1000);
 		opcao1.click();
-		sleep(1000);
+		sleep(3000);
 		
 		attributeToBeXpath("//div[@id=\"tfbConfiguration\"]/div", "class", "base-select required");
 		
@@ -148,9 +148,9 @@ public class ParametrosOficializacaoLivrosCriarPO extends TestBaseSteven{
 		sleep(1000);
 		
 		dataVigencia.sendKeys(fechaActual());
+		sleep(4000);
 		
-		
-		sleep(2000);
+	
 		gravar.click();
 		sleep(2000);
 		waitExpectElement(sim);

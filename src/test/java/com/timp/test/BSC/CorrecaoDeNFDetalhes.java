@@ -17,48 +17,34 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class CorrecaoDeNFDetalhes extends TestBaseMassiel{
-	
+
 	LoginTC loginTC;
 	AcessarBSCPO acessarBSC;
 	CorrecaoDeNFDetalhesPO correcaoDeNFDetalhesPO;
 	AcessarBrbPO acessarBrbPO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  
-	  driver = initializationM();
-	  loginTC = new LoginTC();
-	  acessarBrbPO = new AcessarBrbPO();
-	  correcaoDeNFDetalhesPO = new CorrecaoDeNFDetalhesPO();
-  }
+	@BeforeClass
+	public void beforeClass() {
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
-  
-  @Test(priority = 0)
-	public void login() {
-
-		loginTC.login();
-
+		driver = initializationM();
+		loginTC = new LoginTC();
+		acessarBrbPO = new AcessarBrbPO();
+		correcaoDeNFDetalhesPO = new CorrecaoDeNFDetalhesPO();
 	}
 
-	@Test(priority = 1)
-	public void brbEntrar() {
+	@AfterClass
+	public void afterClass() {
+		//driver.close();
+	}
+
+	@Test()
+	public void  Aprovar() {
+		loginTC.login();
 		acessarBrbPO.acessar();
 
-	}
-	
-	@Test(priority = 2)
-	public void  Aprovar() {
-	
-	   
-	   ArrayList<Boolean> viEdi =   correcaoDeNFDetalhesPO.Detalhes();
+		ArrayList<Boolean> viEdi =   correcaoDeNFDetalhesPO.Detalhes();
 		for (int i = 0; i < viEdi.size(); i++) {
-		assertTrue(viEdi.get(i), Filtros);
+			assertTrue(viEdi.get(i), Filtros);
 		}
-
 	}
-
 }

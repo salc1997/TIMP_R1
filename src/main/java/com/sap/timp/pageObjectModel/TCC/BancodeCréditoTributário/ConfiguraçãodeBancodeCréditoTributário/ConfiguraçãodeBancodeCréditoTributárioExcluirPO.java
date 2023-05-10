@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ConfiguraçãodeBancodeCréditoTributárioExcluirPO extends TestBaseCristhian {
+public class ConfiguraçãodeBancodeCréditoTributárioExcluirPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Banco de Crédito Tributário\"]")
 	public WebElement BancoCréditoTributário;
@@ -40,6 +40,10 @@ public class ConfiguraçãodeBancodeCréditoTributárioExcluirPO extends TestBaseCri
 	@FindBy(xpath = "//*[@id=\"1018\"]")
 	public WebElement opcionLeiaute;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement btnNo;
+	
+	
 	public ConfiguraçãodeBancodeCréditoTributárioExcluirPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -69,7 +73,8 @@ public class ConfiguraçãodeBancodeCréditoTributárioExcluirPO extends TestBaseCri
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);	
 		
-		String idRegistro = idObter1();
+		//String idRegistro = idObter1();
+		String idRegistro = idObter("idBCT-ConfiguracaoDeBancoDeCreditoTributario");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -84,13 +89,14 @@ public class ConfiguraçãodeBancodeCréditoTributárioExcluirPO extends TestBaseCri
 		
 		waitExpectElement(btnSim);
 		btnSim.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(16000);
 		
+		btnNo.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+	
+		
+		sleep(35000);
+		
 		
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();

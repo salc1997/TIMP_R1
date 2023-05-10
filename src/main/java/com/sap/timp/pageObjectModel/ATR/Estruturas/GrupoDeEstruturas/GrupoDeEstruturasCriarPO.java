@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class GrupoDeEstruturasCriarPO extends TestBaseEliel{
+public class GrupoDeEstruturasCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Grupo de Estruturas\"]")
 	public WebElement grupodeestrutura;
@@ -37,8 +37,6 @@ public class GrupoDeEstruturasCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher Comentários\"]")
 	public WebElement comentario;
 	
-	
-
 	@FindBy(xpath = "//button[text()=\"Gravar\"]")
 	public WebElement gravar;
 	@FindBy(xpath = "//span[text()=\"Gravar\"]")
@@ -49,6 +47,9 @@ public class GrupoDeEstruturasCriarPO extends TestBaseEliel{
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
+	
+	@FindBy(xpath = "//div[@class=\"th sortable\"]//span[text()=\"ID\"]")
+	public WebElement ordenar;
 	
 	public GrupoDeEstruturasCriarPO() {
 		PageFactory.initElements(driver, this);
@@ -78,12 +79,12 @@ public class GrupoDeEstruturasCriarPO extends TestBaseEliel{
 		
 		novo.click();
 		sleep(2000);
-		waitExpectElement(nomedogrupo);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(nomedogrupo);
 		sleep(2000);
 	
 		nomedogrupo.sendKeys("Teste ATR");
-		sleep(1000);
+		sleep(2000);
 		estruturadedados.click();
 		sleep(2000);
 		opcaoestrutura.click();
@@ -99,7 +100,7 @@ public class GrupoDeEstruturasCriarPO extends TestBaseEliel{
 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(12000);
 		
 		
 		
@@ -114,12 +115,15 @@ public class GrupoDeEstruturasCriarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		ordenar.click();
+		sleep(2000);
+		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();	
 	//	System.out.println("Rows:" +rows);
 		
 		String idultimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		idInserir1(idultimo);
+		idInserir("GrupoDeEstruturasCriar",idultimo);
 
 		System.out.println(id);
 		System.out.println(idultimo);

@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegradeNegócioEdiçãoValoresCalculadosPO extends TestBaseCristhian{
+public class RegradeNegócioEdiçãoValoresCalculadosPO extends TestBaseSteven{
 
 
 	@FindBy(xpath = "//span[text()=\"Regras de Negócio\"]")
@@ -26,7 +26,7 @@ public class RegradeNegócioEdiçãoValoresCalculadosPO extends TestBaseCristhia
 	@FindBy(xpath = "//input[@placeholder=\"Nome\"]")
 	public WebElement nomeVCalculado;
 	
-	@FindBy(xpath = "//textarea[@aria-label=\"Insira a fórmula\"]")
+	@FindBy(xpath = "//div[@class=\"base-textarea-wrapper\"]/textarea")
 	public WebElement formula;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecione uma tabela\"]")
@@ -145,6 +145,9 @@ public class RegradeNegócioEdiçãoValoresCalculadosPO extends TestBaseCristhia
 	@FindBy(xpath = "//div[@class=\"tabAction-obligatory\"]/div/label/span")
 	public WebElement preenchementoobrigatorio;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
+	
 	
 	public RegradeNegócioEdiçãoValoresCalculadosPO() {
 
@@ -164,7 +167,7 @@ public boolean editar() {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
 	
-	String idRegistro = idObter1();
+	String idRegistro =idObter("RegrasDeNegocioCriar");
 	WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 	WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
@@ -202,7 +205,7 @@ public boolean editar() {
 	sleep(3000);
 	
 	nomeVCalculado.sendKeys("TA-TESTE-Quarto Caractere");
-	sleep(3000);
+	sleep(4000);
 	
 	formula.sendKeys("MID(\"Código oficial- (aba:Dados Lançamento) (ED)\", 4, 1)");
 	sleep(3000);
@@ -290,14 +293,17 @@ public boolean editar() {
 	sleep(3000);
 	
 	aceitar.click();
-	sleep(4000);
+	sleep(24000);
 	
 	biblioteca.click();
 	sleep(3000);
 	
-	sim.click();
-	sleep(3000);
+	int botaoNao = rows("//button[text()=\"Não\"]");
 	
+	if (botaoNao > 0) {
+		nao.click();
+	}
+
 	
 	
 	

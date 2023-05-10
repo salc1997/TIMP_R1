@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class MapeamentoDeRelevanciaParaPisCofinsCriarPO extends TestBaseEliel {
+public class MapeamentoDeRelevanciaParaPisCofinsCriarPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//span[text()=\"Mapeamento de Relevância para PIS/COFINS\"]")
@@ -99,13 +99,13 @@ public class MapeamentoDeRelevanciaParaPisCofinsCriarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		
-		tributo.click();
+		/*tributo.click();
 		
 		sleep(2000);
 		
 		opcaotributo.click();
 		
-		sleep(2000);
+		sleep(2000);*/
 		
 		relevancia.sendKeys("Teste");
 		

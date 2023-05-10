@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasdeAuditoriaN2EdiçãoTabelasPO extends TestBaseCristhian {
+public class RegrasdeAuditoriaN2EdiçãoTabelasPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Regras de Auditoria N2\"]")
 	public WebElement AN2;
@@ -25,7 +25,7 @@ public class RegrasdeAuditoriaN2EdiçãoTabelasPO extends TestBaseCristhian {
 	@FindBy(xpath = "//input[@placeholder=\"Selecione uma tabela\"]")
 	public WebElement inputSeleccionTabela;
 	
-	@FindBy(xpath = "//li[text()=\"Apresent. Treinamento 4\"]")
+	@FindBy(xpath = "//li[text()=\"CFOP\"]")
 	public WebElement seleccionTabela;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecione um campo \"]")
@@ -51,6 +51,9 @@ public class RegrasdeAuditoriaN2EdiçãoTabelasPO extends TestBaseCristhian {
 	
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[4]/div[2]/div[1]/div/div[1]/input")
 	public WebElement acoes;
+	
+	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	public WebElement acoesOPC;
 	
 	@FindBy(xpath = "//div[@id=\"graph\"]//*[name()=\"g\"][5]")
 	public WebElement CFOP;
@@ -111,7 +114,8 @@ public boolean editar() {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
 	
-	String idRegistro = idObter3();
+	//String idRegistro = idObter3();
+	String idRegistro = idObter("An2");
 	WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 	WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
@@ -165,9 +169,21 @@ public boolean editar() {
 	condicoes2.sendKeys("Apresent. Treinamento 4 - CFOP (VE)");
 	sleep(2000);
 	condicoes2.sendKeys(Keys.ENTER);
+	sleep(5000);
+	
+//	actionsMoveToElementElement(acoes);
+	sleep(2000);
+	acoes.sendKeys("AL");
 	sleep(2000);
 	
-	acoes.sendKeys("Alíquotas não apresentam valores iguais");
+	acoes.clear();
+	sleep(2000);
+
+	acoes.sendKeys("AL");
+	sleep(2000);
+	
+	
+	acoesOPC.click();
 	sleep(2000);
 	closeSelectTypeCheckbox(acoes);
 	
@@ -203,7 +219,7 @@ public boolean editar() {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(4000);
 	
-	String idRegistro1 = idObter3();
+	String idRegistro1 = idObter("An2");
 	WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 	WebElement açao1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
@@ -281,7 +297,7 @@ public boolean editar() {
 	
 	
 	
-	String idRegistro2 = idObter3();
+	String idRegistro2 = idObter("An2");
 	WebElement menu2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro2+"\"]/div[1]/div"));
 	WebElement açao2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro2+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion

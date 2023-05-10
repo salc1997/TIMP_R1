@@ -43,6 +43,7 @@ public class DEPARAContasContábeisExcluir extends TestBaseMassiel{
 	 
 	  boolean sucesso =  dEPARAContasContábeisExluirPO.Excluir();
 	  assertTrue(sucesso, Editar);
+	  sleep(2000);
 	
 	}
 }

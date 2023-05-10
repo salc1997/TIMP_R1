@@ -31,7 +31,7 @@ public class CrescenteEDecrescente extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 
@@ -56,6 +56,7 @@ public class CrescenteEDecrescente extends TestBaseSteven {
 			assertTrue(sucesso2.get(i), crescenteEDecrescente);
 		}
 		System.out.println(sucesso2);
+		sleep(2000);
 	}
 
 }

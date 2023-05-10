@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CadastroCondicaoEditarPO extends TestBaseEliel {
+public class CadastroCondicaoEditarPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//span[text()=\"Cadastro da Condição\"]")
@@ -126,7 +126,7 @@ String url = driver.getCurrentUrl();
 		String texto = vigenciade.getAttribute("value");
 		System.out.println(texto);
 		sleep(1000);
-		String enviar = dataanterior();
+		String enviar = fechaAyer();
 		
 		sleep(2000);
 		vigenciade.clear();

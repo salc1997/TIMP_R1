@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class S1200RemuneracaoDeTrabalhadorCriarPO extends TestBaseEliel{
+public class S1200RemuneracaoDeTrabalhadorCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Eventos e-Social\"]")
 	public WebElement eventosesocial;
@@ -27,7 +27,7 @@ public class S1200RemuneracaoDeTrabalhadorCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@id=\"option-2\"]/div")
 	public WebElement opcao2;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Tipo de evento\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Preencher Tipo de Evento\"]")
 	public WebElement tipodeevento;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Preencher Versão:\"]")

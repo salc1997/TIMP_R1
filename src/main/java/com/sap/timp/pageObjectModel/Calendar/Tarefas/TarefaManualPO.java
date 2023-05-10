@@ -13,8 +13,14 @@ public class TarefaManualPO extends TestBaseMassiel{
 	@FindBy(xpath = "//span[@class=\"btn icon icon-font-Sign-and-Symbols icon-persign closeButton\"]")
 	public WebElement fechar;
 	
-	@FindBy(xpath = "//span[text()=\"Calendário\"]")
+	@FindBy(xpath = "//span[text()=\"Abrir Calendário\"]")
 	public WebElement calendario;
+	
+	@FindBy(xpath = "//span[text()=\"Fechar Calendário\"]")
+	public WebElement fecharCalendario;
+	
+	@FindBy(xpath = "//div[@class=\"title\"]")
+	public WebElement titulo;
 	
 	public TarefaManualPO() {
 
@@ -48,18 +54,33 @@ public class TarefaManualPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
-		WebElement OPC = driver.findElement(By.xpath("//div[@id=\"year-wrapper\"]/div[2]/div/div[2]/div[1]/div[2]/div[23]"));
-
-		OPC.click();
+		WebElement setaesquerda = driver
+				.findElement(By.xpath("//div[@class=\"left-arrow icon icon-font-Sign-and-Symbols icon-leftmenu\"]"));
+		
+		boolean calendarMonthString = true;	
+		
+		while (calendarMonthString)  {
+			if(titulo.getText().contentEquals("Fevereiro, 2021")  ) {
+				calendarMonthString = false;
+			}else {
+				setaesquerda.click();
+				sleep(2000);
+				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+				sleep(2000);
+			}
+		}
+		
+			WebElement dia22 = driver.findElement(By.xpath("//div[@month=\"1\" and @date=\"22\"]"));
+			dia22.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
-
-		
-		fechar.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+			
+			
+			fecharCalendario.click();
+			sleep(2000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(4000);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
@@ -86,7 +107,7 @@ public class TarefaManualPO extends TestBaseMassiel{
 			
 			sucesso.add(Nome11.equals("Tarefa Manual"));
 			
-			
+			sleep(4000);
 
 		}else if (tc2 == true) {
 
@@ -107,7 +128,7 @@ public class TarefaManualPO extends TestBaseMassiel{
 			sucesso.add(Nome11.equals("Tarefa Manual"));
 			
 			
-			
+			sleep(4000);
 		}else {
 			
 		}

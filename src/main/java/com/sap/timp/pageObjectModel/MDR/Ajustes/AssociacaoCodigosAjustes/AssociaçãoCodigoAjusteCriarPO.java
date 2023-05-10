@@ -9,7 +9,7 @@ import org.testng.annotations.Factory;
 import com.sap.timp.base.TestBaseFernando;
 
 public class AssociaçãoCodigoAjusteCriarPO extends TestBaseFernando{
-	String URL = driver.getCurrentUrl();
+	String URL = driver.getCurrentUrl(); 
 	
 	@FindBy(xpath = "//div[@class=\"accordion-container\"]/ul/li/div/span[text()=\"Ajustes\"]")
 	public WebElement menuAjustes;
@@ -60,8 +60,11 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBaseFernando{
 	@FindBy(xpath = "//div[@id=\"ufOrigin\"]/div/div/div[2]")
 	public WebElement inputUFOrigem;
 	
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][3]")
 	public WebElement opcionCombo;
+	
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
+	public WebElement opcionCombo1;
 	
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][2]")
 	public WebElement opcionComboCodigoOficial;
@@ -107,7 +110,7 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBaseFernando{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		btnUltimaPagina.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -184,7 +187,7 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBaseFernando{
 		actionsMoveToElementElement(inputCodigoRegistroSPED);
 		inputCodigoRegistroSPED.click();
 		sleep(1000);
-		opcionCombo.click();
+		opcionCombo1.click();
 		sleep(1000);
 		body.click();	
 		sleep(1000);		
@@ -206,13 +209,13 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay dark\"]");
 		sleep(2000);
 		
-		
-		btnBiblioteca.click();
 
-		sleep(5000);
-		nao.click();
-		sleep(500);
-		nao.click();
+//		sleep(5000);
+//		nao.click();
+//		System.out.println("primer nao");
+//		sleep(500);
+//		nao.click();
+//		System.out.println("segundo nao");
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

@@ -129,10 +129,10 @@ public class ArquivosImportadosFiltrosAvancadosPO extends TestBaseFernando{
 		cboFiltroEmpresa.click();
 		sleep(1000);
 		
-		String empresa = driver.findElement(By.xpath("//div[contains(@class, \"tbody\")]/div[contains(@class, \"tr\") and @data-id][1]/div[5]/div")).getText();
+		String empresa = "1000";
 		System.out.println("");
 		System.out.println("Empresa filtro: " + empresa);
-		
+		sleep(1000);
 		WebElement opcionFiltroEmpresa = driver.findElement(By.xpath("//div[contains(@class, \"list-option\") and @tabindex=\"0\"]/div/div[text()=\""+empresa+"\"]"));
 		opcionFiltroEmpresa.click();
 		sleep(2000);
@@ -156,7 +156,7 @@ public class ArquivosImportadosFiltrosAvancadosPO extends TestBaseFernando{
 		
 		cboFiltroStatus.click();
 		sleep(1000);
-		String status = driver.findElement(By.xpath("//div[contains(@class, \"tbody\")]/div[contains(@class, \"tr\") and @data-id][1]/div[7]/div")).getText();
+		String status = driver.findElement(By.xpath("//div[contains(@class, \"tbody\")]/div[contains(@class, \"tr\") and @data-id][1]/div[8]/div")).getText();
 		System.out.println("");
 		System.out.println("Status filtro: " + status);
 		
@@ -172,7 +172,7 @@ public class ArquivosImportadosFiltrosAvancadosPO extends TestBaseFernando{
 		String statusString = "";
 		
 		for(int i = 0; i < rows2; i++) {
-			statusString = driver.findElement(By.xpath("//div[contains(@class, \"tbody\")]/div[contains(@class, \"tr\") and @data-id][1]/div[7]/div")).getText();			
+			statusString = driver.findElement(By.xpath("//div[contains(@class, \"tbody\")]/div[contains(@class, \"tr\") and @data-id][1]/div[8]/div")).getText();			
 			sucesso.add(statusString.contains(status));
 		}
 		

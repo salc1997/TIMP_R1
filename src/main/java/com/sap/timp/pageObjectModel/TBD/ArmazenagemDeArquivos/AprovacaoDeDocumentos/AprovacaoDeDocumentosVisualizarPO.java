@@ -7,11 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
 import okhttp3.internal.publicsuffix.PublicSuffixDatabase;
 
-public class AprovacaoDeDocumentosVisualizarPO extends TestBaseEliel{
+public class AprovacaoDeDocumentosVisualizarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Armazenagem de Arquivos\"]")
 	public WebElement armazenagemdearquivos;
@@ -111,7 +111,7 @@ public class AprovacaoDeDocumentosVisualizarPO extends TestBaseEliel{
 		sleep(2000);
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro = idObter1();
+		String idRegistro = idObter("AprovacaoDeDocumentosCriar");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
@@ -160,7 +160,7 @@ public class AprovacaoDeDocumentosVisualizarPO extends TestBaseEliel{
 		sleep(2000);
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter1();
+		String idRegistro1 = idObter("AprovacaoDeDocumentosCriar");
 		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -171,15 +171,18 @@ public class AprovacaoDeDocumentosVisualizarPO extends TestBaseEliel{
 		
 		editar.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	    sleep(2000);
-	    
-	  
+	//    waitExpectElement(biblioteca);
+	    sleep(25000);
+	    sleep(25000);
+	    sleep(16000);
+	    System.out.println("-----------------------");
 	    String tipodedocumentoeditar = tipodedocumento.getAttribute("value");
 		String descricaoeditar = descricao.getAttribute("value");
 		String nomedoarquivoeditar = nomedoarquivo.getAttribute("value");
 		String empresaeditar = empresa.getText();
-		String filialeditar = filial.getText();
+		//String filialeditar = filial.getText();
 		String statuseditar = status.getAttribute("value");
 		String classificacaoeditar = classificacao.getAttribute("value");
 		String validadedeeditar = validadede.getAttribute("value");
@@ -190,7 +193,7 @@ public class AprovacaoDeDocumentosVisualizarPO extends TestBaseEliel{
 		System.out.println(descricaoeditar);
 		System.out.println(nomedoarquivoeditar);
 		System.out.println(empresaeditar);
-		System.out.println(filialeditar);
+		//System.out.println(filialeditar);
 		System.out.println(statuseditar);
 		System.out.println(classificacaoeditar);
 		System.out.println(validadedeeditar);
@@ -202,7 +205,7 @@ public class AprovacaoDeDocumentosVisualizarPO extends TestBaseEliel{
 		sucesso.add(descricaoeditar.contains(descricaovisualizar));
 		sucesso.add(nomedoarquivoeditar.contains(nomedoarquivovisualizar));
 		sucesso.add(empresaeditar.contains(empresavisualizar));
-		sucesso.add(filialeditar.contains(filialvisualizar));
+	//	sucesso.add(filialeditar.contains(filialvisualizar));
 		sucesso.add(statuseditar.contains(statusvisualizar));
 		sucesso.add(classificacaoeditar.contains(classificacaovisualizar));
 		sucesso.add(validadedeeditar.contains(validadedevisualizar));

@@ -50,7 +50,7 @@ public class PainelCreditoICMSExcluirPO extends TestBaseMassiel{
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();
 
-		String idRegistro = idObter3();
+		String idRegistro = idObter("id-GCT-ICMS-PainelCreditoICMSConfiguracaoEExecucacoExecutados");
 		System.out.println("");
 		System.out.println("ID Registro Excecutado: " + idRegistro);
 		
@@ -86,8 +86,13 @@ public class PainelCreditoICMSExcluirPO extends TestBaseMassiel{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(12000);
 		
+		executadosPainelCréditoICMS.click();
+		invisibilityOfElementOverlay();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();

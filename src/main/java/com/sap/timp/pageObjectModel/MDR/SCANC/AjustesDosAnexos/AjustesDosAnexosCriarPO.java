@@ -7,9 +7,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AjustesDosAnexosCriarPO extends TestBaseEliel{
+public class AjustesDosAnexosCriarPO extends TestBaseSteven{
 	
 	
 	@FindBy(xpath = "//span[text()=\"SCANC\"]")
@@ -70,7 +70,7 @@ public class AjustesDosAnexosCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@id=\"1,7,8,9\"]/div/label/span")
 	public WebElement opcaolinhaquadro;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Data de Inicio de Vigência\"]")
+	@FindBy(xpath = "//div[@id=\"validity-start-annexes\"]/div/div[1]/input")
 	public WebElement datainicial;
 	
 	

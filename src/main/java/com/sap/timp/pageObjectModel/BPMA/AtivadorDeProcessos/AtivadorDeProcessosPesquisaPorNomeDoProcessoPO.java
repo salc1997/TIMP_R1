@@ -9,9 +9,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AtivadorDeProcessosPesquisaPorNomeDoProcessoPO extends TestBaseEliel {
+public class AtivadorDeProcessosPesquisaPorNomeDoProcessoPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[@class=\"icon icon-font-Sign-and-Symbols icon-checkbox\"]")
 	public WebElement ativadordeprocessos;
@@ -57,7 +57,7 @@ public class AtivadorDeProcessosPesquisaPorNomeDoProcessoPO extends TestBaseElie
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String	nome = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[6]/div")).getText();
+		String	nome = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][2]/div[6]/div")).getText();
 		
 		System.out.println("Nome do Registro:"+nome);
 		pesquisar.sendKeys(nome);
@@ -76,6 +76,7 @@ public class AtivadorDeProcessosPesquisaPorNomeDoProcessoPO extends TestBaseElie
 					.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["
 							+ j +"]/div[6]/div"))
 					.getText();
+			
 			System.out.println("Nome Filtro:"+Nomefiltro);
 			sucesso.add(nome.equals(Nomefiltro));
 

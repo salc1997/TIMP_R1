@@ -41,8 +41,9 @@ public class ConfiguracaoEExecucaoEditarPO extends TestBaseFernando{
 		
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();
-		
-		String idRegistro = idObter4();
+		sleep(2000);
+		//String idRegistro = idObter4();
+		String idRegistro = idObter("idConfiguracaoEExecucaco");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -53,9 +54,12 @@ public class ConfiguracaoEExecucaoEditarPO extends TestBaseFernando{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
 		waitExpectElement(inputInicioDeVigencia);
+
+		sleep(12000);
+
+		
+		
 		attributoNotToBeEmptyElement(inputInicioDeVigencia, "value");
 		
 		String valorOriginal = inputInicioDeVigencia.getAttribute("value");
@@ -67,19 +71,24 @@ public class ConfiguracaoEExecucaoEditarPO extends TestBaseFernando{
 		System.out.println("Inicio de Vigencia valor a enviar: " + valorAEnviar);
 		
 		inputInicioDeVigencia.clear();
-		inputInicioDeVigencia.sendKeys(valorAEnviar);
+		sleep(2000);
+		inputInicioDeVigencia.sendKeys(fechaManana());
 		sleep(2000);
 		
 		btnGravar.click();
 		sleep(2000);
 		
 		waitExpectElement(btnSim);
+		sleep(2000);
 		btnSim.click();
+		sleep(2000);
 		invisibilityOfElementOverlay();
+		sleep(2000);
 		
 		driver.navigate().refresh();
-		
+		sleep(2000);
 		invisibilityOfElementOverlay();
+		waitExpectElement(inputInicioDeVigencia);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);

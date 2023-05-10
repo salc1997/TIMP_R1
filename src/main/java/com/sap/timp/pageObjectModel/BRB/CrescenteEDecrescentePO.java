@@ -12,19 +12,19 @@ import com.sap.timp.base.TestBaseSteven;
 
 public class CrescenteEDecrescentePO extends TestBaseSteven {
 
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[4]")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[4]")
 	public WebElement opcao;
 
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
 	public WebElement ferramenta;
 
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div")
 	public WebElement menu;
 
 	@FindBy(xpath = "//*[@id=\"right\"]/div[2]/div[1]/div/div/ul/li[1]/button")
 	public WebElement executar;
 
-	@FindBy(xpath = "//div[@data-column=\"66\"]/span")
+	@FindBy(xpath = "//div[@class=\"tabs-container\"]//child::div[@data-column=\"66\"]/span")
 	public WebElement menuC;
 
 	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/div[1]/div")
@@ -75,12 +75,12 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		actionsMoveToElementXpath("//*[@data-column=\"126\"]");
+	//	actionsMoveToElementXpath("//div[@data-column=\"66\"]/span");
 
 		menuC.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		String valorPrimeiro = driver.findElement(By.xpath("//div[@class=\"column-filter visible\"][1]/input")).getAttribute("value");
 		System.out.println(valorPrimeiro);
@@ -89,14 +89,14 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 		WebElement valorPrimeiroE = driver.findElement(By.xpath("//div[@class=\"column-filter visible\"][1]/label/span"));
 		WebElement aplicar = driver.findElement(By.xpath("//button[text()=\"Aplicar\"]"));
 		if (valorPrimeroI == 0) {
-			sleep(1000);
+			sleep(25000);
 			valorPrimeiroE.click();
 			sleep(2000);
 			aplicar.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
-			actionsMoveToElementXpath("//*[@data-column=\"126\"]");
+			//actionsMoveToElementXpath("//div[@data-column=\"66\"]/span");
 
 			menuC.click();
 			waitExpectXpath("//*[@id=\"column-filters-apply\"]");
@@ -122,11 +122,11 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 		
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 
 		
-		actionsMoveToElementXpath("//*[@id=\"table-report-container\"]/div[1]/div[15]");
+	//	actionsMoveToElementXpath("//*[@id=\"table-report-container\"]/div[1]/div[15]");
 		
 		rows = driver.findElements(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: \")]")).size();
 		
@@ -185,9 +185,13 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 	}
 	
 	public ArrayList<Boolean> decrescente() {
-
-		actionsMoveToElementXpath("//*[@data-column=\"126\"]");
 		sleep(2000);
+		actionsMoveToElementXpath("//div[@id=\"table-report-container\"]/div[1]/div[14]");
+		sleep(18000);
+	
+		System.out.println("Recargo");
+		
+		actionsMoveToElementXpath("//div[@data-column=\"66\"]/span");
 		
 		menuC.click();
 		decrescente.click();
@@ -202,9 +206,9 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 
 		for (int i = 0; i < 10; i++) {
 			rows = driver.findElements(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: \")]")).size();
-			actionsMoveToElementXpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: "+rows+"\")]");
-			waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
-
+	//		actionsMoveToElementXpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: "+rows+"\")]");
+		//	waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+			sleep(5000);
 		}
 		
 		sleep(5000);
@@ -213,7 +217,7 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 
 		
-		actionsMoveToElementXpath("//*[@data-column=\"126\"]");
+	//	actionsMoveToElementXpath("//*[@data-column=\"126\"]");
 		
 		rows = driver.findElements(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: \")]")).size();
 		

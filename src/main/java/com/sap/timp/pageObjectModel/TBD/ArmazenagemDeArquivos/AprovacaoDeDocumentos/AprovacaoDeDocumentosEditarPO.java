@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AprovacaoDeDocumentosEditarPO extends TestBaseEliel {
+public class AprovacaoDeDocumentosEditarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Armazenagem de Arquivos\"]")
 	public WebElement armazenagemdearquivos;
@@ -37,6 +37,10 @@ public class AprovacaoDeDocumentosEditarPO extends TestBaseEliel {
 	public WebElement comentario;
 	
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
+	
+	
 	public AprovacaoDeDocumentosEditarPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -60,7 +64,7 @@ public class AprovacaoDeDocumentosEditarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("AprovacaoDeDocumentosCriar");
 		
 		System.out.println("Ultimo registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -77,7 +81,9 @@ public class AprovacaoDeDocumentosEditarPO extends TestBaseEliel {
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
+		
+		attributeToBeXpath("//div[@id=\"docType\"]/div", "class", "base-autocomplete required");
 		
 		String enviar = "Teste automatizado";
 		comentario.clear();
@@ -97,7 +103,14 @@ public class AprovacaoDeDocumentosEditarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
+	
+
+		int botaoNao = rows("//button[text()=\"Não\"]");
+		
+		if (botaoNao > 0) {
+			nao.click();
+		}
 		
 		armazenagemdearquivos.click();
 		sleep(2000);
@@ -127,7 +140,7 @@ public class AprovacaoDeDocumentosEditarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		
+		attributeToBeXpath("//div[@id=\"docType\"]/div", "class", "base-autocomplete required");
 		String comentario1 = comentario.getAttribute("value");
 		System.out.println(comentario1);
 

@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegraDeEscritucacaoExcluirPO extends TestBaseEliel{
+public class RegraDeEscritucacaoExcluirPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Lixeira\"]")
 	public WebElement lixeira;
@@ -54,7 +54,7 @@ public class RegraDeEscritucacaoExcluirPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("RegraDeEscrituracao");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement lixeira1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
@@ -72,7 +72,7 @@ public class RegraDeEscritucacaoExcluirPO extends TestBaseEliel{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(mensagembloqueio);
+		//waitExpectElement(mensagembloqueio);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -135,7 +135,7 @@ public class RegraDeEscritucacaoExcluirPO extends TestBaseEliel{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(mensagem);
+		//waitExpectElement(mensagem);
 		sleep(3000);
 
 		lixeira.click();

@@ -173,7 +173,7 @@ public class EliminacoesDaConsolidacaoDetalhesPO extends TestBaseKenssy {
 		numSociedadePerceiraNegociosValor1 = numSociedadePerceiraNegociosValor1.replace("-", "");
 		
 		String valorPeriodicoenMonedaValor1 = valorPeriodicoenMonedaD1.getText();
-		valorPeriodicoenMonedaValor1 = valorPeriodicoenMonedaValor1.replace("-", "");
+		//valorPeriodicoenMonedaValor1 = valorPeriodicoenMonedaValor1.replace("-", "");
 		
 		String tipoDocumentoValor1 = tipoDocumentoD1.getText();
 		tipoDocumentoValor1 = tipoDocumentoValor1.replace("-", "");

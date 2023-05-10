@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class GrupoDeEstruturasExcluirEmMassaPO extends TestBaseEliel{
+public class GrupoDeEstruturasExcluirEmMassaPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Grupo de Estruturas\"]")
 	public WebElement grupodeestrutura;
@@ -55,6 +55,9 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@class=\" toast-inner\"]")
 	public WebElement mensagem;
 	
+	@FindBy(xpath = "//div[@class=\"th sortable\"]//span[text()=\"ID\"]")
+	public WebElement ordenar;
+	
 	public GrupoDeEstruturasExcluirEmMassaPO() {
 
 		PageFactory.initElements(driver, this);
@@ -95,6 +98,9 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBaseEliel{
 	
 		gravar.click();
 		sleep(2000);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(7000);
 		grupodeestrutura.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -117,7 +123,7 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBaseEliel{
 		sleep(2000);
 	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		grupodeestrutura.click();
 		
 		sleep(2000);
@@ -132,6 +138,9 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBaseEliel{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
+		sleep(2000);
+		
+		ordenar.click();
 		sleep(2000);
 		
 		
@@ -164,7 +173,7 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBaseEliel{
 		}
 		System.out.println(sucesso);
 		
-		
+		System.out.println("paso criar");
 		return sucesso;
 		
 		
@@ -177,7 +186,6 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBaseEliel{
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-
 		
 		WebElement check1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/label/span"));
 		check1.click();
@@ -188,7 +196,6 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBaseEliel{
 		
 		WebElement check2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/label/span"));
 		check2.click();
-		
 		sleep(1000);
 		
 		excluirMassa.click();
@@ -199,7 +206,11 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBaseEliel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		  
+		driver.navigate().refresh(); 
+		waitExpectElement(siguiente); 
+		sleep(2000);
+		  
 		grupodeestrutura.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -211,8 +222,13 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size(); 
+	  String id = "0";
+	  
+	  if(rows > 0) { 
+		  id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
+		  System.out.println(id); 
+	  }
 		
 		int id1 = convertToInt(id);
 		int id2 = convertToInt(idRegistro1);

@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegistroM410CriarPO extends TestBaseEliel{
+public class RegistroM410CriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
@@ -150,11 +150,11 @@ public class RegistroM410CriarPO extends TestBaseEliel{
 		empresa.click();
 		sleep(1000);
 		opcao.click();
-		sleep(1000);
+		sleep(6000);
 		
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
-		sleep(3000);
+		//attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		sleep(6000);
 		
 		uf.click();
 		sleep(1000);
@@ -214,7 +214,7 @@ public class RegistroM410CriarPO extends TestBaseEliel{
 			rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 			String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 			
-			idInserir1(id2);
+			idInserir("ApuraçãodeCréditoTributárioPISRegistroM410",id2);
 			int idD = convertToInt(idRegistro);
 			int id2D = convertToInt(id2);
 			
@@ -243,7 +243,7 @@ public class RegistroM410CriarPO extends TestBaseEliel{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		idInserir1(id2);
+		idInserir("ApuraçãodeCréditoTributárioPISRegistroM410",id2);
 		int idD = convertToInt(idRegistro);
 		int id2D = convertToInt(id2);
 		

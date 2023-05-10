@@ -22,16 +22,16 @@ public class LeiautesExecucacoFuncionalidades4Pt3PO extends TestBaseFernando{
 	@FindBy(xpath = "//span[text()=\"Adicionar bloco\"]")
 	public WebElement btnAdicionarBloco;
 	
-	@FindBy(xpath = "//div[@block-id=\"0\"]/div/div/div[3]/button")
+	@FindBy(xpath = "//div[@block-id=\"2\"]/div/div/div[3]/button")
 	public WebElement adicionarRegistro3;
 	
 	@FindBy(xpath = "//span[text()=\"Campos Especiais\"]")
 	public WebElement btnCamposEspeciais;
 	
-	@FindBy(xpath = "//div[@block-id=\"0\"]/div/div/div[@class=\"block-name\"]/div/div[2]/div/div/div[2]/input")
+	@FindBy(xpath = "//div[@block-id=\"2\"]/div/div/div[@class=\"block-name\"]/div/div[2]/div/div/div[2]/input")
 	public WebElement nombreBloco3;
 	
-	@FindBy(xpath = "//div[@block-id=\"0\"]/div/div/div[@class=\"record-name\"]/div/div[2]/div/div/div[2]/input")
+	@FindBy(xpath = "//div[@block-id=\"2\"]/div/div/div[@class=\"record-name\"]/div/div[2]/div/div/div[2]/input")
 	public WebElement nombreRegistro3;
 	
 	@FindBy(xpath = "//div/span[text()=\"Ajustes Fiscais\"][1]")
@@ -84,9 +84,10 @@ public class LeiautesExecucacoFuncionalidades4Pt3PO extends TestBaseFernando{
 		btnUltimaPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 
 		String idRegistro = idObter1();
+		//String idRegistro = "1879";
 		System.out.println("");
 		System.out.println("ID Registro: " + idRegistro);
 		System.out.println("");
@@ -128,25 +129,32 @@ public class LeiautesExecucacoFuncionalidades4Pt3PO extends TestBaseFernando{
 		
 		//ARRASTRAR ELEMENTOS
 		
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		moveToElement(codigoEmpresa, driver.findElement(By.xpath("//div[@block-id=\"0\"]/div[@class=\"columns-container\"]/div")));
+		actionsMoveToElementXpath("//*[@id=\"block-list-wrapper\"]/div[3]/div[3]/div/div[5]");
 		sleep(2000);
 		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		moveToElement(codigoFilial, driver.findElement(By.xpath("//div[@block-id=\"0\"]/div[@class=\"columns-container\"]/div")));
+		moveToElement(codigoEmpresa, driver.findElement(By.xpath("//div[@block-id=\"2\"]/div[@class=\"columns-container\"]/div")));
+		sleep(2000);
+		
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		moveToElement(codigoFilial, driver.findElement(By.xpath("//div[@block-id=\"2\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		moveToElement(dataLanzamento, driver.findElement(By.xpath("//div[@block-id=\"0\"]/div[@class=\"columns-container\"]/div")));
+		moveToElement(dataLanzamento, driver.findElement(By.xpath("//div[@block-id=\"2\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		moveToElement(valorAjuste, driver.findElement(By.xpath("//div[@block-id=\"0\"]/div[@class=\"columns-container\"]/div")));
+		moveToElement(valorAjuste, driver.findElement(By.xpath("//div[@block-id=\"2\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
 		
 		abaAjusteFiscais.click();
@@ -158,7 +166,7 @@ public class LeiautesExecucacoFuncionalidades4Pt3PO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		actionsMoveToElementElement(campoSequencia);
-		moveToElement(campoSequencia, driver.findElement(By.xpath("//div[@block-id=\"0\"]/div[@class=\"columns-container\"]/div")));
+		moveToElement(campoSequencia, driver.findElement(By.xpath("//div[@block-id=\"2\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);		
 		
 		waitExpectElement(sequenciamentoLinha);

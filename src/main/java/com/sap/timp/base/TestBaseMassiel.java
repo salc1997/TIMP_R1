@@ -1,7 +1,10 @@
+
 package com.sap.timp.base;
 
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.format.TextStyle;
@@ -13,7 +16,7 @@ import java.util.HashMap;
 import java.util.Locale;
 
 import java.util.Map;
-
+import java.util.concurrent.TimeUnit;
 import java.util.prefs.Preferences;
 
 import org.openqa.selenium.WebDriver;
@@ -24,7 +27,6 @@ import org.openqa.selenium.interactions.Actions;
 
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-
 
 public class TestBaseMassiel extends TestBaseSteven {
 
@@ -45,15 +47,14 @@ public class TestBaseMassiel extends TestBaseSteven {
 		prefs.put("credentials_enable_service", false);
 		prefs.put("profile.password_manager_enabled", false);
 		options.setExperimentalOption("prefs", prefs);
+		
+		//options.addArguments("--headless");
         
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-
-
 		driver.get(tc2);
 
-
-	   return driver;
+	    return driver;
 	}
 	//PARA PODER EJECUTAR TA-518
 	public String dataanterior() {
@@ -67,6 +68,7 @@ public class TestBaseMassiel extends TestBaseSteven {
 	}
 	
 	public String diaHoy() {
+		
 		Calendar c1 = Calendar.getInstance();
 		Calendar c2 = new GregorianCalendar();
 		
@@ -76,6 +78,25 @@ public class TestBaseMassiel extends TestBaseSteven {
 		return dia;
 
 	}
+	
+	public String diaDespues() {
+		
+		DateFormat df = new SimpleDateFormat ("d");
+		Calendar cal = Calendar.getInstance();
+		cal.add (Calendar.DATE, +1);
+		
+		return df.format(cal.getTime());
+	}
+	
+	public String diaActual() {
+		
+		// Obtienes el mes actual
+		int anio = LocalDate.now().getDayOfMonth();
+		
+		String anioString = String.valueOf(anio);
+		return anioString;
+	}
+	
 	
 	public void closeSelectTypeCheckbox(WebElement element) {
 		new Actions(driver).moveToElement(element).click().perform();
@@ -251,6 +272,23 @@ public class TestBaseMassiel extends TestBaseSteven {
 
 	}
 	
+	public String fechaPasadoManana() {
 
+		Date fecha = new Date();
 
+		Date ayer = new Date(fecha.getTime() + TimeUnit.DAYS.toMillis(+2));
+
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+
+		return df.format(ayer);
+
+	}
+	
+
+	
 }
+
+
+	
+
+

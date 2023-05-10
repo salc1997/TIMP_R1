@@ -46,7 +46,7 @@ public class CadastroContaisContabeisFiltroID extends TestBaseMassiel{
 		boolean sucesso = cadastroContasContábeisFiltroIdPO.filtro();
 
 		assertTrue(sucesso, Filtros);
-
+		sleep(2000);
 
 	}
 

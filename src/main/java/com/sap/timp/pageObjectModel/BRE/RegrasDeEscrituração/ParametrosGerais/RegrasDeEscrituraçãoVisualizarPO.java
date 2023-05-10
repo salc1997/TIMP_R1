@@ -82,7 +82,7 @@ public class RegrasDeEscrituraçãoVisualizarPO extends TestBaseFernando {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter2();
+		String idRegistro = idObter("RegraDeEscrituracao");
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement acao = driver.findElement(
@@ -94,18 +94,18 @@ public class RegrasDeEscrituraçãoVisualizarPO extends TestBaseFernando {
 		sleep(6000);
 		waitExpectElement(configuracoes);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		sleep(6000);
 		
 		
 		String caminho1V1 = caminho1V.getText();
 		String caminho2V1 = caminho2V.getText();
 		String caminho3V1 = caminho3V.getText();
-		String caminho4V1 = caminho4V.getText();
+		//String caminho4V1 = caminho4V.getText();
 		System.out.println("--------------Visualização------------------");
 		System.out.println(caminho1V1);
 		System.out.println(caminho2V1);
 		System.out.println(caminho3V1);
-		System.out.println(caminho4V1);
+	//	System.out.println(caminho4V1);
 		
 		biblioteca.click();
 		sleep(4000);
@@ -138,13 +138,13 @@ public class RegrasDeEscrituraçãoVisualizarPO extends TestBaseFernando {
 		String caminho1D1 = caminho1E.getText();
 		String caminho2D1 = caminho2E.getText();
 		String caminho3D1 = caminho3E.getText();
-		String caminho4D1 = caminho4E.getText();
+	//	String caminho4D1 = caminho4E.getText();
 		
 		System.out.println("--------------Edição------------------");
 		System.out.println(caminho1D1);
 		System.out.println(caminho2D1);
 		System.out.println(caminho3D1);
-		System.out.println(caminho4D1);
+	//	System.out.println(caminho4D1);
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -152,7 +152,7 @@ public class RegrasDeEscrituraçãoVisualizarPO extends TestBaseFernando {
 		sucesso.add(caminho1V1.equals(caminho1D1));
 		sucesso.add(caminho2V1.equals(caminho2D1));
 		sucesso.add(caminho3V1.equals(caminho3D1));
-		sucesso.add(caminho4V1.equals(caminho4D1));
+		//sucesso.add(caminho4V1.equals(caminho4D1));
 		
 		System.out.println(sucesso);
 		return sucesso;

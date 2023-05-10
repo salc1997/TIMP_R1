@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasdeNegócioExcluirdefinitivamentePO extends TestBaseCristhian{
+public class RegrasdeNegócioExcluirdefinitivamentePO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Regras de Negócio\"]")
 	public WebElement rNegocio;
@@ -41,7 +41,7 @@ public class RegrasdeNegócioExcluirdefinitivamentePO extends TestBaseCristhian{
 	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componente;
 	
-	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componente2;
 	
 	@FindBy(xpath = "//li[text()=\"TAA\"]")
@@ -138,7 +138,8 @@ public class RegrasdeNegócioExcluirdefinitivamentePO extends TestBaseCristhian{
 	@FindBy(xpath = "//input[@placeholder=\"Descrição\"]")
 	public WebElement body;
 	
-
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
+	public WebElement componenteTQ2;
 	
 	public RegrasdeNegócioExcluirdefinitivamentePO() {
 
@@ -153,13 +154,15 @@ public boolean criar() {
 	boolean tp1  = false;
 	boolean tc2  = false;
 	boolean tq1  = false;
-
+	boolean tq2  = false;
 	if (url.contains("tq1")) {
 		tq1 = true;
 	}else if(url.contains("tc2")){
 		tc2 = true;
 	}else if(url.contains("tp1")){
 		tp1 = true;
+	}else if(url.contains("tq2")){
+		tq2 = true;
 	}
 	
 		sleep(2000);
@@ -186,7 +189,7 @@ public boolean criar() {
 		novo.click();
 		
 	
-		sleep(6000);
+		sleep(12000);
 		
 		nome.sendKeys("PRUEBA QA 007");
 		sleep(2000);
@@ -213,6 +216,12 @@ public boolean criar() {
 			sleep(1000);
 			
 			
+		}else if (tq2 == true) {
+			componenteTQ2.click();
+			sleep(1000);
+			opcComponente.click();
+			sleep(1000);
+		
 		}else {
 			
 			componente2.click();
@@ -242,7 +251,7 @@ public boolean criar() {
 		caracteristicas.click();
 		sleep(3000);
 		opcCaracteristicas.click();
-		sleep(4000);
+		sleep(8000);
 		
 		
 		
@@ -268,6 +277,15 @@ public boolean criar() {
 
 			
 			
+		}else if (tq2 == true) {
+			abas.click();
+			sleep(3000);
+			opcAbas1.click();
+			
+			sleep(1000);
+			opcAbas1.sendKeys(Keys.ESCAPE);
+			sleep(3000);
+		
 		}else {
 			
 			abas.click();
@@ -326,6 +344,12 @@ public boolean criar() {
 			closeSelectTypeCheckbox(acoes);
 			
 			
+		}else if (tq2 == true) {
+			acoes.click();
+			sleep(2000);
+			opcAcoes1.click();
+			sleep(2000);
+			closeSelectTypeCheckbox(acoes);
 		}else {
 			
 			acoes.click();
@@ -353,12 +377,12 @@ public boolean criar() {
 		
 		aceitar.click();
 
-		sleep(2000);
+		sleep(19000);
 		
 		biblioteca.click();
 		
 		sleep(2000);
-		sim.click();
+		//sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		sleep(2000);
@@ -376,7 +400,7 @@ public boolean criar() {
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir3(idB);
+		idInserir("RegrasDeNegocioCriar1",idB);
 		sleep(2000);
 		System.out.println("ID: "+id);
 		System.out.println("IDB: "+idB);
@@ -414,7 +438,7 @@ public boolean lexeira() {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
 	
-	String idRegistro = idObter3();
+	String idRegistro = idObter("RegrasDeNegocioCriar1");
 	WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 	WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
@@ -477,7 +501,7 @@ public boolean excluirDefinitivo() {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
 	
-	String idRegistro = idObter3();
+	String idRegistro = idObter("RegrasDeNegocioCriar1");
 	WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 	WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion

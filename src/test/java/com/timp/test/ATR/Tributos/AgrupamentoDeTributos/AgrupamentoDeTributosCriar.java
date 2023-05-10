@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarPO;
 
-public class AgrupamentoDeTributosCriar extends TestBaseEliel{
+public class AgrupamentoDeTributosCriar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
 	AgrupamentoDeTributosCriarPO agrupamentoDeTributosCriarPO;
@@ -19,7 +19,7 @@ public class AgrupamentoDeTributosCriar extends TestBaseEliel{
 	@BeforeClass
 	  public void beforeClass() {
 		  
-		  driver = initializationE();
+		  driver = initialization();
 		  loginTC = new LoginTC();
 		  acessarATRPO = new AcessarATRPO();
 		  agrupamentoDeTributosCriarPO = new  AgrupamentoDeTributosCriarPO();
@@ -27,27 +27,21 @@ public class AgrupamentoDeTributosCriar extends TestBaseEliel{
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
 	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
 
-	 	}
-
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
+	 	@Test()
 	 	public void criar() {
+	 		
+	 		loginTC.login();
+	 		acessarATRPO.acessarATR();
+	 		
 	 		
 	 		boolean sucesso = agrupamentoDeTributosCriarPO.criar();
 			assertTrue(sucesso, Criar);
-		
+			sleep(2000);
 	 		
 	 	}
 }

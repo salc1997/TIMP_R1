@@ -182,16 +182,16 @@ public class AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO extends TestBaseKenss
 			
 		
 
-		valor.sendKeys("987");
+		valor.sendKeys("900");
 		sleep(1000);
 
-		fatorAcum.sendKeys("765");
+		fatorAcum.sendKeys("450");
 		sleep(1000);
 
-		taxa.sendKeys("432");
+		taxa.sendKeys("420");
 		sleep(1000);
 
-		valorPeriodo.sendKeys("3318");
+		valorPeriodo.sendKeys("4455");
 		sleep(1000);
 
 

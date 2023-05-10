@@ -72,7 +72,6 @@ public class ConfiguracaoEExecucaoRegistro1200FiltrosAvansadosPO extends TestBas
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		registro1200.click();
-		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -82,7 +81,7 @@ public class ConfiguracaoEExecucaoRegistro1200FiltrosAvansadosPO extends TestBas
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("id-GCT-ICMS-ConfiguracaoEExecucacoRegistro1200");
 		System.out.println(idRegistro);
 		
 		pesquisarID.sendKeys(idRegistro);
@@ -139,6 +138,8 @@ public class ConfiguracaoEExecucaoRegistro1200FiltrosAvansadosPO extends TestBas
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		sleep(13000);
+		
 		uf.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -150,12 +151,12 @@ public class ConfiguracaoEExecucaoRegistro1200FiltrosAvansadosPO extends TestBas
 		opcUf.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		sleep(14000);
 		
 		filial.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		
 		WebElement opcfilial = driver
 				.findElement(By.xpath("//li[text()=\""+ this.textFilial + "\"]"));
@@ -163,7 +164,7 @@ public class ConfiguracaoEExecucaoRegistro1200FiltrosAvansadosPO extends TestBas
 		opcfilial.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		pesquisar.click();
 		sleep(2000);

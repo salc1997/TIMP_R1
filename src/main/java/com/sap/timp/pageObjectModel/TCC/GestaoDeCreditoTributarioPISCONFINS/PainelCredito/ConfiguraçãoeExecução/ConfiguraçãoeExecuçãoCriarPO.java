@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ConfiguraçãoeExecuçãoCriarPO extends TestBaseCristhian {
+public class ConfiguraçãoeExecuçãoCriarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
@@ -39,10 +39,10 @@ public class ConfiguraçãoeExecuçãoCriarPO extends TestBaseCristhian {
 	@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[2]")
 	public WebElement filial;
 	
-	@FindBy(xpath = "//*[@id=\"1000_RJ_0001\"]/div[1]/label/span")
+	@FindBy(xpath = "//div[@id=\"1000_RJ_0001\"]/div[1]/label/span")
 	public WebElement filialOPC;
 	
-	@FindBy(xpath = "//*[@id=\"1000_RJ_0001\"]/div[1]/label/span")
+	@FindBy(xpath = "//*[@id=\"1000_SP_0001\"]/div[1]/label/span")
 	public WebElement filialOPCTP1;
 	
 	@FindBy(xpath = "//*[@id=\"1000_SP_0001\"]/div[1]/label/span")
@@ -103,8 +103,8 @@ public class ConfiguraçãoeExecuçãoCriarPO extends TestBaseCristhian {
 		} else {
 			tp1 = true;
 		}
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		actionsMoveToElementElement(gestaoCredito);
 		sleep(2000);
@@ -142,32 +142,33 @@ public class ConfiguraçãoeExecuçãoCriarPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		closeSelectTypeCheckbox(empresa);
-		sleep(4000);
+		sleep(10000);
 		
 		filial.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		if (tq1 == true) {
 			filialOPCTQ1.click();
 			sleep(2000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+			/*invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);*/
 			closeSelectTypeCheckbox(filial);
 			sleep(4000);
-		}else if (tp1== true) {
-			filialOPCTP1.click();
-			sleep(2000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
-			closeSelectTypeCheckbox(filial);
-			sleep(4000);
-		}else {
+		}else if (tc2== true) {
 			filialOPC.click();
 			sleep(2000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			/*invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);*/
+			closeSelectTypeCheckbox(filial);
+			sleep(4000);
+		}else  if (tp1== true){
+			
+			filialOPCTP1.click();
 			sleep(2000);
+			/*invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);*/
 			closeSelectTypeCheckbox(filial);
 			sleep(4000);
 		}
@@ -236,7 +237,8 @@ public class ConfiguraçãoeExecuçãoCriarPO extends TestBaseCristhian {
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
 		
-		idInserir1(id2);
+		idInserir("idPainelCreditoConfiguracaoEExecucaco",id2);
+		//idInserir1(id2);
 
 		
 		int idD = convertToInt(idRegistro);

@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class KpisCartaoIndicadorEditarPO extends TestBaseEliel {
+public class KpisCartaoIndicadorEditarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Kpi's\"]")
 	public WebElement kpis;
@@ -111,7 +111,7 @@ public class KpisCartaoIndicadorEditarPO extends TestBaseEliel {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter2();
+		String idRegistro = idObter("KpisCriar");
 		
 		System.out.println("Ultimo registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -141,10 +141,10 @@ public class KpisCartaoIndicadorEditarPO extends TestBaseEliel {
 		sleep(2000);
 		
 		waitExpectElement(cabecalho);
-		sleep(2000);
+		sleep(6000);
 		
 		conteudo.click();
-		sleep(2000);
+		sleep(4000);
 		campos.click();
 		sleep(2000);
 		opcaocampos.click();

@@ -51,7 +51,7 @@ public class RegraDeMensagensRelacionamentoPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter1();
+		String idRegistro = idObter("RegraDeMensagens");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
@@ -67,16 +67,16 @@ public class RegraDeMensagensRelacionamentoPO extends TestBaseFernando{
 		
 		waitExpectElement(btnSeleccionarRelacionamento);
 		btnSeleccionarRelacionamento.click();
-		sleep(2000);
+		sleep(6000);
 		
-		waitExpectElement(cboRelacionamentoElementoDeEstrutura);
+		
 		cboRelacionamentoElementoDeEstrutura.click();
 		sleep(1000);
 		
 		String URL = driver.getCurrentUrl();
 		
 		if(URL.contains("tc2")) {
-			opcion = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and text()=\"ID 47-Ajustes Fiscais\"]"));
+			opcion = driver.findElement(By.xpath("//div[@class=\"list-item\" and @id=\"39\"]/div[2]"));
 		}
 		
 		if(URL.contains("tp1")) {
@@ -137,7 +137,7 @@ public class RegraDeMensagensRelacionamentoPO extends TestBaseFernando{
 		
 		waitExpectElement(btnSeleccionarRelacionamento);
 		btnSeleccionarRelacionamento.click();
-		sleep(2000);
+		sleep(6000);
 		
 		waitExpectElement(cboRelacionamentoElementoDeEstrutura);
 		

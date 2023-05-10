@@ -42,5 +42,6 @@ public class ResponsavelMovimentoExcluir extends TestBaseSteven {
 		boolean sucesso = responsavelMovimentoExcluirPO.eliminar();
 
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 }

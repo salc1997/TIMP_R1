@@ -12,10 +12,10 @@ import org.openqa.selenium.remote.NewSessionPayload;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseSteven;
 
-public class CadastroFornecedorFiltroIdPO extends TestBaseKathy {
+public class CadastroFornecedorFiltroIdPO extends TestBaseSteven {
 
 	@FindBy(xpath = "//span[text()=\"Parâmetros de Criação de Nota Fiscal\"]")
 	public WebElement parametrosCriacaoNotaFiscal;

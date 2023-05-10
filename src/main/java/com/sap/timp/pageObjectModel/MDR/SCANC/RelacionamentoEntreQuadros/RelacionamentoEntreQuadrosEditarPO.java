@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RelacionamentoEntreQuadrosEditarPO extends TestBaseEliel {
+public class RelacionamentoEntreQuadrosEditarPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//span[text()=\"SCANC\"]")
@@ -49,7 +49,7 @@ public class RelacionamentoEntreQuadrosEditarPO extends TestBaseEliel {
 	public WebElement quadro;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Data de Inicio de Vigência\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Data de Início de Vigência\"]")
 	public WebElement datainicial;
 	
 	
@@ -119,8 +119,9 @@ public class RelacionamentoEntreQuadrosEditarPO extends TestBaseEliel {
 		attributoNotToBeEmptyElement(datainicial, "value");
 		String valor = datainicial.getAttribute("value");
 
-		String enviar = dataanterior();
-
+		String enviar = fechaActual();
+		System.out.println(enviar);
+		
 		datainicial.clear();
 		sleep(2000);
 		datainicial.sendKeys(enviar);
@@ -141,11 +142,11 @@ public class RelacionamentoEntreQuadrosEditarPO extends TestBaseEliel {
 		
 		
 		attributeToBeXpath("//div[@id=\"tax-type-relationships\"]/div", "class", "base-select required");
-		sleep(3000);
+		sleep(6000);
 		
 		waitExpectElement(datainicial);
 		
-		sleep(3000);
+		sleep(6000);
 		String novoTexto=datainicial.getAttribute("value");
 		
 		System.out.println(valor);

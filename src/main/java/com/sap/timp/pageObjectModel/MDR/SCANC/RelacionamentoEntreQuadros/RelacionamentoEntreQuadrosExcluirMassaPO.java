@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RelacionamentoEntreQuadrosExcluirMassaPO extends TestBaseCristhian {
+public class RelacionamentoEntreQuadrosExcluirMassaPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"SCANC\"]")
 	public WebElement scanc;
@@ -50,7 +50,7 @@ public class RelacionamentoEntreQuadrosExcluirMassaPO extends TestBaseCristhian 
 	public WebElement quadro;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Data de Inicio de Vigência\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Data de Início de Vigência\"]")
 	public WebElement datainicial;
 	
 	

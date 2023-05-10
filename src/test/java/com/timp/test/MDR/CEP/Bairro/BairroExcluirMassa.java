@@ -48,5 +48,6 @@ public class BairroExcluirMassa extends TestBaseFernando{
 	public void excluirMassa() {
 		boolean sucesso = bairroExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 }

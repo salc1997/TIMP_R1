@@ -26,7 +26,7 @@ public class CodigoContabilizacaoFiltrosAvanPO extends TestBaseKenssy {
 	
 	@FindBy(xpath = "//div[@id=\"codEmpresa\"]/div/div/div[2]")
 	public WebElement empresa;
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][1]")
+	@FindBy(xpath = "//li[text()=\"6911\"]")
 	public WebElement opcEmpresa;
 	
 	@FindBy(xpath = "//*[@id=\"dataIniVigencia\"]/div/div[1]/input")
@@ -84,11 +84,22 @@ public class CodigoContabilizacaoFiltrosAvanPO extends TestBaseKenssy {
 	}
 	
 	public ArrayList<Boolean> filtroDataIniVigencia() {
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		codigoscontabilizacao.click();
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		limpar.click();
+		
+		filtros.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+//		sleep(2000);
+//		limpar.click();
+//		sleep(2000);
+//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//		sleep(2000);
 		
 //		filtros.click();
 //		sleep(2000);

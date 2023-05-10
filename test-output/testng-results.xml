@@ -2,15 +2,26 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2023-05-08T21:23:42Z" name="Default suite" finished-at="2023-05-08T21:29:50Z" duration-ms="367833">
+=======
+  <suite started-at="2023-05-08T17:43:01 UTC" name="Default suite" finished-at="2023-05-08T17:44:35 UTC" duration-ms="93452">
+>>>>>>> refs/remotes/origin/Yessy
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2023-05-08T21:23:42Z" name="Default test" finished-at="2023-05-08T21:29:50Z" duration-ms="367833">
       <class name="com.timp.test.BRB.AcessarBRB">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.AcessarBRB@4a003cbe]" started-at="2023-05-08T21:23:42Z" name="beforeClass" finished-at="2023-05-08T21:23:47Z" duration-ms="4734" status="PASS">
+=======
+    <test started-at="2023-05-08T17:43:01 UTC" name="Default test" finished-at="2023-05-08T17:44:35 UTC" duration-ms="93452">
+      <class name="com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@61001b64]" started-at="2023-05-08T17:43:01 UTC" name="beforeClass" finished-at="2023-05-08T17:43:04 UTC" duration-ms="3123" status="PASS">
+>>>>>>> refs/remotes/origin/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.AcessarBRB@4a003cbe]" started-at="2023-05-08T21:23:47Z" name="brbEntrar" finished-at="2023-05-08T21:29:50Z" duration-ms="363078" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
@@ -144,6 +155,58 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.timp.test.BRB.AcessarBRB -->
+=======
+        <test-method signature="filtro()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@61001b64]" started-at="2023-05-08T17:43:04 UTC" name="filtro" finished-at="2023-05-08T17:44:35 UTC" duration-ms="90287" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Os resultados não são acorde aos filtros expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Os resultados não são acorde aos filtros expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID.filtro(CarregamentoDeArquivosFiltroPorID.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@61001b64]" started-at="2023-05-08T17:44:35 UTC" name="afterClass" finished-at="2023-05-08T17:44:35 UTC" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID -->
+>>>>>>> refs/remotes/origin/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

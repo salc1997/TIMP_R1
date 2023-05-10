@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegistroRPDetalhesPO extends TestBaseEliel {
+public class RegistroRPDetalhesPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Siscoserv\"]")
 	public WebElement siscoserv;
@@ -37,7 +37,7 @@ public class RegistroRPDetalhesPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[7]/div/div")
 	public WebElement numerododeclaracao;
 	
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[14]/div/div")
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[16]/div/div")
 	public WebElement ativo;
 	
 	
@@ -187,6 +187,8 @@ public class RegistroRPDetalhesPO extends TestBaseEliel {
 		sucesso.add(valorrecebidovisualizar.equals(valorrecebidodetalhes));
 		sucesso.add(numerododeclaracaovisualizar.equals(numerododeclaracaodetalhes));
 		sucesso.add(ativovisualizar.equals(ativodetalhes));
+		
+		System.out.println(sucesso);
 		
 		return sucesso;
 	}

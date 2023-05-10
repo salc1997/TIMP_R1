@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
-import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFavoritosPO;
-import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoRaizPO;
+import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguracaoConfiguracaoFavoritosPO;
+import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguracaoConfiguracaoRaizPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -17,7 +17,7 @@ import org.testng.annotations.AfterClass;
 public class ParametrosGeraisConfiguraçãoConfiguraçãoRaiz extends TestBaseKenssy{
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
-	ParametrosGeraisConfiguraçãoConfiguraçãoRaizPO parametrosGeraisConfiguraçãoConfiguraçãoRaizPO;
+	ParametrosGeraisConfiguracaoConfiguracaoRaizPO parametrosGeraisConfiguraçãoConfiguraçãoRaizPO;
 
 
 	@BeforeClass
@@ -25,35 +25,27 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoRaiz extends TestBaseKenssy
 		driver = initializationKen();
 		loginTC = new LoginTC();
 		acessarBCBPO = new AcessarBCBPO();
-		parametrosGeraisConfiguraçãoConfiguraçãoRaizPO = new ParametrosGeraisConfiguraçãoConfiguraçãoRaizPO();
+		parametrosGeraisConfiguraçãoConfiguraçãoRaizPO = new ParametrosGeraisConfiguracaoConfiguracaoRaizPO();
 
 
 	}
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
 
-		loginTC.login();
 
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-		boolean sucesso = acessarBCBPO.acessar();
-		System.out.println(sucesso);
-		assertTrue(sucesso,Acessar);
-
-	}
-	
-	@Test(priority = 2)
+	@Test()
 	public void criarConfiguracao() {
+		loginTC.login();
+		acessarBCBPO.acessar();
+		
 		boolean sucesso = parametrosGeraisConfiguraçãoConfiguraçãoRaizPO.raizConfiguracao();
 		assertTrue(sucesso, "O registro existe na raiz");
+		
+		sleep(3000);
 	
 	}
 

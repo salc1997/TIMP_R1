@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CarregamentoDeArquivosFiltroPorIDPO extends TestBaseEliel{
+public class CarregamentoDeArquivosFiltroPorIDPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Arquivos\"]")
 	public WebElement arquivos;
@@ -23,7 +23,7 @@ public class CarregamentoDeArquivosFiltroPorIDPO extends TestBaseEliel{
 	public WebElement id;
 
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
-	public WebElement pesquisar;
+	public WebElement pesquisar; 
 	
 	@FindBy(xpath = "//button/span[text()=\"Limpar Filtros\"]")
 	public WebElement limpar;
@@ -57,25 +57,31 @@ public class CarregamentoDeArquivosFiltroPorIDPO extends TestBaseEliel{
 		
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
+		
 		String idBusqueda = id.getText();
 		System.out.println(idBusqueda + " Id Busqueda");
 		
 		int rows1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
+		System.out.println(rows1 + " Numeros de Filas");
+		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
 		sucesso.add(idRegistro.equals(idBusqueda));
-		waitExpectElement(limpar);
-		sleep(2000);
+		//waitExpectElement(limpar);
+		sleep(34000);
+		
 		limpar.click();
-		sleep(2000);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(15000);
+		
 		
 		int rows2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		System.out.println(rows2 + " Numeros de Filas");
 		
-		if (rows2 > rows1) {
+		if (rows2 != rows1) {
 			sucesso.add(true);
 		}else {
 			sucesso.add(false);

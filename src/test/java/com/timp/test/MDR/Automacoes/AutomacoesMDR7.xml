@@ -10,7 +10,13 @@
 			<class 
 			name="com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFCriar"></class>
 			<class 
+			name="com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFEditar"></class>
+			<class 
+			name="com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFVisualizar"></class>
+			<class 
 			name="com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFLeiaute"></class>
+			<class 
+			name="com.timp.test.MDR.CadastrosIRPJCSLL.TabelaDeApoioECF.TabelaDeApoioECFTabela"></class>
 			
 		</classes>
 	</test> 
@@ -25,7 +31,7 @@
 			name="com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisEditar"></class>
 			<class 
 			name="com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisExluir"></class>
-			
+			<class name="com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisExcluirEmMassa"></class>
 		</classes>
 	</test> 
 	
@@ -100,6 +106,10 @@
 			name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIVisualizar">
 			</class>
 			<class 
+			name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIExcluir">
+			</class>
+			
+			<class 
 			name="com.timp.test.MDR.TabelasApoioSped.ClassificaçaoDeContribuintesDoIPI.ClassificaçaoDeContribuintesDoIPIExcluirMassa">
 			</class>
 		</classes>
@@ -108,24 +118,14 @@
 	<test name="Tabela de Apoio ECD	> Código dos Fatos Contábeis">
 		<classes>		
 			<!-- Tabela de Apoio ECD	> Código dos Fatos Contábeis -->
-			<class 
-			name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisCriar">
-			</class>
-			<class 
-			name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisDetalhe">
-			</class>
-			<class 
-			name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisEditar">
-			</class>
-			<class 
-			name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisFiltrar">
-			</class>
-			<class 
-			name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisVisualizar">
-			</class>
-			<class 
-			name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisExluir">
-			</class>
+			<class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisCriar"></class>
+			<class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisDetalhe"></class>
+			<class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisEditar"></class>
+			<class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisFiltrar"></class>
+			<class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisVisualizar"></class>
+			<class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisExluir"></class>
+			<class name="com.timp.test.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisExcluirMassa"></class>
+			
 		</classes>
 	</test> 
 		
@@ -143,6 +143,10 @@
 				<!-- Tabela de Apoio ECD > DeXParaContraPartida -->
 			<class 
 			name="com.timp.test.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaExcluirEmMassa">
+			</class>
+			
+			<class 
+			name="com.timp.test.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaCriar">
 			</class>
 		</classes>
 	</test>	
@@ -169,6 +173,9 @@
 			name="com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescriçãoDeNatDeLesãoVisualizar">
 			</class>
 			<class 
+			name="com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescriçãoDeNatDeLesãoDetalle">
+			</class>
+			<class 
 			name="com.timp.test.MDR.TabelasApoioESocial.Tabela17.DescriçãoDeNatDeLesãoExcluir">
 			</class>
 			<class 
@@ -187,13 +194,16 @@
 			name="com.timp.test.MDR.TabelasApoioESocial.Tabela25.TiposDeBeneficiosEditar">
 			</class>
 			<class 
+			name="com.timp.test.MDR.TabelasApoioESocial.Tabela25.TiposDeBeneficiosDetalhes">
+			</class>
+			<class 
 			name="com.timp.test.MDR.TabelasApoioESocial.Tabela25.TiposDeBenefíciosVisualizar">
 			</class>
 			<class 
 			name="com.timp.test.MDR.TabelasApoioESocial.Tabela25.TiposDeBenefíciosExcluir">
 			</class>
 			<class 
-			name="com.timp.test.MDR.TabelasApoioESocial.Tabela25.TiposDeBenefíciosCriarExcluirMassa">
+			name="com.timp.test.MDR.TabelasApoioESocial.Tabela25.TiposDeBenefíciosExcluirMassa">
 			</class>
 		</classes>
 	</test>		
@@ -234,7 +244,11 @@
 		<classes>		
 			<!--  Rateiro Consorcio-->
 			<class 
-			name="com.timp.test.MDR.RateiroConsorcio.RateiroConsorcio">
+			name="com.timp.test.MDR.RateioDeConsorcio.RateiroConsorcio">
+			</class>
+			
+			<class 
+			name="com.timp.test.MDR.RateioDeConsorcio.RateioDeConsorcioPesquisaPorID">
 			</class>
 			
 		</classes>

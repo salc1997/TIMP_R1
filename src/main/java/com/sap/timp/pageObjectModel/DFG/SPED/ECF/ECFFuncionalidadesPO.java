@@ -216,6 +216,9 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 	@FindBy(xpath = "//div[@class=\"fileFolders-wrapper\"]/div/div[1]")
 	public WebElement raizArquivos;
 	
+	@FindBy(xpath = "//div[@class=\"base-pagination-wrapper\"]/div[contains(@class,\"icon-left\")][1]")
+	public WebElement primera;
+	
 	
 	public ECFFuncionalidadesPO() {
 		PageFactory.initElements(driver, this);
@@ -254,10 +257,18 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
+	
+		primera.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+
 		siguiente.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
 
 		int rows1 = rows("//div[@class=\"tr\" and @data-id]");
 
@@ -502,18 +513,33 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+
+		eCF.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		primera.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 
 		siguiente.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idECF =idObter1();
+		
 
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
-
+		
+		String idECF =idObter1();
+		System.out.println("Id Antes da Criação (ECF): " +idECF);
+		
 		String idNuevo = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
-		System.out.println("Id Antes da Criação (ECF): " +idNuevo);
+		System.out.println("Id n da Criação (ECF): " +idNuevo);
 		idInserir3(idNuevo);
 
 
@@ -538,6 +564,24 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 
 		System.out.println("---------- Editar --------- " );
 		String idRegistro =idObter3();
+		
+		System.out.println("Registro a Editar " +idRegistro);
+		
+		eCF.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		primera.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+
+		siguiente.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -566,6 +610,22 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 
+		eCF.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		primera.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+
+		siguiente.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 
@@ -629,10 +689,23 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 		sleep(2000);
 
 
-		siguiente.click();
-		sleep(2000);
+		eCF.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
+		
+		primera.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+
+		siguiente.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
@@ -692,8 +765,20 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		siguiente.click();
+		eCF.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
+		
+		primera.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+
+		siguiente.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -811,6 +896,13 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
+	
+		primera.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+
 		siguiente.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -871,6 +963,24 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 
 	public ArrayList<Boolean> EditarBloco() {
 
+		blocos.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+	
+		primera.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+
+		siguiente.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -914,6 +1024,23 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		blocos.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+	
+		primera.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+
+		siguiente.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
 		System.out.println("---------- Informacao Bloco --------- " );
 		String idRegistro =idObter4();
@@ -951,6 +1078,23 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 
 		fechar.click();
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		blocos.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+	
+		primera.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+
+		siguiente.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -1050,7 +1194,20 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 			tp1 = true;
 		}
 
+		blocos.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+
+	
+		primera.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+
+		siguiente.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -1116,43 +1273,36 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 
 		//------------------- Tributo------------------
 		
-		
-
 		if (tc2==true) {
-
 			tributoExecutar.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			actionsMoveToElementXpath("//li[@id=\"option-8\"]");
+			actionsMoveToElementXpath("//li[text()=\"ICMS\"]");
 			sleep(3000);
 			
-			WebElement tributoOPC = driver.findElement(By.xpath("//li[@id=\"option-8\"]"));
+			WebElement tributoOPC = driver.findElement(By.xpath("//li[text()=\"ICMS\"]"));
 			
 			tributoOPC.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
-
-			
 		}else if (tp1==true) {
-			
 			tributoExecutar.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			actionsMoveToElementXpath("//li[@id=\"option-18\"]");
+			actionsMoveToElementXpath("//li[text()=\"ICMS\"]");
 			sleep(3000);
 			
-			WebElement tributoOPC = driver.findElement(By.xpath("//li[@id=\"option-18\"]"));
+			WebElement tributoOPC = driver.findElement(By.xpath("//li[text()=\"ICMS\"]"));
 			
 			tributoOPC.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
-
 		}
 
 		calendar.click();
@@ -1296,12 +1446,16 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 		Date  hoy = new Date();
 		this.momento = hoy.getHours() + ":" + hoy.getMinutes();
 		//this.momento = fechaActual();
+		
+		this.momento = this.momento.replace("0","");
 
 		System.out.println("hora Actual " + this.momento );
 		biblioteca.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
+		
+		
 	}
 	
 	public ArrayList<Boolean> VisualizarAtualizações() {
@@ -1334,8 +1488,10 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 		anio1 = Integer.toString(c.get(Calendar.YEAR));
 		
 		String fecha = dia1 + "/" + mes1 + "/" + anio1;
+		fecha = fecha.replace("0","");
 		System.out.println(fecha);
-		//String hoy = fechaActual();
+		
+
 		
 		
 		int rows = rows("//div[@class=\"tr\" and @data-id and @tabindex=\"0\"]");
@@ -1346,7 +1502,9 @@ public class ECFFuncionalidadesPO extends TestBaseMassiel{
 			String dataMod = driver
 					.findElement(By.xpath("//div[@class=\"tr\" and @data-id and @tabindex=\"0\"][" + f + "]/div[10]/div"))
 					.getText();
+			dataMod = dataMod.replace("0","");
 			System.out.println(dataMod);
+			
 			
 			sucesso.add(dataMod.contains(fecha));
 		}

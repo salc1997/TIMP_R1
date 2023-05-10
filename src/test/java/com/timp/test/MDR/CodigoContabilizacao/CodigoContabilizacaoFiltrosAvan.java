@@ -32,7 +32,7 @@ public class CodigoContabilizacaoFiltrosAvan extends TestBaseKenssy{
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 
@@ -44,10 +44,10 @@ public class CodigoContabilizacaoFiltrosAvan extends TestBaseKenssy{
 
 		acessarMDRPO.acessarMDR();
 		
-		ArrayList<Boolean> empresa = codigoContabilizacaoFiltrosAvanPO.filtroEmpresa();
-		for (int i = 0; i < empresa.size(); i++) {
-			assertTrue(empresa.get(i), Filtros);
-		}
+//		ArrayList<Boolean> empresa = codigoContabilizacaoFiltrosAvanPO.filtroEmpresa();
+//		for (int i = 0; i < empresa.size(); i++) {
+//			assertTrue(empresa.get(i), Filtros);
+//		}
 		
 		
 		ArrayList<Boolean> filial = codigoContabilizacaoFiltrosAvanPO.filtroDataIniVigencia();

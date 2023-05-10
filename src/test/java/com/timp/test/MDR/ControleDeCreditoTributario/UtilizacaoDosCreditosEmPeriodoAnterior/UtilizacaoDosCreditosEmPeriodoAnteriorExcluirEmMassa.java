@@ -6,13 +6,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassaPO;
 
-public class UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa extends TestBaseEliel {
-	
+public class UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassaPO utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassaPO;
@@ -20,7 +20,7 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa extends TestBa
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassaPO = new UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassaPO();
@@ -31,10 +31,9 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa extends TestBa
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
@@ -42,13 +41,10 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa extends TestBa
 		boolean sucesso = utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 
-
 	}
-	
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluir() {
-
 
 		sleep(1000);
 		boolean sucesso2 = utilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassaPO.excluir();
@@ -56,6 +52,4 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorExcluirEmMassa extends TestBa
 
 	}
 
-
- 
 }

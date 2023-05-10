@@ -30,7 +30,7 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 	@FindBy(xpath = "//td[contains(@class, \"component-field\")]/div/div[2]")
 	public WebElement componenteTq1;
 	
-	@FindBy(xpath = "//td[contains(@class, \"component-field\")]/div/div/div[2]")
+	@FindBy(xpath = "//td[contains(@class, \"component-field\")]/div/div[2]")
 	public WebElement componente;
 	
 	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id and text()=\"DFG\"][1]")
@@ -78,7 +78,7 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 	@FindBy(xpath = "//td[contains(@class, \"EffectiveDateFrom\")]/div/div/input")
 	public WebElement dataValidadeDe;
 		
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
@@ -127,7 +127,7 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public boolean criar() {
+	public boolean criar() { 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -172,7 +172,7 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		
 		String URL = driver.getCurrentUrl();
 		
-		if(URL.contains("tq1")) {
+		if(URL.contains("tq1") || URL.contains("tq2")) {
 			componenteTq1.click();
 		}else {
 			componente.click();
@@ -205,44 +205,14 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		estruturaDeDatos.click();
 		sleep(1000);
 		opcionEstruturaDeDatos.click();
-		sleep(1000);
+		sleep(9000);
 		
 		caracteristicaEspecial.click();
 		sleep(1000);
 		opcionCaracteristicaEspecial.click();
 		sleep(1000);
 		
-		waitExpectElement(leiaute);
-		leiaute.click();
-		sleep(1000);
-		
-		if(URL.contains("tc2")) {
-			// opcion para TC2
-			WebElement opcionLeiaute = driver.findElement(By.xpath("//li[contains(@class,\"list-item\") and @id and text()=\"ID107-TA-TESTE (Complemento BRE)\"][1]"));
-			opcionLeiaute.click();
-			sleep(1000);
-		}
-		
-		// Opcion para TQ1
-		if(URL.contains("tq1")) {
-			WebElement opcionLeiaute = driver.findElement(By.xpath("//li[contains(@class,\"list-item\") and @id and text()=\"ID7403-TA-TESTE (Complemento BRE)\"][1]"));
-			opcionLeiaute.click();
-			sleep(1000);
-		}
-		
-		// Opcion para TP1
-		if(URL.contains("tp1")) {
-			WebElement opcionLeiaute = driver.findElement(By.xpath("//li[contains(@class,\"list-item\") and @id and text()=\"ID547-TA-TESTE (Complemento BRE)\"][1]"));
-			opcionLeiaute.click();
-			sleep(1000);
-		}
-		
-		attributeToBeXpath("//td[contains(@class, \"layoutVersion-field\")]/div", "class", "base-select required");
-		versaoDoLeiaute.click();
-		sleep(1000);
-		opcionversaoDoLeiaute.click();
-		sleep(1000);
-		
+
 		actionsMoveToElementXpath("//td[contains(@class, \"EffectiveDateTo\")]/div/div/input");
 		regulamento.click();
 		sleep(1000);
@@ -252,15 +222,15 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		dataValidadeDe.click();
 		sleep(1000);
 		dataValidadeDe.sendKeys("01/01/2013");
-		sleep(1000);		
+		sleep(6000);		
 		
-		aplicar.click();
+	/*	aplicar.click();
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);*/
 		
 		sleep(2000);
-		waitExpectElement(adicionarCaminho);
+		//waitExpectElement(adicionarCaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -290,6 +260,14 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 			sleep(1000);
 		}
 		
+		if(URL.contains("tq2")) {
+			acoes.click();
+			sleep(1000);
+			acoes.sendKeys("Teste Auditoria N3");
+			acoes.sendKeys(Keys.ENTER);
+			sleep(1000);
+		}
+		
 		if(URL.contains("tp1") || URL.contains("tc2")) {
 			acoes2.click();
 			sleep(1000);
@@ -309,7 +287,7 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBaseFernando{
 		btnNao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(24000);
 		
 		driver.navigate().refresh();
 		sleep(2000);

@@ -9,14 +9,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
-import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoDetalhesPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDaSituaçaoTributaria.TabelaCodigoDaSituaçaoTributariaDetalhesPO;
 
-public class HierarquiaDeCenariosDeCorreçaoDetalhes extends TestBaseEliel {
+public class HierarquiaDeCenariosDeCorreçaoDetalhes extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -24,8 +23,8 @@ public class HierarquiaDeCenariosDeCorreçaoDetalhes extends TestBaseEliel {
 
 	@BeforeClass
 	public void beforeClass() {
- 
-		driver = initializationE();
+
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		hierarquiaDeCenariosDeCorreçaoDetalhesPO = new HierarquiaDeCenariosDeCorreçaoDetalhesPO();
@@ -36,19 +35,18 @@ public class HierarquiaDeCenariosDeCorreçaoDetalhes extends TestBaseEliel {
 		driver.close();
 	}
 
-
 	@Test()
 	public void Detalhes() {
 
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = hierarquiaDeCenariosDeCorreçaoDetalhesPO.detalhes();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), Detalhes);	
+			assertTrue(sucesso.get(i), Detalhes);
 		}
-		//assertEquals(sucesso, "edit", visualizaçar);
+		// assertEquals(sucesso, "edit", visualizaçar);
 	}
 
 }

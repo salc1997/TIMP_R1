@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegraDeMensagensCriaComCopiaPO extends TestBaseEliel {
+public class RegraDeMensagensCriaComCopiaPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Regras de Mensagens\"]")
 	public WebElement regrasdemensagens;
@@ -17,7 +17,7 @@ public class RegraDeMensagensCriaComCopiaPO extends TestBaseEliel {
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement ultimapagina;
 	
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
@@ -51,13 +51,15 @@ public class RegraDeMensagensCriaComCopiaPO extends TestBaseEliel {
 		boolean td1 = false;
 		boolean tp1 = false;
 		boolean tq1 = false;
-		
+		boolean tq2 = false;
 		if (url.contains("tc2")) {
 			tc2 = true;
 		}else if (url.contains("tp1")) {
 			tp1 = true;
 		}else if (url.contains("tq1")) {
 			tq1 = true;
+		}else if (url.contains("tq2")) {
+			tq2 = true;
 		}else {
 			td1 = true;
 		}
@@ -76,7 +78,7 @@ public class RegraDeMensagensCriaComCopiaPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("RegraDeMensagens");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Copiar\"]"));
 		System.out.println("ID do registro criado: " + idRegistro);
@@ -98,7 +100,7 @@ public class RegraDeMensagensCriaComCopiaPO extends TestBaseEliel {
 		waitExpectXpath("//div[@class=\"overlay loader transp\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader transp\"]");
 		sleep(2000);	
-		if(tp1 == true || tq1 == true) {
+		if(tp1 == true || tq1 == true || tq2 == true) {
 		biblioteca.click();
 		
 		sleep(2000);
@@ -155,10 +157,11 @@ public class RegraDeMensagensCriaComCopiaPO extends TestBaseEliel {
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(lixeira);
 		sleep(2000);
 		
-		waitExpectElement(mensagembloqueio);
-		sleep(2000);
+		
+		sleep(10000);
 		lixeira.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -325,7 +328,7 @@ public class RegraDeMensagensCriaComCopiaPO extends TestBaseEliel {
 			sim.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(3000);
+			sleep(9000);
 
 
 			

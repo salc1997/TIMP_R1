@@ -11,6 +11,9 @@ import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
 
+import java.sql.Driver;
+
+import org.openqa.selenium.remote.service.DriverService;
 import org.testng.annotations.AfterClass;
 
 public class MovimentoSCANCExcluirMasas extends TestBaseMassiel {
@@ -29,6 +32,7 @@ public class MovimentoSCANCExcluirMasas extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
 	@Test()

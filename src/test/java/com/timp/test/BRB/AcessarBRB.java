@@ -40,7 +40,7 @@ public class AcessarBRB extends TestBaseSteven {
 		System.out.println(sucesso);
 
 		assertTrue(sucesso, semAcesso);
-
+		sleep(2000);
 	}
 
 }

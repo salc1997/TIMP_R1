@@ -16,40 +16,38 @@ import java.util.ArrayList;
 import org.openqa.selenium.remote.NewSessionPayload;
 import org.testng.annotations.AfterClass;
 
-public class FiliaisDetalle extends TestBaseMassiel{
+public class FiliaisDetalle extends TestBaseMassiel {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	FiliaisDetallesPo filiaisDetallePO;
 
-  @BeforeClass
-  public void beforeClass() {
-	  driver = initializationM();
-	  acessarMDRPO = new AcessarMDRPO();
-	  loginTC = new LoginTC();;
-	  filiaisDetallePO = new FiliaisDetallesPo();
-	  
-  }
+	@BeforeClass
+	public void beforeClass() {
+		driver = initializationM();
+		acessarMDRPO = new AcessarMDRPO();
+		loginTC = new LoginTC();
+		
+		filiaisDetallePO = new FiliaisDetallesPo();
 
-  @AfterClass
-  public void afterClass() {
-	  driver.close();
-  }
+	}
 
-  
+	@AfterClass
+	public void afterClass() {
+	//	driver.close();
+	}
 
-	@Test( )
+	@Test()
 	public void detalle() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = filiaisDetallePO.Detalle();
-		
+
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
 	}
-
 
 }

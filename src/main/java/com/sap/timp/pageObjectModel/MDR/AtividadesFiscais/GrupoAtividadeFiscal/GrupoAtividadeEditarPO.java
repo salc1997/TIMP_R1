@@ -77,7 +77,7 @@ public class GrupoAtividadeEditarPO extends TestBaseSteven{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void editar() {
+	public boolean editar() {
 		
 		String url = driver.getCurrentUrl();
 		/*
@@ -168,7 +168,7 @@ public class GrupoAtividadeEditarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		System.out.println(sucesso);
-		
+		return sucesso;
 		
 		
 	}

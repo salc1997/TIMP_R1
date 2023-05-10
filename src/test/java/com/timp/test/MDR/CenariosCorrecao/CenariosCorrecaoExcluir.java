@@ -2,7 +2,7 @@ package com.timp.test.MDR.CenariosCorrecao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CenariosCorrecao.CenariosCorrecaoExcluirPO;
@@ -13,14 +13,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class CenariosCorrecaoExcluir extends TestBaseKathy {
+public class CenariosCorrecaoExcluir extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CenariosCorrecaoExcluirPO cenariosCorrecaoExcluirPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationK();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		cenariosCorrecaoExcluirPO = new CenariosCorrecaoExcluirPO();
@@ -42,6 +42,7 @@ public class CenariosCorrecaoExcluir extends TestBaseKathy {
 		
 		boolean sucesso = cenariosCorrecaoExcluirPO.cenariosCorrecaoExcluir();
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 
 }

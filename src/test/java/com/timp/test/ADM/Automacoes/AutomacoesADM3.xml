@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" preserve-order="true" >
+
+	<test name="Configuração > Licenças" >
+		<classes>
+			<class name="com.timp.test.ADM.Configuracao.Licencas.LicencasTodasFunc"></class>
+			
+			
+		</classes>
+	
+	</test>
+	
+	<test name="Configuração > ManuaisDeComponente" >
+		<classes>
+			<class name="com.timp.test.ADM.Configuracao.ManuaisDeComponente.ManuaisDeComponenteTodasFunc"></class>
+			
+		</classes>
+	
+	</test> 
+	
+	
+	<test name="Usuários > Pacotes" >
+		<classes>
+			<class name="com.timp.test.ADM.Usuarios.Pacotes.PacotesCriar"></class>
+	</classes>
+	
+	</test>
+	
+	<test name="Usuários > Usuários " >
+		<classes>
+			<class name="com.timp.test.ADM.Usuarios.Usuarios.UsuariosTodasFunc"></class>
+			
+		</classes>
+	
+	</test> 
+	<!-- PruebaTest -->
+
+</suite> <!-- Suite -->

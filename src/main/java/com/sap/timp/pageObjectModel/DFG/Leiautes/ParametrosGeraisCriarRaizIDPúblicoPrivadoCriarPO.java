@@ -75,7 +75,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO extends TestBaseMa
 	public WebElement salvar;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Id\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
@@ -163,7 +163,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO extends TestBaseMa
 		sleep(1000);
 		
 		versaoLeiaute.sendKeys("1");
-		sleep(1000);
+		sleep(2000);
 		
 		salvar.click();
 		
@@ -187,13 +187,13 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO extends TestBaseMa
 		
 		biblioteca.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
 		
 		raiz.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -237,16 +237,15 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO extends TestBaseMa
 		aplicar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		leiautePublico.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		filtrosAvanzados.click();
-		sleep(2000);
-		waitExpectElement(pesquisar);
+
+		waitExpectElement(filtrosAvanzados);
 		sleep(2000);
 		
 		pesquisar.sendKeys(idLeiauteT);

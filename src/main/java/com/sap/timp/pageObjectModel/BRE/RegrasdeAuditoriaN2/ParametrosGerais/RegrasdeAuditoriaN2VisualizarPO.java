@@ -8,9 +8,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.google.common.graph.AbstractNetwork;
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasdeAuditoriaN2VisualizarPO extends TestBaseCristhian {
+public class RegrasdeAuditoriaN2VisualizarPO extends TestBaseSteven {
 
 	
 
@@ -63,8 +63,8 @@ public class RegrasdeAuditoriaN2VisualizarPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter3();
-
+		//String idRegistro = idObter3();
+		String idRegistro = idObter("An2");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualização\"]"));
 		
@@ -76,7 +76,7 @@ public class RegrasdeAuditoriaN2VisualizarPO extends TestBaseCristhian {
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(7000);
+		sleep(20000);
 
 		
 		String CFOPV1 = CFOPVisualizar.getText();
@@ -102,7 +102,7 @@ public class RegrasdeAuditoriaN2VisualizarPO extends TestBaseCristhian {
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(7000);
+		sleep(18000);
 		
 		String CFOPE1 = CFOPEditar.getText();
 

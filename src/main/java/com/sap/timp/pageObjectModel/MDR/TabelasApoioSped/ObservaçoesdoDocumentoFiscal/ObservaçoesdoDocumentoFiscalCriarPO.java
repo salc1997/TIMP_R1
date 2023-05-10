@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseMassiel;
 
 public class ObservaçoesdoDocumentoFiscalCriarPO extends TestBaseMassiel {
@@ -48,7 +48,7 @@ public class ObservaçoesdoDocumentoFiscalCriarPO extends TestBaseMassiel {
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher a descrição do Observações do Documento Fiscal - Registro 0460\"]")
 	public WebElement descricaosped;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -118,7 +118,7 @@ public class ObservaçoesdoDocumentoFiscalCriarPO extends TestBaseMassiel {
 		sleep(2000);
 		opcaoid.click();
 		sleep(2000);
-		descricaosped.sendKeys("Descrição SPED55");
+		descricaosped.sendKeys("Descrição SPED987");
 		
 		String data = dataanterior();
 		
@@ -134,7 +134,7 @@ public class ObservaçoesdoDocumentoFiscalCriarPO extends TestBaseMassiel {
 		biblioteca.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		siguiente.click();
 		

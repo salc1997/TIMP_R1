@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaLogradouros.TabelaLogradourosExcluirEmMassaPO;
 
-public class TabelaLogradouroExcluirEmMassa extends TestBaseEliel {
+public class TabelaLogradouroExcluirEmMassa extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
@@ -19,7 +19,7 @@ public class TabelaLogradouroExcluirEmMassa extends TestBaseEliel {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		accesarMDR = new AcessarMDRPO();
 		tabelaLogradourosExcluirEmMassaPO = new TabelaLogradourosExcluirEmMassaPO();

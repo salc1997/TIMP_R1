@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class KpisRaizFiltroPorIdPO extends TestBaseEliel{
+public class KpisRaizFiltroPorIdPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Kpi's\"]")
 	public WebElement kpis;
 	
@@ -62,7 +62,7 @@ public class KpisRaizFiltroPorIdPO extends TestBaseEliel{
 		if (tq1==true) {
 			raiztq1.click();
 		}else {
-			raiz.click();
+			raiztq1.click();
 		}
 		
 		sleep(2000);

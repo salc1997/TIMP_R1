@@ -58,7 +58,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 	
 	@FindBy(xpath = "//div[@id=\"inputSelectFilial\"]/div/div/div[2]")
 	public WebElement filial;
-	@FindBy(xpath = "//div[@id=\"1000SP0001\"]/div/label/span")
+	@FindBy(xpath = "//div[@id=\"1000SP0014\"]/div/label/span")
 	public WebElement opcionFilial;
 	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Inicio\")]")
@@ -131,7 +131,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 		sleep(1000);
 		btnCriar.click();
 		
-		sleep(2000);
+		sleep(4000);
 		btnCriarPasta.click();
 		sleep(2000);
 		
@@ -146,10 +146,16 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		WebElement btnExpansaoPastaElement = driver.findElement(By.xpath("//div[@class=\"icon icon-font-Sign-and-Symbols icon-right\"]"));
 		
-		sleep(1000);
+		sleep(6000);
 		btnExpansaoPastaElement.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		WebElement pasta2 = driver.findElement(By.xpath("//span[text()=\"Pasta 2\"]"));
@@ -157,16 +163,26 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 		pasta2.click();
 		
 		btnNovaConfiguracao.click();
-		
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
 		waitExpectElement(nomeConfiguracao);
 		nomeConfiguracao.sendKeys("Teste Automatizado");
 		sleep(1000);
 		
 		cboLeiautes.click();
 		sleep(1000);
-		opcionLeiautes.click();
-		sleep(1000);
+		
+		String idRegistro = "17";
+		
+		System.out.println("id: " + idRegistro);
+
+		WebElement Opc6 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro+"\")]"));
+
+		Opc6 .click();
+		sleep(4000);
 		
 		attributeToBeXpath("//div[@id=\"inputTimpVersion\"]/div", "class", "base-select required");
 		versao.click();
@@ -207,8 +223,9 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 		salvar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		
+		pasta2 = driver.findElement(By.xpath("//span[text()=\"Pasta 2\"]"));
 		pasta2.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -234,6 +251,10 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 			return sucesso = false;
 		}
 		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000); 
+		
 		btnMoverPasta.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -253,19 +274,23 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 		
 		sleep(1000);
 		btnExpansaoPastaElement.click();
-		sleep(2000);
+		sleep(5000);
 		
 		btnExpandirPasta1.click();
-		sleep(1000);
+		sleep(2000);
 		
 		WebElement pasta1 = driver.findElement(By.xpath("//span[text()=\"Pasta 1\"]"));
-		waitExpectElement(pasta1);
+		//waitExpectElement(pasta1);
 		pasta1.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		btnGerenciarPasta.click();
 		sleep(2000);
-		waitExpectElement(nomePasta2);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(10000);
+		//waitExpectElement(nomePasta2);
 		nomePasta2.clear();
 		nomePasta2.click();
 		sleep(1000);
@@ -277,21 +302,29 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseFernando{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		btnExpansaoPastaElement = driver.findElement(By.xpath("//div[@class=\"icon icon-font-Sign-and-Symbols icon-right\"]"));
 		
 		sleep(1000);
 		btnExpansaoPastaElement.click();
-		sleep(2000);
+		sleep(3000);
 		
 		WebElement pasta3 = driver.findElement(By.xpath("//span[text()=\"Pasta 3\"]"));
-		waitExpectElement(pasta3);
+//		waitExpectElement(pasta3);
 		pasta3.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		btnGerenciarPasta.click();
-		sleep(1000);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		waitExpectElement(btnExcluirPasta);
+		//waitExpectElement(btnExcluirPasta);
 		btnExcluirPasta.click();
 		
 		sleep(1000);

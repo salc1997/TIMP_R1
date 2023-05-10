@@ -32,7 +32,7 @@ public class CadastroMotivosReaberturaCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@class=\"list-item\" and @id][1]")
 	public WebElement impactoO;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"Inicio\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Data de Início de Vigência \")]")
 	public WebElement dataVigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")

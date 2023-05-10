@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TBD.AcessarTBDPO;
 import com.sap.timp.pageObjectModel.TBD.ArmazenagemDeArquivos.ArmazenarArquivo.ArmazenarArquivoEditarPO;
 
-public class ArmazenarArquivoEditar extends TestBaseEliel {
+public class ArmazenarArquivoEditar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarTBDPO acessarTBDPO;
@@ -20,7 +20,7 @@ public class ArmazenarArquivoEditar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTBDPO = new AcessarTBDPO();
 		armazenarArquivoEditarPO = new ArmazenarArquivoEditarPO();
@@ -28,26 +28,19 @@ public class ArmazenarArquivoEditar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
 
-	@Test(priority = 1)
-	public void TBDEntrar() {
-		acessarTBDPO.acessarTBD();
-
-	}
-
-	@Test(priority = 1)
+	@Test()
 	public void editar() {
 
+		loginTC.login();
+		acessarTBDPO.acessarTBD();
 		boolean sucesso = armazenarArquivoEditarPO.editar();
 		assertTrue(sucesso, Editar);
-
+		sleep(3000);
 	}
 
 }

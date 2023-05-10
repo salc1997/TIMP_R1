@@ -6,9 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class DeterminacaoDeRelevanciaPorRegraCriarPO extends TestBaseEliel{
+public class DeterminacaoDeRelevanciaPorRegraCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Determinação de Relevância de Tarefa\"]")
 	public WebElement determinacaoderelevanciadetarefa;
@@ -55,7 +55,7 @@ public class DeterminacaoDeRelevanciaPorRegraCriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@id=\"output\"]/div/div/div[2]")
 	public WebElement saida;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//div[@id=\"validFrom\"]/div/div[1]/input")
 	public WebElement datainiciovigencia;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")

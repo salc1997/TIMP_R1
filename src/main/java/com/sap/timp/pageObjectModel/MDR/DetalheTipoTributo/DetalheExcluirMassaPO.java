@@ -137,14 +137,14 @@ public class DetalheExcluirMassaPO extends TestBaseFernando{
 		sleep(4000);
 		
 		sim.click();
-		sleep(4000);
+		sleep(6000);
 		
 		biblioteca.click();
 		sleep(2000);
 	//	waitExpectElement(nao);
 	//	nao.click();
-		sleep(5000);
-	
+		sleep(12000);
+		sleep(12000);
 
 
 		// Crear segundo registro

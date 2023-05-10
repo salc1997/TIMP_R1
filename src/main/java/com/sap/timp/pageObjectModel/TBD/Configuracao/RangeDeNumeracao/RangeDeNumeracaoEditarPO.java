@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RangeDeNumeracaoEditarPO extends TestBaseEliel{
+public class RangeDeNumeracaoEditarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Configuração de TBD\"]")
 	public WebElement configuracao;
@@ -80,6 +80,9 @@ public class RangeDeNumeracaoEditarPO extends TestBaseEliel{
 		sleep(2000);
 		
 		String enviar = "01/01/2014";
+		
+		System.out.println( enviar);
+		
 		validadede.clear();
 		sleep(2000);
 		validadede.sendKeys(enviar);

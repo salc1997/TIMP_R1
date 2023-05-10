@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class FinanciamentoDeAposEspCriarPO extends TestBaseEliel{
+public class FinanciamentoDeAposEspCriarPO extends TestBaseSteven{
 	
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")

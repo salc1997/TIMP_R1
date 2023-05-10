@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" preserve-order="true">
+
+	<!-- TFP - Configurações - Bloqueios -->
+	<test name="TFP - Configurações - Bloqueios > Periodo">	
+		<classes>
+			
+		<!--	<class name="com.timp.test.TFP.Configurações.Bloqueios.Periodo.ConfiguracaoBloqueiosCriar"></class>-->
+			<class name="com.timp.test.TFP.Configuracoes.Bloqueios.Periodo.ConfiguracaoBloqueiosEditar"></class>
+			<class name="com.timp.test.TFP.Configuracoes.Bloqueios.Periodo.ConfiguracaoBloqueiosVer"></class>
+			<class name="com.timp.test.TFP.Configuracoes.Bloqueios.Periodo.ConfiguracaoBloqueiosFiltros"></class>
+			<class name="com.timp.test.TFP.Configuracoes.Bloqueios.Periodo.PeriodoFiltroId"></class>
+		
+			
+		</classes>
+	</test>
+	
+	<test name="TFP - Configurações - Bloqueios > Sub Periodo">	
+		<classes>
+			
+		<!--	<class name="com.timp.test.TFP.Configurações.Bloqueios.SubPeriodo.BloqueioSubPeriodoCriar"></class>-->
+			<class name="com.timp.test.TFP.Configuracoes.Bloqueios.SubPeriodo.BloqueioSubPeriodoEditar"></class>
+			<class name="com.timp.test.TFP.Configuracoes.Bloqueios.SubPeriodo.BloqueioSubPeriodoVer"></class>
+			<class name="com.timp.test.TFP.Configuracoes.Bloqueios.SubPeriodo.SubPeriodoFiltroId"></class>
+		
+			
+		</classes>
+	</test>
+	
+	<!--TFP - Configurações - Configurações -->
+	
+	<test name="TFP - Configurações - Configurações > Periodo">	
+		<classes>
+			
+			<class name="com.timp.test.TFP.Configuracoes.Configuracoes.Periodo.ConfiguracoesPeríodoCriar"></class>
+			<class name="com.timp.test.TFP.Configuracoes.Configuracoes.Periodo.ConfiguracoesPeríodoCopiar"></class>
+			<class name="com.timp.test.TFP.Configuracoes.Configuracoes.Periodo.ConfiguracoesPeríodoEditar"></class>
+			<class name="com.timp.test.TFP.Configuracoes.Configuracoes.Periodo.ConfiguracoesPeríodoVer"></class>
+			<class name="com.timp.test.TFP.Configuracoes.Configuracoes.Periodo.ConfiguracoesPeríodoFiltroPorId"></class>
+			<class name="com.timp.test.TFP.Configuracoes.Configuracoes.Periodo.ConfiguracoesPeríodoExcluir"></class>
+		
+			
+		</classes>
+	</test>
+	
+	<test name="TFP - Configurações - Configurações > Sub Periodo">	
+		<classes>
+			
+			<class name="com.timp.test.TFP.Configuracoes.Configuracoes.Subperiodo.SubperiodoCriar"></class>
+			<class name="com.timp.test.TFP.Configuracoes.Configuracoes.Subperiodo.SubperiodoEditar"></class>
+			<class name="com.timp.test.TFP.Configuracoes.Configuracoes.Subperiodo.SubperiodoCopiar"></class>
+			<class name="com.timp.test.TFP.Configuracoes.Configuracoes.Subperiodo.SubperiodoVer"></class>
+			<class name="com.timp.test.TFP.Configuracoes.Configuracoes.Subperiodo.SubperidoFiltroID"></class>
+			<class name="com.timp.test.TFP.Configuracoes.Configuracoes.Subperiodo.SubperidoExcluir"></class>
+			
+			
+			
+		</classes>
+	</test>
+	
+	<!--TFP - Configurações - Status -->
+	
+	<test name="TFP - Configurações - Status >  Periodo ">	
+		<classes>
+			
+		<!--<class name="com.timp.test.TFP.Configuracoes.Status.Periodo.ConfiguracoesStatusPeriodoCriar"></class> -->
+		    <class name="com.timp.test.TFP.Configuracoes.Status.Periodo.ConfiguracoesStatusPeriodoEditar"></class>
+		    <class name="com.timp.test.TFP.Configuracoes.Status.Periodo.ConfiguracoesStatusPeriodoVer"></class>
+		    <class name="com.timp.test.TFP.Configuracoes.Status.Periodo.StatusPeriodoFiltroID"></class>
+		
+			
+		</classes>
+	</test>
+	
+	<test name="TFP - Configurações - Status > Sub Periodo ">	
+		<classes>
+			
+			<class name="com.timp.test.TFP.Configuracoes.Status.SubPeriodo.ConfiguracoesStatusSubPeriodoEditar"></class>
+			<class name="com.timp.test.TFP.Configuracoes.Status.SubPeriodo.ConfiguracoesStatusSubPeriodoVer"></class>
+			<class name="com.timp.test.TFP.Configuracoes.Status.SubPeriodo.ConfiguracoesStatusSubPeriodoVer"></class>
+			
+
+
+			
+		</classes>
+	</test>
+	
+	<!--TFP - Configurações - Periodos -->
+	
+	<test name="TFP -  Periodo > Periodo">	
+		<classes>
+			
+			<class name="com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarPeriodosEmMassa"></class>
+			<class name="com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarStatusSubPeriodoAvulso"></class>
+			<class name="com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarSubPeriodoEmMassa"></class>
+			<class name="com.timp.test.TFP.Periodos.Periodos.PeriodosFiltroPorId"></class>
+
+		</classes>
+	</test>
+	
+	<test name="TFP -  Periodo > Sub Periodo">	
+		<classes>
+			
+			<class name="com.timp.test.TFP.Periodos.SubPeriodoPeriodicidade.SubPeriodoPeriodicidadeAlterarStatusSubperiodoAvulso"></class>
+			<class name="com.timp.test.TFP.Periodos.SubPeriodoPeriodicidade.SubPeriodoPeriodicidadeAlterarStatusSubPeriodoEmMassa"></class>
+			<class name="com.timp.test.TFP.Periodos.SubPeriodoPeriodicidade.SubPeriodoPeriodicidadeFiltroPorId"></class>
+
+
+		</classes>
+	</test>
+	
+</suite>

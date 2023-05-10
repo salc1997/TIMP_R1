@@ -79,9 +79,11 @@ public class CodigoContribuicaoSocialApuradaCriarPO extends TestBaseSteven{
 		tabelas.click();
 		sleep(2000);
 		codigoContri.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
@@ -100,11 +102,11 @@ public class CodigoContribuicaoSocialApuradaCriarPO extends TestBaseSteven{
 		tributoO.click();
 		sleep(2000);
 		
-		codigo.sendKeys("5565");
-		descricao.sendKeys("Teste codigo de Contribuição Social Apurada 55");
+		codigo.sendKeys("987");
+		descricao.sendKeys("Teste codigo de Contribuição Social Apurada 987");
 
-		codigo.sendKeys("55");
-		descricao.sendKeys("Teste codigo de Contribuição ");
+		codigo.sendKeys("987");
+		descricao.sendKeys("Teste codigo de Contribuição 987");
 
 		
 		validFrom.sendKeys(fechaActual());

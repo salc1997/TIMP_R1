@@ -6,7 +6,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -43,7 +43,7 @@ public class CadastroCondicaoCriar extends TestBaseMassiel{
 
 		boolean text = cadastroCondicaoCriarPO.criar();
 		assertTrue(text, Criar);
-
+		sleep(2000);
 
 	}
 

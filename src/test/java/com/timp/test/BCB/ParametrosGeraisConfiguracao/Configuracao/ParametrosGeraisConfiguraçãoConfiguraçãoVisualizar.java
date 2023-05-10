@@ -2,11 +2,11 @@ package com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
-import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoEditarPO;
-import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO;
+import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguracaoConfiguracaoEditarPO;
+import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguracaoConfiguraçãoVisualizarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -16,46 +16,37 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrosGeraisConfiguraçãoConfiguraçãoVisualizar extends TestBaseCristhian{
+public class ParametrosGeraisConfiguraçãoConfiguraçãoVisualizar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
-	ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO parametrosGeraisConfiguraçãoVisualizarPO;
+	ParametrosGeraisConfiguracaoConfiguraçãoVisualizarPO parametrosGeraisConfiguraçãoVisualizarPO;
 	
   @BeforeClass
   public void beforeClass() {
-	driver = initializationC();
+	driver = initialization();
 	loginTC = new LoginTC();
 	acessarBCBPO = new AcessarBCBPO();
-	parametrosGeraisConfiguraçãoVisualizarPO = new ParametrosGeraisConfiguraçãoConfiguraçãoVisualizarPO();
+	parametrosGeraisConfiguraçãoVisualizarPO = new ParametrosGeraisConfiguracaoConfiguraçãoVisualizarPO();
   }
 
   @AfterClass
   public void afterClass() {
-	  driver.close();
+	  //driver.close();
   }
 
-  @Test(priority = 0)
-  public void login() {
-	loginTC.login();
-  }
-	
-	
-  @Test(priority = 1)
-	public void brbEntrar() {
-		boolean sucesso = acessarBCBPO.acessar();
-		System.out.println(sucesso);
-		assertTrue(sucesso,Acessar);
-
-	}
   
-  
-  @Test(priority = 2)
+  @Test()
   public void visualizar() {
+	  loginTC.login();
+		acessarBCBPO.acessar();
+		
 		ArrayList<Boolean> sucesso = parametrosGeraisConfiguraçãoVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Detalhes);
 		}
+		
+		sleep(3000);
   }
 
 }

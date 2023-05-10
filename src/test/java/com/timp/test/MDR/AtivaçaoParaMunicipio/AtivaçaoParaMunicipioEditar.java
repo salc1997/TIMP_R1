@@ -1,13 +1,12 @@
 package com.timp.test.MDR.AtivaçaoParaMunicipio;
 
-import static org.testng.Assert.assertEquals;
+
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -43,7 +42,7 @@ public class AtivaçaoParaMunicipioEditar extends TestBaseSteven {
 		boolean sucesso = ativaçaoParaMunicipioEditarPO.editar();
 
 		assertTrue(sucesso, Editar);
-
+		sleep(2000);
 	}
 
 }

@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class DeParaLivroApuraçaoXSpedFiscalCriarPO extends TestBaseEliel {
+public class DeParaLivroApuraçaoXSpedFiscalCriarPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
@@ -43,7 +43,7 @@ public class DeParaLivroApuraçaoXSpedFiscalCriarPO extends TestBaseEliel {
 	public WebElement siguiente;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -123,7 +123,7 @@ public class DeParaLivroApuraçaoXSpedFiscalCriarPO extends TestBaseEliel {
 		sleep(2000);
 		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		biblioteca.click();
 		
@@ -132,8 +132,8 @@ public class DeParaLivroApuraçaoXSpedFiscalCriarPO extends TestBaseEliel {
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
-		sleep(2000);
+		//waitExpectElement(siguiente);
+		sleep(4000);
 		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

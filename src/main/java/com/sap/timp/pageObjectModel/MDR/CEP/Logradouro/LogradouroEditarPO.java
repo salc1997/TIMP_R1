@@ -5,12 +5,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class LogradouroEditarPO extends TestBaseKathy{
-	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+public class LogradouroEditarPO extends TestBaseSteven{
+	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
 	public WebElement cep;
-	
+	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	public WebElement cep2;
 	@FindBy(xpath = "//li/div/span[text()=\"Logradouro\"]")
 	public WebElement logradouro;
 	
@@ -37,21 +38,32 @@ public class LogradouroEditarPO extends TestBaseKathy{
 	}
 	
 	public boolean logradouroEditar() {
-		cep.click();
-		sleep(1000);
+		String url = driver.getCurrentUrl();
+		
+		if (url.contains("tq1")) {
+			cep2.click();
+			sleep(1000);
+
+		} else {
+			cep2.click();
+
+			sleep(1000);
+		}
 		logradouro.click();
 		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);
 		
-		String numEnviar = "11112222";
-		
-		pesquisar.sendKeys(numEnviar);
+		String idRegistro = idObter("CEP-Logradouro");
+	    System.out.println("idEditar: "+ idRegistro);
+	    
+		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		menu.click();
 		sleep(2000);
 		editar.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(campo);
 		//invisibilityOfElement("//*[@id=\"form-container\"]/div/div/div/div/img");
 		sleep(1000);
@@ -65,14 +77,19 @@ public class LogradouroEditarPO extends TestBaseKathy{
 		campo.sendKeys(enviar);
 		sleep(2000);
 		gravar.click();
+		waitExpectElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
 
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-
-		driver.navigate().refresh(); 
+		sleep(2000);
 		
+		driver.navigate().refresh(); 
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		waitExpectElement(campo);
 		
 		String nuevoTexto = campo.getAttribute("value");

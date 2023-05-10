@@ -29,20 +29,15 @@ public class RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros extends TestBa
 		driver.close();
 	}
 
-	@Test(priority = 1)
-	public void login() {
-		loginTC.login();
 
-	}
-
-	@Test(priority = 2)
-	public void ATREntrar() {
-		acessarATRPO.acessarATR();
-	}
-
-	@Test(priority = 3)
+	@Test()
 	public void filtrarPorIdMasLimpiarFiltros() {
+		loginTC.login();
+		acessarATRPO.acessarATR();
+		
 		boolean sucesso = relacionamentoEstruturasFiltroPorIdMasLimpiarFiltrosPO.filtrarPorIdMasLimpiarFiltros();
 		assertTrue(sucesso, Filtros);
+		
+		sleep(2000);
 	}
 }

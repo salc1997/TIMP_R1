@@ -6,7 +6,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -15,10 +15,8 @@ import com.sap.timp.pageObjectModel.MDR.ICMSSTTransporte.ICMSSTTransporteFiltroI
 import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaFiltroIDPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosOficializacaoLivros.ParametrosOficializacaoLivrosFiltroPorIDPO;
 
+public class ICMSSTTransporteFiltroID extends TestBaseSteven {
 
-
-public class ICMSSTTransporteFiltroID extends TestBaseSteven{
-	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	LimiteCompetenciaFiltroIDPO limiteCompetenciaFiltroIDPO;
@@ -38,11 +36,9 @@ public class ICMSSTTransporteFiltroID extends TestBaseSteven{
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void filtro() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
@@ -50,9 +46,6 @@ public class ICMSSTTransporteFiltroID extends TestBaseSteven{
 		boolean sucesso = limiteCompetenciaFiltroIDPO.filtro();
 		assertTrue(sucesso, Filtros);
 
-		
-
 	}
-  
-	
+
 }

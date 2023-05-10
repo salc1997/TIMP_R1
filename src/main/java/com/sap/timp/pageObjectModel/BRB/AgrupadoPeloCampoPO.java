@@ -22,7 +22,7 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 	public WebElement valorICMS;
 	@FindBy(xpath = "//*[@id=\"draggable-115\"]/div/div/div")				
 	public WebElement menuC;
-	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/ul/li[4]")				
+	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/ul/li[3]")				
 	public WebElement agrupado;
 	@FindBy(xpath = "//*[@id=\"editor-toolbar\"]/div/div/ul/li[1]/button")
 	public WebElement gravar;
@@ -30,7 +30,10 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 	public WebElement execucao;
 	@FindBy(xpath = "//*[@id=\"right\"]/div[2]/div[1]/div/div/ul/li[1]/button")				
 	public WebElement executar;
-	@FindBy(xpath = "//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/div[1]/span[4]")				
+	/*@FindBy(xpath = "//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/div[1]/span[4]")				
+	public WebElement data1;*/
+	
+	@FindBy(xpath = "//*[@id=\"table-fixed-wrapper\"]/div[3]/div[1]/div[1]/span")				
 	public WebElement data1;
 	@FindBy(xpath = "//div[@data-group =\"1\"]")				
 	public WebElement cfop;
@@ -51,10 +54,10 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
 	public WebElement ferramenta;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div")
 	public WebElement menu;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement opcao;
 	
 	@FindBy(xpath = "//button[text()=\"Não\"]")
@@ -120,7 +123,7 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 		sleep(5000);
 		//waitExpectXpath("//div[@data-group=\"1\"]/div/div[1]/span[1]/label");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		
 		
@@ -149,7 +152,7 @@ public class AgrupadoPeloCampoPO extends TestBaseSteven{
 			f = f+1;
 		}
 				
-		data1C.click();
+		//data1C.click();
 		
 		return sucesso;
 		

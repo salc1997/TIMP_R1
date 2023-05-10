@@ -32,7 +32,7 @@ public class AtividadeDeTributacaoXFornecedorFiltroID extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		 driver.close();
 	}
 
 
@@ -48,6 +48,6 @@ public class AtividadeDeTributacaoXFornecedorFiltroID extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Filtros);
 		}
-
+		sleep(2000);
 	}
 }

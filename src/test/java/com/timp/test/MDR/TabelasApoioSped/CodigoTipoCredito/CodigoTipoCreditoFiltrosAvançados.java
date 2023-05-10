@@ -2,7 +2,7 @@ package com.timp.test.MDR.TabelasApoioSped.CodigoTipoCredito;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CodigoTipoCreditoFiltrosAvançados extends TestBaseEliel {
+public class CodigoTipoCreditoFiltrosAvançados extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoTipoCreditoFiltrosAvançadosPO codigoTipoCreditoFiltrosAvançadosPO;
@@ -24,7 +24,7 @@ public class CodigoTipoCreditoFiltrosAvançados extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		codigoTipoCreditoFiltrosAvançadosPO = new CodigoTipoCreditoFiltrosAvançadosPO();

@@ -30,14 +30,14 @@ public class FiliaisEditar extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+	//	driver.close();
 	}
 
 	@Test()
 	public void editar() {
-		
+
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = filiaisEditarPO.editar();

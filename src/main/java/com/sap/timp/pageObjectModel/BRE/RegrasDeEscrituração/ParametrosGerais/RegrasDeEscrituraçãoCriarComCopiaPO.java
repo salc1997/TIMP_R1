@@ -57,7 +57,7 @@ public class RegrasDeEscrituraçãoCriarComCopiaPO extends TestBaseFernando {
 	@FindBy(xpath = "//td[contains(@class, \"EffectiveDateFrom\")]/div/div/input")
 	public WebElement dataValidadeDe;
 
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 
 	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
@@ -130,9 +130,9 @@ public class RegrasDeEscrituraçãoCriarComCopiaPO extends TestBaseFernando {
 		btnUltimaPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(26000);
 
-		String idRegistro = idObter2();
+		String idRegistro = idObter("RegraDeEscrituracao");
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement copiar = driver.findElement(
@@ -149,7 +149,7 @@ public class RegrasDeEscrituraçãoCriarComCopiaPO extends TestBaseFernando {
 		nome.clear();
 		sleep(1000);
 		nome.sendKeys("TA-TESTE - NÃO MEXER CÓPIA");
-		sleep(2000);
+		sleep(8000);
 
 		aplicar.click();
 		sleep(2000);

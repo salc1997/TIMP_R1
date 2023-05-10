@@ -7,10 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import com.sap.timp.base.TestBaseSteven;
 
-import com.sap.timp.base.TestBaseCristhian;
-
-public class OutputdeReferenciaPO extends TestBaseCristhian {
+public class OutputdeReferenciaPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//*[@id=\"draggable-28\"]")				
 	public WebElement mover;
@@ -67,10 +66,10 @@ public class OutputdeReferenciaPO extends TestBaseCristhian {
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
 	public WebElement ferramenta;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div")
 	public WebElement menu;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement opcao;
 	
 	@FindBy(xpath = "//button[text()=\"Não\"]")
@@ -109,13 +108,19 @@ public class OutputdeReferenciaPO extends TestBaseCristhian {
 	@FindBy(xpath = "//span[text()=\"Remover Coluna\"]")
 	public WebElement removerRegla;
 	
+	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	public WebElement btnAplicar;
+	
+	@FindBy(xpath = "//button[text()=\"Sim\"]")
+	public WebElement btnsim;
+	
 	public OutputdeReferenciaPO() {
 
 		PageFactory.initElements(driver, this);
 	}
 	
 	
-	public boolean editar() {
+	public boolean outputReferencia() {
 		WebDriverWait wait = new WebDriverWait(driver, 7000);
 		String url = driver.getCurrentUrl();
 		
@@ -133,22 +138,19 @@ public class OutputdeReferenciaPO extends TestBaseCristhian {
 		
 		if (tc2==true) {
 			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
-			ferramenta.sendKeys("2278");
+			ferramenta.sendKeys("2342");
 			ferramenta.sendKeys(Keys.ENTER);
 			
 		}else if (tq1==true) {
 			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
-			ferramenta.sendKeys("8005134");
+			ferramenta.sendKeys("8005253");
 			ferramenta.sendKeys(Keys.ENTER);
 			
 		}else {
 			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
-			ferramenta.sendKeys("1745");
-			ferramenta.sendKeys(Keys.ENTER);
-			
-		}
-		
-		
+			ferramenta.sendKeys("1769");
+			ferramenta.sendKeys(Keys.ENTER);			
+		}		
 		
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -160,34 +162,43 @@ public class OutputdeReferenciaPO extends TestBaseCristhian {
 		menu.click();
 
 		opcao.click();
-
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
-		
-		agregar.click();
-		sleep(1000);
-		regraC.click();
-		sleep(1000);
-		atribuirRegra.click();
-		
-		waitExpectXpath("/html/body/div[3]/div/div[2]/div/div[2]/div/div/div/div[2]/div[1]/div[1]/label/span");
-		sleep(1000);
-		selecionRegra.click();
-		sleep(1000);
-		
-		String reglaT = driver.findElement(By.xpath("//div[@class=\"tbody\"]/div[@class=\"tr\"]/div[3]/div")).getText();
-		
-		
-		proximo.click();
-
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div/div[2]/div/div[2]/div/textarea")));
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		proximo.click();
 		
-		waitExpectXpath("/html/body/div[3]/div/div[2]/div/div[2]/div[2]/div/div/div/div/div[2]/div[1]/div[1]/label/span");
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+//		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		WebElement cfopOpciones = driver.findElement(By.xpath("//li[@column-name=\"CFOP\"]/div/div/div[@id=\"chead\"]/span"));
+		cfopOpciones.click();
+		
+		sleep(4000);
+		
+		WebElement opcOutputDeReferencia = driver.findElement(By.xpath("//span[text()=\"Adicionar output de referência\"]"));
+		opcOutputDeReferencia.click();
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		WebElement cboCampoReferencia = driver.findElement(By.xpath("//div[@id=\"reference-field\"]/div/div[2]"));
+		cboCampoReferencia.click();
 		sleep(1000);
-		proximo.click();
 		
-		sleep(5000);
+		WebElement opcionCampoReferencia = driver.findElement(By.xpath("//li[contains(@class, \"list-item\") and text()=\"CFOP\"]"));
+		opcionCampoReferencia.click();
+		sleep(1000);
+		
+		btnAplicar.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		gravar.click();
 		waitExpectElement(nao);
@@ -195,6 +206,8 @@ public class OutputdeReferenciaPO extends TestBaseCristhian {
 		nao.click();
 		sleep(2000);
 		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		execucao.click();
 		
 		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
@@ -206,28 +219,47 @@ public class OutputdeReferenciaPO extends TestBaseCristhian {
 		edicao.click();
 		sleep(3000);
 		
-		nao.click();
+	//	waitExpectElement(nao);
+	//	nao.click();
 		sleep(2000);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		seleccionarRegla.click();
+		cfopOpciones = driver.findElement(By.xpath("//li[@column-name=\"CFOP\"]/div/div/div[@id=\"chead\"]/span"));
+		cfopOpciones.click();
+		sleep(1000);
+		
+		WebElement excluirOutputReferencia = driver.findElement(By.xpath("//span[text()=\"Excluir output de referência\"]"));
+		excluirOutputReferencia.click();
+		sleep(1000);
+		
+		waitExpectElement(btnsim);
+		btnsim.click();
+		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		removerRegla.click();
-		sleep(2000);
+		String valorConfirmar = "O campo de saída foi excluído com sucesso";
+		String confirmado = driver.findElement(By.xpath("//ul[@class=\"base-toast-list\"]/li/div/span[2]/span")).getText().trim();
+		
+		boolean sucesso = true;
+		
+		if(confirmado.equals(valorConfirmar)) {
+			sucesso = true;
+			System.out.println("Output de referencia removido correctamente...");
+		} else {
+			System.out.println("No se ha removido el output de referencia...");
+		}		
 		
 		gravar.click();
 		sleep(2000);
 		
 		nao.click();
-		sleep(2000);
+		sleep(2000);	
 		
-		boolean sucesso = true;
-		
-		return sucesso;
-		
+		return sucesso;		
 	}
 
 }

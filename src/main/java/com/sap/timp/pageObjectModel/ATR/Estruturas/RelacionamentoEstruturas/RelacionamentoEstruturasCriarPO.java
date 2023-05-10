@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseSteven;
 
 public class RelacionamentoEstruturasCriarPO extends TestBaseSteven{
@@ -123,20 +123,21 @@ public class RelacionamentoEstruturasCriarPO extends TestBaseSteven{
 	
 		
 		novo.click();
+		sleep(2000);
+		invisibilityOfElementOverlay();
+		sleep(2000);
 		
 		waitExpectElement(grupo1);
-		invisibilityOfElementOverlay();
-		
-		
+
 		grupo1.click();
 		sleep(1000);
 		grupo1O.click();
-		sleep(1000);
+		sleep(3000);
 		
 		estrutura1.click();
 		sleep(1000);
 		estrutura1O.click();
-		sleep(1000);
+		sleep(6000);
 		
 		campoEstrutura1.click();
 		sleep(1000);
@@ -157,7 +158,7 @@ public class RelacionamentoEstruturasCriarPO extends TestBaseSteven{
 		estrutura2.click();
 		sleep(1000);
 		estrutura2O.click();
-		sleep(1000);
+		sleep(3000);
 		
 		campoEstrutura2.click();
 		sleep(1000);
@@ -200,7 +201,7 @@ public class RelacionamentoEstruturasCriarPO extends TestBaseSteven{
 		
 		String idDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Id após da criação: " + idDC);
-		idInserir1(idDC);
+		idInserir("RelacionamentoEstruturasCriar",idDC);
 		
 		int idACI = convertToInt(idAC);
 		int idADI = convertToInt(idDC);

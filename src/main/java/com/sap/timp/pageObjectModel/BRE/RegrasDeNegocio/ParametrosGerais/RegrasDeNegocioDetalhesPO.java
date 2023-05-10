@@ -65,11 +65,10 @@ public class RegrasDeNegocioDetalhesPO  extends TestBaseKenssy{
 		ultimapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(9000);
 		
-		String idRegistro = idObter1();
-		//String idRegistro = "1326";
-		//String idRegistro = "1289"; tc2
+		String idRegistro = idObter("RegrasDeNegocioCriar");
+		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement detalhes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhe\"]"));
 		
@@ -114,7 +113,7 @@ public class RegrasDeNegocioDetalhesPO  extends TestBaseKenssy{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		sleep(6000);
+		sleep(9000);
 		//VISUALIZAR
 		String campos1Valor1 = camposV1.getText();
 		String campos2Valor2 = camposV2.getText();

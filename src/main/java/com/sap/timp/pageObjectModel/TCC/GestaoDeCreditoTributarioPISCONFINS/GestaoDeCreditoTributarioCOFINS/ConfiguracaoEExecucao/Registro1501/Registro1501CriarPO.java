@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class Registro1501CriarPO extends TestBaseCristhian{
+public class Registro1501CriarPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
@@ -107,7 +107,7 @@ public class Registro1501CriarPO extends TestBaseCristhian{
 	@FindBy(xpath = "//div[@class=\"fieldSize1 branch\"]/div/div[@id=\"main-icon\"]")
 	public WebElement filialV;
 	
-	@FindBy(xpath = "//li[text()=\"0001\"]")
+	@FindBy(xpath = "//li[text()=\"0002\"]")
 	public WebElement filialOV;
 	
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[3]/div/div[2]/div/div[2]/div[1]/div[2]/div/div[1]/span")
@@ -125,7 +125,7 @@ public class Registro1501CriarPO extends TestBaseCristhian{
 	@FindBy(xpath = "/html/body/div[4]/div[2]/div[2]/div[1]/div/div/span")
 	public WebElement m1;
 	
-	@FindBy(xpath = "/html/body/div[4]/div[2]/div[2]/div[1]/div/div/span")
+	@FindBy(xpath = "//span[text()=\"1A\"]")
 	public WebElement a1;
 	
 	public Registro1501CriarPO() {
@@ -152,6 +152,7 @@ public class Registro1501CriarPO extends TestBaseCristhian{
 			tp1 = true;
 		}
 		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		gestaoCredito.click();
@@ -194,8 +195,8 @@ public class Registro1501CriarPO extends TestBaseCristhian{
 		sleep(1000);
 		System.out.println("1111");
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
-		sleep(3000);
+		//attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		sleep(12000);
 		
 		uf.click();
 		sleep(1000);
@@ -228,12 +229,12 @@ public class Registro1501CriarPO extends TestBaseCristhian{
 		empresaV.click();
 		sleep(2000);
 		empresaOV.click();
-		sleep(6000);
+		sleep(13000);
 		
 		filialV.click();
 		sleep(2000);
 		filialOV.click();
-		sleep(2000);
+		sleep(5000);
 		
 		calendario.click();
 		sleep(2000);
@@ -242,10 +243,10 @@ public class Registro1501CriarPO extends TestBaseCristhian{
 		sleep(2000);
 		
 		anio.click();
-		sleep(2000);
+		sleep(4000);
 		
 		enero.click();
-		sleep(2000);
+		sleep(4000);
 		
 		if (tq1==true) {
 			m1.click();
@@ -260,8 +261,8 @@ public class Registro1501CriarPO extends TestBaseCristhian{
 		sleep(8000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		flagNota.click();
-		sleep(2000);
+		/*flagNota.click();
+		sleep(2000);*/
 		
 		transferir.click();
 		sleep(2000);
@@ -302,7 +303,7 @@ public class Registro1501CriarPO extends TestBaseCristhian{
 			rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 			String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 			
-			idInserir1(id2);
+			idInserir("GestaoCréditoTributárioCOFINSRegistro1501",id2);
 			int idD = convertToInt(idRegistro);
 			int id2D = convertToInt(id2);
 			
@@ -331,7 +332,7 @@ public class Registro1501CriarPO extends TestBaseCristhian{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		idInserir1(id2);
+		idInserir("GestaoCréditoTributárioCOFINSRegistro1501",id2);
 		int idD = convertToInt(idRegistro);
 		int id2D = convertToInt(id2);
 		

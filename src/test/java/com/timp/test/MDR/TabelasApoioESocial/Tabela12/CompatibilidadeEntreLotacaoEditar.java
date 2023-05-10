@@ -2,7 +2,7 @@ package com.timp.test.MDR.TabelasApoioESocial.Tabela12;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class CompatibilidadeEntreLotacaoEditar extends TestBaseSteven {
- 
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CompatibilidadeEntreLotacaoEditarPO compatibilidadeEntreLotacaoEditarPO;

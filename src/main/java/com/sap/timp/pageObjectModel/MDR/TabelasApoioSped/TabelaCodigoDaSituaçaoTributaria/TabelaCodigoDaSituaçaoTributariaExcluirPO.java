@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TabelaCodigoDaSituaçaoTributariaExcluirPO extends TestBaseEliel{
+public class TabelaCodigoDaSituaçaoTributariaExcluirPO extends TestBaseSteven{
 	
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
@@ -92,7 +92,7 @@ public class TabelaCodigoDaSituaçaoTributariaExcluirPO extends TestBaseEliel{
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
-		
+		waitExpectElement(aceitar);
 		aceitar.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

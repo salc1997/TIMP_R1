@@ -44,15 +44,17 @@ public class ArquivosImportadosInformacaoPO extends TestBaseFernando{
 		sleep(2000);
 		
 		String url = driver.getCurrentUrl();
-		int idRegistro = 0;
+		String  idRegistro = "0";
 		
 		if(url.contains("tc2")) {
-			idRegistro = 8;
+			idRegistro = "48";
 		}
 		
 		if(url.contains("tq1")) {
-			idRegistro = 13;
+			idRegistro = "13";
 		}
+		
+	
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Informação\"]"));
@@ -79,10 +81,10 @@ public class ArquivosImportadosInformacaoPO extends TestBaseFernando{
 		menu.click();
 		sleep(1000);
 		açao.click();
-		sleep(3000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(10000);
+	//	waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(12000);
 		
 		logDeInconcisstencia.click();
 		sleep(3000);

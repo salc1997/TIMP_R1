@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseEliel {
+public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseSteven {
 
 	@FindBy(xpath = "//span[text()=\"Mapeamento de Estruturas\"]")
 	public WebElement mapeamentodeestruturas;
@@ -70,7 +70,7 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter1();
+		String idRegistro = idObter("MapeamentoDeEstruturasCriar");
 
 		System.out.println("Ultimo registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
@@ -83,13 +83,13 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseEliel {
 		menu.click();
 		sleep(1000);
 		copia.click();
-		sleep(2000);
+		sleep(5000);
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		actionsMoveToElementXpath("//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]");
-		excluircofins.click();
-		sleep(2000);
+//		excluircofins.click();
+//		sleep(2000);
 
 		datainicio.clear();
 		sleep(2000);
@@ -104,7 +104,7 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseEliel {
 		gravar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(9000);
 
 		mapeamentodeestruturas.click();
 		sleep(2000);
@@ -149,10 +149,11 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseEliel {
 		menu.click();
 		sleep(1000);
 		editar.click();
-
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+
+		sleep(6000);
+
 
 		String data  = datainicio.getAttribute("value");
 		String data1 = datafim.getAttribute("value");
@@ -164,6 +165,9 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseEliel {
 		sucesso.add(data.equals(enviar));
 		sucesso.add(data1.contains(enviar1));
 		
+
+		sleep(5000);
+		
 		int cofins = driver.findElements(By.xpath("//div[@id=\"multipleControlerId-05\"]")).size();
 
 		if (cofins == 0) {
@@ -173,6 +177,7 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBaseEliel {
 			System.out.println("Cofins  consta na edição");
 			sucesso.add(false);
 		}
+
 
 		cancelar.click();
 		sleep(2000);

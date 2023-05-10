@@ -30,7 +30,11 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 	public WebElement grupoEstrutura;
 	@FindBy(xpath = "//li[text()=\"Ajuste\"][1]")
 	public WebElement opcGrupoEstructura;
-	@FindBy(xpath = "//li[contains(text(),\"Ajuste\")][2]")
+	
+	@FindBy(xpath = "//li[text()=\"Ajustes\"][1]")
+	public WebElement opcGrupoEstructura1;
+	
+	@FindBy(xpath = "//li[contains(text(),\"Ajuste\")][1]")
 	public WebElement opcGrupoEstructura2;
 	
 	@FindBy(xpath = "//div[@id=\"inputStructureChild\"]/div/div/div[2]")
@@ -284,6 +288,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		boolean tc2 = false;
 		boolean tq1 = false;
 		boolean tp1 = false;
+		boolean tq2 = false;
 		String url = driver.getCurrentUrl();
 		
 		if (url.contains("tc2")) {
@@ -292,6 +297,8 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 			tp1 = true;
 		}else if (url.contains("tq1")) {
 			tq1 = true;
+		}else if (url.contains("tq2")) {
+			tq2 = true;
 		}
 		
 		raiz.click();
@@ -335,7 +342,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		tipo.click();
 		sleep(2000);
 		
-		if (tq1 == true) {
+		if (tq1 == true ||tq2 == true) {
 			opcTipo.click();
 			sleep(1000);
 //			String tipoT = opcTipo.getText();
@@ -361,7 +368,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		grupoEstrutura.click();
 		sleep(1000);
 		
-		if (tq1 == true) {
+		if ((tq1 == true ||tq2 == true)) {
 			opcGrupoEstructura.click();
 			sleep(1000);
 		}else if (tc2 ==true) {
@@ -369,7 +376,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 			sleep(1000);
 		}else {
 			//CORREGIR AL EJECUTAR EN AMBIENTE
-			opcGrupoEstructura.click();
+			opcGrupoEstructura1.click();
 			sleep(1000);
 		}
 		
@@ -384,14 +391,18 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		sleep(1000);
 		
 		versaoLeiaute.sendKeys("1");
-		sleep(1000);
-		
-		salvar.click();
-		sleep(3000);
-		//waitExpectElement(gravar);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		salvar.click();
+		sleep(13000);
+		
+		
+		if (tq1 == true && tc2 == true||tq2 == true) {
+			sleep(3000);
+			//waitExpectElement(gravar);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
+		}
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"O leiaute foi criado com sucesso\")]")).size();
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -411,12 +422,12 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		sleep(2000);
 		sleep(2000);
 		waitExpectXpath("//*[@id=\"home-icon\"]");
-		sleep(1000);
+		sleep(20000);
 		
 		while (!separadores.isDisplayed()) {
 			flecha.click();
 		}
-		sleep(1000);
+		sleep(50000);
 		
 		separadores.click();
 		sleep(2000);
@@ -652,12 +663,12 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		
 		sleep(2000);
 		abaConfiguracao.click();
-		sleep(2000);
+		sleep(12000);
 		
 		raizConfiguracao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		siguiente.click();
 		sleep(2000);
@@ -699,7 +710,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		//li[@id="7754"]
 		waitExpectElement(opcLeiauteObter);
 		opcLeiauteObter.click();
-		sleep(2000);
+		sleep(6000);
 		
 		versaoConfiguracao.click();
 		sleep(1000);
@@ -1094,12 +1105,13 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBaseKenssy {
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		
 		if (resultado.isDisplayed()) {
 			exclucao = driver.findElements(By.xpath("//div[@class=\"tr-no-data\"]/div[contains(text(),\"Nenhum resultado\")]")).size();
-			////div[@class="tr-no-data" and not (@tabindex="0")]/div[contains(text(),"Nenhum resultado")]
+			//exclucao = driver.findElements(By.xpath("//div[@class=\"tr-no-data\"]/div[contains(text(),\"Nenhum resultado\")]")).size();
+			//div[@class="tr-no-data" and not (@tabindex="0")]/div[contains(text(),"Nenhum resultado")]
 		}
 		
 		System.out.println(exclucao);

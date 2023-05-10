@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigoTipoCreditoVisualizarPO extends TestBaseEliel {
+public class CodigoTipoCreditoVisualizarPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
@@ -77,7 +77,7 @@ public class CodigoTipoCreditoVisualizarPO extends TestBaseEliel {
 	public WebElement codigoTipoCreditoE;
 	@FindBy(xpath = "//input[contains(@placeholder,\"descrição\")]")
 	public WebElement descricaoE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Inicio\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Início\")]")
 	public WebElement dataVigenciaE;
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")

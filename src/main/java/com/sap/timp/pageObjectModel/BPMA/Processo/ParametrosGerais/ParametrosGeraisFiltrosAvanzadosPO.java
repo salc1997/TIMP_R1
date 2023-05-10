@@ -31,9 +31,11 @@ public class ParametrosGeraisFiltrosAvanzadosPO extends TestBaseKenssy {
 	public WebElement usuarioCriacao;
 	@FindBy(xpath = "//div[@id=\"modificationUser\"]/div/div/div[2]")
 	public WebElement usuarioModificao;
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][1]")
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][47]")
 	public WebElement opc;
 	
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][2]")
+	public WebElement opc1;
 	@FindBy(xpath = "//*[@id=\"creationDate\"]/div/div[1]/input")
 	public WebElement filtroDataCriacao;
 	@FindBy(xpath = "//*[@id=\"modificationDate\"]/div/div[1]/input")
@@ -56,7 +58,7 @@ public class ParametrosGeraisFiltrosAvanzadosPO extends TestBaseKenssy {
 		filtros.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		usuarioCriacao.click();
 		sleep(1000);
@@ -100,8 +102,9 @@ public class ParametrosGeraisFiltrosAvanzadosPO extends TestBaseKenssy {
 		
 		usuarioModificao.click();
 		sleep(1000);
-		String usuarioModificaoText = opc.getText();
-		opc.click();
+		String usuarioModificaoText = opc1.getText();
+		usuarioModificaoText = usuarioModificaoText.replace(" ","");
+		opc1.click();
 		sleep(1000);
 		//String empresaText = opcEmpresa.getText();
 		System.out.println("USUARIO MODIFICAO: "+ usuarioModificaoText);
@@ -120,7 +123,7 @@ public class ParametrosGeraisFiltrosAvanzadosPO extends TestBaseKenssy {
 					.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["
 							+ rows + "]/div[11]/div"))
 					.getText();
-			System.out.println(textFiltroUsuarioModificao + " Usuario Criacao Filtro");
+			System.out.println(textFiltroUsuarioModificao + " Usuario Modificado Filtro");
 			sucesso.add(usuarioModificaoText.contains(textFiltroUsuarioModificao));
 
 			f = f + 1;
@@ -223,7 +226,7 @@ public class ParametrosGeraisFiltrosAvanzadosPO extends TestBaseKenssy {
 							+ rows + "]/div[12]/div"))
 					.getText();
 			System.out.println(textFiltroData + " data Filtro");
-			sucesso.add(dataText.equals(textFiltroData));
+			sucesso.add(dataText.contains(textFiltroData));
 
 			f = f + 1;
 		}

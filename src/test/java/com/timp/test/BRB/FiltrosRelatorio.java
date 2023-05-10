@@ -44,6 +44,7 @@ public class FiltrosRelatorio extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
+	
 		driver.close();
 	}
 
@@ -101,12 +102,11 @@ public class FiltrosRelatorio extends TestBaseSteven {
 
 				assertEquals(empresas.get(i), "1000");
 				assertEquals(ufFiliais.get(i), "BA");
-				assertEquals(filial.get(i), "0143");
+				assertEquals(filial.get(i), "0236");
 				assertTrue(data.get(i), filtros);
 
 			}
 		}
-
 	}
 
 	@Test(dependsOnMethods  = "AfiltrosEditor")
@@ -151,7 +151,7 @@ public class FiltrosRelatorio extends TestBaseSteven {
 
 				assertEquals(empresas.get(i), "1000");
 				assertEquals(ufFiliais.get(i), "BA");
-				assertEquals(filial.get(i), "0143");
+				assertEquals(filial.get(i), "0236");
 				assertTrue(data.get(i), filtros);
 
 			}

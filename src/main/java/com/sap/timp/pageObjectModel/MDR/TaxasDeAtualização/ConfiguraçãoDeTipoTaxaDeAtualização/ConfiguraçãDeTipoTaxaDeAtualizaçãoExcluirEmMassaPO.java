@@ -24,7 +24,7 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassaPO extends TestBase
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement btnSim;
 	
-	@FindBy(xpath = "//div[contains(@class, \"icon-left\")][2]")
+	@FindBy(xpath = "//div[contains(@class, \"icon-right\")][2]")
 	public WebElement btnPrimerPagina;
 	
 	@FindBy(xpath = "//span[text()=\"Novo Configuração de Tipo Taxa de Atualização\"]")
@@ -80,19 +80,20 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassaPO extends TestBase
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		siguiente.click();
+		btnPrimerPagina.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		//conta o numero de linhas
+		//conta o numero de linhas	
+		
+		
+		
+		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		
-		String id = "0";
-		
-		if(rows > 0) {
-			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-			System.out.println(id);
-		}
+		String idRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		System.out.println(idRegistro);		
+				
 		
 		//NUEVO REGISTRO
 		btnNovoConfiguracao.click();
@@ -151,27 +152,28 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassaPO extends TestBase
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		siguiente.click();
+		btnPrimerPagina.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		int rows1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows1+"]/div[3]/div")).getText();
 		
-		rows = rows-1;
+		rows1 = rows+1;
 		
-		String idRegistro2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String idRegistro2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows1+"]/div[3]/div")).getText();
 		
 		
 		
 	
 		sleep(2000);
-		System.out.println(id);
+		System.out.println(idRegistro);
 		System.out.println(idRegistro1);
 		System.out.println(idRegistro2);
 		
-		double idD = convertToDouble(id);
+		double idD = convertToDouble(idRegistro);
 		double idRegistroD1 = convertToDouble(idRegistro1);
 		double idRegistroD2 = convertToDouble(idRegistro2);
 
@@ -219,7 +221,7 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassaPO extends TestBase
 		waitExpectElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		siguiente.click();
+		btnPrimerPagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

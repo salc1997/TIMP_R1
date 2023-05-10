@@ -2,7 +2,7 @@ package com.timp.test.ATR.Estruturas.RelacionamentoEstruturas;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
@@ -13,6 +13,8 @@ import com.sap.timp.pageObjectModel.BPMA.AcessarBPMAPO;
 import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
@@ -31,25 +33,20 @@ public class RelacionamentoEstruturasCriar extends TestBaseSteven{
 
   @AfterClass
   public void afterClass() {
+	 driver.close();
   }
-  
-  @Test(priority = 1)
- 	public void login() {
- 		loginTC.login();
-
- 	}
-
- 	@Test(priority = 2)
- 	public void ATREntrar() {
-
- 		boolean sucesso = acessarATRPO.acessarATR();
-
- 	}
-
- 	@Test(priority = 3)
+ 
+ 	@Test()
  	public void criarRelacionamento() {
+ 		
+ 		loginTC.login();
+		 acessarATRPO.acessarATR();
 
- 		relacionamentoEstruturasCriarPO.criar();
-
+ 		ArrayList<Boolean> sucesso =relacionamentoEstruturasCriarPO.criar();
+ 		
+ 		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizaçar);
+		}
+ 		sleep(2000);
  	}
 }

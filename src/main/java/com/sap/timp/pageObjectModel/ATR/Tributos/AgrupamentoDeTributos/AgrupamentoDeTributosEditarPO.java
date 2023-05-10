@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AgrupamentoDeTributosEditarPO extends TestBaseEliel{
+public class AgrupamentoDeTributosEditarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[@class=\"title-boxes \"][text()=\"Tributos\"]")
 	public WebElement tributos;
@@ -87,7 +87,7 @@ public class AgrupamentoDeTributosEditarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("AgrupamentoDeTributosCriar");
 		
 		System.out.println("Ultimo registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -101,8 +101,8 @@ public class AgrupamentoDeTributosEditarPO extends TestBaseEliel{
 		editar.click();
 		sleep(2000);
 		
-		sleep(2000);
-		waitExpectElement(nome);
+		sleep(8000);
+		//waitExpectElement(nome);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		nome.clear();
@@ -115,9 +115,9 @@ public class AgrupamentoDeTributosEditarPO extends TestBaseEliel{
 		opcaotributo.click();
 		sleep(2000);
 		closeSelectTypeCheckbox(tributo);
-		sleep(2000);
+		sleep(3000);
 		tributosaavaliar.click();
-		sleep(2000);
+		sleep(3000);
 		opcaotributosaavaliar.click();
 		sleep(2000);
 		closeSelectTypeCheckbox(tributosaavaliar);

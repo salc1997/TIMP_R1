@@ -42,6 +42,7 @@ public class InstituicaoExcluirMasas extends TestBaseMassiel {
 
 		boolean sucesso = instituicaoExcluirMasasPO.criar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 
 	}
 
@@ -50,5 +51,7 @@ public class InstituicaoExcluirMasas extends TestBaseMassiel {
 
 		boolean sucesso2 = instituicaoExcluirMasasPO.InstituicaoExcluirMasas();
 		assertTrue(sucesso2, Eliminado);
+		
+		sleep(2000);
 	}
 }

@@ -8,13 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseKenssy;
 
 public class SaldosFiltrarIdPO extends TestBaseKenssy{
-	
 	@FindBy(xpath = "//span[text()=\"Centralização\"]")
 	public WebElement centralizacao;
 	
 	@FindBy(xpath = "//span[text()=\"Saldos\"]")
 	public WebElement saldos;
-	
 	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement inputBuscar;
@@ -31,28 +29,19 @@ public class SaldosFiltrarIdPO extends TestBaseKenssy{
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")
 	public WebElement idBuscadoEjemplo;
 	
-	
 	public SaldosFiltrarIdPO() {
-
 		PageFactory.initElements(driver, this);
 	}
 	
 	public boolean FiltrarSaldosId() {
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		centralizacao.click();
 		sleep(2000);
 		saldos.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-//		trOrdenarMayMen.click();
-//		sleep(1000);
-//		trOrdenarMayMen.click();
-//		sleep(1000);
-		
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+
 		
 		inputBuscar.sendKeys(idBuscado.getText());
 		inputBuscar.sendKeys(Keys.ENTER);
@@ -65,20 +54,6 @@ public class SaldosFiltrarIdPO extends TestBaseKenssy{
 		boolean dato= success.contains(idBuscado.getText());
 		System.out.println(success);
 		
-//		boolean success = false;
-//		String dato =  resultadoBusqueda.getText();
-//		success = dato.contains("1");
-//	
-		
-		//imprimo el dato que obtengo
-//		System.out.println(success);
-		
-		
 		return dato;
-		
-		
-		
-		
 	}
-
 }

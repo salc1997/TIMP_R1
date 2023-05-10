@@ -151,7 +151,7 @@ public class StatusParaBCEVisualizarPO extends TestBaseSteven {
 
 		sucesso.add(empresaV1.contains(empresaD1));
 		sucesso.add(ufV1.contains(ufD1));
-		sucesso.add(filialD1.contains(filialV1));
+		sucesso.add(filialD1.equals(filialV1));
 		sucesso.add(descricaoV1.contains(descricaoD1));
 		sucesso.add(dataVigenciaV1.contains(dataVigenciaD1));
 

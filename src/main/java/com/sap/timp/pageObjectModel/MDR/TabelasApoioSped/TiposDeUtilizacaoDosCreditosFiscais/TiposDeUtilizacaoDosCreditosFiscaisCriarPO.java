@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TiposDeUtilizacaoDosCreditosFiscaisCriarPO extends TestBaseEliel {
+public class TiposDeUtilizacaoDosCreditosFiscaisCriarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
@@ -25,7 +25,7 @@ public class TiposDeUtilizacaoDosCreditosFiscaisCriarPO extends TestBaseEliel {
 	public WebElement descricao;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datainicio;
 	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
@@ -81,12 +81,12 @@ public class TiposDeUtilizacaoDosCreditosFiscaisCriarPO extends TestBaseEliel {
 		sleep(2000);
 		
 		
-		codigo.sendKeys("Rj55");;
+		codigo.sendKeys("Rj60");;
 		sleep(2000);
 		codigo.click();
 		sleep(2000);
 		
-		descricao.sendKeys("Teste QA55");;
+		descricao.sendKeys("Teste QA6");;
 		
 		sleep(2000);
 		

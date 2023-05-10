@@ -2,12 +2,9 @@ package com.timp.test.MDR.Centralizacao.FatorCreditamento;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKathy;
-import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoCriarPO;
 import com.sap.timp.pageObjectModel.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoExcluirEmMassaPO;
 
 import org.testng.annotations.BeforeClass;
@@ -43,6 +40,7 @@ public class FatorCreditamentoExcluirEmMassa extends TestBaseSteven {
 
 		boolean sucesso = fatorCreditamentoExcluirEmMassaPO.fatorCreditamentoCriar();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 
 	}
 
@@ -51,6 +49,7 @@ public class FatorCreditamentoExcluirEmMassa extends TestBaseSteven {
 
 		boolean sucesso2 = fatorCreditamentoExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
+		sleep(2000);
 
 	}
 }

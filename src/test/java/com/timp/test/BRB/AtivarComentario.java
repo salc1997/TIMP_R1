@@ -46,7 +46,7 @@ public class AtivarComentario extends TestBaseSteven {
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), comentariosInativos);
 		}
-
+		sleep(2000);
 	}
 
 }

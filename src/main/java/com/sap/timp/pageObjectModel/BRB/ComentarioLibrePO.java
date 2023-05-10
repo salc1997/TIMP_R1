@@ -19,10 +19,10 @@ public class ComentarioLibrePO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
 	public WebElement ferramenta;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div")
 	public WebElement menu;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement opcao;
 	
 	@FindBy(xpath = "//li[contains(@class,\"add-column\")]/div/div/div")
@@ -53,9 +53,9 @@ public class ComentarioLibrePO extends TestBaseSteven{
 	
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[1]/div[1]")
 	public WebElement comentario2;
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div[1]")
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[3]/div[1]")
 	public WebElement comentario1;
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[1]/div[2]/div[1]")
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[3]/div[2]/div[1]")
 	public WebElement usuario1;
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div[2]/div[1]")
 	public WebElement usuario2;
@@ -63,11 +63,17 @@ public class ComentarioLibrePO extends TestBaseSteven{
 	public WebElement usuarioLogueado;
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[1]/div[2]/div[2]")
 	public WebElement data2;
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div[2]/div[2]")
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[3]/div[2]/div[2]")
 	public WebElement data1;
 	
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
+	
+	
+	
+	@FindBy(xpath = "//div[@id=\"table-data-wrapper\"]/div[2]/div[16]/div[2]/button")
+					//*[@id="table-data-wrapper"]/div[2]/div[16]/div[2]/button
+	public WebElement boton;
 	
 	
 	public ComentarioLibrePO() {
@@ -97,7 +103,7 @@ public class ComentarioLibrePO extends TestBaseSteven{
 		
 
 		actionsMoveToElementElement(agregar);
-		sleep(2000);
+		sleep(7000);
 		nombre.click();
 		
 		cambiarNombre.click();
@@ -175,12 +181,12 @@ public class ComentarioLibrePO extends TestBaseSteven{
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
-		sleep(2000);
+		sleep(6000);
 		comentarioTexto2.click();
 		
 
 		sleep(5000);
-		driver.findElement(By.xpath("//div[@data-column=\""+dataColumn+"\" and contains(@aria-label, \"Linha: 1-\")]/div/button")).click();
+		//driver.findElement(By.xpath("//div[@data-column=\""+dataColumn+"\" and contains(@aria-label, \"Linha: 1-\")]/div/button")).click();
 		
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -188,11 +194,16 @@ public class ComentarioLibrePO extends TestBaseSteven{
 		sleep(2000);
 
 		//waitExpectXpath("/html/body/div[3]/div/div[3]/button");
-		sleep(3000);
+		sleep(4000);
+		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-
+		 boton.click();
+		 sleep(4000);
+		 invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		 sleep(4000);
+		 
 		Date date = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/YYYY");
 		String dateS = String.valueOf(sdf.format(date));
@@ -218,6 +229,8 @@ public class ComentarioLibrePO extends TestBaseSteven{
 		String data1S = data1.getText();
 		data1S = data1S.substring(0, 10);
 		sucesso.add(data1S.equals(dateS));
+		
+		System.out.println(sucesso);	
 		
 		return sucesso;
 		

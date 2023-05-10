@@ -93,7 +93,7 @@ public class ConfrontacaoVisualizarPO extends TestBaseMassiel{
 
 		valoradicionado.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 
 		confrontacao.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

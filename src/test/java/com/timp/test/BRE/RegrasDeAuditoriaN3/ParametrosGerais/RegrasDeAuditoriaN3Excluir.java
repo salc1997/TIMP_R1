@@ -8,47 +8,40 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
-import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegraDeAuditoriaN3ExcluirPO;
+import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3ExcluirPO;
 
-public class RegrasDeAuditoriaN3Excluir extends TestBaseEliel {
+public class RegrasDeAuditoriaN3Excluir extends TestBaseSteven {
 	
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
-	RegraDeAuditoriaN3ExcluirPO regraDeAuditoriaN3ExcluirPO;
+	RegrasDeAuditoriaN3ExcluirPO regraDeAuditoriaN3ExcluirPO;
 	
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
-		regraDeAuditoriaN3ExcluirPO = new RegraDeAuditoriaN3ExcluirPO();
+		regraDeAuditoriaN3ExcluirPO = new RegrasDeAuditoriaN3ExcluirPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
-	}
-
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarBRE() {
-		acessarBREPO.acessarBRE();
+		driver.close();
 	}
 	
-	@Test(priority = 2)
-	public void criar() {
+	@Test()
+	public void excluir() {
+		loginTC.login();
+		acessarBREPO.acessarBRE();
+		
 		ArrayList<Boolean> sucesso = regraDeAuditoriaN3ExcluirPO.excluir();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Eliminado);
 		}
-		
+		sleep(2000);
 	}
  
 	

@@ -5,10 +5,9 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import com.sap.timp.base.TestBaseSteven;
 
-import com.sap.timp.base.TestBaseKathy;
-
-public class CenariosCorrecaoCriarPO extends TestBaseKathy{
+public class CenariosCorrecaoCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li/div/span[text()=\"Cenários de Correção\"]")
 	public WebElement cenarios;
 		
@@ -24,8 +23,13 @@ public class CenariosCorrecaoCriarPO extends TestBaseKathy{
 	@FindBy(xpath = "//*[@id=\"correction-object\"]/div/div[2]/div/div[1]/div[2]/input")
 	public WebElement objetoCorrecao;
 	
+	@FindBy(xpath = "//div[@class=\"list-item\"]/div[text()=\"NF\"]")
+	public WebElement opcObjetoCorrecao;
+	
 	@FindBy(xpath = "//*[@id=\"web-service\"]/div/div[2]/div/div[1]/div[2]/input")
 	public WebElement servicoWeb;
+	@FindBy(xpath = "//div[@class=\"list-item\"]/div[text()=\"TMFNotaFiscalCorrectionsSyncIn\"]")
+	public WebElement opcServicoWeb;
 	
 	@FindBy(xpath = "/html/body/div[3]")
 	public WebElement cuerpo;
@@ -104,11 +108,12 @@ public class CenariosCorrecaoCriarPO extends TestBaseKathy{
 		
 		objetoCorrecao.click();
 		sleep(1000);
-		opc.click();
+		opcObjetoCorrecao.click();
 		sleep(1000);
+		
 		servicoWeb.click();
 		sleep(1000);
-		opc.click();
+		opcServicoWeb.click();
 		sleep(3000);
 		waitExpectElement(btnAgregarCampo);
 		btnAgregarCampo.sendKeys(Keys.ENTER);

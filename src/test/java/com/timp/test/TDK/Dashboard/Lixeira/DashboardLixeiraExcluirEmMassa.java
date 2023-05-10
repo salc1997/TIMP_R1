@@ -28,27 +28,21 @@ public class DashboardLixeiraExcluirEmMassa extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+	@Test()
+	public void criar() {
 		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarTDK() {
 		acessarTDKPO.acessarTDK();
+		
+		boolean sucesso = dashboardLixeiraExcluirEmMassaPO.comparar();
+		assertTrue(sucesso, Criar);
 	}
 
-	@Test(priority = 2)
-	public void excluir() {
-		boolean sucesso = dashboardLixeiraExcluirEmMassaPO.comparar();
-
-		assertTrue(sucesso, Criar);
-
+	@Test(dependsOnMethods = "criar")
+	public void excluirEmMassa() {	
 		boolean sucesso2 = dashboardLixeiraExcluirEmMassaPO.ExcluirMasas();
-
 		assertTrue(sucesso2, Criar);
 	}
-
 }

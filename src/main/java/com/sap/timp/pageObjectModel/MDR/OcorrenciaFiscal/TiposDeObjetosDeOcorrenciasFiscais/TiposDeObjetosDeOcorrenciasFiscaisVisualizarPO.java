@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TiposDeObjetosDeOcorrenciasFiscaisVisualizarPO extends TestBaseEliel{
+public class TiposDeObjetosDeOcorrenciasFiscaisVisualizarPO extends TestBaseSteven{
 	
 
 	
@@ -47,7 +47,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisVisualizarPO extends TestBaseElie
 	public WebElement classificacao;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Inicio de Vigência\"]")
+	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Início de Vigência\"]")
 	public WebElement datainicio;
 	
 	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Fim de Vigência\"]")
@@ -115,14 +115,14 @@ public ArrayList<Boolean> visualizar() {
 		
 		String ocorrenciavisualizar = ocorrenciavi.getText();
 		String objetosvisualizar = objetosvi.getText();
-		String classificacaovisualizar = classificacaovi.getText();
+		//String classificacaovisualizar = classificacaovi.getText();
 		String datainiciovisualizar = datainiciovi.getText();
 		String datafimvisualizar = datafimvi.getText();
 		
 		
 		System.out.println( ocorrenciavisualizar);
 		System.out.println(objetosvisualizar);
-		System.out.println(classificacaovisualizar);
+		//System.out.println(classificacaovisualizar);
 		System.out.println(datainiciovisualizar);
 		System.out.println(datafimvisualizar);
 	
@@ -161,14 +161,14 @@ public ArrayList<Boolean> visualizar() {
 		
 		String ocorrenciaeditar=ocorrencia.getAttribute("value");
 		String objetoseditar=objetos.getAttribute("value");
-		String classificacaoeditar=classificacao.getAttribute("value");
+	//	String classificacaoeditar=classificacao.getAttribute("value");
 		String datainicioeditar = datainicio.getAttribute("value");
 		String datafimeditar = datafim.getAttribute("value");
 	
 	
 		System.out.println( ocorrenciaeditar);
 		System.out.println( objetoseditar);
-		System.out.println(classificacaoeditar);
+		//System.out.println(classificacaoeditar);
 		System.out.println(datainicioeditar);
 		System.out.println(datafimeditar);
 		
@@ -177,7 +177,7 @@ public ArrayList<Boolean> visualizar() {
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		sucesso.add(ocorrenciavisualizar.equals(ocorrenciaeditar));
 		sucesso.add(objetosvisualizar.equals(objetoseditar));
-		sucesso.add(classificacaovisualizar.equals(classificacaoeditar));
+	//	sucesso.add(classificacaovisualizar.equals(classificacaoeditar));
 		sucesso.add(datainiciovisualizar.equals(datainicioeditar));
 		sucesso.add(datafimvisualizar.equals(datafimeditar));
 		

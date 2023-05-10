@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite" preserve-order="true">
 
-	<test name="Detalhe Tipo Tributo">
+<test name="Detalhe Tipo Tributo">
 
 		<classes>
 		
@@ -76,6 +76,7 @@
 			<class name="com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoVisualizar"></class>
 			<class name="com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoDetalhes"></class>
 			<class name="com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoFiltroAbansado"></class>
+			<class name="com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoExcluir"></class>
 			<class name="com.timp.test.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoExcluirMasas"></class>
 		
 		</classes>
@@ -113,6 +114,7 @@
 		</classes>
 	
 	</test>
+
 	
 	<test name="Livros Fiscais > Parametros Para Livro ICMS ST">
 
@@ -163,6 +165,8 @@
 			</classes>
 	
 	</test>
+	
+	
 
 	<test name="Parâmetros de Contabilização > Contas Default Para Extemporaneo ">
 

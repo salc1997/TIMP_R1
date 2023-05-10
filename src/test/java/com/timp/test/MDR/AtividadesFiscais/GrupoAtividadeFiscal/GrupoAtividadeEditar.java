@@ -37,6 +37,10 @@ public class GrupoAtividadeEditar extends TestBaseSteven {
 
 		acessarMDRPO.acessarMDR();
 
-		grupoAtividadeEditarPO.editar();
+		boolean sucesso = grupoAtividadeEditarPO.editar();
+
+		assertTrue(sucesso, Criar);
+		
+		sleep(2000);
 	}
 }

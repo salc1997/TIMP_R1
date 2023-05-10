@@ -11,13 +11,13 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseSteven;
 
 public class FiltroColunasPO  extends TestBaseSteven{
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[4]")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[4]")
 	public WebElement opcao;
 
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
 	public WebElement ferramenta;
 
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div")
 	public WebElement menu;
 
 	@FindBy(xpath = "//*[@id=\"right\"]/div[2]/div[1]/div/div/ul/li[1]/button")
@@ -96,10 +96,10 @@ public class FiltroColunasPO  extends TestBaseSteven{
 		sleep(8000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		
-		actionsMoveToElementXpath("//div[@data-column=\"5\" and not(@data-path)]");
+		//actionsMoveToElementXpath("//div[@data-column=\"5\" and not(@data-path)]");
 		colunaOpcao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

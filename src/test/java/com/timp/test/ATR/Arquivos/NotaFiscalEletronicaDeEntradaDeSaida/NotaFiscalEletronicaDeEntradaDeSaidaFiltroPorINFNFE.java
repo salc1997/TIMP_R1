@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFEPO;
 
-public class NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE extends TestBaseEliel{
+public class NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE extends TestBaseSteven{
 	
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
@@ -22,7 +22,7 @@ public class NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE extends TestBas
 	@BeforeClass
 	  public void beforeClass() {
 		  
-		  driver = initializationE();
+		  driver = initialization();
 		  loginTC = new LoginTC();
 		  acessarATRPO = new AcessarATRPO();
 		  notaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFEPO = new  NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFEPO();
@@ -30,30 +30,24 @@ public class NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE extends TestBas
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
-
-	 	}
-
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
 	 	
-	 	@Test(priority = 1)
+	 	@Test()
 	 	public void filtro() {
+	 		
+	 		loginTC.login();
+	 		
+	 		 acessarATRPO.acessarATR();
+	 		 
 	 		
 	 		ArrayList<Boolean> sucesso = notaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFEPO.filtro();
 	 		for (int i = 0; i < sucesso.size(); i++) {
 	 			assertTrue(sucesso.get(i), Filtros);
 			}
 			
-		
+	 		sleep(3000);
 	 		
 	 	}
 }

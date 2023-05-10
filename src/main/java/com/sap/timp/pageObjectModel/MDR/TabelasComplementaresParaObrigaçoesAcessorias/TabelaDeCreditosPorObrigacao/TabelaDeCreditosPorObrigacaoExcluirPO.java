@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TabelaDeCreditosPorObrigacaoExcluirPO extends TestBaseEliel {
+public class TabelaDeCreditosPorObrigacaoExcluirPO extends TestBaseSteven {
 	
 	
 	
@@ -66,6 +66,7 @@ public class TabelaDeCreditosPorObrigacaoExcluirPO extends TestBaseEliel {
 		excluir.click();
 		sleep(2000);
 		
+		waitExpectElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

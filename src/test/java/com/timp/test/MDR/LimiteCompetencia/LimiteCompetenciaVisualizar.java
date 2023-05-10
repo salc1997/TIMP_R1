@@ -37,17 +37,17 @@ public class LimiteCompetenciaVisualizar extends TestBaseSteven {
 		driver.close();
 	}
 
-	
 	@Test()
 	public void visualizar() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = limiteCompetenciaVisualizarPO.visualizar();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
+		sleep(5000);
 	}
 }

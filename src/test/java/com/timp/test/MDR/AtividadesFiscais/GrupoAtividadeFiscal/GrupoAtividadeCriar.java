@@ -41,6 +41,6 @@ public class GrupoAtividadeCriar extends TestBaseMassiel {
 		boolean sucesso = grupoAtividadeCriarPO.criar();
 
 		assertTrue(sucesso, Criar);
-
+		sleep(2000);
 	}
 }

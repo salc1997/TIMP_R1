@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class S1250DadosdeEventoCriarPO extends TestBaseCristhian {
+public class S1250DadosdeEventoCriarPO extends TestBaseSteven {
 	
 
 	

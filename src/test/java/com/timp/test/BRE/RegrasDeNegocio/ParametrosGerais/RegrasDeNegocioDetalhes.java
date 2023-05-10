@@ -31,23 +31,17 @@ public class RegrasDeNegocioDetalhes extends TestBaseKenssy {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+	//	driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
 
-	}
 
-	@Test(priority = 1)
-	public void acessarBRE() {
-		acessarBREPO.acessarBRE();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void detalhes() {
 
+		loginTC.login();
+		acessarBREPO.acessarBRE();
+		
 		//regrasDeNegocioDetalhesPO.detalhes();
 		ArrayList<Boolean> sucesso = regrasDeNegocioDetalhesPO.detalhes();
 
@@ -56,6 +50,7 @@ public class RegrasDeNegocioDetalhes extends TestBaseKenssy {
 			assertTrue(sucesso.get(i), Detalhes);
 
 		}
+		sleep(2000);
 	}
 
 

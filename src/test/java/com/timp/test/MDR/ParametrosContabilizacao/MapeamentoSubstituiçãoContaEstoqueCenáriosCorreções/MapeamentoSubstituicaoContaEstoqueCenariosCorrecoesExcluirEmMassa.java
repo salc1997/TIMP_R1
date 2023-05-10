@@ -6,13 +6,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoes.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO;
 
-public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa extends TestBaseEliel {
- 
+public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO;
@@ -20,7 +20,7 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa e
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO = new MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO();
@@ -36,23 +36,20 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassa e
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(1000);
 
-
 	}
-	
-	
+
 	@Test(dependsOnMethods = "Criar")
 	public void Excluir() {
 
-		
 		sleep(1000);
 		boolean sucesso2 = mapeamentoSubstituicaoContaEstoqueCenariosCorrecoesExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 
 	}
-	
+
 }

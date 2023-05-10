@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseSteven;
 
 public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
@@ -88,10 +88,7 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"fieldRow-wrapper\"][3]/div/div[2]/div/div[1]/input")
 	public WebElement campoEstruturaI2;
 	
-
-	
-	
-	@FindBy(xpath = "//div[@class=\"fieldRow-wrapper\"][3]/div/div[@id=\"delete-icon\"]")
+	@FindBy(xpath = "//div[@class=\"fieldRow-wrapper\"][2]/div/div[@id=\"delete-icon\"]")
 	public WebElement excluir;
 	
 	
@@ -111,7 +108,7 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
 	
 	public ArrayList<Boolean> criar() {
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("RelacionamentoEstruturasCriar");
 		
 		String url = driver.getCurrentUrl();
 		
@@ -138,11 +135,12 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
 		acao.click();
 		
 		sleep(2000);
-		waitExpectElement(grupo1);
 		invisibilityOfElementOverlay();
+		sleep(2000);
 		
-		
-	
+		waitExpectElement(grupo1);
+
+
 		excluir.click();
 		sleep(2000);
 		
@@ -156,23 +154,25 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
 		
 		gravar.click();
 		
-		invisibilityOfElementOverlay();
+		sleep(9000);
 		
 		relacionamentoEstruturas.click();
 		
+		sleep(2000);
 		invisibilityOfElementOverlay();
+		sleep(2000);
 		
 		siguiente.click();
 		
-		invisibilityOfElementOverlay();
+		sleep(4000);
 		
         int rows = rows("//div[@class=\"tr\" and @data-id]");
 		
 		String idDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Id após da criação: " + idDC);
-		idInserir2(idDC);
+		idInserir("RelacionamentoEstruturasCriarCopia",idDC);
 		
-		int idACI = convertToInt(idObter1());
+		int idACI = convertToInt(idObter("RelacionamentoEstruturasCriar"));
 		int idADI = convertToInt(idDC);
 		
 		
@@ -212,7 +212,7 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
 	
 	public ArrayList<Boolean> editar() {
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("RelacionamentoEstruturasCriarCopia");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/div"));
 		WebElement acao = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/div/div/ul/li/span[text()=\"Editar\"]"));
@@ -221,10 +221,9 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
 		menu.click();
 		sleep(1000);
 		acao.click();
-		
 		sleep(2000);
-		waitExpectElement(grupo1);
 		invisibilityOfElementOverlay();
+		sleep(2000);
 
 		int linhaAdicionada = rows("//div[@class=\"fieldRow-wrapper\"][3]");
 		
@@ -266,7 +265,7 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBaseSteven{
 	
 	public boolean excluir() {
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("RelacionamentoEstruturasCriarCopia");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/div"));
 		WebElement acao = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idRegistro+"\"]/div/div/div/ul/li/span[text()=\"Excluir\"]"));

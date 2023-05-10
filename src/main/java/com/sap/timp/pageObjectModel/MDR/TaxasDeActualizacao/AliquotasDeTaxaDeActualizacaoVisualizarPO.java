@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AliquotasDeTaxaDeActualizacaoVisualizarPO  extends TestBaseCristhian{
+public class AliquotasDeTaxaDeActualizacaoVisualizarPO  extends TestBaseSteven{
 	
 	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
@@ -117,7 +117,7 @@ public class AliquotasDeTaxaDeActualizacaoVisualizarPO  extends TestBaseCristhia
 		String dataDivulgacaoV1 = dataDivulgacaoV.getText();
 		String dataAtualizacaoV1 = dataAtualizacaoV.getText();
 
-
+		System.out.println("----------VISUALIZAR----------");
 		System.out.println(codigoIndiceV1);
 		System.out.println(valorV1);
 		System.out.println(fatorAcumuladoV1);
@@ -148,16 +148,27 @@ public class AliquotasDeTaxaDeActualizacaoVisualizarPO  extends TestBaseCristhia
 		sleep(2000);
 		
 		String codigoIndiceE1 = codigoIndiceE.getAttribute("value");
+		codigoIndiceE1 = codigoIndiceE1.replace(" - Tester", "");
+		
 		String valorE1 = valorE.getAttribute("value");
+		valorE1= valorE1.replace(",", ".");
+		
 		String fatorAcumuladoE1 = fatorAcumuladoE.getAttribute("value");
+		fatorAcumuladoE1= fatorAcumuladoE1.replace(",", ".");
+		
 		String taxaE1 = taxaE.getAttribute("value");
+		taxaE1= taxaE1.replace(",", ".");
+		
 		String valorPeriodoE1 = valorPeriodoE.getAttribute("value");
+		valorPeriodoE1= valorPeriodoE1.replace(",", ".");
+		
 		String inicioTaxaE1 = inicioTaxaE.getAttribute("value");
 		String fimTaxaE1 = fimTaxaE.getAttribute("value");
 		String dataDivulgacaoE1 = dataDivulgacionE.getAttribute("value");
 		String dataAtualizacaoE1 = dataActualizacionE.getAttribute("value");
 
-
+		System.out.println("");
+		System.out.println("----------EDITAR-------------");
 		System.out.println(codigoIndiceE1);
 		System.out.println(valorE1);
 		System.out.println(fatorAcumuladoE1);
@@ -172,7 +183,7 @@ public class AliquotasDeTaxaDeActualizacaoVisualizarPO  extends TestBaseCristhia
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
 
-		sucesso.add(codigoIndiceE1.contains(codigoIndiceV1));
+		sucesso.add(codigoIndiceV1.contains(codigoIndiceE1));
 		sucesso.add(valorV1.equals(valorE1));
 		sucesso.add(fatorAcumuladoV1.equals(fatorAcumuladoE1));
 		sucesso.add(taxaE1.equals(taxaV1));

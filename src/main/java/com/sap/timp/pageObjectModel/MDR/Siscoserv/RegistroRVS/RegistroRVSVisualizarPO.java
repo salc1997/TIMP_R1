@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegistroRVSVisualizarPO extends TestBaseEliel {
+public class RegistroRVSVisualizarPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//span[text()=\"Siscoserv\"]")
@@ -18,7 +18,7 @@ public class RegistroRVSVisualizarPO extends TestBaseEliel {
 	@FindBy(xpath = "//span[text()=\"Registro RVS\"]")
 	public WebElement registrorvs;
 
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Empresa\"]")
+	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div/input")
 	public WebElement empresa;
 	
 	
@@ -110,6 +110,7 @@ public ArrayList<Boolean> visualizar() {
 		visualizar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//waitExpectElement(empresa);
 		sleep(2000);
 		
 		//visualizar
@@ -157,10 +158,13 @@ public ArrayList<Boolean> visualizar() {
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		waitExpectElement(empresa);
+
+		sleep(8000);
+
 			
 		//editar
-		
+		System.out.println("Datos del editar");
 		
 		String empresaeditar=empresa.getAttribute("value");
 		String periodoeditar = periodo.getAttribute("value");
@@ -169,9 +173,9 @@ public ArrayList<Boolean> visualizar() {
 		String numerodoregistroeditar = numerodoregistro.getAttribute("value");
 		String numeroderegistroexpotacaoeditar = numeroderegistroexpotacao.getAttribute("value");
 		
-		System.out.println( empresaeditar);
+		System.out.println(empresaeditar);
 		System.out.println(periodoeditar);
-		System.out.println( numeroserviçoeditar);
+		System.out.println(numeroserviçoeditar);
 		System.out.println(numeronifeditar);
 		System.out.println(numerodoregistroeditar);
 		System.out.println(numeroderegistroexpotacaoeditar);
@@ -188,7 +192,5 @@ public ArrayList<Boolean> visualizar() {
 		return sucesso;	
 
 	
-	}	
-
-
+	}
 }

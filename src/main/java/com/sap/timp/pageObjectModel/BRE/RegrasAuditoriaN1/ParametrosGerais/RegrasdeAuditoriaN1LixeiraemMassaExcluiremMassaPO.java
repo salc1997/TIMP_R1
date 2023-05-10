@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseCristhian{
+public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseSteven{
 	
 	
 	
@@ -78,7 +78,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseC
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[contains(@class,\"dialog-buttons\")]//child::button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Justificativa\"]")
@@ -164,7 +164,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseC
 		
 		nome.click();
 		sleep(1000);
-		nome.sendKeys("TESTE QA 1");
+		nome.sendKeys("TESTE QA 111");
 		sleep(1000);
 		
 		tiporegra.click();
@@ -184,6 +184,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseC
 		boolean td1 = false;
 		boolean tp1 = false;
 		boolean tq1 = false;
+		boolean tq2 = false;
 		
 		if (url.contains("tc2")) {
 			tc2 = true;
@@ -191,6 +192,8 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseC
 			tp1 = true;
 		}else if (url.contains("tq1")) {
 			tq1 = true;
+		}else if (url.contains("tq2")) {
+			tq2 = true;
 		}else {
 			td1 = true;
 		}
@@ -253,7 +256,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseC
 		
 		nome.click();
 		sleep(1000);
-		nome.sendKeys("TESTE QAA 2");
+		nome.sendKeys("TESTE QAA 222");
 		sleep(1000);
 		
 		tiporegra.click();
@@ -268,15 +271,15 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBaseC
 		sleep(1000);
 		
 		
-		if (url.contains("tc2")) {
-			tc2 = true;
-		}else if (url.contains("tp1")) {
-			tp1 = true;
-		}else if (url.contains("tq1")) {
-			tq1 = true;
-		}else {
-			td1 = true;
-		}
+//		if (url.contains("tc2")) {
+//			tc2 = true;
+//		}else if (url.contains("tp1")) {
+//			tp1 = true;
+//		}else if (url.contains("tq1")) {
+//			tq1 = true;
+//		}else {
+//			td1 = true;
+//		}
 		if(tp1 == true) {
 		grupodeestrutura.click();
 		sleep(1000);

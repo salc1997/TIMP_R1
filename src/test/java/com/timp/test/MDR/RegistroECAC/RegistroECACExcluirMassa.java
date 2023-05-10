@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class RegistroECACExcluirMassa extends TestBaseFernando{
+public class RegistroECACExcluirMassa extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RegistroECACExcluirMassaPO registroECACExcluirMassaPO;
@@ -39,7 +39,7 @@ public class RegistroECACExcluirMassa extends TestBaseFernando{
 		boolean sucesso = registroECACExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void excluirMassa() {
 		boolean sucesso = registroECACExcluirMassaPO.exluirMassa();

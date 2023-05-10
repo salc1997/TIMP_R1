@@ -87,8 +87,7 @@ public class ConfiguracaoEExecucaoExecutarPO extends TestBaseMassiel{
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();
 		
-
-		String idRegistroConfiguracaoEExecucao = idObter4();
+		String idRegistroConfiguracaoEExecucao = idObter("idConfiguracaoEExecucaco");
 		System.out.println("");
 		System.out.println("ID Registro Configuracao execucaco: " + idRegistroConfiguracaoEExecucao);
 		
@@ -192,7 +191,8 @@ public class ConfiguracaoEExecucaoExecutarPO extends TestBaseMassiel{
 		
 		if(convertToInt(idUltimoRegistroExecutados) > convertToInt(idUltimoRegistroExecutado)) {
 			System.out.println("Registro executado correcctamente..."+ idUltimoRegistroExecutados);
-			idInserir3(idUltimoRegistroExecutados);
+			idInserir("idResultadoDeExecucaco",idUltimoRegistroExecutados);
+			//idInserir3(idUltimoRegistroExecutados);
 			
 			sucesso = true;
 		}else {

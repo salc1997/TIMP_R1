@@ -41,6 +41,6 @@ public class BairroEliminar extends TestBaseSteven {
 		boolean sucesso = bairroEliminarPO.eliminar();
 
 		assertTrue(sucesso, Eliminado);
-
+		sleep(2000);
 	}
 }

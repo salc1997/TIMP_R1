@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ConfiguraçãoeExecuçãoFiltrosAvaPO extends TestBaseCristhian {
+public class ConfiguraçãoeExecuçãoFiltrosAvaPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
@@ -148,15 +148,15 @@ public class ConfiguraçãoeExecuçãoFiltrosAvaPO extends TestBaseCristhian {
 		sleep(2000);
 		
 		opcEmpresa.click();
-		sleep(7000);
+		sleep(9000);
 		
 		uf.click();
-		sleep(2000);
+		sleep(6000);
 		
 		
 		if (tc2==true) {
 			opcUfTC2.click();
-			sleep(7000);
+			sleep(9000);
 
 		}else {
 			opcUfTP1.click();
@@ -170,7 +170,7 @@ public class ConfiguraçãoeExecuçãoFiltrosAvaPO extends TestBaseCristhian {
 		
 		if (tc2==true) {
 			opcFilialTC2.click();
-			sleep(7000);
+			sleep(9000);
 
 		}else {
 			opcFilialTP1.click();

@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Dashboard.Edicao.DashboardLinksRapidosPO;
 
-public class DashboardLinksRapidos extends TestBaseEliel {
+public class DashboardLinksRapidos extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
@@ -21,7 +21,7 @@ public class DashboardLinksRapidos extends TestBaseEliel {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		dashboardLinksRapidosPO = new DashboardLinksRapidosPO();
@@ -29,21 +29,14 @@ public class DashboardLinksRapidos extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		 driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void acessarTDK() {
-		acessarTDKPO.acessarTDK();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void linksrapidos() {
+		loginTC.login();
+		acessarTDKPO.acessarTDK();
+		
 		ArrayList<Boolean> sucesso = dashboardLinksRapidosPO.linksrapidos();
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), "Não foi possível adicionar o link rápido");

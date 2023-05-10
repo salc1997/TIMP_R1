@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ValoresParaMetodoPICCriarPO extends TestBaseEliel {
+public class ValoresParaMetodoPICCriarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Preço de Transferência\"]")
 	public WebElement precodetransferencia;
@@ -167,9 +167,9 @@ public class ValoresParaMetodoPICCriarPO extends TestBaseEliel {
 		
 		sim.click();
 		
-		sleep(2000);
+		sleep(6000);
 		
-		attributeToBeXpath("//div[@id=\"material\"]/div", "class", "base-select required");
+	//	attributeToBeXpath("//div[@id=\"material\"]/div", "class", "base-select required");
 		sleep(3000);
 		
 		material.click();

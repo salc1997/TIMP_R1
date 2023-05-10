@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO;
 
-public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa extends TestBaseEliel{
+public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa extends TestBaseSteven{
  
 	
 	LoginTC loginTC;
@@ -22,7 +22,7 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa extends TestBa
 	
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		regrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO = new RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO();
@@ -46,6 +46,6 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassa extends TestBa
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
 		}
-		
+		sleep(2000);
 	}
 }

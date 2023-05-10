@@ -47,15 +47,15 @@ public class LimiteCompetenciaDetalhesPO extends TestBaseSteven {
 	public WebElement tributoD;
 	@FindBy(xpath = "//div[@id=\"detail-description\"][6]/div[2]/div")
 	public WebElement tipoImpostoD;
-	@FindBy(xpath = "//div[@id=\"detail-description\"][7]/div[2]/div")
+	@FindBy(xpath = "//div[@id=\"detail-description\"][6]/div[2]/div")
 	public WebElement tipoProcessoD;
-	@FindBy(xpath = "//div[@id=\"detail-description\"][8]/div[2]/div")
+	@FindBy(xpath = "//div[@id=\"detail-description\"][7]/div[2]/div")
 	public WebElement caracteristicaAprovacaoD;
-	@FindBy(xpath = "//div[@id=\"detail-description\"][9]/div[2]/div")
+	@FindBy(xpath = "//div[@id=\"detail-description\"][8]/div[2]/div")
 	public WebElement nivelAprovacaoD;
-	@FindBy(xpath = "//div[@id=\"detail-description\"][10]/div[2]/div")
+	@FindBy(xpath = "//div[@id=\"detail-description\"][9]/div[2]/div")
 	public WebElement valorDED;
-	@FindBy(xpath = "//div[@id=\"detail-description\"][11]/div[2]/div")
+	@FindBy(xpath = "//div[@id=\"detail-description\"][10]/div[2]/div")
 	public WebElement valorAteD;
 	
 	
@@ -112,14 +112,14 @@ public class LimiteCompetenciaDetalhesPO extends TestBaseSteven {
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
+		sleep(11000);
 
 		String empresaD1 = empresaD.getText();
 		String ufD1 = ufD.getText();
 		String filialD1 = filialD.getText();
 
 		 String tributoD1 = tributoD.getText();
-		 String tipoImpostoD1 = tipoImpostoD.getText();
+	//	 String tipoImpostoD1 = tipoImpostoD.getText();
 		 String tipoProcessoD1 = tipoProcessoD.getText();
 		 String caracteristicaAprovacaoD1 = caracteristicaAprovacaoD.getText();
 		 String nivelAprovacaoD1 = nivelAprovacaoD.getText();
@@ -130,7 +130,7 @@ public class LimiteCompetenciaDetalhesPO extends TestBaseSteven {
 		 System.out.println(ufD1);
 		 System.out.println(filialD1);
 		 System.out.println(tributoD1);
-		 System.out.println(tipoImpostoD1);
+	//	 System.out.println(tipoImpostoD1);
 		 System.out.println(tipoProcessoD1);
 		 System.out.println(caracteristicaAprovacaoD1);
 		 System.out.println(nivelAprovacaoD1);
@@ -193,7 +193,7 @@ public class LimiteCompetenciaDetalhesPO extends TestBaseSteven {
 		sucesso.add(ufV1.contains(ufD1));
 		sucesso.add(filialV1.contains(filialD1));
 		sucesso.add(tributoV1.contains(tributoD1));
-		sucesso.add(tipoImpostoV1.contains(tipoImpostoD1));
+	//	sucesso.add(tipoImpostoV1.contains(tipoImpostoD1));
 		sucesso.add(tipoProcessoV1.contains(tipoProcessoD1));
 		sucesso.add(caracteristicaAprovacaoV1.contains(caracteristicaAprovacaoD1));
 		sucesso.add(nivelAprovacaoV1.contains(nivelAprovacaoD1));

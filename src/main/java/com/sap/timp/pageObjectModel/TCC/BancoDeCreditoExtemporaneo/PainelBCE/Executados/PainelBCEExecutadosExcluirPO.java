@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class PainelBCEExecutadosExcluirPO extends TestBaseEliel{
+public class PainelBCEExecutadosExcluirPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-bce\"]")
 	public WebElement bancoCreditoExtemporaneo;
@@ -54,14 +54,19 @@ public class PainelBCEExecutadosExcluirPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("idBCEPainelBCEConfiguracaoEExecucacoExecutados");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		
-		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();	
+		
+		String id="0";
+		if(rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
+			System.out.println("ID Ultimo Registro: " + id);
+		}
 		//ultimo id
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
-		System.out.println("ID Ultimo Registro: " + id);
+		//String 
 		
 		int id1 = convertToInt(id);
 		int id2 = convertToInt(idRegistro);
@@ -97,9 +102,12 @@ public class PainelBCEExecutadosExcluirPO extends TestBaseEliel{
 		sleep(2000);
 		
 		 rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
-		//ultimo id
-		String idultimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
-		System.out.println("ID Ultimo Registro: " + id);
+		 String idultimo="0";
+			if(rows > 0) {
+				idultimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
+				System.out.println("ID Ultimo Registro: " + id);
+			}
+		//String 
 		
 		int idc = convertToInt(idultimo);
 		int idb = convertToInt(idRegistro);

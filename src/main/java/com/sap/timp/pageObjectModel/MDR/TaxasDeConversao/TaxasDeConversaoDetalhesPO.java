@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseFernando;
 
 public class TaxasDeConversaoDetalhesPO extends TestBaseFernando{
-	@FindBy(xpath = "//span[text()=\"Taxas de Conversão\"]")
+	@FindBy(xpath = "//span[text()=\"Taxas Complementares\"]")
 	public WebElement taxasdeconversao;
 	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
@@ -52,14 +52,16 @@ public class TaxasDeConversaoDetalhesPO extends TestBaseFernando{
 		sleep(2000);
 		
 		// Datos detalhe
-		String tipoDeTaxaDeAtualizacaoString = driver.findElement(By.xpath("//div[@id=\"detail-description\"][2]/div[2]/div")).getText().trim();
-		String descricaoComplementarString = driver.findElement(By.xpath("//div[@id=\"detail-description\"][3]/div[2]/div")).getText().trim();
-		String taxaString = driver.findElement(By.xpath("//div[@id=\"detail-description\"][5]/div[2]/div")).getText().trim();
-		String dataDeInicioDeVigencia = driver.findElement(By.xpath("//div[@id=\"detail-description\"][6]/div[2]/div")).getText().trim();
-		String ativoString = driver.findElement(By.xpath("//div[@id=\"detail-description\"][8]/div[2]/div")).getText().trim();
+		String empresa = driver.findElement(By.xpath("//div[@id=\"detail-description\"][2]/div[2]/div")).getText().trim();
+		String tipoDeTaxaDeAtualizacaoString = driver.findElement(By.xpath("//div[@id=\"detail-description\"][3]/div[2]/div")).getText().trim();
+		String descricaoComplementarString = driver.findElement(By.xpath("//div[@id=\"detail-description\"][4]/div[2]/div")).getText().trim();
+		String taxaString = driver.findElement(By.xpath("//div[@id=\"detail-description\"][6]/div[2]/div")).getText().trim();
+		String dataDeInicioDeVigencia = driver.findElement(By.xpath("//div[@id=\"detail-description\"][7]/div[2]/div")).getText().trim();
+		String ativoString = driver.findElement(By.xpath("//div[@id=\"detail-description\"][9]/div[2]/div")).getText().trim();
 		
 		System.out.println("");
 		System.out.println("DATOS DE DETALHE");
+		System.out.println("Empresa: " + empresa);
 		System.out.println("Tipo de Taxa de Atualizacao: " + tipoDeTaxaDeAtualizacaoString);
 		System.out.println("Descricao Complementar da Taxa de Atualizacao: " + descricaoComplementarString);
 		System.out.println("Taxa: " + taxaString);
@@ -81,6 +83,7 @@ public class TaxasDeConversaoDetalhesPO extends TestBaseFernando{
 		sleep(2000);
 		
 		// Datos detalhe
+		String empresaString1 = driver.findElement(By.xpath("//span[@id=\"codCompany\"]")).getText().trim();
 		String tipoDeTaxaDeAtualizacaoString1 = driver.findElement(By.xpath("//span[@id=\"rateType\"]")).getText().trim();
 		String descricaoComplementarString1 = driver.findElement(By.xpath("//span[@id=\"rateDescription\"]")).getText().trim();
 		String taxaString1 = driver.findElement(By.xpath("//span[@id=\"rate\"]")).getText().trim();
@@ -96,7 +99,7 @@ public class TaxasDeConversaoDetalhesPO extends TestBaseFernando{
 		System.out.println("Ativo: " + ativoString1);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		
+		sucesso.add(empresaString1.equals(empresa));
 		sucesso.add(tipoDeTaxaDeAtualizacaoString1.equals(tipoDeTaxaDeAtualizacaoString));
 		sucesso.add(descricaoComplementarString1.equals(descricaoComplementarString));
 		sucesso.add(taxaString1.equals(taxaString));

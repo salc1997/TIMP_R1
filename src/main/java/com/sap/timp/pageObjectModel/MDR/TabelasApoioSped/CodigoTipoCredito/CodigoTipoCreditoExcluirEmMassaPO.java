@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigoTipoCreditoExcluirEmMassaPO extends TestBaseEliel{
+public class CodigoTipoCreditoExcluirEmMassaPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
@@ -96,9 +96,9 @@ public class CodigoTipoCreditoExcluirEmMassaPO extends TestBaseEliel{
 		sleep(1000);
 		tributoO.click(); 
 		sleep(1000);
-		codigo.sendKeys("7093071");
+		codigo.sendKeys("7098771");
 		sleep(1000);
-		descricao.sendKeys("Teste Código Tipo Crédito 27093");
+		descricao.sendKeys("Teste Código Tipo Crédito 98793");
 		sleep(1000);
 		
 		String data= fechaActual();
@@ -121,9 +121,9 @@ public class CodigoTipoCreditoExcluirEmMassaPO extends TestBaseEliel{
 		sleep(1000);
 		tributoO.click(); 
 		sleep(1000);
-		codigo.sendKeys("077");
+		codigo.sendKeys("0987");
 		sleep(1000);
-		descricao.sendKeys("Teste Código Tipo Crédito 2");
+		descricao.sendKeys("Teste Código Tipo Crédito 987");
 		sleep(1000);
 		
 		

@@ -26,7 +26,7 @@ public class AssociaçãoCriar extends TestBaseFernando {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test()
@@ -38,5 +38,6 @@ public class AssociaçãoCriar extends TestBaseFernando {
 
 		boolean sucesso = associaçãoCriarPO.criarAssociação();
 		assertTrue(sucesso, Criar);
+		sleep(2000);
 	}
 }

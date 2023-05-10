@@ -26,7 +26,7 @@ public class OficiosExtemporaneosFiltrosAvancados extends TestBaseFernando {
 
 	@AfterClass
 	public void afterClass() {
-//		driver.close();
+		//driver.close();
 	}
 
 	@Test(priority = 0)
@@ -41,6 +41,7 @@ public class OficiosExtemporaneosFiltrosAvancados extends TestBaseFernando {
 
 	@Test(priority = 2)
 	public void filtrosAvancados() {
+		
 		boolean sucesso = oficiosExtemporaneosFiltrosAvancadosPO.filtrosAvancados();
 		assertTrue(sucesso, Filtros);
 	}

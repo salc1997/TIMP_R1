@@ -5,9 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBaseKenssy;
 
-public class PainelBCEConfiguracaoEExecucaoCriarPO extends TestBaseEliel{
+public class PainelBCEConfiguracaoEExecucaoCriarPO extends TestBaseKenssy{
 	
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-bce\"]")
 	public WebElement bancoCreditoExtemporaneo;
@@ -146,7 +147,8 @@ public class PainelBCEConfiguracaoEExecucaoCriarPO extends TestBaseEliel{
 		
 		String idRegistronovo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
 			System.out.println("ID Ultimo Registro despues de crear: " + idRegistronovo);
-		idInserir1(idRegistronovo);
+			idInserir("idBCEPainelBCEConfiguracaoEExecucaco",idRegistronovo);
+		//idInserir1(idRegistronovo);
 		
 		boolean sucesso = false;
 		

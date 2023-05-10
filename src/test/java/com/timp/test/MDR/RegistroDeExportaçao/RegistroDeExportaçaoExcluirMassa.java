@@ -15,7 +15,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class RegistroDeExportaçaoExcluirMassa extends TestBaseSteven{
+public class RegistroDeExportaçaoExcluirMassa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RegistroDeExportaçaoExcluirMassaPO registroDeExportaçaoExcluirMassaPO;
@@ -30,29 +30,25 @@ public class RegistroDeExportaçaoExcluirMassa extends TestBaseSteven{
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		// driver.close();
 	}
-
-
 
 	@Test()
 	public void criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = registroDeExportaçaoExcluirMassaPO.criar();
 		assertTrue(sucesso, Criar);
-		
-		
+
 	}
-	
+
 	@Test(dependsOnMethods = "criar")
 	public void Excluir() {
-		
+
 		boolean sucesso2 = registroDeExportaçaoExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso2, Eliminado);
 	}
-	
-	
+
 }

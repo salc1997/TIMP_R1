@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseSteven;
 
 public class RegistroM620CriarPO extends TestBaseSteven{
@@ -130,7 +130,7 @@ public class RegistroM620CriarPO extends TestBaseSteven{
 		}
 		
 		novo.click();
-		sleep(2000);
+		sleep(4000);
 		waitExpectElement(empresa);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -184,7 +184,7 @@ public class RegistroM620CriarPO extends TestBaseSteven{
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 
 		biblioteca.click();
 		
@@ -212,7 +212,7 @@ public class RegistroM620CriarPO extends TestBaseSteven{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
-		idInserir("GestaoCreditoTributarioPISRegistroM620",id2);
+		idInserir("GestaoCreditoTributarioCOFINSRegistroM620",id2);
 		int idD = convertToInt(idRegistro);
 		int id2D = convertToInt(id2);
 		

@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeAuditoriaN3EditarPO extends TestBaseEliel{
+public class RegrasDeAuditoriaN3EditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-a_rules\"]/div/span[text()=\"Regras de Auditoria N3\"]")
 	public WebElement regraAuditoriaN3;
 	
@@ -279,6 +279,8 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBaseEliel{
 			sucesso.add(false);
 		}
 		
+		sleep(9000);
+		
 		configuracoes.click();
 		sleep(1000);
 		
@@ -289,7 +291,7 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBaseEliel{
 		sleep(1000);
 		nome.sendKeys(nome1);
 		waitExpectElement(aplicar);
-		sleep(3000);
+		sleep(7000);
 		aplicar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -38,116 +38,117 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 	public WebElement filial;
 	
 	//------------ Estructura Nota Fiscal
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure\"]/div/div/div/input")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure\"]/div/div[1]/div[1]/input")
 	public WebElement estructuraNotaFiscal;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure1\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure1\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraNotaFiscalopc1;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure2\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure2\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraNotaFiscalopc2;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure3\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure3\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraNotaFiscalopc3;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure4\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure4\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraNotaFiscalopc4;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure5\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure5\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraNotaFiscalopc5;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure6\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure6\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraNotaFiscalopc6;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure7\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure7\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraNotaFiscalopc7;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure8\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure8\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraNotaFiscalopc8;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure9\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure9\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraNotaFiscalopc9;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure10\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure10\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraNotaFiscalopc10;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure11\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure11\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraNotaFiscalopc11;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure12\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure12\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraNotaFiscalopc12;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure13\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure13\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraNotaFiscalopc13;
 	
-	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure14\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"fiscalNoteStructure14\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraNotaFiscalopc14;
 	
 	//------------------ Estructura Cabecalho
 	
-	@FindBy(xpath = "//div[@id=\"headerStructure\"]/div/div/div[1]/input")
+	@FindBy(xpath = "//div[@id=\"headerStructure\"]/div/div[1]/div[1]/input")
+													
 	public WebElement estructuraDeCabecalho;
 	
-	@FindBy(xpath = "//div[@id=\"headerStructure1\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"headerStructure1\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraDeCabecalho1;
 	
-	@FindBy(xpath = "//div[@id=\"headerStructure2\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"headerStructure2\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraDeCabecalho2;
 	
-	@FindBy(xpath = "//div[@id=\"headerStructure3\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"headerStructure3\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraDeCabecalho3;
 	
-	@FindBy(xpath = "//div[@id=\"headerStructure4\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"headerStructure4\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraDeCabecalho4;
 	
-	@FindBy(xpath = "//div[@id=\"headerStructure5\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"headerStructure5\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraDeCabecalho5;
 	
-	@FindBy(xpath = "//div[@id=\"headerStructure6\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"headerStructure6\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraDeCabecalho6;
 	
-	@FindBy(xpath = "//div[@id=\"headerStructure7\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"headerStructure7\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraDeCabecalho7;
 	
-	@FindBy(xpath = "//div[@id=\"headerStructure8\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"headerStructure8\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraDeCabecalho8;
 	
 	//-------------Estructura de Ajuste
 	
-	@FindBy(xpath = "//div[@id=\"adjustmentStructure\"]/div/div/div[1]/input")
+	@FindBy(xpath = "//div[@id=\"adjustmentStructure\"]/div/div[1]/div[1]/input")
 	public WebElement estructuraDeAjuste;
 	
-	@FindBy(xpath = "//div[@id=\"adjustmentStructure1\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"adjustmentStructure1\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraDeAjuste1;
 	
-	@FindBy(xpath = "//div[@id=\"adjustmentStructure2\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"adjustmentStructure2\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraDeAjuste2;
 	
-	@FindBy(xpath = "//div[@id=\"adjustmentStructure3\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"adjustmentStructure3\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraDeAjuste3;
 	
-	@FindBy(xpath = "//div[@id=\"adjustmentStructure4\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"adjustmentStructure4\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraDeAjuste4;
 	
-	@FindBy(xpath = "//div[@id=\"adjustmentStructure5\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"adjustmentStructure5\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraDeAjuste5;
 	
-	@FindBy(xpath = "//div[@id=\"adjustmentStructure6\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"adjustmentStructure6\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraDeAjuste6;
 	
-	@FindBy(xpath = "//div[@id=\"adjustmentStructure7\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"adjustmentStructure7\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraDeAjuste7;
 	
-	@FindBy(xpath = "//div[@id=\"adjustmentStructure8\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"adjustmentStructure8\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraDeAjuste8;
 	
-	@FindBy(xpath = "//div[@id=\"adjustmentStructure9\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"adjustmentStructure9\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraDeAjuste9;
 	
-	@FindBy(xpath = "//div[@id=\"adjustmentStructure10\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"adjustmentStructure10\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraDeAjuste10;
 	
-	@FindBy(xpath = "//div[@id=\"adjustmentStructure11\"]/div/div/div[1]/div/div")
+	@FindBy(xpath = "//div[@id=\"adjustmentStructure11\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 	public WebElement estructuraDeAjuste11;
 	
 	//--------------------------- EDITAR 
@@ -168,113 +169,113 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure\"]/div/div/div/input")
 		public WebElement estructuraNotaFiscalE;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure1\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure1\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraNotaFiscalopc1E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure2\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure2\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraNotaFiscalopc2E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure3\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure3\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraNotaFiscalopc3E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure4\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure4\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraNotaFiscalopc4E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure5\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure5\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraNotaFiscalopc5E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure6\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure6\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraNotaFiscalopc6E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure7\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure7\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraNotaFiscalopc7E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure8\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure8\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraNotaFiscalopc8E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure9\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure9\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraNotaFiscalopc9E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure10\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure10\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraNotaFiscalopc10E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure11\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure11\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraNotaFiscalopc11E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure12\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure12\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraNotaFiscalopc12E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure13\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure13\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraNotaFiscalopc13E;
 		
-		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure14\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"fiscalNoteStructure14\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraNotaFiscalopc14E;
 		
 		//------------------ Estructura Cabecalho
 		
-		@FindBy(xpath = "//div[@id=\"headerStructure\"]/div/div/div[1]/input")
+		@FindBy(xpath = "//div[@id=\"headerStructure\"]/div/div/div/input")
 		public WebElement estructuraDeCabecalhoE;
 		
-		@FindBy(xpath = "//div[@id=\"headerStructure1\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"headerStructure1\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraDeCabecalho1E;
 		
-		@FindBy(xpath = "//div[@id=\"headerStructure2\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"headerStructure2\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraDeCabecalho2E;
 		
-		@FindBy(xpath = "//div[@id=\"headerStructure3\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"headerStructure3\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraDeCabecalho3E;
 		
-		@FindBy(xpath = "//div[@id=\"headerStructure4\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"headerStructure4\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraDeCabecalho4E;
 		
-		@FindBy(xpath = "//div[@id=\"headerStructure5\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"headerStructure5\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraDeCabecalho5E;
 		
-		@FindBy(xpath = "//div[@id=\"headerStructure6\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"headerStructure6\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraDeCabecalho6E;
 		
-		@FindBy(xpath = "//div[@id=\"headerStructure7\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"headerStructure7\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraDeCabecalho7E;
 		
-		@FindBy(xpath = "//div[@id=\"headerStructure8\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"headerStructure8\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraDeCabecalho8E;
 		
 		//-------------Estructura de Ajuste
 		
-		@FindBy(xpath = "//div[@id=\"adjustmentStructure\"]/div/div/div[1]/input")
+		@FindBy(xpath = "//div[@id=\"adjustmentStructure\"]/div/div/div/input")
 		public WebElement estructuraDeAjusteE;
 		
-		@FindBy(xpath = "//div[@id=\"adjustmentStructure1\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"adjustmentStructure1\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraDeAjuste1E;
 		
-		@FindBy(xpath = "//div[@id=\"adjustmentStructure2\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"adjustmentStructure2\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraDeAjuste2E;
 		
-		@FindBy(xpath = "//div[@id=\"adjustmentStructure3\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"adjustmentStructure3\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraDeAjuste3E;
 		
-		@FindBy(xpath = "//div[@id=\"adjustmentStructure4\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"adjustmentStructure4\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraDeAjuste4E;
 		
-		@FindBy(xpath = "//div[@id=\"adjustmentStructure5\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"adjustmentStructure5\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraDeAjuste5E;
 		
-		@FindBy(xpath = "//div[@id=\"adjustmentStructure6\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"adjustmentStructure6\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraDeAjuste6E;
 		
-		@FindBy(xpath = "//div[@id=\"adjustmentStructure7\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"adjustmentStructure7\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraDeAjuste7E;
 		
-		@FindBy(xpath = "//div[@id=\"adjustmentStructure8\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"adjustmentStructure8\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraDeAjuste8E;
 		
-		@FindBy(xpath = "//div[@id=\"adjustmentStructure9\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"adjustmentStructure9\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraDeAjuste9E;
 		
-		@FindBy(xpath = "//div[@id=\"adjustmentStructure10\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"adjustmentStructure10\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraDeAjuste10E;
 		
-		@FindBy(xpath = "//div[@id=\"adjustmentStructure11\"]/div/div/div[1]/div/div")
+		@FindBy(xpath = "//div[@id=\"adjustmentStructure11\"]/div/div[1]/div[1]/div[1]/div/div[1]")
 		public WebElement estructuraDeAjuste11E;
 		
 	public ParametrizaçãoDoLivroOficialVisualizarPO() {
@@ -310,12 +311,13 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 		visualizar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(10000);
 
 		String textotipoLibro = tipoLibro.getAttribute("value");
 		String textoempresa = empresa.getText();
 		String textouf = uf.getText();
 		String textofilial = filial.getText();
+		
 		String textoestructuraNotaFiscal = estructuraNotaFiscal.getAttribute("value");
 		String textoestructuraNotaFiscalopc1 = estructuraNotaFiscalopc1.getText();
 		String textoestructuraNotaFiscalopc2 = estructuraNotaFiscalopc2.getText();
@@ -332,7 +334,7 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 		String textoestructuraNotaFiscalopc13 = estructuraNotaFiscalopc13.getText();
 		String textoestructuraNotaFiscalopc14 = estructuraNotaFiscalopc14.getText();
 		//-------------estructura  cabecaho
-		String textoestructuraDeCabecalho = estructuraDeCabecalho.getAttribute("value");
+			String textoestructuraDeCabecalho = estructuraDeCabecalho.getAttribute("value");
 		String textoestructuraDeCabecalho1 = estructuraDeCabecalho1.getText();
 		String textoestructuraDeCabecalho2 = estructuraDeCabecalho2.getText();
 		String textoestructuraDeCabecalho3 = estructuraDeCabecalho3.getText();
@@ -342,7 +344,7 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 		String textoestructuraDeCabecalho7 = estructuraDeCabecalho7.getText();
 		String textoestructuraDeCabecalho8 = estructuraDeCabecalho8.getText();
 		
-		//-------------estructura  cabecaho
+			//-------------estructura  cabecaho
 		String textoestructuraDeAjuste = estructuraDeAjuste.getAttribute("value");
 		String textoestructuraDeAjuste1 = estructuraDeAjuste1.getText();
 		String textoestructuraDeAjuste2 = estructuraDeAjuste2.getText();
@@ -375,7 +377,7 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 		System.out.println("Estructura Nota Fiscal 12: " + textoestructuraNotaFiscalopc12);
 		System.out.println("Estructura Nota Fiscal 13: " + textoestructuraNotaFiscalopc13);
 		System.out.println("Estructura Nota Fiscal 14: " + textoestructuraNotaFiscalopc14);
-		
+			
 		
 		System.out.println("Estrutura de cabeçalho: " + textoestructuraDeCabecalho);
 		System.out.println("Estrutura de cabeçalho 1: " + textoestructuraDeCabecalho1);
@@ -387,7 +389,7 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 		System.out.println("Estrutura de cabeçalho 7: " + textoestructuraDeCabecalho7);
 		System.out.println("Estrutura de cabeçalho 8: " + textoestructuraDeCabecalho8);
 		
-		System.out.println("Estrutura de Ajuste: " + textoestructuraDeAjuste);
+				System.out.println("Estrutura de Ajuste: " + textoestructuraDeAjuste);
 		System.out.println("Estrutura de Ajuste 1: " + textoestructuraDeAjuste1);
 		System.out.println("Estrutura de Ajuste 2: " + textoestructuraDeAjuste2);
 		System.out.println("Estrutura de Ajuste 3: " + textoestructuraDeAjuste3);
@@ -419,8 +421,7 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 		editar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
+		sleep(6000);
 		
 		String textotipoLibroE = tipoLibroE.getAttribute("value");
 		String textoempresaE = empresaE.getText();
@@ -441,7 +442,7 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 		String textoestructuraNotaFiscalopc12E = estructuraNotaFiscalopc12E.getText();
 		String textoestructuraNotaFiscalopc13E = estructuraNotaFiscalopc13E.getText();
 		String textoestructuraNotaFiscalopc14E = estructuraNotaFiscalopc14E.getText();
-		//-------------estructura  cabecaho
+				//-------------estructura  cabecaho
 		String textoestructuraDeCabecalhoE = estructuraDeCabecalhoE.getAttribute("value");
 		String textoestructuraDeCabecalho1E = estructuraDeCabecalho1E.getText();
 		String textoestructuraDeCabecalho2E = estructuraDeCabecalho2E.getText();
@@ -452,7 +453,7 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 		String textoestructuraDeCabecalho7E = estructuraDeCabecalho7E.getText();
 		String textoestructuraDeCabecalho8E = estructuraDeCabecalho8E.getText();
 		
-		//-------------estructura  cabecaho
+			//-------------estructura  cabecaho
 		String textoestructuraDeAjusteE = estructuraDeAjusteE.getAttribute("value");
 		String textoestructuraDeAjuste1E = estructuraDeAjuste1E.getText();
 		String textoestructuraDeAjuste2E = estructuraDeAjuste2E.getText();
@@ -465,7 +466,9 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 		String textoestructuraDeAjuste9E = estructuraDeAjuste9E.getText();
 		String textoestructuraDeAjuste10E = estructuraDeAjuste10E.getText();
 		String textoestructuraDeAjuste11E = estructuraDeAjuste11E.getText();
+	
 		
+		System.out.println("-------------------EDITAR--------------------- " );
 		System.out.println("Tipo Libro : " + textotipoLibroE);
 		System.out.println("Empresa: " + textoempresaE);
 		System.out.println("UF: " + textoufE);
@@ -496,7 +499,7 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 		System.out.println("Estrutura de cabeçalho 6: " + textoestructuraDeCabecalho6E);
 		System.out.println("Estrutura de cabeçalho 7: " + textoestructuraDeCabecalho7E);
 		System.out.println("Estrutura de cabeçalho 8: " + textoestructuraDeCabecalho8E);
-		
+				
 		System.out.println("Estrutura de Ajuste: " + textoestructuraDeAjusteE);
 		System.out.println("Estrutura de Ajuste 1: " + textoestructuraDeAjuste1E);
 		System.out.println("Estrutura de Ajuste 2: " + textoestructuraDeAjuste2E);
@@ -534,7 +537,7 @@ public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
 		sucesso.add(textoestructuraNotaFiscalopc13E.equals(textoestructuraNotaFiscalopc13));
 		sucesso.add(textoestructuraNotaFiscalopc14E.equals(textoestructuraNotaFiscalopc14));
 		
-		sucesso.add(textoestructuraDeCabecalhoE.equals(textoestructuraDeCabecalho));
+			sucesso.add(textoestructuraDeCabecalhoE.equals(textoestructuraDeCabecalho));
 		sucesso.add(textoestructuraDeCabecalho1E.equals(textoestructuraDeCabecalho1));
 		sucesso.add(textoestructuraDeCabecalho2E.equals(textoestructuraDeCabecalho2));
 		sucesso.add(textoestructuraDeCabecalho3E.equals(textoestructuraDeCabecalho3));

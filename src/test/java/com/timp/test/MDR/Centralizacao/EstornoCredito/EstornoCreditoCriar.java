@@ -2,15 +2,9 @@ package com.timp.test.MDR.Centralizacao.EstornoCredito;
 
 import static org.testng.Assert.assertTrue;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import com.sap.timp.base.TestBaseEliel;
-import com.sap.timp.base.TestBaseKathy;
-import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -49,7 +43,7 @@ public class EstornoCreditoCriar extends TestBaseSteven {
 		boolean sucesso = estornoCreditoCriarPO.CriarEstornoCredito();
 
 		assertTrue(sucesso, Criar);
-
+		sleep(2000);
 
 
 	}

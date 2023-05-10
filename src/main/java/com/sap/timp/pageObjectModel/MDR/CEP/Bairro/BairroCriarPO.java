@@ -9,8 +9,10 @@ import com.sap.timp.base.TestBaseSteven;
 
 public class BairroCriarPO extends TestBaseSteven{
 	
-	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
 	public WebElement cep;
+	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	public WebElement cep2;
 	
 	@FindBy(xpath = "//li/div/span[text()=\"Bairro\"]")
 	public WebElement bairro;
@@ -69,8 +71,16 @@ public class BairroCriarPO extends TestBaseSteven{
 	public boolean criarBairro() {
 		
 		
-		cep.click();
-		sleep(1000);
+		String url = driver.getCurrentUrl();
+		
+		if (url.contains("tq1")) {
+			cep2.click();
+			sleep(1000);
+
+		} else {
+			cep2.click();
+			sleep(1000);
+		}
 		bairro.click();
 		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);
@@ -105,6 +115,9 @@ public class BairroCriarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		String idRegistro = id.getText();
+		
+		idInserir("CEP-Bairro",idRegistro);
+		System.out.println("IdBairro: "+ idRegistro);
 		
 		boolean sucesso = idRegistro.equals(numEnviar);
 	

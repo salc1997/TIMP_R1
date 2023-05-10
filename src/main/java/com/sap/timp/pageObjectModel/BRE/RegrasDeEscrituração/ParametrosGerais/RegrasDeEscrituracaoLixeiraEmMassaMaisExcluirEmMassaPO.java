@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseEliel{
+public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-b_rules\"]")
 	public WebElement regraDeEscrituracao;
 	
@@ -59,7 +59,7 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends Test
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Justificativa\"]")
@@ -159,7 +159,7 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends Test
 		tipoDeRegra.click();
 		sleep(1000);
 		opcTipoDeRegra.click();
-		sleep(1000);
+		sleep(2000);
 		
 		tipoTributo.click();
 		sleep(1000);
@@ -351,10 +351,8 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends Test
 		
 		
 		//--------------------------- excluir em massa ---------------------------------
-		//waitExpectElement(mensagem);
-		//sleep(2000);
-		waitExpectElement(mensagembloqueio);
-		sleep(2000);
+		
+		sleep(6000);
 		lixeira.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -413,10 +411,10 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends Test
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		//waitExpectElement(mensagem);
 		//sleep(2000);
-		waitExpectElement(mensagembloqueio);
+	//	waitExpectElement(mensagembloqueio);
 		sleep(2000);
 		lixeira.click();
 		sleep(2000);

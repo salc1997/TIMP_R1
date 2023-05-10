@@ -33,14 +33,11 @@ public class SequenciaFiltros extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void filtro() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
-		
 
 		ArrayList<Boolean> sucesso = sequenciaFiltrosPO.id();
 

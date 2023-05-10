@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TipoDeDocumentoEditarPO extends TestBaseEliel{
+public class TipoDeDocumentoEditarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Configuração de TBD\"]")
 	public WebElement configuracao;
@@ -100,6 +100,8 @@ public class TipoDeDocumentoEditarPO extends TestBaseEliel{
 		sleep(2000);
 		
 		String enviar = "01/01/2014";
+		
+		System.out.println(enviar);
 		attributoNotToBeEmptyXpath("//input[@placeholder=\"Selecionar Validade De\"]", "value");
 		sleep(2000);
 		validadede.clear();

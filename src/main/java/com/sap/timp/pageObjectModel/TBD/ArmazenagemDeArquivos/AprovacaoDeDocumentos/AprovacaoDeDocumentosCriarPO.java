@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AprovacaoDeDocumentosCriarPO extends TestBaseEliel {
+public class AprovacaoDeDocumentosCriarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Armazenagem de Arquivos\"]")
 	public WebElement armazenagemdearquivos;
@@ -82,7 +82,8 @@ public class AprovacaoDeDocumentosCriarPO extends TestBaseEliel {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		sleep(1000);
+		
+		attributeToBeXpath("//div[@id=\"docType\"]/div", "class", "base-autocomplete required");
 		tipodedocumento.click();
 		sleep(1000);
 		opcaotipodedocumento.click();
@@ -125,7 +126,7 @@ public class AprovacaoDeDocumentosCriarPO extends TestBaseEliel {
 		
 		String idultimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
 		
-		idInserir1(idultimo);
+		idInserir("AprovacaoDeDocumentosCriar",idultimo);
 
 		System.out.println(id);
 		System.out.println(idultimo);

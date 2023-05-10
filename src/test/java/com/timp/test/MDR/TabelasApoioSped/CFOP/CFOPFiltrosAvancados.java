@@ -2,13 +2,12 @@ package com.timp.test.MDR.TabelasApoioSped.CFOP;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CFOP.CFODetalhePO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CFOP.CFOPFiltrosAvancadosPO;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
-import com.sap.timp.pageObjectModel.TCC.BancodeCréditoTributário.PainelPerDcomp.ConfiguraçãodeLayoutdePainelFiltrosAvancadosPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -18,14 +17,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CFOPFiltrosAvancados extends TestBaseCristhian {
+public class CFOPFiltrosAvancados extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	CFOPFiltrosAvancadosPO cFOPFiltrosAvancadosPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acesarMDRPO = new AcessarMDRPO();
 		cFOPFiltrosAvancadosPO = new CFOPFiltrosAvancadosPO();

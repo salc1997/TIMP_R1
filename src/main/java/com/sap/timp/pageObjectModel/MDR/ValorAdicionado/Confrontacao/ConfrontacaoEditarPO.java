@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ConfrontacaoEditarPO extends TestBaseEliel{
+public class ConfrontacaoEditarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Valor Adicionado\"]")
 	public WebElement valoradicionado;
@@ -25,7 +25,7 @@ public class ConfrontacaoEditarPO extends TestBaseEliel{
 	public WebElement opcao;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement data;
 	
 	
@@ -55,7 +55,7 @@ public class ConfrontacaoEditarPO extends TestBaseEliel{
 	public boolean editar() {
 		sleep(2000);
 		valoradicionado.click();
-		sleep(2000);
+		sleep(4000);
 		
 		confrontacao.click();
 		
@@ -90,7 +90,7 @@ public class ConfrontacaoEditarPO extends TestBaseEliel{
 		
 		String valor = data.getAttribute("value");
 
-		String enviar = dataanterior();
+		String enviar = fechaAyer();
 
 		data.clear();
 		sleep(2000);

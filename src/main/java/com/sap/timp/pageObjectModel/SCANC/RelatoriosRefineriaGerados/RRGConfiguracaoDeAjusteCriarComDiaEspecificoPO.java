@@ -43,6 +43,7 @@ public class RRGConfiguracaoDeAjusteCriarComDiaEspecificoPO extends TestBaseFern
 	}
 	
 	public boolean criarComDiaEspecifico() {
+		//TSTNG-443
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -106,7 +107,7 @@ public class RRGConfiguracaoDeAjusteCriarComDiaEspecificoPO extends TestBaseFern
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		sleep(2000);
+		sleep(9000);
 		relatoriosRefineriaGerados.click();
 		
 		sleep(2000);

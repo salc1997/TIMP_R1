@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigoDeAjusteDaApuraçaoDoIPIEditarPO extends TestBaseEliel{
+public class CodigoDeAjusteDaApuraçaoDoIPIEditarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
@@ -27,7 +27,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPIEditarPO extends TestBaseEliel{
 	@FindBy(xpath = "//li[@id][1]")
 	public WebElement opcaoindicadorajuste;
 	
-	@FindBy(xpath = "//textarea[@placeholder=\"Preencher a descrição do Código de Ajuste da Apuração do IPI\"]")
+	@FindBy(xpath = "//div[@id=\"descricao\"]/div/textarea")
 	public WebElement descricao;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
@@ -94,6 +94,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPIEditarPO extends TestBaseEliel{
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(descricao);
 		sleep(2000);
 		
 		//ediçao
@@ -143,6 +144,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPIEditarPO extends TestBaseEliel{
 		Editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(descricao);
 		sleep(2000);
 		
 		//String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");

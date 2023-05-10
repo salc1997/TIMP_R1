@@ -34,14 +34,13 @@ public class MapeamentoContabilCorrecaoCriar extends TestBaseSteven {
 		driver.close();
 	}
 
-
 	@Test()
 	public void criar() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = mapeamentoContabilCorrecaoCriarPO.criar();
 
 		assertTrue(sucesso, Criar);

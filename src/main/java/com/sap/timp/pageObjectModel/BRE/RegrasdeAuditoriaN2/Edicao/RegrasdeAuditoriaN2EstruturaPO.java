@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseCristhian {
+public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Regras de Auditoria N2\"]")
 	public WebElement AN2;
@@ -19,7 +19,7 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseCristhian {
 	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
 	public WebElement camino;
 	
-	@FindBy(xpath = "//button[text()=\"Create estructuras associadas\"]")
+	@FindBy(xpath = "//button[text()=\"Criar estruturas associadas\"]")
 	public WebElement asociarEstrutura;
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecione uma tabela\"]")
@@ -90,6 +90,9 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseCristhian {
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement btnAceitar;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
+	
 	public RegrasdeAuditoriaN2EstruturaPO() {
 
 		PageFactory.initElements(driver, this);
@@ -108,7 +111,8 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseCristhian {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
 	
-	String idRegistro = idObter3();
+	//String idRegistro = idObter3();
+	String idRegistro = idObter("An2");
 	WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 	WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
@@ -124,14 +128,14 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseCristhian {
 	estrutura.click();
 	sleep(4000);
 	asociarEstrutura.click();
-	sleep(3000);
+	sleep(6000);
 	
 	inputSeleccionTabela.click();
-	sleep(3000);
+	sleep(4000);
 	seleccionTabela.click();
 	sleep(3000);
 	sleep(3000);
-	
+	sleep(3000);
 	
 	waitExpectElement(campo);
 	campo.sendKeys("Alíquota COFINS (ED)");
@@ -147,19 +151,22 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseCristhian {
 	
 	
 	grabar.click();
-	sleep(2000);
+	sleep(9000);
 	
 	sim.click();
 	sleep(3000);
 	
 	aceitar.click();
-	sleep(4000);
+	sleep(34000);
 	
 	biblioteca.click();
 	sleep(3000);
 	
-	sim.click();
-	sleep(3000);
+	int botaoNao = rows("//button[text()=\"Não\"]");
+	
+	if (botaoNao > 0) {
+		nao.click();
+	}
 	
 	
 	//----------------Entrando de nuevo a editar--------------------------
@@ -175,7 +182,7 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseCristhian {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(4000);
 	
-	String idRegistro1 = idObter3();
+	String idRegistro1 = idObter("An2");
 	WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 	WebElement açao1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
@@ -209,19 +216,20 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseCristhian {
 	sleep(4000);
 	
 	grabar.click();
-	sleep(2000);
+	sleep(7000);
 	
 	sim.click();
 	sleep(3000);
 	
 	aceitar.click();
-	sleep(4000);
+	sleep(26000);
 	
 	biblioteca.click();
 	sleep(3000);
 	
-	sim.click();
-	sleep(3000);
+	if (botaoNao > 0) {
+		nao.click();
+	}
 	
 	//----------------Entrando de nuevo a excluir--------------------------
 	
@@ -236,7 +244,7 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseCristhian {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(4000);
 	
-	String idRegistro4 = idObter3();
+	String idRegistro4 = idObter("An2");;
 	WebElement menu4 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro4+"\"]/div[1]/div"));
 	WebElement açao4 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro4+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 	System.out.println(idRegistro4); // Ultimo registro que es el que se crea con la automatizacion
@@ -267,13 +275,15 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseCristhian {
 	sleep(3000);
 	
 	aceitar.click();
-	sleep(4000);
+	sleep(24000);
 	
 	biblioteca.click();
 	sleep(3000);
 	
-	sim.click();
-	sleep(3000);
+	
+	if (botaoNao > 0) {
+		nao.click();
+	}
 	
 	//----------------------FINAL---------------------------------------
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -287,7 +297,7 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBaseCristhian {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(4000);
 	
-	String idRegistro2 = idObter3();
+	String idRegistro2 = idObter("An2");
 	WebElement menu2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro2+"\"]/div[1]/div"));
 	WebElement açao2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro2+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion

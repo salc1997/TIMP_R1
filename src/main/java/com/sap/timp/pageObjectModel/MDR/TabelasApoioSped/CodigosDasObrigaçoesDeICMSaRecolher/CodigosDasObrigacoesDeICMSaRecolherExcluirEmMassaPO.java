@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassaPO extends TestBaseEliel{
+public class CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassaPO extends TestBaseSteven{
 	
 
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
@@ -23,7 +23,7 @@ public class CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassaPO extends TestBas
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher a descrição do Código das Obrigações de ICMS a Recolher\"]")
 	public WebElement descricao;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//span[contains(text(),\"Novo\")]")
@@ -95,15 +95,15 @@ public class CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassaPO extends TestBas
 		sleep(2000);
 		//Primeiro Registro
 		
-		codigodeobrigaçoesdeicms.sendKeys("0770931");
+		codigodeobrigaçoesdeicms.sendKeys("07987");
 		
 		sleep(2000);
 		
-		descricao.sendKeys("Teste de ICMS 7093");
+		descricao.sendKeys("Teste de ICMS 7987");
 		
 		sleep(2000);
 		
-		String data = dataanterior();
+		String data = fechaAyer();
 		datavigencia.sendKeys(data);
 		sleep(1000);
 
@@ -118,11 +118,11 @@ public class CodigosDasObrigacoesDeICMSaRecolherExcluirEmMassaPO extends TestBas
 		
 		//Segundo Registro
 		
-		codigodeobrigaçoesdeicms.sendKeys("7093077");
+		codigodeobrigaçoesdeicms.sendKeys("9873077");
 		
 		sleep(2000);
 		
-		descricao.sendKeys("Teste de ICMS 7093");
+		descricao.sendKeys("Teste de ICMS 7987");
 		
 		sleep(2000);
 		

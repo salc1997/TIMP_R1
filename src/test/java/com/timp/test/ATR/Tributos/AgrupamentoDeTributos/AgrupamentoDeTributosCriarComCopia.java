@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopiaPO;
 
-public class AgrupamentoDeTributosCriarComCopia extends TestBaseEliel {
+public class AgrupamentoDeTributosCriarComCopia extends TestBaseSteven {
 	
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
@@ -22,7 +22,7 @@ public class AgrupamentoDeTributosCriarComCopia extends TestBaseEliel {
 	@BeforeClass
 	  public void beforeClass() {
 		  
-		  driver = initializationE();
+		  driver = initialization();
 		  loginTC = new LoginTC();
 		  acessarATRPO = new AcessarATRPO();
 		  agrupamentoDeTributosCriarComCopiaPO = new  AgrupamentoDeTributosCriarComCopiaPO();
@@ -30,23 +30,16 @@ public class AgrupamentoDeTributosCriarComCopia extends TestBaseEliel {
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
 
-	 	}
-
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
+	 	@Test()
 	 	public void criarcopia() {
+	 		
+	 		loginTC.login();
+	 		acessarATRPO.acessarATR();
+	 		
 	 		
 	 		ArrayList<Boolean> sucesso = agrupamentoDeTributosCriarComCopiaPO.criarcopia();
 	 		for (int i = 0; i < sucesso.size(); i++) {
@@ -54,7 +47,7 @@ public class AgrupamentoDeTributosCriarComCopia extends TestBaseEliel {
 				
 			}
 			
-		
+	 		sleep(2000);
 	 		
 	 	}
     

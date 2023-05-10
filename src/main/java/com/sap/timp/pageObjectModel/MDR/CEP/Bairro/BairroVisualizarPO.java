@@ -13,8 +13,10 @@ import com.sap.timp.base.TestBaseSteven;
 public class BairroVisualizarPO extends TestBaseSteven{
 	
 
-	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
 	public WebElement cep;
+	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	public WebElement cep2;
 	
 	@FindBy(xpath = "//li/div/span[text()=\"Bairro\"]")
 	public WebElement bairro;
@@ -72,14 +74,24 @@ public class BairroVisualizarPO extends TestBaseSteven{
 	
 	public ArrayList<Boolean> visualizar() {
 		
-		cep.click();
-		sleep(1000);
+		String url = driver.getCurrentUrl();
+		
+		if (url.contains("tq1")) {
+			cep2.click();
+			sleep(1000);
+
+		} else {
+			cep2.click();
+
+			sleep(1000);
+		}
 		bairro.click();
 		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);
-		String numEnviar = "99999";
-		
-		pesquisar.sendKeys(numEnviar);
+		String idRegistro = idObter("CEP-Bairro");
+	    System.out.println("idVisualizar: "+ idRegistro);
+	    
+		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -109,7 +121,7 @@ public class BairroVisualizarPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys(numEnviar);
+		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

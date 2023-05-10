@@ -29,19 +29,12 @@ public class RegraDeCamposExcluir extends TestBaseFernando {
 		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void ingresarTAA() {
-		acessarTAAPO.acessarTAA();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void excluir() {
+		loginTC.login();
+		acessarTAAPO.acessarTAA();
 		boolean sucesso = regraDeCamposExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
+		sleep(2000);
 	}
 }

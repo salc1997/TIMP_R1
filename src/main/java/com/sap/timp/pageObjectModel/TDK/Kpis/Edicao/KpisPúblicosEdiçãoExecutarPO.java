@@ -8,9 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class KpisPúblicosEdiçãoExecutarPO extends TestBaseCristhian {
+public class KpisPúblicosEdiçãoExecutarPO extends TestBaseSteven {
 	@FindBy(xpath = "//span[text()=\"Kpi's\"]")
 	public WebElement kpis;
 	
@@ -115,7 +115,7 @@ public class KpisPúblicosEdiçãoExecutarPO extends TestBaseCristhian {
 		sleep(2000);
 		
 	
-		String idRegistro =idObter2();
+		String idRegistro =idObter("KpisCriar");
 
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

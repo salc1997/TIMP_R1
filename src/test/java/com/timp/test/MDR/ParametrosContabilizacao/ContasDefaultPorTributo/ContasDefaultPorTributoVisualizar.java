@@ -9,12 +9,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.ContasDefaultPorTributo.ContasDefaultPorTributoVisualizarPO;
 
-public class ContasDefaultPorTributoVisualizar extends TestBaseEliel {
+public class ContasDefaultPorTributoVisualizar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -23,7 +23,7 @@ public class ContasDefaultPorTributoVisualizar extends TestBaseEliel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		contasDefaultPorTributoVisualizarPO = new ContasDefaultPorTributoVisualizarPO();
@@ -31,18 +31,16 @@ public class ContasDefaultPorTributoVisualizar extends TestBaseEliel {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
-
-
 
 	@Test()
 	public void Visualizar() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = contasDefaultPorTributoVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

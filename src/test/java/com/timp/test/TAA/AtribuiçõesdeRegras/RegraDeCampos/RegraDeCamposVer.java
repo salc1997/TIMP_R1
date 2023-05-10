@@ -13,6 +13,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
 import com.sap.timp.pageObjectModel.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposVerPO;
 
+
 public class RegraDeCamposVer extends TestBaseFernando {
 	LoginTC loginTC;
 	AcessarTAAPO acessarTAAPO;
@@ -28,25 +29,18 @@ public class RegraDeCamposVer extends TestBaseFernando {
 
 	@AfterClass
 	public void afterClass() {
-//		driver.close();
+		//driver.close();
 	}
 
-	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void ingresarTAA() {
-		acessarTAAPO.acessarTAA();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void ver() {
+		loginTC.login();
+		acessarTAAPO.acessarTAA();
 		ArrayList<Boolean> sucesso = regraDeCamposVerPO.ver();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
+		sleep(2000);
 	}
 }

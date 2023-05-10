@@ -29,7 +29,7 @@ public class AtividadeExcluirMassa extends TestBaseFernando {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test()
@@ -48,5 +48,7 @@ public class AtividadeExcluirMassa extends TestBaseFernando {
 	public void excluirMassa() {
 		boolean sucesso = atividadeExcluirMassaPO.exluirMassa();
 		assertTrue(sucesso, Eliminado);
+		
+		sleep(2000);
 	}
 }

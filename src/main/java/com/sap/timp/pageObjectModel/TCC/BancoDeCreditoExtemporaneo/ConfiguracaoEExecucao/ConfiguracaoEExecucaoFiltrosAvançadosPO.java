@@ -78,7 +78,7 @@ public class ConfiguracaoEExecucaoFiltrosAvançadosPO extends TestBaseMassiel{
 		opc.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(12000);
 		
 		this.Empresa = empresaInput.getAttribute("value");
 		System.out.println(this.Empresa );
@@ -86,16 +86,16 @@ public class ConfiguracaoEExecucaoFiltrosAvançadosPO extends TestBaseMassiel{
 		uf.click();
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(10000);
 		
 		opc.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(12000);
 		
 		this.UF = ufInput.getAttribute("value");
 		System.out.println(this.UF );
-		
+		sleep(6000);
 		filial.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

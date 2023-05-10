@@ -67,7 +67,7 @@ public class ParametrosParaLivroICMSSTEditarPO extends TestBaseMassiel{
 		sleep(2000);
 		attributoNotToBeEmptyElement(fecha, "value");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	  	sleep(2000);
+	  	sleep(8000);
 
 		
 	  	String valor = fecha.getAttribute("value");
@@ -94,7 +94,7 @@ public class ParametrosParaLivroICMSSTEditarPO extends TestBaseMassiel{
 		sleep(3000);
 		attributoNotToBeEmptyElement(fecha, "value");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 
 		String nuevoTexto = fecha.getAttribute("value");
 		System.out.println(valor);

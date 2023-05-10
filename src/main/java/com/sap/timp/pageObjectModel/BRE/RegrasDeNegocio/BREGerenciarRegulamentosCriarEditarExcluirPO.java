@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class BREGerenciarRegulamentosCriarEditarExcluirPO extends TestBaseCristhian {
+public class BREGerenciarRegulamentosCriarEditarExcluirPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//*[@id=\"main-content\"]/div/div/div/div[2]/div[1]/div/div[1]/div/div/ul/li[3]/button")
 	public WebElement gerenciar;
@@ -40,16 +40,27 @@ public class BREGerenciarRegulamentosCriarEditarExcluirPO extends TestBaseCristh
 		sleep(2000);
 		
 		gerenciar.click();
-		sleep(2000);
+
+
+		sleep(9000);
+
 		
 		novoRegulamento.click();
 		sleep(3000);
 		
-		nome.sendKeys("ddd");
+
+		nome.sendKeys("Hello");
+
 		sleep(2000);
 		
 		aplicar.click();
+
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		sleep(9000);
+
 		
 		int rows = driver.findElements(By.xpath("//div[@class=\"object-list-field\"]")).size();
 		
@@ -57,15 +68,26 @@ public class BREGerenciarRegulamentosCriarEditarExcluirPO extends TestBaseCristh
 		
 		System.out.println("cantidad1: "+rows);
 		editar.click();
+
+		waitExpectElement(nome);
 		sleep(2000);
+
+		sleep(8000);
+
 		
 		nome.clear();
 		sleep(2000);
-		nome.sendKeys("Massiel");
+		nome.sendKeys("Massiel2");
 		sleep(2000);
 		
 		aplicar.click();
+
 		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+
+		sleep(9000);
+
 		
 		fechar.click();
 		sleep(2000);
@@ -79,9 +101,15 @@ public class BREGerenciarRegulamentosCriarEditarExcluirPO extends TestBaseCristh
 		eliminar.click();
 		sleep(3000);
 		
-		/*ok.click();
-		sleep(3000);*/
+
+		ok.click();
+		sleep(3000);
+
 		
+		ok.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 
 		

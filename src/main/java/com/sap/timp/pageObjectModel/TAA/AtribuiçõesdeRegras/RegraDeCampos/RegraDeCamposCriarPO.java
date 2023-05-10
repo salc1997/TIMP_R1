@@ -137,7 +137,7 @@ public class RegraDeCamposCriarPO extends TestBaseFernando{
 		sleep(1000);
 		
 		if(URL.contains("tc2")) {
-			opcionFilial = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and text()=\"1000 - 0008\"]"));
+			opcionFilial = driver.findElement(By.xpath("//div[@class=\"list-item-text\" and text()=\"1000 - 0805\"]"));
 		}
 		
 		sleep(2000);		
@@ -180,10 +180,10 @@ public class RegraDeCamposCriarPO extends TestBaseFernando{
 		int id1 = convertToInt(id);
 		int id2 = convertToInt(idRegistro);
 		
-		if(id2 > id1) {
+		if(id2 > id1) { 
 			System.out.println("Registro creado...");
 			sucesso = true;
-			idInserir4(idRegistro);
+			idInserir("RegraDeCampos",idRegistro);
 		}else {
 			System.out.println("No se pudo crear el registro...");
 		}

@@ -5,11 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseKenssy;
 
-public class LogradouroExcluirMassaPO extends TestBaseFernando{
-	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+public class LogradouroExcluirMassaPO extends TestBaseKenssy{
+	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
 	public WebElement cep;
+	
+	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	public WebElement cep2;
 	
 	@FindBy(xpath = "//li/div/span[text()=\"Logradouro\"]")
 	public WebElement logradouro;
@@ -96,8 +99,17 @@ public class LogradouroExcluirMassaPO extends TestBaseFernando{
 	}
 	
 	public boolean criar() {
-		sleep(2000);
-		cep.click();
+		String url = driver.getCurrentUrl();
+		
+		if (url.contains("tq1")) {
+			cep2.click();
+			sleep(1000);
+
+		} else {
+			cep2.click();
+
+			sleep(1000);
+		}
 		
 		sleep(2000);
 		logradouro.click();

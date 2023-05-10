@@ -3,16 +3,12 @@ package com.sap.timp.pageObjectModel.MDR.SCANC.ProdutosSCANC;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import com.google.errorprone.annotations.FormatMethod;
-import com.sap.timp.base.TestBaseEliel;
-import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.base.TestBaseSteven;
 
-public class ProdutosSCANCCriarPO extends TestBaseKathy{
+
+public class ProdutosSCANCCriarPO extends TestBaseSteven{
 	
 	
 	@FindBy(xpath = "//span[text()=\"SCANC\"]")
@@ -146,7 +142,7 @@ public class ProdutosSCANCCriarPO extends TestBaseKathy{
 		sleep(2000);
 
 		
-		dataVigencia.sendKeys("01/01/1870");
+		dataVigencia.sendKeys("01/01/2020");
 		
 		
 		sleep(2000);

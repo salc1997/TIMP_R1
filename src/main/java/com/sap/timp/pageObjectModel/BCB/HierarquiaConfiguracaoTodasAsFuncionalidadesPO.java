@@ -1,8 +1,5 @@
 package com.sap.timp.pageObjectModel.BCB;
 
-
-
-
 import static org.testng.Assert.assertTrue;
 
 import java.util.ArrayList;
@@ -743,7 +740,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		configuracaoDaConsolidacao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		ultimo.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -756,7 +753,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		System.out.println("Id Configurações antes da criação: "+ id);
 		
 		nova.click();
-		sleep(3000);
+		sleep(8000);
 
 		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
@@ -917,7 +914,9 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 			relatorioUsar = "8004728";
 		}else if (url.contains("tc2")) {
 			relatorioUsar = "2099";
-		}else {
+		}else if (url.contains("tq2")) {
+			relatorioUsar = "8004728";
+		}else{
 			relatorioUsar = "1766";
 		}
 
@@ -1218,17 +1217,29 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//span[@id=\"textLabel\"]");
+		//waitExpectXpath("//span[@id=\"textLabel\"]");
+		sleep(9000);
+		waitExpectXpath("//button[text()=\"Sim\"]");
+		WebElement btnSeguirBloqueo = driver.findElement(By.xpath("//button[text()=\"Sim\"]"));
+		sleep(1000);
+		btnSeguirBloqueo.click();
 		sleep(2000);
 
 		siguiente.click();
 		sleep(2000);
 		actionsMoveToElementElement(campolinha8);
-		sleep(1000);
+		sleep(3000);
+//		waitExpectXpath("//button[text()=\"Sim\"]");
+//		WebElement btnSeguirBloqueo = driver.findElement(By.xpath("//button[text()=\"Sim\"]"));
+//		sleep(1000);
+//		btnSeguirBloqueo.click();
+		//sleep(2000);
 		
 		
 		
 		// Octavo Subnivel
+		
+		
 
 		campolinha8.click();
 		sleep(1000);
@@ -1239,7 +1250,9 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		relatorio8.sendKeys(relatorioUsar);
 		sleep(1000);
 		relatorio8.sendKeys(Keys.ENTER);
-		sleep(1000);
+		sleep(2000);
+		
+		
 
 		valor8.click();
 		sleep(1000);
@@ -1310,14 +1323,17 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//waitExpectXpath("//span[@id=\"textLabel\"]");
-		waitExpectElement(executar);
 		sleep(2000);
+		//waitExpectXpath("//span[@id=\"textLabel\"]");
+
+		//waitExpectElement(executar);
+		sleep(12000);
 		System.out.println("cheguei aqui");
+		sleep(6000);
 		executar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//input[@placeholder=\"Selecionar Subperíodo\"]");
+		//waitExpectXpath("//input[@placeholder=\"Selecionar Subperíodo\"]");
 		sleep(3000);
 		
 		
@@ -1337,43 +1353,15 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 			tq1=true;
 		}
 		
-		
-		//cometar desde aqui
-		sleep(2000);
-		waitExpectElement(configuracoes);
-		sleep(2000);
-		configuracoes.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		configuracaoDaConsolidacao.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		//TQ1 972
-		//TP1 332
-		if (tp1 == true) {
-			pesquisar.sendKeys("332");
-			pesquisar.sendKeys(Keys.ENTER);
-			
-		}else if(tq1 == true){
-		pesquisar.sendKeys("972");
-		pesquisar.sendKeys(Keys.ENTER);
-		}
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		menu.click();
 		sleep(1000);
-		executarM.click();
+		executar.click();
 		sleep(3000);
-		waitExpectElement(executar);
+		waitExpectElement(executarM);
 		sleep(2000);
-		//hasta aqui
-	
-
-		
+		executarM.click();
+		sleep(1000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 
 		periodo.click();
 		sleep(3000);
@@ -1407,11 +1395,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		hierarquia1.click();
 		sleep(1000);
 		grupo1.click();
-		sleep(1000);
-
-
-			
-		
+		sleep(1000);		
 	}
 	
 	public ArrayList<Boolean> subnivel1() {
@@ -2393,8 +2377,8 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		
 		String idHierarquia = idObter1();
 		
-		pesquisar.sendKeys(idHierarquia);
-		pesquisar.sendKeys(Keys.ENTER);
+		siguiente.click();
+		sleep(2000);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -2431,8 +2415,8 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseStev
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys(idHierarquia);
-		pesquisar.sendKeys(Keys.ENTER);
+		siguiente.click();
+		sleep(2000);
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

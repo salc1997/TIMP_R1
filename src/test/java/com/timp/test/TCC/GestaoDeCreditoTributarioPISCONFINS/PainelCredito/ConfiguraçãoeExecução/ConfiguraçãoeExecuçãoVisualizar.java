@@ -2,10 +2,10 @@ package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.Conf
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
-import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registros1101.Registros1101VisualizarPO;
+import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.GestaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.Registro1101.Registro1101VisualizarPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.ConfiguraçãoeExecução.ConfiguraçãoeExecuçãoVisualizarPO;
 
 import org.testng.annotations.BeforeClass;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãoeExecuçãoVisualizar extends TestBaseCristhian {
+public class ConfiguraçãoeExecuçãoVisualizar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ConfiguraçãoeExecuçãoVisualizarPO configuraçãoeExecuçãoVisualizarPO;
@@ -24,7 +24,7 @@ public class ConfiguraçãoeExecuçãoVisualizar extends TestBaseCristhian {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		configuraçãoeExecuçãoVisualizarPO = new ConfiguraçãoeExecuçãoVisualizarPO();
@@ -32,25 +32,14 @@ public class ConfiguraçãoeExecuçãoVisualizar extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-
-		acessarTCCPO.acessarTCC();
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void visualizar() {
-
+		loginTC.login();
+		acessarTCCPO.acessarTCC();
+		
 		ArrayList<Boolean> sucesso = configuraçãoeExecuçãoVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

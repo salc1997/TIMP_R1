@@ -36,15 +36,13 @@ public class MapeamentoContabilCorrecaoVisualizar extends TestBaseSteven {
 		driver.close();
 	}
 
-
-
 	@Test()
 	public void visualizar() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = mapeamentoContabilCorrecaoVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {

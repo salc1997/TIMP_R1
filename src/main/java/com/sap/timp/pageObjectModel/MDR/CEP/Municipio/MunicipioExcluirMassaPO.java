@@ -8,8 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseFernando;
 
 public class MunicipioExcluirMassaPO extends TestBaseFernando{
-	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
 	public WebElement cep;
+	
+	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	public WebElement cep2;
 	
 	@FindBy(xpath = "//li/div/span[text()=\"Município\"]")
 	public WebElement municipio;
@@ -26,7 +29,7 @@ public class MunicipioExcluirMassaPO extends TestBaseFernando{
 	@FindBy(xpath = "//input[contains(@placeholder,\"UF\")]")
 	public WebElement uf;
 	
-	@FindBy(xpath = "//input[contains(@placeholder,\"CEP\")]")
+	@FindBy(xpath = "//div[contains(@class,\"cep_0_3\")]/div/div[2]/div/div/div[2]/input")
 	public WebElement cepN;
 	
 	@FindBy(xpath = "//input[contains(@placeholder,\"Loc in sit\")]")
@@ -102,8 +105,18 @@ public class MunicipioExcluirMassaPO extends TestBaseFernando{
 	}
 	
 	public boolean criar() {
-		sleep(2000);
-		cep.click();
+		String url = driver.getCurrentUrl();
+		
+		if (url.contains("tq1")) {
+			cep2.click();
+			sleep(1000);
+
+		} else {
+			cep2.click();
+
+			sleep(1000);
+		}
+		
 		
 		sleep(2000);
 		municipio.click();

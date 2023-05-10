@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Factory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseSteven;
 
 public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
@@ -23,7 +23,7 @@ public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
 	@FindBy(xpath = "//span[text()=\"Estruturas\"]")
 	public WebElement estruturas;
 	
-	@FindBy(xpath = "//button[text()=\"Create estructuras associadas\"]")
+	@FindBy(xpath = "//button[text()=\"Criar estruturas associadas\"]")
 	public WebElement crearEstruturas;
 
 	@FindBy(xpath = "//div[@id=\"select-associatedStructure\"]/div/div/div[2]")
@@ -117,7 +117,7 @@ public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
 		sleep(2000);
 		
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("RegraDeMensagens");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -134,7 +134,7 @@ public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
 		sleep(2000);
 		
 		estruturas.click();
-		sleep(3000);
+		sleep(12000);
 		crearEstruturas.click();
 		sleep(3000);
 		
@@ -266,8 +266,8 @@ public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
 		sleep(2000);
 		nao.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(20000);
 		biblioteca.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -307,9 +307,8 @@ public class RegrasDeMensagensEstruturasPO extends TestBaseSteven {
 		
 		String noListT = noList.getText();
 		System.out.println(noListT);
-		System.out.println(noListT.equals("A regra ainda não tem estructuras associadas") + " Apos Exclusão Estritura");
 		
-		if (noListT.equals("A regra ainda não tem estructuras associadas")) {
+		if (noListT.equals("A regra ainda não tem estruturas associadas")) {
 			sucesso.add(true);
 		}else {
 			sucesso.add(false);

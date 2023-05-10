@@ -2,23 +2,26 @@ package com.timp.test.TCC.BancoDeOcorrencias.Executados;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditarPO;
 import com.sap.timp.pageObjectModel.TCC.BancoDeOcorrencias.Executados.BancodeOcorrênciasExecutadosEditarPO;
 
 import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.AfterClass;
 
-public class BancodeOcorrênciasExecutadosEditar extends TestBaseCristhian {
+public class BancodeOcorrênciasExecutadosEditar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	BancodeOcorrênciasExecutadosEditarPO bancodeOcorrênciasExecutadosEditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		bancodeOcorrênciasExecutadosEditarPO = new BancodeOcorrênciasExecutadosEditarPO();
@@ -26,25 +29,16 @@ public class BancodeOcorrênciasExecutadosEditar extends TestBaseCristhian {
 
 	@AfterClass
 	public void afterClass() {
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-		acessarTCCPO.acessarTCC();
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void executarEditar() {
-		bancodeOcorrênciasExecutadosEditarPO.editar();
-		/*
-		 * boolean sucesso = configuracaoEExecucaoExecutarPO.executar();
-		 * assertTrue(sucesso, Criar);
-		 */
+		loginTC.login();
+		acessarTCCPO.acessarTCC();
+		
+		boolean sucesso = bancodeOcorrênciasExecutadosEditarPO.editar();
+		assertTrue(sucesso, Criar);
+		 
 	}
 }

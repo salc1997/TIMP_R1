@@ -7,19 +7,19 @@ import java.util.ArrayList;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.ValidacaoEstruturas.SaldoContabilNewGLECCPO;
 
-public class SaldoContabilNewGLECC extends TestBaseEliel {
+public class SaldoContabilNewGLECC extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	SaldoContabilNewGLECCPO saldoContabilNewGLECCPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 		saldoContabilNewGLECCPO = new SaldoContabilNewGLECCPO();

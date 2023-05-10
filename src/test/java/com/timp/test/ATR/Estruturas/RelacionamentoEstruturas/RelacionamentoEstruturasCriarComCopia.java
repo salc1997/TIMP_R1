@@ -2,7 +2,7 @@ package com.timp.test.ATR.Estruturas.RelacionamentoEstruturas;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
@@ -34,34 +34,26 @@ public class RelacionamentoEstruturasCriarComCopia extends TestBaseSteven{
 
   @AfterClass
   public void afterClass() {
+	  driver.close();
   }
   
-  @Test(priority = 1)
- 	public void login() {
- 		loginTC.login();
 
- 	}
-
- 	@Test(priority = 2)
- 	public void ATREntrar() {
-
- 		boolean sucesso = acessarATRPO.acessarATR();
-
- 	}
-
- 	@Test(priority = 3)
+ 	@Test()
  	public void criarCopia() {
 
+ 		loginTC.login();
+		 acessarATRPO.acessarATR();
+		 
  		ArrayList<Boolean> sucesso =relacionamentoEstruturasCriarComCopiaPO.criar();
  		
  		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Criar);
 		}
-
+ 		sleep(2000);
  	}
  	
  	
- 	@Test(priority = 4)
+ 	@Test(dependsOnMethods = "criarCopia")
  	public void editarCopia() {
  		
  		ArrayList<Boolean> sucesso =relacionamentoEstruturasCriarComCopiaPO.editar();
@@ -69,17 +61,17 @@ public class RelacionamentoEstruturasCriarComCopia extends TestBaseSteven{
 			assertTrue(sucesso.get(i), editado);
 		}
  		
-
+ 		sleep(2000);
  	}
  	
- 	@Test(priority = 5)
+ 	@Test(dependsOnMethods = "editarCopia")
  	public void excluirCopia() {
  		
  		boolean sucesso =relacionamentoEstruturasCriarComCopiaPO.excluir();
 
  		assertTrue(sucesso, Eliminado);
 	
- 		
+ 		sleep(2000);
 
  	}
  	

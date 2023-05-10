@@ -31,22 +31,14 @@ public class ConfiguracoesLixeiraExcluir extends TestBaseMassiel {
 
   @AfterClass
   public void afterClass() {
+	 //driver.close();
   }
   
-  @Test(priority = 0)
-	public void ingresar() {
+
+	@Test()
+	public void Lixeria() {
 		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void dfgEntrar() {
 		acessarDFGPO.acessarDFG();
-
-	}
-
-	@Test(priority = 2)
-	public void executar() {
-		
 		boolean sucesso = configuracoesLixeiraExcluirPO.LixeriaExcluir();
 		  assertTrue(sucesso, Editar);
 		

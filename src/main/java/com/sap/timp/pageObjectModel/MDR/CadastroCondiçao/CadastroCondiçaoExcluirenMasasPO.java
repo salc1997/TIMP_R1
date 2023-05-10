@@ -215,7 +215,7 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBaseMassiel{
 		
 		campoconfiguracao.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		empresa.click();
 		sleep(2000);
 		

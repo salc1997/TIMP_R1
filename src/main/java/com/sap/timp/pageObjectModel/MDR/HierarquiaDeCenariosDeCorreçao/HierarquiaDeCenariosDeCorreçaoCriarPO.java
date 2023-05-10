@@ -5,10 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseMassiel;
 
-public class HierarquiaDeCenariosDeCorreçaoCriarPO extends TestBaseEliel {
+public class HierarquiaDeCenariosDeCorreçaoCriarPO extends TestBaseSteven {
 	
 	
 	
@@ -24,6 +24,10 @@ public class HierarquiaDeCenariosDeCorreçaoCriarPO extends TestBaseEliel {
 	
 	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"option-1\"]")
 	public WebElement opcaotributo;
+	
+	@FindBy(xpath = "//div[@class=\"list-item\" and @id=\"option-3\"]")
+	public WebElement opcaotributoTP1;
+	
 	
 	@FindBy(xpath = "//div[@class=\"field\" and @id=\"correction-object\"]/div/div/div/div[2]")
 	public WebElement objetodecorrecao;
@@ -73,6 +77,24 @@ public class HierarquiaDeCenariosDeCorreçaoCriarPO extends TestBaseEliel {
 	}
 	
 	public boolean criar() {
+		String url = driver.getCurrentUrl();
+
+		
+		boolean tp1  = false;
+		boolean tc2  = false;
+		boolean tq1  = false;
+
+		if (url.contains("tq1")) {
+			tq1 = true;
+			
+		}else if(url.contains("tc2")){
+			tc2 = true;
+			
+		}else if(url.contains("tp1")){
+			tp1 = true;
+		}
+		
+		
 		sleep(2000);
 		hiearquiasdecenariosdecorrecao.click();
 		sleep(2000);
@@ -100,11 +122,18 @@ public class HierarquiaDeCenariosDeCorreçaoCriarPO extends TestBaseEliel {
 		sleep(2000);
 		
 		tributo.click();
-		
 		sleep(2000);
-		opcaotributo.click();
+
+		if (tp1 == true)   {
+
+			opcaotributoTP1.click();
+			sleep(2000);
+			
+		}else {
+			opcaotributo.click();
+			sleep(2000);
+		}
 		
-		sleep(2000);
 		objetodecorrecao.click();
 		sleep(2000);
 		opcaoobjetodecorrecao.click();
@@ -112,7 +141,7 @@ public class HierarquiaDeCenariosDeCorreçaoCriarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String data = dataanterior();
+		String data = fechaAyer();
 		datadeiniciodevigencia.sendKeys(data);
 		
 		sleep(2000);

@@ -34,15 +34,13 @@ public class LimiteCompetenciaExcluir extends TestBaseSteven {
 		driver.close();
 	}
 
-	
-
 	@Test()
 	public void excluir() {
 
 		loginTC.login();
-		
+
 		acessarMDRPO.acessarMDR();
-		
+
 		boolean sucesso = limiteCompetenciaExcluirPO.excluir();
 
 		assertTrue(sucesso, editado);

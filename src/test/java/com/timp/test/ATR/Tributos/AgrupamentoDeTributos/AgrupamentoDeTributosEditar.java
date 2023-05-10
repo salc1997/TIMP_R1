@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditarPO;
 
-public class AgrupamentoDeTributosEditar extends TestBaseEliel {
+public class AgrupamentoDeTributosEditar extends TestBaseSteven {
 
 	
 	LoginTC loginTC;
@@ -23,7 +23,7 @@ public class AgrupamentoDeTributosEditar extends TestBaseEliel {
 	@BeforeClass
 	  public void beforeClass() {
 		  
-		  driver = initializationE();
+		  driver = initialization();
 		  loginTC = new LoginTC();
 		  acessarATRPO = new AcessarATRPO();
 		  agrupamentoDeTributosEditarPO = new  AgrupamentoDeTributosEditarPO();
@@ -31,31 +31,22 @@ public class AgrupamentoDeTributosEditar extends TestBaseEliel {
 
 	  @AfterClass
 	  public void afterClass() {
+		  //driver.close();
 	  }
 	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
-
-	 	}
-
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
+ 	
+	 	@Test()
 	 	public void editar() {
+	 		
+	 		loginTC.login();
+	 		acessarATRPO.acessarATR();
+	 		
 	 		
 	 		ArrayList<Boolean> sucesso = agrupamentoDeTributosEditarPO.editar();
 	 		for (int i = 0; i < sucesso.size(); i++) {
 	 			assertTrue(sucesso.get(i), Editar);
 				
 			}
-			
-		
-	 		
-	 	}
+	 		sleep(2000);
+	 }
 }

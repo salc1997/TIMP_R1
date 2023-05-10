@@ -7,9 +7,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ContasDefaultParaExtemporaneoCriarPO extends TestBaseEliel {
+public class ContasDefaultParaExtemporaneoCriarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Parâmetros de Contabilização\"]")
 	public WebElement parametrosdecontabilizacao;
@@ -90,6 +90,9 @@ public class ContasDefaultParaExtemporaneoCriarPO extends TestBaseEliel {
 		//criaçao
 		novacontadefaultparaextemporaneo.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		waitExpectElement(empresa);
 		sleep(2000);
 		
 		empresa.click();

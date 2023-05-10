@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasdeAuditoriaN3ValoresCalculadosPO extends TestBaseCristhian {
+public class RegrasdeAuditoriaN3ValoresCalculadosPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-a_rules\"]/div/span[text()=\"Regras de Auditoria N3\"]")
 	public WebElement regraAuditoriaN3;
@@ -25,7 +25,7 @@ public class RegrasdeAuditoriaN3ValoresCalculadosPO extends TestBaseCristhian {
 	@FindBy(xpath = "//input[@placeholder=\"Nome\"]")
 	public WebElement nomeVCalculado;
 	
-	@FindBy(xpath = "//textarea[@aria-label=\"Insira a fórmula\"]")
+	@FindBy(xpath = "//div[@class=\"textarea-wrapper\"]//child::textarea")
 	public WebElement formula;
 	
 	
@@ -167,161 +167,161 @@ public class RegrasdeAuditoriaN3ValoresCalculadosPO extends TestBaseCristhian {
 		PageFactory.initElements(driver, this);
 	}
 	
-public boolean editar() {
+	public boolean valoresCalculados() {
 	
-	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(2000);
-	regraAuditoriaN3.click();
-	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(2000);
-
-	btnUltimaPagina.click();
-	sleep(2000);
-	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		regraAuditoriaN3.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 	
-	//String idRegistro = idObter2();
-	String idRegistro = idObter("An3");
-	WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-	WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
-	 
-	menu.click();
-	sleep(1000);
-	açao.click();
-	sleep(3000);
-	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(2000);
+		btnUltimaPagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		//String idRegistro = idObter2();
+		String idRegistro = idObter("An3");
+		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
+		 
+		menu.click();
+		sleep(1000);
+		açao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		waitExpectElement(vCalculados);
+		vCalculados.click();
+		sleep(4000);
+		criarvCalculados.click();
+		sleep(3000);
+		//primer Valor Calculado
+		nomeVCalculado.sendKeys("TA-TESTE");
+		sleep(6000);	
+		
+		formula.sendKeys("MID(\"Código registro SPED(Bloco 1 Teste-Registro 1 Teste-18S23C0) (ED)\", 1, 1)");
+		sleep(3000);
+		
+		aplicar.click();
+		sleep(4000);
+		
+		fechar.click();
+		sleep(2000);
+		
+		waitExpectElement(adicionar);
+		sleep(2000);
+		adicionar.click();
+		sleep(3000);
+		
+		descripcionCondicoes.sendKeys("TA-TESTE");
+		sleep(2000);
+		
+		
+		cboCondicoes.click();
+		sleep(1000);
+		opcionCondicoes.click();
+		sleep(1000);
+		
+		cboCondicoesOperador.click();
+		sleep(1000);
+		opcionCondicoesOperador.click();
+		sleep(1000);
+		
+		cboNomeDoValor.click();
+		sleep(1000);
+		opcioncboNomeDoValor.click();
+		sleep(1000);
+		
+		
+		
+		
+		acoes.click();
+		sleep(1000);
+		acoes.sendKeys("Número do registro SPED começa com a letra E");
+		acoes.sendKeys(Keys.ENTER);
+		sleep(1000);
+		
+		sleep(2000);
+		aplicar.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+		String CFOPText1 = CFOP.getText();
+		
+		grabar.click();
+		sleep(2000);
+		
+		btnNao.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 	
-	waitExpectElement(vCalculados);
-	vCalculados.click();
-	sleep(4000);
-	criarvCalculados.click();
-	sleep(3000);
-	//primer Valor Calculado
-	nomeVCalculado.sendKeys("TA-TESTE");
-	sleep(3000);	
+		
+		biblioteca.click();
+		sleep(3000);
+		
 	
-	formula.sendKeys("MID(\"Código registro SPED(Bloco 1 Teste-Registro 1 Teste-18S23C0) (ED)\", 1, 1)");
-	sleep(3000);
+		
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(8000);
+		regraAuditoriaN3.click();
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(8000);
 	
-	aplicar.click();
-	sleep(4000);
-	
-	fechar.click();
-	sleep(2000);
-	
-	waitExpectElement(adicionar);
-	sleep(2000);
-	adicionar.click();
-	sleep(3000);
-	
-	descripcionCondicoes.sendKeys("TA-TESTE");
-	sleep(2000);
-	
-	
-	cboCondicoes.click();
-	sleep(1000);
-	opcionCondicoes.click();
-	sleep(1000);
-	
-	cboCondicoesOperador.click();
-	sleep(1000);
-	opcionCondicoesOperador.click();
-	sleep(1000);
-	
-	cboNomeDoValor.click();
-	sleep(1000);
-	opcioncboNomeDoValor.click();
-	sleep(1000);
-	
-	
-	
-	
-	acoes.click();
-	sleep(1000);
-	acoes.sendKeys("Número do registro SPED começa com a letra E");
-	acoes.sendKeys(Keys.ENTER);
-	sleep(1000);
-	
-	sleep(2000);
-	aplicar.click();
-	sleep(2000);
-	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	
-	String CFOPText1 = CFOP.getText();
-	
-	grabar.click();
-	sleep(2000);
-	
-	btnNao.click();
-	sleep(2000);
-	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(2000);
-	
-
-	
-	biblioteca.click();
-	sleep(3000);
-	
-
-	
-	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(8000);
-	regraAuditoriaN3.click();
-	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(8000);
-
-	btnUltimaPagina.click();
-	sleep(2000);
-	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(4000);
-	
-	//String idRegistro1 = idObter2();
-	String idRegistro1 = idObter("An3");
-	WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
-	WebElement açao1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-	System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
-	
-	menu1.click();
-	sleep(1000);
-	açao1.click();
-	sleep(3000);
-	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	sleep(4000);
-	
-	waitExpectElement(vCalculados);
-	vCalculados.click();
-	sleep(4000);
-	editVCalculado.click();
-	sleep(2000);
-	nomeVCalculado.clear();
-	sleep(3000);
-	nomeVCalculado.sendKeys("TA-TESTE Editado");
-	sleep(3000);
-	
-	aplicar.click();
-	sleep(4000);
-	
-	fechar.click();
-	sleep(2000);
-	
-	waitExpectElement(vCalculados);
-	
-	String CFOPText2 = CFOP.getText();
-	
-	System.out.println("====================");
-	System.out.println(CFOPText1);
-	System.out.println("cambio");
-	System.out.println(CFOPText2);
-	System.out.println("++++++++++++++++++++");
-	boolean sucesso = false;
-	
-	if (CFOPText2 != CFOPText1) {
-		sucesso= true;
+		btnUltimaPagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+		
+		//String idRegistro1 = idObter2();
+		String idRegistro1 = idObter("An3");
+		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
+		WebElement açao1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		System.out.println(idRegistro); // Ultimo registro que es el que se crea con la automatizacion
+		
+		menu1.click();
+		sleep(1000);
+		açao1.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
+		
+		waitExpectElement(vCalculados);
+		vCalculados.click();
+		sleep(4000);
+		editVCalculado.click();
+		sleep(2000);
+		nomeVCalculado.clear();
+		sleep(3000);
+		nomeVCalculado.sendKeys("TA-TESTE Editado");
+		sleep(3000);
+		
+		aplicar.click();
+		sleep(4000);
+		
+		fechar.click();
+		sleep(2000);
+		
+		waitExpectElement(vCalculados);
+		
+		String CFOPText2 = CFOP.getText();
+		
+		System.out.println("====================");
+		System.out.println(CFOPText1);
+		System.out.println("cambio");
+		System.out.println(CFOPText2);
+		System.out.println("++++++++++++++++++++");
+		boolean sucesso = false;
+		
+		if (CFOPText2 != CFOPText1) {
+			sucesso= true;
+		}
+		System.out.println(sucesso);
+		return sucesso;
 	}
-	System.out.println(sucesso);
-	return sucesso;
-}
 
 }

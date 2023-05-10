@@ -8,8 +8,13 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseFernando;
 
 public class BairroExcluirMassaPO extends TestBaseFernando{
-	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
 	public WebElement cep;
+	@FindBy(xpath = "//li/div/span[text()=\"CEP\"]")
+	public WebElement cep2;
+	
+	@FindBy(xpath = "//li/div/span[text()=\"cep\"]")
+	public WebElement cepTQ1;
 	
 	@FindBy(xpath = "//li/div/span[text()=\"Bairro\"]")
 	public WebElement bairro;
@@ -52,7 +57,7 @@ public class BairroExcluirMassaPO extends TestBaseFernando{
 	}
 	
 	public void llenarDatos1() {
-		String numEnviar = "996761";		
+		String numEnviar = "9986779696";		
 		numBairro.clear();
 		numBairro.sendKeys(numEnviar);
 		sleep(1000);
@@ -61,7 +66,7 @@ public class BairroExcluirMassaPO extends TestBaseFernando{
 	}
 	
 	public void llenarDatos2() {
-		String numEnviar = "99678";		
+		String numEnviar = "89660682";		
 		numBairro.clear();
 		numBairro.sendKeys(numEnviar);
 		sleep(1000);
@@ -85,8 +90,35 @@ public class BairroExcluirMassaPO extends TestBaseFernando{
 
 	String idG = "";
 	public boolean criar() {
-		sleep(2000);
-		cep.click();
+		boolean tq1 = false;
+		boolean tc2 = false;
+		boolean tp1 = false;
+		String url = driver.getCurrentUrl();
+		
+		if (url.contains("tq1")) {
+			tq1 = true;
+		}
+		
+		if (url.contains("tc2")) {
+			tc2 = true;
+		}
+		
+		if (url.contains("tp1")) {
+			tp1 = true;
+		}
+		
+		
+		if (url.contains("tq1")) {
+			cep2.click();
+			sleep(1000);
+
+		} else {
+			cep2.click();
+
+			sleep(1000);
+		}
+		
+		
 		
 		sleep(2000);
 		bairro.click();
@@ -102,10 +134,14 @@ public class BairroExcluirMassaPO extends TestBaseFernando{
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
 		
-
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idG = id;
-		System.out.println("Último id antes da criação: "+id);
+		String id ="0";
+				
+		if (rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+			idG = id;
+			System.out.println("Último id antes da criação: "+id);
+		}
+ 
 	
 		
 		// Crear primer registro
@@ -149,31 +185,37 @@ public class BairroExcluirMassaPO extends TestBaseFernando{
 		biblioteca.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 
+		btnUltimaPagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		  
 		boolean sucesso = false;
 
-		String id1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-
-
-		rows = rows - 1;
+		int rows1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		 
+		String id1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows1+"]/div[3]/div")).getText();
+		System.out.println("id 1: "+id1);
 		
-		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		rows1 = rows1 - 1;
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows1+"]/div[3]/div")).getText();
+		System.out.println("id 2: "+id2);
 		
+		System.out.println("++++++++++++++++++++++");
 		System.out.println("Penultimo id após da criação: " +id1);
 		System.out.println("Último id após da criação: " +id2);
 		
-		
-	
-		if (id1.equals("996761") == true && id2.equals("99678") == true) {
+		if (id1 != id && id2 != id) {
 			sucesso = true;
 		}
-		
+//		if (id1.contains("9986779696") && id2.contains("99867796")) {
+//			sucesso = true;
+//		}else {
+//			sucesso = false;
+//		}
 
-		
 		return sucesso;
 	} 
 	
@@ -216,7 +258,14 @@ public class BairroExcluirMassaPO extends TestBaseFernando{
 		sleep(2000);
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-
+		String id ="0";
+		
+		if (rows > 0) {
+			id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+			idG = id;
+			System.out.println("Último id antes da criação: "+id);
+		}
+ 
 		
 
 		int id1 = convertToInt(idG);

@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeClass;
 import com.sap.timp.base.TestBaseKenssy;
 
 public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends TestBaseKenssy  {
+	//TSTNG-855
 	//NUEVA CONFIGURACION HIERARQUIA
 		@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][1]")
 		public WebElement hierarquias;
@@ -63,6 +64,9 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 		@FindBy(xpath = "//button[text()=\"Sim\"]")
 		public WebElement sim;
 		
+		@FindBy(xpath = "//button[text()=\"Não\"]")
+		public WebElement nao;
+		
 		@FindBy(xpath = "//textarea[@placeholder=\"Preencher Justificativa\"]")
 		public WebElement justificativa;
 		
@@ -102,7 +106,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 		
 		@FindBy(xpath = "//div[@id=\"branch\"]/div/div/div[2]")
 		public WebElement filial;
-		@FindBy(xpath = "//div[contains(@id,\"1000_SP_0001\")]/div/label/span")
+		@FindBy(xpath = "//div[contains(@id,\"1000_SP_0016\")]/div/label/span")
 		public WebElement filialO;
 		@FindBy(xpath = "//div[contains(@id,\"1000_DF_0019\")]/div/label/span")
 		public WebElement filialTc2;
@@ -154,7 +158,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 		@FindBy(xpath = "//span[contains(@class,\"icon-function\")]")
 		public WebElement formula;
 		
-		@FindBy(xpath = "//div[@id=\"column-source\"]/div/div/div[1]")
+		@FindBy(xpath = "//div[@id=\"column-source\"]//div/div[1]/div[2]")
 		public WebElement fontedeDados;
 		
 		@FindBy(xpath = "//li[contains(@class,\"list-item\") and string()][1]")
@@ -178,7 +182,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 		//CORREGIR EN SU DEBIDO AMBIENTE
 		@FindBy(xpath = "//div[text()=\"ID326-(BCB com campo de Output) TA\"]")
 		public WebElement selectBCB2;
-		@FindBy(xpath = "//div[text()=\"ID393-(BCB com campo de Output) TA\"]")
+		@FindBy(xpath = "//div[text()=\"ID2759-(BCB com campo de Output) TA\"]")
 		public WebElement selectBCB3;
 		
 		
@@ -187,7 +191,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 		//REVISAR CUANDO PASE POR EL AMBIENTE RESPECTIVO
 		@FindBy(xpath = "//div[contains(text(),\"1424-Campo de saída 1\")]")
 		public WebElement selectBCB12;
-		@FindBy(xpath = "//div[contains(text(),\"2275-Campo de Saída 1\")]")
+		@FindBy(xpath = "//div[contains(text(),\"Campo de Saída 1\")]")
 		public WebElement selectBCB13;
 		
 		@FindBy(xpath = "//div[@id=\"formula-Box\"]/div/textarea")
@@ -242,7 +246,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 		//REVISAR CUANDO PASE POR EL AMBIENTE RESPECTIVO
 		@FindBy(xpath = "//div[contains(text(),\"1424-Campo de saída 1\")]")
 		public WebElement selectBCB42;
-		@FindBy(xpath = "//div[contains(text(),\"2276-Campo de Saída 2\")]")
+		@FindBy(xpath = "//div[contains(text(),\"Campo de Saída 2\")]")
 		public WebElement selectBCB43;
 		
 		@FindBy(xpath = "//div[@class=\"subLevel\"][4]/div/div/div[@id=\"check-zero-value\"]/div/label/span")
@@ -668,13 +672,13 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			gravarC.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(4000);
+			sleep(9000);
 			
 			biblioteca.click();
 			sleep(5000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
-			sleep(3000);
+			sleep(9000);
 			
 			ultimo.click();
 			sleep(3000);
@@ -758,7 +762,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			sleep(6000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			waitExpectElement(calculator);
-			sleep(2000);
+			sleep(6000);
 			
 			calculator.click();
 			sleep(1000);
@@ -789,7 +793,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			sim.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+			sleep(3000);
 			
 			justificativa.sendKeys("JUSTIFICATIVA 2 TESTE AUTOMATIZADO");
 			sleep(2000);
@@ -817,6 +821,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			boolean tc2 = false;
 			boolean tq1 = false;
 			boolean tp1 = false;
+			boolean tq2 = false;
 			String url = driver.getCurrentUrl();
 			
 			if (url.contains("tc2")) {
@@ -825,6 +830,8 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 				tp1 = true;
 			}else if (url.contains("tq1")) {
 				tq1 = true;
+			}else if (url.contains("tq2")) {
+				tq2 = true;
 			}
 			
 			
@@ -873,11 +880,11 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			sleep(2000);
 			
 			formula.click();
-			sleep(3000);
+			sleep(6000);
 			
 //			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //			sleep(2000);
-			waitExpectElement(fontedeDados);
+	//		waitExpectElement(fontedeDados);
 			sleep(2000);
 			
 			
@@ -898,8 +905,8 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			camposSaidaBCB.click();
 			sleep(2000);
 			
-			attributeToBeXpath("//div[@class=\"column-wrapper second\"]/div/div","class", "animation-wrapper show");
-			sleep(2000);
+			//attributeToBeXpath("//div[@class=\"column-wrapper second\"]/div/div","class", "animation-wrapper show");
+			sleep(5000);
 			
 			
 			if (tq1 == true) {
@@ -910,13 +917,20 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 				dobleClickElement(selectBCB11);
 				sleep(1000);
 			}else if (tc2 ==true) {
-				buscarCamposSaidaBCB.sendKeys("393");
+				buscarCamposSaidaBCB.sendKeys("2759");
 				sleep(1000);
-				selectBCB3.click();
-				sleep(1000);
+				dobleClickElement(selectBCB3);
+				sleep(5000);
 				dobleClickElement(selectBCB13);
 				sleep(1000);
-			}else {
+			}else  if (tq2 ==true){
+				buscarCamposSaidaBCB.sendKeys("954");
+				sleep(1000);
+				selectBCB1.click();
+				sleep(1000);
+				dobleClickElement(selectBCB11);
+				sleep(1000);
+			}else{
 				//CORREGIR AL EJECUTAR EN AMBIENTE
 				buscarCamposSaidaBCB.sendKeys("326");
 				sleep(1000);
@@ -939,10 +953,10 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			sleep(2000);
 			
 			
-//			sim.click();
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
+			nao.click();
+			sleep(3000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
 //			
 //			aplicarJustificativa.click();
 //			sleep(3000);
@@ -970,6 +984,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			boolean tc2 = false;
 			boolean tq1 = false;
 			boolean tp1 = false;
+			boolean tq2 = false;
 			String url = driver.getCurrentUrl();
 			if (url.contains("tc2")) {
 				tc2 = true;
@@ -982,6 +997,11 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			if (url.contains("tp1")) {
 				tp1 = true;
 			}
+			
+			if (url.contains("tq2")) {
+				tq2 = true;
+			}
+
 
 			System.out.println("--------------------------------------------SubNivel 2-------------------------------------");
 			sleep(1000);
@@ -1016,13 +1036,20 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 				dobleClickElement(selectBCB11);
 				sleep(1000);
 			}else if (tc2 ==true) {
-				buscarCamposSaidaBCB.sendKeys("393");
+				buscarCamposSaidaBCB.sendKeys("2759");
 				sleep(1000);
 				selectBCB3.click();
 				sleep(1000);
 				dobleClickElement(selectBCB13);
 				sleep(1000);
-			}else {
+			}else if (tq2 == true){
+				buscarCamposSaidaBCB.sendKeys("954");
+				sleep(1000);
+				selectBCB1.click();
+				sleep(1000);
+				dobleClickElement(selectBCB11);
+				sleep(1000);
+			}else{
 				//CORREGIR AL EJECUTAR EN AMBIENTE
 				buscarCamposSaidaBCB.sendKeys("326");
 				sleep(1000);
@@ -1047,6 +1074,8 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
+			nao.click();
+			sleep(4000);
 			
 			int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
 			
@@ -1069,6 +1098,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			boolean tc2 = false;
 			boolean tq1 = false;
 			boolean tp1 = false;
+			boolean tq2 = false;
 			String url = driver.getCurrentUrl();
 			if (url.contains("tc2")) {
 				tc2 = true;
@@ -1080,6 +1110,10 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			
 			if (url.contains("tp1")) {
 				tp1 = true;
+			}
+			
+			if (url.contains("tq2")) {
+				tq2 = true;
 			}
 			
 			System.out.println("--------------------------------------------SubNivel 3-------------------------------------");
@@ -1115,13 +1149,20 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 				dobleClickElement(selectBCB11);
 				sleep(1000);
 			}else if (tc2 ==true) {
-				buscarCamposSaidaBCB.sendKeys("393");
+				buscarCamposSaidaBCB.sendKeys("2759");
 				sleep(1000);
 				selectBCB3.click();
 				sleep(1000);
 				dobleClickElement(selectBCB13);
 				sleep(1000);
-			}else {
+			}else if (tq2 == true){
+				buscarCamposSaidaBCB.sendKeys("954");
+				sleep(1000);
+				selectBCB1.click();
+				sleep(1000);
+				dobleClickElement(selectBCB11);
+				sleep(1000);
+			}else{
 				//CORREGIR AL EJECUTAR EN AMBIENTE
 				buscarCamposSaidaBCB.sendKeys("326");
 				sleep(1000);
@@ -1152,7 +1193,10 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			
+			nao.click();
+			sleep(3000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
 			int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
 			
 			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -1170,10 +1214,11 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 		
 		
 		public ArrayList<Boolean> subNivel4() {
-			
+			sleep(10000);
 			boolean tc2 = false;
 			boolean tq1 = false;
 			boolean tp1 = false;
+			boolean tq2 = false;
 			String url = driver.getCurrentUrl();
 			if (url.contains("tc2")) {
 				tc2 = true;
@@ -1187,7 +1232,9 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 				tp1 = true;
 			}
 			
-			
+			if (url.contains("tq2")) {
+				tq2 = true;
+			}
 			
 			
 			
@@ -1224,20 +1271,27 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 				dobleClickElement(selectBCB41);
 				sleep(1000);
 			}else if (tc2 ==true) {
-				buscarCamposSaidaBCB.sendKeys("393");
+				buscarCamposSaidaBCB.sendKeys("2759");
 				sleep(1000);
 				selectBCB3.click();
 				sleep(1000);
 				dobleClickElement(selectBCB43);
 				sleep(1000);
-			}else {
+			}else if (tq2 == true){
+				buscarCamposSaidaBCB.sendKeys("954");
+				sleep(1000);
+				selectBCB1.click();
+				sleep(1000);
+				dobleClickElement(selectBCB41);
+				sleep(1000);
+			}else{
 				//CORREGIR AL EJECUTAR EN AMBIENTE
 				buscarCamposSaidaBCB.sendKeys("326");
-				sleep(1000);
+				sleep(3000);
 				selectBCB2.click();
-				sleep(1000);
+				sleep(3000);
 				dobleClickElement(selectBCB42);
-				sleep(1000);
+				sleep(3000);
 			}
 			
 			caixaFormula.sendKeys("/2");
@@ -1260,7 +1314,10 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			
+			nao.click();
+			sleep(3000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(2000);
 			int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
 			
 			ArrayList<Boolean> sucesso = new ArrayList<Boolean>();

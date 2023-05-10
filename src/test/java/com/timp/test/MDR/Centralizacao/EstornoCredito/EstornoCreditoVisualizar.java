@@ -2,7 +2,7 @@ package com.timp.test.MDR.Centralizacao.EstornoCredito;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -51,5 +51,7 @@ public class EstornoCreditoVisualizar extends TestBaseSteven {
 			assertTrue(sucesso.get(i), visualizaçar);
 			
 		}
+		
+		sleep(2000);
 	}
 }

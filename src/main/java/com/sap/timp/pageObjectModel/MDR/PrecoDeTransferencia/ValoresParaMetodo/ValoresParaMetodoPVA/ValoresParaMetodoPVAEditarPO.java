@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ValoresParaMetodoPVAEditarPO extends TestBaseEliel {
+public class ValoresParaMetodoPVAEditarPO extends TestBaseSteven {
 	
 
 	@FindBy(xpath = "//span[text()=\"Preço de Transferência\"]")
@@ -70,7 +70,7 @@ public class ValoresParaMetodoPVAEditarPO extends TestBaseEliel {
 	@FindBy(xpath = "//input[@placeholder=\"Preencher  Preço Praticado\"]")
 	public WebElement precopraticado;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher Data Inicial\"]")
+	@FindBy(xpath = "//div[@id=\"startDate\"]/div/div/input")
 	public WebElement datainicial;
 	
 	
@@ -118,19 +118,20 @@ public class ValoresParaMetodoPVAEditarPO extends TestBaseEliel {
 		menu.click();
 		sleep(2000);
 		editar.click();
-		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+
+		sleep(6000);
+
 		
 		String valor = datainicial.getAttribute("value");
 
-		String enviar = dataanterior();
+		String enviar = fechaAyer();
 
 		datainicial.clear();
-		sleep(2000);
+		sleep(4000);
 		datainicial.sendKeys(enviar);
-		sleep(2000);
+		sleep(4000);
 		gravar.click();
 		sleep(2000);
 		waitExpectElement(sim);

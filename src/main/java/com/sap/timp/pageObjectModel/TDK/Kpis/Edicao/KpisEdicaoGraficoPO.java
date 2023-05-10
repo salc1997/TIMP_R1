@@ -180,7 +180,7 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 		sleep(2000);
 		
 		System.out.println("---------- Editar --------- " );
-		String idRegistro =idObter2();
+		String idRegistro =idObter("KpisCriar");
 
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -195,7 +195,10 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 		
 		waitExpectElement(adicionar);
 		sleep(2000);
-
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		adicionar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -270,7 +273,7 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 		grupoEstructura.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 
 
 		if (tq1 == true) {
@@ -278,7 +281,7 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 			actionsMoveToElementXpath("//li[@id=\"467\"]");
 			sleep(1000);
 
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"467\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[contains(@class, \"list-item\") and @id and text()=\"Ajuste\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -290,7 +293,7 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 			actionsMoveToElementXpath("//li[@id=\"option-7\"]");
 			sleep(1000);
 
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-7\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[contains(@class, \"list-item\") and @id and text()=\"Ajuste\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -302,7 +305,7 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 			actionsMoveToElementXpath("//li[@id=\"option-31\"]");
 			sleep(2000);
 
-			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-31\"]"));
+			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[contains(@class, \"list-item\") and @id and text()=\"Ajuste\"]"));
 
 			grupoEstructuraOPC .click();
 			sleep(2000);
@@ -321,7 +324,7 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 			actionsMoveToElementXpath("//li[@id=\"1834805491\"]");
 			sleep(2000);
 
-			WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[@id=\"1834805491\"]"));
+			WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[contains(@class, \"list-item\") and @id and text()=\"Ajustes Fiscais\"]"));
 
 			estructuraDatosOPC .click();
 			sleep(2000);
@@ -333,7 +336,7 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 			actionsMoveToElementXpath("//li[@id=\"option-1\"]");
 			sleep(2000);
 
-			WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[@id=\"option-1\"]"));
+			WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[contains(@class, \"list-item\") and @id and text()=\"Ajustes Fiscais\"]"));
 
 			estructuraDatosOPC .click();
 			sleep(2000);
@@ -345,7 +348,7 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 			actionsMoveToElementXpath("//li[@id=\"option-2\"]");
 			sleep(3000);
 
-			WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[@id=\"option-2\"]"));
+			WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[contains(@class, \"list-item\") and @id and text()=\"Ajustes Fiscais\"]"));
 
 			estructuraDatosOPC .click();
 			sleep(2000);
@@ -357,7 +360,9 @@ public class KpisEdicaoGraficoPO extends TestBaseMassiel {
 		dimensao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
+		
+	
 
 
 		if (tq1 == true) {

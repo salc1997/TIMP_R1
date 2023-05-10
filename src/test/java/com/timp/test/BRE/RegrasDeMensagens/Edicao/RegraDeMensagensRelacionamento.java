@@ -39,5 +39,6 @@ public class RegraDeMensagensRelacionamento extends TestBaseFernando{
 		
 		boolean sucesso = regraDeMensagensRelacionamentoPO.relacionamento();
 		assertTrue(sucesso, Editar);
+		sleep(2000);
 	}
 }

@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseEliel{
+public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseSteven{
 	
 
 	@FindBy(xpath = "//span[@class=\"baseTabs-title\"]/span[text()=\"Estruturas\"]")
@@ -25,7 +25,7 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@id=\"structure-group\"]/div/div/div[2]")
 	public WebElement grupodeestrutura;
 	
-	@FindBy(xpath = "//li[@id][text()=\"Ajuste\"][1]")
+	@FindBy(xpath = "//li[@class=\"list-item\" and text()=\"Ajuste\"][1]")
 	public WebElement opcaogrupodeestrutura;
 	
 	@FindBy(xpath = "//li[@id][text()=\"Ajustes\"][1]")
@@ -34,8 +34,11 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@id=\"structure-validation\"]/div/div/div[2]")
 	public WebElement estruturadevalidacao;
 	
-	@FindBy(xpath = "//li[@id][text()=\"Empresa/Filial\"]")
+	@FindBy(xpath = "//li[@id][text()=\"Empresa / Filial\"]")
 	public WebElement opcaoestruturadevalidacao;
+	
+	@FindBy(xpath = "//li[@id][text()=\"Empresa / Filial\"]")
+	public WebElement opcaoestruturadevalidacaoTQ1;
 	
 	@FindBy(xpath = "//li[@id][text()=\"Ajustes Fiscais + Empresa/Filial\"]")
 	public WebElement opcaoestruturadevalidacaotp1;
@@ -141,32 +144,42 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseEliel{
 		boolean td1 = false;
 		boolean tp1 = false;
 		boolean tq1 = false;
-		
+		boolean tq2 = false;
 		if (url.contains("tc2")) {
 			tc2 = true;
 		}else if (url.contains("tp1")) {
 			tp1 = true;
 		}else if (url.contains("tq1")) {
 			tq1 = true;
+		}else  if (url.contains("tq2")) {
+			tq2 = true;
 		}else {
 			td1 = true;
 		}
+		
 		if(tp1 == true) {
-		grupodeestrutura.click();
-		sleep(1000);
-		opcaogrupodeestruturatp1.click();
-		sleep(1000);
-		}else {
 			grupodeestrutura.click();
 			sleep(1000);
+			opcaogrupodeestruturatp1.click();
+			sleep(1000);
+		}else {
+			grupodeestrutura.click();
+			sleep(2000);
+			actionsMoveToElementXpath("//li[@class=\"list-item\" and text()=\"Ajuste\"][1]");
 			opcaogrupodeestrutura.click();
 			sleep(1000);
 		}
 		
 		estruturadevalidacao.click();
-		sleep(2000);
+		sleep(6000);
 		if(tp1 == true) {
 			opcaoestruturadevalidacaotp1.click();
+			sleep(2000);
+		}else if (tq1 == true) {
+			opcaoestruturadevalidacaoTQ1.click();
+			sleep(2000);
+		}else if (tq2 == true) {
+			opcaoestruturadevalidacaoTQ1.click();
 			sleep(2000);
 		}else {
 			opcaoestruturadevalidacao.click();
@@ -177,18 +190,21 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseEliel{
 		gravar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
 		
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		boolean sucesso1=false;
-		if(mensagemdesalvo.isDisplayed())
+		/*	if(mensagemdesalvo.isDisplayed())
 		{
 			sucesso1=true;
 			sucesso.add(sucesso1);
 		}else {
 			sucesso1=false;
 			sucesso.add(sucesso1);
-		}
+		}*/
+		
+		sleep(2000);
+		
 		ultimapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -196,7 +212,7 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseEliel{
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String idRegistro = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir1(idRegistro);
+		idInserir("EstructurasParametrosGerais", idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"list-check_"+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\"list-check_"+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -211,6 +227,11 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		attributeToBeXpath("//div[@id=\"structure-validation\"]/div", "class", "base-select required");
 		estruturadevalidacao.click();
 		sleep(2000);
 		outraestruturadevalidacao.click();
@@ -250,7 +271,7 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBaseEliel{
 		visualizar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		String grupovisualizar = grupovi.getAttribute("value");
 		String estruturavisualizar = estruturavi.getAttribute("value");

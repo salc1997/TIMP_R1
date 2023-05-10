@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeAuditoriaN1CriarPO extends TestBaseEliel{
+public class RegrasDeAuditoriaN1CriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Regras de Auditoria N1\"]")
 	public WebElement regrasdeauditorian1;
@@ -78,7 +78,7 @@ public class RegrasDeAuditoriaN1CriarPO extends TestBaseEliel{
 	@FindBy(xpath = "//input[@placeholder=\" selecionar Data\"]")
 	public WebElement dataValidadeDe;
 		
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Adicionar Caminho\"]")
@@ -174,7 +174,7 @@ public class RegrasDeAuditoriaN1CriarPO extends TestBaseEliel{
 		nome.click();
 		sleep(1000);
 
-		nome.sendKeys("TESTE AUTOMATIZADO N1 RODADA- NAO MEXER");
+		nome.sendKeys("TESTE AUTOMATIZADO N1 RODADA- NAO MEXER QA");
 
 		sleep(1000);
 		
@@ -232,8 +232,8 @@ public class RegrasDeAuditoriaN1CriarPO extends TestBaseEliel{
 		//dataValidadeDe.click();
 		sleep(1000);
 		dataValidadeDe.sendKeys("01/01/2013");
-		sleep(1000);		
-		waitExpectElement(aplicar);
+		sleep(2000);		
+		//waitExpectElement(aplicar);
 		sleep(2000);
 		aplicar.click();
 		sleep(2000);
@@ -250,7 +250,7 @@ public class RegrasDeAuditoriaN1CriarPO extends TestBaseEliel{
 		justificativa.sendKeys("TESTE AUTOMATIZADO");
 		sleep(1000);
 		aceitar.click();
-		sleep(1000);
+		sleep(85000);
 		//1 caminho
 		adicionarcaminho.click();
 		sleep(2000);
@@ -298,8 +298,14 @@ public class RegrasDeAuditoriaN1CriarPO extends TestBaseEliel{
 			sucesso.add(caminhocriador1.isDisplayed());
 		}*/
 		
+		nao.click();
+		sleep(46000);
+		
 		biblioteca.click();
 		sleep(2000);
+		
+		sleep(2000);
+		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -318,8 +324,8 @@ public class RegrasDeAuditoriaN1CriarPO extends TestBaseEliel{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir1(idB);
-
+		//idInserir1(idB);
+		idInserir("An1",idB);
 		System.out.println(id);
 		System.out.println(idB);
 		double idD = convertToDouble(id);

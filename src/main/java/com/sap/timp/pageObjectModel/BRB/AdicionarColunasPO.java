@@ -40,9 +40,9 @@ public class AdicionarColunasPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"editor-toolbar\"]/div/ul/li[4]/button")
 	public WebElement biblioteca;
 	
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div")
 	public WebElement menu;
-	@FindBy(xpath = "//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
+	@FindBy(xpath = "//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]")
 	public WebElement editar;
 	@FindBy(xpath = "//*[@id=\"report-search\"]/div/div/input")
 	public WebElement buscarCampo;
@@ -126,7 +126,7 @@ public class AdicionarColunasPO extends TestBaseSteven{
 		ferramenta.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 
 		
 	
@@ -148,7 +148,7 @@ public class AdicionarColunasPO extends TestBaseSteven{
 		buscarCampo.sendKeys("Empresa");
 		Actions actions = new Actions(driver);
 		actions.moveToElement(empresa);
-		sleep(3000);
+		sleep(15000);
 		actions.doubleClick(empresa).perform();
 		
 		buscarCampo.clear();
@@ -211,17 +211,18 @@ public class AdicionarColunasPO extends TestBaseSteven{
 		sleep(3000);
 		actions.doubleClick(bc).perform();
 		
-		buscarCampo.clear();
-		buscarCampo.sendKeys("Alíquota ICMS");
-		actions.moveToElement(aliquota);
-		sleep(3000);
-		actions.doubleClick(aliquota).perform();
-		
+	
 		buscarCampo.clear();
 		buscarCampo.sendKeys("Valor ICMS");
 		actions.moveToElement(valorICMS);
 		sleep(3000);
 		actions.doubleClick(valorICMS).perform();
+		
+		buscarCampo.clear();
+		buscarCampo.sendKeys("Alíquota ICMS");
+		actions.moveToElement(aliquota);
+		sleep(3000);
+		actions.doubleClick(aliquota).perform();
 		
 		sleep(2000);
 		

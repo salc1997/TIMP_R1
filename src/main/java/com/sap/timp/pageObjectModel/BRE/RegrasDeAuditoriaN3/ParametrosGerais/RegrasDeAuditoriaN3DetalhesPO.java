@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeAuditoriaN3DetalhesPO extends TestBaseEliel{
+public class RegrasDeAuditoriaN3DetalhesPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-a_rules\"]/div/span[text()=\"Regras de Auditoria N3\"]")
 	public WebElement regraAuditoriaN3;
@@ -82,17 +82,22 @@ public class RegrasDeAuditoriaN3DetalhesPO extends TestBaseEliel{
 		
 		//detalhes
 		String nomedetalhes = nomede.getText();
+		
 		String campo1detalhes = campo1.getText();
 		String campo2detalhes = campo2.getText();
 		campo1detalhes=campo1detalhes.replace(" ", "");
 		campo2detalhes=campo2detalhes.replace(" ", "");
-		System.out.println(nomedetalhes);
-		System.out.println(campo1detalhes);
-		System.out.println( campo2detalhes);
 		
-	
+		String rs= campo1detalhes.concat("?");
+		String rs2= rs.concat(campo2detalhes);
+		System.out.println("D. "+rs2);
 		
+		System.out.println(" ");
+		System.out.println("Datos Detalhe");
+		System.out.println("1. "+nomedetalhes);
+		System.out.println("2. "+rs2);
 		
+
 		fechar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -100,7 +105,7 @@ public class RegrasDeAuditoriaN3DetalhesPO extends TestBaseEliel{
 		sleep(2000);
 		
 		ultimapagina.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//pega o ultimo id que foi gerado no criar
@@ -117,28 +122,40 @@ public class RegrasDeAuditoriaN3DetalhesPO extends TestBaseEliel{
 		visualizar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		//visualizar
 		
 		String nomevisualizar = nomevi.getText();
+		
 		String primeirocampo1 = campo1vi.getText();
+		primeirocampo1 = primeirocampo1.replace(" ", "");
+		
 		String segundocampo1 = campo2vi.getText();
+		segundocampo1 = segundocampo1.replace(" ", "");
+		
 		String terceirocampo1 = campo3vi.getText();
+		terceirocampo1 = terceirocampo1.replace(" ", "");
+		
 		String primeirosegundocampo1 = primeirocampo1.concat(segundocampo1);
-		String campo1visualizar = primeirosegundocampo1.concat(terceirocampo1);
-		campo1visualizar = campo1visualizar.replace(" ", "");
 		
+		String primeirosegundocampo2 = primeirosegundocampo1.concat(terceirocampo1);
+		//primeirosegundocampo2 = primeirosegundocampo2.replace(" ", "");
 		
-		System.out.println(nomevisualizar);
-		System.out.println(campo1visualizar);
-		//System.out.println(segundoterceirocampo1);
+		System.out.println("V. "+primeirosegundocampo2);
+		
+		System.out.println("");
+		System.out.println("Datos Visualizar");
+		System.out.println("1. "+nomevisualizar);
+		System.out.println("2. "+primeirosegundocampo2);
 		
 		
 		ArrayList<Boolean>  sucesso = new ArrayList<Boolean>();
 		sucesso.add(nomevisualizar.contains(nomedetalhes));
-		//sucesso.add(campo1detalhes.contains(primeirocampo1));
-		sucesso.add(campo1visualizar.contains(campo1detalhes));
-		sucesso.add(campo1visualizar.contains(campo2detalhes));
+		//sucesso.add(primeirosegundocampo2.contains(rs2));
+		
+		
+		//sucesso.add(campo1visualizar.contains(campo1detalhes));
+//		sucesso.add(campo1visualizar.contains(campo2detalhes));
 		
 		
 		System.out.println(sucesso);

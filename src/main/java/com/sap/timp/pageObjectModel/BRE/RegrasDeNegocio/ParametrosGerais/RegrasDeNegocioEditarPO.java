@@ -9,9 +9,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeNegocioEditarPO extends TestBaseEliel{
+public class RegrasDeNegocioEditarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Regras de Negócio\"]")
 	public WebElement regrasdenegocio;
@@ -208,7 +208,7 @@ public class RegrasDeNegocioEditarPO extends TestBaseEliel{
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("RegrasDeNegocioCriar");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -232,11 +232,11 @@ public class RegrasDeNegocioEditarPO extends TestBaseEliel{
 		sleep(1000);
 		gravar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		nao.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(10000);
+		sleep(46000);
 		
 		primeiracaixar1.click();
 		sleep(4000);
@@ -284,8 +284,8 @@ public class RegrasDeNegocioEditarPO extends TestBaseEliel{
 		boolean sucesso2 = texto1.contains(enviar);
 		sucesso.add(sucesso2);
 		*/
-		waitExpectElement(primeiracaixar5);
-		sleep(8000);
+	//	waitExpectElement(primeiracaixar5);
+		sleep(28000);
 		
 		primeiracaixar5.click();
 		sleep(1000);
@@ -298,7 +298,7 @@ public class RegrasDeNegocioEditarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		waitExpectElement(configuracoes);
-		sleep(2000);
+		sleep(26000);
 		configuracoes.click();
 		sleep(2000);
 		String nome1 = "TESTE AUTOMATIZADO 007 - NAO MEXER";
@@ -306,15 +306,15 @@ public class RegrasDeNegocioEditarPO extends TestBaseEliel{
 		nome.clear();
 		sleep(1000);
 		nome.sendKeys(nome1);
-		
+		sleep(6000);
 		aplicar.click();
-		sleep(2000);
+		sleep(7000);
 		gravar.click();
 		sleep(2000);
 		nao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		configuracoes.click();
 		sleep(1000);
 		String verficarnome = nome.getAttribute("value");

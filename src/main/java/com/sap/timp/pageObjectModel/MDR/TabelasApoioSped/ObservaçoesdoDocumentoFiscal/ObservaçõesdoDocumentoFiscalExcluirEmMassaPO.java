@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ObservaçõesdoDocumentoFiscalExcluirEmMassaPO extends TestBaseEliel{
+public class ObservaçõesdoDocumentoFiscalExcluirEmMassaPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
@@ -36,7 +36,7 @@ public class ObservaçõesdoDocumentoFiscalExcluirEmMassaPO extends TestBaseEliel{
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher a descrição do Observações do Documento Fiscal - Registro 0460\"]")
 	public WebElement descricaosped;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -113,9 +113,9 @@ public class ObservaçõesdoDocumentoFiscalExcluirEmMassaPO extends TestBaseEliel{
 		sleep(2000);
 		opcaoid.click();
 		sleep(2000);
-		descricaosped.sendKeys("Descrição SPED 709312");
+		descricaosped.sendKeys("Descrição SPED987");
 		
-		String data = dataanterior();
+		String data = fechaAyer();
 		
 		datavigencia.sendKeys(data);
 		
@@ -141,7 +141,7 @@ public class ObservaçõesdoDocumentoFiscalExcluirEmMassaPO extends TestBaseEliel{
 		sleep(2000);
 		opcaoid.click();
 		sleep(2000);
-		descricaosped.sendKeys("Descrição SPED 709356");
+		descricaosped.sendKeys("Descrição SPED766");
 		
 		datavigencia.sendKeys(data);
 		

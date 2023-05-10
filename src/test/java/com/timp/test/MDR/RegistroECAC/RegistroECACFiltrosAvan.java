@@ -20,7 +20,6 @@ public class RegistroECACFiltrosAvan extends TestBaseKenssy {
 	AcessarMDRPO acessarMDRPO;
 	RegistroECACFiltrosAvanPO registroECACFiltrosAvanPO;
 
-
 	@BeforeClass
 	public void beforeClass() {
 
@@ -45,7 +44,6 @@ public class RegistroECACFiltrosAvan extends TestBaseKenssy {
 		for (int i = 0; i < empresa.size(); i++) {
 			assertTrue(empresa.get(i), Filtros);
 		}
-
 
 		ArrayList<Boolean> filial = registroECACFiltrosAvanPO.filtroFilial();
 		for (int i = 0; i < filial.size(); i++) {

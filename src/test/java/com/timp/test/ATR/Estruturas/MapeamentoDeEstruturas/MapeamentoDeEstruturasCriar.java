@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasCriarPO;
 
-public class MapeamentoDeEstruturasCriar extends TestBaseEliel {
+public class MapeamentoDeEstruturasCriar extends TestBaseSteven {
  
 	
 	LoginTC loginTC;
@@ -21,7 +21,7 @@ public class MapeamentoDeEstruturasCriar extends TestBaseEliel {
 	@BeforeClass
 	  public void beforeClass() {
 		  
-		  driver = initializationE();
+		  driver = initialization();
 		  loginTC = new LoginTC();
 		  acessarATRPO = new AcessarATRPO();
 		  mapeamentoDeEstruturasCriarPO = new  MapeamentoDeEstruturasCriarPO();
@@ -29,28 +29,20 @@ public class MapeamentoDeEstruturasCriar extends TestBaseEliel {
 
 	  @AfterClass
 	  public void afterClass() {
+		 // driver.close();
 	  }
 	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
-
-	 	}
-
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
+	 
+	 	@Test()
 	 	public void criar() {
+	 		
+	 		loginTC.login();
+	 		 acessarATRPO.acessarATR();
 	 		
 	 		boolean sucesso = mapeamentoDeEstruturasCriarPO.criar();
 			assertTrue(sucesso, Criar);
 		
-	 		
+			sleep(2000);
 	 	}
 	
 }

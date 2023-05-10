@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CalculoDeTributosDetalhesPO extends TestBaseEliel{
+public class CalculoDeTributosDetalhesPO extends TestBaseSteven{
 	
 	
 	@FindBy(xpath = "//span[text()=\"Cálculo de Tributos\"]")
@@ -62,7 +62,7 @@ public class CalculoDeTributosDetalhesPO extends TestBaseEliel{
 	//	String	id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
 	//	System.out.println("Ultimo registro: " + id);
-		String idRegistro = idObter1();
+		String idRegistro = idObter("CalculoDeTributoCriar");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement detalhe = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhe\"]"));

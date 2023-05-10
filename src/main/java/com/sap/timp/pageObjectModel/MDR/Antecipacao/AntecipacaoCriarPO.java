@@ -81,7 +81,7 @@ public class AntecipacaoCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"toolbar\"]/div/div/ul/li[1]/button")
 	public WebElement gravar;
 	
-	@FindBy(xpath = "//*[@id=\"list\"]/div/div/div[2]/div/div[6]")
+	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
 	
 	@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[2]")

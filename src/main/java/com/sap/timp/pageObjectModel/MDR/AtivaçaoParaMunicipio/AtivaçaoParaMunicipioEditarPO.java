@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AtivaçaoParaMunicipioEditarPO extends TestBaseEliel {
+public class AtivaçaoParaMunicipioEditarPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//span[text()=\"Ativação para Município\"]")
@@ -67,6 +67,7 @@ public class AtivaçaoParaMunicipioEditarPO extends TestBaseEliel {
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(filialcentralizadora);
 		sleep(2000);
 		
 		filialcentralizadora.click();
@@ -74,7 +75,7 @@ public class AtivaçaoParaMunicipioEditarPO extends TestBaseEliel {
 		sleep(2000);
 		
 		String filialE1= filialE.getText();
-		System.out.println(filialE1);
+		System.out.println("filial 1: "+filialE1);
 		filialE.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -91,13 +92,13 @@ public class AtivaçaoParaMunicipioEditarPO extends TestBaseEliel {
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		
+		sleep(2000);
 		/*
 		waitExpectElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		*/
-		
+	
 		//pega o ultimo id que foi gerado no criar
 		String idRegistro1 = idObter("AtivacaoParaMunicipio");
 		
@@ -107,11 +108,13 @@ public class AtivaçaoParaMunicipioEditarPO extends TestBaseEliel {
 		actionsMoveToElementElement(menu1);
 		sleep(2000);
 		menu1.click();
-		sleep(1000);
+		sleep(2000);
 		
 		visualizar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(filialV);
+		sleep(2000);
 		
 		String filialV1 = filialV.getText();
 		System.out.println(filialV1);

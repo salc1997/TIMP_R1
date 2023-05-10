@@ -51,11 +51,13 @@ public class ExcluirColuna extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
+
 		driver.close();
+
 	}
 
 
-	@Test()
+	@Test(priority = 0)
 	public void excluirColunaDragNDrop() {
 		
 		loginTC.login();
@@ -73,16 +75,14 @@ public class ExcluirColuna extends TestBaseSteven {
 	}
 	
 
-	@Test()
-	public void excluirColunaOpcao() {
-
-		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+	@Test(priority = 1)
+	public void excluirColunaOpcao() {		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();		
 		sucesso = excluirColunaPO.ExcluirColuna();
-		System.out.println(sucesso + "Coluna");
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), "The element wasn't removed");
+		System.out.println(sucesso + "Coluna");		
+		for (int i = 0; i < sucesso.size(); i++) {			
+		assertTrue(sucesso.get(i), "The element wasn't removed");		
 		}
 
 	}
-
 }

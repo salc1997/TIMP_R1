@@ -2,7 +2,8 @@ package com.timp.test.MDR.TabelasApoioESocial.Tabela13;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
@@ -18,7 +19,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParteDoCorpoAtingidaCriar extends TestBaseSteven {
+public class ParteDoCorpoAtingidaCriar extends TestBaseMassiel {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -27,7 +28,7 @@ public class ParteDoCorpoAtingidaCriar extends TestBaseSteven {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initialization();
+		driver = initializationM();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		parteDoCorpoAtingidaCriarPO = new ParteDoCorpoAtingidaCriarPO();

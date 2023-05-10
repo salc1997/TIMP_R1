@@ -2,11 +2,11 @@ package com.timp.test.BPMA.ProcessodeNegocio;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BPMA.AcessarBPMAPO;
 import com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.GatewayEventoPO;
-import com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.ProcessodeNegócioCriarProcessocomTarefadeUsuárioPO;
+import com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.ProcessodeNegocioCriarProcessocomTarefadeUsuarioPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class GatewayEvento extends TestBaseCristhian{
+public class GatewayEvento extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarBPMAPO acessarBPMA ;
 	GatewayEventoPO  gatewayEventoPO;
@@ -25,7 +25,7 @@ public class GatewayEvento extends TestBaseCristhian{
   @BeforeClass
   public void beforeClass() {
 	  
-	  driver = initializationC();
+	  driver = initialization();
 	  loginTC = new LoginTC();
 	  acessarBPMA = new AcessarBPMAPO();
 	  gatewayEventoPO = new  GatewayEventoPO();
@@ -33,20 +33,18 @@ public class GatewayEvento extends TestBaseCristhian{
 
   @AfterClass
   public void afterClass() {
-	  driver.close();
+	 driver.close();
   }
   
   
   @Test(priority = 0)
  	public void login() {
  		loginTC.login();
-
  	}
 
  	@Test(priority = 1)
  	public void BPMAEntrar() {
- 		 acessarBPMA.acessarBPMA();
- 		
+ 		 acessarBPMA.acessarBPMA(); 		
  	}
  	
  	@Test(priority = 1)

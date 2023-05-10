@@ -71,7 +71,9 @@ public class ConfiguracaoEExecucaoRegistro1200ExecutarPO extends TestBaseMassiel
 		sleep(4000);
 		
 		executadosregistro1200.click();
-		sleep(4000);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		siguiente.click();
 		sleep(2000);
@@ -94,7 +96,7 @@ public class ConfiguracaoEExecucaoRegistro1200ExecutarPO extends TestBaseMassiel
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("id-GCT-ICMS-ConfiguracaoEExecucacoRegistro1200");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement executar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Executar\"]"));
@@ -176,11 +178,13 @@ public class ConfiguracaoEExecucaoRegistro1200ExecutarPO extends TestBaseMassiel
 		invisibilityOfElementOverlay();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		actionsMoveToElementElement(executadosregistro1200);
 		executadosregistro1200.click();
-		sleep(4000);
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		siguiente.click();
 		sleep(2000);
@@ -201,6 +205,7 @@ public class ConfiguracaoEExecucaoRegistro1200ExecutarPO extends TestBaseMassiel
 		if(convertToInt(idUltimoRegistroExecutados) > convertToInt(idUltimoExcecutado)) {
 			System.out.println("Registro executado correcctamente..."+ idUltimoRegistroExecutados);
 			idInserir3(idUltimoRegistroExecutados);
+			idInserir("id-GCT-ICMS-ConfiguracaoEExecucacoRegistro1200Executados",idUltimoRegistroExecutados);
 			
 			sucesso = true;
 		}else {

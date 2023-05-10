@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CadastroMotivosReaberturaVisualizarPO extends TestBaseEliel {
+public class CadastroMotivosReaberturaVisualizarPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//span[text()=\"Determinação de Relevância de Tarefa por Motivo de Reabertura\"]")
@@ -78,7 +78,7 @@ public class CadastroMotivosReaberturaVisualizarPO extends TestBaseEliel {
 	public WebElement descricaoE;
 	@FindBy(xpath = "//input[contains(@placeholder,\"Impacto\")]")
 	public WebElement impactoE;
-	@FindBy(xpath = "//input[contains(@placeholder,\"Inicio\")]")
+	@FindBy(xpath = "//input[contains(@placeholder,\"Selecione a Data de Início de Vigência \")]")
 	public WebElement dataVigenciaE;
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")

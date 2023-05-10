@@ -6,7 +6,7 @@ import com.sap.timp.base.TestBaseCristhian;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaodeTributoXTributoGrupo.ConfiguracaodeTributoXTributoGrupoEditarPO;
-import com.sap.timp.pageObjectModel.ADM.Configuração.Usuarios.UsuariosEditarPO;
+import com.sap.timp.pageObjectModel.ADM.Usuarios.Usuarios.UsuariosEditarPO;
 
 import org.testng.annotations.BeforeClass;
 

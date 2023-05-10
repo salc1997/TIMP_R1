@@ -31,7 +31,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends Te
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 	
 	@Test(priority = 0)
@@ -119,11 +119,6 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends Te
 			assertTrue(sucesso.get(i), subniveis);
 		}
 	}
-	
-	
-	
-	
-	
 
 	@Test(priority = 10)
 	public void criarConfiguracaoHierarquia2() {
@@ -195,7 +190,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends Te
 			assertTrue(sucesso.get(i), subniveis);
 		}
 	}
-	
+
 	//desde aqui dividir para hacer version 2
 	
 //	@Test(priority = 17)
@@ -259,5 +254,5 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends Te
 //		}
 //	}
 	
-	
+
 }

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseKenssy;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
-import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoCriarPO;
+import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguracaoConfiguracaoCriarPO;
 import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaExcluirSelectFlagPO;
 
 import org.testng.annotations.BeforeClass;
@@ -30,26 +30,14 @@ public class ParametrosGeraisHierarquiaExcluirSelectFlag extends TestBaseKenssy{
 
 	@AfterClass
 	public void afterClass() {
-		// driver.close();
+		driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
-
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-		boolean sucesso = acessarBCBPO.acessar();
-		System.out.println(sucesso);
-		assertTrue(sucesso,Acessar);
-
-	}
-
-	@Test(priority = 2)
+	@Test()
 	public void excluir() {
+		loginTC.login();
+		acessarBCBPO.acessar();
+		
 		boolean sucesso = parametrosGeraisHierarquiaExcluirSelectFlagPO.excluirSeleccionandoFlag();
 		assertTrue(sucesso, Eliminado);
 	}

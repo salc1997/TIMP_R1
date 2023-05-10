@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.Municipio.MunicipioExcluirEmMassaPO;
 
-public class MunicipioExcluirEmMassa extends TestBaseEliel {
+public class MunicipioExcluirEmMassa extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
@@ -19,7 +19,7 @@ public class MunicipioExcluirEmMassa extends TestBaseEliel {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		accesarMDR = new AcessarMDRPO();
 		municipioExcluirEmMassaPO = new MunicipioExcluirEmMassaPO();
@@ -41,11 +41,9 @@ public class MunicipioExcluirEmMassa extends TestBaseEliel {
 		sleep(1000);
 
 	}
-	
-	
+
 	@Test(dependsOnMethods = "Criar")
 	public void ExcluirEmMassa() {
-
 
 		boolean sucesso2 = municipioExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);

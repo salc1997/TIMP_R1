@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class SubItensValidosCriarPO extends TestBaseEliel{
+public class SubItensValidosCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
 	public WebElement tabelacomplementares;
 	
@@ -70,7 +70,7 @@ public class SubItensValidosCriarPO extends TestBaseEliel{
 	public boolean criar() {
 		sleep(2000);
 		tabelacomplementares.click();
-		sleep(2000);
+		sleep(8000);
 		
 		subitensvalidos.click();
 		
@@ -110,7 +110,7 @@ public class SubItensValidosCriarPO extends TestBaseEliel{
 		opcaoobrigacao.click();
 		
 		sleep(2000);
-		codigosubitem.sendKeys("55937");
+		codigosubitem.sendKeys("66937");
 		
 		sleep(2000);
 		

@@ -8,6 +8,9 @@ import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Centralizacao.Saldos.SaldosCriarPO;
 
 import org.testng.annotations.BeforeClass;
+
+import static org.testng.Assert.assertTrue;
+
 import org.testng.annotations.AfterClass;
 
 public class SaldosCriar extends TestBaseKenssy {
@@ -28,7 +31,7 @@ public class SaldosCriar extends TestBaseKenssy {
   
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 
@@ -39,6 +42,9 @@ public class SaldosCriar extends TestBaseKenssy {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 		
-		saldosCriarPO.CriarSaldo();
+		boolean sucesso = saldosCriarPO.CriarSaldo();
+		assertTrue(sucesso, Criar);
+		sleep(2000);
+		
 	}
 }

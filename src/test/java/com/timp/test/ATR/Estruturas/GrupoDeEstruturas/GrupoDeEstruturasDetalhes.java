@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasDetalhesPO;
 
-public class GrupoDeEstruturasDetalhes extends TestBaseEliel{
+public class GrupoDeEstruturasDetalhes extends TestBaseSteven{
  
 	
 	LoginTC loginTC;
@@ -23,7 +23,7 @@ public class GrupoDeEstruturasDetalhes extends TestBaseEliel{
 	@BeforeClass
 	  public void beforeClass() {
 		  
-		  driver = initializationE();
+		  driver = initialization();
 		  loginTC = new LoginTC();
 		  acessarATRPO = new AcessarATRPO();
 		  grupoDeEstruturasDetalhesPO = new  GrupoDeEstruturasDetalhesPO();
@@ -31,31 +31,24 @@ public class GrupoDeEstruturasDetalhes extends TestBaseEliel{
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
 
-	 	}
+	  @Test()
+	  public void detalhes() {
 
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
-	 	
-	 	@Test(priority = 1)
-	 	public void detalhes() {
-	 		
-	 		ArrayList<Boolean> sucesso = grupoDeEstruturasDetalhesPO.detalhes();
-	 		for (int i = 0; i < sucesso.size(); i++) {
-	 			assertTrue(sucesso.get(i), Detalhes);
-				
-			}
-			
-		
-	 		
-	 	}
+		  loginTC.login();
+
+		  acessarATRPO.acessarATR();
+
+
+		  ArrayList<Boolean> sucesso = grupoDeEstruturasDetalhesPO.detalhes();
+		  for (int i = 0; i < sucesso.size(); i++) {
+			  assertTrue(sucesso.get(i), Detalhes);
+
+		  }
+
+		  sleep(2000);
+	  }
 }

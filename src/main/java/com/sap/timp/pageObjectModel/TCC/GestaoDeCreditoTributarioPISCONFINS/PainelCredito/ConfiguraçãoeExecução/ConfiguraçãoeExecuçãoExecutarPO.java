@@ -6,10 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ConfiguraçãoeExecuçãoExecutarPO extends TestBaseCristhian {
-	
+public class ConfiguraçãoeExecuçãoExecutarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
@@ -64,6 +63,8 @@ public class ConfiguraçãoeExecuçãoExecutarPO extends TestBaseCristhian {
 	@FindBy(xpath = "//*[@id=\"SP\"]/div[1]/label/span")
 	public WebElement estadoOpc;
 	
+	@FindBy(xpath = "//*[@id=\"RJ\"]/div[1]/label/span")
+	public WebElement estadoOpcTC2;
 	
 	@FindBy(xpath = "//*[@id=\"subInput\"]/div/div[1]/span")
 	public WebElement calendario;
@@ -116,7 +117,7 @@ public class ConfiguraçãoeExecuçãoExecutarPO extends TestBaseCristhian {
 		}
 		
 		
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		actionsMoveToElementElement(gestaoCredito);
@@ -125,6 +126,27 @@ public class ConfiguraçãoeExecuçãoExecutarPO extends TestBaseCristhian {
 		sleep(2000);
 		painelCredito.click();
 		sleep(2000);
+		
+		executados.click();
+		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		ultimapagina.click();
+		sleep(2000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
+		
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id1= "0";
+		
+		if(rows > 0) {
+			id1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
+			System.out.println("ultimo idExecutados: " + id1);
+		} 
+		
+		
 		configuracaoEExecucao.click();
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -135,7 +157,7 @@ public class ConfiguraçãoeExecuçãoExecutarPO extends TestBaseCristhian {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro =idObter1();
+		String idRegistro = idObter("idPainelCreditoConfiguracaoEExecucaco");
 		
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -163,10 +185,17 @@ public class ConfiguraçãoeExecuçãoExecutarPO extends TestBaseCristhian {
 		
 		estado.click();
 		sleep(2000);
-		estadoOpc.click();
-		sleep(4000);
-		estadoOpc.sendKeys(Keys. ESCAPE);
-		sleep(2000);
+		if(tc2 == true) {
+			estadoOpcTC2.click();
+			sleep(4000);
+			estadoOpcTC2.sendKeys(Keys. ESCAPE);
+			sleep(2000);
+		}else {
+			estadoOpc.click();
+			sleep(4000);
+			estadoOpc.sendKeys(Keys. ESCAPE);
+			sleep(2000);
+		}
 		
 		calendario.click();
 		sleep(2000);
@@ -207,20 +236,29 @@ public class ConfiguraçãoeExecuçãoExecutarPO extends TestBaseCristhian {
 		sleep(2000);
 		
 		
-		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
+		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		String id2= "0";
 		
-		idInserir1(id2);
+		if(rows > 0) {
+			id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
+			System.out.println("ultimo idExecutados: " + id1);
+		} 
+		
+		//String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
+		
+		idInserir("idPainelCreditoConfiguracaoEExecucacoExecutados",id2);
+		
+		//idInserir1(id2);
 
 		
-		int idD = convertToInt(idRegistro);
+		int idD = convertToInt(id1);
 		int id2D = convertToInt(id2);
 		
 		System.out.println(idD);
 		System.out.println(id2D);
 		
 		boolean sucesso = false;
-		if (idD < id2D) {
+		if (id2D > idD) {
 			sucesso = true;
 		}
 		

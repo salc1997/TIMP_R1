@@ -79,7 +79,7 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]/button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
@@ -179,7 +179,7 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[text()=\"Auditoria Nvl 3\"]")
 	public WebElement tipoRegraO;
 	
-	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div/div[2]")
+	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
 	public WebElement componente;
 	
 	@FindBy(xpath = "//td[@class=\"component-field\"]/div/div[2]")
@@ -526,6 +526,10 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[text()=\"DCTF\"]")
 	public WebElement tipoOTC2;
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement no;
+	
+	
 	
 	public AN3FuncionalidadesPO() {
 
@@ -732,7 +736,18 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		
 		sucesso.add(versao.equals("1.0"));
 		sucesso.add(nome.equals("Teste Automatizado AN3"));
-		sucesso.add(tipoS.equals("ALTER E-SOCIAL S1200"));
+		
+		if(tc2) {			
+			sucesso.add(tipoS.equals("DCTF"));
+		}else {
+			sucesso.add(tipoS.equals("ALTER E-SOCIAL S1200"));
+		}		
+		
+		home.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+	
 		
 		System.out.println(sucesso);
 		
@@ -744,25 +759,23 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 	
 	
 	public ArrayList<Boolean> BRE() {
+	
+		
 		String url = driver.getCurrentUrl();
-		
+
 		boolean tp1  = false;
+		boolean tc2  = false;
 		boolean tq1  = false;
-		
-		if (url.contains("tp1")) {
-			tp1 = true;
-		}else if (url.contains("tp1")){
+
+		if (url.contains("tq1")) {
 			tq1 = true;
+		}else if(url.contains("tc2")){
+			tc2 = true;
+		}else if(url.contains("tp1")){
+			tp1 = true;
 		}
-		home.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 		
-		AcessarBREPO acessarBREPO;
-		acessarBREPO = new AcessarBREPO();
 		
-		acessarBREPO.acessarBRE();
 		
 		regraAuditoriaN3.click();
 		sleep(3000);
@@ -791,13 +804,15 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		tipoRegra.click();
 		sleep(1000);
 		tipoRegraO.click();
-		sleep(1000);
+		sleep(2000);
 		
 		
-		if (tq1 == true) {
+		if (tc2 == true) {
 			componenteTQ1.click();
-		}else {
+		}else if (tp1==true ) {
 			componente.click();
+		}else {
+			componenteTQ1.click();
 		}
 		
 		sleep(1000);
@@ -829,16 +844,19 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		estruturaR.click();
 		sleep(1000);
 		estruturaRO.click();
-		sleep(1000);
+		sleep(8000);
 		
 		caracteristica.click();
 		sleep(1000);
 		caracterisiticaO.click();
 		sleep(3000);
 		actionsMoveToElementElement(dataVigenciaR);
-		sleep(1000);
+		sleep(5000);
 		
+		//waitExpectElement(leiauteR);
 		leiauteR.click();
+		sleep(1000);
+		actionsMoveToElementXpath("//li[contains(text(),\""+idObter2()+"\")]");
 		sleep(1000);
 		WebElement leiauteO = driver.findElement(By.xpath("//li[contains(text(),\""+idObter2()+"\")]"));
 		leiauteO.click();
@@ -847,18 +865,16 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		versaoLeiauteR.click();
 		sleep(1000);
 		versaoLeiauteRO.click();
-		sleep(1000);
+		sleep(9000);
 		
 		dataVigenciaR.sendKeys("01/01/2013");
-		sleep(1000);
+		sleep(6000);
 		aplicar.click();
-		sleep(3000);
+		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		waitExpectElement(adicionarCaminho);
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		//waitExpectElement(adicionarCaminho);
+		sleep(20000);
+		
 		
 		adicionarCaminho.click();
 		sleep(3000);
@@ -1209,8 +1225,13 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		
 		sleep(2000);
 		
-		executarB.click();
+	//	no.click();
+		sleep(8000);
 		
+		executarB.click();
+		sleep(2000);
+		no.click();
+		sleep(2000);
 		waitExpectXpath("//div[@class=\"base-dialog   medium ui-draggable\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"base-dialog   medium ui-draggable\"]");
@@ -1332,7 +1353,15 @@ public class AN3FuncionalidadesPO extends TestBaseSteven{
 		System.out.println(periodo);
 		
 		sucesso.add(nome.contains("Teste Automatizado Conf AN3"));
-		sucesso.add(tipo.equals("ALTER E-SOCIAL S1200"));
+		
+		String url = driver.getCurrentUrl();
+		
+		if(url.contains("tc2")){
+			sucesso.add(tipo.equals("DCTF"));
+		}else {
+			sucesso.add(tipo.equals("ALTER E-SOCIAL S1200"));
+		}
+		
 		sucesso.add(empresa.equals("1000"));
 		sucesso.add(uf.equals("SP"));
 		sucesso.add(filial.equals("0001"));

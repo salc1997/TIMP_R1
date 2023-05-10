@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class DeterminacionRelevanciaPorMotivoDetallesPO extends TestBaseCristhian{
+public class DeterminacionRelevanciaPorMotivoDetallesPO extends TestBaseSteven{
 	
 
 	@FindBy(xpath = "//span[text()=\"Determinação de Relevância de Tarefa por Motivo de Reabertura\"]")
@@ -39,9 +39,9 @@ public class DeterminacionRelevanciaPorMotivoDetallesPO extends TestBaseCristhia
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
 
-	@FindBy(xpath = "//div[@id=\"detail-description\"][2]/div[2]/div")
+	@FindBy(xpath = "//div[@id=\"detail-description\"][8]/div[2]/div")
 	public WebElement motivoD;
-	@FindBy(xpath = "//div[@id=\"detail-description\"][3]/div[2]/div")
+	@FindBy(xpath = "//div[@id=\"detail-description\"][9]/div[2]/div")
 	public WebElement descricaoD;
 	@FindBy(xpath = "//div[@id=\"detail-description\"][4]/div[2]/div")
 	public WebElement impactoD;
@@ -132,6 +132,8 @@ public class DeterminacionRelevanciaPorMotivoDetallesPO extends TestBaseCristhia
 		String dataVigenciaV1 = dataVigenciaV.getText();
 		String ativoV1 = ativoV.getText();
 
+		ativoV1 = ativoV1.replace(" ", "");
+		
 		System.out.println(motivoV1);
 		System.out.println(descricaoV1);
 		System.out.println(impactoV1);

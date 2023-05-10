@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class MapeamentoDeEstruturasEditarPO extends TestBaseEliel{
+public class MapeamentoDeEstruturasEditarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Mapeamento de Estruturas\"]")
 	public WebElement mapeamentodeestruturas;
@@ -51,11 +51,10 @@ public class MapeamentoDeEstruturasEditarPO extends TestBaseEliel{
 	
 	public ArrayList<Boolean> editar() {
 		sleep(2000);
-		
 		mapeamentodeestruturas.click();
-		
 		sleep(2000);
 		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -64,7 +63,7 @@ public class MapeamentoDeEstruturasEditarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("MapeamentoDeEstruturasCriar");
 		
 		System.out.println("Ultimo registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -82,6 +81,8 @@ public class MapeamentoDeEstruturasEditarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		actionsMoveToElementXpath("//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]");
+		sleep(5000);
+		
 		tributo.click();
 		sleep(2000);
 		opcaotributo.click();
@@ -123,6 +124,7 @@ public class MapeamentoDeEstruturasEditarPO extends TestBaseEliel{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		waitExpectElement(cofins);
 		sleep(2000);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();

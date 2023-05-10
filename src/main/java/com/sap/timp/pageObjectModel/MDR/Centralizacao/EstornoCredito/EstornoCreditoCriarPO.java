@@ -6,11 +6,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import com.sap.timp.base.TestBaseEliel;
-import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.base.TestBaseMassiel;
-import com.sap.timp.base.TestBaseSteven;
 
 public class EstornoCreditoCriarPO extends TestBaseMassiel{
 	
@@ -31,60 +27,35 @@ public class EstornoCreditoCriarPO extends TestBaseMassiel{
 	
 
 	@FindBy(xpath = "//div[@id=\"company\"]/div/div/div[2]")
-
 	public WebElement empresa;
 	
 	//@FindBy(xpath = "//*[@id=\"1000\"]/div[1]/label/span")
-	@FindBy(xpath = "//li[text()=\"3000\"]")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcaoempresa;
-	
-
-	@FindBy(xpath = "//li[text()=\"1000\"]")
-	public WebElement opcaoempresaTC2;
-
-	@FindBy(xpath ="//div[@id=\"UF\"]/div/div/div[2]")
-	public WebElement selecionaruffilial; 
 
 	
 	@FindBy(xpath ="//*[@id=\"UF\"]/div/div[1]/div[2]")
 	public WebElement ufFilial; 
 	
-	@FindBy(xpath = "//li[text()=\"BA\"]")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcaouffilial;
-	
-
-	@FindBy(xpath = "//li[text()=\"AL\"]")
-	public WebElement opcaouffilialTC2;
 	
 
 	@FindBy(xpath = "//div[@id=\"branches\"]/div/div/div[2]")
 	public WebElement filial;
 	
-	@FindBy(xpath = "//*[@id=\"0031\"]/div[1]/label/span")
+	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div/label/span")
 	public WebElement opcao1filial;
 	
 
-
-	//@FindBy(xpath = "//*[@id=\"0032\"]/div[1]/label/span")
-
-	@FindBy(xpath = " //div[@class=\"list-option\"][2]/div/div[2]")
+	@FindBy(xpath = "//div[@class=\"list-option\"][2]/div/div/label/span")
 	public WebElement opcao2filial;
-	
-
-	
-	@FindBy(xpath = "//*[@id=\"0008\"]/div[1]/label/span")
-	public WebElement opcao1filialTC2;
-	
-
-	@FindBy(xpath = "//*[@id=\"0805\"]/div[1]/label/span")
-	public WebElement opcao2filialTC2;
 	
 	
 	@FindBy(xpath="//div[@id=\"centralizedBranch\"]/div/div/div[2]")
-
 	public WebElement filialcentralizadora;
 	
-	@FindBy(xpath="//li[text()=\"0031\"]")
+	@FindBy(xpath="//li[@id][1]")
 	public WebElement opcaofialcentralizadora;
 	
 	@FindBy(xpath="//li[text()=\"0008\"]")
@@ -157,50 +128,37 @@ public class EstornoCreditoCriarPO extends TestBaseMassiel{
 		
 		//Preenchimento 
 		empresa.click();
-
-		if (tc2 == true) {
-			opcaoempresaTC2.click();
-		}else {
-			opcaoempresa.click();
-		}
+		sleep(1000);
+		opcaoempresa.click();
+		sleep(1000);
+		opcaoempresa.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 		
 		
-		ufFilial.click();
 		
-		if (tc2 == true) {
-			opcaouffilialTC2.click();
-		}else {
-			opcaouffilial.click();
-		}
+		ufFilial.click();
+		sleep(1000);
+		opcaouffilial.click();
+		sleep(1000);
+		opcaouffilial.sendKeys(Keys.ESCAPE);
+		sleep(1000);
+		
+
 		
 	 
 		sleep(2000);
 		filial.click();
 
-		if (tc2 == true) {
-			opcao1filialTC2.click();
-			sleep(1000);
-			opcao2filialTC2.click();
-			sleep(1000);
-			opcao2filialTC2.sendKeys(Keys.ESCAPE);
-		}else {
-			opcao1filial.click();
-			sleep(1000);
-			opcao2filial.click();
-			sleep(1000);
-			opcao2filial.sendKeys(Keys.ESCAPE);
-		}
+		opcao1filial.click();
+		sleep(1000);
+		opcao2filial.click();
+		sleep(1000);
+		opcao2filial.sendKeys(Keys.ESCAPE);
 
-
+		sleep(1000);
 		filialcentralizadora.click();
-
-		
-		if (tc2 == true) {
-			opcaofialcentralizadoraTC2.click();
-		}else {
-			opcaofialcentralizadora.click();
-		}
+		sleep(1000);
+		opcaofialcentralizadora.click();
 		sleep(1000);
 
 		//pega a data atual

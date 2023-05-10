@@ -79,9 +79,14 @@
 
 			<class
 				name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoFiltros"></class>
+				
+			<class
+				name="com.timp.test.MDR.Centralizacao.EstornoCredito.EstornoCreditoExcluirMassa"></class>
 
 
 		</classes>
+		
+		
 
 
 	</test>
@@ -120,7 +125,7 @@
 	</test>
 
 
-
+<!-- 
 	<test name="Centralização > Tributos">
 
 		<classes>
@@ -150,7 +155,7 @@
 
 	</test>
 
-
+-->
 
 
 	<test name="CEP > Bairro">

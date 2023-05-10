@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirPO;
 
-public class AgrupamentoDeTributosExcluir extends TestBaseEliel{
+public class AgrupamentoDeTributosExcluir extends TestBaseSteven{
  
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
@@ -20,7 +20,7 @@ public class AgrupamentoDeTributosExcluir extends TestBaseEliel{
 	@BeforeClass
 	  public void beforeClass() {
 		  
-		  driver = initializationE();
+		  driver = initialization();
 		  loginTC = new LoginTC();
 		  acessarATRPO = new AcessarATRPO();
 		  agrupamentoDeTributosExcluirPO = new  AgrupamentoDeTributosExcluirPO();
@@ -28,27 +28,20 @@ public class AgrupamentoDeTributosExcluir extends TestBaseEliel{
 
 	  @AfterClass
 	  public void afterClass() {
+		  driver.close();
 	  }
 	  
-	  
-	  @Test(priority = 0)
-	 	public void login() {
-	 		loginTC.login();
-
-	 	}
-
-	 	@Test(priority = 1)
-	 	public void ATREntrar() {
-	 		 acessarATRPO.acessarATR();
-	 		
-	 	}
 	 	
-	 	@Test(priority = 1)
+	 	@Test()
 	 	public void excluir() {
+	 		
+	 		loginTC.login();
+	 		acessarATRPO.acessarATR();
+	 		
 	 		
 	 		boolean sucesso = agrupamentoDeTributosExcluirPO.excluir();
 			assertTrue(sucesso, Eliminado);
-		
+			sleep(2000);
 	 		
 	 	}
 	

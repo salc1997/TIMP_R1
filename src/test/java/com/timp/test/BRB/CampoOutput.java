@@ -28,7 +28,7 @@ public class CampoOutput extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 
@@ -44,7 +44,7 @@ public class CampoOutput extends TestBaseSteven {
 		System.out.println(sucesso);
 
 		assertTrue(sucesso, semCampoOutput);
-
+		sleep(2000);
 	}
 
 }

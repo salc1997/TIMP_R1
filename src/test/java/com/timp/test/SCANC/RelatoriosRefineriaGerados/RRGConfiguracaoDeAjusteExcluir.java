@@ -12,6 +12,7 @@ import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteExcluirPO;
 
 public class RRGConfiguracaoDeAjusteExcluir extends TestBaseFernando {
+	//TSTNG-357
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	RRGConfiguracaoDeAjusteExcluirPO rRGConfiguracaoDeAjusteExcluirPO;

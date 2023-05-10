@@ -3,6 +3,7 @@ package com.sap.timp.pageObjectModel.TDK.Kpis.KpisPublicos;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -21,6 +22,9 @@ public class KpisPublicosDetalhesPO extends TestBaseFernando{
 	
 	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")
 	public WebElement btnCerrar;
+	
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
+	public WebElement pesquisar;
 	
 	public KpisPublicosDetalhesPO() {
 		PageFactory.initElements(driver, this);
@@ -55,10 +59,10 @@ public class KpisPublicosDetalhesPO extends TestBaseFernando{
 		System.out.println("ID Registro: " + idRegistro);
 		System.out.println("");
 		
-		btnUltimaPagina.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+	
+		pesquisar.sendKeys(idRegistro);
+		pesquisar.sendKeys(Keys.ENTER);
+		sleep(6000);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));

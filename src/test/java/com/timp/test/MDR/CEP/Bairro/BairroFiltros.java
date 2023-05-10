@@ -44,6 +44,7 @@ public class BairroFiltros extends TestBaseSteven {
 		boolean sucesso = bairroFiltrosPO.filtro();
 
 		assertTrue(sucesso, Filtros);
+		sleep(2000);
 	}
 
 }

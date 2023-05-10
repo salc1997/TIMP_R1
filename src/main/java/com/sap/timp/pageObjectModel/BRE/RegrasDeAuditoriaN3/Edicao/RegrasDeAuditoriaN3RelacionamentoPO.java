@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeAuditoriaN3RelacionamentoPO extends TestBaseEliel{
+public class RegrasDeAuditoriaN3RelacionamentoPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-a_rules\"]/div/span[text()=\"Regras de Auditoria N3\"]")
 	public WebElement regraAuditoriaN3;
@@ -27,7 +27,7 @@ public class RegrasDeAuditoriaN3RelacionamentoPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@id=\"14\"]/div[2]")
 	public WebElement opcaorelacionamentotp1;
 	
-	@FindBy(xpath = "//div[@id=\"47\"]/div[2]")
+	@FindBy(xpath = "//div[@id=\"39\"]/div[2]")
 	public WebElement opcaorelacionamentotc2;
 
 		
@@ -69,9 +69,9 @@ public class RegrasDeAuditoriaN3RelacionamentoPO extends TestBaseEliel{
 		PageFactory.initElements(driver, this);
 	}
 
-	public boolean editar() {
+	public boolean relacionamento() {
 		
-String url = driver.getCurrentUrl();
+		String url = driver.getCurrentUrl();
 		
 		boolean tc2 = false;
 		boolean td1 = false;
@@ -184,7 +184,7 @@ String url = driver.getCurrentUrl();
 		sleep(2000);
 		
 		waitExpectElement(relacionamentoestrutura);
-		sleep(2000);
+		sleep(19000);
 		
 		
 		if(tq1== true)
@@ -211,7 +211,7 @@ String url = driver.getCurrentUrl();
 				sucesso = true;
 			}
 		}else {
-			int relacionamentoestrutura1 = driver.findElements(By.xpath("//div[@id=\"multipleControlerId-47\"]")).size();
+			int relacionamentoestrutura1 = driver.findElements(By.xpath("//div[@id=\"multipleControlerId-39\"]")).size();
 			if(relacionamentoestrutura1 == 0)
 			{
 				System.out.println("Não consta");
@@ -221,16 +221,8 @@ String url = driver.getCurrentUrl();
 				sucesso = true;
 			}
 		}
-		
-		
-		
-		
-	
+				
 		System.out.println(sucesso);
 		return sucesso;
-
 	}
-
-
-
 }

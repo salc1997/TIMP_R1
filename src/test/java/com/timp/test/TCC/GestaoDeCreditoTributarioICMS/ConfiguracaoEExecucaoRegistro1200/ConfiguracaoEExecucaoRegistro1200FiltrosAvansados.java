@@ -31,23 +31,15 @@ public class ConfiguracaoEExecucaoRegistro1200FiltrosAvansados extends TestBaseM
 
 	@AfterClass
 	public void afterClass() {
+		 driver.close();
 	}
 
-	@Test(priority = 0)
-	public void login() {
+
+	@Test()
+	public void filtrosAvancados() {
+		
 		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarTCC() {
-
 		acessarTCCPO.acessarTCC();
-
-	}
-
-	@Test(priority = 2)
-	public void criar() {
 
 		configuracaoEExecucaoRegistro1200FiltrosAvansadosPO.filtros();
 

@@ -1,27 +1,23 @@
 package com.timp.test.BRB;
 
-import org.testng.annotations.Test;
-
-import com.sap.timp.base.TestBaseCristhian;
-import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
-import com.sap.timp.pageObjectModel.BRB.AtribuicaodeRegraPO;
-import com.sap.timp.pageObjectModel.BRB.EnviarParaCorrecaoPO;
-
-import org.testng.annotations.BeforeClass;
-
 import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.pageObjectModel.ADM.LoginTC;
+import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
+import com.sap.timp.pageObjectModel.BRB.EnviarParaCorrecaoPO;
 
-public class EnviarParaCorrecao extends TestBaseCristhian{
+public class EnviarParaCorrecao extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	EnviarParaCorrecaoPO enviarParaCorreçãoPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 		enviarParaCorreçãoPO = new EnviarParaCorrecaoPO();
@@ -30,7 +26,7 @@ public class EnviarParaCorrecao extends TestBaseCristhian{
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 

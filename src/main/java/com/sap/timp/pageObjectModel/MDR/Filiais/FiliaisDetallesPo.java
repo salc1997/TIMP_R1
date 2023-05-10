@@ -82,8 +82,8 @@ public class FiliaisDetallesPo extends TestBaseMassiel{
 		sleep(2000);
 		
 		sleep(2000);
-		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"1000\"]/div[1]/div"));
-		WebElement detalle = driver.findElement(By.xpath("//div[@data-id=\"1000\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));
+		WebElement menu = driver.findElement(By.xpath("//div[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div"));
+		WebElement detalle = driver.findElement(By.xpath("//div[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));
 
 		menu.click();
 		sleep(1000);
@@ -114,8 +114,8 @@ public class FiliaisDetallesPo extends TestBaseMassiel{
 		cerrar.click();
 
 		sleep(2000);
-		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\"1000\"]/div[1]/div"));
-		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\"1000\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		WebElement menu1 = driver.findElement(By.xpath("//div[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 
 		menu.click();
 		sleep(1000);

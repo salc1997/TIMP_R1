@@ -6,9 +6,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class KpisTabelasEditarPO extends TestBaseCristhian{
+public class KpisTabelasEditarPO extends TestBaseSteven{
 
 	
 	@FindBy(xpath = "//span[text()=\"Kpi's\"]")
@@ -103,13 +103,13 @@ public class KpisTabelasEditarPO extends TestBaseCristhian{
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		ultimapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter2();
+		String idRegistro = idObter("KpisCriar");
 		
 		System.out.println("Ultimo registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -139,7 +139,7 @@ public class KpisTabelasEditarPO extends TestBaseCristhian{
 		
 		waitExpectElement(nomeCabelhaco);
 		
-		String valor = nomeCabelhaco.getText();
+		String valor = nomeCabelhaco.getAttribute("value");
 		//String valor = filialE.getAttribute("value");
 		System.out.println(valor);
 		String enviar = valor;
@@ -147,13 +147,14 @@ public class KpisTabelasEditarPO extends TestBaseCristhian{
 		nomeCabelhaco.clear();
 		sleep(2000);
 		nomeCabelhaco.sendKeys("Cabecalho Editado");
-		sleep(2000);
+		sleep(4000);
 		
 		conteudo.click();
-		sleep(3000);
+		sleep(16000);
 		
+		//waitExpectElement(nomeFlagPersonalizado);
 		nomeFlagPersonalizado.click();
-		sleep(2000);
+		sleep(12000);
 		
 		etiqueta.sendKeys("Base ICMS");
 		sleep(2000);
@@ -212,7 +213,8 @@ public class KpisTabelasEditarPO extends TestBaseCristhian{
 		editTabela.click();
 		sleep(2000);
 		
-		String nuevoTexto = nomeCabelhaco.getText();
+		waitExpectElement(nomeCabelhaco);
+		String nuevoTexto = nomeCabelhaco.getAttribute("value");
 	  	System.out.println(enviar);
 		System.out.println(nuevoTexto);
 		

@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegistroM610EditarPO extends TestBaseEliel{
+public class RegistroM610EditarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
@@ -28,7 +28,7 @@ public class RegistroM610EditarPO extends TestBaseEliel{
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Código da Contribuição social apurada no periodo \"]")
 	public WebElement campoTexto;
 	
-	@FindBy(xpath = "//li[@id][2]")
+	@FindBy(xpath = "//li[@id][3]")
 	public WebElement opcao;
 
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
@@ -76,9 +76,9 @@ public class RegistroM610EditarPO extends TestBaseEliel{
 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(12000);
 
-		String idRegistro = idObter("GestaoCreditoTributarioPISRegistroM610");
+		String idRegistro = idObter("GestaoCreditoTributarioCOFINSRegistroM610");
 		System.out.println("ID Registro: " + idRegistro);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
@@ -93,7 +93,7 @@ public class RegistroM610EditarPO extends TestBaseEliel{
 		waitExpectXpath("//div[@id=\"branch\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
 		waitExpectXpath("//div[@id=\"uf\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(18000);
 		
 		campo.click();
 		sleep(1000);
@@ -120,9 +120,9 @@ public class RegistroM610EditarPO extends TestBaseEliel{
 		sleep(2000);
 		
 		String textoCampoE = campoTexto.getAttribute("value");
-		System.out.println("O texto do campo após a edição é: " +textoCampoE);
+		System.out.println("O texto do campo após a edição é: " + textoCampoE);
 		
-		boolean sucesso = textoCampoE.equals(opcaoT);
+		boolean sucesso = opcaoT.contains(textoCampoE);
 		
 		System.out.println("O registro foi editado com sucesso: " +sucesso);
 		

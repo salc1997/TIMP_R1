@@ -25,25 +25,24 @@ public class RegistroECACCVisualizar extends TestBaseMassiel {
 		driver = initializationM();
 		accesarMDRPO = new AcessarMDRPO();
 		loginTC = new LoginTC();
-		registroECACVisualizarPO =new  RegistroECACVisualizarPO();
+		registroECACVisualizarPO = new RegistroECACVisualizarPO();
 	}
 
 	@AfterClass
 	public void afterClass() {
 		driver.close();
 	}
-	
+
 	@Test()
 	public void Visualizar() {
 		loginTC.login();
 		accesarMDRPO.acessarMDR();
-		
+
 		ArrayList<Boolean> sucesso = registroECACVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizaçar);
 		}
-		
 
 	}
 

@@ -7,9 +7,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ContasDefaultPorTributoCriarPO extends TestBaseEliel {
+public class ContasDefaultPorTributoCriarPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//span[text()=\"Parâmetros de Contabilização\"]")
@@ -102,7 +102,7 @@ public class ContasDefaultPorTributoCriarPO extends TestBaseEliel {
 		sleep(2000);
 		Actions action = new Actions(driver); 
 		action.sendKeys(Keys.ESCAPE).build().perform(); 
-		sleep(2000);
+		sleep(6000);
 		
 		filial.click();
 		

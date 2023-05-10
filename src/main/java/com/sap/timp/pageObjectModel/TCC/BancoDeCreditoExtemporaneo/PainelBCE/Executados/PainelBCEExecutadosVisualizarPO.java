@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class PainelBCEExecutadosVisualizarPO extends TestBaseEliel {
+public class PainelBCEExecutadosVisualizarPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-bce\"]")
@@ -100,7 +100,7 @@ public class PainelBCEExecutadosVisualizarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("idBCEPainelBCEConfiguracaoEExecucacoExecutados");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

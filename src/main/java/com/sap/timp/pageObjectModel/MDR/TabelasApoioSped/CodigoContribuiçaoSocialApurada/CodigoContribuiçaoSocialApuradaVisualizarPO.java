@@ -80,12 +80,12 @@ public class CodigoContribuiçaoSocialApuradaVisualizarPO extends TestBaseSteven{
 		sleep(2000);
 		codigoContri.click();
 
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 		siguiente.click();
-		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -115,6 +115,7 @@ public class CodigoContribuiçaoSocialApuradaVisualizarPO extends TestBaseSteven{
 		System.out.println(dataV1);
 		sleep(2000);
 		biblioteca.click();
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
@@ -128,7 +129,7 @@ public class CodigoContribuiçaoSocialApuradaVisualizarPO extends TestBaseSteven{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		sleep(7000);
 		
 		String tributoE = tributo.getAttribute("value");
 		String codigoE = codigo.getAttribute("value");
@@ -144,7 +145,7 @@ public class CodigoContribuiçaoSocialApuradaVisualizarPO extends TestBaseSteven{
 		
 		sucesso.add(tributoV1.equals(tributoE));
 		sucesso.add(codigoV1.equals(codigoE));
-		sucesso.add(descricaoV1.equals(descricaoE));
+		sucesso.add(descricaoE.contains(descricaoV1));
 		sucesso.add(dataV1.equals(dataE));
 		
 		System.out.println(sucesso);

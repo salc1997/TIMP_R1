@@ -7,9 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class InformaçoesAdicionaisExcluirEmMassaPO extends TestBaseEliel{
+public class InformaçoesAdicionaisExcluirEmMassaPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
@@ -24,7 +24,7 @@ public class InformaçoesAdicionaisExcluirEmMassaPO extends TestBaseEliel{
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher a descrição do Informação Adicional\"]")
 	public WebElement descricao;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//span[contains(text(),\"Novo\")]")
@@ -98,7 +98,7 @@ public class InformaçoesAdicionaisExcluirEmMassaPO extends TestBaseEliel{
 		codigodevalores.sendKeys("SP00002");
 		codigodevalores.sendKeys(Keys.ENTER);
 		sleep(1000);
-		descricao.sendKeys("Teste 70931");
+		descricao.sendKeys("Teste987");
 		sleep(1000);
 		//data atual
 		String data = fechaActual();
@@ -120,7 +120,7 @@ public class InformaçoesAdicionaisExcluirEmMassaPO extends TestBaseEliel{
 		codigodevalores.sendKeys("SP00003");
 		codigodevalores.sendKeys(Keys.ENTER);
 		sleep(1000);
-		descricao.sendKeys("Teste 709323");
+		descricao.sendKeys("Teste23");
 		sleep(1000);
 		datavigencia.sendKeys(data);
 		

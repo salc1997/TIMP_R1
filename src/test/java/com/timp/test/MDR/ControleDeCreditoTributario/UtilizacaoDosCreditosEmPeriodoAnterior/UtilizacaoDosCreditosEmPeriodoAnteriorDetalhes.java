@@ -8,13 +8,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ControleDeCreditoTributario.UtilizacaoDosCreditosEmPeriodoAnterior.UtilizacaoDosCreditosEmPeriodoAnteriorDetalhesPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPDetalhesPO;
 
-public class UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes extends TestBaseEliel {
+public class UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -23,7 +23,7 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes extends TestBaseElie
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		utilizacaoDosCreditosEmPeriodoAnteriorDetalhesPO = new UtilizacaoDosCreditosEmPeriodoAnteriorDetalhesPO();
@@ -33,11 +33,10 @@ public class UtilizacaoDosCreditosEmPeriodoAnteriorDetalhes extends TestBaseElie
 	public void afterClass() {
 		driver.close();
 	}
- 
 
 	@Test()
 	public void detalhes() {
-		
+
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();

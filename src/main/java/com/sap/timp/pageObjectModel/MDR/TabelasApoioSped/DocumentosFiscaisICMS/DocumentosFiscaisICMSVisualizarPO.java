@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class DocumentosFiscaisICMSVisualizarPO extends TestBaseEliel{
+public class DocumentosFiscaisICMSVisualizarPO extends TestBaseSteven{
 	
 	
 	
@@ -37,7 +37,7 @@ public class DocumentosFiscaisICMSVisualizarPO extends TestBaseEliel{
 	public WebElement siguiente;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -138,17 +138,17 @@ public class DocumentosFiscaisICMSVisualizarPO extends TestBaseEliel{
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(9000);
 		
 		
 		//editar
-		attributeToBeXpath("//div[@class=\"element\" and @id=\"taxDocCode\"]/div/div", "class", "base-input  required type2 success");
-		sleep(2000);
+	//	attributeToBeXpath("//div[@class=\"element\" and @id=\"taxDocCode\"]/div/div", "class", "base-input  required type2 success");
+		sleep(9000);
 	
 		String codigoeditar=codigodedocumentofiscal.getAttribute("value");
 		String especieeditar= especieed.getAttribute("value");
 		String dataeditar= datavigencia.getAttribute("value");
-
+		System.out.println("----------Editar-----------");
 		System.out.println(codigoeditar);
 		System.out.println(especieeditar);
 		System.out.println(dataeditar);

@@ -10,7 +10,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.google.errorprone.annotations.FormatMethod;
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseSteven;
 
 public class OPPropiasRessarcimentosCriarPO extends TestBaseSteven{
@@ -40,9 +40,11 @@ public class OPPropiasRessarcimentosCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//button/span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
-	
 	@FindBy(xpath = "//li[@class=\"list-item\" and @id][1]")
 	public WebElement opcao;
+	
+	@FindBy(xpath = "//li[@class=\"list-item\" and @id][2]")
+	public WebElement opcao3;
 	
 	@FindBy(xpath = "//div[@id=\"company-repayments\"]/div/div/div[2]")
 	public WebElement empresa;
@@ -68,6 +70,9 @@ public class OPPropiasRessarcimentosCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//input[contains(@placeholder,\"início\")]")
 	public WebElement dataVigencia;
 	
+	@FindBy(xpath = "//button/span[text()=\"Salvar e Novo\"]")
+	public WebElement salvarNovo;
+	
 	public OPPropiasRessarcimentosCriarPO() {
 
 		PageFactory.initElements(driver, this);
@@ -92,8 +97,8 @@ public class OPPropiasRessarcimentosCriarPO extends TestBaseSteven{
 		sleep(2000);
 	
 		//conta o numero de linhas
-		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
+		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
 		System.out.println(id);
 		
@@ -148,13 +153,8 @@ public class OPPropiasRessarcimentosCriarPO extends TestBaseSteven{
 		sleep(1000);
 		
 		dataVigencia.sendKeys(fechaActual());
-		
-		
-		
-		
-	
-		
 		sleep(2000);
+	
 		gravar.click();
 		sleep(2000);
 		sim.click();
@@ -172,8 +172,9 @@ public class OPPropiasRessarcimentosCriarPO extends TestBaseSteven{
 		sleep(2000);
 		
 		
+		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
-		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
+		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
 		
 		
 		idInserir("OPPropiasRessarcimentos",id2);
@@ -187,7 +188,6 @@ public class OPPropiasRessarcimentosCriarPO extends TestBaseSteven{
 		if (idD < id2D) {
 			sucesso = true;
 		}
-		
 		
 		System.out.println(sucesso);
 		

@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigoContabilizacaoVisualizarPO extends TestBaseEliel{
+public class CodigoContabilizacaoVisualizarPO extends TestBaseSteven{
 	
 	
 	@FindBy(xpath = "//span[text()=\"Códigos de Contabilização\"]")
@@ -123,7 +123,7 @@ public class CodigoContabilizacaoVisualizarPO extends TestBaseEliel{
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Tributo \"]")
 	public WebElement tributoed;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Tipo de tributo \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecionar Tipo de Tributo \"]")
 	public WebElement tipotributoed;
 	
 	@FindBy(xpath = "//div[@id=\"start-date\"]/div/div/input")
@@ -210,7 +210,7 @@ public class CodigoContabilizacaoVisualizarPO extends TestBaseEliel{
 				editar.click();
 				sleep(2000);
 				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-				sleep(2000);
+				sleep(9000);
 				
 				
 				//editar
@@ -245,9 +245,11 @@ public class CodigoContabilizacaoVisualizarPO extends TestBaseEliel{
 				sucesso.add(tipotributoeditar.contains(tipotributovisualizar));
 				sucesso.add(datavisualizar.equals(dataeditar));
 				
+				System.out.println(sucesso);
+				
 		/*
 		String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");
-		//System.out.println(sucesso);	
+			
 		*/
 		return sucesso;
 		

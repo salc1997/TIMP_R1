@@ -2,7 +2,7 @@ package com.timp.test.MDR.CEP.Logradouro;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CEP.Logradouro.LogradouroVisualizarPO;
@@ -16,14 +16,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class LogradouroVisualizar extends TestBaseKathy {
+public class LogradouroVisualizar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	LogradouroVisualizarPO logradouroVisualizarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationK();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		logradouroVisualizarPO = new LogradouroVisualizarPO();
@@ -48,6 +48,7 @@ public class LogradouroVisualizar extends TestBaseKathy {
 			assertTrue(sucesso.get(i), visualizaçar);
 
 		}
+		sleep(2000);
 
 	}
 }

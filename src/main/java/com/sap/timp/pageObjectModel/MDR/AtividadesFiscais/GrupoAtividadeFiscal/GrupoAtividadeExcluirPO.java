@@ -60,9 +60,9 @@ public class GrupoAtividadeExcluirPO extends TestBaseFernando{
 		// Recargo la pagina
 		driver.navigate().refresh();
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		sleep(20000);
 		
 		btnUltimaPagina.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

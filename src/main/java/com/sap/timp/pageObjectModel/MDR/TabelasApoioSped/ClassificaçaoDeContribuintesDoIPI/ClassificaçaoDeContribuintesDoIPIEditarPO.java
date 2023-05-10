@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseEliel{
+public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseSteven{
 	
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
@@ -76,6 +76,7 @@ public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseEliel{
 	
 		//pega o ultimo id que foi gerado no criar
 		String idRegistro = idObter("classificacaodecontibuintessdoipi");
+		System.out.println(idRegistro);
 				
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -90,7 +91,7 @@ public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(descricao);
 		sleep(2000);
-		String enviar = "Teste da Descrição";
+		String enviar = "Teste da Descrição mass";
 		descricao.clear();
 		descricao.sendKeys(enviar);
 		
@@ -104,7 +105,7 @@ public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseEliel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();
-		sleep(2000);
+		sleep(6000);
 		//sim.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -114,12 +115,12 @@ public class ClassificaçaoDeContribuintesDoIPIEditarPO extends TestBaseEliel{
 		sleep(2000);
 		siguiente.click();
 		
-		
+		sleep(6000);
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter1();
 		
-		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
-		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		
+		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
 		actionsMoveToElementElement(menu1);
 		sleep(2000);

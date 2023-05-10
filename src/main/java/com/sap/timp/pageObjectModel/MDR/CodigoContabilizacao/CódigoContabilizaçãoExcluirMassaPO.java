@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CódigoContabilizaçãoExcluirMassaPO extends TestBaseCristhian {
+public class CódigoContabilizaçãoExcluirMassaPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//span[text()=\"Códigos de Contabilização\"]")
 	public WebElement codigoscontabilizacao;
@@ -57,7 +57,7 @@ public class CódigoContabilizaçãoExcluirMassaPO extends TestBaseCristhian {
 	@FindBy(xpath = "//div[@class=\"icon main-icon icon-font-Sign-and-Symbols icon-downmenu\"]")
 	public WebElement tributo;
 	
-	@FindBy(xpath = "//li[text()=\"ICMS\"]")
+	@FindBy(xpath = "//li[text()=\"00 - ICMS\"]")
 	public WebElement opcaotributo;
 	
 	@FindBy(xpath = "//*[@id=\"start-date\"]/div/div[1]/input")

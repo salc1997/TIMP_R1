@@ -2,7 +2,7 @@ package com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
 import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaCriarComCópiaPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrosGeraisHierarquiaCriarComCópia extends TestBaseCristhian{
+public class ParametrosGeraisHierarquiaCriarComCópia extends TestBaseSteven{
 	
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
@@ -24,7 +24,7 @@ public class ParametrosGeraisHierarquiaCriarComCópia extends TestBaseCristhian{
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationC();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBCBPO = new AcessarBCBPO();
 		parametrosGeraisHierarquiaCriarComCópiaPO = new ParametrosGeraisHierarquiaCriarComCópiaPO();
@@ -34,26 +34,13 @@ public class ParametrosGeraisHierarquiaCriarComCópia extends TestBaseCristhian{
 
 	@AfterClass
 	public void afterClass() {
-		//driver.close();
+		driver.close();
 	}
 
 	@Test(priority = 0)
-	public void login() {
-
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void brbEntrar() {
-		boolean sucesso = acessarBCBPO.acessar();
-		System.out.println(sucesso);
-		assertTrue(sucesso,Acessar);
-
-	}
-
-	@Test(priority = 2)
 	public void criarConfiguracaoHierarquia() {
+		loginTC.login();
+		acessarBCBPO.acessar();
 		
 		ArrayList<Boolean> sucesso = parametrosGeraisHierarquiaCriarComCópiaPO.criar();
 		System.out.println("veamos"+sucesso);
@@ -62,15 +49,26 @@ public class ParametrosGeraisHierarquiaCriarComCópia extends TestBaseCristhian{
 			assertTrue(sucesso.get(i), Criar);
 			
 		}
+	}
+	
+	@Test(priority = 1)
+	public void Excluir() {
 		
 		boolean sucesso1 = parametrosGeraisHierarquiaCriarComCópiaPO.excluir();
 
 		assertTrue(sucesso1, Eliminado);
 		
+
+	}
+	
+	@Test(priority = 2)
+	public void Lixeria() {
+		
 		boolean sucesso2 = parametrosGeraisHierarquiaCriarComCópiaPO.excluirLixeira();
 
 		assertTrue(sucesso2, Eliminado);
 	}
+	
 	
 
 	

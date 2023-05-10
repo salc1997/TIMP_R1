@@ -1,3 +1,4 @@
+
 package com.sap.timp.pageObjectModel.BRE.RegrasAuditoriaN1.Edicao;
 
 import java.util.ArrayList;
@@ -8,9 +9,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeAuditoriaN1RelacionamentoPO extends TestBaseEliel{
+public class RegrasDeAuditoriaN1RelacionamentoPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Regras de Auditoria N1\"]")
 	public WebElement regrasdeauditorian1;
@@ -24,13 +25,13 @@ public class RegrasDeAuditoriaN1RelacionamentoPO extends TestBaseEliel{
 	@FindBy(xpath = "//div[@class=\"structure-relation-select\"]/div/div/div[2]")
 	public WebElement relacionamentoestrutura;
 	
-	@FindBy(xpath = "//div[@id=\"50\"]/div[2]")
+	@FindBy(xpath = "//div[@class=\"list-item-text\" and contains(text(), \"Ajustes Fiscais\")]")
 	public WebElement opcaorelacionamentotq1;
 	
-	@FindBy(xpath = "//div[@id=\"14\"]/div[2]")
+	@FindBy(xpath = "//div[@class=\"list-item-text\" and contains(text(), \"Ajustes Fiscais\")]")
 	public WebElement opcaorelacionamentotp1;
 	
-	@FindBy(xpath = "//div[@id=\"47\"]/div[2]")
+	@FindBy(xpath = "//div[@class=\"list-item-text\" and contains(text(), \"ID 39-Empresa / Filial\")]")
 	public WebElement opcaorelacionamentotc2;
 
 		
@@ -107,7 +108,7 @@ String url = driver.getCurrentUrl();
 		
 		boolean sucesso = false;
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("An1");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -129,7 +130,7 @@ String url = driver.getCurrentUrl();
 		sleep(2000);
 		
 		waitExpectElement(relacionamentoestrutura);
-		sleep(2000);
+		sleep(6000);
 		relacionamentoestrutura.click();
 		sleep(2000);
 		if(tq1== true)
@@ -192,7 +193,7 @@ String url = driver.getCurrentUrl();
 		
 		if(tq1== true)
 		{
-			int relacionamentoestrutura1 = driver.findElements(By.xpath("//div[@id=\"multipleControlerId-50\"]")).size();
+			int relacionamentoestrutura1 = driver.findElements(By.xpath("//div[@class=\"structure-relation-select\"]/div/div/div/div/div[1]/div[@class=\"componentName\"]")).size();
 			if(relacionamentoestrutura1 == 0)
 			{
 				System.out.println("Não consta");
@@ -204,7 +205,7 @@ String url = driver.getCurrentUrl();
 			
 		}else if(tp1 == true)
 		{
-			int relacionamentoestrutura1 = driver.findElements(By.xpath("//div[@id=\"multipleControlerId-14\"]")).size();
+			int relacionamentoestrutura1 = driver.findElements(By.xpath("//div[@class=\"structure-relation-select\"]/div/div/div/div/div[1]/div[@class=\"componentName\"]")).size();
 			if(relacionamentoestrutura1 == 0)
 			{
 				System.out.println("Não consta");
@@ -214,7 +215,7 @@ String url = driver.getCurrentUrl();
 				sucesso = true;
 			}
 		}else {
-			int relacionamentoestrutura1 = driver.findElements(By.xpath("//div[@id=\"multipleControlerId-47\"]")).size();
+			int relacionamentoestrutura1 = driver.findElements(By.xpath("//div[@class=\"structure-relation-select\"]/div/div/div/div/div[1]/div[@class=\"componentName\"]")).size();
 			if(relacionamentoestrutura1 == 0)
 			{
 				System.out.println("Não consta");

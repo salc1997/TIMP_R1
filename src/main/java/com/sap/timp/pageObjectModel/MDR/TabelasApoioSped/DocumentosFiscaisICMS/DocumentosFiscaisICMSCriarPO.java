@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class DocumentosFiscaisICMSCriarPO extends TestBaseEliel {
+public class DocumentosFiscaisICMSCriarPO extends TestBaseSteven {
 	
 	
 	
@@ -33,7 +33,7 @@ public class DocumentosFiscaisICMSCriarPO extends TestBaseEliel {
 	public WebElement siguiente;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência \"]")
+	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Início de Vigência \"]")
 	public WebElement datavigencia;
 	
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
@@ -84,7 +84,7 @@ public class DocumentosFiscaisICMSCriarPO extends TestBaseEliel {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		codigodedocumentofiscal.sendKeys("55309");
+		codigodedocumentofiscal.sendKeys("09879");
 		sleep(2000);
 		
 		especie.click();
@@ -111,8 +111,14 @@ public class DocumentosFiscaisICMSCriarPO extends TestBaseEliel {
 		sleep(2000);
 		
 
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+	int botaoNao = rows("//button[text()=\"Não\"]");
+		
+		if (botaoNao > 0) {
+			nao.click();
+		}
+		
 		waitExpectElement(siguiente);
 		sleep(2000);
 		siguiente.click();

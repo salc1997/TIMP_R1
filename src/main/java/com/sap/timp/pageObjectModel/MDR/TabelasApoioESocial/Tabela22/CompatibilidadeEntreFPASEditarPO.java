@@ -72,17 +72,18 @@ public class CompatibilidadeEntreFPASEditarPO extends TestBaseKenssy{
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
 		//attributoNotToBeEmptyElement(campo, "value");
 		
+	
 		
 		String valor = campo.getAttribute("value");
-		System.out.println(valor);
+		System.out.println("valor 1: "+valor);
 		
 		String enviar = "Teste Editar KENSSY 7";
 
 		campo.clear();
-		sleep(1000);
+		sleep(2000);
 		
 		campo.sendKeys(enviar);
 		sleep(2000);
@@ -101,7 +102,7 @@ public class CompatibilidadeEntreFPASEditarPO extends TestBaseKenssy{
 		driver.navigate().refresh();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
+		sleep(27000);
 		
 		waitExpectElement(campo);
 		attributoNotToBeEmptyElement(campo, "value"); // OJO ESTE ES UN TEXTAREA XD CON VALUE

@@ -6,13 +6,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoContabilCorrecao.MapeamentoContabilCorrecaoExcluirEmMassaPO;
 
-public class MapeamentoContabilCorrecaoExcluirEmMassa extends TestBaseEliel{
-	
+public class MapeamentoContabilCorrecaoExcluirEmMassa extends TestBaseSteven {
+
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MapeamentoContabilCorrecaoExcluirEmMassaPO mapeamentoContabilCorrecaoExcluirEmMassaPO;
@@ -20,7 +20,7 @@ public class MapeamentoContabilCorrecaoExcluirEmMassa extends TestBaseEliel{
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationE();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		mapeamentoContabilCorrecaoExcluirEmMassaPO = new MapeamentoContabilCorrecaoExcluirEmMassaPO();
@@ -31,28 +31,23 @@ public class MapeamentoContabilCorrecaoExcluirEmMassa extends TestBaseEliel{
 		driver.close();
 	}
 
-
 	@Test()
 	public void Criar() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 
 		boolean sucesso = mapeamentoContabilCorrecaoExcluirEmMassaPO.criar();
 		assertTrue(sucesso, Criar);
 
-
 	}
-	
+
 	@Test(dependsOnMethods = "Criar")
 	public void ExcluirMassa() {
-		
 
 		boolean sucesso2 = mapeamentoContabilCorrecaoExcluirEmMassaPO.excluir();
 		assertTrue(sucesso2, Eliminado);
 
 	}
 
-	
-	
 }

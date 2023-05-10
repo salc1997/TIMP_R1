@@ -42,6 +42,8 @@ public class InstituicaoCriar extends TestBaseSteven {
 		boolean sucesso = institucaoCriarPO.criar();
 
 		assertTrue(sucesso, Criar);
+		
+		sleep(2000);
 	}
 
 }

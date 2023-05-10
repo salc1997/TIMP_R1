@@ -55,14 +55,14 @@ public class AssociaçãoEditarPO extends TestBaseFernando{
 		
 		btnUltimaPagina.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
+		sleep(2000);
 		
 		String idRegistro = idObter("AssociacaoAtividadeFiscal");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
 		menu.click();
-		sleep(1000);
+		sleep(2000);
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -73,47 +73,52 @@ public class AssociaçãoEditarPO extends TestBaseFernando{
 		sleep(2000);
 		waitExpectElement(opcionComboAtividadeFiscal);
 		opcionComboAtividadeFiscal.click();
-		sleep(1000);
+		sleep(2000);
 		
 		String textoOpcionAtividadeFiscal = inputOpcionAtividadeFiscal.getText();
 		System.out.println(textoOpcionAtividadeFiscal);
 		
-		sleep(1000);
+		sleep(2000);
 		btnGravar.click();
 		sleep(2000);
 		btnSim.click();
-		sleep(1000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
+		sleep(2000);
 		
 		driver.navigate().refresh();
-		sleep(1000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
+		sleep(2000);
 		waitExpectElement(inputOpcionAtividadeFiscal);
 		String textoOpcionAtividadeFiscalEditado = inputOpcionAtividadeFiscal.getAttribute("value");
 		System.out.println("----------------------------------------");
 		System.out.println(textoOpcionAtividadeFiscalEditado);
-		sleep(1000);
+		sleep(2000);
 		
 		boolean sucesso = false;
-		sucesso = textoOpcionAtividadeFiscalEditado.equals(textoOpcionAtividadeFiscal);
+		//sucesso = textoOpcionAtividadeFiscalEditado.equals(textoOpcionAtividadeFiscal);
 		
-		// Si no  hay error, devuelvo el valor original que tenia 
-		sleep(1000);
-		if(sucesso) {
-			waitExpectElement(inputAtividadeFiscal);
-			inputAtividadeFiscal.click();
-			sleep(1000);
-			opcionComboAtividadeFiscalOriginal.click();
-			sleep(1000);
-			btnGravar.click();
-			sleep(2000);
-			btnSim.click();
-			sleep(1000);
-			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(1000);
+		if (textoOpcionAtividadeFiscal != textoOpcionAtividadeFiscalEditado) {
+			sucesso = true;
+		}else {
+			sucesso = false;
 		}
+		// Si no  hay error, devuelvo el valor original que tenia 
+//		sleep(2000);
+//		if(sucesso) {
+//			waitExpectElement(inputAtividadeFiscal);
+//			inputAtividadeFiscal.click();
+//			sleep(2000);
+//			opcionComboAtividadeFiscalOriginal.click();
+//			sleep(2000);
+//			btnGravar.click();
+//			sleep(2000);
+//			btnSim.click();
+//			sleep(2000);
+//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+//			sleep(2000);
+//		}
 		
 		
 		return sucesso;

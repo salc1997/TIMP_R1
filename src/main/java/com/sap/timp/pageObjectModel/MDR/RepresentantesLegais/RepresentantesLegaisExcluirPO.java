@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RepresentantesLegaisExcluirPO extends TestBaseEliel{
+public class RepresentantesLegaisExcluirPO extends TestBaseSteven{
 	
 
 	@FindBy(xpath = "//span[text()=\"Representantes Legais\"]")
@@ -65,7 +65,7 @@ public class RepresentantesLegaisExcluirPO extends TestBaseEliel{
 		menu.click();
 		sleep(1000);
 		excluir.click();
-		sleep(2000);
+		sleep(4000);
 		
 		aceitar.click();
 		sleep(2000);

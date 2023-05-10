@@ -30,7 +30,7 @@ public class ConfiguracoesExecutarPO  extends TestBaseMassiel{
 	@FindBy(xpath = "//span[text()=\"Filtros Avançados\"]")
 	public WebElement filtrosAbansados;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Selecionar Id\"]")
+	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement idFiltro;
 	
 	@FindBy(xpath = "//div[@id=\"inputState\"]/div/div/div[2]")
@@ -131,15 +131,15 @@ public class ConfiguracoesExecutarPO  extends TestBaseMassiel{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		filtrosAbansados.click();
+		/*filtrosAbansados.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);*/
 
 		idFiltro.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		String idRegistro =  idObter2();
 		
@@ -210,15 +210,17 @@ public class ConfiguracoesExecutarPO  extends TestBaseMassiel{
 		
 		cheke.click();
 		sleep(3000);
-		sleep(3000);
+		sleep(6000);
 		
 		executar1.click();
+		waitExpectElement(dato);
 		sleep(25000);
 		sleep(9000);
-		sleep(10000);
-	
+		sleep(12000);
+		sleep(12000);
+		sleep(12000);
+		sleep(12000);
 		String valorTC = "1000";
-
 		String nuevoTexto = dato.getText();
 		
 		boolean sucesso = nuevoTexto.equals(valorTC);

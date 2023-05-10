@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AjusteEInformaçoesDeValoresExcluirPO extends TestBaseEliel{
+public class AjusteEInformaçoesDeValoresExcluirPO extends TestBaseSteven{
 	
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
@@ -140,7 +140,7 @@ public class AjusteEInformaçoesDeValoresExcluirPO extends TestBaseEliel{
 		menu.click();
 		sleep(1000);
 		excluir.click();
-		sleep(2000);
+		sleep(4000);
 		aceitar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

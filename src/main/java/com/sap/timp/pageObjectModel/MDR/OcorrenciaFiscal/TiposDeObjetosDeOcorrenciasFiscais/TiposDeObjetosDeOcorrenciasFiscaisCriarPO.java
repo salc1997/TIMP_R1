@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TiposDeObjetosDeOcorrenciasFiscaisCriarPO extends TestBaseEliel{
+public class TiposDeObjetosDeOcorrenciasFiscaisCriarPO extends TestBaseSteven{
 	
 	
 	@FindBy(xpath = "//span[text()=\"Ocorrência Fiscal\"]")
@@ -67,7 +67,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisCriarPO extends TestBaseEliel{
 	public WebElement codigopagamento;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Inicio de Vigência\"]")
+	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Início de Vigência\"]")
 	public WebElement dataincio;
 	
 	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Fim de Vigência\"]")
@@ -146,11 +146,18 @@ public class TiposDeObjetosDeOcorrenciasFiscaisCriarPO extends TestBaseEliel{
 		
 		opcao1.click();
 		
-		sleep(27000);
+		sleep(30000);
+		
+		actionsMoveToElementElement(codigocredito);
+		sleep(13000);
 		
 		codigocredito.click();
 		
-		sleep(2000);
+		sleep(3000);
+		
+	//	codigocredito.click();
+		
+		sleep(3000);
 		
 		opcao.click();
 		

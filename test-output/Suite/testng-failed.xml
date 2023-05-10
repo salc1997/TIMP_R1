@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Regra de Escrituração(failed)">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name=" ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS (failed)">
     <classes>
-      <class name="com.timp.test.BRE.RegrasDeEscrituração.Edicao.BRERegradeEscrituraçãoEdiçãoSimular">
+      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosTodasFunc">
         <methods>
           <include name="beforeClass"/>
-          <include name="editar"/>
+          <include name="visualizar"/>
+          <include name="excluir"/>
           <include name="afterClass"/>
+          <include name="detalle"/>
+          <include name="criarMassa"/>
+          <include name="editar"/>
+          <include name="Excluir"/>
         </methods>
-      </class> <!-- com.timp.test.BRE.RegrasDeEscrituração.Edicao.BRERegradeEscrituraçãoEdiçãoSimular -->
+      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosTodasFunc -->
     </classes>
-  </test> <!-- Regra de Escrituração(failed) -->
+  </test> <!--  ATR - TRIBUTOS - AGRUPAMENTO DE TRIBUTOS (failed) -->
+  <test thread-count="5" name=" ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed)">
+    <classes>
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasTodasFunc">
+        <methods>
+          <include name="afterClass"/>
+          <include name="criarRelacionamento"/>
+          <include name="excluirMassa"/>
+          <include name="editarCopia"/>
+          <include name="excluirCopia"/>
+          <include name="VisualizarRelacionamento"/>
+          <include name="beforeClass"/>
+          <include name="criarCopia"/>
+          <include name="EditarRelacionamento"/>
+          <include name="criarMasa"/>
+          <include name="excluir"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasTodasFunc -->
+    </classes>
+  </test> <!--  ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed) -->
 </suite> <!-- Failed suite [Suite] -->

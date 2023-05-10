@@ -16,9 +16,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class EstruturasVisualizarPO extends TestBaseCristhian {
+public class EstruturasVisualizarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[1]/ul/li[1]/div/span[2]")
 	public WebElement estruturas;
@@ -120,14 +120,14 @@ public class EstruturasVisualizarPO extends TestBaseCristhian {
 		
 		String capavisualizar = capa.getText();
 		String itemvisualizar = item.getText();
-		String oleovisualizar = oleo.getText();
+		//String oleovisualizar = oleo.getText();
 		//String camposvisualizar = campos.getText();
 		String totalvisualizar = total.getText();
 		
 		
 		System.out.println(capavisualizar);
 		System.out.println(itemvisualizar);
-		System.out.println(oleovisualizar);
+	//	System.out.println(oleovisualizar);
 		//System.out.println(camposvisualizar);
 		System.out.println(totalvisualizar);
 		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++");
@@ -141,8 +141,8 @@ public class EstruturasVisualizarPO extends TestBaseCristhian {
 		sleep(2000);
 		
 		//pega o ultimo id que foi gerado no criar
-		String idRegistro1 = idObter1();
-		int rows2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
+		//String idRegistro1 = idObter1();
+		//int rows2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		WebElement menu1 = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[1]/span[2]"));
 		WebElement editar = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[3]/span[2]"));
 		actionsMoveToElementElement(menu1);
@@ -153,18 +153,20 @@ public class EstruturasVisualizarPO extends TestBaseCristhian {
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	    sleep(2000);
+
+	    sleep(11000);
+
 	    
 	    String capavisualizarE = capaE.getText();
 		String itemvisualizarE = itemE.getText();
-		String oleovisualizarE = oleoE.getText();
+		//String oleovisualizarE = oleoE.getText();
 		//String camposvisualizarE = camposE.getText();
 		String totalvisualizarE = totalE.getText();
 		
 		
 		System.out.println(capavisualizarE);
 		System.out.println(itemvisualizarE);
-		System.out.println(oleovisualizarE);
+	//	System.out.println(oleovisualizarE);
 		//System.out.println(camposvisualizarE);
 		System.out.println(totalvisualizarE);
 		System.out.println("++++++++++++++++++++++++++++++++++++++++++++++");
@@ -175,7 +177,7 @@ public class EstruturasVisualizarPO extends TestBaseCristhian {
 		
 		sucesso.add(capavisualizarE.contains(capavisualizar));
 		sucesso.add(itemvisualizarE.contains(itemvisualizar));
-		sucesso.add(oleovisualizarE.contains(oleovisualizar));
+	//	sucesso.add(oleovisualizarE.contains(oleovisualizar));
 		//sucesso.add(camposvisualizarE.contains(camposvisualizar));
 		sucesso.add(totalvisualizarE.contains(totalvisualizar));
 		

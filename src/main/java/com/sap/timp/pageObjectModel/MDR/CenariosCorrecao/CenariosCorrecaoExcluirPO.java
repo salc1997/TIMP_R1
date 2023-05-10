@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKathy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CenariosCorrecaoExcluirPO extends TestBaseKathy{
+public class CenariosCorrecaoExcluirPO extends TestBaseSteven{
 	@FindBy(xpath = "//li/div/span[text()=\"Cenários de Correção\"]")
 	public WebElement cenarios;
 		
@@ -100,6 +100,7 @@ public class CenariosCorrecaoExcluirPO extends TestBaseKathy{
 		waitExpectElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -25,6 +25,7 @@ public class RelatoriosReefineriaGeradosFiltrosAvancadosNaVisualizacaoPO extends
 	}
 	
 	public ArrayList<Boolean> filtrosAvancadosNavisualizacao() {
+		//TSTNG-1911
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
@@ -43,7 +44,7 @@ public class RelatoriosReefineriaGeradosFiltrosAvancadosNaVisualizacaoPO extends
 		}
 		
 		if(url.contains("tc2")) {
-			idRegistro = "9";
+			idRegistro = "26";
 		}
 		
 		System.out.println("ID Registro: " + idRegistro);
@@ -57,7 +58,7 @@ public class RelatoriosReefineriaGeradosFiltrosAvancadosNaVisualizacaoPO extends
 		sleep(3000);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		sleep(8000);
 		
 		WebElement btnFiltrosAvancadosElement = driver.findElement(By.xpath("//div[contains(@class, \"baseTabs-view -view-wrapper\")][1]/div/div/button[@id=\"advanced-filters-btn\"]"));
 		WebElement btnAplicarFiltros = driver.findElement(By.xpath("//div[contains(@class, \"baseTabs-view -view-wrapper\")][1]/div/div/button[@id=\"advanced-filters-btn-apply\"]"));
@@ -101,7 +102,7 @@ public class RelatoriosReefineriaGeradosFiltrosAvancadosNaVisualizacaoPO extends
 		
 		cboCnpjEmitente.click();
 		sleep(1000);
-		WebElement opcionCnpjEmitente = driver.findElement(By.xpath("//div[@class=\"list-option\"]/div[@class=\"list-item\"]/div[2][text()=\"74544297000273\"]"));
+		WebElement opcionCnpjEmitente = driver.findElement(By.xpath("//div[@class=\"list-option\"]/div[@class=\"list-item\"]/div[2][text()=\"33000167105639\"]"));
 		opcionCnpjEmitente.click();
 		closeSelectTypeCheckbox(cboCnpjEmitente);
 		sleep(1000);
@@ -110,8 +111,8 @@ public class RelatoriosReefineriaGeradosFiltrosAvancadosNaVisualizacaoPO extends
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		valorAVerificarString = "74544297000273";
-		valorString = driver.findElement(By.xpath("//div[contains(@class, \"baseTabs-view -view-wrapper\")][1]/div/div[3]/div/div[1]/div/div/div[@class=\"annexe-section-column container-element\"]/div[text()=\"74544297000273\"]")).getText();
+		valorAVerificarString = "33000167105639";
+		valorString = driver.findElement(By.xpath("//div[contains(@class, \"baseTabs-view -view-wrapper\")][1]/div/div[3]/div/div[1]/div/div/div[@class=\"annexe-section-column container-element\"]/div[text()=\"33000167105639\"]")).getText();
 		
 		if(valorString.equals(valorAVerificarString)) {
 			System.out.println("Verificado filtro CNPJ Emitente...");
@@ -232,7 +233,7 @@ public class RelatoriosReefineriaGeradosFiltrosAvancadosNaVisualizacaoPO extends
 		
 		cboCnpjEmitente.click();
 		sleep(1000);
-		opcionCnpjEmitente = driver.findElement(By.xpath("//div[@class=\"list-option\"]/div[@class=\"list-item\"]/div[2][text()=\"74544297000273\"]"));
+		opcionCnpjEmitente = driver.findElement(By.xpath("//div[@class=\"list-option\"]/div[@class=\"list-item\"]/div[2][text()=\"33000167105639\"]"));
 		opcionCnpjEmitente.click();
 		closeSelectTypeCheckbox(cboCnpjEmitente);
 		sleep(1000);

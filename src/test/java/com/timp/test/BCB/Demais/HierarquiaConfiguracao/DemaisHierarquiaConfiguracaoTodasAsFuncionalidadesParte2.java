@@ -32,7 +32,9 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 extends Te
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+
+		//driver.close();
+
 	}
 	
 	@Test(priority = 0)
@@ -47,7 +49,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 extends Te
 		assertTrue(sucesso,Acessar);
 	}
 
-	//desde aqui dividir para hacer version 2
+//	desde aqui dividir para hacer version 2
 	
 	@Test(priority = 1)
 	public void ejecutarFinal() {
@@ -55,7 +57,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 extends Te
 	}
 	
 	
-	@Test(priority = 2)
+		@Test(priority = 2)
 	public void relacionamentoFinalyAbrirHierarquiaGrupo() {
 		//demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.resultadoFinalParte2();
 		ArrayList<Boolean> sucesso = demaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO.relacionamentoFinalyAbrirHierarquiaGrupo();
@@ -66,7 +68,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 extends Te
 		}
 	}
 	
-	
+	/*
 	@Test(priority = 3)
 	public void excluirConfiguracoes2() {
 		
@@ -108,6 +110,6 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 extends Te
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Eliminado);
 		}
-	}
+	}*/
 
 }

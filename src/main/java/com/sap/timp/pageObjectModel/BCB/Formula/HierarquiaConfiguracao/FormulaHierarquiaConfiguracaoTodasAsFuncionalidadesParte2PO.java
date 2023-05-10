@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseKenssy;
 
 public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends TestBaseKenssy{
+	//TSTNG-855	//TSTNG-855
 
 	//HIERARQUIAS
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][1]")
@@ -116,7 +117,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 	public WebElement executarB;
 	
 	//VERIFICAR INFORMACION DE SUBNIVELES
-	@FindBy(xpath = "//div[contains(@class,\"lvl-0\")]/div/div/div/div")
+	@FindBy(xpath = "//div[contains(@class,\"lvl-0\")]/div[1]/div[1]/div[1]/div[1]")
 	public WebElement aba1;
 	
 	@FindBy(xpath = "//div[contains(@class,\"lvl-1\")]/div[1]/div[1]/div[1]/div[1]")
@@ -214,7 +215,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 	//CORREGIR EN SU DEBIDO AMBIENTE
 	@FindBy(xpath = "//div[text()=\"ID326-(BCB com campo de Output) TA\"]")
 	public WebElement selectBCB2;
-	@FindBy(xpath = "//div[text()=\"ID393-(BCB com campo de Output) TA\"]")
+	@FindBy(xpath = "//div[text()=\"ID2759-(BCB com campo de Output) TA\"]")
 	public WebElement selectBCB3;
 	
 	
@@ -223,7 +224,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 	//REVISAR CUANDO PASE POR EL AMBIENTE RESPECTIVO
 	@FindBy(xpath = "//div[contains(text(),\"1424-Campo de saída 1\")]")
 	public WebElement selectBCB12;
-	@FindBy(xpath = "//div[contains(text(),\"2275-Campo de Saída 1\")]")
+	@FindBy(xpath = "//div[contains(text(),\"Campo de Saída 1\")]")
 	public WebElement selectBCB13;
 	
 	@FindBy(xpath = "//div[@id=\"formula-Box\"]/div/textarea")
@@ -240,6 +241,9 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 	
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
+	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
 	
 	@FindBy(xpath = "//textarea[@placeholder=\"Preencher Justificativa\"]")
 	public WebElement justificativa;
@@ -259,6 +263,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		boolean tc2 = false;
 		boolean tq1 = false;
 		boolean tp1 = false;
+		boolean tq2 = false;
 		String url = driver.getCurrentUrl();
 		if (url.contains("tc2")) {
 			tc2 = true;
@@ -270,6 +275,10 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		
 		if (url.contains("tp1")) {
 			tp1 = true;
+		}
+		
+		if (url.contains("tq2")) {
+			tq2 = true;
 		}
 		
 		//COMENTAR DESPUES PORFAVOR
@@ -353,13 +362,20 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 			dobleClickElement(selectBCB11);
 			sleep(1000);
 		}else if (tc2 ==true) {
-			buscarCamposSaidaBCB.sendKeys("393");
+			buscarCamposSaidaBCB.sendKeys("2759");
 			sleep(1000);
-			selectBCB3.click();
-			sleep(1000);
+			dobleClickElement(selectBCB3);
+			sleep(6000);
 			dobleClickElement(selectBCB13);
 			sleep(1000);
-		}else {
+		}else if (tq2 == true) {
+			buscarCamposSaidaBCB.sendKeys("954");
+			sleep(1000);
+			selectBCB1.click();
+			sleep(1000);
+			dobleClickElement(selectBCB11);
+			sleep(1000);
+		}else{
 			//CORREGIR AL EJECUTAR EN AMBIENTE
 			buscarCamposSaidaBCB.sendKeys("326");
 			sleep(1000);
@@ -374,7 +390,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		sleep(2000);
 		
 		aplicar.click();
-		sleep(2000);
+		sleep(4000);
 		
 		
 		arredondamento.click();
@@ -439,20 +455,15 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
+		waitExpectElement(nao);
+		sleep(2000);
+		
+		
+		nao.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(executar);
 		sleep(2000);
-		
-		
-		sim.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		aplicarJustificativa.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
 		
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
 		
@@ -475,6 +486,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		boolean tc2 = false;
 		boolean tq1 = false;
 		boolean tp1 = false;
+		boolean tq2 = false;
 		String url = driver.getCurrentUrl();
 		if (url.contains("tc2")) {
 			tc2 = true;
@@ -488,6 +500,11 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 			tp1 = true;
 		}
 		
+		if (url.contains("tq2")) {
+			tq2 = true;
+		}
+		
+		
 		//COMENTAR DESPUES PORFAVOR
 //		sleep(2000);
 //		configuracoes.click();
@@ -499,8 +516,8 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //		sleep(2000);
 //		
-//		
-//		pesquisar.sendKeys("1117");
+//		String idConfiguracaoSubnivel5= idObter3();
+//		pesquisar.sendKeys(idConfiguracaoSubnivel5);
 //		pesquisar.sendKeys(Keys.ENTER);
 //		sleep(3000);
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -508,8 +525,8 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 //		
 //		
 //		
-//		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1117\"]/div[1]/div"));
-//		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1117\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+//		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idConfiguracaoSubnivel5+"\"]/div[1]/div"));
+//		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idConfiguracaoSubnivel5+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 //		sleep(2000);
 //		
 //		menu.click();
@@ -524,15 +541,16 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 	
 		
 		
-		sleep(1000);
+		sleep(2000);
 		executar.click();
 		sleep(2000);
 		waitExpectElement(executarN);
-		sleep(2000);
+		sleep(5000);
 		executarN.click();
 		
-		sleep(1000);
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
 		
 		periodo.click();
 		sleep(2000);
@@ -564,8 +582,8 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 			m1.click();
 		}		
 		
-		sleep(2000);
-		execucaoAnalitica.click();
+		sleep(6000);
+	//	execucaoAnalitica.click();
 		sleep(1000);
 		
 		executarB.click();
@@ -575,10 +593,14 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		waitExpectElement(gravar);
 		sleep(3000);
 		
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(3000);
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		waitExpectElement(aba1);
-		sleep(3000);
+		sleep(13000);
 		
 		aba1.click();
 		sleep(2000);
@@ -607,7 +629,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		//if (tc2==true) {
-			sucesso.add(valorFormulaSubNivel1.equals("1000/2"));
+			sucesso.add(valorFormulaSubNivel1.equals("1000.00/2"));
 			sucesso.add(valorTotalizadorSubNivel1.equals("500,00"));
 		//}else {
 //			sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
@@ -625,6 +647,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		boolean tc2 = false;
 		boolean tq1 = false;
 		boolean tp1 = false;
+		boolean tq2 = false;
 		String url = driver.getCurrentUrl();
 		if (url.contains("tc2")) {
 			tc2 = true;
@@ -636,6 +659,11 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		
 		if (url.contains("tp1")) {
 			tp1 = true;
+		}
+		
+		
+		if (url.contains("tq2")) {
+			tq2 = true;
 		}
 		
 		
@@ -657,7 +685,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		//if (tc2==true) {
-			sucesso.add(valorFormulaSubNivel2.equals("-1000/2"));
+			sucesso.add(valorFormulaSubNivel2.equals("-1000.00/2"));
 			sucesso.add(valorTotalizadorSubNivel2.equals("-500,00"));
 		//}else {
 //			sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
@@ -675,6 +703,8 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		boolean tc2 = false;
 		boolean tq1 = false;
 		boolean tp1 = false;
+		boolean tq2 = false;
+		
 		String url = driver.getCurrentUrl();
 		if (url.contains("tc2")) {
 			tc2 = true;
@@ -688,6 +718,10 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 			tp1 = true;
 		}
 		
+		if (url.contains("tq2")) {
+			tq2 = true;
+		}
+				
 		
 		System.out.println("---------------------------------Abrir SubNivel 3-------------------------------------");
 		sleep(1000);
@@ -706,7 +740,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		//if (tc2==true) {
-			sucesso.add(valorFormulaSubNivel3.equals("1000/2"));
+			sucesso.add(valorFormulaSubNivel3.equals("1000.00/2"));
 			sucesso.add(valorTotalizadorSubNivel3.equals("0,00"));
 		//}else {
 //			sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
@@ -720,10 +754,15 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 
 	
 	public ArrayList<Boolean> abrirSubNivel4() {
+		String url = driver.getCurrentUrl();
 		boolean tc2 = false;
 		boolean tq1 = false;
 		boolean tp1 = false;
-		String url = driver.getCurrentUrl();
+		boolean tq2 = false;
+		
+		if (url.contains("tq2")) {
+			tq2 = true;
+		}
 		if (url.contains("tc2")) {
 			tc2 = true;
 		}
@@ -754,10 +793,10 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		if (tp1==true) {
-			sucesso.add(valorFormulaSubNivel4.equals("1000/2"));
+			sucesso.add(valorFormulaSubNivel4.equals("-1000.00/2"));
 			sucesso.add(valorTotalizadorSubNivel4.equals("500,00"));
 		}else {
-			sucesso.add(valorFormulaSubNivel4.equals("-1000/2"));
+			sucesso.add(valorFormulaSubNivel4.equals("-1000.00/2"));
 			sucesso.add(valorTotalizadorSubNivel4.equals("0,00"));
 		}
 		
@@ -767,10 +806,17 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 	}
 	
 	public ArrayList<Boolean> abrirSubNivel5() {
+		String url = driver.getCurrentUrl();
+		
 		boolean tc2 = false;
 		boolean tq1 = false;
 		boolean tp1 = false;
-		String url = driver.getCurrentUrl();
+		boolean tq2 = false;
+		
+		if (url.contains("tq2")) {
+			tq2 = true;
+		}
+		
 		if (url.contains("tc2")) {
 			tc2 = true;
 		}
@@ -801,7 +847,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		//if (tc2==true) {
-			sucesso.add(valorFormulaSubNivel5.equals("1000/56"));
+			sucesso.add(valorFormulaSubNivel5.equals("1000.00/56"));
 			sucesso.add(valorTotalizadorSubNivel5.equals("17,857"));
 		//}else {
 //			sucesso.add(valorCampoSaidaSubNivel2.equals("2.000,00"));
@@ -858,7 +904,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		sleep(2000);
+		sleep(6000);
 		
 		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();
 		System.out.println(exclucao);
@@ -876,12 +922,13 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
+		pesquisar.clear();
+		sleep(2000);
 		pesquisar.sendKeys(idConfiguracao);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(16000);
 		
 		menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div"));
 		WebElement excluirC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
@@ -923,8 +970,12 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		System.out.println("");
 		
 		
-		pesquisar.sendKeys(idHierarquia);
+	/*	pesquisar.sendKeys(idHierarquia);
 		pesquisar.sendKeys(Keys.ENTER);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);*/
+		ultimo.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -942,13 +993,13 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectElement(simLexeira);
-		sleep(2000);
+		sleep(9000);
 		
 		simLexeira.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		sleep(2000);
+		sleep(6000);
 		
 		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();
 		System.out.println(exclucao);
@@ -970,11 +1021,13 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys(idHierarquia);
-		pesquisar.sendKeys(Keys.ENTER);
-		sleep(4000);
+		ultimo.click();
+		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(4000);
 		
 		menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div"));
 		WebElement excluirH = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idHierarquia+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));

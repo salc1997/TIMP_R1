@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TiposDeObjetosDeOcorrenciasFiscaisExcluirMassaPO extends TestBaseCristhian{
+public class TiposDeObjetosDeOcorrenciasFiscaisExcluirMassaPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Ocorrência Fiscal\"]")
 	public WebElement ocorrenciafiscal;
@@ -52,7 +52,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisExcluirMassaPO extends TestBaseCr
 	public WebElement codigopagamento;
 	
 	
-	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Inicio de Vigência\"]")
+	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Início de Vigência\"]")
 	public WebElement dataincio;
 	
 	@FindBy(xpath = "//input[@placeholder=\" selecionar a Data de Fim de Vigência\"]")
@@ -83,6 +83,9 @@ public class TiposDeObjetosDeOcorrenciasFiscaisExcluirMassaPO extends TestBaseCr
 	@FindBy(xpath = "//span[contains(text(),\"Novo\")]")
 	public WebElement novo1;
 	
+	@FindBy(xpath = "//div[@id=\"mdrWrapper\"]")
+	public WebElement clicl;
+	
 	public TiposDeObjetosDeOcorrenciasFiscaisExcluirMassaPO() {
 
 		PageFactory.initElements(driver, this);
@@ -99,12 +102,13 @@ public boolean criar() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-
+		/*
 		siguiente.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
+		*/
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")).getText();
@@ -145,9 +149,11 @@ public boolean criar() {
 		sleep(8000);
 		sleep(8000);
 		sleep(8000);
+		sleep(8000);
+		sleep(8000);
 		
 		codigocredito.click();
-		sleep(2000);
+		sleep(3000);
 		opcao.click();
 		sleep(2000);
 		
@@ -169,9 +175,11 @@ public boolean criar() {
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(3000);
+		sleep(8000);
 		
 		//Segundo Registro
+		clicl.click();
+		sleep(3000);
 		
 		ocorrencia.click();
 		sleep(2000);
@@ -202,7 +210,7 @@ public boolean criar() {
 		sleep(8000);
 		sleep(8000);
 		sleep(8000);
-		sleep(8000);		
+		sleep(16000);		
 		codigocredito.click();
 		sleep(2000);
 		opcao.click();
@@ -233,7 +241,7 @@ public boolean criar() {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		siguiente.click();
+	/*	siguiente.click();
 		
 		sleep(3000);
 		
@@ -241,14 +249,15 @@ public boolean criar() {
 		
 		sleep(2000);
 		
+*/
+		int rows1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")).getText();
 		
-		rows = rows-1;
+		int rows2 = 2;
 		
-		String idRegistro2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")).getText();
+		String idRegistro2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows2+"]/div[3]/div")).getText();
 		
 		
 		
@@ -281,15 +290,15 @@ public boolean criar() {
 	public boolean excluir() {
 		
 		
-		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
+		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[3]/div")).getText();
 
 		
-		WebElement check1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/label/span"));
+		WebElement check1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]/div[2]/label/span"));
 		check1.click();
 		sleep(1000);
-		rows = rows+1;
+		
+		int rows = 2;
 		
 		String idRegistro2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 		
@@ -312,10 +321,11 @@ public boolean criar() {
 		waitExpectElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		siguiente.click();
+		sleep(2000);
+	/*	siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(2000);*/
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();

@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Factory;
 
-import com.sap.timp.base.TestBaseEliel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.base.TestBaseSteven;
 
 public class RegrasDeMensagensTabelasPO extends TestBaseSteven {
@@ -29,8 +29,9 @@ public class RegrasDeMensagensTabelasPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[@id=\"select-table\"]/div/div/div[2]")
 	public WebElement tabela;
 	
-	//@FindBy(xpath = "//li[text()=\"TA-TESTE NÃO MEXER\"]")
-	@FindBy(xpath = "//li[text()=\"TA_TESTE_VS2\"]")
+	@FindBy(xpath = "//li[text()=\"TA-TESTE NÃO MEXER666\"]")
+	//@FindBy(xpath = "//li[text()=\"TA_TESTE_VS2\"]")
+	//@FindBy(xpath = "//li[text()=\"xxxAlíquota Interna\"]")
 	public WebElement tabelaO;
 	
 	@FindBy(xpath = "//div[@id=\"main-icon\"]")
@@ -55,6 +56,7 @@ public class RegrasDeMensagensTabelasPO extends TestBaseSteven {
 	public WebElement nomeValor2;
 	
 	@FindBy(xpath = "//li[text()=\"TA-TESTE NÃO MEXER - ALIQUOTA_ICMS (VE)\"]")
+	//@FindBy(xpath = "//li[text()=\"Alíquota ICMS (ED)\"]")
 	public WebElement nomeValorO2;
 	
 	@FindBy(xpath = "//div[@class=\"action-section\"]/div/div/div/div/input")
@@ -135,7 +137,7 @@ public class RegrasDeMensagensTabelasPO extends TestBaseSteven {
 		sleep(2000);
 		
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("RegraDeMensagens");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -180,9 +182,9 @@ public class RegrasDeMensagensTabelasPO extends TestBaseSteven {
 		sleep(1000);
 		
 		nomeValor2.sendKeys("TA-TESTE NÃO MEXER - ALIQUOTA_ICMS (VE)");
-		sleep(1000);
+		sleep(2000);
 		nomeValorO2.click();
-		sleep(1000);
+		sleep(2000);
 		
 		acao.sendKeys("Alíquota RJ");
 		acao.sendKeys(Keys.ESCAPE);
@@ -193,6 +195,7 @@ public class RegrasDeMensagensTabelasPO extends TestBaseSteven {
 		sleep(2000);
 		
 		int adicionada1 = driver.findElements(By.xpath("//*[name()=\"tspan\" and contains(text(),\" Alíquota ICMS = TA-TESTE NÃO MEXER -\")]")).size();
+		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		System.out.println(adicionada1 + " Verifcação de Caminho Adicionado 1");
 		if (adicionada1>0) {

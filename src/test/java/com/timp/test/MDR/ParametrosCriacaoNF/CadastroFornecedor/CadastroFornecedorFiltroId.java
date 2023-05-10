@@ -8,16 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKathy;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-import com.sap.timp.pageObjectModel.MDR.CadastroDerex.InstituicaoFinanceira.InstituicaoFiltroIdPO;
-import com.sap.timp.pageObjectModel.MDR.DetalheTipoTributo.DetalheCriarPO;
-import com.sap.timp.pageObjectModel.MDR.DetalheTipoTributo.DetalheFiltroIdPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosCriacaoNF.CadastroFornecedor.CadastroFornecedorFiltroIdPO;
 
-public class CadastroFornecedorFiltroId extends TestBaseKathy {
+public class CadastroFornecedorFiltroId extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CadastroFornecedorFiltroIdPO cadastroFornecedorFiltroIdPO;
@@ -25,7 +21,7 @@ public class CadastroFornecedorFiltroId extends TestBaseKathy {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationK();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		cadastroFornecedorFiltroIdPO = new CadastroFornecedorFiltroIdPO();
@@ -33,25 +29,23 @@ public class CadastroFornecedorFiltroId extends TestBaseKathy {
 
 	@AfterClass
 	public void afterClass() {
-		 driver.close();
+		driver.close();
 	}
 	/*
-	@Test(priority = 0)
-	public void login() {
-		loginTC.login();
-
-	}
-
-	@Test(priority = 1)
-	public void acessarMDR() {
-
-		acessarMDRPO.acessarMDR();
-
-	}*/
+	 * @Test(priority = 0) public void login() { loginTC.login();
+	 * 
+	 * }
+	 * 
+	 * @Test(priority = 1) public void acessarMDR() {
+	 * 
+	 * acessarMDRPO.acessarMDR();
+	 * 
+	 * }
+	 */
 
 	@Test()
 	public void filtroId() {
-		
+
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

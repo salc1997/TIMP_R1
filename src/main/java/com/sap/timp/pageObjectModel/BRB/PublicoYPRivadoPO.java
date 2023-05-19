@@ -38,8 +38,20 @@ public class PublicoYPRivadoPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
-		
 	
+	
+	@FindBy(xpath = "//div[@class=\"library-filters\"]//button[@id=\"reset-filters-btn\"]")
+	public WebElement limpiar;
+	
+	@FindBy(xpath = "//div[@class=\"base-select required\"]/div[@id=\"select\"]/div[2]")
+	public WebElement publicoSelect;
+	
+	@FindBy(xpath = "//li[text()=\"Público\"]")
+	public WebElement publicoSelectOPC;
+		
+	@FindBy(xpath = "//li[text()=\"Privado\"]")
+	public WebElement privadoSelectOPC;
+		
 	
 	public PublicoYPRivadoPO() {
 		PageFactory.initElements(driver, this);
@@ -162,15 +174,31 @@ public class PublicoYPRivadoPO extends TestBaseSteven{
 
 	
 	public boolean publicoBiblioteca() {
-
-		publico.click();
-		sleep(2000);
-		aceptar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
-		//sleep(menuT);
+		sleep(2000);
+		
+		publico.click();
+		sleep(2000);
+		
+		publicoSelect.click();
+		sleep(2000);
+		
+		publicoSelectOPC.click();
+		sleep(2000);
+		aceptar.click();
+		sleep(4000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
+		
+		limpiar.click();
+		sleep(7000);
+		ferramenta.sendKeys("Prueba Automatizada");
+		ferramenta.sendKeys(Keys.ENTER);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		
 		actionsMoveToElementElement(publico);
 		String publicoT = publico.getAttribute("aria-label");
 		System.out.println(publicoT);
@@ -184,12 +212,26 @@ public class PublicoYPRivadoPO extends TestBaseSteven{
 	public boolean privadoBiblioteca() {
 		publico.click();
 		sleep(3000);
+		
+		publicoSelect.click();
+		sleep(2000);
+		
+		privadoSelectOPC.click();
+		sleep(2000);
 		aceptar.click();
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
-		actionsMoveToElementElement(publico);
+
 		
+		limpiar.click();
+		sleep(7000);
+		ferramenta.sendKeys("Prueba Automatizada");
+		ferramenta.sendKeys(Keys.ENTER);
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(2000);
+		actionsMoveToElementElement(publico);
 		
 		String privadoT = publico.getAttribute("aria-label");
 		System.out.println(privadoT);

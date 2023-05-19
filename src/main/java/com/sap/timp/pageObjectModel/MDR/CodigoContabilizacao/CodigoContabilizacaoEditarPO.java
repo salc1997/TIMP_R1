@@ -108,10 +108,10 @@ public class CodigoContabilizacaoEditarPO extends TestBaseSteven {
 		menu.click();
 		sleep(1000);
 		editar.click();
-		sleep(3000);
+		sleep(12000);
 	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributeToBeXpath("//div[@id=\"tax-type\"]/div", "class", "base-autocomplete required");
+	//	attributeToBeXpath("//div[@id=\"tax-type\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
 		
 		descricaopadrao.clear();

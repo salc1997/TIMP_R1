@@ -402,7 +402,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
-		nomeDeHierarquia.sendKeys("Execuções Salvas TF TA");
+		nomeDeHierarquia.sendKeys("Execuções TF TA");
 		sleep(1000);
 
 		nomeDaAba.sendKeys("Teste Automatizado");
@@ -497,7 +497,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 				.getText();
 		System.out.println(nome);
 
-		sucesso.add(nome.contains("Execuções Salvas TF TA"));
+		sucesso.add(nome.contains("Execuções TF TA"));
 
 		idInserir3(iH2);
 		System.out.println("Id ultimo de Hierarquia a excluir: " + iH2);
@@ -555,7 +555,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
 
-		nomeHirarquia.sendKeys("Execuções Salvas TF TA");
+		nomeHirarquia.sendKeys("Execuções TF TA");
 		sleep(1000);
 		nomeHirarquia.sendKeys(Keys.ENTER);
 		sleep(1000);
@@ -961,9 +961,9 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		//waitExpectElement(pastaLexeira);
 		sleep(5000);
 		
-//		sleep(3000);
-//		waitExpectElement(pastaLexeira);
-//		sleep(3000);
+		sleep(3000);
+     	waitExpectElement(pastaLexeira);
+		sleep(3000);
 		
 		pastaLexeira.click();
 		sleep(3000);

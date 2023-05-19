@@ -325,6 +325,17 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 		@FindBy(xpath = "//li[@identifier=\"accordion-item-inactiveHierarchies\"]")
 		public WebElement pastaLexeira3;
 		
+		@FindBy(xpath = "//button[text()=\"Prosseguir\"]")
+		public WebElement proseguir;
+		
+		@FindBy(xpath = "//div[@id=\"justification\"]/div/textarea")
+		public WebElement justi;
+		
+		@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+		public WebElement aplicarJustificativa;
+		@FindBy(xpath = "//button[contains(text(),\"Cancelar\")]")
+		public WebElement cancelar;
+		
 		public FatorDeCreditamentoContabilizaçãoDeCIAPPO() {
 			PageFactory.initElements(driver, this);
 		}
@@ -397,7 +408,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(1000);
 			
-			nomeDeHierarquia.sendKeys("Fator de Creditamento TA");
+			nomeDeHierarquia.sendKeys("Hierarquia Factor Crecimiento");
 			sleep(1000);
 
 			nomeDaAba.sendKeys("1");
@@ -503,7 +514,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 					.getText();
 			System.out.println(nome);
 
-			sucesso.add(nome.contains("Fator de Creditamento TA"));
+			sucesso.add(nome.contains("Hierarquia Factor Crecimiento"));
 
 			
 			idInserir("IdExecucoes2",iH2);
@@ -566,7 +577,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			sleep(8000);
 
 
-			nomeHirarquia.sendKeys("Fator de Creditamento TA");
+			nomeHirarquia.sendKeys("Hierarquia Factor Crecimiento");
 			sleep(1000);
 			nomeHirarquia.sendKeys(Keys.ENTER);
 			sleep(1000);
@@ -1021,7 +1032,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			executar.click();
 			sleep(3000);
 			waitExpectElement(executarM);
-			sleep(5000);
+			sleep(11000);
 			executarM.click();
 			
 			sleep(1000);
@@ -1055,20 +1066,34 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBaseMassiel{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(3000);
 			
-			nao.click();
+			proseguir.click();
+			sleep(2000);
+			
+			justi.sendKeys("Ciclo TA ");
+			sleep(1000);
+			
+			aplicarJustificativa.click();
 			sleep(3000);
+			
+			salvarExecucoes.click();
+			sleep(3000);
+			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+			sleep(9000);
+			
+			cancelar.click();
+			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			nao.click();
+			/*finalizarExecucoes.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(5000);
+			sleep(3000);
 			
-			//salvarExecucoes.click();
+			confirmarExecucoes.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(3000);
+			sleep(3000);*/
 			
 			biblioteca.click();
 			sleep(3000);

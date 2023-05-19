@@ -34,7 +34,7 @@ public class PublicoEPrivado extends TestBaseSteven {
 	}
 
 
-	@Test()
+	@Test(priority = 0)
 	public void publicoYPRivado() {
 		
 		loginTC.login();
@@ -46,18 +46,34 @@ public class PublicoEPrivado extends TestBaseSteven {
 		System.out.println(publicoEditor);
 		assertTrue(publicoEditor, compartilharE);
 
+		
+
+	}
+	@Test(priority = 1)
+	public void PrivadoEditor() {
+
 		boolean privadoEditor = publicoYPRivadoPO.privadoEditor();
 		System.out.println(privadoEditor);
 		assertTrue(privadoEditor, descompartilharE);
+		
+	}
+	
+	@Test(priority = 2)
+	public void PublicoBiblioteca() {
 
 		boolean publicoBiblioteca = publicoYPRivadoPO.publicoBiblioteca();
 		System.out.println(publicoBiblioteca);
 		assertTrue(publicoBiblioteca, compartilharB);
+		
+	}
+	
+	@Test(priority = 3)
+	public void PrivadoBiblioteca() {
 
 		boolean privadoBiblioteca = publicoYPRivadoPO.privadoBiblioteca();
 		System.out.println(privadoBiblioteca);
 		assertTrue(privadoBiblioteca, descompartilharB);
-
+		
 	}
 
 }

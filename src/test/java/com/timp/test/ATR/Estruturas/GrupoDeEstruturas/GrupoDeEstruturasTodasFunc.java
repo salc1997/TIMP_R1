@@ -11,13 +11,18 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
+import com.sap.timp.pageObjectModel.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasCriarPO;
+import com.sap.timp.pageObjectModel.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasEditarPO;
 import com.sap.timp.pageObjectModel.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodosFuncPO;
+
 
 public class GrupoDeEstruturasTodasFunc extends TestBaseSteven{
  
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
 	GrupoDeEstruturasTodosFuncPO grupoDeEstruturasTodosFuncPO;
+	GrupoDeEstruturasCriarPO grupoDeEstruturasCriarPO;
+	GrupoDeEstruturasEditarPO grupoDeEstruturasEditarPO;
 	
 	@BeforeClass
 	public void beforeClass() {
@@ -25,6 +30,9 @@ public class GrupoDeEstruturasTodasFunc extends TestBaseSteven{
 		loginTC = new LoginTC();
 		acessarATRPO = new AcessarATRPO();
 		grupoDeEstruturasTodosFuncPO = new  GrupoDeEstruturasTodosFuncPO();
+		grupoDeEstruturasCriarPO = new GrupoDeEstruturasCriarPO();
+		grupoDeEstruturasEditarPO  = new GrupoDeEstruturasEditarPO();
+		
 	}
 
 
@@ -41,7 +49,7 @@ public class GrupoDeEstruturasTodasFunc extends TestBaseSteven{
 
 		acessarATRPO.acessarATR();
 
-		boolean sucesso = grupoDeEstruturasTodosFuncPO.criar();
+		boolean sucesso = grupoDeEstruturasTodosFuncPO .criar();
 		assertTrue(sucesso, Criar);
 		
 		sleep(3000);

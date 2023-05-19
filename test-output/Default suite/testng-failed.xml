@@ -3,17 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaTodasFunc">
+      <class name="com.timp.test.BRB.CrescenteEDecrescente">
         <methods>
-          <include name="filtro"/>
-          <include name="excluir"/>
-          <include name="beforeClass"/>
-          <include name="visualizar"/>
-          <include name="criarMassa"/>
-          <include name="Excluir"/>
           <include name="afterClass"/>
+          <include name="crescenteEDecrescente"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaTodasFunc -->
+      </class> <!-- com.timp.test.BRB.CrescenteEDecrescente -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

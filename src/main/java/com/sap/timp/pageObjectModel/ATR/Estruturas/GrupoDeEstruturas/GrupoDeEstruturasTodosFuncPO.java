@@ -101,6 +101,7 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBaseSteven{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		
 		grupodeestrutura.click();
 	
 		sleep(2000);

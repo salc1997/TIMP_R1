@@ -4,7 +4,9 @@ import java.util.ArrayList;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -23,8 +25,11 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 
 	@FindBy(xpath = "//*[@id=\"right\"]/div[2]/div[1]/div/div/ul/li[1]/button")
 	public WebElement executar;
+	
+	@FindBy(xpath = "//button//span[text()=\"Execução\"]")
+	public WebElement executar1;
 
-	@FindBy(xpath = "//div[@class=\"tabs-container\"]//child::div[@data-column=\"66\"]/span")
+	@FindBy(xpath = "//div[@data-column=\"66\"]/span")
 	public WebElement menuC;
 
 	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/div[1]/div")
@@ -44,6 +49,14 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/div[2]/div")
 	public WebElement decrescente;
 	
+	@FindBy(xpath = "//*[@id=\"editor-toolbar\"]/div/div/ul/li[1]/button")				
+	public WebElement gravar;
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement nao;
+	
+	@FindBy(xpath = "//*[@id=\"draggable-66\"]")				
+	public WebElement mover;
+	
 	public CrescenteEDecrescentePO() {
 
 		PageFactory.initElements(driver, this);
@@ -60,33 +73,45 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		//waitExpectElement(menu);
+		waitExpectElement(menu);
 		//sleep(menuT);
 
 		menu.click();
 
 		opcao.click();
+		sleep(5000);
 
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
-
+		sleep(11000);
+		
+		waitExpectElement(executar);
 		executar.click();
 		sleep(5000);
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(9000);
 
-	//	actionsMoveToElementXpath("//div[@data-column=\"66\"]/span");
-
-		menuC.click();
+		actionsMoveToElementXpath("//div[@data-column=\"115\"]/span");
+		sleep(3000);
+		actionsMoveToElementElement(menuC);
+		System.out.println("Antes click");
+		
+		menuC.sendKeys(Keys.ENTER);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);
 		
-		String valorPrimeiro = driver.findElement(By.xpath("//div[@class=\"column-filter visible\"][1]/input")).getAttribute("value");
-		System.out.println(valorPrimeiro);
+
+		System.out.println("Dio click");
 		
-		double valorPrimeroI =  Double.valueOf(valorPrimeiro);
-		WebElement valorPrimeiroE = driver.findElement(By.xpath("//div[@class=\"column-filter visible\"][1]/label/span"));
+		String valorPrimeiro = driver.findElement(By.xpath("//div[@class=\"column-filter visible\"][1]/Label")).getText();
+		System.out.println(valorPrimeiro);
+		String num2=valorPrimeiro.replace(",","");
+		System.out.println(num2);
+		int number =  Integer.valueOf(num2);
+		sleep(3000);
+		double valorPrimeroI =  Double.valueOf(number);
+		
+		WebElement valorPrimeiroE = driver.findElement(By.xpath("//div[@class=\"column-filter visible\"][1]/label"));
 		WebElement aplicar = driver.findElement(By.xpath("//button[text()=\"Aplicar\"]"));
 		if (valorPrimeroI == 0) {
 			sleep(25000);
@@ -98,8 +123,11 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 			sleep(2000);
 			//actionsMoveToElementXpath("//div[@data-column=\"66\"]/span");
 
-			menuC.click();
-			waitExpectXpath("//*[@id=\"column-filters-apply\"]");
+			actionsMoveToElementXpath("//div[@data-column=\"115\"]/span");
+			sleep(3000);
+			actionsMoveToElementElement(menuC);
+			
+			menuC.sendKeys(Keys.ENTER);
 			sleep(6000);
 			
 		}
@@ -193,7 +221,11 @@ public class CrescenteEDecrescentePO extends TestBaseSteven {
 		
 		actionsMoveToElementXpath("//div[@data-column=\"66\"]/span");
 		
-		menuC.click();
+		actionsMoveToElementElement(menuC);
+
+		
+		menuC.sendKeys(Keys.ENTER);
+		sleep(6000);
 		decrescente.click();
 		
 		sleep(5000);

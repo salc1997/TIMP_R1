@@ -1,83 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="PublicoEPrivado(failed)">
+  <test thread-count="5" name="Parametros Gerais Configuracao Configuracao(failed)">
     <classes>
-      <class name="com.timp.test.BRB.PublicoEPrivado">
+      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados">
         <methods>
-          <include name="publicoYPRivado"/>
-          <include name="beforeClass"/>
+          <include name="criarConfiguracao"/>
           <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.PublicoEPrivado -->
-    </classes>
-  </test> <!-- PublicoEPrivado(failed) -->
-  <test thread-count="5" name="FormatacaoEVariante(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.FormatacaoEVariante">
-        <methods>
-          <include name="afterClass"/>
-          <include name="formatacaoEVariante"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.FormatacaoEVariante -->
+      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados -->
     </classes>
-  </test> <!-- FormatacaoEVariante(failed) -->
-  <test thread-count="5" name="FiltroColunas(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.FiltroColunas">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="filtroConFerramenta2"/>
-          <include name="filtroConFerramenta1"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.FiltroColunas -->
-    </classes>
-  </test> <!-- FiltroColunas(failed) -->
-  <test thread-count="5" name="GruposAvancados(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.GruposAvancados">
-        <methods>
-          <include name="gruposAvanzados"/>
-          <include name="afterClass"/>
-          <include name="eliminarGrupos"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.GruposAvancados -->
-    </classes>
-  </test> <!-- GruposAvancados(failed) -->
-  <test thread-count="5" name="CrescenteEDecrescente(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.CrescenteEDecrescente">
-        <methods>
-          <include name="afterClass"/>
-          <include name="crescenteEDecrescente"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.CrescenteEDecrescente -->
-    </classes>
-  </test> <!-- CrescenteEDecrescente(failed) -->
-  <test thread-count="5" name="ComentarioLibre(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.ComentarioLibre">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="comentarioLibre"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.ComentarioLibre -->
-    </classes>
-  </test> <!-- ComentarioLibre(failed) -->
-  <test thread-count="5" name="Atribucao De Regra (Regra)(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.AtribuicaodeRegra">
-        <methods>
-          <include name="editar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.AtribuicaodeRegra -->
-    </classes>
-  </test> <!-- Atribucao De Regra (Regra)(failed) -->
+  </test> <!-- Parametros Gerais Configuracao Configuracao(failed) -->
 </suite> <!-- Failed suite [Suite] -->

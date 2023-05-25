@@ -55,7 +55,7 @@ public class TarefaManual extends TestBaseMassiel{
 		ArrayList<Boolean> sucesso = tarefaManualPO.Manual();
 
 		  for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		  }
 
 	

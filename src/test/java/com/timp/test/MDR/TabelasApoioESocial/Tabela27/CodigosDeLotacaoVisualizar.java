@@ -48,7 +48,7 @@ public class CodigosDeLotacaoVisualizar extends TestBaseSteven {
 		ArrayList<Boolean> sucesso = codigosDeLotacaoVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 }

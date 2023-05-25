@@ -40,7 +40,7 @@ public class ContasDefaultParaExtemporaneoEditar extends TestBaseSteven {
 
 		boolean sucesso = contasDefaultParaExtemporaneoEditarPO.editar();
 
-		assertTrue(sucesso, visualizaçar);
+		assertTrue(sucesso, visualizar);
 	}
 
 }

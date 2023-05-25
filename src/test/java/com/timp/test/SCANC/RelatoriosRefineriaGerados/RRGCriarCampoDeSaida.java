@@ -47,7 +47,7 @@ public class RRGCriarCampoDeSaida extends TestBaseFernando {
 		ArrayList<Boolean> sucesso = relatorioRefinariaGeradosCriarCampoDeSaidaPO.criarCampoDeSaida();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 }

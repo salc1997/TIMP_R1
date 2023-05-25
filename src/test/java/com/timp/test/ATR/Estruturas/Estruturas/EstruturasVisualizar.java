@@ -55,7 +55,7 @@ public class EstruturasVisualizar extends TestBaseSteven {
 	 		 
 	 		ArrayList<Boolean> sucesso = estruturasVisualizarPO.visualizar();
 	 		for (int i = 0; i < sucesso.size(); i++) {
-	 			assertTrue(sucesso.get(i), visualizaçar);
+	 			assertTrue(sucesso.get(i), visualizar);
 				
 			}	
 	 		sleep(3000);

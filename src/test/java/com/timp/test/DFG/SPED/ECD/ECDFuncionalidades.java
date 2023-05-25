@@ -68,7 +68,7 @@ public class ECDFuncionalidades extends TestBaseSteven{
 	public void InformacaoECD() {
 		
 		boolean sucesso = ecdFuncionalidadesPO.informacao();
-		assertTrue(sucesso, visualizaçar);
+		assertTrue(sucesso, visualizar);
 	}
 
 	@Test(priority = 5)
@@ -77,7 +77,7 @@ public class ECDFuncionalidades extends TestBaseSteven{
 		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.visualizar();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 	
@@ -87,7 +87,7 @@ public class ECDFuncionalidades extends TestBaseSteven{
 		ArrayList<Boolean> sucesso = ecdFuncionalidadesPO.criarBlocoApuracao();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 	

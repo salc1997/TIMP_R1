@@ -54,7 +54,7 @@ public class EstruturasTodasAsFunc extends TestBaseSteven {
 	 		 
 	 	ArrayList<Boolean> sucesso = estructurasTodasAsFuncPO.Detalles();
 	 		for (int i = 0; i < sucesso.size(); i++) {
-	 			assertTrue(sucesso.get(i), visualizaçar);
+	 			assertTrue(sucesso.get(i), visualizar);
 				
 			}	
 	 		sleep(3000);
@@ -63,7 +63,7 @@ public class EstruturasTodasAsFunc extends TestBaseSteven {
 		public void visualizarFiltros() {
 				
 			boolean sucesso = estructurasTodasAsFuncPO.Filtros();
-			assertTrue(sucesso, visualizaçar);
+			assertTrue(sucesso, visualizar);
 			
 			sleep(3000);
 		}
@@ -73,7 +73,7 @@ public class EstruturasTodasAsFunc extends TestBaseSteven {
 			
 	 		ArrayList<Boolean> sucesso = estructurasTodasAsFuncPO.visualizar();
 	 		for (int i = 0; i < sucesso.size(); i++) {
-	 			assertTrue(sucesso.get(i), visualizaçar);
+	 			assertTrue(sucesso.get(i), visualizar);
 				
 	}
 	 	

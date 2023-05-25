@@ -43,7 +43,7 @@ public class AjusteEInformaçoesDeValoresEditar extends TestBaseSteven {
 
 		boolean sucesso = ajusteEInformaçoesDeValoresEditarPO.editar();
 
-		assertTrue(sucesso, visualizaçar);
+		assertTrue(sucesso, visualizar);
 	}
 
 }

@@ -58,7 +58,7 @@ public class AtivarCorrecao extends TestBaseSteven {
 		System.out.println(sucesso);
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), correcãoInativa);
+			assertTrue(sucesso.get(i), correcaoInativa);
 			System.out.println(sucesso.get(i));
 		}
 		sleep(2000);

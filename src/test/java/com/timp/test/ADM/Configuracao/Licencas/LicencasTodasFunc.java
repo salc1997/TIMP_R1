@@ -42,7 +42,7 @@ public class LicencasTodasFunc extends TestBaseMassiel{
 		ArrayList<Boolean> sucesso = licencasTodasFuncPO.detalles();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 		sleep(2000);
 	}
@@ -54,7 +54,7 @@ public class LicencasTodasFunc extends TestBaseMassiel{
 			ArrayList<Boolean> sucesso = licencasTodasFuncPO.visualizar();
 
 			for (int i = 0; i < sucesso.size(); i++) {
-				assertTrue(sucesso.get(i), visualizaçar);
+				assertTrue(sucesso.get(i), visualizar);
 			}
 			sleep(2000);
 		}

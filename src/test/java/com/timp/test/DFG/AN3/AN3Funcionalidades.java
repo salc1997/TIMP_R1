@@ -96,7 +96,7 @@ public class AN3Funcionalidades extends TestBaseSteven{
 		ArrayList<Boolean> sucesso =an3FuncionalidadesPO.arquivos();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 	
@@ -107,7 +107,7 @@ public class AN3Funcionalidades extends TestBaseSteven{
 		
 		ArrayList<Boolean> sucesso = an3FuncionalidadesPO.DFGAN3();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	
 	}

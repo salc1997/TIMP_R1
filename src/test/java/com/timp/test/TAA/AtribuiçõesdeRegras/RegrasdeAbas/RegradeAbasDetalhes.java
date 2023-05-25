@@ -40,7 +40,7 @@ public class RegradeAbasDetalhes extends TestBaseSteven {
 		ArrayList<Boolean> sucesso = regradeAbasDetalhesPO.Detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 		sleep(2000);
 	}

@@ -46,7 +46,7 @@ public class RelacionamentoEstruturasTodasFunc extends TestBaseSteven{
  		ArrayList<Boolean> sucesso = relacionamentoEstruturasTodasFuncPO.criar();
  		
  		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
  		sleep(2000);
  	}
@@ -105,7 +105,7 @@ public class RelacionamentoEstruturasTodasFunc extends TestBaseSteven{
  		ArrayList<Boolean> sucesso =relacionamentoEstruturasTodasFuncPO.visualizar();
  		
  		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
  		
  		sleep(2000);

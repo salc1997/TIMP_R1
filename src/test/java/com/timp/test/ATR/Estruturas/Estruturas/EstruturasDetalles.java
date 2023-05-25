@@ -56,7 +56,7 @@ public class EstruturasDetalles extends TestBaseSteven {
 	 		 
 	 	ArrayList<Boolean> sucesso = estruturasDetallesPO.Detalles();
 	 		for (int i = 0; i < sucesso.size(); i++) {
-	 			assertTrue(sucesso.get(i), visualizaçar);
+	 			assertTrue(sucesso.get(i), visualizar);
 				
 			}	
 	 		sleep(3000);

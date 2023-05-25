@@ -43,7 +43,7 @@ public class CodigoDeTreinamentoESimulacoesDeExerciciosVisualizar extends TestBa
 
 		for (int i = 0; i < sucesso.size(); i++) {
 
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 
 		}
 	}

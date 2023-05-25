@@ -53,7 +53,7 @@ public class S1250GerarDadosDoEvento extends TestBaseFernando{
 		ArrayList<Boolean> sucesso = s1250GerarDadosDoEventoPO.informacao();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 	
@@ -68,7 +68,7 @@ public class S1250GerarDadosDoEvento extends TestBaseFernando{
 		ArrayList<Boolean> sucesso = s1250GerarDadosDoEventoPO.visualizar();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 	
@@ -92,13 +92,13 @@ public class S1250GerarDadosDoEvento extends TestBaseFernando{
 	@Test(priority = 9)
 	public void visualizarCriarAN3() {
 		boolean sucesso = s1250GerarDadosDoEventoPO.visualizarCriarAN3();
-		assertTrue(sucesso, visualizaçar);
+		assertTrue(sucesso, visualizar);
 	}
 	
 	@Test(priority = 10)
 	public void visualizarActualizacoes() {
 		boolean sucesso = s1250GerarDadosDoEventoPO.visualizarActualizacoes();
-		assertTrue(sucesso, visualizaçar);
+		assertTrue(sucesso, visualizar);
 	}
 	
 	@Test(priority = 11)
@@ -106,7 +106,7 @@ public class S1250GerarDadosDoEvento extends TestBaseFernando{
 		ArrayList<Boolean> sucesso = s1250GerarDadosDoEventoPO.gravarAN3();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 	
@@ -115,7 +115,7 @@ public class S1250GerarDadosDoEvento extends TestBaseFernando{
 		ArrayList<Boolean> sucesso = s1250GerarDadosDoEventoPO.informacao2();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 	

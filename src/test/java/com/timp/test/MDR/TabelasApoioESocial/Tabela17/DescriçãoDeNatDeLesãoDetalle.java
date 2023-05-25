@@ -42,7 +42,7 @@ public class DescriçãoDeNatDeLesãoDetalle extends TestBaseMassiel {
 		ArrayList<Boolean> sucesso = descriçãoDeNatDeLesãoDetallePO.Detalle();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 
 	}

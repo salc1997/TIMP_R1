@@ -44,7 +44,7 @@ public class ConfiguracoesPeríodoVer extends TestBaseKenssy {
 		ArrayList<Boolean> sucesso = configuraçõesPeríodoVerPO.ver();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 
 	}

@@ -42,7 +42,7 @@ public class ConfiguracaoTributoAgrupamentoVisualizar extends TestBaseSteven {
 		ArrayList<Boolean> sucesso = configuraçãoTributoAgrupamentoVisualizarPO.ver();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 		
 		sleep(2000);

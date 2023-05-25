@@ -53,7 +53,7 @@ public class S1210ExcluirDadosDoEvento extends TestBaseFernando{
 		ArrayList<Boolean> sucesso = s1210ExcluirDadosDoEventoPO.informacao();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 	
@@ -68,7 +68,7 @@ public class S1210ExcluirDadosDoEvento extends TestBaseFernando{
 		ArrayList<Boolean> sucesso = s1210ExcluirDadosDoEventoPO.visualizar();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 	
@@ -86,7 +86,7 @@ public class S1210ExcluirDadosDoEvento extends TestBaseFernando{
 	@Test(priority = 8)
 	public void visualizarCriarAN3() {
 		boolean sucesso = s1210ExcluirDadosDoEventoPO.visualizarCriarAN3();
-		assertTrue(sucesso, visualizaçar);
+		assertTrue(sucesso, visualizar);
 	}
 	
 	@Test(priority = 9)
@@ -94,7 +94,7 @@ public class S1210ExcluirDadosDoEvento extends TestBaseFernando{
 		ArrayList<Boolean> sucesso = s1210ExcluirDadosDoEventoPO.gravarAN3();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 	
@@ -103,7 +103,7 @@ public class S1210ExcluirDadosDoEvento extends TestBaseFernando{
 		ArrayList<Boolean> sucesso = s1210ExcluirDadosDoEventoPO.informacao2();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 	

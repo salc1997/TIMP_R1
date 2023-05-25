@@ -45,7 +45,7 @@ public class GrupoAtividadeVisualizar extends TestBaseSteven {
 		ArrayList<Boolean> sucesso = grupoAtividadeVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 		sleep(2000);
 	}

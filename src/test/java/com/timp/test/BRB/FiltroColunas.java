@@ -48,7 +48,7 @@ public class FiltroColunas extends TestBaseSteven {
 		boolean sucesso = false;
 		sucesso = filtroColunasPO.filtroFerramenta();
 
-		assertTrue(sucesso, aplicaçãoFiltros);
+		assertTrue(sucesso, aplicacaoFiltros);
 		System.out.println(sucesso);
 
 		ArrayList<Boolean> sucesso2 = new ArrayList<Boolean>();

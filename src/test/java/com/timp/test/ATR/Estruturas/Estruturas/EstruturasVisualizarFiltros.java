@@ -38,7 +38,7 @@ public class EstruturasVisualizarFiltros extends TestBaseFernando{
 		acessarATRPO.acessarATR();
 		
 		boolean sucesso = estruturasVisualizarFiltrosPO.visualizar();
-		assertTrue(sucesso, visualizaçar);
+		assertTrue(sucesso, visualizar);
 		
 		sleep(3000);
 	}

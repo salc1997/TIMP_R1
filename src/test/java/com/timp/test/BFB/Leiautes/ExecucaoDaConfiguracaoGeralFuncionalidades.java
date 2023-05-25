@@ -169,7 +169,7 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidades extends TestBaseFernando
 		ArrayList<Boolean> sucesso = execucaoDaConfiguracaoGeralFuncionalidadesPO.visualizar();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 }

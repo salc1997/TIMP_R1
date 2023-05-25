@@ -39,7 +39,7 @@ public class AgendamentoVer extends TestBaseFernando {
 		ArrayList<Boolean> sucesso = agendamentoVerPO.ver();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 }

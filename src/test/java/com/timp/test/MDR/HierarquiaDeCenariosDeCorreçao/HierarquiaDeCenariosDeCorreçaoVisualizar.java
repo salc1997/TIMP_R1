@@ -41,7 +41,7 @@ public class HierarquiaDeCenariosDeCorreçaoVisualizar extends TestBaseSteven {
 		acessarMDRPO.acessarMDR();
 		ArrayList<Boolean> sucesso = hierarquiaDeCenariosDeCorreçaoVisualizarPO.visualizar();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 

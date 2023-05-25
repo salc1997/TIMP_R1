@@ -45,7 +45,7 @@ public class SequenciaVisualizar extends TestBaseSteven {
 		ArrayList<Boolean> sucesso = sequenciaVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 

@@ -40,7 +40,7 @@ public class ClassificaçaoDeContribuintesDoIPIEditar extends TestBaseSteven {
 		acessarMDRPO.acessarMDR();
 		boolean sucesso = classificaçaoDeContribuintesDoIPIEditarPO.editar();
 
-		assertTrue(sucesso, visualizaçar);
+		assertTrue(sucesso, visualizar);
 
 	}
 

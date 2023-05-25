@@ -42,7 +42,7 @@ public class RegistroM515Editar extends TestBaseSteven{
 		ArrayList<Boolean> sucesso = registroM515EditarPO.Editar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 }

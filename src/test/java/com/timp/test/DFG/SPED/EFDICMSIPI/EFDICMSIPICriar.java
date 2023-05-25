@@ -66,7 +66,7 @@ public class EFDICMSIPICriar extends TestBaseSteven{
 		ArrayList<Boolean> sucesso3 = eFDICMSIPIpCriarPO.DFG();
 		
 		for (int i = 0; i < sucesso3.size(); i++) {
-			assertTrue(sucesso3.get(i), visualizaçar);
+			assertTrue(sucesso3.get(i), visualizar);
 		}
 		
 
@@ -89,7 +89,7 @@ public class EFDICMSIPICriar extends TestBaseSteven{
 		ArrayList<Boolean> sucesso = eFDICMSIPIpCriarPO.informacao();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 		
 
@@ -101,7 +101,7 @@ public class EFDICMSIPICriar extends TestBaseSteven{
 		ArrayList<Boolean> sucesso = eFDICMSIPIpCriarPO.blocoApuracao();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 		
 
@@ -112,7 +112,7 @@ public class EFDICMSIPICriar extends TestBaseSteven{
 		
 		ArrayList<Boolean> sucesso = eFDICMSIPIpCriarPO.execucao();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 		
 
@@ -124,7 +124,7 @@ public class EFDICMSIPICriar extends TestBaseSteven{
 		ArrayList<Boolean> sucesso = eFDICMSIPIpCriarPO.arquivos();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 
 	}

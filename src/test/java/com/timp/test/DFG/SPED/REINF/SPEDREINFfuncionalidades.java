@@ -70,7 +70,7 @@ public class SPEDREINFfuncionalidades extends TestBaseSteven {
 		ArrayList<Boolean> sucesso3 = sPEDREINFfuncionalidadesPO.informacao();
 		
 		for (int i = 0; i < sucesso3.size(); i++) {
-			assertTrue(sucesso3.get(i), visualizaçar);
+			assertTrue(sucesso3.get(i), visualizar);
 		}
 		
 
@@ -84,7 +84,7 @@ public class SPEDREINFfuncionalidades extends TestBaseSteven {
 		ArrayList<Boolean> sucesso4 = sPEDREINFfuncionalidadesPO.visualizar();
 		
 		for (int i = 0; i < sucesso4.size(); i++) {
-			assertTrue(sucesso4.get(i), visualizaçar);
+			assertTrue(sucesso4.get(i), visualizar);
 		}
 		
 
@@ -96,7 +96,7 @@ public class SPEDREINFfuncionalidades extends TestBaseSteven {
 		
 		
 		boolean sucesso5 = sPEDREINFfuncionalidadesPO.executar();
-		assertTrue(sucesso5, visualizaçar);	
+		assertTrue(sucesso5, visualizar);	
 
 	}
 	

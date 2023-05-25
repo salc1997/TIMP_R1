@@ -43,7 +43,7 @@ public class DeterminacionRelevanciaPorMotivoVisualizar extends TestBaseSteven {
 		ArrayList<Boolean> sucesso = determinacionRelevanciaPorMotivoVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 
 	}

@@ -38,7 +38,7 @@ public class InclusaoDeCamposMarDetalhes extends TestBaseSteven {
 		acessarMDRPO.acessarMDR();
 
 		String sucesso = inclusaoDeCamposMarDetalhesPO.detalhes();
-		assertEquals(sucesso, "edit", visualizaçar);
+		assertEquals(sucesso, "edit", visualizar);
 	}
 
 }

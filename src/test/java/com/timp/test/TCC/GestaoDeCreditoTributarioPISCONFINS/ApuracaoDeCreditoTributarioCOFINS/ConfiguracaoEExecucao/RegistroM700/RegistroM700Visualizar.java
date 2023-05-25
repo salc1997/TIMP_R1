@@ -41,7 +41,7 @@ public class RegistroM700Visualizar extends TestBaseSteven {
 		ArrayList<Boolean> sucesso = registroM700VisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 }

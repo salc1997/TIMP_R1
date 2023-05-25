@@ -42,7 +42,7 @@ public class Registro1210Visualizar extends TestBaseMassiel{
 		ArrayList<Boolean> sucesso = registro1210VisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 

@@ -44,7 +44,7 @@ public class MotivosdeDesligamentoVisualizar extends TestBaseKenssy {
 		ArrayList<Boolean> sucesso = motivosDesligamentoVisualizarPO.visualizarMotivosDesligamento();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 }

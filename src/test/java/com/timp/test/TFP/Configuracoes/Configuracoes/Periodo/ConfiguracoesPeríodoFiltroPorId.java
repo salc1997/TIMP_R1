@@ -42,7 +42,7 @@ public class ConfiguracoesPeríodoFiltroPorId extends TestBaseKenssy {
 		ArrayList<Boolean> sucesso = configuraçõesPeríodoFiltroPorIdPO.filtro();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 
 	}

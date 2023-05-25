@@ -39,7 +39,7 @@ public class Exportar extends TestBaseSteven {
 		boolean sucesso = false;
 		sucesso = exportarPO.exportarCSV();
 		System.out.println(sucesso + "CSV");
-		assertTrue(sucesso, exportação);
+		assertTrue(sucesso, exportacao);
 
 	}
 
@@ -55,7 +55,7 @@ public class Exportar extends TestBaseSteven {
 		sucesso = exportarPO.exportaXSLX();
 
 		System.out.println(sucesso + "XLSX");
-		assertTrue(sucesso, exportação);
+		assertTrue(sucesso, exportacao);
 
 	}
 

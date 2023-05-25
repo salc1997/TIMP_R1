@@ -42,7 +42,7 @@ public class AgenteCausadorDeSGDPDetalle extends TestBaseMassiel {
 		ArrayList<Boolean> sucesso = agenteCausadorDeSGDPDetallePO.Detalle();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 
 	}

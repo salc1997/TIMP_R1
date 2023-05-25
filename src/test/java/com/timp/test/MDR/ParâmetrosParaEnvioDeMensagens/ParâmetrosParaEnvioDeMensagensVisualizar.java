@@ -42,7 +42,7 @@ public class ParâmetrosParaEnvioDeMensagensVisualizar extends TestBaseFernando {
 		ArrayList<Boolean> sucesso = parâmetrosParaEnvioDeMensagensVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 }

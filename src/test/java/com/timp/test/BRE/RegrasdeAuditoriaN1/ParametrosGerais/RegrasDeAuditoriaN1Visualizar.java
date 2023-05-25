@@ -39,7 +39,7 @@ public class RegrasDeAuditoriaN1Visualizar extends TestBaseSteven{
 		acessarBREPO.acessarBRE();
 		ArrayList<Boolean> sucesso = regrasDeAuditoriaN1VisualizarPO.visualizar();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 		
 		sleep(2000);

@@ -40,7 +40,7 @@ public class AjusteVer extends TestBaseMassiel {
 		ArrayList<Boolean> sucesso = ajusteVerPO.ver();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 
 	}

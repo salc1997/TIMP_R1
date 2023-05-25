@@ -56,17 +56,17 @@ public class ESOCIALfuncionalidades extends TestBaseSteven {
 		ArrayList<Boolean> sucesso3 = eSOCIALfuncionalidadesPO.informacao();
 		
 		for (int i = 0; i < sucesso3.size(); i++) {
-			assertTrue(sucesso3.get(i), visualizaçar);
+			assertTrue(sucesso3.get(i), visualizar);
 		}
 		
 		ArrayList<Boolean> sucesso4 = eSOCIALfuncionalidadesPO.visualizar();
 		
 		for (int i = 0; i < sucesso4.size(); i++) {
-			assertTrue(sucesso4.get(i), visualizaçar);
+			assertTrue(sucesso4.get(i), visualizar);
 		}
 		
 		boolean sucesso5 = eSOCIALfuncionalidadesPO.executar();
-		assertTrue(sucesso5, visualizaçar);	
+		assertTrue(sucesso5, visualizar);	
 
 	}
 	

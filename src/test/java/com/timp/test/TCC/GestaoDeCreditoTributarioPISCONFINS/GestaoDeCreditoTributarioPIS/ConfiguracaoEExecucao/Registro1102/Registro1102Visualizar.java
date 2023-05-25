@@ -43,7 +43,7 @@ public class Registro1102Visualizar extends TestBaseSteven {
 		ArrayList<Boolean> sucesso = registros1102VisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 

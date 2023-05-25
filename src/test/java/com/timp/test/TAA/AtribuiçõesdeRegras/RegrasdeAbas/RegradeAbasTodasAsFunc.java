@@ -48,7 +48,7 @@ public class RegradeAbasTodasAsFunc extends TestBaseSteven {
 		ArrayList<Boolean> sucesso = regradeAbasTodasAsFuncPO.Detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 		sleep(2000);
 	}
@@ -67,7 +67,7 @@ public class RegradeAbasTodasAsFunc extends TestBaseSteven {
 		ArrayList<Boolean> sucesso = regradeAbasTodasAsFuncPO.ver();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 		sleep(2000);
 	}

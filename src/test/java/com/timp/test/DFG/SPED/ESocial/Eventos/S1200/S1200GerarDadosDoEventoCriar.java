@@ -72,7 +72,7 @@ public class S1200GerarDadosDoEventoCriar extends TestBaseSteven{
 		ArrayList<Boolean> sucesso = s1200GerarDadosDoEventoPO.informacao();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 
 	}
@@ -83,7 +83,7 @@ public class S1200GerarDadosDoEventoCriar extends TestBaseSteven{
 		ArrayList<Boolean> sucesso = s1200GerarDadosDoEventoPO.visualizar();
 		
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 
 	}

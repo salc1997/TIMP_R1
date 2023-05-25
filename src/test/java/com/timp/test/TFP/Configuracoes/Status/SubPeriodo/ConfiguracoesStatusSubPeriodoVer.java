@@ -43,7 +43,7 @@ public class ConfiguracoesStatusSubPeriodoVer extends TestBaseSteven{
 		ArrayList<Boolean> sucesso = configuracoesStatusSubPeriodoVerPO.ver();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 }

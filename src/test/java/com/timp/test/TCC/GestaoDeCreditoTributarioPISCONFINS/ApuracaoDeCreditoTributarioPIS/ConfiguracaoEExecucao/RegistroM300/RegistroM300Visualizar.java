@@ -44,7 +44,7 @@ public class RegistroM300Visualizar extends TestBaseMassiel {
 		ArrayList<Boolean> sucesso = registroM300VisualizarPO.Visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 
 	}

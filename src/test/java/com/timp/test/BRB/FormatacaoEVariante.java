@@ -49,7 +49,7 @@ public class FormatacaoEVariante extends TestBaseSteven {
 		sucesso = formatacaoEVariantePO.formatacaoEVariante();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), formatação);
+			assertTrue(sucesso.get(i), formatacao);
 		}
 		System.out.println(sucesso);
 

@@ -43,7 +43,7 @@ public class ArmazenarArquivoVisualizar extends TestBaseSteven {
 		acessarTBDPO.acessarTBD();
 		ArrayList<Boolean> sucesso = armazenarArquivoVisualizarPO.visualizar();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 		sleep(3000);
 	}

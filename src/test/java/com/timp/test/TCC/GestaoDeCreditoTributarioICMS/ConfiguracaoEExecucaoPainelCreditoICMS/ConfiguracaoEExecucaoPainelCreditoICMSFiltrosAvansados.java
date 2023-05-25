@@ -45,13 +45,13 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSFiltrosAvansados extends Test
 		ArrayList<Boolean> sucesso = configuracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO.Empresa();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 
 		ArrayList<Boolean> Filial = configuracaoEExecucaoPainelCreditoICMSFiltrosAvansadosPO.Filial();
 
 		for (int i = 0; i < Filial.size(); i++) {
-			assertTrue(Filial.get(i), visualizaçar);
+			assertTrue(Filial.get(i), visualizar);
 		}
 	}
 }

@@ -40,7 +40,7 @@ public class LixeiraRestaurarEmMassa extends TestBaseMassiel {
 		
 		ArrayList<Boolean> sucesso = lixeiraRestaurarEmMassaPO.Restaurar();
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 }

@@ -51,7 +51,7 @@ public class LicencasDetalhes extends TestBaseMassiel{
 		ArrayList<Boolean> sucesso = licençasDetalhesPO.detalles();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 		
 	}

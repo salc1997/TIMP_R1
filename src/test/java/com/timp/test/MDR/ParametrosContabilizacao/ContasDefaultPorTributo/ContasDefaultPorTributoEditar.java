@@ -41,7 +41,7 @@ public class ContasDefaultPorTributoEditar extends TestBaseSteven {
 
 		boolean sucesso = contasDefaultPorTributoEditarPO.editar();
 
-		assertTrue(sucesso, visualizaçar);
+		assertTrue(sucesso, visualizar);
 	}
 
 }

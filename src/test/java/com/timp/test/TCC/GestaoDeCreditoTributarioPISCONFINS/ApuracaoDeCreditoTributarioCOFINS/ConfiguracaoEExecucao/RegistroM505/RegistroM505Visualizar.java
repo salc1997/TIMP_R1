@@ -43,7 +43,7 @@ public class RegistroM505Visualizar extends TestBaseSteven {
 		ArrayList<Boolean> sucesso = registroM505VisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 }

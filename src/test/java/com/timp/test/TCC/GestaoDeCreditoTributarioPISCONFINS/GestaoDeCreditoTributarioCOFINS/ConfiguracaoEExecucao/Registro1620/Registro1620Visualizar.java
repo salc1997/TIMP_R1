@@ -41,7 +41,7 @@ public class Registro1620Visualizar extends TestBaseSteven {
 		ArrayList<Boolean> sucesso = registro1620VisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizaçar);
+			assertTrue(sucesso.get(i), visualizar);
 		}
 	}
 

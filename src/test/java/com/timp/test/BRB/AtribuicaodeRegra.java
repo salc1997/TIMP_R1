@@ -6,7 +6,6 @@ import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.AtribuicaodeRegraPO;
-import com.sap.timp.pageObjectModel.BRB.DuplicidadePO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -43,4 +42,5 @@ public class AtribuicaodeRegra extends TestBaseSteven {
 		assertTrue(sucesso, Editar);
 		sleep(2000);
 	}
+
 }

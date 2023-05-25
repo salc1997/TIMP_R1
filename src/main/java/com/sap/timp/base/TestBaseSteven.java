@@ -1,4 +1,3 @@
-
 package com.sap.timp.base;
 
 import java.awt.AWTException;
@@ -67,7 +66,7 @@ public class TestBaseSteven  {
 		WebDriver driver;
 		
 		
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverst.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedrivers.exe");
 
 		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
 	

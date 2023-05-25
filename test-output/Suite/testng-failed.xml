@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name="Parametros Gerais Configuracao Configuracao(failed)">
+=======
+  <test thread-count="5" name="ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed)">
+>>>>>>> refs/remotes/origin/Steven
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados">
+=======
+      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc">
+>>>>>>> refs/remotes/origin/Steven
         <methods>
+<<<<<<< HEAD
           <include name="criarConfiguracao"/>
+=======
+          <include name="beforeClass"/>
+          <include name="filtro"/>
+>>>>>>> refs/remotes/origin/Steven
           <include name="afterClass"/>
+<<<<<<< HEAD
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados -->
     </classes>
   </test> <!-- Parametros Gerais Configuracao Configuracao(failed) -->
+=======
+        </methods>
+      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc -->
+    </classes>
+  </test> <!-- ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed) -->
+>>>>>>> refs/remotes/origin/Steven
 </suite> <!-- Failed suite [Suite] -->

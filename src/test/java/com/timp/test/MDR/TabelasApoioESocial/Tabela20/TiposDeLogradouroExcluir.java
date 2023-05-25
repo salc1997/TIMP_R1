@@ -38,7 +38,8 @@ public class TiposDeLogradouroExcluir extends TestBaseSteven {
 
 	@Test()
 
-	public void excluir() {
+	  public void excluir() {
+		
 
 		loginTC.login();
 		acessarMDRPO.acessarMDR();

@@ -1,9 +1,5 @@
 package com.timp.test.BRB;
 
-import static org.testng.Assert.assertTrue;
-
-import java.util.ArrayList;
-
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -11,7 +7,6 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
-import com.sap.timp.pageObjectModel.BRB.RegrasPO;
 import com.sap.timp.pageObjectModel.BRB.cabecalhoPO;
 
 public class Cabecalho extends TestBaseSteven {
@@ -45,6 +40,7 @@ public class Cabecalho extends TestBaseSteven {
 		
 		cabeçalhoPO.cabeçalho();
 		sleep(2000);
+
 	}
 
 }

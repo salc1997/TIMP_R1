@@ -1,29 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+=======
+<testng-results ignored="0" total="16" passed="15" failed="1" skipped="0">
+>>>>>>> refs/remotes/origin/Steven
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2023-05-25T16:43:41 UTC" name="Default suite" finished-at="2023-05-25T16:46:00 UTC" duration-ms="138863">
+=======
+  <suite started-at="2023-05-24T15:16:52 CST" name="Suite" finished-at="2023-05-24T15:32:35 CST" duration-ms="942571">
+>>>>>>> refs/remotes/origin/Steven
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2023-05-25T16:43:41 UTC" name="Default test" finished-at="2023-05-25T16:46:00 UTC" duration-ms="138863">
       <class name="com.timp.test.BRB.ExcluirRelatorio">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.ExcluirRelatorio@26e356f0]" started-at="2023-05-25T16:43:41 UTC" name="beforeClass" finished-at="2023-05-25T16:43:44 UTC" duration-ms="3226" status="PASS">
+=======
+    <test started-at="2023-05-24T15:16:52 CST" name="ATR - Arquivos" finished-at="2023-05-24T15:23:36 CST" duration-ms="403609">
+      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados@8f4ea7c]" started-at="2023-05-24T15:19:48 CST" name="beforeClass" finished-at="2023-05-24T15:20:05 CST" duration-ms="16815" status="PASS">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="eliminar()[pri:0, instance:com.timp.test.BRB.ExcluirRelatorio@26e356f0]" started-at="2023-05-25T16:43:44 UTC" name="eliminar" finished-at="2023-05-25T16:45:07 UTC" duration-ms="82899" status="PASS">
+=======
+        <test-method signature="filtroAvansado()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados@8f4ea7c]" started-at="2023-05-24T15:20:05 CST" name="filtroAvansado" finished-at="2023-05-24T15:21:18 CST" duration-ms="73131" status="PASS">
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- filtroAvansado -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados@8f4ea7c]" started-at="2023-05-24T15:21:18 CST" name="afterClass" finished-at="2023-05-24T15:21:18 CST" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados -->
+      <class name="com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@35cabb2a]" started-at="2023-05-24T15:16:52 CST" name="beforeClass" finished-at="2023-05-24T15:17:05 CST" duration-ms="12471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="filtro()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@35cabb2a]" started-at="2023-05-24T15:17:05 CST" name="filtro" finished-at="2023-05-24T15:18:50 CST" duration-ms="105230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@35cabb2a]" started-at="2023-05-24T15:18:50 CST" name="afterClass" finished-at="2023-05-24T15:18:50 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID -->
+      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados@74fe5c40]" started-at="2023-05-24T15:22:15 CST" name="beforeClass" finished-at="2023-05-24T15:22:23 CST" duration-ms="8788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="filtro()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados@74fe5c40]" started-at="2023-05-24T15:22:23 CST" name="filtro" finished-at="2023-05-24T15:23:36 CST" duration-ms="72403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados@74fe5c40]" started-at="2023-05-24T15:23:36 CST" name="afterClass" finished-at="2023-05-24T15:23:36 CST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados -->
+      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE@223d2c72]" started-at="2023-05-24T15:18:50 CST" name="beforeClass" finished-at="2023-05-24T15:18:58 CST" duration-ms="8325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="filtro()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE@223d2c72]" started-at="2023-05-24T15:18:58 CST" name="filtro" finished-at="2023-05-24T15:19:48 CST" duration-ms="50078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE@223d2c72]" started-at="2023-05-24T15:19:48 CST" name="afterClass" finished-at="2023-05-24T15:19:48 CST" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE -->
+      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE@436813f3]" started-at="2023-05-24T15:21:18 CST" name="beforeClass" finished-at="2023-05-24T15:21:26 CST" duration-ms="7272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="filtro()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE@436813f3]" started-at="2023-05-24T15:21:26 CST" name="filtro" finished-at="2023-05-24T15:22:14 CST" duration-ms="48625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE@436813f3]" started-at="2023-05-24T15:22:14 CST" name="afterClass" finished-at="2023-05-24T15:22:15 CST" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE -->
+    </test> <!-- ATR - Arquivos -->
+    <test started-at="2023-05-24T15:23:36 CST" name="ATR-ESTRUCTURAS-ESTRUCTURAS" finished-at="2023-05-24T15:25:52 CST" duration-ms="135753">
+      <class name="com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc@128d2484]" started-at="2023-05-24T15:23:36 CST" name="beforeClass" finished-at="2023-05-24T15:23:48 CST" duration-ms="12170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="Detalles()[pri:0, instance:com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc@128d2484]" started-at="2023-05-24T15:23:48 CST" name="Detalles" finished-at="2023-05-24T15:24:38 CST" duration-ms="50210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Detalles -->
+        <test-method signature="visualizarFiltros()[pri:0, instance:com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc@128d2484]" started-at="2023-05-24T15:24:38 CST" name="visualizarFiltros" finished-at="2023-05-24T15:25:09 CST" duration-ms="30332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visualizarFiltros -->
+        <test-method signature="visualizar()[pri:1, instance:com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc@128d2484]" started-at="2023-05-24T15:25:09 CST" name="visualizar" finished-at="2023-05-24T15:25:52 CST" duration-ms="43033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visualizar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc@128d2484]" started-at="2023-05-24T15:25:52 CST" name="afterClass" finished-at="2023-05-24T15:25:52 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc -->
+    </test> <!-- ATR-ESTRUCTURAS-ESTRUCTURAS -->
+    <test started-at="2023-05-24T15:25:52 CST" name="ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS" finished-at="2023-05-24T15:32:35 CST" duration-ms="403152">
+      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:25:52 CST" name="beforeClass" finished-at="2023-05-24T15:25:58 CST" duration-ms="6622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:25:58 CST" name="criar" finished-at="2023-05-24T15:27:25 CST" duration-ms="86883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method signature="Editar()[pri:1, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:27:25 CST" name="Editar" finished-at="2023-05-24T15:28:57 CST" duration-ms="92299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Editar -->
+        <test-method signature="detalhes()[pri:2, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:28:57 CST" name="detalhes" finished-at="2023-05-24T15:29:27 CST" duration-ms="29790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- detalhes -->
+        <test-method signature="visualizar()[pri:3, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:29:27 CST" name="visualizar" finished-at="2023-05-24T15:30:05 CST" duration-ms="37427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visualizar -->
+        <test-method signature="filtro()[pri:4, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:30:05 CST" name="filtro" finished-at="2023-05-24T15:30:14 CST" duration-ms="9204" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Os resultados não são acorde aos filtros expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Os resultados não são acorde aos filtros expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc.filtro(GrupoDeEstruturasTodasFunc.java:91)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+>>>>>>> refs/remotes/origin/Steven
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- eliminar -->
         <test-method signature="eliminarLixeira()[pri:0, instance:com.timp.test.BRB.ExcluirRelatorio@26e356f0]" started-at="2023-05-25T16:45:07 UTC" name="eliminarLixeira" finished-at="2023-05-25T16:46:00 UTC" depends-on-methods="com.timp.test.BRB.ExcluirRelatorio.eliminar" duration-ms="52690" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- eliminarLixeira -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRB.ExcluirRelatorio@26e356f0]" started-at="2023-05-25T16:46:00 UTC" name="afterClass" finished-at="2023-05-25T16:46:00 UTC" duration-ms="0" status="PASS">
+=======
+        </test-method> <!-- filtro -->
+        <test-method signature="excluir()[pri:5, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:30:14 CST" name="excluir" finished-at="2023-05-24T15:30:44 CST" duration-ms="30179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluir -->
+        <test-method signature="criarMassa()[pri:6, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:30:44 CST" name="criarMassa" finished-at="2023-05-24T15:31:54 CST" duration-ms="70186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarMassa -->
+        <test-method signature="excluirMassa()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:31:54 CST" name="excluirMassa" finished-at="2023-05-24T15:32:35 CST" depends-on-methods="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc.criarMassa" duration-ms="40469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirMassa -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:32:35 CST" name="afterClass" finished-at="2023-05-24T15:32:35 CST" duration-ms="82" status="PASS">
+>>>>>>> refs/remotes/origin/Steven
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BRB.ExcluirRelatorio -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+=======
+      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc -->
+    </test> <!-- ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS -->
+  </suite> <!-- Suite -->
+>>>>>>> refs/remotes/origin/Steven
 </testng-results>

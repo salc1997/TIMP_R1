@@ -36,8 +36,8 @@ public class TiposDeLogradouroCriar extends TestBaseMassiel {
 	}
 
 	@Test()
+	  public void criar() {
 
-	public void criar() {
 		loginTC.login();
 		acessarMDRPO.acessarMDR();
 

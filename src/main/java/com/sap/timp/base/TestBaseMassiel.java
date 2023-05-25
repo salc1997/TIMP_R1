@@ -33,7 +33,7 @@ public class TestBaseMassiel extends TestBaseSteven {
 	TestBaseSteven testeBaseSteven = new TestBaseSteven();
 
 	public WebDriver initializationM() {
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedrivers.exe");
 
 		
 		//Evita que el mensaje de "Chorme siendo controlado por un software de automatizacion" aprezca

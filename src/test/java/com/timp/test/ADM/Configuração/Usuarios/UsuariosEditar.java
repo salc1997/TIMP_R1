@@ -1,18 +1,15 @@
 package com.timp.test.ADM.Configuração.Usuarios;
 
+import static org.testng.Assert.assertTrue;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
-import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaodeTributoXTributoGrupo.ConfiguracaodeTributoXTributoGrupoEditarPO;
 import com.sap.timp.pageObjectModel.ADM.Usuarios.Usuarios.UsuariosEditarPO;
-
-import org.testng.annotations.BeforeClass;
-
-import static org.testng.Assert.assertTrue;
-
-import org.testng.annotations.AfterClass;
 
 public class UsuariosEditar extends TestBaseSteven {
 	LoginTC loginTC;

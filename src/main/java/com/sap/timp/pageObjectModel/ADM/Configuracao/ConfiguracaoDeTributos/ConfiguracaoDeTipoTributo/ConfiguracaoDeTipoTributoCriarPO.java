@@ -124,7 +124,7 @@ public class ConfiguracaoDeTipoTributoCriarPO extends TestBaseSteven{
 		codigotributogrupo.sendKeys("1");
 		sleep(1000);
 		
-	
+
 		gravar.click();
 		sleep(2000);
 		waitExpectElement(sim);

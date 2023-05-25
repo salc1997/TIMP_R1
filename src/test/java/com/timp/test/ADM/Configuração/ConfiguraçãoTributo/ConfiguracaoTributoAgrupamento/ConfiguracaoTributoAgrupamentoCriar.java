@@ -1,20 +1,15 @@
 package com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaoTributoAgrupamento;
 
+import static org.testng.Assert.assertTrue;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaoTributoAgrupamento.ConfiguracaoTributoAgrupamentoCriarPO;
-import com.sap.timp.pageObjectModel.ADM.Configuração.Licencas.LicencasDetalhesPO;
-
-import org.testng.annotations.BeforeClass;
-
-import static org.testng.Assert.assertTrue;
-
-import java.util.ArrayList;
-
-import org.testng.annotations.AfterClass;
 
 public class ConfiguracaoTributoAgrupamentoCriar extends TestBaseSteven{
 	LoginTC loginTC;

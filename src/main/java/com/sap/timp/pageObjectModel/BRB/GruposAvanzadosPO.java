@@ -57,7 +57,7 @@ public class GruposAvanzadosPO extends TestBaseSteven{
 	@FindBy(xpath = "//*[@id=\"filters-pool\"]/div/div/div/div[1]/div/div[4]/div/div/input")
 	public WebElement valor;
 	
-	@FindBy(xpath = "//*[@id=\"option-14\"]")
+	@FindBy(xpath = "//*[@id=\"option-16\"]")
 	public WebElement diferenteO;
 	
 	

@@ -43,6 +43,7 @@ public class RRGConfiguracaoDeAjusteCriarComDiaEspecificoPO extends TestBaseFern
 	}
 	
 	public boolean criarComDiaEspecifico() {
+		//TSTNG-443
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

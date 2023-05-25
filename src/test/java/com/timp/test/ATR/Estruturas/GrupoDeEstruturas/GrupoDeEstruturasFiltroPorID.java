@@ -33,16 +33,13 @@ public class GrupoDeEstruturasFiltroPorID extends TestBaseSteven {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 
 	@Test()
 	public void filtro() {
 
-		loginTC.login();
-
-		acessarATRPO.acessarATR();
 
 		ArrayList<Boolean> sucesso = grupoDeEstruturasFiltroPorIDPO.filtro();
 		for (int i = 0; i < sucesso.size(); i++) {

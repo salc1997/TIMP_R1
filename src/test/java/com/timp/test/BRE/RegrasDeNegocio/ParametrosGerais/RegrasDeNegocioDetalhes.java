@@ -31,7 +31,7 @@ public class RegrasDeNegocioDetalhes extends TestBaseKenssy {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+	//	driver.close();
 	}
 
 

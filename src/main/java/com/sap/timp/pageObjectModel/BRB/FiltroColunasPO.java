@@ -96,10 +96,10 @@ public class FiltroColunasPO  extends TestBaseSteven{
 		sleep(8000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		
-		//actionsMoveToElementXpath("//div[@data-column=\"5\" and not(@data-path)]");
+		actionsMoveToElementXpath("//div[@data-column=\"5\" and not(@data-path)]");
 		colunaOpcao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

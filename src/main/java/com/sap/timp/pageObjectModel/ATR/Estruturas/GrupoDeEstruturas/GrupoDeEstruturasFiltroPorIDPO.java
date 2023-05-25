@@ -33,8 +33,9 @@ public class GrupoDeEstruturasFiltroPorIDPO extends TestBaseSteven {
 	}
 
 	public ArrayList<Boolean> filtro() {
+		driver.get(tc2);
 
-		sleep(2000);
+		sleep(6000);
 		grupodeestrutura.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

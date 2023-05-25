@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBaseSteven;
 
 public class GrupoDeEstruturasCriarPO extends TestBaseSteven{
-	
+	protected String tc2 = "http://as1-100-01-tc2:8000/timp/atr/#/structures";
 	@FindBy(xpath = "//span[text()=\"Grupo de Estruturas\"]")
 	public WebElement grupodeestrutura;
 	
@@ -56,10 +56,10 @@ public class GrupoDeEstruturasCriarPO extends TestBaseSteven{
 	}
 	
 	public boolean criar() {
+
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
+		driver.get(tc2);
+		sleep(6000);
 		grupodeestrutura.click();
 	
 		sleep(2000);

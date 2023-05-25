@@ -4,37 +4,33 @@
 	<test name="ADM - Configuração - Configuração de Tributos - Configuração de Mapeamenteo de Tributos">
 		<classes>
 				
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoDeMapeamentoDeTributo.ConfiguracaoDeMapeamentoDeTributoCriar"></class>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeMapeamentoDeTributo.ConfiguracaoDeMapeamentoDeTributoCriar"></class>
 		</classes>
 	</test> 	 	
 	<test name=" ADM -  Configuração > Configuração De Tributos - Configuração De Tipo Tributoo ">
 		<classes>
 				
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoDeTipoTributo.ConfiguracaoDeTipoTributoCriar"></class>
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoDeTipoTributo.ConfiguracaoDeTipoTributoEditar"></class>
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoDeTipoTributo.ConfiguracaoDeTipoTributoVisualizar"></class>
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoDeTipoTributo.ConfiguracaoDeTipoTributoFiltrosAvancados"></class>
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoDeTipoTributo.ConfiguracaoDeTipoTributoExcluir"></class>
-			
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTipoTributo.ConfiguracaoDeTipoTributotodasFunc"></class>
+		
 		</classes>
 	</test> 	
 	<test name="ADM - Configuração - Configuração de Tributos - Configuração de Tributo">
 		<classes>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoFiltrosAvançados"></class>
 				
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoCriar"></class>
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoEditar"></class>
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoVisualizar"></class>
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoFiltrosAvançados"></class>
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoExcluir"></class>
-			
+	<!--	<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoCriar"></class>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoEditar"></class>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoVisualizar"></class>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTributo.ConfiguracaoDeTributoExcluir"></class> -->
+		
 		</classes>
 	</test>
 	
 	<test name="ADM -  Configuração - Configuração de Tributos - Configuração de Tributo Grupo">
 		<classes>
 			
-			<class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoDeTributoGrupo.ConfiguracaoDeTributoGrupoCriar"></class>
-	        <class name="com.timp.test.ADM.Configuração.ConfiguraçãoDeTributos.ConfiguraçãoDeTributoGrupo.ConfiguracaoDeTributoGrupoEditar"></class>
+			<class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTributoGrupo.ConfiguracaoDeTributoGrupoTodasFunc"></class>
+		
 			
 		</classes>
 	</test>

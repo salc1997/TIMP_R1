@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
-import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoEditarPO;
+import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguracaoConfiguracaoEditarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -17,14 +17,14 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoEditar extends TestBaseStev
 
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
-	ParametrosGeraisConfiguraçãoConfiguraçãoEditarPO parametrosGeraisConfiguraçãoEditarPO;
+	ParametrosGeraisConfiguracaoConfiguracaoEditarPO parametrosGeraisConfiguraçãoEditarPO;
 	
   @BeforeClass
   public void beforeClass() {
 	driver = initialization();
 	loginTC = new LoginTC();
 	acessarBCBPO = new AcessarBCBPO();
-	parametrosGeraisConfiguraçãoEditarPO = new ParametrosGeraisConfiguraçãoConfiguraçãoEditarPO();
+	parametrosGeraisConfiguraçãoEditarPO = new ParametrosGeraisConfiguracaoConfiguracaoEditarPO();
   }
 
   @AfterClass

@@ -27,7 +27,7 @@ public class TestBaseEliel extends TestBaseSteven {
 
 	public WebDriver initializationE() {
 
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedrivers.exe");
 		
 		//Evita que el mensaje de "Chorme siendo controlado por un software de automatizacion" aprezca
 		ChromeOptions options = new ChromeOptions();

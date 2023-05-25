@@ -1,15 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+=======
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+>>>>>>> refs/remotes/origin/Yessy
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.BRB.AcessarBRB">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.BRB.CrescenteEDecrescente">
+=======
+<<<<<<< HEAD
+      <class name="com.timp.test.BRB.AcessarBRB">
+=======
+      <class name="com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID">
+>>>>>>> refs/remotes/origin/Yessy
+>>>>>>> refs/remotes/origin/Steven
+>>>>>>> refs/remotes/origin/Steven
         <methods>
+<<<<<<< HEAD
           <include name="brbEntrar"/>
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> refs/remotes/origin/Steven
           <include name="beforeClass"/>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> refs/remotes/origin/Steven
           <include name="afterClass"/>
+          <include name="brbEntrar"/>
         </methods>
       </class> <!-- com.timp.test.BRB.AcessarBRB -->
+<<<<<<< HEAD
+=======
+=======
+          <include name="filtro"/>
+>>>>>>> refs/remotes/origin/Steven
+          <include name="afterClass"/>
+          <include name="crescenteEDecrescente"/>
+          <include name="beforeClass"/>
+        </methods>
+<<<<<<< HEAD
+      </class> <!-- com.timp.test.BRB.CrescenteEDecrescente -->
+=======
+      </class> <!-- com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID -->
+>>>>>>> refs/remotes/origin/Yessy
+>>>>>>> refs/remotes/origin/Steven
+>>>>>>> refs/remotes/origin/Steven
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

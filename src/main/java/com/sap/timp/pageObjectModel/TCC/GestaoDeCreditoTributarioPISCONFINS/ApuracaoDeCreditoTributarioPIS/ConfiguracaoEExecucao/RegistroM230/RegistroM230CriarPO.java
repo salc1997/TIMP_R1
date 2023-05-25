@@ -182,7 +182,7 @@ public class RegistroM230CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC11.click();
+			OPC1.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -200,7 +200,7 @@ public class RegistroM230CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC11.click();
+			OPC1.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -218,7 +218,7 @@ public class RegistroM230CriarPO extends TestBaseMassiel{
 		if (tc2 == true) {
 
 
-			OPC11.click();
+			OPC1.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {

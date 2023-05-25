@@ -55,6 +55,7 @@ public class RRGConfiguracaoDeAjusteCriarComDiaAleatorioPO extends TestBaseFerna
 	}
 	
 	public boolean criarComDiaAleatorio() {
+		//TSTNG-444
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -163,7 +164,7 @@ public class RRGConfiguracaoDeAjusteCriarComDiaAleatorioPO extends TestBaseFerna
 			System.out.println("No se pudo crear el registro...");
 			sucesso = false;
 		}
-		
+
 		sleep(1000);
 		btnFechar.click();
 		

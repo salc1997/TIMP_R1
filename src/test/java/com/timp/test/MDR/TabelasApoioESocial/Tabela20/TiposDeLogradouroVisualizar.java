@@ -31,10 +31,11 @@ public class TiposDeLogradouroVisualizar extends TestBaseSteven {
 		tiposDeLogradouroVisualizarPO = new TiposDeLogradouroVisualizarPO();
 	}
 
-	@AfterClass
-	public void afterClass() {
-		driver.close();
-	}
+  @AfterClass
+  public void afterClass() {
+	  driver.close();
+  }
+
 
 	@Test()
 	public void visualizar() {

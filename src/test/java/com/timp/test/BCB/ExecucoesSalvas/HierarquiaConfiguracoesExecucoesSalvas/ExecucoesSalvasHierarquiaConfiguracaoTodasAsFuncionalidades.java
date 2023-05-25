@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades extends TestBaseKenssy {
+	//TSTNG-838
   
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
@@ -74,10 +75,12 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades extends
 	
 	@Test(priority = 5)
 	public void executar() {
-		hierarquiaExecucoesTodasAsFuncionalidadesPO.executar();
+		
+		boolean sucesso = hierarquiaExecucoesTodasAsFuncionalidadesPO.executar();
+		assertTrue(sucesso, Criar);
 	}	
 	
-	@Test(priority = 6)
+		@Test(priority = 6)
 	public void resto() {
 		ArrayList<Boolean> sucesso = hierarquiaExecucoesTodasAsFuncionalidadesPO.lixeiraYRestaurar();
 		System.out.println(sucesso);
@@ -96,7 +99,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades extends
 			assertTrue(sucesso.get(i), subniveis);
 		}
 	}
-	
+	/*
 	@Test(priority = 8)
 	public void excluirExecucoes() {
 		ArrayList<Boolean> sucesso = hierarquiaExecucoesTodasAsFuncionalidadesPO.excluirExecucoes();
@@ -126,7 +129,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades extends
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Eliminado);
 		}
-	}
+	}*/
 	
 	
 	

@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-25T16:05:06 UTC" name="Default suite" finished-at="2023-05-25T16:10:20 UTC" duration-ms="313825">
+  <suite started-at="2023-05-25T16:43:41 UTC" name="Default suite" finished-at="2023-05-25T16:46:00 UTC" duration-ms="138863">
     <groups>
     </groups>
-    <test started-at="2023-05-25T16:05:06 UTC" name="Default test" finished-at="2023-05-25T16:10:20 UTC" duration-ms="313825">
-      <class name="com.timp.test.BRB.CrescenteEDecrescente">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.CrescenteEDecrescente@61001b64]" started-at="2023-05-25T16:05:06 UTC" name="beforeClass" finished-at="2023-05-25T16:05:09 UTC" duration-ms="3319" status="PASS">
+    <test started-at="2023-05-25T16:43:41 UTC" name="Default test" finished-at="2023-05-25T16:46:00 UTC" duration-ms="138863">
+      <class name="com.timp.test.BRB.ExcluirRelatorio">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.ExcluirRelatorio@26e356f0]" started-at="2023-05-25T16:43:41 UTC" name="beforeClass" finished-at="2023-05-25T16:43:44 UTC" duration-ms="3226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="crescenteEDecrescente()[pri:0, instance:com.timp.test.BRB.CrescenteEDecrescente@61001b64]" started-at="2023-05-25T16:05:09 UTC" name="crescenteEDecrescente" finished-at="2023-05-25T16:10:20 UTC" duration-ms="310464" status="PASS">
+        <test-method signature="eliminar()[pri:0, instance:com.timp.test.BRB.ExcluirRelatorio@26e356f0]" started-at="2023-05-25T16:43:44 UTC" name="eliminar" finished-at="2023-05-25T16:45:07 UTC" duration-ms="82899" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- crescenteEDecrescente -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRB.CrescenteEDecrescente@61001b64]" started-at="2023-05-25T16:10:20 UTC" name="afterClass" finished-at="2023-05-25T16:10:20 UTC" duration-ms="1" status="PASS">
+        </test-method> <!-- eliminar -->
+        <test-method signature="eliminarLixeira()[pri:0, instance:com.timp.test.BRB.ExcluirRelatorio@26e356f0]" started-at="2023-05-25T16:45:07 UTC" name="eliminarLixeira" finished-at="2023-05-25T16:46:00 UTC" depends-on-methods="com.timp.test.BRB.ExcluirRelatorio.eliminar" duration-ms="52690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eliminarLixeira -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRB.ExcluirRelatorio@26e356f0]" started-at="2023-05-25T16:46:00 UTC" name="afterClass" finished-at="2023-05-25T16:46:00 UTC" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRB.CrescenteEDecrescente -->
+      </class> <!-- com.timp.test.BRB.ExcluirRelatorio -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

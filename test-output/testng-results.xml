@@ -1,162 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="16" passed="15" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2023-05-08T21:23:42Z" name="Default suite" finished-at="2023-05-08T21:29:50Z" duration-ms="367833">
-=======
-  <suite started-at="2023-05-08T17:43:01 UTC" name="Default suite" finished-at="2023-05-08T17:44:35 UTC" duration-ms="93452">
->>>>>>> refs/remotes/origin/Yessy
+  <suite started-at="2023-05-24T15:16:52 CST" name="Suite" finished-at="2023-05-24T15:32:35 CST" duration-ms="942571">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2023-05-08T21:23:42Z" name="Default test" finished-at="2023-05-08T21:29:50Z" duration-ms="367833">
-      <class name="com.timp.test.BRB.AcessarBRB">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.AcessarBRB@4a003cbe]" started-at="2023-05-08T21:23:42Z" name="beforeClass" finished-at="2023-05-08T21:23:47Z" duration-ms="4734" status="PASS">
-=======
-    <test started-at="2023-05-08T17:43:01 UTC" name="Default test" finished-at="2023-05-08T17:44:35 UTC" duration-ms="93452">
-      <class name="com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@61001b64]" started-at="2023-05-08T17:43:01 UTC" name="beforeClass" finished-at="2023-05-08T17:43:04 UTC" duration-ms="3123" status="PASS">
->>>>>>> refs/remotes/origin/Yessy
+    <test started-at="2023-05-24T15:16:52 CST" name="ATR - Arquivos" finished-at="2023-05-24T15:23:36 CST" duration-ms="403609">
+      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados@8f4ea7c]" started-at="2023-05-24T15:19:48 CST" name="beforeClass" finished-at="2023-05-24T15:20:05 CST" duration-ms="16815" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.AcessarBRB@4a003cbe]" started-at="2023-05-08T21:23:47Z" name="brbEntrar" finished-at="2023-05-08T21:29:50Z" duration-ms="363078" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id="home-icon"] (tried for 360 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //*[@id="home-icon"] (tried for 360 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-at com.sap.timp.base.TestBaseSteven.waitExpectXpath(TestBaseSteven.java:241)
-at com.sap.timp.pageObjectModel.ADM.LoginTC.login(LoginTC.java:39)
-at com.timp.test.BRB.AcessarBRB.brbEntrar(AcessarBRB.java:37)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=113.0.5672.63)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SALC-PC', ip: '192.168.0.22', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.63, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lezam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60104}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5873cc86bdb7609a6406267a1f0f1f3e
-*** Element info: {Using=xpath, value=//*[@id="home-icon"]}
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-... 26 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="filtroAvansado()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados@8f4ea7c]" started-at="2023-05-24T15:20:05 CST" name="filtroAvansado" finished-at="2023-05-24T15:21:18 CST" duration-ms="73131" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- brbEntrar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRB.AcessarBRB@4a003cbe]" started-at="2023-05-08T21:29:50Z" name="afterClass" finished-at="2023-05-08T21:29:50Z" duration-ms="2" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=113.0.5672.63)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SALC-PC', ip: '192.168.0.22', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.63, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lezam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60104}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5873cc86bdb7609a6406267a1f0f1f3e]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=113.0.5672.63)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SALC-PC', ip: '192.168.0.22', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.63, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lezam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60104}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5873cc86bdb7609a6406267a1f0f1f3e
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-at com.timp.test.BRB.AcessarBRB.afterClass(AcessarBRB.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- filtroAvansado -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados@8f4ea7c]" started-at="2023-05-24T15:21:18 CST" name="afterClass" finished-at="2023-05-24T15:21:18 CST" duration-ms="93" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.BRB.AcessarBRB -->
-=======
-        <test-method signature="filtro()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@61001b64]" started-at="2023-05-08T17:43:04 UTC" name="filtro" finished-at="2023-05-08T17:44:35 UTC" duration-ms="90287" status="FAIL">
+      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados -->
+      <class name="com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@35cabb2a]" started-at="2023-05-24T15:16:52 CST" name="beforeClass" finished-at="2023-05-24T15:17:05 CST" duration-ms="12471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="filtro()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@35cabb2a]" started-at="2023-05-24T15:17:05 CST" name="filtro" finished-at="2023-05-24T15:18:50 CST" duration-ms="105230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@35cabb2a]" started-at="2023-05-24T15:18:50 CST" name="afterClass" finished-at="2023-05-24T15:18:50 CST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID -->
+      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados@74fe5c40]" started-at="2023-05-24T15:22:15 CST" name="beforeClass" finished-at="2023-05-24T15:22:23 CST" duration-ms="8788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="filtro()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados@74fe5c40]" started-at="2023-05-24T15:22:23 CST" name="filtro" finished-at="2023-05-24T15:23:36 CST" duration-ms="72403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados@74fe5c40]" started-at="2023-05-24T15:23:36 CST" name="afterClass" finished-at="2023-05-24T15:23:36 CST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados -->
+      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE@223d2c72]" started-at="2023-05-24T15:18:50 CST" name="beforeClass" finished-at="2023-05-24T15:18:58 CST" duration-ms="8325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="filtro()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE@223d2c72]" started-at="2023-05-24T15:18:58 CST" name="filtro" finished-at="2023-05-24T15:19:48 CST" duration-ms="50078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE@223d2c72]" started-at="2023-05-24T15:19:48 CST" name="afterClass" finished-at="2023-05-24T15:19:48 CST" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE -->
+      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE@436813f3]" started-at="2023-05-24T15:21:18 CST" name="beforeClass" finished-at="2023-05-24T15:21:26 CST" duration-ms="7272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="filtro()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE@436813f3]" started-at="2023-05-24T15:21:26 CST" name="filtro" finished-at="2023-05-24T15:22:14 CST" duration-ms="48625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtro -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE@436813f3]" started-at="2023-05-24T15:22:14 CST" name="afterClass" finished-at="2023-05-24T15:22:15 CST" duration-ms="156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE -->
+    </test> <!-- ATR - Arquivos -->
+    <test started-at="2023-05-24T15:23:36 CST" name="ATR-ESTRUCTURAS-ESTRUCTURAS" finished-at="2023-05-24T15:25:52 CST" duration-ms="135753">
+      <class name="com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc@128d2484]" started-at="2023-05-24T15:23:36 CST" name="beforeClass" finished-at="2023-05-24T15:23:48 CST" duration-ms="12170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="Detalles()[pri:0, instance:com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc@128d2484]" started-at="2023-05-24T15:23:48 CST" name="Detalles" finished-at="2023-05-24T15:24:38 CST" duration-ms="50210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Detalles -->
+        <test-method signature="visualizarFiltros()[pri:0, instance:com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc@128d2484]" started-at="2023-05-24T15:24:38 CST" name="visualizarFiltros" finished-at="2023-05-24T15:25:09 CST" duration-ms="30332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visualizarFiltros -->
+        <test-method signature="visualizar()[pri:1, instance:com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc@128d2484]" started-at="2023-05-24T15:25:09 CST" name="visualizar" finished-at="2023-05-24T15:25:52 CST" duration-ms="43033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visualizar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc@128d2484]" started-at="2023-05-24T15:25:52 CST" name="afterClass" finished-at="2023-05-24T15:25:52 CST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc -->
+    </test> <!-- ATR-ESTRUCTURAS-ESTRUCTURAS -->
+    <test started-at="2023-05-24T15:25:52 CST" name="ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS" finished-at="2023-05-24T15:32:35 CST" duration-ms="403152">
+      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:25:52 CST" name="beforeClass" finished-at="2023-05-24T15:25:58 CST" duration-ms="6622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="criar()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:25:58 CST" name="criar" finished-at="2023-05-24T15:27:25 CST" duration-ms="86883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method signature="Editar()[pri:1, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:27:25 CST" name="Editar" finished-at="2023-05-24T15:28:57 CST" duration-ms="92299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Editar -->
+        <test-method signature="detalhes()[pri:2, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:28:57 CST" name="detalhes" finished-at="2023-05-24T15:29:27 CST" duration-ms="29790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- detalhes -->
+        <test-method signature="visualizar()[pri:3, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:29:27 CST" name="visualizar" finished-at="2023-05-24T15:30:05 CST" duration-ms="37427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visualizar -->
+        <test-method signature="filtro()[pri:4, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:30:05 CST" name="filtro" finished-at="2023-05-24T15:30:14 CST" duration-ms="9204" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Os resultados não são acorde aos filtros expected [true] but found [false]]]>
@@ -166,11 +133,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failNotEquals(Assert.java:1413)
 at org.testng.Assert.assertTrue(Assert.java:56)
-at com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID.filtro(CarregamentoDeArquivosFiltroPorID.java:49)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc.filtro(GrupoDeEstruturasTodasFunc.java:91)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
@@ -201,12 +166,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filtro -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@61001b64]" started-at="2023-05-08T17:44:35 UTC" name="afterClass" finished-at="2023-05-08T17:44:35 UTC" duration-ms="0" status="PASS">
+        <test-method signature="excluir()[pri:5, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:30:14 CST" name="excluir" finished-at="2023-05-24T15:30:44 CST" duration-ms="30179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluir -->
+        <test-method signature="criarMassa()[pri:6, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:30:44 CST" name="criarMassa" finished-at="2023-05-24T15:31:54 CST" duration-ms="70186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarMassa -->
+        <test-method signature="excluirMassa()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:31:54 CST" name="excluirMassa" finished-at="2023-05-24T15:32:35 CST" depends-on-methods="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc.criarMassa" duration-ms="40469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excluirMassa -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:32:35 CST" name="afterClass" finished-at="2023-05-24T15:32:35 CST" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID -->
->>>>>>> refs/remotes/origin/Yessy
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc -->
+    </test> <!-- ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS -->
+  </suite> <!-- Suite -->
 </testng-results>

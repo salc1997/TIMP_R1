@@ -54,7 +54,7 @@ public class TestBaseSteven  {
 	
 	public static WebDriver driver;
 	public String usuarioL = "TESTEAUTOMATIZADO";
-	public String senhaL = "Alltax2023";
+	public String senhaL = "Alltax20";
 	
 	public String usuarioLL = "kenssy.medina@agilesolutions.com";
 	public String senhaLL = "Gorgojita12";
@@ -66,7 +66,7 @@ public class TestBaseSteven  {
 		WebDriver driver;
 		
 		
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverst.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedrivers.exe");
 
 		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
 	

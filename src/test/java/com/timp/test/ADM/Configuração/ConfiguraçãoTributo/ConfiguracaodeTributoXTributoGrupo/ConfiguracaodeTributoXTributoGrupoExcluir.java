@@ -2,7 +2,7 @@ package com.timp.test.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaodeTributo
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseCristhian;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuração.ConfiguraçãoTributo.ConfiguracaodeTributoXTributoGrupo.ConfiguracaodeTributoXTributoGrupoEditarPO;
@@ -14,14 +14,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracaodeTributoXTributoGrupoExcluir extends TestBaseCristhian {
+public class ConfiguracaodeTributoXTributoGrupoExcluir extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	ConfiguracaodeTributoXTributoGrupoExcluirPO configuraçãodeTributoXTributoGrupoExcluirPO;
 	
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationC();
+	  driver = initialization();
 	  loginTC = new LoginTC();
 	  acessarADMPO = new AcessarADMPO();
 	  configuraçãodeTributoXTributoGrupoExcluirPO = new ConfiguracaodeTributoXTributoGrupoExcluirPO();

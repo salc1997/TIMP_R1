@@ -7,9 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKenssy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegrasDeNegocioDetalhesPO  extends TestBaseKenssy{
+
+
+public class RegrasDeNegocioDetalhesPO  extends TestBaseSteven{
 
 	@FindBy(xpath = "//span[text()=\"Regras de Negócio\"]")
 	public WebElement regrasdenegocio;

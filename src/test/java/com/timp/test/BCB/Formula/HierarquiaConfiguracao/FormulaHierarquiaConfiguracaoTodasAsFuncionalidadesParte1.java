@@ -2,7 +2,8 @@ package com.timp.test.BCB.Formula.HierarquiaConfiguracao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
 import com.sap.timp.pageObjectModel.BCB.Formula.HierarquiaConfiguracao.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO;
@@ -16,7 +17,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends TestBaseKenssy {
+public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends TestBaseSteven {
 	//TSTNG-855
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
@@ -25,7 +26,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends T
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBCBPO = new AcessarBCBPO();
 		formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO = new FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO();

@@ -6,9 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.base.TestBaseKenssy;
 
-public class PainelBCEConfiguracaoEExecucaoExcecutarPO extends TestBaseKenssy {
+
+public class PainelBCEConfiguracaoEExecucaoExcecutarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-bce\"]")
 	public WebElement bancoCreditoExtemporaneo;

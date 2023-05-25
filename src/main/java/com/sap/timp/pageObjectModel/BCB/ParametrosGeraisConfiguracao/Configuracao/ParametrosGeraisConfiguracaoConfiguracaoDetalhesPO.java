@@ -8,9 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKenssy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ParametrosGeraisConfiguracaoConfiguracaoDetalhesPO extends TestBaseKenssy {
+
+
+public class ParametrosGeraisConfiguracaoConfiguracaoDetalhesPO extends TestBaseSteven {
 
 	// Configuracao
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][2]")

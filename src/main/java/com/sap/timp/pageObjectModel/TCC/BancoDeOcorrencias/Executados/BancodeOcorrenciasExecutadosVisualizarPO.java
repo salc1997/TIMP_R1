@@ -1,7 +1,7 @@
 package com.sap.timp.pageObjectModel.TCC.BancoDeOcorrencias.Executados;
 
-import com.sap.timp.base.TestBaseKenssy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class BancodeOcorrenciasExecutadosVisualizarPO extends TestBaseKenssy{
+public class BancodeOcorrenciasExecutadosVisualizarPO extends TestBaseSteven{
 
 }

@@ -2,7 +2,8 @@ package com.timp.test.TCM.Configuracao.ModeloDeDados;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCM.AcessarTCMPO;
 import com.sap.timp.pageObjectModel.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriarPO;
@@ -14,14 +15,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracaoModeloDeDadosEditar extends TestBaseKenssy {
+public class ConfiguracaoModeloDeDadosEditar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTCMPO acessarTCMPO;
 	ConfiguracaoModeloDeDadosEditarPO configuracaoModeloDeDadosEditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCMPO = new AcessarTCMPO();
 		configuracaoModeloDeDadosEditarPO = new ConfiguracaoModeloDeDadosEditarPO();

@@ -6,9 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKenssy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class EmprestimosCriarPO extends TestBaseKenssy {
+
+
+public class EmprestimosCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//span[text()=\"Thin Capitalization\"]")
 	public WebElement thinCapitalization;
 	

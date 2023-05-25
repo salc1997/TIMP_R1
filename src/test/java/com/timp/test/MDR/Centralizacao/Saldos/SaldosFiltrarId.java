@@ -2,7 +2,8 @@ package com.timp.test.MDR.Centralizacao.Saldos;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Centralizacao.Saldos.SaldosFiltrarIdPO;
@@ -13,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class SaldosFiltrarId extends TestBaseKenssy {
+public class SaldosFiltrarId extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -21,7 +22,7 @@ public class SaldosFiltrarId extends TestBaseKenssy {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		saldosFiltrarIdPO = new SaldosFiltrarIdPO();

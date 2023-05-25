@@ -2,7 +2,8 @@ package com.timp.test.MDR.Centralizacao.Saldos;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoDetalhesPO;
@@ -16,7 +17,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class SaldosDetalhes extends TestBaseKenssy{
+public class SaldosDetalhes extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	SaldosDetalhesPO saldosDetalhesPO;
@@ -24,7 +25,7 @@ public class SaldosDetalhes extends TestBaseKenssy{
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		saldosDetalhesPO = new SaldosDetalhesPO();

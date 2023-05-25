@@ -2,7 +2,8 @@ package com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioDetalhesPO;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
@@ -15,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class RegrasDeNegocioDetalhes extends TestBaseKenssy {
+public class RegrasDeNegocioDetalhes extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasDeNegocioDetalhesPO regrasDeNegocioDetalhesPO;
@@ -23,7 +24,7 @@ public class RegrasDeNegocioDetalhes extends TestBaseKenssy {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		regrasDeNegocioDetalhesPO = new RegrasDeNegocioDetalhesPO();

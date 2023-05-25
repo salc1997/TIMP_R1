@@ -8,9 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKenssy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TabelaComplementarParaDIRFFiltrosAvanPO extends TestBaseKenssy {
+
+
+public class TabelaComplementarParaDIRFFiltrosAvanPO extends TestBaseSteven {
 	String URL = driver.getCurrentUrl();
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")

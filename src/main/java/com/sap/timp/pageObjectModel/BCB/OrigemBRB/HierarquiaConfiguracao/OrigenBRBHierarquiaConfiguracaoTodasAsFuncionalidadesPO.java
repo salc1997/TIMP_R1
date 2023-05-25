@@ -8,9 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKenssy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseKenssy {
+
+
+public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseSteven {
 	//TSTNG-1238
 	//NUEVA CONFIGURACION HIERARQUIA
 		@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][1]")

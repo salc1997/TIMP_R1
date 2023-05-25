@@ -11,9 +11,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.IFactoryAnnotation;
 
-import com.sap.timp.base.TestBaseKenssy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TarefasMultiplasEstagiosPO extends TestBaseKenssy  {
+
+
+public class TarefasMultiplasEstagiosPO extends TestBaseSteven  {
 
 	@FindBy(xpath = "//span[text()=\"Processo de negócio\"]")
 	public WebElement procesoNegocio;

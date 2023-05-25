@@ -8,9 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKenssy;
 
-public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends TestBaseKenssy{
+import com.sap.timp.base.TestBaseSteven;
+
+public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends TestBaseSteven{
 	//TSTNG-855	//TSTNG-855
 
 	//HIERARQUIAS

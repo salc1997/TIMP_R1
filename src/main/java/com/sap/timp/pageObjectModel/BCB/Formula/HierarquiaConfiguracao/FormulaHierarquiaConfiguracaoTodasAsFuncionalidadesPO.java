@@ -9,9 +9,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeClass;
 
-import com.sap.timp.base.TestBaseKenssy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseKenssy  {
+
+
+public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBaseSteven  {
 	//NUEVA CONFIGURACION HIERARQUIA
 		@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][1]")
 		public WebElement hierarquias;

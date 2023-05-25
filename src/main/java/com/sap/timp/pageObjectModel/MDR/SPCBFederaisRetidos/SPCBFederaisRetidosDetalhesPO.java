@@ -7,9 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKenssy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class SPCBFederaisRetidosDetalhesPO extends TestBaseKenssy {
+
+
+public class SPCBFederaisRetidosDetalhesPO extends TestBaseSteven {
 
 	@FindBy(xpath = "//span[text()=\"SPCB - Federais Retidos\"]")
 	public WebElement SPGB;

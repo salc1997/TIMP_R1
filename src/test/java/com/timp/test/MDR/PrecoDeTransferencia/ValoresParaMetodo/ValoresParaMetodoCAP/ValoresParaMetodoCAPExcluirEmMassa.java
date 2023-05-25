@@ -2,7 +2,8 @@ package com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMeto
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoCAP.ValoresParaMetodoCAPExcluirEmMassaPO;
@@ -13,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ValoresParaMetodoCAPExcluirEmMassa extends TestBaseKenssy{
+public class ValoresParaMetodoCAPExcluirEmMassa extends TestBaseSteven{
  
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
@@ -21,7 +22,7 @@ public class ValoresParaMetodoCAPExcluirEmMassa extends TestBaseKenssy{
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		accesarMDR = new AcessarMDRPO();
 		valoresParaMetodoCAPExcluirEmMassaPO = new ValoresParaMetodoCAPExcluirEmMassaPO();

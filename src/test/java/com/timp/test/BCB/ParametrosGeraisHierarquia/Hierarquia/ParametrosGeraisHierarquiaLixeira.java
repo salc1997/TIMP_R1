@@ -2,7 +2,8 @@ package com.timp.test.BCB.ParametrosGeraisHierarquia.Hierarquia;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
 import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisHierarquia.Hierarquia.ParametrosGeraisHierarquiaExcluirSelectFlagPO;
@@ -14,7 +15,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrosGeraisHierarquiaLixeira extends TestBaseKenssy {
+public class ParametrosGeraisHierarquiaLixeira extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
 	ParametrosGeraisHierarquiaLixeiraPO parametrosGeraisHierarquiaLixeiraPO;
@@ -22,7 +23,7 @@ public class ParametrosGeraisHierarquiaLixeira extends TestBaseKenssy {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBCBPO = new AcessarBCBPO();
 		parametrosGeraisHierarquiaLixeiraPO = new ParametrosGeraisHierarquiaLixeiraPO();

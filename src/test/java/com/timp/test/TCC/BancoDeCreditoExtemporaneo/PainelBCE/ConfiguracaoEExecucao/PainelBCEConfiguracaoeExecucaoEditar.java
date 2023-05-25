@@ -2,7 +2,8 @@ package com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExec
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExecucao.PainelBCEConfiguracaoeExecucaoEditarPO;
@@ -15,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class PainelBCEConfiguracaoeExecucaoEditar extends TestBaseKenssy{
+public class PainelBCEConfiguracaoeExecucaoEditar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	PainelBCEConfiguracaoeExecucaoEditarPO painelBCEConfiguracaoeExecucaoEditarPO;
@@ -23,7 +24,7 @@ public class PainelBCEConfiguracaoeExecucaoEditar extends TestBaseKenssy{
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		painelBCEConfiguracaoeExecucaoEditarPO = new PainelBCEConfiguracaoeExecucaoEditarPO();

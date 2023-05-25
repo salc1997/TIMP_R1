@@ -2,7 +2,8 @@ package com.timp.test.DFG.Leiautes;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.Leiautes.ExecucacoMapeamentoDoSPEDPO;
@@ -15,14 +16,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ExecucacoMapeamentoDoSPED extends TestBaseKenssy {
+public class ExecucacoMapeamentoDoSPED extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
 	ExecucacoMapeamentoDoSPEDPO execucacoMapeamentoDoSPEDPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarDFGPO = new AcessarDFGPO();
 		execucacoMapeamentoDoSPEDPO = new ExecucacoMapeamentoDoSPEDPO();

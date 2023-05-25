@@ -2,7 +2,8 @@ package com.timp.test.MDR.DeXParaM010PlanodeContasSocietario;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.DeXParaM010PlanodeContasSocietario.DeXParaM010PlanodeContasSocietarioExcluirEmMassaPO;
@@ -13,14 +14,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class DeXParaM010PlanodeContasSocietarioExcluirEmMassa extends TestBaseKenssy {
+public class DeXParaM010PlanodeContasSocietarioExcluirEmMassa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	DeXParaM010PlanodeContasSocietarioExcluirEmMassaPO deXParaM010PlanodeContasSocietarioExcluirEmMassaPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		accesarMDR = new AcessarMDRPO();
 		deXParaM010PlanodeContasSocietarioExcluirEmMassaPO = new DeXParaM010PlanodeContasSocietarioExcluirEmMassaPO();

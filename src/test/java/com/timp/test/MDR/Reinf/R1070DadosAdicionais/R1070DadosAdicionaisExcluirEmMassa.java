@@ -2,7 +2,8 @@ package com.timp.test.MDR.Reinf.R1070DadosAdicionais;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluirEmMassaPO;
@@ -14,14 +15,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class R1070DadosAdicionaisExcluirEmMassa extends TestBaseKenssy{
+public class R1070DadosAdicionaisExcluirEmMassa extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	R1070DadosAdicionaisExcluirEmMassaPO r1070DadosAdicionaisExcluirEmMassaPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		accesarMDR = new AcessarMDRPO();
 		r1070DadosAdicionaisExcluirEmMassaPO = new R1070DadosAdicionaisExcluirEmMassaPO();

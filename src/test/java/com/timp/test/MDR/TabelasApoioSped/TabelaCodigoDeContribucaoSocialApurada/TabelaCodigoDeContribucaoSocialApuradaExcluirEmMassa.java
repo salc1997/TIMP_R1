@@ -2,7 +2,8 @@ package com.timp.test.MDR.TabelasApoioSped.TabelaCodigoDeContribucaoSocialApurad
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.TabelaCodigoDeContribucaoSocialApurada.TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassaPO;
@@ -13,14 +14,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa extends TestBaseKenssy {
+public class TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassaPO tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassaPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		accesarMDR = new AcessarMDRPO();
 		tabelaCodigoDeContribucaoSocialApuradaExcluirEmMassaPO = new TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassaPO();

@@ -5,9 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKenssy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class S2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorIDPO extends TestBaseKenssy {
+
+
+public class S2240CondiçõesAmbDoTrabFatDeRiscoFiltroPorIDPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[@class=\"accordion-container\"]/ul/li/div/span[text()=\"Eventos e-Social\"]")
 	public WebElement menuEventosEsocial;
 	

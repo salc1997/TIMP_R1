@@ -8,9 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKenssy;
 
-public class ParametrosGeraisFiltrosAvanzadosPO extends TestBaseKenssy {
+import com.sap.timp.base.TestBaseSteven;
+
+public class ParametrosGeraisFiltrosAvanzadosPO extends TestBaseSteven {
 	@FindBy(xpath = "//span[text()=\"Processo de negócio\"]")
 	public WebElement procesoNegocio;
 	

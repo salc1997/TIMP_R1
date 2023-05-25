@@ -9,9 +9,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeClass;
 
-import com.sap.timp.base.TestBaseKenssy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class LeiautesExecucaoFuncionalidades4PO extends TestBaseKenssy{
+
+
+public class LeiautesExecucaoFuncionalidades4PO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Raiz\"]")
 	public WebElement raiz;
 	@FindBy(xpath = "//button/span[text()=\"Novo Leiaute\"]")

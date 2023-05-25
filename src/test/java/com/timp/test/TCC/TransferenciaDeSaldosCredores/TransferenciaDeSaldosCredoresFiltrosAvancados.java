@@ -2,7 +2,8 @@ package com.timp.test.TCC.TransferenciaDeSaldosCredores;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.TransferenciaDeSaldosCredores.TransferenciaDeSaldosCredoresFiltroPorIdPO;
@@ -16,7 +17,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class TransferenciaDeSaldosCredoresFiltrosAvancados extends TestBaseKenssy{
+public class TransferenciaDeSaldosCredoresFiltrosAvancados extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	TransferenciaDeSaldosCredoresFiltrosAvancadosPO transferenciaDeSaldosCredoresFiltrosAvancadosPO;
@@ -24,7 +25,7 @@ public class TransferenciaDeSaldosCredoresFiltrosAvancados extends TestBaseKenss
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		transferenciaDeSaldosCredoresFiltrosAvancadosPO = new TransferenciaDeSaldosCredoresFiltrosAvancadosPO();

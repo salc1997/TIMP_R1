@@ -2,7 +2,8 @@ package com.timp.test.TDK.Execucoes.Lixeira;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Execucoes.Lixeira.LixeiraExcluirEmMassaPO;
@@ -16,14 +17,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class LixeiraExcluirEmMassa extends TestBaseKenssy {
+public class LixeiraExcluirEmMassa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	LixeiraExcluirEmMassaPO lixeiraExcluirEmMassaPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		lixeiraExcluirEmMassaPO = new LixeiraExcluirEmMassaPO();

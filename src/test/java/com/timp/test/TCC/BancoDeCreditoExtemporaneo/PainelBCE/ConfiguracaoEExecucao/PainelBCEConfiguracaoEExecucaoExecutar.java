@@ -7,12 +7,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.base.TestBaseKenssy;
+
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExecucao.PainelBCEConfiguracaoEExecucaoExcecutarPO;
 
-public class PainelBCEConfiguracaoEExecucaoExecutar extends TestBaseKenssy {
+public class PainelBCEConfiguracaoEExecucaoExecutar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
@@ -20,7 +20,7 @@ public class PainelBCEConfiguracaoEExecucaoExecutar extends TestBaseKenssy {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		painelBCEConfiguracaoEExecucaoExcecutarPO = new PainelBCEConfiguracaoEExecucaoExcecutarPO();

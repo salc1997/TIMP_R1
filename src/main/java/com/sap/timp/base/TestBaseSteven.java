@@ -13,8 +13,10 @@ import java.time.Month;
 import java.time.format.TextStyle;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -22,7 +24,6 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.util.prefs.Preferences;
-
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -33,9 +34,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import java.util.Hashtable;
+import java.text.DateFormat;
 
-
-public class TestBaseSteven  {
+public class TestBaseSteven {
 
 	// TC2
 	protected String tc2 = "http://as1-100-01-tc2:8000/timp/login/#/login";
@@ -43,60 +45,61 @@ public class TestBaseSteven  {
 	protected String td1 = "http://as1-100-01-td1:8000/timp/login/#/login";
 
 	protected String tq1 = "http://as1-100-01-tq1:8000/timp/login/#/login";
-	
+
 	protected String tq2 = "http://as1-100-01-tq2:8000/timp/login/#/login";
 
 	protected String tp1 = "http://as1-100-01-tp1:8000/timp/login/#/login";
-	
+
 	protected String td2 = "http://as1-100-01-td2:8000/timp/login/#/login";
-	
+
 	protected String cloud = "https://timp.authentication.eu10.hana.ondemand.com/login";
-	
+
 	public static WebDriver driver;
 	public String usuarioL = "TESTEAUTOMATIZADO";
 	public String senhaL = "Alltax20";
-	
+
 	public String usuarioLL = "kenssy.medina@agilesolutions.com";
 	public String senhaLL = "Gorgojita12";
-	
+
 	public int menuT = 12000;
 
 	public WebDriver initialization() {
 
 		WebDriver driver;
-		
-		
+
 		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedrivers.exe");
 
-		//System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriverX86.exe");
-	
+		// System.setProperty("webdriver.chrome.driver",
+		// "./src/test/resources/chromedriver/chromedriverX86.exe");
+
 		ChromeOptions options = new ChromeOptions();
-		//options.setBinary("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
-		//driver = new ChromeDriver(options);
-        //  // options.addArguments("--headless");
-        // para que las pesta�as no se habiliten
-        //options.addArguments("start-maximized"); // open Browser in maximized mode
-        //options.addArguments("disable-infobars"); // disabling infobars
-        //options.addArguments("--disable-extensions"); // disabling extensions
-        //options.addArguments("--disable-gpu"); // applicable to windows os only
-        //options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-        //driver = new ChromeDriver(options);
+		// options.setBinary("C:\\Program Files
+		// (x86)\\Google\\Chrome\\Application\\chrome.exe");
+		// driver = new ChromeDriver(options);
+		// // options.addArguments("--headless");
+		// para que las pesta�as no se habiliten
+		// options.addArguments("start-maximized"); // open Browser in maximized mode
+		// options.addArguments("disable-infobars"); // disabling infobars
+		// options.addArguments("--disable-extensions"); // disabling extensions
+		// options.addArguments("--disable-gpu"); // applicable to windows os only
+		// options.addArguments("--disable-dev-shm-usage"); // overcome limited resource
+		// problems
+		// driver = new ChromeDriver(options);
 
 		options.addArguments("disable-infobars");
 		options.setExperimentalOption("useAutomationExtension", false);
-		
+
 		Map<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("credentials_enable_service", false);
 		prefs.put("profile.password_manager_enabled", false);
 		options.setExperimentalOption("prefs", prefs);
-		
-		options.setExperimentalOption("excludeSwitches",Collections.singletonList("enable-automation"));
+
+		options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("--disable-extensions");
-        
+
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
-		
 
 		driver.get(tc2);
 
@@ -105,64 +108,62 @@ public class TestBaseSteven  {
 
 	public void fecharMensagens(String rows, String xpath) {
 		int rowsR = driver.findElements(By.xpath(xpath)).size();
-		
-		
+
 		if (rowsR > 0) {
 			WebElement fechar = driver.findElement(By.xpath(xpath));
 			fechar.click();
 		}
 		sleep(2000);
-		
+
 		rowsR = driver.findElements(By.xpath(xpath)).size();
-		
+
 		while (rowsR > 0) {
-			
+
 			WebElement fechar = driver.findElement(By.xpath(xpath));
 			fechar.click();
-			
+
 			rowsR = driver.findElements(By.xpath(xpath)).size();
 			sleep(2000);
 		}
-		
-		
+
 	}
-	//funcion para vaidar que la fecha de  detalle tenga el formato de DD/MM/YY
+
+	// funcion para vaidar que la fecha de detalle tenga el formato de DD/MM/YY
 	public boolean validarFecha(String fecha) {
-	        try {
-	            SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy");
-	            formatoFecha.setLenient(false);
-	            formatoFecha.parse(fecha);
-	        } catch (ParseException e) {
-	            return false;
-	        }
-	        return true;
-	 }
-	
+		try {
+			SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy");
+			formatoFecha.setLenient(false);
+			formatoFecha.parse(fecha);
+		} catch (ParseException e) {
+			return false;
+		}
+		return true;
+	}
+
 	public void refresh() {
 		driver.navigate().refresh();
 	}
-	
+
 	public String url() {
 		return driver.getCurrentUrl();
 	}
+
 	public int rows(String element) {
-		
+
 		int rows = driver.findElements(By.xpath(element)).size();
-		
+
 		return rows;
-		
+
 	}
-	
+
 	public void invisibilityOfElementOverlay() {
-		
-		
+
 		WebDriverWait wait = new WebDriverWait(driver, 360);
-		
+
 		sleep(3000);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class=\"overlay loader dark\"]")));
 		sleep(2000);
 
-		
 	}
 
 	public void sleep(int miliSeconds) {
@@ -172,79 +173,76 @@ public class TestBaseSteven  {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public Boolean igualInt(int valor, int esperado) {
-		
+
 		boolean sucesso = false;
 		if (valor == esperado) {
 			sucesso = true;
-		}else {
+		} else {
 			sucesso = false;
 		}
-		
+
 		return sucesso;
 	}
-	
-	
+
 	public Boolean igualDobule(double valor, double esperado) {
-		
+
 		boolean sucesso = false;
 		if (valor == esperado) {
 			sucesso = true;
-		}else {
+		} else {
 			sucesso = false;
 		}
-		
+
 		return sucesso;
 	}
-	
+
 	public Boolean diferenteDe(double valor, double esperado) {
-		
+
 		boolean sucesso = false;
 		if (valor != esperado) {
 			sucesso = true;
-		}else {
+		} else {
 			sucesso = false;
 		}
-		
+
 		return sucesso;
 	}
-	
+
 	public boolean isNum(String strNum) {
-	    boolean ret = true;
-	    try {
+		boolean ret = true;
+		try {
 
-	        Double.parseDouble(strNum);
+			Double.parseDouble(strNum);
 
-	    }catch (NumberFormatException e) {
-	        ret = false;
-	    }
-	    return ret;
+		} catch (NumberFormatException e) {
+			ret = false;
+		}
+		return ret;
 	}
-	
-	
-	
-	public Boolean mayorQue(double mayor, double menor ) {
-		
+
+	public Boolean mayorQue(double mayor, double menor) {
+
 		boolean sucesso = false;
 		if (mayor > menor) {
 			sucesso = true;
-		}else {
+		} else {
 			sucesso = false;
 		}
-		
+
 		return sucesso;
 	}
-	
-	public Boolean menorQue(double mayor, double menor ) {
-		
+
+	public Boolean menorQue(double mayor, double menor) {
+
 		boolean sucesso = false;
 		if (menor < mayor) {
 			sucesso = true;
-		}else {
+		} else {
 			sucesso = false;
 		}
-		
+
 		return sucesso;
 	}
 
@@ -254,29 +252,28 @@ public class TestBaseSteven  {
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator)));
 
 	}
-	
+
 	public String remplazarPuntos(String valor) {
-		
+
 		valor = valor.replace(".", "");
 
 		return valor;
 
 	}
-	
+
 	public String remplazarComas(String valor) {
-		
+
 		valor = valor.replace(",", ".");
-		
+
 		return valor;
-		
-		
+
 	}
-	
+
 	public String formatear(String valor) {
-		
+
 		valor = valor.replace(".", "");
 		valor = valor.replace(",", ".");
-		
+
 		return valor;
 	}
 
@@ -290,8 +287,7 @@ public class TestBaseSteven  {
 	public void actionsMoveToElementXpath(String xpath) {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(driver.findElement(By.xpath(xpath))).perform();
-	
-	
+
 	}
 
 	public void actionsMoveToElementElement(WebElement element) {
@@ -301,7 +297,7 @@ public class TestBaseSteven  {
 
 	public void invisibilityOfElement(String xpath) {
 		WebDriverWait wait = new WebDriverWait(driver, 360);
-				 
+
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(xpath)));
 
 	}
@@ -360,7 +356,6 @@ public class TestBaseSteven  {
 		return df.format(ayer);
 
 	}
-	
 
 	public String fechaManana() {
 
@@ -381,40 +376,39 @@ public class TestBaseSteven  {
 		return result;
 
 	}
-	
+
 	public String getText(WebElement element) {
 
 		String texto = element.getText();
-		
-		if (texto.isEmpty()==true) {
+
+		if (texto.isEmpty() == true) {
 			texto = "vazio";
 		}
-		
+
 		return texto;
 
 	}
-	
+
 	public String textContent(WebElement element) {
 
 		String texto = element.getAttribute("textContent");
-		
+
 		return texto;
 
 	}
-	
+
 	public String getValue(WebElement element) {
 
 		String texto = element.getAttribute("value");
-		
-		if (texto.isEmpty()==true) {
+
+		if (texto.isEmpty() == true) {
 			texto = "vazio";
 		}
-		
+
 		return texto;
 
 	}
-	
-	
+
 	public int convertToInt(String numero) {
 
 		int result = new Integer(numero);
@@ -462,14 +456,14 @@ public class TestBaseSteven  {
 		return contar;
 
 	}
-	
-	public void idInserir(String nome,String idRegistro) {
+
+	public void idInserir(String nome, String idRegistro) {
 		Preferences id = Preferences.userRoot();
 
 		id.put(nome, idRegistro);
-		
+
 	}
-	
+
 	public String idObter(String nome) {
 
 		Preferences id = Preferences.userRoot();
@@ -561,7 +555,7 @@ public class TestBaseSteven  {
 		return idReturn;
 
 	}
-	
+
 	public void idInserir5(String idRegistro) {
 
 		Preferences id = Preferences.userRoot();
@@ -581,8 +575,7 @@ public class TestBaseSteven  {
 		return idReturn;
 
 	}
-	
-	
+
 	public void idInserir6(String idRegistro) {
 
 		Preferences id = Preferences.userRoot();
@@ -606,47 +599,45 @@ public class TestBaseSteven  {
 	public void quit() {
 		driver.close();
 	}
-	
-	
+
 	public String ordenar(String dato) {
-		
+
 		String recorrer = dato;
-		
-	    String[] recorrer2 = recorrer.split("");
 
-	    Arrays.sort(recorrer2);
+		String[] recorrer2 = recorrer.split("");
 
-	    String sorted = "";
+		Arrays.sort(recorrer2);
 
-	    for(int i =0;i<recorrer2.length;i++){
+		String sorted = "";
 
-	      sorted += recorrer2[i];
-	    
-	    }
-		
-		return sorted; 
+		for (int i = 0; i < recorrer2.length; i++) {
+
+			sorted += recorrer2[i];
+
+		}
+
+		return sorted;
 	}
-	
+
 	public void closeSelectTypeCheckbox(WebElement element) {
 		new Actions(driver).moveToElement(element).click().perform();
 	}
-	
+
 	public void closeSelect(WebElement element) {
 		new Actions(driver).moveToElement(element).click().perform();
 	}
-	
-	public String capitalize(String 
-			cadena) {
+
+	public String capitalize(String cadena) {
 		String[] split = cadena.split("");
-        for (int i = 0; i < split.length; i++) {
-            if(i == 0 || split[i-1].equals(" ")) {
-                split[i] = split[i].toUpperCase();
-            }
-        }
-        
-        return String.join("", split);
+		for (int i = 0; i < split.length; i++) {
+			if (i == 0 || split[i - 1].equals(" ")) {
+				split[i] = split[i].toUpperCase();
+			}
+		}
+
+		return String.join("", split);
 	}
-	
+
 	public String mesActual() {
 		// Obtienes el mes actual
 		Month mes = LocalDate.now().getMonth();
@@ -654,21 +645,72 @@ public class TestBaseSteven  {
 		// Obtienes el nombre del mes
 		String nombreMes = mes.getDisplayName(TextStyle.FULL, new Locale("es", "ES"));
 		nombreMes = capitalize(nombreMes);
-		
+
 		return nombreMes;
 	}
-	
+
 	public String anioActual() {
 		// Obtienes el mes actual
 		int anio = LocalDate.now().getYear();
+
+		String anioString = String.valueOf(anio);
+		return anioString;
+	}
+
+	public String dataanterior() {
+
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+		Calendar cal = Calendar.getInstance();
+		cal.add(Calendar.DAY_OF_MONTH, -1);
+
+		return df.format(cal.getTime());
+
+	}
+	
+	public String diaHoy() {
+		Calendar c1 = Calendar.getInstance();
+		Calendar c2 = new GregorianCalendar();
+		
+		String dia = Integer.toString(c2.get(Calendar.DATE));
+		
+
+		return dia;
+
+	}
+	
+	public String diaActual() {
+		// Obtienes el mes actual
+		int anio = LocalDate.now().getDayOfMonth();
 		
 		String anioString = String.valueOf(anio);
 		return anioString;
 	}
 	
+	public String diaDespues() {
+		DateFormat df = new SimpleDateFormat ("dd");
+		Calendar cal = Calendar.getInstance();
+		cal.add (Calendar.DATE, +1);
+		
+		return df.format(cal.getTime());
+	}
 	
-
 	
+	public String getCodeMonthByMonth(String mes){
+	    Hashtable<String, String> meses = new Hashtable<String, String>();
+        meses.put("Janeiro","01");
+        meses.put("Fevereiro","02");
+        meses.put("Março","03");
+        meses.put("Abril","04");
+        meses.put("Maio","05");
+        meses.put("Junho","06");
+        meses.put("Julho","07");
+        meses.put("Agosto","08");
+        meses.put("Setembro","09");
+        meses.put("Outubro","10");
+        meses.put("Novembro","11");
+        meses.put("Dezembro","12");
+        return meses.get(mes);
+	}
 	
 
 	// BRB
@@ -716,19 +758,15 @@ public class TestBaseSteven  {
 	public String Criar = "O registro n�o foi criado com sucesso";
 	public String Eliminado = "O registro n�o foi eliminado com sucesso";
 	public String Detalhes = "As informa��es n�o s�o as esperadas";
-	
+
 	public String Atualizar = "N�o foi possivel atualizar os registros";
 	public String Favoritos = "N�o foi possivel mandar o registro para favoritos";
 	public String Ingresar = "Error ao tentar ingresar";
-	
-	
-	//BCB
-	public String subniveis = "Os Subniveis n�o foram adicinados com sucesso";
-	public String Acessar = "Erro ao tentar acessar ao componente";	
-	
-	
-	
-	public String Restaurar = "O registro n�o foi restaurado com sucesso";
-	
-}
 
+	// BCB
+	public String subniveis = "Os Subniveis n�o foram adicinados com sucesso";
+	public String Acessar = "Erro ao tentar acessar ao componente";
+
+	public String Restaurar = "O registro n�o foi restaurado com sucesso";
+
+}

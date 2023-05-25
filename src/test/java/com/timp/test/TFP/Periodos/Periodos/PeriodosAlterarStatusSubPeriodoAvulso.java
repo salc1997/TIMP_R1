@@ -2,7 +2,8 @@ package com.timp.test.TFP.Periodos.Periodos;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 import com.sap.timp.pageObjectModel.TFP.Periodos.Periodos.PeriodosAlterarStatusSubPeriodoAvulsoPO;
@@ -16,14 +17,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class PeriodosAlterarStatusSubPeriodoAvulso extends TestBaseKenssy{
+public class PeriodosAlterarStatusSubPeriodoAvulso extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarTFPPO acessarTFPPO;
 	PeriodosAlterarStatusSubPeriodoAvulsoPO periodoAlterarStatusSubPeriodoAvulsoPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTFPPO = new AcessarTFPPO();
 		periodoAlterarStatusSubPeriodoAvulsoPO = new PeriodosAlterarStatusSubPeriodoAvulsoPO();

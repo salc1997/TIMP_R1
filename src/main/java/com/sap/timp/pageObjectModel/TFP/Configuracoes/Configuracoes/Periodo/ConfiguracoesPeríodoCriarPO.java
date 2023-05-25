@@ -6,10 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKenssy;
-import com.sap.timp.base.TestBaseMassiel;
 
-public class ConfiguracoesPeríodoCriarPO extends TestBaseKenssy{
+import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
+
+public class ConfiguracoesPeríodoCriarPO extends TestBaseSteven{
 
 
 	@FindBy(xpath = "//span[text()=\"Configurações\"]")

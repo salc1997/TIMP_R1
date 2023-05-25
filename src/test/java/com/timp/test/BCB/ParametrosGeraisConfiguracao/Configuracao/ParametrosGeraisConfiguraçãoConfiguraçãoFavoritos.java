@@ -3,7 +3,8 @@ package com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao;
 import org.testng.annotations.Test;
 import org.testng.internal.annotations.TestAnnotation;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
 import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguracaoConfiguracaoFavoritosPO;
@@ -14,7 +15,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrosGeraisConfiguraçãoConfiguraçãoFavoritos extends TestBaseKenssy {
+public class ParametrosGeraisConfiguraçãoConfiguraçãoFavoritos extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
 	ParametrosGeraisConfiguracaoConfiguracaoFavoritosPO parametrosGeraisConfiguraçãoConfiguraçãoFavoritosPO;
@@ -22,7 +23,7 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoFavoritos extends TestBaseK
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBCBPO = new AcessarBCBPO();
 		parametrosGeraisConfiguraçãoConfiguraçãoFavoritosPO = new ParametrosGeraisConfiguracaoConfiguracaoFavoritosPO();

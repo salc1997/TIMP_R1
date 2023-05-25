@@ -7,9 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKenssy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TransferenciaDeSaldosCredoresFiltrosAvancadosPO extends TestBaseKenssy{
+
+
+public class TransferenciaDeSaldosCredoresFiltrosAvancadosPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//li[contains(@identifier,\"accordion-item-balanceTransfer\")]")
 	public WebElement transferenciaSaldos;

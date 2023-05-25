@@ -2,7 +2,8 @@ package com.timp.test.MDR.LivrosFiscais.ParametrosParaLivroICMSST;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.LivrosFiscais.ParametrosParaLivroICMSST.ParametrosParaLivroICMSSTFiltrosAvanPO;
@@ -15,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrosParaLivroICMSSTFiltrosAvan extends TestBaseKenssy {
+public class ParametrosParaLivroICMSSTFiltrosAvan extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ParametrosParaLivroICMSSTFiltrosAvanPO parametrosParaLivroICMSSTFiltrosAvanPO;
@@ -24,7 +25,7 @@ public class ParametrosParaLivroICMSSTFiltrosAvan extends TestBaseKenssy {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		parametrosParaLivroICMSSTFiltrosAvanPO = new ParametrosParaLivroICMSSTFiltrosAvanPO();

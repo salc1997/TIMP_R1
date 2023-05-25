@@ -7,9 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKenssy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RegistroECACFiltrosAvanPO extends TestBaseKenssy{
+
+
+public class RegistroECACFiltrosAvanPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Registro ECAC\"]")
 	public WebElement registroecac;
 	

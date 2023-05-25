@@ -5,9 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKenssy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ConfiguracaoModeloDeDadosCriarPO extends TestBaseKenssy{
+
+
+public class ConfiguracaoModeloDeDadosCriarPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//div[@class=\"container-tabs\"]/div[2]/span/span[contains(text(),\"Configuração\")]")
 	public WebElement configuracao;

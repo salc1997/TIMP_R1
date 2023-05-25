@@ -2,7 +2,8 @@ package com.timp.test.BPMA.Processo.ParametrosGerais;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BPMA.AcessarBPMAPO;
 import com.sap.timp.pageObjectModel.BPMA.Processo.ParametrosGerais.ParametrosGeraisVisualizarPO;
@@ -15,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrosGeraisVisualizar extends TestBaseKenssy {
+public class ParametrosGeraisVisualizar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBPMAPO acessarBPMA ;
 	ParametrosGeraisVisualizarPO  parametrosGeraisVisualizarPO;
@@ -23,7 +24,7 @@ public class ParametrosGeraisVisualizar extends TestBaseKenssy {
   @BeforeClass
   public void beforeClass() {
 	  
-	  driver = initializationKen();
+	  driver = initialization();
 	  loginTC = new LoginTC();
 	  acessarBPMA = new AcessarBPMAPO();
 	  parametrosGeraisVisualizarPO = new  ParametrosGeraisVisualizarPO();

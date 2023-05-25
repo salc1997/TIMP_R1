@@ -9,13 +9,13 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.base.TestBaseKenssy;
+
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Execucoes.ExecucoesPublicas.ExecucoesExecucoesPublicasExcluirDefinitivamenteDashboardPO;
 import com.sap.timp.pageObjectModel.TDK.Execucoes.ExecucoesPublicas.ExecucoesExecucoesPublicasExcluirDefinitivamenteKpisPO;
 
-public class ExecucoesExecucoesPublicasExcluirDefinitivamenteDashboard  extends TestBaseKenssy {
+public class ExecucoesExecucoesPublicasExcluirDefinitivamenteDashboard  extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
@@ -23,7 +23,7 @@ public class ExecucoesExecucoesPublicasExcluirDefinitivamenteDashboard  extends 
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		execucoesExecucoesPublicasExcluirDefinitivamenteDashboardPO = new ExecucoesExecucoesPublicasExcluirDefinitivamenteDashboardPO();

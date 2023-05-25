@@ -6,9 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKenssy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO extends TestBaseKenssy{
+
+
+public class AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//span[text()=\"Taxas de Atualização\"]")
 	public WebElement taxasActualizacao;

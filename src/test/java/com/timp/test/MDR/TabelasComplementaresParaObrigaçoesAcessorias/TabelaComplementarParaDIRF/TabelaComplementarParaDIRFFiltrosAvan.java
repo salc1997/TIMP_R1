@@ -2,7 +2,8 @@ package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCo
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.SaldoInicial.SaldoInicialFiltroAvanPO;
@@ -16,7 +17,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class TabelaComplementarParaDIRFFiltrosAvan extends TestBaseKenssy {
+public class TabelaComplementarParaDIRFFiltrosAvan extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaComplementarParaDIRFFiltrosAvanPO tabelaComplementarParaDIRFFiltrosAvanPO;
@@ -24,7 +25,7 @@ public class TabelaComplementarParaDIRFFiltrosAvan extends TestBaseKenssy {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaComplementarParaDIRFFiltrosAvanPO = new TabelaComplementarParaDIRFFiltrosAvanPO();

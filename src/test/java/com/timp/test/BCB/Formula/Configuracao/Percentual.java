@@ -2,7 +2,8 @@ package com.timp.test.BCB.Formula.Configuracao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
 import com.sap.timp.pageObjectModel.BCB.ExecucoesSalvas.HierarquiaConfiguracoesExecucoesSalvas.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO;
@@ -17,7 +18,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class Percentual extends TestBaseKenssy {
+public class Percentual extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
 	PercentualPO percentualPO;
@@ -25,7 +26,7 @@ public class Percentual extends TestBaseKenssy {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBCBPO = new AcessarBCBPO();
 		percentualPO = new PercentualPO();

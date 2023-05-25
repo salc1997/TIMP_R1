@@ -3,7 +3,7 @@ package com.timp.test.TFP.Configuracoes.Status.Periodo;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.base.TestBaseKenssy;
+
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 import com.sap.timp.pageObjectModel.TFP.Configuracoes.Status.Periodo.ConfiguracoesStatusPeriodoEditarPO;

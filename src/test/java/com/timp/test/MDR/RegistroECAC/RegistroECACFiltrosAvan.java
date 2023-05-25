@@ -2,7 +2,8 @@ package com.timp.test.MDR.RegistroECAC;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.RegistroECAC.RegistroECACFiltrosAvanPO;
@@ -15,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class RegistroECACFiltrosAvan extends TestBaseKenssy {
+public class RegistroECACFiltrosAvan extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RegistroECACFiltrosAvanPO registroECACFiltrosAvanPO;
@@ -23,7 +24,7 @@ public class RegistroECACFiltrosAvan extends TestBaseKenssy {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		registroECACFiltrosAvanPO = new RegistroECACFiltrosAvanPO();

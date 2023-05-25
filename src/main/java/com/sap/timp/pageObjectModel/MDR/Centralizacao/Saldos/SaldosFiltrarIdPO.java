@@ -5,9 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKenssy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class SaldosFiltrarIdPO extends TestBaseKenssy{
+
+
+public class SaldosFiltrarIdPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Centralização\"]")
 	public WebElement centralizacao;
 	

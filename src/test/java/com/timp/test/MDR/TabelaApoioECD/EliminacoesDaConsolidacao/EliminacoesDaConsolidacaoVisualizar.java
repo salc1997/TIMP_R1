@@ -2,7 +2,8 @@ package com.timp.test.MDR.TabelaApoioECD.EliminacoesDaConsolidacao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelaApoioECD.EliminacoesDaConsolidacao.EliminacoesDaConsolidacaVisualizarPO;
@@ -15,14 +16,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class EliminacoesDaConsolidacaoVisualizar extends TestBaseKenssy {
+public class EliminacoesDaConsolidacaoVisualizar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	EliminacoesDaConsolidacaVisualizarPO eliminacoesDaConsolidacaoVisualizarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acesarMDRPO = new AcessarMDRPO();
 		eliminacoesDaConsolidacaoVisualizarPO = new EliminacoesDaConsolidacaVisualizarPO();

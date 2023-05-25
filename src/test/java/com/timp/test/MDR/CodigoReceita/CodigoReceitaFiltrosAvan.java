@@ -2,7 +2,8 @@ package com.timp.test.MDR.CodigoReceita;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CodigoReceita.CodigoReceitaFiltrosAvanPO;
@@ -16,7 +17,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CodigoReceitaFiltrosAvan extends TestBaseKenssy {
+public class CodigoReceitaFiltrosAvan extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoReceitaFiltrosAvanPO codigoReceitaFiltrosAvanPO;
@@ -25,7 +26,7 @@ public class CodigoReceitaFiltrosAvan extends TestBaseKenssy {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		codigoReceitaFiltrosAvanPO = new CodigoReceitaFiltrosAvanPO();

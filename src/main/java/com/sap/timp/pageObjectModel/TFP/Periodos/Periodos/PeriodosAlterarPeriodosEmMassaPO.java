@@ -8,9 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseKenssy;
+import com.sap.timp.base.TestBaseSteven;
 
-public class PeriodosAlterarPeriodosEmMassaPO extends TestBaseKenssy{
+
+
+public class PeriodosAlterarPeriodosEmMassaPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//span[@class=\"title-boxes \" and text()=\"Períodos\"]")
 	public WebElement periodos;

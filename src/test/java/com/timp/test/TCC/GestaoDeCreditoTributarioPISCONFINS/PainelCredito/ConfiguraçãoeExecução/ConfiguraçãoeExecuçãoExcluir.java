@@ -2,7 +2,8 @@ package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.Conf
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseKenssy;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.ConfiguraçãoeExecução.ConfiguraçãoeExecuçãoExcluirPO;
@@ -13,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãoeExecuçãoExcluir extends TestBaseKenssy{
+public class ConfiguraçãoeExecuçãoExcluir extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ConfiguraçãoeExecuçãoExcluirPO configuraçãoeExecuçãoExcluirPO;
@@ -21,7 +22,7 @@ public class ConfiguraçãoeExecuçãoExcluir extends TestBaseKenssy{
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationKen();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		configuraçãoeExecuçãoExcluirPO = new ConfiguraçãoeExecuçãoExcluirPO();

@@ -2,7 +2,7 @@ package com.timp.test.TFB.LivrosOficiais;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFB.AccesarTFBPO;
 import com.sap.timp.pageObjectModel.TFB.LivrosOficiais.LivrosOficiaisPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class LivrosOficiais extends TestBaseMassiel{
+public class LivrosOficiais extends TestBaseSteven{
 	
 	LoginTC loginTC;
 	AccesarTFBPO accesarTFBPO;
@@ -23,7 +23,7 @@ public class LivrosOficiais extends TestBaseMassiel{
  
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationM();
+	  driver = initialization();
 	  loginTC = new LoginTC();
 	  accesarTFBPO = new AccesarTFBPO();
 	  librosOficiaisPO = new LivrosOficiaisPO();

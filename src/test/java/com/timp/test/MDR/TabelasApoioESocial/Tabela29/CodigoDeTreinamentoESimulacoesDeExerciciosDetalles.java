@@ -2,7 +2,7 @@ package com.timp.test.MDR.TabelasApoioESocial.Tabela29;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela29.CodigoDeTreinamentoESimulacoesDeExerciciosDetallesPO;
@@ -15,13 +15,13 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CodigoDeTreinamentoESimulacoesDeExerciciosDetalles extends TestBaseMassiel{
+public class CodigoDeTreinamentoESimulacoesDeExerciciosDetalles extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	 CodigoDeTreinamentoESimulacoesDeExerciciosDetallesPO  codigoDeTreinamentoESimulacoesDeExerciciosDetallesPO;
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationM();
+	  driver = initialization();
 	  loginTC = new LoginTC();
 	  acessarMDRPO = new AcessarMDRPO(); 
 	  codigoDeTreinamentoESimulacoesDeExerciciosDetallesPO = new CodigoDeTreinamentoESimulacoesDeExerciciosDetallesPO();

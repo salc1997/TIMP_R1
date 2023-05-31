@@ -6,20 +6,20 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CadastroCondiçao.CadastroCondiçaoExcluirenMasasPO;
 import com.sap.timp.pageObjectModel.MDR.HierarquiaDeCenariosDeCorreçao.HierarquiaDeCenariosDeCorreçaoExcluirMasasPO;
 
-public class CadastroCondiçaoExcluirMasas extends TestBaseMassiel {
+public class CadastroCondiçaoExcluirMasas extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CadastroCondiçaoExcluirenMasasPO cadastroCondiçaoExcluirenMasasPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		cadastroCondiçaoExcluirenMasasPO = new CadastroCondiçaoExcluirenMasasPO();

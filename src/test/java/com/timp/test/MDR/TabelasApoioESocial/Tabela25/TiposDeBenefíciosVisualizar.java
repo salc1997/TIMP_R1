@@ -1,8 +1,7 @@
 package com.timp.test.MDR.TabelasApoioESocial.Tabela25;
 
 import org.testng.annotations.Test;
-
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela25.TiposDeBenefíciosVisualizarPO;
@@ -15,14 +14,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class TiposDeBenefíciosVisualizar extends TestBaseFernando {
+public class TiposDeBenefíciosVisualizar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TiposDeBenefíciosVisualizarPO tiposDeBenefíciosVisualizarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		tiposDeBenefíciosVisualizarPO = new TiposDeBenefíciosVisualizarPO();

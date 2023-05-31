@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseMassiel {
+public class ParametrizaçãoDoLivroOficialCriarPO extends TestBaseSteven {
 	
 	@FindBy(xpath = "//div[@class=\"accordion-container\"]/ul/li/div/span[text()=\"Ajustes\"]")
 	public WebElement menuAjustesCerrar;

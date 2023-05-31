@@ -2,7 +2,7 @@ package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDe
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDeProdutos.TabelaDeProdutosVisualizarPO;
@@ -15,14 +15,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class TabelaDeProdutosVisualizar extends TestBaseMassiel {
+public class TabelaDeProdutosVisualizar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	TabelaDeProdutosVisualizarPO tabelaDeProdutosVisualizarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaDeProdutosVisualizarPO = new TabelaDeProdutosVisualizarPO();

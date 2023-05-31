@@ -2,7 +2,7 @@ package com.timp.test.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaDe
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas.TabelaCodigoReceitasVisualizarPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import org.openqa.selenium.remote.NewSessionPayload;
 import org.testng.annotations.AfterClass;
 
-public class TabelaCodigoReceitasVisualizar extends TestBaseMassiel {
+public class TabelaCodigoReceitasVisualizar extends TestBaseSteven{
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -24,7 +24,7 @@ public class TabelaCodigoReceitasVisualizar extends TestBaseMassiel {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		tabelaCodigoReceitasVisualizarPO = new TabelaCodigoReceitasVisualizarPO();

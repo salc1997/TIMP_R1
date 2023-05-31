@@ -3,8 +3,7 @@ package com.timp.test.ATR.Estruturas.RelacionamentoEstruturas;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.base.TestBaseMassiel;
-import com.sap.timp.base.TestBaseSteven;
+
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarPO;

@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ConfiguracoesLixeiraExcluirPO extends TestBaseMassiel{
+public class ConfiguracoesLixeiraExcluirPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//div[@id=\"baseTabs-wrapper\"]/div[1]/div[3]/div/div[2]/span/span")
 	public WebElement aba;

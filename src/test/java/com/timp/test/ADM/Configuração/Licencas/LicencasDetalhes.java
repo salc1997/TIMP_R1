@@ -2,7 +2,8 @@ package com.timp.test.ADM.Configuração.Licencas;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuração.Licencas.LicencasDetalhesPO;
@@ -15,13 +16,13 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class LicencasDetalhes extends TestBaseMassiel{
+public class LicencasDetalhes extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	LicencasDetalhesPO licençasDetalhesPO;
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationM();
+	  driver = initialization();
 	  loginTC = new LoginTC();
 	  acessarADMPO = new AcessarADMPO();
 	  licençasDetalhesPO = new LicencasDetalhesPO();

@@ -1,8 +1,7 @@
 package com.timp.test.TDK.Dashboard.ParametrosGerais;
 
 import org.testng.annotations.Test;
-
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Dashboard.ParametrosGerais.DashboardParametrosGeraisExcecutarPO;
@@ -15,14 +14,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class DashboardParametrosGeraisExcecutar extends TestBaseMassiel {
+public class DashboardParametrosGeraisExcecutar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	DashboardParametrosGeraisExcecutarPO dashboardParametrosGeraisExcecutarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		dashboardParametrosGeraisExcecutarPO = new DashboardParametrosGeraisExcecutarPO();

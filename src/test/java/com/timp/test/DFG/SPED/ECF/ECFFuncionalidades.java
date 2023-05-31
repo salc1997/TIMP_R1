@@ -2,7 +2,7 @@ package com.timp.test.DFG.SPED.ECF;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.SPED.ECF.ECFFuncionalidadesPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ECFFuncionalidades extends TestBaseMassiel{
+public class ECFFuncionalidades extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
 	ECFFuncionalidadesPO  eCFFuncionalidadesPO;
@@ -23,7 +23,7 @@ public class ECFFuncionalidades extends TestBaseMassiel{
 
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationM();
+	  driver = initialization();
 		loginTC = new LoginTC();
 		acessarDFGPO = new AcessarDFGPO();
 		eCFFuncionalidadesPO = new ECFFuncionalidadesPO ();

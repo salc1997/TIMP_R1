@@ -7,9 +7,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 
-public class TabelaComplementarParaDIRFExcluirMassaPO extends TestBaseFernando{
+public class TabelaComplementarParaDIRFExcluirMassaPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
 	public WebElement tabelacomplementares;
 	

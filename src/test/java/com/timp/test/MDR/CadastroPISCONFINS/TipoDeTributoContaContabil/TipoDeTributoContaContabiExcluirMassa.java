@@ -2,7 +2,7 @@ package com.timp.test.MDR.CadastroPISCONFINS.TipoDeTributoContaContabil;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TipoDeTributoContaContabil.TipoDeTributoContaContabiExcluirMassaPO;
@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class TipoDeTributoContaContabiExcluirMassa extends TestBaseMassiel{
+public class TipoDeTributoContaContabiExcluirMassa extends TestBaseSteven{
 	
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -21,7 +21,7 @@ public class TipoDeTributoContaContabiExcluirMassa extends TestBaseMassiel{
 
   @BeforeClass
   public void beforeClass() {
-	    driver = initializationM();
+	    driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO(); 
 		tipoDeTributoContaContabiExcluirMassaPO = new  TipoDeTributoContaContabiExcluirMassaPO();

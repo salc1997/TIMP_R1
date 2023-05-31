@@ -2,7 +2,7 @@ package com.timp.test.DFG;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 
@@ -12,14 +12,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class AcessarDFG extends TestBaseMassiel{
+public class AcessarDFG extends TestBaseSteven{
 	
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
 	
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationM();
+	  driver = initialization();
 	  loginTC = new LoginTC();
 	  acessarDFGPO  = new AcessarDFGPO();
   }

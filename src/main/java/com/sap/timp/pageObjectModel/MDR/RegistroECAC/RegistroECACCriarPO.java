@@ -6,9 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.base.TestBaseMassiel;
 
-public class RegistroECACCriarPO extends TestBaseMassiel{
+public class RegistroECACCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Registro ECAC\"]")
 	public WebElement registroecac;

@@ -6,19 +6,20 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2.Edicao.RegrasDeAuditoriaN2EdicaoRelacionamentoPO;
 
-public class RegrasDeAuditoriaN2EdicaoRelacionamento extends TestBaseFernando {
+public class RegrasDeAuditoriaN2EdicaoRelacionamento extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasDeAuditoriaN2EdicaoRelacionamentoPO regrasDeAuditoriaN2EdicaoRelacionamentoPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		regrasDeAuditoriaN2EdicaoRelacionamentoPO = new RegrasDeAuditoriaN2EdicaoRelacionamentoPO();

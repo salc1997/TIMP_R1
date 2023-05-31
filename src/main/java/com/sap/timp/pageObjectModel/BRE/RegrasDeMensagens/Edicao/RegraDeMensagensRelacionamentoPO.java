@@ -5,9 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
 
-public class RegraDeMensagensRelacionamentoPO extends TestBaseFernando{
+import com.sap.timp.base.TestBaseSteven;
+
+public class RegraDeMensagensRelacionamentoPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-m_rules\"][1]")
 	public WebElement regrasDeMensagens;
 	

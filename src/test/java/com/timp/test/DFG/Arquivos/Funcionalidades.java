@@ -8,19 +8,19 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.Arquivos.FuncionalidadesPO;
 
-public class Funcionalidades extends TestBaseFernando{
+public class Funcionalidades extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
 	FuncionalidadesPO funcionalidadesPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarDFGPO = new AcessarDFGPO();
 		funcionalidadesPO = new FuncionalidadesPO();

@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 
-public class DetalheExcluirMassaPO extends TestBaseFernando{
+public class DetalheExcluirMassaPO extends TestBaseSteven{
 	String URL = driver.getCurrentUrl();
 	
 	@FindBy(xpath = "//span[text()=\"Detalhes Do Tipo De Tributo\"]")

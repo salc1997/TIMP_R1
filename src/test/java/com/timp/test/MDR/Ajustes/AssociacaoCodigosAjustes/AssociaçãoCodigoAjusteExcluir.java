@@ -2,7 +2,7 @@ package com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteExcluirPO;
@@ -13,14 +13,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class AssociaçãoCodigoAjusteExcluir extends TestBaseFernando{
+public class AssociaçãoCodigoAjusteExcluir extends TestBaseSteven{
   LoginTC loginTC;
   AcessarMDRPO accesarMDRPO;
   AssociaçãoCodigoAjusteExcluirPO associaçãoCodigoAjusteExcluirPO;
   
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationF();
+	  driver = initialization();
 	  loginTC = new LoginTC();
 	  accesarMDRPO = new AcessarMDRPO();
 	  associaçãoCodigoAjusteExcluirPO = new AssociaçãoCodigoAjusteExcluirPO();

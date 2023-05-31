@@ -7,9 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
 
-public class CodigosEAliqDeFPRASDetalhesPO extends TestBaseFernando{
+import com.sap.timp.base.TestBaseSteven;
+
+public class CodigosEAliqDeFPRASDetalhesPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")
 	public WebElement tabelaApoio;
 	

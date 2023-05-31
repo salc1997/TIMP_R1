@@ -2,7 +2,7 @@ package com.timp.test.MDR.EventosESocial.S1070ProcessosAdmJudiciais;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.EventosESocial.S1070ProcessosAdmJudiciais.S1070ProcessosAdmJudiciaisExcluirPO;
@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class S1070ProcessosAdmJudiciaisExluir extends TestBaseFernando{
+public class S1070ProcessosAdmJudiciaisExluir extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	S1070ProcessosAdmJudiciaisExcluirPO s1070ProcessosAdmJudiciaisExcluirPO;
@@ -24,7 +24,7 @@ public class S1070ProcessosAdmJudiciaisExluir extends TestBaseFernando{
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acesarMDRPO = new AcessarMDRPO();
 		s1070ProcessosAdmJudiciaisExcluirPO = new S1070ProcessosAdmJudiciaisExcluirPO();

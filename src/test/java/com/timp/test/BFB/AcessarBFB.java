@@ -5,12 +5,11 @@ import static org.testng.Assert.assertTrue;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BFB.AcessarBFBPO;
 
-public class AcessarBFB extends TestBaseFernando {
+public class AcessarBFB extends TestBaseSteven {
 	
 	LoginTC loginTC;
 	AcessarBFBPO acessarBFBPO;
@@ -22,7 +21,7 @@ public class AcessarBFB extends TestBaseFernando {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBFBPO = new AcessarBFBPO();
 	}

@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 
-public class S1070ProcessosAdmJudiciaisCriarPO extends TestBaseFernando{
+public class S1070ProcessosAdmJudiciaisCriarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"accordion-container\"]/ul/li/div/span[text()=\"Eventos e-Social\"]")
 	public WebElement menuEventosEsocial;
 	

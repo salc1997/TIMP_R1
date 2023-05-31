@@ -7,9 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseMassiel{
+import junit.extensions.TestSetup;
+
+public class ParametrizaçãoDoLivroOficialVisualizarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//div[@class=\"accordion-container\"]/ul/li/div/span[text()=\"Livros Fiscais\"]")
 	public WebElement menuLivrosFiscais;

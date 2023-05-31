@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class IncentivosFiscaisEditarPO extends TestBaseMassiel{
+public class IncentivosFiscaisEditarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//ul[@class=\"accordion\"]/li[contains(@identifier,\"accordion-item-incentivosFiscais\")]/div/span[2]")
 	public WebElement incentivosFiscais;

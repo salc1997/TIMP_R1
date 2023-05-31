@@ -1,8 +1,7 @@
 package com.timp.test.MDR.TabelasApoioESocial.Tabela21;
 
 import org.testng.annotations.Test;
-
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela21.NaturezaJuridicaExcluirMassaPO;
@@ -13,14 +12,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class NaturezaJuridicaExcluirMassa extends TestBaseFernando {
+public class NaturezaJuridicaExcluirMassa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	NaturezaJuridicaExcluirMassaPO naturezaJuridicaExcluirMassaPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		naturezaJuridicaExcluirMassaPO = new NaturezaJuridicaExcluirMassaPO();

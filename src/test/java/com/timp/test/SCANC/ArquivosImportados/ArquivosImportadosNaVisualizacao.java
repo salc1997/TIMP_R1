@@ -4,19 +4,20 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.ArquivosImportados.ArquivosImportadosNaVisualizacaoPO;
 
-public class ArquivosImportadosNaVisualizacao extends TestBaseFernando {
+public class ArquivosImportadosNaVisualizacao extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	ArquivosImportadosNaVisualizacaoPO arquivosImportadosNaVisualizacaoPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarSCANCPO = new AcessarSCANCPO();
 		arquivosImportadosNaVisualizacaoPO = new ArquivosImportadosNaVisualizacaoPO();

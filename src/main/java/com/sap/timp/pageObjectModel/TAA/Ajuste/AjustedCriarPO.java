@@ -6,10 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 
-public class AjustedCriarPO extends TestBaseMassiel{
+public class AjustedCriarPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//div[@class=\"baseTabs-bar boxes\"]/div/div[1]")
 	public WebElement ajuste;

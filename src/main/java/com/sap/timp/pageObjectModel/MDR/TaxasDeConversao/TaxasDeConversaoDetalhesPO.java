@@ -7,9 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
 
-public class TaxasDeConversaoDetalhesPO extends TestBaseFernando{
+import com.sap.timp.base.TestBaseSteven;
+
+public class TaxasDeConversaoDetalhesPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Taxas Complementares\"]")
 	public WebElement taxasdeconversao;
 	

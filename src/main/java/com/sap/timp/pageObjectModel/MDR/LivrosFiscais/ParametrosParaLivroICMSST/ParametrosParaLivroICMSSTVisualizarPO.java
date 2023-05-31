@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ParametrosParaLivroICMSSTVisualizarPO extends TestBaseMassiel{
+public class ParametrosParaLivroICMSSTVisualizarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Livros Fiscais\"]")
 	public WebElement livrosfiscais;

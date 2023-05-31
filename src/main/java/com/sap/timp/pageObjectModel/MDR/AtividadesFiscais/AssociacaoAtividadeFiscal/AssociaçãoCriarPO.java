@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AssociaçãoCriarPO extends TestBaseFernando {
+public class AssociaçãoCriarPO extends TestBaseSteven {
 	@FindBy(xpath = "//div[@class=\"accordion-container\"]/ul/li/div/span[text()=\"Atividades Fiscais\"]")
 	public WebElement menuActividadesFiscais;
 	

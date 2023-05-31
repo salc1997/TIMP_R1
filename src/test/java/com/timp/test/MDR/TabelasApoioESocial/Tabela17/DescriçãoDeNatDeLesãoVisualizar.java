@@ -2,7 +2,7 @@ package com.timp.test.MDR.TabelasApoioESocial.Tabela17;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela17.DescriçãoDeNatDeLesãoVisualizarPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class DescriçãoDeNatDeLesãoVisualizar extends TestBaseFernando {
+public class DescriçãoDeNatDeLesãoVisualizar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	DescriçãoDeNatDeLesãoVisualizarPO descriçãoDeNatDeLesãoVisualizarPO;
@@ -26,7 +26,7 @@ public class DescriçãoDeNatDeLesãoVisualizar extends TestBaseFernando {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acesarMDRPO = new AcessarMDRPO();
 		descriçãoDeNatDeLesãoVisualizarPO = new DescriçãoDeNatDeLesãoVisualizarPO();

@@ -2,7 +2,7 @@ package com.timp.test.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TaxasDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualização.ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizarPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 @Test
-public class ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizar extends TestBaseMassiel {
+public class ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
@@ -25,7 +25,7 @@ public class ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizar extends TestBaseMassi
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acesarMDRPO = new AcessarMDRPO();
 		configuraçãoDeTipoTaxaDeAtualizaçãoVisualizarPO = new ConfiguraçãoDeTipoTaxaDeAtualizaçãoVisualizarPO();

@@ -2,7 +2,7 @@ package com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
 import com.sap.timp.pageObjectModel.BCB.ExecucoesSalvas.ExecuçõesSalvas.ExecuçõesSalvasFiltrosPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ExecuçõesSalvasFiltros extends TestBaseMassiel{
+public class ExecuçõesSalvasFiltros extends TestBaseSteven{
 	//TSTNG-4245
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
@@ -23,7 +23,7 @@ public class ExecuçõesSalvasFiltros extends TestBaseMassiel{
 	
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationM();
+	  driver = initialization();
 		loginTC = new LoginTC();
 		acessarBCBPO = new AcessarBCBPO();
 		execuçõesSalvasFiltrosPO = new ExecuçõesSalvasFiltrosPO();

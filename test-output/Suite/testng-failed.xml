@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<<<<<<< HEAD
   <test thread-count="5" name=" ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed)">
+=======
+  <test thread-count="5" name="SCANC &gt; Arquivos Importados(failed)">
+>>>>>>> refs/heads/Yessy
     <classes>
+<<<<<<< HEAD
       <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasTodasFunc">
+=======
+      <class name="com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosNaVisualizacao">
+>>>>>>> refs/heads/Yessy
         <methods>
+<<<<<<< HEAD
           <include name="criarRelacionamento"/>
           <include name="afterClass"/>
           <include name="excluirMassa"/>
@@ -20,4 +29,27 @@
       </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasTodasFunc -->
     </classes>
   </test> <!--  ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed) -->
+=======
+          <include name="filtrosAvancados"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosNaVisualizacao -->
+      <class name="com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosInformacao">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="informacao"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosInformacao -->
+      <class name="com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosVisualizar">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="filtrosAvancados"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosVisualizar -->
+    </classes>
+  </test> <!-- SCANC > Arquivos Importados(failed) -->
+>>>>>>> refs/heads/Yessy
 </suite> <!-- Failed suite [Suite] -->

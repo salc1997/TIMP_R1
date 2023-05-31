@@ -6,10 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import com.sap.timp.base.TestBaseSteven;
 
-import com.sap.timp.base.TestBaseFernando;
-
-public class ParâmetrosParaEnvioDeMensagensVisualizarPO extends TestBaseFernando{
+public class ParâmetrosParaEnvioDeMensagensVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[contains(@class,\"accordion-container\")]/ul/li/div/span[text()=\"Parâmetros para Envio de Mensagens\"]")
 	public WebElement menuParametrosParaEnvioDeMensagens;
 	

@@ -2,7 +2,8 @@ package com.timp.test.BSC;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BSC.AcessarBSCPO;
@@ -16,7 +17,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CorrecaoDeNFDetalhes extends TestBaseMassiel{
+public class CorrecaoDeNFDetalhes extends TestBaseSteven{
 
 	LoginTC loginTC;
 	AcessarBSCPO acessarBSC;
@@ -26,7 +27,7 @@ public class CorrecaoDeNFDetalhes extends TestBaseMassiel{
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBrbPO = new AcessarBrbPO();
 		correcaoDeNFDetalhesPO = new CorrecaoDeNFDetalhesPO();

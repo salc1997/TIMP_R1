@@ -2,7 +2,7 @@ package com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegraDeRe
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.RegradeReabertura.RegraDeReaberturaExcluirMassaPO;
@@ -13,14 +13,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class RegraDeReaberturaExcluirMassa extends TestBaseMassiel{
+public class RegraDeReaberturaExcluirMassa extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	RegraDeReaberturaExcluirMassaPO regraDeReaberturaExcluirMassaPO;
 	
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationM();
+	  driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		regraDeReaberturaExcluirMassaPO  = new RegraDeReaberturaExcluirMassaPO();

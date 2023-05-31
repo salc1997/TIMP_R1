@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexoPO;
 
-public class RRGManutencaoCriarLancamentoVisualizacaoAnexo extends TestBaseFernando {
+public class RRGManutencaoCriarLancamentoVisualizacaoAnexo extends TestBaseSteven {
 	//TSTNG-1414
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
@@ -21,7 +21,7 @@ public class RRGManutencaoCriarLancamentoVisualizacaoAnexo extends TestBaseFerna
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarSCANCPO = new AcessarSCANCPO();
 		relatorioRefinariaGeradosManutencaoCriarLancamentoVisulizacaoAnexoPO = new RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexoPO();

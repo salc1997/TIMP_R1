@@ -4,9 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AcessarLOGPO extends TestBaseMassiel{
+public class AcessarLOGPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//div[text()=\"LOG\"]")
 	public WebElement log;

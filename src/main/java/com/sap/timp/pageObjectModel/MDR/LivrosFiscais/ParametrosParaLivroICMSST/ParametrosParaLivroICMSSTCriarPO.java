@@ -9,9 +9,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.google.errorprone.annotations.FormatMethod;
 import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.base.TestBaseMassiel;
 
-public class ParametrosParaLivroICMSSTCriarPO extends TestBaseMassiel{
+
+public class ParametrosParaLivroICMSSTCriarPO extends TestBaseSteven{
 	
 	
 	@FindBy(xpath = "//span[text()=\"Livros Fiscais\"]")

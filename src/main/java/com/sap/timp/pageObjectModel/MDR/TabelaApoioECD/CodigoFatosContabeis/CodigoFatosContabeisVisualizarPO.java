@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CodigoFatosContabeisVisualizarPO extends TestBaseFernando{
+public class CodigoFatosContabeisVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\" Tabelas de Apoio ECD\"]")
 	public WebElement tabelaECDE;
 	

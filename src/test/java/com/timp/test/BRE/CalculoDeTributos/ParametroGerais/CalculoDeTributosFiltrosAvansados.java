@@ -2,7 +2,8 @@ package com.timp.test.BRE.CalculoDeTributos.ParametroGerais;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.CalculoDeTributos.ParametrosGerais.CalculoDeTributosFiltrosAbansadosPO;
@@ -15,14 +16,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CalculoDeTributosFiltrosAvansados extends TestBaseMassiel {
+public class CalculoDeTributosFiltrosAvansados extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	CalculoDeTributosFiltrosAbansadosPO calculoDeTributosFiltrosAbansadosPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBREPO = new AcessarBREPO();
 		calculoDeTributosFiltrosAbansadosPO = new CalculoDeTributosFiltrosAbansadosPO();

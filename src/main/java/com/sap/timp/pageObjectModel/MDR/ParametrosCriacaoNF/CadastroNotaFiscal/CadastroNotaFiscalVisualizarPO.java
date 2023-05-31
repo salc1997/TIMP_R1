@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CadastroNotaFiscalVisualizarPO extends TestBaseMassiel{
+public class CadastroNotaFiscalVisualizarPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Parâmetros de Criação de Nota Fiscal\"]")
 	public WebElement parametrosCriacaoNotaFiscal;
 	

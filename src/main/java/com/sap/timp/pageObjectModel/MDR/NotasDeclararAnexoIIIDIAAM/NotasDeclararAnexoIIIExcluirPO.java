@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 
-public class NotasDeclararAnexoIIIExcluirPO extends TestBaseFernando{
+public class NotasDeclararAnexoIIIExcluirPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[contains(@class, \"accordion-container\")]/ul/li/div/span[text()=\"Notas a Declarar Anexo III DIA-AM\"]")
 	public WebElement menuNotasDeclararAnexo;
 	

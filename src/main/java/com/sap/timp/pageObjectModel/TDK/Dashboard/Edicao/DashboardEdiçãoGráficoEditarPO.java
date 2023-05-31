@@ -6,9 +6,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
 
-public class DashboardEdiçãoGráficoEditarPO extends TestBaseMassiel{
+import com.sap.timp.base.TestBaseSteven;
+
+public class DashboardEdiçãoGráficoEditarPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//span[text()=\"Dashboards Públicos\"]")
 	public WebElement dashboardspublicos;

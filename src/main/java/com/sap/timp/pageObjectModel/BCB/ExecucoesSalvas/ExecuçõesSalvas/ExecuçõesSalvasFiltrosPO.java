@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ExecuçõesSalvasFiltrosPO extends TestBaseMassiel{
+public class ExecuçõesSalvasFiltrosPO extends TestBaseSteven{
 	//TSTNG-4245
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][3]")
 	public WebElement execucoes;

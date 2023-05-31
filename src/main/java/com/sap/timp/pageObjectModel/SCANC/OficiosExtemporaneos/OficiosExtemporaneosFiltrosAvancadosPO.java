@@ -8,9 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
 
-public class OficiosExtemporaneosFiltrosAvancadosPO extends TestBaseFernando{
+import com.sap.timp.base.TestBaseSteven;
+
+public class OficiosExtemporaneosFiltrosAvancadosPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Ofícios extemporâneos\"]")
 	public WebElement oficiosExtemporaneos;
 	

@@ -6,10 +6,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.base.TestBaseMassiel;
 
 
-public class DashboardCriarPO extends TestBaseSteven {
+
+public class DashboardCriarPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//span[text()=\"Kpi's\"]")
 	public WebElement kpis;

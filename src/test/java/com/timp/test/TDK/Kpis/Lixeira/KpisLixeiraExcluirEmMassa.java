@@ -2,7 +2,7 @@ package com.timp.test.TDK.Kpis.Lixeira;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Kpis.Lixeira.KpisLixeiraExcluirEmMassaPO;
@@ -13,14 +13,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class KpisLixeiraExcluirEmMassa extends TestBaseMassiel {
+public class KpisLixeiraExcluirEmMassa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisLixeiraExcluirEmMassaPO kpisLixeiraExcluirEmMassaPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		kpisLixeiraExcluirEmMassaPO = new KpisLixeiraExcluirEmMassaPO();

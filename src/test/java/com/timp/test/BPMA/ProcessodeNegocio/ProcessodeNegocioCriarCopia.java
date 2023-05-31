@@ -2,7 +2,7 @@ package com.timp.test.BPMA.ProcessodeNegocio;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BPMA.AcessarBPMAPO;
 import com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.ProcessodeNegocioCriarCopiaPO;
@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ProcessodeNegocioCriarCopia extends TestBaseMassiel{
+public class ProcessodeNegocioCriarCopia extends TestBaseSteven{
 
 	LoginTC loginTC;
 	AcessarBPMAPO acessarBPMA ;
@@ -22,7 +22,7 @@ public class ProcessodeNegocioCriarCopia extends TestBaseMassiel{
   @BeforeClass
   public void beforeClass() {
 	  
-	  driver = initializationM();
+	  driver = initialization();
 	  loginTC = new LoginTC();
 	  acessarBPMA = new AcessarBPMAPO();
 	  processodeNegócioCriarCopiaPO = new  ProcessodeNegocioCriarCopiaPO();

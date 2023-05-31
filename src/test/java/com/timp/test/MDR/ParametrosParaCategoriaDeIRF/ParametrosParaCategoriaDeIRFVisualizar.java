@@ -2,10 +2,10 @@ package com.timp.test.MDR.ParametrosParaCategoriaDeIRF;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
-//import com.sap.timp.pageObjectModel.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFVisualizarPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFVisualizarPO;
 
 import org.testng.annotations.BeforeClass;
@@ -16,14 +16,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrosParaCategoriaDeIRFVisualizar extends TestBaseMassiel {
+public class ParametrosParaCategoriaDeIRFVisualizar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 	ParametrosParaCategoriaDeIRFVisualizarPO parametrosParaCategoriaDeIRFVisualizarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		accesarMDRPO = new AcessarMDRPO();
 		loginTC = new LoginTC();
 		 parametrosParaCategoriaDeIRFVisualizarPO = new ParametrosParaCategoriaDeIRFVisualizarPO();
@@ -31,7 +31,7 @@ public class ParametrosParaCategoriaDeIRFVisualizar extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		driver.close();
 	}
 
 	@Test()

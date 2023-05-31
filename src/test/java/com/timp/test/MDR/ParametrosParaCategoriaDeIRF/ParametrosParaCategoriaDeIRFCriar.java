@@ -10,9 +10,9 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFCriarPO;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ParametrosParaCategoriaDeIRFCriar extends TestBaseMassiel {
+public class ParametrosParaCategoriaDeIRFCriar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -21,7 +21,7 @@ public class ParametrosParaCategoriaDeIRFCriar extends TestBaseMassiel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		parametrosParaCategoriaDeIRFCriarPO = new ParametrosParaCategoriaDeIRFCriarPO();

@@ -11,9 +11,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class LeiautesExecuçãoFuncionalidades3PO extends TestBaseMassiel{
+public class LeiautesExecuçãoFuncionalidades3PO extends TestBaseSteven{
 	@FindBy(xpath = "//div[@class=\"baseTabs-view-wrapper\"]/div /div[1]/div/div[1]")
 	public WebElement raiz;
 	

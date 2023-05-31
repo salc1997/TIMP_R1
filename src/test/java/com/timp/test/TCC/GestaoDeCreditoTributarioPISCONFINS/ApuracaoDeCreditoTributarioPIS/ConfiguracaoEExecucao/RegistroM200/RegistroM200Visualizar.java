@@ -2,7 +2,7 @@ package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoT
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM200.RegistroM200VisualizarPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class RegistroM200Visualizar extends TestBaseMassiel {
+public class RegistroM200Visualizar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
@@ -23,7 +23,7 @@ public class RegistroM200Visualizar extends TestBaseMassiel {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		registroM200VisualizarPO = new RegistroM200VisualizarPO();

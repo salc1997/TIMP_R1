@@ -5,9 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
 
-public class DashboardLixeiraEmMassaPO extends TestBaseMassiel{
+import com.sap.timp.base.TestBaseSteven;
+
+public class DashboardLixeiraEmMassaPO extends TestBaseSteven{
 
 
 	@FindBy(xpath = "//span[text()=\"Dashboards Públicos\"]")

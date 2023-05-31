@@ -7,21 +7,21 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.Configuracoes.ConfiguracoesCriarPO;
 
 
 
-public class ConfiguracoesCriar extends TestBaseMassiel{
+public class ConfiguracoesCriar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
 	ConfiguracoesCriarPO configuracoesCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarDFGPO = new AcessarDFGPO();
 		configuracoesCriarPO = new ConfiguracoesCriarPO();

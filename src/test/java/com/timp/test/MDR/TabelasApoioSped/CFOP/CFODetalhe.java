@@ -2,7 +2,7 @@ package com.timp.test.MDR.TabelasApoioSped.CFOP;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CFOP.CFODetalhePO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CFODetalhe extends TestBaseFernando {
+public class CFODetalhe extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	CFODetalhePO cFODetalhePO;
@@ -26,7 +26,7 @@ public class CFODetalhe extends TestBaseFernando {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acesarMDRPO = new AcessarMDRPO();
 		cFODetalhePO = new CFODetalhePO();

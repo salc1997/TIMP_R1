@@ -9,12 +9,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.base.TestBaseMassiel;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Dashboard.Edicao.DashboardCartaoIndicadorPO;
 
-public class DashboardCartaoIndicador extends TestBaseMassiel {
+public class DashboardCartaoIndicador extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
@@ -22,7 +21,7 @@ public class DashboardCartaoIndicador extends TestBaseMassiel {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		dashboardCartaoIndicadorPO = new DashboardCartaoIndicadorPO();

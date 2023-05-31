@@ -8,11 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 
-public class AN4FuncionalidadesPO 	extends TestBaseMassiel{
+public class AN4FuncionalidadesPO 	extends TestBaseSteven{
 	
 	@FindBy(xpath = "//button[@id=\"home-icon\"]")
 	public WebElement home;

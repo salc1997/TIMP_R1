@@ -2,7 +2,7 @@ package com.timp.test.MDR.Antecipacao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoExcluirMassaPO;
@@ -13,14 +13,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class AntecipacaoExcluirMassa extends TestBaseMassiel{
+public class AntecipacaoExcluirMassa extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	AntecipacaoExcluirMassaPO antecipacaoExcluirMassaPO;
 
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationM();
+	  driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		antecipacaoExcluirMassaPO  = new AntecipacaoExcluirMassaPO();

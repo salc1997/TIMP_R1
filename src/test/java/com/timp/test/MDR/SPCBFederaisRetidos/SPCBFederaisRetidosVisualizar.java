@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.SPCBFederaisRetidos.SPCBFederaisRetidosVisualizarPO;
 
-public class SPCBFederaisRetidosVisualizar extends TestBaseFernando {
+public class SPCBFederaisRetidosVisualizar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	SPCBFederaisRetidosVisualizarPO sPCBFederaisRetidosVisualizarPO;
@@ -24,7 +24,7 @@ public class SPCBFederaisRetidosVisualizar extends TestBaseFernando {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acesarMDRPO = new AcessarMDRPO();
 		sPCBFederaisRetidosVisualizarPO = new SPCBFederaisRetidosVisualizarPO();

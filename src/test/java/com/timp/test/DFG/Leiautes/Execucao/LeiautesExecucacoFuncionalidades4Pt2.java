@@ -7,20 +7,19 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt2PO;
 
-public class LeiautesExecucacoFuncionalidades4Pt2 extends TestBaseFernando{
+public class LeiautesExecucacoFuncionalidades4Pt2 extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
 	LeiautesExecucacoFuncionalidades4Pt2PO leiautesExecucacoFuncionalidades4Pt2PO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarDFGPO = new AcessarDFGPO();
 		leiautesExecucacoFuncionalidades4Pt2PO = new LeiautesExecucacoFuncionalidades4Pt2PO();

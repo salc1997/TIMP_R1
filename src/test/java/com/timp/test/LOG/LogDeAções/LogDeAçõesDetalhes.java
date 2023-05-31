@@ -2,7 +2,7 @@ package com.timp.test.LOG.LogDeAções;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.LOG.AcessarLOGPO;
 import com.sap.timp.pageObjectModel.LOG.LogDeAções.LogDeAçõesDetalhesPO;
@@ -15,14 +15,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class LogDeAçõesDetalhes extends TestBaseMassiel{
+public class LogDeAçõesDetalhes extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarLOGPO acessarLOGPO;
 	LogDeAçõesDetalhesPO  logDeAçõesDetalhesPO ;
 	
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationM();
+	  driver = initialization();
 	  loginTC = new LoginTC();
 	  acessarLOGPO = new AcessarLOGPO();
 	  logDeAçõesDetalhesPO = new LogDeAçõesDetalhesPO();

@@ -2,7 +2,7 @@ package com.timp.test.MDR.AtividadesFiscais.GrupoAtividadeFiscal;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.GrupoAtividadeFiscal.GrupoAtividadeExcluirPO;
@@ -13,14 +13,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class GrupoAtividadeExcluir extends TestBaseFernando{
+public class GrupoAtividadeExcluir extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	GrupoAtividadeExcluirPO grupoAtividadeExcluirPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		accesarMDR = new AcessarMDRPO();
 		grupoAtividadeExcluirPO = new GrupoAtividadeExcluirPO();

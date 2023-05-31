@@ -7,13 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.base.TestBaseMassiel;
 
-public class ObservaçoesdoDocumentoFiscalCriarPO extends TestBaseMassiel {
+public class ObservaçoesdoDocumentoFiscalCriarPO extends TestBaseSteven{
 	
-	
-	
-
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelaApoioSped;
 	

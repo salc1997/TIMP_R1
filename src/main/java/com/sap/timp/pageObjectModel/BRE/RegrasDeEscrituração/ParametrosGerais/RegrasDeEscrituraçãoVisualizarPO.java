@@ -93,7 +93,7 @@ public class RegrasDeEscrituraçãoVisualizarPO extends TestBase {
 		sleep(1000);
 		acao.click();
 		sleep(6000);
-		waitExpectElement(configuracoes);
+		waitExpectedElement(configuracoes);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);
 		
@@ -132,7 +132,7 @@ public class RegrasDeEscrituraçãoVisualizarPO extends TestBase {
 		sleep(1000);
 		acao.click();
 		sleep(6000);
-		waitExpectElement(configuracoes);
+		waitExpectedElement(configuracoes);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		

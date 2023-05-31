@@ -80,7 +80,7 @@ public class AgrupamentoDeTributosExcluirEmMassaPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		
 		siguiente.click();
@@ -96,7 +96,7 @@ public class AgrupamentoDeTributosExcluirEmMassaPO extends TestBase {
 		
 		novo.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//Primeiro Registro
@@ -121,7 +121,7 @@ public class AgrupamentoDeTributosExcluirEmMassaPO extends TestBase {
 		sleep(24000);
 		novo.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(3000);
 		//Segundo Registro
 		
@@ -151,7 +151,7 @@ public class AgrupamentoDeTributosExcluirEmMassaPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		
 		siguiente.click();
@@ -219,7 +219,7 @@ public class AgrupamentoDeTributosExcluirEmMassaPO extends TestBase {
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(1000);
 		aceitar.click();
 		sleep(2000);
@@ -230,7 +230,7 @@ public class AgrupamentoDeTributosExcluirEmMassaPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);*/
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);

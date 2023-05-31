@@ -43,7 +43,7 @@ public class ImprimirPO extends TestBase {
 	
 	public void imprimir() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
@@ -61,11 +61,11 @@ public class ImprimirPO extends TestBase {
 
 		opcao.click();
 
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		waitExpectedElement("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 
 		executar.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		waitExpectedElement("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		
 		//imprimir.click();
 		

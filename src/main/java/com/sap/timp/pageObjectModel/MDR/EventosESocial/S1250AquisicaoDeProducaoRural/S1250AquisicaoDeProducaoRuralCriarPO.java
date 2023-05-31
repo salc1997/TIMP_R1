@@ -211,7 +211,7 @@ public class S1250AquisicaoDeProducaoRuralCriarPO extends TestBase {
 		//sleep(2000);
 		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//sleep(2000);
-		waitExpectElement(primeira);
+		waitExpectedElement(primeira);
 		sleep(2000);
 		primeira.click();
 		sleep(2000);

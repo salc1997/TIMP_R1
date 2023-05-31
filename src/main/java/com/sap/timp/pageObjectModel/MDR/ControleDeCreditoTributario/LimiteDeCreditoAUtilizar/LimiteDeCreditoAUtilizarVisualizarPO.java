@@ -129,7 +129,7 @@ public class LimiteDeCreditoAUtilizarVisualizarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -140,7 +140,7 @@ public class LimiteDeCreditoAUtilizarVisualizarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(editar);
+		waitExpectedElement(editar);
 		sleep(4000);
 		String empresavisualizar = empresavi.getText();
 		String filialvisualizar = filialvi.getText();
@@ -160,7 +160,7 @@ public class LimiteDeCreditoAUtilizarVisualizarPO extends TestBase {
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(3000);
@@ -172,7 +172,7 @@ public class LimiteDeCreditoAUtilizarVisualizarPO extends TestBase {
 		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(1000);

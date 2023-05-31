@@ -82,7 +82,7 @@ public class LogradouroVisualizarPO extends TestBase{
 			sleep(1000);
 		}
 		logradouro.click();
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		attributeToBe("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);
 		String idRegistro = idObter("CEP-Logradouro");
 	    System.out.println("idEditar: "+ idRegistro);

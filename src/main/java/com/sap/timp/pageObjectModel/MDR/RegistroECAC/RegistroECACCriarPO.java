@@ -118,7 +118,7 @@ public class RegistroECACCriarPO extends TestBase{
 		if (tc2 == true || tp1 == true ) {
 		novoregistro.click();
 		
-		attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"company\"]/div", "class", "base-select required");
 		sleep(3000);
 		empresa.click();
 		
@@ -191,7 +191,7 @@ public class RegistroECACCriarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		
@@ -296,7 +296,7 @@ public class RegistroECACCriarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		

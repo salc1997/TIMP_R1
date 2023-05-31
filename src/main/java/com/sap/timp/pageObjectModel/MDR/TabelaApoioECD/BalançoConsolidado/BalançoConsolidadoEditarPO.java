@@ -84,12 +84,12 @@ public class BalançoConsolidadoEditarPO extends TestBase{
 		// Recargo la pagina
 		driver.navigate().refresh();
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(competência);
-		attributoNotToBeEmptyElement(competência, "value");
+		waitExpectedElement(competência);
+		attributoNotToBeEmpty(competência, "value");
 		String valorEditado = competência.getAttribute("value"); // Se obtiene nuevamente el valor del input despues de recargar la pagina para verificar si se guardo el nuevo valor
 		System.out.println("Valor editado al recargar pagina: " + valorEditado);
 		System.out.println("");
@@ -121,11 +121,11 @@ public class BalançoConsolidadoEditarPO extends TestBase{
 		// Recargo la pagina
 		driver.navigate().refresh();
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		attributoNotToBeEmptyElement(competência, "value");
+		attributoNotToBeEmpty(competência, "value");
 		valorEditado = competência.getAttribute("value"); // Se obtiene nuevamente el valor del input despues de recargar la pagina para verificar si se guardo el valor original que tenia
 		System.out.println("Valor editado al recargar pagina (valor original nuevamente): " + valorEditado);
 		System.out.println("");

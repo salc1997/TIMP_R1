@@ -81,7 +81,7 @@ public class AntecipacaoDetalhePO extends TestBase{
 		sleep(5000);
 		
 		// Obtenemos los datos de detalhe
-		waitExpectElement(btnCerrar);
+		waitExpectedElement(btnCerrar);
 		String empresaString = empresa.getText();
 		String ufString = uf.getText();
 		String filialString = filial.getText();
@@ -98,7 +98,7 @@ public class AntecipacaoDetalhePO extends TestBase{
 		btnCerrar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(btnUltimaPagina);
+		waitExpectedElement(btnUltimaPagina);
 		sleep(2000);
 		
 		btnUltimaPagina.click();

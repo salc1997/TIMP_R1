@@ -111,19 +111,19 @@ public class InformaçoesAdicionaisCriarPO extends TestBase{
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
 
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		biblioteca.click();
 		sleep(2000);
 		nao.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		

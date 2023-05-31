@@ -108,7 +108,7 @@ public class TabelaMunicipioIBGEDetalhesPO extends TestBase {
 		sleep(2000);
 		fechar.click();
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 
 		menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		açao = driver.findElement(

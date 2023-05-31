@@ -112,7 +112,7 @@ public class Executados1200EditarPO extends TestBase{
 		btnExecutar.click();
 		invisibilityOfElementOverlay();
 
-		waitExpectElement(cboEmpresa);
+		waitExpectedElement(cboEmpresa);
 		sleep(2000);
 
 		cboEmpresa.click();
@@ -120,14 +120,14 @@ public class Executados1200EditarPO extends TestBase{
 		opcionEmpresa.click();
 		sleep(1000);
 
-		attributeToBeXpath("//td[@id=\"stateInput\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//td[@id=\"stateInput\"]/div", "class", "base-MultipleSelect3 required");
 		cboEstado.click();
 		sleep(1000);
 		opcionCheck.click();
 		closeSelectTypeCheckbox(cboEstado);
 		sleep(1000);
 
-		actionsMoveToElementElement(Subperiodo);
+		actionsMoveToElement(Subperiodo);
 		Subperiodo.click();
 		sleep(2000);
 

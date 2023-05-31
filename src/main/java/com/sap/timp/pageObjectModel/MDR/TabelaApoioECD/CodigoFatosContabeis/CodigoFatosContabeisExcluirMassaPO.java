@@ -78,26 +78,26 @@ public class CodigoFatosContabeisExcluirMassaPO extends TestBase{
 		btnNovoCodigoFatoContabeisElement.click();
 		
 		sleep(2000);
-		waitExpectElement(inputCodigoFatoContabil);
+		waitExpectedElement(inputCodigoFatoContabil);
 		inputCodigoFatoContabil.sendKeys("110");
 		
 		sleep(2000);
-		waitExpectElement(inputDescricaoFatoContabil);
+		waitExpectedElement(inputDescricaoFatoContabil);
 		inputDescricaoFatoContabil.sendKeys("Prueba de tester = verificar5M");
 		
 		sleep(2000);
-		waitExpectElement(inputDataInicio);
+		waitExpectedElement(inputDataInicio);
 		inputDataInicio.sendKeys(fechaAyer());
 		
 		sleep(2000);
-		waitExpectElement(inputDataFinal);
+		waitExpectedElement(inputDataFinal);
 		inputDataFinal.sendKeys(fechaActual());
 		
 		sleep(2000);
 		
 		btnGravar.click();
 		
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		btnSim.click();
 		
 		sleep(2000);
@@ -117,7 +117,7 @@ public class CodigoFatosContabeisExcluirMassaPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(2000);
-		waitExpectElement(btnUltimaPagina);
+		waitExpectedElement(btnUltimaPagina);
 		sleep(2000);
 		
 		//conta o numero de linhas
@@ -131,26 +131,26 @@ public class CodigoFatosContabeisExcluirMassaPO extends TestBase{
 		btnNovoCodigoFatoContabeisElement.click();
 		
 		sleep(2000);
-		waitExpectElement(inputCodigoFatoContabil);
+		waitExpectedElement(inputCodigoFatoContabil);
 		inputCodigoFatoContabil.sendKeys("111");
 		
 		sleep(2000);
-		waitExpectElement(inputDescricaoFatoContabil);
+		waitExpectedElement(inputDescricaoFatoContabil);
 		inputDescricaoFatoContabil.sendKeys("Prueba de tester");
 		
 		sleep(2000);
-		waitExpectElement(inputDataInicio);
+		waitExpectedElement(inputDataInicio);
 		inputDataInicio.sendKeys(fechaManana());
 		
 		sleep(2000);
-		waitExpectElement(inputDataFinal);
+		waitExpectedElement(inputDataFinal);
 		inputDataFinal.sendKeys(fechaPasadoManana());
 		
 		sleep(2000);
 		
 		btnGravar.click();
 		
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		btnSim.click();
 		
 		sleep(2000);
@@ -222,7 +222,7 @@ public class CodigoFatosContabeisExcluirMassaPO extends TestBase{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(	btnUltimaPagina);
+		waitExpectedElement(	btnUltimaPagina);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		btnUltimaPagina.click();

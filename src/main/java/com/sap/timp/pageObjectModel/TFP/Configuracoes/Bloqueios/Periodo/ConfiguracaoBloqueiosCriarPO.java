@@ -115,14 +115,14 @@ public class ConfiguracaoBloqueiosCriarPO extends TestBase{
 		closeSelectTypeCheckbox(cboEmpresa);
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"ufInput\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"ufInput\"]/div", "class", "base-MultipleSelect3 required");
 		cboUf.click();
 		sleep(1000);
 		opcionUf.click();
 		closeSelectTypeCheckbox(cboUf);
 		sleep(8000);
 		
-		attributeToBeXpath("//div[@id=\"branchInput\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branchInput\"]/div", "class", "base-MultipleSelect3 required");
 		cbofilial.click();
 		sleep(1000);
 		opcionFilial.click();

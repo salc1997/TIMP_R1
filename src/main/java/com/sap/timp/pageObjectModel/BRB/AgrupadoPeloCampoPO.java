@@ -78,19 +78,19 @@ public class AgrupadoPeloCampoPO extends TestBase{
 		
 	
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
 
-		waitExpectElement(menu);
+		waitExpectedElement(menu);
 		sleep(menuT);
 
 		menu.click();
 
 		opcao.click();
 
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		
 		Actions actions = new Actions(driver);
 		
@@ -103,7 +103,7 @@ public class AgrupadoPeloCampoPO extends TestBase{
 		sleep(3000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -192,20 +192,20 @@ public class AgrupadoPeloCampoPO extends TestBase{
 	public void excluirGrupo() {
 		
 		edicao.click();
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		
 		excluirGrupo.click();
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 
 		
 		

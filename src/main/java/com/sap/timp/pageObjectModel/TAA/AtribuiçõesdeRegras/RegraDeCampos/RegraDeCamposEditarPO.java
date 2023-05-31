@@ -57,8 +57,8 @@ public class RegraDeCamposEditarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(inputValidadeDe);
-		attributoNotToBeEmptyElement(inputValidadeDe, "value");
+		waitExpectedElement(inputValidadeDe);
+		attributoNotToBeEmpty(inputValidadeDe, "value");
 		String inputValidadeValorOriginal = inputValidadeDe.getAttribute("value");
 		System.out.println("Validade de original: " + inputValidadeValorOriginal);
 		
@@ -89,8 +89,8 @@ public class RegraDeCamposEditarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(inputValidadeDe);
-		attributoNotToBeEmptyElement(inputValidadeDe, "value");
+		waitExpectedElement(inputValidadeDe);
+		attributoNotToBeEmpty(inputValidadeDe, "value");
 		String inputValidadeValorEditado = inputValidadeDe.getAttribute("value");
 		System.out.println("Validade de editado: " + inputValidadeValorEditado);
 		

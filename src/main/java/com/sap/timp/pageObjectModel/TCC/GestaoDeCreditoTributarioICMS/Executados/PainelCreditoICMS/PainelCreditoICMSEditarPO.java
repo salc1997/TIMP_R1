@@ -108,14 +108,14 @@ public class PainelCreditoICMSEditarPO extends TestBase{
 		opcionEmpresa.click();
 		sleep(1000);
 
-		attributeToBeXpath("//td[@id=\"stateInput\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//td[@id=\"stateInput\"]/div", "class", "base-MultipleSelect3 required");
 		cboEstado.click();
 		sleep(1000);
 		opcionCheck.click();
 		closeSelectTypeCheckbox(cboEstado);
 		sleep(1000);
 
-		actionsMoveToElementElement(Subperiodo);
+		actionsMoveToElement(Subperiodo);
 		Subperiodo.click();
 		sleep(2000);
 
@@ -156,7 +156,7 @@ public class PainelCreditoICMSEditarPO extends TestBase{
 		driver.navigate().refresh();
 		//sleep(8000);
 		
-		waitExpectElement(inputSubperiodo);
+		waitExpectedElement(inputSubperiodo);
 		sleep(2000);
 		
 		String nuevoTexto = inputSubperiodo.getText();

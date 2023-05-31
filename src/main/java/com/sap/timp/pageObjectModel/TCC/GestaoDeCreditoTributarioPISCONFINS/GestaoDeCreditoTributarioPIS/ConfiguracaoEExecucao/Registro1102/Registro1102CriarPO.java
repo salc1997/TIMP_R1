@@ -166,7 +166,7 @@ public class Registro1102CriarPO extends TestBase {
 		
 		novo.click();
 		sleep(2000);
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -178,7 +178,7 @@ public class Registro1102CriarPO extends TestBase {
 		
 		uf.click();
 		sleep(4000);
-		actionsMoveToElementElement(ufO);
+		actionsMoveToElement(ufO);
 		sleep(1000);
 		ufO.click();
 		sleep(1000);
@@ -197,12 +197,12 @@ public class Registro1102CriarPO extends TestBase {
 	
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		sleep(2000);
 		biblioteca.click();
 		sleep(2000);

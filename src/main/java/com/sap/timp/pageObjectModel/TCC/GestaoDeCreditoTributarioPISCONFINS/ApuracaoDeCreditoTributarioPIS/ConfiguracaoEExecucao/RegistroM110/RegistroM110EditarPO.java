@@ -64,7 +64,7 @@ public class RegistroM110EditarPO extends TestBase{
 		sleep(1000);
 		editar.click();
 		sleep(3000);
-		waitExpectElement(numeroDocumento);
+		waitExpectedElement(numeroDocumento);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(20000);
 		
@@ -90,7 +90,7 @@ public class RegistroM110EditarPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(8000);
-		waitExpectElement(numeroDocumento);
+		waitExpectedElement(numeroDocumento);
 		sleep(20000);
 		
 		String nuevoTexto = numeroDocumento.getAttribute("value");

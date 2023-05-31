@@ -160,7 +160,7 @@ public class MunicipioVisualizarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		attributoNotToBeEmptyElement(municipioE, "value");
+		attributoNotToBeEmpty(municipioE, "value");
 
 		sleep(5000);
 

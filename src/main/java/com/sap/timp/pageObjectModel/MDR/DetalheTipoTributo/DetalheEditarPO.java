@@ -60,7 +60,7 @@ public class DetalheEditarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -68,10 +68,10 @@ public class DetalheEditarPO extends TestBase {
 		editar.click();
 		sleep(2000);
 		
-		waitExpectXpath("//*[@id=\"select\"]/div[1]/input");
+		waitExpectedElement("//*[@id=\"select\"]/div[1]/input");
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"tax\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tax\"]/div", "class", "base-select required");
 		sleep(1000);
 		
 		String valor = campo.getAttribute("value");
@@ -108,10 +108,10 @@ public class DetalheEditarPO extends TestBase {
 		
 		driver.navigate().refresh();
 		
-		waitExpectXpath("//*[@id=\"select\"]/div[1]/input");
+		waitExpectedElement("//*[@id=\"select\"]/div[1]/input");
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"tax\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tax\"]/div", "class", "base-select required");
 		sleep(1000);
 		
 		String nuevoTexto = campo.getAttribute("value");
@@ -146,7 +146,7 @@ public class DetalheEditarPO extends TestBase {
 		invisibilityOfElement("//*[@id=\"tabs\"]/div[2]/div/div/div/img");
 		sleep(2000);
 
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 		
 		return sucesso;

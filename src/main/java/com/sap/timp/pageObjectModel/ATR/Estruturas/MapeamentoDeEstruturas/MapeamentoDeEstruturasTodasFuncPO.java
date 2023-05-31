@@ -215,7 +215,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -254,7 +254,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		opcaodata.click();
 		closeSelectTypeCheckbox(data);
 		sleep(2000);
-		actionsMoveToElementXpath("//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]");
+		actionsMoveToElement("//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]");
 		tributo.click();
 		sleep(2000);
 		opcaotributo.click();
@@ -274,7 +274,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -315,7 +315,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		WebElement copia = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Cópia\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -325,7 +325,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		actionsMoveToElementXpath("//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]");
+		actionsMoveToElement("//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]");
 
 		datainicio.clear();
 		sleep(2000);
@@ -346,7 +346,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -379,7 +379,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		WebElement editar = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idultimo + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -422,7 +422,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		WebElement excluir = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idultimo + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -430,7 +430,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		excluir.click();
 		
 		sleep(2000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(2000);
 		aceitar.click();
 		sleep(2000);
@@ -441,7 +441,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -476,7 +476,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -487,7 +487,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);
-		actionsMoveToElementXpath("//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]");
+		actionsMoveToElement("//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]");
 		sleep(8000);
 		
 		tributo.click();
@@ -511,7 +511,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -521,7 +521,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		 menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		 editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -567,7 +567,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement ver = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Ver\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -599,7 +599,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		
 		aceitar.click();
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -611,7 +611,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(1000);
@@ -717,13 +717,13 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		WebElement excluir = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(2000);
 		aceitar.click();
 		sleep(2000);
@@ -734,7 +734,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -763,7 +763,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -778,7 +778,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		
 		novo.click();
 		sleep(3000);
-		waitExpectElement(estruturaDados);
+		waitExpectedElement(estruturaDados);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -832,7 +832,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		
 		novo.click();
 		sleep(2000);
-		waitExpectElement(estruturaDados);
+		waitExpectedElement(estruturaDados);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -958,7 +958,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 	  
 	  excluirMassa.click();
 	  sleep(1000);
-	  waitExpectElement(aceitar);
+	  waitExpectedElement(aceitar);
 	  sleep(1000);
 	  aceitar.click();
 	  sleep(3000);
@@ -968,7 +968,7 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 	  driver.navigate().refresh(); 
 	  sleep(3000);
 	  invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	  waitExpectElement(ultimapagina); 
+	  waitExpectedElement(ultimapagina); 
 	  sleep(2000);
 	  
 	  mapeamentodeestruturas.click();

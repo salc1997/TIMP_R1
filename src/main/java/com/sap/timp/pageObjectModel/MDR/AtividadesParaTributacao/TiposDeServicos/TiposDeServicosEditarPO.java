@@ -78,7 +78,7 @@ public class TiposDeServicosEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -99,13 +99,13 @@ public class TiposDeServicosEditarPO extends TestBase{
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);
@@ -115,7 +115,7 @@ public class TiposDeServicosEditarPO extends TestBase{
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(2000);
@@ -126,7 +126,7 @@ public class TiposDeServicosEditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 			
-		waitExpectElement(grupo);
+		waitExpectedElement(grupo);
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -149,7 +149,7 @@ public class TiposDeServicosEditarPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);

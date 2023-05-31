@@ -109,7 +109,7 @@ public class StatusParaBCECriarPO extends TestBase {
 		opcaoF.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		uf.click();
 		sleep(1000);
@@ -117,7 +117,7 @@ public class StatusParaBCECriarPO extends TestBase {
 		opcao.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		
 		sleep(2000);
 		filial.click();
@@ -128,7 +128,7 @@ public class StatusParaBCECriarPO extends TestBase {
 		
 		status.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(2000);
 		
 		statusInicial.click();
@@ -154,11 +154,11 @@ public class StatusParaBCECriarPO extends TestBase {
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();

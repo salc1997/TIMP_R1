@@ -141,7 +141,7 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassaPO extends TestBase
 			gravareNovo.click();
 			sleep(2000);
 			
-			waitExpectElement(btnSim);
+			waitExpectedElement(btnSim);
 			btnSim.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -211,7 +211,7 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassaPO extends TestBase
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(1000);
 		aceitar.click();
 		sleep(3000);
@@ -220,7 +220,7 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassaPO extends TestBase
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		btnPrimerPagina.click();

@@ -126,7 +126,7 @@ public class ParametrosOficializacaoLivrosDetalhesPO extends TestBase {
 		sleep(2000);
 		fechar.click();
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 
 		menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		açao = driver.findElement(
@@ -138,7 +138,7 @@ public class ParametrosOficializacaoLivrosDetalhesPO extends TestBase {
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		attributoNotToBeEmptyElement(tipoLivroV, "textContent");
+		attributoNotToBeEmpty(tipoLivroV, "textContent");
 		sleep(1000);
 		
 		String tipoLivroV1 = tipoLivroV.getText();

@@ -53,7 +53,7 @@ public class RegraDeCamposExcluirPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(btnAceitar);
+		waitExpectedElement(btnAceitar);
 		btnAceitar.click();
 		invisibilityOfElementOverlay();
 		sleep(2000);

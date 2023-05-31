@@ -137,7 +137,7 @@ public class CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 		
 		
 		//Primeiro registro
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		nome.click();
 		sleep(1000);
@@ -182,7 +182,7 @@ public class CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 			opcaogrupodeestrutura.click();
 			sleep(1000);
 		}
-		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
+		actionsMoveToElement("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
 		estruturadedados.click();
 		sleep(1000);
 		opcaoestruturadedados.click();
@@ -204,7 +204,7 @@ public class CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 		sleep(2000);
 		aplicar.click();
 		sleep(2000);
-		waitExpectElement(adicionarCaminho);
+		waitExpectedElement(adicionarCaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -213,7 +213,7 @@ public class CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(calculodetributos);
+		waitExpectedElement(calculodetributos);
 		sleep(2000);
 		calculodetributos.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -226,7 +226,7 @@ public class CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 		//-----------SEGUNDO----------------
 		novo.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		nome.click();
 		sleep(1000);
@@ -265,7 +265,7 @@ public class CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 			opcaogrupodeestrutura.click();
 			sleep(1000);
 		}
-		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
+		actionsMoveToElement("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
 		estruturadedados.click();
 		sleep(1000);
 		opcaoestruturadedados.click();
@@ -286,7 +286,7 @@ public class CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 		sleep(2000);
 		aplicar.click();
 		sleep(2000);
-		waitExpectElement(adicionarCaminho);
+		waitExpectedElement(adicionarCaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -295,11 +295,11 @@ public class CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(calculodetributos);
+		waitExpectedElement(calculodetributos);
 		sleep(2000);
 		calculodetributos.click();
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);
@@ -351,7 +351,7 @@ public class CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 		WebElement lixeiraemmassa = driver.findElement(By.xpath("//span[@class=\"button-icon icon-font-Finance-and-Office icon-trash\"]"));
 		lixeiraemmassa.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -367,7 +367,7 @@ public class CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 		lixeira.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);
@@ -416,7 +416,7 @@ public class CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 		excluirmassa.click();
 		
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		
 		sim.click();
@@ -425,13 +425,13 @@ public class CalculoDeTributosLixeiraEmMassaMaisExcluirEmMassaPO extends TestBas
 		sleep(2000);
 		//waitExpectElement(mensagem);
 		//sleep(2000);
-		waitExpectElement(mensagembloqueio);
+		waitExpectedElement(mensagembloqueio);
 		sleep(2000);
 		lixeira.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		

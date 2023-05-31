@@ -125,7 +125,7 @@ public class LivrosFiscaisCriarPO extends TestBase{
 		opcao2.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		ufFilial.click();
@@ -134,7 +134,7 @@ public class LivrosFiscaisCriarPO extends TestBase{
 		opcao2.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		filial.click();

@@ -139,7 +139,7 @@ public class DeterminacionRelevanciaPorMotivoExcluirEmMassaPO extends TestBase{
 			empresaSeleccion.click();
 			empresaSeleccion.sendKeys(Keys.ESCAPE);
 			sleep(3000);
-			attributeToBeXpath("//*[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+			attributeToBe("//*[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 			sleep(3000); 
 			
 			uf.click();
@@ -147,7 +147,7 @@ public class DeterminacionRelevanciaPorMotivoExcluirEmMassaPO extends TestBase{
 			ufSeleccion.click();
 			ufSeleccion.sendKeys(Keys.ESCAPE);
 			sleep(3000);
-			attributeToBeXpath("//*[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+			attributeToBe("//*[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 			sleep(3000);
 			
 			filial.click();
@@ -271,7 +271,7 @@ public class DeterminacionRelevanciaPorMotivoExcluirEmMassaPO extends TestBase{
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(1000);
 		aceitar.click();
 		sleep(3000);
@@ -280,7 +280,7 @@ public class DeterminacionRelevanciaPorMotivoExcluirEmMassaPO extends TestBase{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

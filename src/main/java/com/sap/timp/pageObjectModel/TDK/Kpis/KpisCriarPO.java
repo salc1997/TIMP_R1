@@ -150,7 +150,7 @@ public class KpisCriarPO extends TestBase {
 		Gravar.click();
 		sleep(2000);
 		
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		sleep(4000);
 		
 		biblioteca.click();

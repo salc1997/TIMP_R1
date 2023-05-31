@@ -179,7 +179,7 @@ public boolean editar() {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(4000);
 	
-	waitExpectElement(vCalculados);
+	waitExpectedElement(vCalculados);
 	vCalculados.click();
 	sleep(4000);
 	criarvCalculados.click();
@@ -288,7 +288,7 @@ public boolean editar() {
 	grabar.click();
 	sleep(2000);
 	
-	waitExpectElement(sim);
+	waitExpectedElement(sim);
 	sim.click();
 	sleep(3000);
 	

@@ -76,18 +76,18 @@ public class PublicoYPRivadoPO extends TestBase{
 		opcao.click();
 		
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		
 		compartirB.click();
 		
 		aceptar.click();
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(5000);
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -103,7 +103,7 @@ public class PublicoYPRivadoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		actionsMoveToElementElement(publico);
+		actionsMoveToElement(publico);
 
 		String publicoT = publico.getAttribute("aria-label");
 		System.out.println(publicoT);
@@ -123,32 +123,32 @@ public class PublicoYPRivadoPO extends TestBase{
 		
 		sleep(1000);
 		
-		waitExpectXpath("//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[1]/div");
+		waitExpectedElement("//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[1]/div");
 		
 		menu.click();
 		opcao.click();
 		
 
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		
 		compartirB.click();
 		sleep(3000);
 		aceptar.click();
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(5000);
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(5000);
 		
-		waitExpectXpath(("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]"));
+		waitExpectedElement(("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]"));
 		sleep(2000);
 
 		biblioteca.click();
@@ -157,7 +157,7 @@ public class PublicoYPRivadoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		actionsMoveToElementElement(publico);
+		actionsMoveToElement(publico);
 
 		String privadoT = publico.getAttribute("aria-label");
 		System.out.println(privadoT);
@@ -199,7 +199,7 @@ public class PublicoYPRivadoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		actionsMoveToElementElement(publico);
+		actionsMoveToElement(publico);
 		String publicoT = publico.getAttribute("aria-label");
 		System.out.println(publicoT);
 		
@@ -231,7 +231,7 @@ public class PublicoYPRivadoPO extends TestBase{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		actionsMoveToElementElement(publico);
+		actionsMoveToElement(publico);
 		
 		String privadoT = publico.getAttribute("aria-label");
 		System.out.println(privadoT);

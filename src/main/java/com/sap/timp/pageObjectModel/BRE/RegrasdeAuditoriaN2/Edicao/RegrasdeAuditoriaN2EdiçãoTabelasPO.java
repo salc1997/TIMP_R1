@@ -127,7 +127,7 @@ public boolean editar() {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
 	
-	waitExpectElement(tabelas);
+	waitExpectedElement(tabelas);
 	tabelas.click();
 	sleep(4000);
 	asociarTabela.click();
@@ -140,7 +140,7 @@ public boolean editar() {
 	sleep(3000);
 	
 	
-	waitExpectElement(campo);
+	waitExpectedElement(campo);
 	campo.sendKeys("CFOP legal (ED)");
 	sleep(2000);
 	campo.sendKeys(Keys.ENTER);
@@ -232,7 +232,7 @@ public boolean editar() {
 	sleep(4000);
 	
 	
-	waitExpectElement(tabelas);
+	waitExpectedElement(tabelas);
 	tabelas.click();
 	sleep(3000);
 	
@@ -309,7 +309,7 @@ public boolean editar() {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(4000);
 	
-	waitExpectElement(tabelas);
+	waitExpectedElement(tabelas);
 	sleep(5000);
 	
 	driver.navigate().refresh();

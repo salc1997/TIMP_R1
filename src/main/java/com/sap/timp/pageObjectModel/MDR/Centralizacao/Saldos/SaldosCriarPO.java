@@ -315,7 +315,7 @@ public class SaldosCriarPO extends TestBase{
 		
 		
 		tributo.click();
-		actionsMoveToElementElement(opcTributo);
+		actionsMoveToElement(opcTributo);
 		sleep(2000);
 		opcTributo.click();
 		opcTributo.sendKeys(Keys.ESCAPE);
@@ -333,7 +333,7 @@ public class SaldosCriarPO extends TestBase{
 //		closeSelectTypeCheckbox(nf);
 //		sleep(2000);		
 		
-		actionsMoveToElementElement(fechaIniVigencia);
+		actionsMoveToElement(fechaIniVigencia);
 		sleep(2000);
 		
 		ufOrigen.click();
@@ -352,7 +352,7 @@ public class SaldosCriarPO extends TestBase{
 		//PROCEDIMIENTO PARA NUEVO AJUSTE
 		
 		botonAjuste.click();
-		waitExpectElement(novoAjuste);
+		waitExpectedElement(novoAjuste);
 		sleep(2000);
 		novoAjuste.click();
 		sleep(2000);
@@ -376,7 +376,7 @@ public class SaldosCriarPO extends TestBase{
 		sleep(1000);
 		
 		sleep(1000);
-		actionsMoveToElementElement(documentoA);
+		actionsMoveToElement(documentoA);
 		sleep(1000);
 		
 		filialsA.click();
@@ -391,7 +391,7 @@ public class SaldosCriarPO extends TestBase{
 		opctipoDocumentoA.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"document\" and @class=\"add-form\"]/div/div","class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"document\" and @class=\"add-form\"]/div/div","class", "base-autocomplete required");
 		sleep(2000);
 		
 		documentoA.click();
@@ -411,7 +411,7 @@ public class SaldosCriarPO extends TestBase{
 		
 
 		botonRegra.click();
-		waitExpectElement(novaRegra);
+		waitExpectedElement(novaRegra);
 		sleep(2000);
 		novaRegra.click();
 		sleep(1000);
@@ -421,7 +421,7 @@ public class SaldosCriarPO extends TestBase{
 		opcTributoR.click();
 		sleep(3000);
 		
-		attributeToBeXpath("//div[@id=\"tributeType\" and @class=\"add-form\"]/div/div","class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"tributeType\" and @class=\"add-form\"]/div/div","class", "base-autocomplete required");
 		sleep(2000);
 		
 		tipoTributoR.click();
@@ -429,7 +429,7 @@ public class SaldosCriarPO extends TestBase{
 		opcTipoTributoR.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"limit\" and @class=\"add-form\"]/div/div","class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"limit\" and @class=\"add-form\"]/div/div","class", "base-autocomplete required");
 		sleep(2000);
 		
 		
@@ -465,7 +465,7 @@ public class SaldosCriarPO extends TestBase{
 		//PARTE DE OBRIGACAO
 		botonObrigacao.click();
 		sleep(2000);
-		waitExpectElement(novaObrigacao);
+		waitExpectedElement(novaObrigacao);
 		sleep(2000);
 		
 		novaObrigacao.click();

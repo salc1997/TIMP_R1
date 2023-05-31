@@ -115,7 +115,7 @@ public class FatorCreditamentoDetalhesPO extends TestBase {
 		sleep(2000);
 		fechar.click();
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 
 		menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		açao = driver.findElement(
@@ -125,7 +125,7 @@ public class FatorCreditamentoDetalhesPO extends TestBase {
 		sleep(1000);
 		açao.click();
 		sleep(3000);
-		attributoNotToBeEmptyElement(empresaV, "textContent");
+		attributoNotToBeEmpty(empresaV, "textContent");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 

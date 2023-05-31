@@ -41,7 +41,7 @@ public class CFOPEditarPO extends TestBase{
 		tabelaSPED.click();
 		
 		sleep(2000);
-		actionsMoveToElementElement(opcionCFOP);
+		actionsMoveToElement(opcionCFOP);
 		opcionCFOP.click();
 		sleep(2000);
 		
@@ -67,7 +67,7 @@ public class CFOPEditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(inputDataInicioDeVigencia);
+		waitExpectedElement(inputDataInicioDeVigencia);
 		String dataInicioVigencia = inputDataInicioDeVigencia.getAttribute("value");
 		System.out.println("Data inicio vigencia antes de editar: " + dataInicioVigencia);
 		
@@ -83,7 +83,7 @@ public class CFOPEditarPO extends TestBase{
 		sleep(2000);
 		btnSim.click();
 		sleep(2000);
-		waitExpectElement(alertGuardado);
+		waitExpectedElement(alertGuardado);
 		invisibilityOfElement("//div[@id=\\\"toast-wrapper\\\"]");
 		sleep(3000);
 		
@@ -92,8 +92,8 @@ public class CFOPEditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(inputDataInicioDeVigencia);		
-		attributoNotToBeEmptyElement(inputDataInicioDeVigencia, "value");
+		waitExpectedElement(inputDataInicioDeVigencia);		
+		attributoNotToBeEmpty(inputDataInicioDeVigencia, "value");
 		sleep(2000);
 		String dataInicioVigenciaEditadoString = inputDataInicioDeVigencia.getAttribute("value");
 		System.out.println("Data inicio vigencia Valor Editado al recargar: " + dataInicioVigenciaEditadoString);
@@ -114,7 +114,7 @@ public class CFOPEditarPO extends TestBase{
 		sleep(2000);
 		btnSim.click();
 		sleep(2000);
-		waitExpectElement(alertGuardado);
+		waitExpectedElement(alertGuardado);
 		invisibilityOfElement("//div[@id=\\\"toast-wrapper\\\"]");
 		sleep(3000);
 		

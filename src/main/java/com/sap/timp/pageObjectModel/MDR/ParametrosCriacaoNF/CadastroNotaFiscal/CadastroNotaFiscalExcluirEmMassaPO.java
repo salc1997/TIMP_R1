@@ -120,7 +120,7 @@ public class CadastroNotaFiscalExcluirEmMassaPO extends TestBase{
 			opcao.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 			
-			attributeToBeXpath("//div[contains(@class,\"uf\")]/div", "class", "input-element-wrapper");
+			attributeToBe("//div[contains(@class,\"uf\")]/div", "class", "input-element-wrapper");
 			sleep(2000);
 
 			ufFilial.click();
@@ -130,7 +130,7 @@ public class CadastroNotaFiscalExcluirEmMassaPO extends TestBase{
 
 			sleep(1000);
 			
-			attributeToBeXpath("//div[contains(@class,\"branch\")]/div", "class", "input-element-wrapper");
+			attributeToBe("//div[contains(@class,\"branch\")]/div", "class", "input-element-wrapper");
 			sleep(1000);
 			
 			filial.click();
@@ -233,7 +233,7 @@ public class CadastroNotaFiscalExcluirEmMassaPO extends TestBase{
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -242,7 +242,7 @@ public class CadastroNotaFiscalExcluirEmMassaPO extends TestBase{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

@@ -52,7 +52,7 @@ public class RenomearColunaPO extends TestBase{
 	
 	public ArrayList<String> renomear() {
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
@@ -69,7 +69,7 @@ public class RenomearColunaPO extends TestBase{
 		opcao.click();
 
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		
 		String nombreC = nombre.getAttribute("column-name");
 
@@ -86,7 +86,7 @@ public class RenomearColunaPO extends TestBase{
 		coluna.sendKeys(nuevoN);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -95,7 +95,7 @@ public class RenomearColunaPO extends TestBase{
 
 		driver.navigate().refresh();
 
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 
 		String nombreCN = nombre.getAttribute("column-name");
 		sucesso.add(nombreCN);
@@ -112,14 +112,14 @@ public class RenomearColunaPO extends TestBase{
 
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 
 		return sucesso;
 		

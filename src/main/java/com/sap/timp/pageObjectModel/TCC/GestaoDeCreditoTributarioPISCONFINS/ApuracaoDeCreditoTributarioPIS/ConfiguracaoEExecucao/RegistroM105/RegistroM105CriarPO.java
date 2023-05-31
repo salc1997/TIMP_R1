@@ -337,7 +337,7 @@ public class RegistroM105CriarPO  extends TestBase{
 		
 		sim.click();
 		sleep(10000);		
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		sleep(12000);
 		
 		biblioteca.click();

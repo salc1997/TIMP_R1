@@ -83,7 +83,7 @@ public class AprovacaoDeDocumentosCriarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"docType\"]/div", "class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"docType\"]/div", "class", "base-autocomplete required");
 		tipodedocumento.click();
 		sleep(1000);
 		opcaotipodedocumento.click();
@@ -114,7 +114,7 @@ public class AprovacaoDeDocumentosCriarPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);

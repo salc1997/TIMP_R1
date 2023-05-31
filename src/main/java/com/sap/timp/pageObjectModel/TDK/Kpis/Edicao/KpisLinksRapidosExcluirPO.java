@@ -142,20 +142,20 @@ public class KpisLinksRapidosExcluirPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
 		sleep(1000);
 		editar.click();
 		sleep(2000);
-		waitExpectElement(Gravar);
+		waitExpectedElement(Gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		
 		
-		waitExpectElement(link);
+		waitExpectedElement(link);
 		sleep(2000);
 		link.click();
 		sleep(2000);
@@ -173,7 +173,7 @@ public class KpisLinksRapidosExcluirPO extends TestBase {
 		sleep(2000);
 		biblioteca.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -189,14 +189,14 @@ public class KpisLinksRapidosExcluirPO extends TestBase {
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 
 		menu1.click();
 		sleep(1000);
 		editar1.click();
 		sleep(2000);
-		waitExpectElement(Gravar);
+		waitExpectedElement(Gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

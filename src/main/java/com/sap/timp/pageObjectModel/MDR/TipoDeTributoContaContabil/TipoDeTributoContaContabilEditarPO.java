@@ -68,7 +68,7 @@ public class TipoDeTributoContaContabilEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement detalhes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -107,7 +107,7 @@ public class TipoDeTributoContaContabilEditarPO extends TestBase{
 		btnGravar.click();
 		sleep(1000);
 		
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		btnSim.click();
 		
 		sleep(2000);	
@@ -123,7 +123,7 @@ public class TipoDeTributoContaContabilEditarPO extends TestBase{
 		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		detalhes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);

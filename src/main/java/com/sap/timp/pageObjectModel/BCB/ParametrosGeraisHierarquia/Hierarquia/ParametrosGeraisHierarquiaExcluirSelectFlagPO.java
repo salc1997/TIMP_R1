@@ -77,7 +77,7 @@ public class ParametrosGeraisHierarquiaExcluirSelectFlagPO extends TestBase {
 		sleep(5000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(hierarquiaConfiguracao);
+		waitExpectedElement(hierarquiaConfiguracao);
 		sleep(10000);
 		
 		ultimo.click();

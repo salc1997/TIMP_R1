@@ -606,7 +606,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 
 		nova.click();
 		sleep(3000);
-		waitExpectElement(nomeDeHierarquia);
+		waitExpectedElement(nomeDeHierarquia);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 
@@ -617,7 +617,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		nomeDaAba.sendKeys("Teste Automatizado");
 		sleep(1000);
 
-		actionsMoveToElementElement(nomeDoCampoDeLinha);
+		actionsMoveToElement(nomeDoCampoDeLinha);
 		sleep(1000);
 		nomeDaHierarquia.sendKeys("Teste Automatizado");
 		sleep(1000);
@@ -676,12 +676,12 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		sleep(1000);
 		gravar.click();
 		sleep(3000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		nao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//span[@id=\"textLabel\"]");
+		waitExpectedElement("//span[@id=\"textLabel\"]");
 
 		biblioteca.click();
 		sleep(3000);
@@ -731,7 +731,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		}
 		
 		sleep(2000);
-		waitExpectElement(configuracoes);
+		waitExpectedElement(configuracoes);
 		sleep(2000);
 		configuracoes.click();
 		sleep(3000);
@@ -755,7 +755,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		nova.click();
 		sleep(8000);
 
-		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
 
 		nomeHirarquia.sendKeys("Teste Automatizado de Hierar");
@@ -769,7 +769,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		tributoO.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 
-		attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"company\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(1000);
 
 		empresa.click();
@@ -778,7 +778,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		empresaO.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(1000);
 
 		uf.click();
@@ -787,7 +787,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		ufO.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(1000);
 
 		filial.click();
@@ -868,19 +868,19 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		editar.click();
 		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(calculator);
+		waitExpectedElement(calculator);
 		sleep(2000);
 		
 		calculator.click();
 		sleep(1000);
-		waitExpectElement(resultadoFinal);
+		waitExpectedElement(resultadoFinal);
 		sleep(2000);
 		resultadoFinal.click();
 		sleep(1000);
 
 		adicionarConfiguracao.click();
 		sleep(1000);
-		waitExpectElement(condicao);
+		waitExpectedElement(condicao);
 		sleep(2000);
 		condicao.click();
 		sleep(1000);
@@ -895,11 +895,11 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		gravar.click();
 		sleep(3000);
 		//pediu justificar tc2 em 27/01/2021
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		nao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//span[@id=\"textLabel\"]");
+		waitExpectedElement("//span[@id=\"textLabel\"]");
 		sleep(2000);
 
 		campolinha1.click();
@@ -962,12 +962,12 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		waitExpectElement(nao);
 		nao.click();
 		*/invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//span[@id=\"textLabel\"]");
+		waitExpectedElement("//span[@id=\"textLabel\"]");
 		sleep(2000);
 
 		siguiente.click();
 		sleep(2000);
-		actionsMoveToElementElement(campolinha2);
+		actionsMoveToElement(campolinha2);
 		sleep(2000);
 
 		// Segundo Subnivel
@@ -1000,12 +1000,12 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//span[@id=\"textLabel\"]");
+		waitExpectedElement("//span[@id=\"textLabel\"]");
 		sleep(2000);
 
 		siguiente.click();
 		sleep(2000);
-		actionsMoveToElementElement(campolinha3);
+		actionsMoveToElement(campolinha3);
 		sleep(1000);
 
 		// tercer Subnivel
@@ -1039,13 +1039,13 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//span[@id=\"textLabel\"]");
+		waitExpectedElement("//span[@id=\"textLabel\"]");
 		sleep(2000);
 
 		siguiente.click();
 		sleep(2000);
 
-		actionsMoveToElementElement(campolinha4);
+		actionsMoveToElement(campolinha4);
 		sleep(1000);
 
 		// Quarto Subnivel
@@ -1077,12 +1077,12 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//span[@id=\"textLabel\"]");
+		waitExpectedElement("//span[@id=\"textLabel\"]");
 		sleep(2000);
 
 		siguiente.click();
 		sleep(2000);
-		actionsMoveToElementElement(campolinha5);
+		actionsMoveToElement(campolinha5);
 		sleep(1000);
 
 		// Quinto Subnivel
@@ -1103,7 +1103,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		opcao2.click();
 		sleep(1000);
 
-		actionsMoveToElementElement(siguiente);
+		actionsMoveToElement(siguiente);
 		sleep(1000);
 
 		campoLinha5.click();
@@ -1116,12 +1116,12 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//span[@id=\"textLabel\"]");
+		waitExpectedElement("//span[@id=\"textLabel\"]");
 		sleep(2000);
 
 		siguiente.click();
 		sleep(2000);
-		actionsMoveToElementElement(campolinha6);
+		actionsMoveToElement(campolinha6);
 		sleep(1000);
 
 		// Sexto Subnivel
@@ -1142,7 +1142,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		opcao2.click();
 		sleep(1000);
 
-		actionsMoveToElementElement(siguiente);
+		actionsMoveToElement(siguiente);
 		sleep(1000);
 
 		campoLinha6.click();
@@ -1165,12 +1165,12 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//span[@id=\"textLabel\"]");
+		waitExpectedElement("//span[@id=\"textLabel\"]");
 		sleep(2000);
 
 		siguiente.click();
 		sleep(2000);
-		actionsMoveToElementElement(campolinha7);
+		actionsMoveToElement(campolinha7);
 		sleep(1000);
 		
 		
@@ -1193,7 +1193,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		opcao2.click();
 		sleep(1000);
 
-		actionsMoveToElementElement(siguiente);
+		actionsMoveToElement(siguiente);
 		sleep(1000);
 
 		campoLinha7.click();
@@ -1219,7 +1219,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//waitExpectXpath("//span[@id=\"textLabel\"]");
 		sleep(9000);
-		waitExpectXpath("//button[text()=\"Sim\"]");
+		waitExpectedElement("//button[text()=\"Sim\"]");
 		WebElement btnSeguirBloqueo = driver.findElement(By.xpath("//button[text()=\"Sim\"]"));
 		sleep(1000);
 		btnSeguirBloqueo.click();
@@ -1227,7 +1227,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 
 		siguiente.click();
 		sleep(2000);
-		actionsMoveToElementElement(campolinha8);
+		actionsMoveToElement(campolinha8);
 		sleep(3000);
 //		waitExpectXpath("//button[text()=\"Sim\"]");
 //		WebElement btnSeguirBloqueo = driver.findElement(By.xpath("//button[text()=\"Sim\"]"));
@@ -1273,12 +1273,12 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//span[@id=\"textLabel\"]");
+		waitExpectedElement("//span[@id=\"textLabel\"]");
 		sleep(2000);
 
 		siguiente.click();
 		sleep(2000);
-		actionsMoveToElementElement(campolinha9);
+		actionsMoveToElement(campolinha9);
 		sleep(1000);
 		
 		
@@ -1356,7 +1356,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		sleep(1000);
 		executar.click();
 		sleep(3000);
-		waitExpectElement(executarM);
+		waitExpectedElement(executarM);
 		sleep(2000);
 		executarM.click();
 		sleep(1000);
@@ -1434,7 +1434,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 			}
 		}
 		
-		waitExpectXpath("//li[contains(@class,\"alignRight\")]");
+		waitExpectedElement("//li[contains(@class,\"alignRight\")]");
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -1593,7 +1593,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		}
 		
 	
-		waitExpectXpath("//li[contains(@class,\"alignRight\")]");
+		waitExpectedElement("//li[contains(@class,\"alignRight\")]");
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -1759,7 +1759,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		}
 		
 		
-		waitExpectXpath("//li[contains(@class,\"alignRight\")]");
+		waitExpectedElement("//li[contains(@class,\"alignRight\")]");
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -1910,7 +1910,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		}
 		
 		
-		waitExpectXpath("//li[contains(@class,\"alignRight\")]");
+		waitExpectedElement("//li[contains(@class,\"alignRight\")]");
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -2306,12 +2306,12 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		sleep(1000);
 		lixeiraO.click();
 		sleep(3000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 		
 		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();
@@ -2343,12 +2343,12 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		sleep(1000);
 		excluirL.click();
 		sleep(3000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 		/*
 		int exclucao2 = driver.findElements(By.xpath("//span[contains(text(),\"A configuração do builder foi excluída com sucesso\")]")).size();
@@ -2390,12 +2390,12 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		sleep(1000);
 		lixeiraO.click();
 		sleep(3000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(3000);
 		
 		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();
@@ -2428,7 +2428,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		sleep(1000);
 		excluirL.click();
 		sleep(3000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);

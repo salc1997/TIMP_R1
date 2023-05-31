@@ -104,7 +104,7 @@ public class FatoresDeRiscoExcluirMassaPO extends TestBase {
 		salvarENovo.click();
 		sleep(2000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -134,7 +134,7 @@ public class FatoresDeRiscoExcluirMassaPO extends TestBase {
 		salvarENovo.click();
 		sleep(2000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -206,7 +206,7 @@ public class FatoresDeRiscoExcluirMassaPO extends TestBase {
 		
 		btnExcluirMassa.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

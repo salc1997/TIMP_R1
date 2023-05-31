@@ -193,20 +193,20 @@ public class KpisTabelasPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
 		sleep(1000);
 		editar.click();
 		sleep(2000);
-		waitExpectElement(Gravar);
+		waitExpectedElement(Gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		adicionarwidget.click();
 		
-		waitExpectElement(tabela);
+		waitExpectedElement(tabela);
 		sleep(2000);
 		tabela.click();
 		sleep(2000);
@@ -217,7 +217,7 @@ public class KpisTabelasPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(cabecalho);
+		waitExpectedElement(cabecalho);
 		sleep(2000);
 		cabecalho.sendKeys("Cabecalho");
 		sleep(2000);
@@ -230,7 +230,7 @@ public class KpisTabelasPO extends TestBase{
 		sleep(2000);
 		opcaogrupo.click();
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"select-structure\"]/div", "class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"select-structure\"]/div", "class", "base-autocomplete required");
 		sleep(4000);
 		estruturadedados.click();
 		sleep(2000);
@@ -239,7 +239,7 @@ public class KpisTabelasPO extends TestBase{
 		
 		String URL = driver.getCurrentUrl();
 		
-		waitExpectElement(conteudo);
+		waitExpectedElement(conteudo);
 		sleep(2000);
 		
 		conteudo.click();
@@ -301,7 +301,7 @@ public class KpisTabelasPO extends TestBase{
 		sleep(2000);
 		
 		sleep(2000);
-		waitExpectElement(tabelafeita);
+		waitExpectedElement(tabelafeita);
 		sleep(2000);
 		new Actions(driver).moveToElement(tabelafeita).click().perform();
 		sleep(2000);
@@ -313,7 +313,7 @@ public class KpisTabelasPO extends TestBase{
 		sleep(2000);
 		biblioteca.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -329,14 +329,14 @@ public class KpisTabelasPO extends TestBase{
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 
 		menu1.click();
 		sleep(1000);
 		editar1.click();
 		sleep(2000);
-		waitExpectElement(Gravar);
+		waitExpectedElement(Gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		boolean sucesso = false;

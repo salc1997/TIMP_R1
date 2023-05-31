@@ -93,7 +93,7 @@ public class Registro1210EditarPO extends TestBase {
 		btnGravar.click();
 		sleep(2000);
 		
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		btnSim.click();
 		sleep(3000);
 		invisibilityOfElementOverlay();
@@ -109,7 +109,7 @@ public class Registro1210EditarPO extends TestBase {
 		invisibilityOfElementOverlay();
 		sleep(2000);
 
-		attributoNotToBeEmptyXpath("//div[@id=\"taxType\"]/div/div/div/input", "value");
+		attributoNotToBeEmpty("//div[@id=\"taxType\"]/div/div/div/input", "value");
 		
 		String valorNuevoEditado = driver.findElement(By.xpath("//div[@id=\"taxType\"]/div/div/div/input")).getAttribute("value").trim();
 		System.out.println("Valor nuevo editado Controle de Credito: " + valorNuevoEditado);

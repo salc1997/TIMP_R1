@@ -85,7 +85,7 @@ public class Registro1100CriarPO extends TestBase{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		actionsMoveToElementElement(gestaoCredito);
+		actionsMoveToElement(gestaoCredito);
 		sleep(2000);
 		gestaoCredito.click();
 		sleep(2000);
@@ -121,7 +121,7 @@ public class Registro1100CriarPO extends TestBase{
 		opc.click();
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(3000);
 		
 		uf.click();
@@ -189,7 +189,7 @@ public class Registro1100CriarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);*/
 		
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);

@@ -142,14 +142,14 @@ public class RegrasDeMensagensTabelasPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
 		sleep(1000);
 		editar.click();
 		sleep(2000);
-		waitExpectXpath("//span[text()=\"Adicionar Caminho\"]");
+		waitExpectedElement("//span[text()=\"Adicionar Caminho\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -209,7 +209,7 @@ public class RegrasDeMensagensTabelasPO extends TestBase {
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		nao.click();
 		sleep(3000);
@@ -236,14 +236,14 @@ public class RegrasDeMensagensTabelasPO extends TestBase {
 		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
 		sleep(1000);
 		editar.click();
 		sleep(2000);
-		waitExpectXpath("//span[text()=\"Adicionar Caminho\"]");
+		waitExpectedElement("//span[text()=\"Adicionar Caminho\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -288,7 +288,7 @@ public class RegrasDeMensagensTabelasPO extends TestBase {
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		nao.click();
 		sleep(3000);

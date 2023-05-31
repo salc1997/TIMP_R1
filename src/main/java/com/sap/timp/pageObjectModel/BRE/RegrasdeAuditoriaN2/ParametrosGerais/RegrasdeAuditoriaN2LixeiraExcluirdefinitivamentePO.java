@@ -60,7 +60,7 @@ public boolean lexeira() {
 	sleep(1000);
 	açao.click();
 	sleep(3000);
-	waitExpectElement(btnAceitar);
+	waitExpectedElement(btnAceitar);
 	sleep(2000);
 	btnAceitar.click();
 	sleep(2000);
@@ -70,7 +70,7 @@ public boolean lexeira() {
 	// Recargo la pagina
 	driver.navigate().refresh();
 	sleep(2000);
-	waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+	waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(6000);
 	
@@ -123,7 +123,7 @@ public boolean excluirDefinitivo() {
 	sleep(1000);
 	açao.click();
 	sleep(3000);
-	waitExpectElement(btnAceitar);
+	waitExpectedElement(btnAceitar);
 	sleep(2000);
 	btnAceitar.click();
 	sleep(2000);
@@ -133,7 +133,7 @@ public boolean excluirDefinitivo() {
 	// Recargo la pagina
 	driver.navigate().refresh();
 	sleep(2000);
-	waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+	waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(6000);
 	

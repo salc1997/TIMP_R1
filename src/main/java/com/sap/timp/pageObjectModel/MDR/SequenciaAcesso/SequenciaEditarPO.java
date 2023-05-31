@@ -70,7 +70,7 @@ public class SequenciaEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -79,7 +79,7 @@ public class SequenciaEditarPO extends TestBase{
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributeToBeXpath("//div[@id=\"description\"]/div/div", "class", "base-input  required type1");
+		attributeToBe("//div[@id=\"description\"]/div/div", "class", "base-input  required type1");
 		//salva a descriçao do campo antes de apagar
 		sleep(1000);
 		String texto = descricao.getAttribute("value");
@@ -97,7 +97,7 @@ public class SequenciaEditarPO extends TestBase{
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(butaosim);
+		waitExpectedElement(butaosim);
 		sleep(2000);
 		butaosim.click();
 		sleep(2000);
@@ -105,7 +105,7 @@ public class SequenciaEditarPO extends TestBase{
 		//recarrega a pagina
 		driver.navigate().refresh();
 		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributeToBeXpath("//div[@id=\"description\"]/div/div", "class", "base-input  required type1");
+		attributeToBe("//div[@id=\"description\"]/div/div", "class", "base-input  required type1");
 		//verifica se o valor inserido consta no relatório
 		String texto1 = descricao.getAttribute("value");
 		boolean sucesso= texto1.contains(enviar);
@@ -119,7 +119,7 @@ public class SequenciaEditarPO extends TestBase{
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(butaosim);
+		waitExpectedElement(butaosim);
 		sleep(2000);
 		butaosim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

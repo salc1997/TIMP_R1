@@ -143,7 +143,7 @@ public class ResponsavelMovimientoExcluirMasasPO extends TestBase{
 			sleep(1000);
 			opcao.click();
 			
-			attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-select required");
+			attributeToBe("//div[@id=\"branch\"]/div", "class", "base-select required");
 			sleep(1000);
 			
 			filial.click();
@@ -160,12 +160,12 @@ public class ResponsavelMovimientoExcluirMasasPO extends TestBase{
 			
 			instituicao.click();
 			sleep(1000);
-			actionsMoveToElementElement(instituicaoO);
+			actionsMoveToElement(instituicaoO);
 			sleep(1000);
 			instituicaoO.click();
 			sleep(1000);
 				
-			attributoNotToBeEmptyXpath("//*[@id=\"country\"]/div/div/input", "value");
+			attributoNotToBeEmpty("//*[@id=\"country\"]/div/div/input", "value");
 			
 			nome.sendKeys("teste movimento");
 			
@@ -185,12 +185,12 @@ public class ResponsavelMovimientoExcluirMasasPO extends TestBase{
 			sleep(2000);
 			gravar.click();
 			sleep(2000);
-			waitExpectElement(sim);
+			waitExpectedElement(sim);
 			sleep(2000);
 			sim.click();
 			sleep(2000);
 
-			waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+			waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			biblioteca.click();
 			
@@ -203,7 +203,7 @@ public class ResponsavelMovimientoExcluirMasasPO extends TestBase{
 			sleep(1000);
 			opcao.click();
 			
-			attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-select required");
+			attributeToBe("//div[@id=\"branch\"]/div", "class", "base-select required");
 			sleep(1000);
 			
 			filial.click();
@@ -220,12 +220,12 @@ public class ResponsavelMovimientoExcluirMasasPO extends TestBase{
 			
 			instituicao.click();
 			sleep(1000);
-			actionsMoveToElementElement(instituicaoO);
+			actionsMoveToElement(instituicaoO);
 			sleep(1000);
 			instituicaoO.click();
 			sleep(1000);
 				
-			attributoNotToBeEmptyXpath("//*[@id=\"country\"]/div/div/input", "value");
+			attributoNotToBeEmpty("//*[@id=\"country\"]/div/div/input", "value");
 			
 			nome.sendKeys("teste movimento");
 			
@@ -245,12 +245,12 @@ public class ResponsavelMovimientoExcluirMasasPO extends TestBase{
 			sleep(2000);
 			gravar.click();
 			sleep(2000);
-			waitExpectElement(sim);
+			waitExpectedElement(sim);
 			sleep(2000);
 			sim.click();
 			sleep(2000);
 
-			waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+			waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			biblioteca.click();
 			
@@ -311,7 +311,7 @@ public class ResponsavelMovimientoExcluirMasasPO extends TestBase{
 			
 			excluirMassa.click();
 			sleep(1000);
-			waitExpectElement(aceitar);
+			waitExpectedElement(aceitar);
 			sleep(1000);
 			aceitar.click();
 			sleep(3000);
@@ -320,7 +320,7 @@ public class ResponsavelMovimientoExcluirMasasPO extends TestBase{
 			sleep(2000);
 			
 			driver.navigate().refresh();
-			waitExpectElement(ultimaPagina);
+			waitExpectedElement(ultimaPagina);
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			ultimaPagina.click();

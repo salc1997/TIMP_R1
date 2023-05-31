@@ -58,7 +58,7 @@ public class CenariosCorrecaoEditarPO extends TestBase{
 	
 		
 		cenarios.click();
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		attributeToBe("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);	
 			
 		siguiente.click();
@@ -70,7 +70,7 @@ public class CenariosCorrecaoEditarPO extends TestBase{
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(4000);
 		
 		menu.click();
@@ -79,7 +79,7 @@ public class CenariosCorrecaoEditarPO extends TestBase{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 		campo.sendKeys(Keys.ENTER);
 		String valor = campo.getAttribute("value");
 
@@ -97,11 +97,11 @@ public class CenariosCorrecaoEditarPO extends TestBase{
 		confirmacionGravar.click();
 		sleep(2000);
 
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 
 		driver.navigate().refresh();
 
-		attributeToBeXpath("//*[@id=\"description\"]/div/div[2]/div/div[1]", "class", "input-wrapper base-input ");
+		attributeToBe("//*[@id=\"description\"]/div/div[2]/div/div[1]", "class", "input-wrapper base-input ");
 
 		sleep(2000);
 		
@@ -112,7 +112,7 @@ public class CenariosCorrecaoEditarPO extends TestBase{
 		System.out.println(sucesso);
 
 		sleep(3000);
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 		campo.sendKeys(Keys.ENTER);
 		campo.clear();
 
@@ -125,7 +125,7 @@ public class CenariosCorrecaoEditarPO extends TestBase{
 
 		sleep(3000);
 		confirmacionGravar.click();
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		
 		return sucesso;
 	}

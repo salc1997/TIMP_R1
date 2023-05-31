@@ -70,14 +70,14 @@ public class DetalheExcluirMassaPO extends TestBase{
 	}
 	
 	public void llenarDatos() {
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		sleep(2000);
 		empresa.click();
 		sleep(1000);
 		empresaO.click();
 		empresa.sendKeys(Keys.ESCAPE);
 		
-		attributeToBeXpath("//div[@id=\"tax\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tax\"]/div", "class", "base-select required");
 		sleep(1000);
 		tributo.click();
 		sleep(1000);
@@ -131,7 +131,7 @@ public class DetalheExcluirMassaPO extends TestBase{
 		
 		salvarENovo.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 	
 		nao.click();
 		sleep(4000);
@@ -159,7 +159,7 @@ public class DetalheExcluirMassaPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		
 		nao.click();
 		sleep(2000);
@@ -249,14 +249,14 @@ public class DetalheExcluirMassaPO extends TestBase{
 		
 		btnExcluirMassa.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

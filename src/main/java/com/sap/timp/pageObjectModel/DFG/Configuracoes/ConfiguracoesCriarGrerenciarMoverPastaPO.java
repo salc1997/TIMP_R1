@@ -115,7 +115,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBase{
 		sleep(2000);
 		
 		sleep(2000);
-		waitExpectElement(raiz2);
+		waitExpectedElement(raiz2);
 		raiz2.click();
 		
 		sleep(2000);
@@ -125,7 +125,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBase{
 		btnCriarPasta.click();
 		sleep(2000);
 		
-		waitExpectElement(nomePasta);
+		waitExpectedElement(nomePasta);
 		nomePasta.click();
 		sleep(1000);
 		nomePasta.sendKeys("Pasta 1");
@@ -136,7 +136,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBase{
 		btnCriarPasta.click();
 		sleep(2000);
 		
-		waitExpectElement(nomePasta);
+		waitExpectedElement(nomePasta);
 		nomePasta.click();
 		sleep(1000);
 		nomePasta.sendKeys("Pasta 2");
@@ -160,7 +160,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBase{
 		sleep(2000);
 		
 		WebElement pasta2 = driver.findElement(By.xpath("//span[text()=\"Pasta 2\"]"));
-		waitExpectElement(pasta2);
+		waitExpectedElement(pasta2);
 		pasta2.click();
 		
 		btnNovaConfiguracao.click();
@@ -169,7 +169,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBase{
 		sleep(2000);
 		
 		
-		waitExpectElement(nomeConfiguracao);
+		waitExpectedElement(nomeConfiguracao);
 		nomeConfiguracao.sendKeys("Teste Automatizado");
 		sleep(1000);
 		
@@ -185,40 +185,40 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBase{
 		Opc6 .click();
 		sleep(4000);
 		
-		attributeToBeXpath("//div[@id=\"inputTimpVersion\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"inputTimpVersion\"]/div", "class", "base-select required");
 		versao.click();
 		sleep(1000);
 		opcionVersao.click();
 		sleep(1000);
 		
-		actionsMoveToElementElement(dataVigencia);
+		actionsMoveToElement(dataVigencia);
 		tributo.click();
 		sleep(1000);
 		opcionTributo.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"inputSelectCompany\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"inputSelectCompany\"]/div", "class", "base-MultipleSelect3 required");
 		empresa.click();
 		sleep(1000);
 		opcionEmpresa.click();
 		closeSelectTypeCheckbox(empresa);
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"inputSelectState\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"inputSelectState\"]/div", "class", "base-MultipleSelect3 required");
 		uf.click();
 		sleep(1000);
 		opcionUf.click();
 		closeSelectTypeCheckbox(empresa);
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"inputSelectFilial\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"inputSelectFilial\"]/div", "class", "base-MultipleSelect3 required");
 		filial.click();
 		sleep(1000);
 		opcionFilial.click();
 		closeSelectTypeCheckbox(empresa);
 		sleep(1000);
 		
-		actionsMoveToElementElement(dataVigencia);
+		actionsMoveToElement(dataVigencia);
 		dataVigencia.sendKeys("01/01/2013");
 		
 		salvar.click();
@@ -329,7 +329,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBase{
 		btnExcluirPasta.click();
 		
 		sleep(1000);
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		btnSim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

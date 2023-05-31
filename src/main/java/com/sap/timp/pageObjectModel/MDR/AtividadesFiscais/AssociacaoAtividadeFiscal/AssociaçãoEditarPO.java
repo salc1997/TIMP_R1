@@ -69,10 +69,10 @@ public class AssociaçãoEditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(inputAtividadeFiscal);
+		waitExpectedElement(inputAtividadeFiscal);
 		inputAtividadeFiscal.click();
 		sleep(2000);
-		waitExpectElement(opcionComboAtividadeFiscal);
+		waitExpectedElement(opcionComboAtividadeFiscal);
 		opcionComboAtividadeFiscal.click();
 		sleep(2000);
 		
@@ -91,7 +91,7 @@ public class AssociaçãoEditarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(inputOpcionAtividadeFiscal);
+		waitExpectedElement(inputOpcionAtividadeFiscal);
 		String textoOpcionAtividadeFiscalEditado = inputOpcionAtividadeFiscal.getAttribute("value");
 		System.out.println("----------------------------------------");
 		System.out.println(textoOpcionAtividadeFiscalEditado);

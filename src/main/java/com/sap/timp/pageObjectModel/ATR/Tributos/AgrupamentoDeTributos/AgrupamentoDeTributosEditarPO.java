@@ -93,7 +93,7 @@ public class AgrupamentoDeTributosEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -132,7 +132,7 @@ public class AgrupamentoDeTributosEditarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -142,7 +142,7 @@ public class AgrupamentoDeTributosEditarPO extends TestBase{
 		 menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		 editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -151,14 +151,14 @@ public class AgrupamentoDeTributosEditarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
 		String nomeregistro = nome.getAttribute("value");
 		System.out.println(nomeregistro);
 		sucesso.add(nomeregistro.equals(enviar));
-		waitExpectElement(tributo);
+		waitExpectedElement(tributo);
 		sleep(2000);
 		tributo.click();
 		sleep(2000);

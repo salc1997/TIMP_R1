@@ -141,7 +141,7 @@ public class LivrosFiscaisExcluirEmMassaPO extends TestBase {
 			opcao2.sendKeys(Keys.ESCAPE);
 			sleep(2000);
 			
-			attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+			attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 			sleep(2000);
 			
 			ufFilial.click();
@@ -150,7 +150,7 @@ public class LivrosFiscaisExcluirEmMassaPO extends TestBase {
 			opcao2.sendKeys(Keys.ESCAPE);
 			sleep(2000);
 			
-			attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+			attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 			sleep(2000);
 			
 			filial.click();
@@ -187,7 +187,7 @@ public class LivrosFiscaisExcluirEmMassaPO extends TestBase {
 			opcao2.sendKeys(Keys.ESCAPE);
 			sleep(2000);
 			
-			attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+			attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 			sleep(2000);
 			
 			ufFilial.click();
@@ -196,7 +196,7 @@ public class LivrosFiscaisExcluirEmMassaPO extends TestBase {
 			opcao2.sendKeys(Keys.ESCAPE);
 			sleep(2000);
 			
-			attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+			attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 			sleep(2000);
 			
 			filial.click();
@@ -289,7 +289,7 @@ public class LivrosFiscaisExcluirEmMassaPO extends TestBase {
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -298,7 +298,7 @@ public class LivrosFiscaisExcluirEmMassaPO extends TestBase {
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(ultimaPagina);
+		waitExpectedElement(ultimaPagina);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		ultimaPagina.click();

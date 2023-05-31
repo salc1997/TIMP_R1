@@ -211,14 +211,14 @@ public class RegrasDeMensagensEditarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		
 		sleep(2000);
 		menu.click();
 		sleep(2000);
 		editar.click();
 		sleep(2000);
-		waitExpectElement(adicionarcaminho);
+		waitExpectedElement(adicionarcaminho);
 		invisibilityOfElementOverlay();
 	
 		primeiracaixar1.click();
@@ -240,7 +240,7 @@ public class RegrasDeMensagensEditarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		nao.click();
 		
@@ -249,7 +249,7 @@ public class RegrasDeMensagensEditarPO extends TestBase {
 		refresh();
 		
 		sleep(2000);
-		waitExpectElement(adicionarcaminho);
+		waitExpectedElement(adicionarcaminho);
 		invisibilityOfElementOverlay();
 		
 		
@@ -257,7 +257,7 @@ public class RegrasDeMensagensEditarPO extends TestBase {
 		
 		System.out.println("Regra Editada: " +sucesso.get(0));
 		
-		waitExpectElement(primeiracaixar1editado);
+		waitExpectedElement(primeiracaixar1editado);
 		invisibilityOfElementOverlay();
 		sleep(2000);
 		
@@ -274,7 +274,7 @@ public class RegrasDeMensagensEditarPO extends TestBase {
 		sleep(2000);
 		salvarcomocopia.click();
 
-		waitExpectElement(r2);
+		waitExpectedElement(r2);
 		sleep(2000);
 		if(r2.isDisplayed()) {
 			System.out.println("O campo r2 está na página de edição");
@@ -286,13 +286,13 @@ public class RegrasDeMensagensEditarPO extends TestBase {
 		gravar.click();
 
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		nao.click();
 		invisibilityOfElementOverlay();
 		
 		
-		waitExpectElement(r2);
+		waitExpectedElement(r2);
 		sleep(2000);
 		if(r2.isDisplayed()) {
 			System.out.println("r2 ainda consta na edição");
@@ -308,7 +308,7 @@ public class RegrasDeMensagensEditarPO extends TestBase {
 		gravar.click();
 
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 
 
@@ -341,7 +341,7 @@ public class RegrasDeMensagensEditarPO extends TestBase {
 		gravar.click();
 
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 
 		nao.click();
@@ -350,7 +350,7 @@ public class RegrasDeMensagensEditarPO extends TestBase {
 		refresh();
 		sleep(3000);
 
-		waitExpectElement(adicionarcaminho);
+		waitExpectedElement(adicionarcaminho);
 		invisibilityOfElementOverlay();
 		
 		

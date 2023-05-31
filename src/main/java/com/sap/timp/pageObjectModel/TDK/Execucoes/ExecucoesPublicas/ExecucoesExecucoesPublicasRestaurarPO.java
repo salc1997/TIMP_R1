@@ -90,7 +90,7 @@ public class ExecucoesExecucoesPublicasRestaurarPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(execucoes);
+		waitExpectedElement(execucoes);
 		sleep(2000);
 		execucoes.click();
 		sleep(2000);
@@ -111,7 +111,7 @@ public class ExecucoesExecucoesPublicasRestaurarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 		WebElement restaurar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Restaurar\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -149,13 +149,13 @@ public class ExecucoesExecucoesPublicasRestaurarPO extends TestBase {
 		
 		icone.click();
 		sleep(2000);
-		waitExpectElement(classificacaodeacesso);
+		waitExpectedElement(classificacaodeacesso);
 		sleep(2000);
 		classificacaodeacesso.click();
 		sleep(2000);
 		opcao.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);

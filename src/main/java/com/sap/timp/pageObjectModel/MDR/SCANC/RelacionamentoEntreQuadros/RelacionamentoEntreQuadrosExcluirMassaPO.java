@@ -130,7 +130,7 @@ public boolean criar() {
 		opcaotributo.click();
 		
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"tax-type-relationships\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tax-type-relationships\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		tipodetributo.click();
@@ -156,7 +156,7 @@ public boolean criar() {
 		
 		novo1.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -164,7 +164,7 @@ public boolean criar() {
 		sleep(3000);
 		
 		//Segundo Registro
-		waitExpectElement(carga);
+		waitExpectedElement(carga);
 		sleep(2000);
 		empresa.click();	
 		sleep(2000);		
@@ -179,7 +179,7 @@ public boolean criar() {
 		opcaotributo.click();
 		
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"tax-type-relationships\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tax-type-relationships\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		tipodetributo.click();
@@ -205,7 +205,7 @@ public boolean criar() {
 		sleep(2000);
 		novo1.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -280,7 +280,7 @@ public boolean criar() {
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -288,7 +288,7 @@ public boolean criar() {
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

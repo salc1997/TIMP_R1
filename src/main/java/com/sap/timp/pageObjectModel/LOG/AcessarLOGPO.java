@@ -24,7 +24,7 @@ public class AcessarLOGPO extends TestBase{
 	
 	public boolean acessarLOG() {
 		
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!log.isDisplayed()) {
@@ -33,7 +33,7 @@ public class AcessarLOGPO extends TestBase{
 		sleep(1000);
 		
 		log.click();
-		waitExpectElement(mostrar);
+		waitExpectedElement(mostrar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		boolean sucesso = mostrar.isDisplayed();

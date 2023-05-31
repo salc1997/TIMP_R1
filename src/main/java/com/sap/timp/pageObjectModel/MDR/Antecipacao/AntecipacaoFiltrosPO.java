@@ -44,7 +44,7 @@ public class AntecipacaoFiltrosPO extends TestBase{
 		
 		antecipacao.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"list\"]/div/div/div[1]/div/div[1]/div");
+		waitExpectedElement("//*[@id=\"list\"]/div/div/div[1]/div/div[1]/div");
 
 		sleep(2000);
 		

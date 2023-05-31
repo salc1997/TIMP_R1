@@ -52,7 +52,7 @@ public class ConfiguracoesVisualizarPO extends TestBase{
 	}
 	
 	public ArrayList<Boolean> editar() {		
-		waitExpectElement(configuracoes);
+		waitExpectedElement(configuracoes);
 		sleep(1000);
 		configuracoes.click();
 		sleep(3000);
@@ -69,7 +69,7 @@ public class ConfiguracoesVisualizarPO extends TestBase{
 		raiz2.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(3000);
 		
 		
@@ -85,7 +85,7 @@ public class ConfiguracoesVisualizarPO extends TestBase{
 		
 	/*	filtrosAvanzados.click();
 		sleep(3000);*/
-		waitExpectElement(filtrosAvanzados);
+		waitExpectedElement(filtrosAvanzados);
 		sleep(2000);
 		
 		procurar.sendKeys(id);

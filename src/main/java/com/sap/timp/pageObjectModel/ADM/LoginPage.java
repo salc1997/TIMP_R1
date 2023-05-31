@@ -31,7 +31,7 @@ public class LoginPage extends TestBase{
 	public void login() {
 
 		
-		waitExpectElement(botao);
+		waitExpectedElement(botao);
 		
 		//Usuario Incorreto e Senha Incorreto
 		usuario.sendKeys("TESTEUTOMATIZADO");
@@ -65,7 +65,7 @@ public class LoginPage extends TestBase{
 		senha.sendKeys("Alltax20");
 		sleep(1000);
 		botao.click();
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 
 	
 		

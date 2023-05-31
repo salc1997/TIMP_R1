@@ -122,13 +122,13 @@ public class ExecucoesIdPublicoePrivadoPO extends TestBase{
 
 		novo.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		
 		nome.sendKeys("Dashboard 1 - NÃO MEXER");
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"classification\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"classification\"]/div", "class", "base-select required");
 		sleep(4000);
 		
 		classificacao.click();
@@ -144,12 +144,12 @@ public class ExecucoesIdPublicoePrivadoPO extends TestBase{
 		gravar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(adicionarWidget);
+		waitExpectedElement(adicionarWidget);
 		sleep(3000);
 		
 		
 		adicionarWidget.click();
-		waitExpectElement(cartaoIndicador);
+		waitExpectedElement(cartaoIndicador);
 		sleep(2000);
 		
 		cartaoIndicador.click();
@@ -166,14 +166,14 @@ public class ExecucoesIdPublicoePrivadoPO extends TestBase{
 		opcao.click();
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"structure-container\"]/div/div", "class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"structure-container\"]/div/div", "class", "base-autocomplete required");
 		sleep(4000);
 		
 		estruturasDados.click();
 		sleep(2000);
 		opcao.click();
 		sleep(2000);
-		waitExpectElement(conteudo);
+		waitExpectedElement(conteudo);
 		sleep(2000);
 		
 		conteudo.click();
@@ -202,7 +202,7 @@ public class ExecucoesIdPublicoePrivadoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

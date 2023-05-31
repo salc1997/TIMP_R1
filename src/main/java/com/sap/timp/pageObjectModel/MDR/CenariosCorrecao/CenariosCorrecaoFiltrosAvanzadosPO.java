@@ -90,7 +90,7 @@ public class CenariosCorrecaoFiltrosAvanzadosPO extends TestBase{
 		while (data.size() == 0) {		
 			sleep(4000);
 			siguiente.sendKeys(Keys.ENTER);
-			waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
+			waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
 			sleep(2000);
 			j=1;
 			
@@ -117,7 +117,7 @@ public class CenariosCorrecaoFiltrosAvanzadosPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		attributeToBeXpath("//*[@id=\"tax\"]/div/div[2]/div", "class", "base-select-wrapper");
+		attributeToBe("//*[@id=\"tax\"]/div/div[2]/div", "class", "base-select-wrapper");
 		sleep(8000);
 	
 		comboTributo.click();
@@ -125,7 +125,7 @@ public class CenariosCorrecaoFiltrosAvanzadosPO extends TestBase{
 		sleep(1000);
 		opcao1.click();
 		
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
+		waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
 		sleep(3000);
 		
 		
@@ -151,7 +151,7 @@ public class CenariosCorrecaoFiltrosAvanzadosPO extends TestBase{
 		//waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
 		//attributeToBeXpath("//div[@class=\"pre-header\"]/div", "class", "pre-item show-hide-option");
 		//sleep(5000);
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		attributeToBe("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);
 		
 		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]")).size();
@@ -177,7 +177,7 @@ public class CenariosCorrecaoFiltrosAvanzadosPO extends TestBase{
 		while (data.size() == 0) {		
 			sleep(7000);
 			siguiente.sendKeys(Keys.ENTER);
-			waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
+			waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
 			sleep(2000);
 			j=1;
 			
@@ -209,7 +209,7 @@ public class CenariosCorrecaoFiltrosAvanzadosPO extends TestBase{
 		opcao1.click();
 		cuerpo.click();
 		
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
+		waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
 		sleep(3000);
 		
 		
@@ -242,7 +242,7 @@ public class CenariosCorrecaoFiltrosAvanzadosPO extends TestBase{
 		sleep(10000);
 		limpiar.sendKeys(Keys.ENTER);
 		sleep(10000);
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		attributeToBe("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);
 		
 		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and contains(@aria-label, \"Row\")]")).size();
@@ -269,7 +269,7 @@ public class CenariosCorrecaoFiltrosAvanzadosPO extends TestBase{
 		while (data.size() == 0) {		
 			sleep(7000);
 			siguiente.sendKeys(Keys.ENTER);
-			waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
+			waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
 			sleep(2000);
 			j=1;
 			
@@ -300,7 +300,7 @@ public class CenariosCorrecaoFiltrosAvanzadosPO extends TestBase{
 		opcao1.click();
 		cuerpo.click();
 		
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
+		waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
 		sleep(3000);
 		
 		

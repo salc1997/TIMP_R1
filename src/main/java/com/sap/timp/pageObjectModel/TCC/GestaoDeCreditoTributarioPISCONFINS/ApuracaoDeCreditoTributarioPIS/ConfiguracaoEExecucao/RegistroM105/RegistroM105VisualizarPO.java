@@ -166,7 +166,7 @@ public class RegistroM105VisualizarPO extends TestBase{
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(filial);
+		waitExpectedElement(filial);
 		sleep(2000);
 		
 		String empresaEditar = empresa.getAttribute("value");

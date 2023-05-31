@@ -109,14 +109,14 @@ public class RegrasDeAuditoriaN3RelacionamentoPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
 		sleep(1000);
 		editar.click();
 		sleep(2000);
-		waitExpectElement(adicionarcaminho);
+		waitExpectedElement(adicionarcaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -125,7 +125,7 @@ public class RegrasDeAuditoriaN3RelacionamentoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(relacionamentoestrutura);
+		waitExpectedElement(relacionamentoestrutura);
 		sleep(2000);
 		relacionamentoestrutura.click();
 		sleep(2000);
@@ -154,7 +154,7 @@ public class RegrasDeAuditoriaN3RelacionamentoPO extends TestBase{
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		nao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -167,14 +167,14 @@ public class RegrasDeAuditoriaN3RelacionamentoPO extends TestBase{
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 
 		menu1.click();
 		sleep(1000);
 		editar1.click();
 		sleep(2000);
-		waitExpectElement(adicionarcaminho);
+		waitExpectedElement(adicionarcaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -183,7 +183,7 @@ public class RegrasDeAuditoriaN3RelacionamentoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(relacionamentoestrutura);
+		waitExpectedElement(relacionamentoestrutura);
 		sleep(19000);
 		
 		

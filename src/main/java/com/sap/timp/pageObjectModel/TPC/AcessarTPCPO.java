@@ -31,7 +31,7 @@ public class AcessarTPCPO extends TestBase {
 	
 	public boolean acessarTPC() {
 
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!tpc.isDisplayed()) {
@@ -41,7 +41,7 @@ public class AcessarTPCPO extends TestBase {
 		
 		tpc.click();
 		
-		waitExpectElement(mostrar);
+		waitExpectedElement(mostrar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		boolean sucesso = mostrar.isDisplayed();

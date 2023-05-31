@@ -66,7 +66,7 @@ public class NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFEPO extends TestB
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
 		sucesso.add(infnfeRegistro.equals(infnfeBusqueda));
-		waitExpectElement(limpar);
+		waitExpectedElement(limpar);
 		sleep(2000);
 		limpar.click();
 		sleep(2000);

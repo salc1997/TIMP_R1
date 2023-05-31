@@ -87,7 +87,7 @@ public class TarefaManualPO extends TestBase{
 		if (tq1 == true) {
 
 			WebElement OPC1 = driver.findElement(By.xpath("//div[contains(@aria-label, \" Id: 943537\")]"));
-			actionsMoveToElementElement(OPC1);
+			actionsMoveToElement(OPC1);
 			
 			WebElement status1 = driver.findElement(By.xpath("//div[contains(@aria-label, \" Id: 943537\")]/div[5]"));
 			
@@ -112,7 +112,7 @@ public class TarefaManualPO extends TestBase{
 		}else if (tc2 == true) {
 
 			WebElement OPC1 = driver.findElement(By.xpath("//div[contains(@aria-label, \" Id: 6482\")]"));
-			actionsMoveToElementElement(OPC1);
+			actionsMoveToElement(OPC1);
 			
 			WebElement status1 = driver.findElement(By.xpath("//div[contains(@aria-label, \" Id: 6482\")]/div[5]"));
 			

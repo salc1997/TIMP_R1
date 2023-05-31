@@ -56,13 +56,13 @@ public class TabelaCodigoReceitasEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
 		editar.click();
 		sleep(2000);
-		attributoNotToBeEmptyElement(descricao, "value");
+		attributoNotToBeEmpty(descricao, "value");
 	  	sleep(8000);
 		sleep(2000);
 		sleep(2000);
@@ -96,7 +96,7 @@ public class TabelaCodigoReceitasEditarPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		attributoNotToBeEmptyElement(descricao, "value");
+		attributoNotToBeEmpty(descricao, "value");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

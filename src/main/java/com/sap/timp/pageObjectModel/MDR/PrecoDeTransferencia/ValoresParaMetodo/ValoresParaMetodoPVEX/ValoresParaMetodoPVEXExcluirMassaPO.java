@@ -169,7 +169,7 @@ public class ValoresParaMetodoPVEXExcluirMassaPO extends TestBase{
 		sim.click();		
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"material\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"material\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		material.click();		
@@ -211,7 +211,7 @@ public class ValoresParaMetodoPVEXExcluirMassaPO extends TestBase{
 		salvarENovo.click();
 		sleep(2000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -241,7 +241,7 @@ public class ValoresParaMetodoPVEXExcluirMassaPO extends TestBase{
 		sim.click();		
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"material\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"material\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		material.click();		
@@ -290,7 +290,7 @@ public class ValoresParaMetodoPVEXExcluirMassaPO extends TestBase{
 		salvarENovo.click();
 		sleep(2000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -375,14 +375,14 @@ public class ValoresParaMetodoPVEXExcluirMassaPO extends TestBase{
 		
 		btnExcluirMassa.click();
 		sleep(2000);
-		waitExpectElement(btnAceitar);
+		waitExpectedElement(btnAceitar);
 		btnAceitar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

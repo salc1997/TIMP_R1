@@ -96,7 +96,7 @@ public class TabelaOutrosDebitosVisualizarPO extends TestBase {
 
 		sleep(2000);
 		
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		
@@ -151,7 +151,7 @@ public class TabelaOutrosDebitosVisualizarPO extends TestBase {
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		attributoNotToBeEmptyElement(codigoE, "value");
+		attributoNotToBeEmpty(codigoE, "value");
 		
 		
 		String obrigacaoE1 = obrigacaoE.getAttribute("value");

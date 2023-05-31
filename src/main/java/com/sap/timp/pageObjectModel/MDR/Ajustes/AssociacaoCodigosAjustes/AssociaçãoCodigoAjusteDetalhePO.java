@@ -132,7 +132,7 @@ String URL = driver.getCurrentUrl();
 		sleep(2000);
 		
 		if(URL.contains("td1") || URL.contains("tq1")) {
-			waitExpectElement(menuAjustes);
+			waitExpectedElement(menuAjustes);
 			menuAjustes.click();		
 			sleep(2000);
 		}		

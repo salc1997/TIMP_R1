@@ -98,7 +98,7 @@ public class ParametrosParaCategoriaDeIRFCriarPO extends TestBase{
 		sleep(1000);
 		opcao.click();
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"irf-code\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"irf-code\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(1000);
 	
 		
@@ -108,7 +108,7 @@ public class ParametrosParaCategoriaDeIRFCriarPO extends TestBase{
 		opcao2.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"irf-key\"]/div", "class", "base-select ");
+		attributeToBe("//div[@id=\"irf-key\"]/div", "class", "base-select ");
 		
 		chaveIRF.click();
 		sleep(1000);
@@ -130,7 +130,7 @@ public class ParametrosParaCategoriaDeIRFCriarPO extends TestBase{
 
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

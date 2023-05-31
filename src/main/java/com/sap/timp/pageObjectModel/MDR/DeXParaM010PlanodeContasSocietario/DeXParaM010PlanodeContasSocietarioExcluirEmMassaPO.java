@@ -201,7 +201,7 @@ public class DeXParaM010PlanodeContasSocietarioExcluirEmMassaPO extends TestBase
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -210,7 +210,7 @@ public class DeXParaM010PlanodeContasSocietarioExcluirEmMassaPO extends TestBase
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(ultimaPagina);
+		waitExpectedElement(ultimaPagina);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		ultimaPagina.click();

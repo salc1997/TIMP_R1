@@ -50,7 +50,7 @@ public class ExportarPO extends TestBase{
 	
 	public boolean exportarCSV() {
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
@@ -68,11 +68,11 @@ public class ExportarPO extends TestBase{
 
 		opcao.click();
 
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		waitExpectedElement("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 
 		executar.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		waitExpectedElement("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		
 		exportar.click();
 		sleep(2000);
@@ -80,7 +80,7 @@ public class ExportarPO extends TestBase{
 		aceitar.click();
 		
 		boolean sucesso = false;
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		waitExpectedElement("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		sleep(3000);
 		if (descargado.isDisplayed() == true) {
 			sucesso = true;
@@ -101,7 +101,7 @@ public class ExportarPO extends TestBase{
 		sleep(2000);
 		aceitar.click();
 		boolean sucesso = false;
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		waitExpectedElement("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		sleep(3000);
 		if (descargado.isDisplayed() == true) {
 			sucesso = true;
@@ -113,7 +113,7 @@ public class ExportarPO extends TestBase{
 		sleep(3000);
 		nao.click();
 		
-		waitExpectXpath("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[1]/div");
+		waitExpectedElement("//*[@id=\"right\"]/div/div[4]/div/div[1]/div/div[1]/div");
 		sleep(3000);
 		return sucesso;
 		

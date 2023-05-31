@@ -108,7 +108,7 @@ public class CadastroNotaFiscalCriarPO extends TestBase{
 		opcao.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 		
-		attributeToBeXpath("//div[contains(@class,\"uf\")]/div", "class", "input-element-wrapper");
+		attributeToBe("//div[contains(@class,\"uf\")]/div", "class", "input-element-wrapper");
 		sleep(2000);
 
 		ufFilial.click();
@@ -118,7 +118,7 @@ public class CadastroNotaFiscalCriarPO extends TestBase{
 
 		sleep(1000);
 		
-		attributeToBeXpath("//div[contains(@class,\"branch\")]/div", "class", "input-element-wrapper");
+		attributeToBe("//div[contains(@class,\"branch\")]/div", "class", "input-element-wrapper");
 		sleep(1000);
 		
 		filial.click();
@@ -143,11 +143,11 @@ public class CadastroNotaFiscalCriarPO extends TestBase{
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();

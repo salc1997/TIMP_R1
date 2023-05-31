@@ -87,7 +87,7 @@ public class AjusteEInformaçoesDeValoresEditarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -98,7 +98,7 @@ public class AjusteEInformaçoesDeValoresEditarPO extends TestBase {
 		sleep(2000);
 		
 		//ediçao
-		attributoNotToBeEmptyXpath("//input[@placeholder=\"Preencher o Reflexo na Apuração ICMS\"]", "value");
+		attributoNotToBeEmpty("//input[@placeholder=\"Preencher o Reflexo na Apuração ICMS\"]", "value");
 		sleep(2000);
 		descricao.clear();
 		

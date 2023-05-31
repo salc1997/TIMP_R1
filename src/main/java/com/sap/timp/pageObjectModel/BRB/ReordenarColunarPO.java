@@ -46,7 +46,7 @@ public class ReordenarColunarPO extends TestBase{
 	
 	public boolean reordenar() {
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
@@ -63,11 +63,11 @@ public class ReordenarColunarPO extends TestBase{
 		opcao.click();
 
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		sleep(1000);
 		
 		Actions actions = new Actions(driver);
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		sleep(2000);
 
 		Point hacia = driver.findElement(By.xpath("//*[@id=\"draggable-193\"]")).getLocation();
@@ -83,7 +83,7 @@ public class ReordenarColunarPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -92,7 +92,7 @@ public class ReordenarColunarPO extends TestBase{
 		
 		driver.navigate().refresh();
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 
 		
 		boolean movido = false;
@@ -109,7 +109,7 @@ public class ReordenarColunarPO extends TestBase{
 
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);

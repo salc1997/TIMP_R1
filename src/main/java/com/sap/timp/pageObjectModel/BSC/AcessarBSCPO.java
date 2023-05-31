@@ -28,7 +28,7 @@ public class AcessarBSCPO extends TestBase {
 	
 	public boolean acessarBSC() {
 
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!bSC.isDisplayed()) {
@@ -38,7 +38,7 @@ public class AcessarBSCPO extends TestBase {
 		
 		bSC.click();
 		
-		waitExpectElement(mostrar);
+		waitExpectedElement(mostrar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		boolean sucesso = mostrar.isDisplayed();

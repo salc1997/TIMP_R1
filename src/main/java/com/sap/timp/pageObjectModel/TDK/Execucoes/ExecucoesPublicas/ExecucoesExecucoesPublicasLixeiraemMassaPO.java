@@ -163,7 +163,7 @@ public class ExecucoesExecucoesPublicasLixeiraemMassaPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(execucoes);
+		waitExpectedElement(execucoes);
 		sleep(2000);
 		execucoes.click();
 		sleep(2000);
@@ -214,14 +214,14 @@ public class ExecucoesExecucoesPublicasLixeiraemMassaPO extends TestBase{
 
 		novo.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 
 		nome.click();
 		sleep(1000);
 		nome.sendKeys("Dashboard 1 - NÃO MEXER ");
 		sleep(1000);
-		attributeToBeXpath("//div[@id=\"classification\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"classification\"]/div", "class", "base-select required");
 		sleep(4000);
 		classificacao.click();
 		sleep(1000);
@@ -235,7 +235,7 @@ public class ExecucoesExecucoesPublicasLixeiraemMassaPO extends TestBase{
 
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(Gravar);
+		waitExpectedElement(Gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -276,7 +276,7 @@ public class ExecucoesExecucoesPublicasLixeiraemMassaPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -333,14 +333,14 @@ public class ExecucoesExecucoesPublicasLixeiraemMassaPO extends TestBase{
 		WebElement lixeira = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
 		sleep(1000);
 		lixeira.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -398,7 +398,7 @@ public class ExecucoesExecucoesPublicasLixeiraemMassaPO extends TestBase{
 		WebElement lixeira = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -466,7 +466,7 @@ public class ExecucoesExecucoesPublicasLixeiraemMassaPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(execucoes);
+		waitExpectedElement(execucoes);
 		sleep(2000);
 		execucoes.click();
 		sleep(2000);
@@ -508,7 +508,7 @@ public class ExecucoesExecucoesPublicasLixeiraemMassaPO extends TestBase{
 		eliminar.click();
 		sleep(3000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

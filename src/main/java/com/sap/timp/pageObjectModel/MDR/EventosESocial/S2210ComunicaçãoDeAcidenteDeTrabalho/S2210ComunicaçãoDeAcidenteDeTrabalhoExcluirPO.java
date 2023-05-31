@@ -50,7 +50,7 @@ public class S2210ComunicaçãoDeAcidenteDeTrabalhoExcluirPO extends TestBase{
 		sleep(3000);
 		btnEliminar.click();
 		sleep(2000);
-		waitExpectElement(btnAceitar);
+		waitExpectedElement(btnAceitar);
 		sleep(2000);
 		btnAceitar.click();
 		sleep(2000);
@@ -60,7 +60,7 @@ public class S2210ComunicaçãoDeAcidenteDeTrabalhoExcluirPO extends TestBase{
 		// Recargo la pagina
 		driver.navigate().refresh();
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

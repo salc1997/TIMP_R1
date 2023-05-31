@@ -152,7 +152,7 @@ public class EmprestimosExcluirEmMassaPO extends TestBase {
 		opcEmpresa.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div","class", "base-select required");
+		attributeToBe("//div[@id=\"uf\"]/div","class", "base-select required");
 		sleep(2000);
 		
 		ufFilial.click();
@@ -160,7 +160,7 @@ public class EmprestimosExcluirEmMassaPO extends TestBase {
 		opcUfFilial.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"branches\"]/div","class", "base-select required");
+		attributeToBe("//div[@id=\"branches\"]/div","class", "base-select required");
 		sleep(2000);
 		
 		filial.click();
@@ -301,7 +301,7 @@ public class EmprestimosExcluirEmMassaPO extends TestBase {
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(simGravar);
+		waitExpectedElement(simGravar);
 		sleep(1000);
 		simGravar.click();
 		sleep(3000);
@@ -310,7 +310,7 @@ public class EmprestimosExcluirEmMassaPO extends TestBase {
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(irFinalPagina);
+		waitExpectedElement(irFinalPagina);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		irFinalPagina.click();

@@ -86,7 +86,7 @@ public class MapeamentoDeEstruturasCriarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -125,7 +125,7 @@ public class MapeamentoDeEstruturasCriarPO extends TestBase{
 		opcaodata.click();
 		closeSelectTypeCheckbox(data);
 		sleep(2000);
-		actionsMoveToElementXpath("//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]");
+		actionsMoveToElement("//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]");
 		tributo.click();
 		sleep(2000);
 		opcaotributo.click();
@@ -145,7 +145,7 @@ public class MapeamentoDeEstruturasCriarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);

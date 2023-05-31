@@ -140,7 +140,7 @@ public class CodigosAjustesExcluirMassaPO extends TestBase {
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		attributeToBeXpath("//div[@id=\"companyCode\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"companyCode\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		empresa.click();
@@ -159,7 +159,7 @@ public class CodigosAjustesExcluirMassaPO extends TestBase {
 		
 		descriçao.sendKeys("Código Ajuste de Teste QA 1");
 		sleep(1000);
-		actionsMoveToElementElement(codigoConta);
+		actionsMoveToElement(codigoConta);
 		sleep(1000);
 		tributo.click();
 		sleep(1000);
@@ -167,7 +167,7 @@ public class CodigosAjustesExcluirMassaPO extends TestBase {
 		tributoO.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"tributeType\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tributeType\"]/div", "class", "base-select required");
 		sleep(1000);
 		tipoTributo.click();
 		sleep(1000);
@@ -213,7 +213,7 @@ public class CodigosAjustesExcluirMassaPO extends TestBase {
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		attributeToBeXpath("//div[@id=\"companyCode\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"companyCode\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		empresa.click();
@@ -233,7 +233,7 @@ public class CodigosAjustesExcluirMassaPO extends TestBase {
 		
 		descriçao.sendKeys("Código Ajuste de Teste QA 2");
 		sleep(1000);
-		actionsMoveToElementElement(codigoConta);
+		actionsMoveToElement(codigoConta);
 		sleep(1000);
 		tributo.click();
 		sleep(1000);
@@ -241,13 +241,13 @@ public class CodigosAjustesExcluirMassaPO extends TestBase {
 		tributoO.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"tributeType\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tributeType\"]/div", "class", "base-select required");
 		sleep(1000);
 		tipoTributo.click();
 		sleep(1000);
 		opcion.click();
 		sleep(1000);
-		attributeToBeXpath("//div[@id=\"tributeTypeDetail\"]/div/div/div/div[1]", "class", "input-wrapper base-input  required");
+		attributeToBe("//div[@id=\"tributeTypeDetail\"]/div/div/div/div[1]", "class", "input-wrapper base-input  required");
 		sleep(2000);
 		detalheTributo.click();
 		sleep(1000);
@@ -347,7 +347,7 @@ public class CodigosAjustesExcluirMassaPO extends TestBase {
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(1000);
 		aceitar.click();
 		sleep(3000);
@@ -356,7 +356,7 @@ public class CodigosAjustesExcluirMassaPO extends TestBase {
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

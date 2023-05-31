@@ -213,14 +213,14 @@ public class RegrasDeNegocioEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
 		sleep(1000);
 		editar.click();
 		sleep(2000);
-		waitExpectElement(adicionarcaminho);
+		waitExpectedElement(adicionarcaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -297,7 +297,7 @@ public class RegrasDeNegocioEditarPO extends TestBase{
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(configuracoes);
+		waitExpectedElement(configuracoes);
 		sleep(26000);
 		configuracoes.click();
 		sleep(2000);

@@ -60,13 +60,13 @@ public class RegradeReaberturaEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
 		editar.click();
 		sleep(2000);
-		attributoNotToBeEmptyElement(descripcion, "value");
+		attributoNotToBeEmpty(descripcion, "value");
 	  	sleep(2000);
 		
 	  	String valor = descripcion.getAttribute("value");
@@ -91,7 +91,7 @@ public class RegradeReaberturaEditarPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		attributoNotToBeEmptyElement(descripcion, "value");
+		attributoNotToBeEmpty(descripcion, "value");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

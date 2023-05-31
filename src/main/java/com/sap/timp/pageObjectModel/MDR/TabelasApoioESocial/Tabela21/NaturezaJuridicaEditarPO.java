@@ -62,14 +62,14 @@ public class NaturezaJuridicaEditarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
 		sleep(1000);
 		editar.click();
 		sleep(2000);
-		waitExpectElement(gravar);
+		waitExpectedElement(gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//attributoNotToBeEmptyElement(campo, "value");
@@ -89,7 +89,7 @@ public class NaturezaJuridicaEditarPO extends TestBase {
 		gravar.click();
 		sleep(2000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		
 		sim.click();
@@ -102,8 +102,8 @@ public class NaturezaJuridicaEditarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
-		waitExpectElement(campo);
-		attributoNotToBeEmptyElement(campo, "value");
+		waitExpectedElement(campo);
+		attributoNotToBeEmpty(campo, "value");
 		
 		String nuevoTexto = campo.getAttribute("value");
 

@@ -48,7 +48,7 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirPO extends TestBase{
 		sleep(1000);
 		açao.click();
 		sleep(3000);
-		waitExpectElement(btnAceitar);
+		waitExpectedElement(btnAceitar);
 		sleep(2000);
 		btnAceitar.click();
 		sleep(2000);

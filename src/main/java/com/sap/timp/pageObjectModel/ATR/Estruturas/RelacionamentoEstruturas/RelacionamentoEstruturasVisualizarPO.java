@@ -135,7 +135,7 @@ public class RelacionamentoEstruturasVisualizarPO extends TestBase{
 		invisibilityOfElementOverlay();
 		sleep(1000);
 		
-		waitExpectElement(grupo1);
+		waitExpectedElement(grupo1);
 	
 		
 		String grupo1V = grupo1.getAttribute("value");
@@ -179,7 +179,7 @@ public class RelacionamentoEstruturasVisualizarPO extends TestBase{
 		invisibilityOfElementOverlay();
 		sleep(1000);
 	
-		waitExpectElement(grupo1);
+		waitExpectedElement(grupo1);
 
 		
 		System.out.println("---------------------------Datos Editar-------------------------------------------");

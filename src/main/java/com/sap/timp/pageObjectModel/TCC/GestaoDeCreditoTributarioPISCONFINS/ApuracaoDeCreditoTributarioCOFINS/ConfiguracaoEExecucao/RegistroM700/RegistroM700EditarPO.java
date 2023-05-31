@@ -82,7 +82,7 @@ public class RegistroM700EditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		
 		menu.click();
@@ -93,7 +93,7 @@ public class RegistroM700EditarPO extends TestBase{
 		sleep(8000);
 		
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(3000);
 		
 		codPeriodo.click();
@@ -105,7 +105,7 @@ public class RegistroM700EditarPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

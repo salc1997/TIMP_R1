@@ -87,21 +87,21 @@ public class AjustedContabilizarPO extends TestBase{
 		WebElement estornar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Estornar\"]"));
 		
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
 		estornar.click();
 		sleep(16000);
 		
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(2000);
 		
 		aceitar.click();
 		sleep(2000);
 		
 		
-		waitExpectElement(nueva);
+		waitExpectedElement(nueva);
 		sleep(10000);
 		sleep(10000);
 		

@@ -573,7 +573,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		nome.sendKeys("Teste Automatizado AN3");
 		sleep(1000);
-		actionsMoveToElementElement(versao);
+		actionsMoveToElement(versao);
 		sleep(1000);
 		tipo.click();
 		sleep(1000);
@@ -612,7 +612,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(gravar);
+		waitExpectedElement(gravar);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -624,7 +624,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		separadores.click();
 		sleep(2000);
-		waitExpectElement(aplicar);
+		waitExpectedElement(aplicar);
 		sleep(2000);
 		separador.sendKeys("|");
 		sleep(1000);
@@ -639,7 +639,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -650,7 +650,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		adicionarBloco.click();
 		sleep(2000);
-		waitExpectElement(adicionarRegistro);
+		waitExpectedElement(adicionarRegistro);
 		sleep(1000);
 		adicionarRegistro.click();
 		sleep(2000);
@@ -670,17 +670,17 @@ public class AN3FuncionalidadesPO extends TestBase{
 		sleep(1000);
 		moveToElement(codigoFilial,driver.findElement(By.xpath("//div[contains(@class,\"ui-droppable\")]")));
 		sleep(1000);
-		actionsMoveToElementElement(dataLancamento);
+		actionsMoveToElement(dataLancamento);
 		sleep(500);
 		moveToElement(dataLancamento,driver.findElement(By.xpath("//div[contains(@class,\"ui-droppable\")]")));
 		sleep(500);
-		actionsMoveToElementElement(valorAjuste);
+		actionsMoveToElement(valorAjuste);
 		moveToElement(valorAjuste,driver.findElement(By.xpath("//div[contains(@class,\"ui-droppable\")]")));
 		sleep(1000);
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -794,7 +794,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		novo.click();
 		sleep(3000);
-		waitExpectElement(nomeRegra);
+		waitExpectedElement(nomeRegra);
 		sleep(2000);
 		
 		nomeRegra.sendKeys("Teste Automatizado DFG AN3");
@@ -819,7 +819,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		componenteO.click();
 		sleep(1000);
 		
-		actionsMoveToElementElement(dataVigenciaR);
+		actionsMoveToElement(dataVigenciaR);
 		
 		sleep(1000);
 		
@@ -850,13 +850,13 @@ public class AN3FuncionalidadesPO extends TestBase{
 		sleep(1000);
 		caracterisiticaO.click();
 		sleep(3000);
-		actionsMoveToElementElement(dataVigenciaR);
+		actionsMoveToElement(dataVigenciaR);
 		sleep(5000);
 		
 		//waitExpectElement(leiauteR);
 		leiauteR.click();
 		sleep(1000);
-		actionsMoveToElementXpath("//li[contains(text(),\""+idObter2()+"\")]");
+		actionsMoveToElement("//li[contains(text(),\""+idObter2()+"\")]");
 		sleep(1000);
 		WebElement leiauteO = driver.findElement(By.xpath("//li[contains(text(),\""+idObter2()+"\")]"));
 		leiauteO.click();
@@ -878,7 +878,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		adicionarCaminho.click();
 		sleep(3000);
-		waitExpectElement(codigo);
+		waitExpectedElement(codigo);
 		sleep(2000);
 		
 		codigo.sendKeys("R1");
@@ -917,7 +917,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -1036,7 +1036,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		novo.click();
 		sleep(3000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000); 
 		
@@ -1049,7 +1049,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		leiauteO.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"inputTimpVersion\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"inputTimpVersion\"]/div", "class", "base-select required");
 		sleep(1000);
 		
 		versaoE.click();
@@ -1057,7 +1057,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		versaoEO.click();
 		sleep(1000);
 		
-		actionsMoveToElementXpath("//input[contains(@placeholder,\"Fim\")]");
+		actionsMoveToElement("//input[contains(@placeholder,\"Fim\")]");
 		sleep(1000);
 		
 		tributoE.click();
@@ -1184,7 +1184,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		sleep(1000);
 		acao.click();
 		sleep(3000);
-		waitExpectElement(executar);
+		waitExpectedElement(executar);
 		sleep(2000);
 		
 		ufFilialB.click();
@@ -1212,7 +1212,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		sleep(3000);
 		
 		
-		waitExpectXpath("//div[@class=\"base-dialog   medium ui-draggable\"]");
+		waitExpectedElement("//div[@class=\"base-dialog   medium ui-draggable\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"base-dialog   medium ui-draggable\"]");
 		sleep(2000);
@@ -1232,7 +1232,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		sleep(2000);
 		no.click();
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"base-dialog   medium ui-draggable\"]");
+		waitExpectedElement("//div[@class=\"base-dialog   medium ui-draggable\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"base-dialog   medium ui-draggable\"]");
 		sleep(2000);
@@ -1261,7 +1261,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		gravar.click();
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 		
 		int enviado = rows("//span[contains(text(),\"Arquivo emitido com sucesso\")]");
@@ -1421,14 +1421,14 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		novo.click();
 		sleep(3000);
-		waitExpectElement(nomeAN3);
+		waitExpectedElement(nomeAN3);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		
 		nomeAN3.sendKeys("Teste Automatizado DFG AN3");
 		sleep(1000);
-		actionsMoveToElementXpath("//div[@id=\"inputfile\"]/div/div/div[2]");
+		actionsMoveToElement("//div[@id=\"inputfile\"]/div/div/div[2]");
 		sleep(1000);
 		
 		tipo.click();
@@ -1442,8 +1442,8 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@class=\"inputs layout-dfg-select\"]/div", "class", "base-select required");
-		actionsMoveToElementXpath("//div[@id=\"inputfile\"]/div/div/div[2]");
+		attributeToBe("//div[@class=\"inputs layout-dfg-select\"]/div", "class", "base-select required");
+		actionsMoveToElement("//div[@id=\"inputfile\"]/div/div/div[2]");
 		sleep(1000);
 		
 		
@@ -1453,7 +1453,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		leiauteAN3O.click();
 		
 		sleep(1000);
-		actionsMoveToElementXpath("//div[@id=\"inputfile\"]/div/div/div[2]");
+		actionsMoveToElement("//div[@id=\"inputfile\"]/div/div/div[2]");
 		sleep(2000);
 		
 		versaoAN3.click();
@@ -1461,8 +1461,8 @@ public class AN3FuncionalidadesPO extends TestBase{
 		versaoEO.click();
 		
 		sleep(1000);
-		actionsMoveToElementXpath("//div[@id=\"inputfile\"]/div/div/div[2]");
-		attributeToBeXpath("//div[@class=\"inputs setting-dfg-select\"]/div", "class", "base-select ");
+		actionsMoveToElement("//div[@id=\"inputfile\"]/div/div/div[2]");
+		attributeToBe("//div[@class=\"inputs setting-dfg-select\"]/div", "class", "base-select ");
 		sleep(2000);
 		
 		configuracaoAN3.click();
@@ -1472,7 +1472,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		sleep(1000);
 		
 		sleep(1000);
-		actionsMoveToElementXpath("//div[@id=\"inputfile\"]/div/div/div[2]");
+		actionsMoveToElement("//div[@id=\"inputfile\"]/div/div/div[2]");
 		sleep(2000);
 		
 		regraAN3.click();
@@ -1484,7 +1484,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		sleep(1000);
 		
 		sleep(1000);
-		actionsMoveToElementXpath("//div[@id=\"inputfile\"]/div/div/div[2]");
+		actionsMoveToElement("//div[@id=\"inputfile\"]/div/div/div[2]");
 		sleep(2000);
 		
 		arquivoAN3.click();
@@ -1588,7 +1588,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		publico.click();
 		sleep(1000);
-		waitExpectElement(aplicar);
+		waitExpectedElement(aplicar);
 		sleep(1000);
 		aplicar.click();
 		invisibilityOfElementOverlay();
@@ -1736,7 +1736,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		sleep(1000);
 		editarM.click();
 
-		waitExpectElement(descricao);
+		waitExpectedElement(descricao);
 		invisibilityOfElementOverlay();
 		
 		String enviar = "Teste Editar";
@@ -1764,7 +1764,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		sleep(1000);
 		editarM.click();
 		
-		waitExpectElement(descricao);
+		waitExpectedElement(descricao);
 		invisibilityOfElementOverlay();
 		
 		System.out.println("-----------------------------Verificacão do texto após a Edicação");
@@ -1855,7 +1855,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		criarPasta.click();
 		sleep(1000);
-		waitExpectElement(nomePasta);
+		waitExpectedElement(nomePasta);
 		sleep(2000);
 		
 		nomePasta.sendKeys("Pasta 1");
@@ -1874,7 +1874,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		criarPasta.click();
 		sleep(1000);
-		waitExpectElement(nomePasta);
+		waitExpectedElement(nomePasta);
 		sleep(2000);
 		
 		nomePasta.sendKeys("Pasta 2");
@@ -1923,7 +1923,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		moverPasta.click();
 		sleep(1000);
-		waitExpectElement(mover);
+		waitExpectedElement(mover);
 		sleep(2000);
 		
 		moverPara.click();
@@ -1983,14 +1983,14 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		novo.click();
 		sleep(3000);
-		waitExpectElement(nomeAN3);
+		waitExpectedElement(nomeAN3);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		
 		nomeAN3.sendKeys("Teste Automatizado DFG AN3");
 		sleep(1000);
-		actionsMoveToElementXpath("//input[@placeholder=\"Selecionar Origem\"]");
+		actionsMoveToElement("//input[@placeholder=\"Selecionar Origem\"]");
 		sleep(1000);
 		
 		tipo.click();
@@ -2003,8 +2003,8 @@ public class AN3FuncionalidadesPO extends TestBase{
 		sleep(1000);
 		
 		sleep(1000);
-		attributeToBeXpath("//div[@class=\"inputs layout-dfg-select\"]/div", "class", "base-select required");
-		actionsMoveToElementXpath("//input[@placeholder=\"Selecionar Origem\"]");
+		attributeToBe("//div[@class=\"inputs layout-dfg-select\"]/div", "class", "base-select required");
+		actionsMoveToElement("//input[@placeholder=\"Selecionar Origem\"]");
 
 		sleep(1000);
 		
@@ -2012,10 +2012,10 @@ public class AN3FuncionalidadesPO extends TestBase{
 		leiauteAN3.click();
 		sleep(1000);
 		WebElement leiauteAN3O = driver.findElement(By.xpath("//li[contains(text(),\""+idObter2()+"\")]"));
-		actionsMoveToElementElement(leiauteAN3O);
+		actionsMoveToElement(leiauteAN3O);
 		leiauteAN3O.click();
 		sleep(1000);
-		actionsMoveToElementXpath("//input[@placeholder=\"Selecionar Origem\"]");
+		actionsMoveToElement("//input[@placeholder=\"Selecionar Origem\"]");
 		sleep(1000);
 		
 		versaoAN3.click();
@@ -2023,8 +2023,8 @@ public class AN3FuncionalidadesPO extends TestBase{
 		versaoEO.click();
 		
 		sleep(1000);
-		attributeToBeXpath("//div[@class=\"inputs setting-dfg-select\"]/div", "class", "base-select ");
-		actionsMoveToElementXpath("//input[@placeholder=\"Selecionar Origem\"]");
+		attributeToBe("//div[@class=\"inputs setting-dfg-select\"]/div", "class", "base-select ");
+		actionsMoveToElement("//input[@placeholder=\"Selecionar Origem\"]");
 		sleep(2000);
 		
 		configuracaoAN3.click();
@@ -2034,7 +2034,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		sleep(1000);
 		
 		sleep(1000);
-		actionsMoveToElementXpath("//input[@placeholder=\"Selecionar Origem\"]");
+		actionsMoveToElement("//input[@placeholder=\"Selecionar Origem\"]");
 		sleep(1000);
 		
 		regraAN3.click();
@@ -2046,7 +2046,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		sleep(1000);
 		
 		sleep(1000);
-		actionsMoveToElementXpath("//input[@placeholder=\"Selecionar Arquivo Digital\"]");
+		actionsMoveToElement("//input[@placeholder=\"Selecionar Arquivo Digital\"]");
 		sleep(1000);
 		
 		arquivoAN3.click();
@@ -2127,7 +2127,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		*/
 		gerenciarPasta.click();
 		sleep(1000);
-		waitExpectElement(nomePasta);
+		waitExpectedElement(nomePasta);
 		sleep(2000);
 		
 		nomePasta.clear();
@@ -2176,12 +2176,12 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		gerenciarPasta.click();
 		sleep(1000);
-		waitExpectElement(nomePasta);
+		waitExpectedElement(nomePasta);
 		sleep(2000);
 		
 		excluirPasta.click();
 		sleep(1000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		invisibilityOfElementOverlay();
@@ -2285,7 +2285,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		waitExpectElement(pesquisar);
+		waitExpectedElement(pesquisar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -2397,7 +2397,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		waitExpectElement(pesquisar);
+		waitExpectedElement(pesquisar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -2464,7 +2464,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		sleep(1000);
 		lixeira.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -2513,7 +2513,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -2523,7 +2523,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		waitExpectElement(pesquisar);
+		waitExpectedElement(pesquisar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

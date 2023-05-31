@@ -77,12 +77,12 @@ public class MotivosCesBeneficiosEditarPO extends TestBase{
 		// Recargo la pagina
 		driver.navigate().refresh();
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(validadeDe);
-		attributoNotToBeEmptyElement(validadeDe, "value");
+		waitExpectedElement(validadeDe);
+		attributoNotToBeEmpty(validadeDe, "value");
 		String validadeEditada = validadeDe.getAttribute("value");
 		System.out.println(validadeEditada);
 		

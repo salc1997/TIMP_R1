@@ -311,7 +311,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		editar.click();
 		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(calculator);
+		waitExpectedElement(calculator);
 		sleep(2000);
 	//HASTA AQUI
 		
@@ -339,7 +339,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		opcFontedeDados5.click();
 		sleep(2000);
 		
-		actionsMoveToElementElement(camposSaidaBCB);
+		actionsMoveToElement(camposSaidaBCB);
 		sleep(2000);
 		
 		camposSaidaBCB.click();
@@ -352,7 +352,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		sleep(2000);
 		
 		
-		attributeToBeXpath("//div[@class=\"column-wrapper second\"]/div/div","class", "animation-wrapper show");
+		attributeToBe("//div[@class=\"column-wrapper second\"]/div/div","class", "animation-wrapper show");
 		sleep(2000);
 		
 		if (tq1 == true) {
@@ -360,21 +360,21 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 			sleep(1000);
 			selectBCB1.click();
 			sleep(1000);
-			dobleClickElement(selectBCB11);
+			dobleClick(selectBCB11);
 			sleep(1000);
 		}else if (tc2 ==true) {
 			buscarCamposSaidaBCB.sendKeys("2759");
 			sleep(1000);
-			dobleClickElement(selectBCB3);
+			dobleClick(selectBCB3);
 			sleep(6000);
-			dobleClickElement(selectBCB13);
+			dobleClick(selectBCB13);
 			sleep(1000);
 		}else if (tq2 == true) {
 			buscarCamposSaidaBCB.sendKeys("954");
 			sleep(1000);
 			selectBCB1.click();
 			sleep(1000);
-			dobleClickElement(selectBCB11);
+			dobleClick(selectBCB11);
 			sleep(1000);
 		}else{
 			//CORREGIR AL EJECUTAR EN AMBIENTE
@@ -382,7 +382,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 			sleep(1000);
 			selectBCB2.click();
 			sleep(1000);
-			dobleClickElement(selectBCB12);
+			dobleClick(selectBCB12);
 			sleep(1000);
 		}
 		
@@ -456,14 +456,14 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		
 		
 		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(executar);
+		waitExpectedElement(executar);
 		sleep(2000);
 		
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
@@ -545,7 +545,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		sleep(2000);
 		executar.click();
 		sleep(2000);
-		waitExpectElement(executarN);
+		waitExpectedElement(executarN);
 		sleep(5000);
 		executarN.click();
 		
@@ -591,7 +591,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
-		waitExpectElement(gravar);
+		waitExpectedElement(gravar);
 		sleep(3000);
 		
 		sleep(3000);
@@ -600,7 +600,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
-		waitExpectElement(aba1);
+		waitExpectedElement(aba1);
 		sleep(13000);
 		
 		aba1.click();
@@ -898,13 +898,13 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		lixeiraC.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(simLexeira);
+		waitExpectedElement(simLexeira);
 		sleep(2000);
 		
 		simLexeira.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(6000);
 		
 		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();
@@ -944,7 +944,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		simExcluir.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 		
 		return sucesso;
@@ -993,13 +993,13 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		lixeiraH.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(simLexeira);
+		waitExpectedElement(simLexeira);
 		sleep(9000);
 		
 		simLexeira.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(6000);
 		
 		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]")).size();

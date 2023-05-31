@@ -94,7 +94,7 @@ public class CodigoContribuicaoSocialApuradaCriarPO extends TestBase{
 		
 		novo.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributeToBeXpath("//div[@id=\"tax\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tax\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		tributo.click();
@@ -114,11 +114,11 @@ public class CodigoContribuicaoSocialApuradaCriarPO extends TestBase{
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();

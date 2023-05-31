@@ -73,7 +73,7 @@ public class TributosEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(4000);
 		
 		sleep(2000);
@@ -81,10 +81,10 @@ public class TributosEditarPO extends TestBase{
 		sleep(1000);
 		editar.click();
 		
-		attributeToBeXpath("//div[@id=\"UF\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"UF\"]/div", "class", "base-select required");
 		sleep(3000);
 				
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 		campo.sendKeys(Keys.ENTER);
 		String valor = campo.getAttribute("value");
 
@@ -102,11 +102,11 @@ public class TributosEditarPO extends TestBase{
 		confirmacionGravar.click();
 		sleep(2000);
 
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 
 		driver.navigate().refresh();
 
-		attributeToBeXpath("//div[@id=\"UF\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"UF\"]/div", "class", "base-select required");
 		sleep(2000);
 
 		String nuevoTexto = campo.getAttribute("value");
@@ -128,7 +128,7 @@ public class TributosEditarPO extends TestBase{
 
 		sleep(3000);
 		confirmacionGravar.click();
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		
 		return sucesso;
 	}

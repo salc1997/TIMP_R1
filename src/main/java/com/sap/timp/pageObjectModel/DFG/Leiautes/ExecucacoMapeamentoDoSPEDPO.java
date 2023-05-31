@@ -355,7 +355,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBase  {
 		
 		novo.click();
 		sleep(3000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -371,7 +371,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBase  {
 		String tipoT = opcTipo.getText();
 		System.out.println(tipoT);
 		sleep(1000);
-		actionsMoveToElementElement(versaoLeiaute);
+		actionsMoveToElement(versaoLeiaute);
 		sleep(1000);
 		
 		grupoEstrutura.click();
@@ -474,11 +474,11 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBase  {
 		
 		gravar.click();
 		sleep(3000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		nao.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(3000);
@@ -506,7 +506,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBase  {
 		
 		//buscar mapeamento
 		
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!mapeamento.isDisplayed()) {
@@ -594,11 +594,11 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBase  {
 		
 		gravar.click();
 		sleep(3000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		nao.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(3000);
@@ -714,7 +714,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBase  {
 		
 		novoSPED.click();
 		sleep(3000);
-		waitExpectElement(nomeSPED);
+		waitExpectedElement(nomeSPED);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -732,7 +732,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBase  {
 		System.out.println("Opcion Leiaute: "+ opcLeiauteObter);		
 		
 		//li[@id="7754"]
-		waitExpectElement(opcLeiauteObter);
+		waitExpectedElement(opcLeiauteObter);
 		opcLeiauteObter.click();
 		sleep(2000);
 		
@@ -744,7 +744,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBase  {
 //		opcversaoSPED.sendKeys(Keys.ESCAPE);
 //		sleep(2000);
 		
-		actionsMoveToElementElement(dataVigenciaSPED);
+		actionsMoveToElement(dataVigenciaSPED);
 		sleep(2000);
 		
 		tributoSPED.click();
@@ -767,7 +767,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBase  {
 //		System.out.println("empresa SPED "+empresaValor);
 		
 		
-		actionsMoveToElementElement(dataVigenciaSPED);
+		actionsMoveToElement(dataVigenciaSPED);
 		sleep(2000);
 		
 		
@@ -811,7 +811,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBase  {
 		
 		salvar.click();
 		sleep(2000);
-		waitExpectElement(abaBlocosApuracaoSPED);
+		waitExpectedElement(abaBlocosApuracaoSPED);
 		sleep(3000);
 		
 		
@@ -918,7 +918,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBase  {
 		opcEstadoExecutar.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 		
-		actionsMoveToElementElement(periodo);
+		actionsMoveToElement(periodo);
 		sleep(2000);
 		
 		
@@ -957,7 +957,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBase  {
 		execucao1.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(cargarExecucao);
+		waitExpectedElement(cargarExecucao);
 		sleep(3000);
 		
 		actualizarEstructuraB.click();
@@ -1039,7 +1039,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBase  {
 		sleep(8000);
 		fechar.click();
 		sleep(2000);
-		waitExpectElement(home);
+		waitExpectedElement(home);
 		sleep(3000);
 		System.out.println(sucesso);
 		
@@ -1107,7 +1107,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBase  {
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		waitExpectElement(abaLeiautes);
+		waitExpectedElement(abaLeiautes);
 		sleep(2000);
 //		pesquisar.clear();
 //		sleep(2000);

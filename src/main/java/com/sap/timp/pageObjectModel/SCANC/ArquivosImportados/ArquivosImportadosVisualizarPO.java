@@ -70,12 +70,12 @@ public class ArquivosImportadosVisualizarPO extends TestBase{
 		sleep(1000);
 		açao.click();
 		sleep(3000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		// Anexo III
-		actionsMoveToElementXpath("//div[contains(@class, \"baseTabs-view -view-wrapper\")][1]/div/div[3]/div/div[3]/div/div/div[@class=\"annexe-section-column container-element page-column\"]/div[contains(text(), \"3-3\")]");
+		actionsMoveToElement("//div[contains(@class, \"baseTabs-view -view-wrapper\")][1]/div/div[3]/div/div[3]/div/div/div[@class=\"annexe-section-column container-element page-column\"]/div[contains(text(), \"3-3\")]");
 		String verificarPaginasAnexoIII = driver.findElement(By.xpath("//div[contains(@class, \"baseTabs-view -view-wrapper\")][1]/div/div[3]/div/div[3]/div/div/div[@class=\"annexe-section-column container-element page-column\"]/div[contains(text(), \"3-3\")]")).getText();
 		String paginaAnexoIII = "3-3";
 		
@@ -95,7 +95,7 @@ public class ArquivosImportadosVisualizarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		actionsMoveToElementXpath("//div[contains(@class, \"baseTabs-view -view-wrapper\")][2]/div/div[3]/div/div[3]/div/div/div[@class=\"annexe-section-column container-element page-column\"]/div[contains(text(), \"3-3\")]");
+		actionsMoveToElement("//div[contains(@class, \"baseTabs-view -view-wrapper\")][2]/div/div[3]/div/div[3]/div/div/div[@class=\"annexe-section-column container-element page-column\"]/div[contains(text(), \"3-3\")]");
 		String verificarPaginasAnexoV = driver.findElement(By.xpath("//div[contains(@class, \"baseTabs-view -view-wrapper\")][2]/div/div[3]/div/div[3]/div/div/div[@class=\"annexe-section-column container-element page-column\"]/div[contains(text(), \"3-3\")]")).getText();
 		String paginaAnexoV = "3-3";
 		
@@ -113,7 +113,7 @@ public class ArquivosImportadosVisualizarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		actionsMoveToElementXpath("//div[contains(@class, \"baseTabs-view -view-wrapper\")][3]/div/div[3]/div/div[1]/div/div/div[@class=\"annexe-section-column container-element page-column\"]/div[contains(text(), \"1\")]");
+		actionsMoveToElement("//div[contains(@class, \"baseTabs-view -view-wrapper\")][3]/div/div[3]/div/div[1]/div/div/div[@class=\"annexe-section-column container-element page-column\"]/div[contains(text(), \"1\")]");
 		String verificarPaginasAnexoXI = driver.findElement(By.xpath("//div[contains(@class, \"baseTabs-view -view-wrapper\")][3]/div/div[3]/div/div[1]/div/div/div[@class=\"annexe-section-column container-element page-column\"]/div[contains(text(), \"1\")]")).getText();
 		String paginaAnexoXI = "1";
 		

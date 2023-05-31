@@ -64,7 +64,7 @@ public class StatusOcorrenciaFiscalEditarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(4000);
 
 		menu.click();
@@ -72,7 +72,7 @@ public class StatusOcorrenciaFiscalEditarPO extends TestBase {
 		editar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributoNotToBeEmptyElement(campo, "value");
+		attributoNotToBeEmpty(campo, "value");
 		
 		
 		sleep(2000);
@@ -87,7 +87,7 @@ public class StatusOcorrenciaFiscalEditarPO extends TestBase {
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(3000);
@@ -112,7 +112,7 @@ public class StatusOcorrenciaFiscalEditarPO extends TestBase {
 		sleep(3000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributoNotToBeEmptyElement(campo, "value");
+		attributoNotToBeEmpty(campo, "value");
 
 		
 
@@ -130,7 +130,7 @@ public class StatusOcorrenciaFiscalEditarPO extends TestBase {
 
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);

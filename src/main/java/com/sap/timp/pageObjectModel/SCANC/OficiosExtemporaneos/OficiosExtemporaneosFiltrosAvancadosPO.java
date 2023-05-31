@@ -63,19 +63,19 @@ public class OficiosExtemporaneosFiltrosAvancadosPO extends TestBase{
 		btnFiltrosAvanzados.click();
 		sleep(2000);
 		
-		waitExpectElement(inputFiltrar);
+		waitExpectedElement(inputFiltrar);
 		inputFiltrar.sendKeys(subperiodo);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(inputFiltrar);
+		waitExpectedElement(inputFiltrar);
 		inputFiltrar.sendKeys(Keys.ENTER);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		body.click();
 		
-		waitExpectElement(btnLimpiarFiltros);
+		waitExpectedElement(btnLimpiarFiltros);
 		btnLimpiarFiltros.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -96,7 +96,7 @@ public class EstornoCreditoVisualizarPO extends TestBase {
 		WebElement visualizar = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
  
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -104,7 +104,7 @@ public class EstornoCreditoVisualizarPO extends TestBase {
 		visualizar.click();
 		sleep(2000);
 		// visualizar
-		waitExpectElement(empresavi);
+		waitExpectedElement(empresavi);
 		sleep(2000);
 
 		String empresavisualuzar = empresavi.getText();
@@ -123,7 +123,7 @@ public class EstornoCreditoVisualizarPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(setafinal);
+		waitExpectedElement(setafinal);
 		sleep(2000);
 		setafinal.click();
 
@@ -136,7 +136,7 @@ public class EstornoCreditoVisualizarPO extends TestBase {
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement editar = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(1000);
@@ -144,7 +144,7 @@ public class EstornoCreditoVisualizarPO extends TestBase {
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		sleep(2000);
 
 		// editar

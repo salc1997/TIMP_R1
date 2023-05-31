@@ -159,7 +159,7 @@ public class ValoresParaMetodoCPLDetalhesPO extends TestBase{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(primeira);
+		waitExpectedElement(primeira);
 		sleep(2000);
 		primeira.click();
 		
@@ -172,7 +172,7 @@ public class ValoresParaMetodoCPLDetalhesPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement detalhes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -220,7 +220,7 @@ public class ValoresParaMetodoCPLDetalhesPO extends TestBase{
 		fechar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(primeira);
+		waitExpectedElement(primeira);
 		sleep(2000);
 		
 		primeira.click();
@@ -232,7 +232,7 @@ public class ValoresParaMetodoCPLDetalhesPO extends TestBase{
 		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(1000);

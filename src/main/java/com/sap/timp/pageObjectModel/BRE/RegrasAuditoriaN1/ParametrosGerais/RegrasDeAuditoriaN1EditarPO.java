@@ -186,18 +186,18 @@ public class RegrasDeAuditoriaN1EditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
 		sleep(1000);
 		editar.click();
 		sleep(2000);
-		waitExpectElement(adicionarcaminho);
+		waitExpectedElement(adicionarcaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(primeiracaixar1);
+		waitExpectedElement(primeiracaixar1);
 		sleep(1000);
 		
 		primeiracaixar1.click();
@@ -214,7 +214,7 @@ public class RegrasDeAuditoriaN1EditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 
 		nao.click();
@@ -222,11 +222,11 @@ public class RegrasDeAuditoriaN1EditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(primeiracaixar1);
+		waitExpectedElement(primeiracaixar1);
 		sleep(1000);
 		
 		primeiracaixar1.click();
-		attributoNotToBeEmptyElement(acoes, "value");
+		attributoNotToBeEmpty(acoes, "value");
 		String texto1 = acoes.getAttribute("value");
 		
 		System.out.println("texto1: " + texto1);
@@ -255,7 +255,7 @@ public class RegrasDeAuditoriaN1EditarPO extends TestBase{
 		gravar.click();
 
 		sleep(1000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		nao.click();
 		sleep(3000);
@@ -269,7 +269,7 @@ public class RegrasDeAuditoriaN1EditarPO extends TestBase{
 		gravar.click();
 
 		sleep(1000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		
 		nao.click();
@@ -295,14 +295,14 @@ public class RegrasDeAuditoriaN1EditarPO extends TestBase{
 		nome.clear();
 		sleep(1000);
 		nome.sendKeys(nome1);
-		waitExpectElement(aplicar);
+		waitExpectedElement(aplicar);
 		sleep(2000);
 		aplicar.click();
 		sleep(5000);
 		gravar.click();
 
 		sleep(1000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 
 		nao.click();

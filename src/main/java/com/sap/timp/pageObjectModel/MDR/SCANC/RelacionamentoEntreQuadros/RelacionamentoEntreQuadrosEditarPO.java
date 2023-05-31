@@ -102,7 +102,7 @@ public class RelacionamentoEntreQuadrosEditarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -114,9 +114,9 @@ public class RelacionamentoEntreQuadrosEditarPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"tax-type-relationships\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tax-type-relationships\"]/div", "class", "base-select required");
 		sleep(2000);
-		attributoNotToBeEmptyElement(datainicial, "value");
+		attributoNotToBeEmpty(datainicial, "value");
 		String valor = datainicial.getAttribute("value");
 
 		String enviar = fechaActual();
@@ -128,7 +128,7 @@ public class RelacionamentoEntreQuadrosEditarPO extends TestBase {
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -141,10 +141,10 @@ public class RelacionamentoEntreQuadrosEditarPO extends TestBase {
 		sleep(2000);
 		
 		
-		attributeToBeXpath("//div[@id=\"tax-type-relationships\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tax-type-relationships\"]/div", "class", "base-select required");
 		sleep(6000);
 		
-		waitExpectElement(datainicial);
+		waitExpectedElement(datainicial);
 		
 		sleep(6000);
 		String novoTexto=datainicial.getAttribute("value");
@@ -164,7 +164,7 @@ public class RelacionamentoEntreQuadrosEditarPO extends TestBase {
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);

@@ -141,7 +141,7 @@ public class TabelaDeApoioECFLeiautePO extends TestBase{
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@id=\"id-version-list\"]/div/div/div/div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+idRegistro+"]/div[1]"));
 	
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -155,7 +155,7 @@ public class TabelaDeApoioECFLeiautePO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);
 		

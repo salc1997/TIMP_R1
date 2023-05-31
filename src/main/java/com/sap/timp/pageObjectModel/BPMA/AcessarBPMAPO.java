@@ -26,7 +26,7 @@ public class AcessarBPMAPO extends TestBase {
 	
 	public boolean acessarBPMA() {
 
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!bPMA.isDisplayed()) {
@@ -36,7 +36,7 @@ public class AcessarBPMAPO extends TestBase {
 		
 		bPMA.click();
 		
-		waitExpectElement(mostrar);
+		waitExpectedElement(mostrar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		boolean sucesso = mostrar.isDisplayed();

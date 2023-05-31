@@ -65,7 +65,7 @@ public class EmprestimosEditarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -89,7 +89,7 @@ public class EmprestimosEditarPO extends TestBase {
 		gravar.click();
 		sleep(2000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		
 		sim.click();
@@ -102,8 +102,8 @@ public class EmprestimosEditarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(12000);
 		
-		waitExpectElement(campo);
-		attributoNotToBeEmptyElement(campo, "value"); // OJO ESTE ES UN TEXTAREA XD CON VALUE
+		waitExpectedElement(campo);
+		attributoNotToBeEmpty(campo, "value"); // OJO ESTE ES UN TEXTAREA XD CON VALUE
 		
 		String nuevoTexto = campo.getAttribute("value");
 		System.out.println("----------------------------------------");

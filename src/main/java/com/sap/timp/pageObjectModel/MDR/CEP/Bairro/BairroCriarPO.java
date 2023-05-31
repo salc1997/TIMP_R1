@@ -82,7 +82,7 @@ public class BairroCriarPO extends TestBase{
 			sleep(1000);
 		}
 		bairro.click();
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		attributeToBe("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);
 		
 		novo.click();
@@ -102,7 +102,7 @@ public class BairroCriarPO extends TestBase{
 		sleep(2000);
 		
 		gravar.click();
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -54,7 +54,7 @@ public class ConfiguracaoEExecucaoEditarPO extends TestBase {
 		
 		siguiente.click();
 		sleep(2000);
-		waitExpectXpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div");
+		waitExpectedElement("//div[@data-id=\""+idRegistro+"\"]/div[1]/div");
 		invisibilityOfElementOverlay();
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -64,7 +64,7 @@ public class ConfiguracaoEExecucaoEditarPO extends TestBase {
 		sleep(1000);
 		editar.click();
 		sleep(3000);
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		String valor = campo.getAttribute("value");
@@ -77,17 +77,17 @@ public class ConfiguracaoEExecucaoEditarPO extends TestBase {
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
 
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 
 		driver.navigate().refresh();
 
 		sleep(3000);
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -106,10 +106,10 @@ public class ConfiguracaoEExecucaoEditarPO extends TestBase {
 
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		
 		return sucesso;
 

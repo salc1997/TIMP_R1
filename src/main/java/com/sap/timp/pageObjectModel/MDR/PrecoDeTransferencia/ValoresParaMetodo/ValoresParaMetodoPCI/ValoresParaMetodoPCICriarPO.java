@@ -160,7 +160,7 @@ public class ValoresParaMetodoPCICriarPO extends TestBase {
 		
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"material\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"material\"]/div", "class", "base-select required");
 		sleep(3000);
 		
 		material.click();

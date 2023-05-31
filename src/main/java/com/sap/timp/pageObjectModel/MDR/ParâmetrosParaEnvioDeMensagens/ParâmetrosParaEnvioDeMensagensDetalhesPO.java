@@ -100,7 +100,7 @@ public class ParâmetrosParaEnvioDeMensagensDetalhesPO extends TestBase{
 		btnCerrar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(btnPrimerPagina);
+		waitExpectedElement(btnPrimerPagina);
 		sleep(2000);
 		
 		btnPrimerPagina.click();

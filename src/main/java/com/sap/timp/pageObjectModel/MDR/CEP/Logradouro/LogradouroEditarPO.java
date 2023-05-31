@@ -50,7 +50,7 @@ public class LogradouroEditarPO extends TestBase{
 			sleep(1000);
 		}
 		logradouro.click();
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		attributeToBe("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);
 		
 		String idRegistro = idObter("CEP-Logradouro");
@@ -64,7 +64,7 @@ public class LogradouroEditarPO extends TestBase{
 		sleep(2000);
 		editar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 		//invisibilityOfElement("//*[@id=\"form-container\"]/div/div/div/div/img");
 		sleep(1000);
 		
@@ -77,7 +77,7 @@ public class LogradouroEditarPO extends TestBase{
 		campo.sendKeys(enviar);
 		sleep(2000);
 		gravar.click();
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -90,7 +90,7 @@ public class LogradouroEditarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 		
 		String nuevoTexto = campo.getAttribute("value");
 		System.out.println(valor);

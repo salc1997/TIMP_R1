@@ -121,7 +121,7 @@ public class DeterminacaoDeRelevanciaPorRegraExcluirEmMassaPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		
 		siguiente.click();
@@ -154,7 +154,7 @@ public class DeterminacaoDeRelevanciaPorRegraExcluirEmMassaPO extends TestBase {
 			body.click();
 			sleep(2000);
 		
-			attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+			attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 			sleep(3000);
 			
 			uf.click();
@@ -169,7 +169,7 @@ public class DeterminacaoDeRelevanciaPorRegraExcluirEmMassaPO extends TestBase {
 			
 			sleep(2000);
 			if(tc2==true) {
-			attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+			attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 			sleep(3000);
 			filial.click();
 			sleep(2000);
@@ -179,7 +179,7 @@ public class DeterminacaoDeRelevanciaPorRegraExcluirEmMassaPO extends TestBase {
 			sleep(2000);
 			}else {
 				
-				attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+				attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 				sleep(3000);
 				filial.click();
 				sleep(2000);
@@ -303,7 +303,7 @@ public class DeterminacaoDeRelevanciaPorRegraExcluirEmMassaPO extends TestBase {
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(1000);
 		aceitar.click();
 		sleep(3000);
@@ -312,7 +312,7 @@ public class DeterminacaoDeRelevanciaPorRegraExcluirEmMassaPO extends TestBase {
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

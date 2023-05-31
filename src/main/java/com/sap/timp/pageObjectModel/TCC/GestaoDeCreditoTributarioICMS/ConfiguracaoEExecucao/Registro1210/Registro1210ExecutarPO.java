@@ -114,27 +114,27 @@ public class Registro1210ExecutarPO extends TestBase{
 		btnExecutar.click();
 		invisibilityOfElementOverlay();
 		
-		waitExpectElement(cboEmpresa);
+		waitExpectedElement(cboEmpresa);
 		cboEmpresa.click();
 		sleep(1000);
 		opcionEmpresa.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//td[@id=\"stateInput\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//td[@id=\"stateInput\"]/div", "class", "base-MultipleSelect3 required");
 		cboEstado.click();
 		sleep(1000);
 		opcionCheck.click();
 		closeSelectTypeCheckbox(cboEstado);
 		sleep(1000);
 		
-		attributeToBeXpath("//td[@id=\"branchInput\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//td[@id=\"branchInput\"]/div", "class", "base-MultipleSelect3 required");
 		cboFilial.click();
 		sleep(1000);
 		opcionCheck.click();
 		closeSelectTypeCheckbox(cboFilial);
 		sleep(1000);
 		
-		actionsMoveToElementElement(inputSubperiodo);
+		actionsMoveToElement(inputSubperiodo);
 
 		inputSubperiodo.click();
 		sleep(2000);
@@ -178,7 +178,7 @@ public class Registro1210ExecutarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		actionsMoveToElementElement(executadosregistro1210);
+		actionsMoveToElement(executadosregistro1210);
 		executadosregistro1210.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

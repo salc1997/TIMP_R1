@@ -228,7 +228,7 @@ public class CriarProcessocomTarefaAutomatizadaPO extends TestBase{
 		sleep(2000);
 		
 		
-		dobleClickElement(NovoOperacao);
+		dobleClick(NovoOperacao);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -245,7 +245,7 @@ public class CriarProcessocomTarefaAutomatizadaPO extends TestBase{
 		moveToElement(fin, driver.findElement(By.xpath("//div[@id=\"Operation\"]/div/div/div/div/div")));
 		sleep(2000);
 		
-		dobleClickElement(NovoActividad);
+		dobleClick(NovoActividad);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -289,7 +289,7 @@ public class CriarProcessocomTarefaAutomatizadaPO extends TestBase{
 		variant.click();
 		sleep(3000);
 		
-		waitExpectElement(opacao);
+		waitExpectedElement(opacao);
 		opacao.click();
 		sleep(3000);
 		
@@ -309,7 +309,7 @@ public class CriarProcessocomTarefaAutomatizadaPO extends TestBase{
 		tfp.click();
 		sleep(3000);
 		
-		waitExpectElement(opacao);
+		waitExpectedElement(opacao);
 		tfpopacao.click();
 		sleep(3000);
 		
@@ -355,12 +355,12 @@ public class CriarProcessocomTarefaAutomatizadaPO extends TestBase{
 		sleep(5000);
 		
 		
-		dobleClickElement(NovoOperacao);
+		dobleClick(NovoOperacao);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		dobleClickElement(NovoActividad);
+		dobleClick(NovoActividad);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(8000);

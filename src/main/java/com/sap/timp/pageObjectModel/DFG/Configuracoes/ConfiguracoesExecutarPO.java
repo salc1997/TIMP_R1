@@ -171,7 +171,7 @@ public class ConfiguracoesExecutarPO  extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement executar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Executar\"]"));
 	
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -213,7 +213,7 @@ public class ConfiguracoesExecutarPO  extends TestBase{
 		sleep(6000);
 		
 		executar1.click();
-		waitExpectElement(dato);
+		waitExpectedElement(dato);
 		sleep(25000);
 		sleep(9000);
 		sleep(12000);
@@ -239,7 +239,7 @@ public class ConfiguracoesExecutarPO  extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(15000);
 		
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!btnVisualizarDatos.isDisplayed()) {

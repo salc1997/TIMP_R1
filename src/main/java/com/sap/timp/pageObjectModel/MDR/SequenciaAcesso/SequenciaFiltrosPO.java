@@ -53,14 +53,14 @@ public class SequenciaFiltrosPO extends TestBase{
 		
 		sequencia.click();
 		sleep(1000);
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
+		waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
 		invisibilityOfElement("//*[@id=\"list\"]/div[1]/div/div/div/img");
 		String idRegistro = id.getText();
 
 		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[2]/label/span");
+		waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[2]/label/span");
 		invisibilityOfElement("//*[@id=\"list\"]/div[1]/div/div/div/img");
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@aria-label,\"Row\") and @class=\"tr\"]")).size();

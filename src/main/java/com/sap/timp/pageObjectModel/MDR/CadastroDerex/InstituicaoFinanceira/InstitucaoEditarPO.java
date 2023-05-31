@@ -57,7 +57,7 @@ public class InstitucaoEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		
 		menu.click();
@@ -77,16 +77,16 @@ public class InstitucaoEditarPO extends TestBase{
 		sleep(9000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(9000);		 
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 
 		
 		driver.navigate().refresh();
 		
-		attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"company\"]/div", "class", "base-select required");
 		sleep(1000);
 		
 		String nuevoTexto = campo.getAttribute("value");
@@ -104,13 +104,13 @@ public class InstitucaoEditarPO extends TestBase{
 		gravar.click();
 		
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
 		
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 		
 		return sucesso;

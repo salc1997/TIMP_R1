@@ -60,13 +60,13 @@ public class BairroFiltrosPO extends TestBase{
 			sleep(1000);
 		}
 		bairro.click();
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
+		waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
 		
 		String idRegistro = id.getText();
 		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[2]/label/span");
+		waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[2]/label/span");
 		
 		String idBusqueda = id.getText();
 		

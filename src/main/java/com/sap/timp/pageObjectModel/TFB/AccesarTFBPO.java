@@ -27,7 +27,7 @@ public class AccesarTFBPO extends TestBase{
 	
 	public boolean acessarTFB() {
 
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!tfb.isDisplayed()) {
@@ -37,7 +37,7 @@ public class AccesarTFBPO extends TestBase{
 		
 		tfb.click();
 		
-		waitExpectElement(mostrar);
+		waitExpectedElement(mostrar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		boolean sucesso = mostrar.isDisplayed();

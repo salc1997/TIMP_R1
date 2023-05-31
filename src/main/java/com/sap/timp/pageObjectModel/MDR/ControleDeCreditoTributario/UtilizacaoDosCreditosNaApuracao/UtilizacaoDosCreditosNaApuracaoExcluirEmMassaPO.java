@@ -132,7 +132,7 @@ public class UtilizacaoDosCreditosNaApuracaoExcluirEmMassaPO extends TestBase {
 		opcaoutilizacao.click();
 		
 
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		filial.click();
@@ -164,7 +164,7 @@ public class UtilizacaoDosCreditosNaApuracaoExcluirEmMassaPO extends TestBase {
 		
 		novo.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -186,7 +186,7 @@ public class UtilizacaoDosCreditosNaApuracaoExcluirEmMassaPO extends TestBase {
 		opcaoutilizacao.click();
 		
 
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		filial.click();
@@ -218,7 +218,7 @@ public class UtilizacaoDosCreditosNaApuracaoExcluirEmMassaPO extends TestBase {
 		sleep(2000);
 		novo.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -298,7 +298,7 @@ public class UtilizacaoDosCreditosNaApuracaoExcluirEmMassaPO extends TestBase {
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -307,7 +307,7 @@ public class UtilizacaoDosCreditosNaApuracaoExcluirEmMassaPO extends TestBase {
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

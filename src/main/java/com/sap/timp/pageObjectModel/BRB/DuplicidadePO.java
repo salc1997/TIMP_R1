@@ -102,17 +102,17 @@ public class DuplicidadePO extends TestBase {
 		}
 		
 		if (tc2==true) {
-			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+			waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 			ferramenta.sendKeys("2278");
 			ferramenta.sendKeys(Keys.ENTER);
 			
 		}else if (tq1==true) {
-			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+			waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 			ferramenta.sendKeys("8005134");
 			ferramenta.sendKeys(Keys.ENTER);
 			
 		}else {
-			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+			waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 			ferramenta.sendKeys("1745");
 			ferramenta.sendKeys(Keys.ENTER);
 			
@@ -131,7 +131,7 @@ public class DuplicidadePO extends TestBase {
 
 		opcao.click();
 
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		
 		btnDuplicidade.click();
 		sleep(2000);
@@ -174,7 +174,7 @@ public class DuplicidadePO extends TestBase {
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -201,7 +201,7 @@ public class DuplicidadePO extends TestBase {
 		btnDuplicidade.click();
 		sleep(2000);
 		
-		waitExpectElement(flagExcluir);
+		waitExpectedElement(flagExcluir);
 		
 		flagExcluir.click();
 		sleep(2000);
@@ -212,7 +212,7 @@ public class DuplicidadePO extends TestBase {
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);

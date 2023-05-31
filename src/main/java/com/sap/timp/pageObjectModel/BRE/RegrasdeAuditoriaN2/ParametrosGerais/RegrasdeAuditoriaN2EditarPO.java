@@ -99,7 +99,7 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		waitExpectElement(CFOP);
+		waitExpectedElement(CFOP);
 		sleep(8000);
 		CFOP.click();
 		sleep(5000);
@@ -120,7 +120,7 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBase{
 		
 		btnGravar.click();
 		sleep(2000);
-		waitExpectElement(btnNao);
+		waitExpectedElement(btnNao);
 		btnNao.click();
 		invisibilityOfElementOverlay();
 		sleep(3000);
@@ -131,9 +131,9 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBase{
 		invisibilityOfElementOverlay();
 		sleep(2000);
 		
-		waitExpectElement(cboOperador);
+		waitExpectedElement(cboOperador);
 		sleep(2000);
-		attributoNotToBeEmptyXpath("//div[@class=\"select-three\"]/div/div/div[2]/div/div/div[2]/input", "value");
+		attributoNotToBeEmpty("//div[@class=\"select-three\"]/div/div/div[2]/div/div/div[2]/input", "value");
 		sleep(2000);
 		String valorOperador = driver.findElement(By.xpath("//div[@class=\"select-three\"]/div/div/div[2]/div/div/div[2]/input")).getAttribute("value").trim();
 		System.out.println("");
@@ -160,7 +160,7 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBase{
 		
 		btnGravar.click();
 		sleep(2000);
-		waitExpectElement(btnNao);
+		waitExpectedElement(btnNao);
 		btnNao.click();
 		invisibilityOfElementOverlay();
 		sleep(3000);
@@ -182,13 +182,13 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBase{
 		CFOP2.click();
 		sleep(2000);
 		
-		waitExpectElement(btnRemover);
+		waitExpectedElement(btnRemover);
 		btnRemover.click();
 		sleep(2000);
 		
 		btnGravar.click();
 		sleep(2000);
-		waitExpectElement(btnNao);
+		waitExpectedElement(btnNao);
 		btnNao.click();
 		invisibilityOfElementOverlay();
 		sleep(3000);
@@ -213,8 +213,8 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBase{
 		btnConfiguracoes.click();
 		sleep(2000);
 		
-		waitExpectElement(inputNome);
-		attributoNotToBeEmptyElement(inputNome, "value");
+		waitExpectedElement(inputNome);
+		attributoNotToBeEmpty(inputNome, "value");
 		
 		String nomeValorEnviar = "TA QA01A - ALTERADO";
 		System.out.println("");
@@ -228,7 +228,7 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBase{
 		
 		btnGravar.click();
 		sleep(2000);
-		waitExpectElement(btnNao);
+		waitExpectedElement(btnNao);
 		btnNao.click();
 		invisibilityOfElementOverlay();
 		sleep(3000);
@@ -238,8 +238,8 @@ public class RegrasdeAuditoriaN2EditarPO extends TestBase{
 		btnConfiguracoes.click();
 		sleep(2000);
 		
-		waitExpectElement(inputNome);
-		attributoNotToBeEmptyElement(inputNome, "value");
+		waitExpectedElement(inputNome);
+		attributoNotToBeEmpty(inputNome, "value");
 		String nomeEditado = inputNome.getAttribute("value");
 		System.out.println("");
 		System.out.println("Nome valor editado: " + nomeEditado);

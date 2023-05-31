@@ -77,7 +77,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoEditarPO extends TestBase{
 		sleep(3000);
 		
 		sleep(3000);
-		waitExpectElement(bloco);
+		waitExpectedElement(bloco);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -89,11 +89,11 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoEditarPO extends TestBase{
 		
 		gravar.click();
 		sleep(3000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		nao.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(3000);
@@ -103,7 +103,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoEditarPO extends TestBase{
 		driver.navigate().refresh();
 		
 		sleep(3000);
-		waitExpectElement(bloco);
+		waitExpectedElement(bloco);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

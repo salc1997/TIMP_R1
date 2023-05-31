@@ -135,7 +135,7 @@ public class CorrecaoDeNFAprovarEmMassaCJOBPO extends TestBase{
 		}
 		String id = "";
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 		
 		if (tq1 == true) {
 			id = "8004876";
@@ -162,7 +162,7 @@ public class CorrecaoDeNFAprovarEmMassaCJOBPO extends TestBase{
 		sleep(1000);
 		executarB.click();
 		sleep(3000);
-		waitExpectXpath("//span[contains(@class,\"setting\")]");
+		waitExpectedElement("//span[contains(@class,\"setting\")]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
@@ -189,10 +189,10 @@ public class CorrecaoDeNFAprovarEmMassaCJOBPO extends TestBase{
 		
 		home.click();
 		sleep(3000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		nao.click();
 		sleep(3000);
-		waitExpectElement(flecha);
+		waitExpectedElement(flecha);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
@@ -342,7 +342,7 @@ public class CorrecaoDeNFAprovarEmMassaCJOBPO extends TestBase{
 		
 		home.click();
 		sleep(3000);
-		waitExpectElement(flecha);
+		waitExpectedElement(flecha);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
@@ -364,7 +364,7 @@ public class CorrecaoDeNFAprovarEmMassaCJOBPO extends TestBase{
 		sleep(1000);
 		executarB3.click();
 		sleep(3000);
-		waitExpectXpath("//span[contains(@class,\"setting\")]");
+		waitExpectedElement("//span[contains(@class,\"setting\")]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		

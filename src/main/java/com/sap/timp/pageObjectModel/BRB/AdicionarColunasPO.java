@@ -141,7 +141,7 @@ public class AdicionarColunasPO extends TestBase{
 		editar.click();
 		
 		sleep(3000);
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 	
@@ -228,7 +228,7 @@ public class AdicionarColunasPO extends TestBase{
 		
 		gravarE.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -239,7 +239,7 @@ public class AdicionarColunasPO extends TestBase{
 		driver.navigate().refresh();
 		
 		sleep(3000);
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

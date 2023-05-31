@@ -144,7 +144,7 @@ public class AntecipacaoExcluirMassaPO extends TestBase{
 		sleep(1000);
 		opcao2.sendKeys(Keys.ESCAPE);
 	
-		attributeToBeXpath("//*[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//*[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		ufFilial.click();
 		sleep(2000);
@@ -153,7 +153,7 @@ public class AntecipacaoExcluirMassaPO extends TestBase{
 		opcao2.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//*[@id=\"filial\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//*[@id=\"filial\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		filial.click();
@@ -230,7 +230,7 @@ public class AntecipacaoExcluirMassaPO extends TestBase{
 		
 		novaAntecipacao.click();
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"tributo\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tributo\"]/div", "class", "base-select required");
 		sleep(5000);
 		
 		sleep(2000);
@@ -240,7 +240,7 @@ public class AntecipacaoExcluirMassaPO extends TestBase{
 		sleep(1000);
 		opcao2.sendKeys(Keys.ESCAPE);
 	
-		attributeToBeXpath("//*[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//*[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		ufFilial.click();
 		sleep(2000);
@@ -249,7 +249,7 @@ public class AntecipacaoExcluirMassaPO extends TestBase{
 		opcao2.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//*[@id=\"filial\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//*[@id=\"filial\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		filial.click();
@@ -264,7 +264,7 @@ public class AntecipacaoExcluirMassaPO extends TestBase{
 		opcao1.click();
 		sleep(2000);
 		
-		attributeToBeXpath("//*[@id=\"tipoTributo\"]/div", "class", "base-select required");
+		attributeToBe("//*[@id=\"tipoTributo\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		tipoTributo.click();
@@ -384,7 +384,7 @@ public class AntecipacaoExcluirMassaPO extends TestBase{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

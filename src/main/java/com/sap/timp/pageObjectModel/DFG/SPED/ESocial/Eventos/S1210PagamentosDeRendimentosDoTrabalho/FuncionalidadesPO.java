@@ -108,7 +108,7 @@ public class FuncionalidadesPO extends TestBase{
 		sleep(1000);
 		s1210agamentosDeRendimentosDoTrabalho.click();
 		sleep(1000);
-		actionsMoveToElementElement(alterarDadosDoEvento);
+		actionsMoveToElement(alterarDadosDoEvento);
 		alterarDadosDoEvento.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -133,7 +133,7 @@ public class FuncionalidadesPO extends TestBase{
 		btnNovoEvento.click();
 		sleep(1000);
 		
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		nome.sendKeys("TESTE AUTOMATIZADO");
 		sleep(1000);
 		
@@ -150,27 +150,27 @@ public class FuncionalidadesPO extends TestBase{
 		opcionCombo.click();
 		sleep(1000);
 		
-		actionsMoveToElementElement(inputDataInicioVigencia);
+		actionsMoveToElement(inputDataInicioVigencia);
 		cboTributo.click();
 		sleep(1000);
 		opcionTributo.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[contains(@class, \"company-select\")]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[contains(@class, \"company-select\")]/div", "class", "base-MultipleSelect3 required");
 		cboEmpresa.click();
 		sleep(1000);
 		opcionEmpresa.click();
 		closeSelectTypeCheckbox(cboEmpresa);
 		sleep(1000);
 		
-		attributeToBeXpath("//div[contains(@class, \"uf-select\")]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[contains(@class, \"uf-select\")]/div", "class", "base-MultipleSelect3 required");
 		cboUf.click();
 		sleep(1000);
 		opcionUf.click();
 		closeSelectTypeCheckbox(cboUf);
 		sleep(1000);
 		
-		attributeToBeXpath("//div[contains(@class, \"branch-select\")]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[contains(@class, \"branch-select\")]/div", "class", "base-MultipleSelect3 required");
 		cboFilial.click();
 		sleep(1000);
 		opcionFilial.click();

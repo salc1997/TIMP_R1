@@ -287,7 +287,7 @@ public class TarefaAutomatizadaPO extends TestBase{
 			sleep(6000);
 
 			//OPERACAO
-			dobleClickElement(NovoOperacao);
+			dobleClick(NovoOperacao);
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
@@ -305,7 +305,7 @@ public class TarefaAutomatizadaPO extends TestBase{
 			sleep(2000);
 
 			//ACTIVIDAD
-			dobleClickElement(NovoActividad);
+			dobleClick(NovoActividad);
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
@@ -462,7 +462,7 @@ public class TarefaAutomatizadaPO extends TestBase{
 			proximo.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			waitExpectElement(diasSelect);
+			waitExpectedElement(diasSelect);
 			sleep(3000);
 
 
@@ -526,7 +526,7 @@ public class TarefaAutomatizadaPO extends TestBase{
 			aplicar.click();
 			sleep(4000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			waitExpectElement(usuarioProceso);
+			waitExpectedElement(usuarioProceso);
 			sleep(4000);
 
 			pesquisar2.sendKeys("TESTEAUTOMATIZADO");
@@ -556,7 +556,7 @@ public class TarefaAutomatizadaPO extends TestBase{
 			sleep(2000);
 
 			//***************************
-			dobleClickElement(NovoOperacao);
+			dobleClick(NovoOperacao);
 			sleep(4000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(4000);
@@ -572,7 +572,7 @@ public class TarefaAutomatizadaPO extends TestBase{
 			sleep(2000);
 
 			//*********************
-			dobleClickElement(NovoActividad);
+			dobleClick(NovoActividad);
 			sleep(4000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(5000);
@@ -590,7 +590,7 @@ public class TarefaAutomatizadaPO extends TestBase{
 			ativar.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			waitExpectElement(ativadorProcesos);
+			waitExpectedElement(ativadorProcesos);
 			sleep(6000);
 
 			ativadorProcesos.click();
@@ -794,7 +794,7 @@ public class TarefaAutomatizadaPO extends TestBase{
 		
 			abrirCalendario.click();
 			sleep(3000);
-			waitExpectXpath("//div[@class=\"day\"][1]");
+			waitExpectedElement("//div[@class=\"day\"][1]");
 			sleep(2000);
 		
 			String diaTarefa = diaActual();
@@ -817,7 +817,7 @@ public class TarefaAutomatizadaPO extends TestBase{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			actionsMoveToElementElement(abrirCalendario);
+			actionsMoveToElement(abrirCalendario);
 			sleep(4000);
 			
 			pesquisarBPMA.sendKeys("Tarefa Automatizada Massiel4");
@@ -1030,7 +1030,7 @@ public class TarefaAutomatizadaPO extends TestBase{
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 			WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 			
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(4000);
 
 			menu.click();
@@ -1106,7 +1106,7 @@ public class TarefaAutomatizadaPO extends TestBase{
 			
 			
 					
-			actionsMoveToElementElement(menu2);
+			actionsMoveToElement(menu2);
 			sleep(4000);
 
 			menu2.click();
@@ -1121,7 +1121,7 @@ public class TarefaAutomatizadaPO extends TestBase{
 			WebElement excluir3 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro2+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 			
 		
-			actionsMoveToElementElement(menu3);
+			actionsMoveToElement(menu3);
 			sleep(4000);
 
 			menu3.click();
@@ -1135,7 +1135,7 @@ public class TarefaAutomatizadaPO extends TestBase{
 			sim.click();
 			sleep(6000);
 			
-			waitExpectElement(pesquisarBPMA);
+			waitExpectedElement(pesquisarBPMA);
 			sleep(6000);
 			
 			System.out.println("ACTIVADOR DE PROCESO LIXERIA");

@@ -115,7 +115,7 @@ public class InstitucaoCriarPO extends TestBase{
 		
 		nova.click();
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"company\"]/div", "class", "base-select required");
 		//waitExpectElement(biblioteca);
 		//waitExpectXpath("//*[@id=\"Editcontainer\"]/div[4]/div/div/div/img");
 		sleep(2000);
@@ -147,18 +147,18 @@ public class InstitucaoCriarPO extends TestBase{
 		paisO.click();
 		sleep(1000);
 		
-		actionsMoveToElementXpath("//input[@placeholder=\"Selecionar Validade Até\"]");
+		actionsMoveToElement("//input[@placeholder=\"Selecionar Validade Até\"]");
 		sleep(2000);
 		moedaOrdem.click();
 		sleep(1000);
 		moedaOrdemO.click();
 		sleep(1000);
-		attributeToBeXpath("//div[@id=\"coin\"]/div", "class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"coin\"]/div", "class", "base-autocomplete required");
 		
 		sleep(2000);
 		moeda.click();
 		sleep(1000);
-		actionsMoveToElementElement(moedaO);
+		actionsMoveToElement(moedaO);
 		sleep(1000);
 		moedaO.click();
 		
@@ -171,18 +171,18 @@ public class InstitucaoCriarPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
 		
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();
 		sleep(3000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 

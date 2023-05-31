@@ -114,7 +114,7 @@ public class AssociaçãoDetalhesPO extends TestBase{
 		btnCerrar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(btnUltimaPagina);
+		waitExpectedElement(btnUltimaPagina);
 		sleep(2000);
 		
 		btnUltimaPagina.click();

@@ -31,7 +31,7 @@ public class FatorCreditamentoFiltrosPO extends TestBase{
 		centralização.click();
 		sleep(1000);
 		fatorCrecimento.click();
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		attributeToBe("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);
 
 		//waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");

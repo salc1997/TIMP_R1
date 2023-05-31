@@ -28,7 +28,7 @@ public class AcessarTCMPO extends TestBase{
 	
 	public boolean acessarTCM() {
 
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!tcm.isDisplayed()) {
@@ -38,7 +38,7 @@ public class AcessarTCMPO extends TestBase{
 		
 		tcm.click();
 		
-		waitExpectElement(mostrar);
+		waitExpectedElement(mostrar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		boolean sucesso = mostrar.isDisplayed();

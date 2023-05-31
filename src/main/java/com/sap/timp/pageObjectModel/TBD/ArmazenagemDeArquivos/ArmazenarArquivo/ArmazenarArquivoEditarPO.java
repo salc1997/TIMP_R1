@@ -99,14 +99,14 @@ public class ArmazenarArquivoEditarPO extends TestBase{
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"49\"]/div[1]/div"));
 			WebElement editar = driver.findElement(By.xpath("//div[@data-id=\"49\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 			
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 
 			menu.click();
 			sleep(1000);
 			editar.click();
 			sleep(2000);
-			waitExpectElement(tipodocumento);
+			waitExpectedElement(tipodocumento);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 		}
@@ -120,14 +120,14 @@ public class ArmazenarArquivoEditarPO extends TestBase{
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"241\"]/div[1]/div"));
 			WebElement editar = driver.findElement(By.xpath("//div[@data-id=\"241\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 			
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 
 			menu.click();
 			sleep(1000);
 			editar.click();
 			sleep(2000);
-			waitExpectElement(tipodocumento);
+			waitExpectedElement(tipodocumento);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 		}
@@ -141,14 +141,14 @@ public class ArmazenarArquivoEditarPO extends TestBase{
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"39\"]/div[1]/div"));
 			WebElement editar = driver.findElement(By.xpath("//div[@data-id=\"39\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 			
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 
 			menu.click();
 			sleep(1000);
 			editar.click();
 			sleep(2000);
-			waitExpectElement(tipodocumento);
+			waitExpectedElement(tipodocumento);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 		}
@@ -165,7 +165,7 @@ public class ArmazenarArquivoEditarPO extends TestBase{
 		
 		Gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -199,14 +199,14 @@ public class ArmazenarArquivoEditarPO extends TestBase{
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"49\"]/div[1]/div"));
 			WebElement editar = driver.findElement(By.xpath("//div[@data-id=\"49\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 			
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 
 			menu.click();
 			sleep(1000);
 			editar.click();
 			sleep(2000);
-			waitExpectElement(tipodocumento);
+			waitExpectedElement(tipodocumento);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 		}
@@ -220,14 +220,14 @@ public class ArmazenarArquivoEditarPO extends TestBase{
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"241\"]/div[1]/div"));
 			WebElement editar = driver.findElement(By.xpath("//div[@data-id=\"241\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 			
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 
 			menu.click();
 			sleep(1000);
 			editar.click();
 			sleep(2000);
-			waitExpectElement(tipodocumento);
+			waitExpectedElement(tipodocumento);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 		}
@@ -241,14 +241,14 @@ public class ArmazenarArquivoEditarPO extends TestBase{
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"39\"]/div[1]/div"));
 			WebElement editar = driver.findElement(By.xpath("//div[@data-id=\"39\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 			
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 
 			menu.click();
 			sleep(1000);
 			editar.click();
 			sleep(2000);
-			waitExpectElement(tipodocumento);
+			waitExpectedElement(tipodocumento);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 		}

@@ -136,17 +136,17 @@ public class OutputAutomaticoPO extends TestBase {
 		}
 		
 		if (tc2==true) {
-			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+			waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 			ferramenta.sendKeys("2342");
 			ferramenta.sendKeys(Keys.ENTER);
 			
 		}else if (tq1==true) {
-			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+			waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 			ferramenta.sendKeys("8005253");
 			ferramenta.sendKeys(Keys.ENTER);
 			
 		}else {
-			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+			waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 			ferramenta.sendKeys("1769");
 			ferramenta.sendKeys(Keys.ENTER);			
 		}		
@@ -202,7 +202,7 @@ public class OutputAutomaticoPO extends TestBase {
 		sleep(2000);
 		
 		gravar.click();
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(3000);
 		nao.click();
 		sleep(2000);
@@ -235,7 +235,7 @@ public class OutputAutomaticoPO extends TestBase {
 		excluirOutputReferencia.click();
 		sleep(1000);
 		
-		waitExpectElement(btnsim);
+		waitExpectedElement(btnsim);
 		btnsim.click();
 		
 		sleep(3000);

@@ -38,7 +38,7 @@ public class S1250InfProcJudicialExcluirPO extends TestBase{
 		abaInfProcJudicial.click();
 		invisibilityOfElementOverlay();
 		
-		actionsMoveToElementElement(btnPrimeraPagina);
+		actionsMoveToElement(btnPrimeraPagina);
 		btnPrimeraPagina.click();
 		invisibilityOfElementOverlay();
 		
@@ -59,7 +59,7 @@ public class S1250InfProcJudicialExcluirPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(btnAceitar);
+		waitExpectedElement(btnAceitar);
 		btnAceitar.click();
 		invisibilityOfElementOverlay();
 		
@@ -75,7 +75,7 @@ public class S1250InfProcJudicialExcluirPO extends TestBase{
 		abaInfProcJudicial.click();
 		invisibilityOfElementOverlay();
 		
-		actionsMoveToElementElement(btnPrimeraPagina);
+		actionsMoveToElement(btnPrimeraPagina);
 		btnPrimeraPagina.click();
 		invisibilityOfElementOverlay();
 		

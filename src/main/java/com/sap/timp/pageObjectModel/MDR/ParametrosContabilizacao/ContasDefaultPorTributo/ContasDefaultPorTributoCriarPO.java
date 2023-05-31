@@ -117,7 +117,7 @@ public class ContasDefaultPorTributoCriarPO extends TestBase {
 		action.sendKeys(Keys.ESCAPE).build().perform();
 		//filial.sendKeys(Keys.ESCAPE);
 		//dobleClickElement(filial);
-		attributeToBeXpath("//div[@class=\"field-element adjustmentCode_0_1\"]/div","class", "input-element-wrapper");
+		attributeToBe("//div[@class=\"field-element adjustmentCode_0_1\"]/div","class", "input-element-wrapper");
 		sleep(2000);
 
 		codigodeajuste.click();

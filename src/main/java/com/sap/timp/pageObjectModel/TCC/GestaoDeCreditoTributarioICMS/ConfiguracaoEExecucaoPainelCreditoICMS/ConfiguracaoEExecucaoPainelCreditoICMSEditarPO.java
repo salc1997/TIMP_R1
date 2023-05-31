@@ -67,7 +67,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSEditarPO extends TestBase{
 		sleep(1000);
 		editar.click();
 		sleep(3000);
-		waitExpectElement(componenteInput);
+		waitExpectedElement(componenteInput);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -91,7 +91,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSEditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(4000);
 		
 		siguiente.click();
@@ -106,7 +106,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSEditarPO extends TestBase{
 		sleep(1000);
 		editar1.click();
 		sleep(3000);
-		waitExpectElement(componenteInput);
+		waitExpectedElement(componenteInput);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

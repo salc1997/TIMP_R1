@@ -132,7 +132,7 @@ public class ProdutosSCANCCriarPO extends TestBase{
 		mercadoriaO.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"material-code-products\"]/div", "class", "base-MultipleSelect3 ");
+		attributeToBe("//div[@id=\"material-code-products\"]/div", "class", "base-MultipleSelect3 ");
 		sleep(2000);
 		
 		material.click();

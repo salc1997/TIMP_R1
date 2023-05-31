@@ -177,7 +177,7 @@ public class DeterminacaoAutomaticaDeGuiasDetalhesPO extends TestBase{
 		sleep(2000);
 		fechar.click();
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 
 		açao = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));

@@ -30,7 +30,7 @@ public class AcessarTDKPO extends TestBase{
 	
 	public boolean acessarTDK() {
 
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!tdk.isDisplayed()) {
@@ -40,7 +40,7 @@ public class AcessarTDKPO extends TestBase{
 		
 		tdk.click();
 		
-		waitExpectElement(mostrar);
+		waitExpectedElement(mostrar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		boolean sucesso = mostrar.isDisplayed();

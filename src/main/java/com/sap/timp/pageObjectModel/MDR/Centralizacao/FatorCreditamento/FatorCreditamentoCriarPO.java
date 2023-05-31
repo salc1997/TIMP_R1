@@ -170,12 +170,12 @@ public class FatorCreditamentoCriarPO extends TestBase{
 
 		
 		btnGravar.click();
-		waitExpectElement(confirmacionGravar);
+		waitExpectedElement(confirmacionGravar);
 		confirmacionGravar.click();
 		
 		sleep(3000);
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//waitExpectElement(btnRegresar);

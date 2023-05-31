@@ -101,7 +101,7 @@ public class CodigoContabilizacaoEditarPO extends TestBase {
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
@@ -122,10 +122,10 @@ public class CodigoContabilizacaoEditarPO extends TestBase {
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(butaosim);
+		waitExpectedElement(butaosim);
 		sleep(1000);
 		nao.click();
-		waitExpectElement(butaosim);
+		waitExpectedElement(butaosim);
 		sleep(2000);
 		butaosim.click();
 		sleep(2000);
@@ -134,10 +134,10 @@ public class CodigoContabilizacaoEditarPO extends TestBase {
 		
 		refresh();
 		
-		waitExpectElement(descricaopadrao);
+		waitExpectedElement(descricaopadrao);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributeToBeXpath("//div[@id=\"tax-type\"]/div", "class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"tax-type\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
 		
 		String textoCampo = descricaopadrao.getAttribute("value");

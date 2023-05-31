@@ -472,7 +472,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		
 		nome.sendKeys("Teste Automatizado");
 		sleep(1000);
-		actionsMoveToElementElement(versao);
+		actionsMoveToElement(versao);
 		sleep(1000);
 		tipo.click();
 		sleep(1000);
@@ -506,7 +506,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(gravar);
+		waitExpectedElement(gravar);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -518,7 +518,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		
 		separadores.click();
 		sleep(2000);
-		waitExpectElement(aplicar);
+		waitExpectedElement(aplicar);
 		sleep(2000);
 		separador.sendKeys("|");
 		sleep(1000);
@@ -533,7 +533,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -544,7 +544,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		
 		adicionarBloco.click();
 		sleep(2000);
-		waitExpectElement(adicionarRegistro);
+		waitExpectedElement(adicionarRegistro);
 		sleep(1000);
 		adicionarRegistro.click();
 		sleep(2000);
@@ -564,17 +564,17 @@ public class EFDICMSIPICriarPO extends TestBase{
 		sleep(1000);
 		moveToElement(codigoFilial,driver.findElement(By.xpath("//div[contains(@class,\"ui-droppable\")]")));
 		sleep(1000);
-		actionsMoveToElementElement(dataLancamento);
+		actionsMoveToElement(dataLancamento);
 		sleep(500);
 		moveToElement(dataLancamento,driver.findElement(By.xpath("//div[contains(@class,\"ui-droppable\")]")));
 		sleep(500);
-		actionsMoveToElementElement(valorAjuste);
+		actionsMoveToElement(valorAjuste);
 		moveToElement(valorAjuste,driver.findElement(By.xpath("//div[contains(@class,\"ui-droppable\")]")));
 		sleep(1000);
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -619,7 +619,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		}
 		
 		WebElement valorA = driver.findElement(By.xpath("//div[@class=\"row-mapping\"][10]/div[1]/div/div[1]/input"));
-		actionsMoveToElementElement(valorA);
+		actionsMoveToElement(valorA);
 		WebElement abrirComboBox = driver.findElement(By.xpath("//div[@class=\"row-mapping\"][7]/div[1]/div/div[2]"));
 		abrirComboBox.click();
 		sleep(1000);
@@ -638,7 +638,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		selecionarValorAjuste.click();
 		
 
-		actionsMoveToElementElement(valorA);
+		actionsMoveToElement(valorA);
 		valorA.sendKeys("Valor");
 		sleep(1000);
 		valorA.sendKeys(Keys.ENTER);
@@ -648,7 +648,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -735,7 +735,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		
 		novo.click();
 		sleep(3000);
-		waitExpectElement(nomeRegra);
+		waitExpectedElement(nomeRegra);
 		sleep(2000);
 		
 		nomeRegra.sendKeys("Teste Automatizado DFG Massi3");
@@ -761,7 +761,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		componenteO.click();
 		sleep(1000);
 		
-		actionsMoveToElementElement(dataVigenciaR);
+		actionsMoveToElement(dataVigenciaR);
 		
 		sleep(1000);
 		
@@ -794,7 +794,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		sleep(1000);
 		caracterisiticaO.click();
 		sleep(3000);
-		actionsMoveToElementElement(dataVigenciaR);
+		actionsMoveToElement(dataVigenciaR);
 		sleep(1000);
 		
 		leiauteR.click();
@@ -814,14 +814,14 @@ public class EFDICMSIPICriarPO extends TestBase{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(adicionarCaminho);
+		waitExpectedElement(adicionarCaminho);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		adicionarCaminho.click();
 		sleep(3000);
-		waitExpectElement(codigo);
+		waitExpectedElement(codigo);
 		sleep(2000);
 		
 		codigo.sendKeys("R1");
@@ -853,7 +853,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -973,7 +973,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		
 		novo.click();
 		sleep(3000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000); 
 		
 		nome.sendKeys("Teste Automatizado");
@@ -990,7 +990,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		versaoEO.click();
 		sleep(1000);
 		
-		actionsMoveToElementXpath("//input[contains(@placeholder,\"Fim\")]");
+		actionsMoveToElement("//input[contains(@placeholder,\"Fim\")]");
 		sleep(1000);
 		
 		tributoE.click();
@@ -1406,7 +1406,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		sleep(1000);
 		acao.click();
 		sleep(3000);
-		waitExpectElement(executar);
+		waitExpectedElement(executar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -1439,7 +1439,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		sleep(3000);
 		
 		
-		waitExpectXpath("//div[@class=\"base-dialog   medium ui-draggable\"]");
+		waitExpectedElement("//div[@class=\"base-dialog   medium ui-draggable\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"base-dialog   medium ui-draggable\"]");
 		sleep(2000);
@@ -1463,7 +1463,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		sleep(2000);
 		visualizarAN3.click();
 		sleep(2000);
-		waitExpectElement(criar);
+		waitExpectedElement(criar);
 		sleep(2000);
 		
 		nomeR.sendKeys("Teste Automatizado Regra DFG");
@@ -1501,7 +1501,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		sleep(1000);
 		acao.click();
 		sleep(2000);
-		waitExpectElement(atualizar);
+		waitExpectedElement(atualizar);
 		sleep(2000);
 		String fechaHoy = fechaActual();
 		int rows = rows("//div[@class=\"tr\" and @data-id and @tabindex=\"0\"]");
@@ -1621,7 +1621,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		waitExpectElement(visualizarArquivos);
+		waitExpectedElement(visualizarArquivos);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -1629,7 +1629,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		visualizarArquivos.click();
 		System.out.println("dio clic en visualizar");
 		sleep(2000);
-		waitExpectElement(atualizar);
+		waitExpectedElement(atualizar);
 		sleep(2000);
 		
 		int rows = rows("//div[@class=\"tr\" and @data-id and @tabindex=\"0\"]");
@@ -1657,7 +1657,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		waitExpectElement(visualizarArquivos);
+		waitExpectedElement(visualizarArquivos);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -1750,7 +1750,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		waitExpectElement(pesquisar);
+		waitExpectedElement(pesquisar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -1809,7 +1809,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		sleep(1000);
 		lixeira.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -1858,7 +1858,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -1868,7 +1868,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		waitExpectElement(pesquisar);
+		waitExpectedElement(pesquisar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

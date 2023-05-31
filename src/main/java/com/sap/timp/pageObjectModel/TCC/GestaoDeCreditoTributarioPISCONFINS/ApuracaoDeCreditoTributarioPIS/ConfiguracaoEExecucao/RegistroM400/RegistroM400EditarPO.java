@@ -143,7 +143,7 @@ public class RegistroM400EditarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement editar = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -155,9 +155,9 @@ public class RegistroM400EditarPO extends TestBase {
 		sleep(2000);
 		if (tp1 == true || tq1 == true) {
 
-			waitExpectElement(uf1);
+			waitExpectedElement(uf1);
 			sleep(2000);
-			waitExpectElement(filial1);
+			waitExpectedElement(filial1);
 			sleep(2000);
 
 			codigo.clear();
@@ -167,22 +167,22 @@ public class RegistroM400EditarPO extends TestBase {
 
 			gravar.click();
 			sleep(2000);
-			waitExpectElement(sim);
+			waitExpectedElement(sim);
 			sim.click();
 			sleep(2000);
-			waitExpectElement(biblioteca);
+			waitExpectedElement(biblioteca);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 
 			driver.navigate().refresh();
 
 			sleep(2000);
-			waitExpectElement(biblioteca);
+			waitExpectedElement(biblioteca);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
-			waitExpectElement(uf1);
+			waitExpectedElement(uf1);
 			sleep(2000);
-			waitExpectElement(filial1);
+			waitExpectedElement(filial1);
 			sleep(2000);
 
 			String codigoatualizada = codigo.getAttribute("value");
@@ -196,9 +196,9 @@ public class RegistroM400EditarPO extends TestBase {
 
 		} else {
 
-			waitExpectElement(uf1);
+			waitExpectedElement(uf1);
 			sleep(2000);
-			waitExpectElement(filialtc2);
+			waitExpectedElement(filialtc2);
 			sleep(2000);
 
 			codigo.clear();
@@ -208,22 +208,22 @@ public class RegistroM400EditarPO extends TestBase {
 
 			gravar.click();
 			sleep(2000);
-			waitExpectElement(sim);
+			waitExpectedElement(sim);
 			sim.click();
 			sleep(2000);
-			waitExpectElement(biblioteca);
+			waitExpectedElement(biblioteca);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 
 			driver.navigate().refresh();
 
 			sleep(2000);
-			waitExpectElement(biblioteca);
+			waitExpectedElement(biblioteca);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
-			waitExpectElement(uf1);
+			waitExpectedElement(uf1);
 			sleep(2000);
-			waitExpectElement(filialtc2);
+			waitExpectedElement(filialtc2);
 			sleep(2000);
 
 			String codigoatualizada = codigo.getAttribute("value");

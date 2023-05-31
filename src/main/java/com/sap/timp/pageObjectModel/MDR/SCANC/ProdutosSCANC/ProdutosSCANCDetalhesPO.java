@@ -120,7 +120,7 @@ public class ProdutosSCANCDetalhesPO extends TestBase {
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		visibilityOfElementXpath("//span[@id=\"grScanc\"]");
+		visibilityOfElement("//span[@id=\"grScanc\"]");
 		sleep(3000);
 
 		String GRScancV1 = GRScancV.getText();

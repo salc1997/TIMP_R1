@@ -299,7 +299,7 @@ public class TarefasMultiplasEstagiosPO extends TestBase  {
 		criar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(operacao);
+		waitExpectedElement(operacao);
 		sleep(2000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -313,7 +313,7 @@ public class TarefasMultiplasEstagiosPO extends TestBase  {
 		sleep(2000);
 		
 		//OPERACAO
-		dobleClickElement(NovoOperacao);
+		dobleClick(NovoOperacao);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -331,7 +331,7 @@ public class TarefasMultiplasEstagiosPO extends TestBase  {
 		sleep(2000);
 		
 		//ACTIVIDAD
-		dobleClickElement(NovoActividad);
+		dobleClick(NovoActividad);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -498,7 +498,7 @@ public class TarefasMultiplasEstagiosPO extends TestBase  {
 		proximo.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(diasSelect);
+		waitExpectedElement(diasSelect);
 		sleep(3000);
 		
 		
@@ -564,7 +564,7 @@ public class TarefasMultiplasEstagiosPO extends TestBase  {
 		aplicar.click();
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(usuarioProceso);
+		waitExpectedElement(usuarioProceso);
 		sleep(4000);
 		
 		pesquisar2.sendKeys("TESTEAUTOMATIZADO");
@@ -594,7 +594,7 @@ public class TarefasMultiplasEstagiosPO extends TestBase  {
 		
 		
 		//***************************
-		dobleClickElement(NovoOperacao);
+		dobleClick(NovoOperacao);
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
@@ -614,7 +614,7 @@ public class TarefasMultiplasEstagiosPO extends TestBase  {
 		
 		
 		//*********************
-		dobleClickElement(NovoActividad);
+		dobleClick(NovoActividad);
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
@@ -823,7 +823,7 @@ public class TarefasMultiplasEstagiosPO extends TestBase  {
 		
 		abrirCalendario.click();
 		sleep(3000);
-		waitExpectXpath("//div[@class=\"day\"][1]");
+		waitExpectedElement("//div[@class=\"day\"][1]");
 		sleep(2000);
 		
 		String diaTarefa = diaActual();
@@ -889,7 +889,7 @@ public class TarefasMultiplasEstagiosPO extends TestBase  {
 		sleep(2000);
 		lixeira.click();
 		sleep(3000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
@@ -952,7 +952,7 @@ public class TarefasMultiplasEstagiosPO extends TestBase  {
 		sleep(3000);
 		lixeiraAP.click();
 		sleep(3000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		

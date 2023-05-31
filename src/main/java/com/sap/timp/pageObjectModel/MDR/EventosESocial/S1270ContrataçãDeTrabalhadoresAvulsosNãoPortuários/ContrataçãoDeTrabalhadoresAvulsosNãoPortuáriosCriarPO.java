@@ -111,7 +111,7 @@ public class ContrataçãoDeTrabalhadoresAvulsosNãoPortuáriosCriarPO extends TestB
 		body.click();
 		sleep(2000);
 		
-		attributeToBeXpath("//div[contains(@class, \"branches_0_2\")]/div/div[2]/div/div[1]/div[2]/input", "class", "");
+		attributeToBe("//div[contains(@class, \"branches_0_2\")]/div/div[2]/div/div[1]/div[2]/input", "class", "");
 		filial.click();
 		sleep(2000);
 		opcionCheckboxDiferenteTodos.click();
@@ -119,13 +119,13 @@ public class ContrataçãoDeTrabalhadoresAvulsosNãoPortuáriosCriarPO extends TestB
 		body.click();
 		sleep(2000);
 		
-		attributeToBeXpath("//div[contains(@class, \"typeInscriptionNumber1_0_3\")]/div/div[2]/div/div[1]/div[2]/input", "class", "");
+		attributeToBe("//div[contains(@class, \"typeInscriptionNumber1_0_3\")]/div/div[2]/div/div[1]/div[2]/input", "class", "");
 		tipoInscricao1.click();
 		sleep(2000);
 		opcionCombo.click();
 		sleep(2000);
 		
-		attributeToBeXpath("//div[contains(@class, \"inscriptionNumber1_0_4\")]/div/div[2]/div/div[1]/div[2]/input", "class", "");
+		attributeToBe("//div[contains(@class, \"inscriptionNumber1_0_4\")]/div/div[2]/div/div[1]/div[2]/input", "class", "");
 		numeroInscricao1.click();
 		sleep(2000);
 		opcionCombo.click();
@@ -136,14 +136,14 @@ public class ContrataçãoDeTrabalhadoresAvulsosNãoPortuáriosCriarPO extends TestB
 		mesReferencia.sendKeys("10/2020");
 		sleep(2000);
 		
-		actionsMoveToElementElement(lotacaoTributaria);
-		attributeToBeXpath("//div[contains(@class, \"typeInscriptionNumber2_0_6\")]/div/div[2]/div/div[1]/div[2]/input", "class", "");
+		actionsMoveToElement(lotacaoTributaria);
+		attributeToBe("//div[contains(@class, \"typeInscriptionNumber2_0_6\")]/div/div[2]/div/div[1]/div[2]/input", "class", "");
 		tipoInscricao2.click();
 		sleep(2000);
 		opcionCombo.click();
 		sleep(2000);
 		
-		attributeToBeXpath("//div[contains(@class, \"inscriptionNumber2_0_7\")]/div/div[2]/div/div[1]/div[2]/input", "class", "");
+		attributeToBe("//div[contains(@class, \"inscriptionNumber2_0_7\")]/div/div[2]/div/div[1]/div[2]/input", "class", "");
 		numeroInscricao2.click();
 		sleep(2000);
 		opcionCombo.click();
@@ -154,7 +154,7 @@ public class ContrataçãoDeTrabalhadoresAvulsosNãoPortuáriosCriarPO extends TestB
 		lotacaoTributaria.sendKeys("Prueba tester 55");
 		sleep(2000);
 		
-		actionsMoveToElementElement(validadeDe);
+		actionsMoveToElement(validadeDe);
 		valorBaseContribuicaoPrevidenciaria.click();
 		sleep(1000);
 		valorBaseContribuicaoPrevidenciaria.sendKeys("32,33");

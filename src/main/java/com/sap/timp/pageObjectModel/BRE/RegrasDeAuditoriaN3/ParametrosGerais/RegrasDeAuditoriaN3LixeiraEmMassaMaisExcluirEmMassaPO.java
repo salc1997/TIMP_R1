@@ -153,7 +153,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		
 		
 		//Primeiro registro
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		nome.sendKeys("TA-TESTE AUTOMATIZADO N3 - 1");
 		sleep(1000);
@@ -189,7 +189,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 			sleep(1000);
 		}	
 				
-		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
+		actionsMoveToElement("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
 		estruturaDeDatos.click();
 		sleep(1000);
 		opcaoEstruturaDeDatos.click();
@@ -200,7 +200,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		opcaoCaracteristicaEspecial.click();
 		sleep(1000);
 		
-		waitExpectElement(leiaute);
+		waitExpectedElement(leiaute);
 		leiaute.click();
 		sleep(1000);
 		
@@ -225,13 +225,13 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 			sleep(1000);
 		}
 		
-		attributeToBeXpath("//td[contains(@class, \"layoutVersion-field\")]/div", "class", "base-select required");
+		attributeToBe("//td[contains(@class, \"layoutVersion-field\")]/div", "class", "base-select required");
 		versaoDoLeiaute.click();
 		sleep(1000);
 		opcaoversaoDoLeiaute.click();
 		sleep(10000);
 		
-		actionsMoveToElementXpath("//td[contains(@class, \"EffectiveDateTo\")]/div/div/input");
+		actionsMoveToElement("//td[contains(@class, \"EffectiveDateTo\")]/div/div/input");
 		regulamento.click();
 		sleep(1000);
 		opcaoRegulamento.click();
@@ -242,7 +242,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		sleep(2000);
 		aplicar.click();
 		sleep(2000);
-		waitExpectElement(adicionarCaminho);
+		waitExpectedElement(adicionarCaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -251,7 +251,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(regraAuditoriaN3);
+		waitExpectedElement(regraAuditoriaN3);
 		sleep(2000);
 		regraAuditoriaN3.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -264,7 +264,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		//-----------SEGUNDO----------------
 		novo.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		nome.click();
 		sleep(2000);
@@ -302,7 +302,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 			sleep(1000);
 		}	
 				
-		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
+		actionsMoveToElement("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
 		estruturaDeDatos.click();
 		sleep(1000);
 		opcaoEstruturaDeDatos.click();
@@ -313,7 +313,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		opcaoCaracteristicaEspecial.click();
 		sleep(1000);
 		
-		waitExpectElement(leiaute);
+		waitExpectedElement(leiaute);
 		leiaute.click();
 		sleep(1000);
 		
@@ -338,13 +338,13 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 			sleep(1000);
 		}
 		
-		attributeToBeXpath("//td[contains(@class, \"layoutVersion-field\")]/div", "class", "base-select required");
+		attributeToBe("//td[contains(@class, \"layoutVersion-field\")]/div", "class", "base-select required");
 		versaoDoLeiaute.click();
 		sleep(1000);
 		opcaoversaoDoLeiaute.click();
 		sleep(9000);
 		
-		actionsMoveToElementXpath("//td[contains(@class, \"EffectiveDateTo\")]/div/div/input");
+		actionsMoveToElement("//td[contains(@class, \"EffectiveDateTo\")]/div/div/input");
 		regulamento.click();
 		sleep(1000);
 		opcaoRegulamento.click();
@@ -355,7 +355,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		sleep(2000);
 		aplicar.click();
 		sleep(2000);
-		waitExpectElement(adicionarCaminho);
+		waitExpectedElement(adicionarCaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -364,11 +364,11 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(regraAuditoriaN3);
+		waitExpectedElement(regraAuditoriaN3);
 		sleep(2000);
 		regraAuditoriaN3.click();
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);
@@ -420,7 +420,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		WebElement lixeiraemmassa = driver.findElement(By.xpath("//span[@class=\"button-icon icon-font-Finance-and-Office icon-trash\"]"));
 		lixeiraemmassa.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -436,7 +436,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		lixeira.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);
@@ -485,7 +485,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		excluirmassa.click();
 		
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		
 		sim.click();
@@ -500,7 +500,7 @@ public class RegrasDeAuditoriaN3LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		

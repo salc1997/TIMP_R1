@@ -61,7 +61,7 @@ public class MotivosdeDesligamentoEditarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -69,7 +69,7 @@ public class MotivosdeDesligamentoEditarPO extends TestBase {
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 		sleep(2000);
 		//attributoNotToBeEmptyElement(campo, "value");
 		
@@ -88,7 +88,7 @@ public class MotivosdeDesligamentoEditarPO extends TestBase {
 		gravar.click();
 		sleep(2000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		
 		sim.click();
@@ -99,11 +99,11 @@ public class MotivosdeDesligamentoEditarPO extends TestBase {
 		driver.navigate().refresh();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 		sleep(9000);
 		
-		waitExpectElement(campo);
-		attributoNotToBeEmptyElement(campo, "value"); // OJO ESTE ES UN TEXTAREA XD CON VALUE
+		waitExpectedElement(campo);
+		attributoNotToBeEmpty(campo, "value"); // OJO ESTE ES UN TEXTAREA XD CON VALUE
 		
 		String nuevoTexto = campo.getAttribute("value");
 		System.out.println("----------------------------------------");

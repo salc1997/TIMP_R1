@@ -124,7 +124,7 @@ public class DashboardLixeiraPO extends TestBase{
 
 
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(3000);
 
 		menu.click();

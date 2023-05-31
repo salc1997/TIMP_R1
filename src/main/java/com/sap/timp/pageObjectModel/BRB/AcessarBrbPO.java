@@ -37,7 +37,7 @@ public class AcessarBrbPO extends TestBase{
 		
 
 
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(3000);
 		
 		while(brb.isDisplayed() == false) {
@@ -46,8 +46,8 @@ public class AcessarBrbPO extends TestBase{
 	
 		brb.click();
 		sleep(12000);
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
-		waitExpectXpath("//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[1]/div");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"right\"]/div/div[5]/div/div[1]/div/div[1]/div");
 		cadastro.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -257,7 +257,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBase{
 			sleep(2000);
 			
 			sleep(2000);
-			actionsMoveToElementElement(validaDe);
+			actionsMoveToElement(validaDe);
 			sleep(2000);
 			
 			cboACredito.click();
@@ -316,7 +316,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBase{
 			sleep(2000);
 			
 			sleep(2000);
-			actionsMoveToElementElement(validaDe);
+			actionsMoveToElement(validaDe);
 			sleep(2000);
 			
 			cboTipoCredito.click();
@@ -371,7 +371,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBase{
 			sleep(2000);
 			
 			sleep(2000);
-			actionsMoveToElementElement(validaDe);
+			actionsMoveToElement(validaDe);
 			sleep(2000);
 			
 			cboACredito.click();

@@ -110,7 +110,7 @@ public class KpisLixeiraExcluirEmMassaPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(5000);
-		waitExpectElement(kpis);
+		waitExpectedElement(kpis);
 		sleep(5000);
 		
 		kpis.click();

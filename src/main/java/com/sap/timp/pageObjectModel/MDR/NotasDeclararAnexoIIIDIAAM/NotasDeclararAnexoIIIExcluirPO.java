@@ -26,7 +26,7 @@ public class NotasDeclararAnexoIIIExcluirPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(menuNotasDeclararAnexo);
+		waitExpectedElement(menuNotasDeclararAnexo);
 		menuNotasDeclararAnexo.click();
 		
 		sleep(2000);
@@ -48,7 +48,7 @@ public class NotasDeclararAnexoIIIExcluirPO extends TestBase{
 		sleep(1000);
 		açao.click();
 		sleep(3000);
-		waitExpectElement(btnAceitar);
+		waitExpectedElement(btnAceitar);
 		sleep(2000);
 		btnAceitar.click();
 		sleep(2000);
@@ -58,7 +58,7 @@ public class NotasDeclararAnexoIIIExcluirPO extends TestBase{
 		// Recargo la pagina
 		driver.navigate().refresh();
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

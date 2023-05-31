@@ -85,7 +85,7 @@ public class SubPeriodoPeriodicidadeAlterarStatusSubperiodoAvulsoPO extends Test
 		sleep(2000);
 		
 		sleep(2000);
-		waitExpectXpath("//span[contains(text(),\"O status foi alterado com sucesso\")]");
+		waitExpectedElement("//span[contains(text(),\"O status foi alterado com sucesso\")]");
 		sleep(6000);
 		
 		String Codstatus1 = driver.findElement(By.xpath("//div[contains(@data-id,"+idFiltro+")]/div[9]/div")).getText();

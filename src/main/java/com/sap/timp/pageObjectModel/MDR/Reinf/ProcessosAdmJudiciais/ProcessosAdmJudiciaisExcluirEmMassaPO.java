@@ -152,7 +152,7 @@ public class ProcessosAdmJudiciaisExcluirEmMassaPO extends TestBase{
 		opcao.click();
 		
 		sleep(1000);
-		actionsMoveToElementElement(tipodeautoria);
+		actionsMoveToElement(tipodeautoria);
 		sleep(1000);
 		
 		filial.click();
@@ -163,7 +163,7 @@ public class ProcessosAdmJudiciaisExcluirEmMassaPO extends TestBase{
 		
 		//attributoNotToBeEmptyXpath("//div[@class=\"field-element inscriptionNumber\"]/div/div[2]/div/div/div[2]/input", "textContent");
 		//System.out.println("paso de aqui");
-		attributeToBeXpath("//div[@class=\"field-element countyCode\"]/div", "class", "input-element-wrapper");
+		attributeToBe("//div[@class=\"field-element countyCode\"]/div", "class", "input-element-wrapper");
 		sleep(4000);
 		
 		codigomunicipio.click();
@@ -192,7 +192,7 @@ public class ProcessosAdmJudiciaisExcluirEmMassaPO extends TestBase{
 		
 		refresh();
 		
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -231,7 +231,7 @@ public class ProcessosAdmJudiciaisExcluirEmMassaPO extends TestBase{
 		opcao.click();
 		
 		sleep(1000);
-		actionsMoveToElementElement(tipodeautoria);
+		actionsMoveToElement(tipodeautoria);
 		sleep(1000);
 		
 		filial.click();
@@ -242,7 +242,7 @@ public class ProcessosAdmJudiciaisExcluirEmMassaPO extends TestBase{
 		
 		//attributoNotToBeEmptyXpath("//div[@class=\"field-element inscriptionNumber\"]/div/div[2]/div/div/div[2]/input", "value");
 		//System.out.println("paso de aqui");
-		attributeToBeXpath("//div[@class=\"field-element countyCode\"]/div", "class", "input-element-wrapper");
+		attributeToBe("//div[@class=\"field-element countyCode\"]/div", "class", "input-element-wrapper");
 		sleep(4000);
 		
 		codigomunicipio.click();
@@ -336,7 +336,7 @@ public class ProcessosAdmJudiciaisExcluirEmMassaPO extends TestBase{
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -345,7 +345,7 @@ public class ProcessosAdmJudiciaisExcluirEmMassaPO extends TestBase{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

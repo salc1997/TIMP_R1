@@ -86,7 +86,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPIEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -94,7 +94,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPIEditarPO extends TestBase{
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(descricao);
+		waitExpectedElement(descricao);
 		sleep(2000);
 		
 		//ediçao
@@ -124,7 +124,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPIEditarPO extends TestBase{
 		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		
@@ -136,7 +136,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPIEditarPO extends TestBase{
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 		WebElement Editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(1000);
@@ -144,7 +144,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPIEditarPO extends TestBase{
 		Editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(descricao);
+		waitExpectedElement(descricao);
 		sleep(2000);
 		
 		//String sucesso = driver.findElement(By.xpath("//table[@class=\"edit\"]")).getAttribute("class");

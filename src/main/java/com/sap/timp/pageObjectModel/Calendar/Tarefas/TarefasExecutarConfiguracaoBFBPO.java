@@ -83,7 +83,7 @@ public class TarefasExecutarConfiguracaoBFBPO extends TestBase{
 		sleep(2000);
 		abrirCalendario.click();
 		sleep(3000);
-		waitExpectXpath("//div[@class=\"day\"][1]");
+		waitExpectedElement("//div[@class=\"day\"][1]");
 		sleep(2000);
 		
 		String tituloS = titulo.getText();
@@ -113,14 +113,14 @@ public class TarefasExecutarConfiguracaoBFBPO extends TestBase{
 		sleep(2000);
 		
 		
-		actionsMoveToElementElement(pesquisar);
+		actionsMoveToElement(pesquisar);
 		sleep(2000);
 		
 		if (tq1==true) {
 			
 			WebElement menu=driver.findElement(By.xpath("//div[contains(@aria-label,\"943367\")]/div[2]/div"));
 			WebElement fazertarefa=driver.findElement(By.xpath("//div[contains(@aria-label,\"943367\")]/div[2]/div/div[2]/ul/li/span[text()=\"Fazer tarefa\"]"));
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 			menu.click();
 			sleep(2000);
@@ -131,7 +131,7 @@ public class TarefasExecutarConfiguracaoBFBPO extends TestBase{
 			
 			WebElement menu=driver.findElement(By.xpath("//div[contains(@aria-label,\"73064\")]/div[2]/div"));
 			WebElement fazertarefa=driver.findElement(By.xpath("//div[contains(@aria-label,\"73064\")]/div[2]/div/div[2]/ul/li/span[text()=\"Fazer tarefa\"]"));
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 			menu.click();
 			sleep(2000);
@@ -142,7 +142,7 @@ public class TarefasExecutarConfiguracaoBFBPO extends TestBase{
 			
 			WebElement menu=driver.findElement(By.xpath("//div[contains(@aria-label,\"6470\")]/div[2]/div"));
 			WebElement fazertarefa=driver.findElement(By.xpath("//div[contains(@aria-label,\"6470\")]/div[2]/div/div[2]/ul/li/span[text()=\"Fazer tarefa\"]"));
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 			menu.click();
 			sleep(2000);
@@ -154,7 +154,7 @@ public class TarefasExecutarConfiguracaoBFBPO extends TestBase{
 		for(String winHandle : driver.getWindowHandles()){
 		    driver.switchTo().window(winHandle);
 		}
-		waitExpectElement(home);
+		waitExpectedElement(home);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -171,7 +171,7 @@ public class TarefasExecutarConfiguracaoBFBPO extends TestBase{
 		
 		
 		boolean sucesso=false;
-		waitExpectXpath("//div[@class=\"form-wrapper show\"]");
+		waitExpectedElement("//div[@class=\"form-wrapper show\"]");
 		sleep(2000);
 		WebElement totalElement= driver.findElement(By.xpath("//div[@class=\"form-wrapper show\"]"));
 		if(totalElement.isDisplayed()) {

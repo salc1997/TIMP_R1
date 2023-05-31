@@ -100,7 +100,7 @@ public class RegistroDeExportaçaoExcluirMassaPO extends TestBase{
 	}
 	
 	public void llenarDatos1() {
-		attributeToBeXpath("//div[@class=\"element\" and @id=\"company\"]/div", "class", "base-select required");
+		attributeToBe("//div[@class=\"element\" and @id=\"company\"]/div", "class", "base-select required");
 		empresa.click();
 		
 		sleep(2000);		
@@ -116,7 +116,7 @@ public class RegistroDeExportaçaoExcluirMassaPO extends TestBase{
 	}
 	
 	public void llenarDatos2() {
-		attributeToBeXpath("//div[@class=\"element\" and @id=\"company\"]/div", "class", "base-select required");
+		attributeToBe("//div[@class=\"element\" and @id=\"company\"]/div", "class", "base-select required");
 		empresa.click();
 		
 		sleep(2000);		
@@ -229,7 +229,7 @@ public class RegistroDeExportaçaoExcluirMassaPO extends TestBase{
 		
 		salvarENovo.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -246,7 +246,7 @@ public class RegistroDeExportaçaoExcluirMassaPO extends TestBase{
 		
 		salvarENovo.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -334,7 +334,7 @@ public class RegistroDeExportaçaoExcluirMassaPO extends TestBase{
 		
 		btnExcluirMassa.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -342,7 +342,7 @@ public class RegistroDeExportaçaoExcluirMassaPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		waitExpectElement(btnUltimaPagina);
+		waitExpectedElement(btnUltimaPagina);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

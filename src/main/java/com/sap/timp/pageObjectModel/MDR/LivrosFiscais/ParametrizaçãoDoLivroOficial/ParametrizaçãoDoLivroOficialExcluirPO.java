@@ -33,12 +33,12 @@ public class ParametrizaçãoDoLivroOficialExcluirPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(menuAjustesCerrar);
+		waitExpectedElement(menuAjustesCerrar);
 		sleep(2000);
 		menuAjustesCerrar.click();
 		sleep(2000);
 		
-		waitExpectElement(menuLivrosFiscais);
+		waitExpectedElement(menuLivrosFiscais);
 		menuLivrosFiscais.click();
 		sleep(1000);
 		
@@ -62,7 +62,7 @@ public class ParametrizaçãoDoLivroOficialExcluirPO extends TestBase{
 		sleep(1000);
 		açao.click();
 		sleep(3000);
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		sleep(2000);
 		btnSim.click();
 		sleep(2000);
@@ -72,7 +72,7 @@ public class ParametrizaçãoDoLivroOficialExcluirPO extends TestBase{
 		// Recargo la pagina
 		driver.navigate().refresh();
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

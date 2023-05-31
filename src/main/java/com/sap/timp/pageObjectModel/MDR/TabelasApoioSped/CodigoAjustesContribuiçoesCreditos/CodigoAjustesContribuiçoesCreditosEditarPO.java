@@ -62,7 +62,7 @@ public class CodigoAjustesContribuiçoesCreditosEditarPO extends TestBase{
 		açao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(inputDataInicioVigencia);
+		waitExpectedElement(inputDataInicioVigencia);
 		sleep(3000);
 		
 		String textoDataInicioVigenciaValorOriginal = inputDataInicioVigencia.getAttribute("value"); 
@@ -82,18 +82,18 @@ public class CodigoAjustesContribuiçoesCreditosEditarPO extends TestBase{
 		sleep(2000);
 		btnSim.click();
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		driver.navigate().refresh();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(inputDataInicioVigencia);	
+		waitExpectedElement(inputDataInicioVigencia);	
 		sleep(3000);
 		
 			
-		attributoNotToBeEmptyElement(inputDataInicioVigencia, "value");
+		attributoNotToBeEmpty(inputDataInicioVigencia, "value");
 		sleep(2000);
 		String dataInicioVigenciaEditadoString = inputDataInicioVigencia.getAttribute("value");
 		System.out.println("Data inicio vigencia Valor Editado al recargar: " + dataInicioVigenciaEditadoString);
@@ -114,7 +114,7 @@ public class CodigoAjustesContribuiçoesCreditosEditarPO extends TestBase{
 		sleep(2000);
 		btnSim.click();
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

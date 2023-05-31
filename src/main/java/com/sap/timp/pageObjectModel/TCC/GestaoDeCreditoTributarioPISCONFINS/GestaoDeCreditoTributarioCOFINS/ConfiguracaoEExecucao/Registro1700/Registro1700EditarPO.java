@@ -128,7 +128,7 @@ public class Registro1700EditarPO extends TestBase{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(indicadordeNaturezaInput);
+		waitExpectedElement(indicadordeNaturezaInput);
 		sleep(12000);
 		
 		String nuevoTexto = indicadordeNaturezaInput.getAttribute("value");

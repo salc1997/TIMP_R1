@@ -102,7 +102,7 @@ public class DashboardLixeiraExcluirEmMassaPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(5000);
-		waitExpectElement(lixeira);
+		waitExpectedElement(lixeira);
 		sleep(5000);
 		
 		

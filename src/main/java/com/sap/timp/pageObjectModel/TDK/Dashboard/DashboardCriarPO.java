@@ -88,14 +88,14 @@ public class DashboardCriarPO extends TestBase{
 
 		novo.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 
 		nome.click();
 		sleep(1000);
 		nome.sendKeys("Dashboard 1 - NÃO MEXER ");
 		sleep(1000);
-		attributeToBeXpath("//div[@id=\"classification\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"classification\"]/div", "class", "base-select required");
 		sleep(4000);
 		classificacao.click();
 		sleep(1000);
@@ -109,7 +109,7 @@ public class DashboardCriarPO extends TestBase{
 
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(Gravar);
+		waitExpectedElement(Gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -125,7 +125,7 @@ public class DashboardCriarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -134,7 +134,7 @@ public class DashboardCriarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);

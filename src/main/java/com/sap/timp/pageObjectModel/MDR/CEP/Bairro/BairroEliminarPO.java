@@ -51,7 +51,7 @@ public class BairroEliminarPO extends TestBase{
 			sleep(1000);
 		}
 		bairro.click();
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		attributeToBe("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);
 		String idRegistro = idObter("CEP-Bairro");
 	    System.out.println("idExcluir: "+ idRegistro);
@@ -67,7 +67,7 @@ public class BairroEliminarPO extends TestBase{
 		sleep(2000);
 		excluir.click();
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

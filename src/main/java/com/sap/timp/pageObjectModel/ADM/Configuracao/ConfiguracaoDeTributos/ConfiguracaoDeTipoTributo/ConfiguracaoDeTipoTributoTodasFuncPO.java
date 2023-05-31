@@ -128,7 +128,7 @@ public class ConfiguracaoDeTipoTributoTodasFuncPO extends TestBase{
 		
 		novo.click();
 		sleep(2000);
-		waitExpectElement(codigotributogrupo);
+		waitExpectedElement(codigotributogrupo);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -142,12 +142,12 @@ public class ConfiguracaoDeTipoTributoTodasFuncPO extends TestBase{
 	
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		sleep(2000);
 		biblioteca.click();
 		sleep(2000);
@@ -155,7 +155,7 @@ public class ConfiguracaoDeTipoTributoTodasFuncPO extends TestBase{
 		sleep(2000);
 		
 				
-		waitExpectElement(primeira);
+		waitExpectedElement(primeira);
 		sleep(2000);
 		primeira.click();
 		sleep(2000);
@@ -215,7 +215,7 @@ public class ConfiguracaoDeTipoTributoTodasFuncPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement editar = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -232,10 +232,10 @@ public class ConfiguracaoDeTipoTributoTodasFuncPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();
@@ -352,7 +352,7 @@ public class ConfiguracaoDeTipoTributoTodasFuncPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -374,7 +374,7 @@ public class ConfiguracaoDeTipoTributoTodasFuncPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(primeira);
+		waitExpectedElement(primeira);
 		sleep(2000);
 
 		primeira.click();
@@ -385,7 +385,7 @@ public class ConfiguracaoDeTipoTributoTodasFuncPO extends TestBase{
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement editar = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(1000);
@@ -437,14 +437,14 @@ public class ConfiguracaoDeTipoTributoTodasFuncPO extends TestBase{
 		WebElement excluir = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
 
 		excluir.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);

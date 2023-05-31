@@ -113,7 +113,7 @@ public class RegraDeCamposTodasAsFuncPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElementOverlay();
 		
-		waitExpectElement(cboTipoDeRegra);
+		waitExpectedElement(cboTipoDeRegra);
 		cboTipoDeRegra.click();
 		sleep(1000);
 		opcionTipoDeRegra.click();
@@ -132,7 +132,7 @@ public class RegraDeCamposTodasAsFuncPO extends TestBase{
 		
 		String URL = driver.getCurrentUrl();
 		
-		attributeToBeXpath("//div[@id=\"rule-state\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"rule-state\"]/div", "class", "base-MultipleSelect3 required");
 		cboUf.click();
 		sleep(1000);
 		
@@ -145,8 +145,8 @@ public class RegraDeCamposTodasAsFuncPO extends TestBase{
 		closeSelectTypeCheckbox(cboUf);
 		sleep(1000);
 		
-		actionsMoveToElementElement(inputValidadeDe);
-		attributeToBeXpath("//div[@id=\"rule-branch\"]/div", "class", "base-MultipleSelect3 required");
+		actionsMoveToElement(inputValidadeDe);
+		attributeToBe("//div[@id=\"rule-branch\"]/div", "class", "base-MultipleSelect3 required");
 		cboFilial.click();
 		sleep(1000);
 		
@@ -159,7 +159,7 @@ public class RegraDeCamposTodasAsFuncPO extends TestBase{
 		closeSelectTypeCheckbox(cboFilial);
 		sleep(1000);
 		
-		waitExpectElement(cboRegraDeAbas);
+		waitExpectedElement(cboRegraDeAbas);
 		cboRegraDeAbas.click();
 		sleep(1000);
 		opcionCombo.click();
@@ -224,8 +224,8 @@ public class RegraDeCamposTodasAsFuncPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(inputValidadeDe);
-		attributoNotToBeEmptyElement(inputValidadeDe, "value");
+		waitExpectedElement(inputValidadeDe);
+		attributoNotToBeEmpty(inputValidadeDe, "value");
 		String inputValidadeValorOriginal = inputValidadeDe.getAttribute("value");
 		System.out.println("Validade de original: " + inputValidadeValorOriginal);
 		
@@ -256,8 +256,8 @@ public class RegraDeCamposTodasAsFuncPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(inputValidadeDe);
-		attributoNotToBeEmptyElement(inputValidadeDe, "value");
+		waitExpectedElement(inputValidadeDe);
+		attributoNotToBeEmpty(inputValidadeDe, "value");
 		String inputValidadeValorEditado = inputValidadeDe.getAttribute("value");
 		System.out.println("Validade de editado: " + inputValidadeValorEditado);
 		
@@ -327,8 +327,8 @@ public class RegraDeCamposTodasAsFuncPO extends TestBase{
 		String URL = driver.getCurrentUrl();
 		
 		// Datoss de Ver
-		waitExpectXpath("//div[@id=\"rule-type\"]/div/div/div/input");
-		attributoNotToBeEmptyXpath("//div[@id=\"rule-type\"]/div/div/div/input", "value");
+		waitExpectedElement("//div[@id=\"rule-type\"]/div/div/div/input");
+		attributoNotToBeEmpty("//div[@id=\"rule-type\"]/div/div/div/input", "value");
 		String empresaString1 = driver.findElement(By.xpath("//div[@id=\"rule-company\"]//div[1]")).getText().trim();
 		String ufString1 = driver.findElement(By.xpath("//div[@id=\"rule-state\"]//div[1]")).getText().trim();
 		String filialString = driver.findElement(By.xpath("//div[@id=\"rule-branch\"]//div[1]")).getText().trim();
@@ -379,8 +379,8 @@ public class RegraDeCamposTodasAsFuncPO extends TestBase{
 		String URL = driver.getCurrentUrl();
 		
 		// Datoss de Ver
-		waitExpectXpath("//div[@id=\"rule-type\"]//input");
-		attributoNotToBeEmptyXpath("//div[@id=\"rule-type\"]//input", "value");
+		waitExpectedElement("//div[@id=\"rule-type\"]//input");
+		attributoNotToBeEmpty("//div[@id=\"rule-type\"]//input", "value");
 		String tipoDeRegraString = driver.findElement(By.xpath("//div[@id=\"rule-type\"]//input")).getAttribute("value").trim();
 		String tributoString = driver.findElement(By.xpath("//div[@id=\"rule-tax\"]//input")).getAttribute("value").trim();
 		String empresaString = driver.findElement(By.xpath("//div[@id=\"rule-company\"]//div[1]")).getText().trim();
@@ -420,8 +420,8 @@ public class RegraDeCamposTodasAsFuncPO extends TestBase{
 		sleep(9000);
 		
 		// Datoss de Editar
-		waitExpectXpath("//div[@id=\"rule-type\"]//input");
-		attributoNotToBeEmptyXpath("//div[@id=\"rule-type\"]//input", "value");
+		waitExpectedElement("//div[@id=\"rule-type\"]//input");
+		attributoNotToBeEmpty("//div[@id=\"rule-type\"]//input", "value");
 		String tipoDeRegraString1 = driver.findElement(By.xpath("//div[@id=\"rule-type\"]//input")).getAttribute("value").trim();
 		String tributoString1 = driver.findElement(By.xpath("//div[@id=\"rule-tax\"]//input")).getAttribute("value").trim();
 		String empresaString1 = driver.findElement(By.xpath("//div[@id=\"rule-company\"]//div[1]")).getText().trim();
@@ -484,7 +484,7 @@ public class RegraDeCamposTodasAsFuncPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(btnAceitar);
+		waitExpectedElement(btnAceitar);
 		btnAceitar.click();
 		invisibilityOfElementOverlay();
 		sleep(2000);

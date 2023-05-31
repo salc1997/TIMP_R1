@@ -219,7 +219,7 @@ public class TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassaPO extends Test
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(1000);
 		aceitar.click();
 		sleep(3000);
@@ -228,7 +228,7 @@ public class TabelaCodigoDeContribucaoSocialApuradaExcluirEmMassaPO extends Test
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(ultimaPagina);
+		waitExpectedElement(ultimaPagina);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		ultimaPagina.click();

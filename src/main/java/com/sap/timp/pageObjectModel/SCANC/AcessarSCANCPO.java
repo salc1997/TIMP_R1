@@ -25,7 +25,7 @@ public class AcessarSCANCPO extends TestBase{
 	}
 	
 	public boolean acessarSCANC() {
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!scanc.isDisplayed()) {
@@ -39,7 +39,7 @@ public class AcessarSCANCPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
-		waitExpectElement(mostrar);
+		waitExpectedElement(mostrar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		

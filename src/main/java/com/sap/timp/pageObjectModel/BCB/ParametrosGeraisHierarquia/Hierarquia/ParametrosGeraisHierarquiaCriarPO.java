@@ -112,7 +112,7 @@ public class ParametrosGeraisHierarquiaCriarPO extends TestBase {
 		nomeDaAba.sendKeys("Teste QA PRUEBA TA");
 		sleep(1100);
 
-		actionsMoveToElementElement(nomeDoCampoDeLinha);
+		actionsMoveToElement(nomeDoCampoDeLinha);
 		sleep(1100);
 		nomeDaHierarquia.sendKeys("Teste QA PRUEBA TA");
 		sleep(1100);
@@ -170,7 +170,7 @@ public class ParametrosGeraisHierarquiaCriarPO extends TestBase {
 		sleep(1000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

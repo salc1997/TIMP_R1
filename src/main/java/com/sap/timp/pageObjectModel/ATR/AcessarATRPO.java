@@ -38,7 +38,7 @@ public class AcessarATRPO extends TestBase{
 		
 
 
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(3000);
 		
 		while(atr.isDisplayed() == false) {
@@ -51,7 +51,7 @@ public class AcessarATRPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		*/
-		waitExpectElement(mostrar);
+		waitExpectedElement(mostrar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		boolean sucesso = mostrar.isDisplayed();

@@ -228,7 +228,7 @@ public class TabelaDeApoioECFExcluirMasasPO extends TestBase{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(primeira);
+		waitExpectedElement(primeira);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		primeira.click();

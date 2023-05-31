@@ -258,7 +258,7 @@ public class FuncionalidadesPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		nome.sendKeys("TESTE AUTOMATIZADO");
 		sleep(1000);
 		
@@ -305,7 +305,7 @@ public class FuncionalidadesPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(inputSeparador);
+		waitExpectedElement(inputSeparador);
 		inputSeparador.sendKeys("|");
 		sleep(1000);
 		
@@ -323,7 +323,7 @@ public class FuncionalidadesPO extends TestBase{
 		btnJustificativa.click();
 		sleep(1000);
 		
-		waitExpectElement(inputJustificativa);
+		waitExpectedElement(inputJustificativa);
 		inputJustificativa.sendKeys("TESTE AUTOMATIZADO JUSTIFICATIVA");
 		sleep(1000);
 		btnAplicar.click();
@@ -332,7 +332,7 @@ public class FuncionalidadesPO extends TestBase{
 		btnGravar.click();
 		sleep(1000);
 		
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		btnSim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -357,7 +357,7 @@ public class FuncionalidadesPO extends TestBase{
 		btnAdicionarBloco.click();
 		sleep(2000);
 		
-		waitExpectElement(btnAdicionarRegistro);
+		waitExpectedElement(btnAdicionarRegistro);
 		btnAdicionarRegistro.click();
 		sleep(2000);
 		
@@ -396,7 +396,7 @@ public class FuncionalidadesPO extends TestBase{
 		btnGravar.click();
 		sleep(1000);
 		
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		btnSim.click();
 		sleep(1000);
 		
@@ -406,7 +406,7 @@ public class FuncionalidadesPO extends TestBase{
 		btnGravar.click();
 		sleep(1000);
 		
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		btnSim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -500,7 +500,7 @@ public class FuncionalidadesPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(nomeConfiguracao);
+		waitExpectedElement(nomeConfiguracao);
 		nomeConfiguracao.sendKeys("TESTE AUTOMATIZADO");
 		sleep(1000);
 		
@@ -517,27 +517,27 @@ public class FuncionalidadesPO extends TestBase{
 		opcionVersaoLeiaute.click();
 		sleep(1000);
 		
-		actionsMoveToElementElement(dataInicioVigencia);
+		actionsMoveToElement(dataInicioVigencia);
 		cboTributo.click();
 		sleep(3000);
 		opcionTributo.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"inputSelectCompany\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"inputSelectCompany\"]/div", "class", "base-MultipleSelect3 required");
 		cboEmpresa.click();
 		sleep(1000);
 		opcionEmpresas.click();
 		closeSelectTypeCheckbox(cboEmpresa);
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"inputSelectState\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"inputSelectState\"]/div", "class", "base-MultipleSelect3 required");
 		cboUf.click();
 		sleep(1000);
 		opcionUf.click();
 		closeSelectTypeCheckbox(cboUf);
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"inputSelectFilial\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"inputSelectFilial\"]/div", "class", "base-MultipleSelect3 required");
 		cboFilial.click();		
 		sleep(1000);
 		opcionFilial.click();
@@ -623,7 +623,7 @@ public class FuncionalidadesPO extends TestBase{
 		acoe.click();
 		sleep(3000);
 		
-		waitExpectElement(cboEstado);
+		waitExpectedElement(cboEstado);
 		cboEstado.click();
 		sleep(1000);
 		opcionEstado.click();
@@ -631,7 +631,7 @@ public class FuncionalidadesPO extends TestBase{
 		closeSelectTypeCheckbox(cboEstado);
 		sleep(1000);
 
-		actionsMoveToElementElement(inputSubperiodo);
+		actionsMoveToElement(inputSubperiodo);
 
 		inputSubperiodo.click();
 		sleep(2000);
@@ -753,7 +753,7 @@ public class FuncionalidadesPO extends TestBase{
 		btnPrivado.click();
 		sleep(2000);
 		
-		waitExpectElement(btnAplicar);
+		waitExpectedElement(btnAplicar);
 		btnAplicar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -881,7 +881,7 @@ public class FuncionalidadesPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement informacao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Informação\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -918,7 +918,7 @@ public class FuncionalidadesPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -1011,7 +1011,7 @@ public class FuncionalidadesPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement lixeira = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -1033,7 +1033,7 @@ public class FuncionalidadesPO extends TestBase{
 		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -1086,7 +1086,7 @@ public class FuncionalidadesPO extends TestBase{
 		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistroLeiaute+"\"]/div[1]/div"));
 		lixeira = driver.findElement(By.xpath("//div[@data-id=\""+idRegistroLeiaute+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);

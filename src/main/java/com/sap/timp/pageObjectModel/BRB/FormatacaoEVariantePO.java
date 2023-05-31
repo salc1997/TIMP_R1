@@ -149,7 +149,7 @@ public class FormatacaoEVariantePO extends TestBase {
 	public ArrayList<Boolean> formatacaoEVariante() {
 
 
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
@@ -243,7 +243,7 @@ public class FormatacaoEVariantePO extends TestBase {
 		System.out.println("italica "+sucesso);
 
 		// tachado
-		actionsMoveToElementElement(categoria1);
+		actionsMoveToElement(categoria1);
 		categoria1.click();
 		tachado.click();
 		String dTachadoString = categoria1.getCssValue("text-decoration");
@@ -253,7 +253,7 @@ public class FormatacaoEVariantePO extends TestBase {
 		System.out.println("Tachado "+sucesso);
 
 		// esquerda
-		actionsMoveToElementElement(valor1);
+		actionsMoveToElement(valor1);
 		valor1.click();
 		esquerda.click();
 		String dEsquerdaString = categoria1.getCssValue("text-align");
@@ -262,7 +262,7 @@ public class FormatacaoEVariantePO extends TestBase {
 		System.out.println("Izquierda "+sucesso);
 
 		// centro
-		actionsMoveToElementElement(empresa2);
+		actionsMoveToElement(empresa2);
 		empresa2.click();
 		centro.click();
 		String dCentroString = empresa2.getCssValue("text-align");
@@ -308,13 +308,13 @@ public class FormatacaoEVariantePO extends TestBase {
 		nome.sendKeys("Visualizacão de teste");
 		aplicar.click();
 		sleep(3000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);
 		driver.navigate().refresh();
 
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
-		attributeToBeXpath("//div[@id=\"variant-select\"]/div", "class", "base-select ");
+		waitExpectedElement("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		attributeToBe("//div[@id=\"variant-select\"]/div", "class", "base-select ");
 		sleep(2000);
 		visualizar.click();
 		sleep(1000);
@@ -326,8 +326,8 @@ public class FormatacaoEVariantePO extends TestBase {
 		
 		driver.navigate().refresh();
 
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
-		attributeToBeXpath("//div[@id=\"variant-select\"]/div", "class", "base-select ");
+		waitExpectedElement("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		attributeToBe("//div[@id=\"variant-select\"]/div", "class", "base-select ");
 		sleep(2000);
 		
 
@@ -376,18 +376,18 @@ public class FormatacaoEVariantePO extends TestBase {
 		sucesso.add(dItalica.equals("italic"));
 
 		// tachado
-		actionsMoveToElementElement(categoria11);
+		actionsMoveToElement(categoria11);
 		String dTachadoString = categoria11.getCssValue("text-decoration");
 		dTachadoString = dTachadoString.substring(0, 12);
 		sucesso.add(dTachadoString.equals("line-through"));
 
 		// esquerda
-		actionsMoveToElementElement(valor11);
+		actionsMoveToElement(valor11);
 		String dEsquerdaString = categoria11.getCssValue("text-align");
 		sucesso.add(dEsquerdaString.equals("left"));
 
 		// centro
-		actionsMoveToElementElement(empresa11);
+		actionsMoveToElement(empresa11);
 		String dCentroString = empresa11.getCssValue("text-align");
 		sucesso.add(dCentroString.equals("center"));
 
@@ -419,8 +419,8 @@ public class FormatacaoEVariantePO extends TestBase {
 		
 		driver.navigate().refresh();
 		
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
-		attributeToBeXpath("//div[@id=\"variant-select\"]/div", "class", "base-select ");
+		waitExpectedElement("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		attributeToBe("//div[@id=\"variant-select\"]/div", "class", "base-select ");
 		sleep(2000);
 		visualizar.click();
 		sleep(6000);

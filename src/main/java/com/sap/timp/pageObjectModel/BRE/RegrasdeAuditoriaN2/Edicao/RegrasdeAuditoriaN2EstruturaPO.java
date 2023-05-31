@@ -124,7 +124,7 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBase {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
 	
-	waitExpectElement(estrutura);
+	waitExpectedElement(estrutura);
 	estrutura.click();
 	sleep(4000);
 	asociarEstrutura.click();
@@ -137,7 +137,7 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBase {
 	sleep(3000);
 	sleep(3000);
 	
-	waitExpectElement(campo);
+	waitExpectedElement(campo);
 	campo.sendKeys("Alíquota COFINS (ED)");
 	sleep(2000);
 	campo.sendKeys(Keys.ENTER);
@@ -195,7 +195,7 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBase {
 	sleep(4000);
 	
 	
-	waitExpectElement(estrutura);
+	waitExpectedElement(estrutura);
 	estrutura.click();
 	sleep(4000);
 	
@@ -256,7 +256,7 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBase {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(4000);
 	
-	waitExpectElement(estrutura);	
+	waitExpectedElement(estrutura);	
 	estrutura.click();
 	sleep(4000);
 	
@@ -309,7 +309,7 @@ public class RegrasdeAuditoriaN2EstruturaPO extends TestBase {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(4000);
 	
-	waitExpectElement(estrutura);	
+	waitExpectedElement(estrutura);	
 	estrutura.click();
 	sleep(5000);
 	

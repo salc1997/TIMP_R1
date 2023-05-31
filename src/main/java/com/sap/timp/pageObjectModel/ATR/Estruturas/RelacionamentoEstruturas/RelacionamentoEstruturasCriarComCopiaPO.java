@@ -138,7 +138,7 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBase{
 		invisibilityOfElementOverlay();
 		sleep(2000);
 		
-		waitExpectElement(grupo1);
+		waitExpectedElement(grupo1);
 
 
 		excluir.click();
@@ -278,7 +278,7 @@ public class RelacionamentoEstruturasCriarComCopiaPO extends TestBase{
 		System.out.println("---------------------------Exclução da Cópia-------------------------------------------");
 		
 		sleep(2000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(1000);
 		aceitar.click();
 		invisibilityOfElementOverlay();

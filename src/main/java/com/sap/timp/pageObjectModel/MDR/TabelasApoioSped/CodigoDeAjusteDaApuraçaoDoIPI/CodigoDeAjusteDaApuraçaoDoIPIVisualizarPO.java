@@ -87,7 +87,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPIVisualizarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -122,7 +122,7 @@ public class CodigoDeAjusteDaApuraçaoDoIPIVisualizarPO extends TestBase{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(indicadorE);
+		waitExpectedElement(indicadorE);
 		sleep(2000);
 		
 

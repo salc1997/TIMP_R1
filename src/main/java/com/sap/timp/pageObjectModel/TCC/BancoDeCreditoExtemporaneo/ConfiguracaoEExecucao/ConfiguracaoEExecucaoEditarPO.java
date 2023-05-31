@@ -54,13 +54,13 @@ public class ConfiguracaoEExecucaoEditarPO extends TestBase{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(inputInicioDeVigencia);
+		waitExpectedElement(inputInicioDeVigencia);
 
 		sleep(12000);
 
 		
 		
-		attributoNotToBeEmptyElement(inputInicioDeVigencia, "value");
+		attributoNotToBeEmpty(inputInicioDeVigencia, "value");
 		
 		String valorOriginal = inputInicioDeVigencia.getAttribute("value");
 		System.out.println("");
@@ -78,7 +78,7 @@ public class ConfiguracaoEExecucaoEditarPO extends TestBase{
 		btnGravar.click();
 		sleep(2000);
 		
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		sleep(2000);
 		btnSim.click();
 		sleep(2000);
@@ -88,12 +88,12 @@ public class ConfiguracaoEExecucaoEditarPO extends TestBase{
 		driver.navigate().refresh();
 		sleep(2000);
 		invisibilityOfElementOverlay();
-		waitExpectElement(inputInicioDeVigencia);
+		waitExpectedElement(inputInicioDeVigencia);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);
 		
-		attributoNotToBeEmptyElement(inputInicioDeVigencia, "value");
+		attributoNotToBeEmpty(inputInicioDeVigencia, "value");
 		String valorEditado = inputInicioDeVigencia.getAttribute("value");
 		System.out.println("");
 		System.out.println("Inicio de Vigencia valor editado: " + valorEditado);

@@ -104,7 +104,7 @@ public class PainelBCEExecutadosEditarPO extends TestBase {
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -113,7 +113,7 @@ public class PainelBCEExecutadosEditarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(periodo);
+		waitExpectedElement(periodo);
 		sleep(2000);
 		
 		Executar.click();
@@ -121,7 +121,7 @@ public class PainelBCEExecutadosEditarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		empresa.click();
 		sleep(1000);
 		opcao.click();
@@ -172,7 +172,7 @@ public class PainelBCEExecutadosEditarPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(periodo);
+		waitExpectedElement(periodo);
 		sleep(2000);
 		
 		String texto = "02/2016 - 1M";

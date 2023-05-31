@@ -140,7 +140,7 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBase{
 		System.out.println(id);
 				
 		novocadastrocondicao.click();
-		attributeToBeXpath("//*[@id=\"company\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
+		attributeToBe("//*[@id=\"company\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
 		sleep(2000);
 		empresa.click();
 		sleep(2000);
@@ -155,7 +155,7 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBase{
 		}
 		sleep(2000);
 		
-		attributeToBeXpath("//*[@id=\"uf\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
+		attributeToBe("//*[@id=\"uf\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
 		sleep(2000);
 		
 		uf.click();
@@ -165,7 +165,7 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBase{
 		
 		opcaouf.sendKeys(Keys.ESCAPE);
 		
-		attributeToBeXpath("//*[@id=\"branch\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
+		attributeToBe("//*[@id=\"branch\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
 		sleep(2000);
 		
 		filial.click();
@@ -185,7 +185,7 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBase{
 		sleep(2000);
 
 
-		attributeToBeXpath("//div[@class=\"element\" and @id=\"accessSeq\"]/div", "class", "base-select required");
+		attributeToBe("//div[@class=\"element\" and @id=\"accessSeq\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		sequenciaacesso.click();
@@ -200,7 +200,7 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBase{
 				
 		camposestrutura.click();
 		sleep(2000);
-		waitExpectElement(atribuicao);
+		waitExpectedElement(atribuicao);
 		atribuicao.sendKeys("teste");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -228,7 +228,7 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBase{
 			opcaoempresa.sendKeys(Keys.ESCAPE);
 		}
 		sleep(200);
-		attributeToBeXpath("//*[@id=\"uf\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
+		attributeToBe("//*[@id=\"uf\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
 		sleep(2000);
 		
 		uf.click();
@@ -238,7 +238,7 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBase{
 		opcaouf.sendKeys(Keys.ESCAPE);
 		
 		
-		attributeToBeXpath("//*[@id=\"branch\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
+		attributeToBe("//*[@id=\"branch\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
 		sleep(2000);
 		
 		filial.click();
@@ -255,7 +255,7 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBase{
 		opcaotributo.sendKeys(Keys.ESCAPE);
 		sleep(200);
 		
-		attributeToBeXpath("//div[@class=\"element\" and @id=\"accessSeq\"]/div", "class", "base-select required");
+		attributeToBe("//div[@class=\"element\" and @id=\"accessSeq\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		sequenciaacesso.click();
@@ -282,7 +282,7 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBase{
 		butaosim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 	
 		biblioteca.click();
@@ -342,7 +342,7 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBase{
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(1000);
 		aceitar.click();
 		sleep(3000);
@@ -351,7 +351,7 @@ public class CadastroCondiçaoExcluirenMasasPO extends TestBase{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(setafinal);
+		waitExpectedElement(setafinal);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		setafinal.click();

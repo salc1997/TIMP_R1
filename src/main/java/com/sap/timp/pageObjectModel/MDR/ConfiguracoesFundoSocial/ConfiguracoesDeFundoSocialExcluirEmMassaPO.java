@@ -127,7 +127,7 @@ public class ConfiguracoesDeFundoSocialExcluirEmMassaPO extends TestBase{
 		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"UF_BRANCH\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"UF_BRANCH\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		ufFilial.click();
@@ -136,7 +136,7 @@ public class ConfiguracoesDeFundoSocialExcluirEmMassaPO extends TestBase{
 		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"BRANCH\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"BRANCH\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(3000);
 		
 		filial.click();
@@ -161,7 +161,7 @@ public class ConfiguracoesDeFundoSocialExcluirEmMassaPO extends TestBase{
 		opcao2.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"ADJUSTMENT_TRIBUTE_TYPE\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"ADJUSTMENT_TRIBUTE_TYPE\"]/div", "class", "base-select required");
 		sleep(3000);
 		
 		tipoTributo.click();
@@ -195,7 +195,7 @@ public class ConfiguracoesDeFundoSocialExcluirEmMassaPO extends TestBase{
 		sleep(2000);
 		novo.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -204,7 +204,7 @@ public class ConfiguracoesDeFundoSocialExcluirEmMassaPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(2000);
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//Segundo Registro
@@ -215,7 +215,7 @@ public class ConfiguracoesDeFundoSocialExcluirEmMassaPO extends TestBase{
 		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"UF_BRANCH\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"UF_BRANCH\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		ufFilial.click();
@@ -224,7 +224,7 @@ public class ConfiguracoesDeFundoSocialExcluirEmMassaPO extends TestBase{
 		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"BRANCH\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"BRANCH\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(3000);
 		
 		filial.click();
@@ -249,7 +249,7 @@ public class ConfiguracoesDeFundoSocialExcluirEmMassaPO extends TestBase{
 		opcao2.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"ADJUSTMENT_TRIBUTE_TYPE\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"ADJUSTMENT_TRIBUTE_TYPE\"]/div", "class", "base-select required");
 		sleep(3000);
 		
 		tipoTributo.click();
@@ -283,7 +283,7 @@ public class ConfiguracoesDeFundoSocialExcluirEmMassaPO extends TestBase{
 		sleep(2000);
 		novo.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -363,7 +363,7 @@ public class ConfiguracoesDeFundoSocialExcluirEmMassaPO extends TestBase{
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -372,7 +372,7 @@ public class ConfiguracoesDeFundoSocialExcluirEmMassaPO extends TestBase{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

@@ -233,7 +233,7 @@ public class ParametrosParaLivroICMSSTCriarPO extends TestBase{
 		}
 
 		sleep(2000);
-		attributeToBeXpath("//div[@class=\"field-element stateId_0_1\"]/div", "class", "input-element-wrapper");
+		attributeToBe("//div[@class=\"field-element stateId_0_1\"]/div", "class", "input-element-wrapper");
 		sleep(1000);
 		
 		ufdafilial.click();
@@ -249,7 +249,7 @@ public class ParametrosParaLivroICMSSTCriarPO extends TestBase{
 		}
 		
 		sleep(2000);
-		attributeToBeXpath("//div[@class=\"field-element branchId_0_1\"]/div", "class", "input-element-wrapper");
+		attributeToBe("//div[@class=\"field-element branchId_0_1\"]/div", "class", "input-element-wrapper");
 		sleep(1000);
 
 		
@@ -284,7 +284,7 @@ public class ParametrosParaLivroICMSSTCriarPO extends TestBase{
 		opcaoinformacaomdr.click();
 		
 		sleep(2000);
-		attributeToBeXpath("//div[@class=\"field-element branchStateSt_0_3\"]/div", "class", "input-element-wrapper");
+		attributeToBe("//div[@class=\"field-element branchStateSt_0_3\"]/div", "class", "input-element-wrapper");
 		sleep(2000);
 		
 		camposmdrufst.click();
@@ -325,9 +325,9 @@ public class ParametrosParaLivroICMSSTCriarPO extends TestBase{
 		opcaoinformacaomdrinscricao.click();
 		
 		sleep(2000);
-		actionsMoveToElementElement(dataincial);
+		actionsMoveToElement(dataincial);
 		sleep(1000);
-		attributeToBeXpath("//div[@class=\"field-element stRegistrationFields_0_5\"]/div","class", "input-element-wrapper");
+		attributeToBe("//div[@class=\"field-element stRegistrationFields_0_5\"]/div","class", "input-element-wrapper");
 		sleep(2000);
 		camposinformacaomdrinscricao.click();
 		
@@ -346,7 +346,7 @@ public class ParametrosParaLivroICMSSTCriarPO extends TestBase{
 		
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@class=\"field-element movementOriginState_0_6\"]/div","class", "input-element-wrapper");
+		attributeToBe("//div[@class=\"field-element movementOriginState_0_6\"]/div","class", "input-element-wrapper");
 		sleep(2000);
 		camposinformacaoorigem.click();
 		
@@ -380,7 +380,7 @@ public class ParametrosParaLivroICMSSTCriarPO extends TestBase{
 		
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@class=\"field-element adjustmentsFields_0_8\"]/div","class", "input-element-wrapper");
+		attributeToBe("//div[@class=\"field-element adjustmentsFields_0_8\"]/div","class", "input-element-wrapper");
 		sleep(2000);
 		
 		camposinformacaodeajustes.click();
@@ -407,7 +407,7 @@ public class ParametrosParaLivroICMSSTCriarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		

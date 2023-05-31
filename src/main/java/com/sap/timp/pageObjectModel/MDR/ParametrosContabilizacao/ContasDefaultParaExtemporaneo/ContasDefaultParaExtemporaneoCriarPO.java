@@ -92,7 +92,7 @@ public class ContasDefaultParaExtemporaneoCriarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		sleep(2000);
 		
 		empresa.click();

@@ -72,14 +72,14 @@ public class CategoriasDeTrabalhadoresEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
 		editar.click();
 		
 		sleep(2000);
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -95,7 +95,7 @@ public class CategoriasDeTrabalhadoresEditarPO extends TestBase{
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -104,7 +104,7 @@ public class CategoriasDeTrabalhadoresEditarPO extends TestBase{
 
 		driver.navigate().refresh();
 		sleep(2000);
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -127,7 +127,7 @@ public class CategoriasDeTrabalhadoresEditarPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);

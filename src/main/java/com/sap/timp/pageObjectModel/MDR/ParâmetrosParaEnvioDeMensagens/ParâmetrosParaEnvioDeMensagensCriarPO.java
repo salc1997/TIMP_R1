@@ -109,7 +109,7 @@ public class ParâmetrosParaEnvioDeMensagensCriarPO extends TestBase{
 		closeSelectTypeCheckbox(tributo);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"uf\"]/div/div/div/div[2]/input", "class", "");
 		uf.click();
 		sleep(1000);
 		opcionCheckboxDiferenteTodos.click();
@@ -117,7 +117,7 @@ public class ParâmetrosParaEnvioDeMensagensCriarPO extends TestBase{
 		closeSelectTypeCheckbox(uf);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"branch\"]/div/div/div/div[2]/input", "class", "");
 		filial.click();
 		sleep(1000);
 		opcionCheckboxDiferenteTodos.click();
@@ -211,7 +211,7 @@ public class ParâmetrosParaEnvioDeMensagensCriarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(btnBiblioteca);
+		waitExpectedElement(btnBiblioteca);
 		btnBiblioteca.click();
 		sleep(2000);
 		

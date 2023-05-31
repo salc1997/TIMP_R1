@@ -102,7 +102,7 @@ public class DeParaLivroApuraçaoXSpedFiscalCriarPO extends TestBase {
 		
 		sleep(2000);
 		//attributoNotToBeEmptyXpath("//div[@class=\"element\" and @id=\"tribute\"]/div", "value");
-		attributeToBeXpath("//div[@class=\"element\" and @id=\"tipoTributo\"]/div", "class", "base-select required");
+		attributeToBe("//div[@class=\"element\" and @id=\"tipoTributo\"]/div", "class", "base-select required");
 		sleep(2000);
 		tipotributo.click();
 		sleep(2000);

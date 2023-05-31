@@ -131,7 +131,7 @@ public class RegistroM620CriarPO extends TestBase{
 		
 		novo.click();
 		sleep(4000);
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -141,7 +141,7 @@ public class RegistroM620CriarPO extends TestBase{
 		sleep(1000);
 		
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		uf.click();
@@ -151,7 +151,7 @@ public class RegistroM620CriarPO extends TestBase{
 		sleep(1000);
 	
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		filial.click();
@@ -180,7 +180,7 @@ public class RegistroM620CriarPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -200,7 +200,7 @@ public class RegistroM620CriarPO extends TestBase{
 		
 		
 		sleep(3000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		siguiente.click();

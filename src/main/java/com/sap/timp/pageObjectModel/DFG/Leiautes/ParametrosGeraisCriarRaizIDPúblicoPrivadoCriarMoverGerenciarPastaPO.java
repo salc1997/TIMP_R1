@@ -128,7 +128,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		sleep(2000);
 		
 		sleep(2000);
-		waitExpectElement(raiz);
+		waitExpectedElement(raiz);
 		raiz.click();
 		
 		sleep(2000);
@@ -138,7 +138,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		btnCriarPasta.click();
 		sleep(2000);
 		
-		waitExpectElement(nomePasta);
+		waitExpectedElement(nomePasta);
 		nomePasta.click();
 		sleep(1000);
 		nomePasta.sendKeys("Pasta 1");
@@ -166,7 +166,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		
 		btnGerenciarPasta.click();
 		sleep(2000);
-		attributoNotToBeEmptyElement(nomePasta2, "value");
+		attributoNotToBeEmpty(nomePasta2, "value");
 		nomePasta2.clear();
 		nomePasta2.click();
 		sleep(1000);
@@ -193,7 +193,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		}
 		
 		sleep(2000);
-		waitExpectElement(raiz);
+		waitExpectedElement(raiz);
 		raiz.click();
 		
 		sleep(2000);
@@ -203,7 +203,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		btnCriarPasta.click();
 		sleep(2000);
 		
-		waitExpectElement(nomePasta);
+		waitExpectedElement(nomePasta);
 		nomePasta.click();
 		sleep(1000);
 		nomePasta.sendKeys("Pasta 2");
@@ -213,7 +213,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"icon icon-font-Sign-and-Symbols icon-right\"]");
+		waitExpectedElement("//div[@class=\"icon icon-font-Sign-and-Symbols icon-right\"]");
 		sleep(2000);
 		btnExpansaoPastaElement = driver.findElement(By.xpath("//div[@class=\"icon icon-font-Sign-and-Symbols icon-right\"]"));
 		
@@ -222,7 +222,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		sleep(4000);
 		
 		WebElement pasta2 = driver.findElement(By.xpath("//span[text()=\"Pasta 2\"]"));
-		waitExpectElement(pasta2);
+		waitExpectedElement(pasta2);
 		pasta2.click();
 		
 		sleep(2000);
@@ -243,7 +243,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"icon icon-font-Sign-and-Symbols icon-right\"]");
+		waitExpectedElement("//div[@class=\"icon icon-font-Sign-and-Symbols icon-right\"]");
 		sleep(2000);
 		btnExpansaoPastaElement = driver.findElement(By.xpath("//div[@class=\"icon icon-font-Sign-and-Symbols icon-right\"]"));
 		
@@ -272,7 +272,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		
 		novo.click();
 		sleep(3000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -285,7 +285,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		String tipoT = opcao.getText();
 		System.out.println(tipoT);
 		sleep(1000);
-		actionsMoveToElementElement(versaoLeiaute);
+		actionsMoveToElement(versaoLeiaute);
 		sleep(1000);
 		grupoEstrutura.click();
 		sleep(1000);
@@ -311,17 +311,17 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		salvar.click();
 		
 		sleep(3000);
-		waitExpectElement(gravar);
+		waitExpectedElement(gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		gravar.click();
 		sleep(3000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		nao.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(3000);
@@ -352,7 +352,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		}
 		
 		sleep(2000);
-		waitExpectElement(raiz);
+		waitExpectedElement(raiz);
 		raiz.click();
 		
 		btnExpansaoPastaElement = driver.findElement(By.xpath("//div[@class=\"icon icon-font-Sign-and-Symbols icon-right\"]"));
@@ -363,7 +363,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		
 		pasta1 = driver.findElement(By.xpath("//span[text()=\"Pasta 1 - edit\"]"));
 		
-		waitExpectElement(pasta1);
+		waitExpectedElement(pasta1);
 		pasta1.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -372,11 +372,11 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPastaPO
 		btnGerenciarPasta.click();
 		sleep(1000);
 		
-		waitExpectElement(btnExcluirPasta);
+		waitExpectedElement(btnExcluirPasta);
 		btnExcluirPasta.click();
 		
 		sleep(1000);
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		btnSim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -101,7 +101,7 @@ public class RegistroM810EditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement editar = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -110,9 +110,9 @@ public class RegistroM810EditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		waitExpectXpath("//div[@id=\"branch\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
+		waitExpectedElement("//div[@id=\"branch\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
 		sleep(2000);
-		waitExpectXpath("//div[@id=\"uf\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
+		waitExpectedElement("//div[@id=\"uf\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
 		sleep(2000);
 
 		natureza.click();
@@ -124,22 +124,22 @@ public class RegistroM810EditarPO extends TestBase{
 
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 		driver.navigate().refresh();
 
 		sleep(2000);
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectXpath("//div[@id=\"branch\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
+		waitExpectedElement("//div[@id=\"branch\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
 		sleep(2000);
-		waitExpectXpath("//div[@id=\"uf\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
+		waitExpectedElement("//div[@id=\"uf\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
 		sleep(2000);
 
 

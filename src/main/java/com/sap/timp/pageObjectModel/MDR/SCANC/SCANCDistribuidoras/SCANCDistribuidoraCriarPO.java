@@ -105,7 +105,7 @@ public class SCANCDistribuidoraCriarPO extends TestBase{
 		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[contains(@class,\"uf\")]/div", "class", "input-element-wrapper");
+		attributeToBe("//div[contains(@class,\"uf\")]/div", "class", "input-element-wrapper");
 		sleep(2000);
 		
 		uf.click();
@@ -127,7 +127,7 @@ public class SCANCDistribuidoraCriarPO extends TestBase{
 		
 		filtro.click();
 		sleep(1000);
-		waitExpectElement(opcoes);
+		waitExpectedElement(opcoes);
 		sleep(1000);
 		opcoes.click();
 		sleep(1000);

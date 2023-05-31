@@ -627,7 +627,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		
 		nova.click();
 		sleep(2000);
-		waitExpectElement(nomeDeHierarquia);
+		waitExpectedElement(nomeDeHierarquia);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
@@ -637,7 +637,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		nomeDaAba.sendKeys("Aba 1");
 		sleep(1000);
 		
-		actionsMoveToElementElement(nomeDoCampoDeLinha);
+		actionsMoveToElement(nomeDoCampoDeLinha);
 		sleep(1000);
 		nomeDaHierarquia.sendKeys("Hierarquia 1");
 		sleep(1000);
@@ -797,7 +797,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		tributoO.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 
-		attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"company\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(1000);
 
 		empresa.click();
@@ -806,7 +806,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		empresaO.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(1000);
 
 		uf.click();
@@ -821,7 +821,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 			sleep(1000);
 		}
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(1000);
 
 		filial.click();
@@ -913,19 +913,19 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(calculator);
+		waitExpectedElement(calculator);
 		sleep(15000);
 		
 		calculator.click();
 		sleep(1000);
-		waitExpectElement(resultadoFinal);
+		waitExpectedElement(resultadoFinal);
 		sleep(2000);
 		resultadoFinal.click();
 		sleep(1000);
 
 		adicionarConfiguracao.click();
 		sleep(1000);
-		waitExpectElement(condicao);
+		waitExpectedElement(condicao);
 		sleep(2000);
 		condicao.click();
 		sleep(1000);
@@ -974,7 +974,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		
 		adicionarEntrada.click();
 		sleep(2000);
-		waitExpectElement(criarAdicionarEntradaManual);
+		waitExpectedElement(criarAdicionarEntradaManual);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -1055,7 +1055,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		
 		adicionarCamposSaida.click();
 		sleep(2000);
-		waitExpectElement(criarAdicionarEntradaManual);
+		waitExpectedElement(criarAdicionarEntradaManual);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -1173,7 +1173,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		sleep(1000);
 		executar.click();
 		sleep(5000);
-		waitExpectElement(executarM);
+		waitExpectedElement(executarM);
 		sleep(8000);
 		executarM.click();
 		
@@ -1397,7 +1397,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		
 		nova.click();
 		sleep(3000);
-		waitExpectElement(nomeDeHierarquia);
+		waitExpectedElement(nomeDeHierarquia);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
@@ -1431,7 +1431,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 			g = g + 1;
 		}
 		
-		actionsMoveToElementElement(nomeDoCampoDeLinha);
+		actionsMoveToElement(nomeDoCampoDeLinha);
 		sleep(1000);
 		nomeDaHierarquia.sendKeys("Hierarquia 1");
 		sleep(1000);
@@ -1563,7 +1563,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		driver.navigate().refresh();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(configuracoes);
+		waitExpectedElement(configuracoes);
 		sleep(8000);
 		
 		sleep(2000);
@@ -1601,7 +1601,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		tributoO.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 
-		attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"company\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(1000);
 
 		empresa.click();
@@ -1610,7 +1610,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		empresaO.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(1000);
 
 		uf.click();
@@ -1625,7 +1625,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 			sleep(1000);
 		}
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(1000);
 
 		filial.click();
@@ -1741,17 +1741,17 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(relacao);
+		waitExpectedElement(relacao);
 		sleep(2000);
 		
 		relacao.click();
 		sleep(1000);
-		waitExpectElement(adicionarConfiguracaoRelacao);
+		waitExpectedElement(adicionarConfiguracaoRelacao);
 		sleep(2000);
 
 		adicionarConfiguracaoRelacao.click();
 		sleep(1000);
-		waitExpectElement(abaPrincialRelacao);
+		waitExpectedElement(abaPrincialRelacao);
 		sleep(2000);
 		abaPrincialRelacao.click();
 		sleep(1000);
@@ -1863,7 +1863,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		System.out.println("Primera Configuracion creada: "+ opcConfiguracaoConsolidacao);		
 		
 		//li[@id="7754"]
-		waitExpectElement(opcConfiguracaoConsolidacao);
+		waitExpectedElement(opcConfiguracaoConsolidacao);
 		opcConfiguracaoConsolidacao.click();
 		String campo2 = opcConfiguracaoConsolidacao.getText();
 		sleep(6000);
@@ -1899,7 +1899,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		
 //		replicarSubnivel.click();
 //		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		
 		sim.click();
@@ -1949,7 +1949,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		System.out.println("Primera Configuracion creada: "+ opcConfiguracaoConsolidacao2);		
 		
 		//li[@id="7754"]
-		waitExpectElement(opcConfiguracaoConsolidacao2);
+		waitExpectedElement(opcConfiguracaoConsolidacao2);
 		opcConfiguracaoConsolidacao2.click();
 		String campo22 = opcConfiguracaoConsolidacao2.getText();
 		sleep(2000);
@@ -1986,7 +1986,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 			sleep(2000);
 		}
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		
 		sim.click();
@@ -2298,7 +2298,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		
 		adicionarCamposSaida.click();
 		sleep(3000);
-		waitExpectElement(criarAdicionarCamposSaida);
+		waitExpectedElement(criarAdicionarCamposSaida);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -2338,7 +2338,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		
 		adicionarCamposSaida.click();
 		sleep(3000);
-		waitExpectElement(criarAdicionarCamposSaida);
+		waitExpectedElement(criarAdicionarCamposSaida);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -2402,7 +2402,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		
 		calculator.click();
 		sleep(3000);
-		waitExpectElement(resultadoFinal);
+		waitExpectedElement(resultadoFinal);
 		sleep(6000);
 	//	waitExpectXpath("//button[text()=\"Sim\"]");
 	//	WebElement btnSeguirBloqueo = driver.findElement(By.xpath("//button[text()=\"Sim\"]"));
@@ -2419,7 +2419,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		sleep(3000);
 		
 		
-		actionsMoveToElementElement(camposSaidaBCB);
+		actionsMoveToElement(camposSaidaBCB);
 		sleep(3000);
 		
 		camposSaidaBCB.click();
@@ -2431,16 +2431,16 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 //		camposSaidaBCB.click();
 //		sleep(2000);
 		
-		attributeToBeXpath("//div[@class=\"column-wrapper second\"]/div/div","class", "animation-wrapper show");
+		attributeToBe("//div[@class=\"column-wrapper second\"]/div/div","class", "animation-wrapper show");
 		sleep(4000);
 		
-		dobleClickElement(selectCampoSaidaAba1OPC1);
+		dobleClick(selectCampoSaidaAba1OPC1);
 		sleep(3000);
 	
 		caixaFormula.sendKeys("+");
 		sleep(9000);
 		
-		dobleClickElement(selectCampoSaidaAba1OPC2);
+		dobleClick(selectCampoSaidaAba1OPC2);
 		sleep(3000);
 		
 		criar.click();
@@ -2468,7 +2468,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 	public ArrayList<Boolean>  resultadoDoAbaParte1() {
 		calculator.click();
 		sleep(1000);
-		waitExpectElement(resultadodDoAba);
+		waitExpectedElement(resultadodDoAba);
 		sleep(2000);
 		resultadodDoAba.click();
 		sleep(1000);
@@ -2483,7 +2483,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		sleep(1000);
 		
 		
-		actionsMoveToElementElement(camposSaidaBCB);
+		actionsMoveToElement(camposSaidaBCB);
 		sleep(2000);
 		
 		camposSaidaBCB.click();
@@ -2495,16 +2495,16 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		camposSaidaBCB.click();
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@class=\"column-wrapper second\"]/div/div","class", "animation-wrapper show");
+		attributeToBe("//div[@class=\"column-wrapper second\"]/div/div","class", "animation-wrapper show");
 		sleep(2000);
 		
-		dobleClickElement(selectCampoSaidaAba1OPC1);
+		dobleClick(selectCampoSaidaAba1OPC1);
 		sleep(1000);
 	
 		caixaFormula.sendKeys("*");
 		sleep(2000);
 		
-		dobleClickElement(selectCampoSaidaAba1OPC2);
+		dobleClick(selectCampoSaidaAba1OPC2);
 		sleep(1000);
 		
 		sleep(5000);
@@ -2533,7 +2533,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		nao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(executar);
+		waitExpectedElement(executar);
 		sleep(4000);
 		
 		mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();

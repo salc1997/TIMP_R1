@@ -71,7 +71,7 @@ public class S1250AquisiçãoTotalEditarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@id=\"total-acquisition-container\"]/div[2]/div/div[1]/div/div[3]/div[1]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//*[@id=\"total-acquisition-list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[1]/span[2]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -95,7 +95,7 @@ public class S1250AquisiçãoTotalEditarPO extends TestBase {
 		sleep(2000);
 		WebElement menu1 = driver.findElement(By.xpath("//div[@id=\"total-acquisition-container\"]/div[2]/div/div[1]/div/div[3]/div[1]/div[1]/div"));
 		WebElement editar1 = driver.findElement(By.xpath("//*[@id=\"total-acquisition-list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[1]/span[2]"));
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(2000);
@@ -104,7 +104,7 @@ public class S1250AquisiçãoTotalEditarPO extends TestBase {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(idRegistroInput);
+		waitExpectedElement(idRegistroInput);
 		sleep(2000);
 		String novoTexto=idRegistroInput.getAttribute("value");
 		

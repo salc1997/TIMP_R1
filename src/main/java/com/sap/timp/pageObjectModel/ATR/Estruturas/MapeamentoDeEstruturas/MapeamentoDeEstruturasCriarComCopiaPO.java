@@ -77,7 +77,7 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBase {
 		WebElement copia = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Cópia\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -87,7 +87,7 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBase {
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		actionsMoveToElementXpath("//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]");
+		actionsMoveToElement("//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]");
 //		excluircofins.click();
 //		sleep(2000);
 
@@ -110,7 +110,7 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -143,7 +143,7 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBase {
 		WebElement editar = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idultimo + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -186,7 +186,7 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBase {
 		WebElement excluir = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idultimo + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -194,7 +194,7 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBase {
 		excluir.click();
 		
 		sleep(2000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(2000);
 		aceitar.click();
 		sleep(2000);
@@ -205,7 +205,7 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);

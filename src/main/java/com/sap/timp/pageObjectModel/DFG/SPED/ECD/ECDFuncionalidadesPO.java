@@ -428,7 +428,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 		
 		novo.click();
 		sleep(3000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		
 		nome.sendKeys("Teste Automatizado");
@@ -451,7 +451,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 		versaoECDO.click();
 		sleep(2000);
 		
-		actionsMoveToElementXpath("//input[contains(@placeholder,\"Fim\")]");
+		actionsMoveToElement("//input[contains(@placeholder,\"Fim\")]");
 		sleep(2000);
 		
 		tributoECD.click();
@@ -466,7 +466,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 		empresaECDO.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		actionsMoveToElementXpath("//input[contains(@placeholder,\"Fim\")]");
+		actionsMoveToElement("//input[contains(@placeholder,\"Fim\")]");
 		sleep(2000);
 		
 		ufECD.click();
@@ -482,7 +482,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 		}
 		
 		sleep(2000);
-		actionsMoveToElementXpath("//input[contains(@placeholder,\"Fim\")]");
+		actionsMoveToElement("//input[contains(@placeholder,\"Fim\")]");
 		sleep(2000);
 		
 		filialECD.click();
@@ -584,7 +584,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 		sleep(2000);
 		acao.click();
 		invisibilityOfElementOverlay();
-		waitExpectElement(descricao);
+		waitExpectedElement(descricao);
 		sleep(2000);
 		
 		String enviar = "Teste Editar";
@@ -1030,7 +1030,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 		
 		executarConf.click();
 		sleep(2000);
-		waitExpectXpath("//div[contains(@class,\"draggable\")]");
+		waitExpectedElement("//div[contains(@class,\"draggable\")]");
 		sleep(2000);
 		invisibilityOfElement("//div[contains(@class,\"draggable\")]");
 		sleep(2000);
@@ -1048,12 +1048,12 @@ public class ECDFuncionalidadesPO extends TestBase{
 		
 		gravar.click();
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 		
 		visualizarAN3.click();
 		sleep(2000);
-		waitExpectElement(criar);
+		waitExpectedElement(criar);
 		sleep(2000);
 		
 		nomeR.sendKeys("Teste Automatizado Regra ECD");
@@ -1110,7 +1110,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 		sleep(2000);
 		acao.click();
 		sleep(2000);
-		waitExpectElement(atualizar);
+		waitExpectedElement(atualizar);
 		sleep(2000);
 		String fechaHoy = fechaActual();
 		int rows = rows("//div[@class=\"tr\" and @data-id and @tabindex=\"0\"]");
@@ -1140,7 +1140,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 		
 		home.click();
 		sleep(3000);
-		waitExpectXpath("//div[@class=\"dragger-pagination-right\"]");
+		waitExpectedElement("//div[@class=\"dragger-pagination-right\"]");
 		sleep(2000);
 		
 		AcessarDFGPO acessarDFGPO;
@@ -1244,7 +1244,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 		execicioFiscal.sendKeys("2016");
 		
 		sleep(2000);
-		actionsMoveToElementXpath("//div[@id=\"account-to\"]");
+		actionsMoveToElement("//div[@id=\"account-to\"]");
 		sleep(2000);
 		
 		mesExecucao.click();
@@ -1257,14 +1257,14 @@ public class ECDFuncionalidadesPO extends TestBase{
 		mesAteO.click();
 		sleep(2000);
 		
-		actionsMoveToElementElement(tipoEscrituracao);
+		actionsMoveToElement(tipoEscrituracao);
 		
 		empresa.click();
 		sleep(2000);
 		empresaO.click();
 		sleep(2000);
 		
-		actionsMoveToElementElement(estrBalanco);
+		actionsMoveToElement(estrBalanco);
 		sleep(2000);
 		
 		tipoEscrituracao.click();
@@ -1288,7 +1288,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 		sleep(2000);
 		
 		
-		actionsMoveToElementXpath("//div[@id=\"current-shareholder\"]");
+		actionsMoveToElement("//div[@id=\"current-shareholder\"]");
 		
 		estrBalanco.click();
 		sleep(2000);
@@ -1297,7 +1297,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 		
 		tpDocEnc.sendKeys("SB");
 		
-		actionsMoveToElementXpath("//div[@id=\"file-name\"]");
+		actionsMoveToElement("//div[@id=\"file-name\"]");
 		
 		empresaGrande.click();
 		sleep(2000);
@@ -1306,7 +1306,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 		
 		criarVariante.click();
 		sleep(2000);
-		waitExpectElement(nomeVariante);
+		waitExpectedElement(nomeVariante);
 		sleep(2000);
 		
 		nomeVariante.sendKeys("Variante Teste");
@@ -1316,7 +1316,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 		
 		refresh();
 		
-		waitExpectElement(execicioFiscal);
+		waitExpectedElement(execicioFiscal);
 		invisibilityOfElementOverlay();
 		
 		variante.click();
@@ -1332,7 +1332,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 		
 		executarDFG.click();
 		System.out.println("-------------------Verficação Execução da Variante---------------------------------");
-		waitExpectXpath("//span[contains(text(),\"ECD executado com sucesso\")]");
+		waitExpectedElement("//span[contains(text(),\"ECD executado com sucesso\")]");
 		sleep(2000);
 		
 		boolean sucesso = driver.findElement(By.xpath("//span[contains(text(),\"ECD executado com sucesso\")]")).isDisplayed();
@@ -1352,14 +1352,14 @@ public class ECDFuncionalidadesPO extends TestBase{
 		String idRegistro = idObter2();
 		excluirVariante.click();
 		sleep(2000);
-		waitExpectElement(fechar);
+		waitExpectedElement(fechar);
 		sleep(2000);
 		
 		WebElement varianteExcluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div/div[@class=\"actions\"]"));
 		
 		varianteExcluir.click();
 		sleep(2000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(2000);
 		aceitar.click();
 		invisibilityOfElementOverlay();

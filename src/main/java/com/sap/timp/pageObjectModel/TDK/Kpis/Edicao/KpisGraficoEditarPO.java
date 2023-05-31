@@ -85,7 +85,7 @@ public class KpisGraficoEditarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(kpis);
+		waitExpectedElement(kpis);
 		sleep(2000);
 		kpis.click();
 		
@@ -111,12 +111,12 @@ public class KpisGraficoEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
 		editar.click();
-		waitExpectElement(gravar);
+		waitExpectedElement(gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -145,7 +145,7 @@ public class KpisGraficoEditarPO extends TestBase{
 		titulo.sendKeys(enviar);
 		titulo.sendKeys(Keys.ENTER);
 		sleep(2000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(2000);
 		aceitar.click();
 		sleep(2000);
@@ -155,12 +155,12 @@ public class KpisGraficoEditarPO extends TestBase{
 		gravar.click();
 		
 		sleep(2000);
-		waitExpectElement(gravar);
+		waitExpectedElement(gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		boolean sucesso=false;
 		if(tc2 == true) {
-			waitExpectElement(quartocolunagraficotc2);
+			waitExpectedElement(quartocolunagraficotc2);
 			sleep(2000);
 			String titulodografico=titulograficotc2.getText();
 			System.out.println(titulodografico);

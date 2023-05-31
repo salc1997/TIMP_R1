@@ -69,7 +69,7 @@ public class RegrasDeMensagensVisualizarPO extends TestBase{
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualização\"]"));
 		
 	
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -92,7 +92,7 @@ public class RegrasDeMensagensVisualizarPO extends TestBase{
 		
 		biblioteca.click();
 		
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		invisibilityOfElementOverlay();
 
 		sleep(2000);
@@ -108,14 +108,14 @@ public class RegrasDeMensagensVisualizarPO extends TestBase{
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(1000);
 		
 		editar.click();
 		
-		waitExpectElement(campo1ed);
+		waitExpectedElement(campo1ed);
 		invisibilityOfElementOverlay();
 		
 		//editar

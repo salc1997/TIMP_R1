@@ -58,7 +58,7 @@ public class TarefasAbrirCalendarioPO extends TestBase{
 		sleep(2000);
 		abrirCalendario.click();
 		sleep(3000);
-		waitExpectXpath("//div[@class=\"day\"][1]");
+		waitExpectedElement("//div[@class=\"day\"][1]");
 		sleep(2000);
 		
 		String tituloS = titulo.getText();

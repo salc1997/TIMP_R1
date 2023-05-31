@@ -59,13 +59,13 @@ public class ConfiguracoesFundoSocialEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
 		editar.click();
 		sleep(2000);
-		attributoNotToBeEmptyElement(fecha, "value");
+		attributoNotToBeEmpty(fecha, "value");
 	  	sleep(2000);
 	  	
 	  	String valor = fecha.getAttribute("value");
@@ -90,7 +90,7 @@ public class ConfiguracoesFundoSocialEditarPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		attributoNotToBeEmptyElement(fecha, "value");
+		attributoNotToBeEmpty(fecha, "value");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

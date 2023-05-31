@@ -49,7 +49,7 @@ public class GrupoAtividadeExcluirPO extends TestBase{
 		sleep(1000);
 		açao.click();
 		sleep(3000);
-		waitExpectElement(btnAceitar);
+		waitExpectedElement(btnAceitar);
 		sleep(2000);
 		
 		btnAceitar.click(); 
@@ -61,7 +61,7 @@ public class GrupoAtividadeExcluirPO extends TestBase{
 		driver.navigate().refresh();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		sleep(20000);
 		
 		btnUltimaPagina.click();

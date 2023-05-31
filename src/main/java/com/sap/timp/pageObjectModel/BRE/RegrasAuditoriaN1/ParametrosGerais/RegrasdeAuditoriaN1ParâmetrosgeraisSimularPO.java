@@ -147,14 +147,14 @@ public class RegrasdeAuditoriaN1ParâmetrosgeraisSimularPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		waitExpectElement(simulacao);
+		waitExpectedElement(simulacao);
 		simulacao.click();
 		sleep(4000);
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
 
-		waitExpectElement(CFOP);
+		waitExpectedElement(CFOP);
 		sleep(8000);
 		CFOP.click();
 		sleep(5000);
@@ -217,7 +217,7 @@ public class RegrasdeAuditoriaN1ParâmetrosgeraisSimularPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 
-		waitExpectElement(grafico);
+		waitExpectedElement(grafico);
 		sleep(3000);
 
 		String graf1 = grafico.getText();
@@ -250,7 +250,7 @@ public class RegrasdeAuditoriaN1ParâmetrosgeraisSimularPO extends TestBase{
 
 
 
-		waitExpectElement(grafico);
+		waitExpectedElement(grafico);
 		sleep(3000);
 
 		String graf2 = grafico.getText();

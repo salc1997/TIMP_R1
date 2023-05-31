@@ -106,20 +106,20 @@ public class KpisCartaoIndicadorPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
 		sleep(1000);
 		editar.click();
 		sleep(2000);
-		waitExpectElement(Gravar);
+		waitExpectedElement(Gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		adicionarwidget.click();
 		
-		waitExpectElement(cartaoindicador);
+		waitExpectedElement(cartaoindicador);
 		sleep(2000);
 		cartaoindicador.click();
 		sleep(2000);
@@ -130,7 +130,7 @@ public class KpisCartaoIndicadorPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(cabecalho);
+		waitExpectedElement(cabecalho);
 		sleep(2000);
 		cabecalho.sendKeys("Cabecalho");
 		sleep(2000);
@@ -152,7 +152,7 @@ public class KpisCartaoIndicadorPO extends TestBase{
 		sleep(2000);
 		opcaoestrutura.click();
 		sleep(2000);
-		waitExpectElement(conteudo);
+		waitExpectedElement(conteudo);
 		sleep(2000);
 		conteudo.click();
 		sleep(2000);
@@ -172,7 +172,7 @@ public class KpisCartaoIndicadorPO extends TestBase{
 		sleep(2000);
 		biblioteca.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		nao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -188,14 +188,14 @@ public class KpisCartaoIndicadorPO extends TestBase{
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 
 		menu1.click();
 		sleep(1000);
 		editar1.click();
 		sleep(2000);
-		waitExpectElement(Gravar);
+		waitExpectedElement(Gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();

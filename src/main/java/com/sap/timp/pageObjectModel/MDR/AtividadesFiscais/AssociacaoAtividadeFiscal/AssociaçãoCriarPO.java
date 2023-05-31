@@ -122,7 +122,7 @@ public class AssociaçãoCriarPO extends TestBase {
 		opcionCheckbox1.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[contains(@class, \"uf\")]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
+		attributeToBe("//div[contains(@class, \"uf\")]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
 		sleep(2000);
 		inputUF.click();		
 		sleep(2000);
@@ -130,7 +130,7 @@ public class AssociaçãoCriarPO extends TestBase {
 		opcionCheckbox.sendKeys(Keys.ESCAPE);		
 		sleep(2000);
 		
-		attributeToBeXpath("//div[contains(@class, \"codFilial\")]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
+		attributeToBe("//div[contains(@class, \"codFilial\")]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
 		sleep(2000);
 		inputFilial.click();		
 		sleep(2000);
@@ -175,7 +175,7 @@ public class AssociaçãoCriarPO extends TestBase {
 		btnGravar.click();
 		sleep(2000);
 		
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		btnSim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

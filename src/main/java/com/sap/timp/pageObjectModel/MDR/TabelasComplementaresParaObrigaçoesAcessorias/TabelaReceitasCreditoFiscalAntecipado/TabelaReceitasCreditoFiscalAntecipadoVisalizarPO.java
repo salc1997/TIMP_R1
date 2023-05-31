@@ -102,7 +102,7 @@ public class TabelaReceitasCreditoFiscalAntecipadoVisalizarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		attributoNotToBeEmptyElement(obrigacaoV, "textContent");
+		attributoNotToBeEmpty(obrigacaoV, "textContent");
 		
 		
 

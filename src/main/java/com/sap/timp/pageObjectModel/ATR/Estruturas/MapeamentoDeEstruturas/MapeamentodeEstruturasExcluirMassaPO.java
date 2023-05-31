@@ -112,7 +112,7 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBase {
 		
 		novo.click();
 		sleep(3000);
-		waitExpectElement(estruturaDados);
+		waitExpectedElement(estruturaDados);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -168,7 +168,7 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBase {
 		
 		novo.click();
 		sleep(2000);
-		waitExpectElement(estruturaDados);
+		waitExpectedElement(estruturaDados);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -301,7 +301,7 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBase {
 	  
 	  excluirMassa.click();
 	  sleep(1000);
-	  waitExpectElement(aceitar);
+	  waitExpectedElement(aceitar);
 	  sleep(1000);
 	  aceitar.click();
 	  sleep(3000);
@@ -311,7 +311,7 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBase {
 	  driver.navigate().refresh(); 
 	  sleep(3000);
 	  invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-	  waitExpectElement(finalPagina); 
+	  waitExpectedElement(finalPagina); 
 	  sleep(2000);
 	  
 	  mapamentoEstruturas.click();

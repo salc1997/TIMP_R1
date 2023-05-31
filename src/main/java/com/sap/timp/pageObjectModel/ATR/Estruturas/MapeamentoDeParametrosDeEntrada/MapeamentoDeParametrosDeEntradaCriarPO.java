@@ -71,7 +71,7 @@ public class MapeamentoDeParametrosDeEntradaCriarPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(primerapagina);
+		waitExpectedElement(primerapagina);
 		sleep(2000);
 		primerapagina.click();
 		sleep(2000);
@@ -121,7 +121,7 @@ public class MapeamentoDeParametrosDeEntradaCriarPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(primerapagina);
+		waitExpectedElement(primerapagina);
 		sleep(2000);
 		primerapagina.click();
 		sleep(2000);

@@ -823,7 +823,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		nome.sendKeys("Teste Automatizado Leiaute 2");
 		sleep(1000);
-		actionsMoveToElementElement(versao);
+		actionsMoveToElement(versao);
 		sleep(1000);
 		tipo.click();
 		sleep(1000);
@@ -862,7 +862,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(gravar);
+		waitExpectedElement(gravar);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -871,7 +871,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		adicionarBloco.click();
 		sleep(2000);
-		waitExpectElement(adicionarRegistro);
+		waitExpectedElement(adicionarRegistro);
 		sleep(1000);
 		adicionarRegistro.click();
 		sleep(2000);
@@ -887,7 +887,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		ajustes.click();
 		sleep(2000);
 		
-		actionsMoveToElementElement(valorAjuste);
+		actionsMoveToElement(valorAjuste);
 		moveToElement(valorAjuste,driver.findElement(By.xpath("//div[contains(@class,\"ui-droppable\")]")));
 		sleep(1000);
 		
@@ -899,11 +899,11 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		
 		
-		actionsMoveToElementElement(parametroManual);
+		actionsMoveToElement(parametroManual);
 		moveToElement(parametroManual,driver.findElement(By.xpath("//div[contains(@class,\"ui-droppable\")]")));
 		sleep(1000);
 		
-		waitExpectElement(nomeParametro);
+		waitExpectedElement(nomeParametro);
 		sleep(2000);
 		
 		nomeParametro.sendKeys("Parametro Manual 1");
@@ -919,7 +919,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -1033,7 +1033,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		novo.click();
 		sleep(3000);
-		waitExpectElement(nomeRegra);
+		waitExpectedElement(nomeRegra);
 		sleep(2000);
 		
 		nomeRegra.sendKeys("Teste Automatizado Regra Leiaute ");
@@ -1055,7 +1055,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		componenteO.click();
 		sleep(1000);
 		
-		actionsMoveToElementElement(dataVigenciaR);
+		actionsMoveToElement(dataVigenciaR);
 		
 		sleep(1000);
 		
@@ -1082,7 +1082,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		estruturaRO.click();
 		
 		sleep(1000);
-		actionsMoveToElementElement(dataVigenciaR);
+		actionsMoveToElement(dataVigenciaR);
 		sleep(1000);
 		
 		//waitExpectElement(versaoLeiauteR);
@@ -1104,14 +1104,14 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(adicionarCaminho);
+		waitExpectedElement(adicionarCaminho);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		adicionarCaminho.click();
 		sleep(3000);
-		waitExpectElement(codigo);
+		waitExpectedElement(codigo);
 		sleep(2000);
 		
 		codigo.sendKeys("01");
@@ -1148,7 +1148,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -1242,7 +1242,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		acao.click();
 		
 		sleep(3000);
-		waitExpectElement(gravar);
+		waitExpectedElement(gravar);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -1255,7 +1255,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		regrasNegocioB.click();
 		sleep(3000);
-		waitExpectElement(blocoR);
+		waitExpectedElement(blocoR);
 		sleep(2000);
 		
 		blocoR.click();
@@ -1285,7 +1285,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -1332,10 +1332,10 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		ajustes.click();
 		sleep(2000);
 		
-		actionsMoveToElementXpath("//div[@block-id=\"1\" and @class=\"block-wrapper\"]/div[3]/div/div[1]");
+		actionsMoveToElement("//div[@block-id=\"1\" and @class=\"block-wrapper\"]/div[3]/div/div[1]");
 		sleep(1000);
 		
-		actionsMoveToElementElement(dataLancamento);
+		actionsMoveToElement(dataLancamento);
 		moveToElement(dataLancamento,droppable2);
 		sleep(1000);
 		moveToElement(valorAjuste,droppable2);
@@ -1347,7 +1347,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		}
 		
 		regrasOcultacao.click();
-		waitExpectElement(blocoRegraOcultacao);
+		waitExpectedElement(blocoRegraOcultacao);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -1370,11 +1370,11 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		filtros.click();
 		
 		sleep(2000);
-		waitExpectElement(adicionarGrupo);
+		waitExpectedElement(adicionarGrupo);
 		sleep(2000);
 		
 		adicionarGrupo.click();
-		waitExpectElement(lapizEditar);
+		waitExpectedElement(lapizEditar);
 		sleep(2000);
 		
 		lapizEditar.click();
@@ -1416,10 +1416,10 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		nomeRegistro3.sendKeys("Registro 1");
 		sleep(1000);
 		
-		actionsMoveToElementXpath("//div[@block-id=\"2\" and @class=\"block-wrapper\"]/div[3]/div/div[1]");
+		actionsMoveToElement("//div[@block-id=\"2\" and @class=\"block-wrapper\"]/div[3]/div/div[1]");
 		sleep(1000);
 		
-		actionsMoveToElementElement(dataLancamento);
+		actionsMoveToElement(dataLancamento);
 		moveToElement(codigoEmpresa,droppable3);
 		sleep(1000);
 		moveToElement(codigoFilial,droppable3);
@@ -1435,7 +1435,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		moveToElement(totalDeBloco,droppable3);
 		
 		sleep(2000);
-		waitExpectElement(aplicar);
+		waitExpectedElement(aplicar);
 		sleep(1000);
 		
 		registroTB.click();
@@ -1460,10 +1460,10 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		nomeRegistro4.sendKeys("Registro 1");
 		sleep(1000);
 
-		actionsMoveToElementXpath("//div[@block-id=\"3\" and @class=\"block-wrapper\"]/div[3]/div/div[1]");
+		actionsMoveToElement("//div[@block-id=\"3\" and @class=\"block-wrapper\"]/div[3]/div/div[1]");
 		sleep(1000);
 		
-		actionsMoveToElementElement(dataLancamento);
+		actionsMoveToElement(dataLancamento);
 		moveToElement(codigoEmpresa,droppable4);
 		sleep(1000);
 		moveToElement(codigoFilial,droppable4);
@@ -1477,7 +1477,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		moveToElement(totalDeRegistro,droppable4);
 		
 		sleep(2000);
-		waitExpectElement(aplicar);
+		waitExpectedElement(aplicar);
 		sleep(1000);
 		
 		registroTR.click();
@@ -1505,10 +1505,10 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		nomeRegistro5.sendKeys("Registro 1");
 		sleep(1000);
 
-		actionsMoveToElementXpath("//div[@block-id=\"4\" and @class=\"block-wrapper\"]/div[3]/div/div[1]");
+		actionsMoveToElement("//div[@block-id=\"4\" and @class=\"block-wrapper\"]/div[3]/div/div[1]");
 		sleep(1000);
 	
-		actionsMoveToElementElement(dataLancamento);
+		actionsMoveToElement(dataLancamento);
 		moveToElement(totalDaForma,droppable5);
 		sleep(1000);
 		
@@ -1528,10 +1528,10 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		nomeRegistro6.sendKeys("Registro 1");
 		sleep(1000);
 
-		actionsMoveToElementXpath("//div[@block-id=\"5\" and @class=\"block-wrapper\"]/div[3]/div/div[1]");
+		actionsMoveToElement("//div[@block-id=\"5\" and @class=\"block-wrapper\"]/div[3]/div/div[1]");
 		sleep(1000);
 		
-		actionsMoveToElementElement(dataLancamento);
+		actionsMoveToElement(dataLancamento);
 		moveToElement(codigoEmpresa,droppable6);
 		sleep(1000);
 		moveToElement(codigoFilial,droppable6);
@@ -1544,7 +1544,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		}
 		
 		concatenacao.click();
-		waitExpectElement(blocoRegraOcultacao);
+		waitExpectedElement(blocoRegraOcultacao);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -1566,7 +1566,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		adicionarConcatenacao.click();
 		sleep(1000);
-		waitExpectElement(campo2C);
+		waitExpectedElement(campo2C);
 		sleep(1000);
 		
 		campo2C.click();
@@ -1592,16 +1592,16 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		nomeRegistro7.sendKeys("Registro 1");
 		sleep(1000);
 
-		actionsMoveToElementXpath("//div[@block-id=\"6\" and @class=\"block-wrapper\"]/div[3]/div/div[1]");
+		actionsMoveToElement("//div[@block-id=\"6\" and @class=\"block-wrapper\"]/div[3]/div/div[1]");
 		sleep(1000);
 		
-		actionsMoveToElementElement(contadorDoRegistro);
+		actionsMoveToElement(contadorDoRegistro);
 		moveToElement(contadorDoRegistro,droppable7);
 		sleep(1000);
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -1646,7 +1646,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		novo.click();
 		sleep(3000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000); 
 		
@@ -1659,7 +1659,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		leiauteO.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"inputTimpVersion\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"inputTimpVersion\"]/div", "class", "base-select required");
 		sleep(1000);
 		
 		versaoE.click();
@@ -1667,7 +1667,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		versaoEO.click();
 		sleep(1000);
 		
-		actionsMoveToElementXpath("//input[contains(@placeholder,\"Fim\")]");
+		actionsMoveToElement("//input[contains(@placeholder,\"Fim\")]");
 		sleep(1000);
 		
 		tributoE.click();
@@ -1792,7 +1792,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		sleep(1000);
 		acao.click();
 		sleep(3000);
-		waitExpectElement(executar);
+		waitExpectedElement(executar);
 		sleep(2000);
 		
 		ufFilialB.click();
@@ -1820,7 +1820,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		sleep(3000);
 		
 		
-		waitExpectXpath("//div[@class=\"base-dialog   medium ui-draggable\"]");
+		waitExpectedElement("//div[@class=\"base-dialog   medium ui-draggable\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"base-dialog   medium ui-draggable\"]");
 		sleep(2000);
@@ -1837,7 +1837,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		visualizarDados.click();
 		sleep(3000);
-		waitExpectElement(bloco);
+		waitExpectedElement(bloco);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 	
@@ -2210,7 +2210,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		waitExpectElement(pesquisar);
+		waitExpectedElement(pesquisar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -2323,7 +2323,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		waitExpectElement(pesquisar);
+		waitExpectedElement(pesquisar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(8000);
 		
@@ -2390,7 +2390,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		sleep(1000);
 		lixeira.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -2439,7 +2439,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -2449,7 +2449,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		waitExpectElement(pesquisar);
+		waitExpectedElement(pesquisar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

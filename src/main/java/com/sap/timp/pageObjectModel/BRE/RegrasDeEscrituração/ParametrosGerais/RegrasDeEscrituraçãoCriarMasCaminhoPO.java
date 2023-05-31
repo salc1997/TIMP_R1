@@ -163,7 +163,7 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBase{
 		
 		novaRegra.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		
 		nome.click();
@@ -199,7 +199,7 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBase{
 		sleep(1000);
 		
 
-		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
+		actionsMoveToElement("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
 		estruturaDeDatos.click();
 		sleep(1000);
 		opcionEstruturaDeDatos.click();
@@ -218,13 +218,13 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBase{
 		aplicar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(btnJustificactiva);
+		waitExpectedElement(btnJustificactiva);
 		sleep(2000);
 		
 		btnJustificactiva.click();
 		sleep(2000);
 		
-		waitExpectElement(justificativa);
+		waitExpectedElement(justificativa);
 		justificativa.sendKeys("TESTE AUTOMATIZADO");
 		sleep(1000);
 		btnAceitar.click();
@@ -232,7 +232,7 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBase{
 		
 		adicionarCaminho.click();
 		sleep(2000);
-		waitExpectElement(cboCondicoes);
+		waitExpectedElement(cboCondicoes);
 		cboCondicoes.click();
 		sleep(1000);
 		opcionCondicoes.click();
@@ -268,7 +268,7 @@ public class RegrasDeEscrituraçãoCriarMasCaminhoPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"overlay loader transp\"]");
+		waitExpectedElement("//div[@class=\"overlay loader transp\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader transp\"]");
 		sleep(2000);		
 		

@@ -110,7 +110,7 @@ String url = driver.getCurrentUrl();
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(4000);
 		
 		menu.click();
@@ -119,7 +119,7 @@ String url = driver.getCurrentUrl();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		//attributeToBeXpath("//*[@id=\"select\"]", "class", "base-select-wrapper");
-		attributoNotToBeEmptyXpath("//div[ @id=\"validFrom\"]/div/div/input", "value");
+		attributoNotToBeEmpty("//div[ @id=\"validFrom\"]/div/div/input", "value");
 		//sleep(15000);
 		sleep(2000);
 		
@@ -139,7 +139,7 @@ String url = driver.getCurrentUrl();
 		gravar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(butaosim);
+		waitExpectedElement(butaosim);
 		sleep(2000);
 		butaosim.sendKeys(Keys.ENTER);;
 		sleep(2000);
@@ -147,10 +147,10 @@ String url = driver.getCurrentUrl();
 		
 		//recarrega a pagina
 		driver.navigate().refresh();
-		attributeToBeXpath("//*[@id=\"select\"]", "class", "base-select-wrapper");
+		attributeToBe("//*[@id=\"select\"]", "class", "base-select-wrapper");
 		//attributoNotToBeEmptyElement(empresa, "value");
 		//sleep(15000);
-		attributoNotToBeEmptyXpath("//div[ @id=\"validFrom\"]/div/div/input", "value");
+		attributoNotToBeEmpty("//div[ @id=\"validFrom\"]/div/div/input", "value");
 		sleep(2000);
 		//verifica se o valor inserido consta no relatório
 		String texto1 = vigenciade.getAttribute("value");
@@ -167,12 +167,12 @@ String url = driver.getCurrentUrl();
 		gravar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(butaosim);
+		waitExpectedElement(butaosim);
 		sleep(2000);
 		butaosim.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 		
 		return sucesso;

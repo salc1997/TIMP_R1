@@ -64,27 +64,27 @@ public class LoginTC extends TestBase{
 			urlAlltax.click();
 			sleep(3000);
 			
-			waitExpectElement(usuarioCLOUD);
+			waitExpectedElement(usuarioCLOUD);
 			sleep(3000);
 			//Usuario Correto e Senha Correta
 			usuarioCLOUD.sendKeys(usuarioLL);
 			senhaCLOUD.sendKeys(senhaLL);
 			sleep(1000);
 			botaoCLOUD.click();
-			waitExpectXpath("//*[@id=\"home-icon\"]");
+			waitExpectedElement("//*[@id=\"home-icon\"]");
 			
 			
 		}else {
 			
 			
-			waitExpectElement(botao);
+			waitExpectedElement(botao);
 
 			//Usuario Correto e Senha Correta
 			usuario.sendKeys(usuarioL);
 			senha.sendKeys(senhaL);
 			sleep(1000);
 			botao.click();
-			waitExpectXpath("//*[@id=\"home-icon\"]");
+			waitExpectedElement("//*[@id=\"home-icon\"]");
 			
 		}
 			

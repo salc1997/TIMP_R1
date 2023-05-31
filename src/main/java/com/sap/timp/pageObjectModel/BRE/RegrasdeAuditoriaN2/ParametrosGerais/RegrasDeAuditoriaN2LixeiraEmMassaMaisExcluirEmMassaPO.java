@@ -135,7 +135,7 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		
 		
 		//Primeiro registro
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		nome.click();
 		sleep(1000);
@@ -206,7 +206,7 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		
 		aplicar.click();
 		sleep(2000);
-		waitExpectElement(adicionarCaminho);
+		waitExpectedElement(adicionarCaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
@@ -216,7 +216,7 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(AN2);
+		waitExpectedElement(AN2);
 		sleep(2000);
 		
 		AN2.click();
@@ -231,7 +231,7 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		//-----------SEGUNDO----------------
 		novo.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		nome.click();
 		sleep(1000);
@@ -282,7 +282,7 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		sleep(2000);
 		aplicar.click();
 		sleep(2000);
-		waitExpectElement(adicionarCaminho);
+		waitExpectedElement(adicionarCaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -291,11 +291,11 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(AN2);
+		waitExpectedElement(AN2);
 		sleep(2000);
 		AN2.click();
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);
@@ -347,7 +347,7 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		WebElement lixeiraemmassa = driver.findElement(By.xpath("//span[@class=\"button-icon icon-font-Finance-and-Office icon-trash\"]"));
 		lixeiraemmassa.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -363,7 +363,7 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		lixeira.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);
@@ -412,7 +412,7 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		excluirmassa.click();
 		
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		
 		sim.click();
@@ -425,7 +425,7 @@ public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO extends TestB
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		

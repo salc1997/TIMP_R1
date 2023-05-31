@@ -164,7 +164,7 @@ public class ValoresParaMetodoPVEXCriarPO extends TestBase{
 		
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"material\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"material\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		material.click();

@@ -86,7 +86,7 @@ public class HierarquiaDeCenariosDeCorreçaoFiltrosAbansadosPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		waitExpectElement(tributo);
+		waitExpectedElement(tributo);
 		sleep(2000);
 		
 		tributo.click();
@@ -139,7 +139,7 @@ public class HierarquiaDeCenariosDeCorreçaoFiltrosAbansadosPO extends TestBase{
 
 		String usuarioCriacaoText = opc.getText();
 		System.out.println("VIENE EN EL SELECT: "+ usuarioCriacaoText);
-		dobleClickElement(otra); 
+		dobleClick(otra); 
 		
 //		clickFuera.click();
 		sleep(1000);
@@ -194,7 +194,7 @@ public class HierarquiaDeCenariosDeCorreçaoFiltrosAbansadosPO extends TestBase{
 		WebElement dia1 = driver.findElement(By.xpath("//div[@class=\"calendars\"]/div[1]/div[3]/div[@tabindex=\"0\" and @class=\"date\" and text()="+diahoy+"]"));
 		System.out.println("dia 1 : "+ dia1);
 		
-		waitExpectElement(dia1);
+		waitExpectedElement(dia1);
 		dia1.click();
 		sleep(2000);
 		aceptar.click();
@@ -241,7 +241,7 @@ public class HierarquiaDeCenariosDeCorreçaoFiltrosAbansadosPO extends TestBase{
 
 		String usuarioCriacaoText = opc.getText();
 		System.out.println("VIENE EN EL SELECT: "+ usuarioCriacaoText);
-		dobleClickElement(otra2); 
+		dobleClick(otra2); 
 		
 //		clickFuera.click();
 		sleep(1000);
@@ -303,7 +303,7 @@ public class HierarquiaDeCenariosDeCorreçaoFiltrosAbansadosPO extends TestBase{
 		WebElement dia1 = driver.findElement(By.xpath("//div[@class=\"calendars\"]/div[1]/div[3]/div[@tabindex=\"0\" and @class=\"date\" and text()="+diahoy+"]"));
 		System.out.println("dia 1 : "+ dia1);
 		
-		waitExpectElement(dia1);
+		waitExpectedElement(dia1);
 		dia1.click();
 		sleep(2000);
 		aceptar.click();

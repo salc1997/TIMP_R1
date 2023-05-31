@@ -60,7 +60,7 @@ public class ConfiguracoesEditarPO extends TestBase{
 	public boolean editar() {
 		
 
-		waitExpectElement(configuracoes);
+		waitExpectedElement(configuracoes);
 		sleep(1000);
 		configuracoes.click();
 		sleep(3000);
@@ -80,7 +80,7 @@ public class ConfiguracoesEditarPO extends TestBase{
 		
 		/*filtrosAvanzados.click();
 		sleep(3000);*/
-		waitExpectElement(filtrosAvanzados);
+		waitExpectedElement(filtrosAvanzados);
 		sleep(2000);
 		
 		procurar.sendKeys(id);

@@ -74,11 +74,11 @@ public class ParametrosGeraisHierarquiaLixeiraPO extends TestBase {
 		simExcluir.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(pastaLexeiraH);
+		waitExpectedElement(pastaLexeiraH);
 		sleep(6000);
 		
 		ultimo.click();

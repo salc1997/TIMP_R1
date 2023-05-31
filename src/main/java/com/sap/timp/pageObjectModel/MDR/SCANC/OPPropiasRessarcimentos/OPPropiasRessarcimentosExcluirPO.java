@@ -80,7 +80,7 @@ public class OPPropiasRessarcimentosExcluirPO extends TestBase{
 		açao.click();
 		sleep(3000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay dark\"]");

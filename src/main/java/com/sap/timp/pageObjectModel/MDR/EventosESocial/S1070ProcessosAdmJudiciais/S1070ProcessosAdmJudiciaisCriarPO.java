@@ -132,14 +132,14 @@ public class S1070ProcessosAdmJudiciaisCriarPO extends TestBase{
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[contains(@class, \"uf_0_1\")]/div/div[2]/div/div/div[2]/input", "class", "");
-		waitExpectElement(uf);
+		attributeToBe("//div[contains(@class, \"uf_0_1\")]/div/div[2]/div/div/div[2]/input", "class", "");
+		waitExpectedElement(uf);
 		uf.click();
 		sleep(1000);
 		opcionCombo.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[contains(@class, \"branches_0_2\")]/div/div[2]/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[contains(@class, \"branches_0_2\")]/div/div[2]/div/div/div[2]/input", "class", "");
 		filial.click();
 		sleep(1000);
 		opcionCheckboxDiferenteTodos.click();
@@ -147,7 +147,7 @@ public class S1070ProcessosAdmJudiciaisCriarPO extends TestBase{
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[contains(@class, \"inscriptionNumber_0_3\")]/div/div[2]/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[contains(@class, \"inscriptionNumber_0_3\")]/div/div[2]/div/div/div[2]/input", "class", "");
 		numeroInscricao.click();
 		sleep(1000);
 		opcionCombo.click();

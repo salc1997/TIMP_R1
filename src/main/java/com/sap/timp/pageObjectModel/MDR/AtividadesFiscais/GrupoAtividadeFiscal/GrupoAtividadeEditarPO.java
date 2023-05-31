@@ -111,7 +111,7 @@ public class GrupoAtividadeEditarPO extends TestBase{
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(4000);
 		
 		menu.click();
@@ -119,7 +119,7 @@ public class GrupoAtividadeEditarPO extends TestBase{
 		editar.click();
 		sleep(3000);
 
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 		
 		
 		String valor = campo.getAttribute("value");
@@ -133,17 +133,17 @@ public class GrupoAtividadeEditarPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(3000);		 
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 
 		
 		driver.navigate().refresh();
 		
 		
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 		sleep(1000);
 		
 		String nuevoTexto = campo.getAttribute("value");
@@ -160,11 +160,11 @@ public class GrupoAtividadeEditarPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 		
 		System.out.println(sucesso);

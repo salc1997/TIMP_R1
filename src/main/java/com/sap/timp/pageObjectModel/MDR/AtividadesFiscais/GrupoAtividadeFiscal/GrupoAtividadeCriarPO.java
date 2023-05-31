@@ -116,7 +116,7 @@ public class GrupoAtividadeCriarPO extends TestBase{
 		novo.click();
 		sleep(2000);
 		
-		waitExpectElement(descricao);
+		waitExpectedElement(descricao);
 		sleep(2000);
 		
 		descricao.sendKeys("Grupo Atividade Fiscal de Teste");
@@ -129,12 +129,12 @@ public class GrupoAtividadeCriarPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
 
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		biblioteca.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -168,7 +168,7 @@ public class RegrasDeAuditoriaN1CriarPO extends TestBase{
 		
 		novaregra.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		
 		nome.click();
@@ -219,7 +219,7 @@ public class RegrasDeAuditoriaN1CriarPO extends TestBase{
 		
 		
 		
-		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
+		actionsMoveToElement("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
 		estruturadedados.click();
 		sleep(1000);
 		opcaoestruturadedados.click();
@@ -237,7 +237,7 @@ public class RegrasDeAuditoriaN1CriarPO extends TestBase{
 		sleep(2000);
 		aplicar.click();
 		sleep(2000);
-		waitExpectElement(adicionarcaminho);
+		waitExpectedElement(adicionarcaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -245,7 +245,7 @@ public class RegrasDeAuditoriaN1CriarPO extends TestBase{
 	
 		Justificactiva.click();
 		sleep(2000);
-		waitExpectElement(justificativa);
+		waitExpectedElement(justificativa);
 		sleep(2000);
 		justificativa.sendKeys("TESTE AUTOMATIZADO");
 		sleep(1000);
@@ -254,7 +254,7 @@ public class RegrasDeAuditoriaN1CriarPO extends TestBase{
 		//1 caminho
 		adicionarcaminho.click();
 		sleep(2000);
-		waitExpectElement(Condicoes);
+		waitExpectedElement(Condicoes);
 		Condicoes.click();
 		sleep(1000);
 		opcaoCondicoes.click();
@@ -279,7 +279,7 @@ public class RegrasDeAuditoriaN1CriarPO extends TestBase{
 		acoes.sendKeys(Keys.ESCAPE);
 	
 		sleep(2000);
-		waitExpectElement(aplicar);
+		waitExpectedElement(aplicar);
 		sleep(2000);
 		aplicar.click();
 		sleep(2000);

@@ -86,7 +86,7 @@ public class TipoDeDocumentoEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -95,14 +95,14 @@ public class TipoDeDocumentoEditarPO extends TestBase{
 		sleep(2000);
 		
 		sleep(2000);
-		waitExpectElement(tipodocumento);
+		waitExpectedElement(tipodocumento);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		String enviar = "01/01/2014";
 		
 		System.out.println(enviar);
-		attributoNotToBeEmptyXpath("//input[@placeholder=\"Selecionar Validade De\"]", "value");
+		attributoNotToBeEmpty("//input[@placeholder=\"Selecionar Validade De\"]", "value");
 		sleep(2000);
 		validadede.clear();
 		sleep(2000);
@@ -111,7 +111,7 @@ public class TipoDeDocumentoEditarPO extends TestBase{
 		
 		Gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -129,7 +129,7 @@ public class TipoDeDocumentoEditarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -139,7 +139,7 @@ public class TipoDeDocumentoEditarPO extends TestBase{
 		 menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		 editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -148,10 +148,10 @@ public class TipoDeDocumentoEditarPO extends TestBase{
 		sleep(2000);
 		
 		sleep(2000);
-		waitExpectElement(tipodocumento);
+		waitExpectedElement(tipodocumento);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		attributoNotToBeEmptyXpath("//input[@placeholder=\"Selecionar Validade De\"]", "value");
+		attributoNotToBeEmpty("//input[@placeholder=\"Selecionar Validade De\"]", "value");
 		sleep(2000);
 		
 		String data = validadede.getAttribute("value");

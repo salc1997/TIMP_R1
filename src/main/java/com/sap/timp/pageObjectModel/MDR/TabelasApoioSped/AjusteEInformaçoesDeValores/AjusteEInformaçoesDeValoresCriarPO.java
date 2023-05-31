@@ -98,7 +98,7 @@ public class AjusteEInformaçoesDeValoresCriarPO extends TestBase {
 		
 		sleep(2000);
 		//espera o campo nao se vazio
-		attributoNotToBeEmptyXpath("//input[@placeholder=\"Preencher o Reflexo na Apuração ICMS\"]", "value");
+		attributoNotToBeEmpty("//input[@placeholder=\"Preencher o Reflexo na Apuração ICMS\"]", "value");
 		sleep(2000);
 		descricao.sendKeys("Teste");
 	

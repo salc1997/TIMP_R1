@@ -126,7 +126,7 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBase{
 		novo.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		sleep(2000);
 		
 	
@@ -144,7 +144,7 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBase{
 		opcao2.click();
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"tax-type-transfers\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tax-type-transfers\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		tipoImposto.click();
@@ -214,7 +214,7 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBase{
 	
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");	
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		sleep(60000);
 		System.out.println("llege antes del segundo registro");
 		sleep(12000);
@@ -229,7 +229,7 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBase{
 		opcao2.click();
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"tax-type-transfers\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tax-type-transfers\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		tipoImposto.click();
@@ -360,7 +360,7 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBase{
 		
 		excluirMassa.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(3000);
@@ -369,7 +369,7 @@ public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBase{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

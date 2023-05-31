@@ -82,13 +82,13 @@ public class PaisMoedaEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
 		editar.click();
 		
-		attributeToBeXpath("//div[@id=\"country\"]/div", "class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"country\"]/div", "class", "base-autocomplete required");
 		sleep(3000);
 		
 		//attributoNotToBeEmptyXpath("//input[@placeholder=\"Selecionar Código de País\"]", "value");
@@ -105,18 +105,18 @@ public class PaisMoedaEditarPO extends TestBase{
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(mensagem);
+		waitExpectedElement(mensagem);
 		sleep(2000);
 
 		driver.navigate().refresh();
 		
 		
-		attributeToBeXpath("//div[@id=\"country\"]/div", "class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"country\"]/div", "class", "base-autocomplete required");
 		sleep(3000);
 			
 		//attributoNotToBeEmptyXpath("//input[@placeholder=\"Selecionar Código de País\"]", "value");
@@ -138,11 +138,11 @@ public class PaisMoedaEditarPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
-		waitExpectElement(mensagem);
+		waitExpectedElement(mensagem);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		

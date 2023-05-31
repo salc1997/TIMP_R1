@@ -135,7 +135,7 @@ public class KpisLixeiraEmMassaPO extends TestBase{
 		Gravar.click();
 		sleep(2000);
 		
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		sleep(8000);
 		
 		biblioteca.click();
@@ -144,7 +144,7 @@ public class KpisLixeiraEmMassaPO extends TestBase{
 		sim.click();
 		sleep(2000);
 
-		waitExpectElement(kpispublicos);
+		waitExpectedElement(kpispublicos);
 		sleep(12000);
 		
 		kpis.click();
@@ -196,7 +196,7 @@ public class KpisLixeiraEmMassaPO extends TestBase{
 		Gravar.click();
 		sleep(2000);
 		
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		sleep(4000);
 		
 		biblioteca.click();
@@ -205,7 +205,7 @@ public class KpisLixeiraEmMassaPO extends TestBase{
 		sim.click();
 		sleep(2000);
 
-		waitExpectElement(kpispublicos);
+		waitExpectedElement(kpispublicos);
 		sleep(2000);
 		
 		kpis.click();
@@ -287,7 +287,7 @@ public class KpisLixeiraEmMassaPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(5000);
-		waitExpectElement(kpis);
+		waitExpectedElement(kpis);
 		sleep(8000);
 		
 		kpis.click();

@@ -80,7 +80,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoVisualizarPO extends TestB
 		sleep(3000);
 		
 		sleep(3000);
-		waitExpectElement(bloco);
+		waitExpectedElement(bloco);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

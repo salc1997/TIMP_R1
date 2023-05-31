@@ -102,7 +102,7 @@ public class RegistroM300VisualizarPO extends TestBase{
 	
 		
 		sleep(4000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		
 		siguiente.click();

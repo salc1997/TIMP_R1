@@ -175,7 +175,7 @@ public class AtividadeCriarPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(5000);
@@ -186,7 +186,7 @@ public class AtividadeCriarPO extends TestBase{
 	
 
 		biblioteca.click();
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		nao.click();
 		sleep(2000);

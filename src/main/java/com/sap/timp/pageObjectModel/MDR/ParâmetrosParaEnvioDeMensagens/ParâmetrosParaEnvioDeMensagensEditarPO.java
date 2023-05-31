@@ -57,9 +57,9 @@ public class ParâmetrosParaEnvioDeMensagensEditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		actionsMoveToElementElement(descricao);
-		waitExpectElement(descricao);
-		attributoNotToBeEmptyXpath("//div[@id=\"initialValidity\"]/div/div/input", "value");
+		actionsMoveToElement(descricao);
+		waitExpectedElement(descricao);
+		attributoNotToBeEmpty("//div[@id=\"initialValidity\"]/div/div/input", "value");
 		
 		String descricaoeOriginal = descricao.getAttribute("value");
 		System.out.println("Valor original: " + descricaoeOriginal);
@@ -88,8 +88,8 @@ public class ParâmetrosParaEnvioDeMensagensEditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
-		waitExpectElement(descricao);
-		attributoNotToBeEmptyXpath("//div[@id=\"initialValidity\"]/div/div/input", "value");
+		waitExpectedElement(descricao);
+		attributoNotToBeEmpty("//div[@id=\"initialValidity\"]/div/div/input", "value");
 		String descricaoNuevoEditado = descricao.getAttribute("value");
 		
 		System.out.println("----------------------------------------");
@@ -103,8 +103,8 @@ public class ParâmetrosParaEnvioDeMensagensEditarPO extends TestBase{
 		// Si no  hay error, devuelvo el valor original que tenia 
 		sleep(1000);
 		if(sucesso) {
-			waitExpectElement(descricao);
-			attributoNotToBeEmptyXpath("//div[@id=\"initialValidity\"]/div/div/input", "value");
+			waitExpectedElement(descricao);
+			attributoNotToBeEmpty("//div[@id=\"initialValidity\"]/div/div/input", "value");
 			descricao.click();
 			sleep(1000);
 			descricao.clear();

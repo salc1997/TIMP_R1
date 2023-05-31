@@ -100,7 +100,7 @@ public class ICMSSTTransporteCriarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(primera);
+		waitExpectedElement(primera);
 		sleep(2000);
 		primera.click();
 		sleep(2000);

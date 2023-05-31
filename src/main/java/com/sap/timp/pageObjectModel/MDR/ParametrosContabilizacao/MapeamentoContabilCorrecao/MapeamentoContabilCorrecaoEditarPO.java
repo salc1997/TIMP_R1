@@ -83,7 +83,7 @@ public class MapeamentoContabilCorrecaoEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -91,8 +91,8 @@ public class MapeamentoContabilCorrecaoEditarPO extends TestBase{
 		editar.click();
 		sleep(2000);
 		//attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");
-		waitExpectXpath("//div[@id=\"company\"]/div/div/div[2]");
-		attributoNotToBeEmptyXpath("//*[@id=\"header-text\"]/div/div/input", "value");
+		waitExpectedElement("//div[@id=\"company\"]/div/div/div[2]");
+		attributoNotToBeEmpty("//*[@id=\"header-text\"]/div/div/input", "value");
 		sleep(2000);
 		String valor = campo.getAttribute("value");
 		System.out.println(valor);
@@ -106,18 +106,18 @@ public class MapeamentoContabilCorrecaoEditarPO extends TestBase{
 		sleep(1000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(3000);		
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		driver.navigate().refresh();
 		
-		waitExpectXpath("//div[@id=\"company\"]/div/div/div[2]");
-		attributoNotToBeEmptyXpath("//*[@id=\"header-text\"]/div/div/input", "value");
+		waitExpectedElement("//div[@id=\"company\"]/div/div/div[2]");
+		attributoNotToBeEmpty("//*[@id=\"header-text\"]/div/div/input", "value");
 		
 		sleep(2000);
 		
@@ -135,12 +135,12 @@ public class MapeamentoContabilCorrecaoEditarPO extends TestBase{
 		gravar.click();
 		
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

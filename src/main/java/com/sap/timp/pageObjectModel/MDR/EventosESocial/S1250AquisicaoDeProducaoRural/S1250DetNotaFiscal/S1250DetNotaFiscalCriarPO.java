@@ -63,7 +63,7 @@ public class S1250DetNotaFiscalCriarPO extends TestBase{
 		abaDetNotaFiscal.click();
 		invisibilityOfElementOverlay();
 		
-		actionsMoveToElementElement(btnPrimeraPagina);
+		actionsMoveToElement(btnPrimeraPagina);
 		btnPrimeraPagina.click();
 		invisibilityOfElementOverlay();
 		
@@ -76,11 +76,11 @@ public class S1250DetNotaFiscalCriarPO extends TestBase{
 			System.out.println("ID Primer registro: " + id);
 		}
 		
-		actionsMoveToElementElement(btnNovo);
+		actionsMoveToElement(btnNovo);
 		btnNovo.click();
 		sleep(2000);
 		
-		waitExpectElement(cboIdDoEvento);
+		waitExpectedElement(cboIdDoEvento);
 		cboIdDoEvento.click();
 		sleep(1000);
 		opcionCombo.click();
@@ -104,7 +104,7 @@ public class S1250DetNotaFiscalCriarPO extends TestBase{
 		btnAceitar.click();
 		invisibilityOfElementOverlay();
 		
-		actionsMoveToElementElement(btnPrimeraPagina);
+		actionsMoveToElement(btnPrimeraPagina);
 		btnPrimeraPagina.click();
 		invisibilityOfElementOverlay();
 		

@@ -426,7 +426,7 @@ public class S1210GerarDadosDoEventoPO extends TestBase{
 		
 		
 		novo.click();
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		invisibilityOfElementOverlay();
 		
 		nome.sendKeys("Teste Automatizado");
@@ -440,7 +440,7 @@ public class S1210GerarDadosDoEventoPO extends TestBase{
 		sleep(1000);
 		versaoS1000O.click();
 		sleep(1000);
-		actionsMoveToElementXpath("//input[contains(@placeholder,\"Fim\")]");
+		actionsMoveToElement("//input[contains(@placeholder,\"Fim\")]");
 		sleep(1000);
 		
 		tributoS1000.click();
@@ -475,7 +475,7 @@ public class S1210GerarDadosDoEventoPO extends TestBase{
 		salvar.click();
 		invisibilityOfElementOverlay();
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 		
@@ -562,7 +562,7 @@ public class S1210GerarDadosDoEventoPO extends TestBase{
 		editar.click();
 		invisibilityOfElementOverlay();
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		
 		driver.findElement(By.xpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]")).click();
 		sleep(2000);
@@ -801,7 +801,7 @@ public class S1210GerarDadosDoEventoPO extends TestBase{
 		
 		executarConf.click();
 		sleep(2000);
-		waitExpectXpath("//div[contains(@class,\"draggable\")]");
+		waitExpectedElement("//div[contains(@class,\"draggable\")]");
 		sleep(2000);
 		invisibilityOfElement("//div[contains(@class,\"draggable\")]");
 		sleep(1000);
@@ -819,12 +819,12 @@ public class S1210GerarDadosDoEventoPO extends TestBase{
 		
 		gravar.click();
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 		
 		visualizarAN3.click();
 		sleep(2000);
-		waitExpectElement(criar);
+		waitExpectedElement(criar);
 		sleep(2000);
 		
 		nomeR.sendKeys("Teste Automatizado Regra ECD");
@@ -873,7 +873,7 @@ public class S1210GerarDadosDoEventoPO extends TestBase{
 		sleep(1000);
 		acao.click();
 		sleep(2000);
-		waitExpectElement(atualizar);
+		waitExpectedElement(atualizar);
 		sleep(2000);
 		String fechaHoy = fechaActual();
 		int rows = rows("//div[@class=\"tr\" and @data-id and @tabindex=\"0\"]");
@@ -900,7 +900,7 @@ public class S1210GerarDadosDoEventoPO extends TestBase{
 		
 		home.click();
 		sleep(3000);
-		waitExpectXpath("//div[@class=\"dragger-pagination-right\"]");
+		waitExpectedElement("//div[@class=\"dragger-pagination-right\"]");
 		sleep(1000);
 		
 		AcessarDFGPO acessarDFGPO;
@@ -991,7 +991,7 @@ public class S1210GerarDadosDoEventoPO extends TestBase{
 		
 		filtrosAvancados.click();
 		sleep(3000);
-		waitExpectXpath("//input[contains(@placeholder,\"Inscrição\")]");
+		waitExpectedElement("//input[contains(@placeholder,\"Inscrição\")]");
 		limparFiltros.click();
 		
 		invisibilityOfElementOverlay();

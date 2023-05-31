@@ -81,7 +81,7 @@ public class CenariosCorrecaoExcluirMassaPO extends TestBase{
 	}
 	
 	public void llenarDatos() {
-		waitExpectElement(tributo);
+		waitExpectedElement(tributo);
 		tributo.click();
 		sleep(1000);
 		opc.click();
@@ -96,7 +96,7 @@ public class CenariosCorrecaoExcluirMassaPO extends TestBase{
 		opcServicoWeb.click();
 
 		sleep(3000);
-		waitExpectElement(btnAgregarCampo);
+		waitExpectedElement(btnAgregarCampo);
 		btnAgregarCampo.sendKeys(Keys.ENTER);
 		sleep(1000);
 		campo.click();
@@ -142,7 +142,7 @@ public class CenariosCorrecaoExcluirMassaPO extends TestBase{
 		
 		btnGravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -173,7 +173,7 @@ public class CenariosCorrecaoExcluirMassaPO extends TestBase{
 		
 		btnGravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -272,14 +272,14 @@ public class CenariosCorrecaoExcluirMassaPO extends TestBase{
 		
 		btnExcluirMassa.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

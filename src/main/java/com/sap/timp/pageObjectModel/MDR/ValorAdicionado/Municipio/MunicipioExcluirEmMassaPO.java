@@ -111,7 +111,7 @@ public class MunicipioExcluirEmMassaPO extends TestBase{
 		opcao.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"municipio\"]/div", "class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"municipio\"]/div", "class", "base-autocomplete required");
 		sleep(1000);
 		municipio.click();
 		sleep(1000);
@@ -133,7 +133,7 @@ public class MunicipioExcluirEmMassaPO extends TestBase{
 
 		novo.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -142,7 +142,7 @@ public class MunicipioExcluirEmMassaPO extends TestBase{
 		
 		//Segundo Registro
 		driver.navigate().refresh();
-		waitExpectElement(uf);
+		waitExpectedElement(uf);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		uf.click();
@@ -150,7 +150,7 @@ public class MunicipioExcluirEmMassaPO extends TestBase{
 		opcao.click();
 		sleep(1000);
 	
-		attributeToBeXpath("//div[@id=\"municipio\"]/div", "class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"municipio\"]/div", "class", "base-autocomplete required");
 		sleep(1000);
 		municipio.click();
 		sleep(1000);
@@ -172,7 +172,7 @@ public class MunicipioExcluirEmMassaPO extends TestBase{
 
 		novo.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -252,7 +252,7 @@ public class MunicipioExcluirEmMassaPO extends TestBase{
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -261,7 +261,7 @@ public class MunicipioExcluirEmMassaPO extends TestBase{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

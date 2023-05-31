@@ -86,7 +86,7 @@ public class RegistroM230EditarPO extends TestBase{
 		sleep(1000);
 		editar.click();
 		sleep(5000);
-		waitExpectElement(filialInputClear);
+		waitExpectedElement(filialInputClear);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(12000);
 		
@@ -135,7 +135,7 @@ public class RegistroM230EditarPO extends TestBase{
 		driver.navigate().refresh();
 		sleep(12000);
 	
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		
 		String nuevoTexto = filialInput.getText();
 		/*System.out.println(valor);*/

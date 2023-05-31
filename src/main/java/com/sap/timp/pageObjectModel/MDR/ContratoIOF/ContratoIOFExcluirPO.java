@@ -82,7 +82,7 @@ public boolean excluir() {
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
@@ -91,7 +91,7 @@ public boolean excluir() {
 		excluir.click();
 		sleep(3000);
 
-		waitExpectElement(butaosim);
+		waitExpectedElement(butaosim);
 		sleep(2000);
 		butaosim.click();
 
@@ -99,7 +99,7 @@ public boolean excluir() {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

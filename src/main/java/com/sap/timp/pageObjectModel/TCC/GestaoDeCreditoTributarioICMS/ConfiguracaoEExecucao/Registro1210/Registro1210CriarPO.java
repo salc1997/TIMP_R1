@@ -140,14 +140,14 @@ public class Registro1210CriarPO extends TestBase{
 		opcEmpresa.click();
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		cboUF.click();
 		sleep(1000);
 		opcUF.click();
 		sleep(1000);
 		closeSelectTypeCheckbox(cboUF);
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		cboFilial.click();
 		sleep(1000);
 		opcFilial.click();
@@ -191,7 +191,7 @@ public class Registro1210CriarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(inputNomeFormula);
+		waitExpectedElement(inputNomeFormula);
 		inputNomeFormula.sendKeys("QA Formula");
 		sleep(1000);
 		
@@ -207,7 +207,7 @@ public class Registro1210CriarPO extends TestBase{
 		btnGravar2.click();
 		sleep(1000);
 		
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		btnSim.click();
 		
 		sleep(2000);

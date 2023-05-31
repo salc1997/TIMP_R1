@@ -69,7 +69,7 @@ public class RegradeAbasExcluirPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(btnAceitar);
+		waitExpectedElement(btnAceitar);
 		btnAceitar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

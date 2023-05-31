@@ -241,7 +241,7 @@ public class S2210ComunicaçãoDeAcidenteDeTrabalhoCriarPO  extends TestBase{
 		opcionCombo.click();
 		sleep(2000);
 		
-		attributeToBeXpath("//div[contains(@class, \"branch\")]/div/div[2]/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[contains(@class, \"branch\")]/div/div[2]/div/div/div[2]/input", "class", "");
 		filial.click();
 		sleep(1000);
 		opcionCombo.click();

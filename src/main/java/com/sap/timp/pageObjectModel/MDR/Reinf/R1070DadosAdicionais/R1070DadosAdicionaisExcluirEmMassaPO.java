@@ -196,7 +196,7 @@ public class R1070DadosAdicionaisExcluirEmMassaPO extends TestBase{
 		butaosim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		sleep(2000);
 		
 		biblioteca.click();
@@ -284,7 +284,7 @@ public class R1070DadosAdicionaisExcluirEmMassaPO extends TestBase{
 		butaosim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		sleep(2000);
 		
 		biblioteca.click();
@@ -351,7 +351,7 @@ public class R1070DadosAdicionaisExcluirEmMassaPO extends TestBase{
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -360,7 +360,7 @@ public class R1070DadosAdicionaisExcluirEmMassaPO extends TestBase{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

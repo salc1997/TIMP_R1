@@ -59,7 +59,7 @@ public class CodigosDeLotacaoEditarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -67,7 +67,7 @@ public class CodigosDeLotacaoEditarPO extends TestBase {
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 		sleep(2000);
 		
 		String valor = campo.getAttribute("value");
@@ -84,7 +84,7 @@ public class CodigosDeLotacaoEditarPO extends TestBase {
 		gravar.click();
 		sleep(2000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		
 		sim.click();
@@ -95,7 +95,7 @@ public class CodigosDeLotacaoEditarPO extends TestBase {
 		driver.navigate().refresh();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 		sleep(3000);
 		
 		

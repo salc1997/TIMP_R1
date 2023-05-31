@@ -32,7 +32,7 @@ public class AcessarMDRPO extends TestBase{
 	
 	public boolean acessarMDR() {
 
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!mdr.isDisplayed()) {
@@ -42,7 +42,7 @@ public class AcessarMDRPO extends TestBase{
 		
 		mdr.click();
 		
-		waitExpectElement(mostrar);
+		waitExpectedElement(mostrar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		boolean sucesso = mostrar.isDisplayed();

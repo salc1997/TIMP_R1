@@ -69,7 +69,7 @@ public class CodigoAjustesEditarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(4000);
 
 		menu.click();
@@ -90,7 +90,7 @@ public class CodigoAjustesEditarPO extends TestBase {
 	
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		nao.click();
 	//	waitExpectElement(sim);
@@ -100,7 +100,7 @@ public class CodigoAjustesEditarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay dark\"]");
 		sleep(2000);
 
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 
 		driver.navigate().refresh();
 
@@ -119,7 +119,7 @@ public class CodigoAjustesEditarPO extends TestBase {
 		 menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 	  editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(4000);
 
 		menu.click();
@@ -140,10 +140,10 @@ public class CodigoAjustesEditarPO extends TestBase {
 
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		nao.click();
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);

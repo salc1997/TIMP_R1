@@ -132,7 +132,7 @@ public class LeiautesExecucacoFuncionalidades4Pt4PO extends TestBase{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		actionsMoveToElementXpath("//*[@id=\"block-list-wrapper\"]/div[4]/div[3]/div/div[5]");
+		actionsMoveToElement("//*[@id=\"block-list-wrapper\"]/div[4]/div[3]/div/div[5]");
 		sleep(2000);
 		
 		
@@ -175,12 +175,12 @@ public class LeiautesExecucacoFuncionalidades4Pt4PO extends TestBase{
 		
 		btnGravar.click();
 		sleep(3000);
-		waitExpectElement(btnNao);
+		waitExpectedElement(btnNao);
 		sleep(2000);
 		
 		btnNao.click();
 		sleep(2000);
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		sleep(2000);
 		
 		btnSim.click();

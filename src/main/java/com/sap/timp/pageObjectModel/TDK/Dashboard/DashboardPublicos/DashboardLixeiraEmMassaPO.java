@@ -91,14 +91,14 @@ public class DashboardLixeiraEmMassaPO extends TestBase{
 
 		novo.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 
 		nome.click();
 		sleep(1000);
 		nome.sendKeys("TESTEAUTOMATIZADO MASSIEL");
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"classification\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"classification\"]/div", "class", "base-select required");
 		sleep(4000);
 		classificacao.click();
 		sleep(1000);
@@ -112,7 +112,7 @@ public class DashboardLixeiraEmMassaPO extends TestBase{
 
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(Gravar);
+		waitExpectedElement(Gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -128,7 +128,7 @@ public class DashboardLixeiraEmMassaPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -140,14 +140,14 @@ public class DashboardLixeiraEmMassaPO extends TestBase{
 
 		novo.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 
 		nome.click();
 		sleep(1000);
 		nome.sendKeys("TESTEAUTOMATIZADO MASSIEL");
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"classification\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"classification\"]/div", "class", "base-select required");
 		sleep(4000);
 		classificacao.click();
 		sleep(1000);
@@ -161,7 +161,7 @@ public class DashboardLixeiraEmMassaPO extends TestBase{
 
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(Gravar);
+		waitExpectedElement(Gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -177,7 +177,7 @@ public class DashboardLixeiraEmMassaPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -255,7 +255,7 @@ public class DashboardLixeiraEmMassaPO extends TestBase{
 
 		driver.navigate().refresh();
 		sleep(5000);
-		waitExpectElement(dashboardspublicos);
+		waitExpectedElement(dashboardspublicos);
 		sleep(5000);
 
 

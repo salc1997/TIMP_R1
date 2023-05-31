@@ -90,7 +90,7 @@ public class ExecucoesExecucoesPublicasLixeiraPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(execucoes);
+		waitExpectedElement(execucoes);
 		sleep(2000);
 		execucoes.click();
 		sleep(2000);
@@ -111,7 +111,7 @@ public class ExecucoesExecucoesPublicasLixeiraPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 		WebElement Lixeira = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);

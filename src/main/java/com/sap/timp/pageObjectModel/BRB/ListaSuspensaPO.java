@@ -114,25 +114,25 @@ public class ListaSuspensaPO extends TestBase{
 	
 	public ArrayList<Boolean> comentarioLista() {
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
 
-		waitExpectElement(menu);
+		waitExpectedElement(menu);
 		sleep(menuT);
 
 		menu.click();
 
 		opcao.click();
 
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		
 		
 		agregar.click();
 		sleep(1000);
 
-		actionsMoveToElementElement(agregar);
+		actionsMoveToElement(agregar);
 		sleep(5000);
 		nombre.click();
 		sleep(3000);
@@ -166,7 +166,7 @@ public class ListaSuspensaPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -189,7 +189,7 @@ public class ListaSuspensaPO extends TestBase{
 
 
 		
-		actionsMoveToElementXpath("//*[@data-column=\"126\"]");
+		actionsMoveToElement("//*[@data-column=\"126\"]");
 		String usuarioLog = usuarioLogueado.getText();
 		
 		String url = driver.getCurrentUrl();
@@ -254,7 +254,7 @@ public class ListaSuspensaPO extends TestBase{
 		sleep(5000);
 		info.click();
 		
-		waitExpectXpath("/html/body/div[3]/div/div[3]/button");
+		waitExpectedElement("/html/body/div[3]/div/div[3]/button");
 		sleep(3000);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();

@@ -298,7 +298,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		
 		novaregra.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		
 		nome.click();
@@ -349,7 +349,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		
 		
 		
-		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
+		actionsMoveToElement("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
 		estruturadedados.click();
 		sleep(1000);
 		opcaoestruturadedados.click();
@@ -367,7 +367,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		sleep(2000);
 		aplicar.click();
 		sleep(2000);
-		waitExpectElement(adicionarcaminho);
+		waitExpectedElement(adicionarcaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -375,7 +375,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 	
 		Justificactiva.click();
 		sleep(2000);
-		waitExpectElement(justificativa);
+		waitExpectedElement(justificativa);
 		sleep(2000);
 		justificativa.sendKeys("TESTE AUTOMATIZADO");
 		sleep(1000);
@@ -384,7 +384,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		//1 caminho
 		adicionarcaminho.click();
 		sleep(2000);
-		waitExpectElement(Condicoes);
+		waitExpectedElement(Condicoes);
 		Condicoes.click();
 		sleep(1000);
 		opcaoCondicoes.click();
@@ -409,7 +409,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		acoes.sendKeys(Keys.ESCAPE);
 	
 		sleep(2000);
-		waitExpectElement(aplicar);
+		waitExpectedElement(aplicar);
 		sleep(2000);
 		aplicar.click();
 		sleep(2000);
@@ -517,7 +517,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		aplicar.click();
 		
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"overlay loader transp\"]");
+		waitExpectedElement("//div[@class=\"overlay loader transp\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader transp\"]");
 		sleep(2000);	
 	
@@ -528,14 +528,14 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(mensagembloqueio);
+		waitExpectedElement(mensagembloqueio);
 		sleep(2000);
 		regrasdeauditorian1.click();
 		}else {
 			biblioteca.click();
 			
 			sleep(2000);
-			waitExpectElement(mensagembloqueio);
+			waitExpectedElement(mensagembloqueio);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
@@ -581,7 +581,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -620,7 +620,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		sleep(1000);
 		açao.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -682,18 +682,18 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
 		sleep(1000);
 		editar.click();
 		sleep(2000);
-		waitExpectElement(adicionarcaminho);
+		waitExpectedElement(adicionarcaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(primeiracaixar1);
+		waitExpectedElement(primeiracaixar1);
 		sleep(1000);
 		
 		primeiracaixar1.click();
@@ -710,7 +710,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 
 		nao.click();
@@ -718,11 +718,11 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(primeiracaixar1);
+		waitExpectedElement(primeiracaixar1);
 		sleep(1000);
 		
 		primeiracaixar1.click();
-		attributoNotToBeEmptyElement(acoes, "value");
+		attributoNotToBeEmpty(acoes, "value");
 		String texto1 = acoes.getAttribute("value");
 		
 		System.out.println("texto1: " + texto1);
@@ -751,7 +751,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		gravar.click();
 
 		sleep(1000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		nao.click();
 		sleep(3000);
@@ -765,7 +765,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		gravar.click();
 
 		sleep(1000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		
 		nao.click();
@@ -791,14 +791,14 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		nome.clear();
 		sleep(1000);
 		nome.sendKeys(nome1);
-		waitExpectElement(aplicar1);
+		waitExpectedElement(aplicar1);
 		sleep(2000);
 		aplicar1.click();
 		sleep(5000);
 		gravar.click();
 
 		sleep(1000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 
 		nao.click();
@@ -840,7 +840,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		WebElement detalhe = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhe\"]"));
 		
 	
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -865,7 +865,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		fechar.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		
 		ultimapagina.click();
@@ -878,14 +878,14 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualização\"]"));
 		
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(1000);
 		
 		visualizar.click();
 		sleep(2000);
-		waitExpectElement(r1vi);
+		waitExpectedElement(r1vi);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 	
@@ -935,13 +935,13 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualização\"]"));
 		
 	
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
 		visualizar.click();
 		sleep(2000);
-		waitExpectElement(r1vi);
+		waitExpectedElement(r1vi);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -967,7 +967,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		
 		ultimapagina.click();
@@ -980,7 +980,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(1000);
@@ -990,7 +990,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//editar
-		waitExpectElement(r1ed);
+		waitExpectedElement(r1ed);
 		sleep(2000);
 		String nomeeditar = nomeed.getText();
 		String r1editar=r1ed.getText();
@@ -1023,7 +1023,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		
 		
@@ -1053,14 +1053,14 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		waitExpectElement(simulacao);
+		waitExpectedElement(simulacao);
 		simulacao.click();
 		sleep(4000);
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
 
-		waitExpectElement(CFOP);
+		waitExpectedElement(CFOP);
 		sleep(8000);
 		CFOP.click();
 		sleep(5000);
@@ -1193,7 +1193,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		waitExpectElement(estrutura);
+		waitExpectedElement(estrutura);
 		estrutura.click();
 		sleep(4000);
 		asociarEstrutura.click();
@@ -1206,7 +1206,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		sleep(3000);
 
 
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 		campo.sendKeys("Alíquota COFINS (ED)");
 		sleep(2000);
 		campo.sendKeys(Keys.ENTER);
@@ -1261,7 +1261,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		sleep(4000);
 
 
-		waitExpectElement(estrutura);
+		waitExpectedElement(estrutura);
 		estrutura.click();
 		sleep(4000);
 
@@ -1321,7 +1321,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 
-		waitExpectElement(estrutura);	
+		waitExpectedElement(estrutura);	
 		estrutura.click();
 		sleep(4000);
 
@@ -1372,7 +1372,7 @@ public class RegrasDeAuditoriaN1TodasFuncPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 
-		waitExpectElement(estrutura);	
+		waitExpectedElement(estrutura);	
 		estrutura.click();
 		sleep(5000);
 

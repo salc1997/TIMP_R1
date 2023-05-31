@@ -141,7 +141,7 @@ public class ProcessosAdmJudiciaisCriarPO extends TestBase {
 		opcao.click();
 		
 		sleep(2000);
-		actionsMoveToElementElement(tipodeautoria);
+		actionsMoveToElement(tipodeautoria);
 		sleep(1000);
 		
 		filial.click();
@@ -149,7 +149,7 @@ public class ProcessosAdmJudiciaisCriarPO extends TestBase {
 		opcao.click();
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@class=\"field-element countyCode\"]/div", "class", "input-element-wrapper");
+		attributeToBe("//div[@class=\"field-element countyCode\"]/div", "class", "input-element-wrapper");
 		sleep(4000);
 		
 		codigomunicipio.click();
@@ -183,7 +183,7 @@ public class ProcessosAdmJudiciaisCriarPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		

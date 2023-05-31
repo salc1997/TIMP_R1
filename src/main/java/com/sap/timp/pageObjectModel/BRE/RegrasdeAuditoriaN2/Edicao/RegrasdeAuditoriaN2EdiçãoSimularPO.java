@@ -150,14 +150,14 @@ public boolean editar() {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
 	
-	waitExpectElement(simulacao);
+	waitExpectedElement(simulacao);
 	simulacao.click();
 	sleep(4000);
 	
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	
 	
-	waitExpectElement(CFOP);
+	waitExpectedElement(CFOP);
 	sleep(8000);
 	CFOP.click();
 	sleep(5000);
@@ -198,7 +198,7 @@ public boolean editar() {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(3000);
 	
-	waitExpectElement(grafico);
+	waitExpectedElement(grafico);
 	sleep(3000);
 	
 	String graf1 = grafico.getText();
@@ -230,7 +230,7 @@ public boolean editar() {
 	
 	
 	
-	waitExpectElement(grafico);
+	waitExpectedElement(grafico);
 	sleep(16000);
 	
 	String graf2 = grafico.getText();

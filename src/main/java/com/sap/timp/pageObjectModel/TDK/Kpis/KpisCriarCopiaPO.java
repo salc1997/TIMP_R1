@@ -102,7 +102,7 @@ public class KpisCriarCopiaPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement copiar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Copiar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(4000);
 
 		menu.click();
@@ -112,7 +112,7 @@ public class KpisCriarCopiaPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(3000);
 		
 		String valor = nome.getAttribute("value");
@@ -219,7 +219,7 @@ public class KpisCriarCopiaPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -234,7 +234,7 @@ public class KpisCriarCopiaPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(2000);
-		waitExpectElement(kpis);
+		waitExpectedElement(kpis);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -310,7 +310,7 @@ public class KpisCriarCopiaPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro11+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro11+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -326,7 +326,7 @@ public class KpisCriarCopiaPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(2000);
-		waitExpectElement(kpis);
+		waitExpectedElement(kpis);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

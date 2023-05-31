@@ -132,7 +132,7 @@ public class LeiautesExecucacoFuncionalidades4Pt3PO extends TestBase{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		actionsMoveToElementXpath("//*[@id=\"block-list-wrapper\"]/div[3]/div[3]/div/div[5]");
+		actionsMoveToElement("//*[@id=\"block-list-wrapper\"]/div[3]/div[3]/div/div[5]");
 		sleep(2000);
 		
 		
@@ -165,11 +165,11 @@ public class LeiautesExecucacoFuncionalidades4Pt3PO extends TestBase{
 				
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		actionsMoveToElementElement(campoSequencia);
+		actionsMoveToElement(campoSequencia);
 		moveToElement(campoSequencia, driver.findElement(By.xpath("//div[@block-id=\"2\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);		
 		
-		waitExpectElement(sequenciamentoLinha);
+		waitExpectedElement(sequenciamentoLinha);
 		sequenciamentoLinha.click();
 		sleep(2000);	
 	
@@ -178,12 +178,12 @@ public class LeiautesExecucacoFuncionalidades4Pt3PO extends TestBase{
 		
 		btnGravar.click();
 		sleep(3000);
-		waitExpectElement(btnNao);
+		waitExpectedElement(btnNao);
 		sleep(2000);
 		
 		btnNao.click();
 		sleep(2000);
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		sleep(2000);
 		
 		btnSim.click();

@@ -138,7 +138,7 @@ public class ContasDefaultPorTributoVisualizarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -146,7 +146,7 @@ public class ContasDefaultPorTributoVisualizarPO extends TestBase{
 		visualizar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		visibilityOfElementXpath("//span[@id=\"creditAccount\"]");
+		visibilityOfElement("//span[@id=\"creditAccount\"]");
 		sleep(2000);
 		
 		String empresaV1 = empresaV.getText();
@@ -191,7 +191,7 @@ public class ContasDefaultPorTributoVisualizarPO extends TestBase{
 		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(1000);
@@ -199,7 +199,7 @@ public class ContasDefaultPorTributoVisualizarPO extends TestBase{
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributeToBeXpath("//div[@class=\"field-element adjustmentCode_0_1\"]/div","class", "input-element-wrapper");
+		attributeToBe("//div[@class=\"field-element adjustmentCode_0_1\"]/div","class", "input-element-wrapper");
 		sleep(2000);
 		
 		String empresaE1 = empresaE.getText();

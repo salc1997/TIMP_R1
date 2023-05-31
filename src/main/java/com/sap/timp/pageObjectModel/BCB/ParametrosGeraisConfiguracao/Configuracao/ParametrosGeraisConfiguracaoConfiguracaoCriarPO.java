@@ -224,7 +224,7 @@ public class ParametrosGeraisConfiguracaoConfiguracaoCriarPO extends TestBase {
 		tributoO.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 
-		attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"company\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(1000);
 
 		empresa.click();
@@ -233,7 +233,7 @@ public class ParametrosGeraisConfiguracaoConfiguracaoCriarPO extends TestBase {
 		empresaO.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(1000);
 
 		uf.click();
@@ -242,7 +242,7 @@ public class ParametrosGeraisConfiguracaoConfiguracaoCriarPO extends TestBase {
 		ufO.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(1000);
 
 		filial.click();

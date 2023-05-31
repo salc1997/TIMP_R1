@@ -69,7 +69,7 @@ public class ParametrosGeraisHierarquiaEditarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(4000);
 
 		menu.click();
@@ -77,7 +77,7 @@ public class ParametrosGeraisHierarquiaEditarPO extends TestBase {
 		editar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributoNotToBeEmptyElement(campo, "value");
+		attributoNotToBeEmpty(campo, "value");
 		
 		
 		sleep(2000);
@@ -92,7 +92,7 @@ public class ParametrosGeraisHierarquiaEditarPO extends TestBase {
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -101,8 +101,8 @@ public class ParametrosGeraisHierarquiaEditarPO extends TestBase {
 		driver.navigate().refresh();
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributoNotToBeEmptyElement(campo, "value");
-		waitExpectElement(campo);
+		attributoNotToBeEmpty(campo, "value");
+		waitExpectedElement(campo);
 		
 		sleep(2000);
 
@@ -120,7 +120,7 @@ public class ParametrosGeraisHierarquiaEditarPO extends TestBase {
 
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -61,8 +61,8 @@ public class TiposDeBeneficiosEditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(validadeAte);
-		attributoNotToBeEmptyElement(validadeAte, "value");
+		waitExpectedElement(validadeAte);
+		attributoNotToBeEmpty(validadeAte, "value");
 		String validadeAteNuevo = fechaManana();
 		System.out.println("Validade Ate Nuevo: " + validadeAteNuevo);
 		
@@ -86,8 +86,8 @@ public class TiposDeBeneficiosEditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
-		waitExpectElement(validadeAte);
-		attributoNotToBeEmptyElement(validadeAte, "value");
+		waitExpectedElement(validadeAte);
+		attributoNotToBeEmpty(validadeAte, "value");
 		String validadeAteEditado = validadeAte.getAttribute("value");
 		
 		System.out.println("----------------------------------------");

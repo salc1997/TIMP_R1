@@ -115,7 +115,7 @@ public class ManuaisDeComponenteEditarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);
 		
-		attributoNotToBeEmptyElement(fecha, "value");
+		attributoNotToBeEmpty(fecha, "value");
 		String valorEditado = fecha.getAttribute("value");
 		System.out.println("");
 		System.out.println("Inicio de Vigencia valor editado: " + valorEditado);

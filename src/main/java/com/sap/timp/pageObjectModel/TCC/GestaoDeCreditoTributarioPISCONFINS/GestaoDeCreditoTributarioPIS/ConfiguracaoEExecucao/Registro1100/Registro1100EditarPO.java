@@ -49,7 +49,7 @@ public class Registro1100EditarPO extends TestBase{
 	public boolean Editar() {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		actionsMoveToElementElement(gestaoCredito);
+		actionsMoveToElement(gestaoCredito);
 		sleep(2000);
 		gestaoCredito.click();
 		sleep(2000);

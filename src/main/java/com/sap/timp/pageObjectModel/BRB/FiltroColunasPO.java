@@ -74,7 +74,7 @@ public class FiltroColunasPO  extends TestBase{
 	//cenario 1
 	String cfopG = "";
 	public boolean filtroFerramenta() {
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
@@ -90,7 +90,7 @@ public class FiltroColunasPO  extends TestBase{
 
 		opcao.click();
 
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		waitExpectedElement("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 	
 		executar.click();
 		sleep(8000);
@@ -99,7 +99,7 @@ public class FiltroColunasPO  extends TestBase{
 		sleep(6000);
 		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		
-		actionsMoveToElementXpath("//div[@data-column=\"5\" and not(@data-path)]");
+		actionsMoveToElement("//div[@data-column=\"5\" and not(@data-path)]");
 		colunaOpcao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -158,7 +158,7 @@ public class FiltroColunasPO  extends TestBase{
 	
 	
 	public boolean filtroFerramenta2() {
-		actionsMoveToElementXpath("//div[@data-column=\"5\" and not(@data-path)]");
+		actionsMoveToElement("//div[@data-column=\"5\" and not(@data-path)]");
 		
 		colunaOpcao.click();
 		sleep(3000);

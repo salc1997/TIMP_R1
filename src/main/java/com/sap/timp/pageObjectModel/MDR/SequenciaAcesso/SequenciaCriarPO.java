@@ -148,7 +148,7 @@ public class SequenciaCriarPO extends TestBase{
 		closeSelectTypeCheckbox(tributo);
 		sleep(2000);
 		
-		actionsMoveToElementElement(estruturadados);
+		actionsMoveToElement(estruturadados);
 		grupoestrutura.click();
 		sleep(2000);
 		
@@ -158,11 +158,11 @@ public class SequenciaCriarPO extends TestBase{
 		
 		if(url.contains("tq1") || url.contains("tc2")) {
 			xpathString = "//li[@class=\"list-item\" and text()=\"Ajuste\"][1]";		
-			actionsMoveToElementXpath(xpathString);
+			actionsMoveToElement(xpathString);
 			opcaogrupo = driver.findElement(By.xpath(xpathString));
 		}else {
 			xpathString = "//li[@class=\"list-item\" and text()=\"Ajustes\"][1]";		
-			actionsMoveToElementXpath(xpathString);
+			actionsMoveToElement(xpathString);
 			opcaogrupo = driver.findElement(By.xpath(xpathString));
 		}
 	

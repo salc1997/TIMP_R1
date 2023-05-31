@@ -116,13 +116,13 @@ public class AgendamentoCriarPO extends TestBase{
 		opcionEmpresa.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-select required");
 		cboUf.click();
 		sleep(1000);
 		opcionUf.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-select required");
 		cboFilial.click();
 		sleep(1000);
 		opcionFilial.click();
@@ -146,7 +146,7 @@ public class AgendamentoCriarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(cboIdAjusteOrigem);
+		waitExpectedElement(cboIdAjusteOrigem);
 		cboIdAjusteOrigem.click();
 		sleep(1000);
 		opcionCombo.click();

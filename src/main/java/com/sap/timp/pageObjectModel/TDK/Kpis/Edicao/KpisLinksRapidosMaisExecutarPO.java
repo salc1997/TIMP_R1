@@ -131,20 +131,20 @@ public class KpisLinksRapidosMaisExecutarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
 		sleep(1000);
 		editar.click();
 		sleep(2000);
-		waitExpectElement(Gravar);
+		waitExpectedElement(Gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		adicionarwidget.click();
 		
-		waitExpectElement(linksrapidos);
+		waitExpectedElement(linksrapidos);
 		sleep(2000);
 		linksrapidos.click();
 		sleep(2000);
@@ -155,7 +155,7 @@ public class KpisLinksRapidosMaisExecutarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(cabecalho);
+		waitExpectedElement(cabecalho);
 		sleep(2000);
 		cabecalho.sendKeys("Cabecalho");
 		sleep(2000);
@@ -170,7 +170,7 @@ public class KpisLinksRapidosMaisExecutarPO extends TestBase{
 		sleep(2000);
 		id3.click();
 		sleep(2000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(2000);
 		aceitar.click();
 		sleep(2000);
@@ -188,11 +188,11 @@ public class KpisLinksRapidosMaisExecutarPO extends TestBase{
 			valorfiltro.sendKeys("2285");
 			sleep(2000);
 		}
-		waitExpectElement(Aceitar);
+		waitExpectedElement(Aceitar);
 		sleep(2000);
 		Aceitar.click();
 		sleep(2000);
-		waitExpectElement(link);
+		waitExpectedElement(link);
 		sleep(2000);
 		new Actions(driver).moveToElement(link).click().perform();
 		sleep(2000);
@@ -204,7 +204,7 @@ public class KpisLinksRapidosMaisExecutarPO extends TestBase{
 		sleep(2000);
 		biblioteca.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -220,14 +220,14 @@ public class KpisLinksRapidosMaisExecutarPO extends TestBase{
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 
 		menu1.click();
 		sleep(1000);
 		editar1.click();
 		sleep(2000);
-		waitExpectElement(Gravar);
+		waitExpectedElement(Gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -247,7 +247,7 @@ public class KpisLinksRapidosMaisExecutarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(link);
+		waitExpectedElement(link);
 		sleep(2000);
 		fechar.click();
 		sleep(2000);
@@ -263,7 +263,7 @@ public class KpisLinksRapidosMaisExecutarPO extends TestBase{
 		for(String winHandle : driver.getWindowHandles()){
 		    driver.switchTo().window(winHandle);
 		}
-		waitExpectElement(home);
+		waitExpectedElement(home);
 		sleep(2000);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

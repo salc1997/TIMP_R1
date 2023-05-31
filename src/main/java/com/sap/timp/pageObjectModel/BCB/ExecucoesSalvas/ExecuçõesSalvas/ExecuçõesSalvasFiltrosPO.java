@@ -208,7 +208,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBase{
 		uf.click();
 		sleep(2000);
 		
-		actionsMoveToElementXpath("//li[contains(text(),\""+UF+"\")]");
+		actionsMoveToElement("//li[contains(text(),\""+UF+"\")]");
 		sleep(2000);
 
 		WebElement Opc = driver.findElement(By.xpath("//li[contains(text(),\""+UF+"\")]"));
@@ -314,7 +314,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBase{
 		tributo.click();
 		sleep(2000);
 		
-		actionsMoveToElementXpath("//li[contains(text(),\""+Tributo+"\")]");
+		actionsMoveToElement("//li[contains(text(),\""+Tributo+"\")]");
 		sleep(2000);
 
 		WebElement Opc = driver.findElement(By.xpath("//li[contains(text(),\""+Tributo+"\")]"));
@@ -373,7 +373,7 @@ public class ExecuçõesSalvasFiltrosPO extends TestBase{
 		calendeario.click();
 		sleep(2000);
 		
-		actionsMoveToElementXpath("//li[contains(text(),\""+sub+"\")]");
+		actionsMoveToElement("//li[contains(text(),\""+sub+"\")]");
 		sleep(2000);
 
 		WebElement Opc = driver.findElement(By.xpath("//li[contains(text(),\""+sub+"\")]"));

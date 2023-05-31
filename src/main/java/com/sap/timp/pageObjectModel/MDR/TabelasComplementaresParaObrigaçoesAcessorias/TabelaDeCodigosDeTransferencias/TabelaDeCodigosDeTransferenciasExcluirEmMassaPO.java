@@ -106,7 +106,7 @@ public class TabelaDeCodigosDeTransferenciasExcluirEmMassaPO extends TestBase{
 		salvarENovo.click();
 		sleep(2000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -130,7 +130,7 @@ public class TabelaDeCodigosDeTransferenciasExcluirEmMassaPO extends TestBase{
 		btnGravar.click();
 		sleep(2000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -214,7 +214,7 @@ public class TabelaDeCodigosDeTransferenciasExcluirEmMassaPO extends TestBase{
 		
 		btnExcluirMassa.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

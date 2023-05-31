@@ -77,7 +77,7 @@ public class S2210ComunicaçãoDeAcidenteDeTrabalhoEditarPO extends TestBase{
 		sleep(2000);
 		
 		// Obtengo el valor actualizado ya recargada la página
-		waitExpectElement(numeroRegistro);
+		waitExpectedElement(numeroRegistro);
 		String numeroRegistroEditada = numeroRegistro.getAttribute("value");
 		System.out.println(numeroRegistroEditada);
 		sleep(2000);

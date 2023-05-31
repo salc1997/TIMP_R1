@@ -106,7 +106,7 @@ public class CodigoReceitaCriarPO extends TestBase{
 		sleep(2000);
 		tributoO.click();
 
-		attributeToBeXpath("//div[@id=\"state\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"state\"]/div", "class", "base-select required");
 		sleep(2000);
 		ufOrigem.click();
 		sleep(2000);
@@ -125,10 +125,10 @@ public class CodigoReceitaCriarPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		nao.click();
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);

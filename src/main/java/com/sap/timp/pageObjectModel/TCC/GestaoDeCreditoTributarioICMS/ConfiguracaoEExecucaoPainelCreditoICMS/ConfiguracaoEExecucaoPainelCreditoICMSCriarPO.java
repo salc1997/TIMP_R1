@@ -177,7 +177,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriarPO extends TestBase{
 		salvar.click();
 		sleep(8000);
 		
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(19000);
 		siguiente.click();
 		sleep(4000);

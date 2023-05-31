@@ -135,7 +135,7 @@ public class UtilizacaoDosCreditosNaApuracaoCriarPO extends TestBase{
 		opcaoutilizacao.click();
 		
 
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		filial.click();
@@ -176,7 +176,7 @@ public class UtilizacaoDosCreditosNaApuracaoCriarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		

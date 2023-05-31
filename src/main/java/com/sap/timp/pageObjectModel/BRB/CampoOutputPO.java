@@ -56,7 +56,7 @@ public class CampoOutputPO extends TestBase{
 	    String url = driver.getCurrentUrl();
 		
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 		
 		
 
@@ -75,15 +75,15 @@ public class CampoOutputPO extends TestBase{
 		opcao.click();
 
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		
-		actionsMoveToElementXpath("//*[@id=\"draggable-66\"]");
+		actionsMoveToElement("//*[@id=\"draggable-66\"]");
 		
 		coluna.click();
 		
 		colunaO.click();
 		
-		waitExpectXpath("//*[@id=\"fixed-field\"]/div/label/span");
+		waitExpectedElement("//*[@id=\"fixed-field\"]/div/label/span");
 		sleep(2000);
 		aplicar.click();
 		
@@ -96,7 +96,7 @@ public class CampoOutputPO extends TestBase{
 		gravar.click();
 		
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -105,7 +105,7 @@ public class CampoOutputPO extends TestBase{
 		driver.navigate().refresh();
 		
 
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		
 		boolean sucesso = false;
 		sucesso = mostrado.isDisplayed();

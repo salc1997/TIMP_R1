@@ -63,7 +63,7 @@ public class RRGConfiguracaoDeAjusteCriarComDiaEspecificoPO extends TestBase{
 		String idPrimero = driver.findElement(By.xpath("//div[@id=\"adjustment-table\"]/div/div/div/div[@class=\"tbody\"]/div[@class=\"tr\" and @data-id][1]/div[2]/div")).getText();
 		System.out.println("Primer ID: " + idPrimero);
 		
-		waitExpectElement(btnCriarAjuste);
+		waitExpectedElement(btnCriarAjuste);
 		btnCriarAjuste.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -82,7 +82,7 @@ public class RRGConfiguracaoDeAjusteCriarComDiaEspecificoPO extends TestBase{
 		inputDataDeLancamento.sendKeys(fechaLancamentoString);
 		sleep(1000);
 		
-		actionsMoveToElementElement(btnCodigoAjuste);
+		actionsMoveToElement(btnCodigoAjuste);
 		btnCodigoAjuste.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

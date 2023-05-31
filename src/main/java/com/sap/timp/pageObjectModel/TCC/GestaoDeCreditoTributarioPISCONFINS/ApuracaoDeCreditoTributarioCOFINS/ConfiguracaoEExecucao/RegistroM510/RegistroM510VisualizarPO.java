@@ -111,7 +111,7 @@ public class RegistroM510VisualizarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"visualizar\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -122,9 +122,9 @@ public class RegistroM510VisualizarPO extends TestBase{
 
 		if (tc2 == true) {
 
-			waitExpectElement(uf);
+			waitExpectedElement(uf);
 			sleep(2000);
-			waitExpectElement(filialtc2);
+			waitExpectedElement(filialtc2);
 			sleep(2000);
 			String empresavisualizar = empresa.getAttribute("value");
 			String ufvisualizar = uf.getText();
@@ -151,12 +151,12 @@ public class RegistroM510VisualizarPO extends TestBase{
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
-			waitExpectElement(nao);
+			waitExpectedElement(nao);
 			nao.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
-			waitExpectElement(ultimaPagina);
+			waitExpectedElement(ultimaPagina);
 			sleep(2000);
 
 			ultimaPagina.click();
@@ -167,7 +167,7 @@ public class RegistroM510VisualizarPO extends TestBase{
 			WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 			WebElement editar = driver.findElement(
 					By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-			actionsMoveToElementElement(menu1);
+			actionsMoveToElement(menu1);
 			sleep(2000);
 			menu1.click();
 			sleep(1000);
@@ -176,9 +176,9 @@ public class RegistroM510VisualizarPO extends TestBase{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 
-			waitExpectElement(uf);
+			waitExpectedElement(uf);
 			sleep(2000);
-			waitExpectElement(filialtc2);
+			waitExpectedElement(filialtc2);
 			sleep(2000);
 
 			String empresaeditar = empresa.getAttribute("value");
@@ -217,9 +217,9 @@ public class RegistroM510VisualizarPO extends TestBase{
 
 		} else {
 
-			waitExpectElement(uf);
+			waitExpectedElement(uf);
 			sleep(2000);
-			waitExpectElement(filial);
+			waitExpectedElement(filial);
 			sleep(2000);
 			String empresavisualizar = empresa.getAttribute("value");
 			String ufvisualizar = uf.getText();
@@ -243,12 +243,12 @@ public class RegistroM510VisualizarPO extends TestBase{
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
-			waitExpectElement(nao);
+			waitExpectedElement(nao);
 			nao.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
-			waitExpectElement(ultimaPagina);
+			waitExpectedElement(ultimaPagina);
 			sleep(2000);
 
 			ultimaPagina.click();
@@ -259,7 +259,7 @@ public class RegistroM510VisualizarPO extends TestBase{
 			WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 			WebElement editar = driver.findElement(
 					By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-			actionsMoveToElementElement(menu1);
+			actionsMoveToElement(menu1);
 			sleep(2000);
 			menu1.click();
 			sleep(1000);
@@ -268,9 +268,9 @@ public class RegistroM510VisualizarPO extends TestBase{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 
-			waitExpectElement(uf);
+			waitExpectedElement(uf);
 			sleep(2000);
-			waitExpectElement(filial);
+			waitExpectedElement(filial);
 			sleep(2000);
 
 			String empresaeditar = empresa.getAttribute("value");

@@ -99,13 +99,13 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBase{
 		sleep(2000);
 		
 		if(URL.contains("td1") || URL.contains("tq1")) {
-			waitExpectElement(menuAjustes);
+			waitExpectedElement(menuAjustes);
 			menuAjustes.click();		
 			sleep(2000);
 		}		
 		
-		actionsMoveToElementElement(subMenuAjustesAssociacaoCodigoAjuste);
-		dobleClickElement(subMenuAjustesAssociacaoCodigoAjuste);
+		actionsMoveToElement(subMenuAjustesAssociacaoCodigoAjuste);
+		dobleClick(subMenuAjustesAssociacaoCodigoAjuste);
 		//subMenuAjustesAssociacaoCodigoAjuste.click();
 		
 		sleep(2000);
@@ -168,7 +168,7 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");		
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"filial\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"filial\"]/div", "class", "base-MultipleSelect3 required");
 		inputFilial.click();
 		sleep(1000);
 		opcionCheckboxDiferenteTodos.click();
@@ -176,7 +176,7 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBase{
 		body.click();
 		sleep(2000);
 		
-		actionsMoveToElementElement(inputUFDestino);
+		actionsMoveToElement(inputUFDestino);
 		inputCodigoOficial.click();
 		sleep(1000);
 		opcionComboCodigoOficial.click();
@@ -184,7 +184,7 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBase{
 		body.click();	
 		sleep(1000);
 				
-		actionsMoveToElementElement(inputCodigoRegistroSPED);
+		actionsMoveToElement(inputCodigoRegistroSPED);
 		inputCodigoRegistroSPED.click();
 		sleep(1000);
 		opcionCombo1.click();
@@ -199,10 +199,10 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBase{
 		sleep(1000);
 		btnGravar.click();
 		sleep(2000);
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		sleep(1000);
 		nao.click();
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		sleep(2000);
 		btnSim.click();
 		sleep(2000);

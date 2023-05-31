@@ -54,7 +54,7 @@ public class RelatorioRefinariaGeradosEditarCampoDeSaidaPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		actionsMoveToElementElement(descricao);
+		actionsMoveToElement(descricao);
 		
 		String descricaoOriginalString = descricao.getAttribute("value");
 		System.out.println("Descricaco Original: " + descricaoOriginalString);
@@ -103,7 +103,7 @@ public class RelatorioRefinariaGeradosEditarCampoDeSaidaPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		actionsMoveToElementElement(descricao);
+		actionsMoveToElement(descricao);
 		String descricaoModificadolString = descricao.getAttribute("value");
 		System.out.println("Descricaco modificado: " + descricaoModificadolString);
 		

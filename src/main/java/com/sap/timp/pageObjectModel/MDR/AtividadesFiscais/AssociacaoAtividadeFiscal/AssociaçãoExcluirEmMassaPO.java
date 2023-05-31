@@ -142,7 +142,7 @@ public class AssociaçãoExcluirEmMassaPO extends TestBase{
 		opcionCheckbox1.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[contains(@class, \"uf\")]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
+		attributeToBe("//div[contains(@class, \"uf\")]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
 		sleep(2000);
 		inputUF.click();		
 		sleep(2000);
@@ -150,7 +150,7 @@ public class AssociaçãoExcluirEmMassaPO extends TestBase{
 		opcionCheckbox.sendKeys(Keys.ESCAPE);		
 		sleep(2000);
 		
-		attributeToBeXpath("//div[contains(@class, \"codFilial\")]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
+		attributeToBe("//div[contains(@class, \"codFilial\")]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
 		sleep(2000);
 		inputFilial.click();		
 		sleep(2000);
@@ -209,7 +209,7 @@ public class AssociaçãoExcluirEmMassaPO extends TestBase{
 		opcionCheckbox1.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[contains(@class, \"uf\")]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
+		attributeToBe("//div[contains(@class, \"uf\")]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
 		sleep(2000);
 		inputUF.click();		
 		sleep(2000);
@@ -217,7 +217,7 @@ public class AssociaçãoExcluirEmMassaPO extends TestBase{
 		opcionCheckbox.sendKeys(Keys.ESCAPE);		
 		sleep(2000);
 		
-		attributeToBeXpath("//div[contains(@class, \"codFilial\")]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
+		attributeToBe("//div[contains(@class, \"codFilial\")]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
 		sleep(2000);
 		inputFilial.click();		
 		sleep(2000);
@@ -259,7 +259,7 @@ public class AssociaçãoExcluirEmMassaPO extends TestBase{
 		opcionComboGrupoAtividadeFiscal.click();
 		sleep(2000);
 		
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		btnSim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -323,7 +323,7 @@ public class AssociaçãoExcluirEmMassaPO extends TestBase{
 		
 		excluirMassa.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(3000);
@@ -332,7 +332,7 @@ public class AssociaçãoExcluirEmMassaPO extends TestBase{
 		
 		
 		driver.navigate().refresh();
-		waitExpectElement(btnUltimaPagina);
+		waitExpectedElement(btnUltimaPagina);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		btnUltimaPagina.click();

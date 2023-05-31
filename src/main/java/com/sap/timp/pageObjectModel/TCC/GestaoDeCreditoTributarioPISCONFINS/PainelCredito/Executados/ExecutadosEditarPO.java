@@ -68,7 +68,7 @@ public class ExecutadosEditarPO extends TestBase {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		actionsMoveToElementElement(gestaoCredito);
+		actionsMoveToElement(gestaoCredito);
 		sleep(2000);
 		gestaoCredito.click();
 		sleep(2000);
@@ -91,14 +91,14 @@ public class ExecutadosEditarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement executar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
 		executar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(inputSubperiodo);
+		waitExpectedElement(inputSubperiodo);
 		sleep(3000);
 		
 		sleep(3000);
@@ -111,7 +111,7 @@ public class ExecutadosEditarPO extends TestBase {
 		btnExecutar.click();
 		invisibilityOfElementOverlay();
 		
-		waitExpectElement(cboEmpresa);
+		waitExpectedElement(cboEmpresa);
 		sleep(2000);
 		
 		
@@ -120,21 +120,21 @@ public class ExecutadosEditarPO extends TestBase {
 		opcionEmpresa.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//td[@id=\"stateInput\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//td[@id=\"stateInput\"]/div", "class", "base-MultipleSelect3 required");
 		cboEstado.click();
 		sleep(1000);
 		opcionCheck.click();
 		closeSelectTypeCheckbox(cboEstado);
 		sleep(1000);
 		
-		attributeToBeXpath("//td[@id=\"branchInput\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//td[@id=\"branchInput\"]/div", "class", "base-MultipleSelect3 required");
 		cboFilial.click();
 		sleep(1000);
 		opcionCheck.click();
 		closeSelectTypeCheckbox(cboFilial);
 		sleep(1000);
 		
-		actionsMoveToElementElement(Subperiodo);
+		actionsMoveToElement(Subperiodo);
 		Subperiodo.click();
 		sleep(2000);
 		

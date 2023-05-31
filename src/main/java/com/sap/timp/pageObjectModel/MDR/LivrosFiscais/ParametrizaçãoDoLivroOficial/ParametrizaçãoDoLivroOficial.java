@@ -47,7 +47,7 @@ public class ParametrizaçãoDoLivroOficial extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(menuLivrosFiscais);
+		waitExpectedElement(menuLivrosFiscais);
 		menuLivrosFiscais.click();
 		sleep(1000);
 		

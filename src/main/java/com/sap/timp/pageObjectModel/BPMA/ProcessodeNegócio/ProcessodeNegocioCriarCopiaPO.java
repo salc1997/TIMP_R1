@@ -149,7 +149,7 @@ public class ProcessodeNegocioCriarCopiaPO extends TestBase{
 		sleep(2000);
 		
 		
-		dobleClickElement(NovoOperacao);
+		dobleClick(NovoOperacao);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -166,7 +166,7 @@ public class ProcessodeNegocioCriarCopiaPO extends TestBase{
 		moveToElement(fin, driver.findElement(By.xpath("//div[@id=\"Operation\"]/div/div/div/div/div")));
 		sleep(2000);
 		
-		dobleClickElement(NovoActividad);
+		dobleClick(NovoActividad);
 		sleep(3000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -229,7 +229,7 @@ public class ProcessodeNegocioCriarCopiaPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idB+"\"]/div[1]/div"));
 		WebElement Copiar = driver.findElement(By.xpath("//div[@data-id=\""+idB+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Copiar\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(4000);
 
 		menu.click();
@@ -237,12 +237,12 @@ public class ProcessodeNegocioCriarCopiaPO extends TestBase{
 		Copiar.click();
 		sleep(24000);
 		
-		dobleClickElement(NovoOperacao);
+		dobleClick(NovoOperacao);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		dobleClickElement(NovoActividad);
+		dobleClick(NovoActividad);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

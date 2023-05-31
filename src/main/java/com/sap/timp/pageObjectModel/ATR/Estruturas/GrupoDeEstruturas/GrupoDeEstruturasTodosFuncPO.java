@@ -107,7 +107,7 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -122,7 +122,7 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBase{
 		novo.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(nomedogrupo);
+		waitExpectedElement(nomedogrupo);
 		sleep(2000);
 	
 		nomedogrupo.sendKeys("Teste ATR");
@@ -148,7 +148,7 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -192,7 +192,7 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -201,7 +201,7 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBase{
 		sleep(2000);
 		
 		sleep(24000);
-		waitExpectElement(nomedogrupo);
+		waitExpectedElement(nomedogrupo);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		estruturadedados.click();
@@ -224,7 +224,7 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -234,7 +234,7 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBase{
 		 menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		 editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -283,7 +283,7 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBase{
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement detalhes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -315,7 +315,7 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBase{
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement ver = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Ver\"]"));
 		
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(1000);
@@ -360,7 +360,7 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement ver = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Ver\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -379,7 +379,7 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBase{
 		
 		aceitar.click();
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -391,14 +391,14 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBase{
 		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(1000);
 		
 		editar.click();
 		sleep(2000);
-		waitExpectElement(nomedogrupo);
+		waitExpectedElement(nomedogrupo);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	    sleep(2000);
 	    
@@ -484,13 +484,13 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBase{
 		WebElement excluir = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(2000);
 		aceitar.click();
 		sleep(2000);
@@ -501,7 +501,7 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -541,7 +541,7 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBase{
 		
 		novo.click();
 		sleep(2000);
-		waitExpectElement(nomedogrupo);
+		waitExpectedElement(nomedogrupo);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//Primeiro Registro
@@ -563,7 +563,7 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBase{
 		sleep(3000);
 		novo.click();
 		sleep(2000);
-		waitExpectElement(nomedogrupo);
+		waitExpectedElement(nomedogrupo);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		//Segundo Registro
@@ -585,7 +585,7 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		
 		ultimapagina.click();
@@ -656,7 +656,7 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBase{
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(1000);
 		aceitar.click();
 		sleep(2000);
@@ -664,14 +664,14 @@ public class GrupoDeEstruturasTodosFuncPO extends TestBase{
 		sleep(2000);
 		  
 		driver.navigate().refresh(); 
-		waitExpectElement(ultimapagina); 
+		waitExpectedElement(ultimapagina); 
 		sleep(2000);
 		  
 		grupodeestrutura.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);

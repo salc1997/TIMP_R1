@@ -56,13 +56,13 @@ public class RegistroRFEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
 		editar.click();
 		sleep(2000);
-		attributoNotToBeEmptyElement(numeroservico, "value");
+		attributoNotToBeEmpty(numeroservico, "value");
 	  	sleep(2000);
 		
 	  	String valor = numeroservico.getAttribute("value");
@@ -87,7 +87,7 @@ public class RegistroRFEditarPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		attributoNotToBeEmptyElement(numeroservico, "value");
+		attributoNotToBeEmpty(numeroservico, "value");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

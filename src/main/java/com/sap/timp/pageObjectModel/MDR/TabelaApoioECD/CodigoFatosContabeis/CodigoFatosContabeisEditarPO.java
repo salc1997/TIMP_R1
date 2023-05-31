@@ -74,11 +74,11 @@ public class CodigoFatosContabeisEditarPO extends TestBase{
 		// Recargo la pagina
 		driver.navigate().refresh();
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(inputDataFinal);
+		waitExpectedElement(inputDataFinal);
 		String fechaEditada = inputDataFinal.getAttribute("value");
 		System.out.println(fechaEditada);
 		

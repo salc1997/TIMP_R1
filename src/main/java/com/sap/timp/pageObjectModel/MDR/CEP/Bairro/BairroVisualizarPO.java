@@ -86,7 +86,7 @@ public class BairroVisualizarPO extends TestBase{
 			sleep(1000);
 		}
 		bairro.click();
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		attributeToBe("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);
 		String idRegistro = idObter("CEP-Bairro");
 	    System.out.println("idVisualizar: "+ idRegistro);

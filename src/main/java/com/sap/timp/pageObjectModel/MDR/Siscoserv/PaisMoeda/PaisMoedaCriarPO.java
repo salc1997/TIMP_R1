@@ -90,7 +90,7 @@ public class PaisMoedaCriarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"country\"]/div", "class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"country\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
 		
 		pais.click();
@@ -120,7 +120,7 @@ public class PaisMoedaCriarPO extends TestBase{
 		sleep(2000);
 		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(mensagem);
+		waitExpectedElement(mensagem);
 		sleep(2000);
 	
 		
@@ -129,7 +129,7 @@ public class PaisMoedaCriarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		

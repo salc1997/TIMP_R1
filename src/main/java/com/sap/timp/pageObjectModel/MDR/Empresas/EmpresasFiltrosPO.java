@@ -66,7 +66,7 @@ public class EmpresasFiltrosPO extends TestBase{
 		
 		empresa.click();
 		
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
+		waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
 
 		sleep(2000);
 		
@@ -97,7 +97,7 @@ public class EmpresasFiltrosPO extends TestBase{
 		while (data.size() == 0) {
 			
 			siguiente.click();
-			waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
+			waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
 			sleep(2000);
 			j=1;
 			
@@ -122,13 +122,13 @@ public class EmpresasFiltrosPO extends TestBase{
 		}
 		
 		filtros.click();
-		waitExpectXpath("//*[@id=\"main-icon\"]");
+		waitExpectedElement("//*[@id=\"main-icon\"]");
 		sleep(2000);
 
 		razaoSocial.sendKeys(data.get(0));
 		razaoSocial.sendKeys(Keys.ENTER);
 		
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
+		waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
 		sleep(8000);
 		
 		
@@ -153,7 +153,7 @@ public class EmpresasFiltrosPO extends TestBase{
 		sleep(3000);
 		limpiar.click();
 		
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
+		waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
 
 		sleep(9000);
 		
@@ -184,7 +184,7 @@ public class EmpresasFiltrosPO extends TestBase{
 		while (data.size() == 0) {
 			sleep(9000);
 			siguiente.click();
-			waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
+			waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
 			sleep(2000);
 			j=1;
 			
@@ -213,7 +213,7 @@ public class EmpresasFiltrosPO extends TestBase{
 		municipio.sendKeys(data.get(0));
 		municipio.sendKeys(Keys.ENTER);
 		
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
+		waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
 		sleep(3000);
 		
 		
@@ -238,7 +238,7 @@ public class EmpresasFiltrosPO extends TestBase{
 		sleep(3000);
 		limpiar.click();
 		
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
+		waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
 
 		sleep(2000);
 		
@@ -269,7 +269,7 @@ public class EmpresasFiltrosPO extends TestBase{
 		while (data.size() == 0) {
 			
 			siguiente.click();
-			waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
+			waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
 			sleep(2000);
 			j=1;
 			
@@ -301,7 +301,7 @@ public class EmpresasFiltrosPO extends TestBase{
 		dataFinal.sendKeys(Keys.ENTER);
 
 		
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
+		waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
 		sleep(3000);
 		
 		

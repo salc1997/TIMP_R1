@@ -105,7 +105,7 @@ public class ConfiguracaoEExecucaoRegistro1200VisualizarPO extends TestBase {
 		sleep(1000);
 		acao.click();
 		sleep(3000);
-		waitExpectXpath("//div[@id=\"branch\"]/div/div[1]/div[1]/div[1]/div[1]/div[1]");
+		waitExpectedElement("//div[@id=\"branch\"]/div/div[1]/div[1]/div[1]/div[1]/div[1]");
 		sleep(2000);
 
 
@@ -145,7 +145,7 @@ public class ConfiguracaoEExecucaoRegistro1200VisualizarPO extends TestBase {
 		sleep(1000);
 		acao.click();
 		sleep(3000);
-		waitExpectXpath("//div[@id=\"branch\"]/div/div[1]/div[1]/div[1]/div[1]/div[1]");
+		waitExpectedElement("//div[@id=\"branch\"]/div/div[1]/div[1]/div[1]/div[1]/div[1]");
 		sleep(2000);
 		
 

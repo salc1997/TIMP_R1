@@ -111,7 +111,7 @@ public class AtivaçaoParaMunicipioVisualizarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -144,7 +144,7 @@ public class AtivaçaoParaMunicipioVisualizarPO extends TestBase {
 		biblioteca.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);
@@ -163,7 +163,7 @@ public class AtivaçaoParaMunicipioVisualizarPO extends TestBase {
 		
 		açao.click();
 		sleep(2000);
-		waitExpectElement(empresaE);
+		waitExpectedElement(empresaE);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(8000);
 

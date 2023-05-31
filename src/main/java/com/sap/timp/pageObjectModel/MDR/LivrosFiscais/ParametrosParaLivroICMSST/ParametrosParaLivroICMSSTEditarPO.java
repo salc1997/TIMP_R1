@@ -59,13 +59,13 @@ public class ParametrosParaLivroICMSSTEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
 		editar.click();
 		sleep(2000);
-		attributoNotToBeEmptyElement(fecha, "value");
+		attributoNotToBeEmpty(fecha, "value");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	  	sleep(8000);
 
@@ -84,7 +84,7 @@ public class ParametrosParaLivroICMSSTEditarPO extends TestBase{
 
 		Gravar.click();
 		sleep(3000);
-		waitExpectElement(Sim);
+		waitExpectedElement(Sim);
 		Sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -92,7 +92,7 @@ public class ParametrosParaLivroICMSSTEditarPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		attributoNotToBeEmptyElement(fecha, "value");
+		attributoNotToBeEmpty(fecha, "value");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(8000);
 
@@ -112,7 +112,7 @@ public class ParametrosParaLivroICMSSTEditarPO extends TestBase{
 		
 		Gravar.click();
 		sleep(3000);
-		waitExpectElement(Sim);
+		waitExpectedElement(Sim);
 		Sim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

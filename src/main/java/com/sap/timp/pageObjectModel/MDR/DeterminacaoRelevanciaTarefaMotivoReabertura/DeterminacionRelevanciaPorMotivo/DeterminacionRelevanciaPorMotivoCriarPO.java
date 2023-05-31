@@ -129,7 +129,7 @@ public class DeterminacionRelevanciaPorMotivoCriarPO extends TestBase{
 		empresaSeleccion.click();
 		empresaSeleccion.sendKeys(Keys.ESCAPE);
 		sleep(3000);
-		attributeToBeXpath("//*[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//*[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(3000); 
 		
 		uf.click();
@@ -176,11 +176,11 @@ public class DeterminacionRelevanciaPorMotivoCriarPO extends TestBase{
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();

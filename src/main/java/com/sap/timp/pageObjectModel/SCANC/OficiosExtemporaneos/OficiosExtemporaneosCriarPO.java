@@ -117,7 +117,7 @@ public class OficiosExtemporaneosCriarPO extends TestBase{
 		opcionAnexo.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"frame\"]/div", "class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"frame\"]/div", "class", "base-autocomplete required");
 		cboQuadro.click();
 		sleep(1000);
 		opcionQuadro.click();

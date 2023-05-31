@@ -228,20 +228,20 @@ public class TributosCriarPO extends TestBase{
 		
 		novo.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		sleep(2000);
 
 
 		empresa.click();
 		sleep(1000);
 		opcEmpresa.click();
-		attributeToBeXpath("//div[@id=\"UF\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"UF\"]/div", "class", "base-select required");
 		sleep(3000);
 		
 		ufFilial.click();
 		sleep(1000);
 		opcUfFilial.click();
-		attributeToBeXpath("//div[@id=\"branches\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branches\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(3000);
 		filiais.click();
 		sleep(1000);
@@ -262,7 +262,7 @@ public class TributosCriarPO extends TestBase{
 		sleep(1000);
 		claseOpcFiliais.click();
 		
-		attributeToBeXpath("//div[@id=\"centralizedTribute\"]/div ", "class", "base-select required");
+		attributeToBe("//div[@id=\"centralizedTribute\"]/div ", "class", "base-select required");
 		sleep(2000);
 		tributoCentralizador.click();
 		sleep(1000);
@@ -278,11 +278,11 @@ public class TributosCriarPO extends TestBase{
 //		driver.findElement(By.xpath("//div[@id=\"until\"]/div/div/input")).click();
 		sleep(2000);
 		pestañaAjuste.click();
-		waitExpectElement(btnNovoAjuste);
+		waitExpectedElement(btnNovoAjuste);
 		sleep(2000);
 		btnNovoAjuste.click();
 		sleep(1000);
-		waitExpectElement(filiaisAjuste);
+		waitExpectedElement(filiaisAjuste);
 		sleep(1000);
 		filiaisAjuste.sendKeys(Keys.ENTER);
 		opcFiliaisAjuste.click();
@@ -294,7 +294,7 @@ public class TributosCriarPO extends TestBase{
 		opcTributoOrigen.click();
 
 		sleep(1000);
-		attributeToBeXpath("//div[@id=\"tributeTypeOrigin\"]/div/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tributeTypeOrigin\"]/div/div", "class", "base-select required");
 		sleep(2000);
 		
 		tipoOrigen.click();
@@ -302,7 +302,7 @@ public class TributosCriarPO extends TestBase{
 		opcTipoOrigen.click();
 		sleep(2000);
 
-		attributeToBeXpath("//div[@id=\"saldo\"]/div/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"saldo\"]/div/div", "class", "base-select required");
 		sleep(2000);
 		saldo.click();
 		sleep(1000);
@@ -319,7 +319,7 @@ public class TributosCriarPO extends TestBase{
 		opcTipoDocumentoOrigen.click();
 		sleep(1000);
 
-		attributeToBeXpath("//div[@id=\"documentNameOrigin\"]/div/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"documentNameOrigin\"]/div/div", "class", "base-select required");
 		sleep(2000);
 		modeloGuiaOrigen.click();
 		sleep(1000);
@@ -332,7 +332,7 @@ public class TributosCriarPO extends TestBase{
 			sleep(12000);
 		}
 		*/
-		attributeToBeXpath("//div[@id=\"outputFieldOrigin\"]/div/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"outputFieldOrigin\"]/div/div", "class", "base-select required");
 		sleep(2000);
 		campoSaidaOrigen.click();
 		sleep(1000);
@@ -340,7 +340,7 @@ public class TributosCriarPO extends TestBase{
 
 
 		sleep(2000);
-		actionsMoveToElementElement(campoSaidaDestino);
+		actionsMoveToElement(campoSaidaDestino);
 		sleep(1000);
 
 		
@@ -350,14 +350,14 @@ public class TributosCriarPO extends TestBase{
 		sleep(1000);
 		
 		
-		attributeToBeXpath("//div[@id=\"tributeTypeDestination\"]/div/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tributeTypeDestination\"]/div/div", "class", "base-select required");
 		sleep(2000);
 		tipoDestino.click();
 		sleep(1000);
 		opcTipoDestino.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"detailDestination\"]/div/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"detailDestination\"]/div/div", "class", "base-select required");
 		sleep(3000);
 		detalheDestino.click();
 		sleep(2000);
@@ -378,7 +378,7 @@ public class TributosCriarPO extends TestBase{
 		}
 		*/
 		
-		attributeToBeXpath("//div[@id=\"documentNameDestination\"]/div/div", "class","base-select required");
+		attributeToBe("//div[@id=\"documentNameDestination\"]/div/div", "class","base-select required");
 		sleep(2000);
 		modeloGuiaDestino.click();
 		sleep(1000);
@@ -392,7 +392,7 @@ public class TributosCriarPO extends TestBase{
 		}
 		*/
 		sleep(1000);
-		attributeToBeXpath("//div[@id=\"outputFieldDestination\"]/div/div", "class","base-select required");
+		attributeToBe("//div[@id=\"outputFieldDestination\"]/div/div", "class","base-select required");
 		sleep(2000);
 		campoSaidaDestino.click();
 		sleep(1000);
@@ -406,13 +406,13 @@ public class TributosCriarPO extends TestBase{
 		sleep(3000);
 		btnGravar.click();
 		sleep(1000);
-		waitExpectElement(confirmacionGravar);
+		waitExpectedElement(confirmacionGravar);
 		sleep(1000);
 		confirmacionGravar.click();
 		
 		sleep(3000);
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//waitExpectElement(btnRegresar);

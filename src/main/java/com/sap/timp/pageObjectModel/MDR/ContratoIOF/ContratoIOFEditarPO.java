@@ -58,7 +58,7 @@ public class ContratoIOFEditarPO extends TestBase{
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
@@ -70,7 +70,7 @@ public class ContratoIOFEditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"contractValue\"]/div/div", "class", "base-input  required type1 success");
+		attributeToBe("//div[@id=\"contractValue\"]/div/div", "class", "base-input  required type1 success");
 		sleep(2000);
 		
 		String valor = razaosocial.getAttribute("value");
@@ -94,7 +94,7 @@ public class ContratoIOFEditarPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		attributoNotToBeEmptyElement(razaosocial, "value");
+		attributoNotToBeEmpty(razaosocial, "value");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 

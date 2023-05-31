@@ -102,7 +102,7 @@ public class AjusteEInformacoesDeValoresExcluirEmMassaPO extends TestBase {
 		
 		sleep(2000);
 		//espera o campo nao se vazio
-		attributoNotToBeEmptyXpath("//input[@placeholder=\"Preencher o Reflexo na Apuração ICMS\"]", "value");
+		attributoNotToBeEmpty("//input[@placeholder=\"Preencher o Reflexo na Apuração ICMS\"]", "value");
 		sleep(2000);
 		descricao.sendKeys("Teste");
 	
@@ -113,7 +113,7 @@ public class AjusteEInformacoesDeValoresExcluirEmMassaPO extends TestBase {
 
 		novo.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -126,7 +126,7 @@ public class AjusteEInformacoesDeValoresExcluirEmMassaPO extends TestBase {
 		
 		sleep(2000);
 		//espera o campo nao se vazio
-		attributoNotToBeEmptyXpath("//input[@placeholder=\"Preencher o Reflexo na Apuração ICMS\"]", "value");
+		attributoNotToBeEmpty("//input[@placeholder=\"Preencher o Reflexo na Apuração ICMS\"]", "value");
 		sleep(2000);
 		descricao.sendKeys("Teste");
 		sleep(2000);
@@ -134,7 +134,7 @@ public class AjusteEInformacoesDeValoresExcluirEmMassaPO extends TestBase {
 		sleep(2000);
 		novo.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -216,7 +216,7 @@ public class AjusteEInformacoesDeValoresExcluirEmMassaPO extends TestBase {
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(1000);
 		aceitar.click();
 		sleep(3000);
@@ -225,7 +225,7 @@ public class AjusteEInformacoesDeValoresExcluirEmMassaPO extends TestBase {
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

@@ -74,7 +74,7 @@ public class SubperiodoCopiarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Copiar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -156,7 +156,7 @@ public class SubperiodoCopiarPO extends TestBase {
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+id2+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+id2+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(2000);
@@ -196,7 +196,7 @@ public class SubperiodoCopiarPO extends TestBase {
 		WebElement menu2 = driver.findElement(By.xpath("//div[@data-id=\""+id2+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+id2+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 		
-		actionsMoveToElementElement(menu2);
+		actionsMoveToElement(menu2);
 		sleep(2000);
 		menu2.click();
 		sleep(2000);

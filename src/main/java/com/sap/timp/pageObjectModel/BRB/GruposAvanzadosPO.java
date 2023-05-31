@@ -114,7 +114,7 @@ public class GruposAvanzadosPO extends TestBase{
 	String cfopG = "";
 	public void gruposAvanzadosAplicar() {
 	
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
@@ -129,7 +129,7 @@ public class GruposAvanzadosPO extends TestBase{
 
 		opcao.click();
 
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		waitExpectedElement("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 	
 		executar.click();
 		sleep(5000);
@@ -150,11 +150,11 @@ public class GruposAvanzadosPO extends TestBase{
 		edicao.click();
 		sleep(3000);
 	//	nao1.click();
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		
 		grupoAvanzado.click();
 		
-		waitExpectXpath("//*[@id=\"add-filter-btn\"]/button");
+		waitExpectedElement("//*[@id=\"add-filter-btn\"]/button");
 		
 		nome.sendKeys("Igual a: "+cfopS);
 		
@@ -171,7 +171,7 @@ public class GruposAvanzadosPO extends TestBase{
 		
 		grupoAvanzado.click();
 		
-		waitExpectXpath("//*[@id=\"add-filter-btn\"]/button");
+		waitExpectedElement("//*[@id=\"add-filter-btn\"]/button");
 		
 		nome.sendKeys("Diferente a: "+cfopS);
 		
@@ -189,7 +189,7 @@ public class GruposAvanzadosPO extends TestBase{
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao1);
+		waitExpectedElement(nao1);
 		sleep(1000);
 		nao1.click();
 		sleep(3000);
@@ -283,7 +283,7 @@ public class GruposAvanzadosPO extends TestBase{
 
 		edicao.click();
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		
 		eliminar.click();
 		sleep(1000);
@@ -291,7 +291,7 @@ public class GruposAvanzadosPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -301,7 +301,7 @@ public class GruposAvanzadosPO extends TestBase{
 		driver.navigate().refresh();
 		
 
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		
 		List<WebElement> removidoIgual = driver.findElements(By.xpath("//div[@_vgrb=\"0\" and contains(@class,\"rule-row group\")]/div/div/div[2]"));
 		List<WebElement> removidoDiferente = driver.findElements(By.xpath("//div[@_vgrb=\"1\" and contains(@class,\"rule-row group\")]/div/div/div[2]"));

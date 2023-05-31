@@ -103,7 +103,7 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement lixeira1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 	
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -137,7 +137,7 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(12000);
 		
-		waitExpectElement(pesquisar);
+		waitExpectedElement(pesquisar);
 		pesquisar.clear();
 		
 		lixeria.click();
@@ -159,7 +159,7 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBase{
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 	
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(1000);
@@ -257,7 +257,7 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBase{
 		WebElement menu2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro2+"\"]/div[1]/div"));
 		WebElement lixeira2= driver.findElement(By.xpath("//div[@data-id=\""+idRegistro2+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 	
-		actionsMoveToElementElement(menu2);
+		actionsMoveToElement(menu2);
 		sleep(2000);
 		menu2.click();
 		sleep(1000);

@@ -143,7 +143,7 @@ public class RegrasdeAuditoriaN4EdicaoValoresCalculadosPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(valorCalculadoB);
+		waitExpectedElement(valorCalculadoB);
 		valorCalculadoB.click();
 		sleep(3000);
 		
@@ -165,7 +165,7 @@ public class RegrasdeAuditoriaN4EdicaoValoresCalculadosPO extends TestBase {
 		opcRegistroSelect.click();
 		sleep(2000);
 		
-		actionsMoveToElementElement(secoesArquivo);
+		actionsMoveToElement(secoesArquivo);
 		sleep(2000);
 		
 		secoesArquivo.click();
@@ -174,11 +174,11 @@ public class RegrasdeAuditoriaN4EdicaoValoresCalculadosPO extends TestBase {
 		sleep(2000);
 
 		
-		attributeToBeXpath("//div[@class=\"column-wrapper second\"]/div/div","class", "animation-wrapper show");
+		attributeToBe("//div[@class=\"column-wrapper second\"]/div/div","class", "animation-wrapper show");
 		sleep(2000);
 		
 		sleep(1000);
-		dobleClickElement(opcSecoesArquivo);
+		dobleClick(opcSecoesArquivo);
 		sleep(1000);
 		
 		
@@ -189,11 +189,11 @@ public class RegrasdeAuditoriaN4EdicaoValoresCalculadosPO extends TestBase {
 		sleep(2000);
 		
 		
-		attributeToBeXpath("//div[@class=\"column-wrapper second\"]/div/div","class", "animation-wrapper show");
+		attributeToBe("//div[@class=\"column-wrapper second\"]/div/div","class", "animation-wrapper show");
 		sleep(2000);
 		
 		sleep(1000);
-		dobleClickElement(opcSecoesOperadores);
+		dobleClick(opcSecoesOperadores);
 		sleep(1000);
 		
 		
@@ -203,7 +203,7 @@ public class RegrasdeAuditoriaN4EdicaoValoresCalculadosPO extends TestBase {
 		aplicar.click();
 		sleep(2000);
 		
-		waitExpectElement(adicionar);
+		waitExpectedElement(adicionar);
 		sleep(2000);
 		adicionar.click();
 		sleep(3000);
@@ -230,7 +230,7 @@ public class RegrasdeAuditoriaN4EdicaoValoresCalculadosPO extends TestBase {
 		
 		registro1direita.click();
 		sleep(3000);
-		dobleClickElement(valorAjuste);
+		dobleClick(valorAjuste);
 		sleep(3000);
 		
 		mensagem.sendKeys("Teste Automatizado");
@@ -244,7 +244,7 @@ public class RegrasdeAuditoriaN4EdicaoValoresCalculadosPO extends TestBase {
 		driver.navigate().refresh();
 		sleep(3000);
 	
-		waitExpectElement(mensagem);
+		waitExpectedElement(mensagem);
 		sleep(2000);
 		
 		//sleep(2000);

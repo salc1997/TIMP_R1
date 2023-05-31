@@ -73,7 +73,7 @@ public class InformaçoesAdicionaisEditarPO extends TestBase {
 		informacoesadicionais.click();
 		sleep(2000);
 		
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		
@@ -86,7 +86,7 @@ public class InformaçoesAdicionaisEditarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -94,7 +94,7 @@ public class InformaçoesAdicionaisEditarPO extends TestBase {
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributeToBeXpath("//div[@id=\"aditionalInfoCode\"]/div/div", "class", "base-input  required type2 success");
+		attributeToBe("//div[@id=\"aditionalInfoCode\"]/div/div", "class", "base-input  required type2 success");
 		sleep(2000);
 		
 

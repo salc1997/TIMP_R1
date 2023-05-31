@@ -120,13 +120,13 @@ public class ConfiguracaoDeTributoCriarPO extends TestBase{
 		
 		novo.click();
 		sleep(2000);
-		waitExpectElement(pais);
+		waitExpectedElement(pais);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		pais.click();
 		sleep(1000);
-		attributeToBeXpath("//div[@id=\"country\"]/div", "class", "base-autocomplete active");
+		attributeToBe("//div[@id=\"country\"]/div", "class", "base-autocomplete active");
 		opcao.click();
 		sleep(1000);
 	
@@ -145,12 +145,12 @@ public class ConfiguracaoDeTributoCriarPO extends TestBase{
 		sleep(2000); 
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		sleep(2000);
 		biblioteca.click();
 		sleep(2000);
@@ -158,7 +158,7 @@ public class ConfiguracaoDeTributoCriarPO extends TestBase{
 		sleep(2000);
 		
 				
-		waitExpectElement(primeira);
+		waitExpectedElement(primeira);
 		sleep(2000);
 		primeira.click();
 		sleep(2000);

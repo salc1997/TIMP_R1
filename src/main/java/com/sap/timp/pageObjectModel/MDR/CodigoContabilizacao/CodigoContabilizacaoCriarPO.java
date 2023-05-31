@@ -130,7 +130,7 @@ public class CodigoContabilizacaoCriarPO extends TestBase {
 		//tipotributo.sendKeys("A0002 - FUNDOS");
 		
 		
-		attributeToBeXpath("//div[@id=\"tax-type\"]/div", "class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"tax-type\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
 		tipotributo.click();
 		
@@ -143,10 +143,10 @@ public class CodigoContabilizacaoCriarPO extends TestBase {
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(butaosim);
+		waitExpectedElement(butaosim);
 		sleep(1000);
 		nao.click();
-		waitExpectElement(butaosim);
+		waitExpectedElement(butaosim);
 		sleep(2000);
 		butaosim.click();
 		sleep(2000);
@@ -162,10 +162,10 @@ public class CodigoContabilizacaoCriarPO extends TestBase {
 		
 		if (visible>0) {
 			sleep(2000);
-			waitExpectElement(butaosim);
+			waitExpectedElement(butaosim);
 			sleep(1000);
 			nao.click();
-			waitExpectElement(butaosim);
+			waitExpectedElement(butaosim);
 			sleep(2000);
 			butaosim.click();
 			sleep(2000);

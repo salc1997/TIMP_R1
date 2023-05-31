@@ -137,7 +137,7 @@ public class DeterminacaoAutomaticaDeGuiasEditarPO extends TestBase{
 		sleep(15000);
 		
 		
-		actionsMoveToElementElement(datavigencia);
+		actionsMoveToElement(datavigencia);
 		String dataInicioVigenciaValorNuevo = fechaAyer();
 		System.out.println("Data a ser inserida: " +dataInicioVigenciaValorNuevo);
 	
@@ -148,11 +148,11 @@ public class DeterminacaoAutomaticaDeGuiasEditarPO extends TestBase{
 		sleep(3000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		nao.click();
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		
@@ -178,7 +178,7 @@ public class DeterminacaoAutomaticaDeGuiasEditarPO extends TestBase{
 		
 		
 		// Obtengo el valor actualizado ya recargada la página
-		actionsMoveToElementElement(datavigencia);
+		actionsMoveToElement(datavigencia);
 		String dataInicioVigenciaEditada = datavigencia.getAttribute("value");
 		System.out.println("Data Nova: " +dataInicioVigenciaEditada);
 		sleep(2000);

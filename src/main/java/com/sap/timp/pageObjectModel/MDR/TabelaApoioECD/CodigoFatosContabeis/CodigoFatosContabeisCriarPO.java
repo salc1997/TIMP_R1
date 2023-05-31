@@ -70,25 +70,25 @@ public class CodigoFatosContabeisCriarPO extends TestBase{
 		btnNovoCodigoFatoContabeisElement.click();
 		
 		sleep(2000);
-		waitExpectElement(inputCodigoFatoContabil);
+		waitExpectedElement(inputCodigoFatoContabil);
 		inputCodigoFatoContabil.sendKeys("5505");
 		
 		sleep(2000);
-		waitExpectElement(inputDescricaoFatoContabil);
+		waitExpectedElement(inputDescricaoFatoContabil);
 		inputDescricaoFatoContabil.sendKeys("Prueba de tester = verificar5");
 		
 		sleep(2000);
-		waitExpectElement(inputDataInicio);
+		waitExpectedElement(inputDataInicio);
 		inputDataInicio.sendKeys("09/10/2020");
 		
 		sleep(2000);
-		waitExpectElement(inputDataFinal);
+		waitExpectedElement(inputDataFinal);
 		inputDataFinal.sendKeys("10/10/2020");
 		
 		sleep(2000);
 		btnGravar.click();
 		
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		btnSim.click();
 		
 		sleep(2000);

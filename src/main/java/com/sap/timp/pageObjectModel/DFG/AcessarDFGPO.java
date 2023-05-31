@@ -29,7 +29,7 @@ public class AcessarDFGPO extends TestBase{
 	
 	public boolean acessarDFG() {
 
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!dfg.isDisplayed()) {
@@ -39,7 +39,7 @@ public class AcessarDFGPO extends TestBase{
 		
 		dfg.click();
 		
-		waitExpectElement(mostrar);
+		waitExpectedElement(mostrar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		boolean sucesso = mostrar.isDisplayed();

@@ -161,7 +161,7 @@ public class AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO extends TestBase{
 		
 		gravar.click();
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -171,7 +171,7 @@ public class AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO extends TestBase{
 
 		biblioteca.click();
 		
-		waitExpectElement(novo);
+		waitExpectedElement(novo);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -220,7 +220,7 @@ public class AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO extends TestBase{
 		
 		gravar.click();
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -291,7 +291,7 @@ public class AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO extends TestBase{
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(1000);
 		aceitar.click();
 		sleep(3000);
@@ -300,7 +300,7 @@ public class AliquotasDeTaxaDeActualizacaoExcluirEmMassaPO extends TestBase{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

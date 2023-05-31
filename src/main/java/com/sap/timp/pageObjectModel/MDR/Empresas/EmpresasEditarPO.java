@@ -36,20 +36,20 @@ public class EmpresasEditarPO extends TestBase{
 		
 		empresa.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
+		waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
 
 		String idRegistro = "8603";
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		
 		menu.click();
 		editar.click();
 		
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 		sleep(10000);
 		
 
@@ -65,7 +65,7 @@ public class EmpresasEditarPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		nao.click();
 		sleep(3000);
 		sleep(2000);
@@ -77,7 +77,7 @@ public class EmpresasEditarPO extends TestBase{
 		
 		driver.navigate().refresh();
 		
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 
 		sleep(2000);
 		

@@ -146,7 +146,7 @@ public class AntecipacaoCriarPO extends TestBase{
 		
 		novaAntecipacao.click();
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"tributo\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tributo\"]/div", "class", "base-select required");
 		sleep(5000);
 		
 		empresa.click();
@@ -157,7 +157,7 @@ public class AntecipacaoCriarPO extends TestBase{
 	
 		
 		
-		attributeToBeXpath("//*[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//*[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		ufFilial.click();
 		sleep(2000);
@@ -168,7 +168,7 @@ public class AntecipacaoCriarPO extends TestBase{
 		
 		
 		
-		attributeToBeXpath("//*[@id=\"filial\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//*[@id=\"filial\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		filial.click();
@@ -183,7 +183,7 @@ public class AntecipacaoCriarPO extends TestBase{
 		opcao1.click();
 		sleep(2000);
 		
-		attributeToBeXpath("//*[@id=\"tipoTributo\"]/div", "class", "base-select required");
+		attributeToBe("//*[@id=\"tipoTributo\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		tipoTributo.click();
@@ -228,11 +228,11 @@ public class AntecipacaoCriarPO extends TestBase{
 		sleep(2000);
 		gravar.click();
 		sleep(3000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(3000);
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();

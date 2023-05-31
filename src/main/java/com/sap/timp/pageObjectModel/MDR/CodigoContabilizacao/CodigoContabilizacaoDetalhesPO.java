@@ -140,7 +140,7 @@ public class CodigoContabilizacaoDetalhesPO extends TestBase {
 		sleep(2000);
 		fechar.click();
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 
 		menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		açao = driver.findElement(
@@ -150,7 +150,7 @@ public class CodigoContabilizacaoDetalhesPO extends TestBase {
 		sleep(1000);
 		açao.click();
 		sleep(3000);
-		waitExpectElement(empresaV);
+		waitExpectedElement(empresaV);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 

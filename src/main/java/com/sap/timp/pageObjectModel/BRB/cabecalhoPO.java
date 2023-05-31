@@ -79,7 +79,7 @@ public class cabecalhoPO extends TestBase{
 	
 	public void cabeçalho() {
 
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
@@ -97,10 +97,10 @@ public class cabecalhoPO extends TestBase{
 
 		opcao.click();
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		
 		cabeçalho.click();
-		waitExpectElement(imagem);
+		waitExpectedElement(imagem);
 		
 		titulo.clear();
 		titulo.sendKeys("Prueba 1");
@@ -121,7 +121,7 @@ public class cabecalhoPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -134,7 +134,7 @@ public class cabecalhoPO extends TestBase{
 		executar.click();
 		
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		waitExpectedElement("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		
 		
 		//imprimir.click();

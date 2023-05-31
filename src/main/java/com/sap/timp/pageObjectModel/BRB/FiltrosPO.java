@@ -178,7 +178,7 @@ public class FiltrosPO  extends TestBase{
 		sleep(1000);
 	//	nao1.click();
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		
 		filtros.click();
 		
@@ -219,14 +219,14 @@ public class FiltrosPO  extends TestBase{
 		
 		gravar.click();		
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 	
 				
 	}
@@ -245,7 +245,7 @@ public class FiltrosPO  extends TestBase{
 			amb =false;
 		}
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
@@ -262,7 +262,7 @@ public class FiltrosPO  extends TestBase{
 
 		
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");		
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");		
 		sleep(1000);
 		
 		filtros.click();	
@@ -320,7 +320,7 @@ public class FiltrosPO  extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -329,7 +329,7 @@ public class FiltrosPO  extends TestBase{
 	
 		driver.navigate().refresh();
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");	
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");	
 		
 		boolean mostrados = false;
 		
@@ -359,7 +359,7 @@ public class FiltrosPO  extends TestBase{
 		
 		execuçao.click();
 		
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		waitExpectedElement("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 		
 		
 		configuracion.click();
@@ -469,7 +469,7 @@ public class FiltrosPO  extends TestBase{
 		executar.click();	
 		
 
-		waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
+		waitExpectedElement("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 		sleep(2000);
 		configuracion.click();
 		sleep(1000);

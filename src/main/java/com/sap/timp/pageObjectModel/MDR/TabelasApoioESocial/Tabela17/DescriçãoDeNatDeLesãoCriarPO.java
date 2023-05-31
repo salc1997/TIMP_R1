@@ -96,7 +96,7 @@ public class DescriçãoDeNatDeLesãoCriarPO extends TestBase{
 		btnGravar.click();
 		sleep(2000);
 		
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		btnSim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

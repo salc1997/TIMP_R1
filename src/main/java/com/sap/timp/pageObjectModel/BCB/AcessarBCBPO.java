@@ -37,7 +37,7 @@ public class AcessarBCBPO extends TestBase{
 		
 
 
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(3000);
 		
 		while(bcb.isDisplayed() == false) {
@@ -45,8 +45,8 @@ public class AcessarBCBPO extends TestBase{
 		}		
 	
 		bcb.click();
-		waitExpectXpath("//span[text()=\"Hierarquia de Configuração\"]");
-		waitExpectXpath("//div[contains(@class,\"icon-right\")][2]");
+		waitExpectedElement("//span[text()=\"Hierarquia de Configuração\"]");
+		waitExpectedElement("//div[contains(@class,\"icon-right\")][2]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

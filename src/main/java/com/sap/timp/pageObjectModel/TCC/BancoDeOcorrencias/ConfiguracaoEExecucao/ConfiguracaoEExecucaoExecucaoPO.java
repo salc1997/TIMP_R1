@@ -113,7 +113,7 @@ public class ConfiguracaoEExecucaoExecucaoPO extends TestBase {
 		sleep(1000);
 		editar.click();
 		sleep(3000);
-		waitExpectElement(executar);
+		waitExpectedElement(executar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		executar.click();

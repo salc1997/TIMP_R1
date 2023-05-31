@@ -54,7 +54,7 @@ public class ConfiguracaoEExecucaoVisualizarPO extends TestBase {
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(branch);
+		waitExpectedElement(branch);
 		sleep(2000);
 		
 		sleep(5000);
@@ -100,7 +100,7 @@ public class ConfiguracaoEExecucaoVisualizarPO extends TestBase {
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(branch);
+		waitExpectedElement(branch);
 		sleep(2000);
 		
 		sleep(5000);

@@ -136,7 +136,7 @@ public class AtivaçaoParaMunicipioCriarPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		sleep(2000);
 
 		sleep(6000);

@@ -148,7 +148,7 @@ public class ArmazenarArquivoVisualizarPO extends TestBase{
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"49\"]/div[1]/div"));
 			WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\"49\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 			
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 
 			menu.click();
@@ -169,7 +169,7 @@ public class ArmazenarArquivoVisualizarPO extends TestBase{
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"241\"]/div[1]/div"));
 			WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\"241\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 			
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 
 			menu.click();
@@ -190,7 +190,7 @@ public class ArmazenarArquivoVisualizarPO extends TestBase{
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"39\"]/div[1]/div"));
 			WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\"39\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 			
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 
 			menu.click();
@@ -201,7 +201,7 @@ public class ArmazenarArquivoVisualizarPO extends TestBase{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 		}
-		waitExpectElement(empresavi);
+		waitExpectedElement(empresavi);
 		sleep(2000);
 		String empresavisualizar = empresavi.getText();
 		String ufvisualizar = ufvi.getText();
@@ -261,14 +261,14 @@ public class ArmazenarArquivoVisualizarPO extends TestBase{
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"49\"]/div[1]/div"));
 			WebElement editar = driver.findElement(By.xpath("//div[@data-id=\"49\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 			
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 
 			menu.click();
 			sleep(1000);
 			editar.click();
 			sleep(2000);
-			waitExpectElement(tipodedocumento);
+			waitExpectedElement(tipodedocumento);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(15000);
 		}
@@ -282,14 +282,14 @@ public class ArmazenarArquivoVisualizarPO extends TestBase{
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"241\"]/div[1]/div"));
 			WebElement editar = driver.findElement(By.xpath("//div[@data-id=\"241\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 			
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 
 			menu.click();
 			sleep(1000);
 			editar.click();
 			sleep(2000);
-			waitExpectElement(tipodedocumento);
+			waitExpectedElement(tipodedocumento);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 		}
@@ -303,14 +303,14 @@ public class ArmazenarArquivoVisualizarPO extends TestBase{
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"39\"]/div[1]/div"));
 			WebElement editar = driver.findElement(By.xpath("//div[@data-id=\"39\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 			
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 
 			menu.click();
 			sleep(1000);
 			editar.click();
 			sleep(2000);
-			waitExpectElement(tipodedocumento);
+			waitExpectedElement(tipodedocumento);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(6000);
 		}

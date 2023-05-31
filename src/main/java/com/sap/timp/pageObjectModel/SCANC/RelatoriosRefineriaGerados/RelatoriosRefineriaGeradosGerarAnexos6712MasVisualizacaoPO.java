@@ -78,7 +78,7 @@ public class RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO extends 
 		sleep(2000);
 		
 		if(url.contains("tq1")) {
-			waitExpectElement(btnAplicar);
+			waitExpectedElement(btnAplicar);
 			btnAplicar.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -89,7 +89,7 @@ public class RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO extends 
 		invisibilityOfElement("//div[@class=\"progress-bar\"]");
 		sleep(2000);
 		
-		waitExpectElement(btnFechar);
+		waitExpectedElement(btnFechar);
 		btnFechar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

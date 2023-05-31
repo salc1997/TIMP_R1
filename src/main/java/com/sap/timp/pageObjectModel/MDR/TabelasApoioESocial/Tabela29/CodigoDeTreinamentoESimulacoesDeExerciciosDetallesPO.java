@@ -72,7 +72,7 @@ public class CodigoDeTreinamentoESimulacoesDeExerciciosDetallesPO extends TestBa
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement Detalhes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(4000);
 
 		menu.click();
@@ -105,7 +105,7 @@ public class CodigoDeTreinamentoESimulacoesDeExerciciosDetallesPO extends TestBa
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(4000);
 
 		menu1.click();
@@ -113,7 +113,7 @@ public class CodigoDeTreinamentoESimulacoesDeExerciciosDetallesPO extends TestBa
 		visualizar.click();
 		sleep(3000);
 		
-		waitExpectElement(codigoV);
+		waitExpectedElement(codigoV);
 		sleep(2000);
 		
 		System.out.println("----------Visualizar-------");

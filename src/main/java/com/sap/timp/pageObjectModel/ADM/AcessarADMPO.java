@@ -24,7 +24,7 @@ public class AcessarADMPO extends TestBase{
 	
 	public boolean acessarADM() {
 		
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!adm.isDisplayed()) {
@@ -33,7 +33,7 @@ public class AcessarADMPO extends TestBase{
 		sleep(1000);
 		
 		adm.click();
-		waitExpectElement(mostrar);
+		waitExpectedElement(mostrar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		boolean sucesso = mostrar.isDisplayed();

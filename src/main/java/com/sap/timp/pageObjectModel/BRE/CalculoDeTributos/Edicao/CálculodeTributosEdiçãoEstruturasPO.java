@@ -123,7 +123,7 @@ public boolean editar() {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
 	
-	waitExpectElement(estruturas);
+	waitExpectedElement(estruturas);
 	estruturas.click();
 	sleep(4000);
 	associarEstruturas.click();
@@ -136,7 +136,7 @@ public boolean editar() {
 	sleep(3000);
 	
 	
-	waitExpectElement(campo);
+	waitExpectedElement(campo);
 	campo.sendKeys("Alíquota ICMS (ED)");
 	sleep(2000);
 	campo.sendKeys(Keys.ENTER);
@@ -190,7 +190,7 @@ public boolean editar() {
 	sleep(4000);
 	
 	
-	waitExpectElement(estruturas);
+	waitExpectedElement(estruturas);
 	estruturas.click();
 	sleep(3000);
 	
@@ -261,7 +261,7 @@ public boolean editar() {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(4000);
 	
-	waitExpectElement(estruturas);
+	waitExpectedElement(estruturas);
 	sleep(5000);
 	
 	driver.navigate().refresh();

@@ -95,14 +95,14 @@ public class RegrasDeMensagensSimularPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(4000);
 
 		menu.click();
 		sleep(1000);
 		editar.click();
 		sleep(2000);
-		waitExpectElement(adicionarcaminho);
+		waitExpectedElement(adicionarcaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -119,7 +119,7 @@ public class RegrasDeMensagensSimularPO extends TestBase {
 		
 		filtros.click();
 		sleep(2000);
-		waitExpectElement(aliquota);
+		waitExpectedElement(aliquota);
 		sleep(2000);
 		aliquota.click();
 		sleep(1000);

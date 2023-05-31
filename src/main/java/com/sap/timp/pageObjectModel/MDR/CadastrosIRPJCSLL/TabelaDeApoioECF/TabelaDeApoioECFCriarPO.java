@@ -50,7 +50,7 @@ public class TabelaDeApoioECFCriarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(cadastroIRPJCSLL);
+		waitExpectedElement(cadastroIRPJCSLL);
 		cadastroIRPJCSLL.click();
 		sleep(1000);
 		
@@ -91,7 +91,7 @@ public class TabelaDeApoioECFCriarPO extends TestBase{
 		
 		btnGravar.click();
 		sleep(1000);
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		btnSim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

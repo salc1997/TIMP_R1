@@ -95,13 +95,13 @@ public class Registro1200EditarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
 		editar.click();
 		sleep(2000);
-		waitExpectElement(naturaleza);
+		waitExpectedElement(naturaleza);
 		sleep(16000);
 		
 		
@@ -142,14 +142,14 @@ public class Registro1200EditarPO extends TestBase {
 		
 		btnGravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 	    
 		driver.navigate().refresh();
-		waitExpectElement(naturaleza);
+		waitExpectedElement(naturaleza);
 		sleep(6000);
 	  	
 	  	String nuevoTexto = naturalezaValor.getAttribute("value");

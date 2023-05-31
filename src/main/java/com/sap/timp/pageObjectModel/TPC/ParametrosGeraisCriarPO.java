@@ -217,28 +217,28 @@ public class ParametrosGeraisCriarPO extends TestBase {
 		sleep(55000);
 		System.out.println("----------");
 		
-		actionsMoveToElementElement(formulario);
+		actionsMoveToElement(formulario);
 		
 		System.out.println("");
 		sleep(7000);
 		if (tq1==true) {
 			codReceita.click();
 			sleep(1000);
-			actionsMoveToElementElement(opcCodReceitaTq1);
+			actionsMoveToElement(opcCodReceitaTq1);
 			sleep(1000);
 			opcCodReceitaTq1.click();
 			sleep(3000);
 			
 			codAjuste.click();
 			sleep(1000);
-			actionsMoveToElementElement(opcCodAjusteTq1);
+			actionsMoveToElement(opcCodAjusteTq1);
 			sleep(1000);
 			opcCodAjusteTq1.click();
 			sleep(1000);
 			
 			formulario.click();
 			sleep(1000);
-			actionsMoveToElementElement(opcFormularioTq1);
+			actionsMoveToElement(opcFormularioTq1);
 			sleep(1000);
 			opcFormularioTq1.click();
 			sleep(3000);
@@ -247,21 +247,21 @@ public class ParametrosGeraisCriarPO extends TestBase {
 		}else {
 			codReceita.click();
 			sleep(1000);
-			actionsMoveToElementElement(opcCodReceitaTp1);
+			actionsMoveToElement(opcCodReceitaTp1);
 			sleep(3000);
 			opcCodReceitaTp1.click();
 			sleep(3000);
 			
 			codAjuste.click();
 			sleep(1000);
-			actionsMoveToElementElement(opcCodAjusteTp1);
+			actionsMoveToElement(opcCodAjusteTp1);
 			sleep(3000);
 			opcCodAjusteTp1.click();
 			sleep(3000);
 			
 			formulario.click();
 			sleep(1000);
-			actionsMoveToElementElement(opcFormularioTp1);
+			actionsMoveToElement(opcFormularioTp1);
 			sleep(3000);
 			opcFormularioTp1.click();
 			sleep(3000);

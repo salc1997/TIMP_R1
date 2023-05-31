@@ -240,7 +240,7 @@ public class RegrasDeNegocioCriarPO extends TestBase{
 		
 		novaregra.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		
 		nome.click();
@@ -320,7 +320,7 @@ public class RegrasDeNegocioCriarPO extends TestBase{
 		opcaogrupodeestrutura.click();
 		sleep(1000);
 		
-		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
+		actionsMoveToElement("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
 		estruturadedados.click();
 		sleep(1000);
 		opcaoestruturadedados.click();
@@ -330,15 +330,15 @@ public class RegrasDeNegocioCriarPO extends TestBase{
 		sleep(1000);
 		opcaocaracteristicaespecial.click();
 		sleep(1000);
-		attributeToBeXpath("//td[@class=\"tab-field\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//td[@class=\"tab-field\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(3000);
-		waitExpectElement(abas);
+		waitExpectedElement(abas);
 		sleep(2000);
 		abas.click();
 		sleep(1000);
 		opcaoabas.click();
 		closeSelectTypeCheckbox(abas);
-		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
+		actionsMoveToElement("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
 		sleep(1000);
 		regulamento.click();
 		sleep(1000);
@@ -352,7 +352,7 @@ public class RegrasDeNegocioCriarPO extends TestBase{
 		
 		aplicar.click();
 		sleep(2000);
-		waitExpectElement(adicionarcaminho);
+		waitExpectedElement(adicionarcaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -361,7 +361,7 @@ public class RegrasDeNegocioCriarPO extends TestBase{
 		Justificactiva.click();
 		sleep(2000);
 		
-		waitExpectElement(justificativa);
+		waitExpectedElement(justificativa);
 		sleep(2000);
 		justificativa.sendKeys("TESTE AUTOMATIZADO");
 		sleep(1000);
@@ -435,7 +435,7 @@ public class RegrasDeNegocioCriarPO extends TestBase{
 		
 		acoes.sendKeys("Registro E111");
 		sleep(3000);
-		actionsMoveToElementElement(opcaoacoesr2);
+		actionsMoveToElement(opcaoacoesr2);
 		sleep(1000);
 		opcaoacoesr2.click();
 		closeSelectTypeCheckbox(acoes);
@@ -495,11 +495,11 @@ public class RegrasDeNegocioCriarPO extends TestBase{
 		
 
 		sleep(1000);
-		waitExpectElement(primeiracaixar3);
+		waitExpectedElement(primeiracaixar3);
 		sleep(2000);
 		primeiracaixar3.click();
 		sleep(1000);
-		waitExpectElement(NomeDoValor);
+		waitExpectedElement(NomeDoValor);
 		sleep(2000);
 		NomeDoValor.clear();
 		NomeDoValor.sendKeys("D197");
@@ -509,7 +509,7 @@ public class RegrasDeNegocioCriarPO extends TestBase{
 		int j=1;
 
 		for (int i = 0; i < rows1; i++) {
-			waitExpectElement(text);
+			waitExpectedElement(text);
 			sleep(2000);
 			String texto = "D197";
 			String texto1 = driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[name()=\"g\"][10]/*/*["+j+"]")).getText();
@@ -522,7 +522,7 @@ public class RegrasDeNegocioCriarPO extends TestBase{
 
 		if(rows1 > 1) {
 			System.out.println("2 frases");
-			waitExpectElement(text);
+			waitExpectedElement(text);
 			sleep(2000);
 			String texto = "D197";
 			String texto1 = text.getText();
@@ -532,7 +532,7 @@ public class RegrasDeNegocioCriarPO extends TestBase{
 		}else {
 			System.out.println("Uma frase");
 			WebElement text1 = driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[13]/*/*[1]"));
-			waitExpectElement(text1);
+			waitExpectedElement(text1);
 			sleep(2000);
 			String texto="D197";
 			String texto1= text1.getText();
@@ -595,10 +595,10 @@ public class RegrasDeNegocioCriarPO extends TestBase{
 		driver.navigate().refresh();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader transp\"]");
-		waitExpectElement(adicionarcaminho);
+		waitExpectedElement(adicionarcaminho);
 		sleep(2000);
 		WebElement caminhos = driver.findElement(By.xpath("//div[@id=\"graph\"]/*[name()=\"svg\"]/*[name()=\"g\"]"));
-		waitExpectElement(caminhos);
+		waitExpectedElement(caminhos);
 		sleep(2000);
 		if(caminhos.isDisplayed() )
 		{

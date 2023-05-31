@@ -110,7 +110,7 @@ public class CFOPFiltrosAvancadosPO extends TestBase {
 		tabelaSPED.click();
 		
 		sleep(2000);
-		actionsMoveToElementElement(opcionCFOP);
+		actionsMoveToElement(opcionCFOP);
 		opcionCFOP.click();
 		sleep(2000);
 		

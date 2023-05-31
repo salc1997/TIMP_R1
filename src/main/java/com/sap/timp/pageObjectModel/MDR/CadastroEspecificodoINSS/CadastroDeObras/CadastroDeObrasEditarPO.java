@@ -80,7 +80,7 @@ public class CadastroDeObrasEditarPO extends TestBase{
 	    sleep(5000);
 	    invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	    
-	    attributoNotToBeEmptyElement(CEI, "value");
+	    attributoNotToBeEmpty(CEI, "value");
 	  	sleep(2000);
 	  	
 	  	
@@ -107,7 +107,7 @@ public class CadastroDeObrasEditarPO extends TestBase{
 			
 		driver.navigate().refresh();
 		sleep(3000);
-		attributoNotToBeEmptyElement(CEI, "value");
+		attributoNotToBeEmpty(CEI, "value");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

@@ -128,7 +128,7 @@ public class DashboardParametrosGeraisExcecutarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(execucoes);
+		waitExpectedElement(execucoes);
 		sleep(2000);
 		execucoes.click();
 		sleep(2000);
@@ -169,7 +169,7 @@ public class DashboardParametrosGeraisExcecutarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement executar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Executar\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -189,7 +189,7 @@ public class DashboardParametrosGeraisExcecutarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(8000);
 		
-		waitExpectElement(etiquetaIndicador);
+		waitExpectedElement(etiquetaIndicador);
 		
 		fechar.click();
 		sleep(3000);
@@ -238,7 +238,7 @@ public class DashboardParametrosGeraisExcecutarPO extends TestBase{
 		atualizacao.click();
 		
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		nome.click();
 		sleep(2000);
@@ -260,7 +260,7 @@ public class DashboardParametrosGeraisExcecutarPO extends TestBase{
 		pararatualizacao.click();
 		sleep(2000);
 		
-		waitExpectElement(mensagem);
+		waitExpectedElement(mensagem);
 		sleep(2000);
 		
 		
@@ -299,23 +299,23 @@ public class DashboardParametrosGeraisExcecutarPO extends TestBase{
 		
 		sleep(2000);
 		
-		waitExpectElement(Aceitar);
+		waitExpectedElement(Aceitar);
 		sleep(2000);
 		Aceitar.click();
 		sleep(2000);
 		Gravar.click();
 		sleep(2000);
-		waitExpectElement(semanexo);
+		waitExpectedElement(semanexo);
 		sleep(2000);
 		semanexo.click();
 		sleep(2000);
-		waitExpectElement(confirmar);
+		waitExpectedElement(confirmar);
 		sleep(2000);
 		confirmar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(executarElement);
+		waitExpectedElement(executarElement);
 		sleep(2000);
 		
 		int mensagem = driver.findElements(By.xpath("//span[@id=\"textLabel\"]")).size();
@@ -335,7 +335,7 @@ public class DashboardParametrosGeraisExcecutarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(execucoes);
+		waitExpectedElement(execucoes);
 		sleep(2000);
 		execucoes.click();
 		sleep(2000);

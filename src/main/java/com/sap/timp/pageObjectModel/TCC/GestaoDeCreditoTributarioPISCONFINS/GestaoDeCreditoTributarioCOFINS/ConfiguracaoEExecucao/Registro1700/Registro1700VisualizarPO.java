@@ -122,7 +122,7 @@ public class Registro1700VisualizarPO extends TestBase{
 		//no.click();
 		sleep(2000);
 		
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);

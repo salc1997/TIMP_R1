@@ -96,7 +96,7 @@ public class InformaçoesAdicionaisVisualizarPO extends TestBase {
 		informacoesadicionais.click();
 		sleep(2000);
 		
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		
@@ -153,7 +153,7 @@ public class InformaçoesAdicionaisVisualizarPO extends TestBase {
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		attributoNotToBeEmptyElement(codigoE, "value");
+		attributoNotToBeEmpty(codigoE, "value");
 		
 		String codigoE1 = codigoE.getAttribute("value");
 		String ufE1 = ufE.getAttribute("value");

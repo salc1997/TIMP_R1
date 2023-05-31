@@ -75,7 +75,7 @@ public class CadastroNotaFiscalVisualizarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(5000);
 		
-		attributoNotToBeEmptyElement(empresaV, "textContent");
+		attributoNotToBeEmpty(empresaV, "textContent");
 		sleep(1000);
 		
 		System.out.println("--------- Visualizar -------");

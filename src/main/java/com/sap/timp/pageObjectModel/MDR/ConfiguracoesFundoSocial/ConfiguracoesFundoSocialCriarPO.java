@@ -120,7 +120,7 @@ public class ConfiguracoesFundoSocialCriarPO extends TestBase{
 		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"UF_BRANCH\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"UF_BRANCH\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		ufFilial.click();
@@ -129,7 +129,7 @@ public class ConfiguracoesFundoSocialCriarPO extends TestBase{
 		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"BRANCH\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"BRANCH\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(3000);
 		
 		filial.click();
@@ -154,7 +154,7 @@ public class ConfiguracoesFundoSocialCriarPO extends TestBase{
 		opcao2.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"ADJUSTMENT_TRIBUTE_TYPE\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"ADJUSTMENT_TRIBUTE_TYPE\"]/div", "class", "base-select required");
 		sleep(3000);
 		
 		tipoTributo.click();
@@ -188,7 +188,7 @@ public class ConfiguracoesFundoSocialCriarPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

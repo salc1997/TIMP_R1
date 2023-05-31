@@ -313,7 +313,7 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 		sleep(1000);
 		
 		driver.findElement(By.xpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]")).click();
-		actionsMoveToElementElement(btnGravar);
+		actionsMoveToElement(btnGravar);
 		btnGravar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -394,11 +394,11 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 		sleep(1000);
 		
 		sleep(1000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
-		waitExpectElement(btnFiltrosAvanzados2);
+		waitExpectedElement(btnFiltrosAvanzados2);
 		btnFiltrosAvanzados2.click();
 		sleep(2000);
 		
@@ -430,7 +430,7 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 		sleep(3000);
 		
 		// Datos de vissualizar Quadro 4
-		actionsMoveToElementXpath("//div[@class=\"report-wrapper\"][5]/div[2]/div[4]/div/div[2]");
+		actionsMoveToElement("//div[@class=\"report-wrapper\"][5]/div[2]/div[4]/div/div[2]");
 		String unidadeFederadaDeOrigemString = driver.findElement(By.xpath("//div[@class=\"report-wrapper\"][5]/div[2]/div[4]/div/div[2]")).getText();
 		
 		if(unidadeFederadaDeOrigemString.equals("SP")) {
@@ -456,7 +456,7 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 		sucesso.add(icmsRepassarCNPJVisualizar.equals(valorOperacaoString));
 		
 		// Datos de vissualizar Quadro 7		
-		actionsMoveToElementXpath("//div[@class=\"report-wrapper\"][8]/div[2]/div[4]/div/div[2]");
+		actionsMoveToElement("//div[@class=\"report-wrapper\"][8]/div[2]/div[4]/div/div[2]");
 		String unidadeFederadaDeOrigemString1 = driver.findElement(By.xpath("//div[@class=\"report-wrapper\"][8]/div[2]/div/div/div[text()=\"SP\"]")).getText();
 		
 		if(unidadeFederadaDeOrigemString1.equals("SP")) {
@@ -625,7 +625,7 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(10000);
 		
-		actionsMoveToElementElement(btnGravar);
+		actionsMoveToElement(btnGravar);
 		btnGravar.click();
 		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -711,11 +711,11 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 		sleep(1000);
 		
 		sleep(1000);
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
-		waitExpectElement(btnFiltrosAvanzados2);
+		waitExpectedElement(btnFiltrosAvanzados2);
 		btnFiltrosAvanzados2.click();
 		sleep(2000);
 		
@@ -750,7 +750,7 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 		sleep(3000);
 		
 		// Datos de vissualizar Quadro 4
-		actionsMoveToElementXpath("//div[text()=\"4.2 - OPERAÇÕES COM IMPOSTO RETIDO POR OUTROS CONTRIBUINTES\"]");
+		actionsMoveToElement("//div[text()=\"4.2 - OPERAÇÕES COM IMPOSTO RETIDO POR OUTROS CONTRIBUINTES\"]");
 		String unidadeFederadaDeOrigemString = driver.findElement(By.xpath("//div[@class=\"report-wrapper\"][5]/div[2]/div[4]/div/div[2]")).getText();
 		
 		if(unidadeFederadaDeOrigemString.equals("RJ")) {
@@ -776,7 +776,7 @@ public class RelatorioRefinariaGeradosManutencaoCriarLancamentoVisualizacaoAnexo
 		sucesso.add(icmsRepassarCNPJVisualizar.equals(valorOperacaoString));
 		
 		// Datos de vissualizar Quadro 7		
-		actionsMoveToElementXpath("//div[@class=\"report-wrapper\"][11]/div[2]/div[13]/div/div[text()=\"1.000,00\"]");
+		actionsMoveToElement("//div[@class=\"report-wrapper\"][11]/div[2]/div[13]/div/div[text()=\"1.000,00\"]");
 		String unidadeFederadaDeOrigemString1 = driver.findElement(By.xpath("//div[@class=\"report-wrapper\"][11]/div[2]/div[7]/div/div[text()=\"RJ\"]")).getText();
 		
 		if(unidadeFederadaDeOrigemString1.equals("RJ")) {

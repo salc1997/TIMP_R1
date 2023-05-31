@@ -82,7 +82,7 @@ public class ParametrosParaCategoriaDeIRFExcluirEmMasaPO extends TestBase {
 		sleep(2000);
 		novo.click();
 		sleep(3000);
-		waitExpectElement(categoriaIRF);
+		waitExpectedElement(categoriaIRF);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -91,7 +91,7 @@ public class ParametrosParaCategoriaDeIRFExcluirEmMasaPO extends TestBase {
 		sleep(1000);
 		opcao.click();
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"irf-code\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"irf-code\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(1000);
 	
 		
@@ -101,7 +101,7 @@ public class ParametrosParaCategoriaDeIRFExcluirEmMasaPO extends TestBase {
 		opcao2.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"irf-key\"]/div", "class", "base-select ");
+		attributeToBe("//div[@id=\"irf-key\"]/div", "class", "base-select ");
 		
 		chaveIRF.click();
 		sleep(1000);
@@ -143,7 +143,7 @@ public class ParametrosParaCategoriaDeIRFExcluirEmMasaPO extends TestBase {
 		sleep(2000);
 		novo.click();
 		sleep(3000);
-		waitExpectElement(categoriaIRF);
+		waitExpectedElement(categoriaIRF);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
 		sleep(5000);
@@ -156,7 +156,7 @@ public class ParametrosParaCategoriaDeIRFExcluirEmMasaPO extends TestBase {
 		sleep(1000);
 		opcao.click();
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"irf-code\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"irf-code\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(1000);
 	
 		
@@ -166,7 +166,7 @@ public class ParametrosParaCategoriaDeIRFExcluirEmMasaPO extends TestBase {
 		opcao2.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"irf-key\"]/div", "class", "base-select ");
+		attributeToBe("//div[@id=\"irf-key\"]/div", "class", "base-select ");
 		
 		chaveIRF.click();
 		sleep(1000);
@@ -261,7 +261,7 @@ public class ParametrosParaCategoriaDeIRFExcluirEmMasaPO extends TestBase {
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -270,7 +270,7 @@ public class ParametrosParaCategoriaDeIRFExcluirEmMasaPO extends TestBase {
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

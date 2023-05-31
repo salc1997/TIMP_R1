@@ -131,7 +131,7 @@ public class EnquadramentoExcluirMassaPO extends TestBase{
 		salvarENovo.click();
 		sleep(2000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -147,7 +147,7 @@ public class EnquadramentoExcluirMassaPO extends TestBase{
 		descricao.sendKeys("descricao 8");		
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"nbsCode\"]/div", "class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"nbsCode\"]/div", "class", "base-autocomplete required");
 		codigonbs.click();		
 		sleep(2000);
 		
@@ -175,7 +175,7 @@ public class EnquadramentoExcluirMassaPO extends TestBase{
 		salvarENovo.click();
 		sleep(2000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -260,14 +260,14 @@ public class EnquadramentoExcluirMassaPO extends TestBase{
 		
 		btnExcluirMassa.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

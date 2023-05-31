@@ -86,7 +86,7 @@ public class ParametrosGeraisCamposManuaisPO extends TestBase {
 		sleep(2000);
 		sleep(7000);
 		
-		waitExpectElement(btnPrimeraPagina);
+		waitExpectedElement(btnPrimeraPagina);
 		sleep(2000);
 		
 		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

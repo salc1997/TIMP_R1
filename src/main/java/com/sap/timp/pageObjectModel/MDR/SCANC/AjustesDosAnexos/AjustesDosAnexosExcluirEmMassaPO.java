@@ -228,7 +228,7 @@ public class AjustesDosAnexosExcluirEmMassaPO extends TestBase{
 
 		refresh();
 		
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -260,7 +260,7 @@ public class AjustesDosAnexosExcluirEmMassaPO extends TestBase{
 		
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"tax-type-annexes\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tax-type-annexes\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		tipodetributo.click();
@@ -389,7 +389,7 @@ public class AjustesDosAnexosExcluirEmMassaPO extends TestBase{
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -398,7 +398,7 @@ public class AjustesDosAnexosExcluirEmMassaPO extends TestBase{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

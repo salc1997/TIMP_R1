@@ -123,7 +123,7 @@ public class ClassificaçaoDeContribuintesDoIPIDetalhesPO extends TestBase{
 		sleep(6000);
 		fechar.click();
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 
 	
 		açao = driver.findElement(

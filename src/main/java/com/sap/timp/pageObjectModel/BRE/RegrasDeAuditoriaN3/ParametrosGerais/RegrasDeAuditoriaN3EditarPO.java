@@ -186,14 +186,14 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
 		sleep(1000);
 		editar.click();
 		sleep(2000);
-		waitExpectElement(adicionarcaminho);
+		waitExpectedElement(adicionarcaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -211,7 +211,7 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 
 		nao.click();
@@ -222,7 +222,7 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBase{
 		String texto1 = campo2.getText();
 		
 		sucesso.add(texto1.contains(enviar));
-		waitExpectElement(primeiracaixar1);
+		waitExpectedElement(primeiracaixar1);
 		sleep(1000);
 		primeiracaixar1.click();
 		sleep(1000);
@@ -235,7 +235,7 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBase{
 		acoes.sendKeys(Keys.ENTER);
 		salvarcomocopia.click();
 		
-		waitExpectElement(r2);
+		waitExpectedElement(r2);
 		sleep(2000);
 		if(r2.isDisplayed()) {
 			System.out.println("O campo r2 está na página de edição");
@@ -247,7 +247,7 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBase{
 		gravar.click();
 
 		sleep(1000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		nao.click();
 		sleep(3000);
@@ -261,7 +261,7 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBase{
 		gravar.click();
 
 		sleep(1000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		
 		nao.click();
@@ -285,12 +285,12 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBase{
 		sleep(1000);
 		
 		String nome1 = "TESTE N3- NAO MEXER";
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		nome.clear();
 		sleep(1000);
 		nome.sendKeys(nome1);
-		waitExpectElement(aplicar);
+		waitExpectedElement(aplicar);
 		sleep(7000);
 		aplicar.click();
 		sleep(2000);
@@ -299,7 +299,7 @@ public class RegrasDeAuditoriaN3EditarPO extends TestBase{
 		gravar.click();
 
 		sleep(1000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 
 		nao.click();

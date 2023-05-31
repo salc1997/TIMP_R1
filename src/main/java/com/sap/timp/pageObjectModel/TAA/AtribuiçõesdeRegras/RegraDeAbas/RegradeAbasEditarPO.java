@@ -127,7 +127,7 @@ public class RegradeAbasEditarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		attributoNotToBeEmptyElement(validaDe, "value");
+		attributoNotToBeEmpty(validaDe, "value");
 		String valorDescricaoGuardado = validaDe.getAttribute("value");
 		System.out.println("");
 		System.out.println("Descricao valor guardado: " + valorDescricaoGuardado);

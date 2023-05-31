@@ -83,7 +83,7 @@ public class TarefasExecutarRelatorioBCBPO extends TestBase {
 		sleep(2000);
 		abrirCalendario.click();
 		sleep(3000);
-		waitExpectXpath("//div[@class=\"day\"][1]");
+		waitExpectedElement("//div[@class=\"day\"][1]");
 		sleep(2000);
 
 		
@@ -118,14 +118,14 @@ public class TarefasExecutarRelatorioBCBPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 			
-		actionsMoveToElementElement(pesquisar);
+		actionsMoveToElement(pesquisar);
 		sleep(2000);
 		
 		if (tq1==true) {
 			
 			WebElement menu=driver.findElement(By.xpath("//div[contains(@aria-label,\"943251\")]/div[2]/div"));
 			WebElement fazertarefa=driver.findElement(By.xpath("//div[contains(@aria-label,\"943251\")]/div[2]/div/div[2]/ul/li/span[text()=\"Fazer tarefa\"]"));
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 			menu.click();
 			sleep(2000);
@@ -136,7 +136,7 @@ public class TarefasExecutarRelatorioBCBPO extends TestBase {
 			
 			WebElement menu=driver.findElement(By.xpath("//div[contains(@aria-label,\"73060\")]/div[2]/div"));
 			WebElement fazertarefa=driver.findElement(By.xpath("//div[contains(@aria-label,\"73060\")]/div[2]/div/div[2]/ul/li/span[text()=\"Fazer tarefa\"]"));
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 			menu.click();
 			sleep(2000);
@@ -147,7 +147,7 @@ public class TarefasExecutarRelatorioBCBPO extends TestBase {
 			
 			WebElement menu=driver.findElement(By.xpath("//div[contains(@aria-label,\"6466\")]/div[2]/div"));
 			WebElement fazertarefa=driver.findElement(By.xpath("//div[contains(@aria-label,\"6466\")]/div[2]/div/div[2]/ul/li/span[text()=\"Fazer tarefa\"]"));
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 			menu.click();
 			sleep(2000);
@@ -159,7 +159,7 @@ public class TarefasExecutarRelatorioBCBPO extends TestBase {
 		for(String winHandle : driver.getWindowHandles()){
 		    driver.switchTo().window(winHandle);
 		}
-		waitExpectElement(home);
+		waitExpectedElement(home);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -176,7 +176,7 @@ public class TarefasExecutarRelatorioBCBPO extends TestBase {
 		
 		
 		boolean sucesso=false;
-		waitExpectXpath("//div[@class=\"sublevel-description-wrapper flex flex-wrap space-between\"]");
+		waitExpectedElement("//div[@class=\"sublevel-description-wrapper flex flex-wrap space-between\"]");
 		sleep(2000);
 		WebElement totalElement= driver.findElement(By.xpath("//div[@class=\"sublevel-description-wrapper flex flex-wrap space-between\"]"));
 		if(totalElement.isDisplayed()) {

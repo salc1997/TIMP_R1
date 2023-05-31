@@ -107,14 +107,14 @@ public class RegistroM630VisualizarPO extends TestBase{
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"visualizar\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
 		editar.click();
 		sleep(2000);
-		waitExpectXpath("//div[@id=\"branch\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
-		waitExpectXpath("//div[@id=\"uf\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
+		waitExpectedElement("//div[@id=\"branch\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
+		waitExpectedElement("//div[@id=\"uf\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -152,21 +152,21 @@ public class RegistroM630VisualizarPO extends TestBase{
 		}
 		
 		sleep(5000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 
 
 		menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		editar = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
 		editar.click();
 		sleep(2000);
-		waitExpectXpath("//div[@id=\"branch\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
-		waitExpectXpath("//div[@id=\"uf\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
+		waitExpectedElement("//div[@id=\"branch\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
+		waitExpectedElement("//div[@id=\"uf\"]/div/div[1]/div/div/div[@class=\"componentToSearch\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

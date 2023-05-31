@@ -70,7 +70,7 @@ public class AprovacaoDeDocumentosEditarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -83,7 +83,7 @@ public class AprovacaoDeDocumentosEditarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);
 		
-		attributeToBeXpath("//div[@id=\"docType\"]/div", "class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"docType\"]/div", "class", "base-autocomplete required");
 		
 		String enviar = "Teste automatizado";
 		comentario.clear();
@@ -93,7 +93,7 @@ public class AprovacaoDeDocumentosEditarPO extends TestBase {
 		
 		Gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -118,7 +118,7 @@ public class AprovacaoDeDocumentosEditarPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);
@@ -128,7 +128,7 @@ public class AprovacaoDeDocumentosEditarPO extends TestBase {
 		 menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		 editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -140,7 +140,7 @@ public class AprovacaoDeDocumentosEditarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"docType\"]/div", "class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"docType\"]/div", "class", "base-autocomplete required");
 		String comentario1 = comentario.getAttribute("value");
 		System.out.println(comentario1);
 

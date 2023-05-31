@@ -85,7 +85,7 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBase{
 		
 		novo.click();
 		sleep(2000);
-		waitExpectElement(nomedogrupo);
+		waitExpectedElement(nomedogrupo);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//Primeiro Registro
@@ -107,7 +107,7 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBase{
 		sleep(3000);
 		novo.click();
 		sleep(2000);
-		waitExpectElement(nomedogrupo);
+		waitExpectedElement(nomedogrupo);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		//Segundo Registro
@@ -129,7 +129,7 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		
 		siguiente.click();
@@ -200,7 +200,7 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBase{
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(1000);
 		aceitar.click();
 		sleep(2000);
@@ -208,14 +208,14 @@ public class GrupoDeEstruturasExcluirEmMassaPO extends TestBase{
 		sleep(2000);
 		  
 		driver.navigate().refresh(); 
-		waitExpectElement(siguiente); 
+		waitExpectedElement(siguiente); 
 		sleep(2000);
 		  
 		grupodeestrutura.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);

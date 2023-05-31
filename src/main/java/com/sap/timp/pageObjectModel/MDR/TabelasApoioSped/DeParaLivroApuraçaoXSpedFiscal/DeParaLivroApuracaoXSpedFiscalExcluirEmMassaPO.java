@@ -111,7 +111,7 @@ public class DeParaLivroApuracaoXSpedFiscalExcluirEmMassaPO extends TestBase {
 		opcaotributo.click();
 		
 		sleep(2000);
-		attributeToBeXpath("//div[@class=\"element\" and @id=\"tipoTributo\"]/div", "class", "base-select required");
+		attributeToBe("//div[@class=\"element\" and @id=\"tipoTributo\"]/div", "class", "base-select required");
 		sleep(2000);
 		tipotributo.click();
 		sleep(2000);
@@ -126,7 +126,7 @@ public class DeParaLivroApuracaoXSpedFiscalExcluirEmMassaPO extends TestBase {
 		sleep(2000);
 		novo.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -136,7 +136,7 @@ public class DeParaLivroApuracaoXSpedFiscalExcluirEmMassaPO extends TestBase {
 		//Segundo Registro
 		driver.navigate().refresh();
 		sleep(2000);
-		waitExpectElement(tributo);
+		waitExpectedElement(tributo);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -162,7 +162,7 @@ public class DeParaLivroApuracaoXSpedFiscalExcluirEmMassaPO extends TestBase {
 		sleep(2000);
 		novo.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -244,7 +244,7 @@ public class DeParaLivroApuracaoXSpedFiscalExcluirEmMassaPO extends TestBase {
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(1000);
 		aceitar.click();
 		sleep(3000);
@@ -253,7 +253,7 @@ public class DeParaLivroApuracaoXSpedFiscalExcluirEmMassaPO extends TestBase {
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

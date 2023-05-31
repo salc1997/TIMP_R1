@@ -102,20 +102,20 @@ public class DashboardCartaoIndicadorPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
 		sleep(1000);
 		editar.click();
 		sleep(2000);
-		waitExpectElement(Gravar);
+		waitExpectedElement(Gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		adicionarwidget.click();
 		
-		waitExpectElement(cartaoindicador);
+		waitExpectedElement(cartaoindicador);
 		sleep(2000);
 		cartaoindicador.click();
 		sleep(2000);
@@ -127,7 +127,7 @@ public class DashboardCartaoIndicadorPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(cabecalho);
+		waitExpectedElement(cabecalho);
 		sleep(2000);
 		cabecalho.sendKeys("Cabecalho");
 		sleep(2000);
@@ -143,13 +143,13 @@ public class DashboardCartaoIndicadorPO extends TestBase{
 			sleep(2000);
 		}
 		
-		attributeToBeXpath("//div[@id=\"select-structure\"]/div", "class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"select-structure\"]/div", "class", "base-autocomplete required");
 		sleep(4000);
 		estruturadedados.click();
 		sleep(2000);
 		opcaoestrutura.click();
 		sleep(2000);
-		waitExpectElement(conteudo);
+		waitExpectedElement(conteudo);
 		sleep(2000);
 		conteudo.click();
 		sleep(2000);
@@ -179,7 +179,7 @@ public class DashboardCartaoIndicadorPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(mensagemsalvo);
+		waitExpectedElement(mensagemsalvo);
 		sleep(2000);
 		if(mensagemsalvo.isDisplayed() && cartaoindicador > 0)
 		{

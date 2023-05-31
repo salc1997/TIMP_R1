@@ -167,7 +167,7 @@ public class ConfiguracoesCriarPO extends TestBase{
 			tp1 = true;
 		}
 		
-		waitExpectElement(raiz1);
+		waitExpectedElement(raiz1);
 		raiz1.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -191,7 +191,7 @@ public class ConfiguracoesCriarPO extends TestBase{
 		
 		novo.click();
 		sleep(3000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -204,16 +204,16 @@ public class ConfiguracoesCriarPO extends TestBase{
 		String tipoT = opcao.getText();
 		System.out.println(tipoT);
 		sleep(1000);
-		actionsMoveToElementElement(versaoLeiaute);
+		actionsMoveToElement(versaoLeiaute);
 		sleep(1000);
 		
 		grupoEstrutura.click();
 		sleep(1000);
 		if (tp1 == false) {
 
-			actionsMoveToElementElement(opcaoGrupoEstrutura);
+			actionsMoveToElement(opcaoGrupoEstrutura);
 		}else {
-			actionsMoveToElementElement(opcaoGrupoEstruturaTP1);
+			actionsMoveToElement(opcaoGrupoEstruturaTP1);
 		}
 		
 		sleep(1000);
@@ -244,7 +244,7 @@ public class ConfiguracoesCriarPO extends TestBase{
 		salvar.click();
 		
 		sleep(3000);
-		waitExpectElement(gravar);
+		waitExpectedElement(gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -273,11 +273,11 @@ public class ConfiguracoesCriarPO extends TestBase{
 		
 		gravar.click();
 		sleep(3000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		nao.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(3000);
@@ -361,7 +361,7 @@ public class ConfiguracoesCriarPO extends TestBase{
 		nova.click();
 		
 		sleep(3000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -374,7 +374,7 @@ public class ConfiguracoesCriarPO extends TestBase{
 		
 		String idRegistro = idObter3();
 		
-		actionsMoveToElementXpath("//li[contains(text(),\""+idRegistro+"\")]");
+		actionsMoveToElement("//li[contains(text(),\""+idRegistro+"\")]");
 		sleep(2000);
 
 		WebElement Opc6 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro+"\")]"));
@@ -382,7 +382,7 @@ public class ConfiguracoesCriarPO extends TestBase{
 		Opc6 .click();
 		sleep(4000);
 		
-		attributeToBeXpath("//div[@id=\"inputTimpVersion\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"inputTimpVersion\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		versaoC.click();
@@ -391,7 +391,7 @@ public class ConfiguracoesCriarPO extends TestBase{
 		
 		
 		sleep(2000);
-		actionsMoveToElementElement(dataVigencia);
+		actionsMoveToElement(dataVigencia);
 		sleep(1000);
 		
 
@@ -401,12 +401,12 @@ public class ConfiguracoesCriarPO extends TestBase{
 		
 		tributo.click();
 		sleep(1000);
-		actionsMoveToElementElement(tributoO);
+		actionsMoveToElement(tributoO);
 		sleep(1000);
 		tributoO.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"inputSelectCompany\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"inputSelectCompany\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		empresa.click();
@@ -416,7 +416,7 @@ public class ConfiguracoesCriarPO extends TestBase{
 		empresaO.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"inputSelectState\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"inputSelectState\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		uf.click();
@@ -425,7 +425,7 @@ public class ConfiguracoesCriarPO extends TestBase{
 		sleep(1000);
 		ufO.sendKeys(Keys.ESCAPE);
 		sleep(1000);
-		attributeToBeXpath("//div[@id=\"inputSelectFilial\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"inputSelectFilial\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		filial.click();

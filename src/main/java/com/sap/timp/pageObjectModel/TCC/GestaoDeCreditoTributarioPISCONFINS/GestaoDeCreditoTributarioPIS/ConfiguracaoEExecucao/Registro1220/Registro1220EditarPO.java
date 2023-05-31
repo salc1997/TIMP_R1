@@ -171,7 +171,7 @@ public class Registro1220EditarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement editar = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -183,9 +183,9 @@ public class Registro1220EditarPO extends TestBase {
 		sleep(2000);
 		if (tp1 == true) {
 
-			waitExpectElement(uf1);
+			waitExpectedElement(uf1);
 			sleep(2000);
-			waitExpectElement(filial1);
+			waitExpectedElement(filial1);
 			empresa.click();
 			sleep(1000);
 			opcaotp1.click();
@@ -194,7 +194,7 @@ public class Registro1220EditarPO extends TestBase {
 			String empresatexto = empresa1.getAttribute("value");
 			System.out.println("Empresa antes de atualizar:" + empresatexto);
 
-			attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+			attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 			sleep(3000);
 
 			uf.click();
@@ -204,7 +204,7 @@ public class Registro1220EditarPO extends TestBase {
 			closeSelectTypeCheckbox(uf);
 			sleep(1000);
 
-			attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+			attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 			sleep(3000);
 
 			filial.click();
@@ -216,22 +216,22 @@ public class Registro1220EditarPO extends TestBase {
 
 			gravar.click();
 			sleep(2000);
-			waitExpectElement(sim);
+			waitExpectedElement(sim);
 			sim.click();
 			sleep(2000);
-			waitExpectElement(biblioteca);
+			waitExpectedElement(biblioteca);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 
 			driver.navigate().refresh();
 
 			sleep(2000);
-			waitExpectElement(biblioteca);
+			waitExpectedElement(biblioteca);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
-			waitExpectElement(uftp12);
+			waitExpectedElement(uftp12);
 			sleep(2000);
-			waitExpectElement(filialtp1);
+			waitExpectedElement(filialtp1);
 			sleep(2000);
 
 			String empresaatualizada = empresa1.getAttribute("value");
@@ -243,7 +243,7 @@ public class Registro1220EditarPO extends TestBase {
 			sleep(2000);
 			opcao1.click();
 
-			attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+			attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 			sleep(3000);
 
 			uf.click();
@@ -253,7 +253,7 @@ public class Registro1220EditarPO extends TestBase {
 			closeSelectTypeCheckbox(uf);
 			sleep(1000);
 
-			attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+			attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 			sleep(3000);
 
 			filial.click();
@@ -265,10 +265,10 @@ public class Registro1220EditarPO extends TestBase {
 
 			gravar.click();
 			sleep(2000);
-			waitExpectElement(sim);
+			waitExpectedElement(sim);
 			sim.click();
 			sleep(2000);
-			waitExpectElement(biblioteca);
+			waitExpectedElement(biblioteca);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			System.out.println(sucesso);
@@ -298,7 +298,7 @@ public class Registro1220EditarPO extends TestBase {
 				closeSelectTypeCheckbox(uf);
 				sleep(1000);
 
-				attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+				attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 				sleep(12000);
 
 				filial.click();
@@ -310,22 +310,22 @@ public class Registro1220EditarPO extends TestBase {
 
 				gravar.click();
 				sleep(2000);
-				waitExpectElement(sim);
+				waitExpectedElement(sim);
 				sim.click();
 				sleep(2000);
-				waitExpectElement(biblioteca);
+				waitExpectedElement(biblioteca);
 				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 				sleep(2000);
 
 				driver.navigate().refresh();
 
 				sleep(2000);
-				waitExpectElement(biblioteca);
+				waitExpectedElement(biblioteca);
 				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 				sleep(2000);
-				waitExpectElement(uftc2);
+				waitExpectedElement(uftc2);
 				sleep(2000);
-				waitExpectElement(filialtc21);
+				waitExpectedElement(filialtc21);
 				sleep(2000);
 
 				String empresaatualizada = empresa1.getAttribute("value");
@@ -348,7 +348,7 @@ public class Registro1220EditarPO extends TestBase {
 				closeSelectTypeCheckbox(uf);
 				sleep(1000);
 
-				attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+				attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 				sleep(3000);
 
 				filial.click();
@@ -360,10 +360,10 @@ public class Registro1220EditarPO extends TestBase {
 
 				gravar.click();
 				sleep(2000);
-				waitExpectElement(sim);
+				waitExpectedElement(sim);
 				sim.click();
 				sleep(2000);
-				waitExpectElement(biblioteca);
+				waitExpectedElement(biblioteca);
 				invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 				sleep(2000);
 				System.out.println(sucesso);
@@ -371,9 +371,9 @@ public class Registro1220EditarPO extends TestBase {
 				return sucesso;
 			}else {
 		
-			waitExpectElement(uf1);
+			waitExpectedElement(uf1);
 			sleep(2000);
-			waitExpectElement(filial1);
+			waitExpectedElement(filial1);
 			
 			empresa.click();
 			sleep(1000);
@@ -383,7 +383,7 @@ public class Registro1220EditarPO extends TestBase {
 			String empresatexto = empresa1.getAttribute("value");
 			System.out.println("Empresa antes de atualizar:" + empresatexto);
 
-			attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+			attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 			sleep(3000);
 
 			uf.click();
@@ -393,7 +393,7 @@ public class Registro1220EditarPO extends TestBase {
 			closeSelectTypeCheckbox(uf);
 			sleep(1000);
 
-			attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+			attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 			sleep(3000);
 
 			filial.click();
@@ -405,22 +405,22 @@ public class Registro1220EditarPO extends TestBase {
 
 			gravar.click();
 			sleep(2000);
-			waitExpectElement(sim);
+			waitExpectedElement(sim);
 			sim.click();
 			sleep(2000);
-			waitExpectElement(biblioteca);
+			waitExpectedElement(biblioteca);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 
 			driver.navigate().refresh();
 
 			sleep(2000);
-			waitExpectElement(biblioteca);
+			waitExpectedElement(biblioteca);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
-			waitExpectElement(uf1);
+			waitExpectedElement(uf1);
 			sleep(2000);
-			waitExpectElement(filial2);
+			waitExpectedElement(filial2);
 			sleep(2000);
 
 			String empresaatualizada = empresa1.getAttribute("value");
@@ -432,7 +432,7 @@ public class Registro1220EditarPO extends TestBase {
 			sleep(2000);
 			opcao1.click();
 
-			attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+			attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 			sleep(3000);
 
 			uf.click();
@@ -442,7 +442,7 @@ public class Registro1220EditarPO extends TestBase {
 			closeSelectTypeCheckbox(uf);
 			sleep(1000);
 
-			attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+			attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 			sleep(3000);
 
 			filial.click();
@@ -454,10 +454,10 @@ public class Registro1220EditarPO extends TestBase {
 
 			gravar.click();
 			sleep(2000);
-			waitExpectElement(sim);
+			waitExpectedElement(sim);
 			sim.click();
 			sleep(2000);
-			waitExpectElement(biblioteca);
+			waitExpectedElement(biblioteca);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			System.out.println(sucesso);

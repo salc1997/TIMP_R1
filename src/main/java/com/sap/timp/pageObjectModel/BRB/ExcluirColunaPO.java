@@ -57,7 +57,7 @@ public class ExcluirColunaPO extends TestBase{
 	
 	public ArrayList<Boolean> DragNDrop() {
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
@@ -71,13 +71,13 @@ public class ExcluirColunaPO extends TestBase{
 		opcao.click();
 
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		
 		sleep(3000);
 		System.out.println("paso 1");	
 		Actions actions = new Actions(driver);
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		
 		actions.moveToElement(excluir).perform();		
 
@@ -87,7 +87,7 @@ public class ExcluirColunaPO extends TestBase{
 		gravar.click();
 		
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -98,7 +98,7 @@ public class ExcluirColunaPO extends TestBase{
 		driver.navigate().refresh();
 		
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		sleep(3000);
 		List<WebElement> removido = driver.findElements(By.xpath("//*[@id=\"draggable-117\"]"));
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -124,7 +124,7 @@ public class ExcluirColunaPO extends TestBase{
 		gravar.click();
 		
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -134,7 +134,7 @@ public class ExcluirColunaPO extends TestBase{
 		driver.navigate().refresh();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		sleep(2000);
 
 		System.out.println("paso3");
@@ -176,19 +176,19 @@ public class ExcluirColunaPO extends TestBase{
 		sleep(1000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		
 		driver.navigate().refresh();
 		
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		
 		List<WebElement> removido = driver.findElements(By.xpath("//*[@id=\"draggable-117\"]"));
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -204,7 +204,7 @@ public class ExcluirColunaPO extends TestBase{
 		sleep(4000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -213,7 +213,7 @@ public class ExcluirColunaPO extends TestBase{
 
 		driver.navigate().refresh();
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		sleep(1000);
 		List<WebElement> agregado = driver.findElements(By.xpath("//*[@id=\"draggable-117\"]"));
 		

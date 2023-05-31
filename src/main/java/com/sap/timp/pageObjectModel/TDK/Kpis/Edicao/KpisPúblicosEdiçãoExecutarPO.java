@@ -95,7 +95,7 @@ public class KpisPúblicosEdiçãoExecutarPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(kpis);
+		waitExpectedElement(kpis);
 		sleep(2000);
 		kpis.click();
 		
@@ -121,19 +121,19 @@ public class KpisPúblicosEdiçãoExecutarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
 		editar.click();
-		waitExpectElement(gravar);
+		waitExpectedElement(gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		
 		execucao.click();
 		sleep(2000);
-		waitExpectElement(executar);
+		waitExpectedElement(executar);
 		executar.click();
 		sleep(5000);
 		
@@ -141,7 +141,7 @@ public class KpisPúblicosEdiçãoExecutarPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		waitExpectElement(table);
+		waitExpectedElement(table);
 		
 		boolean sucesso=false;
 		WebDriverWait wait = new WebDriverWait(driver, 15000);

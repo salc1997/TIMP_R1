@@ -110,9 +110,9 @@ public class RegistroM200VisualizarPO extends TestBase{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(filial);
+		waitExpectedElement(filial);
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required disabled");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required disabled");
 		sleep(2000);
 		
 		String empresavisualizar = empresa.getAttribute("value");

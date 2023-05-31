@@ -32,7 +32,7 @@ public boolean filtro() {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(kpis);
+		waitExpectedElement(kpis);
 		sleep(2000);
 		kpis.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

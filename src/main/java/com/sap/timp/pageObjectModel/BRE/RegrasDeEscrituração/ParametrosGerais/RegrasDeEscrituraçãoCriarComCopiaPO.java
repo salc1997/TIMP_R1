@@ -143,7 +143,7 @@ public class RegrasDeEscrituraçãoCriarComCopiaPO extends TestBase {
 		sleep(1000);
 		copiar.click();
 		sleep(3000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -154,7 +154,7 @@ public class RegrasDeEscrituraçãoCriarComCopiaPO extends TestBase {
 
 		aplicar.click();
 		sleep(2000);
-		waitExpectElement(adicionarCaminho);
+		waitExpectedElement(adicionarCaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
@@ -206,7 +206,7 @@ public class RegrasDeEscrituraçãoCriarComCopiaPO extends TestBase {
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -266,7 +266,7 @@ public class RegrasDeEscrituraçãoCriarComCopiaPO extends TestBase {
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);

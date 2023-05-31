@@ -130,7 +130,7 @@ public class RelacionamentoEntreQuadrosCriaPO extends TestBase{
 		
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"tax-type-relationships\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tax-type-relationships\"]/div", "class", "base-select required");
 		sleep(2000);
 		tipodetributo.click();
 		
@@ -181,7 +181,7 @@ public class RelacionamentoEntreQuadrosCriaPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		

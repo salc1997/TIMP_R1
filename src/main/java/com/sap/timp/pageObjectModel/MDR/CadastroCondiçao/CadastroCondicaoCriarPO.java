@@ -132,7 +132,7 @@ public class CadastroCondicaoCriarPO extends TestBase{
 		System.out.println(id);
 				
 		novocadastrocondicao.click();
-		attributeToBeXpath("//*[@id=\"company\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
+		attributeToBe("//*[@id=\"company\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
 		sleep(2000);
 		empresa.click();
 		sleep(2000);
@@ -144,7 +144,7 @@ public class CadastroCondicaoCriarPO extends TestBase{
 			opcaoempresa.sendKeys(Keys.ESCAPE);
 		}
 		
-		attributeToBeXpath("//*[@id=\"uf\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
+		attributeToBe("//*[@id=\"uf\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
 		sleep(2000);
 		
 		uf.click();
@@ -153,7 +153,7 @@ public class CadastroCondicaoCriarPO extends TestBase{
 		
 		opcaouf.sendKeys(Keys.ESCAPE);
 		
-		attributeToBeXpath("//*[@id=\"branch\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
+		attributeToBe("//*[@id=\"branch\"]/div/div[1]/div[1]/div[2]", "class", "new-tag");
 		sleep(2000);
 		
 		filial.click();
@@ -171,7 +171,7 @@ public class CadastroCondicaoCriarPO extends TestBase{
 		opcaotributo.sendKeys(Keys.ESCAPE);
 		
 	
-		attributeToBeXpath("//div[@class=\"element\" and @id=\"accessSeq\"]/div", "class", "base-select required");
+		attributeToBe("//div[@class=\"element\" and @id=\"accessSeq\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		sequenciaacesso.click();
@@ -186,7 +186,7 @@ public class CadastroCondicaoCriarPO extends TestBase{
 				
 		camposestrutura.click();
 		sleep(2000);
-		waitExpectElement(atribuicao);
+		waitExpectedElement(atribuicao);
 		atribuicao.sendKeys("teste");
 		
 		gravar.click();

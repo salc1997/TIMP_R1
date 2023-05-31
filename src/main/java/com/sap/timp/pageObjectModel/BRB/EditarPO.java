@@ -43,7 +43,7 @@ public class EditarPO extends TestBase{
 	
 	public boolean editar() {
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
@@ -59,11 +59,11 @@ public class EditarPO extends TestBase{
 
 		opcao.click();
 
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 
 		
 		Actions actions = new Actions(driver);
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		sleep(2000);
 
 		Point hacia = driver.findElement(By.xpath("//*[@id=\"draggable-193\"]")).getLocation();
@@ -77,7 +77,7 @@ public class EditarPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -85,7 +85,7 @@ public class EditarPO extends TestBase{
 		sleep(2000);
 		driver.navigate().refresh();
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		sleep(2000);
 		
 		boolean movido = false;
@@ -101,7 +101,7 @@ public class EditarPO extends TestBase{
 		actions.dragAndDropBy(mover, -y, 0).perform();
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);

@@ -98,7 +98,7 @@ public class ConfiguracaodeTributoXTributoGrupoEditarPO extends TestBase {
 		sleep(6000);
 		
 		
-		attributoNotToBeEmptyElement(tributoGrupo, "value");
+		attributoNotToBeEmpty(tributoGrupo, "value");
 		String valorDescricaoGuardado = tributoGrupo.getAttribute("value");
 		System.out.println("");
 		System.out.println("Descricao valor guardado: " + valorDescricaoGuardado);

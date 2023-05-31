@@ -133,7 +133,7 @@ public class RelacionamentoEstruturasExcluirPO extends TestBase{
 		System.out.println("---------------------------Exclução do Registro-------------------------------------------");
 		
 		sleep(2000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(1000);
 		aceitar.click();
 		invisibilityOfElementOverlay();

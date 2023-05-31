@@ -94,7 +94,7 @@ public class TabelaServicosCriarPO extends TestBase{
 		novo.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		
@@ -125,11 +125,11 @@ public class TabelaServicosCriarPO extends TestBase{
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();

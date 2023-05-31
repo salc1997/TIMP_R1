@@ -1,27 +1,26 @@
 package com.sap.timp.testUtil;
 
-	import java.awt.image.BufferedImage;
-	import java.io.File;
-	import java.io.IOException;
-	import java.net.MalformedURLException;
-	import java.net.URL;
-	import java.text.SimpleDateFormat;
-	import java.util.Calendar;
-	import java.util.Date;
-	import java.util.Random;
+	import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.format.TextStyle;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.Hashtable;
+import java.util.List;
+import java.util.Locale;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
+import java.util.prefs.Preferences;
 
-	import javax.imageio.ImageIO;
+import org.openqa.selenium.WebElement;
 
 
-	import org.openqa.selenium.JavascriptExecutor;
-	import org.openqa.selenium.OutputType;
-	import org.openqa.selenium.TakesScreenshot;
-	import org.openqa.selenium.WebElement;
-
-import com.sap.timp.base.TestBase;
-
-
-	public class TestUtil extends TestBase {
+	public class TestUtil{
 
 		public static long PAGE_LOAD_TIMEOUT = 300;
 		public static long IMPLICIT_WAIT = 30;
@@ -178,6 +177,380 @@ import com.sap.timp.base.TestBase;
 		
 	*/
 		
+		public String fechaPasadoManana() {
+
+			Date fecha = new Date();
+
+			Date ayer = new Date(fecha.getTime() + TimeUnit.DAYS.toMillis(+2));
+
+			SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+
+			return df.format(ayer);
+
+		}
+		
+		// funcion para vaidar que la fecha de detalle tenga el formato de DD/MM/YY
+		public boolean validarFecha(String fecha) {
+			try {
+				SimpleDateFormat formatoFecha = new SimpleDateFormat("dd/MM/yyyy");
+				formatoFecha.setLenient(false);
+				formatoFecha.parse(fecha);
+			} catch (ParseException e) {
+				return false;
+			}
+			return true;
+		}
+		
+		public void sleep(int miliSeconds) {
+			try {
+				Thread.sleep(miliSeconds);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+
+		public Boolean igualInt(int valor, int esperado) {
+
+			boolean sucesso = false;
+			if (valor == esperado) {
+				sucesso = true;
+			} else {
+				sucesso = false;
+			}
+
+			return sucesso;
+		}
+
+		public Boolean igualDobule(double valor, double esperado) {
+
+			boolean sucesso = false;
+			if (valor == esperado) {
+				sucesso = true;
+			} else {
+				sucesso = false;
+			}
+
+			return sucesso;
+		}
+
+		public Boolean diferenteDe(double valor, double esperado) {
+
+			boolean sucesso = false;
+			if (valor != esperado) {
+				sucesso = true;
+			} else {
+				sucesso = false;
+			}
+
+			return sucesso;
+		}
+
+		public boolean isNum(String strNum) {
+			boolean ret = true;
+			try {
+
+				Double.parseDouble(strNum);
+
+			} catch (NumberFormatException e) {
+				ret = false;
+			}
+			return ret;
+		}
+
+		public Boolean mayorQue(double mayor, double menor) {
+
+			boolean sucesso = false;
+			if (mayor > menor) {
+				sucesso = true;
+			} else {
+				sucesso = false;
+			}
+
+			return sucesso;
+		}
+
+		public Boolean menorQue(double mayor, double menor) {
+
+			boolean sucesso = false;
+			if (menor < mayor) {
+				sucesso = true;
+			} else {
+				sucesso = false;
+			}
+
+			return sucesso;
+		}
+		
+		public String fechaActual() {
+
+			Date fecha = new Date();
+
+			SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+
+			return df.format(fecha);
+
+		}
+
+		public String fechaAyer() {
+
+			Date fecha = new Date();
+
+			Date ayer = new Date(fecha.getTime() + TimeUnit.DAYS.toMillis(-1));
+
+			SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+
+			return df.format(ayer);
+
+		}
+
+		public String fechaManana() {
+
+			Date fecha = new Date();
+
+			Date ayer = new Date(fecha.getTime() + TimeUnit.DAYS.toMillis(+1));
+
+			SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+
+			return df.format(ayer);
+
+		}
+
+		public Double convertToDouble(String numero) {
+
+			Double result = new Double(numero);
+
+			return result;
+
+		}
+		
+		public int convertToInt(String numero) {
+
+			int result = new Integer(numero);
+
+			return result;
+
+		}
+		
+		public String remplazarPuntos(String valor) {
+
+			valor = valor.replace(".", "");
+
+			return valor;
+
+		}
+
+		public String remplazarComas(String valor) {
+
+			valor = valor.replace(",", ".");
+
+			return valor;
+
+		}
+
+		public String formatear(String valor) {
+
+			valor = valor.replace(".", "");
+			valor = valor.replace(",", ".");
+
+			return valor;
+		}
+		
+		public Integer contarWebElementsList(List<WebElement> colunas) {
+
+			int contar = -1;
+
+			if (colunas.size() > 0) {
+
+				for (int i = 0; i < colunas.size(); i++) {
+					contar = contar + 1;
+				}
+			} else {
+				contar = 0;
+			}
+
+			return contar;
+
+		}
+
+		public void idInserir(String nome, String idRegistro) {
+			Preferences id = Preferences.userRoot();
+
+			id.put(nome, idRegistro);
+
+		}
+
+		public String idObter(String nome) {
+
+			Preferences id = Preferences.userRoot();
+
+			long idRegistro = id.getLong(nome, 1);
+
+			String idReturn = String.valueOf(idRegistro);
+
+			return idReturn;
+
+		}
+		
+		public String ordenar(String dato) {
+
+			String recorrer = dato;
+
+			String[] recorrer2 = recorrer.split("");
+
+			Arrays.sort(recorrer2);
+
+			String sorted = "";
+
+			for (int i = 0; i < recorrer2.length; i++) {
+
+				sorted += recorrer2[i];
+
+			}
+
+			return sorted;
+		}
+		
+		public String capitalize(String cadena) {
+			String[] split = cadena.split("");
+			for (int i = 0; i < split.length; i++) {
+				if (i == 0 || split[i - 1].equals(" ")) {
+					split[i] = split[i].toUpperCase();
+				}
+			}
+
+			return String.join("", split);
+		}
+
+		public String mesActual() {
+			// Obtienes el mes actual
+			Month mes = LocalDate.now().getMonth();
+
+			// Obtienes el nombre del mes
+			String nombreMes = mes.getDisplayName(TextStyle.FULL, new Locale("es", "ES"));
+			nombreMes = capitalize(nombreMes);
+
+			return nombreMes;
+		}
+
+		public String anioActual() {
+			// Obtienes el mes actual
+			int anio = LocalDate.now().getYear();
+
+			String anioString = String.valueOf(anio);
+			return anioString;
+		}
+
+		public String dataanterior() {
+
+			SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+			Calendar cal = Calendar.getInstance();
+			cal.add(Calendar.DAY_OF_MONTH, -1);
+
+			return df.format(cal.getTime());
+
+		}
+		
+		public String diaHoy() {
+			Calendar c1 = Calendar.getInstance();
+			Calendar c2 = new GregorianCalendar();
+			
+			String dia = Integer.toString(c2.get(Calendar.DATE));
+			
+
+			return dia;
+
+		}
+		
+		public String diaActual() {
+			// Obtienes el mes actual
+			int anio = LocalDate.now().getDayOfMonth();
+			
+			String anioString = String.valueOf(anio);
+			return anioString;
+		}
+		
+		public String diaDespues() {
+			DateFormat df = new SimpleDateFormat ("dd");
+			Calendar cal = Calendar.getInstance();
+			cal.add (Calendar.DATE, +1);
+			
+			return df.format(cal.getTime());
+		}
+		
+		
+		public String getCodeMonthByMonth(String mes){
+		    Hashtable<String, String> meses = new Hashtable<String, String>();
+	        meses.put("Janeiro","01");
+	        meses.put("Fevereiro","02");
+	        meses.put("Março","03");
+	        meses.put("Abril","04");
+	        meses.put("Maio","05");
+	        meses.put("Junho","06");
+	        meses.put("Julho","07");
+	        meses.put("Agosto","08");
+	        meses.put("Setembro","09");
+	        meses.put("Outubro","10");
+	        meses.put("Novembro","11");
+	        meses.put("Dezembro","12");
+	        return meses.get(mes);
+		}
+		
+		
+		// BRB
+		public String elementosDiferentes = "Os elementos nao sao iguais";
+		public String comentariosInativos = "Os coment�rios nao foram ativados";
+		public String correcaoInativa = "A correcao nao foi ativada";
+		public String semAcesso = "Nao foi possivel aceder ao aplicativo";
+		public String semCampoOutput = "O campo output nao foi adicionado";
+		public String comentarioNaoValido = "Os comentarios nao foram os ingresados";
+		public String crescenteEDecrescente = "Os resultados nao est�o em uma ordem valida";
+		public String copiaNaoCriada = "A copia nao foi criada com sucesso";
+		public String editado = "O relatorio n�o foi modificado com sucesso";
+		public String eliminar = "O elemento n�o foi deletado";
+		public String deletarColuna = "A coluna n�o foi deletada";
+		public String exportacao = "A exporta��o n�o foi realizada com sucesso";
+		public String filtros = "Os resultados do filtro n�o s�o iguais";
+		public String aplicacaoFiltros = "Os filtros n�o foram aplicados com sucesso";
+		public String formatacao = "A formata��o n�o foi aplicada";
+		public String excluirVariante = "A variante n�o foi excluida";
+		public String salvarVariante = "A variante n�o foi salvada com sucesso";
+		public String formula = "Os valores n�o s�o iguais";
+		public String gruposAvan = "Os resultados n�o s�o iguais";
+		public String gruposAvanDif = "Os resultados n�o s�o diferentes";
+		public String gruposAvanDel = "Os grupos n�o foram deletados";
+		public String ListaSuspensa = "Os coment�rios n�o foram inseridos";
+		public String novoRelatorio = "O novo relat�rio n�o foi criado";
+		public String colunas = "As colunas n�o foram inseridas";
+		public String paginaSeguiente = "N�o se conseguiu avan�ar para a p�gina seguiente";
+		public String paginaAnterior = "N�o se conseguiu avan�ar para a p�gina anterior";
+		public String paginaFinal = "N�o se conseguiu avan�ar para a �ltima p�gina";
+		public String paginaInicial = "N�o se conseguiu avan�ar para a p�gina inicial";
+		public String paginaInserida = "N�o foi possiv�l ava�ar para a p�gina inserida";
+		public String visualizar = "O modo visualiza��o n�o est� ativado";
+		public String compartilharE = "N�o foi possiv�l compartilhar o relat�rio desde o editor";
+		public String descompartilharE = "N�o foi possiv�l descompartilhar o relat�rio desde o editor";
+		public String compartilharB = "N�o foi possiv�l compartilhar o relat�rio desde a biblioteca";
+		public String descompartilharB = "N�o foi possiv�l compartilhar o relat�rio desde a biblioteca";
+		public String renomear = "A coluna n�o foi renomeada com sucesso";
+		public String reordenar = "A coluna n�o foi reordenada com sucesso";
+
+		// MDR
+		public String Editar = "O valor do campo n�o foi editado";
+		public String EmpresaVisualizar = "N�o foi possiv�l visalizar o registro";
+		public String Filtros = "Os resultados n�o s�o acorde aos filtros";
+		public String Criar = "O registro n�o foi criado com sucesso";
+		public String Eliminado = "O registro n�o foi eliminado com sucesso";
+		public String Detalhes = "As informa��es n�o s�o as esperadas";
+
+		public String Atualizar = "N�o foi possivel atualizar os registros";
+		public String Favoritos = "N�o foi possivel mandar o registro para favoritos";
+		public String Ingresar = "Error ao tentar ingresar";
+
+		// BCB
+		public String subniveis = "Os Subniveis n�o foram adicinados com sucesso";
+		public String Acessar = "Erro ao tentar acessar ao componente";
+
+		public String Restaurar = "O registro n�o foi restaurado com sucesso";
 
 
 }

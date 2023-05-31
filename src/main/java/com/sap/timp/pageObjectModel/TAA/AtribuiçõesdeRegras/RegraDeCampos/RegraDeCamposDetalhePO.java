@@ -91,8 +91,8 @@ public class RegraDeCamposDetalhePO extends TestBase{
 		String URL = driver.getCurrentUrl();
 		
 		// Datoss de Ver
-		waitExpectXpath("//div[@id=\"rule-type\"]/div/div/div/input");
-		attributoNotToBeEmptyXpath("//div[@id=\"rule-type\"]/div/div/div/input", "value");
+		waitExpectedElement("//div[@id=\"rule-type\"]/div/div/div/input");
+		attributoNotToBeEmpty("//div[@id=\"rule-type\"]/div/div/div/input", "value");
 		String empresaString1 = driver.findElement(By.xpath("//div[@id=\"rule-company\"]//div[1]")).getText().trim();
 		String ufString1 = driver.findElement(By.xpath("//div[@id=\"rule-state\"]//div[1]")).getText().trim();
 		String filialString = driver.findElement(By.xpath("//div[@id=\"rule-branch\"]//div[1]")).getText().trim();

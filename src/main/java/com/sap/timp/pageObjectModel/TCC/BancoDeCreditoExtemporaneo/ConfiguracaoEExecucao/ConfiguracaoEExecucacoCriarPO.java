@@ -116,14 +116,14 @@ public class ConfiguracaoEExecucacoCriarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(cboEmpresa);
+		waitExpectedElement(cboEmpresa);
 		cboEmpresa.click();
 		sleep(1000);
 		opcionCheckbox.click();
 		closeSelectTypeCheckbox(cboEmpresa);
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		cboUf.click();
 		sleep(1000);
@@ -144,7 +144,7 @@ public class ConfiguracaoEExecucacoCriarPO extends TestBase{
 		opcionTributo.click();
 		sleep(5000);
 		
-		attributeToBeXpath("//div[@id=\"taxType\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"taxType\"]/div", "class", "base-select required");
 		sleep(2000);
 		cboTipoImposto.click();
 		sleep(1000);
@@ -167,7 +167,7 @@ public class ConfiguracaoEExecucacoCriarPO extends TestBase{
 		btnDestacado1.click();
 		invisibilityOfElementOverlay();
 		
-		waitExpectElement(marcarFlagDestacado1);
+		waitExpectedElement(marcarFlagDestacado1);
 		marcarFlagDestacado1.click();
 		sleep(1000);
 		btnSeleccionar.click();
@@ -176,7 +176,7 @@ public class ConfiguracaoEExecucacoCriarPO extends TestBase{
 		btnDestacado2.click();
 		invisibilityOfElementOverlay();
 		
-		waitExpectElement(marcarFlagDestacado2);
+		waitExpectedElement(marcarFlagDestacado2);
 		marcarFlagDestacado2.click();
 		sleep(1000);
 		btnSeleccionar.click();
@@ -189,7 +189,7 @@ public class ConfiguracaoEExecucacoCriarPO extends TestBase{
 		
 		btnGravar.click();
 		sleep(2000);
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		btnSim.click();
 		invisibilityOfElementOverlay();
 		sleep(2000);
@@ -198,7 +198,7 @@ public class ConfiguracaoEExecucacoCriarPO extends TestBase{
 		
 		btnBiblioteca.click();
 		invisibilityOfElementOverlay();
-		waitExpectElement(btnUltimaPagina);
+		waitExpectedElement(btnUltimaPagina);
 		sleep(2000);
 		
 		btnUltimaPagina.click();

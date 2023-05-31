@@ -78,7 +78,7 @@ public class S1070ProcessosAdmJudiciaisEditarPO extends TestBase{
 		sleep(2000);
 		
 		// Obtengo el valor actualizado ya recargada la página
-		waitExpectElement(numeroDoProceso);
+		waitExpectedElement(numeroDoProceso);
 		String numeroDoProcessoStringEditado = numeroDoProceso.getAttribute("value");
 		System.out.println("Numero do Processo valor editado guardado: " + numeroDoProcessoStringEditado);
 		sleep(2000);

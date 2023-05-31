@@ -384,7 +384,7 @@ public class LeiautesExecuçãoFuncionalidades3PO extends TestBase{
 		if (tq1 == true) {
 
 
-			actionsMoveToElementXpath("//li[@id=\"option-8\"]");
+			actionsMoveToElement("//li[@id=\"option-8\"]");
 			
 			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-8\"]"));
 
@@ -395,7 +395,7 @@ public class LeiautesExecuçãoFuncionalidades3PO extends TestBase{
 
 		}else if (tp1==true) {
 
-			actionsMoveToElementXpath("//li[@id=\"option-2\"]");
+			actionsMoveToElement("//li[@id=\"option-2\"]");
 			
 			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-2\"]"));
 
@@ -405,7 +405,7 @@ public class LeiautesExecuçãoFuncionalidades3PO extends TestBase{
 			sleep(2000);
 		}else {
 			
-			actionsMoveToElementXpath("//li[@id=\"option-12\"]");
+			actionsMoveToElement("//li[@id=\"option-12\"]");
 			
 			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@id=\"option-12\"]"));
 
@@ -455,7 +455,7 @@ public class LeiautesExecuçãoFuncionalidades3PO extends TestBase{
 		salvar.click();
 		sleep(2000);
 	
-		waitExpectElement(flecha);
+		waitExpectedElement(flecha);
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

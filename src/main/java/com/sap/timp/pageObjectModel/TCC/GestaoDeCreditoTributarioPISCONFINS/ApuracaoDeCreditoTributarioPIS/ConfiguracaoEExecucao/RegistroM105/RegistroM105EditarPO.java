@@ -65,7 +65,7 @@ public class RegistroM105EditarPO extends TestBase{
 		sleep(1000);
 		editar.click();
 		sleep(3000);
-		waitExpectElement(CódigoSituaçãoTributáriaReferenteAOPIS);
+		waitExpectedElement(CódigoSituaçãoTributáriaReferenteAOPIS);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(20000);
 		
@@ -92,7 +92,7 @@ public class RegistroM105EditarPO extends TestBase{
 		
 		driver.navigate().refresh();
 		sleep(8000);
-		waitExpectElement(CódigoSituaçãoTributáriaReferenteAOPIS);
+		waitExpectedElement(CódigoSituaçãoTributáriaReferenteAOPIS);
 		sleep(20000);
 		
 		String nuevoTexto = CódigoSituaçãoTributáriaReferenteAOPIS.getAttribute("value");

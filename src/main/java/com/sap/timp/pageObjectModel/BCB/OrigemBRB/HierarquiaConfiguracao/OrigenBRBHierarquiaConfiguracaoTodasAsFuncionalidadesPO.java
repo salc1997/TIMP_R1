@@ -584,7 +584,7 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		nova.click();
 		sleep(3000);
-		waitExpectElement(nomeDeHierarquia);
+		waitExpectedElement(nomeDeHierarquia);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		
@@ -595,7 +595,7 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		nomeDaAba.sendKeys("Teste Automatizado");
 		sleep(1000);
 		
-		actionsMoveToElementElement(nomeDoCampoDeLinha);
+		actionsMoveToElement(nomeDoCampoDeLinha);
 		sleep(1000);
 		nomeDaHierarquia.sendKeys("Teste Automatizado");
 		sleep(1000);
@@ -738,7 +738,7 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		editar.click();
 		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(calculator);
+		waitExpectedElement(calculator);
 		sleep(2000);
 		
 		
@@ -787,7 +787,7 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		tributoO.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 
-		attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"company\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(1000);
 
 		empresa.click();
@@ -796,7 +796,7 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		empresaO.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(1000);
 
 		uf.click();
@@ -811,7 +811,7 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			sleep(1000);
 		}
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(1000);
 
 		filial.click();
@@ -899,19 +899,19 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		editar.click();
 		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(calculator);
+		waitExpectedElement(calculator);
 		sleep(2000);
 		
 		calculator.click();
 		sleep(1000);
-		waitExpectElement(resultadoFinal);
+		waitExpectedElement(resultadoFinal);
 		sleep(2000);
 		resultadoFinal.click();
 		sleep(1000);
 
 		adicionarConfiguracao.click();
 		sleep(1000);
-		waitExpectElement(condicao);
+		waitExpectedElement(condicao);
 		sleep(2000);
 		condicao.click();
 		sleep(1000);
@@ -1887,7 +1887,7 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(1000);
 		executar.click();
 		sleep(3000);
-		waitExpectElement(executarM);
+		waitExpectedElement(executarM);
 		sleep(10000);
 		executarM.click();
 		sleep(1000);
@@ -2238,14 +2238,14 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		lixeiraC.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(simLexeira);
+		waitExpectedElement(simLexeira);
 		sleep(2000);
 		
 		simLexeira.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 	//	waitExpectXpath("//span[contains(text(),\"A Confiia foi enviada para a Lixeira\")]");
 		sleep(2000);
 		
@@ -2286,7 +2286,7 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		simExcluir.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 		
 		return sucesso;
@@ -2338,12 +2338,12 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		lixeiraH.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(simLexeira);
+		waitExpectedElement(simLexeira);
 		sleep(2000);
 		
 		simLexeira.click();
 		sleep(3000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//waitExpectXpath("//span[contains(text(),\"A Configuração de Hierarquia foi enviada para a Lixeira\")]");
@@ -2385,7 +2385,7 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(2000);
 		int exclucao = driver.findElements(By.xpath("//span[contains(text(),\"A configuração hierarquia foi excluída com sucesso\")]")).size();
 		System.out.println(exclucao);

@@ -159,7 +159,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBase{
 		System.out.println("prueba 2");
 		novaregra.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		
 		nome.click();
@@ -211,7 +211,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBase{
 		
 		
 		
-		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
+		actionsMoveToElement("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
 		estruturadedados.click();
 		sleep(1000);
 		opcaoestruturadedados.click();
@@ -237,11 +237,11 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBase{
 		
 
 		sleep(2000);
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		biblioteca.click();
 	
 		sleep(2000);
-		waitExpectElement(regrasdeauditorian1);
+		waitExpectedElement(regrasdeauditorian1);
 		sleep(4000);
 		regrasdeauditorian1.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -251,7 +251,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBase{
 		//-----------SEGUNDO----------------
 		novaregra.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		
 		nome.click();
@@ -294,7 +294,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBase{
 		
 		
 		
-		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
+		actionsMoveToElement("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
 		estruturadedados.click();
 		sleep(1000);
 		opcaoestruturadedados.click();
@@ -320,11 +320,11 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBase{
 		
 
 		sleep(2000);
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		biblioteca.click();
 
 		sleep(2000);
-		waitExpectElement(regrasdeauditorian1);
+		waitExpectedElement(regrasdeauditorian1);
 		sleep(4000);
 		regrasdeauditorian1.click();
 		
@@ -353,7 +353,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBase{
 		excluirmassa.click();
 		
 		sleep(2000);
-		waitExpectElement(Não);
+		waitExpectedElement(Não);
 		sleep(2000);
 		
 		Não.click();
@@ -363,7 +363,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBase{
 		excluirmassaa.click();
 		
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		
 		sim.click();
@@ -400,7 +400,7 @@ public class RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO extends TestBase{
 		
 		
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		
 		sim.click();

@@ -677,7 +677,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);
 		
-		waitExpectElement(adicionarBloco);
+		waitExpectedElement(adicionarBloco);
 		sleep(80000);
 		
 		
@@ -887,7 +887,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBase{
 		 sleep(3000);
 		  
 		
-		actionsMoveToElementXpath("//div[@id=\"block-list-wrapper\"]/div[2]/div[3]/div/div[2]");
+		actionsMoveToElement("//div[@id=\"block-list-wrapper\"]/div[2]/div[3]/div/div[2]");
 		sleep(2000);
 		  //AGRUPAMIENTO
 		  
@@ -998,7 +998,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBase{
 		inputregistro3.sendKeys("ordenar");
 		sleep(3000);
 		
-		actionsMoveToElementXpath("//div[@id=\"block-list-wrapper\"]/div[3]/div[3]/div/div[2]");
+		actionsMoveToElement("//div[@id=\"block-list-wrapper\"]/div[3]/div[3]/div/div[2]");
 		sleep(2000);
 		
 		if(tp1 == true || tc2 == true) {
@@ -1093,7 +1093,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBase{
 		
 		//Ordenar Por
 		
-		actionsMoveToElementXpath("//div[@id=\"block-list-wrapper\"]/div[4]/div[3]/div/div[2]");
+		actionsMoveToElement("//div[@id=\"block-list-wrapper\"]/div[4]/div[3]/div/div[2]");
 		sleep(2000);
 		if(tp1 == true || tc2 ==  true) {
 			  invisibilityOfElement("//div[@class=\"overlay loader dark\"]"); 
@@ -1428,7 +1428,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBase{
 		BRegistro7.sendKeys("Registro 2");
 		sleep(2000);
 
-		actionsMoveToElementXpath("//span[text()=\"Gravar\"]");
+		actionsMoveToElement("//span[text()=\"Gravar\"]");
 		sleep(2000);
 		
 		System.out.println("Se movio");

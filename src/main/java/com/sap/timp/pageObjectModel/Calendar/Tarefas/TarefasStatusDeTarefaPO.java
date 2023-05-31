@@ -286,7 +286,7 @@ public class TarefasStatusDeTarefaPO extends TestBase{
 			sleep(2000);
 
 			//OPERACAO
-			dobleClickElement(NovoOperacao);
+			dobleClick(NovoOperacao);
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
@@ -304,7 +304,7 @@ public class TarefasStatusDeTarefaPO extends TestBase{
 			sleep(2000);
 
 			//ACTIVIDAD
-			dobleClickElement(NovoActividad);
+			dobleClick(NovoActividad);
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
@@ -422,7 +422,7 @@ public class TarefasStatusDeTarefaPO extends TestBase{
 			proximo.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			waitExpectElement(diasSelect);
+			waitExpectedElement(diasSelect);
 			sleep(3000);
 
 
@@ -486,7 +486,7 @@ public class TarefasStatusDeTarefaPO extends TestBase{
 			aplicar.click();
 			sleep(4000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			waitExpectElement(usuarioProceso);
+			waitExpectedElement(usuarioProceso);
 			sleep(4000);
 
 			pesquisar2.sendKeys("TESTEAUTOMATIZADO");
@@ -516,7 +516,7 @@ public class TarefasStatusDeTarefaPO extends TestBase{
 			sleep(2000);
 
 			//***************************
-			dobleClickElement(NovoOperacao);
+			dobleClick(NovoOperacao);
 			sleep(4000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(4000);
@@ -532,7 +532,7 @@ public class TarefasStatusDeTarefaPO extends TestBase{
 			sleep(2000);
 
 			//*********************
-			dobleClickElement(NovoActividad);
+			dobleClick(NovoActividad);
 			sleep(4000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(5000);
@@ -550,7 +550,7 @@ public class TarefasStatusDeTarefaPO extends TestBase{
 			ativar.click();
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			waitExpectElement(ativadorProcesos);
+			waitExpectedElement(ativadorProcesos);
 			sleep(6000);
 
 			ativadorProcesos.click();
@@ -755,7 +755,7 @@ public class TarefasStatusDeTarefaPO extends TestBase{
 		
 			abrirCalendario.click();
 			sleep(3000);
-			waitExpectXpath("//div[@class=\"day\"][1]");
+			waitExpectedElement("//div[@class=\"day\"][1]");
 			sleep(2000);
 		
 			String diaTarefa = diaActual();
@@ -778,7 +778,7 @@ public class TarefasStatusDeTarefaPO extends TestBase{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			actionsMoveToElementElement(pesquisarBPMA);
+			actionsMoveToElement(pesquisarBPMA);
 			sleep(4000);
 			
 			pesquisarBPMA.sendKeys("Status da Tarefa Massiel4");
@@ -811,7 +811,7 @@ public class TarefasStatusDeTarefaPO extends TestBase{
 			
 			WebElement aprovar1 = driver.findElement(By.xpath("//div[@data-id][1]/div[2]/div/div[2]/ul/li/span[text()=\"Aprovação Analista\"]"));
 			
-			actionsMoveToElementElement(menu1);
+			actionsMoveToElement(menu1);
 			sleep(4000);
 
 			menu1.click(); 
@@ -829,7 +829,7 @@ public class TarefasStatusDeTarefaPO extends TestBase{
 			sim.click();
 			sleep(4000);
 			
-			waitExpectElement(abrirCalendario);
+			waitExpectedElement(abrirCalendario);
 			sleep(4000);
 			
 			sleep(4000);
@@ -839,7 +839,7 @@ public class TarefasStatusDeTarefaPO extends TestBase{
 			fecharPanel.click();
 			sleep(2000);
 			
-			actionsMoveToElementElement(pesquisarBPMA);
+			actionsMoveToElement(pesquisarBPMA);
 			sleep(4000);
 			
 			pesquisarBPMA.sendKeys("Status da Tarefa Massiel4");
@@ -892,7 +892,7 @@ public class TarefasStatusDeTarefaPO extends TestBase{
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 			WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 			
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(4000);
 
 			menu.click();
@@ -968,7 +968,7 @@ public class TarefasStatusDeTarefaPO extends TestBase{
 			
 			
 					
-			actionsMoveToElementElement(menu2);
+			actionsMoveToElement(menu2);
 			sleep(4000);
 
 			menu2.click();
@@ -983,7 +983,7 @@ public class TarefasStatusDeTarefaPO extends TestBase{
 			WebElement excluir3 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro2+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 			
 		
-			actionsMoveToElementElement(menu3);
+			actionsMoveToElement(menu3);
 			sleep(4000);
 
 			menu3.click();
@@ -997,7 +997,7 @@ public class TarefasStatusDeTarefaPO extends TestBase{
 			sim.click();
 			sleep(4000);
 			
-			waitExpectElement(pesquisarBPMA);
+			waitExpectedElement(pesquisarBPMA);
 			sleep(4000);
 			
 			lixeriaProceso.click();

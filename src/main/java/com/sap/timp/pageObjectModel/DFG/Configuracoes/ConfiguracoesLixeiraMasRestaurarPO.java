@@ -49,7 +49,7 @@ public class ConfiguracoesLixeiraMasRestaurarPO extends TestBase{
 		sleep(2000);
 		
 		sleep(2000);
-		waitExpectElement(raiz);
+		waitExpectedElement(raiz);
 		raiz.click();
 		
 		sleep(2000);
@@ -62,7 +62,7 @@ public class ConfiguracoesLixeiraMasRestaurarPO extends TestBase{
 		
 	/*	btnFiltrosAvanzados.click();
 		sleep(2000);*/
-		waitExpectElement(btnFiltrosAvanzados);
+		waitExpectedElement(btnFiltrosAvanzados);
 		//inputId.click();
 		sleep(1000);
 		pesquisar.sendKeys(idRegistro);
@@ -96,7 +96,7 @@ public class ConfiguracoesLixeiraMasRestaurarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 	
-		waitExpectElement(pesquisar);
+		waitExpectedElement(pesquisar);
 		pesquisar.clear();
 	//	inputId.click();
 		sleep(1000);

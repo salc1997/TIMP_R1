@@ -131,7 +131,7 @@ public class RelatorioRefinariaGeradosGerarAjustesPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]/div[@class=\"base-loader-container\"]/div/div");
 		sleep(3000);
 		
-		waitExpectElement(btnFechar);
+		waitExpectedElement(btnFechar);
 		btnFechar.click();
 		sleep(1000);
 		btnFechar2.click();
@@ -283,8 +283,8 @@ public class RelatorioRefinariaGeradosGerarAjustesPO extends TestBase{
 		
 		String valorCampoSaidaString = driver.findElement(By.xpath("//div[@id=\"outputSelect\"]/div/div/div/input")).getAttribute("value").replace(".", "");
 		
-		waitExpectElement(inputValorLimitador);
-		attributoNotToBeEmptyElement(inputValorLimitador, "value");
+		waitExpectedElement(inputValorLimitador);
+		attributoNotToBeEmpty(inputValorLimitador, "value");
 		String valorCampoLimitadorString = inputValorLimitador.getAttribute("value");
 		
 		System.out.println("");
@@ -315,7 +315,7 @@ public class RelatorioRefinariaGeradosGerarAjustesPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(btnFiltrosAvancadodsAnexoVI);
+		waitExpectedElement(btnFiltrosAvancadodsAnexoVI);
 		btnFiltrosAvancadodsAnexoVI.click();
 		sleep(2000);
 		

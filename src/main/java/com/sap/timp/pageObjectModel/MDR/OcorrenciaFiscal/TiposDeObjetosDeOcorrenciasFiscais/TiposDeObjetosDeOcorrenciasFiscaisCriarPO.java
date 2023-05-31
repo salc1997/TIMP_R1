@@ -148,7 +148,7 @@ public class TiposDeObjetosDeOcorrenciasFiscaisCriarPO extends TestBase{
 		
 		sleep(30000);
 		
-		actionsMoveToElementElement(codigocredito);
+		actionsMoveToElement(codigocredito);
 		sleep(13000);
 		
 		codigocredito.click();

@@ -128,7 +128,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO extends TestBase{
 		
 		novo.click();
 		sleep(3000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -141,7 +141,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO extends TestBase{
 		String tipoT = opcao.getText();
 		System.out.println(tipoT);
 		sleep(1000);
-		actionsMoveToElementElement(versaoLeiaute);
+		actionsMoveToElement(versaoLeiaute);
 		sleep(1000);
 		grupoEstrutura.click();
 		sleep(1000);
@@ -167,17 +167,17 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO extends TestBase{
 		salvar.click();
 		
 		sleep(3000);
-		waitExpectElement(gravar);
+		waitExpectedElement(gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		gravar.click();
 		sleep(3000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		nao.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(3000);
@@ -244,7 +244,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO extends TestBase{
 		sleep(2000);
 		
 
-		waitExpectElement(filtrosAvanzados);
+		waitExpectedElement(filtrosAvanzados);
 		sleep(2000);
 		
 		pesquisar.sendKeys(idLeiauteT);

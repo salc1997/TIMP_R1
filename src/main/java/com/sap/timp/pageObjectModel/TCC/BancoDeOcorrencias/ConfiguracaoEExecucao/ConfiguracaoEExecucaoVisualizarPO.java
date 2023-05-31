@@ -98,7 +98,7 @@ public class ConfiguracaoEExecucaoVisualizarPO extends TestBase {
 		String idRegistro = idObter("idBOConfiguracaoEExecucaco");
 		
 		siguiente.click();
-		waitExpectXpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div");
+		waitExpectedElement("//div[@data-id=\""+idRegistro+"\"]/div[1]/div");
 		invisibilityOfElementOverlay();
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

@@ -87,14 +87,14 @@ public class RegrasDeEscrituraçãoEdiçãoRelacionamentoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(btnRelacionamento);
+		waitExpectedElement(btnRelacionamento);
 		btnRelacionamento.click();
 		invisibilityOfElementOverlay();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(cboCampoEstrutura1);
+		waitExpectedElement(cboCampoEstrutura1);
 		cboCampoEstrutura1.click();
 		sleep(1000);
 		opcionCampoEstrutura1.click();
@@ -108,7 +108,7 @@ public class RegrasDeEscrituraçãoEdiçãoRelacionamentoPO extends TestBase{
 		btnAdicionarCampos.click();
 		sleep(2000);
 		
-		waitExpectElement(cboCampoEstrutura3);
+		waitExpectedElement(cboCampoEstrutura3);
 		cboCampoEstrutura3.click();
 		sleep(1000);
 		opcionCampoEstrutura3.click();
@@ -123,7 +123,7 @@ public class RegrasDeEscrituraçãoEdiçãoRelacionamentoPO extends TestBase{
 		sleep(2000);
 		btnGravar.click();
 		invisibilityOfElementOverlay();
-		waitExpectElement(btnNao);
+		waitExpectedElement(btnNao);
 		btnNao.click();
 		sleep(2000);
 		invisibilityOfElementOverlay();
@@ -158,7 +158,7 @@ public class RegrasDeEscrituraçãoEdiçãoRelacionamentoPO extends TestBase{
 		sleep(2000);
 		btnGravar.click();
 		invisibilityOfElementOverlay();
-		waitExpectElement(btnNao);
+		waitExpectedElement(btnNao);
 		btnNao.click();
 		sleep(2000);
 		invisibilityOfElementOverlay();
@@ -196,7 +196,7 @@ public class RegrasDeEscrituraçãoEdiçãoRelacionamentoPO extends TestBase{
 		sleep(2000);
 		btnGravar.click();
 		invisibilityOfElementOverlay();
-		waitExpectElement(btnNao);
+		waitExpectedElement(btnNao);
 		btnNao.click();
 		sleep(2000);
 		invisibilityOfElementOverlay();
@@ -210,7 +210,7 @@ public class RegrasDeEscrituraçãoEdiçãoRelacionamentoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(cboCampoEstrutura2);
+		waitExpectedElement(cboCampoEstrutura2);
 		String valorOpcionCampoEstrutura2 = driver.findElement(By.xpath("//div[contains(@class, \"field2\")]/div/div/input")).getAttribute("value").trim();
 		System.out.println("");
 		System.out.println("Valor campo de estrutura 2 editado: " + valorOpcionCampoEstrutura2);
@@ -233,7 +233,7 @@ public class RegrasDeEscrituraçãoEdiçãoRelacionamentoPO extends TestBase{
 		sleep(2000);
 		btnGravar.click();
 		invisibilityOfElementOverlay();
-		waitExpectElement(btnNao);
+		waitExpectedElement(btnNao);
 		btnNao.click();
 		sleep(2000);
 		invisibilityOfElementOverlay();
@@ -247,7 +247,7 @@ public class RegrasDeEscrituraçãoEdiçãoRelacionamentoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(cboCampoEstrutura1);
+		waitExpectedElement(cboCampoEstrutura1);
 		String valorOpcionCampoEstrutura1 = driver.findElement(By.xpath("//div[contains(@class, \"field1\")]/div/div/input")).getAttribute("value").trim();
 		System.out.println("");
 		System.out.println("Valor campo de estrutura 1 despues de removerlo: " + valorOpcionCampoEstrutura1);

@@ -92,12 +92,12 @@ public class RegraDeMensagensCriaComCopiaPO extends TestBase {
 		
 		nome.clear();
 		nome.sendKeys("Testeautomatizado - Copia");
-		waitExpectElement(aplicar);
+		waitExpectedElement(aplicar);
 		sleep(3000);
 		aplicar.click();
 		
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"overlay loader transp\"]");
+		waitExpectedElement("//div[@class=\"overlay loader transp\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader transp\"]");
 		sleep(2000);	
 		if(tp1 == true || tq1 == true || tq2 == true) {
@@ -110,7 +110,7 @@ public class RegraDeMensagensCriaComCopiaPO extends TestBase {
 	
 	
 		
-		waitExpectElement(mensagembloqueio);
+		waitExpectedElement(mensagembloqueio);
 		sleep(2000);
 		regrasdemensagens.click();
 		
@@ -153,11 +153,11 @@ public class RegraDeMensagensCriaComCopiaPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(lixeira);
+		waitExpectedElement(lixeira);
 		sleep(2000);
 		
 		
@@ -194,13 +194,13 @@ public class RegraDeMensagensCriaComCopiaPO extends TestBase {
 		sleep(1000);
 		açao.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(mensagembloqueio);
+		waitExpectedElement(mensagembloqueio);
 		sleep(2000);
 		
 		lixeira.click();
@@ -284,7 +284,7 @@ public class RegraDeMensagensCriaComCopiaPO extends TestBase {
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			waitExpectElement(sim);
+			waitExpectedElement(sim);
 			sim.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -323,7 +323,7 @@ public class RegraDeMensagensCriaComCopiaPO extends TestBase {
 			sleep(1000);
 			açao.click();
 			sleep(2000);
-			waitExpectElement(sim);
+			waitExpectedElement(sim);
 			sleep(2000);
 			sim.click();
 			sleep(2000);

@@ -86,7 +86,7 @@ public class ParâmetrosParaEnvioDeMensagensExcluirMassaPO extends TestBase{
 		salvarENovo.click();
 		sleep(2000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -96,7 +96,7 @@ public class ParâmetrosParaEnvioDeMensagensExcluirMassaPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(btnBiblioteca);
+		waitExpectedElement(btnBiblioteca);
 		btnBiblioteca.click();
 		sleep(2000);
 		
@@ -117,7 +117,7 @@ public class ParâmetrosParaEnvioDeMensagensExcluirMassaPO extends TestBase{
 		salvarENovo.click();
 		sleep(2000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -129,7 +129,7 @@ public class ParâmetrosParaEnvioDeMensagensExcluirMassaPO extends TestBase{
 		
 		biblioteca.click();
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		
@@ -210,14 +210,14 @@ public class ParâmetrosParaEnvioDeMensagensExcluirMassaPO extends TestBase{
 		
 		btnExcluirMassa.click();
 		sleep(2000);
-		waitExpectElement(btnAceitar);
+		waitExpectedElement(btnAceitar);
 		btnAceitar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

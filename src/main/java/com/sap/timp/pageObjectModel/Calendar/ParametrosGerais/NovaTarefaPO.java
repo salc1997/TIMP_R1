@@ -67,7 +67,7 @@ public class NovaTarefaPO extends TestBase{
 		
 		novaTarefa.click();
 		sleep(3000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -89,7 +89,7 @@ public class NovaTarefaPO extends TestBase{
 		
 		refresh();
 		
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		
 		invisibilityOfElementOverlay();
 		siguiente.click();
@@ -144,13 +144,13 @@ public class NovaTarefaPO extends TestBase{
 		sleep(1000);
 		excluirB.click();
 		sleep(1000);
-		waitExpectElement(excluir);
+		waitExpectedElement(excluir);
 		sleep(2000);
 		excluir.click();
 		invisibilityOfElementOverlay();
 		refresh();
 		
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		invisibilityOfElementOverlay();
 		
 		siguiente.click();

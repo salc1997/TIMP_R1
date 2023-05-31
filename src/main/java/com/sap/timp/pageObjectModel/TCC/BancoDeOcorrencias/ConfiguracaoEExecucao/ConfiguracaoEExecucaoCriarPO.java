@@ -156,7 +156,7 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBase {
 		
 		novo.click();
 		
-		waitExpectElement(tributo);
+		waitExpectedElement(tributo);
 		invisibilityOfElementOverlay();
 		
 		tributo.click();
@@ -164,7 +164,7 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBase {
 		tributoO.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"company\"]/div", "class", "input-element-wrapper");
+		attributeToBe("//div[@id=\"company\"]/div", "class", "input-element-wrapper");
 		sleep(1000);
 		
 		empresa.click();
@@ -174,7 +174,7 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBase {
 		closeSelectTypeCheckbox(empresa);
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "input-element-wrapper");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "input-element-wrapper");
 		sleep(1000);
 		
 		uf.click();
@@ -191,7 +191,7 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBase {
 			sleep(1000);
 		}
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "input-element-wrapper");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "input-element-wrapper");
 		sleep(1000);
 		
 		filial.click();
@@ -217,7 +217,7 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBase {
 			tipoOcorreciaOTQ1.click();
 		}
 		
-		attributeToBeXpath("//div[@id=\"object-type\"]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
+		attributeToBe("//div[@id=\"object-type\"]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
 		sleep(3000);
 		
 		tipoObjeto.click();
@@ -238,7 +238,7 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBase {
 	
 		}
 		
-		attributeToBeXpath("//div[@id=\"objectTypeFiscalOccurrenceRegister\"]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
+		attributeToBe("//div[@id=\"objectTypeFiscalOccurrenceRegister\"]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
 		sleep(32000);
 		
 		 idTipoObjeto.click();
@@ -307,7 +307,7 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBase {
 		sleep(2000);
 		gravar.click();
 		sleep(3000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(6000);
 		
@@ -320,7 +320,7 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBase {
 		sleep(8000);
 
 		sleep(3000);
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		sleep(3000);
 		biblioteca.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

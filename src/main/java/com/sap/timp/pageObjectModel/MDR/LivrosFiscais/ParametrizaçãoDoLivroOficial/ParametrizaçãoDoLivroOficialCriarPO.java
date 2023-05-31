@@ -177,12 +177,12 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(menuAjustesCerrar);
+		waitExpectedElement(menuAjustesCerrar);
 		sleep(2000);
 		menuAjustesCerrar.click();
 		sleep(2000);
 		
-		waitExpectElement(menuLivrosFiscais);
+		waitExpectedElement(menuLivrosFiscais);
 		menuLivrosFiscais.click();
 		sleep(1000);
 		
@@ -220,7 +220,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"state\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"state\"]/div/div/div/div[2]/input", "class", "");
 		uf.click();
 		sleep(2000);
 		opcionCheckboxDiferenteTodos.click();
@@ -228,7 +228,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"state\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"state\"]/div/div/div/div[2]/input", "class", "");
 		filial.click();
 		sleep(2000);
 		opcionCheckboxDiferenteTodos.click();
@@ -241,7 +241,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		opcionCombo.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"fiscalNoteStructure1\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"fiscalNoteStructure1\"]/div/div/div/div[2]/input", "class", "");
 		docNum.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -249,7 +249,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"fiscalNoteStructure2\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"fiscalNoteStructure2\"]/div/div/div/div[2]/input", "class", "");
 		itemDocNum.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -257,7 +257,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"fiscalNoteStructure3\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"fiscalNoteStructure3\"]/div/div/div/div[2]/input", "class", "");
 		indicadorTipoDeOperacao.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -265,7 +265,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"fiscalNoteStructure4\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"fiscalNoteStructure4\"]/div/div/div/div[2]/input", "class", "");
 		statusDoDocumento.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -273,7 +273,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"fiscalNoteStructure5\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"fiscalNoteStructure5\"]/div/div/div/div[2]/input", "class", "");
 		codigoDoModeloDocFiscal.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -281,7 +281,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"fiscalNoteStructure6\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"fiscalNoteStructure6\"]/div/div/div/div[2]/input", "class", "");
 		classificaoDaNota.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -290,7 +290,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		sleep(1000);
 		
 		
-		attributeToBeXpath("//div[@id=\"fiscalNoteStructure7\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"fiscalNoteStructure7\"]/div/div/div/div[2]/input", "class", "");
 		empresa1.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -298,7 +298,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"fiscalNoteStructure8\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"fiscalNoteStructure8\"]/div/div/div/div[2]/input", "class", "");
 		ufFilial.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -306,7 +306,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"fiscalNoteStructure9\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"fiscalNoteStructure9\"]/div/div/div/div[2]/input", "class", "");
 		filial1.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -314,7 +314,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"fiscalNoteStructure10\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"fiscalNoteStructure10\"]/div/div/div/div[2]/input", "class", "");
 		ufDoParceiro.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -322,7 +322,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"fiscalNoteStructure11\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"fiscalNoteStructure11\"]/div/div/div/div[2]/input", "class", "");
 		dataDeLancamento.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -330,7 +330,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"fiscalNoteStructure12\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"fiscalNoteStructure12\"]/div/div/div/div[2]/input", "class", "");
 		cancelado.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -338,7 +338,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"fiscalNoteStructure13\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"fiscalNoteStructure13\"]/div/div/div/div[2]/input", "class", "");
 		valorImposto.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -346,7 +346,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"fiscalNoteStructure14\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"fiscalNoteStructure14\"]/div/div/div/div[2]/input", "class", "");
 		valorFcp.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -354,7 +354,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"fiscalNoteStructure15\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"fiscalNoteStructure15\"]/div/div/div/div[2]/input", "class", "");
 		idAjuste11.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -370,7 +370,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"adjustmentStructure1\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"adjustmentStructure1\"]/div/div/div/div[2]/input", "class", "");
 		codigoDaEmpresa.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -378,7 +378,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"adjustmentStructure2\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"adjustmentStructure2\"]/div/div/div/div[2]/input", "class", "");
 		ufOrigem.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -386,7 +386,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"adjustmentStructure3\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"adjustmentStructure3\"]/div/div/div/div[2]/input", "class", "");
 		codigoDaFilial.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -394,7 +394,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"adjustmentStructure4\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"adjustmentStructure4\"]/div/div/div/div[2]/input", "class", "");
 		ufDestino.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -402,7 +402,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"adjustmentStructure5\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"adjustmentStructure5\"]/div/div/div/div[2]/input", "class", "");
 		tributo.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -410,7 +410,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"adjustmentStructure6\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"adjustmentStructure6\"]/div/div/div/div[2]/input", "class", "");
 		dataDeLancamento1.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -418,7 +418,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"adjustmentStructure7\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"adjustmentStructure7\"]/div/div/div/div[2]/input", "class", "");
 		valorDoAjuste.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -426,7 +426,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"adjustmentStructure8\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"adjustmentStructure8\"]/div/div/div/div[2]/input", "class", "");
 		statusAjuste.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -434,7 +434,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"adjustmentStructure9\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"adjustmentStructure9\"]/div/div/div/div[2]/input", "class", "");
 		linhaLivro.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -442,7 +442,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"adjustmentStructure10\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"adjustmentStructure10\"]/div/div/div/div[2]/input", "class", "");
 		descricaoPadrao.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -450,7 +450,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"adjustmentStructure11\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"adjustmentStructure11\"]/div/div/div/div[2]/input", "class", "");
 		idAjuste.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -459,7 +459,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		sleep(1000);
 	
 		
-		actionsMoveToElementElement(estructuraDeCabecalho);
+		actionsMoveToElement(estructuraDeCabecalho);
 		estructuraDeCabecalho.click();
 		sleep(2000);
 		opcionCombo.click();
@@ -467,7 +467,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"headerStructure1\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"headerStructure1\"]/div/div/div/div[2]/input", "class", "");
 		nomeDaEmpresa.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -475,7 +475,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"headerStructure2\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"headerStructure2\"]/div/div/div/div[2]/input", "class", "");
 		ufFilial2.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -483,7 +483,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"headerStructure3\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"headerStructure3\"]/div/div/div/div[2]/input", "class", "");
 		codigoDaFilial2.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -491,7 +491,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"headerStructure4\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"headerStructure4\"]/div/div/div/div[2]/input", "class", "");
 		inscricaoEstadualDaFilial.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -499,7 +499,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"headerStructure5\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"headerStructure5\"]/div/div/div/div[2]/input", "class", "");
 		cnpjDaEmpresa.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -507,7 +507,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"headerStructure6\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"headerStructure6\"]/div/div/div/div[2]/input", "class", "");
 		inscricaoST.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -515,7 +515,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"headerStructure7\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"headerStructure7\"]/div/div/div/div[2]/input", "class", "");
 		dataInicioVigenciaEmpresa.click();
 		sleep(2000);
 		opcionCheckbox.click();
@@ -523,7 +523,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		body.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"headerStructure8\"]/div/div/div/div[2]/input", "class", "");
+		attributeToBe("//div[@id=\"headerStructure8\"]/div/div/div/div[2]/input", "class", "");
 		dataFimVigenciaEmpresa.click();
 		sleep(2000);
 		opcionCheckbox.click();

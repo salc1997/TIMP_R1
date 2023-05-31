@@ -28,7 +28,7 @@ public class AcessarCalendarPO extends TestBase{
 	
 	public boolean acessarCalendar() {
 
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!calendar.isDisplayed()) {
@@ -38,7 +38,7 @@ public class AcessarCalendarPO extends TestBase{
 		
 		calendar.click();
 		
-		waitExpectElement(mostrar);
+		waitExpectedElement(mostrar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		boolean sucesso = mostrar.isDisplayed();

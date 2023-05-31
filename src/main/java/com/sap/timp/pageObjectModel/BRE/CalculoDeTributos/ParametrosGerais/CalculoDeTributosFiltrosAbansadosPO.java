@@ -63,7 +63,7 @@ public class CalculoDeTributosFiltrosAbansadosPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		waitExpectElement(filtrosRegulamento);
+		waitExpectedElement(filtrosRegulamento);
 		sleep(2000);
 		
 		filtrosRegulamento.click();
@@ -125,7 +125,7 @@ public class CalculoDeTributosFiltrosAbansadosPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		waitExpectElement(filtrosEstructura);
+		waitExpectedElement(filtrosEstructura);
 		sleep(2000);
 		
 		 filtrosEstructura.click();

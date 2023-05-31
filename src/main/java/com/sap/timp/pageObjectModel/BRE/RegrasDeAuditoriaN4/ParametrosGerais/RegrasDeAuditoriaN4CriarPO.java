@@ -227,7 +227,7 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBase{
 		
 		novaRegra.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		
 		nome.click();
@@ -271,7 +271,7 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBase{
 			sleep(1000);
 		}	
 				
-		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
+		actionsMoveToElement("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
 		estruturadedados.click();
 		sleep(1000);
 		opcaoestruturadedados.click();
@@ -303,14 +303,14 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBase{
 		opcaocaracteristicaespecialcomparacao.click();
 		sleep(1000);
 		
-		waitExpectElement(leiautereferencia);
+		waitExpectedElement(leiautereferencia);
 		leiautereferencia.click();
 		sleep(1000);
 		
 		if(URL.contains("tc2")) {
 			// opcao para TC2
 			
-			actionsMoveToElementElement(opcaoleiautereferenciatc2);
+			actionsMoveToElement(opcaoleiautereferenciatc2);
 			opcaoleiautereferenciatc2.click();
 			sleep(1000);
 		}
@@ -372,7 +372,7 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBase{
 		opcaoversaoleiautecomparacao.click();
 		sleep(6000);
 		
-		actionsMoveToElementElement(dataValidadeDe);
+		actionsMoveToElement(dataValidadeDe);
 		sleep(6000);
 
 		regulamento.click();
@@ -386,13 +386,13 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBase{
 		
 		aplicar.click();
 		sleep(2000);
-		waitExpectElement(adicionarCaminho);
+		waitExpectedElement(adicionarCaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		adicionarCaminho.click();
 		sleep(5000);
-		waitExpectElement(cboCondicoes);
+		waitExpectedElement(cboCondicoes);
 		cboCondicoes.click();
 		sleep(1000);
 		opcionCondicoes.click();
@@ -434,7 +434,7 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBase{
 		
 		aplicar.click();
 		sleep(2000);
-		waitExpectElement(Gravar);
+		waitExpectedElement(Gravar);
 		sleep(2000);
 		Gravar.click();
 		sleep(3000);
@@ -443,7 +443,7 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBase{
 		sleep(2000);
 
 		
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

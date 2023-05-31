@@ -82,7 +82,7 @@ public class TarefasExecutarRelatorioBRBPO extends TestBase {
 		sleep(2000);
 		abrirCalendario.click();
 		sleep(3000);
-		waitExpectXpath("//div[@class=\"day\"][1]");
+		waitExpectedElement("//div[@class=\"day\"][1]");
 		sleep(2000);
 
 
@@ -129,14 +129,14 @@ public class TarefasExecutarRelatorioBRBPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 		
-		actionsMoveToElementElement(pesquisar);
+		actionsMoveToElement(pesquisar);
 		sleep(2000);
 		
 		if (tq1==true) {
 			
 			WebElement menu=driver.findElement(By.xpath("//div[contains(@aria-label,\"943245\")]/div[2]/div"));
 			WebElement fazertarefa=driver.findElement(By.xpath("//div[contains(@aria-label,\"943245\")]/div[2]/div/div[2]/ul/li/span[text()=\"Fazer tarefa\"]"));
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 			menu.click();
 			sleep(2000);
@@ -147,7 +147,7 @@ public class TarefasExecutarRelatorioBRBPO extends TestBase {
 			
 			WebElement menu=driver.findElement(By.xpath("//div[contains(@aria-label,\"73058\")]/div[2]/div"));
 			WebElement fazertarefa=driver.findElement(By.xpath("//div[contains(@aria-label,\"73058\")]/div[2]/div/div[2]/ul/li/span[text()=\"Fazer tarefa\"]"));
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 			menu.click();
 			sleep(2000);
@@ -158,7 +158,7 @@ public class TarefasExecutarRelatorioBRBPO extends TestBase {
 			
 			WebElement menu=driver.findElement(By.xpath("//div[contains(@aria-label,\"6464\")]/div[2]/div"));
 			WebElement fazertarefa=driver.findElement(By.xpath("//div[contains(@aria-label,\"6464\")]/div[2]/div/div[2]/ul/li/span[text()=\"Fazer tarefa\"]"));
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 			menu.click();
 			sleep(2000);
@@ -170,7 +170,7 @@ public class TarefasExecutarRelatorioBRBPO extends TestBase {
 		for(String winHandle : driver.getWindowHandles()){
 		    driver.switchTo().window(winHandle);
 		}
-		waitExpectElement(home);
+		waitExpectedElement(home);
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);

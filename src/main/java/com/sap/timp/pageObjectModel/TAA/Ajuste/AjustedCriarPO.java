@@ -166,7 +166,7 @@ public class AjustedCriarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(tributo);
+		waitExpectedElement(tributo);
 		sleep(2000);
 		
 		tributo.click();
@@ -174,7 +174,7 @@ public class AjustedCriarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		actionsMoveToElementXpath("//li[text()=\"ICMS\"]");
+		actionsMoveToElement("//li[text()=\"ICMS\"]");
 		sleep(2000);
 		
 		tributoOPC.click();
@@ -281,7 +281,7 @@ public class AjustedCriarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectXpath("//div[contains(@class,\"tr\") and @data-id]/div[2]/div");
+		waitExpectedElement("//div[contains(@class,\"tr\") and @data-id]/div[2]/div");
 		String idRegistro1 = driver.findElement(By.xpath("//div[contains(@class,\"tr\") and @data-id]/div[2]/div")).getText();
 		
 		WebElement check1 = driver.findElement(By.xpath("//div[contains(@class,\"tr\") and @data-id]/div[1]/label/span"));
@@ -292,7 +292,7 @@ public class AjustedCriarPO extends TestBase{
 		aplicar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		sleep(2000);
 		
 		
@@ -322,7 +322,7 @@ public class AjustedCriarPO extends TestBase{
 		confirmar.click();
 		sleep(4000);
 		
-		waitExpectElement(nueva);
+		waitExpectedElement(nueva);
 		sleep(2000);
 		
 		int rows1 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();

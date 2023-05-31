@@ -79,7 +79,7 @@ public class RegistroECACExcluirMassaPO extends TestBase{
 	}
 	
 	public void llenarDatos() {
-		attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"company\"]/div", "class", "base-select required");
 		sleep(3000);
 		empresa.click();
 		
@@ -163,7 +163,7 @@ public class RegistroECACExcluirMassaPO extends TestBase{
 		
 		salvarENovo.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -180,7 +180,7 @@ public class RegistroECACExcluirMassaPO extends TestBase{
 		
 		salvarENovo.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -273,14 +273,14 @@ public class RegistroECACExcluirMassaPO extends TestBase{
 		
 		btnExcluirMassa.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectXpath("//div[@class=\"overlay loader dark\"]");
+		waitExpectedElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

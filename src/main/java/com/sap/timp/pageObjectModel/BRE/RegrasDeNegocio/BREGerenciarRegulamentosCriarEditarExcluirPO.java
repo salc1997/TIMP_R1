@@ -69,7 +69,7 @@ public class BREGerenciarRegulamentosCriarEditarExcluirPO extends TestBase {
 		System.out.println("cantidad1: "+rows);
 		editar.click();
 
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 
 		sleep(8000);

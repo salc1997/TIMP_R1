@@ -82,7 +82,7 @@ public class MunicipioEliminarPO extends TestBase{
 		sleep(2000);
 		excluir.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);

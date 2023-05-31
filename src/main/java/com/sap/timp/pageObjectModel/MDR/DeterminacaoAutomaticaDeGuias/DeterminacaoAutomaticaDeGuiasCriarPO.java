@@ -162,7 +162,7 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBase{
 		opcaoComponente.click();
 		sleep(3000);
 		
-		attributeToBeXpath("//div[@id=\"componentConfiguration\"]/div/div/div/div[1]", "class", "input-wrapper base-input  required");
+		attributeToBe("//div[@id=\"componentConfiguration\"]/div/div/div/div[1]", "class", "input-wrapper base-input  required");
 		
 		codigoConfiguração.click();
 		sleep(3000);

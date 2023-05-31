@@ -105,7 +105,7 @@ public class PainelBCEExecutadosVisualizarPO extends TestBase {
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"visualizar\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -114,7 +114,7 @@ public class PainelBCEExecutadosVisualizarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(periodovi);
+		waitExpectedElement(periodovi);
 		sleep(2000);
 		
 		String periodovisualizar = periodovi.getText();
@@ -148,7 +148,7 @@ public class PainelBCEExecutadosVisualizarPO extends TestBase {
 		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(1000);
@@ -157,7 +157,7 @@ public class PainelBCEExecutadosVisualizarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(periodo);
+		waitExpectedElement(periodo);
 		sleep(2000);
 		
 		String periodoeditar = periodo.getText();

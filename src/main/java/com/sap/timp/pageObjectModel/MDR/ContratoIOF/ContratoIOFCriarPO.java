@@ -152,14 +152,14 @@ public class ContratoIOFCriarPO extends TestBase {
 		
 		tipopessoa.click();
 		sleep(1000);
-		waitExpectElement(opcaotipopessoa);
+		waitExpectedElement(opcaotipopessoa);
 		sleep(2000);
 		opcaotipopessoa.click();
 		sleep(1000);
 		
 		cpf.sendKeys("13154614712");
 		sleep(1000);
-		actionsMoveToElementElement(validadede);
+		actionsMoveToElement(validadede);
 		sleep(1000);
 		
 		
@@ -171,7 +171,7 @@ public class ContratoIOFCriarPO extends TestBase {
 		sleep(1000);
 		opcaoperiocidade.click();
 		sleep(1000);
-		waitExpectElement(moeda);
+		waitExpectedElement(moeda);
 		sleep(14000);
 		moeda.click();
 		sleep(1000);
@@ -183,7 +183,7 @@ public class ContratoIOFCriarPO extends TestBase {
 		
 		validadede.sendKeys(data);
 		sleep(1000);
-		actionsMoveToElementElement(adicionar);
+		actionsMoveToElement(adicionar);
 		sleep(1000);
 		
 		empresa.click();
@@ -191,7 +191,7 @@ public class ContratoIOFCriarPO extends TestBase {
 		opcaoempresa.click();
 		sleep(1000);
 		
-		waitExpectElement(filial);
+		waitExpectedElement(filial);
 		sleep(2000);
 		
 		filial.click();
@@ -200,7 +200,7 @@ public class ContratoIOFCriarPO extends TestBase {
 		opcaofilial.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"tax\"]/div/div/div/div[2]", "class", "new-tag");
+		attributeToBe("//div[@id=\"tax\"]/div/div/div/div[2]", "class", "new-tag");
 		sleep(3000);
 		tributo.click();
 		sleep(1000);
@@ -213,7 +213,7 @@ public class ContratoIOFCriarPO extends TestBase {
 		sleep(1000);
 		gravar.click();
 		sleep(1000);
-		waitExpectElement(butaosim);
+		waitExpectedElement(butaosim);
 		sleep(2000);
 		butaosim.click();
 		sleep(3000);

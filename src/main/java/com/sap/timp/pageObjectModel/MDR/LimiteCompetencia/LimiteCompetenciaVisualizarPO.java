@@ -163,10 +163,10 @@ public class LimiteCompetenciaVisualizarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
-		attributeToBeXpath("//div[@id=\"tax-type\"]/div", "class", "base-MultipleSelect3 required");
-		attributeToBeXpath("//div[@id=\"approval-level\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"tax-type\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"approval-level\"]/div", "class", "base-select required");
 		sleep(5000);
 
 		String empresaE1 = empresaE.getAttribute("textContent");

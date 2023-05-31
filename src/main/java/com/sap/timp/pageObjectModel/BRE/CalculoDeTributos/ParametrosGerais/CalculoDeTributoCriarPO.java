@@ -141,7 +141,7 @@ public class CalculoDeTributoCriarPO extends TestBase{
 		
 		novaregra.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		
 		nome.click();
@@ -187,7 +187,7 @@ public class CalculoDeTributoCriarPO extends TestBase{
 			opcaogrupodeestrutura.click();
 			sleep(1000);
 		}
-		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
+		actionsMoveToElement("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
 		estruturadedados.click();
 		sleep(1000);
 		opcaoestruturadedados.click();
@@ -210,7 +210,7 @@ public class CalculoDeTributoCriarPO extends TestBase{
 		
 		aplicar.click();
 		sleep(2000);
-		waitExpectElement(adicionarcaminho);
+		waitExpectedElement(adicionarcaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 	
@@ -218,7 +218,7 @@ public class CalculoDeTributoCriarPO extends TestBase{
 		Justificactiva.click();
 		sleep(2000);
 		
-		waitExpectElement(justificativa);
+		waitExpectedElement(justificativa);
 		sleep(2000);
 		justificativa.sendKeys("TESTE AUTOMATIZADO");
 		sleep(1000);

@@ -167,7 +167,7 @@ public class MotivosdeDesligamentoExcluirMasaPO extends TestBase {
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		sim.click();
 		sleep(3000);
@@ -176,7 +176,7 @@ public class MotivosdeDesligamentoExcluirMasaPO extends TestBase {
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(finalPagina);
+		waitExpectedElement(finalPagina);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		finalPagina.click();

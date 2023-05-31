@@ -123,7 +123,7 @@ public class PainelBCEConfiguracaoEExecucaoExcecutarPO extends TestBase {
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement executar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Executar\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -139,7 +139,7 @@ public class PainelBCEConfiguracaoEExecucaoExcecutarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		empresa.click();
 		sleep(1000);
 		opcao.click();
@@ -191,7 +191,7 @@ public class PainelBCEConfiguracaoEExecucaoExcecutarPO extends TestBase {
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(executados);
+		waitExpectedElement(executados);
 		sleep(3000);
 	
 		sleep(4000);

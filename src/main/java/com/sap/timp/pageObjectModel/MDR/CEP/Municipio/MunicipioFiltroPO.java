@@ -44,14 +44,14 @@ public class MunicipioFiltroPO extends TestBase{
 		}
 		
 		municipio.click();
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
+		waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[1]/div");
 		invisibilityOfElement("//*[@id=\"list\"]/div[1]/div/div/div/img");
 		String idRegistro = id.getText();
 
 		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);
 		
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[2]/label/span");
+		waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[2]/label/span");
 		invisibilityOfElement("//*[@id=\"list\"]/div[1]/div/div/div/img");
 		
 		String idBusqueda = id.getText();

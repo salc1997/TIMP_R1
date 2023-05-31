@@ -252,7 +252,7 @@ public class RelacionamentoEstruturasTodasFuncPO extends TestBase{
 		invisibilityOfElementOverlay();
 		sleep(2000);
 		
-		waitExpectElement(grupo1);
+		waitExpectedElement(grupo1);
 
 		grupo1.click();
 		sleep(1000);
@@ -395,7 +395,7 @@ public class RelacionamentoEstruturasTodasFuncPO extends TestBase{
 		invisibilityOfElementOverlay();
 		sleep(2000);
 		
-		waitExpectElement(grupo1);
+		waitExpectedElement(grupo1);
 
 
 		excluir.click();
@@ -535,7 +535,7 @@ public class RelacionamentoEstruturasTodasFuncPO extends TestBase{
 		System.out.println("---------------------------Exclução da Cópia-------------------------------------------");
 		
 		sleep(2000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(1000);
 		aceitar.click();
 		invisibilityOfElementOverlay();
@@ -644,7 +644,7 @@ public class RelacionamentoEstruturasTodasFuncPO extends TestBase{
 		invisibilityOfElementOverlay();
 		sleep(2000);
 		
-		waitExpectElement(grupo1);
+		waitExpectedElement(grupo1);
 		
 		System.out.println("---------------------------Verificação das Informações-------------------------------------------");
 		
@@ -707,7 +707,7 @@ public class RelacionamentoEstruturasTodasFuncPO extends TestBase{
 		invisibilityOfElementOverlay();
 		sleep(1000);
 		
-		waitExpectElement(grupo1);
+		waitExpectedElement(grupo1);
 	
 		
 		String grupo1V = grupo11.getAttribute("value");
@@ -751,7 +751,7 @@ public class RelacionamentoEstruturasTodasFuncPO extends TestBase{
 		invisibilityOfElementOverlay();
 		sleep(1000);
 	
-		waitExpectElement(grupo1);
+		waitExpectedElement(grupo1);
 
 		
 		System.out.println("---------------------------Datos Editar-------------------------------------------");
@@ -826,7 +826,7 @@ public class RelacionamentoEstruturasTodasFuncPO extends TestBase{
 		System.out.println("---------------------------Exclução do Registro-------------------------------------------");
 		
 		sleep(2000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(1000);
 		aceitar.click();
 		invisibilityOfElementOverlay();
@@ -876,13 +876,13 @@ public class RelacionamentoEstruturasTodasFuncPO extends TestBase{
 		invisibilityOfElementOverlay();
 		sleep(2000);
 		
-		waitExpectElement(cboGrupo1);
+		waitExpectedElement(cboGrupo1);
 		cboGrupo1.click();
 		sleep(3000);
 		opcionGrupo1.click();
 		sleep(3000);
 		
-		attributeToBeXpath("//div[@class=\"structure1-select\"]/div", "class", "base-select ");
+		attributeToBe("//div[@class=\"structure1-select\"]/div", "class", "base-select ");
 		cboEstrutura1.click();
 		sleep(3000);
 		opcionEstrutura1.click();
@@ -902,7 +902,7 @@ public class RelacionamentoEstruturasTodasFuncPO extends TestBase{
 		opcionGrupo2.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@class=\"structure2-select\"]/div", "class", "base-select ");
+		attributeToBe("//div[@class=\"structure2-select\"]/div", "class", "base-select ");
 		cboEstrutura2.click();
 		sleep(3000);
 		opcionEstrutura2.click();
@@ -958,7 +958,7 @@ public class RelacionamentoEstruturasTodasFuncPO extends TestBase{
 		opcionGrupo1.click();
 		sleep(3000);
 		
-		attributeToBeXpath("//div[@class=\"structure1-select\"]/div", "class", "base-select ");
+		attributeToBe("//div[@class=\"structure1-select\"]/div", "class", "base-select ");
 		cboEstrutura1.click();
 		sleep(3000);
 		opcionEstrutura1.click();
@@ -978,7 +978,7 @@ public class RelacionamentoEstruturasTodasFuncPO extends TestBase{
 		opcionGrupo2.click();
 		sleep(3000);
 		
-		attributeToBeXpath("//div[@class=\"structure2-select\"]/div", "class", "base-select ");
+		attributeToBe("//div[@class=\"structure2-select\"]/div", "class", "base-select ");
 		cboEstrutura2.click();
 		sleep(3000);
 		opcionEstrutura2.click();
@@ -1050,7 +1050,7 @@ public class RelacionamentoEstruturasTodasFuncPO extends TestBase{
 		
 		btnExcluirMassa.click();
 		sleep(2000);
-		waitExpectElement(btnAceitar);
+		waitExpectedElement(btnAceitar);
 		btnAceitar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

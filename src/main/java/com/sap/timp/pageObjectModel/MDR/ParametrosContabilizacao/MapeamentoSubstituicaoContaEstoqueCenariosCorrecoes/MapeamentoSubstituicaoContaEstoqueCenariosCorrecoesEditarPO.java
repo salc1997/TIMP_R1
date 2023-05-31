@@ -60,7 +60,7 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesEditarPO extends
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(4000);
 
 		menu.click();
@@ -69,9 +69,9 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesEditarPO extends
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 		sleep(3000);
-		actionsMoveToElementElement(campo);
+		actionsMoveToElement(campo);
 		//attributoNotToBeEmptyElement(campo, "value");
 		
 		
@@ -87,21 +87,21 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesEditarPO extends
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
 
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 
 		driver.navigate().refresh();
 		
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(12000);
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 		sleep(7000);
-		actionsMoveToElementElement(campo);
+		actionsMoveToElement(campo);
 		
 		//attributoNotToBeEmptyElement(campo, "value");
 		
@@ -122,10 +122,10 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesEditarPO extends
 
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		
 		return sucesso;
 

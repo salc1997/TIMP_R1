@@ -108,7 +108,7 @@ public class TarefasGatewayAprovaçãoPO extends TestBase{
 		if (tq1 == true) {
 
 			WebElement OPC = driver.findElement(By.xpath("//div[contains(@aria-label, \" Id: 943468\")]"));
-			actionsMoveToElementElement(OPC);
+			actionsMoveToElement(OPC);
 			
 			WebElement status1 = driver.findElement(By.xpath("//div[contains(@aria-label, \" Id: 943468\")]/div[5]"));
 			WebElement status2 = driver.findElement(By.xpath("//div[contains(@aria-label, \" Id: 943469\")]/div[5]"));
@@ -139,7 +139,7 @@ public class TarefasGatewayAprovaçãoPO extends TestBase{
 		}else if (tc2 == true) {
 
 			WebElement OPC = driver.findElement(By.xpath("//div[contains(@aria-label, \" Id: 6475\")]"));
-			actionsMoveToElementElement(OPC);
+			actionsMoveToElement(OPC);
 			
 			WebElement status1 = driver.findElement(By.xpath("//div[contains(@aria-label, \" Id: 6475\")]/div[5]"));
 			WebElement status2 = driver.findElement(By.xpath("//div[contains(@aria-label, \" Id: 6476\")]/div[5]"));

@@ -361,7 +361,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 	}
 	public boolean acessarBPMA() {
 
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!bPMA.isDisplayed()) {
@@ -371,7 +371,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		
 		bPMA.click();
 		
-		waitExpectElement(mostrar);
+		waitExpectedElement(mostrar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		boolean sucesso = mostrar.isDisplayed();
@@ -471,7 +471,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		sleep(2000);
 		
 		
-		dobleClickElement(NovoOperacao);
+		dobleClick(NovoOperacao);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -488,7 +488,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		moveToElement(fin, driver.findElement(By.xpath("//div[@id=\"Operation\"]/div/div/div/div/div")));
 		sleep(2000);
 		
-		dobleClickElement(NovoActividad);
+		dobleClick(NovoActividad);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -532,7 +532,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		variant.click();
 		sleep(3000);
 		
-		waitExpectElement(opacao);
+		waitExpectedElement(opacao);
 		opacao.click();
 		sleep(3000);
 		
@@ -552,7 +552,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		tfp.click();
 		sleep(3000);
 		
-		waitExpectElement(opacao);
+		waitExpectedElement(opacao);
 		tfpopacao.click();
 		sleep(3000);
 		
@@ -597,12 +597,12 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		sleep(5000);
 		
 		
-		dobleClickElement(NovoOperacao);
+		dobleClick(NovoOperacao);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		dobleClickElement(NovoActividad);
+		dobleClick(NovoActividad);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(8000);
@@ -699,7 +699,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(dias);
+		waitExpectedElement(dias);
 		sleep(2000);
 		dias.click();
 		sleep(2000);
@@ -796,7 +796,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		sleep(6000);
 		
 		
-		dobleClickElement(NovoOperacao);
+		dobleClick(NovoOperacao);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(15000);
@@ -812,7 +812,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		sleep(6000);
 		
 		
-		dobleClickElement(NovoActividad);
+		dobleClick(NovoActividad);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(15000);
@@ -878,7 +878,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!tFP.isDisplayed()) {
@@ -888,7 +888,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		
 		tFP.click();
 		
-		waitExpectElement(mostrar2);
+		waitExpectedElement(mostrar2);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		boolean sucesso = mostrar2.isDisplayed();
@@ -938,7 +938,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"144617\"]/div[1]/div"));
 			WebElement acoes = driver.findElement(By.xpath("//div[@data-id=\"144617\"]/div[1]/div/div[2]/ul/li/span[text()=\"Subperíodos Fiscais\"]"));
 			
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 			menu.click();
 			sleep(2000);
@@ -982,7 +982,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"22661\"]/div[1]/div"));
 			WebElement acoes = driver.findElement(By.xpath("//div[@data-id=\"22661\"]/div[1]/div/div[2]/ul/li/span[text()=\"Subperíodos Fiscais\"]"));
 			
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 			menu.click();
 			sleep(2000);
@@ -1023,7 +1023,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 			WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"22076\"]/div[1]/div"));
 			WebElement acoes = driver.findElement(By.xpath("//div[@data-id=\"22076\"]/div[1]/div/div[2]/ul/li/span[text()=\"Subperíodos Fiscais\"]"));
 			
-			actionsMoveToElementElement(menu);
+			actionsMoveToElement(menu);
 			sleep(2000);
 			menu.click();
 			sleep(2000);
@@ -1087,7 +1087,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!calendar.isDisplayed()) {
@@ -1097,7 +1097,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		
 		calendar.click();
 		
-		waitExpectElement(mostrar3);
+		waitExpectedElement(mostrar3);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		boolean sucesso = mostrar3.isDisplayed();
@@ -1161,7 +1161,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"0\"]/div[2]/div"));
 		WebElement acoes = driver.findElement(By.xpath("//div[@data-id=\"0\"]/div[2]/div/div[2]/ul/li/span[text()=\"Solicitar esclarecimento\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -1330,7 +1330,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement acoes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -1393,7 +1393,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement acoes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Desativar Configuração\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -1406,7 +1406,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement acoesLexe = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);

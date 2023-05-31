@@ -66,7 +66,7 @@ public class RegraDeMensagensRelacionamentoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(btnSeleccionarRelacionamento);
+		waitExpectedElement(btnSeleccionarRelacionamento);
 		btnSeleccionarRelacionamento.click();
 		sleep(6000);
 		
@@ -100,7 +100,7 @@ public class RegraDeMensagensRelacionamentoPO extends TestBase{
 		
 		btnGravar.click();
 		sleep(2000);
-		waitExpectElement(btnNao);
+		waitExpectedElement(btnNao);
 		btnNao.click();
 		invisibilityOfElementOverlay();
 		sleep(3000);
@@ -136,11 +136,11 @@ public class RegraDeMensagensRelacionamentoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(btnSeleccionarRelacionamento);
+		waitExpectedElement(btnSeleccionarRelacionamento);
 		btnSeleccionarRelacionamento.click();
 		sleep(6000);
 		
-		waitExpectElement(cboRelacionamentoElementoDeEstrutura);
+		waitExpectedElement(cboRelacionamentoElementoDeEstrutura);
 		
 		String opcionSeleccionadaEditada = driver.findElement(By.xpath("//div[@class=\"structure-relation-select\"]/div/div/div/div/div/div[1]")).getText();
 		System.out.println("");

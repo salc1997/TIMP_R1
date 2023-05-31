@@ -59,8 +59,8 @@ public class RegraDeCamposVerPO extends TestBase{
 		String URL = driver.getCurrentUrl();
 		
 		// Datoss de Ver
-		waitExpectXpath("//div[@id=\"rule-type\"]/div/div/div/input");
-		attributoNotToBeEmptyXpath("//div[@id=\"rule-type\"]/div/div/div/input", "value");
+		waitExpectedElement("//div[@id=\"rule-type\"]/div/div/div/input");
+		attributoNotToBeEmpty("//div[@id=\"rule-type\"]/div/div/div/input", "value");
 		String tipoDeRegraString = driver.findElement(By.xpath("//div[@id=\"rule-type\"]/div/div/div/input")).getAttribute("value").trim();
 		String tributoString = driver.findElement(By.xpath("//div[@id=\"rule-tax\"]/div/div/div/input")).getAttribute("value").trim();
 		String empresaString = driver.findElement(By.xpath("//div[@id=\"rule-company\"]/div/div/div/div/div/div[1]")).getText().trim();
@@ -100,8 +100,8 @@ public class RegraDeCamposVerPO extends TestBase{
 		sleep(16000);
 		
 		// Datoss de Editar
-		waitExpectXpath("//div[@id=\"rule-type\"]/div/div/div/input");
-		attributoNotToBeEmptyXpath("//div[@id=\"rule-type\"]/div/div/div/input", "value");
+		waitExpectedElement("//div[@id=\"rule-type\"]/div/div/div/input");
+		attributoNotToBeEmpty("//div[@id=\"rule-type\"]/div/div/div/input", "value");
 		String tipoDeRegraString1 = driver.findElement(By.xpath("//div[@id=\"rule-type\"]/div/div/div/input")).getAttribute("value").trim();
 		String tributoString1 = driver.findElement(By.xpath("//div[@id=\"rule-tax\"]/div/div/div/input")).getAttribute("value").trim();
 		String empresaString1 = driver.findElement(By.xpath("//div[@id=\"rule-company\"]/div/div/div/div/div/div[1]")).getText().trim();

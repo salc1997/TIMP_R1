@@ -124,7 +124,7 @@ import com.sap.timp.base.TestBase;
 			
 			nova.click();
 			sleep(2000);
-			attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");
+			attributeToBe("//div[@id=\"company\"]/div", "class", "base-select required");
 			//waitExpectElement(biblioteca);
 			//waitExpectXpath("//*[@id=\"Editcontainer\"]/div[4]/div/div/div/img");
 			sleep(2000);
@@ -132,7 +132,7 @@ import com.sap.timp.base.TestBase;
 			sleep(1000);
 			empresaO.click();
 			
-			attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-select required");
+			attributeToBe("//div[@id=\"branch\"]/div", "class", "base-select required");
 			sleep(1000);
 			filial.click();
 			sleep(1000);
@@ -155,18 +155,18 @@ import com.sap.timp.base.TestBase;
 			paisO.click();
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//input[@placeholder=\"Selecionar Validade Até\"]");
+			actionsMoveToElement("//input[@placeholder=\"Selecionar Validade Até\"]");
 			
 			moedaOrdem.click();
 			sleep(1000);
 			moedaOrdemO.click();
 			sleep(1000);
-			attributeToBeXpath("//div[@id=\"coin\"]/div", "class", "base-autocomplete required");
+			attributeToBe("//div[@id=\"coin\"]/div", "class", "base-autocomplete required");
 			
 			sleep(2000);
 			moeda.click();
 			sleep(1000);
-			actionsMoveToElementElement(moedaO);
+			actionsMoveToElement(moedaO);
 			moedaO.click();
 			
 			
@@ -178,11 +178,11 @@ import com.sap.timp.base.TestBase;
 			
 			gravar.click();
 			sleep(2000);
-			waitExpectElement(sim);
+			waitExpectedElement(sim);
 			sleep(2000);
 			sim.click();
 			sleep(2000);
-			waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+			waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 			
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
@@ -193,7 +193,7 @@ import com.sap.timp.base.TestBase;
 
 			nova.click();
 			sleep(2000);
-			attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");
+			attributeToBe("//div[@id=\"company\"]/div", "class", "base-select required");
 			//waitExpectElement(biblioteca);
 			//waitExpectXpath("//*[@id=\"Editcontainer\"]/div[4]/div/div/div/img");
 			sleep(2000);
@@ -224,18 +224,18 @@ import com.sap.timp.base.TestBase;
 			paisO.click();
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//input[@placeholder=\"Selecionar Validade Até\"]");
+			actionsMoveToElement("//input[@placeholder=\"Selecionar Validade Até\"]");
 			
 			moedaOrdem.click();
 			sleep(1000);
 			moedaOrdemO.click();
 			sleep(1000);
-			attributeToBeXpath("//div[@id=\"coin\"]/div", "class", "base-autocomplete required");
+			attributeToBe("//div[@id=\"coin\"]/div", "class", "base-autocomplete required");
 			
 			sleep(2000);
 			moeda.click();
 			sleep(1000);
-			actionsMoveToElementElement(moedaO);
+			actionsMoveToElement(moedaO);
 			moedaO.click();
 			
 			
@@ -247,11 +247,11 @@ import com.sap.timp.base.TestBase;
 			
 			gravar.click();
 			sleep(2000);
-			waitExpectElement(sim);
+			waitExpectedElement(sim);
 			sleep(2000);
 			sim.click();
 			sleep(2000);
-			waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+			waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 			
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
@@ -313,7 +313,7 @@ import com.sap.timp.base.TestBase;
 			
 			excluirMassa.click();
 			sleep(1000);
-			waitExpectElement(aceitar);
+			waitExpectedElement(aceitar);
 			sleep(1000);
 			aceitar.click();
 			sleep(3000);
@@ -322,7 +322,7 @@ import com.sap.timp.base.TestBase;
 			sleep(2000);
 			
 			driver.navigate().refresh();
-			waitExpectElement(ultimaPagina);
+			waitExpectedElement(ultimaPagina);
 			sleep(2000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			ultimaPagina.click();

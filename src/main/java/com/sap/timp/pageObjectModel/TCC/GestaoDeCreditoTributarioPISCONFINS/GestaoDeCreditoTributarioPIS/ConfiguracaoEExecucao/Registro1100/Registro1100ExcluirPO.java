@@ -37,7 +37,7 @@ public class Registro1100ExcluirPO extends TestBase{
 	public boolean Excluir() {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		actionsMoveToElementElement(gestaoCredito);
+		actionsMoveToElement(gestaoCredito);
 		sleep(2000);
 		gestaoCredito.click();
 		sleep(2000);
@@ -60,7 +60,7 @@ public class Registro1100ExcluirPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		menu.click();
 		sleep(1000);
 		excluir.click();

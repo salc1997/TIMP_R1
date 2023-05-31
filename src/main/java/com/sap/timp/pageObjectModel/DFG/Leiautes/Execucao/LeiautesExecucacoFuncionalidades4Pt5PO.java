@@ -511,7 +511,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBase{
 		adicionarRegistro5.click();
 		sleep(2000);
 		
-		actionsMoveToElementElement(nombreBloco5);
+		actionsMoveToElement(nombreBloco5);
 		
 		nombreBloco5.sendKeys("Bloco 5");
 		sleep(2000);
@@ -523,7 +523,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBase{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		actionsMoveToElementXpath("//*[@id=\"block-list-wrapper\"]/div[5]/div[3]/div/div[5]");
+		actionsMoveToElement("//*[@id=\"block-list-wrapper\"]/div[5]/div[3]/div/div[5]");
 		sleep(2000);
 		moveToElement(codigoEmpresa, driver.findElement(By.xpath("//div[@block-id=\"4\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
@@ -552,12 +552,12 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBase{
 		
 		gravar.click();
 		sleep(3000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		
 		nao.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		
 		sim.click();
@@ -686,7 +686,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBase{
 		
 		novaConfiguracao.click();
 		sleep(3000);
-		waitExpectElement(nomeConfiguracao);
+		waitExpectedElement(nomeConfiguracao);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -704,7 +704,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBase{
 		System.out.println("Opcion Leiaute: "+ opcLeiauteObter);		
 		
 		//li[@id="7754"]
-		waitExpectElement(opcLeiauteObter);
+		waitExpectedElement(opcLeiauteObter);
 		opcLeiauteObter.click();
 		sleep(8000);
 		
@@ -715,7 +715,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBase{
 //		opcversaoSPED.sendKeys(Keys.ESCAPE);
 //		sleep(2000);
 		
-		actionsMoveToElementElement(dataVigenciaConfiguracao);
+		actionsMoveToElement(dataVigenciaConfiguracao);
 		sleep(2000);
 		
 		tributoConfiguracao.click();
@@ -738,7 +738,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBase{
 //		System.out.println("empresa SPED "+empresaValor);
 		
 		
-		actionsMoveToElementElement(dataVigenciaConfiguracao);
+		actionsMoveToElement(dataVigenciaConfiguracao);
 		sleep(2000);
 		
 		
@@ -782,7 +782,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBase{
 		
 		salvar.click();
 		sleep(6000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(5000);
 		
 		sleep(2000);
@@ -897,7 +897,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBase{
 		opcEstadoExecutar.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 		
-		actionsMoveToElementElement(periodo);
+		actionsMoveToElement(periodo);
 		sleep(2000);
 		
 		
@@ -946,7 +946,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBase{
 		execucao1.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(cargarExecucao);
+		waitExpectedElement(cargarExecucao);
 		sleep(3000);
 			
 //		visualizarDados2.click();

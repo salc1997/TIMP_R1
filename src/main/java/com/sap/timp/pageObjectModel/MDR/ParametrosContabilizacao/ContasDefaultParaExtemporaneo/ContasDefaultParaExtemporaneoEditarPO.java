@@ -68,7 +68,7 @@ public class ContasDefaultParaExtemporaneoEditarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -80,7 +80,7 @@ public class ContasDefaultParaExtemporaneoEditarPO extends TestBase {
 		
 		//ediçao
 		 
-		waitExpectElement(codigodeajuste);
+		waitExpectedElement(codigodeajuste);
 		sleep(2000);
 		
 		codigodeajuste.click();
@@ -114,7 +114,7 @@ public class ContasDefaultParaExtemporaneoEditarPO extends TestBase {
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(1000);

@@ -95,7 +95,7 @@ public class CenariosCorrecaoVisualizarPO extends TestBase{
 	
 	public ArrayList<Boolean> cenariosCorrecaoVisualizar() {
 		cenarios.click();
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		attributeToBe("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);	
 			
 		siguiente.click();
@@ -107,7 +107,7 @@ public class CenariosCorrecaoVisualizarPO extends TestBase{
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(4000);
 		
 		menu.click();
@@ -118,7 +118,7 @@ public class CenariosCorrecaoVisualizarPO extends TestBase{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		visibilityOfElementXpath("//span[@id=\"tax\"]");
+		visibilityOfElement("//span[@id=\"tax\"]");
 		sleep(1000);
 		
 		

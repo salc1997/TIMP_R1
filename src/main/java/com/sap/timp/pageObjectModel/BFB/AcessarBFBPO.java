@@ -24,7 +24,7 @@ public class AcessarBFBPO extends TestBase {
 	}
 	
 	public boolean acessarBFB() {
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 
 		while (!bfb.isDisplayed()) {
@@ -34,12 +34,12 @@ public class AcessarBFBPO extends TestBase {
 
 		bfb.click();
 	
-		waitExpectElement(mostrar);
+		waitExpectedElement(mostrar);
 	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		boolean sucesso = mostrar.isDisplayed();
-		waitExpectElement(mostrar);
+		waitExpectedElement(mostrar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		

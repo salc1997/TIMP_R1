@@ -56,7 +56,7 @@ public class EliminarPO extends TestBase{
 	
 	public boolean eliminar() {
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
@@ -70,7 +70,7 @@ public class EliminarPO extends TestBase{
 		menu.click();
 		opcaoEditar.click();
 
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		sleep(3000);
 		
 		biblioteca.click();
@@ -88,7 +88,7 @@ public class EliminarPO extends TestBase{
 		sleep(2000);	
 		
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		
 		invisibilityOfElementOverlay();
@@ -136,7 +136,7 @@ public class EliminarPO extends TestBase{
 		opcaoE.click();
 		sleep(2000);	
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		
 		invisibilityOfElementOverlay();

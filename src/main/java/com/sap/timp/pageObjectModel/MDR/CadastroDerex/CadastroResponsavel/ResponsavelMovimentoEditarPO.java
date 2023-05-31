@@ -62,14 +62,14 @@ public class ResponsavelMovimentoEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
 		
 		editar.click();
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"company\"]/div", "class", "base-select required");
 		
 
 		String valor = campo.getAttribute("value");
@@ -84,17 +84,17 @@ public class ResponsavelMovimentoEditarPO extends TestBase{
 		sleep(1000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(3000);		
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		driver.navigate().refresh();
 		
-		attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"company\"]/div", "class", "base-select required");
 		sleep(1000);
 		
 		String nuevoTexto = campo.getAttribute("value");
@@ -111,12 +111,12 @@ public class ResponsavelMovimentoEditarPO extends TestBase{
 		gravar.click();
 		
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

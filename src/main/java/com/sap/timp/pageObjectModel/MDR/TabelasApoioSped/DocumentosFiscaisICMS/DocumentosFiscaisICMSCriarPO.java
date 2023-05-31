@@ -119,7 +119,7 @@ public class DocumentosFiscaisICMSCriarPO extends TestBase {
 			nao.click();
 		}
 		
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		

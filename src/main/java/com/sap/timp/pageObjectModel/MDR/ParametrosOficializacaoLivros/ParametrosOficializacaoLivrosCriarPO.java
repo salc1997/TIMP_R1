@@ -108,7 +108,7 @@ public class ParametrosOficializacaoLivrosCriarPO extends TestBase{
 		opcao2.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		
 		uf.click();
 		sleep(1000);
@@ -119,7 +119,7 @@ public class ParametrosOficializacaoLivrosCriarPO extends TestBase{
 		opcao3.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 
 		filial.click();
 		sleep(1000);
@@ -133,14 +133,14 @@ public class ParametrosOficializacaoLivrosCriarPO extends TestBase{
 		opcao2.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"tfbLayout\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tfbLayout\"]/div", "class", "base-select required");
 		
 		layoutTFB.click();
 		sleep(1000);
 		opcao1.click();
 		sleep(3000);
 		
-		attributeToBeXpath("//div[@id=\"tfbConfiguration\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tfbConfiguration\"]/div", "class", "base-select required");
 		
 		configuracaoTFB.click();
 		sleep(1000);
@@ -153,11 +153,11 @@ public class ParametrosOficializacaoLivrosCriarPO extends TestBase{
 	
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();

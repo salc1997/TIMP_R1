@@ -113,7 +113,7 @@ public class RegrasDeAuditoriaN4EdicaoFiltrosPO extends TestBase  {
 		
 		pesquisar1.sendKeys("código da empresa");
 		sleep(3000);
-		waitExpectElement(codEmpresa1);
+		waitExpectedElement(codEmpresa1);
 		sleep(2000);
 		
 		if (codEmpresa1.isDisplayed()) {
@@ -127,7 +127,7 @@ public class RegrasDeAuditoriaN4EdicaoFiltrosPO extends TestBase  {
 		sleep(3000);
 		pesquisar1.sendKeys(" ");
 		sleep(3000);
-		waitExpectElement(todos1);
+		waitExpectedElement(todos1);
 		sleep(3000);
 		
 		if (todos1.isDisplayed()) {
@@ -143,7 +143,7 @@ public class RegrasDeAuditoriaN4EdicaoFiltrosPO extends TestBase  {
 		
 		camposNumeros1.click();
 		sleep(2000);
-		waitExpectElement(numero1);
+		waitExpectedElement(numero1);
 		sleep(2000);
 		if (numero1.isDisplayed()) {
 			System.out.println("SI SE DESPLEGO CAMPOS NUMEROS");
@@ -154,7 +154,7 @@ public class RegrasDeAuditoriaN4EdicaoFiltrosPO extends TestBase  {
 		
 		camposTexto1.click();
 		sleep(2000);
-		waitExpectElement(texto1);
+		waitExpectedElement(texto1);
 		sleep(2000);
 		if (codEmpresa1.isDisplayed() && texto1.isDisplayed() ) {
 			System.out.println("SI SE DESPLEGO CAMPOS TEXTO");
@@ -165,7 +165,7 @@ public class RegrasDeAuditoriaN4EdicaoFiltrosPO extends TestBase  {
 		
 		camposData1.click();
 		sleep(2000);
-		waitExpectElement(data1);
+		waitExpectedElement(data1);
 		sleep(2000);
 		if (data1.isDisplayed()) {
 			System.out.println("SI SE DESPLEGO CAMPOS DATA");
@@ -176,7 +176,7 @@ public class RegrasDeAuditoriaN4EdicaoFiltrosPO extends TestBase  {
 		
 		all1.click();
 		sleep(2000);
-		waitExpectElement(todos1);
+		waitExpectedElement(todos1);
 		sleep(2000);
 		if (todos1.isDisplayed()) {
 			System.out.println("SI SE DESPLEGO TODOS LOS CAMPOS");
@@ -193,7 +193,7 @@ public class RegrasDeAuditoriaN4EdicaoFiltrosPO extends TestBase  {
 		//DERECHA
 		pesquisar2.sendKeys("código da empresa");
 		sleep(3000);
-		waitExpectElement(codEmpresa2);
+		waitExpectedElement(codEmpresa2);
 		sleep(2000);
 		
 		if (codEmpresa2.isDisplayed()) {
@@ -207,7 +207,7 @@ public class RegrasDeAuditoriaN4EdicaoFiltrosPO extends TestBase  {
 		sleep(3000);
 		pesquisar2.sendKeys(" ");
 		sleep(3000);
-		waitExpectElement(todos2);
+		waitExpectedElement(todos2);
 		sleep(3000);
 		
 		if (todos2.isDisplayed()) {
@@ -223,7 +223,7 @@ public class RegrasDeAuditoriaN4EdicaoFiltrosPO extends TestBase  {
 		
 		camposNumeros2.click();
 		sleep(2000);
-		waitExpectElement(numero2);
+		waitExpectedElement(numero2);
 		sleep(2000);
 		if (numero2.isDisplayed()) {
 			System.out.println("SI SE DESPLEGO CAMPOS NUMEROS");
@@ -234,7 +234,7 @@ public class RegrasDeAuditoriaN4EdicaoFiltrosPO extends TestBase  {
 		
 		camposTexto2.click();
 		sleep(2000);
-		waitExpectElement(texto2);
+		waitExpectedElement(texto2);
 		sleep(2000);
 		if (codEmpresa2.isDisplayed() && texto2.isDisplayed() ) {
 			System.out.println("SI SE DESPLEGO CAMPOS TEXTO");
@@ -245,7 +245,7 @@ public class RegrasDeAuditoriaN4EdicaoFiltrosPO extends TestBase  {
 		
 		camposData2.click();
 		sleep(2000);
-		waitExpectElement(data2);
+		waitExpectedElement(data2);
 		sleep(2000);
 		if (data2.isDisplayed()) {
 			System.out.println("SI SE DESPLEGO CAMPOS DATA");
@@ -256,7 +256,7 @@ public class RegrasDeAuditoriaN4EdicaoFiltrosPO extends TestBase  {
 		
 		all2.click();
 		sleep(2000);
-		waitExpectElement(todos2);
+		waitExpectedElement(todos2);
 		sleep(2000);
 		if (todos2.isDisplayed()) {
 			System.out.println("SI SE DESPLEGO TODOS LOS CAMPOS");

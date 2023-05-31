@@ -217,7 +217,7 @@ public class ConfiguraçãodeLayoutdePainelExecutarGravarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(24000);
 		
-		attributoNotToBeEmptyElement(validaDe, "value");
+		attributoNotToBeEmpty(validaDe, "value");
 		String valorDescricaoGuardado = validaDe.getAttribute("value");
 		System.out.println("");
 		System.out.println("Descricao valor guardado: " + valorDescricaoGuardado);

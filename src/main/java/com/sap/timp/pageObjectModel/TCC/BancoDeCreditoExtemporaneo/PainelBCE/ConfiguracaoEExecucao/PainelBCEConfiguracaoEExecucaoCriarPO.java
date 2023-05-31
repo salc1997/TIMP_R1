@@ -101,7 +101,7 @@ public class PainelBCEConfiguracaoEExecucaoCriarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		empresa.click();
 		sleep(1000);
 		opcao.click();
@@ -110,7 +110,7 @@ public class PainelBCEConfiguracaoEExecucaoCriarPO extends TestBase{
 		
 		
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		filial.click();
 		sleep(1000);
 		opcao.click();

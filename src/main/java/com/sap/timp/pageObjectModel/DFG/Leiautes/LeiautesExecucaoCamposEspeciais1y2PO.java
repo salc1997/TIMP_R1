@@ -332,7 +332,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 		
 		novo.click();
 		sleep(3000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -364,7 +364,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 		
 		
 		sleep(1000);
-		actionsMoveToElementElement(versaoLeiaute);
+		actionsMoveToElement(versaoLeiaute);
 		sleep(1000);
 		
 		grupoEstrutura.click();
@@ -423,7 +423,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(20000);
 		
 		while (!separadores.isDisplayed()) {
@@ -503,7 +503,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 		moveToElement(dataHoraExecucaco, driver.findElement(By.xpath("//div[@class=\"columns-container\"]/div")));
 		sleep(2000);
 		
-		waitExpectElement(anio);
+		waitExpectedElement(anio);
 		sleep(2000);
 		
 		anio.click();
@@ -552,7 +552,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 		moveToElement(contadorLinhas, driver.findElement(By.xpath("//div[@class=\"columns-container\"]/div")));
 		sleep(2000);
 		
-		waitExpectElement(aplicar);
+		waitExpectedElement(aplicar);
 		sleep(2000);
 		
 		aplicar.click();
@@ -560,11 +560,11 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 		
 		gravar.click();
 		sleep(3000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(2000);
 		nao.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(3000);
@@ -692,7 +692,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 		
 		novaConfiguracao.click();
 		sleep(3000);
-		waitExpectElement(nomeConfiguracao);
+		waitExpectedElement(nomeConfiguracao);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -710,7 +710,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 		System.out.println("Opcion Leiaute: "+ opcLeiauteObter);		
 		
 		//li[@id="7754"]
-		waitExpectElement(opcLeiauteObter);
+		waitExpectedElement(opcLeiauteObter);
 		opcLeiauteObter.click();
 		sleep(6000);
 		
@@ -721,7 +721,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 //		opcversaoSPED.sendKeys(Keys.ESCAPE);
 //		sleep(2000);
 		
-		actionsMoveToElementElement(dataVigenciaConfiguracao);
+		actionsMoveToElement(dataVigenciaConfiguracao);
 		sleep(2000);
 		
 		tributoConfiguracao.click();
@@ -744,7 +744,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 //		System.out.println("empresa SPED "+empresaValor);
 		
 		
-		actionsMoveToElementElement(dataVigenciaConfiguracao);
+		actionsMoveToElement(dataVigenciaConfiguracao);
 		sleep(2000);
 		
 		
@@ -788,7 +788,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 		
 		salvar.click();
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(3000);
 		
 		siguiente.click();
@@ -891,7 +891,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 		opcEstadoExecutar.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 		
-		actionsMoveToElementElement(periodo);
+		actionsMoveToElement(periodo);
 		sleep(2000);
 		
 		
@@ -931,7 +931,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 		execucao1.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(cargarExecucao);
+		waitExpectedElement(cargarExecucao);
 		sleep(3000);
 		
 		visualizarDados2.click();
@@ -1086,7 +1086,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 		
 		driver.navigate().refresh();
 		sleep(3000);
-		waitExpectElement(abaLeiautes);
+		waitExpectedElement(abaLeiautes);
 		sleep(2000);
 //		pesquisar.clear();
 //		sleep(2000);

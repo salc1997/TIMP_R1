@@ -95,7 +95,7 @@ public class ClassificaçaoDeContribuintesDoIPIFiltrosAvançadosPO extends TestBas
 		opcaofiltrousuario.click();
 		
 		sleep(2000);
-		dobleClickElement(filtrousuario);
+		dobleClick(filtrousuario);
 		//filtrousuario.sendKeys(Keys.ESCAPE);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

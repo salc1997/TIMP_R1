@@ -128,7 +128,7 @@ public class ExecucoesExecucoesPublicasFiltrosAvaPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(execucoes);
+		waitExpectedElement(execucoes);
 		sleep(2000);
 		execucoes.click();
 		sleep(2000);
@@ -162,7 +162,7 @@ public class ExecucoesExecucoesPublicasFiltrosAvaPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
 		WebElement detalhes = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhes\"]"));
 		System.out.println("111");
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -186,14 +186,14 @@ public class ExecucoesExecucoesPublicasFiltrosAvaPO extends TestBase {
 			
 			usuarioCreador.click();
 			sleep(2000);
-			actionsMoveToElementElement(opcUsuariosTQ1);
+			actionsMoveToElement(opcUsuariosTQ1);
 			sleep(2000);
 			opcUsuariosTQ1.click();
 			sleep(6000);
 			
 			usuarioModificador.click();
 			sleep(2000);
-			actionsMoveToElementElement(opcUsuariosTQ1);
+			actionsMoveToElement(opcUsuariosTQ1);
 			sleep(2000);
 			opcUsuariosTQ1.click();
 			sleep(6000);
@@ -201,28 +201,28 @@ public class ExecucoesExecucoesPublicasFiltrosAvaPO extends TestBase {
 		}else if (tc2== true) {
 			usuarioCreador.click();
 			sleep(2000);
-			actionsMoveToElementElement(opcUsuariosTC2);
+			actionsMoveToElement(opcUsuariosTC2);
 			sleep(2000);
 			opcUsuariosTC2.click();
 			sleep(6000);
 			
 			usuarioModificador.click();
 			sleep(2000);
-			actionsMoveToElementElement(opcUsuariosTC2);
+			actionsMoveToElement(opcUsuariosTC2);
 			sleep(2000);
 			opcUsuariosTC2.click();
 			sleep(6000);
 		}else {
 			usuarioCreador.click();
 			sleep(2000);
-			actionsMoveToElementElement(opcUsuariosTP1);
+			actionsMoveToElement(opcUsuariosTP1);
 			sleep(2000);
 			opcUsuariosTP1.click();
 			sleep(6000);
 			
 			usuarioModificador.click();
 			sleep(2000);
-			actionsMoveToElementElement(opcUsuariosTP1);
+			actionsMoveToElement(opcUsuariosTP1);
 			sleep(2000);
 			opcUsuariosTP1.click();
 		}

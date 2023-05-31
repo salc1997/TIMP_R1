@@ -321,7 +321,7 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ex
 			tp1 = true;
 		}
 		
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(2000);
 		
 		while (!taa.isDisplayed()) {
@@ -331,7 +331,7 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ex
 		
 		taa.click();
 
-		waitExpectElement(mostrar);
+		waitExpectedElement(mostrar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 
@@ -377,7 +377,7 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ex
 		}
 		
 		
-		waitExpectElement(primeira);
+		waitExpectedElement(primeira);
 		sleep(2000);
 		
 		primeira.click();
@@ -402,7 +402,7 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ex
 	
 	public boolean accesarTpc() {
 		
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!tpc.isDisplayed()) {
@@ -412,14 +412,14 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ex
 		
 		tpc.click();
 
-		waitExpectElement(primeira);
+		waitExpectedElement(primeira);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 
 		IRPJ.click();
 		sleep(24000);
 
-		waitExpectElement(primeira);
+		waitExpectedElement(primeira);
 		sleep(13000);
 
 		primeira.click();
@@ -446,7 +446,7 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ex
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(3000);
 		
 		while(bcb.isDisplayed() == false) {
@@ -454,8 +454,8 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ex
 		}		
 	
 		bcb.click();
-		waitExpectXpath("//span[text()=\"Hierarquia de Configuração\"]");
-		waitExpectXpath("//div[contains(@class,\"icon-right\")][2]");
+		waitExpectedElement("//span[text()=\"Hierarquia de Configuração\"]");
+		waitExpectedElement("//div[contains(@class,\"icon-right\")][2]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -501,7 +501,7 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ex
 		nomeDaAba.sendKeys("Teste QA PREUBA 007");
 		sleep(1100);
 
-		actionsMoveToElementElement(nomeDoCampoDeLinha);
+		actionsMoveToElement(nomeDoCampoDeLinha);
 		sleep(1100);
 		nomeDaHierarquia.sendKeys("Teste QA PREUBA 007");
 		sleep(1100);
@@ -559,7 +559,7 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ex
 		sleep(1000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -622,7 +622,7 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ex
 		sleep(2000);
 		nova.click();
 		sleep(3000);
-		attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
+		attributeToBe("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
 		sleep(2000);
 		
 		int rows = driver
@@ -653,7 +653,7 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ex
 		tributoO.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 
-		attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"company\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(1000);
 
 		empresa.click();
@@ -756,7 +756,7 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ex
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(4000);
 
 		menu.click();
@@ -900,7 +900,7 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ex
 		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributoNotToBeEmptyElement(campo, "value");
+		attributoNotToBeEmpty(campo, "value");
 		
 		sleep(2000);
 

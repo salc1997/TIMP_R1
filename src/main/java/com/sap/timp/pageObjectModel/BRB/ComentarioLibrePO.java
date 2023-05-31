@@ -85,24 +85,24 @@ public class ComentarioLibrePO extends TestBase{
 	public ArrayList<Boolean> aplicarComentarioLibre() {
 
 		Actions actions = new Actions(driver);
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
 
-		waitExpectElement(menu);
+		waitExpectedElement(menu);
 		sleep(menuT);
 
 		menu.click();
 
 		opcao.click();
 
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		
 		agregar.click();
 		
 
-		actionsMoveToElementElement(agregar);
+		actionsMoveToElement(agregar);
 		sleep(7000);
 		nombre.click();
 		
@@ -122,7 +122,7 @@ public class ComentarioLibrePO extends TestBase{
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -145,7 +145,7 @@ public class ComentarioLibrePO extends TestBase{
 		
 		String usuarioLog = usuarioLogueado.getText();
 		
-		actionsMoveToElementXpath("//div[contains(@aria-label,\"Item-docnum\") and not(@data-path)]");
+		actionsMoveToElement("//div[contains(@aria-label,\"Item-docnum\") and not(@data-path)]");
 		
 		String dataColumn = driver.findElement(By.xpath("//div[contains(@aria-label,\"ComentarioLibre\")]")).getAttribute("data-column");
 		System.out.println(dataColumn);
@@ -164,7 +164,7 @@ public class ComentarioLibrePO extends TestBase{
 		sleep(2000);
 		
 		
-		actionsMoveToElementXpath("//div[contains(@aria-label,\"Item-docnum\") and not(@data-path)]");
+		actionsMoveToElement("//div[contains(@aria-label,\"Item-docnum\") and not(@data-path)]");
 		sleep(1000);
 		WebElement comentarioTexto2 = driver.findElement(By.xpath("//div[@data-column=\""+dataColumn+"\" and contains(@aria-label, \"Linha: 1-\")]/div/div/div/div/input"));
 		

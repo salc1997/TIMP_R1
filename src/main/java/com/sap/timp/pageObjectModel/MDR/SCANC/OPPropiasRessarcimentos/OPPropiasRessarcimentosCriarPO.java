@@ -115,7 +115,7 @@ public class OPPropiasRessarcimentosCriarPO extends TestBase{
 		sleep(1000);
 		opcao.click();
 		
-		attributeToBeXpath("//div[@id=\"ufbranch-repayments\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"ufbranch-repayments\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		uf.click();
@@ -130,7 +130,7 @@ public class OPPropiasRessarcimentosCriarPO extends TestBase{
 		opcao.click();
 		sleep(1000);
 
-		attributeToBeXpath("//div[@id=\"square-repayments\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"square-repayments\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		tipoCuadro.click();
@@ -138,7 +138,7 @@ public class OPPropiasRessarcimentosCriarPO extends TestBase{
 		opcao.click();
 		sleep(1000);
 		
-		waitExpectElement(codSituacao);
+		waitExpectedElement(codSituacao);
 		sleep(2000);
 		
 		codSituacao.click();

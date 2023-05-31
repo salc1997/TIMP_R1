@@ -59,7 +59,7 @@ public class RegrasDeAuditoriaN2CriarComCopiaPO extends TestBase{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(btnBiblioteca);
+		waitExpectedElement(btnBiblioteca);
 		sleep(2000);
 		btnBiblioteca.click();
 		invisibilityOfElementOverlay();
@@ -92,7 +92,7 @@ public class RegrasDeAuditoriaN2CriarComCopiaPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		btnSim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -134,7 +134,7 @@ public class RegrasDeAuditoriaN2CriarComCopiaPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		btnSim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

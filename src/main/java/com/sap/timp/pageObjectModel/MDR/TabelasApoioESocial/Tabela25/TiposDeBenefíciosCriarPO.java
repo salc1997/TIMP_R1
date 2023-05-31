@@ -100,7 +100,7 @@ public class TiposDeBenefíciosCriarPO extends TestBase{
 		gravar.click();
 		sleep(2000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

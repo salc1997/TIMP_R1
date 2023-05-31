@@ -47,7 +47,7 @@ public class FiliaisEditarPO extends TestBase {
 		
 		filiais.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
+		waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
 
 		sleep(2000);
 
@@ -55,7 +55,7 @@ public class FiliaisEditarPO extends TestBase {
 		editar.click();
 ;
 		
-		waitExpectXpath("//*[@id=\"toolbar\"]/div/ul/li[3]/button");
+		waitExpectedElement("//*[@id=\"toolbar\"]/div/ul/li[3]/button");
 		invisibilityOfElement("//*[@id=\"right-content\"]/div/div[4]/div/div/div/img");
 		sleep(3000);
 		dados.click();
@@ -71,7 +71,7 @@ public class FiliaisEditarPO extends TestBase {
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(3000);
@@ -85,7 +85,7 @@ public class FiliaisEditarPO extends TestBase {
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		waitExpectXpath("//*[@id=\"toolbar\"]/div/ul/li[3]/button");
+		waitExpectedElement("//*[@id=\"toolbar\"]/div/ul/li[3]/button");
 		invisibilityOfElement("//*[@id=\"right-content\"]/div/div[4]/div/div/div/img");
 		sleep(3000);
 		dados.click();

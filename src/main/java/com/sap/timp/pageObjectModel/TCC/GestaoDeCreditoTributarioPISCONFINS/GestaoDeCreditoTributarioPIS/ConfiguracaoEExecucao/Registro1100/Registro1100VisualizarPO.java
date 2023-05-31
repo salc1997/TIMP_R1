@@ -56,7 +56,7 @@ public class Registro1100VisualizarPO extends TestBase{
 	public ArrayList<Boolean>  visualizar() {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		actionsMoveToElementElement(gestaoCredito);
+		actionsMoveToElement(gestaoCredito);
 		sleep(2000);
 		gestaoCredito.click();
 		sleep(2000);
@@ -79,12 +79,12 @@ public class Registro1100VisualizarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"visualizar\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		menu.click();
 		sleep(1000);
 		visualizar.click();
 		sleep(3000);
-		waitExpectElement(uf);
+		waitExpectedElement(uf);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -118,16 +118,16 @@ public class Registro1100VisualizarPO extends TestBase{
 		 menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		 WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 
-	    actionsMoveToElementElement(menu);
+	    actionsMoveToElement(menu);
 		menu.click();
 		sleep(1000);
 		editar.click();
 		sleep(3000);
-		waitExpectElement(uf);
+		waitExpectedElement(uf);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(uf);
+		waitExpectedElement(uf);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

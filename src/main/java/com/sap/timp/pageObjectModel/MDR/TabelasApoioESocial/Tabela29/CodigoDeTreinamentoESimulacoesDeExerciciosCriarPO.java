@@ -83,7 +83,7 @@ public class CodigoDeTreinamentoESimulacoesDeExerciciosCriarPO extends TestBase 
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);

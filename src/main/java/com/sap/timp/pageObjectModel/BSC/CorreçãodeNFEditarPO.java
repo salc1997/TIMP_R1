@@ -104,7 +104,7 @@ public class CorreçãodeNFEditarPO extends TestBase{
 		}
 		String textId = "";
 
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		if (tq1 == true) {
 			textId = "8004766";
@@ -143,7 +143,7 @@ public class CorreçãodeNFEditarPO extends TestBase{
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+textId+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+textId+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Executar\"]"));
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 
 		sleep(4000);
 
@@ -177,10 +177,10 @@ public class CorreçãodeNFEditarPO extends TestBase{
 
 		home.click();
 		sleep(3000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		nao.click();
 		sleep(3000);
-		waitExpectElement(flecha);
+		waitExpectedElement(flecha);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -217,7 +217,7 @@ public class CorreçãodeNFEditarPO extends TestBase{
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idBSC+"\"]/div[1]/div"));
 		WebElement editar1 = driver.findElement(By.xpath("//div[@data-id=\""+idBSC+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(4000);
 
 		menu1.click();
@@ -229,7 +229,7 @@ public class CorreçãodeNFEditarPO extends TestBase{
 
 		sleep(1000);
 		
-		attributoNotToBeEmptyElement(datoEditar, "value");
+		attributoNotToBeEmpty(datoEditar, "value");
 		sleep(2000);
 		datoEditar.clear();
 
@@ -289,7 +289,7 @@ public class CorreçãodeNFEditarPO extends TestBase{
 		WebElement menu2 = driver.findElement(By.xpath("//div[@data-id=\""+idBSC+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idBSC+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 
-		actionsMoveToElementElement(menu2);
+		actionsMoveToElement(menu2);
 		sleep(4000);
 
 		menu2.click();
@@ -300,7 +300,7 @@ public class CorreçãodeNFEditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		attributoNotToBeEmptyElement(cSTPIS1, "value");
+		attributoNotToBeEmpty(cSTPIS1, "value");
 		String textocSTPIS1V = cSTPIS1.getAttribute("value");
 		String textocSTPIS2V = cSTPIS2.getAttribute("value");
 		String textobCPIS1V = bCPIS1.getAttribute("value");

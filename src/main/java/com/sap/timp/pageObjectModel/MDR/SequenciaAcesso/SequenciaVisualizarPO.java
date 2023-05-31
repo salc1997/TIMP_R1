@@ -88,7 +88,7 @@ public class SequenciaVisualizarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -101,7 +101,7 @@ public class SequenciaVisualizarPO extends TestBase {
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		visibilityOfElementXpath("//span[@id=\"name\"]");
+		visibilityOfElement("//span[@id=\"name\"]");
 		sleep(1000);
 		
 		String nomeV1 = nomeV.getText();

@@ -115,7 +115,7 @@ public class StatusOcorrenciaFiscalExcluirEmMassaPO extends TestBase {
 		new Actions(driver).moveToElement(empresa).click().perform();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"state\"]/div", "class", "input-element-wrapper");
+		attributeToBe("//div[@id=\"state\"]/div", "class", "input-element-wrapper");
 		
 		ufFilial.click();
 		sleep(1000);
@@ -123,7 +123,7 @@ public class StatusOcorrenciaFiscalExcluirEmMassaPO extends TestBase {
 		new Actions(driver).moveToElement(ufFilial).click().perform();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "input-element-wrapper");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "input-element-wrapper");
 		
 		filial.click();
 		sleep(1000);
@@ -161,11 +161,11 @@ public class StatusOcorrenciaFiscalExcluirEmMassaPO extends TestBase {
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -186,7 +186,7 @@ public class StatusOcorrenciaFiscalExcluirEmMassaPO extends TestBase {
 		new Actions(driver).moveToElement(empresa).click().perform();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"state\"]/div", "class", "input-element-wrapper");
+		attributeToBe("//div[@id=\"state\"]/div", "class", "input-element-wrapper");
 		
 		ufFilial.click();
 		sleep(1000);
@@ -194,7 +194,7 @@ public class StatusOcorrenciaFiscalExcluirEmMassaPO extends TestBase {
 		new Actions(driver).moveToElement(ufFilial).click().perform();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "input-element-wrapper");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "input-element-wrapper");
 		
 		filial.click();
 		sleep(1000);
@@ -232,11 +232,11 @@ public class StatusOcorrenciaFiscalExcluirEmMassaPO extends TestBase {
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -302,13 +302,13 @@ public class StatusOcorrenciaFiscalExcluirEmMassaPO extends TestBase {
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(1000);
 		aceitar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(3000);
@@ -317,7 +317,7 @@ public class StatusOcorrenciaFiscalExcluirEmMassaPO extends TestBase {
 		
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

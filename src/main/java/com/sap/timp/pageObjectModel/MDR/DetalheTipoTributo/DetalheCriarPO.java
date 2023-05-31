@@ -100,14 +100,14 @@ public class DetalheCriarPO extends TestBase{
 
 		novoDetalhe.click();
 
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		sleep(2000);
 		empresa.click();
 		sleep(1000);
 		empresaO.click();
 		empresa.sendKeys(Keys.ESCAPE);
 
-		attributeToBeXpath("//div[@id=\"tax\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tax\"]/div", "class", "base-select required");
 		sleep(1000);
 		tributo.click();
 		sleep(1000);

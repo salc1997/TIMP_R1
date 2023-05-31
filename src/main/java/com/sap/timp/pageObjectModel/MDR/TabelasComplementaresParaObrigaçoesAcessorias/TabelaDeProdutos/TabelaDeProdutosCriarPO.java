@@ -103,7 +103,7 @@ public class TabelaDeProdutosCriarPO extends TestBase{
 		novotabeladeprodutos.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-select required");
 		sleep(2000);
 		obrigacao.click();
 		
@@ -159,7 +159,7 @@ public class TabelaDeProdutosCriarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		

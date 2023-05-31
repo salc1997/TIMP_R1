@@ -192,7 +192,7 @@ public class TodasFuncPO extends TestBase{
 		
 		novo.click();
 		
-		attributeToBeXpath("//*[@id=\"create-structure\"]/div", "class", "base-autocomplete required");
+		attributeToBe("//*[@id=\"create-structure\"]/div", "class", "base-autocomplete required");
 		sleep(3000);
 		nome.sendKeys("Prueba Automatizada");
 		
@@ -234,7 +234,7 @@ public class TodasFuncPO extends TestBase{
 		sleep(1000);
 		
 		gravar.click();
-		waitExpectElement(mostrado);
+		waitExpectedElement(mostrado);
 
 		sleep(5000);
 		
@@ -282,7 +282,7 @@ public class TodasFuncPO extends TestBase{
 		editar.click();
 		
 		sleep(3000);
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 	
@@ -369,7 +369,7 @@ public class TodasFuncPO extends TestBase{
 		
 		gravarE.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -380,7 +380,7 @@ public class TodasFuncPO extends TestBase{
 		driver.navigate().refresh();
 		
 		sleep(3000);
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -422,18 +422,18 @@ public class TodasFuncPO extends TestBase{
 		sleep(1000);
 		editar.click();
 
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		
 		compartirB.click();
 		
 		aceptar.click();
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(6000);
 		
 		gravarP.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -448,7 +448,7 @@ public class TodasFuncPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		actionsMoveToElementElement(publico);
+		actionsMoveToElement(publico);
 
 		String publicoT = publico.getAttribute("aria-label");
 		System.out.println(publicoT);
@@ -474,25 +474,25 @@ public class TodasFuncPO extends TestBase{
 		editar.click();
 
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		
 		compartirB.click();
 		sleep(3000);
 		aceptar.click();
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(5000);
 		
 		gravarP.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(5000);
 		
-		waitExpectXpath(("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]"));
+		waitExpectedElement(("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]"));
 		sleep(2000);
 
 		biblioteca.click();
@@ -501,7 +501,7 @@ public class TodasFuncPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		actionsMoveToElementElement(publico);
+		actionsMoveToElement(publico);
 
 		String privadoT = publico.getAttribute("aria-label");
 		System.out.println(privadoT);
@@ -523,7 +523,7 @@ public class TodasFuncPO extends TestBase{
 		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		//sleep(menuT);
 		sleep(3000);
-		actionsMoveToElementElement(publico);
+		actionsMoveToElement(publico);
 		String publicoT = publico.getAttribute("aria-label");
 		System.out.println(publicoT);
 		
@@ -540,7 +540,7 @@ public class TodasFuncPO extends TestBase{
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
-		actionsMoveToElementElement(publico);
+		actionsMoveToElement(publico);
 		
 		
 		String privadoT = publico.getAttribute("aria-label");
@@ -564,15 +564,15 @@ public class TodasFuncPO extends TestBase{
 		sleep(1000);
 		editar.click();
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		sleep(3000);
 		System.out.println("paso 1");	
 		Actions actions = new Actions(driver);
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		
 		actions.moveToElement(excluir).perform();		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		
 		actions.moveToElement(excluir).perform();		
 
@@ -582,7 +582,7 @@ public class TodasFuncPO extends TestBase{
 		gravarP.click();
 		
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -591,7 +591,7 @@ public class TodasFuncPO extends TestBase{
 
 		driver.navigate().refresh();
 
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		sleep(3000);
 		List<WebElement> removido = driver.findElements(By.xpath("//*[@id=\"draggable-117\"]"));
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -619,7 +619,7 @@ public class TodasFuncPO extends TestBase{
 		gravarP.click();
 		
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -629,7 +629,7 @@ public class TodasFuncPO extends TestBase{
 		driver.navigate().refresh();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		sleep(2000);
 		
 		System.out.println("paso3");
@@ -665,19 +665,19 @@ public class TodasFuncPO extends TestBase{
 		sleep(1000);
 		gravarP.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		
 		driver.navigate().refresh();
 		
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		
 		List<WebElement> removido = driver.findElements(By.xpath("//*[@id=\"draggable-117\"]"));
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -694,7 +694,7 @@ public class TodasFuncPO extends TestBase{
 	
 		gravarP.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -703,7 +703,7 @@ public class TodasFuncPO extends TestBase{
 
 		driver.navigate().refresh();
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		sleep(1000);
 		List<WebElement> agregado = driver.findElements(By.xpath("//*[@id=\"draggable-117\"]"));
 		
@@ -736,13 +736,13 @@ public class TodasFuncPO extends TestBase{
 		editar.click();
 		
 		sleep(3000);
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 		
 		Actions actions = new Actions(driver);
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		sleep(2000);
 
 		Point hacia = driver.findElement(By.xpath("//*[@id=\"draggable-193\"]")).getLocation();
@@ -756,7 +756,7 @@ public class TodasFuncPO extends TestBase{
 		
 		gravarP.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -764,7 +764,7 @@ public class TodasFuncPO extends TestBase{
 		sleep(2000);
 		driver.navigate().refresh();
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		sleep(2000);
 		
 		boolean movido = false;
@@ -780,7 +780,7 @@ public class TodasFuncPO extends TestBase{
 		actions.dragAndDropBy(mover, -y, 0).perform();
 		gravarP.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);

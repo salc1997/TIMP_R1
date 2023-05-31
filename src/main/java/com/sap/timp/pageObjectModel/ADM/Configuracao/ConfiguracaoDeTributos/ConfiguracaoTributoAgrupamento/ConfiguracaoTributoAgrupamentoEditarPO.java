@@ -98,7 +98,7 @@ public class ConfiguracaoTributoAgrupamentoEditarPO extends TestBase {
 		sleep(6000);
 		
 		
-		attributoNotToBeEmptyElement(agrupamento, "value");
+		attributoNotToBeEmpty(agrupamento, "value");
 		String valorDescricaoGuardado = agrupamento.getAttribute("value");
 		System.out.println("");
 		System.out.println("Descricao valor guardado: " + valorDescricaoGuardado);

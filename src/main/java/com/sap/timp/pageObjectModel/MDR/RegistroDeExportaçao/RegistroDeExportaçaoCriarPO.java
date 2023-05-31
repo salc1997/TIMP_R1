@@ -120,7 +120,7 @@ public class RegistroDeExportaçaoCriarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@class=\"element\" and @id=\"company\"]/div", "class", "base-select required");
+		attributeToBe("//div[@class=\"element\" and @id=\"company\"]/div", "class", "base-select required");
 		empresa.click();
 		
 		sleep(2000);

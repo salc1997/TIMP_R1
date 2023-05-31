@@ -70,7 +70,7 @@ public class RegrasDeNegocioCriarComCopiaPO extends TestBase {
 		
 		nome.clear();
 		nome.sendKeys("Testeautomatizado - Nao Mexer - Copia");
-		waitExpectElement(aplicar);
+		waitExpectedElement(aplicar);
 		sleep(6000);
 		aplicar.click();
 		
@@ -125,7 +125,7 @@ public class RegrasDeNegocioCriarComCopiaPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -165,7 +165,7 @@ public class RegrasDeNegocioCriarComCopiaPO extends TestBase {
 		sleep(1000);
 		açao.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);

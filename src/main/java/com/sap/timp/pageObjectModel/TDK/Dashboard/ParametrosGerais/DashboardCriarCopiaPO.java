@@ -119,7 +119,7 @@ public class DashboardCriarCopiaPO extends TestBase {
 		WebElement copiar = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Copiar\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -127,9 +127,9 @@ public class DashboardCriarCopiaPO extends TestBase {
 		copiar.click();
 		sleep(2000);
 
-		attributeToBeXpath("//div[@id=\"copyFrom\"]/div", "class", "base-autocomplete ");
+		attributeToBe("//div[@id=\"copyFrom\"]/div", "class", "base-autocomplete ");
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		nome.clear();
 
@@ -143,12 +143,12 @@ public class DashboardCriarCopiaPO extends TestBase {
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(Gravar);
+		waitExpectedElement(Gravar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		biblioteca.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -191,20 +191,20 @@ public class DashboardCriarCopiaPO extends TestBase {
 		menu = driver.findElement(By.xpath("//div[@data-id=\"" + idB + "\"]/div[1]/div"));
 		WebElement lixeira = driver.findElement(By.xpath("//div[@data-id=\""+idB+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
 		sleep(1000);
 		lixeira.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(Lixeira);
+		waitExpectedElement(Lixeira);
 		sleep(2000);
 		Lixeira.click();
 		
@@ -238,27 +238,27 @@ public class DashboardCriarCopiaPO extends TestBase {
 		menu = driver.findElement(By.xpath("//div[@data-id=\"" + idlixeira + "\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idlixeira+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
 		sleep(1000);
 		excluir.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(Lixeira);
+		waitExpectedElement(Lixeira);
 		sleep(2000);
 		Lixeira.click();
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);

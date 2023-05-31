@@ -135,7 +135,7 @@ public class EnquadramentoCriarPO extends TestBase {
 		sleep(2000);
 		sim.click();
 		
-		waitExpectElement(mensagem);
+		waitExpectedElement(mensagem);
 		sleep(2000);
 		
 		biblioteca.click();
@@ -143,7 +143,7 @@ public class EnquadramentoCriarPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		

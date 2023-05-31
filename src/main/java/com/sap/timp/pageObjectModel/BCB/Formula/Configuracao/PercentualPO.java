@@ -517,7 +517,7 @@ public class PercentualPO extends TestBase {
 	
 		executar.click();
 		sleep(3000);
-		waitExpectElement(executarN);
+		waitExpectedElement(executarN);
 		
 		
 		

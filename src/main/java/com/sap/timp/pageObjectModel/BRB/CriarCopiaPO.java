@@ -96,7 +96,7 @@ public class CriarCopiaPO extends TestBase{
 	
 	public ArrayList<Boolean> copiar() {
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
@@ -113,7 +113,7 @@ public class CriarCopiaPO extends TestBase{
 		opcao.click();
 
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		
 		sleep(3000);
 	
@@ -132,14 +132,14 @@ public class CriarCopiaPO extends TestBase{
 		
 		copiar.click();
 		
-		waitExpectXpath("//*[@id=\"create-copy\"]/div/div[1]/input");
+		waitExpectedElement("//*[@id=\"create-copy\"]/div/div[1]/input");
 		
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(5000);
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
@@ -198,7 +198,7 @@ public class CriarCopiaPO extends TestBase{
 		
 		eliminar.click();
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(3000);
 		sim.click();
 				
@@ -240,7 +240,7 @@ public class CriarCopiaPO extends TestBase{
 		check.click();
 		
 		eliminar.click();
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(3000);
 		
 		sim.click();

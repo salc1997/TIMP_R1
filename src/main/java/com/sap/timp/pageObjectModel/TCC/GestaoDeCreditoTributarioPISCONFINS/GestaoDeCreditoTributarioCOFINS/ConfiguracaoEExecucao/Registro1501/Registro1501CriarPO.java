@@ -184,7 +184,7 @@ public class Registro1501CriarPO extends TestBase{
 		}
 		novo.click();
 		sleep(2000);
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		System.out.println("1111");
@@ -208,7 +208,7 @@ public class Registro1501CriarPO extends TestBase{
 		
 		System.out.println("1111");
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(3000);
 		System.out.println("1111");
 		filial.click();
@@ -266,19 +266,19 @@ public class Registro1501CriarPO extends TestBase{
 		
 		transferir.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		sleep(2000);
 		biblioteca.click();
 		sleep(2000);
@@ -288,11 +288,11 @@ public class Registro1501CriarPO extends TestBase{
 		
 		if (naobotao > 0) {
 			
-			waitExpectElement(nao);
+			waitExpectedElement(nao);
 			sleep(2000);
 			nao.click();
 			sleep(2000);
-			waitExpectElement(siguiente);
+			waitExpectedElement(siguiente);
 			sleep(2000);
 			siguiente.click();
 			sleep(2000);
@@ -321,7 +321,7 @@ public class Registro1501CriarPO extends TestBase{
 			
 		}else {
 				
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);

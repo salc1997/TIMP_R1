@@ -53,7 +53,7 @@ public class ConfiguracoesFavoritosPO extends TestBase{
 		sleep(2000);
 		
 		sleep(2000);
-		waitExpectElement(raiz2);
+		waitExpectedElement(raiz2);
 		raiz2.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -69,7 +69,7 @@ public class ConfiguracoesFavoritosPO extends TestBase{
 		
 	/*	btnFiltrosAvanzados.click();
 		sleep(2000);*/
-		waitExpectElement(btnFiltrosAvanzados);
+		waitExpectedElement(btnFiltrosAvanzados);
 		
 		pesquisar.sendKeys(idRegistro);
 		sleep(1000);

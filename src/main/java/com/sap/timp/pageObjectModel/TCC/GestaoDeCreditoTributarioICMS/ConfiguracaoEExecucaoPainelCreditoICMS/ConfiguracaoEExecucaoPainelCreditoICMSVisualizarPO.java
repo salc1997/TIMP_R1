@@ -92,7 +92,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSVisualizarPO extends TestBase
 		sleep(1000);
 		visualizar.click();
 		sleep(2000);
-		waitExpectElement(componenteInput);
+		waitExpectedElement(componenteInput);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(13000);
 		
@@ -120,7 +120,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSVisualizarPO extends TestBase
 		sleep(1000);
 		editar.click();
 		sleep(2000);
-		waitExpectElement(componenteInput);
+		waitExpectedElement(componenteInput);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(18000);
 		

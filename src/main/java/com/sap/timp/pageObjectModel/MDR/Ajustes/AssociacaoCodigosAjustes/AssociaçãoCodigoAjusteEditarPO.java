@@ -44,7 +44,7 @@ public class AssociaçãoCodigoAjusteEditarPO extends TestBase{
 		sleep(2000);
 		
 		if(URL.contains("td1") || URL.contains("tq1")) {
-			waitExpectElement(menuAjustes);
+			waitExpectedElement(menuAjustes);
 			menuAjustes.click();		
 			sleep(2000);
 		}		
@@ -82,11 +82,11 @@ public class AssociaçãoCodigoAjusteEditarPO extends TestBase{
 		sleep(1000);
 		btnGravar.click();
 		sleep(2000);
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		sleep(1000);
 		nao.click();
 		
-		waitExpectElement(btnSim);
+		waitExpectedElement(btnSim);
 		sleep(2000);
 		btnSim.click();
 		sleep(2000);
@@ -101,7 +101,7 @@ public class AssociaçãoCodigoAjusteEditarPO extends TestBase{
 		sleep(9000);
 		
 		// Obtengo el valor actualizado ya recargada la página
-		actionsMoveToElementElement(dataInicioVigencia);
+		actionsMoveToElement(dataInicioVigencia);
 		String dataInicioVigenciaEditada = dataInicioVigencia.getAttribute("value");
 		System.out.println("Data Nova: " +dataInicioVigenciaEditada);
 		sleep(2000);

@@ -163,7 +163,7 @@ public boolean editar() {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(2000);
 	
-	waitExpectElement(vCalculados);
+	waitExpectedElement(vCalculados);
 	vCalculados.click();
 	sleep(4000);
 	criarvCalculados.click();
@@ -181,7 +181,7 @@ public boolean editar() {
 	fechar.click();
 	sleep(2000);
 	
-	waitExpectElement(adicionar);
+	waitExpectedElement(adicionar);
 	sleep(2000);
 	adicionar.click();
 	sleep(3000);
@@ -232,7 +232,7 @@ public boolean editar() {
 	fechar.click();
 	sleep(2000);
 	
-	waitExpectElement(adicionar);
+	waitExpectedElement(adicionar);
 	sleep(2000);
 	adicionar.click();
 	sleep(3000);
@@ -326,7 +326,7 @@ public boolean editar() {
 	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 	sleep(4000);
 	
-	waitExpectElement(vCalculados);
+	waitExpectedElement(vCalculados);
 	vCalculados.click();
 	sleep(4000);
 	editVCalculado.click();
@@ -342,7 +342,7 @@ public boolean editar() {
 	fechar.click();
 	sleep(2000);
 	
-	waitExpectElement(vCalculados);
+	waitExpectedElement(vCalculados);
 	
 	String CFOPText2 = CFOP.getText();
 	

@@ -166,7 +166,7 @@ public class S1250AlterarDadosDoEventoPO extends TestBase{
 		sleep(1000);
 		s12150AcquisitionOfRuralProduction.click();
 		sleep(1000);
-		actionsMoveToElementElement(alterarDadosDoEvento);
+		actionsMoveToElement(alterarDadosDoEvento);
 		alterarDadosDoEvento.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -191,7 +191,7 @@ public class S1250AlterarDadosDoEventoPO extends TestBase{
 		btnNovoEvento.click();
 		sleep(1000);
 
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		nome.sendKeys("TESTE AUTOMATIZADO");
 		sleep(1000);
 
@@ -208,27 +208,27 @@ public class S1250AlterarDadosDoEventoPO extends TestBase{
 		opcionCombo.click();
 		sleep(1000);
 
-		actionsMoveToElementElement(inputDataInicioVigencia);
+		actionsMoveToElement(inputDataInicioVigencia);
 		cboTributo.click();
 		sleep(1000);
 		opcionTributo.click();
 		sleep(1000);
 
-		attributeToBeXpath("//div[contains(@class, \"company-select\")]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[contains(@class, \"company-select\")]/div", "class", "base-MultipleSelect3 required");
 		cboEmpresa.click();
 		sleep(1000);
 		opcionEmpresa.click();
 		closeSelectTypeCheckbox(cboEmpresa);
 		sleep(1000);
 
-		attributeToBeXpath("//div[contains(@class, \"uf-select\")]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[contains(@class, \"uf-select\")]/div", "class", "base-MultipleSelect3 required");
 		cboUf.click();
 		sleep(1000);
 		opcionUf.click();
 		closeSelectTypeCheckbox(cboUf);
 		sleep(1000);
 
-		attributeToBeXpath("//div[contains(@class, \"branch-select\")]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[contains(@class, \"branch-select\")]/div", "class", "base-MultipleSelect3 required");
 		cboFilial.click();
 		sleep(1000);
 		opcionFilial.click();
@@ -358,7 +358,7 @@ public class S1250AlterarDadosDoEventoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		attributoNotToBeEmptyElement(nome, "value");
+		attributoNotToBeEmpty(nome, "value");
 		nome.clear();
 		sleep(2000);
 
@@ -377,7 +377,7 @@ public class S1250AlterarDadosDoEventoPO extends TestBase{
 		WebElement btnCerrarMensaje = driver.findElement(By.xpath("//span[@class=\"close icon icon-font-Sign-and-Symbols icon-persign\"]"));
 		btnCerrarMensaje.click();
 
-		actionsMoveToElementElement(alterarDadosDoEvento);
+		actionsMoveToElement(alterarDadosDoEvento);
 		alterarDadosDoEvento.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -398,7 +398,7 @@ public class S1250AlterarDadosDoEventoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		attributoNotToBeEmptyElement(nome, "value");
+		attributoNotToBeEmpty(nome, "value");
 		String valorEditado = nome.getAttribute("value");
 
 		// Agarro los valores para compararlos con en graarAN3
@@ -550,7 +550,7 @@ public class S1250AlterarDadosDoEventoPO extends TestBase{
 		closeSelectTypeCheckbox(cboEstado);
 		sleep(1000);
 
-		actionsMoveToElementElement(inputSubperiodo);
+		actionsMoveToElement(inputSubperiodo);
 
 		inputSubperiodo.click();
 		sleep(2000);
@@ -588,7 +588,7 @@ public class S1250AlterarDadosDoEventoPO extends TestBase{
 		sleep(2000);
 
 		sleep(3000);
-		waitExpectXpath("//div[@class=\"dialog-indicator\"]");
+		waitExpectedElement("//div[@class=\"dialog-indicator\"]");
 		invisibilityOfElement("//div[@class=\"dialog-indicator\"]");
 		sleep(2000);
 	}
@@ -598,7 +598,7 @@ public class S1250AlterarDadosDoEventoPO extends TestBase{
 		sleep(3000);
 		// Verificar si es guardado con exito, si no se va quedar esperando por el
 		// waitExpectXpath
-		waitExpectXpath("//li[@class=\"base-toast  toast-success   \"]");
+		waitExpectedElement("//li[@class=\"base-toast  toast-success   \"]");
 		String mensajeSucesso = driver.findElement(By.xpath("//li[@class=\"base-toast  toast-success   \"]/div/span[2]/span")).getText();
 		invisibilityOfElement("//li[@class=\"base-toast  toast-success   \"]");
 		sleep(2000);
@@ -636,7 +636,7 @@ public class S1250AlterarDadosDoEventoPO extends TestBase{
 		// Verificar si es actulizado con exito, si no se va quedar esperando por el
 		// waitExpectXpath
 		sleep(3000);
-		waitExpectXpath("//li[@class=\"base-toast  toast-success         \"]");
+		waitExpectedElement("//li[@class=\"base-toast  toast-success         \"]");
 		String mensajeSucesso = driver.findElement(By.xpath("//li[@class=\"base-toast  toast-success         \"]/div/span[2]/span")).getText();
 		invisibilityOfElement("//li[@class=\"base-toast  toast-success         \"]");
 		sleep(2000);
@@ -823,7 +823,7 @@ public class S1250AlterarDadosDoEventoPO extends TestBase{
 		sleep(1000);
 		s12150AcquisitionOfRuralProduction.click();
 		sleep(1000);
-		actionsMoveToElementElement(s1250Alter);
+		actionsMoveToElement(s1250Alter);
 		s1250Alter.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -873,7 +873,7 @@ public class S1250AlterarDadosDoEventoPO extends TestBase{
 
 		String verificadoSucesso = "Arquivos Enviados";
 
-		waitExpectXpath("//ul[@class=\"base-toast-list\"]/li/div/span[2]/span");
+		waitExpectedElement("//ul[@class=\"base-toast-list\"]/li/div/span[2]/span");
 		String mensajeResultado = driver.findElement(By.xpath("//ul[@class=\"base-toast-list\"]/li/div/span[2]/span")).getText();
 
 		boolean sucesso = false;
@@ -897,7 +897,7 @@ public class S1250AlterarDadosDoEventoPO extends TestBase{
 
 		String verificadoSucesso = "Arquivos Enviados";
 
-		waitExpectXpath("//ul[@class=\"base-toast-list\"]/li/div/span[2]/span");
+		waitExpectedElement("//ul[@class=\"base-toast-list\"]/li/div/span[2]/span");
 		String mensajeResultado = driver.findElement(By.xpath("//ul[@class=\"base-toast-list\"]/li/div/span[2]/span")).getText();
 
 		boolean sucesso = false;

@@ -381,7 +381,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 
 		if (tq1 == true) {
 
-			actionsMoveToElementXpath("//*[@id=\"00\"]");
+			actionsMoveToElement("//*[@id=\"00\"]");
 			sleep(3000);
 
 			WebElement tributoOPC = driver.findElement(By.xpath("//*[@id=\"00\"]"));
@@ -394,7 +394,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 
 		}else if (tc2==true) {
 
-			actionsMoveToElementXpath("//li[@id=\"option-7\"]");
+			actionsMoveToElement("//li[@id=\"option-7\"]");
 			sleep(3000);
 
 			WebElement tributoOPC = driver.findElement(By.xpath("//li[@id=\"option-7\"]"));
@@ -408,7 +408,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 
 		}else {
 
-			actionsMoveToElementXpath("//li[@id=\"option-17\"]");
+			actionsMoveToElement("//li[@id=\"option-17\"]");
 			sleep(3000);
 
 			WebElement tributoOPC = driver.findElement(By.xpath("//li[@id=\"option-17\"]"));
@@ -587,7 +587,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -629,13 +629,13 @@ public class ECFFuncionalidadesPO extends TestBase{
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(2000);
 		editar2.click();
 		sleep(2000);
-		attributoNotToBeEmptyElement(descripcion, "value");
+		attributoNotToBeEmpty(descripcion, "value");
 		sleep(2000);
 
 		this.DescripcionEditarE = descripcion.getAttribute("value");
@@ -667,7 +667,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement informação = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Informação\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -709,7 +709,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(1000);
@@ -787,7 +787,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -994,13 +994,13 @@ public class ECFFuncionalidadesPO extends TestBase{
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(2000);
 		editar2.click();
 		sleep(2000);
-		attributoNotToBeEmptyElement(descripcion, "value");
+		attributoNotToBeEmpty(descripcion, "value");
 		sleep(2000);
 
 		String valor = descripcion.getAttribute("value");
@@ -1049,7 +1049,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement informação = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Informação\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -1124,7 +1124,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -1218,7 +1218,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement executar1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Executar\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -1279,7 +1279,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			actionsMoveToElementXpath("//li[text()=\"ICMS\"]");
+			actionsMoveToElement("//li[text()=\"ICMS\"]");
 			sleep(3000);
 			
 			WebElement tributoOPC = driver.findElement(By.xpath("//li[text()=\"ICMS\"]"));
@@ -1294,7 +1294,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			actionsMoveToElementXpath("//li[text()=\"ICMS\"]");
+			actionsMoveToElement("//li[text()=\"ICMS\"]");
 			sleep(3000);
 			
 			WebElement tributoOPC = driver.findElement(By.xpath("//li[text()=\"ICMS\"]"));
@@ -1469,7 +1469,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement visualizarA = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar Atualizações\"]"));
 
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(2000);
@@ -1521,7 +1521,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 		
 		home.click();
 		sleep(3000);
-		waitExpectXpath("//div[@class=\"dragger-pagination-right\"]");
+		waitExpectedElement("//div[@class=\"dragger-pagination-right\"]");
 		sleep(1000);
 		
 		AcessarDFGPO acessarDFGPO;

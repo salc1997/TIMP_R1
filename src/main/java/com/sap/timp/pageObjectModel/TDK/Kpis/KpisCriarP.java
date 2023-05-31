@@ -131,7 +131,7 @@ public class KpisCriarP extends TestBase {
 		Gravar.click();
 		sleep(2000);
 		
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		sleep(2000);
 		
 		biblioteca.click();
@@ -140,7 +140,7 @@ public class KpisCriarP extends TestBase {
 		sim.click();
 		sleep(2000);
 
-		waitExpectElement(kpispublicos);
+		waitExpectedElement(kpispublicos);
 		sleep(2000);
 		
 		kpispublicos.click();

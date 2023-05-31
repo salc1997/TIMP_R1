@@ -197,7 +197,7 @@ public class ParametrosParaLivroICMSSTExcluirMasasPO extends TestBase {
 		sleep(2000);
 		excluirMassa.click();
 		sleep(3000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		
@@ -205,7 +205,7 @@ public class ParametrosParaLivroICMSSTExcluirMasasPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

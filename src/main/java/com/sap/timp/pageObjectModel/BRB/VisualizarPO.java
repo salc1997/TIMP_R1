@@ -35,7 +35,7 @@ public class VisualizarPO extends TestBase{
 	
 	public boolean visualizar() {
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
@@ -53,7 +53,7 @@ public class VisualizarPO extends TestBase{
 
 		opcao.click();
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		
 		boolean sucesso = driver.findElement(By.xpath("//li[contains(@class,\"add-column\")]")).isDisplayed();
 		sleep(3000);

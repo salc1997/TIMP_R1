@@ -96,7 +96,7 @@ public class CadastroNotaFiscalDetallesPO  extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 
 		menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		açao = driver.findElement(
@@ -108,7 +108,7 @@ public class CadastroNotaFiscalDetallesPO  extends TestBase{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		attributoNotToBeEmptyElement(empresaV, "textContent");
+		attributoNotToBeEmpty(empresaV, "textContent");
 		sleep(1000);
 		
 		System.out.println("--------- Visualizar -------");

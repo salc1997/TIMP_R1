@@ -69,11 +69,11 @@ public class RegrasDeNegocioEdicaoRelacionamentoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(btnSeleccionarRelacionamento);
+		waitExpectedElement(btnSeleccionarRelacionamento);
 		btnSeleccionarRelacionamento.click();
 		sleep(2000);
 		
-		waitExpectElement(cboRelacionamentoElementoDeEstrutura);
+		waitExpectedElement(cboRelacionamentoElementoDeEstrutura);
 		cboRelacionamentoElementoDeEstrutura.click();
 		sleep(1000);
 		
@@ -103,7 +103,7 @@ public class RegrasDeNegocioEdicaoRelacionamentoPO extends TestBase{
 		
 		btnGravar.click();
 		sleep(2000);
-		waitExpectElement(btnNao);
+		waitExpectedElement(btnNao);
 		btnNao.click();
 		invisibilityOfElementOverlay();
 		sleep(3000);
@@ -139,11 +139,11 @@ public class RegrasDeNegocioEdicaoRelacionamentoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(btnSeleccionarRelacionamento);
+		waitExpectedElement(btnSeleccionarRelacionamento);
 		btnSeleccionarRelacionamento.click();
 		sleep(2000);
 		
-		waitExpectElement(cboRelacionamentoElementoDeEstrutura);
+		waitExpectedElement(cboRelacionamentoElementoDeEstrutura);
 		
 		String opcionSeleccionadaEditada = driver.findElement(By.xpath("//div[@class=\"structure-relation-select\"]/div/div/div/div/div/div[1]")).getText();
 		System.out.println("");
@@ -168,7 +168,7 @@ public class RegrasDeNegocioEdicaoRelacionamentoPO extends TestBase{
 		
 		btnGravar.click();
 		sleep(2000);
-		waitExpectElement(btnNao);
+		waitExpectedElement(btnNao);
 		btnNao.click();
 		invisibilityOfElementOverlay();
 		sleep(3000);
@@ -178,7 +178,7 @@ public class RegrasDeNegocioEdicaoRelacionamentoPO extends TestBase{
 		btnSeleccionarRelacionamento.click();
 		sleep(2000);
 		
-		waitExpectElement(cboRelacionamentoElementoDeEstrutura);
+		waitExpectedElement(cboRelacionamentoElementoDeEstrutura);
 		sleep(3000);
 		
 		String opcionRelacionamentoElementoDeEstrutura = driver.findElement(By.xpath("//div[@class=\"structure-relation-select\"]/div/div/div/div[2]/input")).getAttribute("value");

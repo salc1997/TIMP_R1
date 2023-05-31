@@ -104,13 +104,13 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBase{
 		invisibilityOfElementOverlay();
 		sleep(2000);
 		
-		waitExpectElement(cboGrupo1);
+		waitExpectedElement(cboGrupo1);
 		cboGrupo1.click();
 		sleep(3000);
 		opcionGrupo1.click();
 		sleep(3000);
 		
-		attributeToBeXpath("//div[@class=\"structure1-select\"]/div", "class", "base-select ");
+		attributeToBe("//div[@class=\"structure1-select\"]/div", "class", "base-select ");
 		cboEstrutura1.click();
 		sleep(3000);
 		opcionEstrutura1.click();
@@ -130,7 +130,7 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBase{
 		opcionGrupo2.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@class=\"structure2-select\"]/div", "class", "base-select ");
+		attributeToBe("//div[@class=\"structure2-select\"]/div", "class", "base-select ");
 		cboEstrutura2.click();
 		sleep(3000);
 		opcionEstrutura2.click();
@@ -186,7 +186,7 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBase{
 		opcionGrupo1.click();
 		sleep(3000);
 		
-		attributeToBeXpath("//div[@class=\"structure1-select\"]/div", "class", "base-select ");
+		attributeToBe("//div[@class=\"structure1-select\"]/div", "class", "base-select ");
 		cboEstrutura1.click();
 		sleep(3000);
 		opcionEstrutura1.click();
@@ -206,7 +206,7 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBase{
 		opcionGrupo2.click();
 		sleep(3000);
 		
-		attributeToBeXpath("//div[@class=\"structure2-select\"]/div", "class", "base-select ");
+		attributeToBe("//div[@class=\"structure2-select\"]/div", "class", "base-select ");
 		cboEstrutura2.click();
 		sleep(3000);
 		opcionEstrutura2.click();
@@ -278,7 +278,7 @@ public class RelacionamentoEstruturasExcluirEmMassaPO extends TestBase{
 		
 		btnExcluirMassa.click();
 		sleep(2000);
-		waitExpectElement(btnAceitar);
+		waitExpectedElement(btnAceitar);
 		btnAceitar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

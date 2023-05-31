@@ -139,7 +139,7 @@ public class RegistroM510CriarPO extends TestBase{
 		}
 		novo.click();
 		sleep(2000);
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -149,7 +149,7 @@ public class RegistroM510CriarPO extends TestBase{
 		sleep(1000);
 		
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(4000);
 		
 		uf.click();
@@ -160,7 +160,7 @@ public class RegistroM510CriarPO extends TestBase{
 		sleep(1000);
 	
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(4000);
 		
 		filial.click();
@@ -186,12 +186,12 @@ public class RegistroM510CriarPO extends TestBase{
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		sleep(2000);
 		biblioteca.click();
 		sleep(2000);
@@ -200,11 +200,11 @@ public class RegistroM510CriarPO extends TestBase{
 		int naobotao= driver.findElements(By.xpath("//button[text()=\"Não\"]")).size();
 		if (naobotao > 0) {
 			
-			waitExpectElement(nao);
+			waitExpectedElement(nao);
 			sleep(2000);
 			nao.click();
 			sleep(2000);
-			waitExpectElement(siguiente);
+			waitExpectedElement(siguiente);
 			sleep(2000);
 			siguiente.click();
 			sleep(2000);
@@ -233,7 +233,7 @@ public class RegistroM510CriarPO extends TestBase{
 			
 		}else {
 				
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);

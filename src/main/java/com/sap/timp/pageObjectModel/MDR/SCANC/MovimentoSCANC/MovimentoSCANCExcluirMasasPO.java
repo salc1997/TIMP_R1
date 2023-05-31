@@ -106,14 +106,14 @@ public class MovimentoSCANCExcluirMasasPO extends TestBase{
 		opcao.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"UF\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"UF\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		uf.click();
 		sleep(1000);
 		opcao.click();
 		sleep(1000);
-		attributeToBeXpath("//div[@id=\"branches\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branches\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);	
 		
 		filial.click();
@@ -152,14 +152,14 @@ public class MovimentoSCANCExcluirMasasPO extends TestBase{
 		opcao.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"UF\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"UF\"]/div", "class", "base-select required");
 		sleep(2000);
 		
 		uf.click();
 		sleep(1000);
 		opcao.click();
 		sleep(1000);
-		attributeToBeXpath("//div[@id=\"branches\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branches\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);	
 		
 		filial.click();
@@ -247,7 +247,7 @@ public class MovimentoSCANCExcluirMasasPO extends TestBase{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(primeira);
+		waitExpectedElement(primeira);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		primeira.click();

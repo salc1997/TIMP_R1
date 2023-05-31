@@ -148,7 +148,7 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends Test
 		
 		
 		//Primeiro registro
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		
 		nome.click();
@@ -184,7 +184,7 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends Test
 		sleep(1000);
 		
 
-		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
+		actionsMoveToElement("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
 		estruturaDeDatos.click();
 		sleep(1000);
 		opcionEstruturaDeDatos.click();
@@ -201,7 +201,7 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends Test
 		sleep(2000);
 		aplicar.click();
 		sleep(2000);
-		waitExpectElement(adicionarCaminho);
+		waitExpectedElement(adicionarCaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -210,7 +210,7 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends Test
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(regraDeEscrituracao);
+		waitExpectedElement(regraDeEscrituracao);
 		sleep(2000);
 		regraDeEscrituracao.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -223,7 +223,7 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends Test
 		//-----------SEGUNDO----------------
 		novo.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		sleep(2000);
 		
 		nome.click();
@@ -259,7 +259,7 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends Test
 		sleep(1000);
 		
 
-		actionsMoveToElementXpath("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
+		actionsMoveToElement("//td[contains(@class,\"EffectiveDateTo\")]/div/div/input");
 		estruturaDeDatos.click();
 		sleep(1000);
 		opcionEstruturaDeDatos.click();
@@ -277,7 +277,7 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends Test
 		sleep(2000);
 		aplicar.click();
 		sleep(2000);
-		waitExpectElement(adicionarCaminho);
+		waitExpectedElement(adicionarCaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -286,11 +286,11 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends Test
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(regraDeEscrituracao);
+		waitExpectedElement(regraDeEscrituracao);
 		sleep(2000);
 		regraDeEscrituracao.click();
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);
@@ -342,7 +342,7 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends Test
 		WebElement lixeiraemmassa = driver.findElement(By.xpath("//span[@class=\"button-icon icon-font-Finance-and-Office icon-trash\"]"));
 		lixeiraemmassa.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
@@ -356,7 +356,7 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends Test
 		lixeira.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);
@@ -405,7 +405,7 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends Test
 		excluirmassa.click();
 		
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		
 		sim.click();
@@ -420,7 +420,7 @@ public class RegrasDeEscrituracaoLixeiraEmMassaMaisExcluirEmMassaPO extends Test
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		

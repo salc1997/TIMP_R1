@@ -165,7 +165,7 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBase{
 		}else {
 			grupodeestrutura.click();
 			sleep(2000);
-			actionsMoveToElementXpath("//li[@class=\"list-item\" and text()=\"Ajuste\"][1]");
+			actionsMoveToElement("//li[@class=\"list-item\" and text()=\"Ajuste\"][1]");
 			opcaogrupodeestrutura.click();
 			sleep(1000);
 		}
@@ -185,7 +185,7 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBase{
 			opcaoestruturadevalidacao.click();
 			sleep(2000);
 		}
-		waitExpectElement(gravar);
+		waitExpectedElement(gravar);
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
@@ -217,7 +217,7 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"list-check_"+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\"list-check_"+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 
 		menu.click();
@@ -231,7 +231,7 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"structure-validation\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"structure-validation\"]/div", "class", "base-select required");
 		estruturadevalidacao.click();
 		sleep(2000);
 		outraestruturadevalidacao.click();
@@ -263,7 +263,7 @@ public class EstruturasCriarMaisEditarMaisVisualizarPO extends TestBase{
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\"list-check_"+idRegistro+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\"list-check_"+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualização\"]"));
 		
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 
 		menu.click();

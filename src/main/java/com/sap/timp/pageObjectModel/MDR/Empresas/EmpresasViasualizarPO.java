@@ -62,7 +62,7 @@ public class EmpresasViasualizarPO extends TestBase{
 		
 		empresa.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
+		waitExpectedElement("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div");
 
 		sleep(2000);
 		

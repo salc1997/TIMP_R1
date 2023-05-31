@@ -64,7 +64,7 @@ public class CrescenteEDecrescentePO extends TestBase {
 	
 	public ArrayList<Boolean> crescente() {
 
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
@@ -73,7 +73,7 @@ public class CrescenteEDecrescentePO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(menu);
+		waitExpectedElement(menu);
 		//sleep(menuT);
 
 		menu.click();
@@ -83,16 +83,16 @@ public class CrescenteEDecrescentePO extends TestBase {
 
 		sleep(11000);
 		
-		waitExpectElement(executar);
+		waitExpectedElement(executar);
 		executar.click();
 		sleep(5000);
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(9000);
 
-		actionsMoveToElementXpath("//div[@data-column=\"115\"]/span");
+		actionsMoveToElement("//div[@data-column=\"115\"]/span");
 		sleep(3000);
-		actionsMoveToElementElement(menuC);
+		actionsMoveToElement(menuC);
 		System.out.println("Antes click");
 		
 		menuC.sendKeys(Keys.ENTER);
@@ -123,9 +123,9 @@ public class CrescenteEDecrescentePO extends TestBase {
 			sleep(2000);
 			//actionsMoveToElementXpath("//div[@data-column=\"66\"]/span");
 
-			actionsMoveToElementXpath("//div[@data-column=\"115\"]/span");
+			actionsMoveToElement("//div[@data-column=\"115\"]/span");
 			sleep(3000);
-			actionsMoveToElementElement(menuC);
+			actionsMoveToElement(menuC);
 			
 			menuC.sendKeys(Keys.ENTER);
 			sleep(6000);
@@ -143,8 +143,8 @@ public class CrescenteEDecrescentePO extends TestBase {
 
 		for (int i = 0; i < 25; i++) {
 			rows = driver.findElements(By.xpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: \")]")).size();
-			actionsMoveToElementXpath("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: "+rows+"\")]");
-			waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+			actionsMoveToElement("//div[@data-column=\"66\" and contains(@aria-label, \"Linha: "+rows+"\")]");
+			waitExpectedElement("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 
 		}
 		
@@ -214,14 +214,14 @@ public class CrescenteEDecrescentePO extends TestBase {
 	
 	public ArrayList<Boolean> decrescente() {
 		sleep(2000);
-		actionsMoveToElementXpath("//div[@id=\"table-report-container\"]/div[1]/div[14]");
+		actionsMoveToElement("//div[@id=\"table-report-container\"]/div[1]/div[14]");
 		sleep(18000);
 	
 		System.out.println("Recargo");
 		
-		actionsMoveToElementXpath("//div[@data-column=\"66\"]/span");
+		actionsMoveToElement("//div[@data-column=\"66\"]/span");
 		
-		actionsMoveToElementElement(menuC);
+		actionsMoveToElement(menuC);
 
 		
 		menuC.sendKeys(Keys.ENTER);

@@ -154,7 +154,7 @@ public class LimiteCompetenciaCriarPO extends TestBase{
 
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(3000);
 		
 		ufFilial.click();
@@ -168,7 +168,7 @@ public class LimiteCompetenciaCriarPO extends TestBase{
 		}
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(3000);
 		
 		filial.click();
@@ -188,7 +188,7 @@ public class LimiteCompetenciaCriarPO extends TestBase{
 		tributoO.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@id=\"tax-type\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"tax-type\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(3000);
 		
 		tipoImposto.click();
@@ -202,7 +202,7 @@ public class LimiteCompetenciaCriarPO extends TestBase{
 		opcao2.click();
 		sleep(1000);
 		
-		actionsMoveToElementElement(nivelAprovacao);
+		actionsMoveToElement(nivelAprovacao);
 		sleep(2000);
 		
 		nivelAprovacao.click();
@@ -221,7 +221,7 @@ public class LimiteCompetenciaCriarPO extends TestBase{
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

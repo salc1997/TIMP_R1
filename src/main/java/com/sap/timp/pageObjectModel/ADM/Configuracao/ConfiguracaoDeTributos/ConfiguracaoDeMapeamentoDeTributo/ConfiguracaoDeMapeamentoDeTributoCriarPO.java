@@ -116,7 +116,7 @@ public class ConfiguracaoDeMapeamentoDeTributoCriarPO extends TestBase{
 		
 		novo.click();
 		sleep(2000);
-		waitExpectElement(origemtributo);
+		waitExpectedElement(origemtributo);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -130,12 +130,12 @@ public class ConfiguracaoDeMapeamentoDeTributoCriarPO extends TestBase{
 	
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		sleep(2000);
 		biblioteca.click();
 		sleep(2000);
@@ -146,7 +146,7 @@ public class ConfiguracaoDeMapeamentoDeTributoCriarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 				
-		waitExpectElement(primeira);
+		waitExpectedElement(primeira);
 		sleep(2000);
 		primeira.click();
 		sleep(2000);

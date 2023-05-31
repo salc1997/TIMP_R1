@@ -146,7 +146,7 @@ public class ParametrosGeraisCriarProcesoRecorrentePO  extends TestBase {
 		sleep(2000);
 		
 		
-		dobleClickElement(NovoOperacao);
+		dobleClick(NovoOperacao);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -163,7 +163,7 @@ public class ParametrosGeraisCriarProcesoRecorrentePO  extends TestBase {
 		moveToElement(fin, driver.findElement(By.xpath("//div[@id=\"Operation\"]/div/div/div/div/div")));
 		sleep(2000);
 		
-		dobleClickElement(NovoActividad);
+		dobleClick(NovoActividad);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

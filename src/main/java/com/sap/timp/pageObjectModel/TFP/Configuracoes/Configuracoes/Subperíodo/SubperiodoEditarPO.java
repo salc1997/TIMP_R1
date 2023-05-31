@@ -77,7 +77,7 @@ public class SubperiodoEditarPO  extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -85,7 +85,7 @@ public class SubperiodoEditarPO  extends TestBase {
 		sleep(2000);
 		sleep(2000);
 
-		waitExpectElement(dia1);
+		waitExpectedElement(dia1);
 		sleep(5000);
 		
 		String valor = dia.getAttribute("value");
@@ -120,7 +120,7 @@ public class SubperiodoEditarPO  extends TestBase {
 		WebElement menu2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		//System.out.println(menu2);
-		actionsMoveToElementElement(menu2);
+		actionsMoveToElement(menu2);
 		sleep(2000);
 		menu2.click();
 		sleep(2000);

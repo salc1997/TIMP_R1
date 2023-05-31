@@ -224,15 +224,15 @@ public class NotasDeclararAnexoIIIExcluirMassaPO extends TestBase {
 		sleep(2000);
 		gravarNovo.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		waitExpectElement(inputInscricaoEstadual);
+		waitExpectedElement(inputInscricaoEstadual);
 		sleep(2000);
 		
 		inputInscricaoEstadual.click();
@@ -317,11 +317,11 @@ public class NotasDeclararAnexoIIIExcluirMassaPO extends TestBase {
 		
 		gravarNovo.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -388,7 +388,7 @@ public class NotasDeclararAnexoIIIExcluirMassaPO extends TestBase {
 		excluirmassa.click();
 		
 		sleep(2000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(2000);
 		
 		aceitar.click();
@@ -399,7 +399,7 @@ public class NotasDeclararAnexoIIIExcluirMassaPO extends TestBase {
 		refresh();
 		
 		sleep(2000);
-		waitExpectElement(menuNotasDeclararAnexo);
+		waitExpectedElement(menuNotasDeclararAnexo);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

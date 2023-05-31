@@ -112,7 +112,7 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBase{
 		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[contains(@class,\"uf\")]/div", "class", "input-element-wrapper");
+		attributeToBe("//div[contains(@class,\"uf\")]/div", "class", "input-element-wrapper");
 		sleep(2000);
 		
 		uf.click();
@@ -131,7 +131,7 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBase{
 		
 		filtro.click();
 		sleep(1000);
-		waitExpectElement(opcoes);
+		waitExpectedElement(opcoes);
 		sleep(1000);
 		opcoes.click();
 		sleep(1000);
@@ -158,7 +158,7 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBase{
 
 		refresh();
 		
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -170,7 +170,7 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBase{
 		opcao.sendKeys(Keys.ESCAPE);
 		sleep(2000);
 		
-		attributeToBeXpath("//div[contains(@class,\"uf\")]/div", "class", "input-element-wrapper");
+		attributeToBe("//div[contains(@class,\"uf\")]/div", "class", "input-element-wrapper");
 		sleep(2000);
 		
 		uf.click();
@@ -189,7 +189,7 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBase{
 		
 		filtro.click();
 		sleep(1000);
-		waitExpectElement(opcoes);
+		waitExpectedElement(opcoes);
 		sleep(1000);
 		opcoes.click();
 		sleep(1000);
@@ -275,7 +275,7 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBase{
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(1000);
 		aceitar.click();
 		sleep(3000);
@@ -284,7 +284,7 @@ public class SCANCDistribuidoraExcluirEmMassaPO extends TestBase{
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

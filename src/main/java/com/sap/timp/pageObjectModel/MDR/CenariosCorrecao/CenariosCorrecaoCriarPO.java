@@ -84,7 +84,7 @@ public class CenariosCorrecaoCriarPO extends TestBase{
 		}
 		
 		cenarios.click();
-		attributeToBeXpath("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
+		attributeToBe("//div[contains(@class,\"tbody\")]", "class", "tbody hasShowHide");
 		sleep(2000);	
 			
 		siguiente.click();
@@ -97,11 +97,11 @@ public class CenariosCorrecaoCriarPO extends TestBase{
 	
 		String id = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div["+filas+"]/div[3]/div")).getText();
 		
-		waitExpectElement(novo);
+		waitExpectedElement(novo);
 		novo.sendKeys(Keys.ENTER);		
 		
-		waitExpectElement(btnGravar);
-		waitExpectElement(tributo);
+		waitExpectedElement(btnGravar);
+		waitExpectedElement(tributo);
 		tributo.click();
 		sleep(1000);
 		opc.click();
@@ -115,7 +115,7 @@ public class CenariosCorrecaoCriarPO extends TestBase{
 		sleep(1000);
 		opcServicoWeb.click();
 		sleep(3000);
-		waitExpectElement(btnAgregarCampo);
+		waitExpectedElement(btnAgregarCampo);
 		btnAgregarCampo.sendKeys(Keys.ENTER);
 		sleep(1000);
 		campo.click();
@@ -130,12 +130,12 @@ public class CenariosCorrecaoCriarPO extends TestBase{
 		
 		btnGravar.sendKeys(Keys.ENTER);
 		
-		waitExpectElement(confirmacionGravar);
+		waitExpectedElement(confirmacionGravar);
 		confirmacionGravar.sendKeys(Keys.ENTER);
 		
 		sleep(3000);
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 

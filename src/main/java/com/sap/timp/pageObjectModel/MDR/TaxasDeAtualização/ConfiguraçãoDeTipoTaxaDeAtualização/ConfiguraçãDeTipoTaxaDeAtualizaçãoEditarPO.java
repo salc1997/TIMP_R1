@@ -36,9 +36,9 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoEditarPO extends TestBase{
 		PageFactory.initElements(driver, this);
 	}
 	@Override
-	public void actionsMoveToElementElement(WebElement element) {
+	public void actionsMoveToElement(WebElement element) {
 		// TODO Auto-generated method stub
-		super.actionsMoveToElementElement(element);
+		super.actionsMoveToElement(element);
 	}
 	
 	public boolean editar() {
@@ -87,7 +87,7 @@ public class ConfiguraçãDeTipoTaxaDeAtualizaçãoEditarPO extends TestBase{
 		sleep(2000);
 		
 		// Obtengo el valor actualizado ya recargada la página
-		attributoNotToBeEmptyElement(dataFimVigencia, "value");
+		attributoNotToBeEmpty(dataFimVigencia, "value");
 		String dataFinVigenciaEditado = dataFimVigencia.getAttribute("value");
 		System.out.println(dataFinVigenciaEditado);
 		sleep(2000);

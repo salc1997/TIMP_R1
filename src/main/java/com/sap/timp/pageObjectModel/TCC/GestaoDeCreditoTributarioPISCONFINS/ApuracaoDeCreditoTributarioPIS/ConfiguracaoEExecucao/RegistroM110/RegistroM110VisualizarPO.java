@@ -83,7 +83,7 @@ public class RegistroM110VisualizarPO extends TestBase{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required disabled");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required disabled");
 
 		
 		String empresavisualizar = empresa.getAttribute("value");
@@ -127,7 +127,7 @@ public class RegistroM110VisualizarPO extends TestBase{
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(filial);
+		waitExpectedElement(filial);
 		sleep(12000);
 		
 		String empresaEditar = empresa.getAttribute("value");

@@ -92,7 +92,7 @@ public class OPPropiasRessarcimentosEditarPO extends TestBase{
 		sleep(1000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay dark\"]");
@@ -104,7 +104,7 @@ public class OPPropiasRessarcimentosEditarPO extends TestBase{
 		sleep(34000);
 		
 		// Obtengo el valor actualizado ya recargada la página
-		actionsMoveToElementElement(dataInicioVigencia);
+		actionsMoveToElement(dataInicioVigencia);
 		String dataInicioVigenciaEditada = dataInicioVigencia.getAttribute("value");
 		System.out.println("Data Nova: " +dataInicioVigenciaEditada);
 		sleep(2000);

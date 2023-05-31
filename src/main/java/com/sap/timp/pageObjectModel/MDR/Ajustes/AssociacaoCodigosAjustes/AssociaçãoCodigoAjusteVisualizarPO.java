@@ -150,7 +150,7 @@ public class AssociaçãoCodigoAjusteVisualizarPO extends TestBase{
 		sleep(2000);
 		
 		if(URL.contains("td1") || URL.contains("tq1")) {
-			waitExpectElement(menuAjustes);
+			waitExpectedElement(menuAjustes);
 			menuAjustes.click();		
 			sleep(2000);
 		}		
@@ -240,7 +240,7 @@ public class AssociaçãoCodigoAjusteVisualizarPO extends TestBase{
 		String textoEmpresa1 = empresa1.getText();
 		String textoUFOrigem1 = ufOrigem1.getAttribute("value");
 		
-		attributeToBeXpath("//div[@id=\"filial\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"filial\"]/div", "class", "base-MultipleSelect3 required");
 		String textoFilial1 = filial1.getText();
 		textoFilial1 = textoFilial1.replace(" ", ""); // Reemplazo los espacios por nada para que quedee igual en visualizar y editar
 		

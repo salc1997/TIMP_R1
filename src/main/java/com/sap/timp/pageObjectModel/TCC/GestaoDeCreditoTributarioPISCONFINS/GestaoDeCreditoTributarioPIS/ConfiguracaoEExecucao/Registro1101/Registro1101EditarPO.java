@@ -79,14 +79,14 @@ public class Registro1101EditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(3000);
 		menu.click();
 		sleep(2000);
 		editar.click();
 		sleep(2000);
 		
-		waitExpectElement(filial);
+		waitExpectedElement(filial);
 		sleep(19000);
 		String valor = filialE.getText();
 		//String valor = filialE.getAttribute("value");
@@ -105,14 +105,14 @@ public class Registro1101EditarPO extends TestBase{
 		
 		btnGravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 	    
 		driver.navigate().refresh();
-		waitExpectElement(filial);
+		waitExpectedElement(filial);
 		sleep(19000);
 	  	
 	  	String nuevoTexto = filialE.getText();

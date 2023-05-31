@@ -132,7 +132,7 @@ public class RegistroM230CriarPO extends TestBase{
 		
 		empresaoPC.click();
 		
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		uf.click();
 		sleep(4000);
 		
@@ -154,7 +154,7 @@ public class RegistroM230CriarPO extends TestBase{
 			
 		}
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		filial.click();
 		sleep(2000);
 		
@@ -255,7 +255,7 @@ public class RegistroM230CriarPO extends TestBase{
 		
 		
 		sleep(4000);
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();
 		sleep(2000);

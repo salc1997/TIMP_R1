@@ -115,12 +115,12 @@ public class TarefasAtualizarPO extends TestBase{
 		sleep(1000);
 		ativarConfiguracao.click();
 		
-		waitExpectXpath("//span[text()=\"Ativar\"]");
+		waitExpectedElement("//span[text()=\"Ativar\"]");
 		sleep(2000);
 		
 		ativar.click();
 		sleep(3000);
-		waitExpectElement(pesquisar);
+		waitExpectedElement(pesquisar);
 		invisibilityOfElementOverlay();
 		
 		pesquisar.sendKeys(procurar);
@@ -130,7 +130,7 @@ public class TarefasAtualizarPO extends TestBase{
 		
 		WebElement ativada = driver.findElement(By.xpath("//div[@data-id=\""+procurar+"\"]/div[3]/span"));
 		
-		actionsMoveToElementElement(ativada);
+		actionsMoveToElement(ativada);
 		sleep(1000);
 		
 		String ativadaS =ativada.getAttribute("aria-label");
@@ -156,11 +156,11 @@ public class TarefasAtualizarPO extends TestBase{
 		
 		acessarTFPPO = new AcessarTFPPO();
 		
-		actionsMoveToElementElement(home);
+		actionsMoveToElement(home);
 		sleep(1000);
 		home.click();
 		
-		waitExpectXpath("//div[@class=\"dragger-pagination-right\"]");
+		waitExpectedElement("//div[@class=\"dragger-pagination-right\"]");
 		invisibilityOfElementOverlay();
 		
 		acessarTFPPO.acessarTFP();
@@ -199,7 +199,7 @@ public class TarefasAtualizarPO extends TestBase{
 		aberto100.click();
 		invisibilityOfElementOverlay();
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(1000);
 		
 		int alterado = rows("//span[contains(text(),\"O status foi alterado com sucesso\")]");
@@ -217,8 +217,8 @@ public class TarefasAtualizarPO extends TestBase{
 	public void Calendar() {
 		
 		
-		dobleClickElement(home);
-		waitExpectXpath("//div[@class=\"dragger-pagination-right\"]");
+		dobleClick(home);
+		waitExpectedElement("//div[@class=\"dragger-pagination-right\"]");
 		invisibilityOfElementOverlay();
 		
 		AcessarCalendarPO acessarCalendarPO;
@@ -228,7 +228,7 @@ public class TarefasAtualizarPO extends TestBase{
 		
 		calendario.click();
 		sleep(3000);
-		waitExpectElement(ar);
+		waitExpectedElement(ar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

@@ -32,7 +32,7 @@ public class AcessarTCCPO extends TestBase{
 	
 	public boolean acessarTCC() {
 
-		waitExpectXpath("//*[@id=\"home-icon\"]");
+		waitExpectedElement("//*[@id=\"home-icon\"]");
 		sleep(1000);
 		
 		while (!tcc.isDisplayed()) {
@@ -42,7 +42,7 @@ public class AcessarTCCPO extends TestBase{
 		
 		tcc.click();
 		
-		waitExpectElement(mostrar);
+		waitExpectedElement(mostrar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
 		boolean sucesso = mostrar.isDisplayed();

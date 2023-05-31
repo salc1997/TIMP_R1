@@ -92,7 +92,7 @@ public class UnidadeDeMedidaCriarPO extends TestBase {
 		gravar.click();
 		
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);

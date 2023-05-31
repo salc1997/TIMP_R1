@@ -112,7 +112,7 @@ public class ParametrosOficializacaoLivrosVisualizarPO extends TestBase {
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
-		attributoNotToBeEmptyElement(tipoLivroV, "textContent");
+		attributoNotToBeEmpty(tipoLivroV, "textContent");
 		sleep(1000);
 		
 		String tipoLivroV1 = tipoLivroV.getText();
@@ -158,7 +158,7 @@ public class ParametrosOficializacaoLivrosVisualizarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 		
 		sleep(1000);
 		

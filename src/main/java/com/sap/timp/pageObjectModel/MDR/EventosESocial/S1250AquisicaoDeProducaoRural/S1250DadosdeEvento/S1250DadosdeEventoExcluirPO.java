@@ -61,14 +61,14 @@ public Boolean excluir() {
 		WebElement menu = driver.findElement(By.xpath("//div[@id=\"event-data-container\"]/div[2]/div/div[1]/div/div[3]/div[1]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//*[@id=\"event-data-list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[2]/span[2]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
 		
 		excluir.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(3000);

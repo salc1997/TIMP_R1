@@ -404,7 +404,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBase{
 			
 			nova.click();
 			sleep(2000);
-			waitExpectElement(nomeDeHierarquia);
+			waitExpectedElement(nomeDeHierarquia);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(1000);
 			
@@ -414,7 +414,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBase{
 			nomeDaAba.sendKeys("1");
 			sleep(1000);
 			
-			actionsMoveToElementElement(nomeDoCampoDeLinha);
+			actionsMoveToElement(nomeDoCampoDeLinha);
 			sleep(1000);
 			nomeDaHierarquia.sendKeys("Hierarquia 1");
 			sleep(1000);
@@ -588,7 +588,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBase{
 			tributoO.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 
-			attributeToBeXpath("//div[@id=\"company\"]/div", "class", "base-MultipleSelect3 required");
+			attributeToBe("//div[@id=\"company\"]/div", "class", "base-MultipleSelect3 required");
 			sleep(1000);
 
 			empresa.click();
@@ -597,7 +597,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBase{
 			empresaO.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 
-			attributeToBeXpath("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
+			attributeToBe("//div[@id=\"uf\"]/div", "class", "base-MultipleSelect3 required");
 			sleep(1000);
 
 			uf.click();
@@ -612,7 +612,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBase{
 				sleep(1000);
 			}
 			
-			attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+			attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 			sleep(1000);
 
 			filial.click();
@@ -723,19 +723,19 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBase{
 			editar.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			waitExpectElement(calculator);
+			waitExpectedElement(calculator);
 			sleep(4000);
 			
 			calculator.click();
 			sleep(1000);
-			waitExpectElement(resultadoFinal);
+			waitExpectedElement(resultadoFinal);
 			sleep(2000);
 			resultadoFinal.click();
 			sleep(1000);
 
 			adicionarConfiguracao.click();
 			sleep(1000);
-			waitExpectElement(condicao);
+			waitExpectedElement(condicao);
 			sleep(2000);
 			condicao.click();
 			sleep(1000);
@@ -766,7 +766,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBase{
 			
 			adicionarEntrada.click();
 			sleep(2000);
-			waitExpectElement(criarAdicionarEntradaManual);
+			waitExpectedElement(criarAdicionarEntradaManual);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
@@ -816,7 +816,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBase{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 
-			actionsMoveToElementElement(campolinha2);
+			actionsMoveToElement(campolinha2);
 			sleep(1000);
 			
 			campolinha2.click();
@@ -835,7 +835,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBase{
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
-			actionsMoveToElementElement(campolinha3);
+			actionsMoveToElement(campolinha3);
 			sleep(1000);
 			
 			campolinha3.click();
@@ -1031,7 +1031,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBase{
 			sleep(1000);
 			executar.click();
 			sleep(3000);
-			waitExpectElement(executarM);
+			waitExpectedElement(executarM);
 			sleep(11000);
 			executarM.click();
 			
@@ -1207,7 +1207,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBase{
 			lixieria.click();
 			sleep(6000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			waitExpectElement(simLexeira);
+			waitExpectedElement(simLexeira);
 			sleep(2000);
 			
 			simLexeira.click();
@@ -1273,7 +1273,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBase{
 			lixieria2.click();
 			sleep(6000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			waitExpectElement(simLexeira);
+			waitExpectedElement(simLexeira);
 			sleep(2000);
 		
 			simLexeira.click();
@@ -1330,7 +1330,7 @@ public class FatorDeCreditamentoContabilizaçãoDeCIAPPO extends TestBase{
 			lixieria3.click();
 			sleep(6000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			waitExpectElement(simLexeira);
+			waitExpectedElement(simLexeira);
 			sleep(2000);
 		
 			simLexeira.click();

@@ -187,14 +187,14 @@ public class KpisEdicaoGraficoPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
 		editar.click();
 		sleep(2000);
 		
-		waitExpectElement(adicionar);
+		waitExpectedElement(adicionar);
 		sleep(2000);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -236,7 +236,7 @@ public class KpisEdicaoGraficoPO extends TestBase {
 		
 		if (tq1 == true) {
 
-			actionsMoveToElementXpath("//li[@id=\"option-5\"]");
+			actionsMoveToElement("//li[@id=\"option-5\"]");
 			sleep(3000);
 
 			WebElement fonteOPC = driver.findElement(By.xpath("//li[@id=\"option-5\"]"));
@@ -248,7 +248,7 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		}else if (tc2==true) {
 
-			actionsMoveToElementXpath("//li[@id=\"option-5\"]");
+			actionsMoveToElement("//li[@id=\"option-5\"]");
 			sleep(2000);
 
 			WebElement fonteOPC = driver.findElement(By.xpath("//li[@id=\"option-5\"]"));
@@ -260,7 +260,7 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		}else {
 
-			actionsMoveToElementXpath("//li[@id=\"option-5\"]");
+			actionsMoveToElement("//li[@id=\"option-5\"]");
 			sleep(2000);
 
 			WebElement fonteOPC = driver.findElement(By.xpath("//li[@id=\"option-5\"]"));
@@ -279,7 +279,7 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		if (tq1 == true) {
 
-			actionsMoveToElementXpath("//li[@id=\"467\"]");
+			actionsMoveToElement("//li[@id=\"467\"]");
 			sleep(1000);
 
 			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[contains(@class, \"list-item\") and @id and text()=\"Ajuste\"]"));
@@ -291,7 +291,7 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		}else if (tc2==true) {
 
-			actionsMoveToElementXpath("//li[@id=\"option-7\"]");
+			actionsMoveToElement("//li[@id=\"option-7\"]");
 			sleep(1000);
 
 			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[contains(@class, \"list-item\") and @id and text()=\"Ajuste\"]"));
@@ -303,7 +303,7 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		}else {
 
-			actionsMoveToElementXpath("//li[@id=\"option-31\"]");
+			actionsMoveToElement("//li[@id=\"option-31\"]");
 			sleep(2000);
 
 			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[contains(@class, \"list-item\") and @id and text()=\"Ajuste\"]"));
@@ -322,7 +322,7 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		if (tq1 == true) {
 
-			actionsMoveToElementXpath("//li[@id=\"1834805491\"]");
+			actionsMoveToElement("//li[@id=\"1834805491\"]");
 			sleep(2000);
 
 			WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[contains(@class, \"list-item\") and @id and text()=\"Ajustes Fiscais\"]"));
@@ -334,7 +334,7 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		}else if (tc2==true) {
 
-			actionsMoveToElementXpath("//li[@id=\"option-1\"]");
+			actionsMoveToElement("//li[@id=\"option-1\"]");
 			sleep(2000);
 
 			WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[contains(@class, \"list-item\") and @id and text()=\"Ajustes Fiscais\"]"));
@@ -346,7 +346,7 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		}else {
 
-			actionsMoveToElementXpath("//li[@id=\"option-2\"]");
+			actionsMoveToElement("//li[@id=\"option-2\"]");
 			sleep(3000);
 
 			WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[contains(@class, \"list-item\") and @id and text()=\"Ajustes Fiscais\"]"));
@@ -368,7 +368,7 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		if (tq1 == true) {
 
-			actionsMoveToElementXpath("//li[@id=\"275\"]");
+			actionsMoveToElement("//li[@id=\"275\"]");
 			sleep(3000);
 
 			WebElement dimensaoOPC = driver.findElement(By.xpath("//li[@id=\"275\"]"));
@@ -380,7 +380,7 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		}else if (tc2==true) {
 
-			actionsMoveToElementXpath("//li[@id=\"option-40\"]");
+			actionsMoveToElement("//li[@id=\"option-40\"]");
 			sleep(2000);
 
 			WebElement dimensaoOPC = driver.findElement(By.xpath("//li[@id=\"option-40\"]"));
@@ -391,7 +391,7 @@ public class KpisEdicaoGraficoPO extends TestBase {
 			sleep(2000);
 
 		}else {
-			actionsMoveToElementXpath("//li[@id=\"option-55\"]");
+			actionsMoveToElement("//li[@id=\"option-55\"]");
 			sleep(2000);
 
 			WebElement dimensaoOPC = driver.findElement(By.xpath("//li[@id=\"option-55\"]"));
@@ -446,151 +446,151 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		if (tq1 == true) {
 
-			actionsMoveToElementXpath("//div[@id=\"323\"]");
+			actionsMoveToElement("//div[@id=\"323\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"195\"]");
+			actionsMoveToElement("//div[@id=\"195\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"436\"]");
+			actionsMoveToElement("//div[@id=\"436\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"567\"]");
+			actionsMoveToElement("//div[@id=\"567\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"197\"]");
+			actionsMoveToElement("//div[@id=\"197\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"138\"]");
+			actionsMoveToElement("//div[@id=\"138\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"139\"]");
+			actionsMoveToElement("//div[@id=\"139\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"314\"]");
+			actionsMoveToElement("//div[@id=\"314\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"308\"]");
+			actionsMoveToElement("//div[@id=\"308\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"426\"]");
+			actionsMoveToElement("//div[@id=\"426\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"430\"]");
+			actionsMoveToElement("//div[@id=\"430\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"415\"]");
+			actionsMoveToElement("//div[@id=\"415\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"516\"]");
+			actionsMoveToElement("//div[@id=\"516\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"419\"]");
+			actionsMoveToElement("//div[@id=\"419\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"430\"]");
+			actionsMoveToElement("//div[@id=\"430\"]");
 			sleep(1000);
 			
 			//Detalhe de conta (EC - encargos) - DP
-			actionsMoveToElementXpath("//div[@id=\"478\"]");
+			actionsMoveToElement("//div[@id=\"478\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"417\"]");
+			actionsMoveToElement("//div[@id=\"417\"]");
 			sleep(1000);
 
 			//Detalhe de conta (EC - encargos) - E250
-			actionsMoveToElementXpath("//div[@id=\"428\"]");
+			actionsMoveToElement("//div[@id=\"428\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"425\"]");
+			actionsMoveToElement("//div[@id=\"425\"]");
 			sleep(1000);
 
 			//Detalhe de conta (JR - juros) - E316
-			actionsMoveToElementXpath("//div[@id=\"515\"]");
+			actionsMoveToElement("//div[@id=\"515\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"413\"]");
+			actionsMoveToElement("//div[@id=\"413\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"514\"]");
+			actionsMoveToElement("//div[@id=\"514\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"420\"]");
+			actionsMoveToElement("//div[@id=\"420\"]");
 			sleep(1000);
 			
 			//Detalhe de conta (OD - outras deduções) - E250
-			actionsMoveToElementXpath("//div[@id=\"431\"]");
+			actionsMoveToElement("//div[@id=\"431\"]");
 			sleep(1000);
 			
 			//Detalhe de conta (PR - principal) - E116
-			actionsMoveToElementXpath("//div[@id=\"412\"]");
+			actionsMoveToElement("//div[@id=\"412\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"513\"]");
+			actionsMoveToElement("//div[@id=\"513\"]");
 			sleep(1000);
 			
 			//Detalhe de conta (TT - total) - E116
-			actionsMoveToElementXpath("//div[@id=\"418\"]");
+			actionsMoveToElement("//div[@id=\"418\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"429\"]");
+			actionsMoveToElement("//div[@id=\"429\"]");
 			sleep(1000);
 
 			//Detalhe de conta (TX - taxas) - DP
-			actionsMoveToElementXpath("//div[@id=\"477\"]");
+			actionsMoveToElement("//div[@id=\"477\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"427\"]");
+			actionsMoveToElement("//div[@id=\"427\"]");
 			sleep(1000);
 			
 			//Detalhe de conta (TX - taxas) - E316
-			actionsMoveToElementXpath("//div[@id=\"517\"]");
+			actionsMoveToElement("//div[@id=\"517\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"569\"]");
+			actionsMoveToElement("//div[@id=\"569\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"348\"]");
+			actionsMoveToElement("//div[@id=\"348\"]");
 			sleep(1000);
 			
 			//Perc. redução BC ICMS ST
-			actionsMoveToElementXpath("//div[@id=\"347\"]");
+			actionsMoveToElement("//div[@id=\"347\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"352\"]");
+			actionsMoveToElement("//div[@id=\"352\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"181\"]");
+			actionsMoveToElement("//div[@id=\"181\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"182\"]");
+			actionsMoveToElement("//div[@id=\"182\"]");
 			sleep(1000);
 			
 			//Qtd. BC PIS
-			actionsMoveToElementXpath("//div[@id=\"337\"]");
+			actionsMoveToElement("//div[@id=\"337\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"267\"]");
+			actionsMoveToElement("//div[@id=\"267\"]");
 			sleep(1000);
 			
 			//Saldo de crédito fiscal acumulado para o período seguinte
-			actionsMoveToElementXpath("//div[@id=\"532\"]");
+			actionsMoveToElement("//div[@id=\"532\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"535\"]");
+			actionsMoveToElement("//div[@id=\"535\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"531\"]");
+			actionsMoveToElement("//div[@id=\"531\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"495\"]");
+			actionsMoveToElement("//div[@id=\"495\"]");
 			sleep(1000);
 			
 			//Valor COFINS
-			actionsMoveToElementXpath("//div[@id=\"208\"]");
+			actionsMoveToElement("//div[@id=\"208\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"198\"]");
+			actionsMoveToElement("//div[@id=\"198\"]");
 			sleep(1000);
 
 			WebElement valoresMedidaOPC = driver.findElement(By.xpath("//div[@id=\"201\"]/div/label/span"));
@@ -604,154 +604,154 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		}else if (tc2==true) {
 
-			actionsMoveToElementXpath("//div[@id=\"323\"]");
+			actionsMoveToElement("//div[@id=\"323\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"195\"]");
+			actionsMoveToElement("//div[@id=\"195\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"436\"]");
+			actionsMoveToElement("//div[@id=\"436\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"438\"]");
+			actionsMoveToElement("//div[@id=\"438\"]");
 			sleep(1000);
 
 			//BC IPI
-			actionsMoveToElementXpath("//div[@id=\"311\"]");
+			actionsMoveToElement("//div[@id=\"311\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"139\"]");
+			actionsMoveToElement("//div[@id=\"139\"]");
 			sleep(1000);
 
 			//BC imposto - E113
-			actionsMoveToElementXpath("//div[@id=\"465\"]");
+			actionsMoveToElement("//div[@id=\"465\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"318\"]");
+			actionsMoveToElement("//div[@id=\"318\"]");
 			sleep(1000);
 
 			//BC isentas ICMS ST
-			actionsMoveToElementXpath("//div[@id=\"314\"]");
+			actionsMoveToElement("//div[@id=\"314\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"319\"]");
+			actionsMoveToElement("//div[@id=\"319\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"308\"]");
+			actionsMoveToElement("//div[@id=\"308\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"516\"]");
+			actionsMoveToElement("//div[@id=\"516\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"419\"]");
+			actionsMoveToElement("//div[@id=\"419\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"430\"]");
+			actionsMoveToElement("//div[@id=\"430\"]");
 			sleep(1000);
 			
 			//Detalhe de conta (EC - encargos) - DP
-			actionsMoveToElementXpath("//div[@id=\"478\"]");
+			actionsMoveToElement("//div[@id=\"478\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"417\"]");
+			actionsMoveToElement("//div[@id=\"417\"]");
 			sleep(1000);
 
 			//Detalhe de conta (EC - encargos) - E250
-			actionsMoveToElementXpath("//div[@id=\"428\"]");
+			actionsMoveToElement("//div[@id=\"428\"]");
 			sleep(1000);
 
 
 			//Detalhe de conta (EC - encargos) - E316
-			actionsMoveToElementXpath("//div[@id=\"518\"]");
+			actionsMoveToElement("//div[@id=\"518\"]");
 			sleep(1000);
 
 			//Detalhe de conta (JR - juros) - DP
-			actionsMoveToElementXpath("//div[@id=\"475\"]");
+			actionsMoveToElement("//div[@id=\"475\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"425\"]");
+			actionsMoveToElement("//div[@id=\"425\"]");
 			sleep(1000);
 
 			//Detalhe de conta (MU - multa) - DP
-			actionsMoveToElementXpath("//div[@id=\"474\"]");
+			actionsMoveToElement("//div[@id=\"474\"]");
 			sleep(1000);
 			
 			//Detalhe de conta (OD - outras deduções) - E250
-			actionsMoveToElementXpath("//div[@id=\"431\"]");
+			actionsMoveToElement("//div[@id=\"431\"]");
 			sleep(1000);
 			
 			//Detalhe de conta (PR - principal) - E116
-			actionsMoveToElementXpath("//div[@id=\"412\"]");
+			actionsMoveToElement("//div[@id=\"412\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"513\"]");
+			actionsMoveToElement("//div[@id=\"513\"]");
 			sleep(1000);
 			
 			//Detalhe de conta (TT - total) - E116
-			actionsMoveToElementXpath("//div[@id=\"418\"]");
+			actionsMoveToElement("//div[@id=\"418\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"429\"]");
+			actionsMoveToElement("//div[@id=\"429\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"519\"]");
+			actionsMoveToElement("//div[@id=\"519\"]");
 			sleep(1000);
 
 			//Detalhe de conta (TX - taxas) - DP
-			actionsMoveToElementXpath("//div[@id=\"477\"]");
+			actionsMoveToElement("//div[@id=\"477\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"427\"]");
+			actionsMoveToElement("//div[@id=\"427\"]");
 			sleep(1000);
 			
 			//Detalhe de conta (TX - taxas) - E316
-			actionsMoveToElementXpath("//div[@id=\"517\"]");
+			actionsMoveToElement("//div[@id=\"517\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"353\"]");
+			actionsMoveToElement("//div[@id=\"353\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"348\"]");
+			actionsMoveToElement("//div[@id=\"348\"]");
 			sleep(1000);
 			
 			//Perc. redução BC ICMS ST
-			actionsMoveToElementXpath("//div[@id=\"347\"]");
+			actionsMoveToElement("//div[@id=\"347\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"352\"]");
+			actionsMoveToElement("//div[@id=\"352\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"181\"]");
+			actionsMoveToElement("//div[@id=\"181\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"182\"]");
+			actionsMoveToElement("//div[@id=\"182\"]");
 			sleep(1000);
 			
 			//Qtd. BC PIS
-			actionsMoveToElementXpath("//div[@id=\"337\"]");
+			actionsMoveToElement("//div[@id=\"337\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"267\"]");
+			actionsMoveToElement("//div[@id=\"267\"]");
 			sleep(1000);
 			
 			//Saldo de crédito fiscal acumulado para o período seguinte
-			actionsMoveToElementXpath("//div[@id=\"532\"]");
+			actionsMoveToElement("//div[@id=\"532\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"535\"]");
+			actionsMoveToElement("//div[@id=\"535\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"531\"]");
+			actionsMoveToElement("//div[@id=\"531\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"495\"]");
+			actionsMoveToElement("//div[@id=\"495\"]");
 			sleep(1000);
 			
 			//Valor COFINS
-			actionsMoveToElementXpath("//div[@id=\"208\"]");
+			actionsMoveToElement("//div[@id=\"208\"]");
 			sleep(1000);
 			
-			actionsMoveToElementXpath("//div[@id=\"198\"]");
+			actionsMoveToElement("//div[@id=\"198\"]");
 			sleep(1000);
 
 			WebElement valoresMedidaOPC = driver.findElement(By.xpath("//div[@id=\"201\"]/div/label/span"));
@@ -764,64 +764,64 @@ public class KpisEdicaoGraficoPO extends TestBase {
 			closeSelectTypeCheckbox(valoresMedida);
 		}else {
 			
-			actionsMoveToElementXpath("//div[@id=\"172\"]");
+			actionsMoveToElement("//div[@id=\"172\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"319\"]");
+			actionsMoveToElement("//div[@id=\"319\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"321\"]");
+			actionsMoveToElement("//div[@id=\"321\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"2\"]");
+			actionsMoveToElement("//div[@id=\"2\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"468\"]");
+			actionsMoveToElement("//div[@id=\"468\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"314\"]");
+			actionsMoveToElement("//div[@id=\"314\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"4\"]");
+			actionsMoveToElement("//div[@id=\"4\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"318\"]");
+			actionsMoveToElement("//div[@id=\"318\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"216\"]");
+			actionsMoveToElement("//div[@id=\"216\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"212\"]");
+			actionsMoveToElement("//div[@id=\"212\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"219\"]");
+			actionsMoveToElement("//div[@id=\"219\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"184\"]");
+			actionsMoveToElement("//div[@id=\"184\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"182\"]");
+			actionsMoveToElement("//div[@id=\"182\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"213\"]");
+			actionsMoveToElement("//div[@id=\"213\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"214\"]");
+			actionsMoveToElement("//div[@id=\"214\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"46\"]");
+			actionsMoveToElement("//div[@id=\"46\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"132\"]");
+			actionsMoveToElement("//div[@id=\"132\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"320\"]");
+			actionsMoveToElement("//div[@id=\"320\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"63\"]");
+			actionsMoveToElement("//div[@id=\"63\"]");
 			sleep(1000);
 
-			actionsMoveToElementXpath("//div[@id=\"443\"]");
+			actionsMoveToElement("//div[@id=\"443\"]");
 			sleep(1000);
 
 			WebElement valoresMedidaOPC = driver.findElement(By.xpath("//div[@id=\"66\"]/div/label/span"));
@@ -854,7 +854,7 @@ public class KpisEdicaoGraficoPO extends TestBase {
 		
 		if (tq1 == true) {
 
-			actionsMoveToElementXpath("//li[@id=\"275\"]");
+			actionsMoveToElement("//li[@id=\"275\"]");
 			sleep(3000);
 
 			WebElement tipoFiltroOPC = driver.findElement(By.xpath("//li[@id=\"275\"]"));
@@ -986,7 +986,7 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		if (tq1 == true){
 
-			actionsMoveToElementElement(gra);
+			actionsMoveToElement(gra);
 			
 			sleep(2000);
 			moveToElement(flechita, driver.findElement(By.xpath("//div[@class=\"main-footer\"]/div[1]/div[3]")));
@@ -994,7 +994,7 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		}else if (tc2 == true){
 
-			actionsMoveToElementElement(gra);
+			actionsMoveToElement(gra);
 
 			sleep(2000);
 			moveToElement(flechita, driver.findElement(By.xpath("//div[@class=\"main-footer\"]/div[1]/div[3]")));
@@ -1002,7 +1002,7 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		}else {
 			
-			actionsMoveToElementElement(gra);
+			actionsMoveToElement(gra);
 
 			sleep(2000);
 			moveToElement(flechita, driver.findElement(By.xpath("//div[@class=\"main-footer\"]/div[1]/div[3]")));
@@ -1046,7 +1046,7 @@ public class KpisEdicaoGraficoPO extends TestBase {
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(2000);

@@ -85,7 +85,7 @@ public class MunicipioEditarPO extends TestBase{
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 		sleep(2000);
 		String valor = campo.getAttribute("value");
 		System.out.println(valor);
@@ -99,19 +99,19 @@ public class MunicipioEditarPO extends TestBase{
 		sleep(1000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(3000);		
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		driver.navigate().refresh();
 		
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(campo);
+		waitExpectedElement(campo);
 		sleep(2000);
 		
 		String nuevoTexto = campo.getAttribute("value");

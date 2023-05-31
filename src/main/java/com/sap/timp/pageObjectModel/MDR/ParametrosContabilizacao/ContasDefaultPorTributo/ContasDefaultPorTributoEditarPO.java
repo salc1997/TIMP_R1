@@ -69,7 +69,7 @@ public class ContasDefaultPorTributoEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -80,7 +80,7 @@ public class ContasDefaultPorTributoEditarPO extends TestBase{
 		sleep(2000);
 		
 		//ediçao
-		attributeToBeXpath("//div[@class=\"field-element adjustmentCode_0_1\"]/div","class", "input-element-wrapper");
+		attributeToBe("//div[@class=\"field-element adjustmentCode_0_1\"]/div","class", "input-element-wrapper");
 		sleep(2000);
 		contadebito.clear();
 		sleep(2000);

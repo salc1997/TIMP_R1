@@ -55,8 +55,8 @@ public class ConfiguracaoModeloDeDadosEditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(servicioImportacao);
-		attributoNotToBeEmptyElement(servicioImportacao, "value");
+		waitExpectedElement(servicioImportacao);
+		attributoNotToBeEmpty(servicioImportacao, "value");
 		
 		String valorOriginal = servicioImportacao.getAttribute("value");
 		System.out.println("");
@@ -77,7 +77,7 @@ public class ConfiguracaoModeloDeDadosEditarPO extends TestBase{
 		
 		driver.navigate().refresh();
 		invisibilityOfElementOverlay();
-		waitExpectElement(configuracao);
+		waitExpectedElement(configuracao);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -101,7 +101,7 @@ public class ConfiguracaoModeloDeDadosEditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		attributoNotToBeEmptyElement(servicioImportacao, "value");
+		attributoNotToBeEmpty(servicioImportacao, "value");
 		String valorEditado = servicioImportacao.getAttribute("value");
 		System.out.println("");
 		System.out.println("Inicio de Vigencia valor editado: " + valorEditado);

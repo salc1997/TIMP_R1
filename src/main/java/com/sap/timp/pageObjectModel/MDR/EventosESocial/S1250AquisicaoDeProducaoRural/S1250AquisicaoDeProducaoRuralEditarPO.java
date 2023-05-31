@@ -113,7 +113,7 @@ public class S1250AquisicaoDeProducaoRuralEditarPO extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[contains(@aria-label,\""+idRegistro+"\")]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[contains(@aria-label,\""+idRegistro+"\")]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -137,7 +137,7 @@ public class S1250AquisicaoDeProducaoRuralEditarPO extends TestBase{
 		sleep(2000);
 		WebElement menu1 = driver.findElement(By.xpath("//div[contains(@aria-label,\""+idRegistro+"\")]/div[1]/div"));
 		WebElement editar1 = driver.findElement(By.xpath("//div[contains(@aria-label,\""+idRegistro+"\")]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(2000);
@@ -146,7 +146,7 @@ public class S1250AquisicaoDeProducaoRuralEditarPO extends TestBase{
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(numeroderecibo);
+		waitExpectedElement(numeroderecibo);
 		sleep(2000);
 		String novoTexto=numeroderecibo.getAttribute("value");
 		

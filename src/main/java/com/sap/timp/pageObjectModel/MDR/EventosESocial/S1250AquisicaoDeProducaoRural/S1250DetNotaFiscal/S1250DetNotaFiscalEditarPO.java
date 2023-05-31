@@ -42,7 +42,7 @@ public class S1250DetNotaFiscalEditarPO extends TestBase{
 		abaDetNotaFiscal.click();
 		invisibilityOfElementOverlay();
 		
-		actionsMoveToElementElement(btnPrimeraPagina);
+		actionsMoveToElement(btnPrimeraPagina);
 		btnPrimeraPagina.click();
 		invisibilityOfElementOverlay();
 		
@@ -63,8 +63,8 @@ public class S1250DetNotaFiscalEditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(inputIdDoRegistro);
-		attributoNotToBeEmptyElement(inputIdDoRegistro, "value");
+		waitExpectedElement(inputIdDoRegistro);
+		attributoNotToBeEmpty(inputIdDoRegistro, "value");
 		
 		String valorIdDoRegistroOriginal = inputIdDoRegistro.getAttribute("value");
 		System.out.println("Valor Id Do Registro Original: " + valorIdDoRegistroOriginal);

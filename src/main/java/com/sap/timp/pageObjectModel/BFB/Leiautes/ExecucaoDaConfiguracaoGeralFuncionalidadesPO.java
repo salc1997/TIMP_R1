@@ -132,7 +132,7 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBase{
 		opcionTipoLeiaute.click();
 		sleep(1000);
 		
-		actionsMoveToElementElement(cboEstruturaDeDatos);
+		actionsMoveToElement(cboEstruturaDeDatos);
 		cboGrupoEstrutura.click();
 		sleep(1000);
 		if(url.contains("tp1")) {
@@ -142,7 +142,7 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBase{
 		}
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"sub-structure\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"sub-structure\"]/div", "class", "base-select required");
 		cboEstruturaDeDatos.click();
 		sleep(1000);
 		opcionEstruturaDeDatos.click();
@@ -539,14 +539,14 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		actionsMoveToElementXpath("//div[contains(text(), \"Campos de Saída BCB\")]");
+		actionsMoveToElement("//div[contains(text(), \"Campos de Saída BCB\")]");
 		WebElement camposDeSaidaBFB = driver.findElement(By.xpath("//div[contains(text(), \"Campos de Saída BFB\")]"));
 		camposDeSaidaBFB.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		actionsMoveToElementXpath("//div[contains(text(), \"Campos de Saída BCB\")]");
+		actionsMoveToElement("//div[contains(text(), \"Campos de Saída BCB\")]");
 		camposDeSaidaBFB = driver.findElement(By.xpath("//div[contains(text(), \"Campos de Saída BFB\")]"));
 		camposDeSaidaBFB.click();
 		sleep(3000);
@@ -678,7 +678,7 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBase{
 		WebElement contenedorColumna1 = driver.findElement(By.xpath("//td[contains(@class, \"table-column ui-droppable\")][1]"));
 		contenedorColumna1.click();
 		
-		actionsMoveToElementElement(codigoDaEmpresa);
+		actionsMoveToElement(codigoDaEmpresa);
 		moveToElement(codigoDaEmpresa, contenedorColumna1);
 		
 		sleep(1000);
@@ -687,7 +687,7 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBase{
 		
 		WebElement contenedorColumna2 = driver.findElement(By.xpath("//td[contains(@class, \"table-column ui-droppable\")][2]"));
 		
-		actionsMoveToElementElement(codigoDaFilial);
+		actionsMoveToElement(codigoDaFilial);
 		moveToElement(codigoDaFilial, contenedorColumna2);
 		
 		sleep(1000);
@@ -696,7 +696,7 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBase{
 		
 		WebElement contenedorColumna3 = driver.findElement(By.xpath("//td[contains(@class, \"table-column ui-droppable\")][3]"));
 		
-		actionsMoveToElementElement(dataDeLancamento);
+		actionsMoveToElement(dataDeLancamento);
 		moveToElement(dataDeLancamento, contenedorColumna3);
 		
 		sleep(3000);
@@ -733,7 +733,7 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBase{
 		
 		WebElement contenedorColumna4 = driver.findElement(By.xpath("//td[contains(@class, \"table-column ui-droppable\")][4]"));
 		
-		actionsMoveToElementElement(valorDeAjuste);
+		actionsMoveToElement(valorDeAjuste);
 		moveToElement(valorDeAjuste, contenedorColumna4);
 		
 		sleep(1000);
@@ -852,14 +852,14 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		actionsMoveToElementXpath("//div[contains(text(), \"Campos de Saída BCB\")]");
+		actionsMoveToElement("//div[contains(text(), \"Campos de Saída BCB\")]");
 		WebElement camposDeSaidaBFB = driver.findElement(By.xpath("//div[contains(text(), \"Campos de Saída BFB\")]"));
 		camposDeSaidaBFB.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		actionsMoveToElementXpath("//div[contains(text(), \"Campos de Saída BCB\")]");
+		actionsMoveToElement("//div[contains(text(), \"Campos de Saída BCB\")]");
 		camposDeSaidaBFB = driver.findElement(By.xpath("//div[contains(text(), \"Campos de Saída BFB\")]"));
 		camposDeSaidaBFB.click();
 		sleep(3000);
@@ -875,7 +875,7 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBase{
 				
 		sleep(1000);
 		WebElement cajaFormula = driver.findElement(By.xpath("//div[@id=\"formula-Box\"]/div/textarea"));
-		actionsMoveToElementElement(cajaFormula);
+		actionsMoveToElement(cajaFormula);
 		cajaFormula.sendKeys("/2");
 		
 		sleep(1000);
@@ -1123,7 +1123,7 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBase{
 		WebElement opcGrupoEstrutura = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajustes\"]"));
 		opcGrupoEstrutura.click();
 		
-		attributeToBeXpath("//div[@id=\"filter-structure\"]/div", "class", "base-select ");
+		attributeToBe("//div[@id=\"filter-structure\"]/div", "class", "base-select ");
 		WebElement cboEstrutura = driver.findElement(By.xpath("//div[@id=\"filter-structure\"]/div//div/div[2]"));
 		cboEstrutura.click();	
 		
@@ -1308,7 +1308,7 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBase{
 		
 		sleep(1000);
 		
-		actionsMoveToElementXpath("//div[@id=\"filebranch\"]/div/div[2]");
+		actionsMoveToElement("//div[@id=\"filebranch\"]/div/div[2]");
 		WebElement cboEmpresa = driver.findElement(By.xpath("//div[@id=\"filecompany\"]/div/div/div[2]"));
 		cboEmpresa.click();
 		
@@ -1329,7 +1329,7 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidadesPO extends TestBase{
 		
 		sleep(1000);
 		
-		actionsMoveToElementXpath("//div[@id=\"validFrom\"]/div/div/input");
+		actionsMoveToElement("//div[@id=\"validFrom\"]/div/div/input");
 		sleep(5000);
 		WebElement cboFilial = driver.findElement(By.xpath("//div[@id=\"filebranch\"]/div/div/div[2]"));
 		cboFilial.click();

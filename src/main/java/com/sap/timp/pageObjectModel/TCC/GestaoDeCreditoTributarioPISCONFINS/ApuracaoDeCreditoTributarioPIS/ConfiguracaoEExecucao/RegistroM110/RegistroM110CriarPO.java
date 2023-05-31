@@ -156,7 +156,7 @@ public class RegistroM110CriarPO extends TestBase{
 			
 		}
 		
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(13000);
 		filial.click();
 		sleep(2000);
@@ -243,7 +243,7 @@ public class RegistroM110CriarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(biblioteca);
+		waitExpectedElement(biblioteca);
 		sleep(2000);
 		
 		biblioteca.click();

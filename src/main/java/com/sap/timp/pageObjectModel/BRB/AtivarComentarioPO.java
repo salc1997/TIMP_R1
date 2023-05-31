@@ -57,7 +57,7 @@ public class AtivarComentarioPO extends TestBase{
 	
 	public ArrayList<Boolean> correcaoAtiva() {
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
@@ -73,7 +73,7 @@ public class AtivarComentarioPO extends TestBase{
 		sleep(1000);
 		opcao.click();
 
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		
 		sleep(3000);
 		List<WebElement> campo = driver.findElements(By.xpath("//*[@id=\"draggable-126\"]"));
@@ -95,7 +95,7 @@ public class AtivarComentarioPO extends TestBase{
 			
 			gravar.click();
 			sleep(2000);
-			waitExpectElement(nao);
+			waitExpectedElement(nao);
 			sleep(1000);
 			nao.click();
 			sleep(3000);
@@ -104,7 +104,7 @@ public class AtivarComentarioPO extends TestBase{
 			
 			driver.navigate().refresh();
 			
-			waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+			waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 			
 			if (check.isDisplayed() == true) {
 				sucesso.add(true);
@@ -133,7 +133,7 @@ public class AtivarComentarioPO extends TestBase{
 
 			gravar.click();
 			sleep(2000);
-			waitExpectElement(nao);
+			waitExpectedElement(nao);
 			sleep(1000);
 			nao.click();
 			sleep(3000);
@@ -142,7 +142,7 @@ public class AtivarComentarioPO extends TestBase{
 
 			driver.navigate().refresh();
 
-			waitExpectXpath("//*[@id=\"accordion\"]/ul/li/div/div");
+			waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 			
 			if (check.isDisplayed() == true) {
 				sucesso.add(true);

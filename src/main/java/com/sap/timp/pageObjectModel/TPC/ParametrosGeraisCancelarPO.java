@@ -68,7 +68,7 @@ public class ParametrosGeraisCancelarPO extends TestBase {
 		sleep(2000);
 		sleep(7000);
 
-		waitExpectElement(btnPrimeraPagina);
+		waitExpectedElement(btnPrimeraPagina);
 		sleep(2000);
 		String status2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[12]/div")).getText();
 		System.out.println("status final: " + status2);

@@ -182,7 +182,7 @@ public class RelacionamentoEstruturasEditarPO extends TestBase{
 		invisibilityOfElementOverlay();
 		sleep(2000);
 		
-		waitExpectElement(grupo1);
+		waitExpectedElement(grupo1);
 		
 		System.out.println("---------------------------Verificação das Informações-------------------------------------------");
 		

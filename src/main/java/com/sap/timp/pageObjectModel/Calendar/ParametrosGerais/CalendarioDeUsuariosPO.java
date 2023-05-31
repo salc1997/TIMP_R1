@@ -32,7 +32,7 @@ public class CalendarioDeUsuariosPO extends TestBase{
 
 		calendario.click();
 		sleep(3000);
-		waitExpectElement(ar);
+		waitExpectedElement(ar);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -41,7 +41,7 @@ public class CalendarioDeUsuariosPO extends TestBase{
 		
 		System.out.println("Nome do primer registro: " +nome);
 		
-		dobleClickElement(flag);
+		dobleClick(flag);
 		sleep(1000);
 		
 		aceitar.click();

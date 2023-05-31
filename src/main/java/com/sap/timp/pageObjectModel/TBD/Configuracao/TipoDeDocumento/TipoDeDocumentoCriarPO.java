@@ -87,7 +87,7 @@ public class TipoDeDocumentoCriarPO extends TestBase{
 		
 		novo.click();
 		sleep(2000);
-		waitExpectElement(tipodocumento);
+		waitExpectedElement(tipodocumento);
 		sleep(2000);
 		sleep(1000);
 		tipodocumento.sendKeys("Rel");
@@ -139,7 +139,7 @@ public class TipoDeDocumentoCriarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		waitExpectElement(ultimapagina);
+		waitExpectedElement(ultimapagina);
 		sleep(2000);
 		ultimapagina.click();
 		sleep(2000);

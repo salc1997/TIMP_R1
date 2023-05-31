@@ -154,7 +154,7 @@ public class NovoRelatorioPO extends TestBase{
 		
 		novo.click();
 		
-		attributeToBeXpath("//*[@id=\"create-structure\"]/div", "class", "base-autocomplete required");
+		attributeToBe("//*[@id=\"create-structure\"]/div", "class", "base-autocomplete required");
 		sleep(3000);
 		nome.sendKeys("Prueba Automatizada");
 		
@@ -196,7 +196,7 @@ public class NovoRelatorioPO extends TestBase{
 		sleep(1000);
 		
 		gravar.click();
-		waitExpectElement(mostrado);
+		waitExpectedElement(mostrado);
 
 		sleep(5000);
 		

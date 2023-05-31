@@ -236,7 +236,7 @@ public class ParametrosModeloDeApuracaoTPExcluirEmMasaPO extends TestBase {
 		
 		excluirMassa.click();
 		sleep(1000);
-		waitExpectElement(aceitar);
+		waitExpectedElement(aceitar);
 		sleep(1000);
 		aceitar.click();
 		sleep(3000);
@@ -245,7 +245,7 @@ public class ParametrosModeloDeApuracaoTPExcluirEmMasaPO extends TestBase {
 		sleep(2000);
 		
 		driver.navigate().refresh();
-		waitExpectElement(primeira);
+		waitExpectedElement(primeira);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		primeira.click();

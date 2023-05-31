@@ -112,7 +112,7 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriarPO extends 
 		sleep(1000);
 		empresaO.click();
 		empresaO.sendKeys(Keys.ESCAPE);
-		attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 	
@@ -127,12 +127,12 @@ public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesCriarPO extends 
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
 
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		biblioteca.click();
 		

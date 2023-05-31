@@ -96,7 +96,7 @@ public class RegrasDeAuditoriaN1CriarComCopiaPO extends TestBase {
 		aplicar.click();
 		
 		sleep(2000);
-		waitExpectXpath("//div[@class=\"overlay loader transp\"]");
+		waitExpectedElement("//div[@class=\"overlay loader transp\"]");
 		invisibilityOfElement("//div[@class=\"overlay loader transp\"]");
 		sleep(2000);	
 	
@@ -107,14 +107,14 @@ public class RegrasDeAuditoriaN1CriarComCopiaPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(mensagembloqueio);
+		waitExpectedElement(mensagembloqueio);
 		sleep(2000);
 		regrasdeauditorian1.click();
 		}else {
 			biblioteca.click();
 			
 			sleep(2000);
-			waitExpectElement(mensagembloqueio);
+			waitExpectedElement(mensagembloqueio);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 			sleep(2000);
 			
@@ -160,7 +160,7 @@ public class RegrasDeAuditoriaN1CriarComCopiaPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -199,7 +199,7 @@ public class RegrasDeAuditoriaN1CriarComCopiaPO extends TestBase {
 		sleep(1000);
 		açao.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);

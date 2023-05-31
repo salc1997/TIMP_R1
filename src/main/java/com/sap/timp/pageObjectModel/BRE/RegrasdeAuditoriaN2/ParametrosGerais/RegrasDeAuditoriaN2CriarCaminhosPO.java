@@ -213,7 +213,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBase {
 		 regulamiento.click();
 		sleep(3000);
 		
-		actionsMoveToElementElement(regulamientoOPC);
+		actionsMoveToElement(regulamientoOPC);
 		sleep(4000);
 		regulamientoOPC.click();
 		sleep(3000);
@@ -227,7 +227,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		waitExpectElement(adicionar);
+		waitExpectedElement(adicionar);
 		sleep(2000);
 		adicionar.click();
 		
@@ -256,7 +256,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		waitExpectElement(adicionar);
+		waitExpectedElement(adicionar);
 		sleep(2000);
 		adicionar.click();
 		
@@ -304,7 +304,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBase {
 		sleep(2000);
 		sleep(2000);
 		sleep(2000);
-		waitExpectElement(AN2);
+		waitExpectedElement(AN2);
 		sleep(7000);
 		AN2.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

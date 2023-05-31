@@ -63,7 +63,7 @@ public class MapeamentoContabilCorrecaoVisualizarPO extends TestBase {
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(1000);
@@ -102,7 +102,7 @@ public class MapeamentoContabilCorrecaoVisualizarPO extends TestBase {
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		attributoNotToBeEmptyElement(cabecalhoE, "value");
+		attributoNotToBeEmpty(cabecalhoE, "value");
 		sleep(3000);
 		
 		//String empresaE1 = empresaE.getAttribute("textContent");

@@ -129,7 +129,7 @@ public class FatorCreditamentoExcluirEmMassaPO extends TestBase{
 		System.out.println(id);
 		novo.click();
 		sleep(3000);
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -175,12 +175,12 @@ public class FatorCreditamentoExcluirEmMassaPO extends TestBase{
 
 		
 		btnGravar.click();
-		waitExpectElement(confirmacionGravar);
+		waitExpectedElement(confirmacionGravar);
 		confirmacionGravar.click();
 		
 		sleep(3000);
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		//waitExpectElement(btnRegresar);
@@ -223,7 +223,7 @@ public class FatorCreditamentoExcluirEmMassaPO extends TestBase{
 		sleep(2000);
 		excluirMassa.click();
 		sleep(3000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		
@@ -231,7 +231,7 @@ public class FatorCreditamentoExcluirEmMassaPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		driver.navigate().refresh();
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		siguiente.click();

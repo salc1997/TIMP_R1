@@ -91,7 +91,7 @@ public class AjustesEditarPO extends TestBase{
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
 
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -99,7 +99,7 @@ public class AjustesEditarPO extends TestBase{
 		sleep(16000);
 		
 	
-		waitExpectElement(data);
+		waitExpectedElement(data);
 	  	sleep(8000);
 		
 	  	String enviar = "Test AN4 Massiel Vasquez";
@@ -118,7 +118,7 @@ public class AjustesEditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		waitExpectElement(confirmar);
+		waitExpectedElement(confirmar);
 		sleep(4000);
 		
 		confirmar.click();
@@ -130,21 +130,21 @@ public class AjustesEditarPO extends TestBase{
 		confirmar.click();
 		sleep(4000);
 		
-		waitExpectElement(nueva);
+		waitExpectedElement(nueva);
 		sleep(2000);
 		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
 
-		actionsMoveToElementElement(menu1);
+		actionsMoveToElement(menu1);
 		sleep(2000);
 		menu1.click();
 		sleep(2000);
 		editar1.click();
 		sleep(2000);
 	
-		waitExpectElement(data);
+		waitExpectedElement(data);
 	  	sleep(12000);
 		
 	  	String nuevoTexto = motivo.getAttribute("value");

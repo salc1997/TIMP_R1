@@ -101,7 +101,7 @@ public class FormulaPO extends TestBase{
 
 		
 		
-		waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+		waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 		
 
 		ferramenta.sendKeys("Prueba Automatizada");
@@ -119,7 +119,7 @@ public class FormulaPO extends TestBase{
 		opcao.click();
 
 		
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 	
 	
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -141,7 +141,7 @@ public class FormulaPO extends TestBase{
 	
 		campoCal.click();
 		
-		waitExpectXpath("//*[@id=\"browser-wrapper\"]/div/div[1]/div[2]/div[1]");
+		waitExpectedElement("//*[@id=\"browser-wrapper\"]/div/div[1]/div[2]/div[1]");
 		
 
 		tipoDado.click();
@@ -192,7 +192,7 @@ public class FormulaPO extends TestBase{
 		
 		agregarF.click();
 
-		waitExpectXpath("//*[@id=\"browser-wrapper\"]/div/div[1]/div[2]/div[1]");
+		waitExpectedElement("//*[@id=\"browser-wrapper\"]/div/div[1]/div[2]/div[1]");
 		
 		coluna.click();
 		
@@ -238,7 +238,7 @@ public class FormulaPO extends TestBase{
 		sleep(1000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);

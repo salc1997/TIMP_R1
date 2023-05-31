@@ -100,7 +100,7 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBase {
 		editar.click();
 		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectElement(caminho);
+		waitExpectedElement(caminho);
 		sleep(3000);
 		
 		caminho.click();
@@ -112,7 +112,7 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBase {
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(5000);
@@ -161,7 +161,7 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBase {
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(5000);
@@ -171,7 +171,7 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBase {
 		driver.navigate().refresh();
 		
 		sleep(300);
-		waitExpectElement(caminho);
+		waitExpectedElement(caminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
@@ -196,7 +196,7 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBase {
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(5000);
@@ -206,7 +206,7 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBase {
 		driver.navigate().refresh();
 		
 		sleep(300);
-		waitExpectElement(caminho);
+		waitExpectedElement(caminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(7000);
 		
@@ -229,7 +229,7 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBase {
 		sleep(9000);
 		
 		configuracoes.click();
-		waitExpectElement(descricaoConf);
+		waitExpectedElement(descricaoConf);
 		
 		String enviar = "Teste Editar";
 		descricaoConf.clear();
@@ -241,7 +241,7 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBase {
 		
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(5000);
@@ -251,13 +251,13 @@ public class RegrasDeEscrituraçãoEditarPO extends TestBase {
 		driver.navigate().refresh();
 		
 		sleep(300);
-		waitExpectElement(caminho);
+		waitExpectedElement(caminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
 
 		configuracoes.click();
-		waitExpectElement(descricaoConf);
+		waitExpectedElement(descricaoConf);
 		invisibilityOfElementOverlay();
 		
 		sleep(2000);

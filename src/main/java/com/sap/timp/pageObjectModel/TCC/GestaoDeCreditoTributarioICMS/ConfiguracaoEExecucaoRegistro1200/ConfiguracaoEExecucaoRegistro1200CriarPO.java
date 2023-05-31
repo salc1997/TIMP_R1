@@ -160,7 +160,7 @@ public class ConfiguracaoEExecucaoRegistro1200CriarPO extends TestBase {
 		
 		novo.click();
 		
-		waitExpectElement(empresa);
+		waitExpectedElement(empresa);
 		invisibilityOfElementOverlay();
 		
 		
@@ -176,7 +176,7 @@ public class ConfiguracaoEExecucaoRegistro1200CriarPO extends TestBase {
 		
 		uf.click();
 		sleep(1000);
-		actionsMoveToElementElement(ufO);
+		actionsMoveToElement(ufO);
 		sleep(1000);
 		ufO.click();
 		sleep(1000);
@@ -206,7 +206,7 @@ public class ConfiguracaoEExecucaoRegistro1200CriarPO extends TestBase {
 		
 		avancar.click();
 		
-		waitExpectElement(ufOrigem);
+		waitExpectedElement(ufOrigem);
 		sleep(1000);
 		invisibilityOfElementOverlay();
 		
@@ -224,13 +224,13 @@ public class ConfiguracaoEExecucaoRegistro1200CriarPO extends TestBase {
 		
 		calculoFormula.click();
 		sleep(2000);
-		waitExpectElement(adicionarFormula);
+		waitExpectedElement(adicionarFormula);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		adicionarFormula.click();
 		sleep(2000);
-		waitExpectElement(nome);
+		waitExpectedElement(nome);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
@@ -247,7 +247,7 @@ public class ConfiguracaoEExecucaoRegistro1200CriarPO extends TestBase {
 		fechar.click();
 		sleep(2000);
 		
-		actionsMoveToElementElement(utilizadosNoPeriodo);
+		actionsMoveToElement(utilizadosNoPeriodo);
 		
 		mesApropiado.click();
 		sleep(1000);
@@ -262,18 +262,18 @@ public class ConfiguracaoEExecucaoRegistro1200CriarPO extends TestBase {
 		
 		utilizadosNoPeriodo.click();
 		sleep(1000);
-		actionsMoveToElementElement(opcao);
+		actionsMoveToElement(opcao);
 		opcao.click();
 		sleep(2000);
 		
 
 		gravar.click();
 		sleep(3000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sim.click();
 		sleep(3000);
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

@@ -538,7 +538,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		if (tq1 == true) {
 
 
-			actionsMoveToElementXpath("//li[@id=\"option-8\"]");
+			actionsMoveToElement("//li[@id=\"option-8\"]");
 			
 			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
@@ -549,7 +549,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 
 		}else if (tp1==true) {
 
-			actionsMoveToElementXpath("//li[@id=\"option-2\"]");
+			actionsMoveToElement("//li[@id=\"option-2\"]");
 			
 			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajustes\"]"));
 
@@ -559,7 +559,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 			sleep(2000);
 		}else {
 			
-			actionsMoveToElementXpath("//li[@id=\"option-6\"]");
+			actionsMoveToElement("//li[@id=\"option-6\"]");
 			
 			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
@@ -609,7 +609,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		salvar.click();
 		sleep(2000);
 	
-		waitExpectElement(flecha);
+		waitExpectedElement(flecha);
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -800,7 +800,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		
 		if (tq1 == true) {
 
-			actionsMoveToElementXpath("//li[@id=\"option-14\"]");
+			actionsMoveToElement("//li[@id=\"option-14\"]");
 			
 			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
@@ -819,7 +819,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 			sleep(2000);
 		}else {
 			
-			actionsMoveToElementXpath("//li[@id=\"option-6\"]");
+			actionsMoveToElement("//li[@id=\"option-6\"]");
 			
 			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
@@ -867,7 +867,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		salvar.click();
 		sleep(2000);
 	
-		waitExpectElement(flecha);
+		waitExpectedElement(flecha);
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -1059,7 +1059,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		novoRegra.click();
 		sleep(2000);
 		
-		waitExpectElement(nomeRegra);
+		waitExpectedElement(nomeRegra);
 		sleep(2000);
 		
 		nomeRegra.click();
@@ -1113,7 +1113,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		sleep(2000);
 		
 			
-		actionsMoveToElementXpath("//div[@id=\"00\"]");
+		actionsMoveToElement("//div[@id=\"00\"]");
 		sleep(2000);
 
 		WebElement Opc2 = driver.findElement(By.xpath("//div[@id=\"00\"]"));
@@ -1164,7 +1164,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		
 		if (tq1 == true) {
 			
-			actionsMoveToElementXpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]");
+			actionsMoveToElement("//li[@class=\"list-item\" and text()=\"Ajuste\"]");
 			sleep(2000);
 			
 			WebElement Opc5 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
@@ -1173,7 +1173,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 			sleep(2000);
 
 		}else if (tp1==true) {
-			actionsMoveToElementXpath("//li[@class=\"list-item\" and text()=\"Ajustes\"]");
+			actionsMoveToElement("//li[@class=\"list-item\" and text()=\"Ajustes\"]");
 			WebElement Opc5 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajustes\"]"));
 
 			Opc5 .click();
@@ -1181,7 +1181,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 			
 		}else {
 			
-			actionsMoveToElementXpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]");
+			actionsMoveToElement("//li[@class=\"list-item\" and text()=\"Ajuste\"]");
 			WebElement Opc5 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
 
 			Opc5 .click();
@@ -1203,7 +1203,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		primeroLeiaute.click();
 		sleep(2000);
 
-		actionsMoveToElementXpath("//li[contains(text(),\""+idRegistro+"\")]");
+		actionsMoveToElement("//li[contains(text(),\""+idRegistro+"\")]");
 		sleep(2000);
 
 		WebElement Opc6 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro+"\")]"));
@@ -1223,7 +1223,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		segundoLeiaute.click();
 		sleep(2000);
 
-		actionsMoveToElementXpath("//li[contains(text(),\""+idRegistro2+"\")]");
+		actionsMoveToElement("//li[contains(text(),\""+idRegistro2+"\")]");
 		sleep(2000);
 
 		WebElement Opc1 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro2+"\")]"));
@@ -1260,7 +1260,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		aplicar.click();
 		sleep(2000);
 		
-		waitExpectElement(camino);
+		waitExpectedElement(camino);
 		sleep(2000);
 		
 		camino.click();
@@ -1372,7 +1372,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		sleep(2000);
 		sleep(2000);
 		
-		waitExpectElement(abaConfiguraciones);
+		waitExpectedElement(abaConfiguraciones);
 		sleep(2000);
 		
 		abaConfiguraciones.click();
@@ -1453,7 +1453,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		primerLeiauteConfiguracoe.click();
 		sleep(2000);
 
-		actionsMoveToElementXpath("//li[contains(text(),\""+idRegistro+"\")]");
+		actionsMoveToElement("//li[contains(text(),\""+idRegistro+"\")]");
 		sleep(2000);
 
 		WebElement Opc6 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro+"\")]"));
@@ -1472,19 +1472,19 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 
 		if (tq1 == true) {
 
-			actionsMoveToElementXpath("//li[@id=\"option-17\"]");
+			actionsMoveToElement("//li[@id=\"option-17\"]");
 		
 			tributoConfiguracoeOPC.click();
 			sleep(4000);
 		}else if (tp1==true) {
 			
-			actionsMoveToElementXpath("//li[@id=\"option-17\"]");
+			actionsMoveToElement("//li[@id=\"option-17\"]");
 			
 			tributoConfiguracoeOPC.click();
 			sleep(4000);
 			
 		}else {
-			actionsMoveToElementXpath("//li[@id=\"option-7\"]");
+			actionsMoveToElement("//li[@id=\"option-7\"]");
 			
 			WebElement tributo = driver.findElement(By.xpath("//li[@id=\"option-7\"]"));
 
@@ -1525,7 +1525,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 			closeSelectTypeCheckbox(ufConfiguracoe);
 			
 		}else {
-			actionsMoveToElementXpath("//div[@id=\"AL\"]");
+			actionsMoveToElement("//div[@id=\"AL\"]");
 			WebElement UF = driver.findElement(By.xpath("//div[@id=\"AL\"]"));
 
 			UF .click();
@@ -1556,7 +1556,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 			closeSelectTypeCheckbox(filialConfiguracoe);
 			
 		}else {
-			actionsMoveToElementXpath("//div[@id=\"1000AL0008\"]");
+			actionsMoveToElement("//div[@id=\"1000AL0008\"]");
 			WebElement filial = driver.findElement(By.xpath("//div[@id=\"1000AL0008\"]"));
 
 			filial .click();
@@ -1577,7 +1577,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		salvar.click();
 		sleep(16000);
 		
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(3000);
 		
 		siguiente.click();
@@ -1642,7 +1642,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		primerLeiauteConfiguracoe.click();
 		sleep(2000);
 
-		actionsMoveToElementXpath("//li[contains(text(),\""+idRegistro+"\")]");
+		actionsMoveToElement("//li[contains(text(),\""+idRegistro+"\")]");
 		sleep(2000);
 
 		WebElement Opc6 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro+"\")]"));
@@ -1662,21 +1662,21 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 
 		if (tq1 == true) {
 
-			actionsMoveToElementXpath("//li[@id=\"option-17\"]");
+			actionsMoveToElement("//li[@id=\"option-17\"]");
 			
 			tributoConfiguracoeOPC.click();
 			sleep(2000);
 
 		}else if (tp1==true) {
 			
-			actionsMoveToElementXpath("//li[@id=\"option-17\"]");
+			actionsMoveToElement("//li[@id=\"option-17\"]");
 			
 			tributoConfiguracoeOPC.click();
 			sleep(2000);
 			
 		}else {
 			
-			actionsMoveToElementXpath("//li[@id=\"option-7\"]");
+			actionsMoveToElement("//li[@id=\"option-7\"]");
 			
 			WebElement tributo = driver.findElement(By.xpath("//li[@id=\"option-7\"]"));
 
@@ -1716,7 +1716,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 			closeSelectTypeCheckbox(ufConfiguracoe);
 			
 		}else {
-			actionsMoveToElementXpath("//div[@id=\"AL\"]");
+			actionsMoveToElement("//div[@id=\"AL\"]");
 			WebElement UF = driver.findElement(By.xpath("//div[@id=\"AL\"]"));
 
 			UF .click();
@@ -1746,7 +1746,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 			closeSelectTypeCheckbox(filialConfiguracoe);
 			
 		}else {
-			actionsMoveToElementXpath("//div[@id=\"1000AL0008\"]");
+			actionsMoveToElement("//div[@id=\"1000AL0008\"]");
 			WebElement filial = driver.findElement(By.xpath("//div[@id=\"1000AL0008\"]"));
 
 			filial .click();
@@ -1767,7 +1767,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		salvar.click();
 		sleep(16000);
 		
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(3000);
 		
 		siguiente.click();
@@ -1842,14 +1842,14 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		
 		System.out.println("Nombre de la Primera Configuracion : " + textNome );
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
 		executar.click();
 		sleep(2000);
 
-		waitExpectElement(estado);
+		waitExpectedElement(estado);
 		sleep(3000);
 		
 		estado.click();
@@ -1907,7 +1907,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		executarConfiguracao.click();
 		sleep(3000);
 		
-		waitExpectXpath("//span[text()=\"Execução\"]");
+		waitExpectedElement("//span[text()=\"Execução\"]");
 		sleep(10000);
 		
 		gravarExecutado.click();
@@ -1919,7 +1919,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		biblioteca.click();
 		sleep(2000);
 
-		waitExpectElement(siguiente);
+		waitExpectedElement(siguiente);
 		sleep(10000);
 		
 		siguiente.click();
@@ -1940,14 +1940,14 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		
 		System.out.println("Nombre de la Segunda Configuracion : " + textNome2 );
 		
-		actionsMoveToElementElement(menu2);
+		actionsMoveToElement(menu2);
 		sleep(2000);
 		menu2.click();
 		sleep(2000);
 		executar2.click();
 		sleep(2000);
 		
-		waitExpectElement(estado);
+		waitExpectedElement(estado);
 		sleep(3000);
 		
 		estado.click();
@@ -2008,7 +2008,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		executarConfiguracao.click();
 		sleep(3000);
 		
-		waitExpectXpath("//span[text()=\"Execução\"]");
+		waitExpectedElement("//span[text()=\"Execução\"]");
 		sleep(10000);
 		
 		gravarExecutado.click();
@@ -2233,7 +2233,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		String idRegistro = idObter2();
 		System.out.println("leiaute criado"+idRegistro);
 
-		actionsMoveToElementXpath("//li[contains(text(),\""+idRegistro+"\")]");
+		actionsMoveToElement("//li[contains(text(),\""+idRegistro+"\")]");
 		sleep(2000);
 
 		WebElement Opc = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro+"\")]"));
@@ -2256,7 +2256,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		String idRegistro1 = idObter7();
 		System.out.println("Configuracion Referencia"+idRegistro1);
 
-		actionsMoveToElementXpath("//li[contains(text(),\""+idRegistro1+"\")]");
+		actionsMoveToElement("//li[contains(text(),\""+idRegistro1+"\")]");
 		sleep(2000);
 
 		WebElement Opc1 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro1+"\")]"));
@@ -2264,7 +2264,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		Opc1.click();
 		sleep(4000);
 		
-		actionsMoveToElementElement(adicionarFiltroReferenciaAN4);
+		actionsMoveToElement(adicionarFiltroReferenciaAN4);
 		sleep(6000);
 		
 		adicionarFiltroReferenciaAN4.click();
@@ -2343,7 +2343,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		String idRegistro2 = idObter9();
 		System.out.println("Arquivo executado primero"+idRegistro2);
 
-		actionsMoveToElementXpath("//li[contains(text(),\""+idRegistro2+"\")]");
+		actionsMoveToElement("//li[contains(text(),\""+idRegistro2+"\")]");
 		sleep(2000);
 
 		WebElement Opc2 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro2+"\")]"));
@@ -2360,7 +2360,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		sleep(3000);
 		
 		
-		attributeToBeXpath("//div[contains(@class, \"layout-dfg-selectComparison\")]/div", "class", "base-select required");
+		attributeToBe("//div[contains(@class, \"layout-dfg-selectComparison\")]/div", "class", "base-select required");
 		leiauteComperacaoAN4.click();
 		sleep(3000);
 		
@@ -2368,7 +2368,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		String idRegistro3 = idObter3();
 		System.out.println("Leiaute Comparacao "+idRegistro3);
 
-		actionsMoveToElementXpath("//li[contains(text(),\""+idRegistro3+"\")]");
+		actionsMoveToElement("//li[contains(text(),\""+idRegistro3+"\")]");
 		sleep(3000);
 
 		WebElement Opc3 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro3+"\")]"));
@@ -2376,7 +2376,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		Opc3.click();
 		sleep(4000);
 		
-		attributeToBeXpath("//div[contains(@class, \"version-selectComparison\")]/div", "class", "base-select required");
+		attributeToBe("//div[contains(@class, \"version-selectComparison\")]/div", "class", "base-select required");
 		versaoAN42.click();
 		sleep(3000);
 		
@@ -2392,7 +2392,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		String idRegistro4 = idObter8();
 		System.out.println("Configuracao Comparacao"+idRegistro4);
 
-		actionsMoveToElementXpath("//li[contains(text(),\""+idRegistro4+"\")]");
+		actionsMoveToElement("//li[contains(text(),\""+idRegistro4+"\")]");
 		sleep(2000);
 
 		WebElement Opc4 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro4+"\")]"));
@@ -2400,7 +2400,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		Opc4.click();
 		sleep(8000);
 		
-		actionsMoveToElementElement(adicionarFiltroComperacaoAN4);
+		actionsMoveToElement(adicionarFiltroComperacaoAN4);
 		sleep(2000);
 		
 		adicionarFiltroComperacaoAN4.click();
@@ -2478,7 +2478,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		String idRegistro5 = idObter10();
 		System.out.println("Arquivo executado de Segundo"+idRegistro5);
 
-		actionsMoveToElementXpath("//li[contains(text(),\""+idRegistro5+"\")]");
+		actionsMoveToElement("//li[contains(text(),\""+idRegistro5+"\")]");
 		sleep(2000);
 
 		WebElement Opc5 = driver.findElement(By.xpath("//li[contains(text(),\""+idRegistro5+"\")]"));
@@ -2621,14 +2621,14 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
 		editar.click();
 		sleep(2000);
 		
-		attributoNotToBeEmptyElement(nomeAN4, "value");
+		attributoNotToBeEmpty(nomeAN4, "value");
 	  	sleep(2000);
 	  	
 		String valor = nomeAN4.getAttribute("value");
@@ -2660,7 +2660,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		WebElement menu2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		
-		actionsMoveToElementElement(menu2);
+		actionsMoveToElement(menu2);
 		sleep(2000);
 		menu2.click();
 		sleep(2000);
@@ -2668,7 +2668,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		sleep(6000);
 		
 
-		attributoNotToBeEmptyElement(nomeAN4, "value");
+		attributoNotToBeEmpty(nomeAN4, "value");
 	  	sleep(8000);
 	  	
 		sleep(8000);
@@ -2750,14 +2750,14 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Executar\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
 		editar.click();
 		sleep(2000);
 		
-		waitExpectElement(executarAN4);
+		waitExpectedElement(executarAN4);
 		sleep(10000);
 		
 		executarAN4.click();
@@ -2767,7 +2767,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		
 		if (tq1 == true) {
 			
-			waitExpectElement(bloco1);
+			waitExpectedElement(bloco1);
 			sleep(3000);
 
 			this. blocoReferencia = bloco1.getText();
@@ -2783,7 +2783,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 			System.out.println(registroConfiguracoe);
 
 		}else if (tp1==true) {
-			waitExpectElement(bloco1TP1);
+			waitExpectedElement(bloco1TP1);
 			sleep(3000);
 		
 			this.blocoReferencia = bloco1TP1.getText();
@@ -2799,7 +2799,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 			System.out.println(registroConfiguracoe);
 		}else {
 			
-			waitExpectElement(bloco1T);
+			waitExpectedElement(bloco1T);
 			sleep(3000);
 		
 			this. blocoReferencia = bloco1T.getText();
@@ -2892,7 +2892,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 		
-		actionsMoveToElementElement(menu);
+		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
 		sleep(2000);
@@ -2908,7 +2908,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		WebElement menu2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro +"\"]/div[1]/div"));
 		WebElement restaurar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro +"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Restaurar\"]"));
 		
-		actionsMoveToElementElement(menu2);
+		actionsMoveToElement(menu2);
 		sleep(2000);
 		menu2.click();
 		sleep(2000);
@@ -2965,7 +2965,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		WebElement menu3 = driver.findElement(By.xpath("//div[@data-id=\""+idrestaurado+"\"]/div[1]/div"));
 		WebElement editar3 = driver.findElement(By.xpath("//div[@data-id=\""+idrestaurado+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 		
-		actionsMoveToElementElement(menu3);
+		actionsMoveToElement(menu3);
 		sleep(2000);
 		menu3.click();
 		sleep(2000);

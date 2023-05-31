@@ -83,7 +83,7 @@ public class CodigoAjustesContribuiçoesCreditosCriarPO extends TestBase {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		attributeToBeXpath("//div[@id=\"tax\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"tax\"]/div", "class", "base-MultipleSelect3 required");
 		
 		tributo.click();
 		sleep(1000);
@@ -105,7 +105,7 @@ public class CodigoAjustesContribuiçoesCreditosCriarPO extends TestBase {
 		biblioteca.click();
 		
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		

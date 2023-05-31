@@ -338,7 +338,7 @@ public class GatewayEventoPO extends TestBase {
 		
 		
 			
-		dobleClickElement(NovoOperacao);
+		dobleClick(NovoOperacao);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -355,7 +355,7 @@ public class GatewayEventoPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 	
-		actionsMoveToElementElement(editar);
+		actionsMoveToElement(editar);
 		sleep(2000);
 		
 		editar.click();
@@ -374,7 +374,7 @@ public class GatewayEventoPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 	
-		actionsMoveToElementElement(editar);
+		actionsMoveToElement(editar);
 		sleep(2000);
 		
 		editar.click();
@@ -421,7 +421,7 @@ public class GatewayEventoPO extends TestBase {
 		
 		System.out.println("--------- tercera Figura--------------"); 
 		
-		dobleClickElement(NovoActividad);
+		dobleClick(NovoActividad);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -437,7 +437,7 @@ public class GatewayEventoPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 	
-		actionsMoveToElementElement(editar2);
+		actionsMoveToElement(editar2);
 		sleep(2000);
 		
 		editar2.click();
@@ -455,7 +455,7 @@ public class GatewayEventoPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 	
-		actionsMoveToElementElement(editar2);
+		actionsMoveToElement(editar2);
 		sleep(2000);
 		
 		editar2.click();

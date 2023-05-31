@@ -155,7 +155,7 @@ public class ConfiguraçãodeLayoutdePainelFiltrosAvancadosPO extends TestBase{
 		opcEmpresa.click();
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@class=\"uf-filter\"]/div", "class", "base-select ");
+		attributeToBe("//div[@class=\"uf-filter\"]/div", "class", "base-select ");
 		sleep(1000);
 		
 		uf.click();
@@ -163,7 +163,7 @@ public class ConfiguraçãodeLayoutdePainelFiltrosAvancadosPO extends TestBase{
 		opcUf.click();
 		sleep(2000);
 		
-		attributeToBeXpath("//div[@class=\"branch-filter\"]/div", "class", "base-select ");
+		attributeToBe("//div[@class=\"branch-filter\"]/div", "class", "base-select ");
 		sleep(1000);
 		
 		filial.click();

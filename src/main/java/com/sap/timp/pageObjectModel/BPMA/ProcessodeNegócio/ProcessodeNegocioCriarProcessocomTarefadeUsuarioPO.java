@@ -199,7 +199,7 @@ public class ProcessodeNegocioCriarProcessocomTarefadeUsuarioPO extends TestBase
 		sleep(8000);
 		
 		
-		dobleClickElement(NovoOperacao);
+		dobleClick(NovoOperacao);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -216,7 +216,7 @@ public class ProcessodeNegocioCriarProcessocomTarefadeUsuarioPO extends TestBase
 		moveToElement(fin, driver.findElement(By.xpath("//div[@id=\"Operation\"]/div/div/div/div/div")));
 		sleep(2000);
 		
-		dobleClickElement(NovoActividad);
+		dobleClick(NovoActividad);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -260,7 +260,7 @@ public class ProcessodeNegocioCriarProcessocomTarefadeUsuarioPO extends TestBase
 		variant.click();
 		sleep(3000);
 		
-		waitExpectElement(opacao);
+		waitExpectedElement(opacao);
 		opacao.click();
 		sleep(3000);
 		
@@ -305,12 +305,12 @@ public class ProcessodeNegocioCriarProcessocomTarefadeUsuarioPO extends TestBase
 		sleep(25000);
 		
 		
-		dobleClickElement(NovoOperacao);
+		dobleClick(NovoOperacao);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(5000);
 		
-		dobleClickElement(NovoActividad);
+		dobleClick(NovoActividad);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(8000);

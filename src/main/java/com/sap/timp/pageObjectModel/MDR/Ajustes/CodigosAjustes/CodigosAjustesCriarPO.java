@@ -120,7 +120,7 @@ public class CodigosAjustesCriarPO extends TestBase{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		attributeToBeXpath("//div[@id=\"companyCode\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"companyCode\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		
 		empresa.click();
@@ -139,7 +139,7 @@ public class CodigosAjustesCriarPO extends TestBase{
 		
 		descriçao.sendKeys("Código Ajuste de Teste");
 		sleep(1000);
-		actionsMoveToElementElement(codigoConta);
+		actionsMoveToElement(codigoConta);
 		sleep(1000);
 		tributo.click();
 		sleep(1000);
@@ -147,13 +147,13 @@ public class CodigosAjustesCriarPO extends TestBase{
 		tributoO.click();
 		sleep(1000);
 		
-		attributeToBeXpath("//div[@id=\"tributeType\"]/div", "class", "base-select required");
+		attributeToBe("//div[@id=\"tributeType\"]/div", "class", "base-select required");
 		sleep(1000);
 		tipoTributo.click();
 		sleep(1000);
 		opcion.click();
 		sleep(1000);
-		attributeToBeXpath("//div[@id=\"tributeTypeDetail\"]/div/div/div/div[1]", "class", "input-wrapper base-input  required");
+		attributeToBe("//div[@id=\"tributeTypeDetail\"]/div/div/div/div[1]", "class", "input-wrapper base-input  required");
 		sleep(2000);
 		detalheTributo.click();
 		sleep(1000);
@@ -169,17 +169,17 @@ public class CodigosAjustesCriarPO extends TestBase{
 		sleep(1000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(1000);
 		nao.click();
-		waitExpectElement(sim);
+		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay dark\"]");
 		sleep(2000);
 		
-		waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
+		waitExpectedElement("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);
 	//	biblioteca.click();

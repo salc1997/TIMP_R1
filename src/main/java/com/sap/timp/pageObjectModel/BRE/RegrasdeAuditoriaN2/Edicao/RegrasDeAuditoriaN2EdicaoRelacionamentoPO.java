@@ -102,7 +102,7 @@ public class RegrasDeAuditoriaN2EdicaoRelacionamentoPO extends TestBase{
 		
 		btnGravar.click();
 		sleep(2000);
-		waitExpectElement(btnNao);
+		waitExpectedElement(btnNao);
 		btnNao.click();
 		invisibilityOfElementOverlay();
 		sleep(3000);
@@ -142,7 +142,7 @@ public class RegrasDeAuditoriaN2EdicaoRelacionamentoPO extends TestBase{
 		btnSeleccionarRelacionamento.click();
 		sleep(8000);
 		
-		waitExpectElement(cboRelacionamentoElementoDeEstrutura);
+		waitExpectedElement(cboRelacionamentoElementoDeEstrutura);
 		
 		String opcionSeleccionadaEditada = driver.findElement(By.xpath("//div[@class=\"structure-relation-select\"]/div/div/div/div/div/div[1]")).getText();
 		System.out.println("");

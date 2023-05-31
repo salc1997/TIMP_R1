@@ -127,7 +127,7 @@ public class TabelaReceitasCreditoFiscalAntecipadoDetalhesPO extends TestBase {
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(1000);
-		attributoNotToBeEmptyElement(obrigacaoV, "textContent");
+		attributoNotToBeEmpty(obrigacaoV, "textContent");
 
 		String obrigacaoV1 = obrigacaoV.getText();
 		String codigoV1 = codigoV.getText();

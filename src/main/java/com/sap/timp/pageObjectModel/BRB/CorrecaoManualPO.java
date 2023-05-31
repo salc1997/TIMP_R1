@@ -113,17 +113,17 @@ public class CorrecaoManualPO extends TestBase {
 		}
 		
 		if (tc2==true) {
-			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+			waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 			ferramenta.sendKeys("2278");
 			ferramenta.sendKeys(Keys.ENTER);
 			
 		}else if (tq1==true) {
-			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+			waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 			ferramenta.sendKeys("8005134");
 			ferramenta.sendKeys(Keys.ENTER);
 			
 		}else {
-			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+			waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 			ferramenta.sendKeys("1745");
 			ferramenta.sendKeys(Keys.ENTER);
 			
@@ -142,14 +142,14 @@ public class CorrecaoManualPO extends TestBase {
 
 		opcao.click();
 
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		
 		
-		actionsMoveToElementElement(agregar);
+		actionsMoveToElement(agregar);
 		
 		agregar.click();
 		sleep(2000);
-		actionsMoveToElementElement(agregar);
+		actionsMoveToElement(agregar);
 		
 		inputColumna.click();
 		sleep(2000);
@@ -188,7 +188,7 @@ public class CorrecaoManualPO extends TestBase {
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -219,7 +219,7 @@ public class CorrecaoManualPO extends TestBase {
 		
 		btnEdicao.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -237,7 +237,7 @@ public class CorrecaoManualPO extends TestBase {
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);

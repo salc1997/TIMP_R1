@@ -99,7 +99,7 @@ public class RegraDeCamposCriarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElementOverlay();
 		
-		waitExpectElement(cboTipoDeRegra);
+		waitExpectedElement(cboTipoDeRegra);
 		cboTipoDeRegra.click();
 		sleep(1000);
 		opcionTipoDeRegra.click();
@@ -118,7 +118,7 @@ public class RegraDeCamposCriarPO extends TestBase{
 		
 		String URL = driver.getCurrentUrl();
 		
-		attributeToBeXpath("//div[@id=\"rule-state\"]/div", "class", "base-MultipleSelect3 required");
+		attributeToBe("//div[@id=\"rule-state\"]/div", "class", "base-MultipleSelect3 required");
 		cboUf.click();
 		sleep(1000);
 		
@@ -131,8 +131,8 @@ public class RegraDeCamposCriarPO extends TestBase{
 		closeSelectTypeCheckbox(cboUf);
 		sleep(1000);
 		
-		actionsMoveToElementElement(inputValidadeDe);
-		attributeToBeXpath("//div[@id=\"rule-branch\"]/div", "class", "base-MultipleSelect3 required");
+		actionsMoveToElement(inputValidadeDe);
+		attributeToBe("//div[@id=\"rule-branch\"]/div", "class", "base-MultipleSelect3 required");
 		cboFilial.click();
 		sleep(1000);
 		
@@ -145,7 +145,7 @@ public class RegraDeCamposCriarPO extends TestBase{
 		closeSelectTypeCheckbox(cboFilial);
 		sleep(1000);
 		
-		waitExpectElement(cboRegraDeAbas);
+		waitExpectedElement(cboRegraDeAbas);
 		cboRegraDeAbas.click();
 		sleep(1000);
 		opcionCombo.click();

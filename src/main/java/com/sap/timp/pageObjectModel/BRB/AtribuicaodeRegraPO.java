@@ -98,17 +98,17 @@ public class AtribuicaodeRegraPO extends TestBase{
 		}
 		
 		if (tc2==true) {
-			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+			waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 			ferramenta.sendKeys("2277");
 			ferramenta.sendKeys(Keys.ENTER);
 			
 		}else if (tq1==true) {
-			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+			waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 			ferramenta.sendKeys("8005133");
 			ferramenta.sendKeys(Keys.ENTER);
 			
 		}else {
-			waitExpectXpath("//*[@id=\"acc-reports\"]/ul/li[3]");
+			waitExpectedElement("//*[@id=\"acc-reports\"]/ul/li[3]");
 			ferramenta.sendKeys("1744");
 			ferramenta.sendKeys(Keys.ENTER);
 			
@@ -127,14 +127,14 @@ public class AtribuicaodeRegraPO extends TestBase{
 
 		opcao.click();
 
-		waitExpectXpath("//*[@id=\"accordion\"]/ul/li");
+		waitExpectedElement("//*[@id=\"accordion\"]/ul/li");
 		
 		
-		actionsMoveToElementElement(agregar);
+		actionsMoveToElement(agregar);
 		
 		agregar.click();
 		sleep(2000);
-		actionsMoveToElementElement(agregar);
+		actionsMoveToElement(agregar);
 		
 		
 		if(url.contains("tc2") || url.contains("tp1")) {
@@ -179,7 +179,7 @@ public class AtribuicaodeRegraPO extends TestBase{
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);
@@ -231,7 +231,7 @@ public class AtribuicaodeRegraPO extends TestBase{
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
-		waitExpectElement(nao);
+		waitExpectedElement(nao);
 		sleep(1000);
 		nao.click();
 		sleep(3000);

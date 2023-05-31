@@ -135,7 +135,7 @@ public class TabelaLogradouroVisualizarPO extends TestBase {
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		attributoNotToBeEmptyElement(codigoLogadouroE, "value");
+		attributoNotToBeEmpty(codigoLogadouroE, "value");
 		sleep(2000);
 		
 

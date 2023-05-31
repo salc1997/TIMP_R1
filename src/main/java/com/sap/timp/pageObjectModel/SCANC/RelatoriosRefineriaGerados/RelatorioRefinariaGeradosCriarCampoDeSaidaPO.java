@@ -154,7 +154,7 @@ public class RelatorioRefinariaGeradosCriarCampoDeSaidaPO extends TestBase{
 		if(idNuevo > idViejo) {
 			sucesso.add(true);
 			System.out.println("Se creo el registro...");
-			idInserir4(ultimoIdAgregado);
+			idInserir("relatorioRefinariaGeradosCriarCampoDeSaida",ultimoIdAgregado);
 		}else {
 			System.out.println("No se creo el registro...");
 			sucesso.add(false);

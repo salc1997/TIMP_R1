@@ -211,7 +211,7 @@ public class ConfiguracoesStatusPeriodoCriarPO extends TestBase {
 		
 		System.out.println(id);
 		sleep(2000);
-		idInserir1(id2);
+		idInserir("ConfiguracoesStatusPeriodo",id2);
 		System.out.println(id2);
 		
 		

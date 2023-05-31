@@ -202,7 +202,7 @@ public class Registro1210ExecutarPO extends TestBase{
 		
 		if(convertToInt(idUltimoRegistroExecutados) > convertToInt(idUltimoExcecutado)) {
 			System.out.println("Registro executado correcctamente..."+ idUltimoRegistroExecutados);
-			idInserir3(idUltimoRegistroExecutados);
+			idInserir("Registro1210",idUltimoRegistroExecutados);
 			idInserir("id-GCT-ICMS-ConfiguracaoEExecucacoRegistro1200Executados",idUltimoRegistroExecutados);
 			
 			sucesso = true;

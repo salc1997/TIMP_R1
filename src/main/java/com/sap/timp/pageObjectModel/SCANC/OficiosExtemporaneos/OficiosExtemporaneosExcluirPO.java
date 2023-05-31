@@ -1,11 +1,10 @@
 package com.sap.timp.pageObjectModel.SCANC.OficiosExtemporaneos;
 
-import java.util.ArrayList;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 import com.sap.timp.base.TestBase;
 
 public class OficiosExtemporaneosExcluirPO extends TestBase{
@@ -40,7 +39,7 @@ public class OficiosExtemporaneosExcluirPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("oficiosExtemporaneos");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 

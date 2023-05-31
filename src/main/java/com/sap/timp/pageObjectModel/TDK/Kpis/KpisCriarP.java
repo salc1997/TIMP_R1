@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-
 import com.sap.timp.base.TestBase;
 
 public class KpisCriarP extends TestBase {
@@ -157,7 +156,7 @@ public class KpisCriarP extends TestBase {
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
-		idInserir2(idB);
+		idInserir("KpisCriar",idB);
 
 		System.out.println(id);
 		System.out.println(idB);

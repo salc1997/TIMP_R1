@@ -158,7 +158,7 @@ public class RRGConfiguracaoDeAjusteCriarComDiaAleatorioPO extends TestBase{
 		
 		if(convertToInt(idPrimeroNuevo) > convertToInt(idPrimero)) {
 			System.out.println("Registro creado...");
-			idInserir4(idPrimeroNuevo);
+			idInserir("ConfiguracaoDeAjusteComDiaAleatorio",idPrimeroNuevo);
 			sucesso = true;
 		}else {
 			System.out.println("No se pudo crear el registro...");

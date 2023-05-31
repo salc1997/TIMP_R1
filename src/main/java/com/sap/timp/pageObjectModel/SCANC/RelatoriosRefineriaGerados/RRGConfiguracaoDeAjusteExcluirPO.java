@@ -50,7 +50,7 @@ public class RRGConfiguracaoDeAjusteExcluirPO extends TestBase{
 		String idPrimero = driver.findElement(By.xpath("//div[@id=\"adjustment-table\"]/div/div/div/div[@class=\"tbody\"]/div[@class=\"tr\" and @data-id][1]/div[2]/div")).getText();
 		System.out.println("Primer ID: " + idPrimero);
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("ConfiguracaoDeAjusteComDiaAleatorio");
 		System.out.println("ID a Eliminar: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@id=\"adjustment-table\"]/div/div//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@id=\"adjustment-table\"]/div/div//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));

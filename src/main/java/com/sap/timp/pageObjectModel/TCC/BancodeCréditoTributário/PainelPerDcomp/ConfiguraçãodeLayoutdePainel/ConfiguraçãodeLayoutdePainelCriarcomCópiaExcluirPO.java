@@ -159,7 +159,7 @@ public class ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluirPO extends TestBase
 		
 		String idultimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[2]/div")).getText();
 		
-		idInserir3(idultimo);
+		idInserir("idBCT-PainelPERDCOMP-ConfiguracaoDeLayoutPainelE",idultimo);
 
 		System.out.println(id);
 		System.out.println(idultimo);
@@ -184,7 +184,7 @@ public class ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluirPO extends TestBase
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter3();
+		String idRegistro = idObter("idBCT-PainelPERDCOMP-ConfiguracaoDeLayoutPainelE");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

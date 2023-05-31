@@ -167,7 +167,7 @@ public class ConfiguracaoBloqueiosCriarPO extends TestBase{
 		
 		if(id2 > id1) {
 			sucesso = true;
-			idInserir1(idUltimoRegistroGuardado);
+			idInserir("ConfiguracaoBloqueios",idUltimoRegistroGuardado);
 			System.out.println("Registro creado...");
 		}else {
 			System.out.println("No se creo el registro...");

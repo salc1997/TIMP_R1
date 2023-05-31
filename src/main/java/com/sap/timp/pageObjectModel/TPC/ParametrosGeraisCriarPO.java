@@ -1,7 +1,6 @@
 package com.sap.timp.pageObjectModel.TPC;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -302,7 +301,7 @@ public class ParametrosGeraisCriarPO extends TestBase {
 		//compara pra ver se o novo id criado é realmente o ultimo		  
 		if (id2 > id1) { 
 			sucesso = true; 
-			idInserir4(idPrimerRegistro);
+			idInserir("ParametrosGerais",idPrimerRegistro);
 			System.out.println("Registro creado...");
 		}
 		

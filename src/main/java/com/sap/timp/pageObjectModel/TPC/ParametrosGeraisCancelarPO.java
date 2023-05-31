@@ -45,7 +45,7 @@ public class ParametrosGeraisCancelarPO extends TestBase {
 		sleep(2000);	
 		
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("ParametrosGerais");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div/ul/li/span[text()=\"Cancelar\"]"));
 		

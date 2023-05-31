@@ -46,7 +46,7 @@ public class ParametrosGeraisDetalhesPO extends TestBase{
 		sleep(2000);	
 		
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("ParametrosGerais");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div/ul/li[1]/span[text()=\"Detalhes\"]"));
 		

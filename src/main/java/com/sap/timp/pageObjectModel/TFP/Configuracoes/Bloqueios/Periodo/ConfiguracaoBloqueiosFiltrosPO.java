@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-
 import com.sap.timp.base.TestBase;
 
 public class ConfiguracaoBloqueiosFiltrosPO extends TestBase{
@@ -147,7 +146,7 @@ public class ConfiguracaoBloqueiosFiltrosPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("ConfiguracaoBloqueios");
 		System.out.println("Id Registro a buscar: " + idRegistro);
 		System.out.println("");
 		

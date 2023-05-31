@@ -1,11 +1,9 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaCodigoReceitas;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 
 import com.sap.timp.base.TestBase;
 
@@ -143,7 +141,7 @@ public class TabelaCodigoReceitasCriarPO extends TestBase{
 		
 		if (idBD > idD) {
 			sucesso = true;
-			idInserir1(idB);
+			idInserir("codigoReceitas",idB);
 		}else {
 			sucesso = false;
 		}

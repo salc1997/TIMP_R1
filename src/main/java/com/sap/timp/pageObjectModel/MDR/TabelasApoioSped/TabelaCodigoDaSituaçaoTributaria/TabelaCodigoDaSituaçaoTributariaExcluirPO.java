@@ -102,7 +102,7 @@ public class TabelaCodigoDaSituaçaoTributariaExcluirPO extends TestBase{
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		
-		String idinserido = idObter1();
+		String idinserido = idObter("tabelacodigodasituacaotributaria");
 		String idultimo = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText();
 	
 		if(idinserido != idultimo) {

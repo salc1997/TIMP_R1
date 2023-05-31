@@ -37,7 +37,7 @@ public class RelatorioRefinariaGeradosExcluirCampoDeSaidaPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(3000);
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("relatorioRefinariaGeradosCriarCampoDeSaida");
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"dialog-content wide\"]/div/div[2]/div/div/div/div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@class=\"dialog-content wide\"]/div/div[2]/div/div/div/div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
 		

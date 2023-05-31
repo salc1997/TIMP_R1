@@ -1,7 +1,5 @@
 package com.sap.timp.pageObjectModel.TPC;
 
-import java.util.ArrayList;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -47,7 +45,7 @@ public class ParametrosGeraisAprovarPO extends TestBase {
 		sleep(2000);	
 		
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("ParametrosGerais");
 
 		WebElement seleccion = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[2]/label/span"));
 		

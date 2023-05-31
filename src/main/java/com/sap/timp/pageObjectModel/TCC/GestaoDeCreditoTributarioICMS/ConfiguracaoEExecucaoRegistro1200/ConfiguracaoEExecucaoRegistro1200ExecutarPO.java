@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 import com.sap.timp.base.TestBase;
 
 public class ConfiguracaoEExecucaoRegistro1200ExecutarPO extends TestBase{
@@ -203,7 +204,7 @@ public class ConfiguracaoEExecucaoRegistro1200ExecutarPO extends TestBase{
 		
 		if(convertToInt(idUltimoRegistroExecutados) > convertToInt(idUltimoExcecutado)) {
 			System.out.println("Registro executado correcctamente..."+ idUltimoRegistroExecutados);
-			idInserir3(idUltimoRegistroExecutados);
+			idInserir("id-GCT-ICMS-ConfiguracaoEExecucacoRegistro1200",idUltimoRegistroExecutados);
 			idInserir("id-GCT-ICMS-ConfiguracaoEExecucacoRegistro1200Executados",idUltimoRegistroExecutados);
 			
 			sucesso = true;

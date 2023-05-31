@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltrosPO;
 
-public class RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros extends TestBaseSteven{
+public class RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltros extends TestBase{
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO ;
 	RelacionamentoEstruturasFiltroPorIdMasLimpiarFiltrosPO relacionamentoEstruturasFiltroPorIdMasLimpiarFiltrosPO;

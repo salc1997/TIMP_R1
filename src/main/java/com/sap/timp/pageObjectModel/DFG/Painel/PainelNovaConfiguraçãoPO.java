@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class PainelNovaConfiguraçãoPO extends TestBaseSteven{
+public class PainelNovaConfiguraçãoPO extends TestBase{
 	@FindBy(xpath = "//div[@class=\"base-pagination-wrapper\"]/div[contains(@class,\"icon-right\") and @tabindex=\"0\"][2]")
 	public WebElement siguiente;
 

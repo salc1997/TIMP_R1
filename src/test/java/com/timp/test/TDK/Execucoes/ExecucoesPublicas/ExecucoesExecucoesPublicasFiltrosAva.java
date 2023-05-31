@@ -2,7 +2,7 @@ package com.timp.test.TDK.Execucoes.ExecucoesPublicas;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Execucoes.ExecucoesPublicas.ExecucoesExecucoesPublicasFiltrosAvaPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ExecucoesExecucoesPublicasFiltrosAva extends TestBaseSteven {
+public class ExecucoesExecucoesPublicasFiltrosAva extends TestBase {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	ExecucoesExecucoesPublicasFiltrosAvaPO execucoesFiltrosAvaPO;

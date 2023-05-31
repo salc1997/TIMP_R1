@@ -6,11 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
 import net.bytebuddy.asm.Advice.Return;
 
-public class PublicoYPRivadoPO extends TestBaseSteven{
+public class PublicoYPRivadoPO extends TestBase{
 	
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")
 	public WebElement ferramenta;

@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.SPED.ESocial.Eventos.S1210PagamentosDeRendimentosDoTrabalho.FuncionalidadesPO;
 
-public class Funcionalidades extends TestBaseSteven{
+public class Funcionalidades extends TestBase{
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
 	FuncionalidadesPO funcionalidadesPO;

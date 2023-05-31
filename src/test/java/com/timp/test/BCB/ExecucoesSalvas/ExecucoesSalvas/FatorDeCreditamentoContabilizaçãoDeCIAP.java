@@ -2,7 +2,7 @@ package com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
 import com.sap.timp.pageObjectModel.BCB.ExecucoesSalvas.ExecuçõesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAPPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class FatorDeCreditamentoContabilizaçãoDeCIAP extends TestBaseSteven{
+public class FatorDeCreditamentoContabilizaçãoDeCIAP extends TestBase{
 	//TTSNG-4228
 	
 	LoginTC loginTC;

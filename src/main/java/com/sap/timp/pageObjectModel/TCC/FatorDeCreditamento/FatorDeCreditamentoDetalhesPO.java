@@ -7,11 +7,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeClass;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
 
 
-public class FatorDeCreditamentoDetalhesPO extends TestBaseSteven{
+public class FatorDeCreditamentoDetalhesPO extends TestBase{
 
 	@FindBy(xpath = "//li[contains(@identifier,\"accordion-item-creditFactor\")]")
 	public WebElement fatorCreditamento;

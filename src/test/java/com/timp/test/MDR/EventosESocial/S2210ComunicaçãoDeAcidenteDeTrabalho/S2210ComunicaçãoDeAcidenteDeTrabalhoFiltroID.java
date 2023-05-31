@@ -8,7 +8,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoFiltrosPO;
@@ -17,7 +17,7 @@ import com.sap.timp.pageObjectModel.MDR.EventosESocial.S2210ComunicaçãoDeAcident
 import com.sap.timp.pageObjectModel.MDR.SCANC.MovimentoSCANC.MovimentoSCANCFiltroIdPO;
 import com.sap.timp.pageObjectModel.MDR.SCANC.RelacionamentoEntreQuadros.RelacionamentoEntreQuadrosFiltroIdPO;
 
-public class S2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID extends TestBaseSteven {
+public class S2210ComunicaçãoDeAcidenteDeTrabalhoFiltroID extends TestBase {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	S2210ComunicaçãoDeAcidenteDeTrabalhoFiltroIdPO ssAcidenteDeTrabalhoFiltroIdPO;

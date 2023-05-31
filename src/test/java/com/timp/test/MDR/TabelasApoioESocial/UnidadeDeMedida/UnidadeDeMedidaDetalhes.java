@@ -2,9 +2,9 @@ package com.timp.test.MDR.TabelasApoioESocial.UnidadeDeMedida;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela19.MotivosdeDesligamentoVisualizarPO;
@@ -20,7 +20,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class UnidadeDeMedidaDetalhes extends TestBaseSteven {
+public class UnidadeDeMedidaDetalhes extends TestBase {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;

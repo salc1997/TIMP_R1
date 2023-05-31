@@ -3,7 +3,7 @@ package com.timp.test.BRE.RegrasDeNegocio.ParametrosGerais;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioDetalhesPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class RegrasDeNegocioDetalhes extends TestBaseSteven {
+public class RegrasDeNegocioDetalhes extends TestBase {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasDeNegocioDetalhesPO regrasDeNegocioDetalhesPO;

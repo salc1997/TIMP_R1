@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RelatoriosRefinariaGeradosInformacaoPO;
 
-public class RRGInformacao extends TestBaseSteven {
+public class RRGInformacao extends TestBase {
 	//TSTNG-886
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;

@@ -2,7 +2,7 @@ package com.timp.test.TDK.Kpis;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Kpis.KpisCriarPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class KpisCriar extends TestBaseSteven {
+public class KpisCriar extends TestBase {
 
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;

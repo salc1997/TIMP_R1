@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class ATRPO extends TestBaseSteven{
+public class ATRPO extends TestBase{
 	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement ferramenta;

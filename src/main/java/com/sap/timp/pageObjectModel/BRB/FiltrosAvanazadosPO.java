@@ -9,9 +9,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class FiltrosAvanazadosPO extends TestBaseSteven {
+public class FiltrosAvanazadosPO extends TestBase {
 
 	@FindBy(xpath = "//*[@id=\"advanced-filters-btn\"]")
 	public WebElement filtro;

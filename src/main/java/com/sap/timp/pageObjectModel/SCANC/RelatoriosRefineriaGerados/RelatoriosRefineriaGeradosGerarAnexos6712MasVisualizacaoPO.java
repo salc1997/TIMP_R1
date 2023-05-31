@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO extends TestBaseSteven{
+public class RelatoriosRefineriaGeradosGerarAnexos6712MasVisualizacaoPO extends TestBase{
 	@FindBy(xpath = "//span[text()=\"Relatórios Refinaria Gerados\"]")
 	public WebElement relatorioRefineriaGerados;
 	

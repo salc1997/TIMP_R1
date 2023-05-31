@@ -5,11 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
 
 
-public class ConfiguracaoTributoAgrupamentoExcluirPO extends TestBaseSteven {
+public class ConfiguracaoTributoAgrupamentoExcluirPO extends TestBase {
 	
 	@FindBy(xpath = "//div[@class=\"baseTabs-bar boxes\"]/div/div[2]")
 	public WebElement Configuração;

@@ -8,7 +8,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.DetalheTipoTributo.DetalheCriarPO;
@@ -18,7 +18,7 @@ import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.DefinicaoVinculacao
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModelosApuracaoTPFiltroIDPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ParametrosParaTP.ParametrosParaTPFiltroIDPO;
 
-public class ParametroModeloApuracaoTPFiltroID extends TestBaseSteven {
+public class ParametroModeloApuracaoTPFiltroID extends TestBase {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ParametrosModeloDeApuracaoTP.ParametrosModelosApuracaoTPFiltroIDPO parametrosModelosApuracaoTPFiltroIDPO;

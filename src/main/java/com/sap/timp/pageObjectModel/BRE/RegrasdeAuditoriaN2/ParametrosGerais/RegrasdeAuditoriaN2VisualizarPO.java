@@ -8,9 +8,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.google.common.graph.AbstractNetwork;
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class RegrasdeAuditoriaN2VisualizarPO extends TestBaseSteven {
+public class RegrasdeAuditoriaN2VisualizarPO extends TestBase {
 
 	
 

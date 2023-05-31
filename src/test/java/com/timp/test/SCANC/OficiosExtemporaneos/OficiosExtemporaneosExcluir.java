@@ -2,7 +2,7 @@ package com.timp.test.SCANC.OficiosExtemporaneos;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.OficiosExtemporaneos.OficiosExtemporaneosCriarPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class OficiosExtemporaneosExcluir extends TestBaseSteven{
+public class OficiosExtemporaneosExcluir extends TestBase{
 	
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;

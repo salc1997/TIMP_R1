@@ -11,9 +11,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class AdicionarColunasPO extends TestBaseSteven{
+public class AdicionarColunasPO extends TestBase{
 	
 	
 	

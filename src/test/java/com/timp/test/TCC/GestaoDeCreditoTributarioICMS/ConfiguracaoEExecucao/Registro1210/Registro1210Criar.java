@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucao.Registro1210.Registro1210CriarPO;
 
-public class Registro1210Criar extends TestBaseSteven{
+public class Registro1210Criar extends TestBase{
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	Registro1210CriarPO registro1210CriarPO;

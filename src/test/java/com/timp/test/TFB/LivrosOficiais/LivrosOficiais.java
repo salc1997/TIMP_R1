@@ -2,7 +2,7 @@ package com.timp.test.TFB.LivrosOficiais;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFB.AccesarTFBPO;
 import com.sap.timp.pageObjectModel.TFB.LivrosOficiais.LivrosOficiaisPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class LivrosOficiais extends TestBaseSteven{
+public class LivrosOficiais extends TestBase{
 	
 	LoginTC loginTC;
 	AccesarTFBPO accesarTFBPO;

@@ -7,12 +7,12 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt2PO;
 
-public class LeiautesExecucacoFuncionalidades4Pt2 extends TestBaseSteven{
+public class LeiautesExecucacoFuncionalidades4Pt2 extends TestBase{
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
 	LeiautesExecucacoFuncionalidades4Pt2PO leiautesExecucacoFuncionalidades4Pt2PO;

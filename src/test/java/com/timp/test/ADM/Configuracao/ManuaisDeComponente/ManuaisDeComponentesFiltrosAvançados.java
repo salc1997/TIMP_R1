@@ -2,7 +2,7 @@ package com.timp.test.ADM.Configuracao.ManuaisDeComponente;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuracao.ManuaisDeComponente.ManuaisDeComponentesFiltrosAvançadosPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-public class ManuaisDeComponentesFiltrosAvançados extends TestBaseSteven {
+public class ManuaisDeComponentesFiltrosAvançados extends TestBase {
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	ManuaisDeComponentesFiltrosAvançadosPO manuaisDeComponentesFiltrosAvançadosPO;

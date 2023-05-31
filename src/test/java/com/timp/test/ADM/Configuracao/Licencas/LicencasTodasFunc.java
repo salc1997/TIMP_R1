@@ -3,7 +3,7 @@ package com.timp.test.ADM.Configuracao.Licencas;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuracao.Licencas.LicencasTodasFuncPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class LicencasTodasFunc extends TestBaseSteven{
+public class LicencasTodasFunc extends TestBase{
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	LicencasTodasFuncPO licencasTodasFuncPO;

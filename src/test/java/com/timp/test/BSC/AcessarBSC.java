@@ -3,7 +3,7 @@ package com.timp.test.BSC;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BSC.AcessarBSCPO;
 
@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class AcessarBSC extends TestBaseSteven{
+public class AcessarBSC extends TestBase{
 	LoginTC loginTC;
 	AcessarBSCPO acessarBSC;
 

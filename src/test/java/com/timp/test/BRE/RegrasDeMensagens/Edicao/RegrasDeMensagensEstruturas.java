@@ -10,13 +10,13 @@ import org.testng.annotations.Test;
 
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasDeMensagens.Edicao.RegrasDeMensagensEstruturasPO;
 
 
-public class RegrasDeMensagensEstruturas extends TestBaseSteven {
+public class RegrasDeMensagensEstruturas extends TestBase {
 	
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;

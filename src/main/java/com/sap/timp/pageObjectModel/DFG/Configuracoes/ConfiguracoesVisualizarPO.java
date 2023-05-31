@@ -11,9 +11,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.w3c.dom.ls.LSException;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class ConfiguracoesVisualizarPO extends TestBaseSteven{
+public class ConfiguracoesVisualizarPO extends TestBase{
 	
 	@FindBy(xpath = "//div[@class=\"container-tabs\"]/div[2]")
 	public WebElement configuracoes;

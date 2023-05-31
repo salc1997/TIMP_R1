@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class BREGerenciarRegulamentosCriarEditarExcluirPO extends TestBaseSteven {
+public class BREGerenciarRegulamentosCriarEditarExcluirPO extends TestBase {
 	
 	@FindBy(xpath = "//*[@id=\"main-content\"]/div/div/div/div[2]/div[1]/div/div[1]/div/div/ul/li[3]/button")
 	public WebElement gerenciar;

@@ -2,7 +2,7 @@ package com.timp.test.TDK.Execucoes.ExecucoesPublicas;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Execucoes.ExecucoesPublicas.ExecucoesExecucoesPublicasLixeiraPO;
@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ExecucoesExecucoesPublicasLixeiraemMassa extends TestBaseSteven {
+public class ExecucoesExecucoesPublicasLixeiraemMassa extends TestBase {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	ExecucoesExecucoesPublicasLixeiraemMassaPO execuçõesExecuçõesPúblicasLixeiraemMassaPO;

@@ -2,7 +2,7 @@ package com.timp.test.BRE.CalculoDeTributos.Edicao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.CalculoDeTributos.Edicao.CálculodeTributosEdiçãoEstruturasPO;
@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class CálculodeTributosEdiçãoEstruturas extends TestBaseSteven {
+public class CálculodeTributosEdiçãoEstruturas extends TestBase {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	CálculodeTributosEdiçãoEstruturasPO cálculodeTributosEdiçãoEstruturasPO;

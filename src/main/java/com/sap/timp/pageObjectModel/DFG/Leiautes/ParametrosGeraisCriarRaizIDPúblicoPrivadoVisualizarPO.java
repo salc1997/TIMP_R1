@@ -10,9 +10,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class ParametrosGeraisCriarRaizIDPúblicoPrivadoVisualizarPO extends TestBaseSteven{
+public class ParametrosGeraisCriarRaizIDPúblicoPrivadoVisualizarPO extends TestBase{
 	
 	@FindBy(xpath = "//span[text()=\"Raiz\"]")
 	public WebElement raiz;

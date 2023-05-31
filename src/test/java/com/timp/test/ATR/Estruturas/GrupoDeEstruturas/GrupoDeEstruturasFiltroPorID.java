@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasFiltroPorIDPO;
 
-public class GrupoDeEstruturasFiltroPorID extends TestBaseSteven {
+public class GrupoDeEstruturasFiltroPorID extends TestBase {
 
 
 	LoginTC loginTC;

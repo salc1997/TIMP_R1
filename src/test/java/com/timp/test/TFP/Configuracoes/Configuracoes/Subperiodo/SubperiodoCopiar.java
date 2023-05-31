@@ -1,7 +1,7 @@
 package com.timp.test.TFP.Configuracoes.Configuracoes.Subperiodo;
 
 import org.testng.annotations.Test;
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 import com.sap.timp.pageObjectModel.TFP.Configuracoes.Configuracoes.Subperíodo.SubperiodoCopiarPO;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class SubperiodoCopiar extends TestBaseSteven {
+public class SubperiodoCopiar extends TestBase {
 	LoginTC loginTC;
 	AcessarTFPPO acessarTFPPO;
 	SubperiodoCopiarPO subperíodoCopiarPO;

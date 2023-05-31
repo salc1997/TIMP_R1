@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class MapeamentoDeEstruturasTodasFuncPO extends TestBaseSteven{
+public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 	
 	@FindBy(xpath = "//span[text()=\"Mapeamento de Estruturas\"]")
 	public WebElement mapeamentodeestruturas;

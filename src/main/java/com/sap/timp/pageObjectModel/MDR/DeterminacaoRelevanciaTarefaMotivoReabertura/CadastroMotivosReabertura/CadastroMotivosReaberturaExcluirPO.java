@@ -8,9 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class CadastroMotivosReaberturaExcluirPO extends TestBaseSteven{
+public class CadastroMotivosReaberturaExcluirPO extends TestBase{
 	
 	@FindBy(xpath = "//span[text()=\"Determinação de Relevância de Tarefa por Motivo de Reabertura\"]")
 	public WebElement determinacaoRelevancia;

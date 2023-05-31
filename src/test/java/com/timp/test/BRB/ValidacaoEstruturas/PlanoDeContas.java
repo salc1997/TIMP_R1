@@ -7,12 +7,12 @@ import java.util.ArrayList;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.ValidacaoEstruturas.PlanoDeContasPO;
 
-public class PlanoDeContas extends TestBaseSteven {
+public class PlanoDeContas extends TestBase {
 
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;

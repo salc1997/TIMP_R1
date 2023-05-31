@@ -3,7 +3,7 @@ package com.timp.test.MDR.Reinf.R1070DadosSuspenso;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Reinf.R1070DadosSuspenso.R1070DadosSuspensoEditarPO;
@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class R1070DadosSuspensoEditar extends TestBaseSteven{
+public class R1070DadosSuspensoEditar extends TestBase{
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	R1070DadosSuspensoEditarPO r1070DadosSuspensoEditarPO;

@@ -9,14 +9,14 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CadastroDerex.InstituicaoFinanceira.*;
 import com.sap.timp.pageObjectModel.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoDetalhesPO;
 import com.sap.timp.pageObjectModel.MDR.Centralizacao.FatorCreditamento.FatorCreditamentoVisualizarPO;
 
-public class FatorCreditamentoVisualizar extends TestBaseSteven {
+public class FatorCreditamentoVisualizar extends TestBase {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	FatorCreditamentoVisualizarPO fatorCreditamentoVisualizarPO;

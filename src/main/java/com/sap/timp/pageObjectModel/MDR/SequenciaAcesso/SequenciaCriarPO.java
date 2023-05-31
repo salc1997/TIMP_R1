@@ -9,9 +9,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class SequenciaCriarPO extends TestBaseSteven{
+public class SequenciaCriarPO extends TestBase{
 	
 	
 	@FindBy(xpath = "//li/div/span[text()=\"Sequência de Acesso\"]")

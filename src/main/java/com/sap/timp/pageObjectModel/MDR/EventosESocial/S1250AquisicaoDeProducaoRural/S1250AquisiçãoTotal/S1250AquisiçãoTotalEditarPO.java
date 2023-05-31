@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class S1250AquisiçãoTotalEditarPO extends TestBaseSteven {
+public class S1250AquisiçãoTotalEditarPO extends TestBase {
 	
 	@FindBy(xpath = "//span[text()=\"S1250 - Aquisição de Produção Rural\"]")
 	public WebElement s1250;

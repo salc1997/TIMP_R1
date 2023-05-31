@@ -2,7 +2,7 @@ package com.timp.test.MDR.CadastroCondiçao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CadastroCondiçao.CadastroCondicaoVisualizarPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CadasatroCondicaoVisualizar extends TestBaseSteven {
+public class CadasatroCondicaoVisualizar extends TestBase {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;

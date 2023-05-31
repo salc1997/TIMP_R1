@@ -3,7 +3,7 @@ package com.timp.test.MDR.Centralizacao.Movimento;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Centralizacao.Movimento.MovimentoDetalhesPO;
@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class MovimentoDetalhes extends TestBaseSteven {
+public class MovimentoDetalhes extends TestBase {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MovimentoDetalhesPO movimentoDetalhesPO;

@@ -7,9 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.google.j2objc.annotations.Weak;
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class ContratoIOFCriarPO extends TestBaseSteven {
+public class ContratoIOFCriarPO extends TestBase {
 
 	@FindBy(xpath = "//span[text()=\"Contrato IOF \"]")
 	public WebElement contratoiof;

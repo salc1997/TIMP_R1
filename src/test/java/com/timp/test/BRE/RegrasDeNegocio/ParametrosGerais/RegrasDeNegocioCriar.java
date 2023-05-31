@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasDeNegocio.ParametrosGerais.RegrasDeNegocioCriarPO;
 
-public class RegrasDeNegocioCriar extends TestBaseSteven {
+public class RegrasDeNegocioCriar extends TestBase {
 	
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;

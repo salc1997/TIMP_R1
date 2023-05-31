@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BFB.AcessarBFBPO;
 import com.sap.timp.pageObjectModel.BFB.Leiautes.ExecucaoDaConfiguracaoGeralFuncionalidadesPO;
 
-public class ExecucaoDaConfiguracaoGeralFuncionalidades extends TestBaseSteven{
+public class ExecucaoDaConfiguracaoGeralFuncionalidades extends TestBase{
 	LoginTC loginTC;
 	AcessarBFBPO acessarBFBPO;
 	ExecucaoDaConfiguracaoGeralFuncionalidadesPO execucaoDaConfiguracaoGeralFuncionalidadesPO;

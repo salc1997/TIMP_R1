@@ -2,7 +2,7 @@ package com.timp.test.TCC.BancoDeOcorrencias.Executados;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.Executados.ExecutadosEditarPO;
@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class BancodeOcorrênciasExecutadosEditar extends TestBaseSteven {
+public class BancodeOcorrênciasExecutadosEditar extends TestBase {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	BancodeOcorrênciasExecutadosEditarPO bancodeOcorrênciasExecutadosEditarPO;

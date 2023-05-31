@@ -3,7 +3,7 @@ package com.timp.test.BCB.Formula.Configuracao;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
 import com.sap.timp.pageObjectModel.BCB.ExecucoesSalvas.HierarquiaConfiguracoesExecucoesSalvas.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO;
@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class Percentual extends TestBaseSteven {
+public class Percentual extends TestBase {
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
 	PercentualPO percentualPO;

@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class FiltroPorIdPO extends TestBaseSteven {
+public class FiltroPorIdPO extends TestBase {
 
 	@FindBy(xpath = "//span[text()=\"Configuração de TBD\"]")
 	public WebElement configuracaoTBD;

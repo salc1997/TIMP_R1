@@ -5,11 +5,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
 
 
-public class ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassaPO extends TestBaseSteven {
+public class ConfiguraçãDeTipoTaxaDeAtualizaçãoExcluirEmMassaPO extends TestBase {
 
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-updateRates\"]")
 	public WebElement taxasDeActualizacao;

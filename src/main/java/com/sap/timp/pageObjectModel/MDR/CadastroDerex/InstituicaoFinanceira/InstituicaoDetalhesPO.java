@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class InstituicaoDetalhesPO extends TestBaseSteven {
+public class InstituicaoDetalhesPO extends TestBase {
 
 	@FindBy(xpath = "//li/div/span[text()=\"Cadastro DEREX\"]")
 	public WebElement derex;

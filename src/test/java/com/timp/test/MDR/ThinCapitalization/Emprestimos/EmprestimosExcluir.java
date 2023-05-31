@@ -7,12 +7,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ThinCapitalization.Emprestimos.EmprestimosExcluirPO;
 
-public class EmprestimosExcluir extends TestBaseSteven {
+public class EmprestimosExcluir extends TestBase {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	EmprestimosExcluirPO emprestimosExcluirPO;

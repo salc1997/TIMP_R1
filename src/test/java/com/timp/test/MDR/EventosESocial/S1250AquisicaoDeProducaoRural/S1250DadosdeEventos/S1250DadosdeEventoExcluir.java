@@ -2,7 +2,7 @@ package com.timp.test.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250Dado
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.EventosESocial.S1250AquisicaoDeProducaoRural.S1250AquisicaoDeProducaoRuralExcluirPO;
@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class S1250DadosdeEventoExcluir extends TestBaseSteven{
+public class S1250DadosdeEventoExcluir extends TestBase{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	S1250DadosdeEventoExcluirPO s1250DadosdeEventoExcluirPO;

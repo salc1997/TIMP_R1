@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO;
@@ -19,7 +19,7 @@ import com.sap.timp.pageObjectModel.MDR.AtividadesFiscais.AssociacaoAtividadeFis
 import com.timp.test.DFG.AcessarDFG;
 
 
-public class S1200AlterarDadosDoEventoCriar extends TestBaseSteven{
+public class S1200AlterarDadosDoEventoCriar extends TestBase{
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO; 
 	S1200AlterarDadosDoEventoPO s1200AlterarDadosDoEventoPO;

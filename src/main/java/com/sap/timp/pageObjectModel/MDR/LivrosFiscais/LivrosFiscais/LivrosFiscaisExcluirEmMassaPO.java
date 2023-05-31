@@ -6,11 +6,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
 
 
-public class LivrosFiscaisExcluirEmMassaPO extends TestBaseSteven {
+public class LivrosFiscaisExcluirEmMassaPO extends TestBase {
 	
 	@FindBy(xpath = "//span[text()=\"Livros Fiscais\"]")
 	public WebElement livrosfiscais;

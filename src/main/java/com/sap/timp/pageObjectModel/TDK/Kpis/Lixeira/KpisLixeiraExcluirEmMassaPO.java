@@ -6,9 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class KpisLixeiraExcluirEmMassaPO extends TestBaseSteven{
+public class KpisLixeiraExcluirEmMassaPO extends TestBase{
 	@FindBy(xpath = "//span[text()=\"Kpi's\"]")
 	public WebElement kpis;
 	

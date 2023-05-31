@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class CalculoDeTributosVisualizarPO extends TestBaseSteven {
+public class CalculoDeTributosVisualizarPO extends TestBase {
 	
 	@FindBy(xpath = "//span[text()=\"Cálculo de Tributos\"]")
 	public WebElement calculodetributos;

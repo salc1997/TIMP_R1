@@ -3,7 +3,7 @@ package com.timp.test.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExec
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.BancoDeCreditoExtemporaneo.PainelBCE.ConfiguracaoEExecucao.PainelBCEConfiguracaoeExecucaoVisualizarPO;
@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class PainelBCEConfiguracaoeExecucaoVisualizar extends TestBaseSteven {
+public class PainelBCEConfiguracaoeExecucaoVisualizar extends TestBase {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	PainelBCEConfiguracaoeExecucaoVisualizarPO painelBCEConfiguracaoeExecucaoVisualizarPO;

@@ -2,7 +2,7 @@ package com.timp.test.MDR.CadastrosIRPJCSLL.CadastroContaisContabeis;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CadastrosIRPJCSLL.CadastroContasContábeis.CadastroContasContábeisFiltroIdPO;
@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class CadastroContaisContabeisFiltroID extends TestBaseSteven{
+public class CadastroContaisContabeisFiltroID extends TestBase{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CadastroContasContábeisFiltroIdPO cadastroContasContábeisFiltroIdPO;

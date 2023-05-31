@@ -4,9 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class AcessarBPMAPO extends TestBaseSteven {
+public class AcessarBPMAPO extends TestBase {
 	@FindBy(xpath = "//div[text()=\"BPMA\"]")
 	public WebElement bPMA;
 	

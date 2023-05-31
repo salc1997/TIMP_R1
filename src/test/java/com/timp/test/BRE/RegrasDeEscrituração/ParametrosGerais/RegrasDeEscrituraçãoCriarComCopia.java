@@ -2,7 +2,7 @@ package com.timp.test.BRE.RegrasDeEscrituração.ParametrosGerais;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasDeEscrituração.ParametrosGerais.RegrasDeEscrituraçãoCriarComCopiaPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class RegrasDeEscrituraçãoCriarComCopia extends TestBaseSteven{
+public class RegrasDeEscrituraçãoCriarComCopia extends TestBase{
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasDeEscrituraçãoCriarComCopiaPO regrasDeEscrituraçãoCriarComCopiaPO;

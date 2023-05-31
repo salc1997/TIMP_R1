@@ -8,9 +8,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class cabecalhoPO extends TestBaseSteven{
+public class cabecalhoPO extends TestBase{
 	
 	
 	@FindBy(xpath = "//*[@id=\"searchbox\"]/div/div/input")

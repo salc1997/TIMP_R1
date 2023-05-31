@@ -7,12 +7,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTipoTributo.ConfiguracaoDeTipoTributoEditarPO;
 
-public class ConfiguracaoDeTipoTributoEditar extends TestBaseSteven { 
+public class ConfiguracaoDeTipoTributoEditar extends TestBase { 
 	LoginTC loginTC; 
 	AcessarADMPO acessarADMPO;
 	ConfiguracaoDeTipoTributoEditarPO configuracaoDeTipoTributoEditarPO;

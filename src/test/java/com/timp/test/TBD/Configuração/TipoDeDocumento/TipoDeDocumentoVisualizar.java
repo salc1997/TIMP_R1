@@ -2,7 +2,7 @@ package com.timp.test.TBD.Configuração.TipoDeDocumento;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TBD.AcessarTBDPO;
 import com.sap.timp.pageObjectModel.TBD.Configuracao.TipoDeDocumento.TipoDeDocumentoVisualizarPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class TipoDeDocumentoVisualizar extends TestBaseSteven {
+public class TipoDeDocumentoVisualizar extends TestBase {
 
 	LoginTC loginTC;
 	AcessarTBDPO acessarTBDPO;

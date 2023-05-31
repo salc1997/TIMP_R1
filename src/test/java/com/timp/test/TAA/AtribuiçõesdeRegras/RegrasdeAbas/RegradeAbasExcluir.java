@@ -2,7 +2,7 @@ package com.timp.test.TAA.AtribuiçõesdeRegras.RegrasdeAbas;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
 import com.sap.timp.pageObjectModel.TAA.Agendamento.AgendamentoExcluirPO;
@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class RegradeAbasExcluir extends TestBaseSteven {
+public class RegradeAbasExcluir extends TestBase {
 	LoginTC loginTC;
 	AcessarTAAPO acessarTAAPO;
 	RegradeAbasExcluirPO regradeAbasExcluirPO;

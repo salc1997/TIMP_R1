@@ -5,9 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class AcessarBSCPO extends TestBaseSteven {
+public class AcessarBSCPO extends TestBase {
 
 	@FindBy(xpath = "//div[text()=\"BSC\"]")
 	public WebElement bSC;

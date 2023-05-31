@@ -9,11 +9,11 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
 
-public class RelatorioRefinariaGeradosGerarAjustesPO extends TestBaseSteven{
+public class RelatorioRefinariaGeradosGerarAjustesPO extends TestBase{
 	@FindBy(xpath = "//span[text()=\"Relatórios Refinaria Gerados\"]")
 	public WebElement relatorioRefineriaGerados;
 	

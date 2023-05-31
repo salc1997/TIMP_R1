@@ -2,7 +2,7 @@ package com.timp.test.MDR.Filiais;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Filiais.FiliaisDetallesPo;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import org.openqa.selenium.remote.NewSessionPayload;
 import org.testng.annotations.AfterClass;
 
-public class FiliaisDetalle extends TestBaseSteven {
+public class FiliaisDetalle extends TestBase {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	FiliaisDetallesPo filiaisDetallePO;

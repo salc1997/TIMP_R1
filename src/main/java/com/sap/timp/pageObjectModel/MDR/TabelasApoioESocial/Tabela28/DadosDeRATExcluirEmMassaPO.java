@@ -1,12 +1,12 @@
 package com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela28;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class DadosDeRATExcluirEmMassaPO extends TestBaseSteven {
+public class DadosDeRATExcluirEmMassaPO extends TestBase {
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")
 	public WebElement tabelaApoio;

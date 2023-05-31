@@ -4,9 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class RegraDeCamposEditarPO extends TestBaseSteven {
+public class RegraDeCamposEditarPO extends TestBase {
 	@FindBy(xpath = "//span[text()=\"Atribuições de Regras\"]")
 	public WebElement abaAtribucoesDeRegras;
 	

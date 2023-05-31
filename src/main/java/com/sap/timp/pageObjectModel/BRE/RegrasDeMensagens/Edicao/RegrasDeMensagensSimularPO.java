@@ -9,9 +9,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Factory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class RegrasDeMensagensSimularPO extends TestBaseSteven {
+public class RegrasDeMensagensSimularPO extends TestBase {
 	
 	@FindBy(xpath = "//span[text()=\"Regras de Mensagens\"]")
 	public WebElement regrasdemensagens;

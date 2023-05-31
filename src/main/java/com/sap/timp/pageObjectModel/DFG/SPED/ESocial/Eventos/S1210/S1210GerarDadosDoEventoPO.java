@@ -11,11 +11,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
  
 
-public class S1210GerarDadosDoEventoPO extends TestBaseSteven{
+public class S1210GerarDadosDoEventoPO extends TestBase{
 	
 	@FindBy(xpath = "//button[@id=\"home-icon\"]")
 	public WebElement home;

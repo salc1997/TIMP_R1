@@ -16,9 +16,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class EstruturasVisualizarPO extends TestBaseSteven {
+public class EstruturasVisualizarPO extends TestBase {
 	
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[1]/ul/li[1]/div/span[2]")
 	public WebElement estruturas;

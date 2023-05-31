@@ -10,9 +10,9 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosParaCategoriaDeIRF.ParametrosParaCategoriaDeIRFCriarPO;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class ParametrosParaCategoriaDeIRFCriar extends TestBaseSteven {
+public class ParametrosParaCategoriaDeIRFCriar extends TestBase {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;

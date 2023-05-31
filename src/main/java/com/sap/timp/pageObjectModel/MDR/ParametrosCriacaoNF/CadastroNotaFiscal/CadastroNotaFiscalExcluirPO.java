@@ -8,9 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class CadastroNotaFiscalExcluirPO extends TestBaseSteven{
+public class CadastroNotaFiscalExcluirPO extends TestBase{
 	
 	@FindBy(xpath = "//span[text()=\"Parâmetros de Criação de Nota Fiscal\"]")
 	public WebElement parametrosCriacaoNotaFiscal;

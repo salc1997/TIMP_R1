@@ -8,13 +8,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Execucoes.ExecucoesPublicas.ExecucoesExecucoesPublicasExcluirDefinitivamenteDashboardPO;
 import com.sap.timp.pageObjectModel.TDK.Execucoes.ExecucoesPublicas.ExecucoesExecucoesPublicasExcluirDefinitivamenteKpisPO;
 
-public class ExecucoesExecucoesPublicasExcluirDefinitivamenteDashboard  extends TestBaseSteven {
+public class ExecucoesExecucoesPublicasExcluirDefinitivamenteDashboard  extends TestBase {
 
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;

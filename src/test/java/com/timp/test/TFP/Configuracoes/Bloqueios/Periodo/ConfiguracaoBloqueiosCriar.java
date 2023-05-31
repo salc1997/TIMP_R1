@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 import com.sap.timp.pageObjectModel.TFP.Configuracoes.Bloqueios.Periodo.ConfiguracaoBloqueiosCriarPO;
 
-public class ConfiguracaoBloqueiosCriar extends TestBaseSteven {
+public class ConfiguracaoBloqueiosCriar extends TestBase {
 	LoginTC loginTC;
 	AcessarTFPPO acessarTFPPO;
 	ConfiguracaoBloqueiosCriarPO configuracaoBloqueiosCriarPO;

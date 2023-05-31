@@ -8,14 +8,14 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.Calendar.AcessarCalendarPO;
 import com.sap.timp.pageObjectModel.Calendar.ParametrosGerais.CalendarioDeUsuariosPO;
 import com.sap.timp.pageObjectModel.Calendar.ParametrosGerais.NovaTarefaPO;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 
-public class NovaTarefa extends TestBaseSteven {
+public class NovaTarefa extends TestBase {
 
 	LoginTC loginTC;
 	AcessarCalendarPO acessarCalendarPO;

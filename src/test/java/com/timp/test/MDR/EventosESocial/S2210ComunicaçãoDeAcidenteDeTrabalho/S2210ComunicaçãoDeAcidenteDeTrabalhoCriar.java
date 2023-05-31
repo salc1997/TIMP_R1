@@ -1,7 +1,7 @@
 package com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho;
 
 import org.testng.annotations.Test;
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoCriarPO;
@@ -12,7 +12,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class S2210ComunicaçãoDeAcidenteDeTrabalhoCriar extends TestBaseSteven{
+public class S2210ComunicaçãoDeAcidenteDeTrabalhoCriar extends TestBase{
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 	S2210ComunicaçãoDeAcidenteDeTrabalhoCriarPO s2210ComunicaçãoDeAcidenteDeTrabalhoCriarPO;

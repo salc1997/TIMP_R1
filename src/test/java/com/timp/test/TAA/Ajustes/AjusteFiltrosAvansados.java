@@ -3,7 +3,7 @@ package com.timp.test.TAA.Ajustes;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
 import com.sap.timp.pageObjectModel.TAA.Ajuste.AjusteFiltrosAvansadosPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class AjusteFiltrosAvansados extends TestBaseSteven {
+public class AjusteFiltrosAvansados extends TestBase {
 	LoginTC loginTC;
 	AcessarTAAPO acessarTAAPO;
 	AjusteFiltrosAvansadosPO ajusteFiltrosAvansadosPO;

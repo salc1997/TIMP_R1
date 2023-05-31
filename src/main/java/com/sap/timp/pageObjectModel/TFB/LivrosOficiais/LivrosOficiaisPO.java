@@ -8,9 +8,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class LivrosOficiaisPO extends TestBaseSteven{
+public class LivrosOficiaisPO extends TestBase{
 	
 	@FindBy(xpath = "//div[contains(@class,\"eft-tabs\")][1]//child::div[@class=\"baseTabs-box  \"][3]")
 	public WebElement livros;

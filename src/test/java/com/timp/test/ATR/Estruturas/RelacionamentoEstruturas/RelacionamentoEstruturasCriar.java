@@ -2,7 +2,7 @@ package com.timp.test.ATR.Estruturas.RelacionamentoEstruturas;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasCriarPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class RelacionamentoEstruturasCriar extends TestBaseSteven{
+public class RelacionamentoEstruturasCriar extends TestBase{
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO ;
 	RelacionamentoEstruturasCriarPO relacionamentoEstruturasCriarPO;

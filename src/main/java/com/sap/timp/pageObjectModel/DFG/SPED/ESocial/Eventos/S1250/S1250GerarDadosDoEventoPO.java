@@ -8,10 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 
-public class S1250GerarDadosDoEventoPO extends TestBaseSteven{
+public class S1250GerarDadosDoEventoPO extends TestBase{
 	@FindBy(xpath = "//span[@class=\"icon icon-font-File-and-Folders icon-gooddoc padding-right \"]")
 	public WebElement sped;
 

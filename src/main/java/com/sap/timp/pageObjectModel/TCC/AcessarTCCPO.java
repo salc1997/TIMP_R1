@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class AcessarTCCPO extends TestBaseSteven{
+public class AcessarTCCPO extends TestBase{
 
 	@FindBy(xpath = "//div[text()=\"TCC\"]")
 	public WebElement tcc;

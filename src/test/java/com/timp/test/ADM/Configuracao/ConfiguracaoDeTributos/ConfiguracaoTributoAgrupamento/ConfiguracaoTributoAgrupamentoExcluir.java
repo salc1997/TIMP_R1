@@ -2,7 +2,7 @@ package com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoTribut
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoTributoAgrupamento.ConfiguracaoTributoAgrupamentoExcluirPO;
@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracaoTributoAgrupamentoExcluir extends TestBaseSteven {
+public class ConfiguracaoTributoAgrupamentoExcluir extends TestBase {
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	ConfiguracaoTributoAgrupamentoExcluirPO configuraçãoTributoAgrupamentoExcluirPO;

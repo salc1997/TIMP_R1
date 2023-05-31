@@ -9,9 +9,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class LixeiraFiltroIdPO extends TestBaseSteven{
+public class LixeiraFiltroIdPO extends TestBase{
 	@FindBy(xpath = "//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[5]/div")
 	public WebElement id;
 	

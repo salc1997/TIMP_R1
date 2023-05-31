@@ -2,7 +2,7 @@ package com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasAuditoriaN1.Edicao.RegrasdeAuditoriaN1EdiçãoEstruturasPO;
@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class RegrasdeAuditoriaN1EdiçãoEstruturas extends TestBaseSteven{
+public class RegrasdeAuditoriaN1EdiçãoEstruturas extends TestBase{
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasdeAuditoriaN1EdiçãoEstruturasPO regrasdeAuditoriaN1EdiçãoEstruturasPO;

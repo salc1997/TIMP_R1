@@ -12,7 +12,7 @@ import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ATR.Estruturas.Estruturas.EstructurasTodasAsFuncPO;
 import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasVisualizarPO;
 
@@ -24,7 +24,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class EstruturasTodasAsFunc extends TestBaseSteven {
+public class EstruturasTodasAsFunc extends TestBase {
 	
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;

@@ -1,7 +1,7 @@
 package com.timp.test.TFP.Configuracoes.Configuracoes.Subperiodo;
 
 import org.testng.annotations.Test;
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 import com.sap.timp.pageObjectModel.TFP.Configuracoes.Configuracoes.Subperíodo.SubperiodoExcluirPO;
@@ -12,7 +12,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class SubperidoExcluir extends TestBaseSteven {
+public class SubperidoExcluir extends TestBase {
 	LoginTC loginTC;
 	AcessarTFPPO acessarTFPPO;
 	SubperiodoExcluirPO subperíodoExcluirPO;

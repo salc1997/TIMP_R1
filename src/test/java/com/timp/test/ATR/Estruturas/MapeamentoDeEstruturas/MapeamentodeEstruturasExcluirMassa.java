@@ -2,7 +2,7 @@ package com.timp.test.ATR.Estruturas.MapeamentoDeEstruturas;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentodeEstruturasExcluirMassaPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class MapeamentodeEstruturasExcluirMassa extends TestBaseSteven {
+public class MapeamentodeEstruturasExcluirMassa extends TestBase {
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
 	MapeamentodeEstruturasExcluirMassaPO mapeamentodeEstruturasExcluirMassaPO;

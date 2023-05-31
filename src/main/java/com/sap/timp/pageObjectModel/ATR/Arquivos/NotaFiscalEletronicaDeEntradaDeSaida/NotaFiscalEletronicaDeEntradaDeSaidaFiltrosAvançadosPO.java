@@ -8,9 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvançadosPO extends TestBaseSteven{
+public class NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvançadosPO extends TestBase{
 	
 	@FindBy(xpath = "//span[text()=\"Arquivos\"]")
 	public WebElement arquivos;

@@ -6,9 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class DeterminacaoDeRelevanciaPorRegraCriarPO extends TestBaseSteven{
+public class DeterminacaoDeRelevanciaPorRegraCriarPO extends TestBase{
 	
 	@FindBy(xpath = "//span[text()=\"Determinação de Relevância de Tarefa\"]")
 	public WebElement determinacaoderelevanciadetarefa;

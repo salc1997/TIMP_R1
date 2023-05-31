@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class ConfiguracaoEExecucaoRegistro1200EditarPO extends TestBaseSteven {
+public class ConfiguracaoEExecucaoRegistro1200EditarPO extends TestBase {
 
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário ICMS\"]")
 	public WebElement gestaoCredito;

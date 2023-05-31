@@ -8,10 +8,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.google.errorprone.annotations.FormatMethod;
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
 
-public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBaseSteven{
+public class AjustesDeTransferenciaExcluirEmMassaPO extends TestBase{
 	
 	
 	@FindBy(xpath = "//span[text()=\"SCANC\"]")

@@ -1,7 +1,7 @@
 package com.timp.test.MDR.Siscoserv.NBS;
 
 import org.testng.annotations.Test;
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Siscoserv.NBS.NBSExcluirMassaPO;
@@ -12,7 +12,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class NBSExcluirMassa extends TestBaseSteven{
+public class NBSExcluirMassa extends TestBase{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	NBSExcluirMassaPO nBSExcluirMassaPO;

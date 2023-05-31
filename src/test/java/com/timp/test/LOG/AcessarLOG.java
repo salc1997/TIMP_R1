@@ -1,7 +1,7 @@
 package com.timp.test.LOG;
 
 import org.testng.annotations.Test;
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.LOG.AcessarLOGPO;
@@ -12,7 +12,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class AcessarLOG extends TestBaseSteven{
+public class AcessarLOG extends TestBase{
  
 	LoginTC loginTC;
 	AcessarLOGPO acessarLOGPO;

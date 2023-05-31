@@ -7,9 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class MovimentoSCANCExcluirMasasPO extends TestBaseSteven{
+public class MovimentoSCANCExcluirMasasPO extends TestBase{
 
 	@FindBy(xpath = "//span[text()=\"SCANC\"]")
 	public WebElement scanc;

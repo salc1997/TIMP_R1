@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class GrupoDeEstruturasCriarPO extends TestBaseSteven{
+public class GrupoDeEstruturasCriarPO extends TestBase{
 	protected String tc2 = "http://as1-100-01-tc2:8000/timp/atr/#/structures";
 	@FindBy(xpath = "//span[text()=\"Grupo de Estruturas\"]")
 	public WebElement grupodeestrutura;

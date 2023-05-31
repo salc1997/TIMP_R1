@@ -7,11 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
 
 
-public class SubPeriodoPeriodicidadeAlterarStatusSubPeriodoEmMassaPO extends TestBaseSteven{
+public class SubPeriodoPeriodicidadeAlterarStatusSubPeriodoEmMassaPO extends TestBase{
 
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-openedSubperiods\"]")
 	public WebElement subPeriodoPeriodicidad;

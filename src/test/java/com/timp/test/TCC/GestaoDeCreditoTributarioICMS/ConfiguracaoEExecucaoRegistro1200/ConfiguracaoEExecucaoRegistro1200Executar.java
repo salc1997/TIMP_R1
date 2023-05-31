@@ -2,7 +2,7 @@ package com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoReg
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200ExecutarPO;
@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracaoEExecucaoRegistro1200Executar extends TestBaseSteven{
+public class ConfiguracaoEExecucaoRegistro1200Executar extends TestBase{
 
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;

@@ -3,7 +3,7 @@ package com.timp.test.MDR.TabelaApoioECD.EliminacoesDaConsolidacao;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelaApoioECD.EliminacoesDaConsolidacao.EliminacoesDaConsolidacaVisualizarPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class EliminacoesDaConsolidacaoVisualizar extends TestBaseSteven {
+public class EliminacoesDaConsolidacaoVisualizar extends TestBase {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	EliminacoesDaConsolidacaVisualizarPO eliminacoesDaConsolidacaoVisualizarPO;

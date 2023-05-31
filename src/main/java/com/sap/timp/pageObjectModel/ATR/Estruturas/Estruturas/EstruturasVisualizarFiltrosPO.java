@@ -7,10 +7,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
 
-public class EstruturasVisualizarFiltrosPO extends TestBaseSteven{
+public class EstruturasVisualizarFiltrosPO extends TestBase{
 	@FindBy(xpath = "//div[@class=\"baseTabs-view-container\"]/div[1]/ul/li/div/span[text()=\"Estruturas\"]")
 	public WebElement estruturas;
 

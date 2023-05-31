@@ -3,7 +3,7 @@ package com.timp.test.TFP.Periodos.Periodos;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 import com.sap.timp.pageObjectModel.TFP.Configuracoes.Configuracoes.Periodo.ConfiguracoesPeríodoFiltroPorIdPO;
@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class PeriodosFiltroPorId extends TestBaseSteven {
+public class PeriodosFiltroPorId extends TestBase {
 	LoginTC loginTC;
 	AcessarTFPPO acessarTFPPO;
 	PeriodoFiltroPorIdPO periodoFiltroPorIdPO;

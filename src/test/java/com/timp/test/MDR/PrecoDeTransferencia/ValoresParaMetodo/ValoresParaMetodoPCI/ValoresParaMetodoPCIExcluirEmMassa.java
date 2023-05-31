@@ -3,7 +3,7 @@ package com.timp.test.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMeto
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.PrecoDeTransferencia.ValoresParaMetodo.ValoresParaMetodoPCI.ValoresParaMetodoPCIExcluirEmMassaPO;
@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ValoresParaMetodoPCIExcluirEmMassa extends TestBaseSteven {
+public class ValoresParaMetodoPCIExcluirEmMassa extends TestBase {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	 ValoresParaMetodoPCIExcluirEmMassaPO valoresParaMetodoPCIExcluirEmMassaPO;

@@ -6,9 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class AgendamentoCriarPO extends TestBaseSteven{
+public class AgendamentoCriarPO extends TestBase{
 	@FindBy(xpath = "//span[text()=\"Agendamento\"]")
 	public WebElement abaAgendamento;
 	

@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class ConfiguracaoDeTipoTributoVisualizarPO extends TestBaseSteven{
+public class ConfiguracaoDeTipoTributoVisualizarPO extends TestBase{
 	
 	@FindBy(xpath = "//div[@class=\"baseTabs-bar boxes\"]/div/div[2]")
 	public WebElement Configuração;

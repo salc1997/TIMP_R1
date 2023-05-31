@@ -3,7 +3,7 @@ package com.timp.test.BCB.ExecucoesSalvas.HierarquiaConfiguracoesExecucoesSalvas
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
 import com.sap.timp.pageObjectModel.BCB.ExecucoesSalvas.HierarquiaConfiguracoesExecucoesSalvas.ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades extends TestBaseSteven {
+public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidades extends TestBase {
 	//TSTNG-838
   
 	LoginTC loginTC;

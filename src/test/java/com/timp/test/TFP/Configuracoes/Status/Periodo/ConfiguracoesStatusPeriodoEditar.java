@@ -2,7 +2,7 @@ package com.timp.test.TFP.Configuracoes.Status.Periodo;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 import com.sap.timp.pageObjectModel.TFP.Configuracoes.Status.Periodo.ConfiguracoesStatusPeriodoEditarPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracoesStatusPeriodoEditar extends TestBaseSteven {
+public class ConfiguracoesStatusPeriodoEditar extends TestBase {
 	LoginTC loginTC;
 	AcessarTFPPO acessarTFPPO;
 	ConfiguracoesStatusPeriodoEditarPO configuracoesStatusPeriodoEditarPO;

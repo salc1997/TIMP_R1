@@ -2,7 +2,7 @@ package com.timp.test.MDR.DetalheTipoTributo;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Antecipacao.AntecipacaoEliminarPO;
@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class DetalheExcluir extends TestBaseSteven {
+public class DetalheExcluir extends TestBase {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;

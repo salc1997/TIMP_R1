@@ -2,7 +2,7 @@ package com.timp.test.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.Determina
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.DeterminacaoRelevanciaTarefaMotivoReabertura.DeterminacionRelevanciaPorMotivo.DeterminacionRelevanciaPorMotivoVisualizarPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class DeterminacionRelevanciaPorMotivoVisualizar extends TestBaseSteven {
+public class DeterminacionRelevanciaPorMotivoVisualizar extends TestBase {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;

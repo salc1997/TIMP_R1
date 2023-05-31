@@ -9,12 +9,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.ArquivosImportados.ArquivosImportadosPesquisaPO;
 
-public class ArquivosImportadosPesquisa extends TestBaseSteven {
+public class ArquivosImportadosPesquisa extends TestBase {
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
 	ArquivosImportadosPesquisaPO arquivosImportadosPesquisaPO;

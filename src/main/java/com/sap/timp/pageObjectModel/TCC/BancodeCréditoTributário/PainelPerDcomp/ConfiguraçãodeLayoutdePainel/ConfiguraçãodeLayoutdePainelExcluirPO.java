@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class ConfiguraçãodeLayoutdePainelExcluirPO extends TestBaseSteven{
+public class ConfiguraçãodeLayoutdePainelExcluirPO extends TestBase{
 	
 	@FindBy(xpath = "//span[text()=\"Banco de Crédito Tributário\"]")
 	public WebElement BancoCréditoTributário;

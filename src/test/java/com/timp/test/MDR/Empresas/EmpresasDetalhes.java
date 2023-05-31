@@ -8,8 +8,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Empresas.EmpresasDetallePO;
@@ -21,7 +21,7 @@ import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcess
 import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.Municipio.MunicipioDetallePO;
 import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.Municipio.MunicipioVisualizarPO;
 
-public class EmpresasDetalhes extends TestBaseSteven {
+public class EmpresasDetalhes extends TestBase {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;

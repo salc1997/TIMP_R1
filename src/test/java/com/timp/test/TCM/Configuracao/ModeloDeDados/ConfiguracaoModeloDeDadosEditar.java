@@ -3,7 +3,7 @@ package com.timp.test.TCM.Configuracao.ModeloDeDados;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCM.AcessarTCMPO;
 import com.sap.timp.pageObjectModel.TCM.Configuracao.ModeloDeDados.ConfiguracaoModeloDeDadosCriarPO;
@@ -15,7 +15,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracaoModeloDeDadosEditar extends TestBaseSteven {
+public class ConfiguracaoModeloDeDadosEditar extends TestBase {
 	LoginTC loginTC;
 	AcessarTCMPO acessarTCMPO;
 	ConfiguracaoModeloDeDadosEditarPO configuracaoModeloDeDadosEditarPO;

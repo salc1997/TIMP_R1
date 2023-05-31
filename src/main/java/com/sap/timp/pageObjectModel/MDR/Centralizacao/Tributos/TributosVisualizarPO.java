@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class TributosVisualizarPO extends TestBaseSteven{
+public class TributosVisualizarPO extends TestBase{
 	@FindBy(xpath = "//li/div/span[text()=\"Centralização\"]")
 	public WebElement centralização;
 	

@@ -2,7 +2,7 @@ package com.timp.test.ADM.Configuracao.ManuaisDeComponente;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuracao.ManuaisDeComponente.ManuaisDeComponenteEditarPO;
@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ManuaisDeComponenteEditar extends TestBaseSteven {
+public class ManuaisDeComponenteEditar extends TestBase {
 	LoginTC loginTC; 
 	AcessarADMPO acessarADMPO;
 	ManuaisDeComponenteEditarPO manuaisDeComponenteEditarPO;

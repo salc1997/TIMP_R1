@@ -6,9 +6,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class LoginTC extends TestBaseSteven{
+public class LoginTC extends TestBase{
 	
 	
 	@FindBy(xpath = "//*[@id=\"login-username\"]/div/div/input")

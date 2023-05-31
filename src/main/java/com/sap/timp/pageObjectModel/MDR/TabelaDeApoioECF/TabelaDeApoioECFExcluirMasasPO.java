@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class TabelaDeApoioECFExcluirMasasPO extends TestBaseSteven{
+public class TabelaDeApoioECFExcluirMasasPO extends TestBase{
 
 	@FindBy(xpath = "//ul/li[contains(@identifier,\"supportParameterECF\") and @tabindex=\"0\"]")
 	public WebElement tabelaecf;

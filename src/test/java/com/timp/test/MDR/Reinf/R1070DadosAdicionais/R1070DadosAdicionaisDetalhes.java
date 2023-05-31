@@ -3,7 +3,7 @@ package com.timp.test.MDR.Reinf.R1070DadosAdicionais;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Reinf.R1070DadosAdicionais.R1070DadosAdicionaisCriarPO;
@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class R1070DadosAdicionaisDetalhes extends TestBaseSteven{
+public class R1070DadosAdicionaisDetalhes extends TestBase{
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDR;
 	R1070DadosAdicionaisDetalhesPO r1070DadosAdicionaisDetalhesPO;

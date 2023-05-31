@@ -7,11 +7,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
 import okhttp3.internal.publicsuffix.PublicSuffixDatabase;
 
-public class AprovacaoDeDocumentosVisualizarPO extends TestBaseSteven{
+public class AprovacaoDeDocumentosVisualizarPO extends TestBase{
 	
 	@FindBy(xpath = "//span[text()=\"Armazenagem de Arquivos\"]")
 	public WebElement armazenagemdearquivos;

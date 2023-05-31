@@ -2,7 +2,7 @@ package com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoTribut
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoTributoAgrupamento.ConfiguracaoTributoAgrupamentoCriarPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracaoTributoAgrupamentoCriar extends TestBaseSteven{
+public class ConfiguracaoTributoAgrupamentoCriar extends TestBase{
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	ConfiguracaoTributoAgrupamentoCriarPO configuraçãoTributoAgrupamentoCriarPO;

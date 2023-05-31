@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasDeAuditoriaN3.ParametrosGerais.RegrasDeAuditoriaN3CriarMasCriarComCopiaPO;
 
-public class RegrasDeAuditoriaN3CriarMasCriarComCopia extends TestBaseSteven{
+public class RegrasDeAuditoriaN3CriarMasCriarComCopia extends TestBase{
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	RegrasDeAuditoriaN3CriarMasCriarComCopiaPO regrasDeAuditoriaN3CriarMasCriarComCopiaPO;

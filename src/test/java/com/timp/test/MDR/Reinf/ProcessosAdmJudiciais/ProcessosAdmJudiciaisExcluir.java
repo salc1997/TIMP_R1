@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Reinf.ProcessosAdmJudiciais.ProcessosAdmJudiciaisExcluirPO;
 
-public class ProcessosAdmJudiciaisExcluir extends TestBaseSteven {
+public class ProcessosAdmJudiciaisExcluir extends TestBase {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;

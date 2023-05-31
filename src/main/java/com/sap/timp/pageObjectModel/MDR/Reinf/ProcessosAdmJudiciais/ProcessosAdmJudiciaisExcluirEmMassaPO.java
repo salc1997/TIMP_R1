@@ -8,10 +8,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.google.errorprone.annotations.FormatMethod;
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
 
-public class ProcessosAdmJudiciaisExcluirEmMassaPO extends TestBaseSteven{
+public class ProcessosAdmJudiciaisExcluirEmMassaPO extends TestBase{
 	
 	
 	

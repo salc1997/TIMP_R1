@@ -3,7 +3,7 @@ package com.timp.test.DFG.LeiautesExecução;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.Leiautes.LeiautesExecucaoCamposEspeciais1y2PO;
@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class LeiautesExecucaoFuncionalidades4 extends TestBaseSteven{
+public class LeiautesExecucaoFuncionalidades4 extends TestBase{
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
 	LeiautesExecucaoFuncionalidades4PO leiautesExecucaoFuncionalidades4PO;

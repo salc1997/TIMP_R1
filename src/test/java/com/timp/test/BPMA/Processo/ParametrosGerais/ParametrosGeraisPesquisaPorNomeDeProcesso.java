@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BPMA.AcessarBPMAPO;
 import com.sap.timp.pageObjectModel.BPMA.Processo.ParametrosGerais.ParametrosGeraisPesquisaPorNomeDeProcessoPO;
 
-public class ParametrosGeraisPesquisaPorNomeDeProcesso extends TestBaseSteven {
+public class ParametrosGeraisPesquisaPorNomeDeProcesso extends TestBase {
 
 	
 	LoginTC loginTC;

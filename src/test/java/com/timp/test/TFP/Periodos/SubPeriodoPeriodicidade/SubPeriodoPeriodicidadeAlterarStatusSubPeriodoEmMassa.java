@@ -3,7 +3,7 @@ package com.timp.test.TFP.Periodos.SubPeriodoPeriodicidade;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 import com.sap.timp.pageObjectModel.TFP.Periodos.SubPeriodoPeriodicidade.SubPeriodoPeriodicidadeAlterarStatusSubPeriodoEmMassaPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class SubPeriodoPeriodicidadeAlterarStatusSubPeriodoEmMassa  extends TestBaseSteven{
+public class SubPeriodoPeriodicidadeAlterarStatusSubPeriodoEmMassa  extends TestBase{
 	LoginTC loginTC;
 	AcessarTFPPO acessarTFPPO;
 	SubPeriodoPeriodicidadeAlterarStatusSubPeriodoEmMassaPO subPeriodoPeriodicidadeAlterarStatusSubPeriodoEmMassaPO;

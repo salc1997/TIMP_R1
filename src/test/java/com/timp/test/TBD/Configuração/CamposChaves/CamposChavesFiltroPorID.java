@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TBD.AcessarTBDPO;
 import com.sap.timp.pageObjectModel.TBD.Configuracao.CamposChaves.CamposChavesFiltroPorIDPO;
 
-public class CamposChavesFiltroPorID extends TestBaseSteven {
+public class CamposChavesFiltroPorID extends TestBase {
 	LoginTC loginTC;
 	AcessarTBDPO acessarTBDPO;
 	CamposChavesFiltroPorIDPO camposChavesFiltroPorIDPO;

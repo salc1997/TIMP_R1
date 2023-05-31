@@ -2,7 +2,7 @@ package com.timp.test.TPC;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TPC.AcessarTPCPO;
 import com.sap.timp.pageObjectModel.TPC.ParametrosGeraisDetalhesPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrosGeraisDetalhes extends TestBaseSteven {
+public class ParametrosGeraisDetalhes extends TestBase {
 	LoginTC loginTC;
 	AcessarTPCPO acessarTPCPO;
 	ParametrosGeraisDetalhesPO parâmetrosGeraisDetalhesPO;

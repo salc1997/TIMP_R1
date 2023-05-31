@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class ContasConsolidadasEliminacoesConsolidadasPO extends TestBaseSteven{
+public class ContasConsolidadasEliminacoesConsolidadasPO extends TestBase{
 	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement ferramenta;

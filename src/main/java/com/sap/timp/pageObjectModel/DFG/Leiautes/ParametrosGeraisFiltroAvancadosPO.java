@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class ParametrosGeraisFiltroAvancadosPO extends TestBaseSteven{
+public class ParametrosGeraisFiltroAvancadosPO extends TestBase{
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-public-layout\"]")
 	public WebElement leiautePublico;
 

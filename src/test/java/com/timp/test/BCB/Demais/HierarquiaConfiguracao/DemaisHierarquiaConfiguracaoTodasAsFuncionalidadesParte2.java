@@ -3,7 +3,7 @@ package com.timp.test.BCB.Demais.HierarquiaConfiguracao;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
 import com.sap.timp.pageObjectModel.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO;
@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 extends TestBaseSteven {
+public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 extends TestBase {
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
 	DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO demaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO;

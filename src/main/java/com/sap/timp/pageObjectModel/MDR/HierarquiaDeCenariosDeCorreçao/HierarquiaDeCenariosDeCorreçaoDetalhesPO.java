@@ -8,9 +8,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Factory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class HierarquiaDeCenariosDeCorreçaoDetalhesPO extends TestBaseSteven {
+public class HierarquiaDeCenariosDeCorreçaoDetalhesPO extends TestBase {
 	
 	
 	@FindBy(xpath = "//span[text()=\"Hierarquias de Cenários de Correção\"]")

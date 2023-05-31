@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class LogDeAçõesDetalhesPO extends TestBaseSteven{
+public class LogDeAçõesDetalhesPO extends TestBase{
 
 	@FindBy(xpath = "//div[@class=\"left-content\"]/div[2]/ul/li[1]")
 	public WebElement LogDeAções;

@@ -8,9 +8,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class TiposDeLogradouroCriarPO extends TestBaseSteven {
+public class TiposDeLogradouroCriarPO extends TestBase {
 	
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")
 	public WebElement tabelaApoio;

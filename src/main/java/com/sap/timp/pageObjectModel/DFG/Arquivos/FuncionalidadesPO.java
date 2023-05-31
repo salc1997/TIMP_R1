@@ -9,9 +9,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class FuncionalidadesPO extends TestBaseSteven{
+public class FuncionalidadesPO extends TestBase{
 	@FindBy(xpath = "//div[contains(@class, \"baseTabs-view -view-wrapper  selected\")]/div/div/div/div/div/div/div[@class=\"folder-collapsed icon icon-font-File-and-Folders icon-Closedfolder\"]")
 	public WebElement btnRaiz;
 	

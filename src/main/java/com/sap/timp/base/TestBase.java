@@ -37,7 +37,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.Hashtable;
 import java.text.DateFormat;
 
-public class TestBaseSteven {
+public class TestBase {
 
 	// TC2
 	protected String tc2 = "http://as1-100-01-tc2:8000/timp/login/#/login";

@@ -3,7 +3,7 @@ package com.timp.test.MDR.CodigoContabilizacao;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CodigoContabilizacao.CodigoContabilizacaoDetalhesPO;
@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CodigoContabalizacaoDetalhes extends TestBaseSteven {
+public class CodigoContabalizacaoDetalhes extends TestBase {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CodigoContabilizacaoDetalhesPO codigoContabilizacaoDetalhesPO;

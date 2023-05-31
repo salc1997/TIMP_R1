@@ -1,7 +1,7 @@
 package com.timp.test.TDK.Dashboard.ParametrosGerais;
 
 import org.testng.annotations.Test;
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Dashboard.ParametrosGerais.DashboardParametrosGeraisExcecutarPO;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class DashboardParametrosGeraisExcecutar extends TestBaseSteven {
+public class DashboardParametrosGeraisExcecutar extends TestBase {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	DashboardParametrosGeraisExcecutarPO dashboardParametrosGeraisExcecutarPO;

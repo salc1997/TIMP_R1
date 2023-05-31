@@ -8,11 +8,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.Calendar.AcessarCalendarPO;
 import com.sap.timp.pageObjectModel.TFP.AcessarTFPPO;
 
-public class TarefasAtualizarPO extends TestBaseSteven{
+public class TarefasAtualizarPO extends TestBase{
 
 	@FindBy(xpath = "//span[text()=\"Calendário de Usuários\"]")
 	public WebElement calendario;

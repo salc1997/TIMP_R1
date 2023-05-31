@@ -6,11 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeClass;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
 
 
-public class TransferenciaDeSaldosCredoresFiltroPorIdPO extends TestBaseSteven {
+public class TransferenciaDeSaldosCredoresFiltroPorIdPO extends TestBase {
 
 	@FindBy(xpath = "//li[contains(@identifier,\"accordion-item-balanceTransfer\")]")
 	public WebElement transferenciaSaldos;

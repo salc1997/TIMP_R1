@@ -2,7 +2,7 @@ package com.timp.test.BPMA.ProcessodeNegocio;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BPMA.AcessarBPMAPO;
 import com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.CriarProcessocomTarefaAutomatizadaPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CriarProcessocomTarefaAutomatizada extends TestBaseSteven {
+public class CriarProcessocomTarefaAutomatizada extends TestBase {
 	LoginTC loginTC;
 	AcessarBPMAPO acessarBPMA ;
 	CriarProcessocomTarefaAutomatizadaPO  criarProcessocomTarefaAutomatizadaPO;

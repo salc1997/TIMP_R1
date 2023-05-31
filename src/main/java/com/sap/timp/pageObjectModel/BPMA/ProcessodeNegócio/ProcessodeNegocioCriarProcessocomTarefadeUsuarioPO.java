@@ -12,9 +12,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Sleeper;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class ProcessodeNegocioCriarProcessocomTarefadeUsuarioPO extends TestBaseSteven {
+public class ProcessodeNegocioCriarProcessocomTarefadeUsuarioPO extends TestBase {
 	
 	
 

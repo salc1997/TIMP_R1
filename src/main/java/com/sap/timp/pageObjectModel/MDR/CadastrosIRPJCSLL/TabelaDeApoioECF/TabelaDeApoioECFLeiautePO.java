@@ -5,12 +5,12 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
 import junit.extensions.TestSetup;
 import net.bytebuddy.asm.Advice.Return;
 
-public class TabelaDeApoioECFLeiautePO extends TestBaseSteven{
+public class TabelaDeApoioECFLeiautePO extends TestBase{
 
 	@FindBy(xpath = "//div[@class=\"accordion-container\"]/ul/li/div/span[text()=\"Cadastros IRPJ/CSLL\"]")
 	public WebElement cadastroIRPJCSLL;

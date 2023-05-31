@@ -8,7 +8,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BPMA.AcessarBPMAPO;
 import com.sap.timp.pageObjectModel.Calendar.AcessarCalendarPO;
@@ -17,7 +17,7 @@ import com.sap.timp.pageObjectModel.Calendar.ParametrosGerais.CalendarioDeUsuari
 import com.sap.timp.pageObjectModel.Calendar.ParametrosGerais.NovaTarefaPO;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 
-public class TarefaAtualizar extends TestBaseSteven {
+public class TarefaAtualizar extends TestBase {
 
 	LoginTC loginTC;
 	AcessarCalendarPO acessarCalendarPO;

@@ -2,7 +2,7 @@ package com.timp.test.DFG.AN4;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.AN4.AN4FuncionalidadesPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class AN4Funcionalidades extends TestBaseSteven{
+public class AN4Funcionalidades extends TestBase{
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
 	AN4FuncionalidadesPO aN4FuncionalidadesPO;

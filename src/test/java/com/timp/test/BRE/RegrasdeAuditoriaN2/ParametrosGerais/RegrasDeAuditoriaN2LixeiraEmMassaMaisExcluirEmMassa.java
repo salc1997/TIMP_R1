@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.RegrasdeAuditoriaN2.ParametrosGerais.RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassaPO;
 
-public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa extends TestBaseSteven {
+public class RegrasDeAuditoriaN2LixeiraEmMassaMaisExcluirEmMassa extends TestBase {
 
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;

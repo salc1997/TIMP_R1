@@ -2,7 +2,7 @@ package com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
 import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguracaoConfiguracaoCriarComCopiaPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrosGeraisConfiguracaoConfiguracaoCriarComCópia extends TestBaseSteven {
+public class ParametrosGeraisConfiguracaoConfiguracaoCriarComCópia extends TestBase {
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
 	ParametrosGeraisConfiguracaoConfiguracaoCriarComCopiaPO parametrosGeraisConfiguraçãoConfiguraçãoCriarComCópiaPO;

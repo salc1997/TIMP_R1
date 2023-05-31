@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
 import com.sap.timp.pageObjectModel.TAA.Agendamento.AgendamentoCopiarPO;
 
-public class AgendamentoCopiar extends TestBaseSteven{
+public class AgendamentoCopiar extends TestBase{
 	LoginTC loginTC;
 	AcessarTAAPO acessarTAAPO;
 	AgendamentoCopiarPO agendamentoCopiarPO;

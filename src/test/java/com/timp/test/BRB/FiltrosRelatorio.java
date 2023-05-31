@@ -22,12 +22,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.google.errorprone.annotations.Var;
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.FiltrosPO;
 
-public class FiltrosRelatorio extends TestBaseSteven {
+public class FiltrosRelatorio extends TestBase {
 
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;

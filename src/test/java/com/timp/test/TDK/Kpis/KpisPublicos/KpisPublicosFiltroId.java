@@ -2,7 +2,7 @@ package com.timp.test.TDK.Kpis.KpisPublicos;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Kpis.KpisPublicos.KpisPublicosFiltroIdPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class KpisPublicosFiltroId extends TestBaseSteven {
+public class KpisPublicosFiltroId extends TestBase {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	KpisPublicosFiltroIdPO kpisPublicosFiltroIdPO;

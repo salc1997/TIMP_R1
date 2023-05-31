@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import org.testng.internal.annotations.TestAnnotation;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BCB.AcessarBCBPO;
 import com.sap.timp.pageObjectModel.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguracaoConfiguracaoFavoritosPO;
@@ -15,7 +15,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ParametrosGeraisConfiguraçãoConfiguraçãoFavoritos extends TestBaseSteven {
+public class ParametrosGeraisConfiguraçãoConfiguraçãoFavoritos extends TestBase {
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
 	ParametrosGeraisConfiguracaoConfiguracaoFavoritosPO parametrosGeraisConfiguraçãoConfiguraçãoFavoritosPO;

@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class ExecuçõesSalvasRecalcularPO extends TestBaseSteven {
+public class ExecuçõesSalvasRecalcularPO extends TestBase {
 	//TSTNG-4225
 	
 	@FindBy(xpath = "//span[text()=\"Execuções\"]")

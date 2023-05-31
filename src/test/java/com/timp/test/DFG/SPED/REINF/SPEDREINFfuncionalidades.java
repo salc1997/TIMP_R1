@@ -2,7 +2,7 @@ package com.timp.test.DFG.SPED.REINF;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.SPED.EFDICMSIPI.EFDICMSIPICriarPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class SPEDREINFfuncionalidades extends TestBaseSteven {
+public class SPEDREINFfuncionalidades extends TestBase {
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
 	SPEDREINFfuncionalidadesPO sPEDREINFfuncionalidadesPO;

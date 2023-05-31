@@ -2,7 +2,7 @@ package com.timp.test.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoContribuiçaoSocialApurada.CodigoContribuicaoSocialApuradaCriarPO;
@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeClass;
 
 import static org.testng.Assert.assertTrue;
 
-public class CodigoContribuiçaoSocialApuradaCriar extends TestBaseSteven {
+public class CodigoContribuiçaoSocialApuradaCriar extends TestBase {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;

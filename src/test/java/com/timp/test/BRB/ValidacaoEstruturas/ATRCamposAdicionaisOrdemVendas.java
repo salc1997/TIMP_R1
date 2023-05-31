@@ -8,13 +8,13 @@ import java.util.ArrayList;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRB.AcessarBrbPO;
 import com.sap.timp.pageObjectModel.BRB.ValidacaoEstruturas.ATRCamposAdicionaisOrdemVendasPO;
 
 
-public class ATRCamposAdicionaisOrdemVendas extends TestBaseSteven {
+public class ATRCamposAdicionaisOrdemVendas extends TestBase {
 	LoginTC loginTC;
 	AcessarBrbPO acessarBrbPO;
 	ATRCamposAdicionaisOrdemVendasPO aTRCamposAdicionaisOrdemVendasPO;

@@ -2,7 +2,7 @@ package com.timp.test.BPMA.ProcessodeNegocio;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BPMA.AcessarBPMAPO;
 import com.sap.timp.pageObjectModel.BPMA.ProcessodeNegócio.GatewayEventoPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class GatewayEvento extends TestBaseSteven{
+public class GatewayEvento extends TestBase{
 	LoginTC loginTC;
 	AcessarBPMAPO acessarBPMA ;
 	GatewayEventoPO  gatewayEventoPO;

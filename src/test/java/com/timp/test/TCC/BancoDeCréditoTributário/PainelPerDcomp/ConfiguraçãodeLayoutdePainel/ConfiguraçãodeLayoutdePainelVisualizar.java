@@ -2,7 +2,7 @@ package com.timp.test.TCC.BancoDeCréditoTributário.PainelPerDcomp.Configuraçãode
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
 import com.sap.timp.pageObjectModel.TAA.AtribuiçõesdeRegras.RegraDeAbas.RegradeAbasVerPO;
@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãodeLayoutdePainelVisualizar extends TestBaseSteven {
+public class ConfiguraçãodeLayoutdePainelVisualizar extends TestBase {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ConfiguraçãodeLayoutdePainelVisualizarPO configuraçãodeLayoutdePainelVisualizarrPO;

@@ -3,7 +3,7 @@ package com.timp.test.BRE.CalculoDeTributos.ParametroGerais;
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 import com.sap.timp.pageObjectModel.BRE.CalculoDeTributos.ParametrosGerais.CalculoDeTributosFiltrosAbansadosPO;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class CalculoDeTributosFiltrosAvansados extends TestBaseSteven {
+public class CalculoDeTributosFiltrosAvansados extends TestBase {
 	LoginTC loginTC;
 	AcessarBREPO acessarBREPO;
 	CalculoDeTributosFiltrosAbansadosPO calculoDeTributosFiltrosAbansadosPO;

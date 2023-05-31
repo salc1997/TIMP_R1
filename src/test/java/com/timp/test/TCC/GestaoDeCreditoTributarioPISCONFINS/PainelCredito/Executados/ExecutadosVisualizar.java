@@ -2,7 +2,7 @@ package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.Exec
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.PainelCredito.Executados.ExecutadosVisualizarPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ExecutadosVisualizar extends TestBaseSteven {
+public class ExecutadosVisualizar extends TestBase {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ExecutadosVisualizarPO executadosVisualizarPO;

@@ -2,7 +2,7 @@ package com.timp.test.TDK.Dashboard.Lixeira;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Dashboard.Lixeira.LixeiraFiltroIdPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class LixeiraFiltroId extends TestBaseSteven {
+public class LixeiraFiltroId extends TestBase {
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
 	LixeiraFiltroIdPO lixeiraFiltroIdPO;

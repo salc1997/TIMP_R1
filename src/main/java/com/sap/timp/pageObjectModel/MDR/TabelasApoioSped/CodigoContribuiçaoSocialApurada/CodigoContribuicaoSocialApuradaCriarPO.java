@@ -6,9 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class CodigoContribuicaoSocialApuradaCriarPO extends TestBaseSteven{
+public class CodigoContribuicaoSocialApuradaCriarPO extends TestBase{
 	
 	@FindBy(xpath = " //li/div/span[text()=\"Tabelas de Apoio - SPED\"]")
 	public WebElement tabelas;

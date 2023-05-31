@@ -3,7 +3,7 @@ package com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoTribut
 import org.testng.annotations.Test;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoTributoXEstrutura.ConfiguracaoTributoXEstruturaCriarPO;
@@ -14,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracaoTributoXEstruturaCriar extends TestBaseSteven{
+public class ConfiguracaoTributoXEstruturaCriar extends TestBase{
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
 	ConfiguracaoTributoXEstruturaCriarPO configuraçãoTributoTributoXEstruturaCriarPO;

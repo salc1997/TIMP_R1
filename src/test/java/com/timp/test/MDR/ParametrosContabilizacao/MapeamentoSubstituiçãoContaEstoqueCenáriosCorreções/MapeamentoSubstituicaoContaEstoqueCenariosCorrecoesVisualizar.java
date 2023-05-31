@@ -8,7 +8,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.CEP.Bairro.BairroCriarPO;
@@ -17,7 +17,7 @@ import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaDetal
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoes.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesDetalhesPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoes.MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizarPO;
 
-public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizar extends TestBaseSteven {
+public class MapeamentoSubstituicaoContaEstoqueCenariosCorrecoesVisualizar extends TestBase {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;

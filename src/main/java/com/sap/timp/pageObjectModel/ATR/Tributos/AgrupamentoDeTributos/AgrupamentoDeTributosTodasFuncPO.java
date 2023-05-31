@@ -10,9 +10,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class AgrupamentoDeTributosTodasFuncPO extends TestBaseSteven{
+public class AgrupamentoDeTributosTodasFuncPO extends TestBase{
 	
 	@FindBy(xpath = "//span[@class=\"title-boxes \"][text()=\"Tributos\"]")
 	public WebElement tributos;

@@ -11,10 +11,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.google.common.escape.Escaper;
 import com.google.errorprone.annotations.FormatMethod;
-import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
+import com.sap.timp.base.TestBase;
 
-public class OPPropiasRessarcimentosExcluirMassaPO extends TestBaseSteven{
+public class OPPropiasRessarcimentosExcluirMassaPO extends TestBase{
 	
 	
 	@FindBy(xpath = "//span[text()=\"SCANC\"]")

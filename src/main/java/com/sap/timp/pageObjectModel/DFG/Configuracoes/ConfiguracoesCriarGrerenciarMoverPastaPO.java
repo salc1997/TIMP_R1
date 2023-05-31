@@ -7,9 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBaseSteven{
+public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBase{
 	@FindBy(xpath = "//span[@class=\"icon icon-font-Display-and-Setting icon-setting padding-right \"]")
 	public WebElement configuracoes;
 	

@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseSteven;
+import com.sap.timp.base.TestBase;
 
-public class StatusOcurrenciaFiscalVisualizarPO extends TestBaseSteven{
+public class StatusOcurrenciaFiscalVisualizarPO extends TestBase{
 	@FindBy(xpath = "//span[text()=\"Ocorrência Fiscal\"]")
 	public WebElement ocorrenciaFiscal;
 	

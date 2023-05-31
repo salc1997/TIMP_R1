@@ -7,9 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
 
-public class SubperiodoExcluirPO extends TestBaseMassiel{
+import com.sap.timp.base.TestBaseSteven;
+
+public class SubperiodoExcluirPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Configurações\"]")
 	public WebElement configuracoe;
 	

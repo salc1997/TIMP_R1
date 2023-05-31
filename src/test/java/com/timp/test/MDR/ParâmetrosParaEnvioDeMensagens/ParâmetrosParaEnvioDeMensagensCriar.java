@@ -2,7 +2,7 @@ package com.timp.test.MDR.ParâmetrosParaEnvioDeMensagens;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ParâmetrosParaEnvioDeMensagens.ParâmetrosParaEnvioDeMensagensCriarPO;
@@ -13,14 +13,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ParâmetrosParaEnvioDeMensagensCriar extends TestBaseFernando {
+public class ParâmetrosParaEnvioDeMensagensCriar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 	ParâmetrosParaEnvioDeMensagensCriarPO parâmetrosParaEnvioDeMensagensCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		accesarMDRPO = new AcessarMDRPO();
 		parâmetrosParaEnvioDeMensagensCriarPO = new ParâmetrosParaEnvioDeMensagensCriarPO();

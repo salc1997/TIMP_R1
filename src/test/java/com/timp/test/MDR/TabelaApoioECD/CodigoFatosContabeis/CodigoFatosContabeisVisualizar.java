@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelaApoioECD.CodigoFatosContabeis.CodigoFatosContabeisVisualizarPO;
 
-public class CodigoFatosContabeisVisualizar extends TestBaseFernando {
+public class CodigoFatosContabeisVisualizar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	CodigoFatosContabeisVisualizarPO codigoFatosContabeisVisualizarPO;
@@ -24,7 +24,7 @@ public class CodigoFatosContabeisVisualizar extends TestBaseFernando {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acesarMDRPO = new AcessarMDRPO();
 		codigoFatosContabeisVisualizarPO = new CodigoFatosContabeisVisualizarPO();

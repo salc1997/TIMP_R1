@@ -3,8 +3,6 @@ package com.timp.test.MDR.TabelasApoioESocial.Tabela26;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.base.TestBaseFernando;
-import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela26.MotivosCesBeneficiosEliminarPO;
@@ -16,7 +14,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class MotivosCesBeneficiosExcluir extends TestBaseFernando {
+public class MotivosCesBeneficiosExcluir extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -26,10 +24,9 @@ public class MotivosCesBeneficiosExcluir extends TestBaseFernando {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
-		// motivosCesBeneficiosEliminarPO = new MotivosCesBeneficiosEliminarPO();
 		motivosCesBeneficiosExcluirPO = new MotivosCesBeneficiosExcluirPO();
 	}
 
@@ -44,8 +41,6 @@ public class MotivosCesBeneficiosExcluir extends TestBaseFernando {
 		loginTC.login();
 
 		acessarMDRPO.acessarMDR();
-
-		// boolean sucesso = motivosCesBeneficiosEliminarPO.eliminar();
 		boolean sucesso = motivosCesBeneficiosExcluirPO.excluir();
 		assertTrue(sucesso, Eliminado);
 

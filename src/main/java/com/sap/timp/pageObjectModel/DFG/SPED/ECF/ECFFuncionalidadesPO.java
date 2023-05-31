@@ -10,12 +10,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 
 
 
-public class ECFFuncionalidadesPO extends TestBaseMassiel{
+public class ECFFuncionalidadesPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[1]/div[3]/div/div[4]/span/span")
 	public WebElement sped;

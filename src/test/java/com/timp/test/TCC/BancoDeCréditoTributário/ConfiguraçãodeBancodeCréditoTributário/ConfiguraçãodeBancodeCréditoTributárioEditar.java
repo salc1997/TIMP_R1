@@ -2,7 +2,7 @@ package com.timp.test.TCC.BancoDeCréditoTributário.ConfiguraçãodeBancodeCréditoT
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.BancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributário.ConfiguraçãodeBancodeCréditoTributárioEditarPO;
@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguraçãodeBancodeCréditoTributárioEditar extends TestBaseMassiel {
+public class ConfiguraçãodeBancodeCréditoTributárioEditar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
@@ -21,7 +21,7 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditar extends TestBaseMassie
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		configuraçãodeBancodeCréditoTributárioEditarPO = new ConfiguraçãodeBancodeCréditoTributárioEditarPO();

@@ -6,9 +6,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.base.TestBaseMassiel;
 
-public class ExecucoesExecucoesPublicasLixeiraemMassaPO extends TestBaseMassiel {
+
+public class ExecucoesExecucoesPublicasLixeiraemMassaPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//span[text()=\"KPI's Públicos\"]")
 	public WebElement kpispublicos;

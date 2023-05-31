@@ -2,7 +2,7 @@ package com.timp.test.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ParametrosContabilizacao.ContasDefaultParaExtemporaneo.ContasDefaultParaExtemporaneoExcluirMassaPO;
@@ -13,14 +13,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ContasDefaultParaExtemporaneoExcluirMassa extends TestBaseFernando {
+public class ContasDefaultParaExtemporaneoExcluirMassa extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	ContasDefaultParaExtemporaneoExcluirMassaPO contasDefaultParaExtemporaneoExcluirMassaPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		contasDefaultParaExtemporaneoExcluirMassaPO = new ContasDefaultParaExtemporaneoExcluirMassaPO();

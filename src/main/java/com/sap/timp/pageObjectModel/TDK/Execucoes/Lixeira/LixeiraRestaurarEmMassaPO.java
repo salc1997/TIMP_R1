@@ -7,10 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class LixeiraRestaurarEmMassaPO extends TestBaseMassiel{
-	
+public class LixeiraRestaurarEmMassaPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Execuções\"]")
 	public WebElement execucoes;
 	

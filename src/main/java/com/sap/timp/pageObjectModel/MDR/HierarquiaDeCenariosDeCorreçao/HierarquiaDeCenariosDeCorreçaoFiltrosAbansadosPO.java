@@ -9,11 +9,11 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 
 import net.bytebuddy.asm.Advice.Enter;
 
-public class HierarquiaDeCenariosDeCorreçaoFiltrosAbansadosPO extends TestBaseMassiel{
+public class HierarquiaDeCenariosDeCorreçaoFiltrosAbansadosPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\"Hierarquias de Cenários de Correção\"]")
 	public WebElement hiearquiasdecenariosdecorrecao;

@@ -2,7 +2,8 @@ package com.timp.test.TAA.Ajustes;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
 import com.sap.timp.pageObjectModel.TAA.Ajuste.AjustesEditarPO;
@@ -13,14 +14,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterTest;
 
-public class AjustesEditar extends TestBaseMassiel {
+public class AjustesEditar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTAAPO acessarTAAPO;
 	AjustesEditarPO ajustesEditarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTAAPO = new AcessarTAAPO();
 		ajustesEditarPO = new AjustesEditarPO();

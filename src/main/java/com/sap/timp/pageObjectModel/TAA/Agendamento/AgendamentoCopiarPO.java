@@ -5,9 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
 
-public class AgendamentoCopiarPO extends TestBaseFernando{
+import com.sap.timp.base.TestBaseSteven;
+
+public class AgendamentoCopiarPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Agendamento\"]")
 	public WebElement abaAgendamento;
 	

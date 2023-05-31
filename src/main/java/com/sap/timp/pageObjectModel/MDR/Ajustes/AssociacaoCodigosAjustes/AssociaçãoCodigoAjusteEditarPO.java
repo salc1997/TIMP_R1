@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AssociaçãoCodigoAjusteEditarPO extends TestBaseFernando{
+public class AssociaçãoCodigoAjusteEditarPO extends TestBaseSteven{
 	String URL = driver.getCurrentUrl();
 	
 	@FindBy(xpath = "//div[@class=\"accordion-container\"]/ul/li/div/span[text()=\"Ajustes\"]")
@@ -91,14 +91,13 @@ public class AssociaçãoCodigoAjusteEditarPO extends TestBaseFernando{
 		btnSim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay dark\"]");
-		sleep(2000);	
+		sleep(9000);		
 		
-		driver.navigate().refresh();
+		menu.click();
+		sleep(1000);
+		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		attributeToBeXpath("//div[@id=\"filial\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(9000);
 		
 		// Obtengo el valor actualizado ya recargada la página

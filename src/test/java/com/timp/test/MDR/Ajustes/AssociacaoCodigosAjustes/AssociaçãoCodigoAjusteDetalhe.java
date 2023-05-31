@@ -2,7 +2,7 @@ package com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteDetalhePO;
@@ -15,14 +15,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class AssociaçãoCodigoAjusteDetalhe extends TestBaseFernando{
+public class AssociaçãoCodigoAjusteDetalhe extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 	AssociaçãoCodigoAjusteDetalhePO associaçãoCodigoAjusteDetalhePO;
 	 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		accesarMDRPO = new AcessarMDRPO();
 		associaçãoCodigoAjusteDetalhePO = new AssociaçãoCodigoAjusteDetalhePO();

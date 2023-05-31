@@ -7,9 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
 
-public class LivrosOficiaisPO extends TestBaseMassiel{
+import com.sap.timp.base.TestBaseSteven;
+
+public class LivrosOficiaisPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//div[contains(@class,\"eft-tabs\")][1]//child::div[@class=\"baseTabs-box  \"][3]")
 	public WebElement livros;

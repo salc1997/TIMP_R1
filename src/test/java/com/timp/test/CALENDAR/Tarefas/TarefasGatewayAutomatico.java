@@ -2,7 +2,8 @@ package com.timp.test.CALENDAR.Tarefas;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BPMA.AcessarBPMAPO;
 import com.sap.timp.pageObjectModel.Calendar.AcessarCalendarPO;
@@ -17,7 +18,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class TarefasGatewayAutomatico extends TestBaseMassiel{
+public class TarefasGatewayAutomatico extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarBPMAPO acessarBPMA ;
 	TarefasGatewayAutomaticoPO tarefasGatewayAutomaticoPO;
@@ -26,7 +27,7 @@ public class TarefasGatewayAutomatico extends TestBaseMassiel{
 
   @BeforeClass
   public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBPMA = new AcessarBPMAPO();
 		tarefasGatewayAutomaticoPO = new TarefasGatewayAutomaticoPO();

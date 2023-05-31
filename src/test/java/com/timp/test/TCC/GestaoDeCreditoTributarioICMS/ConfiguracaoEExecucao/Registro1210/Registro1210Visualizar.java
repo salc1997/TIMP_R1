@@ -2,8 +2,7 @@ package com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucao.Re
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucao.Registro1210.Registro1210VisualizarPO;
@@ -16,14 +15,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class Registro1210Visualizar extends TestBaseMassiel{
+public class Registro1210Visualizar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	Registro1210VisualizarPO registro1210VisualizarPO;
   
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationM();
+	  driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		registro1210VisualizarPO  = new Registro1210VisualizarPO();

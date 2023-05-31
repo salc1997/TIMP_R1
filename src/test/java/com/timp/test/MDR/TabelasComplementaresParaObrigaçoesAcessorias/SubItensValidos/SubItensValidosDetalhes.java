@@ -8,13 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
 import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.SubItensValidos.SubItensValidosDetalhesPO;
 
-public class SubItensValidosDetalhes extends TestBaseFernando {
+public class SubItensValidosDetalhes extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -23,7 +22,7 @@ public class SubItensValidosDetalhes extends TestBaseFernando {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		subItensValidosDetalhesPO = new SubItensValidosDetalhesPO();

@@ -9,8 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.google.errorprone.annotations.FormatMethod;
 import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.base.TestBaseMassiel;
-import com.sap.timp.base.TestBaseSteven;
+
 
 public class SCANCDistribuidoraExcluirEmMassaPO extends TestBaseSteven{
 	

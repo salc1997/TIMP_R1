@@ -5,9 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
 
-public class TipoDeTributoContaContabiExcluirMassaPO extends TestBaseMassiel{
+import com.sap.timp.base.TestBaseSteven;
+
+public class TipoDeTributoContaContabiExcluirMassaPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Tipo de Tributo x Conta Contábil\"]")
 	public WebElement tipodetributocontacontabil;
 	

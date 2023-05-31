@@ -9,10 +9,9 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import com.sap.timp.base.TestBaseSteven;
 
-import com.sap.timp.base.TestBaseMassiel;
-
-public class ConsultaDeDocumentosDetalhesPO extends TestBaseMassiel {
+public class ConsultaDeDocumentosDetalhesPO extends TestBaseSteven {
 	
 	
 	@FindBy(xpath = "//span[text()=\"Consulta de Documentos\"]")

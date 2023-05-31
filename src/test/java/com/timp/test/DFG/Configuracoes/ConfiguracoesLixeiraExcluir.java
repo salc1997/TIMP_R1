@@ -2,7 +2,7 @@ package com.timp.test.DFG.Configuracoes;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.Configuracoes.ConfiguracoesLixeiraExcluirPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracoesLixeiraExcluir extends TestBaseMassiel {
+public class ConfiguracoesLixeiraExcluir extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
 	ConfiguracoesLixeiraExcluirPO configuracoesLixeiraExcluirPO;
@@ -23,7 +23,7 @@ public class ConfiguracoesLixeiraExcluir extends TestBaseMassiel {
 	
   @BeforeClass
   public void beforeClass() {
-	  driver = initializationM();
+	  driver = initialization();
 		loginTC = new LoginTC();
 		acessarDFGPO = new AcessarDFGPO();
 		configuracoesLixeiraExcluirPO = new ConfiguracoesLixeiraExcluirPO();

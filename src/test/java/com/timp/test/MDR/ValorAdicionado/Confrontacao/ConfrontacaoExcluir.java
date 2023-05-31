@@ -2,7 +2,7 @@ package com.timp.test.MDR.ValorAdicionado.Confrontacao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.Confrontacao.ConfrontacaoExcluirPO;
@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfrontacaoExcluir extends TestBaseMassiel {
+public class ConfrontacaoExcluir extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
@@ -21,7 +21,7 @@ public class ConfrontacaoExcluir extends TestBaseMassiel {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		accesarMDRPO = new AcessarMDRPO();
 		loginTC = new LoginTC();
 		confrontacaoExcluirPO = new ConfrontacaoExcluirPO();

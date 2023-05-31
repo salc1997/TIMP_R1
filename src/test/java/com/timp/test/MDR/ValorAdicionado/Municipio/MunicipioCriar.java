@@ -7,15 +7,13 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.sap.timp.base.TestBaseSteven;
-import com.sap.timp.base.TestBaseMassiel;
-import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.AgrupadorDeCFOP.AgrupadorDeCFOPCriarPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasComplementaresParaObrigaçoesAcessorias.TabelaOutrosDebitos.TabelasOutrosDebitosCriarPO;
 import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.Municipio.MunicipioCriarPO;
 
-public class MunicipioCriar extends TestBaseMassiel {
+public class MunicipioCriar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -24,7 +22,7 @@ public class MunicipioCriar extends TestBaseMassiel {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		municipioCriarPO = new MunicipioCriarPO();
@@ -34,17 +32,7 @@ public class MunicipioCriar extends TestBaseMassiel {
 	public void afterClass() {
 		//driver.close();
 	}
-	/*
-	 * @Test(priority = 0) public void login() { loginTC.login();
-	 * 
-	 * }
-	 * 
-	 * @Test(priority = 1) public void acessarMDR() {
-	 * 
-	 * acessarMDRPO.acessarMDR();
-	 * 
-	 * }
-	 */
+	
 
 	@Test()
 	public void criar() {

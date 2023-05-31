@@ -8,19 +8,19 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 import com.sap.timp.pageObjectModel.DFG.SPED.ESocial.Eventos.S1250.S1250ExcluirDadosDoEventoPO;
 
-public class S1250ExcluirDadosDoEvento extends TestBaseFernando{
+public class S1250ExcluirDadosDoEvento extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarDFGPO acessarDFGPO;
 	S1250ExcluirDadosDoEventoPO s1250ExcluirDadosDoEventoPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarDFGPO = new AcessarDFGPO();
 		s1250ExcluirDadosDoEventoPO = new S1250ExcluirDadosDoEventoPO();

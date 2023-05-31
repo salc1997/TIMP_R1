@@ -152,7 +152,7 @@ public class ComentarioLibrePO extends TestBaseSteven{
 		
 		
 		
-		WebElement comentarioTexto = driver.findElement(By.xpath("//div[@data-column=\""+dataColumn+"\" and contains(@aria-label, \"Linha: 1-\")]/div/div/div/div/input"));
+		WebElement comentarioTexto = driver.findElement(By.xpath("//div[@data-column=\""+dataColumn+"\" and contains(@aria-label, \"Linha: 1-\")]/div[2]//input"));
 		actions.doubleClick(comentarioTexto).perform();
 		sleep(2000);
 		comentarioTexto.sendKeys("Teste 1");

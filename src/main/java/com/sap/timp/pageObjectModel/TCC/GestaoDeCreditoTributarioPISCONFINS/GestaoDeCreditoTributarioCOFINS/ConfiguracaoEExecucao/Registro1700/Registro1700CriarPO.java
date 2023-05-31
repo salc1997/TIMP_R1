@@ -5,9 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
 
-public class Registro1700CriarPO extends TestBaseMassiel{
+import com.sap.timp.base.TestBaseSteven;
+
+public class Registro1700CriarPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;

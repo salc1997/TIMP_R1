@@ -2,7 +2,7 @@ package com.timp.test.TDK.Kpis;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Kpis.KpisCriarPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class KpisCriar extends TestBaseMassiel {
+public class KpisCriar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
@@ -23,7 +23,7 @@ public class KpisCriar extends TestBaseMassiel {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		kpisCriarP = new KpisCriarPO();

@@ -2,7 +2,7 @@ package com.timp.test.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioSped.CodigoAjustesContribuiçoesCreditos.CodigoAjustesContribuiçoesCreditosEditarPO;
@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeClass;
 
 import org.testng.annotations.AfterClass;
 
-public class CodigoAjustesContribuiçoesCreditosEditar extends TestBaseFernando {
+public class CodigoAjustesContribuiçoesCreditosEditar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	CodigoAjustesContribuiçoesCreditosEditarPO codigoAjustesContribuiçoesCreditosEditarPO;
@@ -22,7 +22,7 @@ public class CodigoAjustesContribuiçoesCreditosEditar extends TestBaseFernando {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acesarMDRPO = new AcessarMDRPO();
 		codigoAjustesContribuiçoesCreditosEditarPO = new CodigoAjustesContribuiçoesCreditosEditarPO();

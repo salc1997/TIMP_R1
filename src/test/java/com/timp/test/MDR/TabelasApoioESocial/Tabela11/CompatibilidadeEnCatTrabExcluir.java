@@ -2,7 +2,7 @@ package com.timp.test.MDR.TabelasApoioESocial.Tabela11;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela11.CompatibilidadeEnCatTrabExcluirPO;
@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class CompatibilidadeEnCatTrabExcluir extends TestBaseFernando {
+public class CompatibilidadeEnCatTrabExcluir extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	CompatibilidadeEnCatTrabExcluirPO compatibilidadeEnCatTrabExcluirPO;
@@ -21,7 +21,7 @@ public class CompatibilidadeEnCatTrabExcluir extends TestBaseFernando {
 	@BeforeClass
 	public void beforeClass() {
 
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		compatibilidadeEnCatTrabExcluirPO = new CompatibilidadeEnCatTrabExcluirPO();

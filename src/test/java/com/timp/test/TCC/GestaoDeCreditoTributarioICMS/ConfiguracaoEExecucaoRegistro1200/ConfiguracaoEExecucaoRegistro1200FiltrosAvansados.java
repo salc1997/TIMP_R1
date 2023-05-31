@@ -2,7 +2,7 @@ package com.timp.test.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoReg
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioICMS.ConfiguracaoEExecucaoRegistro1200.ConfiguracaoEExecucaoRegistro1200FiltrosAvansadosPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfiguracaoEExecucaoRegistro1200FiltrosAvansados extends TestBaseMassiel {
+public class ConfiguracaoEExecucaoRegistro1200FiltrosAvansados extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
@@ -23,7 +23,7 @@ public class ConfiguracaoEExecucaoRegistro1200FiltrosAvansados extends TestBaseM
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		configuracaoEExecucaoRegistro1200FiltrosAvansadosPO = new ConfiguracaoEExecucaoRegistro1200FiltrosAvansadosPO();

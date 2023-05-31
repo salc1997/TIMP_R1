@@ -8,10 +8,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.BRE.AcessarBREPO;
 
-public class CorreçãodeNFVisualizarPO extends TestBaseMassiel  {
+public class CorreçãodeNFVisualizarPO extends TestBaseSteven  {
 	
 	@FindBy(xpath = "//div[@class=\"right-content\"]/div/div/div/ul/li/button/span[text()=\"Executar\"]")
 	public WebElement executarE;

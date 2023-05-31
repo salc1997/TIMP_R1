@@ -6,19 +6,19 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
 import com.sap.timp.pageObjectModel.TAA.AtribuiçõesdeRegras.RegraDeCampos.RegraDeCamposCriarPO;
 
-public class RegraDeCamposCriar extends TestBaseFernando {
+public class RegraDeCamposCriar extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarTAAPO acessarTAAPO;
 	RegraDeCamposCriarPO regraDeCamposCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTAAPO = new AcessarTAAPO();
 		regraDeCamposCriarPO = new RegraDeCamposCriarPO();

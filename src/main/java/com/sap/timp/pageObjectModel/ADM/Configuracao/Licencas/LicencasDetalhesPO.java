@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class LicencasDetalhesPO extends TestBaseMassiel{
+public class LicencasDetalhesPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//div[@class=\"baseTabs-bar boxes\"]/div/div[2]")
 	public WebElement Configuração;

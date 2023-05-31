@@ -4,9 +4,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AccesarTFBPO extends TestBaseMassiel{
+public class AccesarTFBPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[text()=\"TFB\"]")
 	public WebElement tfb;
 	

@@ -6,19 +6,19 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelaApoioECD.DeXParaContraPartida.DeXParaContraPartidaCriarPO;
 
-public class DeXParaContraPartidaCriar extends TestBaseFernando{
+public class DeXParaContraPartidaCriar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	DeXParaContraPartidaCriarPO deXParaContraPartidaCriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		deXParaContraPartidaCriarPO = new DeXParaContraPartidaCriarPO();
@@ -26,7 +26,7 @@ public class DeXParaContraPartidaCriar extends TestBaseFernando{
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		driver.close();
 	}
 
 	@Test()

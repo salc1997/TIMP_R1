@@ -2,7 +2,7 @@ package com.timp.test.TDK.Dashboard.Edicao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TDK.AcessarTDKPO;
 import com.sap.timp.pageObjectModel.TDK.Dashboard.Edicao.DashboardEdiçãoTabelaPO;
@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class DashboardEdiçãoTabela extends TestBaseMassiel {
+public class DashboardEdiçãoTabela extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarTDKPO acessarTDKPO;
@@ -21,7 +21,7 @@ public class DashboardEdiçãoTabela extends TestBaseMassiel {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTDKPO = new AcessarTDKPO();
 		dashboardEdiçãoTabelaPO = new DashboardEdiçãoTabelaPO();

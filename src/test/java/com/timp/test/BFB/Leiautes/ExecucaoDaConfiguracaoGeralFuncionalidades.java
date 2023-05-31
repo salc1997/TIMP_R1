@@ -8,12 +8,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.BFB.AcessarBFBPO;
 import com.sap.timp.pageObjectModel.BFB.Leiautes.ExecucaoDaConfiguracaoGeralFuncionalidadesPO;
 
-public class ExecucaoDaConfiguracaoGeralFuncionalidades extends TestBaseFernando{
+public class ExecucaoDaConfiguracaoGeralFuncionalidades extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarBFBPO acessarBFBPO;
 	ExecucaoDaConfiguracaoGeralFuncionalidadesPO execucaoDaConfiguracaoGeralFuncionalidadesPO;
@@ -21,7 +21,7 @@ public class ExecucaoDaConfiguracaoGeralFuncionalidades extends TestBaseFernando
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarBFBPO = new AcessarBFBPO();
 		execucaoDaConfiguracaoGeralFuncionalidadesPO = new ExecucaoDaConfiguracaoGeralFuncionalidadesPO();

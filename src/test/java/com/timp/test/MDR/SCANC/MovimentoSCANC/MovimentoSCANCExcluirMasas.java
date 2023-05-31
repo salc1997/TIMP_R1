@@ -2,7 +2,7 @@ package com.timp.test.MDR.SCANC.MovimentoSCANC;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.SCANC.MovimentoSCANC.MovimentoSCANCExcluirMasasPO;
@@ -16,7 +16,7 @@ import java.sql.Driver;
 import org.openqa.selenium.remote.service.DriverService;
 import org.testng.annotations.AfterClass;
 
-public class MovimentoSCANCExcluirMasas extends TestBaseMassiel {
+public class MovimentoSCANCExcluirMasas extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
@@ -24,7 +24,7 @@ public class MovimentoSCANCExcluirMasas extends TestBaseMassiel {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		movimentoSCANCExcluirMasasPO = new MovimentoSCANCExcluirMasasPO();

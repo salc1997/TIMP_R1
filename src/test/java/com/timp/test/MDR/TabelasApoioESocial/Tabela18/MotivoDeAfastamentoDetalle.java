@@ -1,8 +1,7 @@
 package com.timp.test.MDR.TabelasApoioESocial.Tabela18;
 
 import org.testng.annotations.Test;
-
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.TabelasApoioESocial.Tabela18.MotivoDeAfastamentoDetallePO;
@@ -15,14 +14,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class MotivoDeAfastamentoDetalle extends TestBaseMassiel {
+public class MotivoDeAfastamentoDetalle extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acessarMDRPO;
 	MotivoDeAfastamentoDetallePO motivoDeAfastamentoDetallePO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarMDRPO = new AcessarMDRPO();
 		motivoDeAfastamentoDetallePO = new MotivoDeAfastamentoDetallePO();

@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ConfiguracoesFundoSocialEditarPO extends TestBaseMassiel{
+public class ConfiguracoesFundoSocialEditarPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Configurações de Fundo Social\"]")
 	public WebElement confiFundo;
 	

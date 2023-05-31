@@ -6,9 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class CadastroDeObrasCriarPO extends TestBaseMassiel{
+public class CadastroDeObrasCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//span[text()=\" Cadastro Especifico do INSS (CEI)\"]")
 	public WebElement cadastro;

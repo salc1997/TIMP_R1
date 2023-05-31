@@ -105,7 +105,17 @@ public class TestBaseSteven {
 
 		return driver;
 	}
+	public String fechaPasadoManana() {
 
+		Date fecha = new Date();
+
+		Date ayer = new Date(fecha.getTime() + TimeUnit.DAYS.toMillis(+2));
+
+		SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+
+		return df.format(ayer);
+
+	}
 	public void fecharMensagens(String rows, String xpath) {
 		int rowsR = driver.findElements(By.xpath(xpath)).size();
 
@@ -595,7 +605,106 @@ public class TestBaseSteven {
 		return idReturn;
 
 	}
+	public void idInserir7(String idRegistro) {
 
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR7", idRegistro);
+
+	}
+
+	public String idObter7() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR7", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+	
+	public void idInserir8(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR8", idRegistro);
+
+	}
+
+	public String idObter8() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR8", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+
+	public void idInserir9(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR9", idRegistro);
+
+	}
+
+	public String idObter9() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR9", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+	
+	public void idInserir10(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR10", idRegistro);
+
+	}
+
+	public String idObter10() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR10", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+	
+	public void idInserir11(String idRegistro) {
+
+		Preferences id = Preferences.userRoot();
+
+		id.put("idR11", idRegistro);
+
+	}
+
+	public String idObter11() {
+
+		Preferences id = Preferences.userRoot();
+
+		long idRegistro = id.getLong("idR11", 1);
+
+		String idReturn = String.valueOf(idRegistro);
+
+		return idReturn;
+
+	}
+	
 	public void quit() {
 		driver.close();
 	}

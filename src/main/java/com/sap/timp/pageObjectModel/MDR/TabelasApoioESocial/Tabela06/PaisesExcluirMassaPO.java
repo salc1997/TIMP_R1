@@ -4,10 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import com.sap.timp.base.TestBaseSteven;
 
-import com.sap.timp.base.TestBaseFernando;
-
-public class PaisesExcluirMassaPO extends TestBaseFernando{
+public class PaisesExcluirMassaPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Tabelas de Apoio e-Social\"]")
 	public WebElement tabelaApoio;
 	

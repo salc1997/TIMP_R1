@@ -6,19 +6,19 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TAA.AcessarTAAPO;
 import com.sap.timp.pageObjectModel.TAA.Agendamento.AgendamentoCopiarPO;
 
-public class AgendamentoCopiar extends TestBaseFernando {
+public class AgendamentoCopiar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarTAAPO acessarTAAPO;
 	AgendamentoCopiarPO agendamentoCopiarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTAAPO = new AcessarTAAPO();
 		agendamentoCopiarPO = new AgendamentoCopiarPO();

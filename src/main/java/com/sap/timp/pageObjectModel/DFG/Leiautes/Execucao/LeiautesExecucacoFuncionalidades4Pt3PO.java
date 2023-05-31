@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 
-public class LeiautesExecucacoFuncionalidades4Pt3PO extends TestBaseFernando{
+public class LeiautesExecucacoFuncionalidades4Pt3PO extends TestBaseSteven{
 	@FindBy(xpath = "//span[@class=\"icon icon-font-File-and-Folders icon-layout padding-right \"]")
 	public WebElement verLeiautes;
 	

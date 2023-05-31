@@ -2,7 +2,7 @@ package com.timp.test.MDR.LimiteCompetencia;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.LimiteCompetencia.LimiteCompetenciaFiltrosAvansadosPO;
@@ -15,14 +15,14 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class LimiteCompetenciaFiltrosAvansados extends TestBaseMassiel {
+public class LimiteCompetenciaFiltrosAvansados extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 	LimiteCompetenciaFiltrosAvansadosPO limiteCompetenciaFiltrosAvansadosPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		accesarMDRPO = new AcessarMDRPO();
 		loginTC = new LoginTC();
 		limiteCompetenciaFiltrosAvansadosPO = new LimiteCompetenciaFiltrosAvansadosPO();

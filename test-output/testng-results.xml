@@ -1,71 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
-=======
-<<<<<<< HEAD
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
-=======
-<testng-results ignored="0" total="16" passed="15" failed="1" skipped="0">
->>>>>>> refs/remotes/origin/Steven
->>>>>>> refs/remotes/origin/Steven
+<testng-results ignored="0" total="24" passed="21" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite started-at="2023-05-08T12:42:34 CST" name="Default suite" finished-at="2023-05-08T12:42:41 CST" duration-ms="7329">
-=======
-<<<<<<< HEAD
-  <suite started-at="2023-05-25T16:43:41 UTC" name="Default suite" finished-at="2023-05-25T16:46:00 UTC" duration-ms="138863">
-=======
-  <suite started-at="2023-05-24T15:16:52 CST" name="Suite" finished-at="2023-05-24T15:32:35 CST" duration-ms="942571">
->>>>>>> refs/remotes/origin/Steven
->>>>>>> refs/remotes/origin/Steven
+  <suite started-at="2023-05-31T02:52:58 UTC" name="Suite" finished-at="2023-05-31T03:01:00 UTC" duration-ms="482772">
     <groups>
     </groups>
-<<<<<<< HEAD
-    <test started-at="2023-05-08T12:42:34 CST" name="Default test" finished-at="2023-05-08T12:42:41 CST" duration-ms="7329">
-      <class name="com.timp.test.BRB.AcessarBRB">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.AcessarBRB@2d7275fc]" started-at="2023-05-08T12:42:34 CST" name="beforeClass" finished-at="2023-05-08T12:42:39 CST" duration-ms="4925" status="PASS">
-=======
-<<<<<<< HEAD
-    <test started-at="2023-05-25T16:43:41 UTC" name="Default test" finished-at="2023-05-25T16:46:00 UTC" duration-ms="138863">
-      <class name="com.timp.test.BRB.ExcluirRelatorio">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.ExcluirRelatorio@26e356f0]" started-at="2023-05-25T16:43:41 UTC" name="beforeClass" finished-at="2023-05-25T16:43:44 UTC" duration-ms="3226" status="PASS">
-=======
-    <test started-at="2023-05-24T15:16:52 CST" name="ATR - Arquivos" finished-at="2023-05-24T15:23:36 CST" duration-ms="403609">
-      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados@8f4ea7c]" started-at="2023-05-24T15:19:48 CST" name="beforeClass" finished-at="2023-05-24T15:20:05 CST" duration-ms="16815" status="PASS">
->>>>>>> refs/remotes/origin/Steven
->>>>>>> refs/remotes/origin/Steven
+    <test started-at="2023-05-31T02:52:58 UTC" name="SCANC &gt; Arquivos Importados" finished-at="2023-05-31T02:57:05 UTC" duration-ms="247264">
+      <class name="com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosNaVisualizacao">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosNaVisualizacao@290222c1]" started-at="2023-05-31T02:54:55 UTC" name="beforeClass" finished-at="2023-05-31T02:54:58 UTC" duration-ms="2225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-<<<<<<< HEAD
-        <test-method signature="brbEntrar()[pri:0, instance:com.timp.test.BRB.AcessarBRB@2d7275fc]" started-at="2023-05-08T12:42:39 CST" name="brbEntrar" finished-at="2023-05-08T12:42:41 CST" duration-ms="2372" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosNaVisualizacao@290222c1]" started-at="2023-05-31T02:54:58 UTC" name="ingresar" finished-at="2023-05-31T02:55:04 UTC" duration-ms="6508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ingresar -->
+        <test-method signature="scancEntrar()[pri:1, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosNaVisualizacao@290222c1]" started-at="2023-05-31T02:55:04 UTC" name="scancEntrar" finished-at="2023-05-31T02:55:20 UTC" duration-ms="16113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scancEntrar -->
+        <test-method signature="filtrosAvancados()[pri:2, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosNaVisualizacao@290222c1]" started-at="2023-05-31T02:55:20 UTC" name="filtrosAvancados" finished-at="2023-05-31T02:55:32 UTC" duration-ms="12168" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=113.0.5672.63)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="48"]/div[1]/div"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SALC-PC', ip: '192.168.0.22', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+System info: host: 'EC2AMAZ-8HCHO4G', ip: '10.0.0.249', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.63, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lezam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64183}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 465dc795614e039ff2f93492967ea5b7
-*** Element info: {Using=xpath, value=//*[@id="login-btn"]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60631}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a9a0c5353e6f9595b8139296fb5f8be4
+*** Element info: {Using=xpath, value=//div[@data-id="48"]/div[1]/div}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=113.0.5672.63)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="48"]/div[1]/div"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SALC-PC', ip: '192.168.0.22', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+System info: host: 'EC2AMAZ-8HCHO4G', ip: '10.0.0.249', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.63, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lezam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64183}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 465dc795614e039ff2f93492967ea5b7
-*** Element info: {Using=xpath, value=//*[@id="login-btn"]}
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60631}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a9a0c5353e6f9595b8139296fb5f8be4
+*** Element info: {Using=xpath, value=//div[@data-id="48"]/div[1]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -76,303 +56,341 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
-at com.sap.timp.pageObjectModel.ADM.LoginTC.login(LoginTC.java:86)
-at com.timp.test.BRB.AcessarBRB.brbEntrar(AcessarBRB.java:37)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at com.sap.timp.pageObjectModel.SCANC.ArquivosImportados.ArquivosImportadosNaVisualizacaoPO.filtrosAvancadosVisualizacao(ArquivosImportadosNaVisualizacaoPO.java:51)
+at com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosNaVisualizacao.filtrosAvancados(ArquivosImportadosNaVisualizacao.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-=======
-<<<<<<< HEAD
-        <test-method signature="eliminar()[pri:0, instance:com.timp.test.BRB.ExcluirRelatorio@26e356f0]" started-at="2023-05-25T16:43:44 UTC" name="eliminar" finished-at="2023-05-25T16:45:07 UTC" duration-ms="82899" status="PASS">
-=======
-        <test-method signature="filtroAvansado()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados@8f4ea7c]" started-at="2023-05-24T15:20:05 CST" name="filtroAvansado" finished-at="2023-05-24T15:21:18 CST" duration-ms="73131" status="PASS">
->>>>>>> refs/remotes/origin/Steven
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- brbEntrar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRB.AcessarBRB@2d7275fc]" started-at="2023-05-08T12:42:41 CST" name="afterClass" finished-at="2023-05-08T12:42:41 CST" duration-ms="3" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
+        </test-method> <!-- filtrosAvancados -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosNaVisualizacao@290222c1]" started-at="2023-05-31T02:55:32 UTC" name="afterClass" finished-at="2023-05-31T02:55:32 UTC" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosNaVisualizacao -->
+      <class name="com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosVisualizar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosVisualizar@6253c26]" started-at="2023-05-31T02:56:25 UTC" name="beforeClass" finished-at="2023-05-31T02:56:27 UTC" duration-ms="2452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosVisualizar@6253c26]" started-at="2023-05-31T02:56:27 UTC" name="ingresar" finished-at="2023-05-31T02:56:34 UTC" duration-ms="6747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ingresar -->
+        <test-method signature="scancEntrar()[pri:1, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosVisualizar@6253c26]" started-at="2023-05-31T02:56:34 UTC" name="scancEntrar" finished-at="2023-05-31T02:56:53 UTC" duration-ms="18846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scancEntrar -->
+        <test-method signature="filtrosAvancados()[pri:2, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosVisualizar@6253c26]" started-at="2023-05-31T02:56:53 UTC" name="filtrosAvancados" finished-at="2023-05-31T02:57:05 UTC" duration-ms="12156" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=113.0.5672.63)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="62"]/div[3]/div"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SALC-PC', ip: '192.168.0.22', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+System info: host: 'EC2AMAZ-8HCHO4G', ip: '10.0.0.249', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.63, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lezam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64183}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 465dc795614e039ff2f93492967ea5b7]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fc1037d2c4f6e17e398ef0c793405cc0
+*** Element info: {Using=xpath, value=//div[@data-id="62"]/div[3]/div}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=113.0.5672.63)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="62"]/div[3]/div"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SALC-PC', ip: '192.168.0.22', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+System info: host: 'EC2AMAZ-8HCHO4G', ip: '10.0.0.249', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.63, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\lezam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64183}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 465dc795614e039ff2f93492967ea5b7
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60676}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fc1037d2c4f6e17e398ef0c793405cc0
+*** Element info: {Using=xpath, value=//div[@data-id="62"]/div[3]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-at com.timp.test.BRB.AcessarBRB.afterClass(AcessarBRB.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
-at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:220)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:130)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sap.timp.pageObjectModel.SCANC.ArquivosImportados.ArquivosImportadosVisualizarPO.visualizar(ArquivosImportadosVisualizarPO.java:59)
+at com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosVisualizar.filtrosAvancados(ArquivosImportadosVisualizar.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-=======
-        </test-method> <!-- filtroAvansado -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados@8f4ea7c]" started-at="2023-05-24T15:21:18 CST" name="afterClass" finished-at="2023-05-24T15:21:18 CST" duration-ms="93" status="PASS">
->>>>>>> refs/remotes/origin/Steven
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtrosAvancados -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosVisualizar@6253c26]" started-at="2023-05-31T02:57:05 UTC" name="afterClass" finished-at="2023-05-31T02:57:05 UTC" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.AcessarBRB -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
-=======
-      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados -->
-      <class name="com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@35cabb2a]" started-at="2023-05-24T15:16:52 CST" name="beforeClass" finished-at="2023-05-24T15:17:05 CST" duration-ms="12471" status="PASS">
+      </class> <!-- com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosVisualizar -->
+      <class name="com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados@2c1b194a]" started-at="2023-05-31T02:52:58 UTC" name="beforeClass" finished-at="2023-05-31T02:53:01 UTC" duration-ms="2869" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="filtro()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@35cabb2a]" started-at="2023-05-24T15:17:05 CST" name="filtro" finished-at="2023-05-24T15:18:50 CST" duration-ms="105230" status="PASS">
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados@2c1b194a]" started-at="2023-05-31T02:53:01 UTC" name="ingresar" finished-at="2023-05-31T02:53:08 UTC" duration-ms="7317" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- filtro -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID@35cabb2a]" started-at="2023-05-24T15:18:50 CST" name="afterClass" finished-at="2023-05-24T15:18:50 CST" duration-ms="1" status="PASS">
+        </test-method> <!-- ingresar -->
+        <test-method signature="scancEntrar()[pri:1, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados@2c1b194a]" started-at="2023-05-31T02:53:08 UTC" name="scancEntrar" finished-at="2023-05-31T02:53:24 UTC" duration-ms="16161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scancEntrar -->
+        <test-method signature="filtrosAvancados()[pri:2, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados@2c1b194a]" started-at="2023-05-31T02:53:24 UTC" name="filtrosAvancados" finished-at="2023-05-31T02:54:20 UTC" duration-ms="55610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtrosAvancados -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados@2c1b194a]" started-at="2023-05-31T02:54:20 UTC" name="afterClass" finished-at="2023-05-31T02:54:20 UTC" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID -->
-      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados@74fe5c40]" started-at="2023-05-24T15:22:15 CST" name="beforeClass" finished-at="2023-05-24T15:22:23 CST" duration-ms="8788" status="PASS">
+      </class> <!-- com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosFiltrosAvancados -->
+      <class name="com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosInformacao">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosInformacao@1e1a0406]" started-at="2023-05-31T02:54:20 UTC" name="beforeClass" finished-at="2023-05-31T02:54:22 UTC" duration-ms="2224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="filtro()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados@74fe5c40]" started-at="2023-05-24T15:22:23 CST" name="filtro" finished-at="2023-05-24T15:23:36 CST" duration-ms="72403" status="PASS">
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosInformacao@1e1a0406]" started-at="2023-05-31T02:54:22 UTC" name="ingresar" finished-at="2023-05-31T02:54:29 UTC" duration-ms="6745" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- filtro -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados@74fe5c40]" started-at="2023-05-24T15:23:36 CST" name="afterClass" finished-at="2023-05-24T15:23:36 CST" duration-ms="91" status="PASS">
+        </test-method> <!-- ingresar -->
+        <test-method signature="scancEntrar()[pri:1, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosInformacao@1e1a0406]" started-at="2023-05-31T02:54:29 UTC" name="scancEntrar" finished-at="2023-05-31T02:54:45 UTC" duration-ms="16678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scancEntrar -->
+        <test-method signature="informacao()[pri:2, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosInformacao@1e1a0406]" started-at="2023-05-31T02:54:45 UTC" name="informacao" finished-at="2023-05-31T02:54:55 UTC" duration-ms="10170" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="48"]/div[1]/div"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EC2AMAZ-8HCHO4G', ip: '10.0.0.249', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60610}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: abaf06473cf8ad9c2ff634ecd1b19f2e
+*** Element info: {Using=xpath, value=//div[@data-id="48"]/div[1]/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@data-id="48"]/div[1]/div"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EC2AMAZ-8HCHO4G', ip: '10.0.0.249', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60610}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: abaf06473cf8ad9c2ff634ecd1b19f2e
+*** Element info: {Using=xpath, value=//div[@data-id="48"]/div[1]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sap.timp.pageObjectModel.SCANC.ArquivosImportados.ArquivosImportadosInformacaoPO.informacao(ArquivosImportadosInformacaoPO.java:59)
+at com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosInformacao.informacao(ArquivosImportadosInformacao.java:44)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- informacao -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosInformacao@1e1a0406]" started-at="2023-05-31T02:54:55 UTC" name="afterClass" finished-at="2023-05-31T02:54:55 UTC" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados -->
-      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE@223d2c72]" started-at="2023-05-24T15:18:50 CST" name="beforeClass" finished-at="2023-05-24T15:18:58 CST" duration-ms="8325" status="PASS">
+      </class> <!-- com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosInformacao -->
+      <class name="com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosPesquisa">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosPesquisa@67f639d3]" started-at="2023-05-31T02:55:32 UTC" name="beforeClass" finished-at="2023-05-31T02:55:35 UTC" duration-ms="2284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="filtro()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE@223d2c72]" started-at="2023-05-24T15:18:58 CST" name="filtro" finished-at="2023-05-24T15:19:48 CST" duration-ms="50078" status="PASS">
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosPesquisa@67f639d3]" started-at="2023-05-31T02:55:35 UTC" name="ingresar" finished-at="2023-05-31T02:55:41 UTC" duration-ms="6194" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- filtro -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE@223d2c72]" started-at="2023-05-24T15:19:48 CST" name="afterClass" finished-at="2023-05-24T15:19:48 CST" duration-ms="93" status="PASS">
+        </test-method> <!-- ingresar -->
+        <test-method signature="scancEntrar()[pri:1, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosPesquisa@67f639d3]" started-at="2023-05-31T02:55:41 UTC" name="scancEntrar" finished-at="2023-05-31T02:55:57 UTC" duration-ms="16114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scancEntrar -->
+        <test-method signature="pesquisar()[pri:2, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosPesquisa@67f639d3]" started-at="2023-05-31T02:55:57 UTC" name="pesquisar" finished-at="2023-05-31T02:56:25 UTC" duration-ms="27527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pesquisar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosPesquisa@67f639d3]" started-at="2023-05-31T02:56:25 UTC" name="afterClass" finished-at="2023-05-31T02:56:25 UTC" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE -->
-      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE@436813f3]" started-at="2023-05-24T15:21:18 CST" name="beforeClass" finished-at="2023-05-24T15:21:26 CST" duration-ms="7272" status="PASS">
+      </class> <!-- com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosPesquisa -->
+    </test> <!-- SCANC > Arquivos Importados -->
+    <test started-at="2023-05-31T02:57:05 UTC" name="SCANC &gt; Oficios Extemporaneos" finished-at="2023-05-31T03:01:00 UTC" duration-ms="235447">
+      <class name="com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados@4d154ccd]" started-at="2023-05-31T02:58:51 UTC" name="beforeClass" finished-at="2023-05-31T02:58:53 UTC" duration-ms="2169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="filtro()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE@436813f3]" started-at="2023-05-24T15:21:26 CST" name="filtro" finished-at="2023-05-24T15:22:14 CST" duration-ms="48625" status="PASS">
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados@4d154ccd]" started-at="2023-05-31T02:58:53 UTC" name="ingresar" finished-at="2023-05-31T02:59:00 UTC" duration-ms="6010" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- filtro -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE@436813f3]" started-at="2023-05-24T15:22:14 CST" name="afterClass" finished-at="2023-05-24T15:22:15 CST" duration-ms="156" status="PASS">
+        </test-method> <!-- ingresar -->
+        <test-method signature="scancEntrar()[pri:1, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados@4d154ccd]" started-at="2023-05-31T02:59:00 UTC" name="scancEntrar" finished-at="2023-05-31T02:59:16 UTC" duration-ms="16118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scancEntrar -->
+        <test-method signature="filtrosAvancados()[pri:2, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados@4d154ccd]" started-at="2023-05-31T02:59:16 UTC" name="filtrosAvancados" finished-at="2023-05-31T02:59:44 UTC" duration-ms="28664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtrosAvancados -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados@4d154ccd]" started-at="2023-05-31T02:59:44 UTC" name="afterClass" finished-at="2023-05-31T02:59:44 UTC" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE -->
-    </test> <!-- ATR - Arquivos -->
-    <test started-at="2023-05-24T15:23:36 CST" name="ATR-ESTRUCTURAS-ESTRUCTURAS" finished-at="2023-05-24T15:25:52 CST" duration-ms="135753">
-      <class name="com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc@128d2484]" started-at="2023-05-24T15:23:36 CST" name="beforeClass" finished-at="2023-05-24T15:23:48 CST" duration-ms="12170" status="PASS">
+      </class> <!-- com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosFiltrosAvancados -->
+      <class name="com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosExcluir">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosExcluir@229c6181]" started-at="2023-05-31T02:59:44 UTC" name="beforeClass" finished-at="2023-05-31T02:59:46 UTC" duration-ms="2201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="Detalles()[pri:0, instance:com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc@128d2484]" started-at="2023-05-24T15:23:48 CST" name="Detalles" finished-at="2023-05-24T15:24:38 CST" duration-ms="50210" status="PASS">
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosExcluir@229c6181]" started-at="2023-05-31T02:59:46 UTC" name="ingresar" finished-at="2023-05-31T02:59:54 UTC" duration-ms="7171" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Detalles -->
-        <test-method signature="visualizarFiltros()[pri:0, instance:com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc@128d2484]" started-at="2023-05-24T15:24:38 CST" name="visualizarFiltros" finished-at="2023-05-24T15:25:09 CST" duration-ms="30332" status="PASS">
+        </test-method> <!-- ingresar -->
+        <test-method signature="scancEntrar()[pri:1, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosExcluir@229c6181]" started-at="2023-05-31T02:59:54 UTC" name="scancEntrar" finished-at="2023-05-31T03:00:10 UTC" duration-ms="16125" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- visualizarFiltros -->
-        <test-method signature="visualizar()[pri:1, instance:com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc@128d2484]" started-at="2023-05-24T15:25:09 CST" name="visualizar" finished-at="2023-05-24T15:25:52 CST" duration-ms="43033" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- visualizar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc@128d2484]" started-at="2023-05-24T15:25:52 CST" name="afterClass" finished-at="2023-05-24T15:25:52 CST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc -->
-    </test> <!-- ATR-ESTRUCTURAS-ESTRUCTURAS -->
-    <test started-at="2023-05-24T15:25:52 CST" name="ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS" finished-at="2023-05-24T15:32:35 CST" duration-ms="403152">
-      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:25:52 CST" name="beforeClass" finished-at="2023-05-24T15:25:58 CST" duration-ms="6622" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="criar()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:25:58 CST" name="criar" finished-at="2023-05-24T15:27:25 CST" duration-ms="86883" status="PASS">
+        </test-method> <!-- scancEntrar -->
+        <test-method signature="criar()[pri:2, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosExcluir@229c6181]" started-at="2023-05-31T03:00:10 UTC" name="criar" finished-at="2023-05-31T03:01:00 UTC" duration-ms="50494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criar -->
-        <test-method signature="Editar()[pri:1, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:27:25 CST" name="Editar" finished-at="2023-05-24T15:28:57 CST" duration-ms="92299" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Editar -->
-        <test-method signature="detalhes()[pri:2, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:28:57 CST" name="detalhes" finished-at="2023-05-24T15:29:27 CST" duration-ms="29790" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- detalhes -->
-        <test-method signature="visualizar()[pri:3, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:29:27 CST" name="visualizar" finished-at="2023-05-24T15:30:05 CST" duration-ms="37427" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- visualizar -->
-        <test-method signature="filtro()[pri:4, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:30:05 CST" name="filtro" finished-at="2023-05-24T15:30:14 CST" duration-ms="9204" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Os resultados não são acorde aos filtros expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Os resultados não são acorde aos filtros expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1413)
-at org.testng.Assert.assertTrue(Assert.java:56)
-at com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc.filtro(GrupoDeEstruturasTodasFunc.java:91)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
->>>>>>> refs/remotes/origin/Steven
-          <reporter-output>
-          </reporter-output>
-<<<<<<< HEAD
-        </test-method> <!-- eliminar -->
-        <test-method signature="eliminarLixeira()[pri:0, instance:com.timp.test.BRB.ExcluirRelatorio@26e356f0]" started-at="2023-05-25T16:45:07 UTC" name="eliminarLixeira" finished-at="2023-05-25T16:46:00 UTC" depends-on-methods="com.timp.test.BRB.ExcluirRelatorio.eliminar" duration-ms="52690" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- eliminarLixeira -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRB.ExcluirRelatorio@26e356f0]" started-at="2023-05-25T16:46:00 UTC" name="afterClass" finished-at="2023-05-25T16:46:00 UTC" duration-ms="0" status="PASS">
-=======
-        </test-method> <!-- filtro -->
-        <test-method signature="excluir()[pri:5, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:30:14 CST" name="excluir" finished-at="2023-05-24T15:30:44 CST" duration-ms="30179" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluir -->
-        <test-method signature="criarMassa()[pri:6, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:30:44 CST" name="criarMassa" finished-at="2023-05-24T15:31:54 CST" duration-ms="70186" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- criarMassa -->
-        <test-method signature="excluirMassa()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:31:54 CST" name="excluirMassa" finished-at="2023-05-24T15:32:35 CST" depends-on-methods="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc.criarMassa" duration-ms="40469" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excluirMassa -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc@5656be13]" started-at="2023-05-24T15:32:35 CST" name="afterClass" finished-at="2023-05-24T15:32:35 CST" duration-ms="82" status="PASS">
->>>>>>> refs/remotes/origin/Steven
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosExcluir@229c6181]" started-at="2023-05-31T03:01:00 UTC" name="afterClass" finished-at="2023-05-31T03:01:00 UTC" duration-ms="100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BRB.ExcluirRelatorio -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
-=======
-      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc -->
-    </test> <!-- ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS -->
+      </class> <!-- com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosExcluir -->
+      <class name="com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosCriar">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosCriar@65c7a252]" started-at="2023-05-31T02:57:05 UTC" name="beforeClass" finished-at="2023-05-31T02:57:07 UTC" duration-ms="2247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="ingresar()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosCriar@65c7a252]" started-at="2023-05-31T02:57:07 UTC" name="ingresar" finished-at="2023-05-31T02:57:13 UTC" duration-ms="6189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ingresar -->
+        <test-method signature="scancEntrar()[pri:1, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosCriar@65c7a252]" started-at="2023-05-31T02:57:13 UTC" name="scancEntrar" finished-at="2023-05-31T02:57:30 UTC" duration-ms="16226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scancEntrar -->
+        <test-method signature="criar()[pri:2, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosCriar@65c7a252]" started-at="2023-05-31T02:57:30 UTC" name="criar" finished-at="2023-05-31T02:58:51 UTC" duration-ms="81720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criar -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosCriar@65c7a252]" started-at="2023-05-31T02:58:51 UTC" name="afterClass" finished-at="2023-05-31T02:58:51 UTC" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.timp.test.SCANC.OficiosExtemporaneos.OficiosExtemporaneosCriar -->
+    </test> <!-- SCANC > Oficios Extemporaneos -->
   </suite> <!-- Suite -->
->>>>>>> refs/remotes/origin/Steven
->>>>>>> refs/remotes/origin/Steven
 </testng-results>

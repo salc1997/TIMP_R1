@@ -6,12 +6,12 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.SCANC.AcessarSCANCPO;
 import com.sap.timp.pageObjectModel.SCANC.RelatoriosRefineriaGerados.RRGConfiguracaoDeAjusteCriarComDiaEspecificoPO;
 
-public class RRGConfiguracaoDeAjusteCriarComDiaEspecifico extends TestBaseFernando {
+public class RRGConfiguracaoDeAjusteCriarComDiaEspecifico extends TestBaseSteven {
 	//TSTNG-443
 	LoginTC loginTC;
 	AcessarSCANCPO acessarSCANCPO;
@@ -19,7 +19,7 @@ public class RRGConfiguracaoDeAjusteCriarComDiaEspecifico extends TestBaseFernan
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarSCANCPO = new AcessarSCANCPO();
 		rRGConfiguracaoDeAjusteCriarComDiaEspecificoPO = new RRGConfiguracaoDeAjusteCriarComDiaEspecificoPO();

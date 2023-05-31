@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 
-public class RRGConfiguracaoDeAjusteCriarComDiaAleatorioPO extends TestBaseFernando{
+public class RRGConfiguracaoDeAjusteCriarComDiaAleatorioPO extends TestBaseSteven{
 	@FindBy(xpath = "//span[text()=\"Relatórios Refinaria Gerados\"]")
 	public WebElement relatoriosRefineriaGerados;
 	

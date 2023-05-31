@@ -4,7 +4,7 @@ package com.timp.test.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoT
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.TCC.AcessarTCCPO;
 import com.sap.timp.pageObjectModel.TCC.GestaoDeCreditoTributarioPISCONFINS.ApuracaoDeCreditoTributarioPIS.ConfiguracaoEExecucao.RegistroM105.RegistroM105CriarPO;
@@ -15,14 +15,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class RegistroM105Criar extends TestBaseMassiel {
+public class RegistroM105Criar extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	RegistroM105CriarPO registroM105CriarPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acessarTCCPO = new AcessarTCCPO();
 		registroM105CriarPO = new RegistroM105CriarPO();
@@ -30,7 +30,7 @@ public class RegistroM105Criar extends TestBaseMassiel {
 
 	@AfterClass
 	public void afterClass() {
-	//	driver.close();
+		driver.close();
 	}
 
 	@Test()

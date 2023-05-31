@@ -2,7 +2,7 @@ package com.timp.test.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.EventosESocial.S2210ComunicaçãoDeAcidenteDeTrabalho.S2210ComunicaçãoDeAcidenteDeTrabalhoExcluirPO;
@@ -13,14 +13,14 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class S2210ComunicaçãoDeAcidenteDeTrabalhoExcluir extends TestBaseFernando{
+public class S2210ComunicaçãoDeAcidenteDeTrabalhoExcluir extends TestBaseSteven{
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
 	S2210ComunicaçãoDeAcidenteDeTrabalhoExcluirPO s2210ComunicaçãoDeAcidenteDeTrabalhoExcluirPO;
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		accesarMDRPO = new AcessarMDRPO();
 		s2210ComunicaçãoDeAcidenteDeTrabalhoExcluirPO = new S2210ComunicaçãoDeAcidenteDeTrabalhoExcluirPO();

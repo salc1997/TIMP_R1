@@ -3,10 +3,9 @@ package com.sap.timp.pageObjectModel.TAA;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import com.sap.timp.base.TestBaseSteven;
 
-import com.sap.timp.base.TestBaseMassiel;
-
-public class AcessarTAAPO extends TestBaseMassiel{
+public class AcessarTAAPO extends TestBaseSteven{
 	@FindBy(xpath = "//div[text()=\"TAA\"]")
 	public WebElement taa;
 	

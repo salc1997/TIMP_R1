@@ -6,10 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import com.sap.timp.base.TestBaseSteven;
 
-import com.sap.timp.base.TestBaseMassiel;
-
-public class CadastroCondiçaoExcluirenMasasPO extends TestBaseMassiel{
+public class CadastroCondiçaoExcluirenMasasPO extends TestBaseSteven{
 
 
 	@FindBy(xpath = "//span[text()=\"Cadastro da Condição\"]")

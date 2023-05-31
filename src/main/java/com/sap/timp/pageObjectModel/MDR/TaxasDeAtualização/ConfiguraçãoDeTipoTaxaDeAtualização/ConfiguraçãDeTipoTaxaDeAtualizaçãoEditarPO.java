@@ -5,9 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
 
-public class ConfiguraçãDeTipoTaxaDeAtualizaçãoEditarPO extends TestBaseFernando{
+import com.sap.timp.base.TestBaseSteven;
+
+public class ConfiguraçãDeTipoTaxaDeAtualizaçãoEditarPO extends TestBaseSteven{
 	String URL = driver.getCurrentUrl();
 	
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-updateRates\"]")

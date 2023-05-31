@@ -2,7 +2,7 @@ package com.timp.test.MDR.ValorAdicionado.Confrontacao;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.ValorAdicionado.Confrontacao.ConfrontacaoVisualizarPO;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 import org.testng.annotations.AfterClass;
 
-public class ConfrontacaoVisualizar extends TestBaseMassiel {
+public class ConfrontacaoVisualizar extends TestBaseSteven {
 
 	LoginTC loginTC;
 	AcessarMDRPO accesarMDRPO;
@@ -23,7 +23,7 @@ public class ConfrontacaoVisualizar extends TestBaseMassiel {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationM();
+		driver = initialization();
 		accesarMDRPO = new AcessarMDRPO();
 		loginTC = new LoginTC();
 		confrontacaoVisualizarPO = new ConfrontacaoVisualizarPO();

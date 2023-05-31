@@ -2,7 +2,7 @@ package com.timp.test.MDR.NotasDeclararAnexoIIIDIAAM;
 
 import org.testng.annotations.Test;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.MDR.AcessarMDRPO;
 import com.sap.timp.pageObjectModel.MDR.NotasDeclararAnexoIIIDIAAM.NotasDeclararAnexoIIIExcluirPO;
@@ -13,7 +13,7 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.AfterClass;
 
-public class NotasDeclararAnexoIIIExcluir extends TestBaseFernando {
+public class NotasDeclararAnexoIIIExcluir extends TestBaseSteven {
 	LoginTC loginTC;
 	AcessarMDRPO acesarMDRPO;
 	NotasDeclararAnexoIIIExcluirPO notasDeclararAnexoIIIExcluirPO;
@@ -24,7 +24,7 @@ public class NotasDeclararAnexoIIIExcluir extends TestBaseFernando {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = initializationF();
+		driver = initialization();
 		loginTC = new LoginTC();
 		acesarMDRPO = new AcessarMDRPO();
 		notasDeclararAnexoIIIExcluirPO = new NotasDeclararAnexoIIIExcluirPO();

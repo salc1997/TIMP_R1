@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AtividadeExcluirMassaPO extends TestBaseFernando{
+public class AtividadeExcluirMassaPO extends TestBaseSteven{
 	@FindBy(xpath = "//li[@tabindex=\"0\"]/div/span[text()=\"Atividades Fiscais\"]")
 	public WebElement atividades1;
 

@@ -5,9 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
 
-public class TabelaServicosEditarPO extends TestBaseMassiel{
+import com.sap.timp.base.TestBaseSteven;
+
+public class TabelaServicosEditarPO extends TestBaseSteven{
 
 	@FindBy(xpath = "//span[text()=\"Tabelas Complementares para Obrigações Acessórias\"]")
 	public WebElement obrigacoes;

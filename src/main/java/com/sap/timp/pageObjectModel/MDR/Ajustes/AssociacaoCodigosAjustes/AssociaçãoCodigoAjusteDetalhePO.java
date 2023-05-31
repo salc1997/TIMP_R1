@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseFernando;
+import com.sap.timp.base.TestBaseSteven;
 
-public class AssociaçãoCodigoAjusteDetalhePO extends TestBaseFernando{
+public class AssociaçãoCodigoAjusteDetalhePO extends TestBaseSteven{
 String URL = driver.getCurrentUrl();
 	
 	@FindBy(xpath = "//div[@class=\"accordion-container\"]/ul/li/div/span[text()=\"Ajustes\"]")

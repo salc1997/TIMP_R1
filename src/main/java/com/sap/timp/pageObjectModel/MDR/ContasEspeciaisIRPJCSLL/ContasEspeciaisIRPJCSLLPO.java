@@ -7,9 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
+import com.sap.timp.base.TestBaseSteven;
 
-public class ContasEspeciaisIRPJCSLLPO extends TestBaseMassiel{
+public class ContasEspeciaisIRPJCSLLPO extends TestBaseSteven{
 	
 	
 	@FindBy(xpath = "//span[text()=\"Contas Especiais IRPJ/CSLL\"]")

@@ -7,9 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.sap.timp.base.TestBaseMassiel;
 
-public class PacotesCriarPO extends TestBaseMassiel{
+import com.sap.timp.base.TestBaseSteven;
+
+public class PacotesCriarPO extends TestBaseSteven{
 	
 	@FindBy(xpath = "//div[@id=\"baseTabs-wrapper\"]/div/div[2]")
 	public WebElement flecha;

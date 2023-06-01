@@ -63,7 +63,7 @@ public class ConfiguracoesFavoritosPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("IdConfPG");
 		System.out.println("ID Registro: " + idRegistro);
 		sleep(1000);
 		

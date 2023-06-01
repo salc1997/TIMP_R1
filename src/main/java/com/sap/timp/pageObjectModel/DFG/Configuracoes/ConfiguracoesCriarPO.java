@@ -182,7 +182,7 @@ public class ConfiguracoesCriarPO extends TestBase{
 		
 		String idLeiaute = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[5]/div")).getText();
 
-		System.out.println(idObter1() + " id Leiaute");
+		System.out.println(idLeiaute+ " id Leiaute");
 		
 		leiautePublico.click();
 		sleep(3000);
@@ -302,7 +302,7 @@ public class ConfiguracoesCriarPO extends TestBase{
 		
 		String idLeiauteT = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[5]/div")).getText();
 		System.out.println("Id nuevo: " +idLeiauteT);
-		idInserir3(idLeiauteT);
+		idInserir("idLeiauteTConf",idLeiauteT);
 		String versaoT = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[6]/div")).getText();
 		String nomeT = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[7]/div")).getText();
 		String tipoTE = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[9]/div")).getText();
@@ -324,7 +324,7 @@ public class ConfiguracoesCriarPO extends TestBase{
 		System.out.println(sucesso);
 		
 		System.out.println("Id Leiaute: " + idLeiauteT );
-		idInserir1(idLeiauteT);
+	
 		System.out.println("Versão: " + versaoT.equals("1.0"));
 		System.out.println("Nome: " + nomeT.equals("Teste Automatizado Massiel"));
 		System.out.println("Tipo: " + tipoTE.equals(tipoT));
@@ -372,7 +372,7 @@ public class ConfiguracoesCriarPO extends TestBase{
 		tipo.click();
 		sleep(1000);
 		
-		String idRegistro = idObter3();
+		String idRegistro = idObter("idLeiauteTConf");
 		
 		actionsMoveToElement("//li[contains(text(),\""+idRegistro+"\")]");
 		sleep(2000);
@@ -453,7 +453,7 @@ public class ConfiguracoesCriarPO extends TestBase{
 		rows = driver.findElements(By.xpath("//div[@data-id and @class=\"tr\"]")).size();
 		
 		String idConfiguracaoTC = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[5]/div")).getText();
-		idInserir2(idConfiguracaoTC);
+		idInserir("IdConfPG",idConfiguracaoTC);
 		String nomeC = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[6]/div")).getText();
 		String empresaC = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[9]/div/li")).getText();
 		String ufC = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[10]/div/li")).getText();

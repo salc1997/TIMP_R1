@@ -79,7 +79,7 @@ public class ConfiguracoesVisualizarPO extends TestBase{
 		sleep(2000);
 		
 		System.out.println("AQUI");
-		String id = idObter2();
+		String id = idObter("IdConfPG");
 		System.out.println("Id Registro: " + id);
 		System.out.println("");
 		

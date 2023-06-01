@@ -76,7 +76,7 @@ public class ConfiguracoesEditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String id = idObter2();
+		String id = idObter("IdConfPG");
 		
 		/*filtrosAvanzados.click();
 		sleep(3000);*/

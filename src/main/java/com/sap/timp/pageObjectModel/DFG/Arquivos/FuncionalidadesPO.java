@@ -585,7 +585,7 @@ public class FuncionalidadesPO extends TestBase{
 		
 		if(id2 > id1) {
 			sucesso = true;
-			idInserir4(idUltimoRegistro);
+			idInserir("ConfiguracionNueva",idUltimoRegistro);
 			System.out.println("Registro creado...");
 		}else {
 			System.out.println("No se creo el registro...");
@@ -614,7 +614,7 @@ public class FuncionalidadesPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("ConfiguracionNueva");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement acoe = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Executar\"]"));
 
@@ -717,7 +717,7 @@ public class FuncionalidadesPO extends TestBase{
 		
 		if(convertToInt(idUltimoRegistroNuevoArquivo) > convertToInt(this.idRegistroArquivo)) {
 			sucesso = true;
-			idInserir1(idUltimoRegistroNuevoArquivo);
+			idInserir("UltimoArquivoco",idUltimoRegistroNuevoArquivo);
 			System.out.println("");
 			System.out.println("Registro de arquivo confirmado...");
 		}else {
@@ -744,7 +744,7 @@ public class FuncionalidadesPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("UltimoArquivoco");
 		System.out.println("");
 		System.out.println("ID Registro Arquivo: " + idRegistro);
 		
@@ -783,7 +783,7 @@ public class FuncionalidadesPO extends TestBase{
 		
 		if(idRegistroPublico.equals(idRegistro)) {
 			sucesso = true;
-			idInserir2(idRegistroPublico);
+			idInserir("IdPublicoPrivado",idRegistroPublico);
 			System.out.println("");
 			System.out.println("Registro publico creado...");
 		}else {
@@ -815,7 +815,7 @@ public class FuncionalidadesPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("IdPublicoPrivado");
 		System.out.println("---");
 		System.out.println("Id Registro Arquivo publico: " + idRegistro);
 		
@@ -864,7 +864,7 @@ public class FuncionalidadesPO extends TestBase{
 		
 		if(rows > 0) {
 			sucesso = true;
-			idInserir3(idRegistro);
+			idInserir("IdFavorito",idRegistro);
 			System.out.println("");
 			System.out.println("Pesquisar favoritos satisfactoriamente...");
 		}else {
@@ -876,7 +876,7 @@ public class FuncionalidadesPO extends TestBase{
 	}
 	
 	public ArrayList<Boolean> informacao() {		
-		String idRegistro = idObter3();		
+		String idRegistro = idObter("IdFavorito");		
 		System.out.println("ID REGISTRO: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement informacao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Informação\"]"));
@@ -913,7 +913,7 @@ public class FuncionalidadesPO extends TestBase{
 	}
 	
 	public boolean oficializarArquivo() {
-		String idRegistro = idObter3();		
+		String idRegistro = idObter("IdFavorito");		
 		System.out.println("ID REGISTRO: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
@@ -946,7 +946,7 @@ public class FuncionalidadesPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(8000);
-		//String idRegistro1 = idObter4();	
+		//String idRegistro1 = idObter("ConfiguracionNueva");	
 		WebElement status = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[6]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\" and @tabindex=\"0\"]"));
 		
 		boolean sucesso = false;
@@ -985,7 +985,7 @@ public class FuncionalidadesPO extends TestBase{
 		sleep(2000);
 		
 		
-		String idRegistro = idObter4();	
+		String idRegistro = idObter("ConfiguracionNueva");	
 		
 		btnUltimaPagina.click();
 		sleep(2000);

@@ -45,7 +45,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritosPO extends TestBa
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("PGIdleiaute");
 		sleep(1000);
 		
 		pesquisar.click();

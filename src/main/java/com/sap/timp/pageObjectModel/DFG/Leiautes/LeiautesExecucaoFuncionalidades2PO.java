@@ -950,7 +950,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		System.out.println("Último Id após da criação do registro (Raiz): " + ultimoIdDC);
 		
 		
-		idInserir2(ultimoIdDC);
+		idInserir("CriarDFGF2",ultimoIdDC);
 
 		int ultimoIdDCD = Integer.valueOf(ultimoIdDC);
 		int ultimoIdACD = Integer.valueOf(ultimoIdAC);
@@ -964,9 +964,9 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		System.out.println("Verificaçãõ da criação do registro: " +sucesso.get(0));
 		
-		String versao = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter2()+"\"]/div[6]/div")).getText();
-		String nome = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter2()+"\"]/div[7]/div")).getText();;
-		String tipoS = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter2()+"\"]/div[9]/div")).getText();;
+		String versao = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter("CriarDFGF2")+"\"]/div[6]/div")).getText();
+		String nome = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter("CriarDFGF2")+"\"]/div[7]/div")).getText();;
+		String tipoS = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter("CriarDFGF2")+"\"]/div[9]/div")).getText();;
 		
 		System.out.println("----------------------Verficação das informações do registro ---------------------------");
 		System.out.println("Versão: " +versao);
@@ -1029,7 +1029,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		String ultimoIdAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Último Id antes da criação do registro (Regra Negocio): " + ultimoIdAC);
-		idInserir1(ultimoIdAC);
+		idInserir("UltimoBRE",ultimoIdAC);
 		
 		novo.click();
 		sleep(3000);
@@ -1089,7 +1089,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		sleep(9000);
 		leiauteR.click();
 		sleep(1000);
-		WebElement leiauteO = driver.findElement(By.xpath("//li[contains(text(),\""+idObter2()+"\")]"));
+		WebElement leiauteO = driver.findElement(By.xpath("//li[contains(text(),\""+idObter("CriarDFGF2")+"\")]"));
 		leiauteO.click();
 		sleep(2000);
 		
@@ -1174,7 +1174,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		String ultimoIdDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Último Id após da criação do registro (BRE): " + ultimoIdDC);
-		idInserir3(ultimoIdDC);
+		idInserir("BRENuevo",ultimoIdDC);
 		
 		int ultimoIdDCD = Integer.valueOf(ultimoIdDC);
 		int ultimoIdACD = Integer.valueOf(ultimoIdAC);
@@ -1186,9 +1186,9 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		System.out.println("Verificaçãõ da criação do registro BRE: " +sucesso.get(0));
 		
-		String titulo = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter3()+"\"]/div[4]/div")).getText();
-		String tipoRegra = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter3()+"\"]/div[6]/div")).getText();;
-		String tributoS = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter3()+"\"]/div[7]/div")).getText();;
+		String titulo = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter("BRENuevo")+"\"]/div[4]/div")).getText();
+		String tipoRegra = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter("BRENuevo")+"\"]/div[6]/div")).getText();;
+		String tributoS = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter("BRENuevo")+"\"]/div[7]/div")).getText();;
 		
 		System.out.println("----------------------Verficação das informações do registro ---------------------------");
 		System.out.println("Título: " +titulo);
@@ -1211,7 +1211,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 	
 	public void DFGEditar() {
 		
-		String idLeiaute = idObter2();
+		String idLeiaute = idObter("CriarDFGF2");
 		home.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1655,7 +1655,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		leiauteE.click();
 		sleep(1000);
-		WebElement leiauteO = driver.findElement(By.xpath("//li[contains(text(),\""+idObter2()+"\")]"));
+		WebElement leiauteO = driver.findElement(By.xpath("//li[contains(text(),\""+idObter("CriarDFGF2")+"\")]"));
 		leiauteO.click();
 		sleep(1000);
 		
@@ -1720,7 +1720,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		
 		String ultimoIdDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println("Id após da criação (DFG Configuracoes): "+ ultimoIdDC);
-		idInserir4(ultimoIdDC);
+		idInserir("ConfiF2",ultimoIdDC);
 		
 		int ultimoIdDCD = Integer.valueOf(ultimoIdDC);
 		int ultimoIdACD = Integer.valueOf(ultimoIdConfiguracoesAC);
@@ -1733,12 +1733,12 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		System.out.println("Verificaçãõ da criação do registro BRE: " +sucesso.get(0));
 		
 		System.out.println("---------------------Verificações das Informações---------------------------------");
-		String nome = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter4()+"\"]/div[6]/div")).getText();
-		String empresa = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter4()+"\"]/div[9]/div/li")).getText();
-		String uf = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter4()+"\"]/div[10]/div/li")).getText();
-		String filial = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter4()+"\"]/div[11]/div/li")).getText();
-		String tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter4()+"\"]/div[12]/div/li")).getText();
-		String dataVigencia = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter4()+"\"]/div[13]/div")).getText();
+		String nome = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ConfiF2")+"\"]/div[6]/div")).getText();
+		String empresa = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ConfiF2")+"\"]/div[9]/div/li")).getText();
+		String uf = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ConfiF2")+"\"]/div[10]/div/li")).getText();
+		String filial = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ConfiF2")+"\"]/div[11]/div/li")).getText();
+		String tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ConfiF2")+"\"]/div[12]/div/li")).getText();
+		String dataVigencia = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ConfiF2")+"\"]/div[13]/div")).getText();
 		
 		System.out.println(nome);
 		System.out.println(empresa);
@@ -1764,7 +1764,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 	
 	public void execucao() {
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("ConfiF2");
 
 		/*
 		configuracoes.click();
@@ -2131,7 +2131,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 	
 	public ArrayList<Boolean> excluirDFGConf() {
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("ConfiF2");
 		
 		biblioteca.click();
 		
@@ -2246,7 +2246,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 	
 	public ArrayList<Boolean> excluirDFG() {
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("CriarDFGF2");
 		
 		
 		leiauteAba.click();
@@ -2260,7 +2260,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys(idObter2());
+		pesquisar.sendKeys(idObter("CriarDFGF2"));
 		sleep(1000);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
@@ -2303,7 +2303,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		sleep(2000);
 		
 		pesquisar.clear();
-		pesquisar.sendKeys(idObter2());
+		pesquisar.sendKeys(idObter("CriarDFGF2"));
 		sleep(1000);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
@@ -2333,7 +2333,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		sleep(2000);
 		
 		pesquisar.clear();
-		pesquisar.sendKeys(idObter2());
+		pesquisar.sendKeys(idObter("CriarDFGF2"));
 		sleep(1000);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
@@ -2358,7 +2358,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 	
 	public ArrayList<Boolean> excluirBRE() {
 		
-		String idRegistro = idObter3();
+		String idRegistro = idObter("BRENuevo");
 		home.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -2376,7 +2376,7 @@ public class LeiautesExecucaoFuncionalidades2PO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys(idObter3());
+		pesquisar.sendKeys(idObter("BRENuevo"));
 		sleep(1000);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);

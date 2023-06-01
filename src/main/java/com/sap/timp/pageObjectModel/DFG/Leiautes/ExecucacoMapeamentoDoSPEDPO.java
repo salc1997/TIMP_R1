@@ -644,7 +644,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBase  {
 		String nomeT = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[7]/div")).getText();
 		String tipoTE = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[9]/div")).getText();
 		
-		idInserir1(idLeiauteT);
+		idInserir("IDLeiauteMapamento",idLeiauteT);
 		System.out.println("ultimo id de Leiaute obter1:"+ idLeiauteT);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -726,8 +726,8 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBase  {
 		leiaute.click();
 		sleep(2000);
 
-		//WebElement opcLeiauteObter = driver.findElement(By.xpath("//li[@id="+idObter1()+"]"));
-		WebElement opcLeiauteObter = driver.findElement(By.xpath("//li[contains(text(),\"ID"+idObter1()+"\")]"));
+		//WebElement opcLeiauteObter = driver.findElement(By.xpath("//li[@id="+idObter("IDLeiauteMapamento")+"]"));
+		WebElement opcLeiauteObter = driver.findElement(By.xpath("//li[contains(text(),\"ID"+idObter("IDLeiauteMapamento")+"\")]"));
 		
 		System.out.println("Opcion Leiaute: "+ opcLeiauteObter);		
 		
@@ -841,7 +841,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBase  {
 		
 		
 		
-		idInserir2(idSPEDT);
+		idInserir("IdSPEDMapamento",idSPEDT);
 		System.out.println("ultimo id de Leiaute obter2:"+ idSPEDT);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -898,7 +898,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBase  {
 	
 		sleep(2000);
 		
-		String idSPED = idObter2();
+		String idSPED = idObter("IdSPEDMapamento");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idSPED+"\"]/div[1]/div"));
 		WebElement executar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idSPED+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Executar\"]"));
@@ -1070,7 +1070,7 @@ public class ExecucacoMapeamentoDoSPEDPO extends TestBase  {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idLeiaute2= idObter1();
+		String idLeiaute2= idObter("IDLeiauteMapamento");
 		pesquisar.sendKeys(idLeiaute2);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);

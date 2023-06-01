@@ -103,7 +103,7 @@ public class ExecucoesExecucoesPublicasVisualizarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro1 =idObter1();
+		String idRegistro1 =idObter("KpisCriar");
 
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro1+"\"]/div[1]/div"));
@@ -147,7 +147,7 @@ public class ExecucoesExecucoesPublicasVisualizarPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter2();
+		String idRegistro = idObter("KpisExecutarAtualizarJustificativaGravar");
 	
 		System.out.println("Ultimo registro: " + idRegistro);
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

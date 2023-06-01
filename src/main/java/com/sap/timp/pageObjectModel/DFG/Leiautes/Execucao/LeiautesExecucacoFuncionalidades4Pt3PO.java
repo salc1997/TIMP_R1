@@ -86,7 +86,7 @@ public class LeiautesExecucacoFuncionalidades4Pt3PO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(4000);
 
-		String idRegistro = idObter1();
+		String idRegistro = idObter("LeiateF4");
 		//String idRegistro = "1879";
 		System.out.println("");
 		System.out.println("ID Registro: " + idRegistro);

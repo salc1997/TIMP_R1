@@ -119,7 +119,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO extends TestBase{
 		
 		String idLeiaute = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[5]/div")).getText();
 
-		System.out.println(idObter1() + " id Leiaute");
+		System.out.println(idLeiaute + " id Leiaute");
 		
 		leiautePublico.click();
 		sleep(3000);
@@ -255,7 +255,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarPO extends TestBase{
 		
 		rows = driver.findElements(By.xpath("//div[@data-id and @class=\"tr\"][1]")).size();
 		String idBusqueda = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[5]/div")).getText();
-		idInserir1(idBusqueda);
+		idInserir("PGIdleiaute",idBusqueda);
 		sucesso.add(idBusqueda.equals(idLeiauteT));
 		
 		System.out.println(sucesso);

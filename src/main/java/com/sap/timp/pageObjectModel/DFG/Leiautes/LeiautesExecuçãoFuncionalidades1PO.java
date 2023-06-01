@@ -1464,7 +1464,7 @@ public class LeiautesExecuçãoFuncionalidades1PO extends TestBase{
 		
 		String ultimoIdDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println("Último Id após da criação do registro Leiautes: " + ultimoIdDC);
-		idInserir2(ultimoIdDC);
+		idInserir("IdLeiateEF",ultimoIdDC);
 		
 		String ultimoIdAC = idObter("ultimoIdAC");
 				

@@ -329,7 +329,7 @@ public class LeiautesExecuçãoFuncionalidades3PO extends TestBase{
 
 		String id = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println("Id Antes en Raiz: " + id);
-		idInserir1(id);
+		idInserir("IdDfg",id);
 	}
 	
 	public ArrayList<Boolean>  Criar() {

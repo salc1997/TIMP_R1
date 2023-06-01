@@ -76,7 +76,7 @@ public class ParametrosGeraisFiltroAvancadosPO extends TestBase{
 	}
 	
 	
-	String idRegistro = idObter1();
+	String idRegistro = idObter("PGIdleiaute");
 	String textId = idRegistro;
 
 //	private String textnome;
@@ -102,7 +102,7 @@ public class ParametrosGeraisFiltroAvancadosPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter1();
+		String idRegistro = idObter("PGIdleiaute");
 		System.out.println(idRegistro);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]"));
@@ -204,7 +204,7 @@ public class ParametrosGeraisFiltroAvancadosPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter1();
+		String idRegistro = idObter("PGIdleiaute");
 
 		sleep(2000);
 		filtros.click();
@@ -272,7 +272,7 @@ public class ParametrosGeraisFiltroAvancadosPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter1();
+		String idRegistro = idObter("PGIdleiaute");
 		System.out.println(idRegistro);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]"));
@@ -327,7 +327,7 @@ public class ParametrosGeraisFiltroAvancadosPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter1();
+		String idRegistro = idObter("PGIdleiaute");
 		System.out.println(idRegistro);
 		
 		tipo.click();
@@ -386,7 +386,7 @@ public class ParametrosGeraisFiltroAvancadosPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter1();
+		String idRegistro = idObter("PGIdleiaute");
 		
 		String textUsuarioCriado = driver
 				.findElement(By.xpath("//div[@id=\"libraryview\"]/div/div[1]/div/div[3]/div[@data-id=\""+idRegistro+"\"]/div[10]/div"))
@@ -460,7 +460,7 @@ public class ParametrosGeraisFiltroAvancadosPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter1();
+		String idRegistro = idObter("PGIdleiaute");
 		
 		String textFechaCriado = driver
 				.findElement(By.xpath("//div[@id=\"libraryview\"]/div/div[1]/div/div[3]/div[@data-id=\""+idRegistro+"\"]/div[11]/div"))

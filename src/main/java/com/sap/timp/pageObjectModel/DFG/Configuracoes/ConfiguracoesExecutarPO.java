@@ -141,7 +141,7 @@ public class ConfiguracoesExecutarPO  extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(8000);
 		
-		String idRegistro =  idObter2();
+		String idRegistro =  idObter("IdConfPG");
 		
 		System.out.println(" Id Registro Busqueda :" + idRegistro  );
 		

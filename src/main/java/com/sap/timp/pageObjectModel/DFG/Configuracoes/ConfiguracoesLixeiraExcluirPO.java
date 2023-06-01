@@ -84,7 +84,7 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro =  idObter2();
+		String idRegistro =  idObter("IdConfPG");
 		
 	
 		
@@ -229,7 +229,7 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBase{
 		
 		
 		
-		String idRegistro2 =  idObter1();
+		String idRegistro2 =  idObter("idLeiauteTConf");
 		
 		System.out.println(" Id Registro Busqueda de Leiautes :" + idRegistro2  );
 		

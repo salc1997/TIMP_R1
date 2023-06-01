@@ -619,7 +619,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 		String nomeT = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[7]/div")).getText();
 		String tipoTE = driver.findElement(By.xpath("//div[@data-id and @class=\"tr\"]["+rows+"]/div[9]/div")).getText();
 		
-		idInserir1(idLeiauteT);
+		idInserir("LeiauteCamposEspeciales",idLeiauteT);
 		System.out.println("ultimo id de Leiaute obter1:"+ idLeiauteT);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -704,8 +704,8 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 		leiaute.click();
 		sleep(2000);
 
-		//WebElement opcLeiauteObter = driver.findElement(By.xpath("//li[@id="+idObter1()+"]"));
-		WebElement opcLeiauteObter = driver.findElement(By.xpath("//li[contains(text(),\"ID "+idObter1()+"\")]"));
+		//WebElement opcLeiauteObter = driver.findElement(By.xpath("//li[@id="+idObter("LeiauteCamposEspeciales")+"]"));
+		WebElement opcLeiauteObter = driver.findElement(By.xpath("//li[contains(text(),\"ID "+idObter("LeiauteCamposEspeciales")+"\")]"));
 		
 		System.out.println("Opcion Leiaute: "+ opcLeiauteObter);		
 		
@@ -806,7 +806,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 		
 		
 		
-		idInserir2(idSPEDT);
+		idInserir("SPEDCamposEspeciales",idSPEDT);
 		System.out.println("ultimo id de Configuracao obter2:"+ idSPEDT);
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -869,7 +869,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 //		sleep(2000);
 		
 		///
-		String idSPED = idObter2();
+		String idSPED = idObter("SPEDCamposEspeciales");
 		//String idSPED = "15680";
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idSPED+"\"]/div[1]/div"));
 		WebElement executar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idSPED+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Executar\"]"));
@@ -978,7 +978,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 	
 	public ArrayList<Boolean> excluirConfiguracao() {
 		
-		String idConfiguracao = idObter2();
+		String idConfiguracao = idObter("SPEDCamposEspeciales");
 		//String idConfiguracao = "15680";
 				
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idConfiguracao+"\"]/div[1]/div"));
@@ -998,7 +998,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		//String idLeiaute2= idObter1();
+		//String idLeiaute2= idObter("LeiauteCamposEspeciales");
 		pesquisar.sendKeys(idConfiguracao);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
@@ -1051,7 +1051,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idLeiaute = idObter1();
+		String idLeiaute = idObter("LeiauteCamposEspeciales");
 		pesquisar.sendKeys(idLeiaute);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);

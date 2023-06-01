@@ -65,7 +65,7 @@ public class ParametrosGeraisCriarRaizIDPúblicoPrivadoEditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys(idObter1());
+		pesquisar.sendKeys(idObter("PGIdleiaute"));
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

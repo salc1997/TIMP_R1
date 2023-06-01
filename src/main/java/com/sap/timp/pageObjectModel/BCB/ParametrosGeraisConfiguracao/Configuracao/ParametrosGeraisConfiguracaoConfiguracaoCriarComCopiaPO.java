@@ -67,7 +67,7 @@ public class ParametrosGeraisConfiguracaoConfiguracaoCriarComCopiaPO extends Tes
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter3();
+		String idRegistro = idObter("ParametrosGeraisC1");
 		Integer idRegistro2 = Integer.parseUnsignedInt(idRegistro) + 1;
 		System.out.println(idRegistro);
 		
@@ -117,7 +117,7 @@ public class ParametrosGeraisConfiguracaoConfiguracaoCriarComCopiaPO extends Tes
 		sucesso.add(nome.contains("Cópia de"));
 		
 		System.out.println("nuevo Copia: "+id2);
-		idInserir2(id2);
+		idInserir("ParametrosGeraisCopia",id2);
 
 		int id1I = convertToInt(idRegistro);
 		int id2I = convertToInt(id2);
@@ -136,7 +136,7 @@ public class ParametrosGeraisConfiguracaoConfiguracaoCriarComCopiaPO extends Tes
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("ParametrosGeraisCopia");
 		System.out.println("excluiremos: "+idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));

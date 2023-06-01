@@ -160,7 +160,7 @@ public class ConfiguracaoDeTributoGrupoCriarPO extends TestBase{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
 		
-		idInserir1(id2);
+		idInserir("ConfiguracaoDeTributoGrupo", id2);
 		int idD = convertToInt(idRegistro);
 		int id2D = convertToInt(id2);
 		

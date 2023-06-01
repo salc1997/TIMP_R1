@@ -366,7 +366,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[5]/div"))
 				.getText();
 		
-		idInserir4(id);
+		idInserir("ExecucoesSalvasUID",id);
 		
 		System.out.println("Ultimo ID de Execucoes: "+id);
 		System.out.println("");
@@ -500,7 +500,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 
 		sucesso.add(nome.contains("Execuções TF TA"));
 
-		idInserir3(iH2);
+		idInserir("ExecucoesSalvasH1",iH2);
 		System.out.println("Id ultimo de Hierarquia a excluir: " + iH2);
 
 		int id1I = convertToInt(idH);
@@ -634,7 +634,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		
 		
 		String idApos = driver.findElement(By.xpath("//div[@class=\"tr\" and@data-id]["+rows+"]/div[4]/div")).getText();
-		idInserir2(idApos);
+		idInserir("ExecucoesSalvasC1",idApos);
 		System.out.println("Id Configurações apos da criação: "+ idApos);
 		
 		
@@ -673,8 +673,8 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 //		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter2()+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 //		sleep(2000);
 		//DESCOMENTAR DESPUES, ACORDATE
-		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter2()+"\"]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter2()+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ExecucoesSalvasC1")+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ExecucoesSalvasC1")+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		sleep(2000);
 //	
 //	
@@ -886,10 +886,10 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 				.getText();
 		System.out.println("Ultimo ID de Execucoes Configuracao: "+idE);
 		
-		idInserir5(idE);
+		idInserir("ExecucoesSalvasIdExc",idE);
 		
 		
-		int idExecucoesA = Integer.valueOf(idObter4());		
+		int idExecucoesA = Integer.valueOf(idObter("ExecucoesSalvasUID"));		
 		int idExecucoesB = Integer.valueOf(idE);
 		
 		System.out.println("");
@@ -935,7 +935,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		WebElement menusito = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter5()+"\"]/div[1]/div"));
+		WebElement menusito = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ExecucoesSalvasIdExc")+"\"]/div[1]/div"));
 		System.out.println("id de lexeira: "+menusito);
 		
 //		WebElement menusito2 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter()+"\"]/div[1]/div"));
@@ -944,8 +944,8 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 //		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter4()+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 //		sleep(2000);
 		
-		WebElement menu1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter5()+"\"]/div[1]/div"));
-		WebElement editar1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter5()+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
+		WebElement menu1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ExecucoesSalvasIdExc")+"\"]/div[1]/div"));
+		WebElement editar1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ExecucoesSalvasIdExc")+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 		sleep(2000);
 
 		menu1.click();
@@ -983,8 +983,8 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //		sleep(2000);
 		
-		menu1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter5()+"\"]/div[1]/div"));
-		editar1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter5()+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Restaurar\"]"));
+		menu1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ExecucoesSalvasIdExc")+"\"]/div[1]/div"));
+		editar1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ExecucoesSalvasIdExc")+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Restaurar\"]"));
 		sleep(2000);
 		
 //		menu1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"2271\"]/div[1]/div"));
@@ -1017,8 +1017,8 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //		sleep(2000);
 		
-		menu1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter5()+"\"]/div[1]/div"));
-		editar1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter5()+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
+		menu1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ExecucoesSalvasIdExc")+"\"]/div[1]/div"));
+		editar1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ExecucoesSalvasIdExc")+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 		sleep(2000);
 		
 //		menu1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"2271\"]/div[1]/div"));
@@ -1052,8 +1052,8 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		sleep(2000);
 		
 		
-		menu1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter5()+"\"]/div[1]/div"));
-		editar1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter5()+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		menu1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ExecucoesSalvasIdExc")+"\"]/div[1]/div"));
+		editar1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ExecucoesSalvasIdExc")+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		sleep(2000);
 		
 //		menu1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"2271\"]/div[1]/div"));
@@ -1207,7 +1207,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 
 		
 		//EXCLUIR EXECUCOES
-		String idExecucoes = idObter5();
+		String idExecucoes = idObter("ExecucoesSalvasIdExc");
 		
 		System.out.println("");
 		System.out.println("*******EXCLUIR EXECUCOES********");
@@ -1305,7 +1305,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idConfiguracao = idObter2();
+		String idConfiguracao = idObter("ExecucoesSalvasC1");
 		System.out.println("");
 		System.out.println("*******EXCLUIR CONFIGURACOES************");
 		System.out.println("OBTER 2:" + idConfiguracao);
@@ -1400,7 +1400,7 @@ public class ExecucoesSalvasHierarquiaConfiguracaoTodasAsFuncionalidadesPO exten
 		sleep(2000);
 		
 		//String idHierarquia = "1212";
-		String idHierarquia = idObter3();
+		String idHierarquia = idObter(" ExecucoesSalvasH1");
 		System.out.println("");
 		System.out.println("*******EXCLUIR HIERARQUIA************");
 		System.out.println("OBTER 3:" + idHierarquia);

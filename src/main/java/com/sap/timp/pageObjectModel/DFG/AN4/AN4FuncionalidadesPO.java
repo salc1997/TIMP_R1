@@ -480,7 +480,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 
 		String id = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println("Id Antes en Raiz: " + id);
-		idInserir1(id);
+		idInserir("RaizAntes",id);
 		
 		
 		
@@ -718,13 +718,13 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String id =idObter1();
+		String id =idObter("RaizAntes");
 
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
 
 		String idNuevo = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println("Id nuevo: " +idNuevo);
-		idInserir2(idNuevo);
+		idInserir("RaizNuevoAN4",idNuevo);
 
 
 
@@ -976,13 +976,13 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String id =idObter1();
-		String id2 =idObter2();
+		String id =idObter("RaizAntes");
+		String id2 =idObter("RaizNuevoAN4");
 
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
 		String  idRegistro1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println("Id nuevo: " +idRegistro1);
-		idInserir3(idRegistro1);
+		idInserir("RaizNuevoAN42",idRegistro1);
 		
 		rows = rows-1;
 		String  idRegistro2 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
@@ -1034,7 +1034,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 
 		String idregra = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Id Antes da Criação en Regra N4: " +idregra);
-		idInserir4(idregra);
+		idInserir("IdRegra",idregra);
 		
 	}
 	
@@ -1197,7 +1197,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		sleep(2000);
 
 
-		String idRegistro = idObter2();
+		String idRegistro = idObter("RaizNuevoAN4");
 		System.out.println(idRegistro);
 
 		primeroLeiaute.click();
@@ -1216,7 +1216,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		versaoLeiauteOPC.click();
 		sleep(8000);
 
-		String idRegistro2 = idObter3();
+		String idRegistro2 = idObter("RaizNuevoAN42");
 		System.out.println(idRegistro2);
 
 
@@ -1322,13 +1322,13 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String id =idObter4();
+		String id =idObter("IdRegra");
 
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
 
 		String idNuevo = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Id nuevo: " +idNuevo);
-		idInserir5(idNuevo);
+		idInserir("IdRegraNueva",idNuevo);
 
 		int idD = Integer.valueOf(id);
 		int id2D = Integer.valueOf(idNuevo);
@@ -1415,7 +1415,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 
 		String idraizAba = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println("Id Antes da Criação en Raiz Configuracoe: " +idraizAba);
-		idInserir6(idraizAba);
+		idInserir(idraizAba);
 		
 	}
 	
@@ -1447,7 +1447,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		nomeConfiguracoe.sendKeys("Test Massiel configuracao");
 		nomeConfiguracoe.sendKeys(Keys.ENTER);
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("RaizNuevoAN4");
 		System.out.println(idRegistro);
 
 		primerLeiauteConfiguracoe.click();
@@ -1636,7 +1636,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		nomeConfiguracoe.sendKeys("Test Massiel configuracao 2");
 		nomeConfiguracoe.sendKeys(Keys.ENTER);
 		
-		String idRegistro = idObter3();
+		String idRegistro = idObter("RaizNuevoAN42");
 		System.out.println(idRegistro);
 
 		primerLeiauteConfiguracoe.click();
@@ -2230,7 +2230,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		sleep(3000);
 		
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("RaizNuevoAN4");
 		System.out.println("leiaute criado"+idRegistro);
 
 		actionsMoveToElement("//li[contains(text(),\""+idRegistro+"\")]");
@@ -2365,7 +2365,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		sleep(3000);
 		
 		
-		String idRegistro3 = idObter3();
+		String idRegistro3 = idObter("RaizNuevoAN42");
 		System.out.println("Leiaute Comparacao "+idRegistro3);
 
 		actionsMoveToElement("//li[contains(text(),\""+idRegistro3+"\")]");
@@ -2490,7 +2490,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		sleep(3000);
 		
 		
-		String idRegistro6 = idObter5();
+		String idRegistro6 = idObter("IdRegraNueva");
 		System.out.println("Regra de An4"+idRegistro6);
 
 		WebElement Opc6 = driver.findElement(By.xpath("//div[contains(text(),\""+idRegistro6+"\")]"));

@@ -182,7 +182,7 @@ public class RegrasDeEscrituraçãoCriarComCopiaPO extends TestBase {
 		String idB = driver.findElement(By.xpath(
 				"//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[3]/div"))
 				.getText();
-		idInserir3(idB);
+		idInserir("RegraDeEscrituracaoCopia",idB);
 
 		System.out.println(idRegistro);
 		System.out.println(idB);
@@ -199,8 +199,8 @@ public class RegrasDeEscrituraçãoCriarComCopiaPO extends TestBase {
 
 		System.out.println(sucesso + " Cricação da Cópia");
 
-		menu = driver.findElement(By.xpath("//div[@data-id=\"" + idObter3() + "\"]/div[1]/div"));
-		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\"" + idObter3() + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
+		menu = driver.findElement(By.xpath("//div[@data-id=\"" + idObter("RegraDeEscrituracaoCopia") + "\"]/div[1]/div"));
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\"" + idObter("RegraDeEscrituracaoCopia") + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
 
 		menu.click();
 		sleep(1000);
@@ -222,7 +222,7 @@ public class RegrasDeEscrituraçãoCriarComCopiaPO extends TestBase {
 
 	public ArrayList<Boolean> excluir() {
 
-		String idRegistro = idObter3();
+		String idRegistro = idObter("RegraDeEscrituracaoCopia");
 
 		lixeiraM.click();
 		sleep(3000);

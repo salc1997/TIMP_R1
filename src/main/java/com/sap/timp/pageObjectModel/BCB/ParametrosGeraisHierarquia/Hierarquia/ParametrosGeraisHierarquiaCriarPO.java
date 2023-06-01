@@ -199,7 +199,7 @@ public class ParametrosGeraisHierarquiaCriarPO extends TestBase {
 
 		sucesso.add(nome.equals("Teste QA PRUEBA TA"));
 
-		idInserir1(id2);
+		idInserir("ParametrosGeraisH1",id2);
 
 		int id1I = convertToInt(id);
 		int id2I = convertToInt(id2);

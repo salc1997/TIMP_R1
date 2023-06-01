@@ -582,7 +582,7 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ex
 
 		sucesso.add(nome.equals("Teste QA PREUBA 007"));
 
-		idInserir2(id2);
+		idInserir("AjusteH1",id2);
 
 		int id1I = convertToInt(id);
 		int id2I = convertToInt(id2);
@@ -717,7 +717,7 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ex
 
 		sucesso.add(nome.contains("Teste QA PREUBA 007"));
 
-		idInserir1(id2);
+		idInserir("AjusteC1",id2);
 
 		int id1I = convertToInt(id);
 		int id2I = convertToInt(id2);
@@ -750,7 +750,7 @@ public class AjustesePagamentosHierarquiaConfiguracaoTodasasfuncionalidadesPO ex
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		sleep(2000);
-		String idRegistro = idObter1();
+		String idRegistro = idObter("AjusteC1");
 		System.out.println(idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

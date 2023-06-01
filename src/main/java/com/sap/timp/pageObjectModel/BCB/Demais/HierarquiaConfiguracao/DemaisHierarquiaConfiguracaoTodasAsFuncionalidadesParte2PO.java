@@ -231,7 +231,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idConfiguracaoExecutar = idObter5();
+		String idConfiguracaoExecutar = idObter("DemaisHierarquiaConfiguracaoC2");
 		
 		
 		ultimo.click();
@@ -516,7 +516,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 //		sleep(2000);
 		
 		
-		String idConfiguracao2 = idObter5();
+		String idConfiguracao2 = idObter("DemaisHierarquiaConfiguracaoC2");
 		System.out.println("");
 		System.out.println("*******EXCLUIR CONFIGURACOES************");
 		System.out.println("OBTER 5:" + idConfiguracao2);
@@ -615,7 +615,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idHierarquia2 = idObter4();
+		String idHierarquia2 = idObter("DemaisHierarquiaConfiguracaoH2");
 		//String idHierarquia = "1100";
 		System.out.println("");
 		System.out.println("*******EXCLUIR HIERARQUIA************");
@@ -717,7 +717,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idConfiguracao1 = idObter3();
+		String idConfiguracao1 = idObter("DemaisHierarquiaConfiguracaoC1");
 		System.out.println("");
 		System.out.println("*******EXCLUIR CONFIGURACOES************");
 		System.out.println("OBTER 3:" + idConfiguracao1);
@@ -816,7 +816,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idHierarquia1 = idObter2();
+		String idHierarquia1 = idObter("DemaisHierarquiaConfiguracaoH1");
 		//String idHierarquia = "1100";
 		System.out.println("");
 		System.out.println("*******EXCLUIR HIERARQUIA************");

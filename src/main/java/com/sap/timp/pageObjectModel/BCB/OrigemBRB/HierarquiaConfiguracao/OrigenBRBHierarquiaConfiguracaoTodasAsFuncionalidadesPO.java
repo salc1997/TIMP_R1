@@ -683,7 +683,7 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 
 		//sucesso.add(nome.contains("Prueba Automatizada de Hierarq"));
 		sucesso.add(nome.contains("Origem BRB - TF"));
-		idInserir1(id2);
+		idInserir("OrigenBrbH1",id2);
 
 		int id1I = convertToInt(idH);
 		int id2I = convertToInt(id2);
@@ -769,7 +769,7 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and@data-id]")).size();
 		String id = driver.findElement(By.xpath("//div[@class=\"tr\" and@data-id]["+rows+"]/div[4]/div")).getText();
 		System.out.println("Id Configurações antes da criação: "+ id);
-		idInserir2(id); //antes de crear herarquia configuracao
+		
 		
 		nova.click();
 		sleep(3000);
@@ -853,7 +853,7 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		rows = driver.findElements(By.xpath("//div[@class=\"tr\" and@data-id]")).size();
 		String idApos = driver.findElement(By.xpath("//div[@class=\"tr\" and@data-id]["+rows+"]/div[4]/div")).getText();
-		idInserir3(idApos);
+		idInserir("OrigenBrbC1",idApos);
 		System.out.println("Id Configurações apos da criação: "+ idApos);
 		
 		
@@ -890,8 +890,8 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		sleep(2000);
 
-		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter3()+"\"]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter3()+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("OrigenBrbC1")+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("OrigenBrbC1")+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		sleep(2000);
 
 		menu.click();
@@ -2210,7 +2210,7 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idConfiguracao = idObter3();
+		String idConfiguracao = idObter("OrigenBrbC1");
 		System.out.println("");
 		System.out.println("*******EXCLUIR CONFIGURACOES************");
 		System.out.println("OBTER 3:" + idConfiguracao);
@@ -2305,7 +2305,7 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idHierarquia = idObter1();
+		String idHierarquia = idObter("OrigenBrbH1");
 		//String idHierarquia = "1100";
 		System.out.println("");
 		System.out.println("*******EXCLUIR HIERARQUIA************");

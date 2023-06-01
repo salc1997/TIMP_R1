@@ -160,7 +160,7 @@ public class ConfiguracaoDeTributoGrupoTodasFuncPO extends TestBase{
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String id2 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][1]/div[3]/div")).getText();
 		
-		idInserir1(id2);
+		idInserir("ConfiguracaoDeTributoGrupo",id2);
 		int idD = convertToInt(idRegistro);
 		int id2D = convertToInt(id2);
 		
@@ -199,7 +199,7 @@ public class ConfiguracaoDeTributoGrupoTodasFuncPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter1();
+		String idRegistro = idObter("ConfiguracaoDeTributoGrupo");
 		System.out.println("ID Registro: " + idRegistro);
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));

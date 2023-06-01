@@ -46,7 +46,7 @@ public class ParametrosGeraisConfiguracaoConfiguracaoRaizPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter3();
+		String idRegistro = idObter("ParametrosGeraisC1");
 	
 		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);

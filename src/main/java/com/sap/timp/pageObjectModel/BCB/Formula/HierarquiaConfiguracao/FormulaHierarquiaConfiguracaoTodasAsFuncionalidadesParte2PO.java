@@ -293,7 +293,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idConfiguracaoSubnivel5= idObter3();
+		String idConfiguracaoSubnivel5= idObter("FormulaC1");
 		pesquisar.sendKeys(idConfiguracaoSubnivel5);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
@@ -504,42 +504,6 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		if (url.contains("tq2")) {
 			tq2 = true;
 		}
-		
-		
-		//COMENTAR DESPUES PORFAVOR
-//		sleep(2000);
-//		configuracoes.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		configuracaoDaConsolidacao.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		String idConfiguracaoSubnivel5= idObter3();
-//		pesquisar.sendKeys(idConfiguracaoSubnivel5);
-//		pesquisar.sendKeys(Keys.ENTER);
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		
-//		
-//		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idConfiguracaoSubnivel5+"\"]/div[1]/div"));
-//		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idConfiguracaoSubnivel5+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-//		sleep(2000);
-//		
-//		menu.click();
-//		sleep(1000);
-//		editar.click();
-//		sleep(6000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		waitExpectElement(calculator);
-//		sleep(2000);
-	//HASTA AQUI
-		
-	
 		
 		
 		sleep(2000);
@@ -870,7 +834,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idConfiguracao = idObter3();
+		String idConfiguracao = idObter("FormulaC1");
 		System.out.println("");
 		System.out.println("*******EXCLUIR CONFIGURACOES************");
 		System.out.println("OBTER 3:" + idConfiguracao);
@@ -963,7 +927,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idHierarquia = idObter1();
+		String idHierarquia = idObter("FormulaH1");
 		//String idHierarquia = "1100";
 		System.out.println("");
 		System.out.println("*******EXCLUIR HIERARQUIA************");

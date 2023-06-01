@@ -46,7 +46,7 @@ public class ParametrosGeraisHierarquiaDetalhePO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(5000);
 
-		String idRegistro = idObter1();
+		String idRegistro = idObter("ParametrosGeraisH1");
 		System.out.println("Id Registro: " + idRegistro);
 		System.out.println("");
 		

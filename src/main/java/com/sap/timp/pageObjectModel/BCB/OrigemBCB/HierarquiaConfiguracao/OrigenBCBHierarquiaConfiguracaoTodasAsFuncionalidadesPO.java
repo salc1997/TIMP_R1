@@ -603,7 +603,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 
 		//sucesso.add(nome.contains("Prueba Automatizada de Hierarq"));
 		sucesso.add(nome.contains("teste automatizado hierar"));
-		idInserir1(id2);
+		idInserir("OrigenBCBH1",id2);
 
 		int id1I = convertToInt(idH);
 		int id2I = convertToInt(id2);
@@ -689,7 +689,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		int rows = driver.findElements(By.xpath("//div[@class=\"tr\" and@data-id]")).size();
 		String id = driver.findElement(By.xpath("//div[@class=\"tr\" and@data-id]["+rows+"]/div[4]/div")).getText();
 		System.out.println("Id Configurações antes da criação: "+ id);
-		idInserir2(id); //antes de crear herarquia configuracao
+		
 		
 		nova.click();
 		sleep(3000);
@@ -776,7 +776,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		
 		rows = driver.findElements(By.xpath("//div[@class=\"tr\" and@data-id]")).size();
 		String idApos = driver.findElement(By.xpath("//div[@class=\"tr\" and@data-id]["+rows+"]/div[4]/div")).getText();
-		idInserir3(idApos);
+		idInserir("OrigenBCBC1",idApos);
 		System.out.println("Id Configurações apos da criação: "+ idApos);
 		
 		
@@ -810,36 +810,11 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		if (url.contains("tc2")) {
 			tc2 = true;
 		}
-		
-		//COMENTAR DESPUES PORFAVOR
-//			sleep(2000);
-//			configuracoes.click();
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
-//			configuracaoDaConsolidacao.click();
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
-//			
-//			
-//			pesquisar.sendKeys("1072");
-//			pesquisar.sendKeys(Keys.ENTER);
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
-//			
-//			
-//			
-//			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1072\"]/div[1]/div"));
-//			WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1072\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-//			sleep(2000);
-		//HASTA AQUI
 			
 		sleep(2000);
 
-		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter3()+"\"]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter3()+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("OrigenBCBC1")+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("OrigenBCBC1")+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		sleep(2000);
 			
 //	
@@ -926,38 +901,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		}
 		
 		
-		//COMENTAR DESPUES PORFAVOR
-//		sleep(2000);
-//		configuracoes.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		configuracaoDaConsolidacao.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		
-//		pesquisar.sendKeys("359");
-//		pesquisar.sendKeys(Keys.ENTER);
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		
-//		
-//		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"359\"]/div[1]/div"));
-//		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"359\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-//		sleep(2000);
-//		
-//		menu.click();
-//		sleep(1000);
-//		editar.click();
-//		sleep(6000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		waitExpectElement(calculator);
-//		sleep(2000);
-	//HASTA AQUI
+	
 		
 		//PRIMER SUBNIVEL
 		
@@ -1073,39 +1017,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		}
 		
 		
-		//COMENTAR DESPUES PORFAVOR
-//		sleep(2000);
-//		configuracoes.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		configuracaoDaConsolidacao.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		
-//		pesquisar.sendKeys("1072");
-//		pesquisar.sendKeys(Keys.ENTER);
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-//		
-//		
-//		
-//		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1072\"]/div[1]/div"));
-//		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"1072\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-//		sleep(2000);
-//		
-//		menu.click();
-//		sleep(1000);
-//		editar.click();
-//		sleep(6000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		waitExpectElement(calculator);
-//		sleep(2000);
-	//HASTA AQUI
-		
+
 		System.out.println("--------------------------------------------SubNivel 2-------------------------------------");
 		sleep(1000);
 
@@ -1768,42 +1680,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			tp1 = true;
 		}
 		
-		//COMENTAR DESPUES PORFAVOR
-//			sleep(2000);
-//			configuracoes.click();
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
-//			configuracaoDaConsolidacao.click();
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
-//			
-//			
-//			pesquisar.sendKeys("448");
-//			pesquisar.sendKeys(Keys.ENTER);
-//			sleep(3000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			sleep(2000);
-//			
-//			
-//			
-//			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"448\"]/div[1]/div"));
-//			WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"448\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
-//			sleep(2000);
-//			
-//			menu.click();
-//			sleep(1000);
-//			editar.click();
-//			sleep(6000);
-//			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//			waitExpectElement(calculator);
-//			sleep(2000);
-		//HASTA AQUI
-		
-	
-		
-		
+
 		sleep(1000);
 		executar.click();
 		sleep(3000);
@@ -2122,7 +1999,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idConfiguracao = idObter3();
+		String idConfiguracao = idObter("OrigenBCBC1");
 		System.out.println("");
 		System.out.println("*******EXCLUIR CONFIGURACOES************");
 		System.out.println("OBTER 3:" + idConfiguracao);
@@ -2217,7 +2094,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idHierarquia = idObter1();
+		String idHierarquia = idObter("OrigenBCBH1");
 		//String idHierarquia = "1100";
 		System.out.println("");
 		System.out.println("*******EXCLUIR HIERARQUIA************");

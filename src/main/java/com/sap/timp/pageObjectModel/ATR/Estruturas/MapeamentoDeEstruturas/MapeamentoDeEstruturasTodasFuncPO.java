@@ -907,16 +907,21 @@ public class MapeamentoDeEstruturasTodasFuncPO extends TestBase{
 		rows = rows("//div[@class=\"tr\" and @data-id]");
 		
 		String idDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
-		System.out.println("Id após da criação: " + idDC);
-		idInserir1(idDC);
 		
+		 rows = rows-1;
+		String idDC1 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
+		System.out.println("Primer Id creado: " + idDC1);
+		System.out.println("segundo Id Creado: " + idDC);
+		
+		 
 		int idACI = convertToInt(idAC);
 		int idADI = convertToInt(idDC);
+		int idADII = convertToInt(idDC1);
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		if (idACI < idADI) {
+		if (idACI < idADI && idACI < idADII) {
 			sucesso.add(true);
 		} else {
 			sucesso.add(false);

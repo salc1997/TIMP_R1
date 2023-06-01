@@ -645,7 +645,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		
 		//boolean sucesso1 = (Boolean) null;
 		if (idBD > idD) {
-			idInserir1(idB);
+			idInserir("TarefasNASE",idB);
 			sucesso.add(true);
 			
 		}else {
@@ -681,7 +681,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("TarefasNASE");
 		WebElement flagP = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"process\"]/div/label/span"));
 		
 		System.out.println("Numero do Registro:"+idRegistro);
@@ -848,7 +848,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 		
 		System.out.println(id);
 		sleep(2000);
-		idInserir2(id2);
+		idInserir("TarefasNASEActivadorProceso",id2);
 		System.out.println(id2);
 		
 		
@@ -1324,7 +1324,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 				
 		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println(id); 
-		String idRegistro = idObter1();
+		String idRegistro = idObter("TarefasNASE");
 		sleep(000);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -1387,7 +1387,7 @@ public class TarefasNASolicitarEsclarecimentoPO extends TestBase {
 				
 		String id = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println(id); 
-		String idRegistro = idObter2();
+		String idRegistro = idObter("TarefasNASEActivadorProceso");
 		sleep(2000);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));

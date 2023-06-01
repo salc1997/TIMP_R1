@@ -48,7 +48,7 @@ public class ParametrosGeraisConfiguracaoConfiguracaoLixeiraExcluirDefinitivamen
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(5000);
 		
-		String idRegistro = idObter3();
+		String idRegistro = idObter("ParametrosGeraisC1");
 		
 		pesquisar.sendKeys(idRegistro);
 		pesquisar.sendKeys(Keys.ENTER);

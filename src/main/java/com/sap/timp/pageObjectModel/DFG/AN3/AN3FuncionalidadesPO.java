@@ -711,7 +711,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		System.out.println("Último Id após da criação do registro (Raiz): " + ultimoIdDC);
 		
 		
-		idInserir2(ultimoIdDC);
+		idInserir("AN3Raiz",ultimoIdDC);
 
 		int ultimoIdDCD = Integer.valueOf(ultimoIdDC);
 		int ultimoIdACD = Integer.valueOf(ultimoIdAC);
@@ -725,9 +725,9 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		System.out.println("Verificaçãõ da criação do registro: " +sucesso.get(0));
 		
-		String versao = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter2()+"\"]/div[6]/div")).getText();
-		String nome = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter2()+"\"]/div[7]/div")).getText();;
-		String tipoS = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter2()+"\"]/div[9]/div")).getText();;
+		String versao = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter("AN3Raiz")+"\"]/div[6]/div")).getText();
+		String nome = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter("AN3Raiz")+"\"]/div[7]/div")).getText();;
+		String tipoS = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter("AN3Raiz")+"\"]/div[9]/div")).getText();;
 		
 		System.out.println("----------------------Verficação das informações do registro ---------------------------");
 		System.out.println("Versão: " +versao);
@@ -790,7 +790,6 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		String ultimoIdAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Último Id antes da criação do registro (BRE): " + ultimoIdAC);
-		idInserir1(ultimoIdAC);
 		
 		novo.click();
 		sleep(3000);
@@ -856,9 +855,9 @@ public class AN3FuncionalidadesPO extends TestBase{
 		//waitExpectElement(leiauteR);
 		leiauteR.click();
 		sleep(1000);
-		actionsMoveToElement("//li[contains(text(),\""+idObter2()+"\")]");
+		actionsMoveToElement("//li[contains(text(),\""+idObter("AN3Raiz")+"\")]");
 		sleep(1000);
-		WebElement leiauteO = driver.findElement(By.xpath("//li[contains(text(),\""+idObter2()+"\")]"));
+		WebElement leiauteO = driver.findElement(By.xpath("//li[contains(text(),\""+idObter("AN3Raiz")+"\")]"));
 		leiauteO.click();
 		sleep(1000);
 		
@@ -943,7 +942,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		String ultimoIdDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Último Id após da criação do registro (BRE): " + ultimoIdDC);
-		idInserir3(ultimoIdDC);
+		idInserir("RegraN3Id",ultimoIdDC);
 		
 		int ultimoIdDCD = Integer.valueOf(ultimoIdDC);
 		int ultimoIdACD = Integer.valueOf(ultimoIdAC);
@@ -955,9 +954,9 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		System.out.println("Verificaçãõ da criação do registro BRE: " +sucesso.get(0));
 		
-		String titulo = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter3()+"\"]/div[4]/div")).getText();
-		String tipoRegra = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter3()+"\"]/div[6]/div")).getText();;
-		String tributoS = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter3()+"\"]/div[7]/div")).getText();;
+		String titulo = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter("RegraN3Id")+"\"]/div[4]/div")).getText();
+		String tipoRegra = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter("RegraN3Id")+"\"]/div[6]/div")).getText();;
+		String tributoS = driver.findElement(By.xpath("//div[@class= \"tr\" and @data-id=\""+idObter("RegraN3Id")+"\"]/div[7]/div")).getText();;
 		
 		System.out.println("----------------------Verficação das informações do registro ---------------------------");
 		System.out.println("Título: " +titulo);
@@ -1045,7 +1044,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		leiauteE.click();
 		sleep(1000);
-		WebElement leiauteO = driver.findElement(By.xpath("//li[contains(text(),\""+idObter2()+"\")]"));
+		WebElement leiauteO = driver.findElement(By.xpath("//li[contains(text(),\""+idObter("AN3Raiz")+"\")]"));
 		leiauteO.click();
 		sleep(1000);
 		
@@ -1110,7 +1109,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		String ultimoIdDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println("Id após da criação (DFG Configuracoes): "+ ultimoIdDC);
-		idInserir4(ultimoIdDC);
+		idInserir("DFGAN3",ultimoIdDC);
 		
 		int ultimoIdDCD = Integer.valueOf(ultimoIdDC);
 		int ultimoIdACD = Integer.valueOf(ultimoIdConfiguracoesAC);
@@ -1123,12 +1122,12 @@ public class AN3FuncionalidadesPO extends TestBase{
 		System.out.println("Verificaçãõ da criação do registro BRE: " +sucesso.get(0));
 		
 		System.out.println("---------------------Verificações das Informações---------------------------------");
-		String nome = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter4()+"\"]/div[6]/div")).getText();
-		String empresa = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter4()+"\"]/div[9]/div/li")).getText();
-		String uf = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter4()+"\"]/div[10]/div/li")).getText();
-		String filial = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter4()+"\"]/div[11]/div/li")).getText();
-		String tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter4()+"\"]/div[12]/div/li")).getText();
-		String dataVigencia = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter4()+"\"]/div[13]/div")).getText();
+		String nome = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("DFGAN3")+"\"]/div[6]/div")).getText();
+		String empresa = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("DFGAN3")+"\"]/div[9]/div/li")).getText();
+		String uf = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("DFGAN3")+"\"]/div[10]/div/li")).getText();
+		String filial = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("DFGAN3")+"\"]/div[11]/div/li")).getText();
+		String tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("DFGAN3")+"\"]/div[12]/div/li")).getText();
+		String dataVigencia = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("DFGAN3")+"\"]/div[13]/div")).getText();
 		
 		System.out.println(nome);
 		System.out.println(empresa);
@@ -1156,8 +1155,8 @@ public class AN3FuncionalidadesPO extends TestBase{
 	
 	public ArrayList<Boolean> execucao() {
 		
-		String idRegistro = idObter4();
-		String idRegra = idObter3();
+		String idRegistro = idObter("DFGAN3");
+		String idRegra = idObter("RegraN3Id");
 		/*
 		configuracoes.click();
 		
@@ -1303,7 +1302,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		//hasta aqui
 		*/
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("DFGAN3");
 		arquivos.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1331,7 +1330,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		String id = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println("Ultimo Id (Arquivos): " + id);
-		idInserir5(id);
+		idInserir("ArquivocoID",id);
 		
 		String nome = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[7]/div")).getText();	
 		String tipo = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[9]/div")).getText();
@@ -1386,7 +1385,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		if (url.contains("tc2")) {
 			tc2 = true;
 		}
-		String idRegistro = idObter2();
+		String idRegistro = idObter("AN3Raiz");
 		/*
 		home.click();
 		sleep(3000);
@@ -1467,7 +1466,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		configuracaoAN3.click();
 		sleep(1000);
-		WebElement confAN3O = driver.findElement(By.xpath("//li[contains(text(),\""+idObter4()+"\")]"));
+		WebElement confAN3O = driver.findElement(By.xpath("//li[contains(text(),\""+idObter("DFGAN3")+"\")]"));
 		confAN3O.click();
 		sleep(1000);
 		
@@ -1477,7 +1476,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		regraAN3.click();
 		sleep(1000);
-		WebElement regraAN3O = driver.findElement(By.xpath("//div[@id=\""+idObter3()+"\"]/div/label/span"));
+		WebElement regraAN3O = driver.findElement(By.xpath("//div[@id=\""+idObter("RegraN3Id")+"\"]/div/label/span"));
 		regraAN3O.click();
 		sleep(1000);
 		regraAN3O.sendKeys(Keys.ESCAPE);
@@ -1489,7 +1488,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		arquivoAN3.click();
 		sleep(1000);
-		WebElement arquivoAN3O = driver.findElement(By.xpath("//li[contains(text(),\""+idObter5()+"\")]"));
+		WebElement arquivoAN3O = driver.findElement(By.xpath("//li[contains(text(),\""+idObter("ArquivocoID")+"\")]"));
 		arquivoAN3O.click();
 		sleep(1000);
 		
@@ -1514,7 +1513,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		String idAN3DC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println("Último Id DFG AN3 antes da criação: " +idAN3DC);
-		idInserir6(idAN3DC);
+		idInserir("DFGAN3Criado",idAN3DC);
 		System.out.println("-----------------------------------Verificação da criação--------------------------------");
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
@@ -1561,7 +1560,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 	
 	public boolean publicoYPrivado() {
 		
-		String idRegistro = idObter6();
+		String idRegistro = idObter("DFGAN3Criado");
 		
 		/*
 		sleep(2000);
@@ -1618,7 +1617,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 	
 	public ArrayList<Boolean> favorito() {
 		
-		String idRegistro = idObter6();
+		String idRegistro = idObter("DFGAN3Criado");
 		
 /*
 		sleep(2000);
@@ -1680,7 +1679,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		invisibilityOfElementOverlay();
 		
-		pesquisar.sendKeys(idObter6());
+		pesquisar.sendKeys(idObter("DFGAN3Criado"));
 		pesquisar.sendKeys(Keys.ENTER);
 		
 		invisibilityOfElementOverlay();
@@ -1703,7 +1702,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 	
 	public boolean editar() {
 		
-		String idRegistro = idObter6();
+		String idRegistro = idObter("DFGAN3Criado");
 		/*
 
 		sleep(2000);
@@ -1718,7 +1717,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		invisibilityOfElementOverlay();
 		
-		pesquisar.sendKeys(idObter6());
+		pesquisar.sendKeys(idObter("DFGAN3Criado"));
 		pesquisar.sendKeys(Keys.ENTER);
 		
 		invisibilityOfElementOverlay();
@@ -1749,7 +1748,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		invisibilityOfElementOverlay();
 		
 		pesquisar.clear();
-		pesquisar.sendKeys(idObter6());
+		pesquisar.sendKeys(idObter("DFGAN3Criado"));
 		pesquisar.sendKeys(Keys.ENTER);
 		
 		invisibilityOfElementOverlay();
@@ -1784,7 +1783,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 	
 	public boolean informacao() {
 		
-		String idRegistro = idObter6();
+		String idRegistro = idObter("DFGAN3Criado");
 		/*
 
 		sleep(2000);
@@ -1799,7 +1798,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		invisibilityOfElementOverlay();
 		
-		pesquisar.sendKeys(idObter6());
+		pesquisar.sendKeys(idObter("DFGAN3Criado"));
 		pesquisar.sendKeys(Keys.ENTER);
 		
 		invisibilityOfElementOverlay();
@@ -2011,7 +2010,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		leiauteAN3.click();
 		sleep(1000);
-		WebElement leiauteAN3O = driver.findElement(By.xpath("//li[contains(text(),\""+idObter2()+"\")]"));
+		WebElement leiauteAN3O = driver.findElement(By.xpath("//li[contains(text(),\""+idObter("AN3Raiz")+"\")]"));
 		actionsMoveToElement(leiauteAN3O);
 		leiauteAN3O.click();
 		sleep(1000);
@@ -2029,7 +2028,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		configuracaoAN3.click();
 		sleep(1000);
-		WebElement confAN3O = driver.findElement(By.xpath("//li[contains(text(),\""+idObter4()+"\")]"));
+		WebElement confAN3O = driver.findElement(By.xpath("//li[contains(text(),\""+idObter("DFGAN3")+"\")]"));
 		confAN3O.click();
 		sleep(1000);
 		
@@ -2039,7 +2038,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		regraAN3.click();
 		sleep(1000);
-		WebElement regraAN3O = driver.findElement(By.xpath("//div[@id=\""+idObter3()+"\"]/div/label/span"));
+		WebElement regraAN3O = driver.findElement(By.xpath("//div[@id=\""+idObter("RegraN3Id")+"\"]/div/label/span"));
 		regraAN3O.click();
 		sleep(1000);
 		regraAN3O.sendKeys(Keys.ESCAPE);
@@ -2051,7 +2050,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		
 		arquivoAN3.click();
 		sleep(1000);
-		WebElement arquivoAN3O = driver.findElement(By.xpath("//li[contains(text(),\""+idObter5()+"\")]"));
+		WebElement arquivoAN3O = driver.findElement(By.xpath("//li[contains(text(),\""+idObter("ArquivocoID")+"\")]"));
 		arquivoAN3O.click();
 		sleep(1000);
 		
@@ -2211,7 +2210,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 	
 	public ArrayList<Boolean> excluirDFGConf() {
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("DFGAN3");
 		
 		configuracoes.click();
 		
@@ -2321,7 +2320,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 	
 	public ArrayList<Boolean> excluirDFG() {
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("AN3Raiz");
 		
 		
 		leiauteAba.click();
@@ -2335,7 +2334,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys(idObter2());
+		pesquisar.sendKeys(idObter("AN3Raiz"));
 		sleep(1000);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
@@ -2377,7 +2376,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		sleep(2000);
 		
 		pesquisar.clear();
-		pesquisar.sendKeys(idObter2());
+		pesquisar.sendKeys(idObter("AN3Raiz"));
 		sleep(1000);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
@@ -2407,7 +2406,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		sleep(2000);
 		
 		pesquisar.clear();
-		pesquisar.sendKeys(idObter2());
+		pesquisar.sendKeys(idObter("AN3Raiz"));
 		sleep(1000);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
@@ -2432,7 +2431,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 	
 	public ArrayList<Boolean> excluirBRE() {
 		
-		String idRegistro = idObter3();
+		String idRegistro = idObter("RegraN3Id");
 		home.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -2450,7 +2449,7 @@ public class AN3FuncionalidadesPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys(idObter3());
+		pesquisar.sendKeys(idObter("RegraN3Id"));
 		sleep(1000);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);

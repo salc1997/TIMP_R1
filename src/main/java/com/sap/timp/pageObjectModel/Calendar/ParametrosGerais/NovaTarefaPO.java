@@ -100,8 +100,7 @@ public class NovaTarefaPO extends TestBase{
 		String idDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		String dataID = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]")).getAttribute("data-id");
 		System.out.println("Id antes da criação: " +idDC);
-		idInserir4(dataID);
-		
+		idInserir("NovaTarefa",dataID);
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
 		int idDCI = convertToInt(idDC);
@@ -134,7 +133,7 @@ public class NovaTarefaPO extends TestBase{
 	public boolean excluir() {
 		
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("NovaTarefa");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id="+idRegistro+"]/div[2]/div"));
 		WebElement excluirB = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id="+idRegistro+"]/div[2]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));

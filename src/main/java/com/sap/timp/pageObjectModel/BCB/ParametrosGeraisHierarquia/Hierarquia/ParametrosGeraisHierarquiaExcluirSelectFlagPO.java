@@ -44,7 +44,7 @@ public class ParametrosGeraisHierarquiaExcluirSelectFlagPO extends TestBase {
 		sleep(2000);
 		
 
-		String idRegistro = idObter1();
+		String idRegistro = idObter("ParametrosGeraisH1");
 
 		
 		ultimo.click();

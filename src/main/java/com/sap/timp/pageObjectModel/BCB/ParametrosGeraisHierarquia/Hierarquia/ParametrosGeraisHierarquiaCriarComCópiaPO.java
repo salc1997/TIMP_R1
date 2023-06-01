@@ -72,7 +72,7 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		String idRegistro = idObter1();
+		String idRegistro = idObter("ParametrosGeraisH1");
 
 		System.out.println(idRegistro);
 		
@@ -126,7 +126,7 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBase {
 		sucesso.add(nome.contains("Cópia de - Teste QA PRUEBA TA"));
 		
 		System.out.println("nuevo Copia: "+id2);
-		idInserir2(id2);
+		idInserir("ParametrosGeraisCopia",id2);
 
 		int id1I = convertToInt(idRegistro);
 		int id2I = convertToInt(id2);
@@ -143,7 +143,7 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBase {
 	public boolean excluir() {
 		
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("ParametrosGeraisCopia");
 		System.out.println("excluiremos: "+idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Lixeira\"]"));
@@ -203,7 +203,7 @@ public class ParametrosGeraisHierarquiaCriarComCópiaPO extends TestBase {
 		sleep(2000);
 		
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("ParametrosGeraisCopia");
 		System.out.println("excluiremos: "+idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));

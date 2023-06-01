@@ -705,7 +705,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 
 		sucesso.add(nome.contains("Teste Automatizado"));
 
-		idInserir1(id2);
+		idInserir("HCh1",id2);
 
 		int id1I = convertToInt(id);
 		int id2I = convertToInt(id2);
@@ -831,7 +831,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		
 		
 		String idApos = driver.findElement(By.xpath("//div[@class=\"tr\" and@data-id]["+rows+"]/div[4]/div")).getText();
-		idInserir2(idApos);
+		idInserir("HCc1",idApos);
 		System.out.println("Id Configurações apos da criação: "+ idApos);
 		
 		
@@ -859,8 +859,8 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 			tc2 = true;
 		}
 		
-		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter2()+"\"]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter2()+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("HCc1")+"\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("HCc1")+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		sleep(2000);
 	
 		menu.click();
@@ -2291,7 +2291,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 	
-		String idConfiguracao = idObter2();
+		String idConfiguracao = idObter("HCc1");
 		
 		pesquisar.sendKeys(idConfiguracao);
 		pesquisar.sendKeys(Keys.ENTER);
@@ -2375,7 +2375,7 @@ public class HierarquiaConfiguracaoTodasAsFuncionalidadesPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idHierarquia = idObter1();
+		String idHierarquia = idObter("HCh1");
 		
 		siguiente.click();
 		sleep(2000);

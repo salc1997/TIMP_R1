@@ -65,7 +65,7 @@ public ArrayList<Boolean> Filtros() {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);
 		
-		String idRegistro = idObter3();
+		String idRegistro = idObter("ParametrosGeraisC1");
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement detalle = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Detalhe\"]"));

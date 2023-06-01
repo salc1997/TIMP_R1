@@ -211,12 +211,6 @@ public class ParametrosGeraisConfiguracaoConfiguracaoCriarPO extends TestBase {
 		sleep(1000);
 		nomeHirarquia.sendKeys(Keys.ENTER);
 		sleep(1000);
-		
-//		nomeHirarquia.click();
-//		sleep(1000);
-//		nomeHirarquiaO.click();
-//		nomeHirarquiaO.sendKeys(Keys.ESCAPE);
-//		sleep(1000);
 
 		tributo.click();
 		sleep(1000);
@@ -287,7 +281,7 @@ public class ParametrosGeraisConfiguracaoConfiguracaoCriarPO extends TestBase {
 
 		//sucesso.add(nome.contains("Prueba Automatizada de Hierarq"));
 		sucesso.add(nome.contains("Teste QA PRUEBA TA"));
-		idInserir3(id2);
+		idInserir("ParametrosGeraisC1",id2);
 
 		int id1I = convertToInt(id);
 		int id2I = convertToInt(id2);

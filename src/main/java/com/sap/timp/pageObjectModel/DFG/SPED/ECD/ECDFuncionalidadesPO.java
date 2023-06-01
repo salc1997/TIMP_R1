@@ -3,8 +3,6 @@ package com.sap.timp.pageObjectModel.DFG.SPED.ECD;
 
 import java.util.ArrayList;
 
-import org.apache.maven.profiles.AlwaysOnActivation;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -416,7 +414,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 		String idBAAC = "0";
 		if (rows > 0) {
 			idBAAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
-			idInserir1(idBAAC);
+			idInserir("BAAC",idBAAC);
 			System.out.println("Id Antes da Criação (Bloco Apuração): " +idBAAC);
 		} 
 		
@@ -521,7 +519,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 		rows = rows("//div[@class=\"tr\" and @data-id]");
 		System.out.println("------------------------------------Criação de ECD------------------------------------------------");
 		String idECDDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir1(idECDDC);
+		idInserir("ECDDC",idECDDC);
 		System.out.println("Id Apóis da Criação (Bloco Apuração): " +idECDDC);
 		
 		int idECDDCI = convertToInt(idECDDC);
@@ -536,12 +534,12 @@ public class ECDFuncionalidadesPO extends TestBase{
 		System.out.println("Verificação da criação: " + sucesso);
 		
 		
-		String nome = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter1()+"\"]/div[4]/div")).getText();
-		String empresa = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter1()+"\"]/div[10]/div/li")).getText();
-		String uf = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter1()+"\"]/div[11]/div/li")).getText();
-		String filial = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter1()+"\"]/div[12]/div/li")).getText();
-		String tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter1()+"\"]/div[13]/div/li")).getText();
-		String dataVigencia = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter1()+"\"]/div[14]/div")).getText();
+		String nome = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ECDDC")+"\"]/div[4]/div")).getText();
+		String empresa = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ECDDC")+"\"]/div[10]/div/li")).getText();
+		String uf = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ECDDC")+"\"]/div[11]/div/li")).getText();
+		String filial = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ECDDC")+"\"]/div[12]/div/li")).getText();
+		String tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ECDDC")+"\"]/div[13]/div/li")).getText();
+		String dataVigencia = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ECDDC")+"\"]/div[14]/div")).getText();
 		
 		System.out.println(nome);
 		System.out.println(empresa);
@@ -575,7 +573,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 	
 	public boolean editar() {
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("ECDDC");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -631,7 +629,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 		
 
 		System.out.println("-------------------------------------Verificação Informação--------------------------------------------");
-		String idRegistro = idObter1();
+		String idRegistro = idObter("ECDDC");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Informação\"]"));
@@ -679,7 +677,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 			tc2 = true;
 		}
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("ECDDC");
 		
 
 		System.out.println("-------------------------------------Verificação Visualizar-------------------------------------------");
@@ -788,12 +786,12 @@ public class ECDFuncionalidadesPO extends TestBase{
 		invisibilityOfElementOverlay();
 		System.out.println("----------------------------Criar em Bloco de Apuração'------------------------------------------");
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
-		String nome = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter1()+"\"]/div[4]/div")).getText();
-		String empresa = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter1()+"\"]/div[10]/div/li")).getText();
-		String uf = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter1()+"\"]/div[11]/div/li")).getText();
-		String filial = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter1()+"\"]/div[12]/div/li")).getText();
-		String tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter1()+"\"]/div[13]/div/li")).getText();
-		String dataVigencia = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter1()+"\"]/div[14]/div")).getText();
+		String nome = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ECDDC")+"\"]/div[4]/div")).getText();
+		String empresa = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ECDDC")+"\"]/div[10]/div/li")).getText();
+		String uf = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ECDDC")+"\"]/div[11]/div/li")).getText();
+		String filial = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ECDDC")+"\"]/div[12]/div/li")).getText();
+		String tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ECDDC")+"\"]/div[13]/div/li")).getText();
+		String dataVigencia = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ECDDC")+"\"]/div[14]/div")).getText();
 		
 		System.out.println(nome);
 		System.out.println(empresa);
@@ -829,7 +827,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 	public boolean editarBlocoApuracao() {
 		
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("ECDDC");
 		
 
 		System.out.println("-------------------------------------Verificação Editar Bloco Apuracao-------------------------------------------");
@@ -859,7 +857,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 	public boolean informacaoBlocoApuracao() {
 		
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("ECDDC");
 		
 
 		System.out.println("-------------------------------------Verificação Informação Bloco Apuracao-------------------------------------------");
@@ -897,7 +895,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 			tc2 = true;
 		}
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("ECDDC");
 		
 
 		System.out.println("-------------------------------------Verificação Visualizar Bloco Apuracao-------------------------------------------");
@@ -971,7 +969,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 			tp1 = true;
 		}
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("ECDDC");
 		
 
 		System.out.println("-------------------------------------Verificação Visualizar Bloco Apuracao-------------------------------------------");
@@ -1093,7 +1091,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 	
 	public ArrayList<Boolean> visualizarActualizacoes() {
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("ECDDC");
 		
 
 		biblioteca.click();
@@ -1226,7 +1224,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 		invisibilityOfElementOverlay();
 		
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("ECDDC");
 		
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
@@ -1324,7 +1322,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 		varianteO.click();
 		String varianteID = varianteO.getAttribute("id");
 		System.out.println("Id da Variante: " +varianteID);
-		idInserir2(varianteID);
+		idInserir("variante",varianteID);
 		sleep(2000);
 		
 
@@ -1349,7 +1347,7 @@ public class ECDFuncionalidadesPO extends TestBase{
 	
 	public boolean excluirVariante() {
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("variante");
 		excluirVariante.click();
 		sleep(2000);
 		waitExpectedElement(fechar);

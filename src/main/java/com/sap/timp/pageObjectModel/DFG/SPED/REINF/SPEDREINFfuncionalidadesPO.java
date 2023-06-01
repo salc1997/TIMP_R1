@@ -313,7 +313,7 @@ public class SPEDREINFfuncionalidadesPO extends TestBase{
 		
 		String ultimoIdDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Último Id após da criação do registro: " + ultimoIdDC);
-		idInserir2(ultimoIdDC);
+		idInserir("spedReinf",ultimoIdDC);
 
 		int ultimoIdDCD = Integer.valueOf(ultimoIdDC);
 		int ultimoIdACD = Integer.valueOf(ultimoIdAC);
@@ -323,12 +323,7 @@ public class SPEDREINFfuncionalidadesPO extends TestBase{
 			sucesso = true;
 		}
 		
-		System.out.println(idObter2());
-		System.out.println(idObter3());
 		
-		
-		
-	
 		System.out.println(sucesso);
 		
 		return sucesso;
@@ -358,7 +353,7 @@ public class SPEDREINFfuncionalidadesPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("spedReinf");
 		
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -437,7 +432,7 @@ public class SPEDREINFfuncionalidadesPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("spedReinf");
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
 		
@@ -520,7 +515,7 @@ public class SPEDREINFfuncionalidadesPO extends TestBase{
 		sleep(2000);
 
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("spedReinf");
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
@@ -627,7 +622,7 @@ public class SPEDREINFfuncionalidadesPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("spedReinf");
 		
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -757,7 +752,7 @@ public class SPEDREINFfuncionalidadesPO extends TestBase{
 		System.out.println("Último Id após da criação do registro: " + ultimoIdDC);
 		
 		
-		idInserir3(ultimoIdDC);
+		idInserir("spedReinfExecutar",ultimoIdDC);
 		
 		
 		sleep(3000);

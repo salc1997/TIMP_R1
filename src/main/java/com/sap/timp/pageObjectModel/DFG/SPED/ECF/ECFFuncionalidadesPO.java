@@ -250,7 +250,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 
 		String idECF = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Id Antes da Criação (ECF): " +idECF);
-		idInserir1(idECF);
+		idInserir("EFC",idECF);
 
 		blocos.click();
 		sleep(3000);
@@ -275,7 +275,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 		String idBlocos = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows1+"]/div[3]/div")).getText();
 		System.out.println("Id Antes da Criação (Bloncos): " + idBlocos);
 
-		idInserir2(idBlocos);
+		idInserir("blocos",idBlocos);
 	}
 
 	public boolean Criar() {
@@ -535,12 +535,12 @@ public class ECFFuncionalidadesPO extends TestBase{
 
 		int rows = rows("//div[@class=\"tr\" and @data-id]");
 		
-		String idECF =idObter1();
+		String idECF =idObter("ECF");
 		System.out.println("Id Antes da Criação (ECF): " +idECF);
 		
 		String idNuevo = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Id n da Criação (ECF): " +idNuevo);
-		idInserir3(idNuevo);
+		idInserir("nuevo",idNuevo);
 
 
 
@@ -563,7 +563,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 	public boolean Editar() {
 
 		System.out.println("---------- Editar --------- " );
-		String idRegistro =idObter3();
+		String idRegistro =idObter("nuevo");
 		
 		System.out.println("Registro a Editar " +idRegistro);
 		
@@ -639,7 +639,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 		sleep(2000);
 
 		this.DescripcionEditarE = descripcion.getAttribute("value");
-		idInserir2(this.DescripcionEditarE);
+		idInserir("descripcionEditar",this.DescripcionEditarE);
 		System.out.println(" Texto Actual: " + valor);
 		System.out.println(" Texto nuevo: " + this.DescripcionEditarE);
 		boolean sucesso = this.DescripcionEditarE.equals(enviar);
@@ -661,7 +661,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 		sleep(2000);
 
 		System.out.println("---------- Informacao --------- " );
-		String idRegistro =idObter3();
+		String idRegistro =idObter("nuevo");
 
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -782,7 +782,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter3();
+		String idRegistro = idObter("nuevo");
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -851,7 +851,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 						+ rows + "]/div[3]/div"))
 				.getText();
 
-		idInserir4(textIDE);
+		idInserir("textIDE",textIDE);
 		System.out.println(textIDE);
 
 		String textNombreE = driver
@@ -989,7 +989,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 
 		System.out.println("valor editado en ECF :" + this.DescripcionEditarE);
 
-		String idRegistro =idObter4();
+		String idRegistro =idObter("textIDE");
 
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar2 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -1043,7 +1043,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 		sleep(2000);
 
 		System.out.println("---------- Informacao Bloco --------- " );
-		String idRegistro =idObter4();
+		String idRegistro =idObter("textIDE");
 
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -1108,7 +1108,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 		sleep(2000);
 
 		System.out.println("---------- Visualizar Bloco --------- " );
-		String idRegistro =idObter4();
+		String idRegistro =idObter("textIDE");
 
 		System.out.println("Nome: " + this.NombreVisualizarE);
 		System.out.println("Descrição: " + this.DescripcionVisualizarE);
@@ -1212,7 +1212,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 		sleep(2000);
 
 		System.out.println("---------- Executar Bloco --------- " );
-		String idRegistro =idObter4();
+		String idRegistro =idObter("textIDE");
 
 		sleep(2000);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -1462,7 +1462,7 @@ public class ECFFuncionalidadesPO extends TestBase{
 		
 		System.out.println("---------- Visualizar Atualizações --------- " );
 
-		String idRegistro =idObter4();
+		String idRegistro =idObter("textIDE");
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		

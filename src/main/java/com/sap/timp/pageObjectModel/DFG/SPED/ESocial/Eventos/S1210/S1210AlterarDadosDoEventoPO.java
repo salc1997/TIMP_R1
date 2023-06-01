@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.DFG.AcessarDFGPO;
 
@@ -262,7 +263,7 @@ public class S1210AlterarDadosDoEventoPO extends TestBase{
 		}
 
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[3]/div")).getText();
-		idInserir4(idB);
+		idInserir("alterarDadosDoEvento",idB);
 
 		sleep(2000);
 		System.out.println("ID Primer registro: " + id);
@@ -288,7 +289,7 @@ public class S1210AlterarDadosDoEventoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter4();
+		String idRegistro = idObter("alterarDadosDoEvento");
 		System.out.println("");
 		System.out.println("Id Registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
@@ -349,7 +350,7 @@ public class S1210AlterarDadosDoEventoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter4();
+		String idRegistro = idObter("alterarDadosDoEvento");
 		System.out.println("");
 		System.out.println("Id Registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
@@ -429,7 +430,7 @@ public class S1210AlterarDadosDoEventoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter4();
+		String idRegistro = idObter("alterarDadosDoEvento");
 		System.out.println("");
 		System.out.println("Id Registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
@@ -530,7 +531,7 @@ public class S1210AlterarDadosDoEventoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter4();
+		String idRegistro = idObter("alterarDadosDoEvento");
 		System.out.println("");
 		System.out.println("Id Registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
@@ -714,7 +715,7 @@ public class S1210AlterarDadosDoEventoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter4();
+		String idRegistro = idObter("alterarDadosDoEvento");
 		System.out.println("");
 		System.out.println("Id Registro: " + idRegistro);
 		WebElement menu = driver

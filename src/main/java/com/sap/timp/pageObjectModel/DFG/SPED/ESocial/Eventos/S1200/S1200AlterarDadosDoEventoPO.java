@@ -3,8 +3,6 @@ package com.sap.timp.pageObjectModel.DFG.SPED.ESocial.Eventos.S1200;
 
 import java.util.ArrayList;
 
-import org.apache.maven.profiles.AlwaysOnActivation;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -495,7 +493,7 @@ public class S1200AlterarDadosDoEventoPO extends TestBase{
 		rows = rows("//div[@class=\"tr\" and @data-id]");
 		System.out.println("------------------------------------Criação de S1000------------------------------------------------");
 		String idESocialDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
-		idInserir1(idESocialDC);
+		idInserir("eSocialDC1",idESocialDC);
 		System.out.println("Id Após da Criação S1000: " +idESocialDC);
 		
 		int idESocialDCI = convertToInt(idESocialDC);
@@ -510,12 +508,12 @@ public class S1200AlterarDadosDoEventoPO extends TestBase{
 		System.out.println("Verificação da criação: " + sucesso.get(0));
 		
 		
-		String nome = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter1()+"\"]/div[4]/div")).getText();
-		String empresa = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter1()+"\"]/div[10]/div/li")).getText();
-		String uf = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter1()+"\"]/div[11]/div/li")).getText();
-		String filial = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter1()+"\"]/div[12]/div/li")).getText();
-		String tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter1()+"\"]/div[13]/div/li")).getText();
-		String dataVigencia = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter1()+"\"]/div[14]/div")).getText();
+		String nome = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("eSocialDC1")+"\"]/div[4]/div")).getText();
+		String empresa = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("eSocialDC1")+"\"]/div[10]/div/li")).getText();
+		String uf = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("eSocialDC1")+"\"]/div[11]/div/li")).getText();
+		String filial = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("eSocialDC1")+"\"]/div[12]/div/li")).getText();
+		String tributo = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("eSocialDC1")+"\"]/div[13]/div/li")).getText();
+		String dataVigencia = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("eSocialDC1")+"\"]/div[14]/div")).getText();
 		
 		System.out.println(nome);
 		System.out.println(empresa);
@@ -542,7 +540,7 @@ public class S1200AlterarDadosDoEventoPO extends TestBase{
 	
 	public boolean editar() {
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("eSocialDC1");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -610,7 +608,7 @@ public class S1200AlterarDadosDoEventoPO extends TestBase{
 		
 
 		System.out.println("-------------------------------------Verificação Informação--------------------------------------------");
-		String idRegistro = idObter1();
+		String idRegistro = idObter("eSocialDC1");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement acao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Informação\"]"));
@@ -660,7 +658,7 @@ public class S1200AlterarDadosDoEventoPO extends TestBase{
 		
 
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("eSocialDC1");
 		
 
 		System.out.println("-------------------------------------Verificação Visualizar-------------------------------------------");
@@ -754,7 +752,7 @@ public class S1200AlterarDadosDoEventoPO extends TestBase{
 		
 
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("eSocialDC1");
 		
 
 		System.out.println("-------------------------------------Verificação Visualizar Bloco Apuracao-------------------------------------------");
@@ -853,7 +851,7 @@ public class S1200AlterarDadosDoEventoPO extends TestBase{
 
 	public ArrayList<Boolean> visualizarActualizacoes() {
 		
-		String idRegistro = idObter1();
+		String idRegistro = idObter("eSocialDC1");
 		
 	
 		biblioteca.click();

@@ -1,14 +1,10 @@
 package com.sap.timp.pageObjectModel.DFG.SPED.EFDICMSIPI;
 
-import java.rmi.server.Skeleton;
 import java.util.ArrayList;
-
-import javax.net.ssl.SSLKeyException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -675,7 +671,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		
 		String ultimoIdDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[5]/div")).getText();
 		System.out.println("Último Id após da criação do registro (Raiz): " + ultimoIdDC);
-		idInserir2(ultimoIdDC);
+		idInserir("ultimoIdDC2",ultimoIdDC);
 
 		int ultimoIdDCD = Integer.valueOf(ultimoIdDC);
 		int ultimoIdACD = Integer.valueOf(ultimoIdAC);
@@ -731,7 +727,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		
 		String ultimoIdAC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Último Id antes da criação do registro (BRE): " + ultimoIdAC);
-		idInserir1(ultimoIdAC);
+		idInserir("ultimoIdAC1",ultimoIdAC);
 		
 		novo.click();
 		sleep(3000);
@@ -799,7 +795,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		
 		leiauteR.click();
 		sleep(1000);
-		WebElement leiauteO = driver.findElement(By.xpath("//li[contains(text(),\""+idObter2()+"\")]"));
+		WebElement leiauteO = driver.findElement(By.xpath("//li[contains(text(),\""+idObter("ultimoIdDC2")+"\")]"));
 		leiauteO.click();
 		sleep(1000);
 		
@@ -879,7 +875,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		
 		String ultimoIdDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Último Id após da criação do registro (BRE): " + ultimoIdDC);
-		idInserir3(ultimoIdDC);
+		idInserir("ultimoIdDC3",ultimoIdDC);
 		
 		int ultimoIdDCD = Integer.valueOf(ultimoIdDC);
 		int ultimoIdACD = Integer.valueOf(ultimoIdAC);
@@ -981,7 +977,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		
 		leiauteE.click();
 		sleep(1000);
-		WebElement leiauteO = driver.findElement(By.xpath("//li[contains(text(),\""+idObter2()+"\")]"));
+		WebElement leiauteO = driver.findElement(By.xpath("//li[contains(text(),\""+idObter("ultimoIdDC2")+"\")]"));
 		leiauteO.click();
 		sleep(1000);
 		
@@ -1062,7 +1058,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		
 		String ultimoIdDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Id após da criação (DFG SPED EFD): "+ ultimoIdDC);
-		idInserir4(ultimoIdDC);
+		idInserir("ultimoIdDC4",ultimoIdDC);
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
@@ -1102,7 +1098,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 	
 	public boolean editarDFG() {
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("ultimoIdDC4");
 		
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -1148,7 +1144,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 	
 	public ArrayList<Boolean> informacao() {
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("ultimoIdDC4");
 		
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -1277,7 +1273,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("ultimoIdDC4");
 		
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -1395,8 +1391,8 @@ public class EFDICMSIPICriarPO extends TestBase{
 	
 	public ArrayList<Boolean> execucao() {
 		
-		String idRegistro = idObter4();
-		String idRegra = idObter3();
+		String idRegistro = idObter("ultimoIdDC4");
+		String idRegra = idObter("ultimoIdDC3");
 		
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -1527,7 +1523,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 	
 	public ArrayList<Boolean> arquivos() {
 		
-		String idRegistro = idObter4();
+		String idRegistro = idObter("ultimoIdDC4");
 		arquivos.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1544,7 +1540,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		int presente = driver.findElements(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter4()+"\"]")).size();
+		int presente = driver.findElements(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("ultimoIdDC4")+"\"]")).size();
 		if (presente == 1) {
 			sucesso.add(true);
 		}else {
@@ -1670,7 +1666,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 	
 	public ArrayList<Boolean> excluirDFG() {
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("ultimoIdDC2");
 		home.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1688,7 +1684,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys(idObter2());
+		pesquisar.sendKeys(idObter("ultimoIdDC2"));
 		sleep(1000);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
@@ -1730,7 +1726,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		sleep(2000);
 		
 		pesquisar.clear();
-		pesquisar.sendKeys(idObter2());
+		pesquisar.sendKeys(idObter("ultimoIdDC2"));
 		sleep(1000);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
@@ -1777,7 +1773,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 	
 	public ArrayList<Boolean> excluirBRE() {
 		
-		String idRegistro = idObter3();
+		String idRegistro = idObter("ultimoIdDC3");
 		home.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -1795,7 +1791,7 @@ public class EFDICMSIPICriarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		pesquisar.sendKeys(idObter3());
+		pesquisar.sendKeys(idObter("ultimoIdDC3"));
 		sleep(1000);
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);

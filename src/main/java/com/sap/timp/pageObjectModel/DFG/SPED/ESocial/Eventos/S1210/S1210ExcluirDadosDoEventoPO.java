@@ -259,7 +259,7 @@ public class S1210ExcluirDadosDoEventoPO extends TestBase{
 		}
 
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][" + rows + "]/div[3]/div")).getText();
-		idInserir4(idB);
+		idInserir("excluirDadosDoEvento",idB);
 
 		sleep(2000);
 		System.out.println("ID Primer registro: " + id);
@@ -285,7 +285,7 @@ public class S1210ExcluirDadosDoEventoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter4();
+		String idRegistro = idObter("excluirDadosDoEvento");
 		System.out.println("");
 		System.out.println("Id Registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
@@ -347,7 +347,7 @@ public class S1210ExcluirDadosDoEventoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter4();
+		String idRegistro = idObter("excluirDadosDoEvento");
 		System.out.println("");
 		System.out.println("Id Registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
@@ -427,7 +427,7 @@ public class S1210ExcluirDadosDoEventoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter4();
+		String idRegistro = idObter("excluirDadosDoEvento");
 		System.out.println("");
 		System.out.println("Id Registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));
@@ -528,7 +528,7 @@ public class S1210ExcluirDadosDoEventoPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
-		String idRegistro = idObter4();
+		String idRegistro = idObter("excluirDadosDoEvento");
 		System.out.println("");
 		System.out.println("Id Registro: " + idRegistro);
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\"" + idRegistro + "\"]/div[1]/div"));

@@ -326,7 +326,7 @@ public class ESOCIALfuncionalidadesPO extends TestBase{
 		
 		String ultimoIdDC = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[3]/div")).getText();
 		System.out.println("Último Id após da criação do registro: " + ultimoIdDC);
-		idInserir2(ultimoIdDC);
+		idInserir("ultimoIdDC2",ultimoIdDC);
 
 		int ultimoIdDCD = Integer.valueOf(ultimoIdDC);
 		int ultimoIdACD = Integer.valueOf(ultimoIdAC);
@@ -335,14 +335,6 @@ public class ESOCIALfuncionalidadesPO extends TestBase{
 		if (ultimoIdACD < ultimoIdDCD) {
 			sucesso = true;
 		}
-		
-		System.out.println(idObter2());
-		System.out.println(idObter3());
-		
-		
-		
-	
-		System.out.println(sucesso);
 		
 		return sucesso;
 	}
@@ -376,7 +368,7 @@ public class ESOCIALfuncionalidadesPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("ultimoIdDC2");
 		
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -462,7 +454,7 @@ public class ESOCIALfuncionalidadesPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("ultimoIdDC2");
 		
 		int rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();		
 		
@@ -550,7 +542,7 @@ public class ESOCIALfuncionalidadesPO extends TestBase{
 		sleep(2000);
 
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("ultimoIdDC2");
 
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
@@ -662,7 +654,7 @@ public class ESOCIALfuncionalidadesPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		String idRegistro = idObter2();
+		String idRegistro = idObter("ultimoIdDC2");
 		
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
@@ -773,7 +765,7 @@ public class ESOCIALfuncionalidadesPO extends TestBase{
 		System.out.println("Último Id após da criação do registro: " + ultimoIdDC);
 		
 		
-		idInserir3(ultimoIdDC);
+		idInserir("ultimoIdDC3",ultimoIdDC);
 		
 		
 		sleep(3000);

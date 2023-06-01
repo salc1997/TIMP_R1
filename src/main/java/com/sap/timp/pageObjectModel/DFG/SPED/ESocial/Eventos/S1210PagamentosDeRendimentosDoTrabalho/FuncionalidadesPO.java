@@ -200,7 +200,7 @@ public class FuncionalidadesPO extends TestBase{
 		}
 		  
 		String idB = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]/div[3]/div")).getText(); 
-		idInserir4(idB);
+		idInserir("novoEvento",idB);
 		  
 		sleep(2000); 
 		System.out.println("ID Primer registro: " + id); 
@@ -221,7 +221,7 @@ public class FuncionalidadesPO extends TestBase{
 	}
 	
 	public ArrayList<Boolean> informacao() {
-		String idRegistro = idObter4();
+		String idRegistro = idObter("novoEvento");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Informação\"]"));
 				
@@ -275,7 +275,7 @@ public class FuncionalidadesPO extends TestBase{
 	}
 	
 	public ArrayList<Boolean> visualizar() {
-		String idRegistro = idObter4();
+		String idRegistro = idObter("novoEvento");
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Visualizar\"]"));
 				

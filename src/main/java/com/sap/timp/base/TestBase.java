@@ -31,6 +31,8 @@ public class TestBase extends TestUtil{
 	protected String td2 = "http://as1-100-01-td2:8000/timp/login/#/login";
 
 	protected String cloud = "https://timp.authentication.eu10.hana.ondemand.com/login";
+	
+	protected String xsa = "https://as1-100-50.alltaxplatform.com:30032/uaa-security-oidc/login";
 
 	public static WebDriver driver;
 	public String usuarioL = "TESTEAUTOMATIZADO";
@@ -79,7 +81,7 @@ public class TestBase extends TestUtil{
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 
-		driver.get(tc2);
+		driver.get(xsa);
 
 		return driver;
 	}

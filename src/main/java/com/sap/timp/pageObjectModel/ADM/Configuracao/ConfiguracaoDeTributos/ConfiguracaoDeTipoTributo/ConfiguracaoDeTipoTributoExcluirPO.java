@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBase;
 
 public class ConfiguracaoDeTipoTributoExcluirPO extends TestBase{
-	
+	protected String adm = "http://as1-100-01-tc2:8000/timp/adm/#/library";
 	@FindBy(xpath = "//div[@class=\"baseTabs-bar boxes\"]/div/div[2]")
 	public WebElement Configuração;
 
@@ -30,6 +30,9 @@ public class ConfiguracaoDeTipoTributoExcluirPO extends TestBase{
 	}
 
 	public Boolean excluir() {
+		
+		sleep(2000);
+		driver.get(adm);
 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

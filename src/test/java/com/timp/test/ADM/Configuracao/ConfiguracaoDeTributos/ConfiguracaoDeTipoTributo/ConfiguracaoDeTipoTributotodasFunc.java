@@ -13,25 +13,36 @@ import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.AcessarADMPO;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTipoTributo.ConfiguracaoDeTipoTributoCriarPO;
-import com.sap.timp.pageObjectModel.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTipoTributo.ConfiguracaoDeTipoTributoTodasFuncPO;
+import com.sap.timp.pageObjectModel.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTipoTributo.ConfiguracaoDeTipoTributoEditarPO;
+import com.sap.timp.pageObjectModel.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTipoTributo.ConfiguracaoDeTipoTributoExcluirPO;
+import com.sap.timp.pageObjectModel.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTipoTributo.ConfiguracaoDeTipoTributoFiltrosAvancadosPO;
+import com.sap.timp.pageObjectModel.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTipoTributo.ConfiguracaoDeTipoTributoVisualizarPO;
 
 public class ConfiguracaoDeTipoTributotodasFunc extends TestBase {
 	
 	LoginTC loginTC;
 	AcessarADMPO acessarADMPO;
-	ConfiguracaoDeTipoTributoTodasFuncPO configuracaoDeTipoTributoTodasFuncPO;
+	ConfiguracaoDeTipoTributoCriarPO configuracaoDeTipoTributoCriarPO;
+	ConfiguracaoDeTipoTributoEditarPO configuracaoDeTipoTributoEditarPO;
+	ConfiguracaoDeTipoTributoFiltrosAvancadosPO configuracaoDeTipoTributoFiltrosAvancadosPO;
+	ConfiguracaoDeTipoTributoExcluirPO configuracaoDeTipoTributoExcluirPO;
+	ConfiguracaoDeTipoTributoVisualizarPO configuracaoDeTipoTributoVisualizarPO ;
   
   @BeforeClass
   public void beforeClass() {
 	  driver = initialization();
 	  loginTC = new LoginTC(); 
 	  acessarADMPO = new AcessarADMPO();
-	  configuracaoDeTipoTributoTodasFuncPO = new ConfiguracaoDeTipoTributoTodasFuncPO();
+	  configuracaoDeTipoTributoCriarPO = new ConfiguracaoDeTipoTributoCriarPO();
+	  configuracaoDeTipoTributoEditarPO = new ConfiguracaoDeTipoTributoEditarPO();
+	  configuracaoDeTipoTributoFiltrosAvancadosPO = new ConfiguracaoDeTipoTributoFiltrosAvancadosPO();
+	  configuracaoDeTipoTributoExcluirPO = new ConfiguracaoDeTipoTributoExcluirPO();
+	  configuracaoDeTipoTributoVisualizarPO = new ConfiguracaoDeTipoTributoVisualizarPO();
   }
 
   @AfterClass
   public void afterClass() {
-	  driver.close();
+	 // driver.close();
   }
 
   
@@ -40,7 +51,7 @@ public class ConfiguracaoDeTipoTributotodasFunc extends TestBase {
 	public void criar() {
 		loginTC.login();
 		acessarADMPO.acessarADM();
-		boolean sucesso = configuracaoDeTipoTributoTodasFuncPO.criar();
+		boolean sucesso = configuracaoDeTipoTributoCriarPO.criar();
 		assertTrue(sucesso, Criar);
 		sleep(2000);
 
@@ -49,7 +60,7 @@ public class ConfiguracaoDeTipoTributotodasFunc extends TestBase {
 	@Test(priority = 1)
 	public void editar() {
 
-		boolean sucesso = configuracaoDeTipoTributoTodasFuncPO.editar();
+		boolean sucesso = configuracaoDeTipoTributoEditarPO.editar();
 
 		assertTrue(sucesso, Editar);	
 		sleep(2000);
@@ -59,7 +70,7 @@ public class ConfiguracaoDeTipoTributotodasFunc extends TestBase {
 	public void filtro() {
 		
 
-		ArrayList<Boolean> sucesso = configuracaoDeTipoTributoTodasFuncPO.filtro();
+		ArrayList<Boolean> sucesso = configuracaoDeTipoTributoFiltrosAvancadosPO.filtro();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Filtros);
@@ -69,7 +80,7 @@ public class ConfiguracaoDeTipoTributotodasFunc extends TestBase {
 	}	
 	@Test(priority = 3)
 	public void Visualizar() {
-		ArrayList<Boolean> sucesso = configuracaoDeTipoTributoTodasFuncPO.visualizar();
+		ArrayList<Boolean> sucesso = configuracaoDeTipoTributoVisualizarPO.visualizar();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), visualizar);
@@ -81,7 +92,7 @@ public class ConfiguracaoDeTipoTributotodasFunc extends TestBase {
 	@Test(priority = 4)
 	public void excluir() {
 		
-		boolean sucesso = configuracaoDeTipoTributoTodasFuncPO.excluir();
+		boolean sucesso = configuracaoDeTipoTributoExcluirPO.excluir();
 
 		assertTrue(sucesso, Eliminado);
 		sleep(2000);

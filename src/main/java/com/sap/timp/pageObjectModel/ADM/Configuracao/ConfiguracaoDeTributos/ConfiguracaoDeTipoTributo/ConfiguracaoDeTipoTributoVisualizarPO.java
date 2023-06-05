@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBase;
 
 public class ConfiguracaoDeTipoTributoVisualizarPO extends TestBase{
+	protected String adm = "http://as1-100-01-tc2:8000/timp/adm/#/library";
 	
 	@FindBy(xpath = "//div[@class=\"baseTabs-bar boxes\"]/div/div[2]")
 	public WebElement Configuração;
@@ -47,15 +48,16 @@ public class ConfiguracaoDeTipoTributoVisualizarPO extends TestBase{
 	}
 	
 	public ArrayList<Boolean> visualizar() {
-		
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		driver.get(adm);
+		
+		sleep(6000);
 		Configuração.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		configuracaotributos.click();
-		sleep(2000);
+		sleep(4000);
 		configuracaotipotributo.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

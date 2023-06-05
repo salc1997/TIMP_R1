@@ -11,6 +11,8 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBase;
 
 public class GrupoDeEstruturasFiltroPorIDPO extends TestBase {
+	protected String estructuras = "http://as1-100-01-tc2:8000/timp/atr/#structures";
+
 	
 	@FindBy(xpath = "//span[text()=\"Grupo de Estruturas\"]")
 	public WebElement grupodeestrutura;
@@ -33,9 +35,9 @@ public class GrupoDeEstruturasFiltroPorIDPO extends TestBase {
 	}
 
 	public ArrayList<Boolean> filtro() {
-		driver.get(tc2);
-
+		driver.get(estructuras );
 		sleep(6000);
+		
 		grupodeestrutura.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

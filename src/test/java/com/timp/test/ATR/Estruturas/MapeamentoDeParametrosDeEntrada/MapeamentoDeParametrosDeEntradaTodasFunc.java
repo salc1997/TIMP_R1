@@ -12,13 +12,23 @@ import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaCriarPO;
-import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaTodasFuncPO;
+import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaEditarPO;
+import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaExcluirEmMassaPO;
+import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaExcluirPO;
+import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaVisualizarPO;
+import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO;
 
 public class MapeamentoDeParametrosDeEntradaTodasFunc extends TestBase{
 	
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
-	MapeamentoDeParametrosDeEntradaTodasFuncPO mapeamentoDeParametrosDeEntradaTodasFuncPO;
+	MapeamentoDeParametrosDeEntradaCriarPO mapeamentoDeParametrosDeEntradaCriarPO;
+	MapeamentoDeParametrosDeEntradaEditarPO mapeamentoDeParametrosDeEntradaeditarPO;
+	MapeamentoDeParametrosDeEntradaVisualizarPO mapeamentoDeParametrosDeEntradaVisualizarPO;
+	MapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO mapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO;
+	MapeamentoDeParametrosDeEntradaExcluirPO mapeamentoDeParametrosDeEntradaExcluirPO;
+	MapeamentoDeParametrosDeEntradaExcluirEmMassaPO mapeamentoDeParametrosDeEntradaExcluirEmMassaPO;
+	
 	
 	@BeforeClass
 	  public void beforeClass() {
@@ -26,12 +36,18 @@ public class MapeamentoDeParametrosDeEntradaTodasFunc extends TestBase{
 		  driver = initialization();
 		  loginTC = new LoginTC();
 		  acessarATRPO = new AcessarATRPO();
-		  mapeamentoDeParametrosDeEntradaTodasFuncPO = new  MapeamentoDeParametrosDeEntradaTodasFuncPO();
+		  mapeamentoDeParametrosDeEntradaCriarPO = new  MapeamentoDeParametrosDeEntradaCriarPO();
+		  mapeamentoDeParametrosDeEntradaeditarPO = new  MapeamentoDeParametrosDeEntradaEditarPO();
+		  mapeamentoDeParametrosDeEntradaVisualizarPO = new  MapeamentoDeParametrosDeEntradaVisualizarPO();
+		  mapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO = new MapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO();
+		  mapeamentoDeParametrosDeEntradaExcluirPO = new  MapeamentoDeParametrosDeEntradaExcluirPO();
+		  mapeamentoDeParametrosDeEntradaExcluirEmMassaPO = new MapeamentoDeParametrosDeEntradaExcluirEmMassaPO();
+
 	  }
 
 	  @AfterClass
 	  public void afterClass() {
-		 // driver.close();
+		  driver.close();
 	  }
 	  
 
@@ -41,7 +57,7 @@ public class MapeamentoDeParametrosDeEntradaTodasFunc extends TestBase{
 	 		loginTC.login();
 			 acessarATRPO.acessarATR();
 	 		
-	 		boolean sucesso = mapeamentoDeParametrosDeEntradaTodasFuncPO.criar();
+	 		boolean sucesso = mapeamentoDeParametrosDeEntradaCriarPO.criar();
 			assertTrue(sucesso, Criar);
 			sleep(2000);
 	 		
@@ -49,7 +65,7 @@ public class MapeamentoDeParametrosDeEntradaTodasFunc extends TestBase{
 	@Test(priority = 1)
 	 	public void editar() {
 	 		
-	 		boolean sucesso = mapeamentoDeParametrosDeEntradaTodasFuncPO.Editar();
+	 		boolean sucesso = mapeamentoDeParametrosDeEntradaeditarPO.Editar();
 			assertTrue(sucesso, Editar);
 			sleep(2000);
 	 		
@@ -57,7 +73,7 @@ public class MapeamentoDeParametrosDeEntradaTodasFunc extends TestBase{
 	@Test(priority = 2 )
 	 	public void visualizar() {
 	 		
-	 		ArrayList<Boolean> sucesso = mapeamentoDeParametrosDeEntradaTodasFuncPO.visualizar();
+	 		ArrayList<Boolean> sucesso = mapeamentoDeParametrosDeEntradaVisualizarPO.visualizar();
 	 		for (int i = 0; i < sucesso.size(); i++) {
 	 			assertTrue(sucesso.get(i), visualizar);
 				
@@ -68,7 +84,7 @@ public class MapeamentoDeParametrosDeEntradaTodasFunc extends TestBase{
 	@Test(priority = 3)
 		public void filtro() {
 			
-			boolean sucesso = mapeamentoDeParametrosDeEntradaTodasFuncPO.filtro();
+			boolean sucesso = mapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO.filtro();
 			assertTrue(sucesso, Filtros);
 			sleep(2000);
 		}
@@ -76,7 +92,7 @@ public class MapeamentoDeParametrosDeEntradaTodasFunc extends TestBase{
 		@Test(priority = 4)
 	 	public void Excluir() {
 	
-	 		boolean sucesso = mapeamentoDeParametrosDeEntradaTodasFuncPO.excluir();
+	 		boolean sucesso =  mapeamentoDeParametrosDeEntradaExcluirPO.excluir();
 			assertTrue(sucesso, Eliminado);
 			sleep(2000);
 	 		
@@ -85,7 +101,7 @@ public class MapeamentoDeParametrosDeEntradaTodasFunc extends TestBase{
 		@Test(priority = 5)
 		public void criarMassa() {
 
-			boolean sucesso = mapeamentoDeParametrosDeEntradaTodasFuncPO.criar();
+			boolean sucesso = mapeamentoDeParametrosDeEntradaExcluirEmMassaPO.criar();
 			assertTrue(sucesso, Criar);
 			sleep(1000);
 		}
@@ -93,7 +109,7 @@ public class MapeamentoDeParametrosDeEntradaTodasFunc extends TestBase{
 		@Test(dependsOnMethods = "criarMassa")
 		public void excluir() {
 			
-			boolean sucesso2 = mapeamentoDeParametrosDeEntradaTodasFuncPO.excluir();
+			boolean sucesso2 = mapeamentoDeParametrosDeEntradaExcluirEmMassaPO.excluir();
 			assertTrue(sucesso2, Eliminado);
 			sleep(2000);
 		}

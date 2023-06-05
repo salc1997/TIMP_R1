@@ -11,13 +11,25 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
+import com.sap.timp.pageObjectModel.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarComCopiaPO;
 import com.sap.timp.pageObjectModel.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosCriarPO;
-import com.sap.timp.pageObjectModel.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosTodasFuncPO;
+import com.sap.timp.pageObjectModel.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosDetalhesPO;
+import com.sap.timp.pageObjectModel.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosEditarPO;
+import com.sap.timp.pageObjectModel.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirEmMassaPO;
+import com.sap.timp.pageObjectModel.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosExcluirPO;
+import com.sap.timp.pageObjectModel.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosVerPO;
 
 public class AgrupamentoDeTributosTodasFunc extends TestBase{
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
-	AgrupamentoDeTributosTodasFuncPO agrupamentoDeTributosTodasFuncPO;
+	AgrupamentoDeTributosCriarPO agrupamentoDeTributosCriarPO;
+	AgrupamentoDeTributosCriarComCopiaPO agrupamentoDeTributosCriarComCopiaPO;
+	AgrupamentoDeTributosDetalhesPO agrupamentoDeTributosDetalhesPO;
+	AgrupamentoDeTributosEditarPO agrupamentoDeTributosEditarPO;
+	AgrupamentoDeTributosVerPO agrupamentoDeTributosVerPO;
+	AgrupamentoDeTributosExcluirPO agrupamentoDeTributosExcluirPO;
+	AgrupamentoDeTributosExcluirEmMassaPO agrupamentoDeTributosExcluirEmMassaPO;
+	
 	
 	@BeforeClass
 	  public void beforeClass() {
@@ -25,12 +37,19 @@ public class AgrupamentoDeTributosTodasFunc extends TestBase{
 		  driver = initialization();
 		  loginTC = new LoginTC();
 		  acessarATRPO = new AcessarATRPO();
-		  agrupamentoDeTributosTodasFuncPO = new  AgrupamentoDeTributosTodasFuncPO();
+		  agrupamentoDeTributosCriarPO = new  AgrupamentoDeTributosCriarPO();
+		  agrupamentoDeTributosCriarComCopiaPO = new  AgrupamentoDeTributosCriarComCopiaPO();
+		  agrupamentoDeTributosDetalhesPO = new  AgrupamentoDeTributosDetalhesPO();
+		  agrupamentoDeTributosEditarPO = new  AgrupamentoDeTributosEditarPO();
+		  agrupamentoDeTributosVerPO = new  AgrupamentoDeTributosVerPO();
+		  agrupamentoDeTributosExcluirPO = new  AgrupamentoDeTributosExcluirPO();
+		  agrupamentoDeTributosExcluirEmMassaPO = new AgrupamentoDeTributosExcluirEmMassaPO();
+		
 	  }
 
 	  @AfterClass
 	  public void afterClass() {
-		  driver.close();
+		 // driver.close();
 	  }
 	  
 	  
@@ -41,7 +60,7 @@ public class AgrupamentoDeTributosTodasFunc extends TestBase{
 	 		loginTC.login();
 	 		acessarATRPO.acessarATR();
 	 		
-	 		boolean sucesso = agrupamentoDeTributosTodasFuncPO.criar();
+	 		boolean sucesso = agrupamentoDeTributosCriarPO.criar();
 	 		assertTrue(sucesso, Criar);
 	 		sleep(2000);
 	 		
@@ -51,7 +70,7 @@ public class AgrupamentoDeTributosTodasFunc extends TestBase{
 	 public void criarcopia() {
 	 		
 
-	 		ArrayList<Boolean> sucesso = agrupamentoDeTributosTodasFuncPO.criarcopia();
+	 		ArrayList<Boolean> sucesso = agrupamentoDeTributosCriarComCopiaPO.criarcopia();
 	 		for (int i = 0; i < sucesso.size(); i++) {
 	 			assertTrue(sucesso.get(i), Criar);
 				
@@ -64,7 +83,7 @@ public class AgrupamentoDeTributosTodasFunc extends TestBase{
 	 	public void detalle() {
 	 		
 	 	
-		 ArrayList<Boolean> sucesso = agrupamentoDeTributosTodasFuncPO.detalhes();
+		 ArrayList<Boolean> sucesso = agrupamentoDeTributosDetalhesPO.detalhes();
 	 		for (int i = 0; i < sucesso.size(); i++) {
 	 			assertTrue(sucesso.get(i), Detalhes);
 				
@@ -75,7 +94,7 @@ public class AgrupamentoDeTributosTodasFunc extends TestBase{
 	 @Test(priority = 3)
 	 	public void editar() {
 	 		
-	 		ArrayList<Boolean> sucesso = agrupamentoDeTributosTodasFuncPO.editar();
+	 		ArrayList<Boolean> sucesso = agrupamentoDeTributosEditarPO.editar();
 	 		for (int i = 0; i < sucesso.size(); i++) {
 	 			assertTrue(sucesso.get(i), Editar);
 				
@@ -86,7 +105,7 @@ public class AgrupamentoDeTributosTodasFunc extends TestBase{
 	@Test(priority = 4)
 	 	public void visualizar() {
 	 		
-	 		ArrayList<Boolean> sucesso = agrupamentoDeTributosTodasFuncPO.visualizar();
+	 		ArrayList<Boolean> sucesso = agrupamentoDeTributosVerPO.visualizar();
 	 		for (int i = 0; i < sucesso.size(); i++) {
 	 			assertTrue(sucesso.get(i), visualizar);
 				
@@ -98,7 +117,7 @@ public class AgrupamentoDeTributosTodasFunc extends TestBase{
 		@Test(priority = 5)
 	 	public void excluir() {
 
-	 		boolean sucesso = agrupamentoDeTributosTodasFuncPO.excluir();
+	 		boolean sucesso = agrupamentoDeTributosExcluirPO.excluir();
 			assertTrue(sucesso, Eliminado);
 			sleep(2000);
 	 		
@@ -108,7 +127,7 @@ public class AgrupamentoDeTributosTodasFunc extends TestBase{
 			
 		
 
-			boolean sucesso = agrupamentoDeTributosTodasFuncPO.criarMassa();
+			boolean sucesso = agrupamentoDeTributosExcluirEmMassaPO.criar();
 			assertTrue(sucesso, Criar);
 			sleep(2000);
 		
@@ -118,7 +137,7 @@ public class AgrupamentoDeTributosTodasFunc extends TestBase{
 		public void Excluir() {
 			
 			sleep(1000);
-			boolean sucesso2 = agrupamentoDeTributosTodasFuncPO.excluirMassa();
+			boolean sucesso2 = agrupamentoDeTributosExcluirEmMassaPO.excluir();;
 			assertTrue(sucesso2, Eliminado);
 			sleep(2000);
 

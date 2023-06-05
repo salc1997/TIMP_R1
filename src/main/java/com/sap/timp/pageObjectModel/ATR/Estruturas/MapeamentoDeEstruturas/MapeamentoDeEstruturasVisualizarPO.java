@@ -11,6 +11,8 @@ import com.sap.timp.base.TestBase;
 
 public class MapeamentoDeEstruturasVisualizarPO extends TestBase{
 	
+	protected String estructuras = "http://as1-100-01-tc2:8000/timp/atr/#structures";
+	
 	@FindBy(xpath = "//span[text()=\"Mapeamento de Estruturas\"]")
 	public WebElement mapeamentodeestruturas;
 
@@ -99,7 +101,9 @@ public class MapeamentoDeEstruturasVisualizarPO extends TestBase{
 	
 	public ArrayList<Boolean> visualizar() {
 		
-		sleep(2000);
+		driver.get(estructuras );
+		
+		sleep(4000);
 
 		mapeamentodeestruturas.click();
 		sleep(2000);

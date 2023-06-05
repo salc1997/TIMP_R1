@@ -20,6 +20,8 @@ import com.sap.timp.base.TestBase;
 
 public class EstruturasVisualizarPO extends TestBase {
 	
+	protected String estructuras = "http://as1-100-01-tc2:8000/timp/atr/#structures";
+	
 	@FindBy(xpath = "//*[@id=\"baseTabs-wrapper\"]/div[2]/div/div[1]/ul/li[1]/div/span[2]")
 	public WebElement estruturas;
 
@@ -88,6 +90,8 @@ public class EstruturasVisualizarPO extends TestBase {
 	}
 	
 	public ArrayList<Boolean> visualizar() {
+		
+		driver.get(estructuras );
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

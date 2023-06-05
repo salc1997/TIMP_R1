@@ -3,14 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRB.GruposAvancados">
+      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosTodasFunc">
         <methods>
-          <include name="gruposAvanzados"/>
-          <include name="afterClass"/>
-          <include name="eliminarGrupos"/>
           <include name="beforeClass"/>
+          <include name="visualizar"/>
+          <include name="excluir"/>
+          <include name="afterClass"/>
+          <include name="criarMassa"/>
+          <include name="editar"/>
+          <include name="Excluir"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.GruposAvancados -->
+      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosTodasFunc -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

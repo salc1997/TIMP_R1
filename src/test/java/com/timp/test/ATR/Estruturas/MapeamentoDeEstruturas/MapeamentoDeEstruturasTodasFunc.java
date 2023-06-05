@@ -11,14 +11,29 @@ import org.testng.annotations.Test;
 import com.sap.timp.base.TestBase;
 import com.sap.timp.pageObjectModel.ADM.LoginTC;
 import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
-import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasTodasFuncPO;
+import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasCriarComCopiaPO;
+import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasCriarPO;
+import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasEditarPO;
+import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasExcluirPO;
+import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasFiltroPorIDPO;
+import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasVisualizarPO;
+import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentodeEstruturasExcluirMassaPO;
 
 public class MapeamentoDeEstruturasTodasFunc extends TestBase {
  
 	
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
-	MapeamentoDeEstruturasTodasFuncPO mapeamentoDeEstruturasTodasFuncPO;
+	MapeamentoDeEstruturasCriarPO mapeamentoDeEstruturasCriarPO;
+	MapeamentoDeEstruturasCriarComCopiaPO mapeamentoDeEstruturasCriarComCopiaPO;
+	MapeamentoDeEstruturasEditarPO mapeamentoDeEstruturasEditarPO;
+	MapeamentoDeEstruturasVisualizarPO mapeamentoDeEstruturasVisualizarPO;
+	MapeamentoDeEstruturasFiltroPorIDPO mapeamentoDeEstruturasFiltroPorIDPO;
+	MapeamentoDeEstruturasExcluirPO mapeamentoDeEstruturasExcluirPO;
+	MapeamentodeEstruturasExcluirMassaPO mapeamentodeEstruturasExcluirMassaPO;
+	
+	
+
 	
 	@BeforeClass
 	  public void beforeClass() {
@@ -26,7 +41,14 @@ public class MapeamentoDeEstruturasTodasFunc extends TestBase {
 		  driver = initialization();
 		  loginTC = new LoginTC();
 		  acessarATRPO = new AcessarATRPO();
-		  mapeamentoDeEstruturasTodasFuncPO = new  MapeamentoDeEstruturasTodasFuncPO();
+		  mapeamentoDeEstruturasCriarPO = new  MapeamentoDeEstruturasCriarPO();
+		  mapeamentoDeEstruturasCriarComCopiaPO = new  MapeamentoDeEstruturasCriarComCopiaPO();
+		  mapeamentoDeEstruturasEditarPO = new  MapeamentoDeEstruturasEditarPO();
+		  mapeamentoDeEstruturasVisualizarPO = new  MapeamentoDeEstruturasVisualizarPO();
+		  mapeamentoDeEstruturasFiltroPorIDPO = new  MapeamentoDeEstruturasFiltroPorIDPO();
+		  mapeamentoDeEstruturasExcluirPO = new  MapeamentoDeEstruturasExcluirPO();
+		  mapeamentodeEstruturasExcluirMassaPO = new MapeamentodeEstruturasExcluirMassaPO();
+		  
 	  }
 
 	  @AfterClass
@@ -41,7 +63,7 @@ public class MapeamentoDeEstruturasTodasFunc extends TestBase {
 	 		loginTC.login();
 	 		 acessarATRPO.acessarATR();
 	 		
-	 		boolean sucesso = mapeamentoDeEstruturasTodasFuncPO.criar();
+	 		boolean sucesso = mapeamentoDeEstruturasCriarPO.criar();
 			assertTrue(sucesso, Criar);
 		
 			sleep(2000);
@@ -50,7 +72,7 @@ public class MapeamentoDeEstruturasTodasFunc extends TestBase {
 	 	public void criarcopia() {
 	 		
 	 	
-	 		ArrayList<Boolean> sucesso = mapeamentoDeEstruturasTodasFuncPO.criarcopia();
+	 		ArrayList<Boolean> sucesso = mapeamentoDeEstruturasCriarComCopiaPO.criarcopia();
 	 		for (int i = 0; i < sucesso.size(); i++) {
 	 			assertTrue(sucesso.get(i), Criar);
 			}
@@ -60,7 +82,7 @@ public class MapeamentoDeEstruturasTodasFunc extends TestBase {
 	 @Test(priority = 2)
 	 	public void editar() {
 	 		
-	 		ArrayList<Boolean> sucesso = mapeamentoDeEstruturasTodasFuncPO.editar();
+	 		ArrayList<Boolean> sucesso = mapeamentoDeEstruturasEditarPO.editar();
 	 		for (int i = 0; i < sucesso.size(); i++) {
 	 			assertTrue(sucesso.get(i), Editar);
 				
@@ -72,7 +94,7 @@ public class MapeamentoDeEstruturasTodasFunc extends TestBase {
 	 @Test(priority = 3)
 	 public void visualizar() {
 	 			 		
-	 	ArrayList<Boolean> sucesso = mapeamentoDeEstruturasTodasFuncPO.visualizar();
+	 	ArrayList<Boolean> sucesso = mapeamentoDeEstruturasVisualizarPO.visualizar();
 	 	for (int i = 0; i < sucesso.size(); i++) {
 	 		assertTrue(sucesso.get(i), visualizar);
 				
@@ -84,7 +106,7 @@ public class MapeamentoDeEstruturasTodasFunc extends TestBase {
 	 @Test(priority = 4)
 	 	public void filtro() {
 	 		
-	 	ArrayList<Boolean> sucesso = mapeamentoDeEstruturasTodasFuncPO.filtro();
+	 	ArrayList<Boolean> sucesso = mapeamentoDeEstruturasFiltroPorIDPO.filtro();
 	 		for (int i = 0; i < sucesso.size(); i++) {
 	 			assertTrue(sucesso.get(i), Filtros);
 			}
@@ -95,7 +117,7 @@ public class MapeamentoDeEstruturasTodasFunc extends TestBase {
 	 @Test(priority = 5)
 	 	public void excluir() {
 	 
-	 		boolean sucesso = mapeamentoDeEstruturasTodasFuncPO.excluir();
+	 		boolean sucesso = mapeamentoDeEstruturasExcluirPO.excluir();
 			assertTrue(sucesso, Eliminado);
 			sleep(2000);
 	 		
@@ -103,7 +125,7 @@ public class MapeamentoDeEstruturasTodasFunc extends TestBase {
 	 @Test(priority = 6)
 		public void CriarMassa() {
 
-			ArrayList<Boolean> sucesso = mapeamentoDeEstruturasTodasFuncPO.criarMassa();
+			ArrayList<Boolean> sucesso = mapeamentodeEstruturasExcluirMassaPO.criar();
 			for (int i = 0; i < sucesso.size(); i++) {
 				assertTrue(sucesso.get(i), Criar);
 			}
@@ -114,7 +136,7 @@ public class MapeamentoDeEstruturasTodasFunc extends TestBase {
 	@Test(dependsOnMethods = "CriarMassa")
 		public void excluirMasa() {
 			
-			boolean sucesso2 = mapeamentoDeEstruturasTodasFuncPO.excluirMassa();
+			boolean sucesso2 = mapeamentodeEstruturasExcluirMassaPO.excluirMasaMotivosDesligamento();
 			assertTrue(sucesso2, Eliminado);
 			sleep(2000);
 		}

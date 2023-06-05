@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBase;
 
 public class MapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO extends TestBase{
+	protected String estructuras = "http://as1-100-01-tc2:8000/timp/atr/#structures";
 	
 	@FindBy(xpath = "//span[text()=\"Mapeamento de Estruturas\"]")
 	public WebElement mapamentoEstruturas;
@@ -31,7 +32,9 @@ public class MapeamentodeParâmetrosdeEntradaFiltroporIDLimparPO extends TestBase
 
 	public boolean filtro() {
 		
-		sleep(2000);
+		driver.get(estructuras );
+		
+		sleep(6000);
 		mapamentoEstruturas.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

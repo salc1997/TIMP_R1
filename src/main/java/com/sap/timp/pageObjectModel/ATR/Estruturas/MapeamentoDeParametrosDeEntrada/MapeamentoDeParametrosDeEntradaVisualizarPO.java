@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.sap.timp.base.TestBase;
 
 public class MapeamentoDeParametrosDeEntradaVisualizarPO extends TestBase {
+	protected String estructuras = "http://as1-100-01-tc2:8000/timp/atr/#structures";
 	
 	@FindBy(xpath = "//span[text()=\"Mapeamento de Parâmetros de Entrada\"]")
 	public WebElement mapeamento;
@@ -61,7 +62,9 @@ public class MapeamentoDeParametrosDeEntradaVisualizarPO extends TestBase {
 	
 	public ArrayList<Boolean> visualizar() {
 		
-		sleep(2000);
+		driver.get(estructuras );
+		
+		sleep(4000);
 
 		mapeamento.click();
 		sleep(2000);

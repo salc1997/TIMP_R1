@@ -11,6 +11,8 @@ import com.sap.timp.base.TestBase;
 
 public class GrupoDeEstruturasDetalhesPO extends TestBase {
 	
+	protected String estructuras = "http://as1-100-01-tc2:8000/timp/atr/#structures";
+	
 	@FindBy(xpath = "//span[text()=\"Grupo de Estruturas\"]")
 	public WebElement grupodeestrutura;
 	
@@ -63,6 +65,8 @@ public class GrupoDeEstruturasDetalhesPO extends TestBase {
 	}
 	
 	public ArrayList<Boolean> detalhes() {
+		
+		driver.get(estructuras );
 		
 		sleep(2000);
 		

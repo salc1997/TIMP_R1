@@ -9,6 +9,8 @@ import com.sap.timp.base.TestBase;
 
 public class AgrupamentoDeTributosExcluirPO extends TestBase {
 	
+	protected String estruc = "http://as1-100-01-tc2:8000/timp/atr/#/structures";
+	
 	@FindBy(xpath = "//span[@class=\"title-boxes \"][text()=\"Tributos\"]")
 	public WebElement tributos;
 	
@@ -31,6 +33,8 @@ public class AgrupamentoDeTributosExcluirPO extends TestBase {
 
 	public boolean excluir() {
 		sleep(2000);
+		driver.get(estruc);
+		sleep(6000);
 		tributos.click();
 
 		sleep(2000);

@@ -13,8 +13,9 @@ import com.sap.timp.pageObjectModel.ATR.AcessarATRPO;
 
 
 import com.sap.timp.base.TestBase;
-import com.sap.timp.pageObjectModel.ATR.Estruturas.Estruturas.EstructurasTodasAsFuncPO;
-import com.sap.timp.pageObjectModel.ATR.Estruturas.MapeamentoDeEstruturas.MapeamentoDeEstruturasVisualizarPO;
+import com.sap.timp.pageObjectModel.ATR.Estruturas.Estruturas.EstructurasDetallesPO;
+import com.sap.timp.pageObjectModel.ATR.Estruturas.Estruturas.EstruturasVisualizarFiltrosPO;
+import com.sap.timp.pageObjectModel.ATR.Estruturas.Estruturas.EstruturasVisualizarPO;
 
 import org.testng.annotations.BeforeClass;
 
@@ -28,7 +29,9 @@ public class EstruturasTodasAsFunc extends TestBase {
 	
 	LoginTC loginTC;
 	AcessarATRPO acessarATRPO;
-	EstructurasTodasAsFuncPO estructurasTodasAsFuncPO;
+	EstructurasDetallesPO estructurasDetallesPO;
+	EstruturasVisualizarFiltrosPO estruturasVisualizarFiltrosPO;
+	EstruturasVisualizarPO estruturasVisualizarPO;
 	
 	@BeforeClass
 	  public void beforeClass() {
@@ -36,12 +39,14 @@ public class EstruturasTodasAsFunc extends TestBase {
 		  driver = initialization();
 		  loginTC = new LoginTC();
 		  acessarATRPO = new AcessarATRPO();
-		  estructurasTodasAsFuncPO = new  EstructurasTodasAsFuncPO();
+		  estructurasDetallesPO = new  EstructurasDetallesPO();
+		  estruturasVisualizarFiltrosPO = new  EstruturasVisualizarFiltrosPO();
+		  estruturasVisualizarPO = new EstruturasVisualizarPO();
 	  }
 
 	  @AfterClass
 	  public void afterClass() {
-		  //driver.close();
+		  driver.close();
 	  }
 	  
 	 	
@@ -52,30 +57,28 @@ public class EstruturasTodasAsFunc extends TestBase {
 	 		
 	 		 acessarATRPO.acessarATR();
 	 		 
-	 	ArrayList<Boolean> sucesso = estructurasTodasAsFuncPO.Detalles();
+	 	ArrayList<Boolean> sucesso = estructurasDetallesPO.Detalles();
 	 		for (int i = 0; i < sucesso.size(); i++) {
 	 			assertTrue(sucesso.get(i), visualizar);
 				
 			}	
 	 		sleep(3000);
 	 }
-	 @Test()
+	 @Test(priority = 1)
 		public void visualizarFiltros() {
 				
-			boolean sucesso = estructurasTodasAsFuncPO.Filtros();
+			boolean sucesso = estruturasVisualizarFiltrosPO.visualizar();
 			assertTrue(sucesso, visualizar);
 			
 			sleep(3000);
 		}
 	 	
-	 @Test(priority = 1)
+	 @Test(priority = 2)
 	 	public void visualizar() {
 			
-	 		ArrayList<Boolean> sucesso = estructurasTodasAsFuncPO.visualizar();
+	 		ArrayList<Boolean> sucesso = estruturasVisualizarPO.visualizar();
 	 		for (int i = 0; i < sucesso.size(); i++) {
 	 			assertTrue(sucesso.get(i), visualizar);
-				
-	}
-	 	
+				}
 	}
 }

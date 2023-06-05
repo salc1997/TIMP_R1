@@ -11,6 +11,7 @@ import com.sap.timp.base.TestBase;
 
 public class AgrupamentoDeTributosEditarPO extends TestBase{
 	
+	protected String estruc = "http://as1-100-01-tc2:8000/timp/atr/#/structures";
 	@FindBy(xpath = "//span[@class=\"title-boxes \"][text()=\"Tributos\"]")
 	public WebElement tributos;
 	
@@ -69,6 +70,8 @@ public class AgrupamentoDeTributosEditarPO extends TestBase{
 	
 	public ArrayList<Boolean> editar() {
 		sleep(2000);
+		driver.get(estruc);
+		sleep(6000);
 		
 		tributos.click();
 		

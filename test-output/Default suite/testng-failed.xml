@@ -3,17 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosTodasFunc">
+      <class name="com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTipoTributo.ConfiguracaoDeTipoTributotodasFunc">
         <methods>
-          <include name="beforeClass"/>
-          <include name="visualizar"/>
           <include name="excluir"/>
+          <include name="beforeClass"/>
           <include name="afterClass"/>
-          <include name="criarMassa"/>
-          <include name="editar"/>
-          <include name="Excluir"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Tributos.AgrupamentoDeTributos.AgrupamentoDeTributosTodasFunc -->
+      </class> <!-- com.timp.test.ADM.Configuracao.ConfiguracaoDeTributos.ConfiguracaoDeTipoTributo.ConfiguracaoDeTipoTributotodasFunc -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

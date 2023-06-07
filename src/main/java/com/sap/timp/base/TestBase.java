@@ -81,7 +81,7 @@ public class TestBase extends TestUtil{
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 
-		driver.get(xsa);
+		driver.get(tc2);
 
 		return driver;
 	}

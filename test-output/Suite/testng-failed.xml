@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Parametros Gerais Configuracao Configuracao(failed)">
+  <test thread-count="5" name="DFG - Leiautes(failed)">
     <classes>
-      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados">
+      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
         <methods>
-          <include name="criarConfiguracao"/>
+          <include name="filtrosVersao"/>
+          <include name="filtrosFechaUsuarioCriado"/>
           <include name="afterClass"/>
+          <include name="filtrosUsuarioCriado"/>
+          <include name="filtrosFiltroTipo"/>
+          <include name="filtrosFechaUsuarioModificado"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados -->
+      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
     </classes>
-  </test> <!-- Parametros Gerais Configuracao Configuracao(failed) -->
+  </test> <!-- DFG - Leiautes(failed) -->
 </suite> <!-- Failed suite [Suite] -->

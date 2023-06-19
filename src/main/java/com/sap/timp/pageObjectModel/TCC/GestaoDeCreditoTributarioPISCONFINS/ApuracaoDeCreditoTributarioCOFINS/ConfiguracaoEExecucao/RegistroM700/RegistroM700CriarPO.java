@@ -159,7 +159,7 @@ public class RegistroM700CriarPO extends TestBase {
 		sleep(1000);
 	
 		
-		attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
+	//	attributeToBe("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(4000);
 		
 		filial.click();

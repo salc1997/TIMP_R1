@@ -119,7 +119,7 @@ public class Registro1700VisualizarPO extends TestBase{
 		biblioteca.click();
 		sleep(4000);
 		
-		//no.click();
+		no.click();
 		sleep(2000);
 		
 		waitExpectedElement(siguiente);
@@ -127,7 +127,7 @@ public class Registro1700VisualizarPO extends TestBase{
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement editar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));

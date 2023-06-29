@@ -30,7 +30,7 @@ public class Registro1700EditarPO extends TestBase{
 	@FindBy(xpath = "//li[@id=\"02\"]")
 	public WebElement OPC;
 	
-	@FindBy(xpath = "//li[@id=\"option-2\"]")
+	@FindBy(xpath = "//li[@id=\"01\"]")
 	public WebElement OPC1;
 	
 	@FindBy(xpath = "//div[@id=\"indNatRet\"]/div[1]/div[1]/input")

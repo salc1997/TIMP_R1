@@ -162,7 +162,7 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBase{
 		nome.click();
 		sleep(1000);
 
-		nome.sendKeys("TA-TESTE An3 1 - NÃO MEXER");
+		nome.sendKeys("TA-TESTE An3 TA");
 
 		sleep(1000);
 		
@@ -223,15 +223,13 @@ public class RegrasDeAuditoriaN3CriarMasCaminhoPO extends TestBase{
 		dataValidadeDe.click();
 		sleep(1000);
 		dataValidadeDe.sendKeys("01/01/2013");
-		sleep(6000);		
+		sleep(2000);		
 		
-	/*	aplicar.click();
+		aplicar.click();
 		sleep(2000);
-		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);*/
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		sleep(2000);
-		//waitExpectElement(adicionarCaminho);
+		waitExpectedElement(adicionarCaminho);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

@@ -59,24 +59,24 @@ public class AtividadeCriarPO extends TestBase{
 	public WebElement diaO;
 	
 
-	@FindBy(xpath = "//div[@id=\"diaOrdinal\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"diaOrdinal\"]//div/div[2]")
 	public WebElement diaOr;
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//*[@id=\"01\"]")
 	public WebElement diaOrO;
 	
-	@FindBy(xpath = "//div[@id=\"municipio\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"municipio\"]//div/div[2]")
 	public WebElement municipio;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//*[@id=\"1100015\"]")
 	public WebElement municipioOpc;
 	
-	@FindBy(xpath = "//div[@id=\"mes\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"mes\"]//div/div[2]")
 	public WebElement mes;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//*[@id=\"01\"]")
 	public WebElement mesO;
 	
-	@FindBy(xpath = "//div[@id=\"recorrenciaFeriado\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"recorrenciaFeriado\"]//div/div[2]")
 	public WebElement recorrencia;
 	@FindBy(xpath = "//*[@id=\"option-1\"]")
 	public WebElement recorrenciaO;
@@ -183,15 +183,6 @@ public class AtividadeCriarPO extends TestBase{
 
 		//waitExpectXpath("//*[@id=\"toast-wrapper\"]/ul/li/div/span[3]");
 		sleep(8000);
-	
-
-		biblioteca.click();
-		waitExpectedElement(sim);
-		sleep(2000);
-		nao.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(10000);
 
 		siguiente.click();
 		

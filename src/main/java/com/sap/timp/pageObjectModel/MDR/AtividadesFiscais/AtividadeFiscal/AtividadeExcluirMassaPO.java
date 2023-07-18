@@ -50,23 +50,23 @@ public class AtividadeExcluirMassaPO extends TestBase{
 	@FindBy(xpath = "//div[@id=\"description-activities\"]/div/textarea")
 	public WebElement descricao;
 	
-	@FindBy(xpath = "//div[@id=\"diaEspecifico\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"diaEspecifico\"]//div/div[2]")
 	public WebElement diaE;
 	
 	@FindBy(xpath = "//*[@id=\"option-1\"]")
 	public WebElement diaO;
 	
-	@FindBy(xpath = "//div[@id=\"diaOrdinal\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"diaOrdinal\"]//div/div[2]")
 	public WebElement diaOr;
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//*[@id=\"01\"]")
 	public WebElement diaOrO;
 	
-	@FindBy(xpath = "//div[@id=\"mes\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"mes\"]//div/div[2]")
 	public WebElement mes;
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//*[@id=\"01\"]")
 	public WebElement mesO;
 	
-	@FindBy(xpath = "//div[@id=\"recorrenciaFeriado\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"recorrenciaFeriado\"]//div/div[2]")
 	public WebElement recorrencia;
 	@FindBy(xpath = "//*[@id=\"option-1\"]")
 	public WebElement recorrenciaO;
@@ -89,10 +89,10 @@ public class AtividadeExcluirMassaPO extends TestBase{
 	@FindBy(xpath = "//span[@class = \"button-icon icon-font-Sign-and-Symbols icon-persign\"]")
 	public WebElement btnExcluirMassa;
 	
-	@FindBy(xpath = "//div[@id=\"municipio\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"municipio\"]//div/div[2]")
 	public WebElement municipio;
 	
-	@FindBy(xpath = "//*[@id=\"option-1\"]")
+	@FindBy(xpath = "//*[@id=\"1100015\"]")
 	public WebElement municipioOpc;
 	
 	// Variable que controla si se crean con exito los registro, si no se crean con exito no se pasa al metodo de Excluir em Massa
@@ -192,18 +192,7 @@ public class AtividadeExcluirMassaPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(7000);	
-		
-
 	
-		
-		biblioteca.click();
-		sleep(2000);
-		waitExpectedElement(sim);
-		nao.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -255,14 +244,14 @@ public class AtividadeExcluirMassaPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(7000);		
 		
-		biblioteca.click();
+/*		biblioteca.click();
 		sleep(2000);
 		waitExpectedElement(sim);
 		nao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-
+*/
 
 		btnUltimaPagina.click();
 		

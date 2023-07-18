@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosNaVisualizacao">
+      <class name="com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2">
         <methods>
-          <include name="filtrosAvancados"/>
           <include name="beforeClass"/>
+          <include name="relacionamentoFinalyAbrirHierarquiaGrupo"/>
+          <include name="ejecutarFinal"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.SCANC.ArquivosImportados.ArquivosImportadosNaVisualizacao -->
+      </class> <!-- com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

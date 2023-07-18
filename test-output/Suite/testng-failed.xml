@@ -1,83 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="SCANC &gt; Relatórios Refinaria Gerados - Filtros(failed)">
+  <test thread-count="5" name="Ajustes &gt; Associacao (failed)">
     <classes>
-      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGFiltrosAvancadosNaVisualizacao">
+      <class name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEditar">
         <methods>
           <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="filtrosAvancadosNavisualizacao"/>
-        </methods>
-      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGFiltrosAvancadosNaVisualizacao -->
-    </classes>
-  </test> <!-- SCANC > Relatórios Refinaria Gerados - Filtros(failed) -->
-  <test thread-count="5" name="SCANC &gt; Relatórios Refinaria Gerados - Campos de Saída(failed)">
-    <classes>
-      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGCriarCampoDeSaida">
-        <methods>
-          <include name="criarCampoDeSaida"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGCriarCampoDeSaida -->
-      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGExcluirCampoDeSaida">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="excluir"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGExcluirCampoDeSaida -->
-      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGEditarCampoDeSaida">
-        <methods>
           <include name="editar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGEditarCampoDeSaida -->
+      </class> <!-- com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeEditar -->
+      <class name="com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeExcluirMassa">
+        <methods>
+          <include name="criar"/>
+          <include name="excluirMassa"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.timp.test.MDR.AtividadesFiscais.AtividadeFiscal.AtividadeExcluirMassa -->
     </classes>
-  </test> <!-- SCANC > Relatórios Refinaria Gerados - Campos de Saída(failed) -->
-  <test thread-count="5" name="SCANC &gt; Relatórios Refinaria Gerados - Manutenção(failed)">
-    <classes>
-      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGManutencaoEditarLancamento">
-        <methods>
-          <include name="manutencaoEditarLancamento"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGManutencaoEditarLancamento -->
-      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGManutencaoCriarLancamentoVisualizacaoAnexo">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="manutencaoCriarLancamentoVisualizacaoAnexo"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGManutencaoCriarLancamentoVisualizacaoAnexo -->
-    </classes>
-  </test> <!-- SCANC > Relatórios Refinaria Gerados - Manutenção(failed) -->
-  <test thread-count="5" name="SCANC &gt; Relatórios Refinaria Gerados - Generar (failed)">
-    <classes>
-      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGInformacao">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="informacao"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGInformacao -->
-      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGGerarAnexos6712MasVisualizacao">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="gerarAnexosMasVisualizacao"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGGerarAnexos6712MasVisualizacao -->
-      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGGerarAjustes">
-        <methods>
-          <include name="afterClass"/>
-          <include name="criarCampoDeSaida"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGGerarAjustes -->
-    </classes>
-  </test> <!-- SCANC > Relatórios Refinaria Gerados - Generar (failed) -->
+  </test> <!-- Ajustes > Associacao (failed) -->
 </suite> <!-- Failed suite [Suite] -->

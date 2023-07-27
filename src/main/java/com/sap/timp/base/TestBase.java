@@ -47,7 +47,7 @@ public class TestBase extends TestUtil{
 
 		WebDriver driver;
 
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedrivers.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver114.exe");
 
 		// System.setProperty("webdriver.chrome.driver",
 		// "./src/test/resources/chromedriver/chromedriverX86.exe");

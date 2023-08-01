@@ -68,7 +68,10 @@ public class RelatorioRefinariaGeradosCriarCampoDeSaidaPO extends TestBase{
 		
 		int rows = driver.findElements(By.xpath("//div[@class=\"dialog-content wide\"]/div/div[2]/div/div/div/div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String ultimoId = driver.findElement(By.xpath("//div[@class=\"dialog-content wide\"]/div/div[2]/div/div/div/div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows+"]")).getAttribute("data-id");
+		System.out.println("rows " + rows);
 		System.out.println("Ultimo ID: " + ultimoId);
+		
+	
 		
 		adicionarCampoDeSaida.click();
 		sleep(3000);
@@ -148,6 +151,7 @@ public class RelatorioRefinariaGeradosCriarCampoDeSaidaPO extends TestBase{
 		int idNuevo = convertToInt(ultimoIdAgregado);
 		
 		System.out.println("");
+		System.out.println("rows " + rows);
 		System.out.println("ID Viejo: " + idViejo);
 		System.out.println("ID Nuevo: " + idNuevo);
 		

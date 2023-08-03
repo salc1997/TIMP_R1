@@ -3,13 +3,23 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGCriarCampoDeSaida">
+      <class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5">
         <methods>
-          <include name="criarCampoDeSaida"/>
-          <include name="beforeClass"/>
+          <include name="excluirLeiaute"/>
           <include name="afterClass"/>
+          <include name="distinto"/>
+          <include name="beforeClass"/>
+          <include name="verBloco3"/>
+          <include name="comparar"/>
+          <include name="excluirConfiguracao"/>
+          <include name="verBloco4"/>
+          <include name="verBloco5"/>
+          <include name="verBloco2"/>
+          <include name="verBloco1"/>
+          <include name="executar"/>
+          <include name="criarConfiguracao"/>
         </methods>
-      </class> <!-- com.timp.test.SCANC.RelatoriosRefineriaGerados.RRGCriarCampoDeSaida -->
+      </class> <!-- com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

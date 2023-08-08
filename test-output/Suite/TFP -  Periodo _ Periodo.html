@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 10 16:27:51 CST 2023</td>
+<td>Started on:</td><td>Mon Aug 07 15:57:42 UTC 2023</td>
 </tr>
-<tr><td>Total time:</td><td>796 seconds (796559 ms)</td>
+<tr><td>Total time:</td><td>712 seconds (712000 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,44 +76,46 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarSubPeriodoEmMassa.alterarPeriodoEmMassa()'><b>alterarPeriodoEmMassa</b><br>Test class: com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarSubPeriodoEmMassa</td>
-<td><div><pre>java.lang.AssertionError: Os resultados do filtro não são iguais expected [true] but found [false]
-	at com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarSubPeriodoEmMassa.alterarPeriodoEmMassa(PeriodosAlterarSubPeriodoEmMassa.java:48)
+<td><div><pre>java.lang.AssertionError: Os resultados do filtro n?o s?o iguais expected [true] but found [false]
+	at com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarSubPeriodoEmMassa.alterarPeriodoEmMassa(PeriodosAlterarSubPeriodoEmMassa.java:49)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1502803067", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1502803067'><pre>java.lang.AssertionError: Os resultados do filtro não são iguais expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertTrue(Assert.java:56)
-	at com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarSubPeriodoEmMassa.alterarPeriodoEmMassa(PeriodosAlterarSubPeriodoEmMassa.java:48)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1131326574", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1131326574'><pre>java.lang.AssertionError: Os resultados do filtro n?o s?o iguais expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarSubPeriodoEmMassa.alterarPeriodoEmMassa(PeriodosAlterarSubPeriodoEmMassa.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>307</td>
-<td>com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarSubPeriodoEmMassa@5542c4ed</td></tr>
+<td>283</td>
+<td>com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarSubPeriodoEmMassa@1ed4ae0f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -123,20 +125,20 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarStatusSubPeriodoAvulso.alterarStatusSubPeriodo()'><b>alterarStatusSubPeriodo</b><br>Test class: com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarStatusSubPeriodoAvulso</td>
+<td title='com.timp.test.TFP.Periodos.Periodos.PeriodosFiltroPorId.filtro()'><b>filtro</b><br>Test class: com.timp.test.TFP.Periodos.Periodos.PeriodosFiltroPorId</td>
 <td></td>
-<td>112</td>
-<td>com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarStatusSubPeriodoAvulso@815b41f</td></tr>
+<td>78</td>
+<td>com.timp.test.TFP.Periodos.Periodos.PeriodosFiltroPorId@54c5a2ff</td></tr>
 <tr>
 <td title='com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarPeriodosEmMassa.alterarPeriodoEmMassa()'><b>alterarPeriodoEmMassa</b><br>Test class: com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarPeriodosEmMassa</td>
 <td></td>
-<td>256</td>
-<td>com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarPeriodosEmMassa@3b69e7d1</td></tr>
+<td>239</td>
+<td>com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarPeriodosEmMassa@644baf4a</td></tr>
 <tr>
-<td title='com.timp.test.TFP.Periodos.Periodos.PeriodosFiltroPorId.filtro()'><b>filtro</b><br>Test class: com.timp.test.TFP.Periodos.Periodos.PeriodosFiltroPorId</td>
+<td title='com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarStatusSubPeriodoAvulso.alterarStatusSubPeriodo()'><b>alterarStatusSubPeriodo</b><br>Test class: com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarStatusSubPeriodoAvulso</td>
 <td></td>
-<td>87</td>
-<td>com.timp.test.TFP.Periodos.Periodos.PeriodosFiltroPorId@1573f9fc</td></tr>
+<td>102</td>
+<td>com.timp.test.TFP.Periodos.Periodos.PeriodosAlterarStatusSubPeriodoAvulso@7526515b</td></tr>
 </table><p>
 </body>
 </html>

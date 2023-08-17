@@ -519,12 +519,18 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBase{
 		nombreRegistro5.sendKeys("Registro 1");
 		sleep(2000);
 		
-
+		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		actionsMoveToElement("//*[@id=\"block-list-wrapper\"]/div[5]/div[3]/div/div[5]");
+		sleep(6000);
+		
+		abaAjusteFiscais.click();
 		sleep(2000);
+		subAbaAjusteFiscais.click();
+		sleep(2000);
+		
 		moveToElement(codigoEmpresa, driver.findElement(By.xpath("//div[@block-id=\"4\"]/div[@class=\"columns-container\"]/div")));
 		sleep(2000);
 		
@@ -925,7 +931,7 @@ public class LeiautesExecucacoFuncionalidades4Pt5PO extends TestBase{
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //		sleep(2000);
 		jan.click();
-		sleep(2000);
+		sleep(6000);
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //		sleep(2000);
 		m1.click();

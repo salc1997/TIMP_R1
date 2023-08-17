@@ -47,7 +47,7 @@ public class TestBase extends TestUtil{
 
 		WebDriver driver;
 
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedrivers.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
 
 		// System.setProperty("webdriver.chrome.driver",
 		// "./src/test/resources/chromedriver/chromedriverX86.exe");
@@ -81,7 +81,7 @@ public class TestBase extends TestUtil{
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 
-		driver.get(xsa);
+		driver.get(tc2);
 
 		return driver;
 	}

@@ -314,8 +314,8 @@ public class Registro1700CriarPO extends TestBase{
 		biblioteca.click();
 		sleep(4000);
 	
-		/*no.click();
-		sleep(2000);*/
+		no.click();
+		sleep(2000);
 		waitExpectedElement(siguiente);
 		sleep(2000);
 		siguiente.click();

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Regras de Auditoria N1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>10/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 27 18:02:51 UTC 2023</td>
+<td>Started on:</td><td>Wed Jul 19 15:54:14 UTC 2023</td>
 </tr>
-<tr><td>Total time:</td><td>2003 seconds (2003564 ms)</td>
+<tr><td>Total time:</td><td>2143 seconds (2143163 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,96 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasDeAuditoriaN1Relacionamento.editar()'><b>editar</b><br>Test class: com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasDeAuditoriaN1Relacionamento</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&quot;list-item-text&quot; and contains(text(), &quot;ID 39-Empresa / Filial&quot;)]&quot;}
-  (Session info: chrome=110.0.5481.105)
+<td title='com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa.criar()'><b>criar</b><br>Test class: com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@data-id][0]/div[2]/label/span&quot;}
+  (Session info: chrome=114.0.5735.199)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;EC2AMAZ-8HCHO4G&apos;, ip: &apos;10.0.0.249&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.105, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63471}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 197ca7253a2b59d5b39b277aca13a627
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eabf8a25582f13012d2485deda5a5e86
+*** Element info: {Using=xpath, value=//div[@data-id][0]/div[2]/label/span}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.sap.timp.pageObjectModel.BRE.RegrasAuditoriaN1.ParametrosGerais.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO.excluirMassa(RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO.java:395)
+	at com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa.criar(RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1549979843", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1549979843'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@data-id][0]/div[2]/label/span&quot;}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;EC2AMAZ-8HCHO4G&apos;, ip: &apos;10.0.0.249&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58399}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eabf8a25582f13012d2485deda5a5e86
+*** Element info: {Using=xpath, value=//div[@data-id][0]/div[2]/label/span}
+	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.sap.timp.pageObjectModel.BRE.RegrasAuditoriaN1.ParametrosGerais.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO.excluirMassa(RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassaPO.java:395)
+	at com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa.criar(RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>215</td>
+<td>com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa@12aba8be</td></tr>
+<tr>
+<td title='com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasDeAuditoriaN1Relacionamento.editar()'><b>editar</b><br>Test class: com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasDeAuditoriaN1Relacionamento</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&quot;list-item-text&quot; and contains(text(), &quot;ID 39-Empresa / Filial&quot;)]&quot;}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;EC2AMAZ-8HCHO4G&apos;, ip: &apos;10.0.0.249&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58216}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e2d118d191cb73784962babfa36ba146
 *** Element info: {Using=xpath, value=//div[@class=&quot;list-item-text&quot; and contains(text(), &quot;ID 39-Empresa / Filial&quot;)]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -97,21 +178,21 @@ Session ID: 197ca7253a2b59d5b39b277aca13a627
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
 	at com.sap.timp.pageObjectModel.BRE.RegrasAuditoriaN1.Edicao.RegrasDeAuditoriaN1RelacionamentoPO.editar(RegrasDeAuditoriaN1RelacionamentoPO.java:150)
 	at com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasDeAuditoriaN1Relacionamento.editar(RegrasDeAuditoriaN1Relacionamento.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace302144370", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace302144370'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&quot;list-item-text&quot; and contains(text(), &quot;ID 39-Empresa / Filial&quot;)]&quot;}
-  (Session info: chrome=110.0.5481.105)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace758413709", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace758413709'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&quot;list-item-text&quot; and contains(text(), &quot;ID 39-Empresa / Filial&quot;)]&quot;}
+  (Session info: chrome=114.0.5735.199)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;EC2AMAZ-8HCHO4G&apos;, ip: &apos;10.0.0.249&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.105, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:63471}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 197ca7253a2b59d5b39b277aca13a627
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58216}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e2d118d191cb73784962babfa36ba146
 *** Element info: {Using=xpath, value=//div[@class=&quot;list-item-text&quot; and contains(text(), &quot;ID 39-Empresa / Filial&quot;)]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -127,40 +208,40 @@ Session ID: 197ca7253a2b59d5b39b277aca13a627
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
 	at com.sap.timp.pageObjectModel.BRE.RegrasAuditoriaN1.Edicao.RegrasDeAuditoriaN1RelacionamentoPO.editar(RegrasDeAuditoriaN1RelacionamentoPO.java:150)
 	at com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasDeAuditoriaN1Relacionamento.editar(RegrasDeAuditoriaN1Relacionamento.java:39)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>65</td>
-<td>com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasDeAuditoriaN1Relacionamento@2d52216b</td></tr>
+<td>61</td>
+<td>com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasDeAuditoriaN1Relacionamento@1e1a0406</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -172,53 +253,48 @@ Session ID: 197ca7253a2b59d5b39b277aca13a627
 <tr>
 <td title='com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Criar.criar()'><b>criar</b><br>Test class: com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Criar</td>
 <td></td>
-<td>281</td>
-<td>com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Criar@6bd61f98</td></tr>
+<td>277</td>
+<td>com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Criar@53ce1329</td></tr>
 <tr>
 <td title='com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasdeAuditoriaN1ParâmetrosgeraisSimular.editar()'><b>editar</b><br>Test class: com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasdeAuditoriaN1ParâmetrosgeraisSimular</td>
 <td></td>
-<td>186</td>
-<td>com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasdeAuditoriaN1ParâmetrosgeraisSimular@272113c4</td></tr>
-<tr>
-<td title='com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Detalhes.detalhes()'><b>detalhes</b><br>Test class: com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Detalhes</td>
-<td></td>
-<td>69</td>
-<td>com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Detalhes@7db12bb6</td></tr>
-<tr>
-<td title='com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamente.excluir()'><b>excluir</b><br>Test class: com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamente</td>
-<td></td>
-<td>122</td>
-<td>com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamente@242b836</td></tr>
-<tr>
-<td title='com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasdeAuditoriaN1EdiçãoEstruturas.editar()'><b>editar</b><br>Test class: com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasdeAuditoriaN1EdiçãoEstruturas</td>
-<td></td>
-<td>364</td>
-<td>com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasdeAuditoriaN1EdiçãoEstruturas@73e9cf30</td></tr>
+<td>254</td>
+<td>com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasdeAuditoriaN1ParâmetrosgeraisSimular@21282ed8</td></tr>
 <tr>
 <td title='com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1CriarComCopia.criar()'><b>criar</b><br>Test class: com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1CriarComCopia</td>
 <td></td>
-<td>167</td>
-<td>com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1CriarComCopia@52b1beb6</td></tr>
-<tr>
-<td title='com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Editar.criar()'><b>criar</b><br>Test class: com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Editar</td>
-<td></td>
-<td>145</td>
-<td>com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Editar@273e7444</td></tr>
+<td>158</td>
+<td>com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1CriarComCopia@2c1b194a</td></tr>
 <tr>
 <td title='com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasdeAuditoriaN1EdiçãoSimula.editar()'><b>editar</b><br>Test class: com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasdeAuditoriaN1EdiçãoSimula</td>
 <td></td>
-<td>268</td>
-<td>com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasdeAuditoriaN1EdiçãoSimula@771a660</td></tr>
-<tr>
-<td title='com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa.criar()'><b>criar</b><br>Test class: com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa</td>
-<td></td>
-<td>219</td>
-<td>com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasdeAuditoriaN1LixeiraemMassaExcluiremMassa@3f6f6701</td></tr>
+<td>340</td>
+<td>com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasdeAuditoriaN1EdiçãoSimula@23c30a20</td></tr>
 <tr>
 <td title='com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Visualizar.visualizar()'><b>visualizar</b><br>Test class: com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Visualizar</td>
 <td></td>
-<td>84</td>
-<td>com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Visualizar@783a467b</td></tr>
+<td>78</td>
+<td>com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Visualizar@550dbc7a</td></tr>
+<tr>
+<td title='com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasdeAuditoriaN1EdiçãoEstruturas.editar()'><b>editar</b><br>Test class: com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasdeAuditoriaN1EdiçãoEstruturas</td>
+<td></td>
+<td>373</td>
+<td>com.timp.test.BRE.RegrasdeAuditoriaN1.Edicao.RegrasdeAuditoriaN1EdiçãoEstruturas@36916eb0</td></tr>
+<tr>
+<td title='com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamente.excluir()'><b>excluir</b><br>Test class: com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamente</td>
+<td></td>
+<td>118</td>
+<td>com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1LixeiraMaisExcluirDefinitivamente@3cebbb30</td></tr>
+<tr>
+<td title='com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Editar.criar()'><b>criar</b><br>Test class: com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Editar</td>
+<td></td>
+<td>158</td>
+<td>com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Editar@4dbb42b7</td></tr>
+<tr>
+<td title='com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Detalhes.detalhes()'><b>detalhes</b><br>Test class: com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Detalhes</td>
+<td></td>
+<td>75</td>
+<td>com.timp.test.BRE.RegrasdeAuditoriaN1.ParametrosGerais.RegrasDeAuditoriaN1Detalhes@66f57048</td></tr>
 </table><p>
 </body>
 </html>

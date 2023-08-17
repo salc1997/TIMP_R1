@@ -1,42 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="16" total="17" passed="0" failed="1" skipped="0">
+=======
+<testng-results ignored="0" total="7" passed="5" failed="2" skipped="0">
+>>>>>>> refs/heads/Yessy
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2023-08-17T16:11:54 CST" name="Default suite" finished-at="2023-08-17T16:12:02 CST" duration-ms="7531">
+=======
+  <suite started-at="2023-08-16T16:40:03 UTC" name="Default suite" finished-at="2023-08-16T16:48:51 UTC" duration-ms="527780">
+>>>>>>> refs/heads/Yessy
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2023-08-17T16:11:54 CST" name="Default test" finished-at="2023-08-17T16:12:02 CST" duration-ms="7531">
       <class name="com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1">
         <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@294425a7]" started-at="2023-08-17T16:11:54 CST" name="beforeClass" finished-at="2023-08-17T16:12:00 CST" duration-ms="5472" status="PASS">
+=======
+    <test started-at="2023-08-16T16:40:03 UTC" name="Default test" finished-at="2023-08-16T16:48:51 UTC" duration-ms="527780">
+      <class name="com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP@5b03b9fe]" started-at="2023-08-16T16:40:03 UTC" name="beforeClass" finished-at="2023-08-16T16:40:06 UTC" duration-ms="2952" status="PASS">
+>>>>>>> refs/heads/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method signature="criarConfiguracaoExecucoes()[pri:2, instance:com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@294425a7]" started-at="2023-08-17T16:12:00 CST" name="criarConfiguracaoExecucoes" finished-at="2023-08-17T16:12:02 CST" duration-ms="2034" status="FAIL">
+=======
+        <test-method signature="login()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP@5b03b9fe]" started-at="2023-08-16T16:40:06 UTC" name="login" finished-at="2023-08-16T16:40:12 UTC" duration-ms="5595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="brbEntrar()[pri:1, instance:com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP@5b03b9fe]" started-at="2023-08-16T16:40:12 UTC" name="brbEntrar" finished-at="2023-08-16T16:40:26 UTC" duration-ms="13754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brbEntrar -->
+        <test-method signature="criarConfiguracaoExecucoes()[pri:2, instance:com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP@5b03b9fe]" started-at="2023-08-16T16:40:26 UTC" name="criarConfiguracaoExecucoes" finished-at="2023-08-16T16:41:57 UTC" duration-ms="91844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- criarConfiguracaoExecucoes -->
+        <test-method signature="CriarConfiguracao()[pri:3, instance:com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP@5b03b9fe]" started-at="2023-08-16T16:41:57 UTC" name="CriarConfiguracao" finished-at="2023-08-16T16:44:05 UTC" duration-ms="127243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CriarConfiguracao -->
+        <test-method signature="configurarConfiguracao()[pri:4, instance:com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP@5b03b9fe]" started-at="2023-08-16T16:44:05 UTC" name="configurarConfiguracao" finished-at="2023-08-16T16:46:31 UTC" duration-ms="146498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configurarConfiguracao -->
+        <test-method signature="executar()[pri:5, instance:com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP@5b03b9fe]" started-at="2023-08-16T16:46:31 UTC" name="executar" finished-at="2023-08-16T16:48:17 UTC" duration-ms="105356" status="FAIL">
+>>>>>>> refs/heads/Yessy
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
+<<<<<<< HEAD
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"baseTabs-box")][1]"}
+=======
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"tbody")]/div[contains(@class,"tr") and @data-id][1]/div[4]/div"}
+>>>>>>> refs/heads/Yessy
   (Session info: chrome=115.0.5790.171)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+<<<<<<< HEAD
 System info: host: 'SALC-PC', ip: '192.168.0.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+=======
+System info: host: 'EC2AMAZ-8HCHO4G', ip: '10.0.0.249', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+>>>>>>> refs/heads/Yessy
 Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\lezam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59626}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: ba46f1287aaafea09516d313a104d44f
 *** Element info: {Using=xpath, value=//div[contains(@class,"baseTabs-box")][1]}]]>
+=======
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2171a1c683e7dec4fb9f2135e1022ad9
+*** Element info: {Using=xpath, value=//div[contains(@class,"tbody")]/div[contains(@class,"tr") and @data-id][1]/div[4]/div}]]>
+>>>>>>> refs/heads/Yessy
             </message>
             <full-stacktrace>
+<<<<<<< HEAD
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"baseTabs-box")][1]"}
+=======
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,"tbody")]/div[contains(@class,"tr") and @data-id][1]/div[4]/div"}
+>>>>>>> refs/heads/Yessy
   (Session info: chrome=115.0.5790.171)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+<<<<<<< HEAD
 System info: host: 'SALC-PC', ip: '192.168.0.4', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+=======
+System info: host: 'EC2AMAZ-8HCHO4G', ip: '10.0.0.249', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+>>>>>>> refs/heads/Yessy
 Driver info: org.openqa.selenium.chrome.ChromeDriver
+<<<<<<< HEAD
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\lezam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59626}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: ba46f1287aaafea09516d313a104d44f
 *** Element info: {Using=xpath, value=//div[contains(@class,"baseTabs-box")][1]}
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+=======
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2171a1c683e7dec4fb9f2135e1022ad9
+*** Element info: {Using=xpath, value=//div[contains(@class,"tbody")]/div[contains(@class,"tr") and @data-id][1]/div[4]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+>>>>>>> refs/heads/Yessy
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -47,6 +117,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<<<<<<< HEAD
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
@@ -54,6 +125,14 @@ at com.sap.timp.pageObjectModel.BCB.Demais.HierarquiaConfiguracao.DemaisHierarqu
 at com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1.criarConfiguracaoExecucoes(DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1.java:51)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+=======
+at com.sap.timp.pageObjectModel.BCB.ExecucoesSalvas.ExecuçõesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAPPO.executar(FatorDeCreditamentoContabilizaçãoDeCIAPPO.java:1120)
+at com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.executar(FatorDeCreditamentoContabilizaçãoDeCIAP.java:88)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+>>>>>>> refs/heads/Yessy
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -83,12 +162,94 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- criarConfiguracaoExecucoes -->
         <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1@294425a7]" started-at="2023-08-17T16:12:02 CST" name="afterClass" finished-at="2023-08-17T16:12:02 CST" duration-ms="1" status="PASS">
+=======
+        </test-method> <!-- executar -->
+        <test-method signature="EnviarLixeria()[pri:6, instance:com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP@5b03b9fe]" started-at="2023-08-16T16:48:17 UTC" name="EnviarLixeria" finished-at="2023-08-16T16:48:51 UTC" duration-ms="34488" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="tr" and @data-id="1"]/div[1]/div"}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EC2AMAZ-8HCHO4G', ip: '10.0.0.249', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2171a1c683e7dec4fb9f2135e1022ad9
+*** Element info: {Using=xpath, value=//div[@class="tr" and @data-id="1"]/div[1]/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class="tr" and @data-id="1"]/div[1]/div"}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'EC2AMAZ-8HCHO4G', ip: '10.0.0.249', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user_ta\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61281}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2171a1c683e7dec4fb9f2135e1022ad9
+*** Element info: {Using=xpath, value=//div[@class="tr" and @data-id="1"]/div[1]/div}
+at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.sap.timp.pageObjectModel.BCB.ExecucoesSalvas.ExecuçõesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAPPO.lixeira(FatorDeCreditamentoContabilizaçãoDeCIAPPO.java:1176)
+at com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP.EnviarLixeria(FatorDeCreditamentoContabilizaçãoDeCIAP.java:96)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnviarLixeria -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP@5b03b9fe]" started-at="2023-08-16T16:48:51 UTC" name="afterClass" finished-at="2023-08-16T16:48:51 UTC" duration-ms="0" status="PASS">
+>>>>>>> refs/heads/Yessy
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+<<<<<<< HEAD
       </class> <!-- com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 -->
+=======
+      </class> <!-- com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP -->
+>>>>>>> refs/heads/Yessy
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

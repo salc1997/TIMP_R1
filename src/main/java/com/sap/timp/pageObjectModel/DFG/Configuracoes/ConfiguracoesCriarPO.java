@@ -332,7 +332,7 @@ public class ConfiguracoesCriarPO extends TestBase{
 		sucesso.add(versaoT.equals("1.0"));
 		sucesso.add(nomeT.equals("Teste Automatizado Massiel"));
 		sucesso.add(tipoTE.equals(tipoT));
-		
+	
 		configuracoes.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -486,8 +486,6 @@ public class ConfiguracoesCriarPO extends TestBase{
 		sucesso.add(filialC.equals("0014"));
 		sucesso.add(tributoC.equals("ICMS"));
 
-		
-		
 		
 		
 		

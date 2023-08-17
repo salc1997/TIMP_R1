@@ -44,7 +44,7 @@ public class RelatoriosReefineriaGeradosFiltrosAvancadosNaVisualizacaoPO extends
 		}
 		
 		if(url.contains("tc2")) {
-			idRegistro = "26";
+			idRegistro = "97";
 		}
 		
 		System.out.println("ID Registro: " + idRegistro);

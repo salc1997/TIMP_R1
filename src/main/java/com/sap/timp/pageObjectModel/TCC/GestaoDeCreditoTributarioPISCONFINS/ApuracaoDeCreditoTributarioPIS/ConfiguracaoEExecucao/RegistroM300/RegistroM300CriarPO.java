@@ -50,7 +50,7 @@ public class RegistroM300CriarPO extends TestBase{
 	@FindBy(xpath = "//div[@id=\"1000_AL_0805\"]")
 	public WebElement filialOPC1;
 	
-	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	@FindBy(xpath = "//li[@id=\"379\"]")
 	public WebElement OPC11;
 	
 	@FindBy(xpath = "//li[@id=\"1\"]")
@@ -200,7 +200,7 @@ public class RegistroM300CriarPO extends TestBase{
 		if (tc2 == true) {
 
 
-			OPC11.click();
+			OPC1.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {
@@ -218,7 +218,7 @@ public class RegistroM300CriarPO extends TestBase{
 		if (tc2 == true) {
 
 
-			OPC11.click();
+			OPC1.click();
 			sleep(2000);
 
 		}else if (tq1==true ) {

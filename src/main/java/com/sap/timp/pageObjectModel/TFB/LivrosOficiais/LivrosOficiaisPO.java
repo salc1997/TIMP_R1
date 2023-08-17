@@ -334,7 +334,7 @@ public class LivrosOficiaisPO extends TestBase{
 		
 		sim.click();
 
-		sleep(100000);
+		sleep(290000);
 
 		
 		WebElement identificador = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]//child::div[@data-id=\""+id2+"\"]/div[2]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\"]"));
@@ -548,7 +548,7 @@ public class LivrosOficiaisPO extends TestBase{
 		sucesso.add(txtAviso.contains(txtAvisoCaso));
 		
 		sim.click();
-		sleep(120000);
+		sleep(170000);
 		
 		WebElement identificador = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]//child::div[@data-id=\""+id2+"\"]/div[2]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\"]"));
 		String nomeLivro = driver.findElement(By.xpath(
@@ -698,7 +698,7 @@ public class LivrosOficiaisPO extends TestBase{
 		sucesso.add(txtAviso.contains(txtAvisoCaso));
 	
 		sim.click();
-		sleep(13000);
+		sleep(170000);
 		
 		WebElement identificador = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]//child::div[@data-id=\""+id2+"\"]/div[2]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\"]"));
 		String nomeLivro = driver.findElement(By.xpath(
@@ -851,7 +851,7 @@ public class LivrosOficiaisPO extends TestBase{
 		sucesso.add(txtAviso.contains(txtAvisoCaso));
 	
 		sim.click();
-		sleep(13000);
+		sleep(170000);
 		
 		WebElement identificador = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]//child::div[@data-id=\""+id2+"\"]/div[2]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\"]"));
 		String nomeLivro = driver.findElement(By.xpath(

@@ -31,7 +31,9 @@ public class LivrosOficiais extends TestBase{
 
   @AfterClass
   public void afterClass() {
+	  
   }
+  
   @Test(priority = 0)
 	public void livrosOficias() {
 		loginTC.login();

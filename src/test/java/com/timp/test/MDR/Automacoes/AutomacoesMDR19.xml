@@ -7,12 +7,13 @@
 
 		<classes>
 
-			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasCriar"></class>
-			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasDetalhe"></class>
-			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasEditar"></class>
-			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasVisualizar"></class>
-			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasFiltroPorId"></class>
-			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasFiltroPorId"></class>
+			<class name="com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasCriar"></class>
+			<class name="com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasDetalhes"></class>
+			<class name="com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasEditar"></class>
+			<class name="com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasVisualizar"></class>
+			<class name="com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluir"></class>
+			<class name="com.timp.test.MDR.SCANC.SCANCDistribuidoras.SCANCDistribuidorasExcluirEmMasa"></class>
+			
 			
 		</classes>
 		

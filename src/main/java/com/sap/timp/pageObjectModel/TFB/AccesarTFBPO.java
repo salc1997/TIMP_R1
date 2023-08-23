@@ -17,7 +17,7 @@ public class AccesarTFBPO extends TestBase{
 	@FindBy(xpath = "//*[@id=\"acc-reports\"]/ul/li[3]/div/span[2]")
 	public WebElement cadastro;
 	
-	@FindBy(xpath = "//div[@class=\"name-wrapper\"]/span")
+	@FindBy(xpath = "//span[text()=\"Leiautes Públicos\"]")
 	public WebElement mostrar;
 	
 	public  AccesarTFBPO() {

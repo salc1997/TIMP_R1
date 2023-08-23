@@ -750,7 +750,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 //				sleep(2000);
 			//HASTA AQUI
 				
-			sleep(2000);
+			sleep(8000);
 
 			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("FormulaC1")+"\"]/div[1]/div"));
 			WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("FormulaC1")+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));

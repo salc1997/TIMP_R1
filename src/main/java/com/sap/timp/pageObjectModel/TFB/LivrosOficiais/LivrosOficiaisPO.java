@@ -168,7 +168,7 @@ public class LivrosOficiaisPO extends TestBase{
 	
 	public  boolean  livros() {
 
-		sleep(1000);
+	
 		
 		while (!livros.isDisplayed()) {
 			flecha.click();
@@ -189,7 +189,7 @@ public class LivrosOficiaisPO extends TestBase{
 	}
 	
 	public  ArrayList<Boolean>  livrosICMS() {
-		
+
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		livrosICMS.click();
 		sleep(2000);

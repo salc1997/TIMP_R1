@@ -48,7 +48,7 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 		System.out.println(sucesso);
 		assertTrue(sucesso,Acessar);
 	}
-/*	
+
 	@Test(priority = 2)
 	public void criarConfiguracaoExecucoes() {
 		ArrayList<Boolean> sucesso = origenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO.criarConfiguracaoHierarquia();
@@ -74,14 +74,14 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), subniveis);
 		}
-	}*/
+	}
 	
 	@Test(priority = 4)	
 	public void Ingresar() {
 		origenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO.ingresarDeUnSolo();
 	}
 	
-/*
+
 	@Test(priority = 5)	
 	public void bRBcomFiltroBCBcomFiltro() {
 		ArrayList<Boolean> sucesso = origenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO.BRBcomFiltroBCBcomFiltro();
@@ -173,14 +173,14 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), subniveis);
 		} 
-	}*/
+	}
 	
 	@Test(priority = 14)
 	public void executar() {
 		origenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO.executar();
 	}
 	
-	/*	
+	/*
 	@Test(priority = 15)	
 	public void abrirSubnivel2() {
 		ArrayList<Boolean> sucesso = origenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO.abrirSubnivel2();

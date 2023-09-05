@@ -97,7 +97,7 @@ public class MapeamentoDeEstruturasEditarPO extends TestBase{
 		gravar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		
 		mapeamentodeestruturas.click();

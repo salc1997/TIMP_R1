@@ -602,7 +602,7 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		waitExpectedElement("//*[@id=\"home-icon\"]");
-		sleep(6000);
+		sleep(10000);
 		
 		while (!separadores.isDisplayed()) {
 			flecha.click();

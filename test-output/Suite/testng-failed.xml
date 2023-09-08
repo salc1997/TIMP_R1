@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="DFG - Leiautes(failed)">
+  <test thread-count="5" name=" ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed)">
     <classes>
-      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasTodasFunc">
         <methods>
-          <include name="filtrosVersao"/>
-          <include name="filtrosFechaUsuarioCriado"/>
+          <include name="criarRelacionamento"/>
           <include name="afterClass"/>
-          <include name="filtrosUsuarioCriado"/>
-          <include name="filtrosFiltroTipo"/>
-          <include name="filtrosUsuarioModificado"/>
-          <include name="filtrosFechaUsuarioModificado"/>
+          <include name="excluirMassa"/>
+          <include name="editarCopia"/>
+          <include name="excluirCopia"/>
+          <include name="VisualizarRelacionamento"/>
           <include name="beforeClass"/>
+          <include name="criarCopia"/>
+          <include name="EditarRelacionamento"/>
+          <include name="criarMasa"/>
+          <include name="excluir"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasTodasFunc -->
     </classes>
-  </test> <!-- DFG - Leiautes(failed) -->
+  </test> <!--  ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed) -->
 </suite> <!-- Failed suite [Suite] -->

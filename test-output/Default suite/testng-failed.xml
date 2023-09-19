@@ -8,7 +8,6 @@
           <include name="afterClass"/>
           <include name="beforeClass"/>
           <include name="executar"/>
-          <include name="configurarConfiguracao"/>
           <include name="EnviarLixeria"/>
         </methods>
       </class> <!-- com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP -->

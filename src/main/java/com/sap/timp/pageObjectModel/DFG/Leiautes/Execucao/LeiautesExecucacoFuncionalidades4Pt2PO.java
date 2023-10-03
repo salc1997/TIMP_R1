@@ -118,6 +118,7 @@ public class LeiautesExecucacoFuncionalidades4Pt2PO extends TestBase{
 		sleep(2000);
 		sleep(2000);
 		sleep(2000);
+		sleep(6000);
 		
 		adicionarBloco.click();
 		sleep(2000);

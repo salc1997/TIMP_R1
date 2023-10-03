@@ -688,7 +688,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		menu.click();
 		sleep(1000);
 		editar.click();
-		sleep(6000);
+		sleep(10000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectedElement(calculator);
 		sleep(2000);
@@ -1275,7 +1275,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		executar.click();
 		sleep(3000);
 		waitExpectedElement(executarN);
-		sleep(9000);
+		sleep(15000);
 		executarN.click();
 		
 		sleep(1000);

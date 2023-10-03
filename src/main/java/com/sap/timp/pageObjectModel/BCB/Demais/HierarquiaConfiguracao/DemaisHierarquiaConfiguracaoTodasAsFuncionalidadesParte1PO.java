@@ -904,7 +904,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		waitExpectedElement(calculator);
-		sleep(15000);
+		sleep(20000);
 		
 		calculator.click();
 		sleep(1000);

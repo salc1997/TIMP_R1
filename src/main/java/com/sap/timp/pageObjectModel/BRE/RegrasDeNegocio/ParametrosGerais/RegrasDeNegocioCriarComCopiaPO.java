@@ -74,10 +74,10 @@ public class RegrasDeNegocioCriarComCopiaPO extends TestBase {
 		sleep(6000);
 		aplicar.click();
 		
-		sleep(2000);
+		sleep(18000);
 	
 		
-	/*	biblioteca.click();*/
+		biblioteca.click();
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

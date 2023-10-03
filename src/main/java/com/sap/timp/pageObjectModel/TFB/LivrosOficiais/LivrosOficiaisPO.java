@@ -168,7 +168,7 @@ public class LivrosOficiaisPO extends TestBase{
 	
 	public  boolean  livros() {
 
-		sleep(1000);
+	
 		
 		while (!livros.isDisplayed()) {
 			flecha.click();
@@ -189,7 +189,7 @@ public class LivrosOficiaisPO extends TestBase{
 	}
 	
 	public  ArrayList<Boolean>  livrosICMS() {
-		
+
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		livrosICMS.click();
 		sleep(2000);
@@ -334,7 +334,7 @@ public class LivrosOficiaisPO extends TestBase{
 		
 		sim.click();
 
-		sleep(290000);
+		sleep(360000);
 
 		
 		WebElement identificador = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]//child::div[@data-id=\""+id2+"\"]/div[2]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\"]"));
@@ -346,67 +346,8 @@ public class LivrosOficiaisPO extends TestBase{
 	
 		
 		System.out.println("Livro Oficializado : "+sucesso);
-	/*	executarLivrosICMS.click();
-		sleep(2000);
 		
-		empresa.click();
-		sleep(1000);
-		empresaOPC.click();
-		sleep(1000);
-		closeSelectTypeCheckbox(empresa);
-		sleep(1000);
-		
-		
-		estado.click();
-		sleep(1000);
-		estadoOPC2.click();
-		sleep(1000);
-		closeSelectTypeCheckbox(estado);
-		sleep(1000);
-		
-		filial.click();
-		sleep(1000);
-		filialOPC.click();
-		sleep(1000);
-		closeSelectTypeCheckbox(filial);
-		sleep(1000);
-		
-		periodo.click();
-		sleep(2000);
-		paginaAnterior.click();
-		sleep(2000);
-		ano2016.click();
-		sleep(1000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		jan.click();
-		sleep(1000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		m1.click();
-		sleep(1000);
-		
-		executar.click();
-		sleep(1000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
-		
-		sucesso.add( entradas.isDisplayed());
-		sucesso.add( saidas.isDisplayed());
-		sucesso.add(resumo.isDisplayed());
-		sucesso.add( informações.isDisplayed());
-		sucesso.add( detalhes.isDisplayed());
-		        
-		System.out.println("Presenta Entradas & salidas: "+sucesso);
-		sleep(3000);
-		
-		biblioteca.click();
-
-	
-*
-		sleep(37000);*/
-
-		
+		sleep(8000);
 		
 		return sucesso;		
 	}

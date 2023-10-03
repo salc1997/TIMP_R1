@@ -154,7 +154,7 @@ public class BloqueioSubPeriodoEditarPO extends TestBase {
 		gravar.click();
 		sleep(2000);
 		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(12000);
+		sleep(18000);
 		subperiodo.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -162,7 +162,7 @@ public class BloqueioSubPeriodoEditarPO extends TestBase {
 		ultimapagina.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(10000);
 		
 		if (tq1 == true) {
 			String idRegistro = "15";
@@ -213,7 +213,7 @@ public class BloqueioSubPeriodoEditarPO extends TestBase {
 			sleep(2000);
 			waitExpectedElement(biblioteca);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(2000);
+			sleep(8000);
 		}
 		
 		

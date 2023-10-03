@@ -74,7 +74,7 @@ public class RegrasdeNegócioExcluirdefinitivamentePO extends TestBase{
 	public WebElement abas1;
 
 	
-	@FindBy(xpath = "//*[@id=\"31\"]/div[1]/label/span")
+	@FindBy(xpath = "//*[@id=\"1\"]/div[1]/label/span")
 	public WebElement opcAbas;
 	
 	@FindBy(xpath = "//div[@id=\"1\"]/div[1]/label/span")
@@ -87,7 +87,7 @@ public class RegrasdeNegócioExcluirdefinitivamentePO extends TestBase{
 	@FindBy(xpath = "//button/span[text()=\"Gravar\"]")
 	public WebElement gravar;
 	
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]//button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 	
 	@FindBy(xpath = "//span[text()=\"Justificativa\"]")
@@ -339,7 +339,7 @@ public boolean criar() {
 		}else if (tc2==true ) {
 			acoes.click();
 			sleep(2000);
-			opcAcoes.click();
+			opcAcoes1.click();
 			sleep(2000);
 			closeSelectTypeCheckbox(acoes);
 			

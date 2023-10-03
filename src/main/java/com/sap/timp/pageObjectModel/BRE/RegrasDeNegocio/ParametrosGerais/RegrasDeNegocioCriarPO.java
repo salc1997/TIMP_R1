@@ -124,7 +124,7 @@ public class RegrasDeNegocioCriarPO extends TestBase{
 	@FindBy(xpath = "//div[@class=\"list-option\"]/div[@id=\"T262\"]")
 	public WebElement opcaoacoesr22;
 	
-	@FindBy(xpath = "//div[@class=\"list-option\"]/div[@id=\"T2\"]")
+	@FindBy(xpath = "//div[@class=\"list-option\"]/div[@id=\"T191\"]//span")
 	public WebElement opcaoacoesr222;
 	
 	//@FindBy(xpath = "//div[@id=\"T3\"]/div/label/span")
@@ -475,8 +475,10 @@ public class RegrasDeNegocioCriarPO extends TestBase{
 		NomeDoValor.sendKeys(Keys.ESCAPE);
 		sleep(1000);
 		acoes.click();
-		sleep(1000);
-		opcaoacoesr3.click();
+		sleep(2000);
+		actionsMoveToElement(opcaoacoesr3);
+		sleep(2000);
+		opcaoacoesr222.click();
 		closeSelectTypeCheckbox(acoes);
 		sleep(1000);
 		habilitar.click();

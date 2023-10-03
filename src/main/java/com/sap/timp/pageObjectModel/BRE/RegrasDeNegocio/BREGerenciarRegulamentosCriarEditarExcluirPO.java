@@ -106,13 +106,6 @@ public class BREGerenciarRegulamentosCriarEditarExcluirPO extends TestBase {
 		sleep(3000);
 
 		
-		ok.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-
-		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);

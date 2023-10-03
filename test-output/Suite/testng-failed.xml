@@ -2,17 +2,26 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
 <<<<<<< HEAD
+<<<<<<< HEAD
   <test thread-count="5" name=" ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed)">
 =======
   <test thread-count="5" name=" ATR - ESTRUCTURAS - MAPAMENTO DE PARAMETROS DE ENTRADA (failed)">
 >>>>>>> refs/heads/Yessy
+=======
+  <test thread-count="5" name=" ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed)">
+>>>>>>> refs/remotes/origin/Yessy
     <classes>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasTodasFunc">
 =======
       <class name="com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaTodasFunc">
 >>>>>>> refs/heads/Yessy
+=======
+      <class name="com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasTodasFunc">
+>>>>>>> refs/remotes/origin/Yessy
         <methods>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <include name="criarRelacionamento"/>
           <include name="afterClass"/>
@@ -35,10 +44,26 @@
 =======
           <include name="editar"/>
           <include name="criar"/>
+=======
+          <include name="criarRelacionamento"/>
+>>>>>>> refs/remotes/origin/Yessy
           <include name="afterClass"/>
+          <include name="excluirMassa"/>
+          <include name="editarCopia"/>
+          <include name="excluirCopia"/>
+          <include name="VisualizarRelacionamento"/>
+          <include name="beforeClass"/>
+          <include name="criarCopia"/>
+          <include name="EditarRelacionamento"/>
+          <include name="criarMasa"/>
+          <include name="excluir"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.MapeamentoDeParametrosDeEntrada.MapeamentoDeParametrosDeEntradaTodasFunc -->
+      </class> <!-- com.timp.test.ATR.Estruturas.RelacionamentoEstruturas.RelacionamentoEstruturasTodasFunc -->
     </classes>
+<<<<<<< HEAD
   </test> <!--  ATR - ESTRUCTURAS - MAPAMENTO DE PARAMETROS DE ENTRADA (failed) -->
 >>>>>>> refs/heads/Yessy
+=======
+  </test> <!--  ATR - ESTRUCTURAS -  RELACIONAMIENTO DE ESTRUCTURAS (failed) -->
+>>>>>>> refs/remotes/origin/Yessy
 </suite> <!-- Failed suite [Suite] -->

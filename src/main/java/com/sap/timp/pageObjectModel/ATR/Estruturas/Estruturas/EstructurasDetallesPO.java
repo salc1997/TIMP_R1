@@ -74,8 +74,7 @@ public class EstructurasDetallesPO extends TestBase{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		
+	
 		String nomeversão = versão.getText();
 		String nomegrupo = grupo.getText();
 		String nomedescrição = descrição.getText();
@@ -89,7 +88,7 @@ public class EstructurasDetallesPO extends TestBase{
 		fechar.click();
 		sleep(2000);
 		waitExpectedElement(siguiente);
-		sleep(2000);
+		sleep(3000);
 		
 		String nomedescrição2 = descriçãoTabla.getText();
 		String nomeversão2 = versãoTabla.getText();

@@ -110,7 +110,7 @@ public class GrupoDeEstruturasDetalhesPO extends TestBase {
 		fechar.click();
 		sleep(2000);
 		waitExpectedElement(siguiente);
-		sleep(2000);
+		sleep(4000);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -148,7 +148,8 @@ public class GrupoDeEstruturasDetalhesPO extends TestBase {
 		sucesso.add(ajustefiscaisdetalhes.contains(ajustefiscaisvisualizar));
 		//sucesso.add(cfopdetalhes.contains(ajustefiscaisvisualizar));
 		
-		
+		aceitar.click();
+		sleep(3000);
 
 		
 		System.out.println(sucesso);

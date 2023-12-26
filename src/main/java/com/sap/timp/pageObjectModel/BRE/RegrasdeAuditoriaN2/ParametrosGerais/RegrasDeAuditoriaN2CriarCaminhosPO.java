@@ -103,13 +103,13 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBase {
 	@FindBy(xpath = "//td[@class=\"datastructureCategory-field\"]/div/div/div[2]")
 	public WebElement grupodeestrutura;
 	
-	@FindBy(xpath = "//li[@id][text()=\"TA-TESTE\"][1]")
+	@FindBy(xpath = "//li[@id=\"option-189\"][1]")
 	public WebElement opcaogrupodeestrutura;
 	
 	@FindBy(xpath = "//td[@class=\"regulation-field\"]/div/div/div[2]")
 	public WebElement regulamiento;
 	
-	@FindBy(xpath = "//li[@id][text()=\"TA-TESTE\"][1]")
+	@FindBy(xpath = "//li[text()=\"Test regulation\"][1]")
 	public WebElement regulamientoOPC;
 	
 	@FindBy(xpath = "//li[@id][text()=\"Ajustes\"][1]")
@@ -208,7 +208,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBase {
 		estructura.click();
 		sleep(3000);
 		opcEstructura.click();
-		sleep(3000);
+		sleep(5000);
 		
 		 regulamiento.click();
 		sleep(3000);

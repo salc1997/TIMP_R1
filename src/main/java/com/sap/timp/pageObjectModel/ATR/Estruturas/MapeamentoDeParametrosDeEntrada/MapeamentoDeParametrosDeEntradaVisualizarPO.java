@@ -53,7 +53,8 @@ public class MapeamentoDeParametrosDeEntradaVisualizarPO extends TestBase {
 	@FindBy(xpath = "//input[@placeholder=\"Selecionar Campo \"]")
 	public WebElement direcaomovimento;
 
-	
+	@FindBy(xpath = "//button[text()=\"Cancelar\"]")
+	public WebElement cancelar;
 	
 	public MapeamentoDeParametrosDeEntradaVisualizarPO() {
 
@@ -138,7 +139,8 @@ public class MapeamentoDeParametrosDeEntradaVisualizarPO extends TestBase {
 		sucesso.add(direcaomovimentoeditar.contains(direcaomovimentovisualizar));
 		
 		
-		
+		cancelar.click();
+		sleep(2000);
 
 		
 		System.out.println(sucesso);

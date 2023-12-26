@@ -666,7 +666,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			tipoApuracao.click();
 			sleep(1000);
 			tipoApuracaoO.click();
-			sleep(1000);
+			sleep(20000);
 
 			dataVigencia.sendKeys("01/01/2013");
 			sleep(1000);

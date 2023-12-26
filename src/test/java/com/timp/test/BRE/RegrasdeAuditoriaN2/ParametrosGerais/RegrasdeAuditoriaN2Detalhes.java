@@ -32,7 +32,7 @@ public class RegrasdeAuditoriaN2Detalhes extends TestBase {
 
 	@AfterClass
 	public void afterClass() {
-	driver.close();
+	  driver.close();
 	}
 
 	@Test()

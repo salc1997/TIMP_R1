@@ -130,7 +130,7 @@ public class GruposAvanzadosPO extends TestBase{
 		opcao.click();
 
 		waitExpectedElement("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
-	
+		sleep(3000);
 		executar.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

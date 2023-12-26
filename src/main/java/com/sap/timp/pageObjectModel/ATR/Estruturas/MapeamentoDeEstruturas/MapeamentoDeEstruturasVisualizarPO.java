@@ -67,6 +67,9 @@ public class MapeamentoDeEstruturasVisualizarPO extends TestBase{
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement aceitar;
 	
+	@FindBy(xpath = "//button[text()=\"Cancelar\"]")
+	public WebElement cancelar;
+	
 	@FindBy(xpath = "//div[@class=\"input structureMap\"]/div/div/div/input")
 	public WebElement estruturadedados;
 	
@@ -92,6 +95,8 @@ public class MapeamentoDeEstruturasVisualizarPO extends TestBase{
 	
 	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Fim de Vigência\"]")
 	public WebElement datafim;
+	
+
 	
 	
 	public MapeamentoDeEstruturasVisualizarPO() {
@@ -211,7 +216,8 @@ public class MapeamentoDeEstruturasVisualizarPO extends TestBase{
 		sucesso.add(datainicioeditar.contains(datainiciovisualizar));
 		sucesso.add(datafimeditar.contains(datafimvisualizar));
 
-		
+		cancelar.click();
+		sleep(2000);
 		System.out.println(sucesso);
 		
 		

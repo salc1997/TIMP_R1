@@ -760,7 +760,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		gravarC.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(8000);
+		sleep(12000);
 		
 		biblioteca.click();
 		sleep(5000);

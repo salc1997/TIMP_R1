@@ -43,7 +43,6 @@ public class RegrasDeNegocioDetalhes extends TestBase {
 		loginTC.login();
 		acessarBREPO.acessarBRE();
 		
-		//regrasDeNegocioDetalhesPO.detalhes();
 		ArrayList<Boolean> sucesso = regrasDeNegocioDetalhesPO.detalhes();
 
 		for (int i = 0; i < sucesso.size(); i++) {

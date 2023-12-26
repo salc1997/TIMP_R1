@@ -100,7 +100,7 @@ public class FiltroColunasPO  extends TestBase{
 		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		
 		actionsMoveToElement("//div[@data-column=\"5\" and not(@data-path)]");
-		colunaOpcao.click();
+		colunaOpcao.sendKeys(Keys.ENTER);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
@@ -160,7 +160,7 @@ public class FiltroColunasPO  extends TestBase{
 	public boolean filtroFerramenta2() {
 		actionsMoveToElement("//div[@data-column=\"5\" and not(@data-path)]");
 		
-		colunaOpcao.click();
+		colunaOpcao.sendKeys(Keys.ENTER);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);

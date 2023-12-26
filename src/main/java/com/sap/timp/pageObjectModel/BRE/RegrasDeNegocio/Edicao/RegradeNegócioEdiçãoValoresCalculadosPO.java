@@ -226,8 +226,8 @@ public boolean editar() {
 	formula.sendKeys("MID(\"Código oficial- (aba:Dados Lançamento) (ED)\", 4, 1)");
 	sleep(3000);
 	
-	aplicar.click();
-	sleep(4000);
+	/*aplicar.click();
+	sleep(4000);*/
 	
 	editVCalculado.click();
 	

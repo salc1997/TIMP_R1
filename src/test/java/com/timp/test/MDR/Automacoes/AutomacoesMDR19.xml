@@ -7,12 +7,14 @@
 
 		<classes>
 
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar"></class>
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteDetalhe"></class>
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteEditar"></class>
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteVisualizar"></class>
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteExcluir"></class>
-
+			<class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoCriar"></class>
+			<class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoEditar"></class>
+			<class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoVisualizar"></class>
+			<class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoFiltrosAvanzados"></class>
+			<class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluir"></class>
+			<class name="com.timp.test.MDR.CenariosCorrecao.CenariosCorrecaoExcluirMassa"></class>
+				
+		
 			
 			
 			

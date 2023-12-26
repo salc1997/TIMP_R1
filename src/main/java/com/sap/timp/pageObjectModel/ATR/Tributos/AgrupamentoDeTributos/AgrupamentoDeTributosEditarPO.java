@@ -63,15 +63,16 @@ public class AgrupamentoDeTributosEditarPO extends TestBase{
 	@FindBy(xpath = "//div[@id=\"00\"]/div/label/span")
 	public WebElement selecionadoicmstributosaavaliar;
 	
-	
+	@FindBy(xpath = "//button[text()=\"Cancelar\"]")
+	public WebElement cancelar;
 	public AgrupamentoDeTributosEditarPO() {
 		PageFactory.initElements(driver, this);
 	}
 	
 	public ArrayList<Boolean> editar() {
-		sleep(2000);
-		driver.get(estruc);
 		sleep(6000);
+		driver.get(estruc);
+		sleep(8000);
 		
 		tributos.click();
 		
@@ -215,6 +216,9 @@ public class AgrupamentoDeTributosEditarPO extends TestBase{
 			sucesso.add(false);
 		}
 		closeSelectTypeCheckbox(tributosaavaliar);
+		
+		cancelar.click();
+		sleep(2000);
 		
 		System.out.println(sucesso);
 		

@@ -691,7 +691,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(10000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		waitExpectedElement(calculator);
-		sleep(2000);
+		sleep(5000);
 		
 		calculator.click();
 		sleep(1000);
@@ -711,29 +711,23 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 
 		criar.click();
 		sleep(2000);
+		
+		
 		fechar.click();
 		sleep(2000);
-
+		
+		
 		gravar.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
 		
 		nao.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-//		justificativa.sendKeys("JUSTIFICATIVA 2 TESTE AUTOMATIZADO");
-//		sleep(2000);
-//		aplicarJustificativa.click();
-//		sleep(3000);
-//		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-//		sleep(2000);
-		
+	
 		//corregir mensaje al parecer
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"A configuração de hierarquia foi salva\")]")).size();
-		
+				
+
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
 		if (mensaje > 0) {
@@ -786,7 +780,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(1000);
 		if (tc2==true) {
 			selectBFB3.click();
-			selectBFB3.sendKeys(Keys.ESCAPE);
+	//		selectBFB3.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 		}else if(tq1==true) {
 			selectBFB1.click();
@@ -890,7 +884,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(1000);
 		if (tc2==true) {
 			selectBFB3.click();
-			selectBFB3.sendKeys(Keys.ESCAPE);
+			//selectBFB3.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 		}else if(tq1==true) {
 			selectBFB1.click();
@@ -910,7 +904,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		campoSaida2.click();
 		sleep(3000);
 		opcCampoSaida2.click();
-		opcCampoSaida2.sendKeys(Keys.ESCAPE);
+	//	opcCampoSaida2.sendKeys(Keys.ESCAPE);
 		sleep(3000);
 		
 		
@@ -999,7 +993,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(1000);
 		if (tc2==true) {
 			selectBFB3.click();
-			selectBFB3.sendKeys(Keys.ESCAPE);
+			//selectBFB3.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 		}else if(tq1==true) {
 			selectBFB1.click();
@@ -1018,7 +1012,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		campoSaida3.click();
 		sleep(3000);
 		opcCampoSaida3.click();
-		opcCampoSaida3.sendKeys(Keys.ESCAPE);
+	//	opcCampoSaida3.sendKeys(Keys.ESCAPE);
 		sleep(3000);
 		
 		
@@ -1028,7 +1022,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		condicaoZerado.click();
 		sleep(3000);
 		opcZerado.click();
-		opcZerado.sendKeys(Keys.ESCAPE);
+		//opcZerado.sendKeys(Keys.ESCAPE);
 		sleep(3000);
 		
 		gravar.click();
@@ -1108,7 +1102,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(1000);
 		if (tc2==true) {
 			selectBFB3.click();
-			selectBFB3.sendKeys(Keys.ESCAPE);
+		//	selectBFB3.sendKeys(Keys.ESCAPE);
 			sleep(3000);
 		}else if(tq1==true) {
 			selectBFB1.click();
@@ -1127,7 +1121,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		campoSaida4.click();
 		sleep(3000);
 		opcCampoSaida4.click();
-		opcCampoSaida4.sendKeys(Keys.ESCAPE);
+	//	opcCampoSaida4.sendKeys(Keys.ESCAPE);
 		sleep(3000);
 		
 		
@@ -1137,7 +1131,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		condicaoZerado4.click();
 		sleep(3000);
 		opcZerado4.click();
-		opcZerado4.sendKeys(Keys.ESCAPE);
+	//	opcZerado4.sendKeys(Keys.ESCAPE);
 		sleep(3000);
 		
 		
@@ -1205,7 +1199,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(1000);
 		if (tc2==true) {
 			selectBFB3.click();
-			selectBFB3.sendKeys(Keys.ESCAPE);
+		//	selectBFB3.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 		}else if(tq1==true) {
 			selectBFB1.click();
@@ -1224,7 +1218,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		campoSaida5.click();
 		sleep(5000);
 		opcCampoSaida5.click();
-		opcCampoSaida5.sendKeys(Keys.ESCAPE);
+		//opcCampoSaida5.sendKeys(Keys.ESCAPE);
 		sleep(3000);
 		
 		negativo5.click();
@@ -1275,10 +1269,9 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		executar.click();
 		sleep(3000);
 		waitExpectedElement(executarN);
-		sleep(15000);
+		sleep(25000);
 		executarN.click();
 		
-		sleep(1000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		periodo.click();

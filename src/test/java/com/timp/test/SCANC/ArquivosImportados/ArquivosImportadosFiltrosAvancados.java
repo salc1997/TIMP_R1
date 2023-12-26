@@ -33,21 +33,15 @@ public class ArquivosImportadosFiltrosAvancados extends TestBase {
 	}
 
 	@Test(priority = 0)
-	public void ingresar() {
-		loginTC.login();
-	}
-
-	@Test(priority = 1)
-	public void scancEntrar() {
-		acessarSCANCPO.acessarSCANC();
-	}
-
-	@Test(priority = 2)
 	public void filtrosAvancados() {
+		loginTC.login();
+		acessarSCANCPO.acessarSCANC();
 		ArrayList<Boolean> sucesso = arquivosImportadosFiltrosAvancadosPO.filtrosAvanzados();
 
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Filtros);
 		}
 	}
+
+	
 }

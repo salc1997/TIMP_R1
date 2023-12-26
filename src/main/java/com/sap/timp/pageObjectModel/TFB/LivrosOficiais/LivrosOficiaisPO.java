@@ -334,7 +334,7 @@ public class LivrosOficiaisPO extends TestBase{
 		
 		sim.click();
 
-		sleep(360000);
+		sleep(560000);
 
 		
 		WebElement identificador = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]//child::div[@data-id=\""+id2+"\"]/div[2]/span[@class=\"icon-font-Sign-and-Symbols icon-check-44\"]"));

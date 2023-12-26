@@ -56,7 +56,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 extends Te
 	public void ejecutarFinal() {
 		demaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO.ejecutarFinal();
 	}
-	
+
 	
 		@Test(priority = 2)
 	public void relacionamentoFinalyAbrirHierarquiaGrupo() {
@@ -69,7 +69,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 extends Te
 		}
 	}
 	
-	/*
+/*
 	@Test(priority = 3)
 	public void excluirConfiguracoes2() {
 		

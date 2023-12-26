@@ -74,7 +74,7 @@ public class RegrasDeNegocioCriarComCopiaPO extends TestBase {
 		sleep(6000);
 		aplicar.click();
 		
-		sleep(18000);
+		sleep(28000);
 	
 		
 		biblioteca.click();

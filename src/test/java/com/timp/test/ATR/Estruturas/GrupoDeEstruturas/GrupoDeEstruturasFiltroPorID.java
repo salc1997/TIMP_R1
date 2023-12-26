@@ -40,6 +40,10 @@ public class GrupoDeEstruturasFiltroPorID extends TestBase {
 	@Test()
 	public void filtro() {
 
+		loginTC.login();
+
+		acessarATRPO.acessarATR();
+
 
 		ArrayList<Boolean> sucesso = grupoDeEstruturasFiltroPorIDPO.filtro();
 		for (int i = 0; i < sucesso.size(); i++) {

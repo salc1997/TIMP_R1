@@ -102,11 +102,11 @@ public class LeiautesExecucacoFuncionalidades4Pt4PO extends TestBase{
 		menu.click();
 		sleep(1000);
 		açao.click();
-		sleep(3000);
+		sleep(6000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		btnAdicionarBloco.click();
 		sleep(2000);
@@ -168,7 +168,7 @@ public class LeiautesExecucacoFuncionalidades4Pt4PO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		moveToElement(campoSequenciaItemPorDocumento, driver.findElement(By.xpath("//div[@block-id=\"3\"]/div[@class=\"columns-container\"]/div")));
-		sleep(2000);
+		sleep(3000);
 	
 		btnAplicar.click();
 		sleep(2000);

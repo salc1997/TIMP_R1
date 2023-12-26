@@ -58,7 +58,8 @@ public class AgrupamentoDeTributosVerPO extends TestBase{
 	@FindBy(xpath = "//div[@class=\"fieldMap taxSubset\"]/div/div/div/div[1]/div[1]/div[1]")
 	public WebElement tributoaavaliar;
 
-	
+	@FindBy(xpath = "//button[text()=\"Cancelar\"]")
+	public WebElement cancelar;
 	
 	public AgrupamentoDeTributosVerPO() {
 
@@ -69,7 +70,7 @@ public class AgrupamentoDeTributosVerPO extends TestBase{
 		
 		sleep(2000);
 		driver.get(estruc);
-		sleep(6000);
+		sleep(8000);
 
 		tributos.click();
 		sleep(2000);
@@ -149,7 +150,8 @@ public class AgrupamentoDeTributosVerPO extends TestBase{
 		sucesso.add(tributoeditar.contains(tributovisualizar));
 		sucesso.add(tributoaavaliareditar.contains(tributoaavaliarvisualizar));
 		
-		
+		cancelar.click();
+		sleep(2000);
 
 		
 		System.out.println(sucesso);

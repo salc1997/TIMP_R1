@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>6/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 28 22:40:05 UTC 2023</td>
+<td>Started on:</td><td>Wed Dec 13 21:35:47 UTC 2023</td>
 </tr>
-<tr><td>Total time:</td><td>1426 seconds (1426429 ms)</td>
+<tr><td>Total time:</td><td>1349 seconds (1349142 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir.Lixeria()'><b>Lixeria</b><br>Test class: com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&quot;tbody&quot;)]/div[contains(@class,&quot;tr&quot;) and @data-id][0]/div[5]/div&quot;}
-  (Session info: chrome=117.0.5938.92)
+<td title='com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar.executar()'><b>executar</b><br>Test class: com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&quot;Exportar&quot;]&quot;}
+  (Session info: chrome=119.0.6045.124)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;EC2AMAZ-8HCHO4G&apos;, ip: &apos;10.0.0.249&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\user_ta\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51068}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f263bc3bf62c59d373260ef54a2f3ee2
-*** Element info: {Using=xpath, value=//div[contains(@class,&quot;tbody&quot;)]/div[contains(@class,&quot;tr&quot;) and @data-id][0]/div[5]/div}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user_ta\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50807}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d547b41cbb4ab81ea4fc07d006e726d
+*** Element info: {Using=xpath, value=//button[text()=&quot;Exportar&quot;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -95,19 +95,22 @@ Session ID: f263bc3bf62c59d373260ef54a2f3ee2
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.sap.timp.pageObjectModel.DFG.Configuracoes.ConfiguracoesLixeiraExcluirPO.LixeriaExcluir(ConfiguracoesLixeiraExcluirPO.java:273)
-	at com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir.Lixeria(ConfiguracoesLixeiraExcluir.java:42)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at com.sap.timp.pageObjectModel.DFG.Configuracoes.ConfiguracoesExecutarPO.Executar(ConfiguracoesExecutarPO.java:237)
+	at com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar.executar(ConfiguracoesExecutar.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1661658830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1661658830'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&quot;tbody&quot;)]/div[contains(@class,&quot;tr&quot;) and @data-id][0]/div[5]/div&quot;}
-  (Session info: chrome=117.0.5938.92)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace49250603", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace49250603'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[text()=&quot;Exportar&quot;]&quot;}
+  (Session info: chrome=119.0.6045.124)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;EC2AMAZ-8HCHO4G&apos;, ip: &apos;10.0.0.249&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\user_ta\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51068}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f263bc3bf62c59d373260ef54a2f3ee2
-*** Element info: {Using=xpath, value=//div[contains(@class,&quot;tbody&quot;)]/div[contains(@class,&quot;tr&quot;) and @data-id][0]/div[5]/div}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user_ta\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50807}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d547b41cbb4ab81ea4fc07d006e726d
+*** Element info: {Using=xpath, value=//button[text()=&quot;Exportar&quot;]}
 	at jdk.internal.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
@@ -122,8 +125,11 @@ Session ID: f263bc3bf62c59d373260ef54a2f3ee2
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.sap.timp.pageObjectModel.DFG.Configuracoes.ConfiguracoesLixeiraExcluirPO.LixeriaExcluir(ConfiguracoesLixeiraExcluirPO.java:273)
-	at com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir.Lixeria(ConfiguracoesLixeiraExcluir.java:42)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+	at com.sap.timp.pageObjectModel.DFG.Configuracoes.ConfiguracoesExecutarPO.Executar(ConfiguracoesExecutarPO.java:237)
+	at com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar.executar(ConfiguracoesExecutar.java:45)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -153,17 +159,17 @@ Session ID: f263bc3bf62c59d373260ef54a2f3ee2
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>228</td>
-<td>com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir@7bab3f1a</td></tr>
+<td>238</td>
+<td>com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar@23c30a20</td></tr>
 <tr>
-<td title='com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar.executar()'><b>executar</b><br>Test class: com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div tabindex=&quot;0&quot; class=&quot;month&quot;&gt;...&lt;/div&gt; is not clickable at point (945, 326). Other element would receive the click: &lt;div class=&quot;base-loader-container&quot; style=&quot;opacity: 0.934316;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=117.0.5938.92)
+<td title='com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta.criarGerenciarMoverPasta()'><b>criarGerenciarMoverPasta</b><br>Test class: com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=119.0.6045.124)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;EC2AMAZ-8HCHO4G&apos;, ip: &apos;10.0.0.249&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\user_ta\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50957}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1d5838b5fec2f726ac9985dab768b8b4
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user_ta\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50703}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 26a6673da7078b3196d0a0c691d13844
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -172,19 +178,17 @@ Session ID: 1d5838b5fec2f726ac9985dab768b8b4
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.DFG.Configuracoes.ConfiguracoesExecutarPO.Executar(ConfiguracoesExecutarPO.java:201)
-	at com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar.executar(ConfiguracoesExecutar.java:45)
+	at com.sap.timp.pageObjectModel.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPastaPO.criarGerenciarMoverPasta(ConfiguracoesCriarGrerenciarMoverPastaPO.java:157)
+	at com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta.criarGerenciarMoverPasta(ConfiguracoesCriarGrerenciarMoverPasta.java:39)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1144318801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1144318801'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div tabindex=&quot;0&quot; class=&quot;month&quot;&gt;...&lt;/div&gt; is not clickable at point (945, 326). Other element would receive the click: &lt;div class=&quot;base-loader-container&quot; style=&quot;opacity: 0.934316;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=117.0.5938.92)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace199676456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace199676456'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=119.0.6045.124)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;EC2AMAZ-8HCHO4G&apos;, ip: &apos;10.0.0.249&apos;, os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\user_ta\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50957}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1d5838b5fec2f726ac9985dab768b8b4
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\user_ta\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50703}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 26a6673da7078b3196d0a0c691d13844
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -198,13 +202,8 @@ Session ID: 1d5838b5fec2f726ac9985dab768b8b4
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at com.sap.timp.pageObjectModel.DFG.Configuracoes.ConfiguracoesExecutarPO.Executar(ConfiguracoesExecutarPO.java:201)
-	at com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar.executar(ConfiguracoesExecutar.java:45)
+	at com.sap.timp.pageObjectModel.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPastaPO.criarGerenciarMoverPasta(ConfiguracoesCriarGrerenciarMoverPastaPO.java:157)
+	at com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta.criarGerenciarMoverPasta(ConfiguracoesCriarGrerenciarMoverPasta.java:39)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -234,8 +233,8 @@ Session ID: 1d5838b5fec2f726ac9985dab768b8b4
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>114</td>
-<td>com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar@4dbb42b7</td></tr>
+<td>75</td>
+<td>com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta@36916eb0</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -245,35 +244,35 @@ Session ID: 1d5838b5fec2f726ac9985dab768b8b4
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.timp.test.DFG.Configuracoes.ConfiguracoesCriar.criar()'><b>criar</b><br>Test class: com.timp.test.DFG.Configuracoes.ConfiguracoesCriar</td>
-<td></td>
-<td>306</td>
-<td>com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@4803b726</td></tr>
-<tr>
-<td title='com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta.criarGerenciarMoverPasta()'><b>criarGerenciarMoverPasta</b><br>Test class: com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta</td>
-<td></td>
-<td>220</td>
-<td>com.timp.test.DFG.Configuracoes.ConfiguracoesCriarGrerenciarMoverPasta@957e06</td></tr>
-<tr>
 <td title='com.timp.test.DFG.Configuracoes.ConfiguracoesEditar.criar()'><b>criar</b><br>Test class: com.timp.test.DFG.Configuracoes.ConfiguracoesEditar</td>
 <td></td>
-<td>177</td>
-<td>com.timp.test.DFG.Configuracoes.ConfiguracoesEditar@32502377</td></tr>
+<td>164</td>
+<td>com.timp.test.DFG.Configuracoes.ConfiguracoesEditar@7bab3f1a</td></tr>
+<tr>
+<td title='com.timp.test.DFG.Configuracoes.ConfiguracoesCriar.criar()'><b>criar</b><br>Test class: com.timp.test.DFG.Configuracoes.ConfiguracoesCriar</td>
+<td></td>
+<td>284</td>
+<td>com.timp.test.DFG.Configuracoes.ConfiguracoesCriar@729d991e</td></tr>
 <tr>
 <td title='com.timp.test.DFG.Configuracoes.ConfiguracoesVisualizar.criar()'><b>criar</b><br>Test class: com.timp.test.DFG.Configuracoes.ConfiguracoesVisualizar</td>
 <td></td>
-<td>132</td>
-<td>com.timp.test.DFG.Configuracoes.ConfiguracoesVisualizar@66f57048</td></tr>
-<tr>
-<td title='com.timp.test.DFG.Configuracoes.ConfiguracoesFavoritos.favoritos()'><b>favoritos</b><br>Test class: com.timp.test.DFG.Configuracoes.ConfiguracoesFavoritos</td>
-<td></td>
-<td>96</td>
-<td>com.timp.test.DFG.Configuracoes.ConfiguracoesFavoritos@2c1b194a</td></tr>
+<td>133</td>
+<td>com.timp.test.DFG.Configuracoes.ConfiguracoesVisualizar@1e1a0406</td></tr>
 <tr>
 <td title='com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraMasRestaurar.lixeiraMasRestaurar()'><b>lixeiraMasRestaurar</b><br>Test class: com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraMasRestaurar</td>
 <td></td>
-<td>127</td>
-<td>com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraMasRestaurar@550dbc7a</td></tr>
+<td>120</td>
+<td>com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraMasRestaurar@3cebbb30</td></tr>
+<tr>
+<td title='com.timp.test.DFG.Configuracoes.ConfiguracoesFavoritos.favoritos()'><b>favoritos</b><br>Test class: com.timp.test.DFG.Configuracoes.ConfiguracoesFavoritos</td>
+<td></td>
+<td>94</td>
+<td>com.timp.test.DFG.Configuracoes.ConfiguracoesFavoritos@437da279</td></tr>
+<tr>
+<td title='com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir.Lixeria()'><b>Lixeria</b><br>Test class: com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir</td>
+<td></td>
+<td>216</td>
+<td>com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir@67f639d3</td></tr>
 </table><p>
 </body>
 </html>

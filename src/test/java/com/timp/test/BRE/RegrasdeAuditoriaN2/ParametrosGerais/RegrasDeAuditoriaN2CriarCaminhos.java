@@ -31,7 +31,7 @@ public class RegrasDeAuditoriaN2CriarCaminhos extends TestBase {
 
 	@AfterClass
 	public void afterClass() {
-	 driver.close();
+	// driver.close();
 	}
 
 	@Test()

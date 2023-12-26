@@ -158,6 +158,7 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBase {
 		
 		waitExpectedElement(tributo);
 		invisibilityOfElementOverlay();
+		sleep(8000);
 		
 		tributo.click();
 		sleep(1000);

@@ -143,7 +143,7 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBase {
 		opcData.click();
 		sleep(1000);
 		data.sendKeys(Keys. ESCAPE);
-		sleep(5000);
+		sleep(6000);
 		
 		tributo.click();
 		sleep(2000);

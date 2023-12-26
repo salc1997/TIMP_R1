@@ -104,7 +104,6 @@
 
 		</classes>
 	</test> 
-	
 	<test name="Registro M400" >
 		<classes>
 			<!-- Registro M400 -->

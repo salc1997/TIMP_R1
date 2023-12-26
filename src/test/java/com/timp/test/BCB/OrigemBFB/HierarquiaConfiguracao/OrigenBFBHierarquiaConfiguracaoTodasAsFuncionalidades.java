@@ -93,7 +93,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 			assertTrue(sucesso.get(i), subniveis);
 		}
 	}	
-	
+
 	@Test(priority = 7)	
 	public void subNivel3() {
 		ArrayList<Boolean> sucesso = origenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO.subNivel3();
@@ -196,6 +196,5 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades extends TestB
 			assertTrue(sucesso.get(i), Eliminado);
 		}
 	}
-
 
 }

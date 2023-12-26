@@ -2,9 +2,11 @@ package com.sap.timp.base;
 
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -36,7 +38,7 @@ public class TestBase extends TestUtil{
 
 	public static WebDriver driver;
 	public String usuarioL = "TESTEAUTOMATIZADO";
-	public String senhaL = "Alltax20";
+	public String senhaL = "Alltax2020";
 
 	public String usuarioLL = "kenssy.medina@agilesolutions.com";
 	public String senhaLL = "Gorgojita12";
@@ -49,7 +51,7 @@ public class TestBase extends TestUtil{
 
 
 
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver11906045.exe");
 
 	/*	System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver114.exe");*/
 
@@ -110,7 +112,45 @@ public class TestBase extends TestUtil{
 		return rows;
 
 	}
-
+	public WebElement findElement(String xpath) {
+		return driver.findElement(By.xpath(xpath));
+	}
+	
+	public List<WebElement> findElements(String xpath) {
+		return driver.findElements(By.xpath(xpath));
+	}
+	//Hacer Click
+		public void click(WebElement element) {
+			element.click();
+			sleep(1000);
+		}
+		
+		public void click(String xpath) {
+			findElement(xpath).click();
+			sleep(1000);
+		}
+		
+		//Enviar Texto
+		public void sendKeys(String xpath, String text) {
+			findElement(xpath).sendKeys(text);
+			sleep(1000);
+		}
+		
+		public void sendKeys(WebElement element, String text) {
+			element.sendKeys(text);
+			sleep(1000);
+		}
+		
+		public void sendKeys(WebElement element, Keys keys) {
+			element.sendKeys(keys);
+			sleep(1000);
+		}
+		
+		public void sendKeys(String xpath, Keys keys) {
+			findElement(xpath).sendKeys(keys);
+			sleep(1000);
+		}
+		
 	public void invisibilityOfElementOverlay() {
 
 		WebDriverWait wait = new WebDriverWait(driver, 360);
@@ -220,7 +260,9 @@ public class TestBase extends TestUtil{
 		return texto;
 
 	}
-
+	
+	
+//esperar que los combobox se ppueblen 
 	public void attributoNotToBeEmpty(WebElement element, String attribute) {
 		WebDriverWait wait = new WebDriverWait(driver, 360);
 

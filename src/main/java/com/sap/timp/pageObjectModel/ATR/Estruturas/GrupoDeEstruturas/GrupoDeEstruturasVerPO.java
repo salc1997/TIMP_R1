@@ -55,7 +55,8 @@ public class GrupoDeEstruturasVerPO extends TestBase{
 	@FindBy(xpath = "//div[@aria-label=\"Row; Nome: 4.2.2 - CFOP\"]/div[2]/div")
 	public WebElement cfop;
 	
-
+	@FindBy(xpath = "//button[text()=\"Cancelar\"]")
+	public WebElement cancelar;
 	
 	
 	public GrupoDeEstruturasVerPO() {
@@ -64,9 +65,10 @@ public class GrupoDeEstruturasVerPO extends TestBase{
 	}
 	
 	public ArrayList<Boolean> visualizar() {
+		sleep(2000);
 		driver.get(estructuras );
 		
-		sleep(4000);
+		sleep(8000);
 		
 
 		grupodeestrutura.click();
@@ -142,10 +144,10 @@ public class GrupoDeEstruturasVerPO extends TestBase{
 		sucesso.add(nomedogrupoeditar.contains(nomedogrupovisualizar));
 		sucesso.add(ajustefiscaiseditar.contains(ajustefiscaisvisualizar));
 		//sucesso.add(cfopeditar.contains(cfopvisualizar));
-		
-		
 
-		
+
+		cancelar.click();
+		sleep(2000);
 		System.out.println(sucesso);
 		
 		

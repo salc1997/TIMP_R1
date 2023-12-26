@@ -68,7 +68,7 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 	@FindBy(xpath = "//div[@id=\"chkEol\"]/div/label/span")
 	public WebElement fimLinha;
 	
-	@FindBy(xpath = "//button[text()=\"Aplicar\"]")
+	@FindBy(xpath = "//div[@class=\"dialog-buttons\"]//button[text()=\"Aplicar\"]")
 	public WebElement aplicar;
 
 	@FindBy(xpath = "//span[text()=\"Adicionar bloco\"]")
@@ -1132,8 +1132,9 @@ public class AN4FuncionalidadesPO 	extends TestBase{
 		
 		if (tq1 == true) {
 			
-			WebElement Opc3 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"]"));
-
+			
+			WebElement Opc3 = driver.findElement(By.xpath("//li[@class=\"list-item\" and text()=\"Ajuste\"][1]"));
+			actionsMoveToElement(Opc3 );
 			Opc3 .click();
 			sleep(2000);
 		

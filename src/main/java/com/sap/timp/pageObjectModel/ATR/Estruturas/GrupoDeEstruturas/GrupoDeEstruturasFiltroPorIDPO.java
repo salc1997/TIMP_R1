@@ -36,7 +36,7 @@ public class GrupoDeEstruturasFiltroPorIDPO extends TestBase {
 
 	public ArrayList<Boolean> filtro() {
 		driver.get(estructuras );
-		sleep(6000);
+		sleep(8000);
 		
 		grupodeestrutura.click();
 		sleep(2000);

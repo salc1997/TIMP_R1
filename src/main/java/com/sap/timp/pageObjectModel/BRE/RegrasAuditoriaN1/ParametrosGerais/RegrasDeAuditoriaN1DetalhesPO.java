@@ -17,10 +17,10 @@ public class RegrasDeAuditoriaN1DetalhesPO  extends TestBase {
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement ultimapagina;
 	
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[3]/div/div[1]/span[2]")
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[7]/div/div[1]//span[2]")
 	public WebElement campo1;
 	
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[3]/div/div[2]/span[2]")
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[7]/div/div[2]//span[2]")
 	public WebElement campo2;
 	
 	@FindBy(xpath = "//div[@class=\"icon icon-font-Sign-and-Symbols icon-persign\"]")
@@ -77,7 +77,7 @@ public class RegrasDeAuditoriaN1DetalhesPO  extends TestBase {
 		detalhe.click();
 		sleep(2000);	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		
 		//detalhes
 		String nomedetalhes = nomede.getText();

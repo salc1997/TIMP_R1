@@ -25,11 +25,11 @@ public class RegrasDeNegocioDetalhesPO  extends TestBase{
 	public WebElement estructura;
 	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[2]/div/div")
 	public WebElement regulamento;
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[3]/div/div[1]")
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[7]/div/div[1]//span[2]")
 	public WebElement campo1;
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[3]/div/div[2]")
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[7]/div/div[2]//span[2]")
 	public WebElement campo2;
-	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[3]/div/div[3]")
+	@FindBy(xpath = "//div[@class=\"detail-data\"]/div[7]/div/div[3]//span[2]")
 	public WebElement campo3;
 	
 	@FindBy(xpath = "//div[@id=\"detail-close-button\"]")

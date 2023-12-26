@@ -1132,7 +1132,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		executar.click();
 		sleep(5000);
 		waitExpectedElement(executarM);
-		sleep(8000);
+		sleep(10000);
 		executarM.click();
 		
 		sleep(1000);
@@ -1197,18 +1197,18 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		cancelar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(1000);
 		
 	int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"Número de Versão 1 de Execução do Builder foi criada com sucesso\")]")).size();
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
-		/*		if (mensaje > 0) {
+		if (mensaje > 0) {
 			sucesso.add(true);
 			
 		}else {
 			sucesso.add(false);
-		}*/
+		}
 //		
 		return sucesso;
 	}
@@ -1230,17 +1230,17 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 //		waitExpectElement(executarM);
 		
 		
-		sleep(18000);
+		sleep(20000);
 		executarM.click();
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(5000);
 		
 		periodo.click();
-		sleep(3000);
+		sleep(5000);
 		paginaSiguiente.click();
-		sleep(3000);
+		sleep(5000);
 		
 		if (tc2) {
 			m1.click();

@@ -3,56 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <class name="com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1">
-=======
-      <class name="com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP">
->>>>>>> refs/heads/Yessy
-=======
       <class name="com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2">
->>>>>>> refs/remotes/origin/Yessy
-=======
-      <class name="com.timp.test.BCB.Formula.HierarquiaConfiguracao.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1">
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         <methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-          <include name="criarConfiguracaoHierarquia"/>
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
-          <include name="afterClass"/>
           <include name="beforeClass"/>
-<<<<<<< HEAD
-=======
-=======
->>>>>>> refs/remotes/origin/Yessy
-          <include name="beforeClass"/>
-<<<<<<< HEAD
-          <include name="executar"/>
-          <include name="EnviarLixeria"/>
->>>>>>> refs/heads/Yessy
-=======
           <include name="relacionamentoFinalyAbrirHierarquiaGrupo"/>
           <include name="afterClass"/>
->>>>>>> refs/remotes/origin/Yessy
-=======
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
         </methods>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      </class> <!-- com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 -->
-=======
-      </class> <!-- com.timp.test.BCB.ExecucoesSalvas.ExecucoesSalvas.FatorDeCreditamentoContabilizaçãoDeCIAP -->
->>>>>>> refs/heads/Yessy
-=======
       </class> <!-- com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 -->
->>>>>>> refs/remotes/origin/Yessy
-=======
-      </class> <!-- com.timp.test.BCB.Formula.HierarquiaConfiguracao.FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 -->
->>>>>>> branch 'master' of https://github.com/salc1997/TIMP_R1.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

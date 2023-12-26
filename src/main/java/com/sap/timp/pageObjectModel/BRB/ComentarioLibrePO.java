@@ -34,7 +34,7 @@ public class ComentarioLibrePO extends TestBase{
 	@FindBy(xpath = "//li[contains(@column-name, \"Nova Coluna\")]/div/div/div/div/div/div/div[2]/input")
 	public WebElement comentarioLibre;
 	
-	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/ul/li[7]")
+	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/ul/li[8]")
 	public WebElement cambiarNombre;
 	
 	@FindBy(xpath = "//*[@id=\"basePopover-wrapper\"]/div/div/div/ul/li[6]")
@@ -53,9 +53,9 @@ public class ComentarioLibrePO extends TestBase{
 	
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[1]/div[1]")
 	public WebElement comentario2;
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[3]/div[1]")
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div[1]")
 	public WebElement comentario1;
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[3]/div[2]/div[1]")
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div[2]/div[1]")
 	public WebElement usuario1;
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div[2]/div[1]")
 	public WebElement usuario2;
@@ -63,7 +63,7 @@ public class ComentarioLibrePO extends TestBase{
 	public WebElement usuarioLogueado;
 	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[1]/div[2]/div[2]")
 	public WebElement data2;
-	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[3]/div[2]/div[2]")
+	@FindBy(xpath = "/html/body/div[3]/div/div[2]/div/div[2]/div[2]/div[2]")
 	public WebElement data1;
 	
 	@FindBy(xpath = "//button[text()=\"Não\"]")
@@ -165,8 +165,8 @@ public class ComentarioLibrePO extends TestBase{
 		
 		
 		actionsMoveToElement("//div[contains(@aria-label,\"Item-docnum\") and not(@data-path)]");
-		sleep(1000);
-		WebElement comentarioTexto2 = driver.findElement(By.xpath("//div[@data-column=\""+dataColumn+"\" and contains(@aria-label, \"Linha: 1-\")]/div/div/div/div/input"));
+		sleep(3000);
+		WebElement comentarioTexto2 = driver.findElement(By.xpath("//div[@data-column=\""+dataColumn+"\" and contains(@aria-label, \"Linha: 1-\")]/div[2]//input"));
 		
 		sleep(1000);
 		actions.doubleClick(comentarioTexto2).perform();
@@ -183,17 +183,15 @@ public class ComentarioLibrePO extends TestBase{
 		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
 		sleep(6000);
 		comentarioTexto2.click();
+		sleep(3000);
+		
+		comentarioTexto2.click();
 		
 
 		sleep(5000);
-		//driver.findElement(By.xpath("//div[@data-column=\""+dataColumn+"\" and contains(@aria-label, \"Linha: 1-\")]/div/button")).click();
-		
-		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		//waitExpectXpath("//*[@id=\"table-fixed-wrapper\"]/div[2]/div[1]/span[1]/label");
+		
 		sleep(2000);
-
-		//waitExpectXpath("/html/body/div[3]/div/div[3]/button");
 		sleep(4000);
 		
 		

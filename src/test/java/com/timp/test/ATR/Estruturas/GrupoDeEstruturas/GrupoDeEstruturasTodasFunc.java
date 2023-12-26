@@ -87,21 +87,10 @@ public class GrupoDeEstruturasTodasFunc extends TestBase{
 
 		  }
 
-		  sleep(2000);
+		  sleep(6000);
 	  }
-	@Test(priority = 3)
-	public void visualizar() {
-
-		ArrayList<Boolean> sucesso = grupoDeEstruturasVerPO.visualizar();
-		for (int i = 0; i < sucesso.size(); i++) {
-			assertTrue(sucesso.get(i), visualizar);
-
-		}
-
-		sleep(2000);
-	}
 	
-	@Test(priority = 4)
+	@Test(priority = 3)
 	public void filtro() {
 
 
@@ -113,6 +102,19 @@ public class GrupoDeEstruturasTodasFunc extends TestBase{
 		sleep(2000);
 
 	}
+	
+	@Test(priority = 4)
+	public void visualizar() {
+
+		ArrayList<Boolean> sucesso = grupoDeEstruturasVerPO.visualizar();
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), visualizar);
+
+		}
+
+		sleep(2000);
+	}
+	
 	
 	@Test(priority = 5)
 	public void excluir() {

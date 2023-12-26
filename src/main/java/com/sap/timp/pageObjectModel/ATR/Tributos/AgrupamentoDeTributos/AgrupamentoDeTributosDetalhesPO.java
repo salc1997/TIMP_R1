@@ -107,7 +107,7 @@ public class AgrupamentoDeTributosDetalhesPO extends TestBase {
 		System.out.println(icmsdetalhes);
 		//System.out.println(cofinsdetalhes);
 		fechar.click();
-		sleep(2000);
+		sleep(6000);
 		waitExpectedElement(siguiente);
 		sleep(6000);
 		siguiente.click();
@@ -148,7 +148,8 @@ public class AgrupamentoDeTributosDetalhesPO extends TestBase {
 		sucesso.add(icmsvisualizar.contains(icmsdetalhes));
 		//sucesso.add(cofinsvisualizar.contains(cofinsdetalhes));
 		
-		
+		aceitar.click();
+		sleep(3000);
 
 		
 		System.out.println(sucesso);

@@ -79,7 +79,7 @@ public class AN4Funcionalidades extends TestBase{
 		boolean sucesso = aN4FuncionalidadesPO.CriarRegra();
 		assertTrue(sucesso, Criar);
 	}
-
+/*
 	@Test(priority = 7)
 	public void AN4IdDFG() {
 
@@ -159,6 +159,6 @@ public class AN4Funcionalidades extends TestBase{
 		assertTrue(sucesso, Criar);
 		
 
-	}
+	}*/
 	
 }

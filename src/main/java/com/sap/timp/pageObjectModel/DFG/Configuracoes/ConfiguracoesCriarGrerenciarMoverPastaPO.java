@@ -151,9 +151,9 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		WebElement btnExpansaoPastaElement = driver.findElement(By.xpath("//div[@class=\"icon icon-font-Sign-and-Symbols icon-right\"]"));
+		WebElement btnExpansaoPastaElement = driver.findElement(By.xpath("//div[@class=\"settingFolders-wrapper\"]//div[@class=\"icon icon-font-Sign-and-Symbols icon-right\"]"));
 		
-		sleep(6000);
+		sleep(9000);
 		btnExpansaoPastaElement.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

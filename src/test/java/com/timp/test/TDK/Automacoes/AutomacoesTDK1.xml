@@ -18,6 +18,7 @@
 	
 	<test name="KPI's Primera Parte">	
 		<classes>
+			
 			<class name="com.timp.test.TDK.Kpis.KpisCriar"></class>
 			<class name="com.timp.test.TDK.Kpis.ParâmetrosGerais.KpisCriarCopia"></class>
 			<class name="com.timp.test.TDK.Kpis.MeusRelatoriosKpis.MeusFavoritos.KpisMeusFavoritosFiltroPorID"></class>
@@ -45,6 +46,8 @@
 			<class name="com.timp.test.TDK.Kpis.Edicao.KipisLinksRapidosMiasExecutar"></class>
 			<class name="com.timp.test.TDK.Kpis.Edicao.KpisLinksRapidosEditar"></class>
 			<class name="com.timp.test.TDK.Kpis.Edicao.KpisLinksRapidosExcluir"></class>
+
+			
 			
 			<!--Lixeira  -->
 			<class name="com.timp.test.TDK.Kpis.ParâmetrosGerais.KpisLixeira"></class>

@@ -674,7 +674,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			gravarC.click();
 			sleep(3000);
 			invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-			sleep(9000);
+			sleep(11000);
 			
 			biblioteca.click();
 			sleep(5000);
@@ -750,7 +750,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 //				sleep(2000);
 			//HASTA AQUI
 				
-			sleep(8000);
+			sleep(9000);
 
 			WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("FormulaC1")+"\"]/div[1]/div"));
 			WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\""+idObter("FormulaC1")+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));

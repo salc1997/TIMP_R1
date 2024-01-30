@@ -51,7 +51,7 @@ public class TestBase extends TestUtil{
 
 
 
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver11906045.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver121.exe");
 
 	/*	System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver114.exe");*/
 

@@ -151,7 +151,7 @@ public class CodigoContabilizacaoCriarPO extends TestBase {
 		butaosim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay dark\"]");
-		sleep(4000);
+		sleep(8000);
 
 
 		

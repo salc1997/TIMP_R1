@@ -30,6 +30,9 @@ public class KpisLixeiraEmMassaPO extends TestBase{
 	@FindBy(xpath = "//li[@id=\"option-1\"]")
 	public WebElement clasificacionOPC;
 	
+	@FindBy(xpath = "//li[@id=\"1\"]")
+	public WebElement clasificacionOPC2;
+	
 	@FindBy(xpath = "//div[@id=\"accessClassification\"]/div/div[2]")
 	public WebElement clasificacionAcceso;
 	
@@ -128,7 +131,7 @@ public class KpisLixeiraEmMassaPO extends TestBase{
 			sleep(2000);
 			
 		}else {
-			clasificacionOPC.click();
+			clasificacionOPC2.click();
 			sleep(2000);
 		}
 		
@@ -189,7 +192,7 @@ public class KpisLixeiraEmMassaPO extends TestBase{
 			sleep(2000);
 			
 		}else {
-			clasificacionOPC.click();
+			clasificacionOPC2.click();
 			sleep(2000);
 		}
 		

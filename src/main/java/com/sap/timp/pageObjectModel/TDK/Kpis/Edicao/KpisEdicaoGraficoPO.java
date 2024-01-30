@@ -136,6 +136,14 @@ public class KpisEdicaoGraficoPO extends TestBase {
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement biblioteca;
 	
+	@FindBy(xpath = "//div[@id=\"measuresField\"]//input")
+	public WebElement txtValor;
+	
+	@FindBy(xpath = "//div[@id=\"field-select-container\"]//input")
+	public WebElement txtFiltro;
+	
+	
+	
 	boolean sucesso;
 	
 	public KpisEdicaoGraficoPO () {
@@ -291,7 +299,7 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		}else if (tc2==true) {
 
-			actionsMoveToElement("//li[@id=\"option-7\"]");
+			actionsMoveToElement("//li[@id=\"468\"]");
 			sleep(1000);
 
 			WebElement grupoEstructuraOPC = driver.findElement(By.xpath("//li[contains(@class, \"list-item\") and @id and text()=\"Ajuste\"]"));
@@ -334,7 +342,7 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		}else if (tc2==true) {
 
-			actionsMoveToElement("//li[@id=\"option-1\"]");
+			actionsMoveToElement("//li[@id=\"1834805491\"]");
 			sleep(2000);
 
 			WebElement estructuraDatosOPC = driver.findElement(By.xpath("//li[contains(@class, \"list-item\") and @id and text()=\"Ajustes Fiscais\"]"));
@@ -380,10 +388,10 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		}else if (tc2==true) {
 
-			actionsMoveToElement("//li[@id=\"option-40\"]");
+			actionsMoveToElement("//li[@id=\"275\"]");
 			sleep(2000);
 
-			WebElement dimensaoOPC = driver.findElement(By.xpath("//li[@id=\"option-40\"]"));
+			WebElement dimensaoOPC = driver.findElement(By.xpath("//li[@id=\"275\"]"));
 
 			dimensaoOPC.click();
 			sleep(2000);
@@ -604,155 +612,8 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		}else if (tc2==true) {
 
-			actionsMoveToElement("//div[@id=\"323\"]");
-			sleep(1000);
-
-			actionsMoveToElement("//div[@id=\"195\"]");
-			sleep(1000);
-
-			actionsMoveToElement("//div[@id=\"436\"]");
-			sleep(1000);
-
-			actionsMoveToElement("//div[@id=\"438\"]");
-			sleep(1000);
-
-			//BC IPI
-			actionsMoveToElement("//div[@id=\"311\"]");
-			sleep(1000);
-			
-			actionsMoveToElement("//div[@id=\"139\"]");
-			sleep(1000);
-
-			//BC imposto - E113
-			actionsMoveToElement("//div[@id=\"465\"]");
-			sleep(1000);
-
-			actionsMoveToElement("//div[@id=\"318\"]");
-			sleep(1000);
-
-			//BC isentas ICMS ST
-			actionsMoveToElement("//div[@id=\"314\"]");
-			sleep(1000);
-
-			actionsMoveToElement("//div[@id=\"319\"]");
-			sleep(1000);
-
-			actionsMoveToElement("//div[@id=\"308\"]");
-			sleep(1000);
-
-			actionsMoveToElement("//div[@id=\"516\"]");
-			sleep(1000);
-
-			actionsMoveToElement("//div[@id=\"419\"]");
-			sleep(1000);
-			
-			actionsMoveToElement("//div[@id=\"430\"]");
-			sleep(1000);
-			
-			//Detalhe de conta (EC - encargos) - DP
-			actionsMoveToElement("//div[@id=\"478\"]");
-			sleep(1000);
-
-			actionsMoveToElement("//div[@id=\"417\"]");
-			sleep(1000);
-
-			//Detalhe de conta (EC - encargos) - E250
-			actionsMoveToElement("//div[@id=\"428\"]");
-			sleep(1000);
-
-
-			//Detalhe de conta (EC - encargos) - E316
-			actionsMoveToElement("//div[@id=\"518\"]");
-			sleep(1000);
-
-			//Detalhe de conta (JR - juros) - DP
-			actionsMoveToElement("//div[@id=\"475\"]");
-			sleep(1000);
-
-			actionsMoveToElement("//div[@id=\"425\"]");
-			sleep(1000);
-
-			//Detalhe de conta (MU - multa) - DP
-			actionsMoveToElement("//div[@id=\"474\"]");
-			sleep(1000);
-			
-			//Detalhe de conta (OD - outras deduções) - E250
-			actionsMoveToElement("//div[@id=\"431\"]");
-			sleep(1000);
-			
-			//Detalhe de conta (PR - principal) - E116
-			actionsMoveToElement("//div[@id=\"412\"]");
-			sleep(1000);
-			
-			actionsMoveToElement("//div[@id=\"513\"]");
-			sleep(1000);
-			
-			//Detalhe de conta (TT - total) - E116
-			actionsMoveToElement("//div[@id=\"418\"]");
-			sleep(1000);
-			
-			actionsMoveToElement("//div[@id=\"429\"]");
-			sleep(1000);
-			
-			actionsMoveToElement("//div[@id=\"519\"]");
-			sleep(1000);
-
-			//Detalhe de conta (TX - taxas) - DP
-			actionsMoveToElement("//div[@id=\"477\"]");
-			sleep(1000);
-			
-			actionsMoveToElement("//div[@id=\"427\"]");
-			sleep(1000);
-			
-			//Detalhe de conta (TX - taxas) - E316
-			actionsMoveToElement("//div[@id=\"517\"]");
-			sleep(1000);
-			
-			actionsMoveToElement("//div[@id=\"353\"]");
-			sleep(1000);
-			
-			actionsMoveToElement("//div[@id=\"348\"]");
-			sleep(1000);
-			
-			//Perc. redução BC ICMS ST
-			actionsMoveToElement("//div[@id=\"347\"]");
-			sleep(1000);
-			
-			actionsMoveToElement("//div[@id=\"352\"]");
-			sleep(1000);
-			
-			actionsMoveToElement("//div[@id=\"181\"]");
-			sleep(1000);
-			
-			actionsMoveToElement("//div[@id=\"182\"]");
-			sleep(1000);
-			
-			//Qtd. BC PIS
-			actionsMoveToElement("//div[@id=\"337\"]");
-			sleep(1000);
-			
-			actionsMoveToElement("//div[@id=\"267\"]");
-			sleep(1000);
-			
-			//Saldo de crédito fiscal acumulado para o período seguinte
-			actionsMoveToElement("//div[@id=\"532\"]");
-			sleep(1000);
-
-			actionsMoveToElement("//div[@id=\"535\"]");
-			sleep(1000);
-			
-			actionsMoveToElement("//div[@id=\"531\"]");
-			sleep(1000);
-			
-			actionsMoveToElement("//div[@id=\"495\"]");
-			sleep(1000);
-			
-			//Valor COFINS
-			actionsMoveToElement("//div[@id=\"208\"]");
-			sleep(1000);
-			
-			actionsMoveToElement("//div[@id=\"198\"]");
-			sleep(1000);
+		
+			txtValor.sendKeys("Valor ICMS");
 
 			WebElement valoresMedidaOPC = driver.findElement(By.xpath("//div[@id=\"201\"]/div/label/span"));
 
@@ -866,7 +727,10 @@ public class KpisEdicaoGraficoPO extends TestBase {
 
 		}else if (tc2==true) {
 
-			WebElement formatoMedidaoOPC  = driver.findElement(By.xpath("//li[@id=\"option-55\"]"));
+			txtFiltro.sendKeys("CFOP legal");
+			sleep(3000);
+			
+			WebElement formatoMedidaoOPC  = driver.findElement(By.xpath("//li[text()=\"CFOP legal\"]"));
 
 			formatoMedidaoOPC .click();
 			sleep(2000);

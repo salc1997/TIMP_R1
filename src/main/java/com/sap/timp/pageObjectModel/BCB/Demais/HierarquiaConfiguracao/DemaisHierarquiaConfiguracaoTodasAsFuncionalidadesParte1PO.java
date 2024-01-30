@@ -1188,7 +1188,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		sleep(1000);
 		
 		aplicarJustificativa.click();
-		sleep(3000);
+		sleep(5000);
 		salvarExecucoes.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

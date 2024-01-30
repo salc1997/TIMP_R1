@@ -104,7 +104,6 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends Te
 		}
 	}
 	
-
 	@Test(priority = 8)	
 	public void executar2() {
 		demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.executar2();

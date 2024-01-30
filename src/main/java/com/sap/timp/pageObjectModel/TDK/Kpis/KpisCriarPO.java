@@ -32,6 +32,9 @@ public class KpisCriarPO extends TestBase {
 	public WebElement clasificacionOPC;
 	
 	@FindBy(xpath = "//li[@id=\"1\"]")
+	public WebElement clasificacionOPC2;
+	
+	@FindBy(xpath = "//li[@id=\"1\"]")
 	public WebElement clasificacionOPCTQ2;
 	
 	
@@ -143,7 +146,7 @@ public class KpisCriarPO extends TestBase {
 			sleep(2000);
 			
 		}else {
-			clasificacionOPC.click();
+			clasificacionOPC2.click();
 			sleep(2000);
 		}
 		

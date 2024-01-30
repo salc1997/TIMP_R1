@@ -252,11 +252,11 @@ public class KpisLinksRapidosMaisExecutarPO extends TestBase{
 		fechar.click();
 		sleep(2000);
 		executarElement.click();
-		sleep(2000);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		fechar.click();
-		sleep(2000);
+	//	fechar.click();
+		sleep(6000);
 		textolink.click();
 		sleep(2000);
 		//Aqui vai pra outra aba
@@ -270,7 +270,7 @@ public class KpisLinksRapidosMaisExecutarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		WebElement totalElement= driver.findElement(By.xpath("//div[@id=\"table-report-wrapper\"]/div/div[3]/div[2]/div"));
+		WebElement totalElement= driver.findElement(By.xpath("//div[@id=\"table-report-wrapper\"]//div[@id=\"table-report-container\"]//div[@class=\"columns interaction ui-sortable\"]"));
 		if(totalElement.isDisplayed()) {
 			System.out.println("Link executado com sucesso");
 			sucesso.add(true);

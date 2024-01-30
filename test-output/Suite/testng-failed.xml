@@ -3,6 +3,20 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="ATR - Arquivos(failed)">
     <classes>
+      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="filtro"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE -->
+      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="filtroAvansado"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados -->
       <class name="com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID">
         <methods>
           <include name="beforeClass"/>
@@ -10,15 +24,48 @@
           <include name="afterClass"/>
         </methods>
       </class> <!-- com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID -->
+      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="filtro"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE -->
+      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados">
+        <methods>
+          <include name="filtro"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados -->
     </classes>
   </test> <!-- ATR - Arquivos(failed) -->
+  <test thread-count="5" name="ATR-ESTRUCTURAS-ESTRUCTURAS(failed)">
+    <classes>
+      <class name="com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc">
+        <methods>
+          <include name="visualizarFiltros"/>
+          <include name="Detalles"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="visualizar"/>
+        </methods>
+      </class> <!-- com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc -->
+    </classes>
+  </test> <!-- ATR-ESTRUCTURAS-ESTRUCTURAS(failed) -->
   <test thread-count="5" name="ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed)">
     <classes>
       <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc">
         <methods>
+          <include name="criar"/>
           <include name="beforeClass"/>
           <include name="excluirMassa"/>
+          <include name="visualizar"/>
+          <include name="filtro"/>
+          <include name="excluir"/>
+          <include name="Editar"/>
           <include name="afterClass"/>
+          <include name="detalhes"/>
           <include name="criarMassa"/>
         </methods>
       </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc -->

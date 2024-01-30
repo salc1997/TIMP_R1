@@ -109,7 +109,7 @@ public class RegrasDeAuditoriaN2CriarCaminhosPO extends TestBase {
 	@FindBy(xpath = "//td[@class=\"regulation-field\"]/div/div/div[2]")
 	public WebElement regulamiento;
 	
-	@FindBy(xpath = "//li[text()=\"Test regulation\"][1]")
+	@FindBy(xpath = "//li[text()=\"TA-TESTE\"][1]")
 	public WebElement regulamientoOPC;
 	
 	@FindBy(xpath = "//li[@id][text()=\"Ajustes\"][1]")

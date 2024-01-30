@@ -28,7 +28,7 @@ public class TabelaDeApoioECFCriar extends TestBase{
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 

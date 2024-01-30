@@ -156,7 +156,7 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 	@FindBy(xpath = "//div[@id=\"headerStructure8\"]/div/div/div[2]")
 	public WebElement dataFimVigenciaEmpresa;
 	
-	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][1]")
+	@FindBy(xpath = "//li[contains(@class,\"list-item\") and @id][2]")
 	public WebElement opcionCombo;
 	
 	@FindBy(xpath = "//div[@class=\"list-option\"][1]/div/div[2]")

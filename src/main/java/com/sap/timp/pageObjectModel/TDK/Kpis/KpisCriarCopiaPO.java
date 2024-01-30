@@ -32,6 +32,9 @@ public class KpisCriarCopiaPO extends TestBase{
 	@FindBy(xpath = "//li[@id=\"option-1\"]")
 	public WebElement clasificacionOPC;
 	
+	@FindBy(xpath = "//li[@id=\"1\"]")
+	public WebElement clasificacionOPC2;
+	
 	@FindBy(xpath = "//button[text()=\"Gravar\"]")
 	public WebElement Gravar;
 	
@@ -144,7 +147,7 @@ public class KpisCriarCopiaPO extends TestBase{
 			sleep(2000);
 			
 		}else {
-			clasificacionOPC.click();
+			clasificacionOPC2.click();
 			sleep(2000);
 		}
 		

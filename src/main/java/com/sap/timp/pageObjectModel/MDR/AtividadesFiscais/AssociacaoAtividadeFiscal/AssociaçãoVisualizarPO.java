@@ -40,7 +40,7 @@ public class AssociaçãoVisualizarPO extends TestBase{
 
 	
 	// Datos guardados en Editar
-	@FindBy(xpath = "//div[contains(@class, \"codEmpresa\")]/div/div[2]/div/div/div/div/div[1]")
+	@FindBy(xpath = "//div[contains(@class, \"codEmpresa\")]/div/div[2]/div/div[1]")
 	public WebElement empresa1;
 	
 	@FindBy(xpath = "//div[contains(@class, \"uf\")]/div/div[2]/div/div/div/div/div[1]")
@@ -119,7 +119,7 @@ public class AssociaçãoVisualizarPO extends TestBase{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 		
 		String textoEmpresa1 = empresa1.getText();
 		String textoFilial1 = filial1.getText();
@@ -138,7 +138,7 @@ public class AssociaçãoVisualizarPO extends TestBase{
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 
-		sucesso.add(textoEmpresa1.contains(textoEmpresa));
+		sucesso.add(textoEmpresa.contains(textoEmpresa1));
 		sucesso.add(textoFilial1.contains(textoFilial));
 		sucesso.add(textoMunicipioExecutor1.contains(textoMunicipioExecutor));
 		sucesso.add(textoUF1.contains(textoUF));

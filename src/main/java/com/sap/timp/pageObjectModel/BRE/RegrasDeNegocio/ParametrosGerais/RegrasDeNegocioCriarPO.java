@@ -124,11 +124,11 @@ public class RegrasDeNegocioCriarPO extends TestBase{
 	@FindBy(xpath = "//div[@class=\"list-option\"]/div[@id=\"T262\"]")
 	public WebElement opcaoacoesr22;
 	
-	@FindBy(xpath = "//div[@class=\"list-option\"]/div[@id=\"T191\"]//span")
+	@FindBy(xpath = "//div[@class=\"list-option\"]/div[@id=\"T330\"]//span")
 	public WebElement opcaoacoesr222;
 	
 	//@FindBy(xpath = "//div[@id=\"T3\"]/div/label/span")
-	@FindBy(xpath = "//div[@class=\"list-item-text\"][text()=\"Registro C197 ou D197\"]")
+	@FindBy(xpath = "//div[@class=\"action-autocomplete\"]//input")
 	public WebElement opcaoacoesr3;
 	
 	@FindBy(xpath = "//span[text()=\"Justificativa\"]")
@@ -476,7 +476,7 @@ public class RegrasDeNegocioCriarPO extends TestBase{
 		sleep(1000);
 		acoes.click();
 		sleep(2000);
-		actionsMoveToElement(opcaoacoesr3);
+		opcaoacoesr3.sendKeys("C197");
 		sleep(2000);
 		opcaoacoesr222.click();
 		closeSelectTypeCheckbox(acoes);

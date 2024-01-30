@@ -155,6 +155,8 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
+		idFiltro.sendKeys(Keys.ENTER);
+		sleep(6000);
 		
 		WebElement menu1 = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
 		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
@@ -192,6 +194,11 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBase{
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		
+		limpiar.click();
+		sleep(3000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(8000);
 		
 		visualizarLeiautes.click();
 		sleep(3000);
@@ -238,10 +245,7 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(7000);*/
 		
-		limpiar.click();
-		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(8000);
+		
 		
 		System.out.println(" Id Registro Busqueda :" + idRegistro2  );
 		
@@ -267,7 +271,7 @@ public class ConfiguracoesLixeiraExcluirPO extends TestBase{
 		//sleep(9000);
 		
 		no.click();
-		sleep(3000);
+		sleep(000);
 		
 		int rows2 = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();
 		String idUltimo1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]["+rows2+"]/div[5]/div")).getText();

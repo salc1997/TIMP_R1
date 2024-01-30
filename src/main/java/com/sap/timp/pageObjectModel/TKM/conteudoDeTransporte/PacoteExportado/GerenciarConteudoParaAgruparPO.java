@@ -48,7 +48,7 @@ public class GerenciarConteudoParaAgruparPO extends TestBase{
 	@FindBy(xpath = "//li[text()=\"BRE\"]")
 	public WebElement btnOpcComponenteBRE;
 	
-	@FindBy(xpath = "//li[text()=\"Regras\"]")
+	@FindBy(xpath = "//li[text()=\"Rule\"]")
 	public WebElement btnOpcModeloBRE;
 	
 	@FindBy(xpath = "//li[text()=\"BCB\"]")

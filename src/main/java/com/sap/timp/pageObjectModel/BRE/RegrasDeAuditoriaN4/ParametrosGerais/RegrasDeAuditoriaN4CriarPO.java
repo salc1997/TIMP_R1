@@ -16,6 +16,9 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBase{
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement ultimapagina;
 	
+	@FindBy(xpath = "//div[@class=\"action-section\"]//div[@class=\"section-title\"]")
+	public WebElement body;
+	
 	@FindBy(xpath = "//span[text()=\"Nova Regra\"]")
 	public WebElement novaRegra;
 	
@@ -429,6 +432,7 @@ public class RegrasDeAuditoriaN4CriarPO extends TestBase{
 			sleep(1000);
 			acoes2OPC.click();
 			sleep(1000);
+			body.click();
 			
 		}
 		

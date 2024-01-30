@@ -248,7 +248,7 @@ public class FormulaPO extends TestBase{
 		execucao.click();
 		sleep(5000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		//waitExpectXpath("//*[@id=\"variant-toolbar\"]/div/ul/li[6]/button");
 		

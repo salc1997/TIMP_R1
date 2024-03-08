@@ -249,7 +249,7 @@ public class ImportacaoRegrasAN2BRE extends TestBase {
 		sucesso.add(fechaExportación.equals(""));
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idultimo+"\"]/div[1]/div"));
-		WebElement exportar = driver.findElement(By.xpath("//div[@data-id=\""+idultimo+"\"]/div[1]/div/div[2]//span[text()=\" Exportação\"]"));
+		WebElement exportar = driver.findElement(By.xpath("//div[@data-id=\""+idultimo+"\"]/div[1]/div/div[2]//span[text()=\"Iniciar Exportação em Background\"]"));
 		
 		actionsMoveToElement(menu);
 		sleep(2000);
@@ -257,14 +257,56 @@ public class ImportacaoRegrasAN2BRE extends TestBase {
 		menu.click();
 		sleep(1000);
 		exportar.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(12000);
+		sleep(11000);
+		System.out.println("Test paso ");
 		
-		bibliotecaPEPO.clickbtnBaxiar();
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idultimo+"\"]/div[1]/div"));
+		
+		actionsMoveToElement(menu);
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(19000);
+		
+		
+		menu.click();
+		sleep(1000);
+		
+		 String status = driver.findElement(By.xpath("//div[@data-id=\""+idultimo+"\"]/div[1]/div/div[2]//li[3]//span[2]")).getText();
+		 System.out.println("Opcion: " + status);
+		 sleep(6000);
+		  
+		  while (status.equals("Exportação") ) {
+		 
+			 driver.navigate().refresh();
+			 sleep(10000);
+			 invisibilityOfElementOverlay();
+			 sleep(15000);
+			  
+			 bibliotecaPEPO.clickbtnPacoteExportado();
+			 sleep(2000);
+			
+			 menu = driver.findElement(By.xpath("//div[@data-id=\""+idultimo+"\"]/div[1]/div"));
+				
+			actionsMoveToElement(menu);
+			sleep(2000);
+				
+			menu.click();
+			sleep(1000);
+				
+		    status = driver.findElement(By.xpath("//div[@data-id=\""+idultimo+"\"]/div[1]/div/div[2]//li[3]//span[2]")).getText();
+	        System.out.println("Opcion Habilitada : " + status);
+	        sleep(30000);
+	        
+			
+		}
+		  
+		WebElement descargar = driver.findElement(By.xpath("//div[@data-id=\""+idultimo+"\"]/div[1]/div/div[2]//span[text()=\"Baixar Pacote Salvo em Background\"]"));
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idultimo+"\"]/div[1]/div"));
+		
+		actionsMoveToElement(menu);
+		sleep(2000);
+
+		
+		descargar.click();
+		sleep(2000);
 		
 		String fecha = fechaActual();
 		System.out.println(fecha);
@@ -469,11 +511,9 @@ public class ImportacaoRegrasAN2BRE extends TestBase {
 			tp1 = true;
 		}
 		
-	   sleep(3000);
+	   sleep(8000);
 		
-		loginTC.login();
-		sleep(6000);
-		
+	 
 		
 		if (tq1 == true) {
 
@@ -572,7 +612,7 @@ public class ImportacaoRegrasAN2BRE extends TestBase {
 			
 			Hierarquia = driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[4]")).getText();
 			Hierarquia =Hierarquia.replace("Correções:[[", "");
-			Hierarquia =Hierarquia.replace(" - tabelaexterna formatodata: [CCNF1133 -Cenário correçãotabela externaformato data:[DT_EXTEMPORANEA =EXTEM (VE),DT_E_S =LANCAMENTO (VE),COD_SIT =00]]]", "");
+			Hierarquia =Hierarquia.replace(" - tabelaexterna formatodata: [CCNF1143 -Cenário correçãotabela externaformato data:[DT_EXTEMPORANEA =EXTEM (VE),DT_E_S =LANCAMENTO (VE),COD_SIT =00]]]", "");
 			System.out.println("Hierarquia: " +  Hierarquia);
 			
 			corre = driver.findElement(By.xpath("//div[@id=\"graph\"]/*/*/*[4]")).getText();

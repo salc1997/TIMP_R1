@@ -39,9 +39,11 @@ public class UsuariosAtivarDesativar extends TestBase {
 	public void ver() {
 		loginTC.login();
 		acessarADMPO.acessarADM();
-		Boolean sucesso = usuáriosAtivarDesativarPO.ativar();
-		assertTrue(sucesso, Criar);
-		
+		ArrayList<Boolean>  sucesso = usuáriosAtivarDesativarPO.ativar();
+		sleep(2000);
+		for (int i = 0; i < sucesso.size(); i++) {
+			assertTrue(sucesso.get(i), "The results in the filter aren't equal");
+		}
 		sleep(2000);
 	}
 

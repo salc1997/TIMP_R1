@@ -51,7 +51,7 @@ public class UsuariosAtivarDesativarPO extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public Boolean ativar() {
+	public 	ArrayList<Boolean> ativar() {
 
 		
 		sleep(2000);
@@ -86,8 +86,20 @@ public class UsuariosAtivarDesativarPO extends TestBase {
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(7000);
+		sleep(1000);
 		
+		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"Status atualizado com sucesso\")]")).size();
+		
+		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		
+		if (mensaje > 0) {
+			sucesso.add(true);
+			
+		}else {
+			sucesso.add(false);
+		}
+		sleep(5000);
+	
 		menu = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[1]/span[1]"));
 		WebElement açao2 = driver.findElement(By.xpath("//*[@id=\"list\"]/div/div[1]/div/div[3]/div[1]/div[1]/div/div[2]/ul/li[4]/span[2]"));
 		
@@ -96,9 +108,15 @@ public class UsuariosAtivarDesativarPO extends TestBase {
 		açao2.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(7000);
 
-		Boolean sucesso = true;
+		sleep(1000);
+
+		if (mensaje > 0) {
+			sucesso.add(true);
+			
+		}else {
+			sucesso.add(false);
+		}
 		
 	
 		return sucesso;

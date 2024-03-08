@@ -1150,7 +1150,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 			sleep(2000);
 			
 			zerado.click();
-			sleep(3000);
+			sleep(4000);
 			
 			condicaoZerado.click();
 			sleep(3000);

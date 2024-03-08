@@ -202,9 +202,9 @@ public class ComentarioLibrePO extends TestBase{
 		 invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		 sleep(4000);
 		 
-		Date dateS = new Date();
+		Date date = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/YYYY");
-		//String dateS = String.valueOf(sdf.format(date));
+		String dateS = String.valueOf(sdf.format(date));
 		
 		//comentario 2
 		String comentario2S = comentario2.getText();

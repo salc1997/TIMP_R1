@@ -1,49 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-30T14:37:08 UTC" name="Default suite" finished-at="2024-01-30T15:11:01 UTC" duration-ms="2032665">
+  <suite started-at="2024-03-08T15:08:07 UTC" name="Default suite" finished-at="2024-03-08T15:11:05 UTC" duration-ms="177934">
     <groups>
     </groups>
-    <test started-at="2024-01-30T14:37:08 UTC" name="Default test" finished-at="2024-01-30T15:11:01 UTC" duration-ms="2032665">
-      <class name="com.timp.test.TKM.Exportacao.ExportacaoBCB">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.TKM.Exportacao.ExportacaoBCB@6e0f5f7f]" started-at="2024-01-30T14:37:08 UTC" name="beforeClass" finished-at="2024-01-30T14:37:11 UTC" duration-ms="2839" status="PASS">
+    <test started-at="2024-03-08T15:08:07 UTC" name="Default test" finished-at="2024-03-08T15:11:05 UTC" duration-ms="177934">
+      <class name="com.timp.test.BRB.GruposAvancados">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.timp.test.BRB.GruposAvancados@2805d709]" started-at="2024-03-08T15:08:07 UTC" name="beforeClass" finished-at="2024-03-08T15:08:08 UTC" duration-ms="1455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="Criar()[pri:0, instance:com.timp.test.TKM.Exportacao.ExportacaoBCB@6e0f5f7f]" started-at="2024-01-30T14:37:11 UTC" name="Criar" finished-at="2024-01-30T14:37:51 UTC" duration-ms="40206" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Criar -->
-        <test-method signature="AdicionarContenudo()[pri:2, instance:com.timp.test.TKM.Exportacao.ExportacaoBCB@6e0f5f7f]" started-at="2024-01-30T14:37:51 UTC" name="AdicionarContenudo" finished-at="2024-01-30T14:38:52 UTC" duration-ms="60284" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AdicionarContenudo -->
-        <test-method signature="Exportar()[pri:3, instance:com.timp.test.TKM.Exportacao.ExportacaoBCB@6e0f5f7f]" started-at="2024-01-30T14:38:52 UTC" name="Exportar" finished-at="2024-01-30T15:11:01 UTC" duration-ms="1929291" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method signature="gruposAvanzados()[pri:0, instance:com.timp.test.BRB.GruposAvancados@2805d709]" started-at="2024-03-08T15:08:08 UTC" name="gruposAvanzados" finished-at="2024-03-08T15:11:05 UTC" duration-ms="176435" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.86)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="table-fixed-wrapper"]/div[2]/div[1]/div[1]/span[4]"}
+  (Session info: chrome=122.0.6261.95)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'EC2AMAZ-8HCHO4G', ip: '10.0.0.249', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\user_ta\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63395}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 66457ea77f726772b58d81ed3762cdd5
-*** Element info: {Using=xpath, value=//button[text()="Baixar"]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\user_ta\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7be01eb940baac844ab84d8ee2c79640
+*** Element info: {Using=xpath, value=//*[@id="table-fixed-wrapper"]/div[2]/div[1]/div[1]/span[4]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=121.0.6167.86)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="table-fixed-wrapper"]/div[2]/div[1]/div[1]/span[4]"}
+  (Session info: chrome=122.0.6261.95)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'EC2AMAZ-8HCHO4G', ip: '10.0.0.249', os.name: 'Windows Server 2019', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.86, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\user_ta\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63395}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 66457ea77f726772b58d81ed3762cdd5
-*** Element info: {Using=xpath, value=//button[text()="Baixar"]}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.95, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\user_ta\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59994}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7be01eb940baac844ab84d8ee2c79640
+*** Element info: {Using=xpath, value=//*[@id="table-fixed-wrapper"]/div[2]/div[1]/div[1]/span[4]}
+at jdk.internal.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -60,9 +51,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-at com.sap.timp.base.TestBase.click(TestBase.java:124)
-at com.sap.timp.pageObjectModel.TKM.conteudoDeTransporte.PacoteExportado.BibliotecaPEPO.clickbtnBaxiar(BibliotecaPEPO.java:63)
-at com.timp.test.TKM.Exportacao.ExportacaoBCB.Exportar(ExportacaoBCB.java:268)
+at com.sap.timp.pageObjectModel.BRB.GruposAvanzadosPO.gruposAvanzadosAplicar(GruposAvanzadosPO.java:213)
+at com.timp.test.BRB.GruposAvancados.gruposAvanzados(GruposAvancados.java:46)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -93,15 +83,47 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Exportar -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.TKM.Exportacao.ExportacaoBCB@6e0f5f7f]" started-at="2024-01-30T15:11:01 UTC" name="afterClass" finished-at="2024-01-30T15:11:01 UTC" duration-ms="0" status="PASS">
+        </test-method> <!-- gruposAvanzados -->
+        <test-method signature="eliminarGrupos()[pri:0, instance:com.timp.test.BRB.GruposAvancados@2805d709]" started-at="2024-03-08T15:11:05 UTC" name="eliminarGrupos" finished-at="2024-03-08T15:11:05 UTC" depends-on-methods="com.timp.test.BRB.GruposAvancados.gruposAvanzados" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method GruposAvancados.eliminarGrupos()[pri:0, instance:com.timp.test.BRB.GruposAvancados@2805d709] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method GruposAvancados.eliminarGrupos()[pri:0, instance:com.timp.test.BRB.GruposAvancados@2805d709] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eliminarGrupos -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.timp.test.BRB.GruposAvancados@2805d709]" started-at="2024-03-08T15:11:05 UTC" name="afterClass" finished-at="2024-03-08T15:11:05 UTC" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.timp.test.TKM.Exportacao.ExportacaoBCB -->
+      </class> <!-- com.timp.test.BRB.GruposAvancados -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

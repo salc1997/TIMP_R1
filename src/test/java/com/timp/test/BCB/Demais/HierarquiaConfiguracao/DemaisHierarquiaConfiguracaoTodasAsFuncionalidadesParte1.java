@@ -146,7 +146,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends Te
 		}
 	}
 	
-	
+
 	@Test(priority = 13)
 	public void relacionamentoTotalizadorSubperiodoFixoReplicar() {
 		//demaisHierarquiaConfiguracaoTodasAsFuncionalidadesPO.relacionamentoTotalizadorSubperiodoFixoReplicar();

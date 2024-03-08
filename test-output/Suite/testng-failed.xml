@@ -1,74 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="ATR - Arquivos(failed)">
+  <test thread-count="5" name="RenomearColuna(failed)">
     <classes>
-      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE">
+      <class name="com.timp.test.BRB.RenomearColuna">
         <methods>
-          <include name="beforeClass"/>
-          <include name="filtro"/>
           <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltroPorINFNFE -->
-      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados">
-        <methods>
+          <include name="renomearColuna"/>
           <include name="beforeClass"/>
-          <include name="filtroAvansado"/>
-          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltrosAvancados -->
-      <class name="com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="filtro"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Arquivos.CarregamentoDeArquivos.CarregamentoDeArquivosFiltroPorID -->
-      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="filtro"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeEntradaDeSaida.NotaFiscalEletronicaDeEntradaDeSaidaFiltroPorINFNFE -->
-      <class name="com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados">
-        <methods>
-          <include name="filtro"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.ATR.Arquivos.NotaFiscalEletronicaDeTransporte.NotaFiscalEletronicaDeTransporteFiltrosAvancados -->
+      </class> <!-- com.timp.test.BRB.RenomearColuna -->
     </classes>
-  </test> <!-- ATR - Arquivos(failed) -->
-  <test thread-count="5" name="ATR-ESTRUCTURAS-ESTRUCTURAS(failed)">
+  </test> <!-- RenomearColuna(failed) -->
+  <test thread-count="5" name="FormatacaoEVariante(failed)">
     <classes>
-      <class name="com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc">
+      <class name="com.timp.test.BRB.FormatacaoEVariante">
         <methods>
-          <include name="visualizarFiltros"/>
-          <include name="Detalles"/>
           <include name="afterClass"/>
+          <include name="formatacaoEVariante"/>
           <include name="beforeClass"/>
-          <include name="visualizar"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.Estruturas.EstruturasTodasAsFunc -->
+      </class> <!-- com.timp.test.BRB.FormatacaoEVariante -->
     </classes>
-  </test> <!-- ATR-ESTRUCTURAS-ESTRUCTURAS(failed) -->
-  <test thread-count="5" name="ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed)">
+  </test> <!-- FormatacaoEVariante(failed) -->
+  <test thread-count="5" name="GruposAvancados(failed)">
     <classes>
-      <class name="com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc">
+      <class name="com.timp.test.BRB.GruposAvancados">
         <methods>
-          <include name="criar"/>
-          <include name="beforeClass"/>
-          <include name="excluirMassa"/>
-          <include name="visualizar"/>
-          <include name="filtro"/>
-          <include name="excluir"/>
-          <include name="Editar"/>
+          <include name="gruposAvanzados"/>
           <include name="afterClass"/>
-          <include name="detalhes"/>
-          <include name="criarMassa"/>
+          <include name="eliminarGrupos"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.ATR.Estruturas.GrupoDeEstruturas.GrupoDeEstruturasTodasFunc -->
+      </class> <!-- com.timp.test.BRB.GruposAvancados -->
     </classes>
-  </test> <!-- ATR -  ESTRUCTURAS - GRUPO ESTRUCTURAS(failed) -->
+  </test> <!-- GruposAvancados(failed) -->
+  <test thread-count="5" name="Atribucao De Regra (Regra)(failed)">
+    <classes>
+      <class name="com.timp.test.BRB.AtribuicaodeRegra">
+        <methods>
+          <include name="editar"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.timp.test.BRB.AtribuicaodeRegra -->
+    </classes>
+  </test> <!-- Atribucao De Regra (Regra)(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -98,12 +98,7 @@
 			<class name="com.timp.test.BRB.FiltroColunas"></class>
 		</classes>
 	</test>
-	<test name="GruposAvancados">
-		<classes>
-			<!-- Grupos Avançados -->
-			<class name="com.timp.test.BRB.GruposAvancados"></class>
-		</classes>
-	</test>
+	
 	<test name="CrescenteEDecrescente">
 		<classes>
 			<!-- Crescente e Decrescente -->
@@ -120,6 +115,13 @@
 		<classes>
 			<!-- Comentário Libre -->
 			<class name="com.timp.test.BRB.ComentarioLibre"></class>
+		</classes>
+	</test>
+	
+	<test name="GruposAvancados">
+		<classes>
+			<!-- Grupos Avançados -->
+			<class name="com.timp.test.BRB.GruposAvancados"></class>
 		</classes>
 	</test>
 	<test name="Visualizar">

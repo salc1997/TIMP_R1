@@ -50,6 +50,9 @@ public class ManuaisDeComponenteCriarPO extends TestBase {
 	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
 	public WebElement btnBiblioteca; 
 	
+	@FindBy(xpath = "//button[text()=\"Não\"]")
+	public WebElement btnNO;
+	
 	public ManuaisDeComponenteCriarPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -124,8 +127,8 @@ public class ManuaisDeComponenteCriarPO extends TestBase {
 		
 		btnBiblioteca.click();
 		sleep(2000);
-//		btnSim.click();
-//		sleep(2000);
+	/*	btnNO.click();
+		sleep(2000);*/
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

@@ -186,7 +186,7 @@ public class LeiautesExecucacoFuncionalidades4Pt4PO extends TestBase{
 		btnSim.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(3000);
 		
 		int mensaje = driver.findElements(By.xpath("//span[contains(text(),\"O Leiaute foi atualizado com sucesso\")]")).size();
 		System.out.println(mensaje);

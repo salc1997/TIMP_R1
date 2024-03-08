@@ -91,7 +91,7 @@ public class AssociaçãoCodigoAjusteEditarPO extends TestBase{
 		btnSim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay dark\"]");
-		sleep(9000);		
+		sleep(50000);		
 		
 		menu.click();
 		sleep(1000);

@@ -161,7 +161,7 @@ public class AssociaçãoCodigoAjusteCriarPO extends TestBase{
 		
 		inputUFOrigem.click();
 		sleep(1000);
-		opcionCombo.click();
+		opcionCombo1.click();
 		sleep(1000);
 		body.click();
 		sleep(2000);

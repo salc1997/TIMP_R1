@@ -125,21 +125,7 @@ public class ExportacaoBCB extends TestBase {
 		}else if(url.contains("tp1")){
 			tp1 = true;
 		}
-		if (tq1 == true) {
-
-
-			driver.navigate().to("http://as1-100-01-tq1:8000/timp/tkm/#library");
-
-		}else if (tp1==true ) {
-			driver.navigate().to("http://as1-100-01-tp1:8000/timp/tkm/#library");
-			
-		}else {
-			driver.navigate().to("http://as1-100-01-tc2:8000/timp/tkm/#library");
-		}
-		sleep(9000);
 		
-		bibliotecaPEPO.clickbtnPacoteExportado();
-		sleep(6000);
 		String idultimo = idObter("expBCB");
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idultimo+"\"]/div[1]/div"));
@@ -251,7 +237,7 @@ public class ExportacaoBCB extends TestBase {
 		sucesso.add(fechaExportación.equals(""));
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idultimo+"\"]/div[1]/div"));
-		WebElement exportar = driver.findElement(By.xpath("//div[@data-id=\""+idultimo+"\"]/div[1]/div/div[2]//span[text()=\" Exportação\"]"));
+		WebElement exportar = driver.findElement(By.xpath("//div[@data-id=\""+idultimo+"\"]/div[1]/div/div[2]//span[text()=\"Iniciar Exportação em Background\"]"));
 		
 		actionsMoveToElement(menu);
 		sleep(2000);
@@ -259,12 +245,56 @@ public class ExportacaoBCB extends TestBase {
 		menu.click();
 		sleep(1000);
 		exportar.click();
-		sleep(662000);
-	
-		bibliotecaPEPO.clickbtnBaxiar();
-		sleep(12000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(12000);
+		sleep(11000);
+		System.out.println("Test paso ");
+		
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idultimo+"\"]/div[1]/div"));
+		
+		actionsMoveToElement(menu);
+		sleep(2000);
+		
+		
+		menu.click();
+		sleep(1000);
+		
+		 String status = driver.findElement(By.xpath("//div[@data-id=\""+idultimo+"\"]/div[1]/div/div[2]//li[3]//span[2]")).getText();
+		 System.out.println("Opcion: " + status);
+		 sleep(6000);
+		  
+		  while (status.equals("Exportação") ) {
+		 
+			 driver.navigate().refresh();
+			 sleep(10000);
+			 invisibilityOfElementOverlay();
+			 sleep(15000);
+			  
+			 bibliotecaPEPO.clickbtnPacoteExportado();
+			 sleep(2000);
+			
+			 menu = driver.findElement(By.xpath("//div[@data-id=\""+idultimo+"\"]/div[1]/div"));
+				
+			actionsMoveToElement(menu);
+			sleep(2000);
+				
+			menu.click();
+			sleep(1000);
+				
+		    status = driver.findElement(By.xpath("//div[@data-id=\""+idultimo+"\"]/div[1]/div/div[2]//li[3]//span[2]")).getText();
+	        System.out.println("Opcion Habilitada : " + status);
+	        sleep(30000);
+	        
+			
+		}
+		  
+		WebElement descargar = driver.findElement(By.xpath("//div[@data-id=\""+idultimo+"\"]/div[1]/div/div[2]//span[text()=\"Baixar Pacote Salvo em Background\"]"));
+		menu = driver.findElement(By.xpath("//div[@data-id=\""+idultimo+"\"]/div[1]/div"));
+		
+		actionsMoveToElement(menu);
+		sleep(2000);
+
+		
+		descargar.click();
+		sleep(2000);
 		
 		String fecha = fechaActual();
 		System.out.println(fecha);

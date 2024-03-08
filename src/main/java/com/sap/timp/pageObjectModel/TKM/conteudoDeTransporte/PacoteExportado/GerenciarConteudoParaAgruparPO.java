@@ -63,6 +63,13 @@ public class GerenciarConteudoParaAgruparPO extends TestBase{
 	@FindBy(xpath = "//li[text()=\"Processes\"]")
 	public WebElement btnOpcModeloBPMA;
 	
+	@FindBy(xpath = "//li[text()=\"BFB\"]")
+	public WebElement btnOpcComponenteBFB;
+	
+	@FindBy(xpath = "//li[text()=\"Layout\"]")
+	public WebElement btnOpcModeloBFB;
+
+	
 	public GerenciarConteudoParaAgruparPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -130,6 +137,15 @@ public class GerenciarConteudoParaAgruparPO extends TestBase{
 	
 	public void clickbtnOpcModeloBPMA() {
 		click(btnOpcModeloBPMA);
+	}
+
+	public void clickbtnOpcComponenteBFB() {
+		click(btnOpcComponenteBFB);
+	}
+	
+	
+	public void clickbtnOpcModeloBFB() {
+		click(btnOpcModeloBFB);
 	}
 	
 }

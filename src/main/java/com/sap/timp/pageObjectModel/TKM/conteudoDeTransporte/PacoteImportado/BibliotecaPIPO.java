@@ -19,7 +19,10 @@ public class BibliotecaPIPO extends TestBase{
 	public WebElement btnPacoteImportado;
 	
 	@FindBy(xpath = "//button//span[text()=\" Importar\"]")
-	public WebElement btnImportar;
+	public WebElement btnImportar; 
+	
+	@FindBy(xpath = "//button//span[text()=\"Importar em Background\"]")
+	public WebElement btnImportarBG; 
 	
 	@FindBy(xpath = "//div[@id=\"name\"]//input")
 	public WebElement txtNome;
@@ -50,8 +53,10 @@ public class BibliotecaPIPO extends TestBase{
 	public void clickbtnImportar() {
 		click(btnImportar);
 	}
+	public void clickbtnImportarBG() {
+		click(btnImportarBG);
+	}
 
-	
 	public void clickbtnSubir() {
 		click(btnSubir);
 	}

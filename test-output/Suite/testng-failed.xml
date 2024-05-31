@@ -1,38 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="FormatacaoEVariante(failed)">
+  <test thread-count="5" name="DFG - Leiautes(failed)">
     <classes>
-      <class name="com.timp.test.BRB.FormatacaoEVariante">
+      <class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados">
         <methods>
+          <include name="filtrosVersao"/>
+          <include name="filtrosFechaUsuarioCriado"/>
           <include name="afterClass"/>
-          <include name="formatacaoEVariante"/>
+          <include name="filtrosUsuarioCriado"/>
+          <include name="filtrosFiltroTipo"/>
+          <include name="filtrosUsuarioModificado"/>
+          <include name="filtroNombre"/>
+          <include name="filtrosFechaUsuarioModificado"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.FormatacaoEVariante -->
+      </class> <!-- com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados -->
     </classes>
-  </test> <!-- FormatacaoEVariante(failed) -->
-  <test thread-count="5" name="GruposAvancados(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.GruposAvancados">
-        <methods>
-          <include name="gruposAvanzados"/>
-          <include name="afterClass"/>
-          <include name="eliminarGrupos"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.GruposAvancados -->
-    </classes>
-  </test> <!-- GruposAvancados(failed) -->
-  <test thread-count="5" name="Atribucao De Regra (Regra)(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.AtribuicaodeRegra">
-        <methods>
-          <include name="editar"/>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.AtribuicaodeRegra -->
-    </classes>
-  </test> <!-- Atribucao De Regra (Regra)(failed) -->
+  </test> <!-- DFG - Leiautes(failed) -->
 </suite> <!-- Failed suite [Suite] -->

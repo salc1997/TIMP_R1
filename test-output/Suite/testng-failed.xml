@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="RenomearColuna(failed)">
-    <classes>
-      <class name="com.timp.test.BRB.RenomearColuna">
-        <methods>
-          <include name="afterClass"/>
-          <include name="renomearColuna"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.timp.test.BRB.RenomearColuna -->
-    </classes>
-  </test> <!-- RenomearColuna(failed) -->
   <test thread-count="5" name="FormatacaoEVariante(failed)">
     <classes>
       <class name="com.timp.test.BRB.FormatacaoEVariante">

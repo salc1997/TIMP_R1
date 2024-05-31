@@ -48,7 +48,7 @@ public class ConfiguracaoEExecucaoExecucaoPO extends TestBase {
 	@FindBy(xpath = "/html/body/div[5]/div[2]/div[1]/div[1]")
 	public WebElement atrasCalendario;
 	
-	@FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/div[3]/div[8]")
+	@FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/div[3]/div[2]")
 	public WebElement anio;
 	
 	@FindBy(xpath = "/html/body/div[5]/div[2]/div[2]/div[2]/div[2]")
@@ -119,12 +119,12 @@ public class ConfiguracaoEExecucaoExecucaoPO extends TestBase {
 		executar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(12000);
 		
 		calendario.click();
 		sleep(4000);
 		
-		atrasCalendario.click();
+		//atrasCalendario.click();
 		sleep(4000);
 	
 		anio.click();

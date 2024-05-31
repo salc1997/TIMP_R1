@@ -216,7 +216,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 	//CORREGIR EN SU DEBIDO AMBIENTE
 	@FindBy(xpath = "//div[text()=\"ID326-(BCB com campo de Output) TA\"]")
 	public WebElement selectBCB2;
-	@FindBy(xpath = "//div[text()=\"ID2759-(BCB com campo de Output) TA\"]")
+	@FindBy(xpath = "//div[text()=\"ID393-(BCB com campo de Output) TA\"]")
 	public WebElement selectBCB3;
 	
 	
@@ -363,7 +363,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 			dobleClick(selectBCB11);
 			sleep(1000);
 		}else if (tc2 ==true) {
-			buscarCamposSaidaBCB.sendKeys("2759");
+			buscarCamposSaidaBCB.sendKeys("393");
 			sleep(1000);
 			dobleClick(selectBCB3);
 			sleep(6000);

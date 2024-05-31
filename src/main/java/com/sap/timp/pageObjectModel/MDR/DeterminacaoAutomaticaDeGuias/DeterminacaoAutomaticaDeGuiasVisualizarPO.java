@@ -127,7 +127,7 @@ public class DeterminacaoAutomaticaDeGuiasVisualizarPO extends TestBase{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(24000);
+		sleep(60000);
 		
 		String empresav = empresaV.getText();
 		String ufv = ufV.getText();
@@ -213,12 +213,12 @@ public class DeterminacaoAutomaticaDeGuiasVisualizarPO extends TestBase{
 		sucesso.add(tributov.contains(tributoE));
 		sucesso.add(tipoImpostov.contains(tipoImpostoE));
 		sucesso.add(detalheTipoImpostov.contains(detalheTipoImpostoE));
-		sucesso.add(codigoAjustev.contains(codigoAjusteE));
-		sucesso.add(componentev.contains(componenteE));
+		sucesso.add(codigoAjusteE.contains(codigoAjustev));
+		sucesso.add(componenteE.contains(componentev));
 		sucesso.add(codigoConfiguracionv.contains(codigoConfiguracionE));
 		sucesso.add(linhaLivrov.contains(linhaLivroE));
 		sucesso.add(layoutGuiav.contains(layoutGuiaE));
-		sucesso.add(configuracionLayoutv.contains(configuracionLayoutE));
+		sucesso.add(configuracionLayoutE.contains(configuracionLayoutv));
 		
 		System.out.println( sucesso);
 		

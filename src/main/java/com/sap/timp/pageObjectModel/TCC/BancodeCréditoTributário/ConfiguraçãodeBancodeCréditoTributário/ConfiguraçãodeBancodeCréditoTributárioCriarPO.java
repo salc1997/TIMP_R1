@@ -191,11 +191,15 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBase{
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
+		actionsMoveToElement(driver.findElement(By.xpath("//span[text()=\"Estorno de Crédito\"]")));
+		sleep(2000);
+		
 		
 		BancoCréditoTributário.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
+		
 		
 		configuracion.click();
 		sleep(2000);

@@ -99,6 +99,7 @@ public class BancodeOcorrênciasExecutadosEditarPO extends TestBase {
 		
 		String valor = inputSubperiodo.getText();
 		System.out.println("valor actual " + valor);
+		sleep(2000);
 		
 		btnExecutar.click();
 		invisibilityOfElementOverlay();

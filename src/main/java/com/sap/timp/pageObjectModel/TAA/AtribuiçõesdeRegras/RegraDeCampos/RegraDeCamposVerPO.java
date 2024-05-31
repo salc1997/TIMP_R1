@@ -97,14 +97,14 @@ public class RegraDeCamposVerPO extends TestBase{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(16000);
+		sleep(24000);
 		
 		// Datoss de Editar
 		waitExpectedElement("//div[@id=\"rule-type\"]/div/div/div/input");
 		attributoNotToBeEmpty("//div[@id=\"rule-type\"]/div/div/div/input", "value");
 		String tipoDeRegraString1 = driver.findElement(By.xpath("//div[@id=\"rule-type\"]/div/div/div/input")).getAttribute("value").trim();
 		String tributoString1 = driver.findElement(By.xpath("//div[@id=\"rule-tax\"]/div/div/div/input")).getAttribute("value").trim();
-		String empresaString1 = driver.findElement(By.xpath("//div[@id=\"rule-company\"]/div/div/div/div/div/div[1]")).getText().trim();
+		String empresaString1 = driver.findElement(By.xpath("//div[@id=\"rule-company\"]//div[@id=\"inputbox\"]")).getText().trim();
 		String ufString1 = driver.findElement(By.xpath("//div[@id=\"rule-state\"]/div/div/div/div/div/div[1]")).getText().trim();
 		String filialString1 = driver.findElement(By.xpath("//div[@id=\"rule-branch\"]/div/div/div/div/div/div[1]")).getText().trim();
 		String regraDeAbasString1 = driver.findElement(By.xpath("//div[@id=\"rule-type-1-container\"]/div/div/div/div/input")).getAttribute("value").trim();

@@ -1269,7 +1269,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		executar.click();
 		sleep(3000);
 		waitExpectedElement(executarN);
-		sleep(25000);
+		sleep(35000);
 		executarN.click();
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

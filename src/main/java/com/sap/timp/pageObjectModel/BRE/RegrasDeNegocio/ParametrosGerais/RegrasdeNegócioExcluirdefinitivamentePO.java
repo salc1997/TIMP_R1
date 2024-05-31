@@ -59,7 +59,7 @@ public class RegrasdeNegócioExcluirdefinitivamentePO extends TestBase{
 	
 	@FindBy(xpath = "//input[@placeholder=\" selecionar a Estrutura de Dados\"]")
 	public WebElement estructura;
-	@FindBy(xpath = "//li[text()=\"Definição de Campos por Tab\"]")
+	@FindBy(xpath = "//li[@id=\"option-5\"")
 	public WebElement opcEstructura;
 	
 	@FindBy(xpath = "//input[@placeholder=\" selecionar Característica Especial \"]")

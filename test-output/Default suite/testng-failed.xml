@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.BRB.GruposAvancados">
+      <class name="com.timp.test.TKM.Importacao.ImportacaoBCB">
         <methods>
-          <include name="gruposAvanzados"/>
+          <include name="ExportacionMdrAsociacionCodigoAjuste"/>
           <include name="afterClass"/>
-          <include name="eliminarGrupos"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.timp.test.BRB.GruposAvancados -->
+      </class> <!-- com.timp.test.TKM.Importacao.ImportacaoBCB -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

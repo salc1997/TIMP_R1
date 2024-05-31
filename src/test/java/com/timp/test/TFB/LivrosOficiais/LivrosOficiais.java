@@ -82,13 +82,13 @@ public class LivrosOficiais extends TestBase{
    	public void livrosIPI() {
  	
  	  librosOficiaisPO.LivrosIPI();
- 	/*  
+ 	 
  	ArrayList<Boolean> sucesso = librosOficiaisPO.LivrosICMSST();
 
  		for (int i = 0; i < sucesso.size(); i++) {
  			assertTrue(sucesso.get(i), Criar);
  		}
- 		sleep(2000);*/
+ 		sleep(2000);
  	
  	
  	}

@@ -56,6 +56,9 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 	public WebElement separadores;
 	@FindBy(xpath = "//*[@id=\"toolbarSecund\"]/div/ul/li[2]/button/span")
 	public WebElement flecha;
+	
+	@FindBy(xpath = "//button//span[@class=\"icon icon-font-Sign-and-Symbols icon-rightmenu\"]")
+	public WebElement flecha2;
 	@FindBy(xpath = "//input[@placeholder=\"Sem separador\"]")
 	public WebElement inputSeparador;
 	@FindBy(xpath = "//div[@id=\"chkBol\"]/div/label/span")
@@ -787,10 +790,9 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 		sleep(1000);
 		
 		salvar.click();
-		sleep(2000);
-		waitExpectedElement(siguiente);
-		sleep(3000);
+		sleep(12000);
 		
+		waitExpectedElement(siguiente);
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -919,7 +921,7 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //		sleep(2000);
 		jan.click();
-		sleep(2000);
+		sleep(4000);
 //		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 //		sleep(2000);
 		m1.click();
@@ -931,9 +933,15 @@ public class LeiautesExecucaoCamposEspeciais1y2PO extends TestBase {
 		execucao1.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		waitExpectedElement(cargarExecucao);
+	
 		sleep(3000);
 		
+		
+		while (!visualizarDados2.isDisplayed()) {
+			flecha2.click();
+		}
+		
+		sleep(5000);
 		visualizarDados2.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

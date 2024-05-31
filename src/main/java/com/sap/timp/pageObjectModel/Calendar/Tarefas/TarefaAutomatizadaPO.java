@@ -337,7 +337,7 @@ public class TarefaAutomatizadaPO extends TestBase{
 			componente.click();
 			sleep(2000);
 
-			WebElement componenteOPC = driver.findElement(By.xpath("//li[@id=\"option-17\"]"));
+			WebElement componenteOPC = driver.findElement(By.xpath("//li[@id=\"option-18\"]"));
 
 			componenteOPC .click();
 			sleep(2000);
@@ -501,7 +501,7 @@ public class TarefaAutomatizadaPO extends TestBase{
 				idFiltro = "74";
 				filtrarId.sendKeys("74");
 				sleep(2000);
-				filtrarId.sendKeys(Keys.ENTER);
+			//	filtrarId.sendKeys(Keys.ENTER);
 				sleep(3000);
 			}
 

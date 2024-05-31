@@ -38,7 +38,7 @@ public class TestBase extends TestUtil{
 
 	public static WebDriver driver;
 	public String usuarioL = "TESTEAUTOMATIZADO";
-	public String senhaL = "Alltax2020";
+	public String senhaL = "Alltax2025";
 
 	public String usuarioLL = "kenssy.medina@agilesolutions.com";
 	public String senhaLL = "Gorgojita12";
@@ -51,7 +51,7 @@ public class TestBase extends TestUtil{
 
 
 
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver121.exe");
+		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver125.exe");
 
 	/*	System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver114.exe");*/
 

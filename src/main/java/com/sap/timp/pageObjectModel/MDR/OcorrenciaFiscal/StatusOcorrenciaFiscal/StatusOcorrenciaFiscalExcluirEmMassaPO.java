@@ -79,6 +79,12 @@ public class StatusOcorrenciaFiscalExcluirEmMassaPO extends TestBase {
 	@FindBy(xpath = "//button[text()=\"Aceitar\"]")
 	public WebElement aceitar;
 	
+	@FindBy(xpath = "//div[@id=\"occurrenceOrigin\"]//div[2]")
+	public WebElement origemOcurrence;
+	
+	@FindBy(xpath = "//li[@id=\"option-1\"]")
+	public WebElement opcao2;
+	
 	public StatusOcorrenciaFiscalExcluirEmMassaPO() {
 		PageFactory.initElements(driver, this);
 	}
@@ -108,27 +114,10 @@ public class StatusOcorrenciaFiscalExcluirEmMassaPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
-		
-		empresa.click();
+
+		origemOcurrence.click();
 		sleep(1000);
-		opcao.click();
-		new Actions(driver).moveToElement(empresa).click().perform();
-		sleep(1000);
-		
-		attributeToBe("//div[@id=\"state\"]/div", "class", "input-element-wrapper");
-		
-		ufFilial.click();
-		sleep(1000);
-		opcao.click();
-		new Actions(driver).moveToElement(ufFilial).click().perform();
-		sleep(1000);
-		
-		attributeToBe("//div[@id=\"branch\"]/div", "class", "input-element-wrapper");
-		
-		filial.click();
-		sleep(1000);
-		opcao.click();
-		new Actions(driver).moveToElement(filial).click().perform();
+		opcao2.click();
 		sleep(1000);
 		
 		status.click();
@@ -153,11 +142,11 @@ public class StatusOcorrenciaFiscalExcluirEmMassaPO extends TestBase {
 		fechar.click();
 		sleep(2000);
 		
-		descricao.sendKeys("Teste de Status da Ocorrência Fiscal");
 
 		dataVigencia.sendKeys(fechaActual());
 		sleep(1000);
 		
+		sleep(2000);
 		sleep(2000);
 		gravar.click();
 		sleep(2000);
@@ -180,26 +169,9 @@ public class StatusOcorrenciaFiscalExcluirEmMassaPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		empresa.click();
+		origemOcurrence.click();
 		sleep(1000);
-		opcao.click();
-		new Actions(driver).moveToElement(empresa).click().perform();
-		sleep(1000);
-		
-		attributeToBe("//div[@id=\"state\"]/div", "class", "input-element-wrapper");
-		
-		ufFilial.click();
-		sleep(1000);
-		opcao.click();
-		new Actions(driver).moveToElement(ufFilial).click().perform();
-		sleep(1000);
-		
-		attributeToBe("//div[@id=\"branch\"]/div", "class", "input-element-wrapper");
-		
-		filial.click();
-		sleep(1000);
-		opcao.click();
-		new Actions(driver).moveToElement(filial).click().perform();
+		opcao2.click();
 		sleep(1000);
 		
 		status.click();
@@ -224,7 +196,6 @@ public class StatusOcorrenciaFiscalExcluirEmMassaPO extends TestBase {
 		fechar.click();
 		sleep(2000);
 		
-		descricao.sendKeys("Teste de Status da Ocorrência Fiscal");
 
 		dataVigencia.sendKeys(fechaActual());
 		sleep(1000);

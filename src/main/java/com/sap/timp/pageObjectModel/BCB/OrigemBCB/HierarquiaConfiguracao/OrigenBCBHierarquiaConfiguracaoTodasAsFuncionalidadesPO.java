@@ -166,7 +166,7 @@ public class OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	public WebElement selectBCB2;
 	
 	//este es para tc2, pendiente de ver
-		@FindBy(xpath = "//li[text()=\"2759 - (BCB com campo de Output) TA\"]")
+		@FindBy(xpath = "//li[text()=\"393 - (BCB com campo de Output) TA\"]")
 		public WebElement selectBCB3;
 	
 	@FindBy(xpath = "//div[@class=\"subLevel\"][1]/div/div[@id=\"value\"]/div/div[2]")

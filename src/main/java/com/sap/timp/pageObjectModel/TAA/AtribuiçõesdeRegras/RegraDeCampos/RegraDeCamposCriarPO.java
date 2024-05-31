@@ -100,10 +100,10 @@ public class RegraDeCamposCriarPO extends TestBase{
 		invisibilityOfElementOverlay();
 		
 		waitExpectedElement(cboTipoDeRegra);
-		cboTipoDeRegra.click();
+	/*	cboTipoDeRegra.click();
 		sleep(1000);
 		opcionTipoDeRegra.click();
-		sleep(1000);
+		sleep(1000);*/
 		
 		cboTributo.click();
 		sleep(1000);

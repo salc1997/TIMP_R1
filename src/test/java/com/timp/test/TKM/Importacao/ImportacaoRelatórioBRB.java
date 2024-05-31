@@ -68,7 +68,7 @@ public class ImportacaoRelatórioBRB extends TestBase {
 
 		if (url.contains("tq1")) {
 			tq1 = true;
-		}else if(url.contains("tc2")){
+		}else if(url.contains("tc2"))  {
 			tc2 = true;
 		}else if(url.contains("tp1")){
 			tp1 = true;

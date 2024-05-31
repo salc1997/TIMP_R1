@@ -56,7 +56,7 @@ public class StatusOcurrenciaFiscalVisualizarPO extends TestBase{
 		opc.click();
 		sleep(2000);	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		
 		// Datos de Visualizar
 		String empresa = driver.findElement(By.xpath("//span[@id=\"company\"]")).getText().trim();

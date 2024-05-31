@@ -24,6 +24,12 @@ public class BibliotecaBRBPO extends TestBase{
 	@FindBy(xpath = "//span[text()=\"Relatórios de Outputs\"]")
 	public WebElement Btncadastro;
 	
+	@FindBy(xpath = "//span[text()=\"Editar\"]")
+	public WebElement btnEditar;
+	
+	@FindBy(xpath = "//span[text()=\"Configurações\"]")
+	public WebElement btnConfiguraciones;
+	
 	
 	public BibliotecaBRBPO() {
 
@@ -53,9 +59,13 @@ public class BibliotecaBRBPO extends TestBase{
 		click(Btncadastro);		
 	}
 	
+	public void clickOnBtnEditar() {
+		click(btnEditar);		
+	}
 	
-	
-	
+	public void clickOnBtnConfiguraciones() {
+		click(btnConfiguraciones);		
+	}
 	
 	
 	

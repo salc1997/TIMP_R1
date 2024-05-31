@@ -70,7 +70,7 @@ public class StatusOcorrenciaFiscalEditarPO extends TestBase {
 		menu.click();
 		sleep(1000);
 		editar.click();
-		sleep(3000);
+		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		attributoNotToBeEmpty(campo, "value");
 		
@@ -79,7 +79,7 @@ public class StatusOcorrenciaFiscalEditarPO extends TestBase {
 
 		String valor = campo.getAttribute("value");
 
-		String enviar = "Teste Editar";
+		String enviar = "TESTE EDITAR";
 
 		campo.clear();
 		sleep(1000);
@@ -90,7 +90,7 @@ public class StatusOcorrenciaFiscalEditarPO extends TestBase {
 		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
-		sleep(3000);
+		sleep(6000);
 		
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
@@ -109,7 +109,7 @@ public class StatusOcorrenciaFiscalEditarPO extends TestBase {
 		menu.click();
 		sleep(1000);
 		editar.click();
-		sleep(3000);
+		sleep(9000);
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		attributoNotToBeEmpty(campo, "value");
@@ -118,11 +118,13 @@ public class StatusOcorrenciaFiscalEditarPO extends TestBase {
 
 		String nuevoTexto = campo.getAttribute("value");
 		System.out.println(valor);
+		System.out.println("----------------");
+		System.out.println(enviar );
 		System.out.println(nuevoTexto);
 		boolean sucesso = nuevoTexto.equals(enviar);
 		System.out.println(sucesso);
 
-		sleep(1000);
+		sleep(6000);
 		campo.clear();
 
 		sleep(1000);

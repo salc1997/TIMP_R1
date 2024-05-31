@@ -722,14 +722,14 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(2000);
 		
 		
-		pesquisar.sendKeys("2840");
+		pesquisar.sendKeys("3588");
 		pesquisar.sendKeys(Keys.ENTER);
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"2840\"]/div[1]/div"));
-		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"2840\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"3588\"]/div[1]/div"));
+		WebElement editar = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id=\"3588\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
 		sleep(2000);
 	
 	
@@ -1000,7 +1000,7 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 			selectBCB2.sendKeys(Keys.ESCAPE);
 			sleep(1000);
 		}
-		sleep(10000);
+		sleep(12000);
 		valor1.click();
 		sleep(2000);
 		opcValor1.click();
@@ -1181,7 +1181,7 @@ public class OrigenBRBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 
 		
 		tercerNivel.click();
-		sleep(2000);
+		sleep(5000);
 		
 		campolinha3.click();
 		sleep(2000);

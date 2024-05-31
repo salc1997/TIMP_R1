@@ -69,7 +69,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 extends Te
 		}
 	}
 	
-/*
+
 	@Test(priority = 3)
 	public void excluirConfiguracoes2() {
 		
@@ -111,6 +111,6 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2 extends Te
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), Eliminado);
 		}
-	}*/
+	}
 
 }

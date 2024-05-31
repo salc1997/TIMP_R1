@@ -28,11 +28,11 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBase {
 	@FindBy(xpath = "//span[contains(text(),\"Nov\")]")
 	public WebElement novo;
 	
-	@FindBy(xpath = "//div[@id=\"tax\"]/div/div[2]/div/div[2]")
-	public WebElement tributo;
+	@FindBy(xpath = "//div[@id=\"idBocStatusMdr\"]//div[2]")
+	public WebElement statusMDR;
 	
-	@FindBy(xpath = "//div[text()=\"ICMS\"]")
-	public WebElement tributoO;
+	@FindBy(xpath = "//div[@id=\"option-9\"]")
+	public WebElement statusMDRO;
 	
 	@FindBy(xpath = "//div[@id=\"company\"]/div/div[2]/div/div[2]")
 	public WebElement empresa;
@@ -45,36 +45,38 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBase {
 	
 	@FindBy(xpath = "//label[@for=\"check-SP\"]/span")
 	public WebElement ufOTQ1;
-	
-	@FindBy(xpath = "//label[@for=\"check-BA\"]/span")
+	@FindBy(xpath = "//label[@for=\"check-RJ\"]/span")
 	public WebElement ufOTC2;
 	
-	@FindBy(xpath = "//div[@id=\"branch\"]/div/div[2]/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"branch\"]//div[2]")
 	public WebElement filial;
 	
 	@FindBy(xpath = "//label[@for=\"check-1000_SP_0001\"]/span")
 	public WebElement filialOTQ1;
 	
-	@FindBy(xpath = "//label[@for=\"check-1000_BA_0075\"]/span")
+	@FindBy(xpath = "//div[@id=\"option-1\"]//span")
 	public WebElement filialOTC2;
 	
-	@FindBy(xpath = "//div[@id=\"occurrence-type\"]/div/div[2]/div/div[2]")
-	public WebElement tipoOcorrencia;
+	@FindBy(xpath = "//div[@id=\"component-origin\"]//div[2]")
+	public WebElement componente;
 	
 	@FindBy(xpath = "//div[text()=\"Auto de infração\"]")
 	public WebElement tipoOcorreciaOTQ1;
 	
-	@FindBy(xpath = "//div[text()=\"Auditoria Interna\"]")
-	public WebElement tipoOcorrenciaOTC2;
+	@FindBy(xpath = "//div[@id=\"option-1\"]")
+	public WebElement componenteTC2;
 	
-	@FindBy(xpath = "//div[@id=\"object-type\"]/div/div[2]/div/div[2]")
-	public WebElement tipoObjeto;
+	@FindBy(xpath = "//div[@id=\"configuration-id-container\"]//div[@id=\"configuration-id\"]//div[@class=\"icon icon-font-Sign-and-Symbols icon-downmenu drop-down\"]")
+	public WebElement configuracion;
+	
+	@FindBy(xpath = "//div[@id=\"configuration-id-container\"]//div[@id=\"configuration-id\"]//input")
+	public WebElement configuracion1;
 	
 	@FindBy(xpath = "//div[text()=\"ICMS\"]")
 	public WebElement tipoObjetoTQ1;
 	
-	@FindBy(xpath = "//div[text()=\"ICMS\"]")
-	public WebElement tipoObjetoTC2;
+	@FindBy(xpath = "//div[@id=\"option-1\"]")
+	public WebElement configuracionTC2;
 	
 	@FindBy(xpath = "//div[@id=\"objectTypeFiscalOccurrenceRegister\"]/div/div[2]/div/div[2]")
 	public WebElement idTipoObjeto;
@@ -119,6 +121,12 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBase {
 	@FindBy(xpath = "//div[@id=\"option-1\"]")
 	public WebElement iDdoStatusOPC;
 	
+	@FindBy(xpath = "//div[@id=\"branch\"]//input")
+	public WebElement inputFilial;
+	
+	@FindBy(xpath = "//div[@class=\"list-option selectAll\"]")
+	public WebElement allFilial;
+	
 	public ConfiguracaoEExecucaoCriarPO() {
 
 		PageFactory.initElements(driver, this);
@@ -156,18 +164,18 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBase {
 		
 		novo.click();
 		
-		waitExpectedElement(tributo);
+		waitExpectedElement(statusMDR);
 		invisibilityOfElementOverlay();
 		sleep(8000);
 		
-		tributo.click();
+		statusMDR.click();
 		sleep(1000);
-		tributoO.click();
+		statusMDRO.click();
 		sleep(1000);
 		
 		attributeToBe("//div[@id=\"company\"]/div", "class", "input-element-wrapper");
 		sleep(1000);
-		
+	/*	
 		empresa.click();
 		sleep(1000);
 		empresaO.click();
@@ -193,11 +201,18 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBase {
 		}
 		
 		attributeToBe("//div[@id=\"branch\"]/div", "class", "input-element-wrapper");
-		sleep(1000);
+		sleep(1000);*/
 		
 		filial.click();
 		
 		if (tc2==true) {
+			allFilial.click();
+			sleep(1000);
+			
+			closeSelectTypeCheckbox(filial);
+			sleep(1000);
+			
+			inputFilial.sendKeys("1055");
 			filialOTC2.click();
 			sleep(1000);
 			closeSelectTypeCheckbox(filial);
@@ -208,104 +223,48 @@ public class ConfiguracaoEExecucaoCriarPO extends TestBase {
 			closeSelectTypeCheckbox(filial);
 			sleep(1000);
 		}
+	
 		
-		
-		tipoOcorrencia.click();
+	
+		componente.click();
 		
 		if (tc2==true) {
-			tipoOcorrenciaOTC2.click();
+			componenteTC2.click();
 		}else {
 			tipoOcorreciaOTQ1.click();
 		}
 		
-		attributeToBe("//div[@id=\"object-type\"]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
-		sleep(3000);
+		sleep(6000);
 		
-		tipoObjeto.click();
-		sleep(1000);
+		
 		
 		if (tc2==true) {
 			
-			tipoObjetoTC2.click();
+			
+			configuracion.click();
+			sleep(1000); 
+			
+			configuracion1.sendKeys("5200");
 			sleep(1000);
-			closeSelectTypeCheckbox(tipoObjeto);
+			
+			
+			configuracionTC2.click();
+			sleep(1000);
+			//closeSelectTypeCheckbox(configuracion);
 			sleep(5000);
 			
 		}else {
 			
 			tipoObjetoTQ1.click();
 			sleep(1000);
-			closeSelectTypeCheckbox(tipoObjeto);
+			closeSelectTypeCheckbox(configuracion);
 	
 		}
 		
-		attributeToBe("//div[@id=\"objectTypeFiscalOccurrenceRegister\"]/div/div[2]/div/div[1]", "class", "input-wrapper base-input  required");
-		sleep(32000);
-		
-		 idTipoObjeto.click();
-		 sleep(3000);
-		 
-		if (tc2==true) {
-			idTipoObjetoTC2.click();
-			 sleep(3000);
-		}else if(tq1 == true) {
-			idTipoObjetoTQ1.click();
-			 sleep(3000);
-		}else {
-			idTipoObjetoTC2.click();
-			 sleep(3000);
-		}
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		iDdoStatus.click();
 		sleep(1000);
-		
-		iDdoStatusOPC.click();
-		sleep(7000);
-		associaçãoCódigoAjusteCrédito.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
-		
-		idS.click();
-		sleep(2000);
-		
-		seleccionar.click();
-		sleep(2000);
-		
-		associaçãoCódigoAjusteDébito.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		idS.click();
-		sleep(2000);
-		
-		seleccionar.click();
-		sleep(2000);
-		
-		
-		
-		associaçãoCódigoAjustePagamento.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		idS.click();
-		sleep(2000);
-		
-		seleccionar.click();
-		sleep(2000);
-		
-		
-		
-		observacao.sendKeys("Teste Automatizado");
-		sleep(2000);
-		
-		sleep(2000);
 		gravar.click();
 		sleep(3000);
 		waitExpectedElement(sim);

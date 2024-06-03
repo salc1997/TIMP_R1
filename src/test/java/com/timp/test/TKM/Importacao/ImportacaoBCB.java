@@ -56,6 +56,7 @@ public class ImportacaoBCB extends TestBase {
 	 String codigoAjuste = "0";
 	String codigoContabilização = "0";
 
+
 	@AfterClass
 	public void afterClass() {
 	}
@@ -627,11 +628,9 @@ public class ImportacaoBCB extends TestBase {
 		  codigoAjuste = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][2]/div[5]//div")).getText();
 		 System.out.println("Código do Ajuste: " + codigoAjuste);
 		
-		 codigoContabilização = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][2]/div[5]//div")).getText();
+		 codigoContabilização = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][2]/div[7]//div")).getText();
 		 System.out.println("Código Contabilização: " + codigoContabilização);
 		 
-		 codigoContabilização = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id][2]/div[5]//div")).getText();
-		 System.out.println("Código Contabilização: " + codigoContabilização);
 		 
 		 idInserir("AssoAjuste",AssoAjuste);
 		 idInserir("codigoAjuste",codigoAjuste);
@@ -650,9 +649,9 @@ public class ImportacaoBCB extends TestBase {
 		 String demais = driver.findElement(By.xpath("//div[@id=\"guia-pagamento\"]//input")).getAttribute("value");
 		 System.out.println("Guia de pagamento: " + demais );
 		 
-		 idInserir("demais",demais);
-		 
 		 demais = demais .replaceAll("-Determ. pagamento BCB 4701", "");
+		 
+		 idInserir("demais",demais);
 		 
 		 ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		 sucesso.add(nombreConf.contains("BCB IRPJ -Michele Teste contab"));
@@ -813,6 +812,8 @@ public class ImportacaoBCB extends TestBase {
 		 bibliotecaEditarMDRPO.clickOnBtnEditar();
 		 sleep(30000);
 		 
+		  System.out.println("---- CodigoAjuste ----");
+		 
 		 String empresa = driver.findElement(By.xpath("//div[@id=\"companyCode\"]//div[@class=\"componentToSearch\"]")).getText();
 		 System.out.println("Empresa: " + empresa);
 		 
@@ -875,7 +876,7 @@ public class ImportacaoBCB extends TestBase {
 
 			}
 	}
-	*/
+	
 	@Test(priority = 9)
 	public void ExportacionMdrAsociacionCodigoAjuste() {
 	String url = driver.getCurrentUrl();
@@ -918,20 +919,196 @@ public class ImportacaoBCB extends TestBase {
 		 
 		 bibliotecaEditarMDRPO.clickOnBtnEditar();
 		 sleep(35000);
+		 System.out.println(" " );
+		 System.out.println("---- Associacion Codigo de Ajuste ----" );
+		 System.out.println(" " );
 		 
 		 String empresa = driver.findElement(By.xpath("//div[@id=\"company\"]//div[@class=\"componentToSearch\"]")).getText();
 		 System.out.println("Empresa: " + empresa);
 		 
-		 String descripcion   = driver.findElement(By.xpath("//div[@id=\"padrao\"]//textarea")).getText();
+		 String descripcion   = driver.findElement(By.xpath("//div[@id=\"padrao\"]//textarea")).getAttribute("value");
 		 System.out.println("Descrição Padrão: " + descripcion);
 		 
-		 String codiContabilizacion   = driver.findElement(By.xpath("//div[@id=\"padrao\"]//textarea")).getText();
+		 String codiContabilizacion   = driver.findElement(By.xpath("//div[@id=\"accCode\"]//input")).getAttribute("value");
 		 System.out.println("Códigos de Contabilização: " + codiContabilizacion);
+		 
+		 
+		 String tipoAjuste   = driver.findElement(By.xpath("//div[@id=\"adjustType\"]//input")).getAttribute("value");
+		 System.out.println("Tipo de Ajuste: " + tipoAjuste);
+		 
+		 
+		 String tipoLanzamiento   = driver.findElement(By.xpath("//div[@id=\"release\"]//input")).getAttribute("value");
+		 System.out.println("Tipo de Lançamento: " + tipoLanzamiento);
+		 
+		 String tributo   = driver.findElement(By.xpath("//div[@id=\"tribute\"]//input")).getAttribute("value");
+		 System.out.println("Tributo: " + tributo);
+		 
+		 String tipoTributo   = driver.findElement(By.xpath("//div[@id=\"tributeType\"]//input")).getAttribute("value");
+		 System.out.println("Tipo de Tributo: " + tipoTributo);
+		 
+		 String dataInicio   = driver.findElement(By.xpath("//div[@id=\"validity\"]//input")).getAttribute("value");
+		 System.out.println("Data de Início de Vigência: " + dataInicio);
+		 
+		 ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		 
+		 sucesso.add(empresa.contains("1000"));
+		 sucesso.add(tipoAjuste.contains("Automático"));
+		 sucesso.add(tipoLanzamiento.contains("Pagamento"));
+		 sucesso.add(tributo.contains("IRPJ_CSLL"));
+		 sucesso.add(tipoTributo.contains("IRPJ/CSLL"));
+		 sucesso.add(dataInicio.contains("01/01/2010"));
+		 
+		 System.out.println( sucesso);
+			
+		 for (int i = 0; i < sucesso.size(); i++) {
+				assertTrue(sucesso.get(i), visualizar);
+
+			}
 			
 	}
 
+	@Test(priority = 10)
+	public void ExportacionMdrCodigoContabilizacion() {
+	String url = driver.getCurrentUrl();
+
+	boolean tp1  = false;
+	boolean tc2  = false;
+	boolean tq1  = false;
+
+	if (url.contains("tq1")) {
+		tq1 = true;
+	}else if(url.contains("tc2")){
+		tc2 = true;
+	}else if(url.contains("tp1")){
+		tp1 = true;
+	}
+
+	 if (tq1 == true) {
+
+
+			driver.navigate().to("http://as1-100-01-tq1:8000/timp/brb/#library");
+
+		}else if (tp1==true ) {
+			driver.navigate().to("http://as1-100-01-tp1:8000/timp/brb/#library");
+			
+		}else {
+			driver.navigate().to("http://as1-100-01-tc2:8000/timp/mdr/#/library?cadastro=accountingCode");
+		}
+		sleep(24000);
+		
+		 System.out.println("ID Códigos de Contabilização: " + codigoContabilização);
+		 
+		 bibliotecaEditarMDRPO.sendKeysToSearchBox(codigoContabilização);
+		 sleep(4000);
+		
+		 bibliotecaEditarMDRPO.clickOnSpMagnifyingGlass();
+		 sleep(6000);
+		 
+		 bibliotecaEditarMDRPO.clickOnBtnActions();
+		 sleep(4000);
+		 
+		 bibliotecaEditarMDRPO.clickOnBtnEditar();
+		 sleep(35000);
+		 System.out.println(" " );
+		 System.out.println("---- Códigos de Contabilização ----" );
+		 System.out.println(" " );
+		
+	}*/
 	
-	
+	@Test(priority = 11)
+	public void ExportacionMdrDeterminacionAutomatica() {
+	String url = driver.getCurrentUrl();
+
+	boolean tp1  = false;
+	boolean tc2  = false;
+	boolean tq1  = false;
+
+	if (url.contains("tq1")) {
+		tq1 = true;
+	}else if(url.contains("tc2")){
+		tc2 = true;
+	}else if(url.contains("tp1")){
+		tp1 = true;
+	}
+
+	 if (tq1 == true) {
+
+
+			driver.navigate().to("http://as1-100-01-tq1:8000/timp/brb/#library");
+
+		}else if (tp1==true ) {
+			driver.navigate().to("http://as1-100-01-tp1:8000/timp/brb/#library");
+			
+		}else {
+			driver.navigate().to("http://as1-100-01-tc2:8000/timp/mdr/#/library?cadastro=paymentGuides");
+		}
+		sleep(24000);
+		
+		String idDeterGui = idObter("demais");
+		
+		 System.out.println("ID Códigos de Contabilização: " + idDeterGui);
+		 
+		 bibliotecaEditarMDRPO.sendKeysToSearchBox(idDeterGui);
+		 sleep(3000);
+		
+		 bibliotecaEditarMDRPO.clickOnSpMagnifyingGlass();
+		 sleep(15000);
+		 
+		 bibliotecaEditarMDRPO.clickOnBtnActions();
+		 sleep(4000);
+		 
+		 bibliotecaEditarMDRPO.clickOnBtnEditar();
+		 sleep(72000);
+		 System.out.println(" " );
+		 System.out.println("---- Determinação Automática de Guias ----" );
+		 System.out.println(" " );
+		 
+		 String empresa = driver.findElement(By.xpath("//div[@id=\"company\"]//div[@class=\"componentToSearch\"]")).getText();
+		 System.out.println("Empresa: " + empresa);
+		 
+		 String descripcion   = driver.findElement(By.xpath("//div[@id=\"description\"]//textarea")).getAttribute("value");
+		 System.out.println("Descrição: " + descripcion);
+		 
+		 String tributo   = driver.findElement(By.xpath("//div[@id=\"tax\"]//input")).getAttribute("value");
+		 System.out.println("Tributo: " + tributo);
+		 
+		 String tipoImposto   = driver.findElement(By.xpath("//div[@id=\"taxType\"]//input")).getAttribute("value");
+		 System.out.println("Tipo de Imposto: " +  tipoImposto);
+		 
+		 String componente   = driver.findElement(By.xpath("//div[@id=\"componentOutput\"]//input")).getAttribute("value");
+		 System.out.println("Componente: " + componente );
+		
+		 String codigoConfi = driver.findElement(By.xpath("//div[@id=\"componentConfiguration\"]//input")).getAttribute("value");
+		 System.out.println("Código Configuraçã: " + codigoConfi );
+		
+		 String codigoOutput = driver.findElement(By.xpath("//div[@id=\"outputCodePR\"]//input")).getAttribute("value");
+		 System.out.println("Código Output: " + codigoOutput );
+		 
+		 String layout = driver.findElement(By.xpath("//div[@id=\"idLayout\"]//input")).getAttribute("value");
+		 System.out.println("Layout Guia " + layout);
+		 
+		 String ConfiLayout = driver.findElement(By.xpath("//div[@id=\"idLayoutConfiguration\"]//input")).getAttribute("value");
+		 System.out.println("Configuração do Layout " + ConfiLayout);
+		 
+		 ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
+		 
+		 sucesso.add(empresa.contains("1000"));
+		 sucesso.add(descripcion.contains("Determ. pagamento BCB 4701"));
+		 sucesso.add(tributo.contains("IRPJ_CSLL"));
+		 sucesso.add(tipoImposto.contains("IRPJ/CSLL"));
+		 sucesso.add(componente.contains("BCB - Gestor de Consolidação"));
+		 sucesso.add(codigoConfi.contains("4701 - BCB IRPJ -Michele Teste contab"));
+		 sucesso.add(codigoOutput.contains("codigoOutput"));
+		 sucesso.add(layout.contains("Leiaute Michele IRPJ"));
+		 sucesso.add(ConfiLayout.contains("Conf. Michele IRPJ v2"));
+		 
+		 System.out.println( sucesso);
+			
+		 for (int i = 0; i < sucesso.size(); i++) {
+				assertTrue(sucesso.get(i), visualizar);
+
+			}
+	}
 
 
 }

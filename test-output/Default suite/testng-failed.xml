@@ -5,8 +5,8 @@
     <classes>
       <class name="com.timp.test.TKM.Importacao.ImportacaoBCB">
         <methods>
-          <include name="ExportacionMdrAsociacionCodigoAjuste"/>
           <include name="afterClass"/>
+          <include name="ExportacionMdrDeterminacionAutomatica"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.timp.test.TKM.Importacao.ImportacaoBCB -->

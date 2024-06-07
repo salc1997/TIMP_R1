@@ -56,7 +56,6 @@ public class ImportacaoBCB extends TestBase {
 	 String codigoAjuste = "0";
 	String codigoContabilização = "0";
 
-
 	@AfterClass
 	public void afterClass() {
 	}

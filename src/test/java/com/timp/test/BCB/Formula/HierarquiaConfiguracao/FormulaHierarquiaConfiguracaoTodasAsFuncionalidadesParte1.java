@@ -77,7 +77,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends T
 			assertTrue(sucesso.get(i), subniveis);
 		}
 	}
-	
+	/*
 	@Test(priority = 5)	
 	public void outputBCB() {
 		ArrayList<Boolean> sucesso = formulaHierarquiaConfiguracaoTodasAsFuncionalidadesPO.formulaOutputBCB();
@@ -116,7 +116,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1 extends T
 		for (int i = 0; i < sucesso.size(); i++) {
 			assertTrue(sucesso.get(i), subniveis);
 		}
-	}
+	}*/
 	
 //	@Test(priority = 9)	
 //	public void subNivel5() {

@@ -47,7 +47,7 @@ public class ArquivosImportadosInformacaoPO extends TestBase{
 		String  idRegistro = "0";
 		
 		if(url.contains("tc2")) {
-			idRegistro = "48";
+			idRegistro = "74";
 		}
 		
 		if(url.contains("tq1")) {

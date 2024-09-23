@@ -134,7 +134,7 @@ public class ConfiguracaoEExecucacoCriarPO extends TestBase{
 		//attributeToBeXpath("//div[@id=\"branch\"]/div", "class", "base-MultipleSelect3 required");
 		sleep(2000);
 		cboFilial.click();
-		sleep(1000);
+		sleep(3000);
 		opcionCheckbox.click();
 		closeSelectTypeCheckbox(cboFilial);
 		sleep(1000);

@@ -196,7 +196,7 @@ public class ParametrosGeraisConfiguracaoConfiguracaoCriarPO extends TestBase {
 		nova.click();
 		sleep(3000);
 	//	attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");
-		sleep(2000);
+		sleep(4000);
 		
 		int rows = driver
 				.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]"))

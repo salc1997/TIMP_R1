@@ -51,7 +51,7 @@ public class ArquivosImportadosVisualizarPO extends TestBase{
 		}
 		
 		if(url.contains("tc2")) {
-			idRegistro = "62";
+			idRegistro = "74";
 		}
 		
 		System.out.println("ID Registro do Ambiente: " + idRegistro);

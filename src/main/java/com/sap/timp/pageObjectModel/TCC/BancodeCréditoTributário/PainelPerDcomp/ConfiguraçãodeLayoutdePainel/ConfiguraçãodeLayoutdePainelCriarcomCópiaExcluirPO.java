@@ -114,7 +114,7 @@ public class ConfiguraçãodeLayoutdePainelCriarcomCópiaExcluirPO extends TestBase
 		
 			cboLeiaute.clear();
 			sleep(1000);
-			cboLeiaute.sendKeys("1012 - Teste 4/5");
+			cboLeiaute.sendKeys("10 - Livro de Apuração ICMS Saídas");
 			sleep(1000);
 			cboLeiaute.sendKeys(Keys. ESCAPE);
 			sleep(1000);

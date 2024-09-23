@@ -221,11 +221,13 @@ public class PublicoYPRivadoPO extends TestBase{
 		aceptar.click();
 		sleep(4000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		sleep(16000);
 
 		
 		limpiar.click();
-		sleep(7000);
+		sleep(8000);
+		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		sleep(6000);
 		ferramenta.sendKeys("Prueba Automatizada");
 		ferramenta.sendKeys(Keys.ENTER);
 		sleep(3000);

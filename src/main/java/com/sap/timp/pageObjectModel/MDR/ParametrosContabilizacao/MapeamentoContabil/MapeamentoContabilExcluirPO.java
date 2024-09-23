@@ -32,7 +32,7 @@ public class MapeamentoContabilExcluirPO extends TestBase{
 	@FindBy(xpath = "//div[text()=\"Nenhum resultado\"]")
 	public WebElement nenhumResult;
 	
-	@FindBy(xpath = "//div[contains(@class,\"icon-left\")][1]")
+	@FindBy(xpath = "//div[contains(@class,\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-left\")][1]")
 	public WebElement primeira;
 
 	
@@ -56,7 +56,7 @@ public class MapeamentoContabilExcluirPO extends TestBase{
 		sleep(1000);
 		contabil.click();
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(12000);
 
 		primeira.click();
 		

@@ -79,7 +79,7 @@ public class MapeamentoDeEstruturasEditarPO extends TestBase{
 		
 	
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(4000);
 		actionsMoveToElement("//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]");
 		sleep(5000);
 		

@@ -2,60 +2,30 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Suite">
 
-<test name="Determinacion automatica de Guias" preserve-order="true">
 
 
+
+
+	<test name="- Contabilizacao ">
 		<classes>
-
-			<!-- Determinacion automatica de Guias -->
-
-			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasCriar"></class>
-			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasDetalhe"></class>
-			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasEditar"></class>
-			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasVisualizar"></class>
-			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasFiltroPorId"></class>
-			<class name="com.timp.test.MDR.DeterminacaoAutomaticaDeGuias.DeterminacaoAutomaticaDeGuiasExcluir"></class>
-
-		</classes>
-
-	</test> <!-- PruebaTestNG -->
-
-<test name="Associacao Codigos Ajustes" preserve-order="true">
-
-
-		<classes>
-
-			<!-- Associacao Codigos Ajustes -->
-
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteCriar"></class>
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteDetalhe"></class>
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteEditar"></class>
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteVisualizar"></class>
-			<class name="com.timp.test.MDR.Ajustes.AssociacaoCodigosAjustes.AssociaçãoCodigoAjusteExcluir"></class>
-
-		</classes>
-
-	</test> <!-- PruebaTestNG -->
 	
-	<test name=" Codigos Ajustes" preserve-order="true">
-
-
-		<classes>
-
-			<!--  Codigos Ajustes -->
-
-			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesCriar"></class>
-			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesDetalhes"></class>
-			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesEditar"></class>
-			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesVisualizar"></class>
-			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluir"></class>
-			<class name="com.timp.test.MDR.Ajustes.CodigosAjustes.CodigosAjustesExcluirMassa"></class>
+		
+		<!-- Codigos contabilizacion --> 
+		
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoCriar"></class>
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoEditar"></class>
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoVisualizar"></class>
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabalizacaoDetalhes"></class>
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoFiltrosAvan"></class>
+			<class name="com.timp.test.MDR.CodigoContabilizacao.CodigoContabilizacaoExcluir"></class>
 			
-			
-
 		</classes>
+	
+	</test>
 
-	</test> <!-- PruebaTestNG -->
+
+
+		
 
 </suite> <!-- Suite -->
 	

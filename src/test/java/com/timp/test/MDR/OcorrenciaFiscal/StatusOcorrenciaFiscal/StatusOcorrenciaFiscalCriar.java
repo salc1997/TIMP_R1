@@ -31,7 +31,7 @@ public class StatusOcorrenciaFiscalCriar extends TestBase {
 
 	@AfterClass
 	public void afterClass() {
-		driver.close();
+		//driver.close();
 	}
 
 	@Test()

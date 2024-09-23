@@ -160,7 +160,7 @@ public class MapeamentoContabilExcluirEmMassaPO extends TestBase {
 		
 		aceitar.click();
 		
-		sleep(1000);
+		sleep(10000);
 
 		novo.click();
 		sleep(2000);
@@ -210,7 +210,7 @@ public class MapeamentoContabilExcluirEmMassaPO extends TestBase {
 		sleep(2000);
 		aceitar.click();
 		
-		sleep(2000);
+		sleep(6000);
 		novo.click();
 		sleep(2000);
 		waitExpectedElement(sim);
@@ -224,7 +224,7 @@ public class MapeamentoContabilExcluirEmMassaPO extends TestBase {
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(16000);
 
 		primeira.click();
 		
@@ -232,7 +232,7 @@ public class MapeamentoContabilExcluirEmMassaPO extends TestBase {
 		
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		sleep(2000);
+		sleep(6000);
 		
 		
 		rows = driver.findElements(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id]")).size();

@@ -141,7 +141,7 @@ public class RegrasDeMensagensEditarPO extends TestBase {
 	public WebElement biblioteca;
 	
 	//@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start path-hl\"]/*/*[name()=\"tspan\"]")
-	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start\"]")
+	@FindBy(xpath = "//*[name()=\"g\"][@class=\"path-start path-hl\"]")
 	public WebElement primeiracaixar1;
 	
 	@FindBy(xpath = "//*[name()=\"g\"][contains(@class,\"path-start\")]/*/*[name()=\"tspan\"][1]")
@@ -217,7 +217,7 @@ public class RegrasDeMensagensEditarPO extends TestBase {
 		menu.click();
 		sleep(2000);
 		editar.click();
-		sleep(2000);
+		sleep(7000);
 		waitExpectedElement(adicionarcaminho);
 		invisibilityOfElementOverlay();
 	

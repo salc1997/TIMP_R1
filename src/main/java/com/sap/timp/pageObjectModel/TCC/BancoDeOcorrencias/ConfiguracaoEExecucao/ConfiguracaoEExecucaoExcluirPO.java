@@ -80,9 +80,9 @@ public class ConfiguracaoEExecucaoExcluirPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		driver.navigate().refresh();
-		waitExpectedElement(siguiente);
-		invisibilityOfElementOverlay();
 		
+		invisibilityOfElementOverlay();
+		sleep(6000);
 		bancoOcorrencia.click();
 		sleep(2000);
 		configuracaoEExecucao.click();

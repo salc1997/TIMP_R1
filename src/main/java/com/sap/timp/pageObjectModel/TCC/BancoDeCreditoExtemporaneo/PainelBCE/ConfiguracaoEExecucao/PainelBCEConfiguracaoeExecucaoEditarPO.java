@@ -24,7 +24,7 @@ public class PainelBCEConfiguracaoeExecucaoEditarPO extends TestBase{
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
 	
-	@FindBy(xpath = "//div[@id=\"component\"]/div/div/div[2]")
+	@FindBy(xpath = "//div[@id=\"component\"]//div[@class=\"icon icon-font-Sign-and-Symbols icon-downmenu\"]")
 	public WebElement componente;
 	@FindBy(xpath = "//li[text()=\"MDR\"]")
 	public WebElement opcComponente;
@@ -64,7 +64,7 @@ public class PainelBCEConfiguracaoeExecucaoEditarPO extends TestBase{
 		sleep(1000);
 		editar.click();
 		invisibilityOfElementOverlay();
-		sleep(2000);
+		sleep(6000);
 		
 		componente.click();
 		sleep(2000);

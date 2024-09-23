@@ -67,7 +67,7 @@ public class RegradeAbasVerPO extends TestBase{
 		açao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(1000);
+		sleep(6000);
 		
 		// Datos de visualizar
 		String empresaString = driver.findElement(By.xpath("//div[@id=\"rule-company\"]//div[@class=\"componentName\"]")).getText();
@@ -100,7 +100,7 @@ public class RegradeAbasVerPO extends TestBase{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(12000);
+		sleep(38000);
 		
 		// Datos de Editar
 		String empresaString1 = driver.findElement(By.xpath("//div[@id=\"rule-company\"]//div[@class=\"componentName\"]")).getText();

@@ -97,7 +97,7 @@ public class RegraDeCamposVerPO extends TestBase{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(24000);
+		sleep(38000);
 		
 		// Datoss de Editar
 		waitExpectedElement("//div[@id=\"rule-type\"]/div/div/div/input");

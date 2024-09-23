@@ -86,7 +86,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBase{
 	@FindBy(xpath = "//span[@class=\"button-icon icon-font-File-and-Folders icon-foldersetting\"]")
 	public WebElement btnGerenciarPasta;
 	
-	@FindBy(xpath = "//div[@class=\"dialog-content medium\"]/div/div/table/tbody/tr[1]/td[2]/div/div/div/input")
+	@FindBy(xpath = "//div[@class=\"baseTabs-view-container\"]//span[text()=\"Pasta 2\"]")
 	public WebElement nomePasta2;
 	
 	@FindBy(xpath = "//button[text()=\"Atualizar\"]")
@@ -290,7 +290,7 @@ public class ConfiguracoesCriarGrerenciarMoverPastaPO extends TestBase{
 		btnGerenciarPasta.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(10000);
+		sleep(12000);
 		//waitExpectElement(nomePasta2);
 		nomePasta2.clear();
 		nomePasta2.click();

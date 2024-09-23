@@ -23,13 +23,13 @@ public class CriarCopiaPO extends TestBase{
 	public WebElement copiar;
 	@FindBy(xpath = "/html/body/div[3]/div/div[3]/button[2]")
 	public WebElement gravar;
-	@FindBy(xpath = "//li[@id=\"draggable-28\"]/div/div/div/div[3]/span")
+	@FindBy(xpath = "//li[@id=\"draggable-28\"]")
 	public WebElement filtroE;
-	@FindBy(xpath = "//li[@id=\"draggable-193\"]/div/div/div/div[3]/span")
+	@FindBy(xpath = "//li[@id=\"draggable-193\"]")
 	public WebElement filtroUF;
-	@FindBy(xpath = "//li[@id=\"draggable-30\"]/div/div/div/div[3]/span")
+	@FindBy(xpath = "//li[@id=\"draggable-30\"]")
 	public WebElement filtroF;
-	@FindBy(xpath = "//li[@id=\"draggable-21\"]/div/div/div/div[3]/span")
+	@FindBy(xpath = "//li[@id=\"draggable-21\"]")
 	public WebElement filtroDa;
 	@FindBy(xpath = "//*[@id=\"draggable-28\"]")
 	public WebElement empresa;
@@ -137,7 +137,6 @@ public class CriarCopiaPO extends TestBase{
 		gravar.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(5000);
 		
 		waitExpectedElement("//*[@id=\"accordion\"]/ul/li/div/div");
 		
@@ -162,7 +161,7 @@ public class CriarCopiaPO extends TestBase{
 		sucesso.add(valorICMS.isDisplayed());
 		
 			
-		sleep(6000);
+		sleep(10000);
 		
 		
 		return sucesso;		

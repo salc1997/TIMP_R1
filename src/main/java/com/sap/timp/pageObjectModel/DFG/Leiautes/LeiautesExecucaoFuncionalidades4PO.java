@@ -607,7 +607,7 @@ public class LeiautesExecucaoFuncionalidades4PO extends TestBase{
 		while (!separadores.isDisplayed()) {
 			flecha.click();
 		}
-		sleep(1000);
+		sleep(5000);
 		
 		separadores.click();
 		sleep(2000);

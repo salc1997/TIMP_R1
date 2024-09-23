@@ -30,7 +30,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriarPO extends TestBase{
 	@FindBy(xpath = "//div[@id=\"1000\"]")
 	public WebElement empresaOPC;
 	
-	@FindBy(xpath = "//div[@id=\"branch\"]/div/div[1]/div[2]")
+	@FindBy(xpath = "//div[@id=\"branch\"]//div[2]")
 	public WebElement filial;
 	
 	@FindBy(xpath = "//div[@id=\"1000_SP_0001\"]")

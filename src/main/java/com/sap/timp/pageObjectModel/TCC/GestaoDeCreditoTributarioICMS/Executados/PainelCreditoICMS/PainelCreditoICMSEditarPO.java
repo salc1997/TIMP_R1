@@ -102,7 +102,7 @@ public class PainelCreditoICMSEditarPO extends TestBase{
 		sleep(30000);
 
 		btnExecutar.click();
-		sleep(12000);
+		sleep(18000);
 		cboEmpresa.click();
 		sleep(1000);
 		opcionEmpresa.click();

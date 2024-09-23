@@ -1132,7 +1132,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		executar.click();
 		sleep(5000);
 		waitExpectedElement(executarM);
-		sleep(10000);
+		sleep(15000);
 		executarM.click();
 		
 		sleep(1000);
@@ -1240,7 +1240,7 @@ public class DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends 
 		periodo.click();
 		sleep(5000);
 		paginaSiguiente.click();
-		sleep(5000);
+		sleep(8000);
 		
 		if (tc2) {
 			m1.click();

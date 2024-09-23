@@ -167,7 +167,7 @@ public class ConfiguraçãodeLayoutdePainelExecutarGravarPO extends TestBase {
 		sleep(3000);
 		
 		enero.click();
-		sleep(3000);
+		sleep(5000);
 		
 		m.click();
 		sleep(3000);
@@ -231,8 +231,8 @@ public class ConfiguraçãodeLayoutdePainelExecutarGravarPO extends TestBase {
 		}else {
 			System.out.println("");
 			System.out.println("Error al prencher descricao...");
-		}*/
-		
+		}
+		*/
 		return sucesso;
 	}
 	

@@ -139,7 +139,7 @@ public class ConfiguracaoEExecucaoRegistro1200ExecutarPO extends TestBase{
 		actionsMoveToElement(inputSubperiodo);
 
 		inputSubperiodo.click();
-		sleep(2000);
+		sleep(5000);
 
 		WebElement flechaAtrasCalendario = driver.findElement(By.xpath("//div[@tabindex=\"0\" and @class=\"left-arrow icon icon-font-Sign-and-Symbols icon-leftmenu\"]"));
 		flechaAtrasCalendario.click();

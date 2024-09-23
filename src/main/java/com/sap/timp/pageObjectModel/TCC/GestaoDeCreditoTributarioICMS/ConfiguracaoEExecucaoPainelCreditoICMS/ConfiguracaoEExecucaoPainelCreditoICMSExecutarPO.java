@@ -110,7 +110,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSExecutarPO extends TestBase{
 		siguiente.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		sleep(7000);
 		
 		String idRegistro = idObter("id-GCT-ICMS-PainelCreditoICMSConfiguracaoEExecucaco");
 		

@@ -784,6 +784,8 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 
 			criar.click();
 			sleep(2000);
+			
+			
 			fechar.click();
 			sleep(2000);
 
@@ -889,11 +891,11 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte1PO extends
 				sleep(1000);
 			}else if (tc2 ==true) {
 				buscarCamposSaidaBCB.sendKeys("393");
-				sleep(1000);
+				sleep(6000);
 				dobleClick(selectBCB3);
 				sleep(5000);
-				dobleClick(selectBCB13);
-				sleep(1000);
+			/*	dobleClick(selectBCB13);
+				sleep(1000);*/
 			}else  if (tq2 ==true){
 				buscarCamposSaidaBCB.sendKeys("954");
 				sleep(1000);

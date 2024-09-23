@@ -75,7 +75,7 @@ public class RegradeAbasEditarPO extends TestBase {
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(4000);
+		sleep(12000);
 		
 		String valorDescricao = "13/01/2021";
 		System.out.println("Fecha Nueva: " + valorDescricao);
@@ -87,12 +87,8 @@ public class RegradeAbasEditarPO extends TestBase {
 		btnGravar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
-		
+		sleep(6000);
+					
 		driver.navigate().refresh();
 		
 		sleep(10000);

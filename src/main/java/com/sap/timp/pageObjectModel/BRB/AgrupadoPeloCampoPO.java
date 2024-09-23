@@ -108,7 +108,7 @@ public class AgrupadoPeloCampoPO extends TestBase{
 		nao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(7000);
 		
 		execucao.click();
 		sleep(8000);

@@ -39,6 +39,10 @@ public class StatusOcorrenciaFiscalEditarPO extends TestBase {
 	
 	@FindBy(xpath = "//input[@placeholder=\"Pesquisar\"]")
 	public WebElement pesquisar;
+	
+	
+	@FindBy(xpath = "//span[text()=\"Biblioteca\"]")
+	public WebElement btnBiblioteca;
 
 	public StatusOcorrenciaFiscalEditarPO() {
 
@@ -90,9 +94,11 @@ public class StatusOcorrenciaFiscalEditarPO extends TestBase {
 		waitExpectedElement(sim);
 		sleep(2000);
 		sim.click();
-		sleep(6000);
+		sleep(9000);
 		
+		btnBiblioteca.click();
 		
+		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		

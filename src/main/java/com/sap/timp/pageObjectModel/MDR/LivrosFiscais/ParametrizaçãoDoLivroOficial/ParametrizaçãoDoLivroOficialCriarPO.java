@@ -376,8 +376,10 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		opcionCheckbox.click();
 		sleep(1000);
 		body.click();
-		sleep(1000);
+		sleep(4000);
 		
+		actionsMoveToElement(valorDoAjuste);
+		sleep(1000);
 		attributeToBe("//div[@id=\"adjustmentStructure2\"]/div/div/div/div[2]/input", "class", "");
 		ufOrigem.click();
 		sleep(2000);
@@ -465,6 +467,9 @@ public class ParametrizaçãoDoLivroOficialCriarPO extends TestBase {
 		opcionCombo.click();
 		sleep(1000);
 		body.click();
+		sleep(1000);
+		
+		actionsMoveToElement(dataInicioVigenciaEmpresa);
 		sleep(1000);
 		
 		attributeToBe("//div[@id=\"headerStructure1\"]/div/div/div/div[2]/input", "class", "");

@@ -81,15 +81,11 @@ public class ConfiguracaoEExecucaoExecucaoPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		siguiente.click();
-		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
+	
 		
 		
-		int rows = rows("//div[@class=\"tr\" and @data-id]");
-		
-		
-		String id = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[2]/div")).getText();
+		String id = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]/div[2]/div")).getText();
 		System.out.println("Id ultimo registro: " +id);
 		
 		configuracaoEExecucao.click();
@@ -159,15 +155,15 @@ public class ConfiguracaoEExecucaoExecucaoPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
-		siguiente.click();
+		
 		sleep(2000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		
 
-		rows = rows("//div[@class=\"tr\" and @data-id]");
+		
 		
 		boolean sucesso = false;
 		  
-		String id2 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]["+rows+"]/div[2]/div")).getText();
+		String id2 = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id]/div[2]/div")).getText();
 		System.out.println("ID Ultimo Nuevo Registro Executados: " +id2);
 		
 		idInserir("idBOConfiguracaoEExecucacoExecutados",id2);

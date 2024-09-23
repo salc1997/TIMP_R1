@@ -59,7 +59,7 @@ public class RegrasdeNegócioExcluirdefinitivamentePO extends TestBase{
 	
 	@FindBy(xpath = "//input[@placeholder=\" selecionar a Estrutura de Dados\"]")
 	public WebElement estructura;
-	@FindBy(xpath = "//li[@id=\"option-5\"")
+	@FindBy(xpath = "//li[@id=\"option-4\"]")
 	public WebElement opcEstructura;
 	
 	@FindBy(xpath = "//input[@placeholder=\" selecionar Característica Especial \"]")
@@ -243,6 +243,9 @@ public boolean criar() {
 		opcGrupo.click();
 		sleep(3000);
 		
+		actionsMoveToElement(validade);
+		sleep(3000);
+		
 		estructura.click();
 		sleep(3000);
 		opcEstructura.click();
@@ -377,7 +380,7 @@ public boolean criar() {
 		
 		aceitar.click();
 
-		sleep(19000);
+		sleep(25000);
 		
 		biblioteca.click();
 		

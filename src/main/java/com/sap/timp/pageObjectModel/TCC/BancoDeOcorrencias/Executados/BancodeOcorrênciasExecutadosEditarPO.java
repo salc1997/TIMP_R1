@@ -71,8 +71,8 @@ public class BancodeOcorrênciasExecutadosEditarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		btnUltimaPagina.click();
-		invisibilityOfElementOverlay();
+	
+		sleep(7000);
 		
 		String idRegistroConfiguracaoEExecucao = idObter("idBOConfiguracaoEExecucacoExecutados");
 		

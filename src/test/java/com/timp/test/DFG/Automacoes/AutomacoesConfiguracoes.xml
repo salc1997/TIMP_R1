@@ -10,10 +10,34 @@
 			<class name="com.timp.test.DFG.Configuracoes.ConfiguracoesFavoritos"></class>
 			<class name="com.timp.test.DFG.Configuracoes.ConfiguracoesExecutar"></class>
 			<class name="com.timp.test.DFG.Configuracoes.ConfiguracoesVisualizar"></class>
-			
 			<class name="com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraMasRestaurar"></class>
 			<class name="com.timp.test.DFG.Configuracoes.ConfiguracoesLixeiraExcluir"></class>
 		</classes>
 	</test> 	 	
-
+ 	<test name="DFG - Leiautes">
+		<classes>
+					
+			<class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriar"></class>
+			<class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoCriarMoverGerenciarPasta"></class>
+			<class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoEditar"></class>
+			<class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoFavoritos"></class>
+			<class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoInformacao"></class>
+			<class name="com.timp.test.DFG.Leiautes.ParametrosGeraisCriarRaizIDPúblicoPrivadoVisualizar"></class>
+			<class name="com.timp.test.DFG.Leiautes.ParametrosGeraisFiltroAvancados"></class>
+			
+			
+		</classes>
+	</test> 	
+	
+	<test name="DFG - Funcionalidades 4">
+		<classes> 	
+		
+		<class name="com.timp.test.DFG.LeiautesExecução.LeiautesExecucaoFuncionalidades4"></class>
+		<class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt2"></class>
+		<class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt3"></class>
+		<class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt4"></class>
+		<class name="com.timp.test.DFG.Leiautes.Execucao.LeiautesExecucacoFuncionalidades4Pt5"></class>
+		
+ 		</classes>
+	</test> 
 </suite>

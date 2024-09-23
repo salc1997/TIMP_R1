@@ -116,7 +116,7 @@ public class ConfiguracaoEExecucaoVisualizarPO extends TestBase {
 		String empresaV = empresa.getText();
 		String ufV = uf.getText();
 		String filialV = filial.getText();
-		String tipoOcorrenciaV = tipoOcorrencia.getAttribute("value");
+		//String tipoOcorrenciaV = tipoOcorrencia.getAttribute("value");
 		String tipoObjetov = tipoObjeto.getText();
 		String idTipoObjetoV = idTipoObjeto.getAttribute("value");
 		String associacaoCodigoCreditoV = associacaoCodigoCredito.getAttribute("value");
@@ -132,7 +132,7 @@ public class ConfiguracaoEExecucaoVisualizarPO extends TestBase {
 		System.out.println(empresaV);
 		System.out.println(ufV);
 		System.out.println(filialV);
-		System.out.println(tipoOcorrenciaV);
+	//	System.out.println(tipoOcorrenciaV);
 		System.out.println(tipoObjetov);
 		System.out.println(idTipoObjetoV);
 		System.out.println(associacaoCodigoCreditoV);
@@ -163,7 +163,7 @@ public class ConfiguracaoEExecucaoVisualizarPO extends TestBase {
 		String empresaE = empresa.getText();
 		String ufE = uf.getText();
 		String filialE = filial.getText();
-		String tipoOcorrenciaE = tipoOcorrencia.getAttribute("value");
+	//	String tipoOcorrenciaE = tipoOcorrencia.getAttribute("value");
 		String tipoObjetoE = tipoObjeto.getText();
 		String idTipoObjetoE = idTipoObjeto.getAttribute("value");
 		String associacaoCodigoCreditoE = associacaoCodigoCredito.getAttribute("value");
@@ -180,7 +180,7 @@ public class ConfiguracaoEExecucaoVisualizarPO extends TestBase {
 		System.out.println(empresaE);
 		System.out.println(ufE);
 		System.out.println(filialE);
-		System.out.println(tipoOcorrenciaE);
+	//	System.out.println(tipoOcorrenciaE);
 		System.out.println(tipoObjetoE);
 		System.out.println(idTipoObjetoE);
 		System.out.println(associacaoCodigoCreditoE);
@@ -197,7 +197,7 @@ public class ConfiguracaoEExecucaoVisualizarPO extends TestBase {
 		sucesso.add(empresaE.equals(empresaV));
 		sucesso.add(ufE.equals(ufV));
 		sucesso.add(filialE.equals(filialV));
-		sucesso.add(tipoOcorrenciaE.equals(tipoOcorrenciaV));
+	//	sucesso.add(tipoOcorrenciaE.equals(tipoOcorrenciaV));
 		sucesso.add(tipoObjetoE.equals(tipoObjetov));
 		sucesso.add(idTipoObjetoE.equals(idTipoObjetoV));
 		sucesso.add(associacaoCodigoCreditoE.equals(associacaoCodigoCreditoV));

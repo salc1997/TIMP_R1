@@ -7,7 +7,6 @@
 			<class name="com.timp.test.BCB.OrigemBFB.HierarquiaConfiguracao.OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidades"></class>
 		</classes>
 	</test> <!-- PruebaTest -->
-	
 	<test name="BCB">
 		<classes>
 			<class name="com.timp.test.BCB.OrigemBCB.HierarquicaConfiguracao.OrigenBCBHierarquiaConfiguracaoTodasAsFuncionalidades"></class>
@@ -23,13 +22,6 @@
 		</classes>
 	</test> <!-- PruebaTest -->
 	
-	<test name="Demais">
-		<classes>
-			<class name="com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1"></class>
-			<class name="com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2"></class>
-			
-		</classes>
-	</test> <!-- PruebaTest -->
 	
 	<test name="Parametros Gerais Hierarquia">
 		<classes>
@@ -71,4 +63,12 @@
 		
 		</classes>
 	</test> 	
+	
+	<test name="Demais">
+		<classes>
+			<class name="com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte1"></class>
+			<class name="com.timp.test.BCB.Demais.HierarquiaConfiguracao.DemaisHierarquiaConfiguracaoTodasAsFuncionalidadesParte2"></class>
+			
+		</classes>
+	</test> <!-- PruebaTest -->
 </suite> <!-- Suite -->

@@ -721,7 +721,7 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 		sleep(3000);
 		
 		nao.click();
-		sleep(2000);
+		sleep(6000);
 		
 	
 		//corregir mensaje al parecer

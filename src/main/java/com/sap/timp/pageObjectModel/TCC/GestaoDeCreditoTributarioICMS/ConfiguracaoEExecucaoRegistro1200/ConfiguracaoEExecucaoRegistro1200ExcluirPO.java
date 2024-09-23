@@ -61,7 +61,7 @@ public class ConfiguracaoEExecucaoRegistro1200ExcluirPO extends TestBase{
 		invisibilityOfElementOverlay();
 		
 		siguiente.click();
-		
+		sleep(6000);
 		invisibilityOfElementOverlay();
 		
 		String idRegistro = idObter("id-GCT-ICMS-ConfiguracaoEExecucacoRegistro1200");

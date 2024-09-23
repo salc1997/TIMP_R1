@@ -53,7 +53,7 @@ public class MapeamentoDeEstruturasTodasFunc extends TestBase {
 
 	  @AfterClass
 	  public void afterClass() {
-		  driver.close();
+		  //driver.close();
 	  }
 	  
 	 

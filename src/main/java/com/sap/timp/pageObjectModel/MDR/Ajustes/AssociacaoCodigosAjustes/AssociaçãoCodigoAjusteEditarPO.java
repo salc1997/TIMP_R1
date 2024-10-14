@@ -70,7 +70,7 @@ public class AssociaçãoCodigoAjusteEditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		sleep(15000);
+		sleep(25000);
 		
 		String dataInicioVigenciaValorNuevo = fechaAyer();
 		System.out.println("Data a ser inserida: " +dataInicioVigenciaValorNuevo);
@@ -91,7 +91,7 @@ public class AssociaçãoCodigoAjusteEditarPO extends TestBase{
 		btnSim.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay dark\"]");
-		sleep(50000);		
+		sleep(110000);		
 		
 		menu.click();
 		sleep(1000);

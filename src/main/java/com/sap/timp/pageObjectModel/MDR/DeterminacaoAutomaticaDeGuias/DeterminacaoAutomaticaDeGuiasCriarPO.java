@@ -174,7 +174,7 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBase{
 		sleep(3000);
 		
 		opcao.click();
-		sleep(3000);
+		sleep(9000);
 		
 		
 		codigoOutputPR.click();
@@ -189,7 +189,7 @@ public class DeterminacaoAutomaticaDeGuiasCriarPO extends TestBase{
 		layoutGuiaInput.sendKeys("61");
 		sleep(3000);
 		opcaoLayout.click();
-		sleep(3000);
+		sleep(5000);
 		
 		configuraçãodoLayout.click();
 		sleep(1000);

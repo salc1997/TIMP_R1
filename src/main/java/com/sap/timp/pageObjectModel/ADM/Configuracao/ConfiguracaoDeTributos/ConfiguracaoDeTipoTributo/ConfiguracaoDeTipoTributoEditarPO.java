@@ -104,7 +104,7 @@ public class ConfiguracaoDeTipoTributoEditarPO extends TestBase{
 		editar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(6000);
 
 		codigotributotipo.clear();
 		codigotributotipo.sendKeys("R8");

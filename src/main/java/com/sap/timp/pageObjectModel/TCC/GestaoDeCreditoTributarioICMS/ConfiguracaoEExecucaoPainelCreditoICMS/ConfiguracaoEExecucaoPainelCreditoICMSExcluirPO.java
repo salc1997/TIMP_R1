@@ -83,7 +83,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSExcluirPO extends TestBase{
 		
 		driver.navigate().refresh();
 		invisibilityOfElementOverlay();
-		
+		sleep(4000);
 		gestaoCredito.click();
 		sleep(2000);
 		configuracaoEExecucao.click();

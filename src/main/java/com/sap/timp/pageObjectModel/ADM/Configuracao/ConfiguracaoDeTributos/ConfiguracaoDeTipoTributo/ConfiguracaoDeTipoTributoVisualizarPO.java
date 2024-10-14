@@ -82,7 +82,7 @@ public class ConfiguracaoDeTipoTributoVisualizarPO extends TestBase{
 		visualizar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 		
 		String codigotributotipovisualizar = codigotributotipovi.getText();
 		String codigotributogrupovisualizar = codigotributogrupovi.getText();

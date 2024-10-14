@@ -108,7 +108,7 @@ public class MapeamentoDeEstruturasVisualizarPO extends TestBase{
 		
 		driver.get(estructuras );
 		
-		sleep(4000);
+		sleep(12000);
 
 		mapeamentodeestruturas.click();
 		sleep(2000);

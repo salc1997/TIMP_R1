@@ -135,7 +135,7 @@ public class DeterminacaoAutomaticaDeGuiasDetalhesPO extends TestBase{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(10000);
+		sleep(15000);
 		
 		String idD = id.getText();
 		String empresaD = empresa.getText();

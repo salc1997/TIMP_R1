@@ -18,7 +18,7 @@ public class AgrupamentoDeTributosEditarPO extends TestBase{
 	@FindBy(xpath = "//span[text()=\"Agrupamento de Tributos\"]")
 	public WebElement agrupamentodetributos;
 	
-	@FindBy(xpath = "//input[@placeholder=\"Preencher o nome do Grupo\"]")
+	@FindBy(xpath = "//div[@class=\"fieldMap name\"]//input")
 	public WebElement nome;
 	
 	@FindBy(xpath = "//div[@class=\"fieldMap taxes\"]/div/div/div[2]")
@@ -129,7 +129,7 @@ public class AgrupamentoDeTributosEditarPO extends TestBase{
 		gravar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(20000);
 		
 		
 		agrupamentodetributos.click();
@@ -156,14 +156,14 @@ public class AgrupamentoDeTributosEditarPO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		waitExpectedElement(nome);
-		sleep(2000);
+		sleep(12000);
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();
 		
 		String nomeregistro = nome.getAttribute("value");
 		System.out.println(nomeregistro);
 		sucesso.add(nomeregistro.equals(enviar));
 		waitExpectedElement(tributo);
-		sleep(2000);
+		sleep(12000);
 		tributo.click();
 		sleep(2000);
 		

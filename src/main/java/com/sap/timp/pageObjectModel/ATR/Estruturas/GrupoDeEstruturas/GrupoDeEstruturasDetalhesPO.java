@@ -68,7 +68,7 @@ public class GrupoDeEstruturasDetalhesPO extends TestBase {
 		
 		driver.get(estructuras );
 		
-		sleep(2000);
+		sleep(12000);
 		
 		grupodeestrutura.click();
 		

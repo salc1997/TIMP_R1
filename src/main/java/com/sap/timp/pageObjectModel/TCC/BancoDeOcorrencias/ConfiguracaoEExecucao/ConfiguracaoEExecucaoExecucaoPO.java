@@ -124,7 +124,7 @@ public class ConfiguracaoEExecucaoExecucaoPO extends TestBase {
 		sleep(4000);
 	
 		anio.click();
-		sleep(3000);
+		sleep(6000);
 		
 		enero.click();
 		sleep(3000);

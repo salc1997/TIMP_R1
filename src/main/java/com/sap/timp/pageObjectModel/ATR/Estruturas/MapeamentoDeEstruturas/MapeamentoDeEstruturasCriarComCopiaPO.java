@@ -37,7 +37,7 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBase {
 	@FindBy(xpath = "//button[text()=\"Sim\"]")
 	public WebElement sim;
 
-	@FindBy(xpath = "//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]")
+	@FindBy(xpath = "//div[@class=\"input validityMap\"]//input")
 	public WebElement datainicio;
 
 	@FindBy(xpath = "//div[@id=\"componentToSearchId-05\"]/div[2]")
@@ -88,9 +88,7 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		actionsMoveToElement("//input[@placeholder=\"Selecione a Data de Inicio de Vigência\"]");
-//		excluircofins.click();
-//		sleep(2000);
-
+	
 		datainicio.clear();
 		sleep(2000);
 		String enviar ="02/01/1976";
@@ -139,6 +137,7 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBase {
 			System.out.println("Não é o id criado");
 			sucesso.add(false);
 		}
+		System.out.println(sucesso);
 		menu = driver.findElement(By.xpath("//div[@data-id=\"" + idultimo + "\"]/div[1]/div"));
 		WebElement editar = driver.findElement(
 				By.xpath("//div[@data-id=\"" + idultimo + "\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
@@ -152,7 +151,7 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBase {
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 
-		sleep(6000);
+		sleep(16000);
 
 
 		String data  = datainicio.getAttribute("value");
@@ -164,9 +163,9 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBase {
 
 		sucesso.add(data.equals(enviar));
 		sucesso.add(data1.contains(enviar1));
-		
+		System.out.println(sucesso);
 
-		sleep(5000);
+		sleep(15000);
 		
 		int cofins = driver.findElements(By.xpath("//div[@id=\"multipleControlerId-05\"]")).size();
 
@@ -177,7 +176,7 @@ public class MapeamentoDeEstruturasCriarComCopiaPO extends TestBase {
 			System.out.println("Cofins  consta na edição");
 			sucesso.add(false);
 		}
-
+		System.out.println(sucesso);
 
 		cancelar.click();
 		sleep(2000);

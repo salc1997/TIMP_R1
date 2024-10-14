@@ -175,7 +175,7 @@ public class DeterminacaoAutomaticaDeGuiasVisualizarPO extends TestBase{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(25000);
+		sleep(35000);
 		
 		String empresaE = empresa.getAttribute("textContent");
 		String ufE = uf.getAttribute("textContent");

@@ -71,7 +71,7 @@ public class PainelBCEConfiguracaoeExecucaoEditarPO extends TestBase{
 		opcComponente.click();
 		String valorEditado = opcComponente.getText();
 		System.out.println("Valor a editar: "+valorEditado);
-		sleep(2000);
+		sleep(5000);
 		
 		guardarEditar.click();
 		invisibilityOfElementOverlay();
@@ -83,7 +83,7 @@ public class PainelBCEConfiguracaoeExecucaoEditarPO extends TestBase{
 		sleep(1000);
 		editar1.click();
 		invisibilityOfElementOverlay();
-		sleep(2000);
+		sleep(6000);
 		
 		String valorDespues = opcComponenteDE.getAttribute("value");
 		System.out.println("Valor a despues de: "+valorDespues);

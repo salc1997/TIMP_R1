@@ -127,8 +127,8 @@ public class ManuaisDeComponenteCriarPO extends TestBase {
 		
 		btnBiblioteca.click();
 		sleep(2000);
-	/*	btnNO.click();
-		sleep(2000);*/
+	/*	btnNO.click();*/
+		sleep(2000);
 		
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");

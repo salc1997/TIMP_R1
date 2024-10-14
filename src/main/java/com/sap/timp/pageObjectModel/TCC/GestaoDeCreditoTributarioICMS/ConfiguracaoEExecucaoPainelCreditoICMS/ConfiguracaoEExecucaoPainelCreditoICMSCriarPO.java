@@ -118,7 +118,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriarPO extends TestBase{
 		
 
 		filial.click();
-		sleep(2000);
+		sleep(6000);
 		
 		if (tq1 == true) {
 

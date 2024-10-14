@@ -73,7 +73,7 @@ public class EstructurasDetallesPO extends TestBase{
 		detalle .click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(2000);
+		sleep(8000);
 	
 		String nomeversão = versão.getText();
 		String nomegrupo = grupo.getText();

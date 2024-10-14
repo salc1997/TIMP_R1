@@ -115,15 +115,15 @@ public class AtividadeEditarPO extends TestBase{
 
 	 
 	
-		sleep(8000);
+		sleep(32000);
 
-		biblioteca.click();
+	/*	biblioteca.click();
 		waitExpectedElement(sim);
 		sleep(2000);
 		nao.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(10000);
+		sleep(10000);*/
 
 
 

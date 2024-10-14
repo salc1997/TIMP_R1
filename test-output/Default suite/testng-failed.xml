@@ -3,13 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilCriar">
+      <class name="com.timp.test.DFG.LeiautesExecução.LeiautesExecucaoFuncionalidades4">
         <methods>
-          <include name="criar"/>
+          <include name="periodoDaReferencia"/>
+          <include name="dataInicialDeReferencia"/>
+          <include name="saltodeLinha"/>
+          <include name="versao"/>
           <include name="afterClass"/>
+          <include name="horaDaExecucao"/>
+          <include name="dataDaExecucao"/>
           <include name="beforeClass"/>
+          <include name="dataFinalDeReferencia"/>
         </methods>
-      </class> <!-- com.timp.test.MDR.ParametrosContabilizacao.MapeamentoContabil.MapeamentoContabilCriar -->
+      </class> <!-- com.timp.test.DFG.LeiautesExecução.LeiautesExecucaoFuncionalidades4 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

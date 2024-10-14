@@ -91,7 +91,7 @@ public class MapeamentoDeParametrosDeEntradaEditarPO extends TestBase{
 		gravar.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(13000);
+		sleep(20000);
 		
 		
 		mapeamento.click();

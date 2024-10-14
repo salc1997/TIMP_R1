@@ -122,11 +122,11 @@ public class AgrupamentoDeTributosExcluirEmMassaPO extends TestBase {
 		novo.click();
 		sleep(2000);
 		waitExpectedElement(nome);
-		sleep(3000);
+		sleep(12000);
 		//Segundo Registro
 		
 		nome.sendKeys("Teste ATR Tributos 2");
-		sleep(1000);
+		sleep(2000);
 		tributo.click();
 		sleep(2000);
 		opcaotributo2.click();

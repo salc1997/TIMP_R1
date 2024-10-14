@@ -134,7 +134,7 @@ public class DeterminacaoAutomaticaDeGuiasEditarPO extends TestBase{
 		açao.click();
 		sleep(3000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(15000);
+		sleep(25000);
 		
 		
 		actionsMoveToElement(datavigencia);
@@ -145,7 +145,7 @@ public class DeterminacaoAutomaticaDeGuiasEditarPO extends TestBase{
 		datavigencia.sendKeys(dataInicioVigenciaValorNuevo); // Le envio la nueva fecha a editar	
 		System.out.println(dataInicioVigenciaValorNuevo); // Imprimo la fecha que se va editar el nuevo valor
 		
-		sleep(3000);
+		sleep(5000);
 		gravar.click();
 		sleep(2000);
 		waitExpectedElement(sim);

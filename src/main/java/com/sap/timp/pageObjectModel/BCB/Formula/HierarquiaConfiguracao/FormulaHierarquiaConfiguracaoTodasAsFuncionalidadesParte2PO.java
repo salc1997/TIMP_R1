@@ -334,7 +334,7 @@ public class FormulaHierarquiaConfiguracaoTodasAsFuncionalidadesParte2PO extends
 		
 		
 		fontedeDados.click();
-		sleep(2000);
+		sleep(6000);
 		
 		opcFontedeDados5.click();
 		sleep(2000);

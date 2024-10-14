@@ -119,7 +119,7 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBase {
 		estruturaDados.click();
 		sleep(1000);
 		opcEstruturaDados.click();
-		sleep(6000);
+		sleep(12000);
 
 		
 		empresa.click();
@@ -175,7 +175,7 @@ public class MapeamentodeEstruturasExcluirMassaPO extends TestBase {
 		estruturaDados.click();
 		sleep(1000);
 		opcEstruturaDados.click();
-		sleep(3000);
+		sleep(12000);
 
 		
 		empresa.click();

@@ -11,8 +11,6 @@ import com.sap.timp.base.TestBase;
 
 public class ParametrosGeraisConfiguracaoConfiguracaoCriarComCopiaPO extends TestBase{
 	
-	
-
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][2]")
 	public WebElement hierarquias;
 

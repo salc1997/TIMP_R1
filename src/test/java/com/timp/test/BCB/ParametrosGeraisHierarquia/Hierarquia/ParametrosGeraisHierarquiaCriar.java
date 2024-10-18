@@ -21,7 +21,6 @@ public class ParametrosGeraisHierarquiaCriar extends TestBase {
 	AcessarBCBPO acessarBCBPO;
 	ParametrosGeraisHierarquiaCriarPO parametrosGeraisHierarquiaCriarPO;
 
-
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();

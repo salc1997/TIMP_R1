@@ -15,6 +15,7 @@ public class ConfiguraçãodeLayoutdePainelEditarPO extends TestBase {
 	@FindBy(xpath = "//*[@id=\"left-content\"]/div[2]/ul/li[11]/ul/li[2]/div/span[2]")
 	public WebElement Painel;
 	
+	
 	@FindBy(xpath = "//span[text()=\"Configuração de Layout de Painel\"]")
 	public WebElement configuracionPainel;
 	

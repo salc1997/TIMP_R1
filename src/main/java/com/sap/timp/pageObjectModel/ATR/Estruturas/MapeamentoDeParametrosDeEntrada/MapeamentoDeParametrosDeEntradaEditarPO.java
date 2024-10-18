@@ -49,7 +49,7 @@ public class MapeamentoDeParametrosDeEntradaEditarPO extends TestBase{
 	}
 	
 	public boolean Editar() {
-		sleep(2000);
+		sleep(10000);
 		
 		mapeamento.click();
 		

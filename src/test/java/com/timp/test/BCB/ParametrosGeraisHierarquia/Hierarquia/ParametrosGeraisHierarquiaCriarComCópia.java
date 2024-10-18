@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import org.testng.annotations.AfterClass;
 
 public class ParametrosGeraisHierarquiaCriarComCópia extends TestBase{
-	
+
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
 	ParametrosGeraisHierarquiaCriarComCópiaPO parametrosGeraisHierarquiaCriarComCópiaPO;

@@ -3,19 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.timp.test.DFG.LeiautesExecução.LeiautesExecucaoFuncionalidades4">
+      <class name="com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguracaoConfiguraçãoCriar">
         <methods>
-          <include name="periodoDaReferencia"/>
-          <include name="dataInicialDeReferencia"/>
-          <include name="saltodeLinha"/>
-          <include name="versao"/>
+          <include name="criarConfiguracao"/>
           <include name="afterClass"/>
-          <include name="horaDaExecucao"/>
-          <include name="dataDaExecucao"/>
           <include name="beforeClass"/>
-          <include name="dataFinalDeReferencia"/>
         </methods>
-      </class> <!-- com.timp.test.DFG.LeiautesExecução.LeiautesExecucaoFuncionalidades4 -->
+      </class> <!-- com.timp.test.BCB.ParametrosGeraisConfiguracao.Configuracao.ParametrosGeraisConfiguracaoConfiguraçãoCriar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -11,7 +11,6 @@ import com.sap.timp.base.TestBase;
 public class ConfiguraçãodeLayoutdePainelExecutarGravarPO extends TestBase {
 
 	
-
 	@FindBy(xpath = "//span[text()=\"Banco de Crédito Tributário\"]")
 	public WebElement BancoCréditoTributário;
 	

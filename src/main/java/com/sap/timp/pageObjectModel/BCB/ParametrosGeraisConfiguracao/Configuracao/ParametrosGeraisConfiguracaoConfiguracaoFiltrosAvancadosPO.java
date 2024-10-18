@@ -100,7 +100,6 @@ public ArrayList<Boolean> Filtros() {
 		sleep(17000);
 
 		sleep(26000);
-
 		
 
 		nomeHerarquiaImput.sendKeys(nomeHerarquiaText);

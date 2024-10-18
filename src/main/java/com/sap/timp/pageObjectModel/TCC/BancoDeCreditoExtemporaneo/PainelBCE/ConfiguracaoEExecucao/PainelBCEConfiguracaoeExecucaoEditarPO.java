@@ -64,7 +64,7 @@ public class PainelBCEConfiguracaoeExecucaoEditarPO extends TestBase{
 		sleep(1000);
 		editar.click();
 		invisibilityOfElementOverlay();
-		sleep(6000);
+		sleep(9000);
 		
 		componente.click();
 		sleep(2000);

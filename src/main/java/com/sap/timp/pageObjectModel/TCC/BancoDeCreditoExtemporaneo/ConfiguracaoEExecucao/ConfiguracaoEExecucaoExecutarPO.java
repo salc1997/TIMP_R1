@@ -91,7 +91,7 @@ public class ConfiguracaoEExecucaoExecutarPO extends TestBase{
 		System.out.println("ID Registro Configuracao execucaco: " + idRegistroConfiguracaoEExecucao);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistroConfiguracaoEExecucao+"\"]/div[1]/div"));
-		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistroConfiguracaoEExecucao+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Executar\"]"));
+		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistroConfiguracaoEExecucao+"\"]//span[text()=\"Executar\"]"));
 		
 		menu.click();
 		sleep(1000);
@@ -143,7 +143,7 @@ public class ConfiguracaoEExecucaoExecutarPO extends TestBase{
 
 		WebElement monthCalendar = driver.findElement(By.xpath("//div[@tabindex=\"0\" and contains(@class, \"month\") and text()=\"Jan\"]"));
 		monthCalendar.click();
-		sleep(3000);
+		sleep(6000);
 
 		WebElement subperiodoCalendar = driver.findElement(By.xpath("//span[@class=\"subperiod-text\" and text()=\"1M\"]"));
 		subperiodoCalendar.click();

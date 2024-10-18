@@ -27,7 +27,7 @@ public class PainelCreditoICMSEditarPO extends TestBase{
 	@FindBy(xpath = "//span[text()=\"Executar\"]")
 	public WebElement btnExecutar;
 
-	@FindBy(xpath = "//td[@id=\"companyInput\"]/div/div/div[2]")
+	@FindBy(xpath = "//td[@id=\"companyInput\"]//div[2]")
 	public WebElement cboEmpresa;
 
 	@FindBy(xpath = "//li[contains(@class, \"list-item\") and @tabindex=\"0\" and @id][1]")
@@ -132,7 +132,7 @@ public class PainelCreditoICMSEditarPO extends TestBase{
 
 		WebElement monthCalendar = driver.findElement(By.xpath("//div[@tabindex=\"0\" and contains(@class, \"month\") and text()=\"Fev\"]"));
 		monthCalendar.click();
-		sleep(3000);
+		sleep(6000);
 
 		WebElement subperiodoCalendar = driver.findElement(By.xpath("//span[@class=\"subperiod-text\" and text()=\"1M\"]"));
 		subperiodoCalendar.click();

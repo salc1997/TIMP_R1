@@ -16,6 +16,7 @@ public class ConfiguracaoEExecucaoExecucaoPO extends TestBase {
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-bocConfiguration\"]")
 	public WebElement configuracaoEExecucao;
 	
+	
 	@FindBy(xpath = "//*[@id=\"left-content\"]/div[2]/ul/li[9]/ul/li[2]/div/span[2]")
 	public WebElement executados;
 

@@ -9,8 +9,6 @@ import org.testng.annotations.BeforeClass;
 
 import com.sap.timp.base.TestBase;
 
-
-
 public class ParametrosGeraisConfiguracaoConfiguracaoRaizPO extends TestBase{
 
 	// Configuracao

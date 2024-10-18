@@ -41,13 +41,13 @@ public class ConfiguracaoEExecucaoEditarPO extends TestBase{
 		
 		btnUltimaPagina.click();
 		invisibilityOfElementOverlay();
-		sleep(2000);
+		sleep(6000);
 		//String idRegistro = idObter4();
 		String idRegistro = idObter("idConfiguracaoEExecucaco");
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Editar\"]"));
+		WebElement açao = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]//span[text()=\"Editar\"]"));
 		
 		menu.click();
 		sleep(1000);

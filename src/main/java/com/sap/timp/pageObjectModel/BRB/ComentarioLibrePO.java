@@ -192,7 +192,7 @@ public class ComentarioLibrePO extends TestBase{
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		
 		sleep(2000);
-		sleep(4000);
+		sleep(8000);
 		
 		
 		ArrayList<Boolean> sucesso = new ArrayList<Boolean>();

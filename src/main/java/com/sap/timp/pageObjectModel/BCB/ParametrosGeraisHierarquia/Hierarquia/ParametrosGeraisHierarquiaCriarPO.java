@@ -69,8 +69,6 @@ public class ParametrosGeraisHierarquiaCriarPO extends TestBase {
 	@FindBy(xpath = "//button[text()=\"Não\"]")
 	public WebElement nao;
 	
-	
-	
 	public ParametrosGeraisHierarquiaCriarPO() {
 
 		PageFactory.initElements(driver, this);

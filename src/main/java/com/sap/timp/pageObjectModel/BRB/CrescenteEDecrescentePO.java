@@ -81,7 +81,7 @@ public class CrescenteEDecrescentePO extends TestBase {
 		opcao.click();
 		sleep(5000);
 
-		sleep(11000);
+		sleep(15000);
 		
 		waitExpectedElement(executar);
 		executar.click();

@@ -44,7 +44,7 @@ public class LivrosOficiais extends TestBase{
 			
 		
 	}
-/*
+
  @Test(priority = 1)
 
 	public void livrosICMS() {
@@ -57,7 +57,7 @@ public class LivrosOficiais extends TestBase{
 		}
 		sleep(2000);
 		
-	}*/
+	}
 
  
  @Test(priority = 2)

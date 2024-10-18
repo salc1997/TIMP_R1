@@ -81,7 +81,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriarPO extends TestBase{
 		gestaoCredito.click();
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(6000);
+		sleep(8000);
 		
 		configuracaoEExecucao.click();
 		sleep(2000);
@@ -118,7 +118,7 @@ public class ConfiguracaoEExecucaoPainelCreditoICMSCriarPO extends TestBase{
 		
 
 		filial.click();
-		sleep(6000);
+		sleep(8000);
 		
 		if (tq1 == true) {
 

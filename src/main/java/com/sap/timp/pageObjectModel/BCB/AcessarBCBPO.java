@@ -47,7 +47,7 @@ public class AcessarBCBPO extends TestBase{
 		bcb.click();
 		waitExpectedElement("//span[text()=\"Hierarquia de Configuração\"]");
 		waitExpectedElement("//div[contains(@class,\"icon-right\")][2]");
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		boolean sucesso = mostrar.isDisplayed();

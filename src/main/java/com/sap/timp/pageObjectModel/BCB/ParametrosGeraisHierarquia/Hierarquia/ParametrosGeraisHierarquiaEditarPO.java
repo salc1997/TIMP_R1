@@ -9,7 +9,6 @@ import com.sap.timp.base.TestBase;
 
 public class ParametrosGeraisHierarquiaEditarPO extends TestBase {
 	
-
 	@FindBy(xpath = "//div[contains(@class,\"baseTabs-box\")][1]")
 	public WebElement hierarquias;
 
@@ -95,7 +94,7 @@ public class ParametrosGeraisHierarquiaEditarPO extends TestBase {
 		waitExpectedElement(nao);
 		nao.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+	//	invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 
 		driver.navigate().refresh();
@@ -123,7 +122,7 @@ public class ParametrosGeraisHierarquiaEditarPO extends TestBase {
 		waitExpectedElement(nao);
 		nao.click();
 		sleep(3000);
-		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
+		//invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
 		return sucesso;

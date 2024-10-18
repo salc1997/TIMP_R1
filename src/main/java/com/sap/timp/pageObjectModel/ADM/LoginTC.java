@@ -76,7 +76,7 @@ public class LoginTC extends TestBase{
 			
 		}else {
 			
-			
+			sleep(3000);
 			waitExpectedElement(botao);
 
 			//Usuario Correto e Senha Correta

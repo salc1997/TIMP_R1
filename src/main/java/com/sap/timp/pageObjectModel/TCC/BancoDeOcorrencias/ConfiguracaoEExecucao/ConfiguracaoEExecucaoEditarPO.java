@@ -13,10 +13,10 @@ public class ConfiguracaoEExecucaoEditarPO extends TestBase {
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-boc\"]")
 	public WebElement bancoOcorrencia;
 
+	
 	@FindBy(xpath = "//li[@identifier=\"accordion-item-bocConfiguration\"]")
 	public WebElement configuracaoEExecucao;
-
-
+	
 	@FindBy(xpath = "//div[contains(@class,\"icon-right\")][2]")
 	public WebElement siguiente;
 

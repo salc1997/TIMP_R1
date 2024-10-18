@@ -16,6 +16,7 @@ public class CentralizaçãoDeTributosFiltroXIDPO extends TestBase {
 	@FindBy(xpath = "//span[text()=\"Filtros Avançados\"]")
 	public WebElement filtros;
 
+	
 	@FindBy(xpath = "//div[@id=\"companyFilter\"]/div/div/div[2]")
 	public WebElement empresa;
 

@@ -20,6 +20,7 @@ public class CentralizaçãoDeTributosFiltrosAvançadosPO extends TestBase{
 	@FindBy(xpath = "//div[@id=\"companyFilter\"]/div/div/div[2]")
 	public WebElement empresa;
 
+	
 	@FindBy(xpath = "//div[@id=\"companyFilter\"]/div/div/div/input")
 	public WebElement empresaOPC;
 

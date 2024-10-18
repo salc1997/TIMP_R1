@@ -19,8 +19,6 @@ public class ParametrosGeraisConfiguraçãoConfiguraçãoFiltrosAvancados extends Te
 	LoginTC loginTC;
 	AcessarBCBPO acessarBCBPO;
 	ParametrosGeraisConfiguracaoConfiguracaoFiltrosAvancadosPO parametrosGeraisFiltrosAvancadosPO;
-
-
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();

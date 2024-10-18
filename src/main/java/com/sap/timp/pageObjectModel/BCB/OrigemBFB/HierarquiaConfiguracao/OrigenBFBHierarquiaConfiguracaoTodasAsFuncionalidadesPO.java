@@ -375,7 +375,10 @@ public class OrigenBFBHierarquiaConfiguracaoTodasAsFuncionalidadesPO extends Tes
 	}
 	
 	public ArrayList<Boolean> criarConfiguracaoHierarquia() {
+		
+		sleep(2000);
 		boolean tc2 = false;
+		
 		String url = driver.getCurrentUrl();
 		if (url.contains("tc2")) {
 			tc2 = true;

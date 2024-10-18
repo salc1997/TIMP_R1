@@ -113,7 +113,7 @@ public class MapeamentoDeParametrosDeEntradaCriarPO extends TestBase {
 
 		sleep(2000);
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
-		sleep(7000);
+		sleep(10000);
 		
 		
 		

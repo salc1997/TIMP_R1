@@ -90,6 +90,7 @@ public class ConfiguracaoEExecucacoCriarPO extends TestBase{
 	
 	public boolean criar() {
 		invisibilityOfElementOverlay();
+		sleep(2000);
 		bancoCreditoExtemporaneo.click();
 		sleep(1000);
 		

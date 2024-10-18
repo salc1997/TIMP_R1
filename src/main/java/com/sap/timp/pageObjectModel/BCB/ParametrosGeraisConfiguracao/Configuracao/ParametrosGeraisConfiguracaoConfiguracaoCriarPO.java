@@ -192,7 +192,6 @@ public class ParametrosGeraisConfiguracaoConfiguracaoCriarPO extends TestBase {
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(2000);
 		
-		
 		nova.click();
 		sleep(3000);
 	//	attributeToBeXpath("//div[@id=\"hierarchy-name\"]/div", "class", "base-autocomplete required");

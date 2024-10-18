@@ -63,7 +63,6 @@ public class ParametrosGeraisConfiguracaoConfiguracaoFavoritosPO extends TestBas
 		
 		System.out.println("Registro que cree:"+idRegistro);
 		
-		
 		WebElement check1 = driver.findElement(By.xpath("//div[contains(@class,\"tbody\")]/div[contains(@class,\"tr\") and @data-id="+idRegistro+"]/div[2]/label/span"));
 															//div[@class="tr" and @data-id="433"]/div[2]/label/span
 		check1.click();

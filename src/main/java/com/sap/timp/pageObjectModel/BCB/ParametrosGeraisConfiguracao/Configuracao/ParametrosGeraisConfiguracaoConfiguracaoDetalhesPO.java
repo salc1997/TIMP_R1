@@ -90,7 +90,6 @@ public class ParametrosGeraisConfiguracaoConfiguracaoDetalhesPO extends TestBase
 		invisibilityOfElement("//div[@class=\"overlay loader dark\"]");
 		sleep(6000);
 		
-		
 		System.out.println("Registro que cree:"+idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@class=\"tr\" and @data-id =\""+idRegistro+"\"]/div[1]/div"));

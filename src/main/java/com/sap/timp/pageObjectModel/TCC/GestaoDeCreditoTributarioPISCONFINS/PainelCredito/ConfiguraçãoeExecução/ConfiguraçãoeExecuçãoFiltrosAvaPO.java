@@ -11,6 +11,7 @@ import com.sap.timp.base.TestBase;
 
 public class ConfiguraçãoeExecuçãoFiltrosAvaPO extends TestBase {
 	
+	
 	@FindBy(xpath = "//span[text()=\"Gestão de Crédito Tributário PIS/COFINS\"]")
 	public WebElement gestaoCredito;
 	

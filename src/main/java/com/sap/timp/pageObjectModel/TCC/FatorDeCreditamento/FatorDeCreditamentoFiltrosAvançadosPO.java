@@ -16,6 +16,7 @@ public class FatorDeCreditamentoFiltrosAvançadosPO extends TestBase {
 	@FindBy(xpath = "//span[text()=\"Filtros Avançados\"]")
 	public WebElement filtros;
 
+	
 	@FindBy(xpath = "//div[@class=\"company-filter\"]/div/div/div[2]")
 	public WebElement empresa;
 

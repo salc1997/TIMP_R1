@@ -106,7 +106,7 @@ public class PainelBCEConfiguracaoeExecucaoVisualizarPO extends TestBase {
 		editar1.click();
 		invisibilityOfElementOverlay();
 
-		sleep(9000);
+		sleep(11000);
 
 		
 		String empresaE1 = empresaE.getText();

@@ -18,7 +18,6 @@ public class BancodeOcorrênciasExecutadosEditarPO extends TestBase {
 	@FindBy(xpath = "//*[@id=\"left-content\"]/div[2]/ul/li[9]/ul/li[2]/div/span[2]")
 	public WebElement executados;
 
-	
 	@FindBy(xpath = "//div[@class=\"btn icon-btn trans icon icon-font-Sign-and-Symbols icon-right\"]")
 	public WebElement btnUltimaPagina;
 	

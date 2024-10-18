@@ -12,7 +12,6 @@ public class ConfiguraçãodeBancodeCréditoTributárioCriarPO extends TestBase{
 	@FindBy(xpath = "//span[text()=\"Banco de Crédito Tributário\"]")
 	public WebElement BancoCréditoTributário;
 
-	
 	@FindBy(xpath = "//span[text()=\"Configuração de Banco de Crédito Tributário\"]")
 	public WebElement configuracion;
 	

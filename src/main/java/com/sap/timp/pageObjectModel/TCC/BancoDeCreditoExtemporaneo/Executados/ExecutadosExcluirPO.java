@@ -75,7 +75,7 @@ public class ExecutadosExcluirPO extends TestBase {
 		}
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"Excluir\"]"));
+		WebElement excluir = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]//span[text()=\"Excluir\"]"));
 		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();

@@ -15,6 +15,7 @@ public class ConfiguraçãodeLayoutdePainelVisualizarPO extends TestBase {
 	@FindBy(xpath = "//span[text()=\"Banco de Crédito Tributário\"]")
 	public WebElement BancoCréditoTributário;
 	
+	
 	@FindBy(xpath = "//*[@id=\"left-content\"]/div[2]/ul/li[11]/ul/li[2]/div/span[2]")
 	public WebElement Painel;
 	

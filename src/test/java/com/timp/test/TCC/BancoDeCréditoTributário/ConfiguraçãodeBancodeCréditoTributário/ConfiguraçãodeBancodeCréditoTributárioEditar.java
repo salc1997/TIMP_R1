@@ -18,7 +18,6 @@ public class ConfiguraçãodeBancodeCréditoTributárioEditar extends TestBase {
 	LoginTC loginTC;
 	AcessarTCCPO acessarTCCPO;
 	ConfiguraçãodeBancodeCréditoTributárioEditarPO configuraçãodeBancodeCréditoTributárioEditarPO;
-
 	@BeforeClass
 	public void beforeClass() {
 		driver = initialization();

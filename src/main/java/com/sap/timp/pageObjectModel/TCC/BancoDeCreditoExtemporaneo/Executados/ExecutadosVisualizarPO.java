@@ -104,7 +104,7 @@ public class ExecutadosVisualizarPO extends TestBase{
 		System.out.println("ID Registro: " + idRegistro);
 		
 		WebElement menu = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div"));
-		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]/div[1]/div/div[2]/ul/li/span[text()=\"visualizar\"]"));
+		WebElement visualizar = driver.findElement(By.xpath("//div[@data-id=\""+idRegistro+"\"]//span[text()=\"visualizar\"]"));
 		actionsMoveToElement(menu);
 		sleep(2000);
 		menu.click();
